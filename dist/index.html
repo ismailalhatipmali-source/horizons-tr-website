@@ -1,41 +1,200 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HORIZONS TR</title>
-  <meta name="robots" content="noindex,nofollow">
-  <style>
-    :root { color-scheme: light dark; --blue:#153f8f; --cyan:#00a6d6; --ink:#102033; --soft:#f4f8fc; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(135deg, #f7fbff, #eaf4fb); color: var(--ink); min-height: 100vh; display: grid; place-items: center; }
-    main { width: min(920px, calc(100% - 32px)); background: white; border: 1px solid #dbe7f2; border-radius: 18px; padding: clamp(28px, 5vw, 56px); box-shadow: 0 20px 80px rgba(15, 52, 90, .12); }
-    .mark { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 32px; font-weight: 800; letter-spacing: .08em; color: var(--blue); }
-    .symbol { width: 42px; height: 42px; border-radius: 12px; background: linear-gradient(135deg, var(--blue), var(--cyan)); display: grid; place-items: center; color: white; font-weight: 900; }
-    h1 { margin: 0 0 18px; font-size: clamp(34px, 6vw, 64px); line-height: 1; color: var(--blue); }
-    p { margin: 0 0 14px; font-size: clamp(17px, 2vw, 21px); line-height: 1.6; max-width: 760px; }
-    .status { margin-top: 30px; padding: 16px 18px; border-radius: 12px; background: var(--soft); border: 1px solid #dce9f5; font-size: 15px; color: #31516d; }
-    .ar { direction: rtl; text-align: right; margin-top: 24px; padding-top: 24px; border-top: 1px solid #e4edf5; }
-    @media (prefers-color-scheme: dark) {
-      body { background: #07111e; color: #e8f1fa; }
-      main { background: #0c1b2d; border-color: #1e344d; box-shadow: none; }
-      h1, .mark { color: #89c7ff; }
-      .status { background: #10243a; border-color: #27415f; color: #c7d8ea; }
-      .ar { border-top-color: #27415f; }
-    }
-  </style>
+  <title>HORIZONS · Digital Business Services &amp; Solutions</title>
+  <meta name="description" content="HORIZONS company website: learning applications, practical tools, privacy, legal terms and support in 32 languages.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://horizons-tr.com/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2096%2096'%3E%3Crect%20width='96'%20height='96'%20rx='20'%20fill='%23071c2c'/%3E%3Cpath%20d='M18%2059c18-18%2042-18%2060%200'%20fill='none'%20stroke='%2316d6c7'%20stroke-width='7'%20stroke-linecap='round'/%3E%3Cpath%20d='M33%2025v43M63%2025v43M33%2043h30'%20fill='none'%20stroke='%23fff'%20stroke-width='8'%20stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <div class="mark"><span class="symbol">H</span><span>HORIZONS TR</span></div>
-    <h1>Deployment Connected</h1>
-    <p>The GitHub repository is connected to cPanel. The full HORIZONS company website will be published here after the deployment path is confirmed.</p>
-    <p>This temporary page contains no tracking, no child data collection, and no private product files.</p>
-    <div class="ar">
-      <p><strong>تم ربط GitHub مع cPanel بنجاح.</strong></p>
-      <p>هذه صفحة اختبار مؤقتة فقط للتأكد من مسار النشر. سيتم نشر موقع HORIZONS الكامل بعد تأكيد السحب والنشر من لوحة cPanel.</p>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="HORIZONS"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="logo-title"><title id="logo-title">HORIZONS</title><g fill="none"><path d="M24 92C170 12 425 12 574 92" stroke="#16bdb2" stroke-width="8" stroke-linecap="round"/><path d="M164 20v91M270 20v91M164 61h106" stroke="#071c2c" stroke-width="18" stroke-linecap="round"/></g><text x="18" y="150" fill="#071c2c" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="55" letter-spacing="8">HORIZONS</text><text x="21" y="181" fill="#087f7b" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="15" letter-spacing="3">DIGITAL BUSINESS SERVICES &amp; SOLUTIONS</text></svg></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#products" data-i18n="products">Products</a>
+        <a href="#about" data-i18n="aboutLabel">About us</a>
+        <a href="#privacy" data-i18n="privacyLabel">Privacy</a>
+        <a href="#terms" data-i18n="termsLabel">Terms</a>
+        <a href="#support" data-i18n="supportLabel">Support</a>
+      </nav>
+      <label class="language-picker">
+        <span data-i18n="languageLabel">Language</span>
+        <select id="language-select" aria-label="Language">
+          <option value="ar">العربية</option>
+<option value="en">English</option>
+<option value="tr">Türkçe</option>
+<option value="fr">Français</option>
+<option value="es">Español</option>
+<option value="de">Deutsch</option>
+<option value="it">Italiano</option>
+<option value="pt">Português</option>
+<option value="nl">Nederlands</option>
+<option value="ru">Русский</option>
+<option value="uk">Українська</option>
+<option value="pl">Polski</option>
+<option value="cs">Čeština</option>
+<option value="ro">Română</option>
+<option value="hu">Magyar</option>
+<option value="el">Ελληνικά</option>
+<option value="sv">Svenska</option>
+<option value="da">Dansk</option>
+<option value="no">Norsk</option>
+<option value="fi">Suomi</option>
+<option value="bg">Български</option>
+<option value="sr">Српски</option>
+<option value="hr">Hrvatski</option>
+<option value="he">עברית</option>
+<option value="fa">فارسی</option>
+<option value="ur">اردو</option>
+<option value="hi">हिन्दी</option>
+<option value="bn">বাংলা</option>
+<option value="id">Bahasa Indonesia</option>
+<option value="ms">Bahasa Melayu</option>
+<option value="zh">简体中文</option>
+<option value="ja">日本語</option>
+        </select>
+      </label>
     </div>
-    <div class="status">Build: cPanel Git test page · 2026-09-25 · Repository: horizons-tr-website</div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">HORIZONS · İstanbul, Türkiye · 32 languages</p>
+          <h1 data-i18n="tagline">Tools for learning and work, with respect for your privacy.</h1>
+          <p class="hero-text" data-i18n="heroDescription">Learning applications and practical solutions in one place.</p>
+          <div class="actions">
+            <a class="button" href="#products" data-i18n="products">Products</a>
+            <a class="button ghost" href="#support" data-i18n="contactTeam">Contact the team</a>
+          </div>
+          <ul class="trust-list" aria-label="Privacy commitments">
+            <li data-i18n="privacyProof">No ads. No child accounts.</li>
+            <li data-i18n="cleanNote">Clean digital product.</li>
+            <li data-i18n="languageNote">Website ready in 32 languages.</li>
+          </ul>
+        </div>
+        <aside class="hero-panel" aria-label="Launch summary">
+          <div class="launch-card">
+            <span data-i18n="availableSoon">Prepared for launch</span>
+            <h2>Horizons Arabic Level 1</h2>
+            <p data-i18n="workbookSlogan">Learn a letter. Open a world.</p>
+            <div class="stat-row">
+              <strong>28</strong><span data-i18n="lettersLabel">Letters</span>
+              <strong>560</strong><span data-i18n="wordsLabel">Words</span>
+              <strong>56</strong><span data-i18n="storiesLabel">Short stories</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">HORIZONS</p>
+          <h2 data-i18n="products">Products</h2>
+          <p data-i18n="catalogNotice">The catalogue contains two real projects and eight future concepts.</p>
+        </div>
+        <div id="product-grid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="section principles">
+      <div class="wrap two-col">
+        <div>
+          <p class="eyebrow" data-i18n="principlesTitle">Our principles</p>
+          <h2 data-i18n="principlesBody">We develop products that serve you without making your data the price of use.</h2>
+        </div>
+        <div class="principle-list">
+          <article><span>01</span><h3 data-i18n="privacyTitle">Privacy and child data</h3><p data-i18n="privacyProof">No ads. No child accounts.</p></article>
+          <article><span>02</span><h3 data-i18n="updatesTitle">Updates</h3><p data-i18n="updatesText">All fixes and updates are free for this level.</p></article>
+          <article><span>03</span><h3 data-i18n="termsTitle">Terms, consumer rights and refunds</h3><p data-i18n="rightsNote">Mandatory rights remain available.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="wrap two-col">
+        <div>
+          <p class="eyebrow" data-i18n="company">Company</p>
+          <h2 data-i18n="aboutTitle">About HORIZONS</h2>
+          <p data-i18n="aboutBody">Founded in Istanbul in 2016, HORIZONS develops practical tools.</p>
+          <p data-i18n="companyAbout">HORIZONS develops practical digital learning tools from İstanbul.</p>
+        </div>
+        <dl class="company-card">
+          <div><dt>Legal name</dt><dd>HORİZONS EĞİTİM DANIŞMANLIK TURİZM EMLAKÇILIK TİCARET LİMİTED ŞİRKETİ</dd></div>
+          <div><dt>Address</dt><dd>Akşemsettin Mah. Şehit Teğmen Mehmet Sarper Alus Sok. No: 20/A, Fatih, İstanbul, Türkiye</dd></div>
+          <div><dt>Registry</dt><dd>20594-5</dd></div>
+          <div><dt>MERSİS</dt><dd>0008085718200010</dd></div>
+          <div><dt>Tax office</dt><dd>Fatih</dd></div>
+          <div><dt>Tax number</dt><dd>0080857182</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+905522268841">+90 552 226 88 41</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section legal-grid" id="privacy">
+      <div class="wrap cards">
+        <article class="info-card wide">
+          <p class="eyebrow" data-i18n="privacyLabel">Privacy</p>
+          <h2 data-i18n="privacyTitle">Privacy and child data</h2>
+          <p data-i18n="privacyBody">We do not create child accounts or request children’s data.</p>
+          <p data-i18n="childSafetyBody">An adult should contact support.</p>
+        </article>
+        <article class="info-card" id="terms">
+          <p class="eyebrow" data-i18n="legal">Legal</p>
+          <h2 data-i18n="termsTitle">Terms, consumer rights and refunds</h2>
+          <p data-i18n="termsBody">Use the site lawfully and respect rights.</p>
+          <p data-i18n="withdrawalBody">Where a statutory 14-day withdrawal period applies...</p>
+        </article>
+        <article class="info-card" id="updates">
+          <p class="eyebrow" data-i18n="updatesLabel">Updates</p>
+          <h2 data-i18n="updatesTitle">Updates</h2>
+          <p data-i18n="updateNote">Fixes and updates for this level are free.</p>
+          <p><a href="updates/arabic-level-1.json">updates/arabic-level-1.json</a></p>
+        </article>
+        <article class="info-card">
+          <p class="eyebrow" data-i18n="accessibilityTitle">Accessibility</p>
+          <h2 data-i18n="childSafetyTitle">Child safety</h2>
+          <p data-i18n="accessibilityBody">Designed for keyboard navigation and both writing directions.</p>
+          <p data-i18n="notLegalAdvice">Legal text should be reviewed by counsel before payment activation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section support" id="support">
+      <div class="wrap support-grid">
+        <div>
+          <p class="eyebrow" data-i18n="supportLabel">Support</p>
+          <h2 data-i18n="supportTitle">Support</h2>
+          <p data-i18n="contactIntro">For product, privacy, legal or security matters, write to the appropriate adult support address.</p>
+        </div>
+        <div class="mail-grid">
+          <a href="mailto:info@horizons-tr.com"><span data-i18n="generalEnquiries">General enquiries</span><strong>info@horizons-tr.com</strong></a>
+          <a href="mailto:support@horizons-tr.com"><span data-i18n="supportLabel">Support</span><strong>support@horizons-tr.com</strong></a>
+          <a href="mailto:privacy@horizons-tr.com"><span data-i18n="privacyLabel">Privacy</span><strong>privacy@horizons-tr.com</strong></a>
+          <a href="mailto:legal@horizons-tr.com"><span data-i18n="legalInfoLabel">Legal information</span><strong>legal@horizons-tr.com</strong></a>
+          <a href="mailto:security@horizons-tr.com"><span data-i18n="securityLabel">Security</span><strong>security@horizons-tr.com</strong></a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 HORIZONS</span>
+      <a href="#privacy" data-i18n="privacyLabel">Privacy</a>
+      <a href="#terms" data-i18n="termsLabel">Terms</a>
+      <a href="#support" data-i18n="supportLabel">Support</a>
+    </div>
+  </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

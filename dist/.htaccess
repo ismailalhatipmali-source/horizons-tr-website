@@ -1,15 +1,14 @@
 DirectoryIndex index.html index.php
 Options -Indexes
-
-<IfModule mod_headers.c>
-  Header set Cache-Control "no-cache, no-store, must-revalidate"
-  Header set Pragma "no-cache"
-  Header set Expires "0"
-</IfModule>
-
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^ index.html [L]
+RewriteEngine On
+RewriteRule ^(ar|en|tr|fr|es|de|it|pt|nl|ru|uk|pl|cs|ro|hu|el|sv|da|no|fi|bg|sr|hr|he|fa|ur|hi|bn|id|ms|zh|ja)/(index|about|privacy|terms|support|updates|child-safety|legal|accessibility|demo|product)\.html$ /index.html [R=302,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+</IfModule>
+<IfModule mod_headers.c>
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "no-referrer"
+Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
 </IfModule>
