@@ -9,12 +9,46 @@ mkdir -p -- "$TARGET_INPUT"
 TARGET_DIR="$(cd -- "$TARGET_INPUT" && pwd -P)"
 case "$TARGET_DIR/" in "$REPO_DIR/"*) echo 'Document root must be outside the repository' >&2; exit 1;; esac
 case "$REPO_DIR/" in "$TARGET_DIR/"*) echo 'Repository must be outside the document root' >&2; exit 1;; esac
-command -v rsync >/dev/null || { echo 'rsync is required on the cPanel server' >&2; exit 1; }
 # Only website files are copied. Hosting-specific files are retained.
-rsync -rlt --chmod=D755,F644 \
-  --exclude='/.htaccess' --exclude='/.well-known/' --exclude='/cgi-bin/' \
-  --exclude='/.user.ini' --exclude='/php.ini' \
-  "$SOURCE_DIR/" "$TARGET_DIR/"
+printf 'Copying HORIZONS website files to %s\n' "$TARGET_DIR"
+if command -v rsync >/dev/null 2>&1; then
+  rsync -rlt --chmod=D755,F644 \
+    --exclude='/.htaccess' --exclude='/.well-known/' --exclude='/cgi-bin/' \
+    --exclude='/.user.ini' --exclude='/php.ini' \
+    "$SOURCE_DIR/" "$TARGET_DIR/"
+else
+  # Shared hosting may not provide rsync. Copy only source-listed paths,
+  # including dotfiles, without deleting or chmod-ing unrelated hosting files.
+  printf 'rsync unavailable; using the standard file-copy fallback.\n'
+  shopt -s dotglob nullglob
+  copy_entry() {
+    local source="$1" destination="$2" child
+    if [[ -L "$source" || -L "$destination" ]]; then
+      printf 'Cannot copy a symbolic-link path: %s\n' "$destination" >&2
+      return 1
+    fi
+    if [[ -d "$source" ]]; then
+      mkdir -p -- "$destination"
+      chmod 755 "$destination"
+      for child in "$source"/*; do
+        copy_entry "$child" "$destination/${child##*/}"
+      done
+    elif [[ -f "$source" ]]; then
+      [[ ! -d "$destination" ]] || { printf 'Expected a file at %s\n' "$destination" >&2; return 1; }
+      cp -- "$source" "$destination"
+      chmod 644 "$destination"
+    else
+      printf 'Unsupported release path: %s\n' "$source" >&2
+      return 1
+    fi
+  }
+  for entry in "$SOURCE_DIR"/*; do
+    name="${entry##*/}"
+    case "$name" in .htaccess|.well-known|cgi-bin|.user.ini|php.ini) continue;; esac
+    copy_entry "$entry" "$TARGET_DIR/$name"
+  done
+fi
+printf 'Website files copied; updating Apache settings.\n'
 # Update only our marked Apache block, retaining the host's existing rules.
 TEMP_HTACCESS="$(mktemp "$TARGET_DIR/.horizons-apache.XXXXXX")"
 trap 'rm -f -- "$TEMP_HTACCESS"' EXIT
