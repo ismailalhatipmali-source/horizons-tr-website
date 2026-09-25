@@ -1,0 +1,10 @@
+{
+  "release": "2026-09-25-approved",
+  "preview_source_commit": "92f6c74b6e05d6627fa23af951f5ae763eea47b6",
+  "domain": "https://horizons-tr.com",
+  "languages": 32,
+  "product_version": "1.2.0",
+  "public_checkout": false,
+  "demo": "/try/index.html",
+  "deployment_target": "/home2/horizonstr/public_html/"
+}

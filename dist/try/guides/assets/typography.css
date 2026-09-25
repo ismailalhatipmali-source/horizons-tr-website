@@ -1,0 +1,44 @@
+@font-face{font-family:"Latin";src:url("fonts/Latin-Regular.ttf");font-style:normal;font-weight:400;}
+@font-face{font-family:"Latin";src:url("fonts/Latin-Bold.ttf");font-style:normal;font-weight:700;}
+@font-face{font-family:"Arabic";src:url("fonts/Arabic-Regular.ttf");font-style:normal;font-weight:400;}
+@font-face{font-family:"Arabic";src:url("fonts/Arabic-Bold.ttf");font-style:normal;font-weight:700;}
+@font-face{font-family:"Hebrew";src:url("fonts/Hebrew-Regular.ttf");font-style:normal;font-weight:400;}
+@font-face{font-family:"Hebrew";src:url("fonts/Hebrew-Bold.ttf");font-style:normal;font-weight:700;}
+@font-face{font-family:"Devanagari";src:url("fonts/Devanagari-Regular.ttf");font-style:normal;font-weight:400;}
+@font-face{font-family:"Devanagari";src:url("fonts/Devanagari-Bold.ttf");font-style:normal;font-weight:700;}
+@font-face{font-family:"Bengali";src:url("fonts/Bengali-Regular.ttf");font-style:normal;font-weight:400;}
+@font-face{font-family:"Bengali";src:url("fonts/Bengali-Bold.ttf");font-style:normal;font-weight:700;}
+@font-face{font-family:"CJKsc";src:url("fonts/CJKsc-Regular.woff2");font-style:normal;font-weight:400;}
+@font-face{font-family:"CJKjp";src:url("fonts/CJKjp-Regular.woff2");font-style:normal;font-weight:400;}
+[lang="en"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="ar"]{font-family:"Arabic", "Latin", "Arabic", sans-serif;}
+[lang="tr"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="fr"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="es"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="de"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="it"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="pt"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="nl"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="ru"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="uk"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="pl"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="cs"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="ro"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="hu"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="el"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="sv"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="da"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="no"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="fi"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="bg"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="sr"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="hr"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="he"]{font-family:"Hebrew", "Latin", "Arabic", sans-serif;}
+[lang="fa"]{font-family:"Arabic", "Latin", "Arabic", sans-serif;}
+[lang="ur"]{font-family:"Arabic", "Latin", "Arabic", sans-serif;}
+[lang="hi"]{font-family:"Devanagari", "Latin", "Arabic", sans-serif;}
+[lang="bn"]{font-family:"Bengali", "Latin", "Arabic", sans-serif;}
+[lang="id"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="ms"]{font-family:"Latin", "Latin", "Arabic", sans-serif;}
+[lang="zh"]{font-family:"CJKsc", "Latin", "Arabic", sans-serif;}
+[lang="ja"]{font-family:"CJKjp", "Latin", "Arabic", sans-serif;}

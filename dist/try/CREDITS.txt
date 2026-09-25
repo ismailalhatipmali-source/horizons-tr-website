@@ -1,0 +1,16 @@
+Horizons Arabic Level 1 - Interactive Arabic Letters Workbook — 1.2.0 — Free demo
+إعداد وتنفيذ: إسماعيل الخطيب — ismail alhatip
+
+Content: 5 letter lessons, 100 words, 100 example sentences and 10 illustrated stories.
+Audio: 245 distinct bundled recording files, counted from this edition's audio index. Included Arabic recordings use a synthetic female voice; optional local device speech is only a fallback.
+Illustrations: 240 indexed scenes using 240 distinct image files. Source illustrations supplied for HORIZONS were mapped to curriculum content; supplementary illustrations fill gaps and correct identified subject mismatches.
+Writing: 20 contextual writing models, with tracing paths and numbered writing guidance. Practice does not automatically assess handwriting or mastery.
+The interface, operating instructions and covers are available in 32 languages. Arabic lesson text and recordings remain in Arabic. Optional meaning translations are available in English, Turkish, French and Spanish.
+
+Fonts: Noto Naskh Arabic, Amiri, Scheherazade, Noto Sans Arabic and Noto Kufi Arabic, under SIL Open Font License 1.1. Original font notices are retained in fonts/. Interface and guide font notices are in guides/assets/fonts/LICENSES.txt.
+Library attribution retained from the workbook: fflate 0.8.2 (MIT) and js-sha256 0.11.1 (MIT). Their licence notices are retained in vendor/FFLATE-LICENSE.txt and vendor/SHA256-LICENSE.txt.
+
+This demo has no licence activation and no update service. It does not ask for an email, child data or an account. Learning progress remains in the browser.
+
+
+Instructions and privacy information: START_HERE.html and guides/<language-code>.html.

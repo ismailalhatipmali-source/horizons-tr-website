@@ -1,0 +1,241 @@
+{
+  "id": "horizons-arabic-complete",
+  "version": "0.3.0",
+  "title": "رحلة الحروف العربية",
+  "reviewStatus": "assembled_complete_media",
+  "chapters": [
+    {
+      "id": "baa",
+      "letter": "ب",
+      "nameAr": "الْبَاءُ",
+      "alphabetId": "alphabet.baa",
+      "wordCount": 20,
+      "storyCount": 2,
+      "path": "course/chapters/baa.json",
+      "joiningType": "dual"
+    },
+    {
+      "id": "dhaa_emphatic",
+      "letter": "ظ",
+      "nameAr": "الظَّاءُ",
+      "alphabetId": "alphabet.dhaa_emphatic",
+      "wordCount": 20,
+      "storyCount": 2,
+      "path": "course/chapters/dhaa_emphatic.json",
+      "joiningType": "dual"
+    },
+    {
+      "id": "daad",
+      "letter": "ض",
+      "nameAr": "الضَّادُ",
+      "alphabetId": "alphabet.daad",
+      "wordCount": 20,
+      "storyCount": 2,
+      "path": "course/chapters/daad.json",
+      "joiningType": "dual"
+    },
+    {
+      "id": "yaa",
+      "letter": "ي",
+      "nameAr": "الْيَاءُ",
+      "alphabetId": "alphabet.yaa",
+      "wordCount": 20,
+      "storyCount": 2,
+      "path": "course/chapters/yaa.json",
+      "joiningType": "dual"
+    },
+    {
+      "id": "dhaal",
+      "letter": "ذ",
+      "nameAr": "الذَّالُ",
+      "alphabetId": "alphabet.dhaal",
+      "wordCount": 20,
+      "storyCount": 2,
+      "path": "course/chapters/dhaal.json",
+      "joiningType": "right_only"
+    }
+  ],
+  "alphabet": {
+    "schemaVersion": "horizons-authoring-1",
+    "releaseStatus": "working_review_sample",
+    "lessonId": "alphabet-introduction",
+    "titleAr": "أَتَعَرَّفُ إِلَى الْحُرُوفِ الْعَرَبِيَّةِ",
+    "positionInCourse": 1,
+    "audienceAge": [
+      8,
+      11
+    ],
+    "letterOrder": [
+      "ب",
+      "ظ",
+      "ض",
+      "ي",
+      "ذ"
+    ],
+    "audioPolicy": "يُنْطَقُ اسمُ الحرفِ وحدَهُ بالعربيةِ الفصحى المعياريةِ مع التشكيلِ؛ لا تُشغَّلُ جملةٌ حاملةٌ قبل الاسم، ولا تُستخدم لهجةٌ محليةٌ.",
+    "letters": [
+      {
+        "id": "alphabet.baa",
+        "order": 2,
+        "letter": "ب",
+        "spokenNameText": "بَاء",
+        "nameAudioAssetId": "alphabet.baa",
+        "nameAudioStatus": "synthetic_draft",
+        "joiningType": "dual",
+        "displayForms": {
+          "isolated": "ب",
+          "initial": "بـ",
+          "medial": "ـبـ",
+          "final": "ـب"
+        },
+        "distinctContextualShapes": 4,
+        "joiningNoteAr": "يتصل بالحرف السابق وبالحرف التالي عندما يسمح السياق بالوصل. الموقع وحده لا يضمن الاتصال؛ نراجع الكلمة المحيطة.",
+        "shortVowelPolicy": "تقدم المقاطع ضمن فصل الحرف؛ اسم الحرف ليس المقطع.",
+        "minimumVocabularyCards": 20,
+        "reviewStatus": "editorial_draft"
+      },
+      {
+        "id": "alphabet.dhaa_emphatic",
+        "order": 17,
+        "letter": "ظ",
+        "spokenNameText": "ظَاء",
+        "nameAudioAssetId": "alphabet.dhaa_emphatic",
+        "nameAudioStatus": "synthetic_draft",
+        "joiningType": "dual",
+        "displayForms": {
+          "isolated": "ظ",
+          "initial": "ظـ",
+          "medial": "ـظـ",
+          "final": "ـظ"
+        },
+        "distinctContextualShapes": 4,
+        "joiningNoteAr": "يتصل بالحرف السابق وبالحرف التالي عندما يسمح السياق بالوصل. الموقع وحده لا يضمن الاتصال؛ نراجع الكلمة المحيطة.",
+        "shortVowelPolicy": "تقدم المقاطع ضمن فصل الحرف؛ اسم الحرف ليس المقطع.",
+        "minimumVocabularyCards": 20,
+        "reviewStatus": "editorial_draft"
+      },
+      {
+        "id": "alphabet.daad",
+        "order": 15,
+        "letter": "ض",
+        "spokenNameText": "ضَاد",
+        "nameAudioAssetId": "alphabet.daad",
+        "nameAudioStatus": "synthetic_draft",
+        "joiningType": "dual",
+        "displayForms": {
+          "isolated": "ض",
+          "initial": "ضـ",
+          "medial": "ـضـ",
+          "final": "ـض"
+        },
+        "distinctContextualShapes": 4,
+        "joiningNoteAr": "يتصل بالحرف السابق وبالحرف التالي عندما يسمح السياق بالوصل. الموقع وحده لا يضمن الاتصال؛ نراجع الكلمة المحيطة.",
+        "shortVowelPolicy": "تقدم المقاطع ضمن فصل الحرف؛ اسم الحرف ليس المقطع.",
+        "minimumVocabularyCards": 20,
+        "reviewStatus": "editorial_draft"
+      },
+      {
+        "id": "alphabet.yaa",
+        "order": 28,
+        "letter": "ي",
+        "spokenNameText": "يَاء",
+        "nameAudioAssetId": "alphabet.yaa",
+        "nameAudioStatus": "synthetic_draft",
+        "joiningType": "dual",
+        "displayForms": {
+          "isolated": "ي",
+          "initial": "يـ",
+          "medial": "ـيـ",
+          "final": "ـي"
+        },
+        "distinctContextualShapes": 4,
+        "joiningNoteAr": "يتصل بالحرف السابق وبالحرف التالي عندما يسمح السياق بالوصل. الموقع وحده لا يضمن الاتصال؛ نراجع الكلمة المحيطة.",
+        "shortVowelPolicy": "تقدم المقاطع ضمن فصل الحرف؛ اسم الحرف ليس المقطع.",
+        "minimumVocabularyCards": 20,
+        "reviewStatus": "editorial_draft"
+      },
+      {
+        "id": "alphabet.dhaal",
+        "order": 9,
+        "letter": "ذ",
+        "spokenNameText": "ذَال",
+        "nameAudioAssetId": "alphabet.dhaal",
+        "nameAudioStatus": "synthetic_draft",
+        "joiningType": "right_only",
+        "displayForms": {
+          "isolated": "ذ",
+          "initial": "ذ",
+          "medial": "ـذ",
+          "final": "ـذ"
+        },
+        "distinctContextualShapes": 2,
+        "joiningNoteAr": "لا يتصل بالحرف التالي، وقد يتصل بالسابق القابل للوصل. الوسط والآخر قد يظهران منفصلين أيضًا بحسب الحرف السابق.",
+        "shortVowelPolicy": "تقدم المقاطع ضمن فصل الحرف؛ اسم الحرف ليس المقطع.",
+        "minimumVocabularyCards": 20,
+        "reviewStatus": "editorial_draft"
+      }
+    ],
+    "formRenderingPolicy": {
+      "displayFormsMeaning": "Canonical joining examples, not a function mapping word position to final glyph.",
+      "contextRule": "Compute joining from both adjacent letters; right_only letters cannot connect to the following letter.",
+      "exampleCases": [
+        {
+          "text": "بَابٌ",
+          "letter": "ب",
+          "occurrenceIndex": 0,
+          "wordPosition": "initial",
+          "joinsPrevious": false,
+          "joinsNext": true,
+          "shape": "بـ"
+        },
+        {
+          "text": "بَابٌ",
+          "letter": "ب",
+          "occurrenceIndex": 1,
+          "wordPosition": "final",
+          "joinsPrevious": false,
+          "joinsNext": false,
+          "shape": "ب"
+        },
+        {
+          "text": "حَبْلٌ",
+          "letter": "ب",
+          "occurrenceIndex": 0,
+          "wordPosition": "medial",
+          "joinsPrevious": true,
+          "joinsNext": true,
+          "shape": "ـبـ"
+        },
+        {
+          "text": "عِنَبٌ",
+          "letter": "ب",
+          "occurrenceIndex": 0,
+          "wordPosition": "final",
+          "joinsPrevious": true,
+          "joinsNext": false,
+          "shape": "ـب"
+        },
+        {
+          "text": "نَابِتٌ",
+          "letter": "ب",
+          "occurrenceIndex": 0,
+          "wordPosition": "medial",
+          "joinsPrevious": false,
+          "joinsNext": true,
+          "shape": "بـ"
+        }
+      ]
+    }
+  },
+  "fontLicense": "SIL OFL 1.1",
+  "newPurchases": 0,
+  "paidCredits": 2,
+  "applicationBuild": "1.2.0",
+  "author": {
+    "ar": "إسماعيل الخطيب",
+    "latin": "ismail alhatip",
+    "credit": "إعداد وتنفيذ: إسماعيل الخطيب — ismail alhatip"
+  },
+  "edition": "demo",
+  "productTitle": "Horizons Arabic Level 1 - Interactive Arabic Letters Workbook"
+}

@@ -1,7 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/horizonstr/public_html/
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R dist/* $DEPLOYPATH
-    - /bin/cp dist/.htaccess $DEPLOYPATH/.htaccess
+    - /bin/bash scripts/deploy-cpanel.sh /home2/horizonstr/public_html/

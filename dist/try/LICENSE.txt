@@ -1,0 +1,195 @@
+HORIZONS Arabic Level 1 — 1.2.0 — Free demo
+
+Third-party fonts and libraries retain their own licences; see CREDITS.txt and the bundled notices.
+
+English
+© 2026 HORIZONS. All rights reserved.
+This demo has no licence activation and no update service. It does not ask for an email, child data or an account. Learning progress remains in the browser.
+The interface, operating instructions and covers are available in 32 languages. Arabic lesson text and recordings remain in Arabic. Optional meaning translations are available in English, Turkish, French and Spanish.
+Operating instructions: guides/en.html
+
+العربية
+© 2026 HORIZONS. جميع الحقوق محفوظة.
+لا تتضمّن هذه التجربة تفعيل رخصة أو خدمة تحديثات. لا تطلب بريدًا إلكترونيًا أو بيانات أطفال أو حسابًا. يبقى تقدّم التعلّم في المتصفّح.
+تتوفّر الواجهة وتعليمات التشغيل والأغلفة بـ32 لغة. تبقى نصوص الدروس وتسجيلاتها بالعربية. تتوفّر ترجمات اختيارية للمعاني بالإنجليزية والتركية والفرنسية والإسبانية.
+تعليمات التشغيل: guides/ar.html
+
+Türkçe
+© 2026 HORIZONS. Tüm hakları saklıdır.
+Bu demoda lisans etkinleştirmesi veya güncelleme hizmeti yoktur. E-posta, çocuk verisi veya hesap istenmez. Öğrenme ilerlemesi tarayıcıda kalır.
+Arayüz, kullanım talimatları ve kapaklar 32 dilde sunulur. Arapça ders metinleri ve kayıtları Arapça kalır. İsteğe bağlı anlam çevirileri İngilizce, Türkçe, Fransızca ve İspanyolca sunulur.
+Kullanım talimatları: guides/tr.html
+
+Français
+© 2026 HORIZONS. Tous droits réservés.
+Cette démo ne comporte ni activation de licence ni service de mise à jour. Elle ne demande ni e-mail, ni données enfant, ni compte. Les progrès restent dans le navigateur.
+L’interface, les instructions d’utilisation et les couvertures sont proposées en 32 langues. Les textes et les enregistrements des leçons restent en arabe. Les traductions facultatives du sens sont disponibles en anglais, turc, français et espagnol.
+Instructions d’utilisation: guides/fr.html
+
+Español
+© 2026 HORIZONS. Todos los derechos reservados.
+Esta demo no tiene activación de licencia ni servicio de actualizaciones. No pide correo, datos infantiles ni cuenta. El progreso permanece en el navegador.
+La interfaz, las instrucciones de uso y las cubiertas están disponibles en 32 idiomas. Los textos y las grabaciones de las lecciones siguen en árabe. Las traducciones opcionales de significado están disponibles en inglés, turco, francés y español.
+Instrucciones de uso: guides/es.html
+
+Deutsch
+© 2026 HORIZONS. Alle Rechte vorbehalten.
+Diese Demo hat weder eine Lizenzaktivierung noch einen Updatedienst. Sie fragt nicht nach E-Mail-Adresse, Kinderdaten oder einem Konto. Der Lernfortschritt bleibt im Browser.
+Oberfläche, Bedienungsanleitungen und Cover sind in 32 Sprachen verfügbar. Arabische Lektionstexte und Aufnahmen bleiben auf Arabisch. Optionale Bedeutungsübersetzungen gibt es auf Englisch, Türkisch, Französisch und Spanisch.
+Bedienungsanleitung: guides/de.html
+
+Italiano
+© 2026 HORIZONS. Tutti i diritti riservati.
+Questa demo non prevede l’attivazione della licenza né un servizio di aggiornamento. Non richiede email, dati dei bambini o account. I progressi restano nel browser.
+L’interfaccia, le istruzioni operative e le copertine sono disponibili in 32 lingue. I testi e le registrazioni delle lezioni restano in arabo. Le traduzioni facoltative dei significati sono disponibili in inglese, turco, francese e spagnolo.
+Istruzioni operative: guides/it.html
+
+Português
+© 2026 HORIZONS. Todos os direitos reservados.
+Esta demo não tem ativação de licença nem serviço de atualizações. Não pede email, dados de crianças ou uma conta. O progresso permanece no navegador.
+A interface, as instruções de utilização e as capas estão disponíveis em 32 idiomas. Os textos e as gravações das lições permanecem em árabe. As traduções opcionais dos significados estão disponíveis em inglês, turco, francês e espanhol.
+Instruções de utilização: guides/pt.html
+
+Nederlands
+© 2026 HORIZONS. Alle rechten voorbehouden.
+Deze demo heeft geen licentieactivering of updateservice. Er wordt niet om een e-mailadres, kindergegevens of account gevraagd. De leervoortgang blijft in de browser.
+De interface, gebruiksaanwijzingen en omslagen zijn beschikbaar in 32 talen. Arabische lesteksten en opnamen blijven in het Arabisch. Optionele betekenisvertalingen zijn beschikbaar in het Engels, Turks, Frans en Spaans.
+Gebruiksaanwijzing: guides/nl.html
+
+Русский
+© 2026 HORIZONS. Все права защищены.
+В демоверсии нет активации лицензии или службы обновлений. Она не запрашивает электронную почту, данные детей или аккаунт. Учебный прогресс остаётся в браузере.
+Интерфейс, инструкции по работе и обложки доступны на 32 языках. Тексты и записи уроков остаются на арабском. Дополнительные переводы значений доступны на английском, турецком, французском и испанском.
+Инструкция по работе: guides/ru.html
+
+Українська
+© 2026 HORIZONS. Усі права захищені.
+У демоверсії немає активації ліцензії або служби оновлень. Вона не запитує електронну пошту, дані дітей чи обліковий запис. Навчальний прогрес залишається в браузері.
+Інтерфейс, інструкції з використання та обкладинки доступні 32 мовами. Тексти й записи уроків залишаються арабською. Додаткові переклади значень доступні англійською, турецькою, французькою та іспанською.
+Інструкції з використання: guides/uk.html
+
+Polski
+© 2026 HORIZONS. Wszelkie prawa zastrzeżone.
+Demo nie ma aktywacji licencji ani usługi aktualizacji. Nie prosi o e-mail, dane dzieci ani konto. Postępy pozostają w przeglądarce.
+Interfejs, instrukcje obsługi i okładki są dostępne w 32 językach. Teksty lekcji i nagrania pozostają arabskie. Opcjonalne tłumaczenia znaczeń są po angielsku, turecku, francusku i hiszpańsku.
+Instrukcja obsługi: guides/pl.html
+
+Čeština
+© 2026 HORIZONS. Všechna práva vyhrazena.
+Ukázka nemá aktivaci licence ani aktualizační službu. Nežádá e-mail, údaje dětí ani účet. Pokrok zůstává v prohlížeči.
+Rozhraní, návody a obálky jsou dostupné ve 32 jazycích. Texty lekcí a nahrávky zůstávají arabské. Volitelné překlady významů jsou anglicky, turecky, francouzsky a španělsky.
+Návod k použití: guides/cs.html
+
+Română
+© 2026 HORIZONS. Toate drepturile rezervate.
+Acest demo nu are activare de licență sau serviciu de actualizare. Nu cere e-mail, date despre copii ori cont. Progresul rămâne în browser.
+Interfața, instrucțiunile și coperțile sunt disponibile în 32 de limbi. Textele lecțiilor și înregistrările rămân în arabă. Traducerile opționale ale sensurilor sunt în engleză, turcă, franceză și spaniolă.
+Instrucțiuni de utilizare: guides/ro.html
+
+Magyar
+© 2026 HORIZONS. Minden jog fenntartva.
+A bemutatóban nincs licencaktiválás vagy frissítési szolgáltatás. Nem kér e-mailt, gyermekadatokat vagy fiókot. A tanulási haladás a böngészőben marad.
+A felület, a használati útmutatók és a borítók 32 nyelven érhetők el. A leckék szövege és hangja arab marad. A választható jelentésfordítások angolul, törökül, franciául és spanyolul érhetők el.
+Használati útmutató: guides/hu.html
+
+Ελληνικά
+© 2026 HORIZONS. Με επιφύλαξη παντός δικαιώματος.
+Αυτή η δοκιμαστική έκδοση δεν διαθέτει ενεργοποίηση άδειας ή υπηρεσία ενημερώσεων. Δεν ζητά email, δεδομένα παιδιών ή λογαριασμό. Η μαθησιακή πρόοδος παραμένει στο πρόγραμμα περιήγησης.
+Το περιβάλλον, οι οδηγίες λειτουργίας και τα εξώφυλλα διατίθενται σε 32 γλώσσες. Το αραβικό κείμενο των μαθημάτων και οι ηχογραφήσεις παραμένουν στα αραβικά. Οι προαιρετικές μεταφράσεις σημασιών διατίθενται στα αγγλικά, τουρκικά, γαλλικά και ισπανικά.
+Οδηγίες λειτουργίας: guides/el.html
+
+Svenska
+© 2026 HORIZONS. Alla rättigheter förbehållna.
+Denna demo saknar licensaktivering och uppdateringstjänst. Den frågar inte efter mejladress, barnuppgifter eller konto. Framstegen stannar i webbläsaren.
+Gränssnitt, bruksanvisningar och omslag finns på 32 språk. Lektionstexter och inspelningar förblir arabiska. Valfria betydelseöversättningar finns på engelska, turkiska, franska och spanska.
+Bruksanvisning: guides/sv.html
+
+Dansk
+© 2026 HORIZONS. Alle rettigheder forbeholdes.
+Denne demo har ingen licensaktivering eller opdateringstjeneste. Den beder ikke om mailadresse, børneoplysninger eller konto. Fremskridt bliver i browseren.
+Brugerfladen, brugsvejledningerne og omslagene findes på 32 sprog. Lektionstekster og optagelser forbliver arabiske. Valgfrie betydningsoversættelser findes på engelsk, tyrkisk, fransk og spansk.
+Brugsvejledning: guides/da.html
+
+Norsk
+© 2026 HORIZONS. Alle rettigheter forbeholdes.
+Demoen har ingen lisensaktivering eller oppdateringstjeneste. Den ber ikke om e-post, barneopplysninger eller konto. Fremgangen blir i nettleseren.
+Grensesnitt, bruksanvisninger og omslag finnes på 32 språk. Leksjonstekster og opptak er fortsatt på arabisk. Valgfrie betydningsoversettelser finnes på engelsk, tyrkisk, fransk og spansk.
+Bruksanvisning: guides/no.html
+
+Suomi
+© 2026 HORIZONS. Kaikki oikeudet pidätetään.
+Demossa ei ole lisenssin aktivointia tai päivityspalvelua. Se ei pyydä sähköpostia, lapsen tietoja tai tiliä. Oppimisen edistyminen pysyy selaimessa.
+Käyttöliittymä, käyttöohjeet ja kannet ovat saatavilla 32 kielellä. Oppituntien tekstit ja äänet säilyvät arabiankielisinä. Valinnaiset merkityskäännökset ovat englanniksi, turkiksi, ranskaksi ja espanjaksi.
+Käyttöohjeet: guides/fi.html
+
+Български
+© 2026 HORIZONS. Всички права запазени.
+Тази демоверсия няма активиране на лиценз или услуга за актуализации. Тя не иска имейл, детски данни или профил. Учебният напредък остава в браузъра.
+Интерфейсът, инструкциите за работа и кориците са налични на 32 езика. Текстът на уроците и записите остават на арабски. Допълнителните преводи на значенията са налични на английски, турски, френски и испански.
+Инструкции за работа: guides/bg.html
+
+Српски
+© 2026 HORIZONS. Сва права задржана.
+Ова пробна верзија нема активацију лиценце нити услугу ажурирања. Не тражи е-пошту, податке о деци нити налог. Напредак у учењу остаје у прегледачу.
+Интерфејс, упутства за коришћење и корице доступни су на 32 језика. Текст лекција и снимци остају на арапском. Необавезни преводи значења доступни су на енглеском, турском, француском и шпанском.
+Упутства за коришћење: guides/sr.html
+
+Hrvatski
+© 2026 HORIZONS. Sva prava pridržana.
+Ova demo verzija nema aktivaciju licence ni uslugu ažuriranja. Ne traži e-adresu, podatke o djeci ni račun. Napredak ostaje u pregledniku.
+Sučelje, upute za upotrebu i naslovnice dostupni su na 32 jezika. Tekst i snimke arapskih lekcija ostaju na arapskom. Neobvezni prijevodi značenja dostupni su na engleskom, turskom, francuskom i španjolskom.
+Upute za upotrebu: guides/hr.html
+
+עברית
+© 2026 HORIZONS. כל הזכויות שמורות.
+בהדגמה אין הפעלת רישיון או שירות עדכונים. היא אינה מבקשת דוא״ל, נתוני ילדים או חשבון. ההתקדמות נשארת בדפדפן.
+הממשק, הוראות ההפעלה והכריכות זמינים ב־32 שפות. טקסטי השיעורים וההקלטות נשארים בערבית. תרגומי משמעות לבחירה זמינים באנגלית, בטורקית, בצרפתית ובספרדית.
+הוראות הפעלה: guides/he.html
+
+فارسی
+© 2026 HORIZONS. تمامی حقوق محفوظ است.
+این دمو فعال‌سازی مجوز یا سرویس به‌روزرسانی ندارد. ایمیل، دادهٔ کودک یا حساب نمی‌خواهد. پیشرفت در مرورگر می‌ماند.
+رابط، دستورالعمل اجرا و جلدها به ۳۲ زبان موجودند. متن و صدای درس‌های عربی، عربی می‌مانند. ترجمهٔ اختیاری معنی به انگلیسی، ترکی، فرانسوی و اسپانیایی موجود است.
+دستورالعمل اجرا: guides/fa.html
+
+اردو
+© 2026 HORIZONS۔ جملہ حقوق محفوظ ہیں۔
+اس ڈیمو میں لائسنس فعال کرنے یا تازہ کاری کی خدمت نہیں۔ یہ ای میل، بچے کا ڈیٹا یا اکاؤنٹ نہیں مانگتا۔ تعلیمی پیش رفت براؤزر میں رہتی ہے۔
+انٹرفیس، چلانے کی ہدایات اور سرورق 32 زبانوں میں دستیاب ہیں۔ عربی اسباق کا متن اور ریکارڈنگز عربی میں رہتے ہیں۔ اختیاری معنوی ترجمے انگریزی، ترکی، فرانسیسی اور ہسپانوی میں ہیں۔
+چلانے کی ہدایات: guides/ur.html
+
+हिन्दी
+© 2026 HORIZONS. सर्वाधिकार सुरक्षित।
+इस डेमो में लाइसेंस सक्रियण या अपडेट सेवा नहीं है। यह ईमेल, बच्चे का डेटा या खाता नहीं माँगता। सीखने की प्रगति ब्राउज़र में रहती है।
+इंटरफ़ेस, संचालन निर्देश और कवर 32 भाषाओं में उपलब्ध हैं। अरबी पाठों का लेखन और रिकॉर्डिंग अरबी में रहते हैं। वैकल्पिक अर्थ अनुवाद अंग्रेज़ी, तुर्की, फ़्रेंच और स्पेनी में हैं।
+संचालन निर्देश: guides/hi.html
+
+বাংলা
+© 2026 HORIZONS. সর্বস্বত্ব সংরক্ষিত।
+ডেমোতে লাইসেন্স সক্রিয়করণ বা আপডেট সেবা নেই। ইমেইল, শিশুর তথ্য বা অ্যাকাউন্ট চাওয়া হয় না। শেখার অগ্রগতি ব্রাউজারে থাকে।
+ইন্টারফেস, পরিচালনার নির্দেশনা ও প্রচ্ছদ ৩২টি ভাষায় আছে। আরবি পাঠের লেখা ও রেকর্ডিং আরবিতেই থাকে। অর্থের ঐচ্ছিক অনুবাদ ইংরেজি, তুর্কি, ফরাসি ও স্প্যানিশে আছে।
+পরিচালনার নির্দেশনা: guides/bn.html
+
+Bahasa Indonesia
+© 2026 HORIZONS. Hak cipta dilindungi.
+Demo ini tidak memiliki aktivasi lisensi atau layanan pembaruan. Tidak meminta email, data anak, atau akun. Kemajuan belajar tetap di peramban.
+Antarmuka, petunjuk pengoperasian, dan sampul tersedia dalam 32 bahasa. Teks serta rekaman pelajaran Arab tetap berbahasa Arab. Terjemahan arti opsional tersedia dalam bahasa Inggris, Turki, Prancis, dan Spanyol.
+Petunjuk pengoperasian: guides/id.html
+
+Bahasa Melayu
+© 2026 HORIZONS. Hak cipta terpelihara.
+Demo ini tiada pengaktifan lesen atau perkhidmatan kemas kini. Ia tidak meminta e-mel, data kanak-kanak atau akaun. Kemajuan pembelajaran kekal dalam pelayar.
+Antara muka, arahan pengendalian dan kulit buku tersedia dalam 32 bahasa. Teks dan rakaman pelajaran Arab kekal dalam bahasa Arab. Terjemahan makna pilihan tersedia dalam bahasa Inggeris, Turki, Perancis dan Sepanyol.
+Arahan pengendalian: guides/ms.html
+
+简体中文
+© 2026 HORIZONS。保留所有权利。
+此演示版没有许可证激活或更新服务。不要求提供邮箱、儿童数据或账户。学习进度保留在浏览器中。
+界面、使用说明和封面提供32种语言。课程的阿拉伯语文字与录音保持阿拉伯语。可选的含义翻译提供英语、土耳其语、法语和西班牙语。
+使用说明: guides/zh.html
+
+日本語
+© 2026 HORIZONS. 無断転載・複製を禁じます。
+このデモには、ライセンスの有効化や更新サービスはありません。メールアドレス、子どもの情報、アカウントは求めません。学習の進み具合はブラウザー内に保存されます。
+画面、操作説明書、表紙は32言語で用意されています。レッスンの文章と音声はアラビア語のままです。任意の意味訳は、英語・トルコ語・フランス語・スペイン語で利用できます。
+操作説明書: guides/ja.html

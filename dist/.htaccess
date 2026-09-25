@@ -1,9 +1,19 @@
+DirectoryIndex disabled
 DirectoryIndex index.html index.php
 Options -Indexes
-
-<IfModule mod_headers.c>
-Header set X-Content-Type-Options "nosniff"
-Header set Referrer-Policy "no-referrer"
-Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+ErrorDocument 404 /404.html
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType video/mp4 .mp4
+  AddType audio/mpeg .mp3
+  AddType image/webp .webp
 </IfModule>
-
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "no-referrer"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+  <FilesMatch "\.(html|css|js)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
