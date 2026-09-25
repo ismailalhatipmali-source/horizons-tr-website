@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HORIZONS TR</title>
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    :root { color-scheme: light dark; --blue:#153f8f; --cyan:#00a6d6; --ink:#102033; --soft:#f4f8fc; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(135deg, #f7fbff, #eaf4fb); color: var(--ink); min-height: 100vh; display: grid; place-items: center; }
+    main { width: min(920px, calc(100% - 32px)); background: white; border: 1px solid #dbe7f2; border-radius: 18px; padding: clamp(28px, 5vw, 56px); box-shadow: 0 20px 80px rgba(15, 52, 90, .12); }
+    .mark { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 32px; font-weight: 800; letter-spacing: .08em; color: var(--blue); }
+    .symbol { width: 42px; height: 42px; border-radius: 12px; background: linear-gradient(135deg, var(--blue), var(--cyan)); display: grid; place-items: center; color: white; font-weight: 900; }
+    h1 { margin: 0 0 18px; font-size: clamp(34px, 6vw, 64px); line-height: 1; color: var(--blue); }
+    p { margin: 0 0 14px; font-size: clamp(17px, 2vw, 21px); line-height: 1.6; max-width: 760px; }
+    .status { margin-top: 30px; padding: 16px 18px; border-radius: 12px; background: var(--soft); border: 1px solid #dce9f5; font-size: 15px; color: #31516d; }
+    .ar { direction: rtl; text-align: right; margin-top: 24px; padding-top: 24px; border-top: 1px solid #e4edf5; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #07111e; color: #e8f1fa; }
+      main { background: #0c1b2d; border-color: #1e344d; box-shadow: none; }
+      h1, .mark { color: #89c7ff; }
+      .status { background: #10243a; border-color: #27415f; color: #c7d8ea; }
+      .ar { border-top-color: #27415f; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark"><span class="symbol">H</span><span>HORIZONS TR</span></div>
+    <h1>Deployment Connected</h1>
+    <p>The GitHub repository is connected to cPanel. The full HORIZONS company website will be published here after the deployment path is confirmed.</p>
+    <p>This temporary page contains no tracking, no child data collection, and no private product files.</p>
+    <div class="ar">
+      <p><strong>تم ربط GitHub مع cPanel بنجاح.</strong></p>
+      <p>هذه صفحة اختبار مؤقتة فقط للتأكد من مسار النشر. سيتم نشر موقع HORIZONS الكامل بعد تأكيد السحب والنشر من لوحة cPanel.</p>
+    </div>
+    <div class="status">Build: cPanel Git test page · 2026-09-25 · Repository: horizons-tr-website</div>
+  </main>
+</body>
+</html>
