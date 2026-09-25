@@ -29,7 +29,9 @@ The committed deployment configuration runs:
 /bin/bash scripts/deploy-cpanel.sh /home2/horizonstr/public_html/
 ```
 
-The script copies only `dist/`, preserves unrelated hosting files and merges a marked Apache block. It does not delete unrelated files. Keep the repository outside `public_html`. No Node.js, Python, database or build command is needed on cPanel; Bash and rsync are used for deployment.
+The script copies only `dist/`, preserves unrelated hosting files and merges a marked Apache block. It does not delete unrelated files. Keep the repository outside `public_html`. No Node.js, Python, database or build command is needed on cPanel. Deployment uses Bash and standard file tools; rsync is optional, with an automatic copy fallback when it is unavailable.
+
+If the cPanel page keeps showing `queued`, check the newest `.cpanel/logs/vc_*_git_deploy.log` and `.cpanel/logs/user_task_runner.log` in the hosting account. A successful deployment ends with `HORIZONS release deployed to ...` and exit code 0.
 
 The site version is visible at `https://horizons-tr.com/release.json` after deployment.
 
