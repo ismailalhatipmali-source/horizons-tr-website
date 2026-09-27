@@ -1,4 +1,13 @@
 'use strict';
+// Load the shared localized Windows-pilot entry points without changing backend settings.
+(() => {
+  const product = /\/product\.html(?:[?#]|$)/.test(document.querySelector('link[rel="canonical"]')?.href || location.pathname);
+  if ((!document.body.classList.contains('home-page') && !product) || document.getElementById('horizons-pilot-ui')) return;
+  const script = document.createElement('script');
+  script.id = 'horizons-pilot-ui';
+  script.src = new URL('pilot.js?v=20260927-1', document.currentScript?.src || new URL('../home.js', location.href)).href;
+  document.head.appendChild(script);
+})();
 document.body.classList.add('js-enabled');
 const menu=document.querySelector('.menu'),links=document.querySelector('.links');
 function closeMenu(){if(!links||!menu)return;links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';}
