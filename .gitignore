@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+private/
+*PRIVATE*
+owner-vault.json
+release-assets/**/.part-*
+/dist/try/
+/dist/learn/
+/dist/downloads/
+/dist/updates/
+/dist/activation/

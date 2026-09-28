@@ -1,0 +1,202 @@
+"""Isolated deployment checks. Python is a developer-test tool, not a cPanel dependency."""
+from pathlib import Path
+import hashlib
+import io
+import json
+import os
+import shutil
+import stat
+import subprocess
+import tempfile
+import unittest
+import zipfile
+
+SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/deploy-cpanel.sh'
+VERSION = '1.4.0'
+UPDATE = 'Horizons-Arabic-Level-1-1.4.0-update.zip'
+SETUP = 'HORIZONS-Arabic-Setup-1.4.0.exe'
+
+def archive(entries):
+    data = io.BytesIO()
+    with zipfile.ZipFile(data, 'w', zipfile.ZIP_DEFLATED) as z:
+        for name, value, mode in entries:
+            info = zipfile.ZipInfo(name)
+            info.create_system = 3
+            info.external_attr = mode << 16
+            z.writestr(info, value)
+    return data.getvalue()
+
+def regular(name, value):
+    return name, value.encode() if isinstance(value, str) else value, stat.S_IFREG | 0o644
+
+def snapshot(folder):
+    result = {}
+    for p in sorted(folder.rglob('*')):
+        name = p.relative_to(folder).as_posix()
+        if p.is_symlink(): result[name] = ('link', os.readlink(p))
+        elif p.is_file(): result[name] = ('file', hashlib.sha256(p.read_bytes()).hexdigest(), stat.S_IMODE(p.stat().st_mode))
+    return result
+
+class DeploymentTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory(prefix='horizons-deploy-test-')
+        self.base = Path(self.temp.name)
+        self.repo = self.base / 'repo'
+        self.target = self.base / 'public_html'
+        (self.repo / 'scripts').mkdir(parents=True)
+        shutil.copy2(SCRIPT, self.repo / 'scripts/deploy-cpanel.sh')
+        self.assets = self.repo / 'release-assets' / VERSION
+        self.payloads = {
+            'learn': ('learn.zip', archive([regular('learn/index.html', 'new learning'), regular('learn/.htaccess', 'Options -Indexes'), regular('learn/content/1.4.0/book.hzn', 'encrypted fixture')])),
+            'demo': ('demo.zip', archive([regular('try/index.html', 'new five-letter demo'), regular('try/course.json', '{"letters":["ب","ظ","ض","ي","ذ"]}')])),
+            'setup': (SETUP, b'MZ-test-setup-fixture'),
+            'update': ('update.zip', archive([regular('downloads/' + UPDATE, b'PK-test-update'), regular('updates/arabic-level-1.json', '{"signed":"new"}')])),
+        }
+        self.write_payloads()
+        self.write(self.repo / 'dist/index.html', 'new home')
+        self.write(self.repo / 'dist/release.json', '{"version":"1.4.0"}')
+        self.write(self.repo / 'dist/.htaccess', 'Options -Indexes\n')
+        self.write(self.repo / 'dist/ar/index.html', 'new Arabic home')
+        for reserved in ['activation/config.php', 'try/stale-plaintext.txt', 'updates/arabic-level-1.json', 'downloads/unapproved.exe', '.user.ini', 'php.ini', '.well-known/host-proof']:
+            self.write(self.repo / 'dist' / reserved, 'must never be copied')
+        for name, value in {
+            'index.html': 'old home', 'ar/index.html': 'old Arabic',
+            'activation/config.php': 'SMTP_PRIVATE_SENTINEL',
+            'activation/data/state.sqlite': 'ACTIVATION_DATABASE_SENTINEL',
+            '.user.ini': 'PHP_USER_SENTINEL', 'php.ini': 'PHP_SENTINEL',
+            '.well-known/host-proof': 'HOST_PROOF',
+            'downloads/unrelated.zip': 'OTHER_PRODUCT',
+            'downloads/' + SETUP: 'OLD_SETUP', 'downloads/' + UPDATE: 'OLD_UPDATE',
+            'updates/arabic-level-1.json': 'OLD_FEED',
+            'try/index.html': 'old demo', 'try/stale-full-chapter.txt': 'stale paid chapter',
+            'learn/index.html': 'old learn', 'learn/old-bootstrap.js': 'old bootstrap',
+            'learn/content/1.3.0/retained.hzn': 'old encrypted content',
+            '.htaccess': 'HOST_RULE_BEFORE\n# BEGIN HORIZONS MANAGED\nOLD_MANAGED\n# END HORIZONS MANAGED\nHOST_RULE_AFTER\n',
+        }.items(): self.write(self.target / name, value)
+
+    def tearDown(self): self.temp.cleanup()
+
+    @staticmethod
+    def write(path, value):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(value)
+        path.chmod(0o644)
+
+    def write_payloads(self):
+        if self.assets.exists(): shutil.rmtree(self.assets)
+        self.assets.mkdir(parents=True)
+        lines = ['HORIZONS_RELEASE_V1\t' + VERSION]
+        for kind, (name, value) in self.payloads.items():
+            directory = self.assets / kind
+            directory.mkdir()
+            chunks = [value[i:i+97] for i in range(0, len(value), 97)]
+            for i, part in enumerate(chunks): (directory / ('part-%04d' % i)).write_bytes(part)
+            lines.append('\t'.join([kind, name, str(len(value)), hashlib.sha256(value).hexdigest(), str(len(chunks))]))
+        (self.assets / 'manifest.tsv').write_text('\n'.join(lines) + '\n')
+
+    def run_deploy(self, env=None):
+        return subprocess.run(['bash', str(self.repo / 'scripts/deploy-cpanel.sh'), str(self.target)], text=True, capture_output=True, env=env, timeout=45)
+
+    def assert_rejected_without_public_changes(self):
+        before = snapshot(self.target)
+        result = self.run_deploy()
+        self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(snapshot(self.target), before)
+        self.assertFalse((self.base / '.horizons-deploy-public_html/deploy.lock').exists())
+        return result
+
+    def test_complete_deploy_preserves_host_data_and_repeat_is_stable(self):
+        original = snapshot(self.target)
+        result = self.run_deploy()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual((self.target / 'index.html').read_text(), 'new home')
+        self.assertEqual((self.target / 'learn/index.html').read_text(), 'new learning')
+        self.assertEqual((self.target / 'try/index.html').read_text(), 'new five-letter demo')
+        self.assertFalse((self.target / 'try/stale-full-chapter.txt').exists())
+        self.assertFalse((self.target / 'try/stale-plaintext.txt').exists())
+        self.assertFalse((self.target / 'downloads/unapproved.exe').exists())
+        self.assertFalse((self.target / 'learn/old-bootstrap.js').exists())
+        after = snapshot(self.target)
+        for name in ['activation/config.php', 'activation/data/state.sqlite', '.user.ini', 'php.ini', '.well-known/host-proof', 'downloads/unrelated.zip', 'learn/content/1.3.0/retained.hzn']:
+            self.assertEqual(after[name], original[name], name)
+        access = (self.target / '.htaccess').read_text()
+        self.assertIn('HOST_RULE_BEFORE\n', access)
+        self.assertIn('HOST_RULE_AFTER\n', access)
+        self.assertNotIn('OLD_MANAGED', access)
+        self.assertEqual(access.count('# BEGIN HORIZONS MANAGED'), 1)
+        backups = list((self.base / '.horizons-deploy-public_html').glob('backup-*'))
+        self.assertTrue(any((b / 'try/stale-full-chapter.txt').is_file() for b in backups))
+        second = self.run_deploy()
+        self.assertEqual(second.returncode, 0, second.stdout + second.stderr)
+        self.assertEqual(snapshot(self.target), after)
+
+    def test_corrupt_last_artifact_fails_before_public_writes(self):
+        p = self.assets / 'update/part-0000'
+        value = bytearray(p.read_bytes()); value[-1] ^= 1; p.write_bytes(value)
+        result = self.assert_rejected_without_public_changes()
+        self.assertIn('SHA-256 mismatch: update', result.stderr)
+
+    def test_missing_chunk_fails_before_public_writes(self):
+        (self.assets / 'demo/part-0000').unlink()
+        self.assert_rejected_without_public_changes()
+
+    def test_zip_traversal_fails_even_with_correct_manifest_hash(self):
+        self.payloads['learn'] = ('learn.zip', archive([regular('learn/index.html', 'x'), regular('learn/../../escape', 'bad')]))
+        self.write_payloads()
+        self.assert_rejected_without_public_changes()
+        self.assertFalse((self.base / 'escape').exists())
+
+    def test_zip_symlink_is_rejected_before_extraction(self):
+        self.payloads['demo'] = ('demo.zip', archive([regular('try/index.html', 'x'), ('try/link', b'../../activation', stat.S_IFLNK | 0o777)]))
+        self.write_payloads()
+        self.assert_rejected_without_public_changes()
+
+    def test_unexpected_update_path_is_rejected(self):
+        self.payloads['update'] = ('update.zip', archive([regular('downloads/' + UPDATE, 'x'), regular('updates/arabic-level-1.json', 'x'), regular('activation/config.php', 'bad')]))
+        self.write_payloads()
+        self.assert_rejected_without_public_changes()
+
+    def test_destination_symlink_is_rejected_before_public_writes(self):
+        outside = self.base / 'outside'
+        self.write(outside / 'safe.txt', 'do not touch')
+        shutil.rmtree(self.target / 'learn')
+        (self.target / 'learn').symlink_to(outside, target_is_directory=True)
+        self.assert_rejected_without_public_changes()
+        self.assertEqual((outside / 'safe.txt').read_text(), 'do not touch')
+
+    def test_malformed_host_block_does_not_publish_anything(self):
+        self.write(self.target / '.htaccess', 'HOST\n# BEGIN HORIZONS MANAGED\nUNCLOSED\n')
+        self.assert_rejected_without_public_changes()
+
+    def test_publication_error_restores_old_demo_downloads_and_website(self):
+        before = snapshot(self.target)
+        commands = self.base / 'test-bin'; commands.mkdir()
+        wrapper = commands / 'mv'
+        wrapper.write_text('#!/bin/bash\nif [[ "${@: -1}" == "$HZN_TEST_FAIL_DEST" && ! -e "$HZN_TEST_FAIL_ONCE" ]]; then : > "$HZN_TEST_FAIL_ONCE"; exit 41; fi\nexec /usr/bin/mv "$@"\n')
+        wrapper.chmod(0o755)
+        env = {**os.environ, 'PATH': str(commands) + os.pathsep + os.environ['PATH'], 'HZN_TEST_FAIL_DEST': str(self.target / 'index.html'), 'HZN_TEST_FAIL_ONCE': str(self.base / 'failure-fired')}
+        result = self.run_deploy(env)
+        self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertTrue((self.base / 'failure-fired').exists())
+        self.assertEqual(snapshot(self.target), before)
+
+    def test_failure_before_backup_move_keeps_original_file(self):
+        before = snapshot(self.target)
+        commands = self.base / 'test-bin'; commands.mkdir()
+        wrapper = commands / 'mv'
+        wrapper.write_text('#!/bin/bash\nif [[ "${@: -2:1}" == "$HZN_TEST_FAIL_SOURCE" && ! -e "$HZN_TEST_FAIL_ONCE" ]]; then : > "$HZN_TEST_FAIL_ONCE"; exit 41; fi\nexec /usr/bin/mv "$@"\n')
+        wrapper.chmod(0o755)
+        env = {**os.environ, 'PATH': str(commands) + os.pathsep + os.environ['PATH'], 'HZN_TEST_FAIL_SOURCE': str(self.target / 'downloads' / SETUP), 'HZN_TEST_FAIL_ONCE': str(self.base / 'failure-fired')}
+        result = self.run_deploy(env)
+        self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertTrue((self.base / 'failure-fired').exists())
+        self.assertEqual(snapshot(self.target), before)
+
+    def test_new_document_root_is_publicly_traversable(self):
+        shutil.rmtree(self.target)
+        result = self.run_deploy()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        for folder in [self.target, self.target / 'learn', self.target / 'try', self.target / 'downloads', self.target / 'updates']:
+            self.assertEqual(stat.S_IMODE(folder.stat().st_mode), 0o755, str(folder))
+
+if __name__ == '__main__': unittest.main(verbosity=2)

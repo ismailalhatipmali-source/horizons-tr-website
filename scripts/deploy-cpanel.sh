@@ -1,66 +1,265 @@
 #!/bin/bash
+# Run by cPanel Deploy HEAD. Check all payloads in private staging first.
 set -euo pipefail
+export LC_ALL=C
+umask 077
+fail() { printf 'HORIZONS deployment stopped: %s\n' "$*" >&2; exit 1; }
+for command in cat sha256sum unzip awk find sort wc stat cp mv mkdir mktemp chmod rmdir rm date head cmp; do
+  command -v "$command" >/dev/null 2>&1 || fail "Required command is missing: $command"
+done
 REPO_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)"
 SOURCE_DIR="$REPO_DIR/dist"
+VERSION="${2:-1.4.0}"
+[[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || fail 'Invalid release version'
+ASSETS_DIR="$REPO_DIR/release-assets/$VERSION"
+MANIFEST="$ASSETS_DIR/manifest.tsv"
 TARGET_INPUT="${1:?Provide the cPanel document root}"
-[[ "$TARGET_INPUT" = /* && "$TARGET_INPUT" != / ]] || { echo 'Invalid document root' >&2; exit 1; }
-[[ -f "$SOURCE_DIR/index.html" && -f "$SOURCE_DIR/release.json" ]] || { echo 'Incomplete release' >&2; exit 1; }
-mkdir -p -- "$TARGET_INPUT"
-TARGET_DIR="$(cd -- "$TARGET_INPUT" && pwd -P)"
-case "$TARGET_DIR/" in "$REPO_DIR/"*) echo 'Document root must be outside the repository' >&2; exit 1;; esac
-case "$REPO_DIR/" in "$TARGET_DIR/"*) echo 'Repository must be outside the document root' >&2; exit 1;; esac
-# Only website files are copied. Hosting-specific files are retained.
-printf 'Copying HORIZONS website files to %s\n' "$TARGET_DIR"
-if command -v rsync >/dev/null 2>&1; then
-  rsync -rlt --chmod=D755,F644 \
-    --exclude='/.htaccess' --exclude='/.well-known/' --exclude='/cgi-bin/' \
-    --exclude='/.user.ini' --exclude='/php.ini' \
-    "$SOURCE_DIR/" "$TARGET_DIR/"
-else
-  # Shared hosting may not provide rsync. Copy only source-listed paths,
-  # including dotfiles, without deleting or chmod-ing unrelated hosting files.
-  printf 'rsync unavailable; using the standard file-copy fallback.\n'
-  shopt -s dotglob nullglob
-  copy_entry() {
-    local source="$1" destination="$2" child
-    if [[ -L "$source" || -L "$destination" ]]; then
-      printf 'Cannot copy a symbolic-link path: %s\n' "$destination" >&2
-      return 1
+while [[ "$TARGET_INPUT" != / && "$TARGET_INPUT" == */ ]]; do TARGET_INPUT="${TARGET_INPUT%/}"; done
+[[ "$TARGET_INPUT" == /* && "$TARGET_INPUT" != / && ! -L "$TARGET_INPUT" ]] || fail 'Invalid or symbolic-link document root'
+TARGET_PARENT="$(cd -- "$(dirname -- "$TARGET_INPUT")" && pwd -P)"
+TARGET_NAME="${TARGET_INPUT##*/}"
+[[ "$TARGET_NAME" != . && "$TARGET_NAME" != .. ]] || fail 'Invalid document-root name'
+TARGET_DIR="$TARGET_PARENT/$TARGET_NAME"
+[[ ! -e "$TARGET_DIR" || -d "$TARGET_DIR" ]] || fail 'Document root is not a directory'
+case "$TARGET_DIR/" in "$REPO_DIR/"*) fail 'Document root must be outside the repository';; esac
+case "$REPO_DIR/" in "$TARGET_DIR/"*) fail 'Repository must be outside the document root';; esac
+[[ -d "$SOURCE_DIR" && ! -L "$SOURCE_DIR" && -f "$SOURCE_DIR/index.html" && -f "$SOURCE_DIR/release.json" && -f "$SOURCE_DIR/.htaccess" ]] || fail 'Incomplete website release'
+[[ -f "$MANIFEST" && ! -L "$MANIFEST" && ! -L "$ASSETS_DIR" && ! -L "$REPO_DIR/release-assets" ]] || fail 'Missing or unsafe release manifest'
+[[ -z "$(find "$SOURCE_DIR" \( -type l -o \( ! -type d ! -type f \) \) -print -quit)" ]] || fail 'Website source contains a link or special file'
+
+# Private staging and retained backups are siblings of public_html, never public.
+STATE_DIR="$TARGET_PARENT/.horizons-deploy-$TARGET_NAME"
+[[ ! -L "$STATE_DIR" ]] || fail 'Private deployment directory must not be a symbolic link'
+mkdir -p -- "$STATE_DIR"
+chmod 700 "$STATE_DIR"
+LOCK_DIR="$STATE_DIR/deploy.lock"
+mkdir -- "$LOCK_DIR" 2>/dev/null || fail "Another deployment is running, or a stale lock needs review: $LOCK_DIR"
+STAGE=''; BACKUP=''; COMMITTED=0
+declare -a CHANGED_PATHS=() OLD_PATHS=() CHANGED_TYPES=()
+cleanup() {
+  local status=$? i relative destination
+  set +e
+  if [[ "$COMMITTED" == 0 && ${#CHANGED_PATHS[@]} -gt 0 ]]; then
+    printf 'Restoring backed-up publication paths after an error.\n' >&2
+    for ((i=${#CHANGED_PATHS[@]}-1; i>=0; i--)); do
+      relative="${CHANGED_PATHS[$i]}"; destination="$TARGET_DIR/$relative"
+      # The journal precedes the first move. If that move failed, the original
+      # is still public and must not be removed merely because a row exists.
+      if [[ "${OLD_PATHS[$i]}" == 1 && ! -e "$BACKUP/$relative" && ! -L "$BACKUP/$relative" ]]; then continue; fi
+      if [[ "${CHANGED_TYPES[$i]}" == directory ]]; then
+        case "$relative" in learn|try) rm -rf -- "$destination";; *) continue;; esac
+      else rm -f -- "$destination"; fi
+      if [[ "${OLD_PATHS[$i]}" == 1 ]]; then
+        mv -- "$BACKUP/$relative" "$destination" || printf 'Restore this backup manually: %s\n' "$BACKUP/$relative" >&2
+      fi
+    done
+  fi
+  if [[ -n "$STAGE" && "$STAGE" == "$STATE_DIR"/stage.* && -d "$STAGE" && ! -L "$STAGE" ]]; then rm -rf -- "$STAGE"; fi
+  rmdir -- "$LOCK_DIR" 2>/dev/null
+  exit "$status"
+}
+trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+STAGE="$(mktemp -d "$STATE_DIR/stage.XXXXXXXX")"
+mkdir -- "$STAGE/assembled" "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted"
+shopt -s nullglob dotglob
+
+declare -A FILENAMES=() SIZES=() HASHES=() PARTS=()
+line_number=0
+while IFS= read -r line || [[ -n "$line" ]]; do
+  line_number=$((line_number+1))
+  if [[ "$line_number" == 1 ]]; then
+    [[ "$line" == $'HORIZONS_RELEASE_V1\t'"$VERSION" ]] || fail 'Manifest header/version mismatch'
+    continue
+  fi
+  [[ "$(awk -F '\t' '{print NF}' <<< "$line")" == 5 ]] || fail "Manifest row $line_number must contain exactly five tab-separated fields"
+  IFS=$'\t' read -r kind filename bytes sha parts <<< "$line"
+  case "$kind" in learn|demo|setup|update) ;; *) fail "Unknown artifact kind: $kind";; esac
+  [[ -z "${FILENAMES[$kind]+present}" ]] || fail "Repeated artifact kind: $kind"
+  [[ "$filename" =~ ^[A-Za-z0-9][A-Za-z0-9._-]+$ ]] || fail 'Unsafe artifact filename'
+  case "$kind:$filename" in setup:*.exe|learn:*.zip|demo:*.zip|update:*.zip) ;; *) fail 'Artifact extension does not match its kind';; esac
+  [[ "$bytes" =~ ^[1-9][0-9]{0,9}$ && "$bytes" -le 2147483648 ]] || fail 'Invalid artifact size'
+  [[ "$sha" =~ ^[0-9a-f]{64}$ ]] || fail 'Invalid SHA-256 digest'
+  [[ "$parts" =~ ^[1-9][0-9]{0,3}$ ]] || fail 'Invalid chunk count'
+  FILENAMES[$kind]="$filename"; SIZES[$kind]="$bytes"; HASHES[$kind]="$sha"; PARTS[$kind]="$parts"
+done < "$MANIFEST"
+[[ "$line_number" == 5 && ${#FILENAMES[@]} == 4 ]] || fail 'Manifest must declare exactly learn, demo, setup and update'
+for kind in learn demo setup update; do
+  [[ -n "${FILENAMES[$kind]+present}" ]] || fail "Missing artifact: $kind"
+  directory="$ASSETS_DIR/$kind"
+  [[ -d "$directory" && ! -L "$directory" ]] || fail "Missing/unsafe chunk directory: $kind"
+  entries=("$directory"/*)
+  [[ ${#entries[@]} -eq ${PARTS[$kind]} ]] || fail "Unexpected or missing chunk files: $kind"
+  output="$STAGE/assembled/$kind"; : > "$output"
+  for ((i=0; i<${PARTS[$kind]}; i++)); do
+    printf -v name 'part-%04d' "$i"
+    chunk="$directory/$name"
+    [[ -f "$chunk" && ! -L "$chunk" ]] || fail "Missing/unsafe chunk: $kind/$name"
+    size="$(stat -c '%s' -- "$chunk")"
+    [[ "$size" -ge 1 && "$size" -le 16777216 ]] || fail "Chunk exceeds the 16 MiB limit: $kind/$name"
+    cat -- "$chunk" >> "$output"
+  done
+  [[ "$(stat -c '%s' -- "$output")" == "${SIZES[$kind]}" ]] || fail "Assembled size mismatch: $kind"
+  digest="$(sha256sum -- "$output")"; digest="${digest%% *}"
+  [[ "$digest" == "${HASHES[$kind]}" ]] || fail "Assembled SHA-256 mismatch: $kind"
+  printf 'Verified %s: %s bytes.\n' "$kind" "${SIZES[$kind]}"
+done
+[[ "$(head -c 2 -- "$STAGE/assembled/setup")" == MZ ]] || fail 'Windows setup is not an EXE'
+
+validate_archive() {
+  local kind="$1" archive="$2" names="$STAGE/$1.entries" metadata="$STAGE/$1.metadata" name normalized entry_type size count=0 total=0 parent
+  local -A seen=() types=()
+  unzip -Z -1 "$archive" > "$names" || fail "Cannot list $kind ZIP"
+  unzip -Z -l "$archive" > "$metadata" || fail "Cannot inspect $kind ZIP"
+  while IFS= read -r name || [[ -n "$name" ]]; do
+    [[ -n "$name" && "$name" =~ ^[A-Za-z0-9_./-]+$ && "$name" != /* && "$name" != *//* ]] || fail "Unsafe ZIP path in $kind"
+    [[ "/$name/" != */../* && "/$name/" != */./* ]] || fail "ZIP path traversal in $kind"
+    case "$kind:$name" in
+      learn:learn/|learn:learn/*|demo:try/|demo:try/*) ;;
+      update:downloads/|update:updates/|update:downloads/Horizons-Arabic-Level-1-"$VERSION"-update.zip|update:updates/arabic-level-1.json) ;;
+      *) fail "Unexpected ZIP root/path in $kind: $name";;
+    esac
+    normalized="${name%/}"
+    [[ -z "${seen[$normalized]+present}" ]] || fail "Duplicate ZIP path in $kind: $name"
+    seen[$normalized]=1
+    if [[ "$name" == */ ]]; then types[$normalized]=directory; else types[$normalized]=file; fi
+    count=$((count+1)); [[ "$count" -le 10000 ]] || fail "Too many ZIP entries in $kind"
+  done < "$names"
+  [[ "$count" -gt 0 ]] || fail "Empty ZIP: $kind"
+  # Release ZIPs use Unix file/directory attributes. Reject symlinks, devices,
+  # ambiguous metadata and file/directory conflicts before extraction.
+  awk 'length($1)==10 && $2 ~ /^[0-9]+\.[0-9]+$/ {print $1 "\t" $4 "\t" $NF}' "$metadata" > "$STAGE/$kind.attributes"
+  [[ "$(wc -l < "$STAGE/$kind.attributes")" -eq "$count" ]] || fail "Unsupported ZIP entry metadata: $kind"
+  while IFS=$'\t' read -r entry_type size name; do
+    [[ "$entry_type" =~ ^[-d][rwxstST-]{9}$ && "$size" =~ ^[0-9]+$ ]] || fail "ZIP links/special files are forbidden: $kind"
+    [[ ${#size} -le 10 && "$size" -le 2147483648 ]] || fail "ZIP entry is too large: $kind"
+    total=$((total+size)); [[ "$total" -le 2147483648 ]] || fail "Expanded ZIP exceeds 2 GiB: $kind"
+    normalized="${name%/}"
+    [[ -n "${seen[$normalized]+present}" ]] || fail "ZIP metadata/path mismatch: $kind"
+    if [[ "$entry_type" == d* ]]; then [[ "${types[$normalized]}" == directory ]] || fail 'ZIP directory metadata mismatch'; fi
+    if [[ "$entry_type" == -* ]]; then [[ "${types[$normalized]}" == file ]] || fail 'ZIP file metadata mismatch'; fi
+    parent="$normalized"
+    while [[ "$parent" == */* ]]; do
+      parent="${parent%/*}"
+      [[ "${types[$parent]:-directory}" != file ]] || fail 'ZIP file is used as a parent directory'
+    done
+  done < "$STAGE/$kind.attributes"
+  unzip -tqq "$archive" </dev/null || fail "ZIP CRC/integrity check failed: $kind"
+}
+for kind in learn demo update; do validate_archive "$kind" "$STAGE/assembled/$kind"; done
+for kind in learn demo update; do
+  unzip -q "$STAGE/assembled/$kind" -d "$STAGE/$kind-extracted" </dev/null || fail "Cannot unpack $kind"
+  [[ -z "$(find "$STAGE/$kind-extracted" \( -type l -o \( ! -type d ! -type f \) \) -print -quit)" ]] || fail "Unsafe extracted file: $kind"
+  rm -f -- "$STAGE/assembled/$kind"
+done
+[[ -s "$STAGE/learn-extracted/learn/index.html" && -s "$STAGE/demo-extracted/try/index.html" ]] || fail 'An application index is missing'
+UPDATE_NAME="Horizons-Arabic-Level-1-$VERSION-update.zip"
+[[ -s "$STAGE/update-extracted/downloads/$UPDATE_NAME" && -s "$STAGE/update-extracted/updates/arabic-level-1.json" ]] || fail 'Incomplete native update package'
+
+# Ignore the website's old app copies and all host/runtime configuration.
+for entry in "$SOURCE_DIR"/*; do
+  name="${entry##*/}"
+  case "$name" in .htaccess|.well-known|cgi-bin|.user.ini|php.ini|activation|learn|try|downloads|updates) continue;; esac
+  case "$name" in .git|.env*|private|backend|owner-bin|release-assets|node_modules) fail "Private source directory found in dist: $name";; esac
+  cp -R -- "$entry" "$STAGE/site/$name"
+done
+safe_destination() {
+  local relative="$1" expected="$2" current="$TARGET_DIR" segment index=0
+  local -a segments
+  IFS=/ read -r -a segments <<< "$relative"
+  for segment in "${segments[@]}"; do
+    current="$current/$segment"; index=$((index+1))
+    [[ ! -L "$current" ]] || fail "Publication destination is a symbolic link: $relative"
+    if [[ "$index" -lt ${#segments[@]} || "$expected" == directory ]]; then
+      [[ ! -e "$current" || -d "$current" ]] || fail "Publication directory conflicts with a file: $relative"
+    else [[ ! -e "$current" || -f "$current" ]] || fail "Publication file conflicts with a directory: $relative"; fi
+  done
+}
+preflight_tree() {
+  local source="$1" relative="$2" child path
+  for child in "$source"/*; do
+    path="${relative:+$relative/}${child##*/}"
+    if [[ -d "$child" ]]; then safe_destination "$path" directory; preflight_tree "$child" "$path"; else safe_destination "$path" file; fi
+  done
+}
+preflight_tree "$STAGE/site" ''
+for name in learn try; do
+  safe_destination "$name" directory
+  if [[ -d "$TARGET_DIR/$name" ]]; then
+    [[ -z "$(find "$TARGET_DIR/$name" \( -type l -o \( ! -type d ! -type f \) \) -print -quit)" ]] || fail "Existing $name contains links/special files; review before replacing"
+  fi
+done
+safe_destination "downloads/${FILENAMES[setup]}" file
+safe_destination "downloads/$UPDATE_NAME" file
+safe_destination updates/arabic-level-1.json file
+safe_destination .htaccess file
+
+# Preserve prior immutable content versions for existing browser/offline clients.
+if [[ -d "$TARGET_DIR/learn/content" ]]; then
+  mkdir -p -- "$STAGE/learn-extracted/learn/content"
+  for old_version in "$TARGET_DIR/learn/content"/*; do
+    name="${old_version##*/}"
+    if [[ -d "$old_version" && "$name" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && ! -e "$STAGE/learn-extracted/learn/content/$name" ]]; then
+      cp -R -- "$old_version" "$STAGE/learn-extracted/learn/content/$name"
     fi
-    if [[ -d "$source" ]]; then
-      mkdir -p -- "$destination"
-      chmod 755 "$destination"
-      for child in "$source"/*; do
-        copy_entry "$child" "$destination/${child##*/}"
-      done
-    elif [[ -f "$source" ]]; then
-      [[ ! -d "$destination" ]] || { printf 'Expected a file at %s\n' "$destination" >&2; return 1; }
-      cp -- "$source" "$destination"
-      chmod 644 "$destination"
-    else
-      printf 'Unsupported release path: %s\n' "$source" >&2
-      return 1
-    fi
-  }
-  for entry in "$SOURCE_DIR"/*; do
-    name="${entry##*/}"
-    case "$name" in .htaccess|.well-known|cgi-bin|.user.ini|php.ini) continue;; esac
-    copy_entry "$entry" "$TARGET_DIR/$name"
   done
 fi
-printf 'Website files copied; updating Apache settings.\n'
-# Update only our marked Apache block, retaining the host's existing rules.
-TEMP_HTACCESS="$(mktemp "$TARGET_DIR/.horizons-apache.XXXXXX")"
-trap 'rm -f -- "$TEMP_HTACCESS"' EXIT
+HTACCESS="$STAGE/root.htaccess"
+: > "$HTACCESS"
 if [[ -f "$TARGET_DIR/.htaccess" ]]; then
-  awk '/^# BEGIN HORIZONS MANAGED$/{managed=1;next} /^# END HORIZONS MANAGED$/{managed=0;next} !managed{print}' "$TARGET_DIR/.htaccess" > "$TEMP_HTACCESS"
+  awk '/^# BEGIN HORIZONS MANAGED$/{if(inside || begins++)exit 1;inside=1;next} /^# END HORIZONS MANAGED$/{if(!inside)exit 1;inside=0;next} END{if(inside)exit 1}' "$TARGET_DIR/.htaccess" || fail 'Malformed existing HORIZONS Apache block; no files were published'
+  awk '/^# BEGIN HORIZONS MANAGED$/{inside=1;next} /^# END HORIZONS MANAGED$/{inside=0;next} !inside{print}' "$TARGET_DIR/.htaccess" > "$HTACCESS"
 fi
 {
-  printf '\n# BEGIN HORIZONS MANAGED\n'
-  cat "$SOURCE_DIR/.htaccess"
-  printf '# END HORIZONS MANAGED\n'
-} >> "$TEMP_HTACCESS"
-chmod 644 "$TEMP_HTACCESS"
-mv -- "$TEMP_HTACCESS" "$TARGET_DIR/.htaccess"
-trap - EXIT
-printf 'HORIZONS release deployed to %s\n' "$TARGET_DIR"
+  printf '# BEGIN HORIZONS MANAGED\n'
+  cat -- "$SOURCE_DIR/.htaccess"
+  printf '\n# END HORIZONS MANAGED\n'
+} >> "$HTACCESS"
+find "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" -type d -exec chmod 755 {} +
+find "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" -type f -exec chmod 644 {} +
+chmod 644 "$STAGE/assembled/setup" "$HTACCESS"
+
+# Public writes start only after all validation and staging succeeds.
+printf 'All four artifacts and publication paths verified; publishing release %s.\n' "$VERSION"
+BACKUP="$STATE_DIR/backup-$(date -u +%Y%m%dT%H%M%SZ)-$$"
+mkdir -- "$BACKUP"
+if [[ ! -d "$TARGET_DIR" ]]; then mkdir -- "$TARGET_DIR"; chmod 755 "$TARGET_DIR"; fi
+publish_file() {
+  local source="$1" relative="$2" destination="$TARGET_DIR/$2" old=0
+  if [[ -f "$destination" ]] && cmp -s -- "$source" "$destination"; then return; fi
+  mkdir -p -- "$(dirname -- "$destination")" "$(dirname -- "$BACKUP/$relative")"
+  if [[ -f "$destination" ]]; then old=1; fi
+  CHANGED_PATHS+=("$relative") OLD_PATHS+=("$old") CHANGED_TYPES+=(file)
+  if [[ "$old" == 1 ]]; then mv -- "$destination" "$BACKUP/$relative"; fi
+  mv -- "$source" "$destination"
+}
+publish_directory() {
+  local source="$1" relative="$2" old=0
+  if [[ -d "$TARGET_DIR/$relative" ]]; then old=1; fi
+  CHANGED_PATHS+=("$relative") OLD_PATHS+=("$old") CHANGED_TYPES+=(directory)
+  if [[ "$old" == 1 ]]; then mv -- "$TARGET_DIR/$relative" "$BACKUP/$relative"; fi
+  mv -- "$source" "$TARGET_DIR/$relative"
+}
+publish_tree() {
+  local source="$1" relative="$2" child path
+  for child in "$source"/*; do
+    path="${relative:+$relative/}${child##*/}"
+    if [[ -d "$child" ]]; then
+      if [[ ! -d "$TARGET_DIR/$path" ]]; then mkdir -- "$TARGET_DIR/$path"; chmod 755 "$TARGET_DIR/$path"; fi
+      publish_tree "$child" "$path"
+    else publish_file "$child" "$path"; fi
+  done
+}
+# Download targets precede the signed feed; unrelated downloads remain intact.
+publish_file "$STAGE/assembled/setup" "downloads/${FILENAMES[setup]}"
+publish_file "$STAGE/update-extracted/downloads/$UPDATE_NAME" "downloads/$UPDATE_NAME"
+chmod 755 "$TARGET_DIR/downloads"
+publish_directory "$STAGE/learn-extracted/learn" learn
+publish_directory "$STAGE/demo-extracted/try" try
+publish_tree "$STAGE/site" ''
+publish_file "$HTACCESS" .htaccess
+publish_file "$STAGE/update-extracted/updates/arabic-level-1.json" updates/arabic-level-1.json
+chmod 755 "$TARGET_DIR/updates"
+COMMITTED=1
+printf 'HORIZONS %s deployed to %s\nBackups: %s\n' "$VERSION" "$TARGET_DIR" "$BACKUP"

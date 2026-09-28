@@ -1,0 +1,31 @@
+{
+  "result": "passed",
+  "version": "1.4.0",
+  "production_deployed": false,
+  "script_sha256": "e152d19a178433e2a620bd18bf8d36fcf7853c964d1e6bf4c65ee15f4d566cbf",
+  "total_chunks": 179,
+  "artifact_bytes": 1480728802,
+  "published_archive_files_hash_verified": {
+    "learn": 2782,
+    "demo": 595,
+    "update": 2
+  },
+  "setup_sha256_verified": true,
+  "sentinels_preserved": [
+    "activation/config.php",
+    "activation/data/registry.sqlite",
+    "downloads/unrelated-product.zip",
+    ".user.ini",
+    "php.ini",
+    ".well-known/host-proof",
+    "learn/content/1.3.0/retained.hzn"
+  ],
+  "old_demo_removed": true,
+  "old_demo_backup_outside_public_root": true,
+  "old_content_version_retained": true,
+  "host_apache_rules_preserved": true,
+  "website_index_verified": true,
+  "stage_and_lock_cleaned": true,
+  "isolated_tests_passed": 11,
+  "scope": "Isolated Linux deployment simulation; no production or Windows runtime deployment."
+}
