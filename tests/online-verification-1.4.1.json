@@ -1,0 +1,106 @@
+{
+  "version": "1.4.1",
+  "date": "2026-09-28",
+  "result": "passed",
+  "production_deployed": false,
+  "suites": {
+    "real_browser_php_integration": {
+      "browser": "Chromium headless with Android viewport; no physical Android device",
+      "results": [
+        {
+          "name": "two separate devices activate and open the real protected workbook",
+          "passed": true
+        },
+        {
+          "name": "audio advances and ends after repeated renders; replay reuses media cache",
+          "passed": true,
+          "audioRequests": 1,
+          "pinnedFiles": 0,
+          "requestedAssets": 20
+        },
+        {
+          "name": "UI remains responsive and cancels playback during delayed encrypted audio",
+          "passed": true
+        },
+        {
+          "name": "real UI consent and PHP authentication synchronize the actual learner across devices",
+          "passed": true
+        },
+        {
+          "name": "large valid progress snapshot fits the 256 KiB wire contract",
+          "passed": true,
+          "progressBytes": 206259,
+          "heardEntries": 2101
+        },
+        {
+          "name": "offline local edits remain queued and reach the second device after reconnect",
+          "passed": true
+        },
+        {
+          "name": "another account cannot read the learner through local state or the real PHP API",
+          "passed": true
+        },
+        {
+          "name": "legacy schema 2 activation discovers the real account and authenticates to PHP",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "media_worker_decompression": {
+      "passed": 22
+    },
+    "progress_client_real_indexeddb_mock_backend": {
+      "passed": 16
+    },
+    "php_api_functional_groups": {
+      "passed": 13
+    },
+    "deployment_failure_and_preservation": {
+      "passed": 17
+    },
+    "inner_workbook_dom_simulated_audio": {
+      "scope": "Real inner workbook DOM with controlled Audio and learner API; not Android audio output or server integration",
+      "checks": [
+        "Full protected browser app boots",
+        "Account UI starts with local-only profiles",
+        "Audio play called in original user gesture",
+        "Loading button is visible before playback",
+        "Playing style requires actual playing event",
+        "Navigation releases obsolete media request",
+        "Cancelled audio cannot mark heard",
+        "Hidden thumbnail strip has no src",
+        "Switch controls avoid duplicate full-size picture downloads",
+        "Thumbnails are fetched only after opening",
+        "Failed audio offers retry",
+        "Old error handler cannot cancel new audio",
+        "Only completed audio updates progress",
+        "No obsolete local-only cloud claim in browser settings",
+        "Enable does not adopt existing profiles",
+        "Adoption uploads only explicitly selected profile",
+        "Successful local edits trigger debounced account sync",
+        "Reconnect fetches remote profile revision",
+        "New remote learner appears without changing the active learner",
+        "Conflicts expose keep-both without overwrite",
+        "Keep both uses explicit conflict resolution",
+        "Account text language is explicit ar",
+        "Account text language is explicit tr",
+        "Account text language is explicit en",
+        "Account text language is explicit ja",
+        "No unexpected runtime errors"
+      ],
+      "passed": 26
+    }
+  },
+  "content_data": {
+    "plaintext_unchanged": true,
+    "previous_transfer_bytes": 4453793,
+    "new_transfer_bytes": 869790
+  },
+  "limits": {
+    "physical_android": false,
+    "production_https": false,
+    "production_cpanel": false,
+    "windows_runtime": false
+  }
+}

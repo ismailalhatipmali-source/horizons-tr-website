@@ -3,6 +3,7 @@
 // Every write reads, checks the revision and commits within one IndexedDB
 // transaction, including writes from other tabs or service-worker generations.
 import { PRODUCT } from './web-config.js';
+import {currentSyncAccount,scopeLearnerState,visibleProfile,bindNewProfile,markProfileDirty,syncStatus,changeSyncSettings,syncLearnerProgress,validateSyncData} from './progress-sync-client.js';
 
 const DATABASE = 'horizons-web-learners-v1';
 const LIMIT = 32 * 1024 * 1024;
@@ -60,6 +61,7 @@ function validateStore(value) {
         !validObject(c.settings,64*1024) || !validObject(c.progress,4*1024*1024)) throw failure('learner_store_unreadable');
   }
   if (!Object.entries(value.migrations).every(([key,done]) => /^[a-f0-9]{64}$/.test(key) && done === true)) throw failure('learner_store_unreadable');
+  validateSyncData(value);
   return value;
 }
 function newID() { return [...crypto.getRandomValues(new Uint8Array(16))].map(n=>n.toString(16).padStart(2,'0')).join(''); }
@@ -134,9 +136,14 @@ async function migrationKey(profile) {
 
 // routeSuffix is '', '/export', '/create', '/save', '/delete', '/import' or
 // '/migrate'. The service worker dispatches these before its paid-content gate.
+export async function syncLearners() {
+  return syncLearnerProgress(transact,await currentSyncAccount());
+}
+
 export async function handleLearnerRequest(request, routeSuffix = '') {
   const route = routeSuffix === '/' ? '' : routeSuffix;
-  const read = route === '' || route === '/export';
+  const read = route === '' || route === '/export' || route === '/sync/status';
+  const syncAction=route.startsWith('/sync/') ? route.slice(6) : null;
   const origin = new URL(request.url).origin;
   // A same-origin fetch can reach the service worker before network-only
   // Origin headers are added. Reject a conflicting Origin when supplied;
@@ -144,11 +151,13 @@ export async function handleLearnerRequest(request, routeSuffix = '') {
   const callerOrigin = request.headers.get('Origin');
   if (origin !== globalThis.location.origin || request.headers.get('Sec-Fetch-Site') === 'cross-site' ||
       (request.method === 'POST' && callerOrigin && callerOrigin !== origin)) return reply(403,{ok:false,error:'forbidden'});
-  if (!read && !['/create','/save','/delete','/import','/migrate'].includes(route)) return reply(404,{ok:false,error:'not_found'});
+  if (!read && !['/create','/save','/delete','/import','/migrate','/sync/enable','/sync/disable','/sync/adopt','/sync/resolve','/sync/run'].includes(route)) return reply(404,{ok:false,error:'not_found'});
   if ((read && !['GET','HEAD'].includes(request.method)) || (!read && request.method !== 'POST')) return reply(405,{ok:false,error:'method'},{Allow:read?'GET, HEAD':'POST'});
   try {
+    const account=await currentSyncAccount();
     if (read) {
-      const result = await transact(false,state=>({status:200,body:state}),route === '/export');
+      const result = await transact(false,state=>({status:200,body:route==='/sync/status'?{ok:true,sync:syncStatus(state,account)}:scopeLearnerState(state,account)}),route === '/export');
+      if(result.body.migration_backups)result.body.migration_backups=result.body.migration_backups.filter(p=>!p.account_id||p.account_id===account);
       return reply(200,request.method === 'HEAD'?null:result.body,route === '/export'?{'Content-Disposition':'attachment; filename="HORIZONS-learners-backup.json"'}:{});
     }
     if (!/^application\/json(?:\s*;|$)/i.test(request.headers.get('Content-Type') || '')) return reply(400,{ok:false,error:'invalid_profile'});
@@ -157,6 +166,15 @@ export async function handleLearnerRequest(request, routeSuffix = '') {
     if (encoder.encode(text).byteLength > LIMIT) return reply(413,{ok:false,error:'too_large'});
     let input;
     try { input = JSON.parse(text); } catch { return reply(400,{ok:false,error:'invalid_profile'}); }
+    if(syncAction) {
+      if(!object(input))return reply(400,{ok:false,error:'invalid_sync_request'});
+      if(syncAction==='run') {
+        if(Object.keys(input).length)return reply(400,{ok:false,error:'invalid_sync_request'});
+        return reply(200,{ok:true,sync:await syncLearnerProgress(transact,account)});
+      }
+      const result=await transact(true,state=>changeSyncSettings(state,account,syncAction,input));
+      return reply(result.status,result.body);
+    }
     let migrationCopies;
     if (route === '/import' || route === '/migrate') {
       if (!object(input) || Object.keys(input).some(k=>k!=='profiles') || !Array.isArray(input.profiles) || !input.profiles.length || input.profiles.length > 100) return reply(400,{ok:false,error:'invalid_import'});
@@ -170,7 +188,7 @@ export async function handleLearnerRequest(request, routeSuffix = '') {
       if (route === '/create') {
         if (state.profiles.length >= MAX_PROFILES) return error(507,'profile_limit');
         const profile = newProfile({...input,source_id:''});
-        state.profiles.push(profile);
+        state.profiles.push(profile);bindNewProfile(state,profile,account);
         return {status:200,body:{ok:true,profile},changed:true};
       }
       if (route === '/import' || route === '/migrate') {
@@ -186,12 +204,12 @@ export async function handleLearnerRequest(request, routeSuffix = '') {
             state.migrations[copy.key] = true;
           }
           const profile = newProfile({...incoming,source_id:incoming.id || ''});
-          state.profiles.push(profile); added.push(profile);
+          state.profiles.push(profile);if(route!=='/migrate')bindNewProfile(state,profile,account); added.push(profile);
         }
         return {status:200,body:{ok:true,profiles:added},changed:added.length>0};
       }
       const profile = state.profiles.find(p=>p.id===input.id);
-      if (!profile) return error(404,'profile_missing');
+      if (!profile || !visibleProfile(state,profile,account)) return error(404,'profile_missing');
       if (profile.deleted_at) return error(410,'profile_deleted');
       if (profile.revision !== (input.revision || 0)) {
         if (route === '/delete') return error(409,'revision_conflict');
@@ -209,6 +227,7 @@ export async function handleLearnerRequest(request, routeSuffix = '') {
       } else {
         profile.nickname = (input.nickname || '').trim(); profile.settings = input.settings; profile.progress = input.progress;
       }
+      markProfileDirty(state,profile);
       return {status:200,body:{ok:true,profile},changed:true};
     });
     return reply(result.status,result.body);

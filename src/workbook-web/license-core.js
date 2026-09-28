@@ -1,4 +1,5 @@
 import {PRODUCT, ISSUER_PUBLIC_KEY, ACTIVATION_URL} from './web-config.js';
+import {decodeContent} from './asset-decoder.js';
 
 // Shared by the portal and service worker. The server remains the sole issuer
 // of entitlements and device slots. Local learner records use a separate DB.
@@ -159,22 +160,110 @@ async function saveClock(record, effective) {
     };
   });
 }
-export async function getAccess() {
+async function savedAccess() {
   const [identity,record]=await Promise.all([getIdentity(),read('activation')]);
   if(!identity || !record) {accessCache=null;throw failure('ACTIVATION_REQUIRED')}
   if(!object(record.envelope) || record.device_id!==identity.device_id)throw failure('LICENSE_INVALID');
   const marker=record.envelope.payload+'|'+record.envelope.signature+'|'+identity.device_id;
   if(!accessCache || accessCache.marker!==marker)accessCache={...await validateAndUnlock(record.envelope,identity),marker};
-  const effective=clockTime(accessCache,record);
-  await saveClock(record,effective);
-  return {key:accessCache.key,license:accessCache.license};
+  return {identity,record,access:accessCache,marker};
 }
-export async function decryptAsset(path, encrypted) {
+export async function getAccess() {
+  const {record,access}=await savedAccess();
+  const effective=clockTime(access,record);
+  await saveClock(record,effective);
+  return {key:access.key,license:access.license};
+}
+// A verified account reference remains available for local export after expiry.
+// It is never an authorization credential: the PHP service verifies entitlement
+// and device possession independently on every authenticated session.
+export async function getSyncAccount() {
+  try {
+    const {access,record,marker}=await savedAccess();
+    const known=access.license.account_id || record.progress_account;
+    if(known)return known;
+    if(access.license.schema!==2 || globalThis.navigator?.onLine===false)return null;
+    if(legacyDiscovery?.marker===marker && legacyDiscovery.retryAfter>Date.now())return null;
+    try {return (await progressCredentials(null)).account_id;}
+    catch {legacyDiscovery={marker,retryAfter:Date.now()+60000};return null;}
+  } catch { return null; }
+}
+
+let progressSession=null, progressAuthentication=null, legacyDiscovery=null;
+const PROGRESS_URL='/learning-api/index.php';
+async function progressPost(action,input={},token='') {
+  let response;
+  try {
+    response=await fetch(PROGRESS_URL,{method:'POST',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},
+      body:JSON.stringify({...input,action}),credentials:'omit',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(20000)});
+  } catch { throw failure('SYNC_UNAVAILABLE'); }
+  let data;
+  try { data=await response.json(); } catch { throw failure('SYNC_UNAVAILABLE'); }
+  if(!response.ok || !object(data) || data.ok!==true) {
+    const code=typeof data?.error==='string'&&/^[A-Z_]{3,64}$/.test(data.error)?data.error:'SYNC_UNAVAILABLE';
+    throw Object.assign(failure(code),{status:response.status,...(object(data?.profile)?{profile:data.profile}:{}),...(typeof data?.account_id==='string'?{account_id:data.account_id}:{})});
+  }
+  return data;
+}
+async function progressCredentials(expectedAccount) {
+  await getAccess();
+  const current=await savedAccess();
+  const account=current.access.license.account_id || current.record.progress_account;
+  if(expectedAccount!==null && (!account || account!==expectedAccount))throw failure('ACCOUNT_CHANGED');
+  if(expectedAccount===null && current.access.license.schema!==2)throw failure('ACCOUNT_CHANGED');
+  if(progressSession?.marker===current.marker && progressSession.account_id===account && progressSession.expires>Date.now()+15000)return progressSession;
+  if(progressAuthentication?.marker===current.marker)return progressAuthentication.promise;
+  const pending={marker:current.marker};
+  pending.promise=(async()=>{
+    const challenge=await progressPost('auth-challenge',{license:current.record.envelope,public_key:current.identity.public_key});
+    const serverAccount=challenge.account_id;
+    if(!ID_RE.test(serverAccount||'') || (account && serverAccount!==account) || !/^[a-f0-9]{32}$/.test(challenge.challenge_id||''))throw failure('SYNC_INVALID_RESPONSE');
+    let plain;
+    try {plain=new Uint8Array(await crypto.subtle.decrypt({name:'RSA-OAEP',label:ENCODER.encode(PRODUCT+'/progress-auth')},current.identity.privateKey,from64(challenge.encrypted_nonce)))}
+    catch {throw failure('SYNC_AUTH_FAILED')}
+    if(plain.byteLength!==32){plain.fill(0);throw failure('SYNC_AUTH_FAILED')}
+    let verified;
+    try {verified=await progressPost('auth-verify',{challenge_id:challenge.challenge_id,nonce:to64(plain)});}
+    finally {plain.fill(0)}
+    const latest=await savedAccess();
+    if(latest.marker!==current.marker || (latest.access.license.account_id && latest.access.license.account_id!==serverAccount))throw failure('ACCOUNT_CHANGED');
+    const expires=Date.parse(verified.expires_at);
+    if(verified.account_id!==serverAccount || !/^[a-f0-9]{64}$/.test(verified.token||'') || !Number.isFinite(expires) || expires<=Date.now() || expires>Date.now()+20*60000)throw failure('SYNC_INVALID_RESPONSE');
+    if(!latest.access.license.account_id)await change((store,done)=>{
+      const req=store.get('activation');req.onsuccess=()=>{
+        const record=req.result;
+        if(record?.envelope?.signature!==current.record.envelope.signature || record.device_id!==current.identity.device_id)return done();
+        record.progress_account=serverAccount;store.put(record,'activation');done();
+      };
+    });
+    if((await savedAccess()).marker!==current.marker)throw failure('ACCOUNT_CHANGED');
+    progressSession={marker:current.marker,account_id:serverAccount,token:verified.token,expires};
+    return progressSession;
+  })();
+  progressAuthentication=pending;
+  try {return await pending.promise;} finally {if(progressAuthentication===pending)progressAuthentication=null;}
+}
+export async function requestProgress(account,action,payload={}) {
+  if(!['list','get','put','delete'].includes(action) || !ID_RE.test(account||''))throw failure('INVALID_SYNC_REQUEST');
+  for(let attempt=0;attempt<2;attempt++){
+    const session=await progressCredentials(account);
+    try {
+      const result=await progressPost(action,payload,session.token);
+      if(result.account_id!==account || await getSyncAccount()!==account)throw failure('ACCOUNT_CHANGED');
+      return result;
+    } catch(error) {
+      if(attempt===0 && error.status===401){progressSession=null;continue;}
+      throw error;
+    }
+  }
+  throw failure('SYNC_AUTH_FAILED');
+}
+export async function decryptAsset(path, encrypted, metadata = {}) {
   if(typeof path!=='string' || !path || path.startsWith('/') || path.split('/').some(x=>!x || x==='.' || x==='..') || /[\\\x00-\x1f?#]/.test(path))throw failure('CONTENT_INVALID');
   const bytes=encrypted instanceof Uint8Array?encrypted:new Uint8Array(encrypted);
   if(bytes.byteLength<28)throw failure('CONTENT_INVALID');
   const {key}=await getAccess();
-  try {return await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.subarray(0,12),additionalData:ENCODER.encode(PRODUCT+'/'+path),tagLength:128},key,bytes.subarray(12))}
+  try {const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.subarray(0,12),additionalData:ENCODER.encode(PRODUCT+'/'+path),tagLength:128},key,bytes.subarray(12));return await decodeContent(plain,metadata)}
   catch {throw failure('CONTENT_INVALID')}
 }
 async function post(route,input) {
@@ -208,6 +297,6 @@ export async function getState() {
   catch(error){return {ok:true,activated:false,error:error.message,device_id:identity?.device_id??null,license:null}}
 }
 export async function signOut() {
-  await change((store,done)=>{store.delete('activation');done()});accessCache=null;
+  await change((store,done)=>{store.delete('activation');done()});accessCache=null;progressSession=null;progressAuthentication=null;
 }
 export const lock=signOut;

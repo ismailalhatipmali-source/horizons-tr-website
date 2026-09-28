@@ -11,8 +11,12 @@ REPO_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)"
 SOURCE_DIR="$REPO_DIR/dist"
 VERSION="${2:-1.4.0}"
 [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || fail 'Invalid release version'
+WEB_VERSION="${3:-1.4.1}"
+[[ "$WEB_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || fail 'Invalid web release version'
 ASSETS_DIR="$REPO_DIR/release-assets/$VERSION"
 MANIFEST="$ASSETS_DIR/manifest.tsv"
+OVERLAY_DIR="$REPO_DIR/release-assets/$WEB_VERSION"
+OVERLAY_MANIFEST="$OVERLAY_DIR/manifest.tsv"
 TARGET_INPUT="${1:?Provide the cPanel document root}"
 while [[ "$TARGET_INPUT" != / && "$TARGET_INPUT" == */ ]]; do TARGET_INPUT="${TARGET_INPUT%/}"; done
 [[ "$TARGET_INPUT" == /* && "$TARGET_INPUT" != / && ! -L "$TARGET_INPUT" ]] || fail 'Invalid or symbolic-link document root'
@@ -25,6 +29,7 @@ case "$TARGET_DIR/" in "$REPO_DIR/"*) fail 'Document root must be outside the re
 case "$REPO_DIR/" in "$TARGET_DIR/"*) fail 'Repository must be outside the document root';; esac
 [[ -d "$SOURCE_DIR" && ! -L "$SOURCE_DIR" && -f "$SOURCE_DIR/index.html" && -f "$SOURCE_DIR/release.json" && -f "$SOURCE_DIR/.htaccess" ]] || fail 'Incomplete website release'
 [[ -f "$MANIFEST" && ! -L "$MANIFEST" && ! -L "$ASSETS_DIR" && ! -L "$REPO_DIR/release-assets" ]] || fail 'Missing or unsafe release manifest'
+[[ -f "$OVERLAY_MANIFEST" && ! -L "$OVERLAY_MANIFEST" && ! -L "$OVERLAY_DIR" ]] || fail 'Missing or unsafe web overlay manifest'
 [[ -z "$(find "$SOURCE_DIR" \( -type l -o \( ! -type d ! -type f \) \) -print -quit)" ]] || fail 'Website source contains a link or special file'
 
 # Private staging and retained backups are siblings of public_html, never public.
@@ -47,7 +52,7 @@ cleanup() {
       # is still public and must not be removed merely because a row exists.
       if [[ "${OLD_PATHS[$i]}" == 1 && ! -e "$BACKUP/$relative" && ! -L "$BACKUP/$relative" ]]; then continue; fi
       if [[ "${CHANGED_TYPES[$i]}" == directory ]]; then
-        case "$relative" in learn|try) rm -rf -- "$destination";; *) continue;; esac
+        case "$relative" in learn|try|learning-api) rm -rf -- "$destination";; *) continue;; esac
       else rm -f -- "$destination"; fi
       if [[ "${OLD_PATHS[$i]}" == 1 ]]; then
         mv -- "$BACKUP/$relative" "$destination" || printf 'Restore this backup manually: %s\n' "$BACKUP/$relative" >&2
@@ -62,7 +67,7 @@ trap cleanup EXIT
 trap 'exit 130' INT
 trap 'exit 143' TERM
 STAGE="$(mktemp -d "$STATE_DIR/stage.XXXXXXXX")"
-mkdir -- "$STAGE/assembled" "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted"
+mkdir -- "$STAGE/assembled" "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" "$STAGE/api-extracted"
 shopt -s nullglob dotglob
 
 declare -A FILENAMES=() SIZES=() HASHES=() PARTS=()
@@ -157,10 +162,57 @@ done
 UPDATE_NAME="Horizons-Arabic-Level-1-$VERSION-update.zip"
 [[ -s "$STAGE/update-extracted/downloads/$UPDATE_NAME" && -s "$STAGE/update-extracted/updates/arabic-level-1.json" ]] || fail 'Incomplete native update package'
 
+# Apply the small, independently verified web update to the reconstructed base
+# before publication. The Windows payload and signed native feed stay unchanged.
+# The API directory contains code only; its database is outside public_html.
+declare -A OVERLAY_PATHS=()
+overlay_lines=0
+while IFS= read -r line || [[ -n "$line" ]]; do
+  overlay_lines=$((overlay_lines+1))
+  if [[ "$overlay_lines" == 1 ]]; then
+    [[ "$line" == $'HORIZONS_WEB_OVERLAY_V1\t'"$WEB_VERSION"$'\t'"$VERSION" ]] || fail 'Web overlay header/version mismatch'
+    continue
+  fi
+  [[ "$(awk -F '\t' '{print NF}' <<< "$line")" == 4 ]] || fail 'Web overlay row must contain four tab-separated fields'
+  IFS=$'\t' read -r sha bytes source relative <<< "$line"
+  [[ "$sha" =~ ^[0-9a-f]{64}$ && "$bytes" =~ ^[1-9][0-9]{0,7}$ && "$bytes" -le 16777216 ]] || fail 'Invalid web overlay digest/size'
+  for path in "$source" "$relative"; do
+    [[ "$path" =~ ^[A-Za-z0-9_./-]+$ && "$path" != /* && "$path" != */ && "$path" != *//* && "/$path/" != */../* && "/$path/" != */./* ]] || fail 'Unsafe web overlay path'
+  done
+  case "$source" in
+    src/workbook-web/*) [[ "$relative" == "learn/${source#src/workbook-web/}" ]] || fail 'Workbook overlay mapping mismatch';;
+    src/learning-api/*) [[ "$relative" == "learning-api/${source#src/learning-api/}" ]] || fail 'API overlay mapping mismatch';;
+    "release-assets/$WEB_VERSION/files/learn/"*) [[ "$relative" == "${source#release-assets/$WEB_VERSION/files/}" ]] || fail 'Content overlay mapping mismatch';;
+    *) fail 'Unapproved web overlay source';;
+  esac
+  case "/$relative/" in */.env*|*/.git/*|*/data/*|*/private/*|*/owner-vault.json/*|*/config.php/*) fail 'Runtime/private file cannot be deployed through the web overlay';; esac
+  [[ -z "${OVERLAY_PATHS[$relative]+present}" ]] || fail 'Duplicate web overlay destination'
+  OVERLAY_PATHS[$relative]=1
+  current="$REPO_DIR"
+  IFS=/ read -r -a segments <<< "$source"
+  for segment in "${segments[@]}"; do
+    current="$current/$segment"
+    [[ ! -L "$current" ]] || fail 'Web overlay source contains a symbolic link'
+  done
+  [[ -f "$current" && "$(stat -c '%s' -- "$current")" == "$bytes" ]] || fail "Web overlay file missing/size mismatch: $source"
+  digest="$(sha256sum -- "$current")"; digest="${digest%% *}"
+  [[ "$digest" == "$sha" ]] || fail "Web overlay SHA-256 mismatch: $source"
+  case "$relative" in
+    learn/*) destination="$STAGE/learn-extracted/$relative";;
+    learning-api/*) destination="$STAGE/api-extracted/$relative";;
+    *) fail 'Unapproved web overlay destination';;
+  esac
+  mkdir -p -- "$(dirname -- "$destination")"
+  cp -- "$current" "$destination"
+  [[ "$overlay_lines" -le 10001 ]] || fail 'Too many web overlay files'
+done < "$OVERLAY_MANIFEST"
+[[ -n "${OVERLAY_PATHS[learn/index.html]+present}" && -n "${OVERLAY_PATHS[learning-api/index.php]+present}" ]] || fail 'Web overlay lacks the workbook/API entry points'
+printf 'Verified web overlay %s: %s files.\n' "$WEB_VERSION" "$((overlay_lines-1))"
+
 # Ignore the website's old app copies and all host/runtime configuration.
 for entry in "$SOURCE_DIR"/*; do
   name="${entry##*/}"
-  case "$name" in .htaccess|.well-known|cgi-bin|.user.ini|php.ini|activation|learn|try|downloads|updates) continue;; esac
+  case "$name" in .htaccess|.well-known|cgi-bin|.user.ini|php.ini|activation|learn|learning-api|try|downloads|updates) continue;; esac
   case "$name" in .git|.env*|private|backend|owner-bin|release-assets|node_modules) fail "Private source directory found in dist: $name";; esac
   cp -R -- "$entry" "$STAGE/site/$name"
 done
@@ -184,7 +236,7 @@ preflight_tree() {
   done
 }
 preflight_tree "$STAGE/site" ''
-for name in learn try; do
+for name in learn try learning-api; do
   safe_destination "$name" directory
   if [[ -d "$TARGET_DIR/$name" ]]; then
     [[ -z "$(find "$TARGET_DIR/$name" \( -type l -o \( ! -type d ! -type f \) \) -print -quit)" ]] || fail "Existing $name contains links/special files; review before replacing"
@@ -216,12 +268,12 @@ fi
   cat -- "$SOURCE_DIR/.htaccess"
   printf '\n# END HORIZONS MANAGED\n'
 } >> "$HTACCESS"
-find "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" -type d -exec chmod 755 {} +
-find "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" -type f -exec chmod 644 {} +
+find "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" "$STAGE/api-extracted" -type d -exec chmod 755 {} +
+find "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" "$STAGE/api-extracted" -type f -exec chmod 644 {} +
 chmod 644 "$STAGE/assembled/setup" "$HTACCESS"
 
 # Public writes start only after all validation and staging succeeds.
-printf 'All four artifacts and publication paths verified; publishing release %s.\n' "$VERSION"
+printf 'Base artifacts, web overlay and publication paths verified; publishing web %s (Windows %s).\n' "$WEB_VERSION" "$VERSION"
 BACKUP="$STATE_DIR/backup-$(date -u +%Y%m%dT%H%M%SZ)-$$"
 mkdir -- "$BACKUP"
 if [[ ! -d "$TARGET_DIR" ]]; then mkdir -- "$TARGET_DIR"; chmod 755 "$TARGET_DIR"; fi
@@ -255,6 +307,7 @@ publish_tree() {
 publish_file "$STAGE/assembled/setup" "downloads/${FILENAMES[setup]}"
 publish_file "$STAGE/update-extracted/downloads/$UPDATE_NAME" "downloads/$UPDATE_NAME"
 chmod 755 "$TARGET_DIR/downloads"
+publish_directory "$STAGE/api-extracted/learning-api" learning-api
 publish_directory "$STAGE/learn-extracted/learn" learn
 publish_directory "$STAGE/demo-extracted/try" try
 publish_tree "$STAGE/site" ''
@@ -262,4 +315,4 @@ publish_file "$HTACCESS" .htaccess
 publish_file "$STAGE/update-extracted/updates/arabic-level-1.json" updates/arabic-level-1.json
 chmod 755 "$TARGET_DIR/updates"
 COMMITTED=1
-printf 'HORIZONS %s deployed to %s\nBackups: %s\n' "$VERSION" "$TARGET_DIR" "$BACKUP"
+printf 'HORIZONS web %s (Windows %s) deployed to %s\nBackups: %s\n' "$WEB_VERSION" "$VERSION" "$TARGET_DIR" "$BACKUP"

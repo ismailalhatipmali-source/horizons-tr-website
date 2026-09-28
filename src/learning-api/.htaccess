@@ -1,0 +1,10 @@
+Options -Indexes
+DirectoryIndex index.php
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP:Authorization} ^(.+)$
+  RewriteRule ^ - [E=HTTP_AUTHORIZATION:%1]
+</IfModule>
+<FilesMatch "^(Core|bootstrap)\.php$">
+  Require all denied
+</FilesMatch>

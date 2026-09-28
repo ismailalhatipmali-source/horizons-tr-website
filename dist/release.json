@@ -1,14 +1,18 @@
 {
-  "release": "2026-09-28-workbook-1.4.0",
+  "release": "2026-09-28-workbook-web-1.4.1",
   "preview_source_commit": "92f6c74b6e05d6627fa23af951f5ae763eea47b6",
   "domain": "https://horizons-tr.com",
   "languages": 32,
-  "product_version": "1.4.0",
+  "product_version": "1.4.1",
+  "web_version": "1.4.1",
+  "windows_version": "1.4.0",
   "public_checkout": false,
   "demo": "/try/",
   "deployment_target": "/home2/horizonstr/public_html/",
   "workbook": "/learn/",
   "activation_service": "existing",
+  "learning_progress_service": "/learning-api/",
+  "learning_progress_storage": "local_and_account_sync",
   "full_workbook_requires_activation": true,
   "installation_optional": true,
   "windows_installer": "/downloads/HORIZONS-Arabic-Setup-1.4.0.exe",
@@ -22,9 +26,12 @@
   ],
   "deployment_method": "cpanel_git_pull_then_deploy",
   "release_assets_manifest": "release-assets/1.4.0/manifest.tsv",
+  "web_overlay_manifest": "release-assets/1.4.1/manifest.tsv",
   "verification_limits": {
     "real_windows_execution_tested": false,
     "production_https_pwa_tested": false,
+    "real_android_online_audio_tested": false,
+    "production_two_phone_progress_tested": false,
     "authenticode_signed": false
   }
 }

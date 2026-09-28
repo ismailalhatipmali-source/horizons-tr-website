@@ -53,6 +53,14 @@ class DeploymentTests(unittest.TestCase):
             'update': ('update.zip', archive([regular('downloads/' + UPDATE, b'PK-test-update'), regular('updates/arabic-level-1.json', '{"signed":"new"}')])),
         }
         self.write_payloads()
+        self.overlay = {
+            'src/workbook-web/index.html': ('learn/index.html', 'online workbook 1.4.1'),
+            'src/workbook-web/shell.js': ('learn/shell.js', 'online shell'),
+            'src/learning-api/index.php': ('learning-api/index.php', '<?php /* API fixture */'),
+            'src/learning-api/.htaccess': ('learning-api/.htaccess', 'Options -Indexes'),
+            'release-assets/1.4.1/files/learn/content/1.4.1/app.hzn': ('learn/content/1.4.1/app.hzn', 'encrypted web patch'),
+        }
+        self.write_overlay()
         self.write(self.repo / 'dist/index.html', 'new home')
         self.write(self.repo / 'dist/release.json', '{"version":"1.4.0"}')
         self.write(self.repo / 'dist/.htaccess', 'Options -Indexes\n')
@@ -63,6 +71,8 @@ class DeploymentTests(unittest.TestCase):
             'index.html': 'old home', 'ar/index.html': 'old Arabic',
             'activation/config.php': 'SMTP_PRIVATE_SENTINEL',
             'activation/data/state.sqlite': 'ACTIVATION_DATABASE_SENTINEL',
+            'learning-api/index.php': '<?php /* old API */',
+            'learning-api/obsolete.php': '<?php /* old API route */',
             '.user.ini': 'PHP_USER_SENTINEL', 'php.ini': 'PHP_SENTINEL',
             '.well-known/host-proof': 'HOST_PROOF',
             'downloads/unrelated.zip': 'OTHER_PRODUCT',
@@ -73,6 +83,7 @@ class DeploymentTests(unittest.TestCase):
             'learn/content/1.3.0/retained.hzn': 'old encrypted content',
             '.htaccess': 'HOST_RULE_BEFORE\n# BEGIN HORIZONS MANAGED\nOLD_MANAGED\n# END HORIZONS MANAGED\nHOST_RULE_AFTER\n',
         }.items(): self.write(self.target / name, value)
+        self.write(self.base / 'horizons-learning/progress.sqlite', 'PRIVATE_PROGRESS_SENTINEL')
 
     def tearDown(self): self.temp.cleanup()
 
@@ -97,6 +108,14 @@ class DeploymentTests(unittest.TestCase):
     def run_deploy(self, env=None):
         return subprocess.run(['bash', str(self.repo / 'scripts/deploy-cpanel.sh'), str(self.target)], text=True, capture_output=True, env=env, timeout=45)
 
+    def write_overlay(self):
+        lines = ['HORIZONS_WEB_OVERLAY_V1\t1.4.1\t1.4.0']
+        for source, (destination, value) in self.overlay.items():
+            self.write(self.repo / source, value)
+            payload = value.encode()
+            lines.append('\t'.join([hashlib.sha256(payload).hexdigest(), str(len(payload)), source, destination]))
+        self.write(self.repo / 'release-assets/1.4.1/manifest.tsv', '\n'.join(lines) + '\n')
+
     def assert_rejected_without_public_changes(self):
         before = snapshot(self.target)
         result = self.run_deploy()
@@ -110,7 +129,13 @@ class DeploymentTests(unittest.TestCase):
         result = self.run_deploy()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertEqual((self.target / 'index.html').read_text(), 'new home')
-        self.assertEqual((self.target / 'learn/index.html').read_text(), 'new learning')
+        self.assertEqual((self.target / 'learn/index.html').read_text(), 'online workbook 1.4.1')
+        self.assertEqual((self.target / 'learn/shell.js').read_text(), 'online shell')
+        self.assertEqual((self.target / 'learn/content/1.4.1/app.hzn').read_text(), 'encrypted web patch')
+        self.assertEqual((self.target / 'learn/content/1.4.0/book.hzn').read_text(), 'encrypted fixture')
+        self.assertEqual((self.target / 'learning-api/index.php').read_text(), '<?php /* API fixture */')
+        self.assertFalse((self.target / 'learning-api/obsolete.php').exists())
+        self.assertEqual((self.base / 'horizons-learning/progress.sqlite').read_text(), 'PRIVATE_PROGRESS_SENTINEL')
         self.assertEqual((self.target / 'try/index.html').read_text(), 'new five-letter demo')
         self.assertFalse((self.target / 'try/stale-full-chapter.txt').exists())
         self.assertFalse((self.target / 'try/stale-plaintext.txt').exists())
@@ -139,6 +164,42 @@ class DeploymentTests(unittest.TestCase):
     def test_missing_chunk_fails_before_public_writes(self):
         (self.assets / 'demo/part-0000').unlink()
         self.assert_rejected_without_public_changes()
+
+    def test_corrupt_overlay_stops_before_public_writes(self):
+        self.write(self.repo / 'src/workbook-web/shell.js', 'ONLINE SHELL')
+        result = self.assert_rejected_without_public_changes()
+        self.assertIn('Web overlay SHA-256 mismatch', result.stderr)
+
+    def test_missing_overlay_manifest_stops_before_public_writes(self):
+        (self.repo / 'release-assets/1.4.1/manifest.tsv').unlink()
+        result = self.assert_rejected_without_public_changes()
+        self.assertIn('web overlay manifest', result.stderr)
+
+    def test_overlay_cannot_replace_activation_configuration(self):
+        self.overlay['src/learning-api/index.php'] = ('activation/config.php', '<?php /* wrong destination */')
+        self.write_overlay()
+        self.assert_rejected_without_public_changes()
+
+    def test_overlay_cannot_publish_runtime_data(self):
+        self.overlay['src/learning-api/data/progress.sqlite'] = ('learning-api/data/progress.sqlite', 'private database')
+        self.write_overlay()
+        result = self.assert_rejected_without_public_changes()
+        self.assertIn('Runtime/private file', result.stderr)
+
+    def test_overlay_symlink_source_is_rejected(self):
+        source = self.repo / 'src/workbook-web/shell.js'
+        source.unlink()
+        outside = self.base / 'outside.js'
+        outside.write_text('online shell')
+        source.symlink_to(outside)
+        self.assert_rejected_without_public_changes()
+
+    def test_overlay_duplicate_destination_is_rejected(self):
+        manifest = self.repo / 'release-assets/1.4.1/manifest.tsv'
+        contents = manifest.read_text()
+        manifest.write_text(contents + contents.splitlines()[1] + '\n')
+        result = self.assert_rejected_without_public_changes()
+        self.assertIn('Duplicate web overlay destination', result.stderr)
 
     def test_zip_traversal_fails_even_with_correct_manifest_hash(self):
         self.payloads['learn'] = ('learn.zip', archive([regular('learn/index.html', 'x'), regular('learn/../../escape', 'bad')]))
@@ -196,7 +257,9 @@ class DeploymentTests(unittest.TestCase):
         shutil.rmtree(self.target)
         result = self.run_deploy()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        for folder in [self.target, self.target / 'learn', self.target / 'try', self.target / 'downloads', self.target / 'updates']:
+        for folder in [self.target, self.target / 'learn', self.target / 'try', self.target / 'downloads', self.target / 'updates', self.target / 'learning-api']:
             self.assertEqual(stat.S_IMODE(folder.stat().st_mode), 0o755, str(folder))
+        self.assertEqual((self.target / 'learn/index.html').read_text(), 'online workbook 1.4.1')
+        self.assertTrue((self.target / 'learning-api/index.php').is_file())
 
 if __name__ == '__main__': unittest.main(verbosity=2)

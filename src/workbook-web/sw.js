@@ -1,14 +1,16 @@
-import { VERSION } from './web-config.js';
+import { VERSION, PRODUCT } from './web-config.js';
 import { getAccess, getState, decryptAsset } from './license-core.js';
 import { handleLearnerRequest } from './learner-store.js';
+import { MediaStore, MEDIA_LIMITS, verifiedCipher, mediaResponse } from './media-store.js';
 
 const ROOT = new URL('./', self.location.href);
 const SHELL = 'hzn-web-shell-' + VERSION;
-const CONTENT = 'hzn-web-content-' + VERSION;
-const SHELL_FILES = ['','index.html','shell.css','shell.js','web-ui.js','pwa-client.js','license-core.js','learner-store.js','web-config.js','portal-locales.json','web-locales.json','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png','asset-manifest.json'];
+const media = new MediaStore();
+const SHELL_FILES = ['','index.html','shell.css','shell.js','web-ui.js','pwa-client.js','license-core.js','asset-decoder.js','learner-store.js','progress-sync-client.js','media-store.js','web-config.js','portal-locales.json','web-locales.json','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png','asset-manifest.json'];
 let manifestPromise;
 let downloadRunning = false;
 let cancelDownload = false;
+let downloadController;
 
 function address(path) { return new URL(path, ROOT).href; }
 async function manifest() {
@@ -18,69 +20,55 @@ async function manifest() {
     if (!response) response = await fetch(address('asset-manifest.json'), {cache:'no-store'});
     if (!response.ok) throw Error('MANIFEST_UNAVAILABLE');
     const data = await response.json();
-    if (data.version !== VERSION || !data.files || !data.groups) throw Error('VERSION_MISMATCH');
+    validateManifest(data);
     return data;
   })().catch(error => {manifestPromise = null; throw error;});
   return manifestPromise;
 }
-function hex(bytes) { return [...new Uint8Array(bytes)].map(x => x.toString(16).padStart(2,'0')).join(''); }
-async function validCipher(response, item) {
-  if (!response?.ok) throw Error('CONTENT_UNAVAILABLE');
-  const bytes = await response.arrayBuffer();
-  if (bytes.byteLength !== item.bytes || hex(await crypto.subtle.digest('SHA-256',bytes)) !== item.sha256) throw Error('CONTENT_DAMAGED');
-  return bytes;
+function validateManifest(data) {
+  if (data.version !== VERSION || data.product !== PRODUCT || !data.files || !data.groups) throw Error('VERSION_MISMATCH');
+  const versions=data.content_versions || [data.version];
+  // The release patch reuses unchanged 1.4.0 encrypted assets. The manifest may
+  // select only these locally supported versions, never an external location.
+  if(!Array.isArray(versions)||!versions.length||versions.length>2||versions.some(v=>!['1.4.0',VERSION].includes(v)))throw Error('INVALID_CONTENT_URL');
+  for(const [path,item]of Object.entries(data.files)){
+    if(!path||path.startsWith('/')||path.split('/').some(p=>!p||p==='.'||p==='..')||/[\\\x00-\x1f?#]/.test(path))throw Error('CONTENT_INVALID');
+    if(!item||typeof item.url!=='string'||!Number.isSafeInteger(item.bytes)||item.bytes<28||item.bytes>MEDIA_LIMITS.maxAssetBytes||!/^[a-f0-9]{64}$/.test(item.sha256)||typeof item.mime!=='string'||/[\r\n]/.test(item.mime))throw Error('CONTENT_INVALID');
+    if(item.encoding!==undefined && (item.encoding!=='gzip' || !Number.isSafeInteger(item.decoded_bytes) || item.decoded_bytes<1 || item.decoded_bytes>32*1024*1024 || !/^(text\/|application\/(json|javascript)|image\/svg\+xml)/.test(item.mime)))throw Error('CONTENT_INVALID');
+    const url=new URL(item.url,ROOT),version=versions.find(v=>url.pathname===ROOT.pathname+'content/'+v+'/'+path+'.hzn');
+    if(url.origin!==ROOT.origin||url.username||url.password||url.search||url.hash||!version)throw Error('INVALID_CONTENT_URL');
+    item.url=url.href;item.cacheName='hzn-web-content-'+version;
+  }
+  for(const paths of Object.values(data.groups))if(!Array.isArray(paths)||paths.some(path=>!Object.hasOwn(data.files,path)))throw Error('CONTENT_INVALID');
+  return data;
 }
-async function cipherFor(path, save = false) {
-  const m = await manifest(), item = m.files[path];
-  if (!item) throw Error('NOT_FOUND');
-  const url = new URL(item.url, ROOT);
-  if (url.origin !== ROOT.origin || !url.pathname.startsWith(ROOT.pathname+'content/'+VERSION+'/')) throw Error('INVALID_CONTENT_URL');
-  const cache = await caches.open(CONTENT);
-  let response = await cache.match(url.href), bytes;
-  if (response) {
-    try { bytes = await validCipher(response, item); }
-    catch { await cache.delete(url.href); }
-  }
-  if (!bytes) {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(),45000);
-    try {
-      response = await fetch(url.href,{cache:'no-store',signal:controller.signal});
-      bytes = await validCipher(response,item);
-      // Only encrypted responses enter Cache Storage. Plaintext never does.
-      if (save) await cache.put(url.href,new Response(bytes,{headers:{'Content-Type':'application/octet-stream'}}));
-    } finally { clearTimeout(timer); }
-  }
-  return {bytes,item};
+async function cipherFor(path, save = false, signal) {
+  const m=await manifest(),item=m.files[path];
+  if(!Object.hasOwn(m.files,path)||!item)throw Error('NOT_FOUND');
+  const before=await getAccess();
+  const plain=await media.get(path,item,{key:before.key,decrypt:(p,b)=>decryptAsset(p,b,item),signal,pin:save});
+  // Recheck after asynchronous loading as well as before RAM/cache hits. A tab
+  // that signs out or switches accounts cannot receive an old pending result.
+  const after=await getAccess();
+  if(after.key!==before.key){media.clearPlain();throw Error('ACTIVATION_REQUIRED');}
+  return {plain,item};
 }
 async function protectedResponse(event, path) {
   try {
-    await getAccess();
-    const {bytes,item} = await cipherFor(path);
-    const plain = await decryptAsset(path,bytes);
-    const headers = {'Content-Type':item.mime || 'application/octet-stream','Cache-Control':'no-store, private','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'};
-    // Media elements may issue range requests even when the whole encrypted file is local.
-    const range = event.request.headers.get('range');
-    if (range && /^(audio|video)\//.test(headers['Content-Type'])) {
-      const match = /^bytes=(\d*)-(\d*)$/.exec(range);
-      if (!match || (!match[1] && !match[2])) return new Response(null,{status:416});
-      const start = match[1] ? Number(match[1]) : Math.max(0,plain.byteLength-Number(match[2]));
-      const end = match[1] ? Math.min(match[2]?Number(match[2]):plain.byteLength-1,plain.byteLength-1) : plain.byteLength-1;
-      if (start > end || start >= plain.byteLength) return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+plain.byteLength}});
-      headers['Content-Range']=`bytes ${start}-${end}/${plain.byteLength}`;headers['Accept-Ranges']='bytes';
-      return new Response(plain.slice(start,end+1),{status:206,headers});
-    }
-    return new Response(event.request.method==='HEAD'?null:plain,{headers});
+    const {plain,item}=await cipherFor(path,false,event.request.signal);
+    return mediaResponse(event.request,plain,item.mime);
   } catch (error) {
+    if(!['CONTENT_UNAVAILABLE','CONTENT_DAMAGED','CONTENT_TIMEOUT','CONTENT_BUSY','NOT_FOUND'].includes(error.message))media.clearPlain();
     if (event.request.mode === 'navigate') return Response.redirect(address('index.html?reason='+encodeURIComponent(error.code||error.message)),302);
-    return new Response(JSON.stringify({ok:false,error:error.code||error.message}),{status:error.message==='NOT_FOUND'?404:403,headers:{'Content-Type':'application/json','Cache-Control':'no-store'}});
+    const status=error.name==='AbortError'?499:error.message==='NOT_FOUND'?404:['CONTENT_BUSY','CONTENT_TIMEOUT','CONTENT_UNAVAILABLE','CONTENT_DAMAGED'].includes(error.message)?503:403;
+    return new Response(JSON.stringify({ok:false,error:error.code||error.message}),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store'}});
   }
 }
 self.addEventListener('install', event => event.waitUntil((async()=>{
   const cache = await caches.open(SHELL);
   await cache.addAll(SHELL_FILES.map(address));
   const installedManifest=await (await cache.match(address('asset-manifest.json'))).json();
-  if(installedManifest.version!==VERSION || !installedManifest.files || !installedManifest.groups)throw Error('VERSION_MISMATCH');
+  validateManifest(installedManifest);
   // A new worker waits for all old workbook tabs to close, preventing mixed releases.
 })()));
 self.addEventListener('activate', event => event.waitUntil((async()=>{
@@ -107,10 +95,11 @@ self.addEventListener('fetch', event => {
   }
 });
 async function offlineState() {
-  const m=await manifest(), cache=await caches.open(CONTENT), keys=new Set((await cache.keys()).map(x=>x.url));
+  const m=await manifest(),keys=new Set();
+  for(const name of new Set(Object.values(m.files).map(item=>item.cacheName))){const cache=await caches.open(name);for(const key of await cache.keys())keys.add(key.url);}
   const groups={};let savedBytes=0,totalBytes=0,savedFiles=0;
-  for(const [path,item] of Object.entries(m.files)){totalBytes+=item.bytes;if(keys.has(address(item.url))){savedBytes+=item.bytes;savedFiles++;}}
-  for(const [name,paths] of Object.entries(m.groups)) groups[name]={saved:paths.filter(p=>keys.has(address(m.files[p].url))).length,total:paths.length};
+  for(const [path,item] of Object.entries(m.files)){totalBytes+=item.bytes;if(keys.has(item.url)){savedBytes+=item.bytes;savedFiles++;}}
+  for(const [name,paths] of Object.entries(m.groups)) groups[name]={saved:paths.filter(p=>keys.has(m.files[p].url)).length,total:paths.length};
   return {ok:true,version:VERSION,groups,savedBytes,totalBytes,savedFiles,totalFiles:Object.keys(m.files).length,running:downloadRunning};
 }
 self.addEventListener('message',event=>{
@@ -126,15 +115,16 @@ self.addEventListener('message',event=>{
         if(downloadRunning)throw Error('DOWNLOAD_BUSY');
         downloadRunning=true;
         try{
-          const m=await manifest(),cache=await caches.open(CONTENT),entries=Object.entries(m.files);
+          const m=await manifest(),entries=Object.entries(m.files);
           let done=0,damaged=0;
-          for(const [path,item]of entries){const url=address(item.url),response=await cache.match(url);if(response){try{await validCipher(response,item)}catch{await cache.delete(url);damaged++}};done++;answer({done,total:entries.length});}
+          for(const [path,item]of entries){const cache=await caches.open(item.cacheName),url=item.url,response=await cache.match(url);if(response){try{await verifiedCipher(response,item)}catch{await cache.delete(url);damaged++}};done++;answer({done,total:entries.length});}
           return answer({...await offlineState(),damaged,verified:true});
         }finally{downloadRunning=false;}
       }
-      if(message.type==='cancel-download'){cancelDownload=true;return answer({ok:true});}
+      if(message.type==='cancel-download'){cancelDownload=true;downloadController?.abort();return answer({ok:true});}
       if(message.type==='clear-downloads'){
         if(downloadRunning)throw Error('DOWNLOAD_BUSY');
+        await media.clear();
         for(const key of await caches.keys())if(key.startsWith('hzn-web-content-'))await caches.delete(key);
         return answer(await offlineState());
       }
@@ -143,16 +133,16 @@ self.addEventListener('message',event=>{
       if(downloadRunning)throw Error('DOWNLOAD_BUSY');
       await getAccess(); const m=await manifest(),paths=m.groups[message.group];
       if(!Array.isArray(paths))throw Error('INVALID_GROUP');
-      downloadRunning=true;cancelDownload=false;
+      downloadRunning=true;cancelDownload=false;downloadController=new AbortController();
       try {
         let done=0;
         for(const path of paths){
           if(cancelDownload)throw Error('DOWNLOAD_CANCELLED');
-          await getAccess(); await cipherFor(path,true); done++;
+          await cipherFor(path,true,downloadController.signal); done++;
           answer({done,total:paths.length});
         }
         answer({ok:true,done,total:paths.length,group:message.group});
-      } finally {downloadRunning=false;}
-    } catch(error){answer({ok:false,error:error.code||error.message||'OFFLINE_FAILED'});}
+      } finally {downloadRunning=false;downloadController=null;}
+    } catch(error){answer({ok:false,error:error.name==='AbortError'&&cancelDownload?'DOWNLOAD_CANCELLED':error.code||error.message||'OFFLINE_FAILED'});}
   })());
 });
