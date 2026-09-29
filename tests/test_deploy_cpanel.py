@@ -13,6 +13,7 @@ import zipfile
 
 SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/deploy-cpanel.sh'
 VERSION = '1.4.0'
+WEB_VERSION = '1.4.2'
 UPDATE = 'Horizons-Arabic-Level-1-1.4.0-update.zip'
 SETUP = 'HORIZONS-Arabic-Setup-1.4.0.exe'
 
@@ -54,11 +55,11 @@ class DeploymentTests(unittest.TestCase):
         }
         self.write_payloads()
         self.overlay = {
-            'src/workbook-web/index.html': ('learn/index.html', 'online workbook 1.4.1'),
+            'src/workbook-web/index.html': ('learn/index.html', 'online workbook 1.4.2'),
             'src/workbook-web/shell.js': ('learn/shell.js', 'online shell'),
             'src/learning-api/index.php': ('learning-api/index.php', '<?php /* API fixture */'),
             'src/learning-api/.htaccess': ('learning-api/.htaccess', 'Options -Indexes'),
-            'release-assets/1.4.1/files/learn/content/1.4.1/app.hzn': ('learn/content/1.4.1/app.hzn', 'encrypted web patch'),
+            f'release-assets/{WEB_VERSION}/files/learn/content/1.4.1/app.hzn': ('learn/content/1.4.1/app.hzn', 'encrypted web patch'),
         }
         self.write_overlay()
         self.write(self.repo / 'dist/index.html', 'new home')
@@ -109,12 +110,12 @@ class DeploymentTests(unittest.TestCase):
         return subprocess.run(['bash', str(self.repo / 'scripts/deploy-cpanel.sh'), str(self.target)], text=True, capture_output=True, env=env, timeout=45)
 
     def write_overlay(self):
-        lines = ['HORIZONS_WEB_OVERLAY_V1\t1.4.1\t1.4.0']
+        lines = [f'HORIZONS_WEB_OVERLAY_V1\t{WEB_VERSION}\t1.4.0']
         for source, (destination, value) in self.overlay.items():
             self.write(self.repo / source, value)
             payload = value.encode()
             lines.append('\t'.join([hashlib.sha256(payload).hexdigest(), str(len(payload)), source, destination]))
-        self.write(self.repo / 'release-assets/1.4.1/manifest.tsv', '\n'.join(lines) + '\n')
+        self.write(self.repo / f'release-assets/{WEB_VERSION}/manifest.tsv', '\n'.join(lines) + '\n')
 
     def assert_rejected_without_public_changes(self):
         before = snapshot(self.target)
@@ -129,7 +130,7 @@ class DeploymentTests(unittest.TestCase):
         result = self.run_deploy()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertEqual((self.target / 'index.html').read_text(), 'new home')
-        self.assertEqual((self.target / 'learn/index.html').read_text(), 'online workbook 1.4.1')
+        self.assertEqual((self.target / 'learn/index.html').read_text(), 'online workbook 1.4.2')
         self.assertEqual((self.target / 'learn/shell.js').read_text(), 'online shell')
         self.assertEqual((self.target / 'learn/content/1.4.1/app.hzn').read_text(), 'encrypted web patch')
         self.assertEqual((self.target / 'learn/content/1.4.0/book.hzn').read_text(), 'encrypted fixture')
@@ -171,7 +172,7 @@ class DeploymentTests(unittest.TestCase):
         self.assertIn('Web overlay SHA-256 mismatch', result.stderr)
 
     def test_missing_overlay_manifest_stops_before_public_writes(self):
-        (self.repo / 'release-assets/1.4.1/manifest.tsv').unlink()
+        (self.repo / f'release-assets/{WEB_VERSION}/manifest.tsv').unlink()
         result = self.assert_rejected_without_public_changes()
         self.assertIn('web overlay manifest', result.stderr)
 
@@ -195,7 +196,7 @@ class DeploymentTests(unittest.TestCase):
         self.assert_rejected_without_public_changes()
 
     def test_overlay_duplicate_destination_is_rejected(self):
-        manifest = self.repo / 'release-assets/1.4.1/manifest.tsv'
+        manifest = self.repo / f'release-assets/{WEB_VERSION}/manifest.tsv'
         contents = manifest.read_text()
         manifest.write_text(contents + contents.splitlines()[1] + '\n')
         result = self.assert_rejected_without_public_changes()
@@ -259,7 +260,7 @@ class DeploymentTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         for folder in [self.target, self.target / 'learn', self.target / 'try', self.target / 'downloads', self.target / 'updates', self.target / 'learning-api']:
             self.assertEqual(stat.S_IMODE(folder.stat().st_mode), 0o755, str(folder))
-        self.assertEqual((self.target / 'learn/index.html').read_text(), 'online workbook 1.4.1')
+        self.assertEqual((self.target / 'learn/index.html').read_text(), 'online workbook 1.4.2')
         self.assertTrue((self.target / 'learning-api/index.php').is_file())
 
 if __name__ == '__main__': unittest.main(verbosity=2)

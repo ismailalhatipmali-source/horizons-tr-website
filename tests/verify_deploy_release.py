@@ -37,8 +37,8 @@ def main():
     private_state.write_text('ISOLATED_PRIVATE_PROGRESS_STATE')
     private_before = digest(private_state)
     overlay = {}
-    overlay_lines = (repo/'release-assets/1.4.1/manifest.tsv').read_text().splitlines()
-    assert overlay_lines[0] == 'HORIZONS_WEB_OVERLAY_V1\t1.4.1\t1.4.0'
+    overlay_lines = (repo/'release-assets/1.4.2/manifest.tsv').read_text().splitlines()
+    assert overlay_lines[0] == 'HORIZONS_WEB_OVERLAY_V1\t1.4.2\t1.4.0'
     for line in overlay_lines[1:]:
         sha, size, source, destination = line.split('\t')
         assert destination not in overlay
@@ -78,7 +78,7 @@ def main():
     backups = list((output/'.horizons-deploy-public_html').glob('backup-*'))
     assert any((p/'try/stale-extra.txt').exists() for p in backups)
     report = {
-        'result':'passed', 'version':'1.4.1', 'windows_version':'1.4.0', 'production_deployed':False,
+        'result':'passed', 'version':'1.4.2', 'windows_version':'1.4.0', 'production_deployed':False,
         'script_sha256':digest(repo/'scripts/deploy-cpanel.sh'),
         'total_chunks':sum(r['parts'] for r in records.values()),
         'artifact_bytes':sum(r['bytes'] for r in records.values()),

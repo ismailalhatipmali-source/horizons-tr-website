@@ -28,9 +28,9 @@ async function manifest() {
 function validateManifest(data) {
   if (data.version !== VERSION || data.product !== PRODUCT || !data.files || !data.groups) throw Error('VERSION_MISMATCH');
   const versions=data.content_versions || [data.version];
-  // The release patch reuses unchanged 1.4.0 encrypted assets. The manifest may
-  // select only these locally supported versions, never an external location.
-  if(!Array.isArray(versions)||!versions.length||versions.length>2||versions.some(v=>!['1.4.0',VERSION].includes(v)))throw Error('INVALID_CONTENT_URL');
+  // The shell-only release reuses 1.4.0/1.4.1 encrypted assets unchanged.
+  // No new paid asset location or external origin is accepted.
+  if(!Array.isArray(versions)||versions.length!==2||versions[0]!=='1.4.0'||versions[1]!=='1.4.1')throw Error('INVALID_CONTENT_URL');
   for(const [path,item]of Object.entries(data.files)){
     if(!path||path.startsWith('/')||path.split('/').some(p=>!p||p==='.'||p==='..')||/[\\\x00-\x1f?#]/.test(path))throw Error('CONTENT_INVALID');
     if(!item||typeof item.url!=='string'||!Number.isSafeInteger(item.bytes)||item.bytes<28||item.bytes>MEDIA_LIMITS.maxAssetBytes||!/^[a-f0-9]{64}$/.test(item.sha256)||typeof item.mime!=='string'||/[\r\n]/.test(item.mime))throw Error('CONTENT_INVALID');

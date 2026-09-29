@@ -16,7 +16,7 @@ async function worker({mutateManifest=()=>{},pauseDownload=false}={}){
   const root='https://example.test/learn/',bytes=new Uint8Array(128),key={},listeners={},stores=new Map();
   const license={valid:true,key},counts={network:0,decrypt:0,access:0};let release;
   const item={url:'content/1.4.0/audio.mp3.hzn',bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),mime:'audio/mpeg'};
-  const manifest={version:'1.4.1',product:'horizons-arabic-level1',content_versions:['1.4.0','1.4.1'],files:{'audio.mp3':item},groups:{one:['audio.mp3']}};mutateManifest(manifest);
+  const manifest={version:'1.4.2',product:'horizons-arabic-level1',content_versions:['1.4.0','1.4.1'],files:{'audio.mp3':item},groups:{one:['audio.mp3']}};mutateManifest(manifest);
   const storage={open:async name=>{if(!stores.has(name))stores.set(name,new Cache());return stores.get(name);},keys:async()=>[...stores.keys()],delete:async name=>stores.delete(name)};
   const fetcher=async url=>{
     if(url===root+'asset-manifest.json')return new Response(JSON.stringify(manifest));
@@ -26,7 +26,7 @@ async function worker({mutateManifest=()=>{},pauseDownload=false}={}){
   const context=vm.createContext({URL,Request,Response,Headers,AbortController,DOMException,Uint8Array,TextEncoder,TextDecoder,Date,Math,Map,WeakMap,Set,Promise,Object,Array,Number,String,Error,JSON,RegExp,setTimeout,clearTimeout,crypto:webcrypto,caches:storage,fetch:fetcher,self:{location:{href:root+'sw.js'},clients:{claim:async()=>{}},addEventListener:(name,fn)=>{listeners[name]=fn;}}});
   const modules={};
   async function synthetic(name,values){const module=new vm.SyntheticModule(Object.keys(values),function(){for(const [key,value]of Object.entries(values))this.setExport(key,value);},{context,identifier:name});modules[name]=module;return module;}
-  await synthetic('./web-config.js',{VERSION:'1.4.1',PRODUCT:'horizons-arabic-level1'});
+  await synthetic('./web-config.js',{VERSION:'1.4.2',PRODUCT:'horizons-arabic-level1'});
   await synthetic('./license-core.js',{getAccess:async()=>{counts.access++;if(!license.valid)throw Error('ACTIVATION_REQUIRED');return {key:license.key,license:{}};},getState:async()=>({activated:license.valid}),decryptAsset:async(_,data)=>{counts.decrypt++;if(!license.valid)throw Error('ACTIVATION_REQUIRED');return data.slice(28);}});
   await synthetic('./learner-store.js',{handleLearnerRequest:async()=>new Response('{}')});
   modules['./media-store.js']=new vm.SourceTextModule(await readFile(new URL('../src/workbook-web/media-store.js',import.meta.url),'utf8'),{context,identifier:'media-store.js'});

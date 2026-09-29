@@ -271,7 +271,7 @@ async function post(route,input) {
   try {response=await fetch(ACTIVATION_URL+route,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input),credentials:'omit',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(35000)})}
   catch {throw failure('SERVICE_UNAVAILABLE')}
   let result;try{result=await response.json()}catch{throw failure('SERVICE_UNAVAILABLE')}
-  if(!response.ok || result?.ok!==true){const code=result?.error;throw failure(typeof code==='string'&&/^[A-Z_]{3,50}$/.test(code)?code:'SERVICE_UNAVAILABLE')}
+  if(!response.ok || result?.ok!==true){const code=result?.error;throw Object.assign(failure(typeof code==='string'&&/^[A-Z_]{3,50}$/.test(code)?code:'SERVICE_UNAVAILABLE'),{status:response.status})}
   return result;
 }
 export async function requestCode({email,locale='en',invitation_token=''}={}) {
@@ -281,16 +281,30 @@ export async function requestCode({email,locale='en',invitation_token=''}={}) {
   if(typeof result.challenge_id!=='string' || !/^[a-f0-9]{32,128}$/.test(result.challenge_id))throw failure('SERVICE_UNAVAILABLE');
   return result;
 }
-export async function verifyCode({challenge_id,code}={}) {
-  if(typeof code!=='string' || !/^[0-9]{8}$/.test(code) || typeof challenge_id!=='string')throw failure('OTP_INVALID');
-  const identity=await getIdentity();if(!identity)throw failure('ACTIVATION_REQUIRED');
-  const result=await post('/v1/auth/verify',{device_id:identity.device_id,public_key:identity.public_key,challenge_id,code});
-  const access=await validateAndUnlock(result.license,identity), issued=date(access.license.issued_at);
-  const record={envelope:result.license,device_id:identity.device_id,clock:{issued,seen:issued}};
+async function saveActivation(envelope,identity) {
+  const access=await validateAndUnlock(envelope,identity), issued=date(access.license.issued_at);
+  const record={envelope,device_id:identity.device_id,clock:{issued,seen:issued}};
   record.clock.seen=clockTime(access,record,true);
   await change((store,done)=>{store.put(record,'activation');done()});
-  accessCache=null;
+  accessCache=null;progressSession=null;progressAuthentication=null;
   return getState();
+}
+function checkPassword(password) {
+  if(typeof password!=='string'||Array.from(password).length<12||ENCODER.encode(password).length>256||/[\x00-\x1f\x7f]/.test(password))throw failure('PASSWORD_WEAK');
+  return password;
+}
+export async function verifyCode({challenge_id,code,new_password}={}) {
+  if(typeof code!=='string' || !/^[0-9]{8}$/.test(code) || typeof challenge_id!=='string')throw failure('OTP_INVALID');
+  const identity=await getIdentity();if(!identity)throw failure('ACTIVATION_REQUIRED');
+  const result=await post('/v1/auth/verify',{device_id:identity.device_id,public_key:identity.public_key,challenge_id,code,...(new_password===undefined?{}:{new_password:checkPassword(new_password)})});
+  return saveActivation(result.license,identity);
+}
+export async function loginPassword({email,password}={}) {
+  if(typeof email!=='string'||email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()))throw failure('INVALID_EMAIL');
+  checkPassword(password);
+  const identity=await createIdentity();
+  const result=await post('/v1/auth/password',{email:email.trim(),password,device_id:identity.device_id,public_key:identity.public_key});
+  return saveActivation(result.license,identity);
 }
 export async function getState() {
   let identity;try {identity=await getIdentity();const {license}=await getAccess();return {ok:true,activated:true,error:null,device_id:identity.device_id,license:{plan:license.plan,channel:license.channel,max_devices:license.max_devices,purchase_email:license.purchase_email,starts_at:license.starts_at,expires_at:license.expires_at,issued_at:license.issued_at}}}
