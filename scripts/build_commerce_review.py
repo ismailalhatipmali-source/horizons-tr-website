@@ -45,6 +45,27 @@ def build(dest):
             if not match:
                 raise ValueError(f'Missing policy link: {lang}/{name}')
             policies.append(match.group())
+        # Keep the seller's actual details and statutory-rights information in
+        # the order review. Do not invent a separate seller or refund policy.
+        terms_path = dest / lang / 'terms.html'
+        terms_html = terms_path.read_text()
+        headings = list(re.finditer(r'<h2>.*?</h2>', terms_html))
+        if len(headings) < 2:
+            raise ValueError(f'Missing licence terms: {lang}')
+        start = headings[1].end()
+        licence = f'<!-- commerce-licence --><p>{t("access_note")}</p><p>{t("delivery_note")}</p><p>{t("after_note")}</p><!-- /commerce-licence -->'
+        if '<!-- commerce-licence -->' in terms_html:
+            terms_html = re.sub(r'<!-- commerce-licence -->.*?<!-- /commerce-licence -->', lambda _: licence, terms_html, count=1, flags=re.S)
+        else:
+            paragraph = re.match(r'<p>.*?</p>', terms_html[start:], re.S)
+            if not paragraph:
+                raise ValueError(f'Missing licence paragraph: {lang}')
+            terms_html = terms_html[:start] + licence + terms_html[start + paragraph.end():]
+        terms_html = re.sub(r'<p class="date">.*?</p>', '<p class="date">2026-09-30</p>', terms_html, count=1)
+        terms_path.write_text(terms_html)
+        terms_article = terms_html.split('<article>', 1)[1].split('</article>', 1)[0]
+        terms_article = re.sub(r'<div class="legal-nav">.*?</div>|<p class="date">.*?</p>|<h1>.*?</h1>', '', terms_article, flags=re.S)
+        terms_title = html.escape(html.unescape(re.sub(r'<[^>]+>', '', policies[0])))
         facts = f'<div class="commerce-facts"><span>28 {t("lessons")}</span><span>560 {t("cards")}</span><span>56 {t("stories")}</span></div>'
         plan_labels = ''.join(f'<span data-selected-plan="{p}" hidden>{t(p)}</span>' for p in catalog['plans'])
         item = f'<div class="commerce-item"><img src="../assets/covers/{lang}/arabic.png" alt="HORIZONS Arabic Level 1" width="125" height="84"/><div><h2>HORIZONS Arabic Level 1</h2>{plan_labels}{facts}</div></div>'
@@ -55,7 +76,7 @@ def build(dest):
         for page in ('cart', 'checkout'):
             head = re.sub(r'<title>.*?</title>', f'<title>HORIZONS · {t(page)}</title>', before)
             head = head.replace('product.html', page + '.html')
-            head = head.replace('</head>', '<meta name="robots" content="noindex,follow"/><link rel="stylesheet" href="../commerce.css?v=review-1"/><script defer src="../commerce-cart.js?v=review-1"></script></head>')
+            head = head.replace('</head>', '<meta name="robots" content="noindex,follow"/><link rel="stylesheet" href="../commerce.css?v=review-2"/><script defer src="../commerce-cart.js?v=review-2"></script></head>')
             head = head.replace('href="' + page + '.html" lang=', 'href="' + page + '.html" data-commerce-link="' + page + '.html" lang=')
             # The original language-switch links are relative ../lang/page.html.
             head = re.sub(r'href="(\.\./[a-z]{2}/' + page + r'\.html)"', r'href="\1" data-commerce-link="\1"', head)
@@ -66,7 +87,18 @@ def build(dest):
             if page == 'cart':
                 main += f'<section class="commerce-panel">{item}<button type="button" class="commerce-remove" data-remove>{t("remove")}</button><div class="commerce-after"><b>{t("access")}</b><p>{t("access_note")}</p></div></section>'
             else:
-                main += f'<section class="commerce-panel"><label class="commerce-email">{t("email")}<input type="email" disabled autocomplete="off" placeholder="name@example.com" aria-describedby="review-email-note"/></label><p id="review-email-note" class="commerce-small">{t("review_note")}</p><fieldset class="commerce-methods"><legend>{t("payment")}</legend><label><input type="radio" name="review-payment-method" value="card" checked/>{t("card")} · VakıfBank</label><label><input type="radio" name="review-payment-method" value="transfer"/>{t("transfer")}</label></fieldset><div class="notice" data-method-note="card">{t("card_note")}</div><div class="notice" data-method-note="transfer" hidden>{t("transfer_note")}{bank_details}</div><div class="commerce-policy-links">' + ''.join(policies) + '</div></section>'
+                def field(key, input_type='text', required=True, limit=160):
+                    req = ' required' if required else ''
+                    return f'<label class="commerce-field">{t(key)}<input name="{key}" type="{input_type}" maxlength="{limit}" autocomplete="off"{req}/></label>'
+                main += f'<section class="commerce-panel"><form data-buyer-form autocomplete="off"><fieldset data-buyer-fields disabled><legend>{t("billing")}</legend><p class="commerce-small">{t("preview_data_note")}</p><div class="commerce-fields">'
+                main += field('name') + field('email', 'email', limit=254)
+                main += f'<label class="commerce-field">{t("billing")}<select name="billing"><option value="individual">{t("individual")}</option><option value="company">{t("company")}</option></select></label>'
+                main += field('country') + field('city') + field('address', limit=400) + field('postal', required=False, limit=32)
+                main += f'<div class="commerce-fields commerce-company" data-company-fields hidden>' + field('company_name', required=False) + field('tax_id', required=False, limit=48) + '</div></div>'
+                main += f'<fieldset class="commerce-methods"><legend>{t("payment")}</legend><label><input type="radio" name="review-payment-method" value="card" checked/>{t("card")} · VakıfBank</label><label><input type="radio" name="review-payment-method" value="transfer"/>{t("transfer")}</label></fieldset><div class="notice" data-method-note="card">{t("card_note")}</div><div class="notice" data-method-note="transfer" hidden>{t("transfer_note")}</div>'
+                main += f'<details class="commerce-legal"><summary>{terms_title}</summary>{terms_article}</details><div class="commerce-policy-links">' + ''.join(policies) + '</div>'
+                main += f'<label class="commerce-consent"><input type="checkbox" name="consent" required/>{t("consent")}</label><button type="submit" class="button" data-review-order>{t("review_order")}</button></fieldset></form>'
+                main += f'<section data-order-review hidden tabindex="-1"><h2>{t("review_order")}</h2><p>{t("review_note")}</p><dl data-buyer-summary></dl><h3>{t("payment")}</h3><p data-payment-summary></p><div data-review-transfer hidden>{t("transfer_note")}{bank_details}</div><p>{t("access_note")}</p><p>{t("after_note")}</p><button type="button" class="button ghost" data-edit-buyer>{t("edit")}</button></section></section>'
             main += '<aside class="commerce-panel">'
             if page == 'checkout':
                 main += item
@@ -74,8 +106,8 @@ def build(dest):
             if page == 'cart':
                 main += f'<a href="checkout.html" data-commerce-link="checkout.html" class="button">{t("checkout")}</a>'
             else:
-                main += f'<button class="button" type="button" disabled>{t("unavailable")}</button>'
-            main += f'<div class="commerce-after"><b>{t("after")}</b><p>{t("after_note")}</p></div></aside></div>'
+                main += f'<button class="button" type="button" data-payment-submit disabled>{t("unavailable")}</button>'
+            main += f'<div class="commerce-after"><b>{t("after")}</b><p>{t("delivery_note")}</p><p>{t("after_note")}</p></div></aside></div>'
             if page == 'cart':
                 main += plans
             main += '</main><script id="commerce-catalog" type="application/json">' + json.dumps(catalog, ensure_ascii=False).replace('<', '\\u003c') + '</script>'

@@ -12,8 +12,8 @@ reusable licence code, or signing key is committed here.
 - One workbook licence per basket; switching plan replaces the previous plan.
 - Basket carries only a product/plan/quantity in its own session storage key.
   Learner progress, activation, password, offline media and sync are untouched.
-- Card and bank transfer have visible separate explanations. Preview fields and
-  payment submission are disabled, including when a URL says `success=true`.
+- Card and bank transfer have visible separate explanations. Buyer/billing fields and a review/edit step work entirely in page memory.
+  Payment submission is disabled, including when a URL says `success=true`.
 - Prices shown are **the owner's approved base prices (30 September 2026)**, visibly provisional:
   USD 9.90 / 99 / 150. Final tax-inclusive checkout totals and settlement currency remain unapproved. They are not tax determinations, an offer
   to charge, or a promise that the bank supports these currencies. Pages are
@@ -128,3 +128,14 @@ php tests/test_purchase_ledger.php
 ## Currency display
 
 Owner requested local-currency display. Display FX is configured but disabled pending a deployed server-side rate feed. Use dated indicative TCMB rates where available, allow manual currency selection, never equate interface language with country, and show USD when rates are missing/stale. Any future settlement conversion must be server-side and fix amount, currency, rate and expiry on the order; a browser estimate cannot authorize payment. Bank-card settlement currencies require the merchant agreement. No live FX feed is active in this review.
+
+## Checkout review expansion — 30 September 2026
+
+- Full name, adult email, billing country/city/address, optional postal code and individual/company invoice selection in all 32 languages. Company name is required for company billing; tax number is optional in the review and jurisdiction-specific live invoicing validation is still required.
+- Required acknowledgement of purchase terms/privacy, with existing translated statutory-rights and seller information visible inside checkout. This acknowledgement is not a waiver of withdrawal rights or permission for early digital delivery.
+- Validated review step shows the buyer's input using text nodes (not HTML), payment choice and corporate accounts; edit returns to the existing form. No buyer data is transmitted, persisted, placed in URL parameters or assigned an order number.
+- Fields begin disabled without JavaScript. The submit handler is installed before enabling them; the final payment control stays disabled throughout.
+- Terms now reflect a single adult account with three registered devices and digital delivery after verified payment. Existing statutory refund/withdrawal wording remains.
+- DOM regression covers all 64 pages, empty/invalid forms, explicit acknowledgement, company billing validation, review/edit, injected HTML escaping, transfer accounts, payment disablement and buyer-data non-persistence. It passes.
+- Both local Chromium and cloud access to loopback preview are blocked in this session. Visual/mobile verification remains pending; no screenshot or real-bank result is claimed.
+- Do not call this a complete bank-approved or live checkout. Final tax-inclusive totals, settlement currency, delivery timing, real invoicing, bank/activation adapters and legal prerequisites remain to finalize before collection.

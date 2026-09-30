@@ -26,16 +26,42 @@ for(const lang of 'en ar tr fr es de it pt nl ru uk pl cs ro hu el sv da no fi b
    assert.equal(d.querySelector('[data-basket]').hidden,true);
    assert.equal(d.querySelector('[data-empty]').hidden,false);
   } else {
-   assert.equal(d.querySelector('input[type=email]').disabled,true);
-   assert.equal(d.querySelector('.commerce-grid button').disabled,true);
+   assert.equal(d.querySelector('input[type=email]').disabled,false);
+   assert.equal(d.querySelector('[data-payment-submit]').disabled,true);
+   const form=d.querySelector('[data-buyer-form]');
+   assert.equal(form.reportValidity(),false);
+   const submit=()=>form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+   submit();assert.equal(d.querySelector('[data-order-review]').hidden,true);
+   for(const [key,value] of Object.entries({name:'Buyer <img src=x onerror=alert(1)>',email:'buyer@example.com',country:'Türkiye',city:'İstanbul',address:'Billing street 1'})) form.elements.namedItem(key).value=value;
+   // Terms must be explicitly acknowledged; a filled form alone is insufficient.
+   assert.equal(form.reportValidity(),false);
+   form.elements.namedItem('consent').checked=true;
+   assert.equal(form.reportValidity(),true);
+   const billing=form.elements.namedItem('billing');billing.value='company';billing.dispatchEvent(new w.Event('change',{bubbles:true}));
+   assert.equal(form.reportValidity(),false);
+   form.elements.namedItem('company_name').value='Test Company';
+   assert.equal(form.reportValidity(),true);
    const radio=d.querySelector('input[value=transfer]');radio.checked=true;
    radio.dispatchEvent(new w.Event('change',{bubbles:true}));
    assert.equal(d.querySelector('[data-method-note=transfer]').hidden,false);
    assert.equal(d.querySelector('[data-method-note=card]').hidden,true);
+   submit();assert.equal(d.querySelector('[data-order-review]').hidden,false);
+   assert.equal(form.hidden,true);
+   assert.equal(d.querySelector('[data-buyer-summary] img'),null);
+   assert.ok(d.querySelector('[data-buyer-summary]').textContent.includes('<img'));
+   assert.equal(d.querySelector('[data-review-transfer]').hidden,false);
+   assert.equal(d.querySelectorAll('[data-review-transfer] [data-account]').length,3);
+   assert.equal(d.querySelector('[data-payment-submit]').disabled,true);
+   for(const store of [w.localStorage,w.sessionStorage])for(let i=0;i<store.length;i++)assert.ok(!store.getItem(store.key(i)).includes('buyer@example.com'));
+   assert.ok(!w.location.href.includes('buyer'));
+   d.querySelector('[data-edit-buyer]').click();assert.equal(form.hidden,false);
+   assert.equal(form.elements.namedItem('email').value,'buyer@example.com');
+   billing.value='individual';billing.dispatchEvent(new w.Event('change',{bubbles:true}));
+   submit();assert.ok(!d.querySelector('[data-buyer-summary]').textContent.includes('Test Company'));
   }
   assert.equal(w.localStorage.getItem('learner-progress-sentinel'),'original');
   assert.equal(w.sessionStorage.getItem('unrelated-sentinel'),'original');
   dom.window.close();
  }
 }
-console.log('PASS: 64 DOM pages, plan selection/removal/navigation, payment options, no collection, ignored forged success, preserved unrelated storage. Visual browser verification remains separate.');
+console.log('PASS: 64 DOM pages, required fields/consent/company billing, safe order review/edit, matching account details, no payment or buyer persistence, ignored forged success, preserved learner storage. Visual browser verification remains separate.');

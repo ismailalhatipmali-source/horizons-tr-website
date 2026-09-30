@@ -1,4 +1,5 @@
-// Review-only basket: no payment endpoint, buyer data, activation or learner DB.
+// Review-only basket. Buyer input stays in this page's memory: no network or
+// browser-storage write contains it. Only product/plan/quantity is persisted.
 (() => {
   'use strict';
   const KEY = 'horizons-commerce-review-v1';
@@ -10,6 +11,43 @@
   }
   const planNames = Object.keys(cfg.plans);
   const allowed = p => typeof p === 'string' && planNames.includes(p);
+  const form = root.querySelector('[data-buyer-form]');
+  const orderReview = root.querySelector('[data-order-review]');
+  if (form) {
+    // Install a submit handler BEFORE enabling fields, so no-JS/failed-script
+    // fallback cannot send names/addresses in a query string or create orders.
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!selected || !form.reportValidity()) return;
+      const summary = root.querySelector('[data-buyer-summary]');
+      summary.replaceChildren();
+      const corporate = form.elements.billing.value === 'company';
+      for (const key of ['name','email','billing','country','city','address','postal','company_name','tax_id']) {
+        if (!corporate && ['company_name','tax_id'].includes(key)) continue;
+        const input = form.elements.namedItem(key), value = input.value.trim();
+        if (!value) continue;
+        const label = input.closest('label').childNodes[0].textContent.trim();
+        const dt = document.createElement('dt'), dd = document.createElement('dd');
+        dt.textContent = label;
+        dd.textContent = key === 'billing' ? input.selectedOptions[0].textContent : value;
+        summary.append(dt, dd);
+      }
+      const payment = form.querySelector('input[name="review-payment-method"]:checked');
+      root.querySelector('[data-payment-summary]').textContent = payment.closest('label').textContent.trim();
+      root.querySelector('[data-review-transfer]').hidden = payment.value !== 'transfer';
+      form.hidden = true; orderReview.hidden = false; orderReview.focus();
+    });
+    root.querySelector('[data-edit-buyer]').addEventListener('click', () => {
+      orderReview.hidden = true; form.hidden = false; form.elements.name.focus();
+    });
+    form.elements.billing.addEventListener('change', () => {
+      const corporate = form.elements.billing.value === 'company';
+      root.querySelector('[data-company-fields]').hidden = !corporate;
+      form.elements.company_name.required = corporate;
+      form.elements.company_name.disabled = !corporate;
+      form.elements.tax_id.disabled = !corporate;
+    });
+  }
   const fromQuery = new URL(location.href).searchParams.get('plan');
   let selected = null;
   try {
@@ -61,4 +99,9 @@
     }
   });
   save(); render();
+  if (form) {
+    root.querySelector('[data-buyer-fields]').disabled = false;
+    form.elements.company_name.disabled = true;
+    form.elements.tax_id.disabled = true;
+  }
 })();
