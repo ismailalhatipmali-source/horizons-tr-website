@@ -1,0 +1,56 @@
+{
+  "edition": "demo",
+  "version": "1.4.3",
+  "browser": "Chrome headless, Android viewport; no physical phone",
+  "results": [
+    {
+      "name": "demo opens with its updated worker and all five original chapters",
+      "passed": true
+    },
+    {
+      "name": "word, sentence, next, story and writing controls keep working for baa",
+      "passed": true
+    },
+    {
+      "name": "word, sentence, next, story and writing controls keep working for dhaa_emphatic",
+      "passed": true
+    },
+    {
+      "name": "word, sentence, next, story and writing controls keep working for daad",
+      "passed": true
+    },
+    {
+      "name": "word, sentence, next, story and writing controls keep working for yaa",
+      "passed": true
+    },
+    {
+      "name": "word, sentence, next, story and writing controls keep working for dhaal",
+      "passed": true
+    },
+    {
+      "name": "all five chapters work in one page session without reloads",
+      "passed": true
+    },
+    {
+      "name": "alphabet auto-audio survives every letter change",
+      "passed": true
+    },
+    {
+      "name": "quiz keeps its heard-answer state after clicks",
+      "passed": true
+    },
+    {
+      "name": "existing demo progress and chapter bookmarks survive reopening",
+      "passed": true
+    },
+    {
+      "name": "unchanged previously saved demo audio is reused offline",
+      "passed": true,
+      "automaticallySavedMedia": 0
+    },
+    {
+      "name": "no uncaught application errors",
+      "passed": true
+    }
+  ]
+}

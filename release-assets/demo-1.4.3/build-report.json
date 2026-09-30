@@ -1,0 +1,18 @@
+{
+  "edition": "demo",
+  "version": "1.4.3",
+  "base_version": "1.4.0",
+  "base_archive_sha256": "03cc0471808336bde82b9de493cecde921c90352f65ee5a285cd2cc54c40a368",
+  "chapter_ids": [
+    "baa",
+    "dhaa_emphatic",
+    "daad",
+    "yaa",
+    "dhaal"
+  ],
+  "overlay_files": 4,
+  "overlay_bytes": 291037,
+  "unchanged_curriculum_and_media_files": 497,
+  "progress_storage_keys_changed": false,
+  "owner_keys_read": false
+}

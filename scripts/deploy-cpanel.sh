@@ -17,6 +17,10 @@ ASSETS_DIR="$REPO_DIR/release-assets/$VERSION"
 MANIFEST="$ASSETS_DIR/manifest.tsv"
 OVERLAY_DIR="$REPO_DIR/release-assets/$WEB_VERSION"
 OVERLAY_MANIFEST="$OVERLAY_DIR/manifest.tsv"
+DEMO_VERSION="${4:-1.4.3}"
+[[ "$DEMO_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || fail 'Invalid demo release version'
+DEMO_OVERLAY_DIR="$REPO_DIR/release-assets/demo-$DEMO_VERSION"
+DEMO_OVERLAY_MANIFEST="$DEMO_OVERLAY_DIR/manifest.tsv"
 TARGET_INPUT="${1:?Provide the cPanel document root}"
 while [[ "$TARGET_INPUT" != / && "$TARGET_INPUT" == */ ]]; do TARGET_INPUT="${TARGET_INPUT%/}"; done
 [[ "$TARGET_INPUT" == /* && "$TARGET_INPUT" != / && ! -L "$TARGET_INPUT" ]] || fail 'Invalid or symbolic-link document root'
@@ -30,6 +34,7 @@ case "$REPO_DIR/" in "$TARGET_DIR/"*) fail 'Repository must be outside the docum
 [[ -d "$SOURCE_DIR" && ! -L "$SOURCE_DIR" && -f "$SOURCE_DIR/index.html" && -f "$SOURCE_DIR/release.json" && -f "$SOURCE_DIR/.htaccess" ]] || fail 'Incomplete website release'
 [[ -f "$MANIFEST" && ! -L "$MANIFEST" && ! -L "$ASSETS_DIR" && ! -L "$REPO_DIR/release-assets" ]] || fail 'Missing or unsafe release manifest'
 [[ -f "$OVERLAY_MANIFEST" && ! -L "$OVERLAY_MANIFEST" && ! -L "$OVERLAY_DIR" ]] || fail 'Missing or unsafe web overlay manifest'
+[[ -f "$DEMO_OVERLAY_MANIFEST" && ! -L "$DEMO_OVERLAY_MANIFEST" && ! -L "$DEMO_OVERLAY_DIR" ]] || fail 'Missing or unsafe demo overlay manifest'
 [[ -z "$(find "$SOURCE_DIR" \( -type l -o \( ! -type d ! -type f \) \) -print -quit)" ]] || fail 'Website source contains a link or special file'
 
 # Private staging and retained backups are siblings of public_html, never public.
@@ -209,6 +214,43 @@ done < "$OVERLAY_MANIFEST"
 [[ -n "${OVERLAY_PATHS[learn/index.html]+present}" && -n "${OVERLAY_PATHS[learning-api/index.php]+present}" ]] || fail 'Web overlay lacks the workbook/API entry points'
 printf 'Verified web overlay %s: %s files.\n' "$WEB_VERSION" "$((overlay_lines-1))"
 
+# Apply the independently versioned public demo fix before any public writes.
+# Its allowlist excludes curriculum, paid content, activation and learner data.
+declare -A DEMO_OVERLAY_PATHS=()
+demo_overlay_lines=0
+while IFS= read -r line || [[ -n "$line" ]]; do
+  demo_overlay_lines=$((demo_overlay_lines+1))
+  if [[ "$demo_overlay_lines" == 1 ]]; then
+    [[ "$line" == $'HORIZONS_DEMO_OVERLAY_V1\t'"$DEMO_VERSION"$'\t'"$VERSION" ]] || fail 'Demo overlay header/version mismatch'
+    continue
+  fi
+  [[ "$(awk -F '\t' '{print NF}' <<< "$line")" == 4 ]] || fail 'Demo overlay row must contain four tab-separated fields'
+  IFS=$'\t' read -r sha bytes source relative <<< "$line"
+  [[ "$sha" =~ ^[0-9a-f]{64}$ && "$bytes" =~ ^[1-9][0-9]{0,7}$ && "$bytes" -le 16777216 ]] || fail 'Invalid demo overlay digest/size'
+  case "$source" in
+    src/demo-pwa/workbook.js|src/demo-pwa/release-config.js|src/demo-pwa/sw.js)
+      [[ "$relative" == "try/${source#src/demo-pwa/}" ]] || fail 'Demo overlay mapping mismatch';;
+    "release-assets/demo-$DEMO_VERSION/files/try/demo-asset-manifest.json")
+      [[ "$relative" == try/demo-asset-manifest.json ]] || fail 'Demo manifest mapping mismatch';;
+    *) fail 'Unapproved demo overlay source';;
+  esac
+  [[ -z "${DEMO_OVERLAY_PATHS[$relative]+present}" ]] || fail 'Duplicate demo overlay destination'
+  DEMO_OVERLAY_PATHS[$relative]=1
+  current="$REPO_DIR"
+  IFS=/ read -r -a segments <<< "$source"
+  for segment in "${segments[@]}"; do
+    current="$current/$segment"
+    [[ ! -L "$current" ]] || fail 'Demo overlay source contains a symbolic link'
+  done
+  [[ -f "$current" && "$(stat -c '%s' -- "$current")" == "$bytes" ]] || fail "Demo overlay file missing/size mismatch: $source"
+  digest="$(sha256sum -- "$current")"; digest="${digest%% *}"
+  [[ "$digest" == "$sha" ]] || fail "Demo overlay SHA-256 mismatch: $source"
+  cp -- "$current" "$STAGE/demo-extracted/$relative"
+  [[ "$demo_overlay_lines" -le 5 ]] || fail 'Too many demo overlay files'
+done < "$DEMO_OVERLAY_MANIFEST"
+[[ "$demo_overlay_lines" == 5 && -n "${DEMO_OVERLAY_PATHS[try/workbook.js]+present}" && -n "${DEMO_OVERLAY_PATHS[try/release-config.js]+present}" && -n "${DEMO_OVERLAY_PATHS[try/sw.js]+present}" && -n "${DEMO_OVERLAY_PATHS[try/demo-asset-manifest.json]+present}" ]] || fail 'Incomplete demo overlay'
+printf 'Verified demo overlay %s: %s files.\n' "$DEMO_VERSION" "$((demo_overlay_lines-1))"
+
 # Ignore the website's old app copies and all host/runtime configuration.
 for entry in "$SOURCE_DIR"/*; do
   name="${entry##*/}"
@@ -316,3 +358,4 @@ publish_file "$STAGE/update-extracted/updates/arabic-level-1.json" updates/arabi
 chmod 755 "$TARGET_DIR/updates"
 COMMITTED=1
 printf 'HORIZONS web %s (Windows %s) deployed to %s\nBackups: %s\n' "$WEB_VERSION" "$VERSION" "$TARGET_DIR" "$BACKUP"
+printf 'Public five-letter demo version: %s\n' "$DEMO_VERSION"

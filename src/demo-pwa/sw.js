@@ -1,6 +1,6 @@
 /* Public five-letter demo only. No activation or paid-content access is implemented here. */
 'use strict';
-const VERSION='1.4.0';
+const VERSION='1.4.3';
 const EXPECTED=['baa','dhaa_emphatic','daad','yaa','dhaal'];
 const ROOT=new URL('./',self.location.href);
 const CACHE='hzn-public-demo-'+VERSION;
@@ -8,6 +8,17 @@ const MANIFEST='demo-asset-manifest.json';
 let manifestPromise,downloading=false,cancelled=false,downloadController=null;
 const address=path=>new URL(path,ROOT).href;
 const hex=bytes=>[...new Uint8Array(bytes)].map(x=>x.toString(16).padStart(2,'0')).join('');
+// Reuse previously saved public-demo files only when the new manifest confirms
+// their bytes. Reading old media never downloads it or changes learner storage.
+async function savedFile(cache,path,item){
+  const current=await cache.match(address(path));if(current)return current;
+  if(!item)return;
+  for(const name of await caches.keys()){
+    if(name===CACHE||!/^hzn-public-demo-\d+\.\d+\.\d+$/.test(name))continue;
+    const prior=await (await caches.open(name)).match(address(path));
+    if(prior){try{return await checked(prior,item);}catch{}}
+  }
+}
 function safePath(path){
   if(typeof path!=='string'||!path||path.startsWith('/')||path.includes('\\')||path.includes('?')||path.includes('#')||path.includes('%')||path.split('/').some(x=>!x||x==='.'||x==='..'))throw Error('INVALID_MANIFEST');
   const url=new URL(path,ROOT);
@@ -43,8 +54,8 @@ async function checked(response,item){
   return new Response(bytes,{headers:{'Content-Type':item.mime||'application/octet-stream','Content-Length':String(bytes.byteLength),'X-Content-Type-Options':'nosniff'}});
 }
 async function download(path,item,cache,signal){
-  let response=await cache.match(address(path));
-  if(response){try{await checked(response.clone(),item);return;}catch{await cache.delete(address(path));}}
+  let response=await savedFile(cache,path,item);
+  if(response){try{const verified=await checked(response.clone(),item);if(!await cache.match(address(path)))await cache.put(address(path),verified);return;}catch{await cache.delete(address(path));}}
   const controller=new AbortController();
   const abort=()=>controller.abort();signal?.addEventListener('abort',abort,{once:true});
   const timer=setTimeout(abort,45000);
@@ -93,7 +104,7 @@ self.addEventListener('fetch',event=>{
     try{
       const data=await manifest();
       if(path!==MANIFEST&&!data.files[path])return fetch(request);
-      const cache=await caches.open(CACHE),saved=await cache.match(address(path));
+      const cache=await caches.open(CACHE),saved=await savedFile(cache,path,data.files[path]);
       if(saved)return rangeResponse(saved,request);
       // Merely visiting a lesson never claims that it has been saved offline.
       return await fetch(request);
@@ -104,7 +115,7 @@ async function state(){
   const data=await manifest(),cache=await caches.open(CACHE);
   let saved=0,savedBytes=0,totalBytes=0,damaged=0;
   for(const [path,item] of Object.entries(data.files)){
-    totalBytes+=item.bytes;const response=await cache.match(address(path));
+    totalBytes+=item.bytes;const response=await savedFile(cache,path,item);
     if(response){
       try{await checked(response,item);saved++;savedBytes+=item.bytes;}
       catch{damaged++;await cache.delete(address(path));}

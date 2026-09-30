@@ -14,6 +14,7 @@ import zipfile
 SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/deploy-cpanel.sh'
 VERSION = '1.4.0'
 WEB_VERSION = '1.4.2'
+DEMO_VERSION = '1.4.3'
 UPDATE = 'Horizons-Arabic-Level-1-1.4.0-update.zip'
 SETUP = 'HORIZONS-Arabic-Setup-1.4.0.exe'
 
@@ -62,6 +63,13 @@ class DeploymentTests(unittest.TestCase):
             f'release-assets/{WEB_VERSION}/files/learn/content/1.4.1/app.hzn': ('learn/content/1.4.1/app.hzn', 'encrypted web patch'),
         }
         self.write_overlay()
+        self.demo_overlay = {
+            'src/demo-pwa/workbook.js': ('try/workbook.js', 'scoped demo navigation'),
+            'src/demo-pwa/release-config.js': ('try/release-config.js', 'demo version 1.4.3'),
+            'src/demo-pwa/sw.js': ('try/sw.js', 'demo worker 1.4.3'),
+            f'release-assets/demo-{DEMO_VERSION}/files/try/demo-asset-manifest.json': ('try/demo-asset-manifest.json', '{"version":"1.4.3"}'),
+        }
+        self.write_demo_overlay()
         self.write(self.repo / 'dist/index.html', 'new home')
         self.write(self.repo / 'dist/release.json', '{"version":"1.4.0"}')
         self.write(self.repo / 'dist/.htaccess', 'Options -Indexes\n')
@@ -125,6 +133,14 @@ class DeploymentTests(unittest.TestCase):
         self.assertFalse((self.base / '.horizons-deploy-public_html/deploy.lock').exists())
         return result
 
+    def write_demo_overlay(self):
+        lines = [f'HORIZONS_DEMO_OVERLAY_V1\t{DEMO_VERSION}\t{VERSION}']
+        for source, (destination, value) in self.demo_overlay.items():
+            self.write(self.repo / source, value)
+            body = value.encode()
+            lines.append('\t'.join([hashlib.sha256(body).hexdigest(), str(len(body)), source, destination]))
+        self.write(self.repo / f'release-assets/demo-{DEMO_VERSION}/manifest.tsv', '\n'.join(lines) + '\n')
+
     def test_complete_deploy_preserves_host_data_and_repeat_is_stable(self):
         original = snapshot(self.target)
         result = self.run_deploy()
@@ -138,6 +154,8 @@ class DeploymentTests(unittest.TestCase):
         self.assertFalse((self.target / 'learning-api/obsolete.php').exists())
         self.assertEqual((self.base / 'horizons-learning/progress.sqlite').read_text(), 'PRIVATE_PROGRESS_SENTINEL')
         self.assertEqual((self.target / 'try/index.html').read_text(), 'new five-letter demo')
+        self.assertEqual((self.target / 'try/workbook.js').read_text(), 'scoped demo navigation')
+        self.assertEqual((self.target / 'try/course.json').read_text(), '{"letters":["ب","ظ","ض","ي","ذ"]}')
         self.assertFalse((self.target / 'try/stale-full-chapter.txt').exists())
         self.assertFalse((self.target / 'try/stale-plaintext.txt').exists())
         self.assertFalse((self.target / 'downloads/unapproved.exe').exists())
@@ -161,6 +179,34 @@ class DeploymentTests(unittest.TestCase):
         value = bytearray(p.read_bytes()); value[-1] ^= 1; p.write_bytes(value)
         result = self.assert_rejected_without_public_changes()
         self.assertIn('SHA-256 mismatch: update', result.stderr)
+
+    def test_corrupt_demo_overlay_fails_before_public_writes(self):
+        self.write(self.repo / 'src/demo-pwa/workbook.js', 'SCOPED DEMO NAVIGATION')
+        result = self.assert_rejected_without_public_changes()
+        self.assertIn('Demo overlay SHA-256 mismatch', result.stderr)
+
+    def test_missing_demo_overlay_fails_before_public_writes(self):
+        (self.repo / f'release-assets/demo-{DEMO_VERSION}/manifest.tsv').unlink()
+        self.assert_rejected_without_public_changes()
+
+    def test_demo_overlay_cannot_publish_activation_or_other_curriculum(self):
+        self.demo_overlay['src/demo-pwa/workbook.js'] = ('activation/config.php', 'private fixture')
+        self.write_demo_overlay()
+        self.assert_rejected_without_public_changes()
+
+    def test_demo_overlay_duplicate_is_rejected(self):
+        path = self.repo / f'release-assets/demo-{DEMO_VERSION}/manifest.tsv'
+        lines = path.read_text().splitlines()
+        path.write_text('\n'.join(lines + [lines[1]]) + '\n')
+        self.assert_rejected_without_public_changes()
+
+    def test_demo_overlay_symlink_is_rejected(self):
+        path = self.repo / 'src/demo-pwa/workbook.js'
+        path.unlink()
+        outside = self.base / 'outside-demo.js'
+        outside.write_text('scoped demo navigation')
+        path.symlink_to(outside)
+        self.assert_rejected_without_public_changes()
 
     def test_missing_chunk_fails_before_public_writes(self):
         (self.assets / 'demo/part-0000').unlink()

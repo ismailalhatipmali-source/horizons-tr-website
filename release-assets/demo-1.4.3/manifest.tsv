@@ -1,0 +1,5 @@
+HORIZONS_DEMO_OVERLAY_V1	1.4.3	1.4.0
+c9602cc0f6aeb459d25221809daff215ec9dff5601e38aaa0478db5bfb413e3a	159979	src/demo-pwa/workbook.js	try/workbook.js
+539617a5b05f2a4c7f457cad35c35022a0277f837dc5cb6b76d26e95a4feef22	713	src/demo-pwa/release-config.js	try/release-config.js
+70aabca02503a42a279f05b7ac69f5e81f9593380f11b4d70ccb9bf57097409f	11358	src/demo-pwa/sw.js	try/sw.js
+9da5e8a852b7af4a993e6edce5b57f12ee7e448b3be9cda35704c68e9b4badac	118987	release-assets/demo-1.4.3/files/try/demo-asset-manifest.json	try/demo-asset-manifest.json

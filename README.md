@@ -1,4 +1,4 @@
-# HORIZONS — Arabic Workbook web 1.4.2 / Windows 1.4.0
+# HORIZONS — Arabic Workbook web 1.4.2 / demo 1.4.3 / Windows 1.4.0
 
 This repository prepares the existing HORIZONS website and Arabic Level 1 workbook for the owner's cPanel deployment. The approved company design, 32 site languages, localized pages, video, and RTL/LTR layouts remain in place. The original company preview is recorded by `preview_source_commit` in `dist/release.json`.
 
@@ -13,9 +13,13 @@ This repository prepares the existing HORIZONS website and Arabic Level 1 workbo
 | Check the deployed website release | `/release.json` |
 | Authenticated learning-progress API | `/learning-api/` |
 
-The full workbook contains 28 letter lessons, 560 words, 560 example sentences, and 56 short stories. It uses the existing activation service and its signed entitlements. This release does not create a second activation backend. Public checkout remains disabled.
+The full workbook contains 28 letter lessons, 560 word cards with example sentences, and 56 short stories. It uses the existing activation service and its signed entitlements. This release does not create a second activation backend. Public checkout remains disabled.
 
 The demo contains only **ب، ظ، ض، ي، ذ**, in that order: `baa`, `dhaa_emphatic`, `daad`, `yaa`, `dhaal`. It has five lessons, 100 words, 100 example sentences, and 10 stories; it does not require activation.
+
+The public demo update **1.4.3** fixes audio being immediately cancelled after changing a lesson. The old course-button selector also matched the body after the layout added `data-course`, so every click bubbled into another navigation and stopped playback. The selector is now scoped to `#course-nav`. The independently verified four-file demo overlay is applied to the original 1.4.0 archive during cPanel deployment; its lessons, media, bundled course data and progress storage keys remain unchanged. Compatible media already saved under the previous demo cache remains usable offline after the update. The full browser edition stays at 1.4.2 and Windows stays at 1.4.0. Preparing this commit does not publish it to the live site.
+
+Build the demo overlay with `python3 scripts/build_demo_overlay.py`. It verifies all original demo ZIP parts and allows only the reviewed navigation fix and displayed-version change in the player. Run deployment preservation/failure checks with `python3 tests/test_deploy_cpanel.py`. Run the real Chromium regression in `tests/test_demo_navigation.mjs` against a staged, isolated loopback fixture using `HZN_DEMO_BASE_URL`, `HZN_DEMO_DOCROOT` and `E2E_CHROMIUM`; it verifies all five lessons without refresh, actual audio completion, activity controls, progress after reopening, and reuse of previously saved audio offline. Physical-phone verification follows the owner's pull/deploy.
 
 Browser use is the primary option. Installing a web-app icon or the Windows application is optional. Adding a web-app icon does not download every lesson: users explicitly save the content they need for offline use. Browser storage can be cleared or evicted. Full-edition offline access still requires a valid entitlement; downloading content does not extend a time-limited licence.
 
