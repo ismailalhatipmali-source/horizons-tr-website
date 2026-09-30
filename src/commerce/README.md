@@ -2,7 +2,7 @@
 
 This is a **review build**, not a connected bank checkout. The cPanel deployment
 copies `dist/` pages only. It does not deploy or run `PurchaseLedger.php`. No buyer
-data, bank details, private activation files, credentials, customer database,
+data, private activation files, credentials, customer database,
 reusable licence code, or signing key is committed here.
 
 ## Prepared in this branch
@@ -19,7 +19,7 @@ reusable licence code, or signing key is committed here.
   to charge, or a promise that the bank supports these currencies. Pages are
   `noindex`. The builder refuses live collection flags.
 - Existing terms, privacy, company details and support remain linked. The IBAN
-  is intentionally unconfigured until the owner approves the receiving account.
+  includes the three owner-supplied corporate TRY/USD/EUR accounts. Format and MOD-97 checks pass; beneficiary ownership is supplied by the owner, not independently verified.
 
 ## Product decision
 
@@ -80,7 +80,7 @@ and preservation of learner progress **before any live collection opens**.
 - Base prices approved by the owner: USD 9.90 / 99 / 150. Confirm sale currency and tax-inclusive totals, with
   accounting confirmation where needed. Turkish lira transfer details must not
   silently reuse a USD total or an invented conversion rate.
-- Owner confirms the exact corporate beneficiary/IBAN and account currency.
+- Owner supplied corporate TRY/USD/EUR IBANs on 30 September; bank linkage and payment currency remain pending.
 - Current VakıfBank merchant integration pack confirms whether a bank-hosted
   payment page, accepted currencies, foreign cards and recurring charges are
   enabled for this account. Keys are set privately on the server, not in chat/Git.
@@ -124,3 +124,7 @@ php tests/test_purchase_ledger.php
 - Chromium and agent-browser could not launch in this execution environment (`socket() Operation not permitted`). The visual/mobile browser test is present but has NOT passed here.
 - No bank adapter, payment endpoint, activation issuer adapter or SMTP worker was deployed.
 - This branch is a review preparation, not yet a complete bank-ready/live checkout.
+
+## Currency display
+
+Owner requested local-currency display. Display FX is configured but disabled pending a deployed server-side rate feed. Use dated indicative TCMB rates where available, allow manual currency selection, never equate interface language with country, and show USD when rates are missing/stale. Any future settlement conversion must be server-side and fix amount, currency, rate and expiry on the order; a browser estimate cannot authorize payment. Bank-card settlement currencies require the merchant agreement. No live FX feed is active in this review.

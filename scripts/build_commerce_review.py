@@ -15,6 +15,19 @@ def build(dest):
     catalog = json.loads((SRC / 'catalog.json').read_text())
     if catalog['mode'] != 'review' or catalog['charges_enabled'] is not False or catalog['price_approved'] is not False:
         raise ValueError('This builder supports review only; use an audited payment service for live checkout.')
+    transfer = catalog.get('bank_transfer', {})
+    accounts = transfer.get('accounts', {})
+    for currency, iban in accounts.items():
+        if currency not in ('TRY', 'USD', 'EUR') or not re.fullmatch(r'TR[0-9]{24}', iban):
+            raise ValueError('Invalid corporate transfer account')
+        digits = ''.join(str(ord(c)-55) if c.isalpha() else c for c in iban[4:] + iban[:4])
+        if int(digits) % 97 != 1:
+            raise ValueError('Invalid IBAN checksum')
+    bank_details = '<div class="commerce-bank-accounts"><p>' + html.escape(transfer.get('bank', '')) + '</p><p class="commerce-beneficiary">' + html.escape(transfer.get('beneficiary', '')) + '</p>'
+    for currency, iban in accounts.items():
+        grouped = ' '.join(iban[i:i+4] for i in range(0,len(iban),4))
+        bank_details += '<p data-account="' + currency + '"><b>' + currency + '</b><br/><span dir="ltr" class="commerce-iban">' + grouped + '</span></p>'
+    bank_details += '</div>'
     labels = json.loads((SRC / 'locales.json').read_text())
     for lang in LANGS:
         data = labels[lang]
@@ -53,7 +66,7 @@ def build(dest):
             if page == 'cart':
                 main += f'<section class="commerce-panel">{item}<button type="button" class="commerce-remove" data-remove>{t("remove")}</button><div class="commerce-after"><b>{t("access")}</b><p>{t("access_note")}</p></div></section>'
             else:
-                main += f'<section class="commerce-panel"><label class="commerce-email">{t("email")}<input type="email" disabled autocomplete="off" placeholder="name@example.com" aria-describedby="review-email-note"/></label><p id="review-email-note" class="commerce-small">{t("review_note")}</p><fieldset class="commerce-methods"><legend>{t("payment")}</legend><label><input type="radio" name="review-payment-method" value="card" checked/>{t("card")} · VakıfBank</label><label><input type="radio" name="review-payment-method" value="transfer"/>{t("transfer")}</label></fieldset><div class="notice" data-method-note="card">{t("card_note")}</div><div class="notice" data-method-note="transfer" hidden>{t("transfer_note")}</div><div class="commerce-policy-links">' + ''.join(policies) + '</div></section>'
+                main += f'<section class="commerce-panel"><label class="commerce-email">{t("email")}<input type="email" disabled autocomplete="off" placeholder="name@example.com" aria-describedby="review-email-note"/></label><p id="review-email-note" class="commerce-small">{t("review_note")}</p><fieldset class="commerce-methods"><legend>{t("payment")}</legend><label><input type="radio" name="review-payment-method" value="card" checked/>{t("card")} · VakıfBank</label><label><input type="radio" name="review-payment-method" value="transfer"/>{t("transfer")}</label></fieldset><div class="notice" data-method-note="card">{t("card_note")}</div><div class="notice" data-method-note="transfer" hidden>{t("transfer_note")}{bank_details}</div><div class="commerce-policy-links">' + ''.join(policies) + '</div></section>'
             main += '<aside class="commerce-panel">'
             if page == 'checkout':
                 main += item

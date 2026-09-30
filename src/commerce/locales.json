@@ -26,7 +26,7 @@
     "review_note": "Preview only. No payment or buyer details are collected. Prices are provisional.",
     "access_note": "One adult account email, up to three registered devices, and separate learner profiles.",
     "card_note": "After integration, card payment will open on the bank’s secure payment page.",
-    "transfer_note": "Company account details will appear here after approval. Access follows confirmation that funds were received.",
+    "transfer_note": "Company accounts are listed below by currency. Payments are not open yet. When enabled, use the account matching the order currency and include the order reference. Access is granted after receipt of funds is verified.",
     "after_note": "After confirmed payment, open the workbook on each device using the same account email.",
     "billing_note": "Final prices, currency and taxes need approval. Automatic renewal is not enabled."
   },
@@ -57,7 +57,7 @@
     "review_note": "هذه معاينة فقط. لا يتم تحصيل مبالغ أو جمع بيانات المشتري. الأسعار مبدئية.",
     "access_note": "حساب واحد ببريد الشخص البالغ، يسمح بثلاثة أجهزة مسجلة وملفات متعلمين منفصلة.",
     "card_note": "بعد اكتمال الربط، يُفتح الدفع بالبطاقة في صفحة الدفع الآمنة الخاصة بالبنك.",
-    "transfer_note": "ستظهر بيانات حساب الشركة هنا بعد اعتمادها. يُفعّل الوصول بعد تأكيد وصول الحوالة.",
+    "transfer_note": "حسابات الشركة موضحة أدناه بحسب العملة. الدفع لم يُفتح بعد؛ عند فتحه استخدم حساب عملة الطلب نفسها واكتب رقم الطلب في وصف الحوالة. يُفعّل الترخيص بعد التحقق من وصول المبلغ.",
     "after_note": "بعد تأكيد الدفع، افتح الكراسة على كل جهاز باستخدام بريد الحساب نفسه.",
     "billing_note": "الأسعار النهائية والعملة والضرائب تحتاج إلى اعتماد. التجديد التلقائي غير مُفعّل."
   },
@@ -88,7 +88,7 @@
     "review_note": "Yalnızca önizlemedir. Ödeme alınmaz ve alıcı bilgileri toplanmaz. Fiyatlar taslaktır.",
     "access_note": "Yetişkinin e-postasına bağlı tek hesap, en fazla üç kayıtlı cihaz ve ayrı öğrenci profilleri.",
     "card_note": "Entegrasyondan sonra kart ödemesi bankanın güvenli ödeme sayfasında açılacaktır.",
-    "transfer_note": "Şirket hesap bilgileri onaylandıktan sonra burada gösterilecektir. Erişim, havalenin hesaba ulaştığı doğrulandıktan sonra açılır.",
+    "transfer_note": "Şirketin para birimine göre hesapları aşağıdadır. Ödemeler henüz açık değildir. Açıldığında siparişle aynı para birimindeki hesabı kullanın ve açıklamaya sipariş numarasını yazın. Lisans, tutarın hesaba ulaştığı doğrulandıktan sonra açılır.",
     "after_note": "Ödeme doğrulandıktan sonra her cihazda aynı hesap e-postasıyla çalışma kitabını açın.",
     "billing_note": "Kesin fiyatlar, para birimi ve vergiler onay bekliyor. Otomatik yenileme etkin değildir."
   },

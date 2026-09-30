@@ -29,3 +29,5 @@
 .commerce-reentry{margin-top:20px}.commerce-nav-basket{border:1px solid var(--line);padding:7px 12px;border-radius:9px}
 @media(max-width:800px){.commerce-grid{grid-template-columns:1fr}.commerce-plan-grid{grid-template-columns:1fr}.commerce-main{padding:24px 14px 40px}.commerce-panel{padding:20px}.commerce-plan{display:grid;grid-template-columns:1fr auto;gap:4px 20px}.commerce-plan .commerce-small{grid-column:1/-1}.commerce-plan .button{grid-column:1/-1}}
 @media(max-width:430px){.commerce-item{align-items:start;gap:14px}.commerce-item img{width:80px}.commerce-panel{padding:18px}.commerce-steps{gap:8px;font-size:.85rem}.commerce-steps a,.commerce-steps span{padding:5px 12px}.commerce-methods label{padding:11px}}
+
+.commerce-iban{display:inline-block;overflow-wrap:anywhere;font-variant-numeric:tabular-nums;user-select:all;max-width:100%}.commerce-beneficiary{overflow-wrap:anywhere}.commerce-bank-accounts{margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
