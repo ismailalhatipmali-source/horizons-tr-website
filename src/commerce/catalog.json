@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "mode": "review",
+  "price_approved": true,
+  "charges_enabled": false,
+  "product": "horizons-arabic-level1",
+  "max_devices": 3,
+  "currency": "USD",
+  "prices_are_tax_final": true,
+  "plans": {
+    "monthly": {
+      "proposed_minor": 999,
+      "months": 1
+    },
+    "annual": {
+      "proposed_minor": 9900,
+      "months": 12
+    },
+    "lifetime": {
+      "proposed_minor": 15000,
+      "months": null
+    }
+  },
+  "methods": {
+    "card": {
+      "provider": "VakıfBank",
+      "state": "pending"
+    },
+    "transfer": {
+      "provider": "VakıfBank",
+      "state": "pending"
+    }
+  },
+  "base_prices_approved": true,
+  "base_prices_approved_on": "2026-09-30",
+  "bank_transfer": {
+    "bank": "VakıfBank",
+    "beneficiary": "HORİZONS EĞİTİM DANIŞMANLIK TURİZM EMLAKÇILIK TİCARET LTD ŞTİ",
+    "accounts": {
+      "TRY": "TR720001500158007304437467",
+      "USD": "TR840001500158048016184449",
+      "EUR": "TR550001500158048016188948"
+    },
+    "collection_enabled": false
+  },
+  "display_fx": {
+    "enabled": false,
+    "source": "TCMB",
+    "base": "USD",
+    "purpose": "indicative_display_only",
+    "region_detection": "browser_locale_with_manual_override",
+    "settlement_currencies_pending_bank_approval": true
+  }
+}
