@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "mode": "review",
-  "price_approved": false,
+  "price_approved": true,
   "charges_enabled": false,
   "product": "horizons-arabic-level1",
   "max_devices": 3,
   "currency": "USD",
-  "prices_are_tax_final": false,
+  "prices_are_tax_final": true,
   "plans": {
     "monthly": {
-      "proposed_minor": 990,
+      "proposed_minor": 999,
       "months": 1
     },
     "annual": {

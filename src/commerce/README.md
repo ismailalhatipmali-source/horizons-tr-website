@@ -1,141 +1,90 @@
-# VakıfBank checkout preparation — 2026-09-30
+# VakıfBank checkout preparation — 30 September 2026
 
-This is a **review build**, not a connected bank checkout. The cPanel deployment
-copies `dist/` pages only. It does not deploy or run `PurchaseLedger.php`. No buyer
-data, private activation files, credentials, customer database,
-reusable licence code, or signing key is committed here.
+## Current release: non-collecting bank review
 
-## Prepared in this branch
+The owner approved final **tax-inclusive USD totals**: monthly **9.99**, annual
+**99**, lifetime **150**. No tax is added above these totals. The invoicing tax
+rate/breakdown requires accounting configuration before live sales; no tax rate
+is invented here. Approval of prices never enables collection.
 
-- Workbook → plan selection → basket → checkout preview, in all 32 existing site
-  languages, with the existing typography, branding and RTL/LTR direction.
-- One workbook licence per basket; switching plan replaces the previous plan.
-- Basket carries only a product/plan/quantity in its own session storage key.
-  Learner progress, activation, password, offline media and sync are untouched.
-- Card and bank transfer have visible separate explanations. Buyer/billing fields and a review/edit step work entirely in page memory.
-  Payment submission is disabled, including when a URL says `success=true`.
-- Prices shown are **the owner's approved base prices (30 September 2026)**, visibly provisional:
-  USD 9.90 / 99 / 150. Final tax-inclusive checkout totals and settlement currency remain unapproved. They are not tax determinations, an offer
-  to charge, or a promise that the bank supports these currencies. Pages are
-  `noindex`. The builder refuses live collection flags.
-- Existing terms, privacy, company details and support remain linked. The IBAN
-  includes the three owner-supplied corporate TRY/USD/EUR accounts. Format and MOD-97 checks pass; beneficiary ownership is supplied by the owner, not independently verified.
+All 32 existing languages have plan selection → basket → adult buyer/billing
+form → terms/privacy acknowledgement → order review/edit → disabled payment
+placeholder. Corporate TRY/USD/EUR IBANs supplied by the owner pass format and
+MOD-97 checks. Ownership is owner-supplied, not independently verified. Digital
+delivery and the existing statutory refund/withdrawal conditions are explained.
 
-## Product decision
+One adult account owns the paid entitlement with **three registered device
+slots**, separate learner profiles and the same email/password on each device.
+Do not email three reusable codes. The activation adapter must upgrade a trial
+without replacing its stable account ID, password, progress or registered device.
+Email OTPs remain single-use and separate from the licence period.
 
-Use **one paid entitlement bound to the adult purchaser's verified email, with
-three registered device slots**. Do not email three reusable codes. The existing
-web 1.4.2 client already verifies paid `direct` entitlements with `max_devices=3`.
-On a new device, the purchaser uses that same email with the existing proof of
-ownership/password flow. An email OTP remains one-use and separate from the
-licence period. The initial purchase email will contain the order reference,
-plan, access instructions and `/learn/`, rather than a decryption key.
+Buyer input stays in page memory only. No HTTP order endpoint is connected; no
+order/invoice is issued. No buyer details enter URLs, local/session storage,
+analytics or SMTP. Only product/plan/quantity persist in the basket's session key.
+The submit handler is installed before enabling the initially disabled fields.
+Native validation and explicit terms acknowledgement precede review. Inputs are
+rendered with text nodes. Payment stays disabled regardless of query parameters.
+Reading terms is not a waiver of withdrawal rights or early-delivery consent.
 
-The private issuer must upgrade an existing trial account without discarding
-its stable account ID, learner records, password or already registered device.
-The three slots are registered **devices**, not three separate purchases or
-three learner profiles. User-initiated progress sync stays opt-in.
+Corporate invoice fields are a review UI. Jurisdiction-specific invoicing rules,
+including any mandatory tax identifiers, must be enforced by the future server.
+No child-identifying fields, card numbers or banking credentials are requested.
 
-## Prepared internal ledger and activation contract
+## Integration boundary
 
-`PurchaseLedger.php` runs only on PHP 8.2+ with PDO SQLite in a private directory
-outside `public_html`, when a later reviewed integration enables it. It is
-validated separately using a **fake BankVerifier**. No production bank adapter exists here.
+`PurchaseLedger.php` is an internal PHP 8.2+ / PDO SQLite contract, not an HTTP
+payment service. cPanel copies `dist/`; it does not deploy this ledger. Its private
+database must stay outside public_html. A trusted BankVerifier queries the stored
+transaction and validates financial sale state, merchant, terminal, order,
+transaction, exact amount and currency. Authentication alone is not payment.
+An atomic paid state and unique outbox job prevent duplicate fulfilment on retries.
+The private issuer must independently enforce grant idempotency by order_id.
+A mail job is queued only after grant acknowledgement, not after browser success.
 
-1. Server creates an order from its private approved price catalog (minor integer
-   units), fixes the email, and assigns distinct order and transaction IDs.
-2. A bank adapter creates the bank-hosted payment session. Exact endpoints,
-   request signing and merchant/terminal settings must follow the current
-   integration pack issued for this merchant. No browser card fields are needed
-   when an approved hosted page is available.
-3. A callback is only a signal to query. `BankVerifier::querySale` independently
-   queries the stored transaction on the bank server and normalizes a confirmed
-   **financial sale**. A 3-D authentication success or an authorization hold
-   is insufficient. The adapter must verify merchant, terminal, order, transaction,
-   exact amount, currency, approval, sale state and reversal state.
-4. The ledger checks the normalized result against the stored order and commits
-   `paid` with one `grant_access` outbox row in a single SQLite transaction.
-5. A **private activation adapter, still to implement**, delivers that row to
-   the existing issuer. The issuer must enforce a unique `order_id` in its own
-   transaction and update/renew the existing account with the appropriate plan
-   and `max_devices=3`. Grant retries must return the same account and effective
-   licence period, including after a worker crashes.
-6. Only after the private issuer acknowledges that grant is the order changed to
-   `access_ready` and one `send_access_mail` job queued. SMTP is **not implemented
-   or invoked** by this preparation. A mail worker must record delivery/retry
-   status and use the order ID as its idempotency key. The ledger currently
-   provides durable event rows, not a complete worker/scheduler system.
+No production bank adapter, activation purchase adapter, SMTP worker, transfer
+verification, invoice endpoint, reconciliation or reversal handling exists here.
+These must be implemented/tested before enabling collection. Transfer access
+requires funds actually credited to the matching corporate currency account.
+No automatic recurring charge or automatic renewal is enabled.
 
-Monthly/annual access is a calendar period handled by the existing issuer.
-Automatic recurring charges are **not** enabled; the bank agreement, consent,
-renewal rules and cancellation flow need separate validation. Bank transfer
-must be matched against funds actually credited to the corporate account,
-not a screenshot or a client-side “I paid” flag. Its verification adapter is
-also unimplemented. Refunds, cancellations and disputed payments require
-authenticated reversal handling, reconciliation, licence revocation/adjustment
-and preservation of learner progress **before any live collection opens**.
+The bank-review pages can be published while collection remains disabled.
+Before enabling sales: validate the bank merchant integration pack and supported
+settlement currencies; implement private endpoints/workers and refund/dispute
+handling; configure invoicing and consent records; confirm delivery timing and
+applicable legal documents; run bank sandbox and controlled live validation.
+Workbook password/device, export/restore, physical-device sync and brother's
+sound checks in the handover remain open and are unaffected by this preparation.
 
-## Next prerequisites before bank review/publication
+## Local-currency display
 
-- Base prices approved by the owner: USD 9.90 / 99 / 150. Confirm sale currency and tax-inclusive totals, with
-  accounting confirmation where needed. Turkish lira transfer details must not
-  silently reuse a USD total or an invented conversion rate.
-- Owner supplied corporate TRY/USD/EUR IBANs on 30 September; bank linkage and payment currency remain pending.
-- Current VakıfBank merchant integration pack confirms whether a bank-hosted
-  payment page, accepted currencies, foreign cards and recurring charges are
-  enabled for this account. Keys are set privately on the server, not in chat/Git.
-- Final pre-contract information, delivery timing, invoicing and applicable
-  cancellation/refund terms must match the actual product and bank agreement.
-- Private activation purchase adapter, bank adapter, transfer verification,
-  consent/order endpoints, queue workers and reversal handling are implemented
-  and tested with the bank's sandbox, then a controlled live transaction.
-- Workbook password/device, export/restore, physical-device sync and sound checks
-  in the owner's handover remain open. This branch resolves none of those.
+FX display is configured but **disabled**: no live rates are fetched. Future
+server-side dated indicative TCMB rates may show an estimated local amount with
+manual override and fallback to USD. Never equate language with country. A
+settlement conversion must fix amount/currency/rate/expiry on the server-side
+order; browser estimates cannot authorize payment. A corporate EUR/TRY account
+does not itself prove the card gateway accepts that currency.
 
-Do not start another cPanel deployment while the existing demo deployment is
-running. This preparation lives on `prepare/vakifbank-checkout` for review; it
-does not replace the published demo fix on `main`.
+## Validation
 
-## Primary references
+64 cart/checkout DOM cases pass: plans/navigation/removal, required fields,
+explicit acknowledgement, corporate billing, review/edit, HTML escaping,
+transfer details, disabled payment, forged-success rejection and no buyer
+persistence. Approved amounts and disabled collection are checked for all pages.
+22 deployment regressions and isolated PHP 8.3 fake-bank ledger tests pass.
+Rebuilding is idempotent. No bank transaction or live order occurred.
 
-- VakıfBank's public [integration guide 2.4](https://vbassets.vakifbank.com.tr/ticari/pos-uye-is-yeri-hizmetleri/vakifbank-sanal-pos-entegrasyon-dokumani-2.4-versiyon.pdf),
-  §5.3: financial provision, transaction/order references and result queries.
-  Its public endpoint examples are not assumed current for this merchant.
-- VakıfBank's public [sandbox](https://sanalpossandbox-test.vakifbank.com.tr/)
-  distinguishes authentication, provision and transaction status. No transaction
-  was submitted to the bank during this task.
-- [Turkish Ministry of Trade: distance contracts](https://tuketici.ticaret.gov.tr/yayinlar/tuketici-bilgi-rehberi/mesafeli-sozlesmeler-hakkinda-bilgilendirme),
-  pre-contract seller, total price, delivery and consumer-rights information.
+Local Chromium/agent-browser launch is blocked by socket restrictions; cloud
+access to loopback is also blocked. **Visual/mobile review is still pending**.
+Do not claim a browser screenshot, bank approval or completed payment integration.
+After cPanel publication the owner should verify the review UI on actual devices.
 
-## Rebuild and validate
+Build: `python3 scripts/build_commerce_review.py`.
+DOM test: `node tests/test_commerce_dom.mjs` (jsdom dependency).
+Browser test: `node tests/test_commerce_browser.mjs` (Playwright/Chromium).
+Ledger test: `php tests/test_purchase_ledger.php` (PDO SQLite).
+Deployment test: `python3 -m unittest discover -s tests -p test_deploy_cpanel.py`.
 
-```sh
-python3 scripts/build_commerce_review.py
-php tests/test_purchase_ledger.php
-# Serve dist/ locally, then use tests/test_commerce_browser.mjs.
-```
-
-## Validation on 30 September 2026
-
-- Owner approved base prices; final checkout totals, tax treatment and bank settlement currency remain pending.
-- PHP 8.3 isolated ledger test passed (fake bank, no production calls).
-- 64 cart/checkout DOM integration cases passed using jsdom; local asset/navigation links checked.
-- 22 deployment regression tests passed.
-- Chromium and agent-browser could not launch in this execution environment (`socket() Operation not permitted`). The visual/mobile browser test is present but has NOT passed here.
-- No bank adapter, payment endpoint, activation issuer adapter or SMTP worker was deployed.
-- This branch is a review preparation, not yet a complete bank-ready/live checkout.
-
-## Currency display
-
-Owner requested local-currency display. Display FX is configured but disabled pending a deployed server-side rate feed. Use dated indicative TCMB rates where available, allow manual currency selection, never equate interface language with country, and show USD when rates are missing/stale. Any future settlement conversion must be server-side and fix amount, currency, rate and expiry on the order; a browser estimate cannot authorize payment. Bank-card settlement currencies require the merchant agreement. No live FX feed is active in this review.
-
-## Checkout review expansion — 30 September 2026
-
-- Full name, adult email, billing country/city/address, optional postal code and individual/company invoice selection in all 32 languages. Company name is required for company billing; tax number is optional in the review and jurisdiction-specific live invoicing validation is still required.
-- Required acknowledgement of purchase terms/privacy, with existing translated statutory-rights and seller information visible inside checkout. This acknowledgement is not a waiver of withdrawal rights or permission for early digital delivery.
-- Validated review step shows the buyer's input using text nodes (not HTML), payment choice and corporate accounts; edit returns to the existing form. No buyer data is transmitted, persisted, placed in URL parameters or assigned an order number.
-- Fields begin disabled without JavaScript. The submit handler is installed before enabling them; the final payment control stays disabled throughout.
-- Terms now reflect a single adult account with three registered devices and digital delivery after verified payment. Existing statutory refund/withdrawal wording remains.
-- DOM regression covers all 64 pages, empty/invalid forms, explicit acknowledgement, company billing validation, review/edit, injected HTML escaping, transfer accounts, payment disablement and buyer-data non-persistence. It passes.
-- Both local Chromium and cloud access to loopback preview are blocked in this session. Visual/mobile verification remains pending; no screenshot or real-bank result is claimed.
-- Do not call this a complete bank-approved or live checkout. Final tax-inclusive totals, settlement currency, delivery timing, real invoicing, bank/activation adapters and legal prerequisites remain to finalize before collection.
+Official references:
+- [VakıfBank integration guide](https://vbassets.vakifbank.com.tr/ticari/pos-uye-is-yeri-hizmetleri/vakifbank-sanal-pos-entegrasyon-dokumani-2.4-versiyon.pdf).
+- [Ministry of Trade distance-contract guidance](https://tuketici.ticaret.gov.tr/yayinlar/tuketici-bilgi-rehberi/mesafeli-sozlesmeler-hakkinda-bilgilendirme).

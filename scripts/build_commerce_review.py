@@ -13,7 +13,7 @@ SRC = ROOT / 'src/commerce'
 
 def build(dest):
     catalog = json.loads((SRC / 'catalog.json').read_text())
-    if catalog['mode'] != 'review' or catalog['charges_enabled'] is not False or catalog['price_approved'] is not False:
+    if catalog['mode'] != 'review' or catalog['charges_enabled'] is not False:
         raise ValueError('This builder supports review only; use an audited payment service for live checkout.')
     transfer = catalog.get('bank_transfer', {})
     accounts = transfer.get('accounts', {})
@@ -131,7 +131,7 @@ def build(dest):
         (()=>{{const langs={json.dumps(LANGS)};const u=new URL(location.href);const candidates=[u.searchParams.get('lang'),...(navigator.languages||[navigator.language])];const lang=candidates.filter(Boolean).map(x=>x.toLowerCase().split('-')[0]).map(x=>['nb','nn'].includes(x)?'no':x).find(x=>langs.includes(x))||'en';const plan=u.searchParams.get('plan');const q=['monthly','annual','lifetime'].includes(plan)?'?plan='+plan:'';location.replace(lang+'/{page}.html'+q)}})();
         </script></body></html>'''
         (dest / (page + '.html')).write_text(entry)
-    print(f'Built {len(LANGS)} review carts and checkouts; collection disabled; final checkout totals and settlement currency remain pending.')
+    print(f'Built {len(LANGS)} review carts and checkouts; tax-inclusive prices approved; collection disabled pending bank integration.')
 
 
 if __name__ == '__main__':

@@ -6,7 +6,7 @@
   const root = document.querySelector('[data-commerce-page]');
   if (!root) return;
   const cfg = JSON.parse(document.getElementById('commerce-catalog').textContent);
-  if (cfg.mode !== 'review' || cfg.charges_enabled !== false || cfg.price_approved !== false) {
+  if (cfg.mode !== 'review' || cfg.charges_enabled !== false) {
     throw new Error('This review UI cannot process live orders.');
   }
   const planNames = Object.keys(cfg.plans);
