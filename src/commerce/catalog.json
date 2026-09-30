@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "mode": "review",
+  "price_approved": false,
+  "charges_enabled": false,
+  "product": "horizons-arabic-level1",
+  "max_devices": 3,
+  "currency": "USD",
+  "prices_are_tax_final": false,
+  "plans": {
+    "monthly": {
+      "proposed_minor": 990,
+      "months": 1
+    },
+    "annual": {
+      "proposed_minor": 9900,
+      "months": 12
+    },
+    "lifetime": {
+      "proposed_minor": 15000,
+      "months": null
+    }
+  },
+  "methods": {
+    "card": {
+      "provider": "Vak\u0131fBank",
+      "state": "pending"
+    },
+    "transfer": {
+      "provider": "Vak\u0131fBank",
+      "state": "pending"
+    }
+  },
+  "base_prices_approved": true,
+  "base_prices_approved_on": "2026-09-30"
+}
