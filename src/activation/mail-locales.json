@@ -1,0 +1,226 @@
+{
+  "en": {
+    "subject": "HORIZONS · 8-digit code",
+    "label": "8-digit code",
+    "expiry": "This code expires in 10 minutes. If you did not request it, ignore this email.",
+    "privacy": "Only the adult purchase email, technical device identifier and activation key are sent. No child data or learning progress is sent.",
+    "support": "For help, contact the seller through your Gumroad purchase receipt. Include the version number and an error description; do not send child information or login codes."
+  },
+  "ar": {
+    "subject": "HORIZONS · رمز من 8 أرقام",
+    "label": "رمز من 8 أرقام",
+    "expiry": "تنتهي صلاحية الرمز بعد 10 دقائق. إذا لم تطلبه، تجاهل هذه الرسالة.",
+    "privacy": "يُرسل فقط بريد المشتري البالغ والمعرّف التقني للجهاز ومفتاح التفعيل. لا تُرسل بيانات الأطفال أو تقدّم التعلّم.",
+    "support": "للمساعدة، تواصل مع البائع من خلال إيصال شرائك على Gumroad. اذكر رقم الإصدار ووصف الخطأ؛ ولا ترسل معلومات الأطفال أو رموز الدخول."
+  },
+  "tr": {
+    "subject": "HORIZONS · 8 haneli kod",
+    "label": "8 haneli kod",
+    "expiry": "Bu kodun geçerliliği 10 dakika sonra sona erer. Kodu siz istemediyseniz bu e-postayı dikkate almayın.",
+    "privacy": "Yalnızca yetişkin alıcının e-postası, teknik cihaz tanımlayıcısı ve etkinleştirme anahtarı gönderilir. Çocuk verileri veya öğrenme ilerlemesi gönderilmez.",
+    "support": "Yardım için Gumroad satın alma makbuzunuz üzerinden satıcıyla iletişime geçin. Sürüm numarasını ve hata açıklamasını ekleyin; çocuk bilgilerini veya giriş kodlarını göndermeyin."
+  },
+  "fr": {
+    "subject": "HORIZONS · Code à 8 chiffres",
+    "label": "Code à 8 chiffres",
+    "expiry": "Ce code expire dans 10 minutes. Si vous ne l’avez pas demandé, ignorez cet e-mail.",
+    "privacy": "Seuls l’adresse e-mail de l’acheteur adulte, l’identifiant technique de l’appareil et la clé d’activation sont envoyés. Aucune donnée enfant ni aucun progrès d’apprentissage n’est envoyé.",
+    "support": "Pour obtenir de l’aide, contactez le vendeur depuis votre reçu d’achat Gumroad. Indiquez le numéro de version et décrivez l’erreur ; n’envoyez aucune information sur les enfants ni aucun code de connexion."
+  },
+  "es": {
+    "subject": "HORIZONS · Código de 8 dígitos",
+    "label": "Código de 8 dígitos",
+    "expiry": "Este código caduca en 10 minutos. Si no lo has solicitado, ignora este correo.",
+    "privacy": "Solo se envían el correo del comprador adulto, el identificador técnico del dispositivo y la clave de activación. No se envían datos infantiles ni el progreso de aprendizaje.",
+    "support": "Para obtener ayuda, contacta con el vendedor desde tu recibo de compra de Gumroad. Incluye el número de versión y una descripción del error; no envíes datos infantiles ni códigos de acceso."
+  },
+  "de": {
+    "subject": "HORIZONS · 8-stelliger Code",
+    "label": "8-stelliger Code",
+    "expiry": "Dieser Code läuft in 10 Minuten ab. Wenn Sie ihn nicht angefordert haben, ignorieren Sie diese E-Mail.",
+    "privacy": "Es werden nur die Kauf-E-Mail-Adresse des Erwachsenen, die technische Gerätekennung und der Aktivierungsschlüssel gesendet. Es werden keine Kinderdaten oder Lernfortschritte übertragen.",
+    "support": "Wende dich bei Fragen über deinen Gumroad-Kaufbeleg an den Verkäufer. Nenne die Versionsnummer und beschreibe den Fehler; sende keine Kinderdaten oder Anmeldecodes."
+  },
+  "it": {
+    "subject": "HORIZONS · Codice di 8 cifre",
+    "label": "Codice di 8 cifre",
+    "expiry": "Questo codice scade tra 10 minuti. Se non lo hai richiesto, ignora questa email.",
+    "privacy": "Vengono inviati solo l’email d’acquisto dell’adulto, l’identificativo tecnico del dispositivo e la chiave di attivazione. Non vengono inviati dati dei bambini o progressi di apprendimento.",
+    "support": "Per ricevere aiuto, contatta il venditore tramite la ricevuta d’acquisto Gumroad. Includi il numero di versione e una descrizione dell’errore; non inviare informazioni sui bambini o codici di accesso."
+  },
+  "pt": {
+    "subject": "HORIZONS · Código de 8 dígitos",
+    "label": "Código de 8 dígitos",
+    "expiry": "Este código expira em 10 minutos. Se não o solicitou, ignore este email.",
+    "privacy": "Só são enviados o email de compra do adulto, o identificador técnico do dispositivo e a chave de ativação. Não são enviados dados de crianças nem o progresso de aprendizagem.",
+    "support": "Para obter ajuda, contacte o vendedor através do recibo de compra Gumroad. Inclua o número da versão e uma descrição do erro; não envie dados de crianças nem códigos de acesso."
+  },
+  "nl": {
+    "subject": "HORIZONS · Code van 8 cijfers",
+    "label": "Code van 8 cijfers",
+    "expiry": "Deze code verloopt over 10 minuten. Negeer deze e-mail als u de code niet hebt aangevraagd.",
+    "privacy": "Alleen het aankoop-e-mailadres van de volwassene, de technische apparaatcode en de activeringssleutel worden verstuurd. Er worden geen kindergegevens of leerresultaten verstuurd.",
+    "support": "Neem voor hulp contact op met de verkoper via je Gumroad-aankoopbewijs. Vermeld het versienummer en beschrijf de fout; stuur geen kindergegevens of inlogcodes."
+  },
+  "ru": {
+    "subject": "HORIZONS · Код из 8 цифр",
+    "label": "Код из 8 цифр",
+    "expiry": "Код действителен 10 минут. Если вы его не запрашивали, проигнорируйте это письмо.",
+    "privacy": "Отправляются только адрес электронной почты взрослого покупателя, технический идентификатор устройства и ключ активации. Данные детей и учебный прогресс не отправляются.",
+    "support": "За помощью обратитесь к продавцу через чек покупки Gumroad. Укажите номер версии и описание ошибки; не отправляйте сведения о детях и коды входа."
+  },
+  "uk": {
+    "subject": "HORIZONS · Код із 8 цифр",
+    "label": "Код із 8 цифр",
+    "expiry": "Код дійсний протягом 10 хвилин. Якщо ви його не запитували, проігноруйте цей лист.",
+    "privacy": "Надсилаються лише електронна пошта дорослого покупця, технічний ідентифікатор пристрою та ключ активації. Дані дітей і навчальний прогрес не надсилаються.",
+    "support": "По допомогу зверніться до продавця через квитанцію покупки Gumroad. Укажіть номер версії й опис помилки; не надсилайте відомості про дітей і коди входу."
+  },
+  "pl": {
+    "subject": "HORIZONS · Kod 8-cyfrowy",
+    "label": "Kod 8-cyfrowy",
+    "expiry": "Ten kod wygasa za 10 minut. Jeśli nie prosisz o kod, zignoruj tę wiadomość.",
+    "privacy": "Wysyłane są tylko e-mail dorosłego nabywcy, techniczny identyfikator urządzenia i klucz aktywacji. Dane dzieci ani postępy nie są wysyłane.",
+    "support": "Skontaktuj się ze sprzedawcą przez potwierdzenie zakupu Gumroad. Podaj numer wersji i opis błędu. Nie wysyłaj danych dzieci ani kodów logowania."
+  },
+  "cs": {
+    "subject": "HORIZONS · Osmimístný kód",
+    "label": "Osmimístný kód",
+    "expiry": "Platnost kódu vyprší za 10 minut. Pokud jste o něj nepožádali, tento e-mail ignorujte.",
+    "privacy": "Odesílá se pouze nákupní e-mail dospělého, technický identifikátor zařízení a aktivační klíč. Údaje dětí ani pokrok v učení se neodesílají.",
+    "support": "Kontaktujte prodejce přes potvrzení nákupu Gumroad. Uveďte verzi a popis chyby; neposílejte údaje dětí ani přihlašovací kódy."
+  },
+  "ro": {
+    "subject": "HORIZONS · Cod din 8 cifre",
+    "label": "Cod din 8 cifre",
+    "expiry": "Acest cod expiră în 10 minute. Dacă nu l-ați solicitat, ignorați acest e-mail.",
+    "privacy": "Se trimit doar e-mailul adultului cumpărător, identificatorul tehnic al dispozitivului și cheia de activare. Nu se trimit date despre copii sau progresul învățării.",
+    "support": "Contactează vânzătorul prin chitanța Gumroad. Include numărul versiunii și descrierea erorii; nu trimite date despre copii sau coduri de autentificare."
+  },
+  "hu": {
+    "subject": "HORIZONS · 8 jegyű kód",
+    "label": "8 jegyű kód",
+    "expiry": "Ez a kód 10 perc múlva lejár. Ha nem Ön kérte, hagyja figyelmen kívül ezt az e-mailt.",
+    "privacy": "Csak a felnőtt vásárló e-mail-címe, a műszaki eszközazonosító és az aktiválókulcs kerül elküldésre. Gyermekadatokat és tanulási haladást nem küldünk.",
+    "support": "A Gumroad-vásárlási bizonylaton keresztül keresd az eladót. Add meg a verziószámot és a hiba leírását; ne küldj gyermekadatokat vagy belépési kódokat."
+  },
+  "el": {
+    "subject": "HORIZONS · 8ψήφιος κωδικός",
+    "label": "8ψήφιος κωδικός",
+    "expiry": "Αυτός ο κωδικός λήγει σε 10 λεπτά. Αν δεν τον ζητήσατε, αγνοήστε αυτό το email.",
+    "privacy": "Αποστέλλονται μόνο το email αγοράς του ενήλικα, το τεχνικό αναγνωριστικό συσκευής και το κλειδί ενεργοποίησης. Δεν αποστέλλονται δεδομένα παιδιών ή μαθησιακή πρόοδος.",
+    "support": "Για βοήθεια, επικοινώνησε με τον πωλητή μέσω της απόδειξης αγοράς σου στο Gumroad. Ανάφερε τον αριθμό έκδοσης και περιέγραψε το σφάλμα· μην στείλεις πληροφορίες παιδιών ή κωδικούς σύνδεσης."
+  },
+  "sv": {
+    "subject": "HORIZONS · 8-siffrig kod",
+    "label": "8-siffrig kod",
+    "expiry": "Koden upphör att gälla om 10 minuter. Om du inte har begärt den kan du ignorera detta mejl.",
+    "privacy": "Endast den vuxnes köpmejl, tekniska enhetsidentifierare och aktiveringsnyckel skickas. Inga barnuppgifter eller framsteg skickas.",
+    "support": "Kontakta säljaren via ditt Gumroad-kvitto. Ange versionsnummer och beskriv felet. Skicka inga barnuppgifter eller inloggningskoder."
+  },
+  "da": {
+    "subject": "HORIZONS · 8-cifret kode",
+    "label": "8-cifret kode",
+    "expiry": "Koden udløber om 10 minutter. Hvis du ikke har bedt om den, kan du ignorere denne e-mail.",
+    "privacy": "Kun den voksnes købsmail, tekniske enhedsidentifikator og aktiveringsnøgle sendes. Ingen børneoplysninger eller fremskridt sendes.",
+    "support": "Kontakt sælgeren via din Gumroad-kvittering. Angiv versionsnummer og fejlbeskrivelse. Send ikke børneoplysninger eller login-koder."
+  },
+  "no": {
+    "subject": "HORIZONS · 8-sifret kode",
+    "label": "8-sifret kode",
+    "expiry": "Koden utløper om 10 minutter. Hvis du ikke har bedt om den, kan du ignorere denne e-posten.",
+    "privacy": "Bare den voksnes kjøpsadresse, tekniske enhetsidentifikator og aktiveringsnøkkel sendes. Ingen barneopplysninger eller læringsfremgang sendes.",
+    "support": "Kontakt selgeren via Gumroad-kvitteringen. Oppgi versjonsnummer og beskriv feilen. Ikke send barneopplysninger eller innloggingskoder."
+  },
+  "fi": {
+    "subject": "HORIZONS · 8-numeroinen koodi",
+    "label": "8-numeroinen koodi",
+    "expiry": "Koodi vanhenee 10 minuutin kuluttua. Jos et pyytänyt sitä, voit jättää tämän sähköpostin huomiotta.",
+    "privacy": "Vain aikuisen ostosähköposti, tekninen laitetunniste ja aktivointiavain lähetetään. Lapsen tietoja tai oppimisen edistymistä ei lähetetä.",
+    "support": "Ota yhteyttä myyjään Gumroad-ostokuitin kautta. Kerro versionumero ja kuvaile virhe. Älä lähetä lapsen tietoja tai kirjautumiskoodeja."
+  },
+  "bg": {
+    "subject": "HORIZONS · 8-цифрен код",
+    "label": "8-цифрен код",
+    "expiry": "Кодът изтича след 10 минути. Ако не сте го поискали, игнорирайте този имейл.",
+    "privacy": "Изпращат се само имейлът на възрастния купувач, техническият идентификатор на устройството и ключът за активиране. Не се изпращат детски данни или учебен напредък.",
+    "support": "За помощ се свържи с продавача чрез разписката за покупката си от Gumroad. Посочи номера на версията и описание на грешката; не изпращай информация за деца или кодове за вход."
+  },
+  "sr": {
+    "subject": "HORIZONS · Код од 8 цифара",
+    "label": "Код од 8 цифара",
+    "expiry": "Код истиче за 10 минута. Ако га нисте затражили, занемарите ову поруку.",
+    "privacy": "Шаљу се само адреса е-поште одраслог купца, технички идентификатор уређаја и активациони кључ. Не шаљу се подаци о деци нити напредак у учењу.",
+    "support": "За помоћ се обрати продавцу преко потврде о куповини са Gumroad-а. Наведи број верзије и опис грешке; не шаљи податке о деци нити кодове за пријављивање."
+  },
+  "hr": {
+    "subject": "HORIZONS · 8-znamenkasti kod",
+    "label": "8-znamenkasti kod",
+    "expiry": "Kod istječe za 10 minuta. Ako ga niste zatražili, zanemarite ovu poruku e-pošte.",
+    "privacy": "Šalju se samo e-adresa odraslog kupca, tehnički identifikator uređaja i aktivacijski ključ. Ne šalju se podaci o djeci ni napredak u učenju.",
+    "support": "Za pomoć kontaktiraj prodavatelja putem potvrde o kupnji na Gumroadu. Navedi verziju i opis pogreške; ne šalji podatke o djeci ni prijavne kodove."
+  },
+  "he": {
+    "subject": "HORIZONS · קוד בן 8 ספרות",
+    "label": "קוד בן 8 ספרות",
+    "expiry": "תוקף הקוד יפוג בעוד 10 דקות. אם לא ביקשת אותו, אפשר להתעלם מהודעה זו.",
+    "privacy": "נשלחים רק דוא״ל הרכישה של המבוגר, מזהה טכני של המכשיר ומפתח הפעלה. לא נשלחים נתוני ילדים או התקדמות בלמידה.",
+    "support": "לעזרה, פנו למוכר דרך קבלת הרכישה מ־Gumroad. ציינו מספר גרסה ותיאור שגיאה; אל תשלחו פרטי ילדים או קודי כניסה."
+  },
+  "fa": {
+    "subject": "HORIZONS · کد ۸ رقمی",
+    "label": "کد ۸ رقمی",
+    "expiry": "این کد پس از ۱۰ دقیقه منقضی می‌شود. اگر آن را درخواست نکرده‌اید، این ایمیل را نادیده بگیرید.",
+    "privacy": "فقط ایمیل خرید بزرگسال، شناسهٔ فنی دستگاه و کلید فعال‌سازی ارسال می‌شوند. هیچ دادهٔ کودک یا پیشرفت یادگیری ارسال نمی‌شود.",
+    "support": "برای کمک، از طریق رسید خرید Gumroad با فروشنده تماس بگیرید. شمارهٔ نسخه و شرح خطا را بنویسید؛ اطلاعات کودک یا کد ورود نفرستید."
+  },
+  "ur": {
+    "subject": "HORIZONS · 8 ہندسوں کا کوڈ",
+    "label": "8 ہندسوں کا کوڈ",
+    "expiry": "یہ کوڈ 10 منٹ بعد ختم ہو جائے گا۔ اگر آپ نے اسے طلب نہیں کیا تو اس ای میل کو نظر انداز کریں۔",
+    "privacy": "صرف بالغ خریدار کا ای میل، آلے کی تکنیکی شناخت اور فعال کرنے کی کلید بھیجی جاتی ہے۔ بچوں کا ڈیٹا یا تعلیمی پیش رفت نہیں بھیجی جاتی۔",
+    "support": "مدد کے لیے Gumroad کی خریداری رسید کے ذریعے فروخت کنندہ سے رابطہ کریں۔ نسخے کا نمبر اور خرابی کی تفصیل دیں؛ بچے کی معلومات یا لاگ اِن کوڈ نہ بھیجیں۔"
+  },
+  "hi": {
+    "subject": "HORIZONS · 8 अंकों का कोड",
+    "label": "8 अंकों का कोड",
+    "expiry": "यह कोड 10 मिनट में समाप्त हो जाएगा। यदि आपने इसका अनुरोध नहीं किया है, तो इस ईमेल को अनदेखा करें।",
+    "privacy": "केवल वयस्क खरीदार का ईमेल, तकनीकी उपकरण पहचानकर्ता और सक्रियण कुंजी भेजी जाती है। बच्चों का डेटा या सीखने की प्रगति नहीं भेजी जाती।",
+    "support": "मदद के लिए Gumroad खरीद रसीद से विक्रेता से संपर्क करें। संस्करण संख्या और त्रुटि का विवरण दें; बच्चे की जानकारी या प्रवेश कोड न भेजें।"
+  },
+  "bn": {
+    "subject": "HORIZONS · ৮ সংখ্যার কোড",
+    "label": "৮ সংখ্যার কোড",
+    "expiry": "এই কোডের মেয়াদ ১০ মিনিট পরে শেষ হবে। আপনি এটি না চাইলে এই ইমেলটি উপেক্ষা করুন।",
+    "privacy": "শুধু প্রাপ্তবয়স্ক ক্রেতার ইমেইল, যন্ত্রের কারিগরি পরিচয় ও সক্রিয়করণ চাবি পাঠানো হয়। শিশুর তথ্য বা শেখার অগ্রগতি পাঠানো হয় না।",
+    "support": "সাহায্যের জন্য Gumroad কেনার রসিদের মাধ্যমে বিক্রেতার সঙ্গে যোগাযোগ করুন। সংস্করণ নম্বর ও সমস্যার বর্ণনা দিন; শিশুর তথ্য বা প্রবেশের কোড পাঠাবেন না।"
+  },
+  "id": {
+    "subject": "HORIZONS · Kode 8 digit",
+    "label": "Kode 8 digit",
+    "expiry": "Kode ini kedaluwarsa dalam 10 menit. Jika Anda tidak memintanya, abaikan email ini.",
+    "privacy": "Hanya email pembelian orang dewasa, pengenal teknis perangkat, dan kunci aktivasi yang dikirim. Data anak dan kemajuan belajar tidak dikirim.",
+    "support": "Untuk bantuan, hubungi penjual melalui bukti pembelian Gumroad. Sertakan nomor versi dan uraian kesalahan; jangan mengirim informasi anak atau kode masuk."
+  },
+  "ms": {
+    "subject": "HORIZONS · Kod 8 digit",
+    "label": "Kod 8 digit",
+    "expiry": "Kod ini tamat tempoh dalam 10 minit. Jika anda tidak memintanya, abaikan e-mel ini.",
+    "privacy": "Hanya e-mel pembelian orang dewasa, pengecam teknikal peranti dan kunci pengaktifan dihantar. Data kanak-kanak dan kemajuan pembelajaran tidak dihantar.",
+    "support": "Untuk bantuan, hubungi penjual melalui resit pembelian Gumroad. Sertakan nombor versi dan penerangan ralat; jangan hantar maklumat kanak-kanak atau kod log masuk."
+  },
+  "zh": {
+    "subject": "HORIZONS · 8位数字验证码",
+    "label": "8位数字验证码",
+    "expiry": "此验证码将在 10 分钟后失效。如果您没有申请验证码，请忽略此邮件。",
+    "privacy": "仅发送成人购买邮箱、设备技术标识符和激活密钥。不发送儿童数据或学习进度。",
+    "support": "如需帮助，请通过Gumroad购买收据联系卖家。请提供版本号和错误说明，不要发送儿童信息或登录验证码。"
+  },
+  "ja": {
+    "subject": "HORIZONS · 8桁のコード",
+    "label": "8桁のコード",
+    "expiry": "このコードは10分後に有効期限が切れます。コードを要求していない場合は、このメールを無視してください。",
+    "privacy": "送信するのは、大人の購入時メールアドレス、端末の技術的な識別子、有効化キーだけです。子どものデータや学習の進み具合は送信しません。",
+    "support": "サポートが必要な場合は、Gumroadの購入領収書から販売者にご連絡ください。バージョン番号とエラーの説明を添え、子どもの情報やログインコードは送らないでください。"
+  }
+}
