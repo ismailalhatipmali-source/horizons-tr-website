@@ -1,90 +1,131 @@
-# VakıfBank checkout preparation — 30 September 2026
+# Account checkout and private membership preparation — 1 October 2026
 
-## Current release: non-collecting bank review
+## Implemented website behavior
 
-The owner approved final **tax-inclusive USD totals**: monthly **9.99**, annual
-**99**, lifetime **150**. No tax is added above these totals. The invoicing tax
-rate/breakdown requires accounting configuration before live sales; no tax rate
-is invented here. Approval of prices never enables collection.
+All 32 languages support browser-first **start → free demo or account selection
+→ basket → billing preview → order review**. The floating cart appears on every
+localized public website page, retains a single selected account/term across
+navigation and browser sessions, and updates across tabs. Only account/product,
+term and quantity are persisted. Existing learner/license storage is untouched.
+The old session basket migrates to an individual account. Unsupported combinations
+(including institution monthly/lifetime) cannot be selected by forged URL/storage.
+The separately released workbook/demo are not rewritten by this site build.
 
-All 32 existing languages have plan selection → basket → adult buyer/billing
-form → terms/privacy acknowledgement → order review/edit → disabled payment
-placeholder. Corporate TRY/USD/EUR IBANs supplied by the owner pass format and
-MOD-97 checks. Ownership is owner-supplied, not independently verified. Digital
-delivery and the existing statutory refund/withdrawal conditions are explained.
+| Account | Learners | Monthly USD | Annual USD | Lifetime USD |
+| --- | --- | --- | --- | --- |
+| Individual | 1 | 9.99 | 99 | 150 |
+| Family | 5 including purchaser | 20 | 200 | 250 |
+| Institution | 100, administrator separate | — | 1,000 | — |
 
-One adult account owns the paid entitlement with **three registered device
-slots**, separate learner profiles and the same email/password on each device.
-Do not email three reusable codes. The activation adapter must upgrade a trial
-without replacing its stable account ID, password, progress or registered device.
-Email OTPs remain single-use and separate from the licence period.
+Totals include taxes; no additional tax is added. No automatic renewal. Level 1
+updates/additions/fixes are included; future workbook levels are separate products.
+The permanent-email warning precedes purchase review and requires a separate
+explicit checkbox for individual/family. Buyer email must be entered twice.
+The preview confirmation does not reserve an email or create an order.
+Institution administrators can replace learners; individual/family membership
+emails cannot be replaced through the application. Statutory erasure requests
+must still have a support process; seat permanence is not a claim to retain
+personal data against applicable rights.
 
-Buyer input stays in page memory only. No HTTP order endpoint is connected; no
-order/invoice is issued. No buyer details enter URLs, local/session storage,
-analytics or SMTP. Only product/plan/quantity persist in the basket's session key.
-The submit handler is installed before enabling the initially disabled fields.
-Native validation and explicit terms acknowledgement precede review. Inputs are
-rendered with text nodes. Payment stays disabled regardless of query parameters.
-Reading terms is not a waiver of withdrawal rights or early-delivery consent.
+Country/territory suggestions and dependent city search load from the site's own
+`assets/commerce-geo/`. The derived ODbL database includes 250 country/territory
+labels and 141,442 distinct city labels per country. Names are suggested in the
+interface language using Intl.DisplayNames; city Arabic labels are used where
+available. Manual city entry remains available for missing localities/offline
+loads. Previous city selection clears on country change; late responses cannot
+restore a previous country's cities. No geolocation, third-party request, API key
+or buyer details are involved. Data licence, attribution and pinned source revision
+are publicly distributed alongside the data. Maximum 100 filtered city suggestions
+are rendered at once; other matching cities appear as the user types.
 
-Corporate invoice fields are a review UI. Jurisdiction-specific invoicing rules,
-including any mandatory tax identifiers, must be enforced by the future server.
-No child-identifying fields, card numbers or banking credentials are requested.
+**Payments remain disabled.** Card is visibly unavailable, bank transfer is the
+selected review method, and the three owner-supplied corporate IBANs remain visible
+in order review. This release creates no live order/invoice and grants no access.
+Buyer details stay in page memory only and are never placed in storage, URLs,
+analytics or SMTP. No-JS forms stay disabled. Text nodes prevent HTML injection.
+Terms acknowledgement does not waive withdrawal rights or authorize early delivery.
 
-## Integration boundary
+## Private membership integration boundary
 
-`PurchaseLedger.php` is an internal PHP 8.2+ / PDO SQLite contract, not an HTTP
-payment service. cPanel copies `dist/`; it does not deploy this ledger. Its private
-database must stay outside public_html. A trusted BankVerifier queries the stored
-transaction and validates financial sale state, merchant, terminal, order,
-transaction, exact amount and currency. Authentication alone is not payment.
-An atomic paid state and unique outbox job prevent duplicate fulfilment on retries.
-The private issuer must independently enforce grant idempotency by order_id.
-A mail job is queued only after grant acknowledgement, not after browser success.
+`PurchaseLedger.php` records account type and approved server prices, confirms
+an exact bank sale, and queues a unique fulfilment/mail job. No production bank,
+manual-transfer HTTP service, payment adapter, SMTP worker or invoice service is
+included. Internal code is not deployed to public_html by cPanel. Tax invoice
+configuration and refund/reversal/reconciliation remain prerequisites for sales.
 
-No production bank adapter, activation purchase adapter, SMTP worker, transfer
-verification, invoice endpoint, reconciliation or reversal handling exists here.
-These must be implemented/tested before enabling collection. Transfer access
-requires funds actually credited to the matching corporate currency account.
-No automatic recurring charge or automatic renewal is enabled.
+`MembershipLedger.php` implements private encrypted membership storage and an
+issuer adapter contract, not a live account service. It accepts only a durable
+paid/access-ready order from PurchaseLedger, preserving the acknowledged owner's
+stable account ID. Family owners occupy one seat, plus four permanent invitation
+slots. Pending invitations count against the limit. Institution administrators
+are separate from the 100 learner seats; administrators may invite their own
+email as a learner if needed. Group expiry is derived from the original paid_at
+and term; all learner grants inherit that expiry, not a new year per invitation.
+Emails are confirmed before invitations and encrypted with a separate private
+32-byte Sodium key. Only keyed email hashes are indexed. Losing the key loses
+access to stored emails; a changed key fails closed. Back up the private database
+and key together. Do not put either in GitHub or public_html.
 
-The bank-review pages can be published while collection remains disabled.
-Before enabling sales: validate the bank merchant integration pack and supported
-settlement currencies; implement private endpoints/workers and refund/dispute
-handling; configure invoicing and consent records; confirm delivery timing and
-applicable legal documents; run bank sandbox and controlled live validation.
-Workbook password/device, export/restore, physical-device sync and brother's
-sound checks in the handover remain open and are unaffected by this preparation.
+Actors come from verified server authentication; never accept an account ID from
+a browser as an authorization claim. Only the paid group owner administers its
+roster. Family seat assignment is permanent even while an invitation is pending.
+Institution removal first enters `removing`; the slot is not freed until the
+private issuer confirms membership revocation. Revocation must cancel pending
+invitations, online sessions and that learner's group access without erasing an
+unrelated personal purchase. Grants/revocations are idempotent by member_id.
+Issuer response loss retries the same grant instead of creating another learner.
+Issuer grants may not collapse distinct emails into one progress identity.
 
-## Local-currency display
+`membership-manager.js` is a tested integration UI component accepting injected
+`list/invite/remove` functions. It is intentionally not mounted or deployed into
+the existing workbook before authenticated backend integration. Individual accounts
+hide invitations; families have no remove button; institution removal needs a second
+explicit confirmation. It never stores learner emails or displays reusable codes.
+Each invited learner verifies their email, sets their own password, and owns a
+separate account/progress identity. First-activation codes are one-use; subsequent
+login uses email/password, with account recovery through email verification.
 
-FX display is configured but **disabled**: no live rates are fetched. Future
-server-side dated indicative TCMB rates may show an estimated local amount with
-manual override and fallback to USD. Never equate language with country. A
-settlement conversion must fix amount/currency/rate/expiry on the server-side
-order; browser estimates cannot authorize payment. A corporate EUR/TRY account
-does not itself prove the card gateway accepts that currency.
+### Concrete remaining dependency
 
-## Validation
+The private `/activation` application's source/configuration interface is absent
+from this Git repository and the attached September 23 educational archives.
+The current issuer still grants paid licences for **3 devices** and trials for
+**1 device**; the client and progress verifier retain their existing signed licence
+contract. No client-side bypass or fabricated unlimited-device licence is added.
 
-64 cart/checkout DOM cases pass: plans/navigation/removal, required fields,
-explicit acknowledgement, corporate billing, review/edit, HTML escaping,
-transfer details, disabled payment, forged-success rejection and no buyer
-persistence. Approved amounts and disabled collection are checked for all pages.
-22 deployment regressions and isolated PHP 8.3 fake-bank ledger tests pass.
-Rebuilding is idempotent. No bank transaction or live order occurred.
+Before sales, adapt and test that private issuer to preserve trial passwords,
+registered identity and progress; issue unlimited device registrations per learner;
+verify group membership on every login/progress request; expose authenticated roster
+operations; and integrate queued invitation/activation email delivery. Revocation of
+institution access on offline devices requires a bounded offline licence lease;
+the existing lifetime offline signature cannot provide immediate offline revocation.
+Annual renewal must extend the existing institution group without replacing its
+learners or owner identity. Server checks must enforce eligibility/expiry beyond
+what the UI displays. Reset-password/device and real two-device sync tests remain
+necessary. Guardian-controlled email accounts/consent and the current privacy and
+child-safety wording need to be reconciled with independent learner sign-ins before
+this model is enabled. No child-identifying fields are added to the purchase form.
 
-Local Chromium/agent-browser launch is blocked by socket restrictions; cloud
-access to loopback is also blocked. **Visual/mobile review is still pending**.
-Do not claim a browser screenshot, bank approval or completed payment integration.
-After cPanel publication the owner should verify the review UI on actual devices.
+## Verification
+
+- 64 cart/checkout DOM pages, 224 account/term choices, 192 public-page persistence checks.
+- Confirmation/consent, individual/family permanence and institution annual-only policy.
+- Searchable dependent location data, late-response protection, manual city fallback.
+- Fake-issuer private tests: paid-before-access, family 5/institution 100, encrypted
+  emails, owner isolation, duplicate invitations, response-loss retry, shared expiry,
+  and revocation acknowledgement before seat replacement.
+- Standalone roster UI tests with injected test adapter; **not live SMTP/activation**.
+- 22 unchanged cPanel deployment regressions; website rebuild is idempotent.
 
 Build: `python3 scripts/build_commerce_review.py`.
-DOM test: `node tests/test_commerce_dom.mjs` (jsdom dependency).
-Browser test: `node tests/test_commerce_browser.mjs` (Playwright/Chromium).
-Ledger test: `php tests/test_purchase_ledger.php` (PDO SQLite).
-Deployment test: `python3 -m unittest discover -s tests -p test_deploy_cpanel.py`.
+Node: `node tests/test_commerce_dom.mjs`, `node tests/test_location_picker.mjs`,
+`node tests/test_membership_manager.mjs` (jsdom).
+PHP: `php tests/test_membership_ledger.php` (PHP 8.2+, PDO SQLite, Sodium).
+Browser: `node tests/test_commerce_browser.mjs` (Playwright/Chromium, local preview).
+Physical Safari/iPhone, Android and Windows tests and production delivery must not
+be inferred from DOM/fake-adapter tests.
 
-Official references:
-- [VakıfBank integration guide](https://vbassets.vakifbank.com.tr/ticari/pos-uye-is-yeri-hizmetleri/vakifbank-sanal-pos-entegrasyon-dokumani-2.4-versiyon.pdf).
-- [Ministry of Trade distance-contract guidance](https://tuketici.ticaret.gov.tr/yayinlar/tuketici-bilgi-rehberi/mesafeli-sozlesmeler-hakkinda-bilgilendirme).
+Current environment verification limit: local Chromium cannot start because the
+execution environment rejects its Unix sockets (`socket() failed: Operation not
+permitted`). A browser screenshot/mobile layout pass has **not** been obtained
+for this change. DOM and fake-issuer results above are independent of this limit.

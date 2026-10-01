@@ -1,10 +1,9 @@
 {
-  "schema": 1,
+  "schema": 2,
   "mode": "review",
   "price_approved": true,
   "charges_enabled": false,
   "product": "horizons-arabic-level1",
-  "max_devices": 3,
   "currency": "USD",
   "prices_are_tax_final": true,
   "plans": {
@@ -50,5 +49,58 @@
     "purpose": "indicative_display_only",
     "region_detection": "browser_locale_with_manual_override",
     "settlement_currencies_pending_bank_approval": true
-  }
+  },
+  "accounts": {
+    "individual": {
+      "max_learners": 1,
+      "email_replaceable": false,
+      "device_policy": "any_device",
+      "plans": {
+        "monthly": {
+          "proposed_minor": 999,
+          "months": 1
+        },
+        "annual": {
+          "proposed_minor": 9900,
+          "months": 12
+        },
+        "lifetime": {
+          "proposed_minor": 15000,
+          "months": null
+        }
+      }
+    },
+    "family": {
+      "max_learners": 5,
+      "includes_owner": true,
+      "email_replaceable": false,
+      "device_policy": "any_device",
+      "plans": {
+        "monthly": {
+          "proposed_minor": 2000,
+          "months": 1
+        },
+        "annual": {
+          "proposed_minor": 20000,
+          "months": 12
+        },
+        "lifetime": {
+          "proposed_minor": 25000,
+          "months": null
+        }
+      }
+    },
+    "institution": {
+      "max_learners": 100,
+      "email_replaceable": true,
+      "device_policy": "any_device",
+      "plans": {
+        "annual": {
+          "proposed_minor": 100000,
+          "months": 12
+        }
+      }
+    }
+  },
+  "account_policy_approved_on": "2026-10-01"
 }

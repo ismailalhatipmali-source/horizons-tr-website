@@ -44,6 +44,8 @@ final class PurchaseLedger
             status TEXT NOT NULL CHECK(status IN ('pending','paid','access_ready')),
             paid_at TEXT, account_id TEXT
         )");
+        $columns = $this->db->query('PRAGMA table_info(purchases)')->fetchAll(PDO::FETCH_COLUMN, 1);
+        if (!in_array('account_type', $columns, true)) $this->db->exec("ALTER TABLE purchases ADD COLUMN account_type TEXT NOT NULL DEFAULT 'individual'");
         $this->db->exec("CREATE TABLE IF NOT EXISTS outbox (
             order_id TEXT NOT NULL REFERENCES purchases(order_id),
             kind TEXT NOT NULL CHECK(kind IN ('grant_access','send_access_mail')),
@@ -71,17 +73,17 @@ final class PurchaseLedger
             || ($this->settings['bank_adapter_approved'] ?? false) !== true
             || ($this->settings['activation_adapter_approved'] ?? false) !== true
             || ($this->settings['product'] ?? '') !== 'horizons-arabic-level1'
-            || ($this->settings['max_devices'] ?? 0) !== 3
             || empty($this->settings['merchant_id']) || empty($this->settings['terminal_id'])) {
             throw new RuntimeException('CHECKOUT_NOT_READY');
         }
     }
 
-    public function create(string $email, string $plan): array
+    public function create(string $email, string $plan, string $accountType = 'individual'): array
     {
         $this->enabled();
         $email = trim($email);
-        $price = $this->settings['plans'][$plan] ?? null;
+        if (!in_array($accountType, ['individual','family','institution'], true) || ($accountType === 'institution' && $plan !== 'annual')) throw new RuntimeException('ACCOUNT_TYPE_INVALID');
+        $price = $this->settings['accounts'][$accountType]['plans'][$plan] ?? ($accountType === 'individual' ? ($this->settings['plans'][$plan] ?? null) : null);
         if (strlen($email) > 254 || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new RuntimeException('EMAIL_INVALID');
         }
@@ -93,8 +95,8 @@ final class PurchaseLedger
         }
         $orderId = 'HZN-' . bin2hex(random_bytes(12));
         $transactionId = 'HZN' . bin2hex(random_bytes(12));
-        $q = $this->db->prepare('INSERT INTO purchases (order_id,transaction_id,email,plan,currency,amount_minor,status) VALUES (?,?,?,?,?,?,?)');
-        $q->execute([$orderId, $transactionId, $email, $plan, $price['currency'], $price['amount_minor'], 'pending']);
+        $q = $this->db->prepare('INSERT INTO purchases (order_id,transaction_id,email,plan,currency,amount_minor,status,account_type) VALUES (?,?,?,?,?,?,?,?)');
+        $q->execute([$orderId, $transactionId, $email, $plan, $price['currency'], $price['amount_minor'], 'pending', $accountType]);
         return $this->order($orderId);
     }
 
@@ -138,7 +140,9 @@ final class PurchaseLedger
             $payload = [
                 'schema' => 1, 'order_id' => $orderId,
                 'product' => 'horizons-arabic-level1', 'purchase_email' => $current['email'],
-                'plan' => $current['plan'], 'channel' => 'direct', 'max_devices' => 3,
+                'plan' => $current['plan'], 'channel' => 'direct',
+                'account_type' => $current['account_type'], 'max_learners' => ['individual'=>1,'family'=>5,'institution'=>100][$current['account_type']],
+                'device_policy' => 'any_device',
                 'paid_at' => $paid,
             ];
             $this->enqueue($orderId, 'grant_access', $payload);
@@ -171,7 +175,7 @@ final class PurchaseLedger
             $this->enqueue($orderId, 'send_access_mail', [
                 'schema' => 1, 'order_id' => $orderId, 'account_id' => $accountId,
                 'purchase_email' => $current['email'], 'product' => 'horizons-arabic-level1',
-                'plan' => $current['plan'], 'max_devices' => 3, 'open_path' => '/learn/',
+                'plan' => $current['plan'], 'account_type' => $current['account_type'], 'device_policy' => 'any_device', 'open_path' => '/learn/',
             ]);
             return $this->order($orderId);
         });
