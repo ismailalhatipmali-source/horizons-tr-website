@@ -1,0 +1,1162 @@
+{
+  "version": "contact-20261002",
+  "baseline_commit": "83d216c09ed66f9a9260221b86b747d7653d6cf3",
+  "requires": {
+    "learn/web-config.js": "855b5a507dd35d97ad3ab262538671fe7932e76ccc608fc5136ff4db2be579c4",
+    "assets/arabic-workbook-cover-approved.jpg": "ebd1e106f784f1fe235521ab603dc79d988a8bc04f906f0b333a0f0ce71e4ea2"
+  },
+  "files": {
+    "ar/about.html": {
+      "source": "dist/ar/about.html",
+      "bytes": 11919,
+      "sha256": "139de49a002889ec780022d6e3a1fc312a6908fe25668c8dc65068a98292c6f0",
+      "before": "d191afc84fed402f54cb20174682da0c3c2667a0d87fc7b5941c3a9f6dab7208"
+    },
+    "ar/checkout.html": {
+      "source": "dist/ar/checkout.html",
+      "bytes": 27003,
+      "sha256": "f5090e82b76dfca91e91e87abddbbdc7108ffeb9cb3f068c0a50699dd8d8d869",
+      "before": "81b3e0c07dd5cf2d29a3bb3843946fe8c3181a6f600d091e63a2cec89f1a82de"
+    },
+    "ar/legal.html": {
+      "source": "dist/ar/legal.html",
+      "bytes": 11615,
+      "sha256": "8891f5f66280a56caef69001704c31126a4126772e7503f42d77d4d7f079381d",
+      "before": "7d383adf84b88d4a03dfd52a266a374fb9b4f0f3df9e1a60f06b98d43d53a480"
+    },
+    "ar/privacy.html": {
+      "source": "dist/ar/privacy.html",
+      "bytes": 16245,
+      "sha256": "44d79800e91f3451f70b4ab8108a426ba0ade17ab81d4323365bac10bd22b9e6",
+      "before": "eed79342fdfc2a696c5ce132c2d69b699b072b802fe945ee6970659ebb0416a2"
+    },
+    "ar/support.html": {
+      "source": "dist/ar/support.html",
+      "bytes": 13168,
+      "sha256": "a7d4ac9e1d8819f782de9e21e3d5d4f8606d331e93ecae12abf5cd8470588c43",
+      "before": "325d3e853ba2eef84154fbdbe179d50eebeaf68aac9ca3a502ba08658725a1e5"
+    },
+    "ar/terms.html": {
+      "source": "dist/ar/terms.html",
+      "bytes": 15335,
+      "sha256": "4164b5eae4205f8f0a4df56c8864f157d75bdb6805fffd0883f398949fd6b12e",
+      "before": "d4a319c9dd7b74661be5b5012a2e12a545f3f1c6207b16ba10c38dff5e6a95da"
+    },
+    "bg/about.html": {
+      "source": "dist/bg/about.html",
+      "bytes": 12407,
+      "sha256": "fa554a76325dbf57a9e0fb4167a638ee2e237239743279f6e9ea9ecf54d93d8c",
+      "before": "fb8341f222a74b75b16b39fd0cc302a66e8eee8c9242cec343a971252517f8d0"
+    },
+    "bg/checkout.html": {
+      "source": "dist/bg/checkout.html",
+      "bytes": 27150,
+      "sha256": "63d1c0dbfd21214d05b35a16cda166cf8d1be98f03e9b4733dac9a1c1d9585e5",
+      "before": "a90e38f0f88a5b10403a4d894e7e8c79d9938dca24d3eb9a86ada797ebfcfda8"
+    },
+    "bg/legal.html": {
+      "source": "dist/bg/legal.html",
+      "bytes": 11906,
+      "sha256": "74b335b102857642117f6d05b21368f0a49d2172b7c16d54e419da0f76d7f28f",
+      "before": "701c66a8340af0571a7f12489e56cbf9f00d52b4ef8faef57d473ffab2318dd7"
+    },
+    "bg/privacy.html": {
+      "source": "dist/bg/privacy.html",
+      "bytes": 17883,
+      "sha256": "b7c74c1daea55959c78517a8ea7d67c9cbabed548503ed36f2fc35f408f59f1b",
+      "before": "7c17819eb5561f0b928bb2e4311d55eb20942d960d6691b3211e61301d827c05"
+    },
+    "bg/support.html": {
+      "source": "dist/bg/support.html",
+      "bytes": 13826,
+      "sha256": "af16fe5bb6a162a397f5c8cdf943586595723386de8b5c2b9b07a22508efec40",
+      "before": "3af8beb9fbf712332062c217a9be2a076b9662fd31e13da7c9bfea2398548631"
+    },
+    "bg/terms.html": {
+      "source": "dist/bg/terms.html",
+      "bytes": 14887,
+      "sha256": "3d9ce814e8ed0f53ac4bb42567bc9436a3e1c1ee665abc977c4564f571f83977",
+      "before": "7d444688e494c5ad0eac80e048c3f7023e090091f909ab1a0ed577d6ef80dbd5"
+    },
+    "bn/about.html": {
+      "source": "dist/bn/about.html",
+      "bytes": 13227,
+      "sha256": "955d786f259456b46d5122b62ea24d90c0a270520d6204c52ca99a9ca5558e3d",
+      "before": "da6af10a2ff95924975c8ab1e3dcbfc30f292db5270d8f8497a90a069ad62622"
+    },
+    "bn/checkout.html": {
+      "source": "dist/bn/checkout.html",
+      "bytes": 30206,
+      "sha256": "13e09059d26ecb42b18a7474732da1d6cb8724ea5cea425d6cb660189d40aff9",
+      "before": "d95b7419f379cec425ca655e6fa38351890514126253fc4af6006492aa5577a8"
+    },
+    "bn/legal.html": {
+      "source": "dist/bn/legal.html",
+      "bytes": 12382,
+      "sha256": "372ad4bb1bd054ae54794e0f1d821a3db9d04292df7db9d8e037d3b722ce3fe2",
+      "before": "bfeae8fca4986ac38b64e01dd5423319dc36861514a997cf4f11d207cd8ff3c2"
+    },
+    "bn/privacy.html": {
+      "source": "dist/bn/privacy.html",
+      "bytes": 20135,
+      "sha256": "079ee906e792d18ec34cefac691737cab234467de6d53b00fca0d50b9df6a081",
+      "before": "23e1ade9fd6f1d0acc212d07c32c082b3b0844f2cf7c319060c957a8bd9d8427"
+    },
+    "bn/support.html": {
+      "source": "dist/bn/support.html",
+      "bytes": 14946,
+      "sha256": "b26b653ee7f87ef608c5c1454f7115efa5482bc313c43b70fddc84da38ec1afc",
+      "before": "2474ea6a9d53b1dc5f47083416f4e24ecb83e873c38b76e16aec7fe310b99698"
+    },
+    "bn/terms.html": {
+      "source": "dist/bn/terms.html",
+      "bytes": 16619,
+      "sha256": "884f5e8c215044ad11dd3ae3ae3660f7fa1906213d35b8fbe820a70762eda199",
+      "before": "d54ee072a07c81d8da82ff069326c071a728dbd7a3536f08caea5650a02e1f71"
+    },
+    "cs/about.html": {
+      "source": "dist/cs/about.html",
+      "bytes": 11363,
+      "sha256": "97fc04302db0700b79d8299a31ddfa5148bbbe7aa7f220a7e21d589790fb5902",
+      "before": "a7a9e54d8699db3d73a470e6b629991fcff70e007ff4e69c3fe84556ad0453e9"
+    },
+    "cs/checkout.html": {
+      "source": "dist/cs/checkout.html",
+      "bytes": 23564,
+      "sha256": "24a465b47dec37d4f6d7c81570ca41bc884f5dccfc8f974fbd35f180c9d020a2",
+      "before": "eeb733c9f30d8304134377ab9a4182287367b15afdfade25c72a7cc0d862e0b4"
+    },
+    "cs/legal.html": {
+      "source": "dist/cs/legal.html",
+      "bytes": 11197,
+      "sha256": "4e90ce7f3841eef3cbe2e873cf749dc4ddd50a3603178778c2c9978353f7eb2c",
+      "before": "8f90c988d30a21e56e4cabc6c46e119b11c38d27905addacf444474ab49e7c9b"
+    },
+    "cs/privacy.html": {
+      "source": "dist/cs/privacy.html",
+      "bytes": 14536,
+      "sha256": "5a05a18c72e19072bcead47a39a96402d3471ebf28e40324adedaddf95732063",
+      "before": "820e875926eeab4769f61b98367448696d37f7e36255d25e85f50b28c7d62269"
+    },
+    "cs/support.html": {
+      "source": "dist/cs/support.html",
+      "bytes": 12371,
+      "sha256": "257cb7290dcda0cded7c1e4355a9a37a8162ee7f5f191f79c9bc58ca0e05f9af",
+      "before": "b9ea1f2708bd949fff177eb1a780554cbed859c3851637bb8f1faad5cc18d2f9"
+    },
+    "cs/terms.html": {
+      "source": "dist/cs/terms.html",
+      "bytes": 13145,
+      "sha256": "bc2a675574e43bd59082c09a53750e36581da70a2d5f55d50ee013afb5961876",
+      "before": "b5e7d3ddac13bf8f21e9971338b331c2c5794191a79c4c0b262a784af42220be"
+    },
+    "da/about.html": {
+      "source": "dist/da/about.html",
+      "bytes": 11300,
+      "sha256": "c32f59fac2ca5585756b251f9e32eaa50c33e2b765f891d2a22bdb75c92cd821",
+      "before": "127177c2443b4a75b839c46a37380136cec3a31c7950901b13c08935a5c477f5"
+    },
+    "da/checkout.html": {
+      "source": "dist/da/checkout.html",
+      "bytes": 23635,
+      "sha256": "628dfcfec935d6c439d22b262f5ce3436d046f84018c8dabcfdcb6efc3a1d830",
+      "before": "56d76956bfee43a2f58abd0fe52c827931852453cb142bcd1b356032470d76f5"
+    },
+    "da/legal.html": {
+      "source": "dist/da/legal.html",
+      "bytes": 11194,
+      "sha256": "7bea624bf79cf0e8761be9221b6ec5f45343eb96cc640d817f57bf709e09107c",
+      "before": "4b2127aea833b500aa05cdb563016eb78f0e9877c14f7633f3e50c5b9a46c152"
+    },
+    "da/privacy.html": {
+      "source": "dist/da/privacy.html",
+      "bytes": 14449,
+      "sha256": "20bc28ebbc6efb43494dbabb55cd8ecf664f1c5fb0ce5ea46683a6ae250c9be6",
+      "before": "a92d561ccc8d0b793481ef8c1cc26c42aba3e097c2951053be602a1f68375099"
+    },
+    "da/support.html": {
+      "source": "dist/da/support.html",
+      "bytes": 12345,
+      "sha256": "b4c7cd835dbbb276884d3031d6efd4c23c9da9c7298d3915161d8d45894c38d6",
+      "before": "12ea32b740743dce77bcd0b24b4ef58407d9ee15ef724087536a2adfbb618374"
+    },
+    "da/terms.html": {
+      "source": "dist/da/terms.html",
+      "bytes": 13324,
+      "sha256": "7175eac3a76ea3ffff3b9c78a1d9056be3aaad93ae241feb9efca16db7395bcc",
+      "before": "45b7f62cc25b178212cc07fe3128c387ea3e216cabac107f062f5753b2895008"
+    },
+    "de/about.html": {
+      "source": "dist/de/about.html",
+      "bytes": 11450,
+      "sha256": "9d68307e8a8201eec4c8ae08205c84b55be6262875bbf34453887f2e49939774",
+      "before": "fdb085957ca2fccc6a58238174dfedb99c99668d6c28edcc77db05cb91abb1fe"
+    },
+    "de/checkout.html": {
+      "source": "dist/de/checkout.html",
+      "bytes": 24103,
+      "sha256": "d94e14e1515e6f04cb809b4c289cdf60efe0ecf0a98a533f92927bc3d5570c34",
+      "before": "c6ebfe52b664c81da9a16fcaa9e6265b70690bcf7063e6c660f09e28307d331e"
+    },
+    "de/legal.html": {
+      "source": "dist/de/legal.html",
+      "bytes": 11281,
+      "sha256": "36ed846140853b3ced393770af84b8ad87def7a7b31b7ddd2cddb85e897e8703",
+      "before": "b2467739e370e51fb00192488608f5fcc14139a3856bec79f5a9e8ad75f48107"
+    },
+    "de/privacy.html": {
+      "source": "dist/de/privacy.html",
+      "bytes": 15006,
+      "sha256": "363613336dce180a2a44afd7df2ca611bba779fb83155f77a6745f789df8ba13",
+      "before": "6883d21870ec2db21306ba948071cfdddbb2989c18228fb11550e02986e35a2b"
+    },
+    "de/support.html": {
+      "source": "dist/de/support.html",
+      "bytes": 12576,
+      "sha256": "3595711e1719c7701563cd1590557a10ea2218dee0c6b34d9feb8281e53617c9",
+      "before": "c772b95e64b338ae54147fa1ad6c38a3c960cbcd881c53b6cf018290ed66b403"
+    },
+    "de/terms.html": {
+      "source": "dist/de/terms.html",
+      "bytes": 13517,
+      "sha256": "4bc2e02d0cb49d9ba6dba52886ce432008a9bdab079cc58b9ba72079a185de14",
+      "before": "6ef5d52e1ca0c3f66bcee751b8027d94cee928cc32affec0312c65d3a8e8f54b"
+    },
+    "el/about.html": {
+      "source": "dist/el/about.html",
+      "bytes": 12684,
+      "sha256": "9d066ee82a712f85c7b9083623ec363cdb7de2cfcad8e65cc94538b41500971e",
+      "before": "a0717c4173b662a78e33dcd501bfa137b906523590015c37cda41378834762dc"
+    },
+    "el/checkout.html": {
+      "source": "dist/el/checkout.html",
+      "bytes": 27980,
+      "sha256": "a80ca800789c45ad96f4607dd35cf88d047f6f0000dff340ee22738b22893aa4",
+      "before": "f384427b02bd80e4a604cf0d545ec5959e31f02e9b8ba1a5adc23511aa9dab97"
+    },
+    "el/legal.html": {
+      "source": "dist/el/legal.html",
+      "bytes": 12117,
+      "sha256": "ca9b428a240dcd59c79a142eff3cbc37e78f916d8d533825aac502f93d6024cb",
+      "before": "c60111bba533b7d41bc979675d8526a2f4b6b4089e54009dd504c1237d8e2456"
+    },
+    "el/privacy.html": {
+      "source": "dist/el/privacy.html",
+      "bytes": 18609,
+      "sha256": "d28016481a00c53d9569f4c83a27baf8608ea5f502a9591d07d811179d4a073a",
+      "before": "37a8fc9463ce5baa81e020bd342bc9e8c59b437e4a5f34265111d4a7c93dc57e"
+    },
+    "el/support.html": {
+      "source": "dist/el/support.html",
+      "bytes": 14343,
+      "sha256": "d765666b2b7f70d9eecb6a712dba70e87c88f165a1df1c6563848ea2ae1572b6",
+      "before": "640df4d8e69434fb0ec1712df4e671edc04807ee0576a60f57eea004a6a0117c"
+    },
+    "el/terms.html": {
+      "source": "dist/el/terms.html",
+      "bytes": 15319,
+      "sha256": "6a11e7bd29355073fc9102b262d8a91d304b47f93a7e6e20286c5bfa1450d41e",
+      "before": "5475cebcc6872cf942d88644b87119e6807ced2988401eba11d0675ee225b28d"
+    },
+    "en/about.html": {
+      "source": "dist/en/about.html",
+      "bytes": 11305,
+      "sha256": "a21b96f2de014e5340f77cf51a9354405aba0955ca627badb32c645cad8461f5",
+      "before": "59014a762634766610cd5c46a7d6c8c54f3004baa72f05bbcfc86ffc1bcaed5b"
+    },
+    "en/checkout.html": {
+      "source": "dist/en/checkout.html",
+      "bytes": 24194,
+      "sha256": "6e5fbdb84dfe004bfd086f1eb797ad6407682c0fd88cf19bf3a054ba127d3527",
+      "before": "fe389ade482b162f07d0a5ad87cf9f507888bceb1bb68a48059eb7836bc8ad64"
+    },
+    "en/legal.html": {
+      "source": "dist/en/legal.html",
+      "bytes": 11161,
+      "sha256": "12a7b9e06fdf829093638d1eccf96a5c399b33ed85a1c58a5c3c859aafa3c2b7",
+      "before": "da0591a2823f3064fc431b792f4e5c1846bf9312c745d654f8ae05392dffffd5"
+    },
+    "en/privacy.html": {
+      "source": "dist/en/privacy.html",
+      "bytes": 14138,
+      "sha256": "719451b72b0c7310e2fb27aa6c5571e2b6a21c1d4416a536df9f4bd3d9f11e10",
+      "before": "1d25cd1dbc19ea0cb0c2f026672710b48fac88e75b86dbab942235afb159f3a5"
+    },
+    "en/support.html": {
+      "source": "dist/en/support.html",
+      "bytes": 12206,
+      "sha256": "b37758ccb669cb06303854b41895093286c077cce6995aca4a622247c1d2f60a",
+      "before": "3fcb6bf9a3844153ddb29664ffbaac65c78bbef2e0e131d05bfe813ae30adedd"
+    },
+    "en/terms.html": {
+      "source": "dist/en/terms.html",
+      "bytes": 13808,
+      "sha256": "779a201a48377b233da39929ffc8a66a8a3cab409cda9eb632301f3f2063d469",
+      "before": "26c300ad23268f01d4aae39f44305f6e28dacc7f8117748923c985d714d6e34e"
+    },
+    "es/about.html": {
+      "source": "dist/es/about.html",
+      "bytes": 11437,
+      "sha256": "734fecb003eddf527b67df1e0aa34359e1bff5534c88872095e8419a9d6f7f95",
+      "before": "a1ec85015711c7dcee90dcbb0ee49b1b9de884a595d7a65ccc0cd1c2abb9f897"
+    },
+    "es/checkout.html": {
+      "source": "dist/es/checkout.html",
+      "bytes": 24022,
+      "sha256": "47a03751ee383669aff969114ce269ed2652429a1611b8db97e8117b6697c4ea",
+      "before": "acb8db630dac96f9bf625fa64312785d1fbc6c1017f0a95da5bc840cf1b07d01"
+    },
+    "es/legal.html": {
+      "source": "dist/es/legal.html",
+      "bytes": 11268,
+      "sha256": "0d9b3429f94ba634f4db55c40a4a81288e6f43656bc119ae23544d236b77b1db",
+      "before": "a1feee0f22b3d7e88c49c40c7a9beac8fefe96b76809e6dea04564f25d4a4acc"
+    },
+    "es/privacy.html": {
+      "source": "dist/es/privacy.html",
+      "bytes": 14916,
+      "sha256": "9e3404075228d7d015f855ecb1ab3c0cec96c72d42aa832c01775cb61452ab0b",
+      "before": "72fc695202e567d01cd59d56f98c094291ed3eab287a3df926ef9057fcc2913c"
+    },
+    "es/support.html": {
+      "source": "dist/es/support.html",
+      "bytes": 12567,
+      "sha256": "19c40457b84b84909192c40e5bbb352a2060d6490428a34f65df07f01df871e4",
+      "before": "a0d15537b12f3953ce0a5930978b0740fcc785d3668b0f2179829d3555b376a8"
+    },
+    "es/terms.html": {
+      "source": "dist/es/terms.html",
+      "bytes": 13503,
+      "sha256": "15c7ec5bc655c22462afd92d18ca8786225454412a6276b512f3b3fe579bc1c7",
+      "before": "2d73d4aa5fb93ec07d334dd06b31baf36aa15ec345b4acefe8c5f9ce9c051c9a"
+    },
+    "fa/about.html": {
+      "source": "dist/fa/about.html",
+      "bytes": 12145,
+      "sha256": "3811e9f219d9c44906a3f6d1fb342bbf96b06cbfb98c17aaeeb62be4084933f3",
+      "before": "ec645ff725d82842127d58714a8d7c15fe451067b731a938569e2776fcd0007e"
+    },
+    "fa/checkout.html": {
+      "source": "dist/fa/checkout.html",
+      "bytes": 26167,
+      "sha256": "e1511f60e2b704c44b9379b92f93a6c8985721d2d3efc0fb32bac46760c0e556",
+      "before": "ce2b4fbf2043b55f3a28733af703510f47a586b4a6eaf15dd444b2e6d2b08826"
+    },
+    "fa/legal.html": {
+      "source": "dist/fa/legal.html",
+      "bytes": 11704,
+      "sha256": "c90795b5dbe4ec05a8f1baeb463bddc82854ab18241987cf45c0db66ee366e3e",
+      "before": "b4d8f13eacb5a2f0f275be73326bcbe45bcd354e0fa30d7c3fb46ef787f7a388"
+    },
+    "fa/privacy.html": {
+      "source": "dist/fa/privacy.html",
+      "bytes": 17041,
+      "sha256": "4a08adeea6b56dfa3b18e26c180fcb48e8d84103b43014fe26cfa4d9173a584b",
+      "before": "6e7923a0b1c3af88644a14b7570282239d64a3116012dad766315779a003abb5"
+    },
+    "fa/support.html": {
+      "source": "dist/fa/support.html",
+      "bytes": 13601,
+      "sha256": "e875711103c052a294d73467aa9cdc9856dc50a30873cd59764428a26f848b21",
+      "before": "22ddec95da621306802341ec4293a5966ed0337209a07f3997077b812f2bb437"
+    },
+    "fa/terms.html": {
+      "source": "dist/fa/terms.html",
+      "bytes": 14612,
+      "sha256": "8819cb057256274151febd6fbc7eef285a287d98b3eaee03453baba1ac9e5177",
+      "before": "ad55a16b50262cb8ebfd04860adbe70b3a3e0e850f1d7f0c322550511b42f7d6"
+    },
+    "fi/about.html": {
+      "source": "dist/fi/about.html",
+      "bytes": 11415,
+      "sha256": "a66dd9aaf16362845bf5f0b47f7167018b625830a004d1f880f493ee7ed2e40c",
+      "before": "38998fb1be4f9a9326bc9921ef1617817b6b45553fadc9c70d98ff7f362186e3"
+    },
+    "fi/checkout.html": {
+      "source": "dist/fi/checkout.html",
+      "bytes": 23847,
+      "sha256": "e63e3eb7abd95b51df18eff7f2de6d93e16ce0e5c005d43930606ed4e58a0cb8",
+      "before": "776da897766f680058216dc601ce4f396ed6aa2dece9ca012911576baa971936"
+    },
+    "fi/legal.html": {
+      "source": "dist/fi/legal.html",
+      "bytes": 11175,
+      "sha256": "80cf3ee2fd8f45bf8cd2fef9203a9ca26f3dd64a77e9e9da473b8a83343fb832",
+      "before": "d1ce90cc598adbcec9de9d17c4a8375ebc7a6762edb4d958fa8e7a5bae6b9b5d"
+    },
+    "fi/privacy.html": {
+      "source": "dist/fi/privacy.html",
+      "bytes": 14662,
+      "sha256": "e86f332d403b2577f300c9c37336423e2b65cbe1d9ecf385d4e634868a0b1d7c",
+      "before": "c55d9e737483aef92c4abf8af5064c7a7643fab80e186d8eda7707f18d21a351"
+    },
+    "fi/support.html": {
+      "source": "dist/fi/support.html",
+      "bytes": 12360,
+      "sha256": "518c478197dbeaba48645f7eb5d4703202ee70d15550f28ec199d8151df58300",
+      "before": "b1d2fa6eac13d663273d277429191bea228c220f8ac9f1c2f67e758f46bec92d"
+    },
+    "fi/terms.html": {
+      "source": "dist/fi/terms.html",
+      "bytes": 13411,
+      "sha256": "d981bf25e4c1d40675520c154445794f40947b16ff487fd9713fb67beba6ac91",
+      "before": "3dc5ee63ac292abb8c7c9775b577d383de8caf8250399e775470807fc738f614"
+    },
+    "fr/about.html": {
+      "source": "dist/fr/about.html",
+      "bytes": 11474,
+      "sha256": "03577772a4d495de424d36495641489d7db88486b63a75dd2be04fd527f17d95",
+      "before": "8fa0adbd3c1adae62c35e23523a131ff2f1763d5a721bf3950e02c7cf60a0241"
+    },
+    "fr/checkout.html": {
+      "source": "dist/fr/checkout.html",
+      "bytes": 24489,
+      "sha256": "f798c050aac8a718c32c95f749710c3d72720762693a5c522dd710bdece425c1",
+      "before": "b7911754e93023a51847a721af554e830b428084ba9254d5fc945cd4a5b55731"
+    },
+    "fr/legal.html": {
+      "source": "dist/fr/legal.html",
+      "bytes": 11356,
+      "sha256": "076f6912982a67fc0f67318209293ff586041eee28fb91a04bd40cbbbb284583",
+      "before": "33a6bef98eabe16f2c5acbbd349226582a135e98cffe1f3c55cdfb24d8718c1f"
+    },
+    "fr/privacy.html": {
+      "source": "dist/fr/privacy.html",
+      "bytes": 15223,
+      "sha256": "227e3293179bc48dcaa9515a63f07020f092ff48d6018dce62d66901e44f75b8",
+      "before": "b0d6cfd817d3b17a1b0dc94289011e14dff320c9ddfaca4f2a31e952bb9bc7a1"
+    },
+    "fr/support.html": {
+      "source": "dist/fr/support.html",
+      "bytes": 12709,
+      "sha256": "d345ff3a63b660ac57b13d74c2019ace5e521cfc4030b706b4a0e56d066bfb98",
+      "before": "60081286c95b4e1fb51ff1535973ff7415c2e328d95c2d74a1c8e79820812011"
+    },
+    "fr/terms.html": {
+      "source": "dist/fr/terms.html",
+      "bytes": 13713,
+      "sha256": "4abd54422b8514ca2dec1c9ef10443516cb7bde9ef329def694a7a8ea4bc5761",
+      "before": "eec699ba646f333cae261e5304466643d57eef48fe0c45af489fb5bec2eb7905"
+    },
+    "he/about.html": {
+      "source": "dist/he/about.html",
+      "bytes": 11787,
+      "sha256": "c0c52ab8dbbf07114b0116ea480e1f4e8405fdff776379770f625646df5f1b38",
+      "before": "c303139b57f1c6c9d9fe62e5fa56c9c60ba3aec5baed30c289b6fd89275c0741"
+    },
+    "he/checkout.html": {
+      "source": "dist/he/checkout.html",
+      "bytes": 24999,
+      "sha256": "2f75e09fdadc7a6b1eabd2ca33eadbb9c4472d8a33e03c5e697e0eb804733036",
+      "before": "a6c35c344589dd48bb4841d57917736866fe965e8d49db1bb186ea607b39de1f"
+    },
+    "he/legal.html": {
+      "source": "dist/he/legal.html",
+      "bytes": 11440,
+      "sha256": "cfcf8e3e6cec7ca89549b83a2fdb5c3b0bb3eede0d3474657ccd27a36c0cc5a2",
+      "before": "64377ad2c69e80c5ede3f4df3a89a50174cbbe7a57787507fd356b68a19acbbb"
+    },
+    "he/privacy.html": {
+      "source": "dist/he/privacy.html",
+      "bytes": 15895,
+      "sha256": "b0ecd82bf35046c5a01f1aefbec610541b5a979e2a75d7fa81f55501a79c0607",
+      "before": "3e3647f153311f07312024245bfd39a2a7c827929a61e3761346c8386d56fa97"
+    },
+    "he/support.html": {
+      "source": "dist/he/support.html",
+      "bytes": 12925,
+      "sha256": "9a60e9d2fda48668deda4b4cd917054cbef7aaef131e76093e1fde0bd72497a8",
+      "before": "8763d0ba2e7469b229c77c0ea8914b85789b7b9470414d1a53460c44bddb638a"
+    },
+    "he/terms.html": {
+      "source": "dist/he/terms.html",
+      "bytes": 13945,
+      "sha256": "4f32a9c1ee3d7fe77d86e6a1335b1d2427ed9e929e17e3d821a5294bdcb66df4",
+      "before": "f006f6dd7b0b8495ef46654c727fc94a7e183caa646fd178b3d77b59e34048c3"
+    },
+    "hi/about.html": {
+      "source": "dist/hi/about.html",
+      "bytes": 13209,
+      "sha256": "7678938a2bb59df32d5fce5f6347abc312eabdc6a5da4aa5a20f854239bab532",
+      "before": "fcb7a6ffd091b93adb1f3ab6c903cab233dbe773c239485c491c254040b1ffe5"
+    },
+    "hi/checkout.html": {
+      "source": "dist/hi/checkout.html",
+      "bytes": 29842,
+      "sha256": "6333028fe5f86b9655aa72157f0ad25bed5e4b10fabe588de3c1f4e807739ddc",
+      "before": "4492089cc6d1b404cc89406e1319af332ea77d0eef3ce95ffdc2d2c8f7c3651b"
+    },
+    "hi/legal.html": {
+      "source": "dist/hi/legal.html",
+      "bytes": 12363,
+      "sha256": "c48ed551f805e2691745951bf121341056afbba8ffa3b86f62ff8bca45c403c9",
+      "before": "2d1bf61245ad7df3dcb42b842d0f4ce2cac57e9ac3e770fbff9059afd14b2a7c"
+    },
+    "hi/privacy.html": {
+      "source": "dist/hi/privacy.html",
+      "bytes": 20328,
+      "sha256": "3ac1e26fa8251f5e6ddce374859878e3b5feba3429ef182769946ac8a72ce4cb",
+      "before": "dd480bad6b493ff918eb0adb6e21fbef9d7f39f51c67474c4f5651850fbffbe5"
+    },
+    "hi/support.html": {
+      "source": "dist/hi/support.html",
+      "bytes": 14941,
+      "sha256": "093a14202a263db2532d43fd3bba611c26770c6835d79499a75dc3dc682c6717",
+      "before": "1b8de1e52e33e05b15d1ea926b0a9fd070a30c1d490e34a47e9e35965cfdc930"
+    },
+    "hi/terms.html": {
+      "source": "dist/hi/terms.html",
+      "bytes": 16616,
+      "sha256": "b6ceb724231dcd5525597ca61965d9378bc76a0239dc0f3af00da88b65197a55",
+      "before": "a0fe0a0e7d990aa011b0b02e1e9f97cbd8355a05c423291a07804be082594781"
+    },
+    "hr/about.html": {
+      "source": "dist/hr/about.html",
+      "bytes": 11324,
+      "sha256": "42ed4ce8593c4ce0c4c53ca44b70f1fb9830ad27af0ba15177db1f3151e156b4",
+      "before": "c1d719deea97c8c63bf2f7f0e3d3ae48e755ba4f328dd3ce12f9468186bf4b85"
+    },
+    "hr/checkout.html": {
+      "source": "dist/hr/checkout.html",
+      "bytes": 23308,
+      "sha256": "16308f8d9479b991cf5be0128558a03e9dc4860aac9f52786aaf9785b383d7e6",
+      "before": "ad7f1de5fd2e3d7c5f26f43ba9b322d419a9d8798b046b9f51710861d6af5ed6"
+    },
+    "hr/legal.html": {
+      "source": "dist/hr/legal.html",
+      "bytes": 11181,
+      "sha256": "b673fe8de211d56b1e3208861d2d87c5ab41711cae491dcabbe32c9c076cf4a8",
+      "before": "09d89edfe0bc8d16259b123a81dbb3d5d3fa9304025bbbccc8657fdffd7def29"
+    },
+    "hr/privacy.html": {
+      "source": "dist/hr/privacy.html",
+      "bytes": 14333,
+      "sha256": "9da1c2418da2e9a3de4322c4dbd4556c27050f609bcfd3d854f07171273473c0",
+      "before": "e0a5a4fccf39f41a4d9c3881bb0b316c18ef9870de16670352eb8f1a42bd5f9a"
+    },
+    "hr/support.html": {
+      "source": "dist/hr/support.html",
+      "bytes": 12323,
+      "sha256": "333f75ca41e3fd8d9f1aa6f8d38a968f4ecb908900cc7db646915644d8717afe",
+      "before": "b10eb69136f14c1a3b4d0b936a7d6921488bacd351da5d8b3a9ff5417550fd26"
+    },
+    "hr/terms.html": {
+      "source": "dist/hr/terms.html",
+      "bytes": 12976,
+      "sha256": "4797a3409a1a3b35de83cb962575f9485e219076d57866457d4c662211828195",
+      "before": "403ea0f44c649a3bf9b17df656a76a028a9ff57dd70de750ea49c8b2c3f66d6e"
+    },
+    "hu/about.html": {
+      "source": "dist/hu/about.html",
+      "bytes": 11500,
+      "sha256": "20b60af1a303af7c5026832d428f749fb47d42b714704843fb1f4aabd95b0145",
+      "before": "b43da0a63d592f7329153d12802cabd4e36950050be1b9cd08bc197f89d62e21"
+    },
+    "hu/checkout.html": {
+      "source": "dist/hu/checkout.html",
+      "bytes": 24091,
+      "sha256": "375eea317c528e3b42ad0e421bfbc582d4c7fe01f502110ee5b479d648c96b64",
+      "before": "0cee893990400a8e9fa9cc49a7e351173ca398eaa6f6c9b351cbba7d31e9cc82"
+    },
+    "hu/legal.html": {
+      "source": "dist/hu/legal.html",
+      "bytes": 11315,
+      "sha256": "78affd27929c92c12049367f41d5e8f15036cbc5a8e45aee104213b712371ac9",
+      "before": "8dc39a8a214b4d5bfaa82176a5f4adf9bb2814f3cc85024853692fa8ee623350"
+    },
+    "hu/privacy.html": {
+      "source": "dist/hu/privacy.html",
+      "bytes": 15009,
+      "sha256": "826b81a7a4301d9930c54706a9f15e484d66854b64db98f523c901a68bb12527",
+      "before": "672d0903582adcdfe1e5eff34650cce094e3ce0bb72a2e952a08280c0c15f941"
+    },
+    "hu/support.html": {
+      "source": "dist/hu/support.html",
+      "bytes": 12622,
+      "sha256": "92257d965befb38642ea5be865cc5869f1b8355505122ccd895b2a531005b41a",
+      "before": "f0cbce33e9970b968c7429e16d0311627313f870451abcda69aaebc4a13958aa"
+    },
+    "hu/terms.html": {
+      "source": "dist/hu/terms.html",
+      "bytes": 13407,
+      "sha256": "d0dce9e124337dee55c35f01e9682245782b28e736ba54e29dbb87ada2682744",
+      "before": "e78f5bfdb39c3e9586ba8f54f3d184eb14c8de1df54b7d3d7106fa38cbb5f748"
+    },
+    "id/about.html": {
+      "source": "dist/id/about.html",
+      "bytes": 11376,
+      "sha256": "5894147219505d4086714276856704fbcc51c6d0d54c71615e3d5c093d89f226",
+      "before": "eab36eb2a945ee851fd3ea36a44fc37c08603b1ab896d7790cbefbe22c494396"
+    },
+    "id/checkout.html": {
+      "source": "dist/id/checkout.html",
+      "bytes": 23473,
+      "sha256": "113a9097cfcce50fd64a58d8dbc655f5217c32a92cf791421ae2c82091335626",
+      "before": "9587de74439c41ea0ae1bb3181102fd96d3b591bac4ea88b38a2cbe278dd1190"
+    },
+    "id/legal.html": {
+      "source": "dist/id/legal.html",
+      "bytes": 11195,
+      "sha256": "29c8c3e4c8cbf635f4cf7c0b96258c572ef486c7c717dee34159dbe7476f70d9",
+      "before": "629a40318de9a9dfb341f6f84ff613dd4ed21374ac14fcfc8be1728af9392f9b"
+    },
+    "id/privacy.html": {
+      "source": "dist/id/privacy.html",
+      "bytes": 14375,
+      "sha256": "5a61e9464d3d6b42211282d16280a6384868e609398806bb8f1aeeb3638357b9",
+      "before": "e2e86a8df07817d384ebf11db80199a74c795e1dc6111033c42f9539ba4e712b"
+    },
+    "id/support.html": {
+      "source": "dist/id/support.html",
+      "bytes": 12281,
+      "sha256": "1ab1ce375d4e1d06c14d7b9facfe517d94862a2e7ec98133ce8b0915a31d3971",
+      "before": "cbf623eaa220f6db96be7b85a53da1e4141d0f0a07f3f478d94240ad135d5b6e"
+    },
+    "id/terms.html": {
+      "source": "dist/id/terms.html",
+      "bytes": 13211,
+      "sha256": "a859407e966db38be4e3331b6e566dc92affd3e3fcad7015e26493dacc116e60",
+      "before": "b3fde7bf64c072e526388ef3e2cbc92ddce8e048f8e09fc95fc7a02e900ba291"
+    },
+    "it/about.html": {
+      "source": "dist/it/about.html",
+      "bytes": 11375,
+      "sha256": "6eb3db99a693bc249723a3fc14d28a6ca75d2f470534e565475decbdb1c24a1e",
+      "before": "3cad8b2924af799a25965f9d8564fe34ba0ecafb5fc4b57fce9725f276cef25b"
+    },
+    "it/checkout.html": {
+      "source": "dist/it/checkout.html",
+      "bytes": 24055,
+      "sha256": "a24d8459e241f90f0220a8db7675dfaeb80766b56d26717bbdf41653f51d811a",
+      "before": "e744b3c8e1d4291e4baeb78ff75360d7fe5a6c88ff9d3b3719d03e6fd2cc9d09"
+    },
+    "it/legal.html": {
+      "source": "dist/it/legal.html",
+      "bytes": 11225,
+      "sha256": "c77fba25e8d6fa8319da9a3ea69b9770a15cbb147586f2c446136b027793af14",
+      "before": "d119473dc487f6c2f7db83dcec512e7c0dff40c33ce637dfe4faf260ff35a5c5"
+    },
+    "it/privacy.html": {
+      "source": "dist/it/privacy.html",
+      "bytes": 14807,
+      "sha256": "207cb355b0dbe82ac4ea7fa2c39c3a9d24500a9a634bbe8779b692ebb4a042b4",
+      "before": "edf0d180f6e02ba7abe4a7736c2012bd1ce65e829415ed74e40682610b7ebe4a"
+    },
+    "it/support.html": {
+      "source": "dist/it/support.html",
+      "bytes": 12481,
+      "sha256": "88fa179bf3b5cab71b967b9c149db232ae412f7f1e0f7af8bd72134d48e33cba",
+      "before": "8b9f5ea5e8c2f99362257f738c2d33a9226e25a43f20ee31c47e0752e051ddef"
+    },
+    "it/terms.html": {
+      "source": "dist/it/terms.html",
+      "bytes": 13455,
+      "sha256": "ad1a7445aa8ef7769943e70add823d53501f469df4b983da26648ced64b96099",
+      "before": "a95ed3c648604c57412a55e67dbaa0fd2db9487bc3d388493b2398dee2a642d7"
+    },
+    "ja/about.html": {
+      "source": "dist/ja/about.html",
+      "bytes": 11652,
+      "sha256": "5b34afccdea822bf5f2e4d8d0874207fe7e5dde083cb8e7038064f95402d0ea9",
+      "before": "152f0cc2778c62072e9d47b2c0ac9b638f730def12002c6eb5a82f6dd03c19ab"
+    },
+    "ja/checkout.html": {
+      "source": "dist/ja/checkout.html",
+      "bytes": 24484,
+      "sha256": "7521bf48a2eb77c0ec311922f456fb6c6e077dc3ebe7bcd4bc1a371117c93163",
+      "before": "ce0f9971df3d48022ce1faeea8ed225fe2af813428a885995365f5ed77fb881e"
+    },
+    "ja/legal.html": {
+      "source": "dist/ja/legal.html",
+      "bytes": 11361,
+      "sha256": "469bfbe968d898a62d201deb433448ef6f90d31bb6a60c62bca7b7916927e048",
+      "before": "9743d8c74fdeb723eb777dc72034fd185bcdfb694b52eadedafc761314dc6735"
+    },
+    "ja/privacy.html": {
+      "source": "dist/ja/privacy.html",
+      "bytes": 15355,
+      "sha256": "e645c8a73482df373b118aa759b10a6352c6005a64d6872aca16a76a8c22c35d",
+      "before": "8f56c063e559e50e270c9a6d58d7de0cecc11265ad6e9416787512fc20246951"
+    },
+    "ja/support.html": {
+      "source": "dist/ja/support.html",
+      "bytes": 12910,
+      "sha256": "c449e99442f49964303f5289474cc4fe630b73bc25899223c79ee932ec6f4b80",
+      "before": "9399d74e28b84acbe209b3f8e3ff6b53c2c18fe1b48a6f41c74ffbefebd12974"
+    },
+    "ja/terms.html": {
+      "source": "dist/ja/terms.html",
+      "bytes": 13770,
+      "sha256": "25f0eaacf467b065853df46a0554e2a43fb91f5c23ffd3f93655e81a5adc1431",
+      "before": "ef366aa6f44c0baa98ded82dcf34d802e4759467951b13b94f40fda6e1daab33"
+    },
+    "ms/about.html": {
+      "source": "dist/ms/about.html",
+      "bytes": 11403,
+      "sha256": "50cfe7b5af1b8fd4b1a4037dd1465c1d50ba17551e25087ad0a11871f4db2218",
+      "before": "40ef10920e517a40225feebd845f7257aef46693391b6bfa437779ec1fa2efff"
+    },
+    "ms/checkout.html": {
+      "source": "dist/ms/checkout.html",
+      "bytes": 23562,
+      "sha256": "16a7b176c1b1fd4bbfbac22a5c92f0d7c34faf201a36e5e505235561e63f3c24",
+      "before": "16292c93d217e99d23080801a003c414d7df4e66c7fc1bd3151dca152f454aba"
+    },
+    "ms/legal.html": {
+      "source": "dist/ms/legal.html",
+      "bytes": 11230,
+      "sha256": "57379af31b51aade6f63dde3bd7fcd096d75f434ecfd58b220f7f95e6e467bff",
+      "before": "96108c48e3234684ff537c4a9ffb2ecd6fd96ce1c5364c5a7d66223dc46d637d"
+    },
+    "ms/privacy.html": {
+      "source": "dist/ms/privacy.html",
+      "bytes": 14615,
+      "sha256": "6b5f39ef1e078f341d4ca0b8ca618657f006467a4452c6e46ed8a44ab813bae0",
+      "before": "06eaacbe4dc0d7f5d51e7f616063083f7fff27077bdcebf5c46989955bb356ca"
+    },
+    "ms/support.html": {
+      "source": "dist/ms/support.html",
+      "bytes": 12353,
+      "sha256": "14f9a28c42e4cefd5622542019740a265b70723f3679e6059745b3ce8c769458",
+      "before": "862dafd915962b12515214a4fca64e69bc43d95b840efd498720705ae31cfa42"
+    },
+    "ms/terms.html": {
+      "source": "dist/ms/terms.html",
+      "bytes": 13287,
+      "sha256": "0d78032a663ddf6805bf4c5bce675012f002344fadbdd8f09178d7b804ec6492",
+      "before": "571d419d0ead32dc18496763bba5546a159689be531e1ebb8d9dd2d3641996c0"
+    },
+    "nl/about.html": {
+      "source": "dist/nl/about.html",
+      "bytes": 11324,
+      "sha256": "fc464b22d7c1f123ee7dc04b6edba6711837912a85ab39f528fa8a9c513ee1d0",
+      "before": "a969b22bcd746622506371a0e4fa61f0f7811feb5d93bafea9e1b67ee1de0841"
+    },
+    "nl/checkout.html": {
+      "source": "dist/nl/checkout.html",
+      "bytes": 24030,
+      "sha256": "f4741d7b5b07c3a94f2ed17c27f16dea96f6d3ef419570a328c6fcf8587e45a8",
+      "before": "86baf26544f4dd87ba2e36922722c20ce1af57c320898324f214f33c9e092610"
+    },
+    "nl/legal.html": {
+      "source": "dist/nl/legal.html",
+      "bytes": 11260,
+      "sha256": "6ad091ec1f86ecca193b7814e04dfdf5f95daf261e1d4562cd3423e6804c1c15",
+      "before": "58c02f175dfe4248c163f599266cc331f782751fb93d547d42fea42753658f21"
+    },
+    "nl/privacy.html": {
+      "source": "dist/nl/privacy.html",
+      "bytes": 14738,
+      "sha256": "88f11b6dba827e3e2d199fb2e422c769f2c59964998d93290eabd90183426758",
+      "before": "9f5173ad937c83d32fbd0e7bc069ac6b514df503598d49277677f946f993acfd"
+    },
+    "nl/support.html": {
+      "source": "dist/nl/support.html",
+      "bytes": 12354,
+      "sha256": "9d3ef7df5770e929a77f5b76692174585b09435e88f4d58543a68b87c498f4c5",
+      "before": "cd356be7e363ca9bbfa1c5259388d1803f9b9dd0fa7509cf68efb7420f019e4c"
+    },
+    "nl/terms.html": {
+      "source": "dist/nl/terms.html",
+      "bytes": 13503,
+      "sha256": "6efdd3fae58a18683bd7c7c64eabf1e4beda6f82e15199a4a26a42d23f2682d8",
+      "before": "9f264d5755ce34038591e12a6dd22907315e7df62acf9db102afaee9e81cd590"
+    },
+    "no/about.html": {
+      "source": "dist/no/about.html",
+      "bytes": 11295,
+      "sha256": "76f0d7d3384d0a3d72a2c9ef482cd07aa2d25bf228c4acb772be20b691c667e8",
+      "before": "f5951eff715d4f59697fd633fbf18b16033f2683f6956ecb8cabcef34c45bdbc"
+    },
+    "no/checkout.html": {
+      "source": "dist/no/checkout.html",
+      "bytes": 23336,
+      "sha256": "12ec0b53be9d7c2eafe9794d6290cdff57bdec6ddc35cb9f81264710ca491e3a",
+      "before": "c124860cbfbc2d09be228858a3a5534dcd9cb7481a09573165fb22488e6f25b6"
+    },
+    "no/legal.html": {
+      "source": "dist/no/legal.html",
+      "bytes": 11214,
+      "sha256": "8f0e294c622cdfcca0181e02de1be67f1c6b4d286ec7e04d9906c37508e01b3d",
+      "before": "fcbfc0e1be10b857d9f5e498ee14ac004e375c30bdb8e6c659ec920d8c82d767"
+    },
+    "no/privacy.html": {
+      "source": "dist/no/privacy.html",
+      "bytes": 14419,
+      "sha256": "eab93e427c996b2fba0a223e0c46f05bcd54d9a3e8563b530bfeac56dc6928b2",
+      "before": "3b98cc334bbdf6a7eeb6dbf6bc0440de54dad0137d2c6aa05936d2092fae1ea0"
+    },
+    "no/support.html": {
+      "source": "dist/no/support.html",
+      "bytes": 12330,
+      "sha256": "e735dedf827a1c396f98321a8eef97fbb47da70ca89a7a6374e00def38555859",
+      "before": "f52618212820a73d1b76c02c64d23e84be40200835e83e575c2a4de4b2590842"
+    },
+    "no/terms.html": {
+      "source": "dist/no/terms.html",
+      "bytes": 13009,
+      "sha256": "ea2153496db68aaf37880f734bf62b7a209ba53ec4c7392af90b15ed13be815a",
+      "before": "6f8d7f90e097292ac667585ca968123491c75f40a4020a1f89f7d6bee78250c4"
+    },
+    "pl/about.html": {
+      "source": "dist/pl/about.html",
+      "bytes": 11360,
+      "sha256": "4850027f59715f0dc1b8099c0df9600d78f7c88b28194653e80f53985bfc28cc",
+      "before": "ba1d2cb6d4be962b3a41a73effeac9cd31ba7ecb3ca555ccb8961ad9b9ca0119"
+    },
+    "pl/checkout.html": {
+      "source": "dist/pl/checkout.html",
+      "bytes": 23534,
+      "sha256": "7ce27fb9878d4924cc17cbbfba8331aca4b3b1e782fb9bf760649f29848f29ba",
+      "before": "fca4daa310e4b26409918eca822aa688f343c0cb0616260b8d631e488ecc306f"
+    },
+    "pl/legal.html": {
+      "source": "dist/pl/legal.html",
+      "bytes": 11174,
+      "sha256": "581c70e2a4cf9d5434d57b6cd274144228b556268f67ccce4897a94792e72053",
+      "before": "d9f74594f7d5e7c768dab73a696cc9f8f087187230f6e88ecaba0865362f9b9b"
+    },
+    "pl/privacy.html": {
+      "source": "dist/pl/privacy.html",
+      "bytes": 14619,
+      "sha256": "203d7d2c7a8dc7e06ebce7aa8e42fbc2bbc0202cb52c3b871b5a321718118ef8",
+      "before": "102d5f93409d0dffeba74d3646a3710c0846710d8456e9cacab085a540902f31"
+    },
+    "pl/support.html": {
+      "source": "dist/pl/support.html",
+      "bytes": 12412,
+      "sha256": "6a6fcfe9cf9862a5f9bcdd1718c5bbbae9978778b91bc55a981abaf84445a6a0",
+      "before": "a832d14b7cafa3d42ba7fe5e6ac6ca7691f2297ea25f24a6042f3158e42b8a27"
+    },
+    "pl/terms.html": {
+      "source": "dist/pl/terms.html",
+      "bytes": 13112,
+      "sha256": "5458e0a397ad758b942b23710ea77056b75793ecfc1173798dd4712a9c7e66ce",
+      "before": "c1a245b552ee01ce470d118b4bc68ab81d3f45bdc3e93df7acd9589f8c33dfe7"
+    },
+    "pt/about.html": {
+      "source": "dist/pt/about.html",
+      "bytes": 11411,
+      "sha256": "5e48b00f5594ed91bf0a436476a3f696c51683d6c1a9eaba4849a30457f6fb8b",
+      "before": "d6eb6e9522b9b6f737e95dbece0fdfaef7b8b70b518119bff33d0a9156cf0b6c"
+    },
+    "pt/checkout.html": {
+      "source": "dist/pt/checkout.html",
+      "bytes": 24112,
+      "sha256": "73f03365be6a9a09920c3f813a63af9a652f0d6eb64b4210a7a2ba0aedcfcdfe",
+      "before": "b431f983a883bb1617f9f77292f80c82e47980488f377af232a85977ef2d6680"
+    },
+    "pt/legal.html": {
+      "source": "dist/pt/legal.html",
+      "bytes": 11257,
+      "sha256": "2afb3292672e8a7ddd8cfec7d000184335a536af55bf633a38aa64b3ccfc3f2a",
+      "before": "d7878674e68525bce098774fc80ccfba28ce66f01802fc492620f37becef17d8"
+    },
+    "pt/privacy.html": {
+      "source": "dist/pt/privacy.html",
+      "bytes": 14741,
+      "sha256": "9b29ca685aa2311b845956e5703840b1efe7a35f9a95da03632bdd897e09d98f",
+      "before": "375037cf73de08323e48b95cfe7531cfafaea5aed222771ac92854e7c5a1fd55"
+    },
+    "pt/support.html": {
+      "source": "dist/pt/support.html",
+      "bytes": 12510,
+      "sha256": "a549d3a77b779e07a4f15601c3623ac3691b5f4b74406ed2fefa221a24ba6d29",
+      "before": "db3b9b013ab140252a8fd41e536714674aaa533bdcfa2e80361442a36a41ce4d"
+    },
+    "pt/terms.html": {
+      "source": "dist/pt/terms.html",
+      "bytes": 13554,
+      "sha256": "39c838a2dbeee6a75d395becad215b475e5b5317ad51879a5eb49e22bdc5a6ff",
+      "before": "52e50b8961bbaa2e1626c6ca0839354a9cea2164d0cf8deaccab3bdb5567625e"
+    },
+    "ro/about.html": {
+      "source": "dist/ro/about.html",
+      "bytes": 11399,
+      "sha256": "15301ce080c70f715030ece2cd0f2b33c557cbd66cdfb9e591e857a9d904934a",
+      "before": "42fd201e8ad7ec44433170a2b2102c4ea58adcb7f4c324605918cd10bc43f410"
+    },
+    "ro/checkout.html": {
+      "source": "dist/ro/checkout.html",
+      "bytes": 23823,
+      "sha256": "b65799878ff4702c6a726c19aba4988dbff109916914d459627ef51e4f74e438",
+      "before": "f8b8ec0e814023c5b81c6e1acb5061d2dee7c6d61193721322588d35bf6197b4"
+    },
+    "ro/legal.html": {
+      "source": "dist/ro/legal.html",
+      "bytes": 11300,
+      "sha256": "abdbe4cee4dc703259df02b67eb20e60cbe4db9ff173b86bb4220d29798b9495",
+      "before": "77148d3a7d59daf2e4c6f067f94129f715f35233a7e7fdba9186f60b886f1cc2"
+    },
+    "ro/privacy.html": {
+      "source": "dist/ro/privacy.html",
+      "bytes": 14766,
+      "sha256": "68c9253344d76560619c77cb7ef4a757295b44357b16663c064996716a6cb57a",
+      "before": "0cefe7566541f5eef33448b7aa79242070be77ec2d1f170533236d1a08242b9f"
+    },
+    "ro/support.html": {
+      "source": "dist/ro/support.html",
+      "bytes": 12560,
+      "sha256": "92f8dcd3593abf9bd51c9ce774960ff42148d937978775db793064b7f74b0a6a",
+      "before": "76f0e6ae0ac8e98f494a7631c0cac400da1bdd5735fae6a1708b502e88c75c69"
+    },
+    "ro/terms.html": {
+      "source": "dist/ro/terms.html",
+      "bytes": 13305,
+      "sha256": "5132ab752fd63a0aa391491157e76f1a07bf13b577b477c5beded9852d6b8735",
+      "before": "c301d6f362d5bd0352f43e2913bb976da457165ad0ac87d02c0f0236193318f7"
+    },
+    "ru/about.html": {
+      "source": "dist/ru/about.html",
+      "bytes": 12456,
+      "sha256": "1766bc0c96b3cd5b3b16c027ac42ef6cfbfbc241364e6a307ec1d8f426edee31",
+      "before": "7cf1f75c96b0ec7ee9039bc7e51ce5cbd2f7a68fecf59b9d28bd1a7763571148"
+    },
+    "ru/checkout.html": {
+      "source": "dist/ru/checkout.html",
+      "bytes": 27385,
+      "sha256": "d1d5816b033fad4e7bcd3aa81d5a7af1a8ca471b01c4a4826d7804e8e64364db",
+      "before": "ccc377b83bb28b8797f9b3e48e1aff5a8ab969cc9ec3b056b96181c37453ec2e"
+    },
+    "ru/legal.html": {
+      "source": "dist/ru/legal.html",
+      "bytes": 11962,
+      "sha256": "58db011784e394afaaf2667506dfacc51441b9f6e7b82834cb927a922982d8fc",
+      "before": "a92545ef147f0a619674db004fed05b45bc66372c12537466f44b2ff719246a8"
+    },
+    "ru/privacy.html": {
+      "source": "dist/ru/privacy.html",
+      "bytes": 17987,
+      "sha256": "c90fb2f5466e5d014bdec19aec32b50dd0fd256c8dc6e6c16ecd2ccdb6e2008b",
+      "before": "414f2ff09fe0e40a47f7a7c3b8acde679031fbd79cc22de37c75631a9ef91118"
+    },
+    "ru/support.html": {
+      "source": "dist/ru/support.html",
+      "bytes": 13958,
+      "sha256": "1ca013c26d580dd5b8f0751a02f86498d1be2b63d1cb6aff366a04b2d0c75a4d",
+      "before": "1229148f0b333aa71f393aea63aec6cba3a9f145520b50796d9786eb9cd4325f"
+    },
+    "ru/terms.html": {
+      "source": "dist/ru/terms.html",
+      "bytes": 15046,
+      "sha256": "88ba86a2dbff1902965364006a2b23404cc4c86b881742c4e971cef299c63cfd",
+      "before": "8bb94712d6ce63075a08a12daf7b194c5f60de5b52e229cce96ab3cf370c00b6"
+    },
+    "sr/about.html": {
+      "source": "dist/sr/about.html",
+      "bytes": 12336,
+      "sha256": "69b2fdcd9e58afcffb5be283d653c2670852bb23dfb39b748cc2c137a8602297",
+      "before": "91aa29653c13ab11b6f67eeebd80db298b560552d2b17256cc86b1b1bdec5f88"
+    },
+    "sr/checkout.html": {
+      "source": "dist/sr/checkout.html",
+      "bytes": 26602,
+      "sha256": "efbb0dbc4d7b44eef97fc69faf0ee5022d4031f45ff7c943f1d16b20f3b09a1f",
+      "before": "ce9570330fcc88661b130f41deb210d573cb9ff1dafce5e776ce7659404255e0"
+    },
+    "sr/legal.html": {
+      "source": "dist/sr/legal.html",
+      "bytes": 11872,
+      "sha256": "65c0a0d6e8b6f4d5448524bd1441f1417a5c4665a5db444f967f4ac0eeb2e9bd",
+      "before": "194291d330a925481753720ab016ad6711595e5f38ac1657b0a5b0944de07b24"
+    },
+    "sr/privacy.html": {
+      "source": "dist/sr/privacy.html",
+      "bytes": 17178,
+      "sha256": "354661a5ca5237ed85f50cea93a291d5356bf29d4df153123787da04d4953185",
+      "before": "ec5b2c001a08ab78b86e015c3bcd37c2ac7ae3b799967ee363f31f532a07303a"
+    },
+    "sr/support.html": {
+      "source": "dist/sr/support.html",
+      "bytes": 13709,
+      "sha256": "2d4f3cfca1890b67a74c7b4e10d635efa717c7e97e97fe284c9509646ae89f6e",
+      "before": "91e633397c0ef07f9fc4c7d88420dd2f12eece7dbabf246d4e71bd5a12778939"
+    },
+    "sr/terms.html": {
+      "source": "dist/sr/terms.html",
+      "bytes": 14658,
+      "sha256": "9f57be5bbe442dfc1fe9e9de2a4b0f94a849964532bd9559e237e98a67068e43",
+      "before": "da6cf68f56b9466b18554bd127187b5341368aaafc8c29fc3262a07f471ec77a"
+    },
+    "sv/about.html": {
+      "source": "dist/sv/about.html",
+      "bytes": 11378,
+      "sha256": "542dff6a11ee056d0150496e722cb50fbeafdde85b2bf4a05275d664dc9846ec",
+      "before": "29c3f2a2cc24466c822cf65d836806dce0c928deb90776709160425eb0bd6537"
+    },
+    "sv/checkout.html": {
+      "source": "dist/sv/checkout.html",
+      "bytes": 23803,
+      "sha256": "a1a866d8c9a52ea57749f4712796e55ffac2dcd42ed730a91bd51cd152d1a66f",
+      "before": "d12f37b20c794ce0f9ab452dc9e496025c8f7b19006f451c9fe4fffd8bf49d1b"
+    },
+    "sv/legal.html": {
+      "source": "dist/sv/legal.html",
+      "bytes": 11221,
+      "sha256": "2e6c553b36743e05f0fb096f75717e4e0d759cf4a8c6b72d72c0c311644a9d48",
+      "before": "92af45216255ccef63f16777b14133e32196ffa50a35dc0308e9a8a3fb744182"
+    },
+    "sv/privacy.html": {
+      "source": "dist/sv/privacy.html",
+      "bytes": 14494,
+      "sha256": "45c229b66314f5e12c6d809dde44eb95909c93d0f97f2705f1f66573887aaf87",
+      "before": "3a38f872be4a41c00d1ca36e468c0f20508b27ea6c6a0667f72f46e590660334"
+    },
+    "sv/support.html": {
+      "source": "dist/sv/support.html",
+      "bytes": 12422,
+      "sha256": "a6cba1a0139b5968525079b1082c24bf3b9a00a21024f13cf20616aa167fe6d0",
+      "before": "6d0389100119a77cfe201dce8a3fe4b3fbb0022143340aeda14ee69e2926dd9e"
+    },
+    "sv/terms.html": {
+      "source": "dist/sv/terms.html",
+      "bytes": 13378,
+      "sha256": "3377b512542e2e7841795323eb25ed5b5545519b95cdbec3cbb4fbabf92ab2a8",
+      "before": "50e057e4367f5f206f2382d364bc5c1b8f29399e2d0e70c45a72a0b6c6dad641"
+    },
+    "tr/about.html": {
+      "source": "dist/tr/about.html",
+      "bytes": 11448,
+      "sha256": "67d01da0d1317cb4a862a7e5435c4760926fecedc030b77228deffb8c32f096c",
+      "before": "61eae8e213cd3e3ab0af9f44428aa66428504a3915b658835ad5014aefefed9e"
+    },
+    "tr/checkout.html": {
+      "source": "dist/tr/checkout.html",
+      "bytes": 24826,
+      "sha256": "c560b845ae265698faca2a7f98dd6057cf57d2153dbe4dc80f23fe6d54bca7be",
+      "before": "6146a816c64b3f85e9d820efdc200e1522e4b340a5a12262ea6c4e88b76d95f4"
+    },
+    "tr/legal.html": {
+      "source": "dist/tr/legal.html",
+      "bytes": 11214,
+      "sha256": "27e4c75b312ae064a59d5ecad3b64d6720f714978d8be58deba30277fe5b3666",
+      "before": "6fd4a38dd5e7b64741122019e0cdc8ee895dfbb863cbe3e30cf28884d347fd1f"
+    },
+    "tr/privacy.html": {
+      "source": "dist/tr/privacy.html",
+      "bytes": 14657,
+      "sha256": "64ae902e2244a5ebcab3a2b3439b74e62745338e34e1396ea92ca7a66d2696cc",
+      "before": "d7395095e744e07065d667de356d3eb2605a83972bdc3e3d96261d69d76eccbc"
+    },
+    "tr/support.html": {
+      "source": "dist/tr/support.html",
+      "bytes": 12503,
+      "sha256": "f4a2649da1964440cc05f394ff4b6b8b55a3a06a2ab0c8f7fc55702725f06cef",
+      "before": "b1fb5630374dc2b962ad56d4abd5ebb47f02b07f0e694941c8dc5a73a8c4d4bf"
+    },
+    "tr/terms.html": {
+      "source": "dist/tr/terms.html",
+      "bytes": 14029,
+      "sha256": "9f5029fa8cff5d033bd7569d45107bfabcccffb2e250ddb8a39c0161945fe9e6",
+      "before": "e6aed5332a5c1c0291355584f45e5f87a94c8a8e76757a02c7c254a2c7ffe472"
+    },
+    "uk/about.html": {
+      "source": "dist/uk/about.html",
+      "bytes": 12370,
+      "sha256": "7b2c11398a85fb907cea478467724f4b9d49e4b8186573f1143e9dc5bb05a7c9",
+      "before": "2f24bd31fab6dfb81561aa6c0cdf90a3f62cb299146dd91b78273930bacdf1a3"
+    },
+    "uk/checkout.html": {
+      "source": "dist/uk/checkout.html",
+      "bytes": 27229,
+      "sha256": "eb5837a2294ced7369d16adeb8dc20af9f1c5c2d258a58fdbf6f7c1095ee0522",
+      "before": "f37de29a96cec2e2eaa3fe0ce7996a38c2ce64c98d22e8db03edeec56831454b"
+    },
+    "uk/legal.html": {
+      "source": "dist/uk/legal.html",
+      "bytes": 11933,
+      "sha256": "f4b2de9974497e1d2ceb2430f8dc0ed0caa73fe3650ddfec227faad761e251dd",
+      "before": "9d053e264a417bb705c00f1d4dbc044be9a0d872f2fb896e22b6df23316992b8"
+    },
+    "uk/privacy.html": {
+      "source": "dist/uk/privacy.html",
+      "bytes": 17885,
+      "sha256": "83b0f5f73599449d6eb44f6da671c70b7ba68286b279976b8e83c11a8725754f",
+      "before": "3161f73e89b895ba5feaf87281473eaf0f445e3381fa43c9d3337cdce6a014da"
+    },
+    "uk/support.html": {
+      "source": "dist/uk/support.html",
+      "bytes": 13932,
+      "sha256": "861ea3e358f2244c0d3f36d64271d103b57bc0cca973bbc979be69dc442fe96c",
+      "before": "65ba4d18643d293fb64824a7aea0be08c792595c325d33f19a2bafc137a6a055"
+    },
+    "uk/terms.html": {
+      "source": "dist/uk/terms.html",
+      "bytes": 14868,
+      "sha256": "e62c411c18f33aaa6b358f5320e89235dff6ddeb2019eeb6faaff275c58961fb",
+      "before": "ca529fa4e344accc7d04a952fa335954e3bb1c33704a2d70e6ee2e1a7bc62f0f"
+    },
+    "ur/about.html": {
+      "source": "dist/ur/about.html",
+      "bytes": 12089,
+      "sha256": "d4756d4f496688d6f37328266fc83535c35c09d717570ed473bf50556c5f36ae",
+      "before": "44b694671df9ebd8f68adf28038fd4b07f4bb3895b1513e80c8bd1ca6c90c931"
+    },
+    "ur/checkout.html": {
+      "source": "dist/ur/checkout.html",
+      "bytes": 26358,
+      "sha256": "5faa0afd52c01ae400bb95a6cdaf961fd2b129b7a45ad5ceb4242f923772daba",
+      "before": "71c3d59d6b7a2c22c01be4c295e2c8559a855f4ed4b3377e42ab86e191dda5b0"
+    },
+    "ur/legal.html": {
+      "source": "dist/ur/legal.html",
+      "bytes": 11666,
+      "sha256": "1bfbee60b23699d8c810442e7fe94f1a4335677b2137c353be781ac7127a48c7",
+      "before": "b8d62fd9d4ec0f4a98a6c64451f00444723d67ee957afefbcda25e6bea360570"
+    },
+    "ur/privacy.html": {
+      "source": "dist/ur/privacy.html",
+      "bytes": 17225,
+      "sha256": "28a7ea9bff8e29965224e9d119ebabeca4861cdb12f201aaf2dee4472e63de0a",
+      "before": "934f7f9dfb04426939a69e8ff227879b0fa37814720299efb98d14ef4569627c"
+    },
+    "ur/support.html": {
+      "source": "dist/ur/support.html",
+      "bytes": 13482,
+      "sha256": "606e15fe7ba0f37d1df01ceb9832f463616a69cd091f5a28207d17f77b7f03ff",
+      "before": "086069f91e82e0d6081014aebb2963cd40a62c004fda631a307129802d17fc8c"
+    },
+    "ur/terms.html": {
+      "source": "dist/ur/terms.html",
+      "bytes": 14736,
+      "sha256": "c45f1a36813e35f248939d01e877af8eb619adcd13e07f1afe086669303829ce",
+      "before": "d7372f1f424c95a2ed496874035097e96266e80c0a268e1163462bc3d2be1f4d"
+    },
+    "zh/about.html": {
+      "source": "dist/zh/about.html",
+      "bytes": 11103,
+      "sha256": "0960c8168931e01497656153a20eec0436b95a7b1a5dfa0bd1254d5984fc1ee7",
+      "before": "950e7f5858434d95934e42af52fd8b3a69080d6b7b24470de9d79c631322622b"
+    },
+    "zh/checkout.html": {
+      "source": "dist/zh/checkout.html",
+      "bytes": 22865,
+      "sha256": "21a2c7e80be9ab61355ef64781b251177c6f5e4539661deca4dabd065afa13c2",
+      "before": "1a3df94a66a36fd76a47e67b687775f4b546c49775c721a3628f5620bcf193fb"
+    },
+    "zh/legal.html": {
+      "source": "dist/zh/legal.html",
+      "bytes": 10992,
+      "sha256": "7c1da3568b0760c7e644a16e711be94f574d595f175540c9daea7fea71b8c24d",
+      "before": "f3756dc6be7aea077cde03d7b0cccccfd137ff1caf745a8c08411384cf6d57e2"
+    },
+    "zh/privacy.html": {
+      "source": "dist/zh/privacy.html",
+      "bytes": 13671,
+      "sha256": "1f1237c2676d8a018004102bcfe38a84754f018e6fff87882bc5e31c6dcd5610",
+      "before": "7b15979d5f1ef41bd9775de8ab765052736a9a5832e744ed57c235cf457731bf"
+    },
+    "zh/support.html": {
+      "source": "dist/zh/support.html",
+      "bytes": 12032,
+      "sha256": "fc8ab8a18b63494d7da55ee4677bea0238a73adf3e53c00807bbdd837ceaa5ea",
+      "before": "c0046b72d8e81fbdc49c1d6d3e01582247cc72be38bc99663f351901dee70b11"
+    },
+    "zh/terms.html": {
+      "source": "dist/zh/terms.html",
+      "bytes": 12818,
+      "sha256": "351afc269a840298aee2ddbeef2a7200538866ec1c2ca0e9e645e046157115c3",
+      "before": "d56b140ca0cda21cde89229a05d612793aecbcfbaf24f111b87f31c1258601ae"
+    }
+  }
+}

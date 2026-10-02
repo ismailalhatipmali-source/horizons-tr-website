@@ -5,6 +5,7 @@ import html
 import json
 import re
 from pathlib import Path
+from update_contact_details import update as update_contacts
 
 ROOT = Path(__file__).resolve().parents[1]
 LANGS = 'en ar tr fr es de it pt nl ru uk pl cs ro hu el sv da no fi bg sr hr he fa ur hi bn id ms zh ja'.split()
@@ -194,6 +195,7 @@ def build(dest):
         (()=>{{const langs={json.dumps(LANGS)};const u=new URL(location.href);const candidates=[u.searchParams.get('lang'),...(navigator.languages||[navigator.language])];const lang=candidates.filter(Boolean).map(x=>x.toLowerCase().split('-')[0]).map(x=>['nb','nn'].includes(x)?'no':x).find(x=>langs.includes(x))||'en';const plan=u.searchParams.get('plan');const account=u.searchParams.get('account')||'individual';const allowed={json.dumps({a:list(v['plans']) for a,v in catalog['accounts'].items()})};const q=allowed[account]?.includes(plan)?'?account='+account+'&plan='+plan:'';location.replace(lang+'/{page}.html'+q)}})();
         </script></body></html>'''
         (dest / (page + '.html')).write_text(entry)
+    update_contacts(dest)
     print(f'Built {len(LANGS)} account carts/checkouts with a persistent cart; collection remains disabled.')
 
 
