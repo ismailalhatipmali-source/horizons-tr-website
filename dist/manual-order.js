@@ -12,15 +12,8 @@ document.getElementById('cover').src='assets/covers/'+lang+'/travel-kit.svg';doc
 document.getElementById('back-link').href='travel-kit.html?lang='+encodeURIComponent(lang);if(t.back)document.getElementById('back-link').textContent=t.back;
 document.getElementById('sales-link').href=lang+'/terms.html';
 document.getElementById('privacy-link').href=lang+'/privacy.html';
-const note=document.getElementById('note');
-const notes={
-ar:'ترسل بيانات الطلب بشكل خاص إلى HORIZONS. لا يتم اقتطاع أي مبلغ في هذه الصفحة. سنتواصل معك عبر البريد لتأكيد طريقة الدفع، وبعد التحقق من الدفع نرسل رابط التحميل يدويًا.',
-tr:'Sipariş bilgileriniz HORIZONS’a özel olarak gönderilir. Bu sayfada ödeme alınmaz. Ödeme yöntemini doğrulamak için e-posta ile iletişime geçeriz; ödeme doğrulandıktan sonra indirme bağlantısını manuel olarak göndeririz.',
-fr:'Vos informations de commande sont envoyées de façon privée à HORIZONS. Aucun paiement n’est prélevé sur cette page. Nous vous contacterons par e-mail pour confirmer le mode de paiement, puis enverrons manuellement le lien de téléchargement après vérification.',
-es:'Los datos del pedido se envían de forma privada a HORIZONS. No se cobra ningún importe en esta página. Te contactaremos por correo para confirmar el pago y enviaremos manualmente el enlace de descarga después de verificarlo.',
-en:'Your order details are sent privately to HORIZONS. No payment is charged on this page. We will contact you by email to confirm payment, then send the download link manually after payment verification.'
-};note.textContent=notes[lang]||notes.en;
-const extra=document.getElementById('success-extra');extra.textContent=notes[lang]||notes.en;
+const note=document.getElementById('note');note.textContent=t.order_note||'Your order details are sent privately to HORIZONS. No payment is charged on this page. We will contact you by email to confirm payment, then send the download link manually after payment verification.';
+const extra=document.getElementById('success-extra');extra.textContent=t.order_note||note.textContent;
 const form=document.getElementById('manual-order-form'),company=form.querySelector('[data-company]'),status=document.getElementById('form-status'),submit=form.querySelector('button[type=submit]');
 function syncCompany(){const on=form.elements.billing.value==='company';company.hidden=!on;for(const x of company.querySelectorAll('input')){x.required=on;x.disabled=!on;}}syncCompany();form.elements.billing.addEventListener('change',syncCompany);
 let csrf='';try{const r=await fetch('/manual-order-api/',{credentials:'same-origin',cache:'no-store'}),j=await r.json();if(j.ok)csrf=j.csrf;}catch{}
