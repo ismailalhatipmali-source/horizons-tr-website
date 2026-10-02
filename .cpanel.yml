@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - /bin/bash scripts/deploy-cpanel.sh /home2/horizonstr/public_html/
+    - /usr/local/bin/ea-php82 scripts/deploy-storefront.php /home2/horizonstr/public_html/ --publish
