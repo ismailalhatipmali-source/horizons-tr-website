@@ -278,7 +278,10 @@
     "0137": "ارزش",
     "0138": "تأیید شد",
     "0139": "برد",
-    "0140": "مرحله گردش کار"
+    "0140": "مرحله گردش کار",
+    "0027": "Data check",
+    "0050": "Insurance decision",
+    "0060": "Next action"
   },
   "ur": {
     "0001": "100 / 200 / 300",
@@ -414,7 +417,13 @@
     "0137": "قدر",
     "0138": "تصدیق شدہ",
     "0139": "جیت گیا۔",
-    "0140": "ورک فلو کا مرحلہ"
+    "0140": "ورک فلو کا مرحلہ",
+    "0004": "Agency income",
+    "0005": "Agency income received",
+    "0072": "Overdue installments",
+    "0085": "Positive amounts are receipts; negative amounts are refunds. Invalid or duplicate records are excluded.",
+    "0094": "Receipt date",
+    "0097": "Received amount"
   },
   "hi": {
     "0001": "100 / 200 / 300",
