@@ -14,12 +14,18 @@ def add(target,source,prior=True):
  if previous==b:return
  files[target]={'source':source,'bytes':len(b),'sha256':sha(b),'before':sha(previous) if previous is not None else None}
 for p in sorted((ROOT/'dist').glob('*/*.html')):add('public/'+str(p.relative_to(ROOT/'dist')),str(p.relative_to(ROOT)))
-for n in ['checkout.js','checkout.css']:add('public/'+n,'dist/'+n)
+for n in ['checkout.js','checkout.css','site.js']:add('public/'+n,'dist/'+n)
 for n in ['ReviewOrders.php','ExchangeRates.php']:add('private/'+n,'src/checkout/'+n)
 add('public/checkout-api/index.php','src/checkout/public-index.php')
 for n in ['AdminStore.php','AdminService.php','AdminMailer.php']:add('admin/'+n,'src/admin/'+n,False)
 for target,source in [('index.html','index.html'),('admin.css','admin.css'),('admin.js','admin.js'),('api.php','public-api.php'),('.htaccess','public.htaccess')]:add('public/admin/'+target,'src/admin/'+source,False)
 add('public/downloads/HORIZONS-Arabic-Setup-1.5.0.exe','release-assets/windows-1.5.0/HORIZONS-Arabic-Setup-1.5.0.exe',False)
+# Accept the original checkout baseline and the exact first admin release.
+for target,e in files.items():
+ if target.startswith('public/') and target.endswith('/product.html'):
+  r=subprocess.run(['git','show','18730c0:'+e['source']],cwd=ROOT,capture_output=True)
+  if r.returncode==0 and sha(r.stdout)!=e['sha256'] and sha(r.stdout)!=e['before']:
+   e['before']=[e['before'],sha(r.stdout)]
 priority=lambda p:(0 if not p.startswith('public/') else 1 if '/api.php' in p or '/checkout-api/' in p else 2 if p.count('/')==1 else 3,p)
 files=dict(sorted(files.items(),key=lambda i:priority(i[0])))
 requires=json.loads((ROOT/'release-assets/checkout-20261002/checkout-manifest.json').read_text())['requires']

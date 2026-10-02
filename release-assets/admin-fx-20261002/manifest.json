@@ -61,6 +61,12 @@
       "sha256": "587a7c0ca29b22b8a9e36af1b1fe86abdf109ec4ed77822171d87963e6ab1443",
       "before": "b1338bac788af377e9e8635123dc3759171797c72da90b1260c30a54b10f13f6"
     },
+    "public/site.js": {
+      "source": "dist/site.js",
+      "bytes": 3111,
+      "sha256": "72c90c2c645c3574035007805ce5f6535f3727840e6068c0d406c5a10952af34",
+      "before": "3a613833078e44c6b111085de93d173d61960a98d7b36888c275a85b6403950a"
+    },
     "public/admin/.htaccess": {
       "source": "src/admin/public.htaccess",
       "bytes": 539,
@@ -123,9 +129,12 @@
     },
     "public/ar/product.html": {
       "source": "dist/ar/product.html",
-      "bytes": 14803,
-      "sha256": "cca2337c19101edcfb86306190cb2f91420fabd60e1c94aafdbaab303f7a2caf",
-      "before": "fae4e76b14a043789c8a095fb8b6beccdff4f1c5d9592fde0d079b47b41729c1"
+      "bytes": 14816,
+      "sha256": "250a7d56768fcab006cd3f0fe14dc8537acf9f535f7eb69dc49f45e75cf7e38d",
+      "before": [
+        "fae4e76b14a043789c8a095fb8b6beccdff4f1c5d9592fde0d079b47b41729c1",
+        "cca2337c19101edcfb86306190cb2f91420fabd60e1c94aafdbaab303f7a2caf"
+      ]
     },
     "public/ar/refund-cancellation.html": {
       "source": "dist/ar/refund-cancellation.html",
@@ -171,9 +180,12 @@
     },
     "public/bg/product.html": {
       "source": "dist/bg/product.html",
-      "bytes": 15306,
-      "sha256": "64dec187feec44ee22bcce245dad181be445e86984dd837baa5606dd16993eca",
-      "before": "3b58aee6d8a87df4a1235353732d3d2c34d560cec34b5f5c13891a36695bf96d"
+      "bytes": 15319,
+      "sha256": "394e1f8e91279d5a307e78d5da42b78d37883f180f45ef8089856eea5f3a4bac",
+      "before": [
+        "3b58aee6d8a87df4a1235353732d3d2c34d560cec34b5f5c13891a36695bf96d",
+        "64dec187feec44ee22bcce245dad181be445e86984dd837baa5606dd16993eca"
+      ]
     },
     "public/bg/refund-cancellation.html": {
       "source": "dist/bg/refund-cancellation.html",
@@ -219,9 +231,12 @@
     },
     "public/bn/product.html": {
       "source": "dist/bn/product.html",
-      "bytes": 16732,
-      "sha256": "854034a3354b906bd4aef90913cdcc3e21f4c4d94cae385f77fc612fca36314f",
-      "before": "9b144913b2397a71604146042e58c16c35ea456211174a54ced1a92f50c0b261"
+      "bytes": 16745,
+      "sha256": "cf25e7ee45b1b15832ccc5604d6b6f4584294b1ec358e350a312d01f3e8ac715",
+      "before": [
+        "9b144913b2397a71604146042e58c16c35ea456211174a54ced1a92f50c0b261",
+        "854034a3354b906bd4aef90913cdcc3e21f4c4d94cae385f77fc612fca36314f"
+      ]
     },
     "public/bn/refund-cancellation.html": {
       "source": "dist/bn/refund-cancellation.html",
@@ -267,9 +282,12 @@
     },
     "public/cs/product.html": {
       "source": "dist/cs/product.html",
-      "bytes": 13374,
-      "sha256": "d0d3e06b043467a1af8e88bfb482dec5a750401eee39a5a48b31a60d512031df",
-      "before": "8a429032b2b041058dc78f3b91e7582fccd30797f15efdd7fbae649ed97d3978"
+      "bytes": 13387,
+      "sha256": "a29b36387855c382e1faa91d2a544559548101485b1c11b1c5c0871f482cb500",
+      "before": [
+        "8a429032b2b041058dc78f3b91e7582fccd30797f15efdd7fbae649ed97d3978",
+        "d0d3e06b043467a1af8e88bfb482dec5a750401eee39a5a48b31a60d512031df"
+      ]
     },
     "public/cs/refund-cancellation.html": {
       "source": "dist/cs/refund-cancellation.html",
@@ -315,9 +333,12 @@
     },
     "public/da/product.html": {
       "source": "dist/da/product.html",
-      "bytes": 13390,
-      "sha256": "9e04846aa9f675ffbd657c3bd03799d4f97d0f4d2c326facfe9338b2eb63652a",
-      "before": "6ac896deea084ce85ee911d7bb5b9bf0277180cc1e1c8584188129b6f9fd94d1"
+      "bytes": 13403,
+      "sha256": "69f95ab6a06bb797131f259e1b561aeaacfacd09a5c3027a4db14c1c64fd15c4",
+      "before": [
+        "6ac896deea084ce85ee911d7bb5b9bf0277180cc1e1c8584188129b6f9fd94d1",
+        "9e04846aa9f675ffbd657c3bd03799d4f97d0f4d2c326facfe9338b2eb63652a"
+      ]
     },
     "public/da/refund-cancellation.html": {
       "source": "dist/da/refund-cancellation.html",
@@ -363,9 +384,12 @@
     },
     "public/de/product.html": {
       "source": "dist/de/product.html",
-      "bytes": 13613,
-      "sha256": "953a60eee6a3e126ef5c6314b13ddbaff8f1abc2c6e26fb4d211af2600bf0c28",
-      "before": "98f42263fe7a0d5a78142733839829814aac52fbe756ad73f352951a68be2950"
+      "bytes": 13626,
+      "sha256": "f1941b40739c3dabcd9173decbd81a8c0f13cf144e5de0b24291116879aba441",
+      "before": [
+        "98f42263fe7a0d5a78142733839829814aac52fbe756ad73f352951a68be2950",
+        "953a60eee6a3e126ef5c6314b13ddbaff8f1abc2c6e26fb4d211af2600bf0c28"
+      ]
     },
     "public/de/refund-cancellation.html": {
       "source": "dist/de/refund-cancellation.html",
@@ -417,9 +441,12 @@
     },
     "public/el/product.html": {
       "source": "dist/el/product.html",
-      "bytes": 15858,
-      "sha256": "a0cadaa5d82ff470ff31f9f1f06552ba00584859f031df59dd2c1da7c3e8ddd4",
-      "before": "8a88290b465cce563bf27f995a5ff3a241fd338fa806d98bbe5b11195f20cc28"
+      "bytes": 15871,
+      "sha256": "1deff76bfe1a30cb5bf31cb00e83a26d734d28384606bcff98480f88d70ed4d2",
+      "before": [
+        "8a88290b465cce563bf27f995a5ff3a241fd338fa806d98bbe5b11195f20cc28",
+        "a0cadaa5d82ff470ff31f9f1f06552ba00584859f031df59dd2c1da7c3e8ddd4"
+      ]
     },
     "public/el/refund-cancellation.html": {
       "source": "dist/el/refund-cancellation.html",
@@ -465,9 +492,12 @@
     },
     "public/en/product.html": {
       "source": "dist/en/product.html",
-      "bytes": 13346,
-      "sha256": "63ec1f2dce5d1d312f3a1099ca5ce4ffb4c52e31ab44a7eedf19910fcf4ab2bd",
-      "before": "5de695f41db22b188a84677f3bac530e36311725d78f021f25e9a9491a6257e7"
+      "bytes": 13359,
+      "sha256": "42c163aa87efe451643b9aadec83d2d694f769722466975402ff4c61f746004d",
+      "before": [
+        "5de695f41db22b188a84677f3bac530e36311725d78f021f25e9a9491a6257e7",
+        "63ec1f2dce5d1d312f3a1099ca5ce4ffb4c52e31ab44a7eedf19910fcf4ab2bd"
+      ]
     },
     "public/en/refund-cancellation.html": {
       "source": "dist/en/refund-cancellation.html",
@@ -513,9 +543,12 @@
     },
     "public/es/product.html": {
       "source": "dist/es/product.html",
-      "bytes": 13536,
-      "sha256": "00b4ab066b8819247a29f3320cb0388dc4f539e6c08b37d419bd64c534bd350e",
-      "before": "06f951043b3b6ebb018d0647db01a5ed87c7249240537bbb90ad98e81c836023"
+      "bytes": 13549,
+      "sha256": "b7e69ea4a1f3d854f71e26ea40b3f7a8972827b858714c38ac2910f57028624a",
+      "before": [
+        "06f951043b3b6ebb018d0647db01a5ed87c7249240537bbb90ad98e81c836023",
+        "00b4ab066b8819247a29f3320cb0388dc4f539e6c08b37d419bd64c534bd350e"
+      ]
     },
     "public/es/refund-cancellation.html": {
       "source": "dist/es/refund-cancellation.html",
@@ -561,9 +594,12 @@
     },
     "public/fa/product.html": {
       "source": "dist/fa/product.html",
-      "bytes": 14896,
-      "sha256": "6cfde954d03d8b3a725ac3f827962266a4bb7ba9efc9d6ae72a969ab0212f76d",
-      "before": "4426d609f77c949dedeed9453ac4e17a3c63859026e4e918e0bb4e1c0d5fbeda"
+      "bytes": 14909,
+      "sha256": "13966eae70405cf2e1d8557c2afda9ae74e2f1f14f4d33388ab9ee1c47aff8b4",
+      "before": [
+        "4426d609f77c949dedeed9453ac4e17a3c63859026e4e918e0bb4e1c0d5fbeda",
+        "6cfde954d03d8b3a725ac3f827962266a4bb7ba9efc9d6ae72a969ab0212f76d"
+      ]
     },
     "public/fa/refund-cancellation.html": {
       "source": "dist/fa/refund-cancellation.html",
@@ -609,9 +645,12 @@
     },
     "public/fi/product.html": {
       "source": "dist/fi/product.html",
-      "bytes": 13517,
-      "sha256": "b55fd8d1fff5532950eeb17ecc10772e7b58b9643445b6ff1eb2a6d09ac1f13e",
-      "before": "f7851a31641d51925ba28fade83b3d89bcfc11faa57a63cf7f7d74c0469d2085"
+      "bytes": 13530,
+      "sha256": "8432fcc64c4f3d0b911d2353f1757769f2f545d2c2b5969fccbead6d5d9ee3e2",
+      "before": [
+        "f7851a31641d51925ba28fade83b3d89bcfc11faa57a63cf7f7d74c0469d2085",
+        "b55fd8d1fff5532950eeb17ecc10772e7b58b9643445b6ff1eb2a6d09ac1f13e"
+      ]
     },
     "public/fi/refund-cancellation.html": {
       "source": "dist/fi/refund-cancellation.html",
@@ -657,9 +696,12 @@
     },
     "public/fr/product.html": {
       "source": "dist/fr/product.html",
-      "bytes": 13813,
-      "sha256": "f2e4da3f6afed9646f961934de22a7b87a583cbdd71e7a319408e483ce90059e",
-      "before": "0f53ce6e1d3a40de455fa2a36fbfc3b7c1cfeb7cdd3639eb366280bcbe9597ca"
+      "bytes": 13826,
+      "sha256": "777e12d4aa89d5c88b3a60d993af1c3c4be7e17d74c9c7e53a62726f8259ef65",
+      "before": [
+        "0f53ce6e1d3a40de455fa2a36fbfc3b7c1cfeb7cdd3639eb366280bcbe9597ca",
+        "f2e4da3f6afed9646f961934de22a7b87a583cbdd71e7a319408e483ce90059e"
+      ]
     },
     "public/fr/refund-cancellation.html": {
       "source": "dist/fr/refund-cancellation.html",
@@ -705,9 +747,12 @@
     },
     "public/he/product.html": {
       "source": "dist/he/product.html",
-      "bytes": 14064,
-      "sha256": "9de8c22a767428c73f043a1ab5156bf6517d78533634d0cab082a984fb88e398",
-      "before": "acac2fa0da1cf0be18fb2feb5214d6eeec50eb210911ca505a55fee80f51ddc3"
+      "bytes": 14077,
+      "sha256": "ed57f3ca9fca7295a335e471ce93d70308d632b8ba51cbdfbc89c5a98680d5fe",
+      "before": [
+        "acac2fa0da1cf0be18fb2feb5214d6eeec50eb210911ca505a55fee80f51ddc3",
+        "9de8c22a767428c73f043a1ab5156bf6517d78533634d0cab082a984fb88e398"
+      ]
     },
     "public/he/refund-cancellation.html": {
       "source": "dist/he/refund-cancellation.html",
@@ -753,9 +798,12 @@
     },
     "public/hi/product.html": {
       "source": "dist/hi/product.html",
-      "bytes": 16763,
-      "sha256": "0bb2dcd6299077d6e5e8e2ca43fc3175718156a55e3747dda0ada141dda2c617",
-      "before": "aa6508204555429a9d5a6f65c2815628581a4282fabafee3b10f432e5d10e712"
+      "bytes": 16776,
+      "sha256": "a4ae9d79618c13dfd236019e5ceb2687ea155fca828d9ed8fa52d09e2ea0f4ba",
+      "before": [
+        "aa6508204555429a9d5a6f65c2815628581a4282fabafee3b10f432e5d10e712",
+        "0bb2dcd6299077d6e5e8e2ca43fc3175718156a55e3747dda0ada141dda2c617"
+      ]
     },
     "public/hi/refund-cancellation.html": {
       "source": "dist/hi/refund-cancellation.html",
@@ -801,9 +849,12 @@
     },
     "public/hr/product.html": {
       "source": "dist/hr/product.html",
-      "bytes": 13243,
-      "sha256": "cdac09ae3ccd60dcb9fd06e6e08572142e79a46cca1915bbc538688051e17745",
-      "before": "461388ca4199c39802798e2fc77c1fce7a6c4f63c3ebfb769eeeb69fa9980668"
+      "bytes": 13256,
+      "sha256": "5431ed32b82b717cd5fbc5e1c0440bbee71d378612f3202fa9249dca37013976",
+      "before": [
+        "461388ca4199c39802798e2fc77c1fce7a6c4f63c3ebfb769eeeb69fa9980668",
+        "cdac09ae3ccd60dcb9fd06e6e08572142e79a46cca1915bbc538688051e17745"
+      ]
     },
     "public/hr/refund-cancellation.html": {
       "source": "dist/hr/refund-cancellation.html",
@@ -849,9 +900,12 @@
     },
     "public/hu/product.html": {
       "source": "dist/hu/product.html",
-      "bytes": 13689,
-      "sha256": "b9de324fcb7714f7b2340973ca8be33b1e40122bca16996eeb11519433b74965",
-      "before": "dc993d893f2839422b722640b5ab1a2e15b930d0e2b83c17dfc90f41f69b696d"
+      "bytes": 13702,
+      "sha256": "cd9d6ddda4835009eb4e02727fa8d91e1bc93fabe275f225819744defb6ba237",
+      "before": [
+        "dc993d893f2839422b722640b5ab1a2e15b930d0e2b83c17dfc90f41f69b696d",
+        "b9de324fcb7714f7b2340973ca8be33b1e40122bca16996eeb11519433b74965"
+      ]
     },
     "public/hu/refund-cancellation.html": {
       "source": "dist/hu/refund-cancellation.html",
@@ -897,9 +951,12 @@
     },
     "public/id/product.html": {
       "source": "dist/id/product.html",
-      "bytes": 13282,
-      "sha256": "193e21a9e8ae23cb0477be267770375ba4f9d337bd0b7b12eceb4e1d53c27deb",
-      "before": "6b8fbcaad92befeb15978042e1a908bed7612f776bebcdb20c04e204285e871b"
+      "bytes": 13295,
+      "sha256": "53c9e71a9156e3bfd63b3794c8a1fec4e26508c233da6371c8b0ab4aed4e1768",
+      "before": [
+        "6b8fbcaad92befeb15978042e1a908bed7612f776bebcdb20c04e204285e871b",
+        "193e21a9e8ae23cb0477be267770375ba4f9d337bd0b7b12eceb4e1d53c27deb"
+      ]
     },
     "public/id/refund-cancellation.html": {
       "source": "dist/id/refund-cancellation.html",
@@ -945,9 +1002,12 @@
     },
     "public/it/product.html": {
       "source": "dist/it/product.html",
-      "bytes": 13496,
-      "sha256": "e751352e6e68249dcd0f98898e94f809d5b37ff5ed03cbb8d26dc66daedf9dba",
-      "before": "68f249e56064ccc1db0480c8028d10101c78521513d2d0ffb378e572860f7964"
+      "bytes": 13509,
+      "sha256": "3d11f47ca5093b0a8999894fd76358ac3a970d5ee33f48e4843caeef51b0ff8e",
+      "before": [
+        "68f249e56064ccc1db0480c8028d10101c78521513d2d0ffb378e572860f7964",
+        "e751352e6e68249dcd0f98898e94f809d5b37ff5ed03cbb8d26dc66daedf9dba"
+      ]
     },
     "public/it/refund-cancellation.html": {
       "source": "dist/it/refund-cancellation.html",
@@ -993,9 +1053,12 @@
     },
     "public/ja/product.html": {
       "source": "dist/ja/product.html",
-      "bytes": 13863,
-      "sha256": "46d63d6d589798ee4d8bfbe9f23d632083ee2fa61b378c07548536bf6e103f98",
-      "before": "e93272f318b516bd80dbc012521a5a6717651ca9790b296d2c699d335cb60733"
+      "bytes": 13876,
+      "sha256": "ca433a186c1fe9ba3041248b9e57c5af2200350d09810c9927e8b43cd6cfbc9a",
+      "before": [
+        "e93272f318b516bd80dbc012521a5a6717651ca9790b296d2c699d335cb60733",
+        "46d63d6d589798ee4d8bfbe9f23d632083ee2fa61b378c07548536bf6e103f98"
+      ]
     },
     "public/ja/refund-cancellation.html": {
       "source": "dist/ja/refund-cancellation.html",
@@ -1041,9 +1104,12 @@
     },
     "public/ms/product.html": {
       "source": "dist/ms/product.html",
-      "bytes": 13337,
-      "sha256": "ce104504bb470e424a68e26956c70dacd40765af5402c5bc1ddfa33341ca472c",
-      "before": "b7cc7e8864c7d1e18b91009e3257b58f74f10d26c176f33310f2327dc6cea2f4"
+      "bytes": 13350,
+      "sha256": "84a60e29e0099ca7dddc60cf9eac3b20e9d0ff8bf0e85823e9c3b1125e0a0c99",
+      "before": [
+        "b7cc7e8864c7d1e18b91009e3257b58f74f10d26c176f33310f2327dc6cea2f4",
+        "ce104504bb470e424a68e26956c70dacd40765af5402c5bc1ddfa33341ca472c"
+      ]
     },
     "public/ms/refund-cancellation.html": {
       "source": "dist/ms/refund-cancellation.html",
@@ -1089,9 +1155,12 @@
     },
     "public/nl/product.html": {
       "source": "dist/nl/product.html",
-      "bytes": 13552,
-      "sha256": "b42e3a689866f37090704334e71477f855700e72608bf7769c31376920463bc9",
-      "before": "f07e4807b8728db53c3949d47965fa0156a2bce3f05efaf42cad70ddd1fe0f1a"
+      "bytes": 13565,
+      "sha256": "ab5c50127b544a8622b99b0e369d973e988a481aa86d57aa8ac4441acad7c078",
+      "before": [
+        "f07e4807b8728db53c3949d47965fa0156a2bce3f05efaf42cad70ddd1fe0f1a",
+        "b42e3a689866f37090704334e71477f855700e72608bf7769c31376920463bc9"
+      ]
     },
     "public/nl/refund-cancellation.html": {
       "source": "dist/nl/refund-cancellation.html",
@@ -1137,9 +1206,12 @@
     },
     "public/no/product.html": {
       "source": "dist/no/product.html",
-      "bytes": 13218,
-      "sha256": "67f780cc61def50242a57503b0175d76edf597d13601ba0d21d33ebb94b790fe",
-      "before": "bdf96cc129c50579ed3aaf3945f47fe5dbce5d326d9d33c19b87a2cd99489d2e"
+      "bytes": 13231,
+      "sha256": "740d480b2fb4c43faf2a53694b87b5f9d05838c5fd407085e17bf4756d9de66a",
+      "before": [
+        "bdf96cc129c50579ed3aaf3945f47fe5dbce5d326d9d33c19b87a2cd99489d2e",
+        "67f780cc61def50242a57503b0175d76edf597d13601ba0d21d33ebb94b790fe"
+      ]
     },
     "public/no/refund-cancellation.html": {
       "source": "dist/no/refund-cancellation.html",
@@ -1185,9 +1257,12 @@
     },
     "public/pl/product.html": {
       "source": "dist/pl/product.html",
-      "bytes": 13326,
-      "sha256": "e96afbccba08a26e405de2ff78a652e7c765be294d1ee8a52e65492400ba391b",
-      "before": "8e18cb208d7a4dd44a4963c865cae98d46976a3b912d4bacb636df41d6c760d4"
+      "bytes": 13339,
+      "sha256": "42a4d532f2e1345bf51738bc70d538cb7ecf70e8830c9df5d3f906c378883618",
+      "before": [
+        "8e18cb208d7a4dd44a4963c865cae98d46976a3b912d4bacb636df41d6c760d4",
+        "e96afbccba08a26e405de2ff78a652e7c765be294d1ee8a52e65492400ba391b"
+      ]
     },
     "public/pl/refund-cancellation.html": {
       "source": "dist/pl/refund-cancellation.html",
@@ -1233,9 +1308,12 @@
     },
     "public/pt/product.html": {
       "source": "dist/pt/product.html",
-      "bytes": 13643,
-      "sha256": "eb8c026f280fb59aaad19cee6e7b1f5b800e01ced0354656ac0b6f68be34988f",
-      "before": "46280dab722b6bcba5a65b43262e5e9f7b03eafe4cf993389c77c19720100865"
+      "bytes": 13656,
+      "sha256": "e28696fceb1899d7426a7500e93c8a50c03c3f9d13886db9067bf18eb98bf99b",
+      "before": [
+        "46280dab722b6bcba5a65b43262e5e9f7b03eafe4cf993389c77c19720100865",
+        "eb8c026f280fb59aaad19cee6e7b1f5b800e01ced0354656ac0b6f68be34988f"
+      ]
     },
     "public/pt/refund-cancellation.html": {
       "source": "dist/pt/refund-cancellation.html",
@@ -1281,9 +1359,12 @@
     },
     "public/ro/product.html": {
       "source": "dist/ro/product.html",
-      "bytes": 13569,
-      "sha256": "e08f629492912adef18e5853240f4413ef7bb1710d0da5fb14dd49f151ab1f89",
-      "before": "191323e57162df2e43a7589861f1ba4dd5616266898683a4d14a2dc744ea921a"
+      "bytes": 13582,
+      "sha256": "7e4bf1f5d8d476749936d12622138bc152d8203640a0c1805eafa8f5ddc2fa4a",
+      "before": [
+        "191323e57162df2e43a7589861f1ba4dd5616266898683a4d14a2dc744ea921a",
+        "e08f629492912adef18e5853240f4413ef7bb1710d0da5fb14dd49f151ab1f89"
+      ]
     },
     "public/ro/refund-cancellation.html": {
       "source": "dist/ro/refund-cancellation.html",
@@ -1329,9 +1410,12 @@
     },
     "public/ru/product.html": {
       "source": "dist/ru/product.html",
-      "bytes": 15401,
-      "sha256": "e65a0c11cd9fb885730510ac702d7a076ada6fda7579eb4e4766c134816d63f2",
-      "before": "2e36ec6f15427ce3316911149af494f373d91a06de36573f8856bd98e6a32bfb"
+      "bytes": 15414,
+      "sha256": "82c6af7c0f896598b5d0ba48d67bcb959da5ed4fa7c0e12ead469d7008fb7d7f",
+      "before": [
+        "2e36ec6f15427ce3316911149af494f373d91a06de36573f8856bd98e6a32bfb",
+        "e65a0c11cd9fb885730510ac702d7a076ada6fda7579eb4e4766c134816d63f2"
+      ]
     },
     "public/ru/refund-cancellation.html": {
       "source": "dist/ru/refund-cancellation.html",
@@ -1377,9 +1461,12 @@
     },
     "public/sr/product.html": {
       "source": "dist/sr/product.html",
-      "bytes": 15056,
-      "sha256": "9920d055f349174d82d2f764d2f20752fbbc95026bccc9e3df6a98ac340ea5c1",
-      "before": "910f31df8d1d9a411fb3dadedfe5380805436c4685f91c21f5fde1b558b39342"
+      "bytes": 15069,
+      "sha256": "47d709a2506b217a38f15e6eae1bebbe259c8bff0a4e472196537e830e2a8fe2",
+      "before": [
+        "910f31df8d1d9a411fb3dadedfe5380805436c4685f91c21f5fde1b558b39342",
+        "9920d055f349174d82d2f764d2f20752fbbc95026bccc9e3df6a98ac340ea5c1"
+      ]
     },
     "public/sr/refund-cancellation.html": {
       "source": "dist/sr/refund-cancellation.html",
@@ -1425,9 +1512,12 @@
     },
     "public/sv/product.html": {
       "source": "dist/sv/product.html",
-      "bytes": 13450,
-      "sha256": "1025c5698b46df505548cab3726e8aeb8a1cc1597847d4c4ed21a9e9e6124cdf",
-      "before": "b276d5321ef3b7ac06a47f953798a1cd0ae8f3473b0bc64dcd5b3281940e1812"
+      "bytes": 13463,
+      "sha256": "f15c2335903fcd3da675f71af1157cb2cd5c3850d360214cf90298500fd50958",
+      "before": [
+        "b276d5321ef3b7ac06a47f953798a1cd0ae8f3473b0bc64dcd5b3281940e1812",
+        "1025c5698b46df505548cab3726e8aeb8a1cc1597847d4c4ed21a9e9e6124cdf"
+      ]
     },
     "public/sv/refund-cancellation.html": {
       "source": "dist/sv/refund-cancellation.html",
@@ -1473,9 +1563,12 @@
     },
     "public/tr/product.html": {
       "source": "dist/tr/product.html",
-      "bytes": 13591,
-      "sha256": "302afa19fc1875612f6ee463a573ad16b3510598f4da26f9b1cf09793f62a16d",
-      "before": "c1a92a3fc4488d1cb7c1f2b35807387b71c80b9ef40f8df0be4bb4f59bb4602f"
+      "bytes": 13604,
+      "sha256": "b5d677ab3d2a5d287015c6f9713e17919b0a9c6c9eb75716eb19e803c71a4533",
+      "before": [
+        "c1a92a3fc4488d1cb7c1f2b35807387b71c80b9ef40f8df0be4bb4f59bb4602f",
+        "302afa19fc1875612f6ee463a573ad16b3510598f4da26f9b1cf09793f62a16d"
+      ]
     },
     "public/tr/refund-cancellation.html": {
       "source": "dist/tr/refund-cancellation.html",
@@ -1521,9 +1614,12 @@
     },
     "public/uk/product.html": {
       "source": "dist/uk/product.html",
-      "bytes": 15299,
-      "sha256": "f722d1fd55ad3d90d7d7a7122001d1a2f742be0ddf68523e52f1d4fd76668ff7",
-      "before": "5edf8ce2461cb3a7cf1ac7a2afd72f8f79c498edbe953bc6000fa44d8e8479ea"
+      "bytes": 15312,
+      "sha256": "75e2dfcc5951212ab152823867150e5180fc94042ba4b37b8c051c1f2a9e0db4",
+      "before": [
+        "5edf8ce2461cb3a7cf1ac7a2afd72f8f79c498edbe953bc6000fa44d8e8479ea",
+        "f722d1fd55ad3d90d7d7a7122001d1a2f742be0ddf68523e52f1d4fd76668ff7"
+      ]
     },
     "public/uk/refund-cancellation.html": {
       "source": "dist/uk/refund-cancellation.html",
@@ -1569,9 +1665,12 @@
     },
     "public/ur/product.html": {
       "source": "dist/ur/product.html",
-      "bytes": 14775,
-      "sha256": "0ed33c7d9c7b5274bd2973579b569f45e2ba2e03c292a739cdee2cdd72cafba3",
-      "before": "0ca6da08a73e165c38ef290680b938d777f2b22dd23f33ccd803506dc49c7467"
+      "bytes": 14788,
+      "sha256": "52cd4563979f6bac773f6e56bfa14263788b59ad5d722b135b5b836deb5dcdd9",
+      "before": [
+        "0ca6da08a73e165c38ef290680b938d777f2b22dd23f33ccd803506dc49c7467",
+        "0ed33c7d9c7b5274bd2973579b569f45e2ba2e03c292a739cdee2cdd72cafba3"
+      ]
     },
     "public/ur/refund-cancellation.html": {
       "source": "dist/ur/refund-cancellation.html",
@@ -1617,9 +1716,12 @@
     },
     "public/zh/product.html": {
       "source": "dist/zh/product.html",
-      "bytes": 12997,
-      "sha256": "b7310dd38f40764944978e4075df44e8c30fde6775e3428b69e2e80c9329a880",
-      "before": "5ea16295882bffed124e76da24dc7bed41df2cfc5c8736160dec8137d7613153"
+      "bytes": 13010,
+      "sha256": "8ff2d36506340e7145bba0f8188516028baf50842433e68be7d913f92f8cb62e",
+      "before": [
+        "5ea16295882bffed124e76da24dc7bed41df2cfc5c8736160dec8137d7613153",
+        "b7310dd38f40764944978e4075df44e8c30fde6775e3428b69e2e80c9329a880"
+      ]
     },
     "public/zh/refund-cancellation.html": {
       "source": "dist/zh/refund-cancellation.html",

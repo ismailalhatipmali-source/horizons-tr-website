@@ -46,3 +46,9 @@ Built with official MinGW and NSIS tools; SHA256 and sizes are in `release-asset
 Real owner login and real SMTP delivery must be checked by the owner receiving the code. They are not simulated as live successes.
 
 ملاحظة: المنتجات الرقمية ستصدر تباعًا، لذلك صمّم نظام Checkout بشكل عام وقابل لإضافة منتجات جديدة لاحقًا، وليس مربوطًا بمنتج واحد فقط.
+
+## Live verification
+
+First deployment completed via cPanel at 14:56:05 Europe/Istanbul on 2 October 2026, commit `73218baddde190e34812b8d9520bda6dce5bf29f`. Verified the public admin login and anonymous data gate, live TCMB quotes in USD/TRY/EUR, binary SHA256 and unchanged approved cover. Admin API uses `no-store, private`; public static login HTML uses the hosting-level `no-cache` rule and contains no private data. No real login email, sale or license was created by verification.
+
+Browser verification found the pre-existing `site.js` pilot loader still replacing product copy and inserting the obsolete 1.3.0 ZIP links. Removed that loader and versioned the script on all 32 product pages. The old binary files remain available for existing users; new product pages advertise only the 1.5.0 optional browser launcher. The release manifest accepts both exact known product-page baselines for a safe upgrade from the first admin release.

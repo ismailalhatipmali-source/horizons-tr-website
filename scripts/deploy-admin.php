@@ -49,7 +49,7 @@ try {
             if (!in_array($path, ['admin/AdminStore.php','admin/AdminService.php','admin/AdminMailer.php'], true)) throw new RuntimeException('UNAPPROVED_PATH');
             $sourceExpected = 'src/admin/'.substr($path,6);$target = safePath($admin,substr($path,6));
         } else {
-            if (!preg_match('~^public/(?:[a-z]{2}/(?:index|product|cart|checkout|distance-sales|pre-information|refund-cancellation|checkout-privacy)\.html|checkout\.(?:js|css)|checkout-api/index\.php|admin/(?:index\.html|admin\.css|admin\.js|api\.php|\.htaccess)|downloads/HORIZONS-Arabic-Setup-1\.5\.0\.exe)$~D', $path)) throw new RuntimeException('UNAPPROVED_PATH');
+            if (!preg_match('~^public/(?:[a-z]{2}/(?:index|product|cart|checkout|distance-sales|pre-information|refund-cancellation|checkout-privacy)\.html|checkout\.(?:js|css)|site\.js|checkout-api/index\.php|admin/(?:index\.html|admin\.css|admin\.js|api\.php|\.htaccess)|downloads/HORIZONS-Arabic-Setup-1\.5\.0\.exe)$~D', $path)) throw new RuntimeException('UNAPPROVED_PATH');
             $publicPath = substr($path, 7);
             $sourceExpected = match($publicPath) {'checkout-api/index.php'=>'src/checkout/public-index.php','admin/index.html'=>'src/admin/index.html','admin/admin.css'=>'src/admin/admin.css','admin/admin.js'=>'src/admin/admin.js','admin/api.php'=>'src/admin/public-api.php','admin/.htaccess'=>'src/admin/public.htaccess','downloads/HORIZONS-Arabic-Setup-1.5.0.exe'=>'release-assets/windows-1.5.0/HORIZONS-Arabic-Setup-1.5.0.exe',default=>'dist/'.$publicPath};
             $target = safePath($web, $publicPath);
@@ -63,7 +63,8 @@ try {
         $current = digest($target);
         if ($current === $entry['sha256']) continue;
         $baseline = $entry['before'];
-        if (is_string($baseline) && str_starts_with($baseline, 'git-sha1:') && $current !== null) {
+        if (is_array($baseline)) { $matches = in_array($current, $baseline, true); }
+        elseif (is_string($baseline) && str_starts_with($baseline, 'git-sha1:') && $current !== null) {
             // Compare to the exact Git blob from the last published commit.
             $bytes = file_get_contents($target);
             $matches = hash_equals(substr($baseline, 9), sha1('blob '.strlen($bytes)."\0".$bytes));

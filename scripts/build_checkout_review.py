@@ -100,6 +100,7 @@ def build(dest):
                 card=match.group().replace('</article>','<div class="cta-row">'+link+'</div></article>');s=s[:match.start()]+card+s[match.end():]
             else:s=re.sub(r'(<h1>.*?</h1>\s*<p>.*?</p>)',lambda m:m.group()+'<div class="cta-row">'+link+'</div>',s,count=1,flags=re.S)
             if name=='product.html':
+                s=s.replace('src="../site.js"','src="../site.js?v=admin-fx-2"')
                 s=re.sub(r'<section data-windows-download>.*?</section>','',s,flags=re.S)
                 w=windows_words[lang]
                 block='<section data-windows-download><p><a class="button ghost" href="../downloads/HORIZONS-Arabic-Setup-1.5.0.exe" download>'+esc(w['download'])+'</a></p><p class="commerce-small">'+esc(w['note'])+'</p></section>'

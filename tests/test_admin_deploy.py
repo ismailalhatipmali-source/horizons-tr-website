@@ -10,7 +10,7 @@ with tempfile.TemporaryDirectory(prefix='hzn-admin-deploy-') as tmp:
   base,s=path.split('/',1);return {'public':web,'private':private,'admin':admin}[base]/s
  for path,e in M['files'].items():
   if e['before']:
-   p=target(path);p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(subprocess.check_output(['git','show',M['baseline_local']+':'+e['source']],cwd=ROOT));assert sha(p)==e['before']
+   p=target(path);p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(subprocess.check_output(['git','show',M['baseline_local']+':'+e['source']],cwd=ROOT));assert sha(p)==(e['before'][0] if isinstance(e['before'],list) else e['before'])
  for path,h in M['requires'].items():
   p=web/path;p.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/('src/workbook-web/web-config.js' if path=='learn/web-config.js' else 'dist/'+path),p);assert sha(p)==h
  (private/'key.bin').write_bytes(os.urandom(32));shutil.copyfile(ROOT/'src/commerce/products.json',private/'products.json')
@@ -28,7 +28,12 @@ with tempfile.TemporaryDirectory(prefix='hzn-admin-deploy-') as tmp:
  assert all(p.read_bytes()==b'existing-data-must-be-preserved' for p in sentinels)
  backup=list((home/'.horizons-deploy-public_html').glob('admin-fx-backup-*'));assert len(backup)==1
  for path,e in M['files'].items():
-  if e['before']:assert sha(backup[0]/path)==e['before']
+  if e['before']:assert sha(backup[0]/path)==(e['before'][0] if isinstance(e['before'],list) else e['before'])
+ # Also upgrade from the exact first admin release's product pages.
+ for path,e in M['files'].items():
+  if isinstance(e['before'],list):
+   target(path).write_bytes(subprocess.check_output(['git','show','18730c0:'+e['source']],cwd=ROOT));assert sha(target(path)) in e['before']
+ r=deploy(True);assert r.returncode==0 and 'PUBLISHED' in r.stdout,r.stderr
  # The anonymous API returns no catalog/customer/order data, and blocks writes/CSRF.
  api=web/'admin/api.php'
  def endpoint(method,action,headers=None):
