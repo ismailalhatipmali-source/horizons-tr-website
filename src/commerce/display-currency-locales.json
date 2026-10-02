@@ -1,0 +1,290 @@
+{
+  "en": {
+    "display_title": "See the price in your currency",
+    "display_currency": "Display currency",
+    "display_hint": "Choose a country to select its currency automatically, or choose another currency.",
+    "display_estimate": "Estimated total",
+    "display_details": "Daily reference · {date}.",
+    "display_note": "The display currency does not change the payment currency. Your card issuer determines its exchange rate, fees and the final debit in your card account currency.",
+    "display_unavailable": "A current conversion is unavailable for this currency. The original price is unchanged; please choose another currency."
+  },
+  "ar": {
+    "display_title": "شاهد السعر بعملتك",
+    "display_currency": "عملة عرض السعر",
+    "display_hint": "اختر البلد لتظهر عملته تلقائيًا، ويمكنك اختيار أي عملة أخرى.",
+    "display_estimate": "الإجمالي التقديري",
+    "display_details": "سعر مرجعي يومي · {date}.",
+    "display_note": "عملة العرض لا تغيّر عملة الدفع. بنك بطاقتك يحدد سعر التحويل والرسوم والمبلغ النهائي الذي يُخصم بعملة حساب البطاقة.",
+    "display_unavailable": "التحويل الحالي غير متاح لهذه العملة. السعر الأصلي لم يتغير؛ يرجى اختيار عملة أخرى."
+  },
+  "tr": {
+    "display_title": "Fiyatı kendi para biriminizde görün",
+    "display_currency": "Görüntüleme para birimi",
+    "display_hint": "Para birimini otomatik seçmek için ülke seçin veya başka bir para birimi belirleyin.",
+    "display_estimate": "Tahmini toplam",
+    "display_details": "Günlük referans · {date}.",
+    "display_note": "Görüntüleme para birimi ödeme para birimini değiştirmez. Kartınızı veren banka döviz kurunu, ücretleri ve kart hesabınızın para birimindeki son borç tutarını belirler.",
+    "display_unavailable": "Bu para birimi için güncel dönüşüm mevcut değil. Asıl fiyat değişmedi; lütfen başka bir para birimi seçin."
+  },
+  "fr": {
+    "display_title": "Voir le prix dans votre devise",
+    "display_currency": "Devise d’affichage",
+    "display_hint": "Choisissez un pays pour sélectionner sa devise automatiquement, ou choisissez une autre devise.",
+    "display_estimate": "Total estimé",
+    "display_details": "Référence quotidienne · {date}.",
+    "display_note": "La devise d’affichage ne change pas la devise de paiement. L’émetteur de votre carte détermine le taux de change, les frais et le débit final dans la devise de votre compte.",
+    "display_unavailable": "La conversion actuelle est indisponible pour cette devise. Le prix d’origine reste inchangé ; choisissez une autre devise."
+  },
+  "es": {
+    "display_title": "Ver el precio en tu moneda",
+    "display_currency": "Moneda de visualización",
+    "display_hint": "Elige un país para seleccionar su moneda automáticamente, o elige otra moneda.",
+    "display_estimate": "Total estimado",
+    "display_details": "Referencia diaria · {date}.",
+    "display_note": "La moneda mostrada no cambia la moneda de pago. El emisor de tu tarjeta determina el tipo de cambio, las comisiones y el cargo final en la moneda de tu cuenta.",
+    "display_unavailable": "No hay una conversión actual disponible para esta moneda. El precio original no cambia; elige otra moneda."
+  },
+  "de": {
+    "display_title": "Preis in Ihrer Währung anzeigen",
+    "display_currency": "Anzeigewährung",
+    "display_hint": "Wählen Sie ein Land, um dessen Währung automatisch auszuwählen, oder wählen Sie eine andere Währung.",
+    "display_estimate": "Geschätzter Gesamtbetrag",
+    "display_details": "Täglicher Referenzkurs · {date}.",
+    "display_note": "Die Anzeigewährung ändert die Zahlungswährung nicht. Ihr Kartenherausgeber bestimmt Wechselkurs, Gebühren und die endgültige Belastung in der Währung Ihres Kartenkontos.",
+    "display_unavailable": "Für diese Währung ist keine aktuelle Umrechnung verfügbar. Der ursprüngliche Preis bleibt unverändert; wählen Sie eine andere Währung."
+  },
+  "it": {
+    "display_title": "Visualizza il prezzo nella tua valuta",
+    "display_currency": "Valuta di visualizzazione",
+    "display_hint": "Scegli un paese per selezionare automaticamente la sua valuta, oppure scegli un’altra valuta.",
+    "display_estimate": "Totale stimato",
+    "display_details": "Riferimento giornaliero · {date}.",
+    "display_note": "La valuta visualizzata non cambia quella di pagamento. L’emittente della carta determina il cambio, le commissioni e l’addebito finale nella valuta del conto della carta.",
+    "display_unavailable": "La conversione attuale non è disponibile per questa valuta. Il prezzo originale non cambia; scegli un’altra valuta."
+  },
+  "pt": {
+    "display_title": "Ver o preço na sua moeda",
+    "display_currency": "Moeda de apresentação",
+    "display_hint": "Escolha um país para selecionar automaticamente a sua moeda ou escolha outra moeda.",
+    "display_estimate": "Total estimado",
+    "display_details": "Referência diária · {date}.",
+    "display_note": "A moeda apresentada não altera a moeda de pagamento. O emissor do cartão determina o câmbio, as comissões e o débito final na moeda da conta do cartão.",
+    "display_unavailable": "A conversão atual não está disponível para esta moeda. O preço original não muda; escolha outra moeda."
+  },
+  "nl": {
+    "display_title": "Bekijk de prijs in uw valuta",
+    "display_currency": "Weergavevaluta",
+    "display_hint": "Kies een land om de valuta automatisch te selecteren, of kies een andere valuta.",
+    "display_estimate": "Geschat totaal",
+    "display_details": "Dagelijkse referentie · {date}.",
+    "display_note": "De weergavevaluta verandert de betaalvaluta niet. Uw kaartuitgever bepaalt de wisselkoers, kosten en uiteindelijke afschrijving in de valuta van uw kaartrekening.",
+    "display_unavailable": "Er is geen actuele omrekening beschikbaar voor deze valuta. De oorspronkelijke prijs blijft gelijk; kies een andere valuta."
+  },
+  "ru": {
+    "display_title": "Посмотреть цену в вашей валюте",
+    "display_currency": "Валюта отображения",
+    "display_hint": "Выберите страну для автоматического выбора её валюты или выберите другую валюту.",
+    "display_estimate": "Примерная сумма",
+    "display_details": "Дневной справочный курс · {date}.",
+    "display_note": "Валюта отображения не меняет валюту платежа. Банк, выпустивший карту, определяет курс, комиссии и окончательное списание в валюте счёта карты.",
+    "display_unavailable": "Актуальный пересчёт для этой валюты недоступен. Исходная цена не изменилась; выберите другую валюту."
+  },
+  "uk": {
+    "display_title": "Переглянути ціну у вашій валюті",
+    "display_currency": "Валюта відображення",
+    "display_hint": "Виберіть країну, щоб автоматично вибрати її валюту, або виберіть іншу валюту.",
+    "display_estimate": "Орієнтовна сума",
+    "display_details": "Щоденний довідковий курс · {date}.",
+    "display_note": "Валюта відображення не змінює валюту платежу. Банк, що видав картку, визначає курс, комісії та остаточне списання у валюті рахунку картки.",
+    "display_unavailable": "Актуальний перерахунок для цієї валюти недоступний. Початкова ціна не змінилася; виберіть іншу валюту."
+  },
+  "pl": {
+    "display_title": "Zobacz cenę w swojej walucie",
+    "display_currency": "Waluta wyświetlania",
+    "display_hint": "Wybierz kraj, aby automatycznie wybrać jego walutę, lub wybierz inną walutę.",
+    "display_estimate": "Szacowana suma",
+    "display_details": "Dzienny kurs referencyjny · {date}.",
+    "display_note": "Waluta wyświetlania nie zmienia waluty płatności. Wydawca karty ustala kurs, opłaty i ostateczne obciążenie w walucie rachunku karty.",
+    "display_unavailable": "Aktualne przeliczenie dla tej waluty jest niedostępne. Cena pierwotna nie uległa zmianie; wybierz inną walutę."
+  },
+  "cs": {
+    "display_title": "Zobrazit cenu ve vaší měně",
+    "display_currency": "Měna zobrazení",
+    "display_hint": "Vyberte zemi pro automatickou volbu její měny, nebo zvolte jinou měnu.",
+    "display_estimate": "Odhadovaný součet",
+    "display_details": "Denní referenční kurz · {date}.",
+    "display_note": "Měna zobrazení nemění měnu platby. Vydavatel karty určuje kurz, poplatky a konečnou částku strženou v měně karetního účtu.",
+    "display_unavailable": "Aktuální přepočet pro tuto měnu není dostupný. Původní cena se nemění; vyberte jinou měnu."
+  },
+  "ro": {
+    "display_title": "Vezi prețul în moneda ta",
+    "display_currency": "Moneda afișată",
+    "display_hint": "Alege o țară pentru selectarea automată a monedei sale sau alege altă monedă.",
+    "display_estimate": "Total estimat",
+    "display_details": "Curs de referință zilnic · {date}.",
+    "display_note": "Moneda afișată nu schimbă moneda plății. Emitentul cardului stabilește cursul, comisioanele și debitarea finală în moneda contului cardului.",
+    "display_unavailable": "Conversia actuală nu este disponibilă pentru această monedă. Prețul inițial nu s-a schimbat; alege altă monedă."
+  },
+  "hu": {
+    "display_title": "Ár megtekintése saját pénznemben",
+    "display_currency": "Megjelenítési pénznem",
+    "display_hint": "Válasszon országot a pénznem automatikus kiválasztásához, vagy válasszon másik pénznemet.",
+    "display_estimate": "Becsült végösszeg",
+    "display_details": "Napi referenciaárfolyam · {date}.",
+    "display_note": "A megjelenítési pénznem nem módosítja a fizetés pénznemét. A kártyakibocsátó határozza meg az árfolyamot, a díjakat és a kártyaszámla pénznemében terhelt végösszeget.",
+    "display_unavailable": "Ehhez a pénznemhez nem érhető el aktuális átváltás. Az eredeti ár változatlan; válasszon másik pénznemet."
+  },
+  "el": {
+    "display_title": "Δείτε την τιμή στο νόμισμά σας",
+    "display_currency": "Νόμισμα εμφάνισης",
+    "display_hint": "Επιλέξτε χώρα για αυτόματη επιλογή του νομίσματός της ή επιλέξτε άλλο νόμισμα.",
+    "display_estimate": "Εκτιμώμενο σύνολο",
+    "display_details": "Ημερήσια τιμή αναφοράς · {date}.",
+    "display_note": "Το νόμισμα εμφάνισης δεν αλλάζει το νόμισμα πληρωμής. Ο εκδότης της κάρτας καθορίζει την ισοτιμία, τις χρεώσεις και την τελική χρέωση στο νόμισμα του λογαριασμού της κάρτας.",
+    "display_unavailable": "Δεν διατίθεται τρέχουσα μετατροπή για αυτό το νόμισμα. Η αρχική τιμή παραμένει ίδια· επιλέξτε άλλο νόμισμα."
+  },
+  "sv": {
+    "display_title": "Visa priset i din valuta",
+    "display_currency": "Visningsvaluta",
+    "display_hint": "Välj ett land för att automatiskt välja dess valuta, eller välj en annan valuta.",
+    "display_estimate": "Uppskattat totalbelopp",
+    "display_details": "Daglig referenskurs · {date}.",
+    "display_note": "Visningsvalutan ändrar inte betalningsvalutan. Din kortutgivare bestämmer växelkurs, avgifter och slutlig debitering i kortkontots valuta.",
+    "display_unavailable": "Aktuell omräkning är inte tillgänglig för denna valuta. Ursprungligt pris är oförändrat; välj en annan valuta."
+  },
+  "da": {
+    "display_title": "Se prisen i din valuta",
+    "display_currency": "Visningsvaluta",
+    "display_hint": "Vælg et land for automatisk at vælge landets valuta, eller vælg en anden valuta.",
+    "display_estimate": "Anslået total",
+    "display_details": "Daglig referencekurs · {date}.",
+    "display_note": "Visningsvalutaen ændrer ikke betalingsvalutaen. Din kortudsteder bestemmer kurs, gebyrer og den endelige debitering i kortkontoens valuta.",
+    "display_unavailable": "Aktuel omregning er ikke tilgængelig for denne valuta. Den oprindelige pris er uændret; vælg en anden valuta."
+  },
+  "no": {
+    "display_title": "Se prisen i din valuta",
+    "display_currency": "Visningsvaluta",
+    "display_hint": "Velg et land for å velge landets valuta automatisk, eller velg en annen valuta.",
+    "display_estimate": "Anslått totalbeløp",
+    "display_details": "Daglig referansekurs · {date}.",
+    "display_note": "Visningsvalutaen endrer ikke betalingsvalutaen. Kortutstederen bestemmer kurs, gebyrer og endelig belastning i kortkontoens valuta.",
+    "display_unavailable": "Gjeldende omregning er ikke tilgjengelig for denne valutaen. Den opprinnelige prisen er uendret; velg en annen valuta."
+  },
+  "fi": {
+    "display_title": "Näytä hinta omassa valuutassasi",
+    "display_currency": "Näyttövaluutta",
+    "display_hint": "Valitse maa, jotta sen valuutta valitaan automaattisesti, tai valitse toinen valuutta.",
+    "display_estimate": "Arvioitu yhteensä",
+    "display_details": "Päivittäinen viitekurssi · {date}.",
+    "display_note": "Näyttövaluutta ei muuta maksuvaluuttaa. Kortinmyöntäjä määrittää vaihtokurssin, kulut ja lopullisen veloituksen korttitilin valuutassa.",
+    "display_unavailable": "Ajantasainen muunnos ei ole saatavilla tälle valuutalle. Alkuperäinen hinta ei muutu; valitse toinen valuutta."
+  },
+  "bg": {
+    "display_title": "Вижте цената във вашата валута",
+    "display_currency": "Валута за показване",
+    "display_hint": "Изберете държава за автоматичен избор на нейната валута или изберете друга валута.",
+    "display_estimate": "Приблизителна обща сума",
+    "display_details": "Дневен референтен курс · {date}.",
+    "display_note": "Валутата за показване не променя валутата на плащане. Издателят на картата определя курса, таксите и крайното задължение във валутата на картовата сметка.",
+    "display_unavailable": "Текущото преобразуване за тази валута не е налично. Първоначалната цена не се променя; изберете друга валута."
+  },
+  "sr": {
+    "display_title": "Погледајте цену у својој валути",
+    "display_currency": "Валута приказа",
+    "display_hint": "Изаберите државу за аутоматски избор њене валуте или изаберите другу валуту.",
+    "display_estimate": "Процењени укупан износ",
+    "display_details": "Дневни референтни курс · {date}.",
+    "display_note": "Валута приказа не мења валуту плаћања. Издавалац картице одређује курс, накнаде и коначно задужење у валути рачуна картице.",
+    "display_unavailable": "Тренутна конверзија није доступна за ову валуту. Првобитна цена је непромењена; изаберите другу валуту."
+  },
+  "hr": {
+    "display_title": "Pogledajte cijenu u svojoj valuti",
+    "display_currency": "Valuta prikaza",
+    "display_hint": "Odaberite državu za automatski odabir njezine valute ili odaberite drugu valutu.",
+    "display_estimate": "Procijenjeni ukupni iznos",
+    "display_details": "Dnevni referentni tečaj · {date}.",
+    "display_note": "Valuta prikaza ne mijenja valutu plaćanja. Izdavatelj kartice određuje tečaj, naknade i konačno terećenje u valuti računa kartice.",
+    "display_unavailable": "Trenutačna konverzija nije dostupna za ovu valutu. Izvorna cijena ostaje ista; odaberite drugu valutu."
+  },
+  "he": {
+    "display_title": "הצגת המחיר במטבע שלך",
+    "display_currency": "מטבע תצוגה",
+    "display_hint": "בחרו מדינה לבחירה אוטומטית של המטבע שלה, או בחרו מטבע אחר.",
+    "display_estimate": "סכום משוער",
+    "display_details": "שער ייחוס יומי · {date}.",
+    "display_note": "מטבע התצוגה אינו משנה את מטבע התשלום. מנפיק הכרטיס קובע את שער ההמרה, העמלות והחיוב הסופי במטבע חשבון הכרטיס.",
+    "display_unavailable": "אין המרה עדכנית זמינה למטבע זה. המחיר המקורי לא השתנה; בחרו מטבע אחר."
+  },
+  "fa": {
+    "display_title": "نمایش قیمت به ارز شما",
+    "display_currency": "ارز نمایش قیمت",
+    "display_hint": "کشور را برای انتخاب خودکار ارز آن انتخاب کنید، یا ارز دیگری برگزینید.",
+    "display_estimate": "مجموع تقریبی",
+    "display_details": "نرخ مرجع روزانه · {date}.",
+    "display_note": "ارز نمایش قیمت، ارز پرداخت را تغییر نمی‌دهد. بانک صادرکننده کارت نرخ تبدیل، کارمزد و مبلغ نهایی کسرشده به ارز حساب کارت را تعیین می‌کند.",
+    "display_unavailable": "تبدیل به‌روز برای این ارز در دسترس نیست. قیمت اصلی تغییر نکرده است؛ ارز دیگری انتخاب کنید."
+  },
+  "ur": {
+    "display_title": "قیمت اپنی کرنسی میں دیکھیں",
+    "display_currency": "قیمت دکھانے کی کرنسی",
+    "display_hint": "کرنسی خودکار منتخب کرنے کے لیے ملک چنیں، یا کوئی دوسری کرنسی منتخب کریں۔",
+    "display_estimate": "تخمینی کل رقم",
+    "display_details": "روزانہ کا حوالہ نرخ · {date}۔",
+    "display_note": "دکھائی جانے والی کرنسی ادائیگی کی کرنسی کو تبدیل نہیں کرتی۔ کارڈ جاری کرنے والا بینک شرحِ تبادلہ، فیس اور کارڈ اکاؤنٹ کی کرنسی میں حتمی کٹوتی طے کرتا ہے۔",
+    "display_unavailable": "اس کرنسی کے لیے موجودہ تبدیلی دستیاب نہیں۔ اصل قیمت تبدیل نہیں ہوئی؛ دوسری کرنسی منتخب کریں۔"
+  },
+  "hi": {
+    "display_title": "कीमत अपनी मुद्रा में देखें",
+    "display_currency": "कीमत दिखाने की मुद्रा",
+    "display_hint": "देश चुनने पर उसकी मुद्रा अपने आप चुनी जाएगी, या कोई दूसरी मुद्रा चुनें।",
+    "display_estimate": "अनुमानित कुल",
+    "display_details": "दैनिक संदर्भ दर · {date}।",
+    "display_note": "दिखाई गई मुद्रा से भुगतान की मुद्रा नहीं बदलती। आपका कार्ड जारीकर्ता विनिमय दर, शुल्क और कार्ड खाते की मुद्रा में अंतिम कटौती तय करता है।",
+    "display_unavailable": "इस मुद्रा के लिए मौजूदा रूपांतरण उपलब्ध नहीं है। मूल कीमत नहीं बदली है; कृपया दूसरी मुद्रा चुनें।"
+  },
+  "bn": {
+    "display_title": "আপনার মুদ্রায় দাম দেখুন",
+    "display_currency": "দাম দেখানোর মুদ্রা",
+    "display_hint": "দেশ বেছে নিলে তার মুদ্রা স্বয়ংক্রিয়ভাবে নির্বাচিত হবে, অথবা অন্য মুদ্রা বেছে নিন।",
+    "display_estimate": "আনুমানিক মোট",
+    "display_details": "দৈনিক রেফারেন্স হার · {date}।",
+    "display_note": "দেখানো মুদ্রা পেমেন্টের মুদ্রা বদলায় না। আপনার কার্ড প্রদানকারী বিনিময় হার, ফি এবং কার্ড অ্যাকাউন্টের মুদ্রায় চূড়ান্ত কর্তনের পরিমাণ নির্ধারণ করে।",
+    "display_unavailable": "এই মুদ্রার জন্য বর্তমান রূপান্তর উপলব্ধ নেই। মূল দাম অপরিবর্তিত; অন্য মুদ্রা বেছে নিন।"
+  },
+  "id": {
+    "display_title": "Lihat harga dalam mata uang Anda",
+    "display_currency": "Mata uang tampilan",
+    "display_hint": "Pilih negara untuk memilih mata uangnya secara otomatis, atau pilih mata uang lain.",
+    "display_estimate": "Perkiraan total",
+    "display_details": "Kurs acuan harian · {date}.",
+    "display_note": "Mata uang tampilan tidak mengubah mata uang pembayaran. Penerbit kartu menentukan kurs, biaya, dan debit akhir dalam mata uang rekening kartu Anda.",
+    "display_unavailable": "Konversi terkini tidak tersedia untuk mata uang ini. Harga asli tidak berubah; pilih mata uang lain."
+  },
+  "ms": {
+    "display_title": "Lihat harga dalam mata wang anda",
+    "display_currency": "Mata wang paparan",
+    "display_hint": "Pilih negara untuk memilih mata wangnya secara automatik, atau pilih mata wang lain.",
+    "display_estimate": "Anggaran jumlah",
+    "display_details": "Kadar rujukan harian · {date}.",
+    "display_note": "Mata wang paparan tidak mengubah mata wang pembayaran. Pengeluar kad menentukan kadar tukaran, fi dan debit akhir dalam mata wang akaun kad anda.",
+    "display_unavailable": "Penukaran semasa tidak tersedia untuk mata wang ini. Harga asal tidak berubah; pilih mata wang lain."
+  },
+  "zh": {
+    "display_title": "以您的货币查看价格",
+    "display_currency": "显示货币",
+    "display_hint": "选择国家可自动选择其货币，也可以手动选择其他货币。",
+    "display_estimate": "预计总额",
+    "display_details": "每日参考汇率 · {date}。",
+    "display_note": "显示货币不会改变付款货币。发卡银行决定兑换汇率、费用以及以银行卡账户货币扣除的最终金额。",
+    "display_unavailable": "此货币暂时没有可用的最新换算。原价未变，请选择其他货币。"
+  },
+  "ja": {
+    "display_title": "お使いの通貨で価格を表示",
+    "display_currency": "表示通貨",
+    "display_hint": "国を選択すると通貨が自動で選ばれます。別の通貨も選択できます。",
+    "display_estimate": "概算合計",
+    "display_details": "日次参考レート · {date}。",
+    "display_note": "表示通貨を変更しても決済通貨は変わりません。カード発行会社が為替レート、手数料、カード口座の通貨での最終請求額を決定します。",
+    "display_unavailable": "この通貨の最新の換算は利用できません。元の価格は変わりません。別の通貨を選択してください。"
+  }
+}

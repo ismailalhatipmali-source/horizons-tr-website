@@ -8,6 +8,23 @@ try {
     if(is_link($private)||!is_dir($private)||str_starts_with(realpath($private),$web.'/'))throw new RuntimeException('REVIEW_UNAVAILABLE');
     $method=$_SERVER['REQUEST_METHOD']??'';if(!in_array($method,['GET','POST'],true)){http_response_code(405);header('Allow: GET, POST');echo '{"ok":false,"error":"METHOD_NOT_ALLOWED"}';exit;}
     if(($_SERVER['HTTP_SEC_FETCH_SITE']??'')==='cross-site'||(isset($_SERVER['HTTP_ORIGIN'])&&$_SERVER['HTTP_ORIGIN']!=='https://horizons-tr.com')){http_response_code(403);echo '{"ok":false,"error":"FORBIDDEN"}';exit;}
+    if($method==='GET'&&($_GET['action']??'')==='display_price') {
+        foreach(['product','offer','currency'] as $field)if(!is_string($_GET[$field]??null)||strlen($_GET[$field])>100)throw new RuntimeException('INVALID_REQUEST');
+        require_once $private.'/DisplayExchangeRates.php';
+        $catalog=json_decode(file_get_contents($private.'/products.json'),true,16,JSON_THROW_ON_ERROR);
+        $metadata=json_decode(file_get_contents($private.'/display-currencies.json'),true,16,JSON_THROW_ON_ERROR);
+        $settlement=null;
+        if(isset($_GET['quote_token'])) {
+            if(!is_string($_GET['quote_token'])||strlen($_GET['quote_token'])>3000)throw new RuntimeException('INVALID_REQUEST');
+            require_once $private.'/ExchangeRates.php';$offer=null;
+            foreach($catalog['products'][$_GET['product']]['offers']??[] as $o)if($o['id']===$_GET['offer'])$offer=$o;
+            if(!$offer)throw new RuntimeException('OFFER_UNAVAILABLE');
+            $verifier=new \HorizonsCheckout\ExchangeRates($private,file_get_contents($private.'/key.bin'));
+            $settlement=$verifier->verify($_GET['quote_token'],$_GET['product'],$offer,time());
+        }
+        $display=new \HorizonsCheckout\DisplayExchangeRates($private,$metadata['currencies']);
+        echo json_encode(['ok'=>true,'display'=>$display->estimate($catalog,$_GET['product'],$_GET['offer'],$_GET['currency'],time(),$settlement),'collection_enabled'=>false],JSON_THROW_ON_ERROR);exit;
+    }
     session_name('hzn_checkout_review');session_set_cookie_params(['lifetime'=>0,'path'=>'/checkout-api/','secure'=>true,'httponly'=>true,'samesite'=>'Strict']);session_start(['use_strict_mode'=>1,'use_only_cookies'=>1]);
     $_SESSION['csrf']??=bin2hex(random_bytes(32));$csrf=$_SESSION['csrf'];$client=session_id();session_write_close();
     if($method==='GET'&&($_GET['action']??'')!=='quote'){echo json_encode(['ok'=>true,'csrf'=>$csrf,'mode'=>'bank_review','collection_enabled'=>false]);exit;}
@@ -27,6 +44,6 @@ try {
     $orders=new \HorizonsCheckout\ReviewOrders($private.'/review-orders.sqlite',file_get_contents($private.'/key.bin'),$catalog,$fx);
     echo json_encode($orders->create($input,$client,$_SERVER['REMOTE_ADDR']??'unknown',time()),JSON_THROW_ON_ERROR);
 }catch(Throwable $e){
-    $allowed=['INVALID_REQUEST','INVALID_BUYER','PRODUCT_UNAVAILABLE','OFFER_UNAVAILABLE','CARD_NOT_ENABLED','CONSENT_REQUIRED','EMAIL_MISMATCH','TRANSFER_TURKEY_ONLY','REQUEST_REUSED','RATE_LIMITED','FX_EXPIRED','FX_UNAVAILABLE','FX_INVALID'];
+    $allowed=['INVALID_REQUEST','INVALID_BUYER','PRODUCT_UNAVAILABLE','OFFER_UNAVAILABLE','CARD_NOT_ENABLED','CONSENT_REQUIRED','EMAIL_MISMATCH','TRANSFER_TURKEY_ONLY','REQUEST_REUSED','RATE_LIMITED','DISPLAY_FX_UNAVAILABLE','FX_EXPIRED','FX_UNAVAILABLE','FX_INVALID'];
     $reason=in_array($e->getMessage(),$allowed,true)?$e->getMessage():'REVIEW_UNAVAILABLE';http_response_code($reason==='RATE_LIMITED'?429:($reason==='REVIEW_UNAVAILABLE'?503:400));echo json_encode(['ok'=>false,'error'=>$reason]);
 }

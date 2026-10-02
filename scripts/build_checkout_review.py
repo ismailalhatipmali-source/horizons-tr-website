@@ -30,8 +30,8 @@ def build(dest):
         original=(dest/lang/'product.html').read_text()
         head,rest=original.split('<main',1);foot=rest.split('</main>',1)[1]
         # The source product can contain checkout links from a prior build.
-        head=re.sub(r'<(?:script|link)\b[^>]*(?:checkout\.(?:js|css)|commerce-cart\.js|location-picker\.js)[^>]*>(?:</script>)?','',head)
-        foot=re.sub(r'<script id="checkout-config".*?</script>','',foot,flags=re.S)
+        head=re.sub(r'<(?:script|link)\b[^>]*(?:checkout\.(?:js|css)|display-currency\.(?:js|css)|commerce-cart\.js|location-picker\.js)[^>]*>(?:</script>)?','',head)
+        foot=re.sub(r'<script id="(?:checkout-config|display-currency-config)".*?</script>','',foot,flags=re.S)
         seller=catalog['seller']
         seller_html='<div class="checkout-seller" lang="tr" dir="ltr"><strong>'+esc(seller['name'])+'</strong><address>'+esc(seller['address'])+'</address><p>MERSİS: '+seller['mersis']+' · İstanbul Ticaret Sicil: '+seller['registry']+'<br/>VKN: '+seller['tax_number']+' · Vergi Dairesi: '+esc(seller['tax_office'])+'</p><a href="tel:'+seller['phone']+'">'+seller['phone']+'</a> · <a href="mailto:'+seller['email']+'">'+seller['email']+'</a></div>'
         links='<nav class="checkout-policy" aria-label="'+t('sales_title')+'">'+''.join('<a data-policy="'+path+'" href="'+path+'" target="_blank" rel="noopener">'+t(key)+'</a>' for path,key in POLICIES.items())+'</nav>'
@@ -116,6 +116,8 @@ def build(dest):
         entry+='(()=>{const langs='+encoded(LANGS)+';const u=new URL(location.href);const lang=[u.searchParams.get("lang"),...(navigator.languages||[navigator.language])].filter(Boolean).map(x=>x.toLowerCase().split("-")[0]).map(x=>["nb","nn"].includes(x)?"no":x).find(x=>langs.includes(x))||"en";const q=new URLSearchParams();for(const key of ["product","offer","account","plan"]){const v=u.searchParams.get(key);if(v&&/^[a-z0-9-]{1,100}$/.test(v))q.set(key,v);}location.replace(lang+"/checkout.html"+(q.size?"?"+q.toString():""));})();'
         (dest/name).write_text(entry+'</script></body></html>')
     update_contacts(dest)
+    from build_display_currency import build as build_display
+    build_display(dest)
     print('Built 32 checkout languages, 128 linked policy pages, and generic product metadata. Collection disabled.')
 
 if __name__=='__main__':build(ROOT/'dist')
