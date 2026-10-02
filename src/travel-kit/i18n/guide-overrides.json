@@ -1,0 +1,162 @@
+{
+  "en": {
+    "0426": "32 language editions. Every edition contains the same 40 document pages.",
+    "0447": "Use the HTML editor in a Chromium browser on a computer. The XLSX files contain standard formulas. Enable automatic recalculation and check totals with the included example before using real client data.",
+    "0448": "Customise and send the 12 email scripts yourself. Replace all double-brace fields before sending. For file support, email support@horizons-tr.com with your HORIZONS order reference and the filename; omit sensitive client data."
+  },
+  "ar": {
+    "0426": "الحزمة متاحة بـ32 لغة. كل نسخة لغوية تتضمن صفحات المستندات الأربعين نفسها.",
+    "0447": "استخدم محرر HTML في متصفح Chromium على الكمبيوتر. ملفات XLSX تحتوي صيغًا قياسية. فعّل إعادة الحساب التلقائي وتحقق من المجاميع باستخدام المثال المرفق قبل إدخال بيانات عملاء حقيقية.",
+    "0448": "عدّل قوالب الرسائل الاثني عشر وأرسلها بنفسك. استبدل جميع الحقول بين الأقواس المزدوجة قبل الإرسال. لدعم الملفات راسل support@horizons-tr.com مع مرجع طلب HORIZONS واسم الملف، دون بيانات العملاء الحساسة."
+  },
+  "tr": {
+    "0426": "32 dil sürümü. Her sürüm aynı 40 belge sayfasını içerir.",
+    "0447": "HTML düzenleyiciyi bilgisayarda Chromium tarayıcısında kullanın. XLSX dosyaları standart formüller içerir. Otomatik yeniden hesaplamayı etkinleştirin ve gerçek müşteri verilerini kullanmadan önce toplamları örnekle kontrol edin.",
+    "0448": "12 e-posta metnini düzenleyip kendiniz gönderin. Göndermeden önce çift süslü parantezli alanları değiştirin. Dosya desteği: support@horizons-tr.com. HORIZONS sipariş referansını ve dosya adını belirtin; hassas müşteri verisi göndermeyin."
+  },
+  "fr": {
+    "0426": "32 éditions linguistiques. Chaque édition contient les mêmes 40 pages de documents.",
+    "0447": "Utilisez l’éditeur HTML dans un navigateur Chromium sur ordinateur. Les fichiers XLSX contiennent des formules standard. Activez le recalcul automatique et vérifiez les totaux avec l’exemple avant d’utiliser des données clients réelles.",
+    "0448": "Personnalisez et envoyez vous-même les 12 scripts e-mail. Remplacez les champs entre doubles accolades. Assistance fichiers : support@horizons-tr.com. Indiquez la référence HORIZONS et le nom du fichier, sans données sensibles du client."
+  },
+  "es": {
+    "0426": "32 ediciones de idioma. Cada edición contiene las mismas 40 páginas de documentos.",
+    "0447": "Usa el editor HTML en un navegador Chromium en el ordenador. Los archivos XLSX contienen fórmulas estándar. Activa el recálculo automático y comprueba los totales con el ejemplo antes de usar datos reales de clientes.",
+    "0448": "Personaliza y envía tú mismo los 12 correos. Sustituye los campos entre llaves dobles. Soporte de archivos: support@horizons-tr.com. Incluye la referencia HORIZONS y el nombre del archivo, sin datos sensibles del cliente."
+  },
+  "de": {
+    "0426": "32 Sprachversionen. Jede Version enthält dieselben 40 Dokumentseiten.",
+    "0447": "Verwenden Sie den HTML-Editor in einem Chromium-Browser auf einem Computer. Die XLSX-Dateien enthalten Standardformeln. Aktivieren Sie die automatische Neuberechnung und prüfen Sie die Summen anhand des enthaltenen Beispiels, bevor Sie echte Kundendaten verwenden.",
+    "0448": "Bei den 12 E-Mail-Skripten handelt es sich um Texte, die Sie selbst anpassen und versenden. Ersetzen Sie jedes Feld mit doppelten Klammern vor dem Senden. Mit diesem Kit werden keine Reisen gebucht, keine Nachrichten gesendet oder Lieferantensysteme synchronisiert. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "it": {
+    "0426": "32 edizioni linguistiche. Ogni edizione contiene le stesse 40 pagine di documenti.",
+    "0447": "Usa l’editor HTML in un browser Chromium su computer. I file XLSX contengono formule standard. Attiva il ricalcolo automatico e verifica i totali con l’esempio incluso prima di usare dati reali dei clienti.",
+    "0448": "I 12 script di posta elettronica sono testo che personalizzi e invii tu stesso. Sostituisci ogni campo con doppia parentesi prima dell'invio. Questo kit non prenota viaggi, non invia messaggi né sincronizza i sistemi dei fornitori. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "pt": {
+    "0426": "32 edições de idioma. Cada edição contém as mesmas 40 páginas de documentos.",
+    "0447": "Use o editor HTML num navegador Chromium no computador. Os ficheiros XLSX contêm fórmulas padrão. Ative o recálculo automático e confira os totais com o exemplo incluído antes de usar dados reais de clientes.",
+    "0448": "Os 12 scripts de e-mail são textos que você personaliza e envia para si mesmo. Substitua todos os campos de colchetes antes de enviar. Este kit não reserva viagens, não envia mensagens nem sincroniza sistemas de fornecedores. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "nl": {
+    "0426": "32 taalversies. Elke versie bevat dezelfde 40 documentpagina’s.",
+    "0447": "Gebruik de HTML-editor in een Chromium-browser op een computer. De XLSX-bestanden bevatten standaardformules. Schakel automatisch herberekenen in en controleer de totalen met het meegeleverde voorbeeld voordat u echte klantgegevens gebruikt.",
+    "0448": "De 12 e-mailscripts zijn tekst die u zelf kunt aanpassen en verzenden. Vervang elk dubbel haakjesveld voordat u het verzendt. Deze kit boekt geen reizen, verzendt geen berichten of synchroniseert leverancierssystemen. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "ru": {
+    "0426": "32 языковые версии. Каждая версия содержит те же 40 страниц документов.",
+    "0447": "Используйте HTML-редактор в браузере Chromium на компьютере. Файлы XLSX содержат стандартные формулы. Включите автоматический пересчёт и проверьте итоги по включённому примеру перед использованием реальных данных клиентов.",
+    "0448": "12 сценариев электронной почты представляют собой текст, который вы настраиваете и отправляете самостоятельно. Перед отправкой замените каждое поле с двойными скобками. Этот комплект не бронирует поездки, не отправляет сообщения и не синхронизирует системы поставщиков. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "uk": {
+    "0426": "32 мовні версії. Кожна версія містить ті самі 40 сторінок документів.",
+    "0447": "Використовуйте HTML-редактор у браузері Chromium на комп’ютері. Файли XLSX містять стандартні формули. Увімкніть автоматичний перерахунок і перевірте підсумки за включеним прикладом перед використанням реальних даних клієнтів.",
+    "0448": "12 сценаріїв електронної пошти — це текст, який ви налаштовуєте та надсилаєте самостійно. Замініть кожне поле з подвійними дужками перед надсиланням. Цей комплект не бронює подорожі, не надсилає повідомлення та не синхронізує системи постачальників. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "pl": {
+    "0426": "32 wersje językowe. Każda wersja zawiera te same 40 stron dokumentów.",
+    "0447": "Korzystaj z edytora HTML w przeglądarce Chromium na komputerze. Pliki XLSX zawierają standardowe formuły. Włącz automatyczne przeliczanie i sprawdź sumy na dołączonym przykładzie przed użyciem rzeczywistych danych klientów.",
+    "0448": "12 skryptów e-mail to tekst, który możesz dostosować i wysłać samodzielnie. Przed wysłaniem zastąp każde pole z podwójnymi nawiasami klamrowymi. Zestaw ten nie umożliwia rezerwacji podróży, wysyłania wiadomości ani synchronizacji systemów dostawców. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "cs": {
+    "0426": "32 jazykových verzí. Každá verze obsahuje stejných 40 stránek dokumentů.",
+    "0447": "Používejte HTML editor v prohlížeči Chromium na počítači. Soubory XLSX obsahují standardní vzorce. Zapněte automatický přepočet a ověřte součty na přiloženém příkladu před použitím skutečných údajů klientů.",
+    "0448": "12 e-mailových skriptů je text, který si přizpůsobíte a odešlete sami. Před odesláním vyměňte každé pole s dvojitými závorkami. Tato sada nerezervuje cesty, neposílá zprávy ani nesynchronizuje systémy dodavatelů. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "ro": {
+    "0426": "32 de ediții lingvistice. Fiecare ediție conține aceleași 40 de pagini de documente.",
+    "0447": "Folosiți editorul HTML într-un browser Chromium pe computer. Fișierele XLSX conțin formule standard. Activați recalcularea automată și verificați totalurile cu exemplul inclus înainte de a folosi date reale ale clienților.",
+    "0448": "Cele 12 scripturi de e-mail sunt text pe care îl personalizați și pe care îl trimiteți singur. Înlocuiți fiecare câmp cu acolade duble înainte de a trimite. Acest kit nu rezervă călătorii, nu trimite mesaje sau nu sincronizează sistemele furnizorilor. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "hu": {
+    "0426": "32 nyelvi változat. Minden változat ugyanazt a 40 dokumentumoldalt tartalmazza.",
+    "0447": "Használja a HTML-szerkesztőt Chromium böngészőben, számítógépen. Az XLSX-fájlok szabványos képleteket tartalmaznak. Kapcsolja be az automatikus újraszámítást, és ellenőrizze az összegeket a mellékelt példával, mielőtt valós ügyféladatokat használ.",
+    "0448": "A 12 e-mail szkript olyan szöveg, amelyet Ön személyre szab és küld el. Küldés előtt cseréljen ki minden dupla kapcsos kapcsos mezőt. Ez a készlet nem foglal utazást, nem küld üzeneteket és nem szinkronizálja a beszállítói rendszereket. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "el": {
+    "0426": "32 γλωσσικές εκδόσεις. Κάθε έκδοση περιέχει τις ίδιες 40 σελίδες εγγράφων.",
+    "0447": "Χρησιμοποιήστε τον επεξεργαστή HTML σε πρόγραμμα περιήγησης Chromium σε υπολογιστή. Τα αρχεία XLSX περιέχουν τυπικούς τύπους. Ενεργοποιήστε τον αυτόματο επανυπολογισμό και ελέγξτε τα σύνολα με το παράδειγμα πριν χρησιμοποιήσετε πραγματικά στοιχεία πελατών.",
+    "0448": "Τα 12 σενάρια email είναι κείμενο που προσαρμόζετε και στέλνετε μόνοι σας. Αντικαταστήστε κάθε πεδίο με διπλό άγκιστρο πριν από την αποστολή. Αυτό το κιτ δεν κάνει κράτηση για ταξίδια, αποστολή μηνυμάτων ή συγχρονισμό συστημάτων προμηθευτών. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "sv": {
+    "0426": "32 språkversioner. Varje version innehåller samma 40 dokumentsidor.",
+    "0447": "Använd HTML-redigeraren i en Chromium-webbläsare på datorn. XLSX-filerna innehåller standardformler. Aktivera automatisk omberäkning och kontrollera summorna med det medföljande exemplet innan du använder verkliga kunduppgifter.",
+    "0448": "De 12 e-postskripten är text som du anpassar och skickar själv. Byt ut alla fält med dubbla klammer innan du skickar. Detta kit bokar inte resor, skickar meddelanden eller synkroniserar leverantörssystem. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "da": {
+    "0426": "32 sprogversioner. Hver version indeholder de samme 40 dokumentsider.",
+    "0447": "Brug HTML-editoren i en Chromium-browser på en computer. XLSX-filerne indeholder standardformler. Aktivér automatisk genberegning, og kontrollér totalerne med det medfølgende eksempel, før du bruger faktiske kundedata.",
+    "0448": "De 12 e-mail-scripts er tekst, du tilpasser og sender selv. Udskift hvert felt med dobbeltparentes før afsendelse. Dette sæt reserverer ikke rejser, sender beskeder eller synkroniserer leverandørsystemer. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "no": {
+    "0426": "32 språkversjoner. Hver versjon inneholder de samme 40 dokumentsidene.",
+    "0447": "Bruk HTML-redigereren i en Chromium-nettleser på en datamaskin. XLSX-filene inneholder standardformler. Aktiver automatisk omberegning og kontroller summene med eksemplet før du bruker virkelige kundedata.",
+    "0448": "De 12 e-postskriptene er tekst du tilpasser og sender selv. Bytt ut hvert felt med dobbel klammeparentes før sending. Dette settet bestiller ikke reiser, sender meldinger eller synkroniserer leverandørsystemer. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "fi": {
+    "0426": "32 kieliversiota. Jokainen versio sisältää samat 40 asiakirjasivua.",
+    "0447": "Käytä HTML-editoria Chromium-selaimessa tietokoneella. XLSX-tiedostot sisältävät vakiokaavoja. Ota automaattinen uudelleenlaskenta käyttöön ja tarkista summat mukana olevalla esimerkillä ennen oikeiden asiakastietojen käyttämistä.",
+    "0448": "12 sähköpostiskriptiä ovat itse muokkaamaasi ja lähettämääsi tekstiä. Vaihda jokainen kaksoissulkukenttä ennen lähettämistä. Tämä sarja ei varaa matkoja, lähetä viestejä tai synkronoi toimittajajärjestelmiä. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "bg": {
+    "0426": "32 езикови версии. Всяка версия съдържа същите 40 страници документи.",
+    "0447": "Използвайте HTML редактора в браузър Chromium на компютър. Файловете XLSX съдържат стандартни формули. Включете автоматичното преизчисляване и проверете сумите с включения пример, преди да използвате реални клиентски данни.",
+    "0448": "12-те имейл скрипта са текст, който персонализирате и изпращате сами. Заменете всяко поле с двойна скоба преди изпращане. Този комплект не резервира пътуване, не изпраща съобщения или синхронизира системите на доставчици. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "sr": {
+    "0426": "32 језичке верзије. Свака верзија садржи истих 40 страница докумената.",
+    "0447": "Користите HTML уређивач у прегледачу Chromium на рачунару. XLSX датотеке садрже стандардне формуле. Укључите аутоматско прерачунавање и проверите износе на приложеном примеру пре употребе стварних података клијената.",
+    "0448": "12 скрипти е-поште су текст који сами прилагођавате и шаљете. Замените свако поље са дуплим заградама пре слања. Овај комплет не резервише путовања, не шаље поруке нити синхронизује системе добављача. За проблем са датотеком, контактирајте продавца путем Етси поруџбине и опишите назив датотеке и проблем без слања осетљивих података о клијенту. Support: support@horizons-tr.com"
+  },
+  "hr": {
+    "0426": "32 jezične verzije. Svaka verzija sadrži istih 40 stranica dokumenata.",
+    "0447": "Koristite HTML uređivač u pregledniku Chromium na računalu. XLSX datoteke sadrže standardne formule. Uključite automatski ponovni izračun i provjerite ukupne iznose priloženim primjerom prije uporabe stvarnih podataka klijenata.",
+    "0448": "12 skripti e-pošte su tekstovi koje sami prilagođavate i šaljete. Zamijenite svako polje dvostruke zagrade prije slanja. Ovaj komplet ne rezervira putovanja, ne šalje poruke niti sinkronizira sustave dobavljača. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "he": {
+    "0426": "32 גרסאות שפה. כל גרסה כוללת את אותם 40 עמודי מסמכים.",
+    "0447": "השתמשו בעורך HTML בדפדפן Chromium במחשב. קובצי XLSX כוללים נוסחאות רגילות. הפעילו חישוב מחדש אוטומטי ובדקו את הסכומים באמצעות הדוגמה המצורפת לפני שימוש בנתוני לקוחות אמיתיים.",
+    "0448": "12 סקריפטי האימייל הם טקסט שאתה מותאם אישית ושולח בעצמך. החלף כל שדה כפול לפני השליחה. ערכה זו אינה מזמינה נסיעות, שולחת הודעות או סנכרון מערכות ספקים. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "fa": {
+    "0426": "۳۲ نسخه زبانی. هر نسخه شامل همان ۴۰ صفحه سند است.",
+    "0447": "ویرایشگر HTML را در مرورگر Chromium روی رایانه باز کنید. فایل‌های XLSX دارای فرمول‌های استاندارد هستند. محاسبه مجدد خودکار را فعال کنید و پیش از استفاده از اطلاعات واقعی مشتری، مجموع‌ها را با مثال همراه بررسی کنید.",
+    "0448": "12 اسکریپت ایمیل متنی هستند که شما سفارشی می‌کنید و خودتان ارسال می‌کنید. قبل از ارسال، هر فیلد دو پرانتزی را جایگزین کنید. این کیت سفر، ارسال پیام یا همگام سازی سیستم های تامین کننده را انجام نمی دهد. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "ur": {
+    "0426": "32 زبانوں کے نسخے۔ ہر نسخے میں وہی 40 دستاویزی صفحات شامل ہیں۔",
+    "0447": "HTML ایڈیٹر کو کمپیوٹر پر Chromium براؤزر میں استعمال کریں۔ XLSX فائلوں میں معیاری فارمولے ہیں۔ خودکار دوبارہ حساب فعال کریں اور حقیقی کلائنٹ ڈیٹا استعمال کرنے سے پہلے شامل مثال کے ذریعے مجموعے جانچیں۔",
+    "0448": " Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "hi": {
+    "0426": "32 भाषा संस्करण। प्रत्येक संस्करण में वही 40 दस्तावेज़ पृष्ठ हैं।",
+    "0447": "HTML संपादक का उपयोग कंप्यूटर पर Chromium ब्राउज़र में करें। XLSX फ़ाइलों में मानक सूत्र हैं। स्वचालित पुनर्गणना चालू करें और वास्तविक ग्राहक डेटा उपयोग करने से पहले शामिल उदाहरण से कुल राशियों की जाँच करें।",
+    "0448": " Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "bn": {
+    "0426": "32টি ভাষার সংস্করণ। প্রতিটি সংস্করণে একই 40টি নথির পৃষ্ঠা রয়েছে।",
+    "0447": "কম্পিউটারে Chromium ব্রাউজারে HTML সম্পাদক ব্যবহার করুন। XLSX ফাইলে মানক সূত্র রয়েছে। স্বয়ংক্রিয় পুনর্গণনা চালু করুন এবং প্রকৃত গ্রাহকের তথ্য ব্যবহারের আগে অন্তর্ভুক্ত উদাহরণ দিয়ে মোট অঙ্ক যাচাই করুন।",
+    "0448": " Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "id": {
+    "0426": "32 edisi bahasa. Setiap edisi berisi 40 halaman dokumen yang sama.",
+    "0447": "Gunakan editor HTML di browser Chromium pada komputer. File XLSX berisi rumus standar. Aktifkan penghitungan ulang otomatis dan periksa total dengan contoh yang disertakan sebelum menggunakan data klien sebenarnya.",
+    "0448": "12 skrip email adalah teks yang Anda sesuaikan dan kirimkan sendiri. Ganti setiap kolom kurung kurawal ganda sebelum mengirim. Kit ini tidak memesan perjalanan, mengirim pesan, atau menyinkronkan sistem pemasok. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "ms": {
+    "0426": "32 edisi bahasa. Setiap edisi mengandungi 40 halaman dokumen yang sama.",
+    "0447": "Gunakan editor HTML dalam pelayar Chromium pada komputer. Fail XLSX mengandungi formula standard. Aktifkan pengiraan semula automatik dan semak jumlah menggunakan contoh yang disertakan sebelum menggunakan data pelanggan sebenar.",
+    "0448": "12 skrip e-mel ialah teks yang anda sesuaikan dan hantar sendiri. Gantikan setiap medan kurung dua sebelum menghantar. Kit ini tidak menempah perjalanan, menghantar mesej atau menyegerakkan sistem pembekal. Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "zh": {
+    "0426": "32 种语言版本。每个版本均包含相同的 40 页文档。",
+    "0447": "请在电脑上的 Chromium 浏览器中使用 HTML 编辑器。XLSX 文件使用标准公式。请启用自动重新计算，并在使用真实客户数据之前通过附带示例核对合计金额。",
+    "0448": " Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  },
+  "ja": {
+    "0426": "32言語版。各言語版には同じ40ページの書類が含まれています。",
+    "0447": "パソコンの Chromium ブラウザで HTML エディターを使用してください。XLSX ファイルは標準の数式を使用しています。自動再計算を有効にし、実際の顧客データを入力する前に付属の例で合計金額を確認してください。",
+    "0448": " Support: support@horizons-tr.com · HORIZONS · Trip reference / filename"
+  }
+}

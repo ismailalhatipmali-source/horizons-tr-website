@@ -22,6 +22,9 @@ try{
     if(!$repo||!$web||!is_dir($web)||is_link($input)||str_starts_with($repo.'/',$web.'/')||str_starts_with($web.'/',$repo.'/'))throw new RuntimeException('INVALID_ROOT');
     $home=realpath(dirname($web));if(!$home)throw new RuntimeException('INVALID_ROOT');
     $private=$home.'/horizons-checkout-review';
+    $delivery=$home.'/horizons-travel-delivery';
+    if(is_link($delivery)||(file_exists($delivery)&&!is_dir($delivery)))throw new RuntimeException('PRIVATE_DIRECTORY_INVALID');
+    $roots=['public'=>$web,'private'=>$private,'delivery'=>$delivery];
     if(is_link($private)||!is_dir($private)||!is_file($private.'/key.bin')||filesize($private.'/key.bin')!==32||!is_file($private.'/products.json'))throw new RuntimeException('CHECKOUT_UPDATE_REQUIRED');
     $state=$home.'/.horizons-deploy-'.basename($web);
     if(is_link($state)||(file_exists($state)&&!is_dir($state)))throw new RuntimeException('STATE_FAILED');
@@ -37,13 +40,33 @@ try{
       ['public','src/checkout/manual-order-index.php','manual-order-api/index.php',null],
       ['public','src/checkout/public.htaccess','manual-order-api/.htaccess',null],
       ['public','dist/manual-order.html','manual-order.html',null],
-      ['public','dist/manual-order.css','manual-order.css',null],
-      ['public','dist/manual-order.js','manual-order.js',null],
+      ['public','dist/manual-order.css','manual-order.css','git-sha1:8cb90df0139208e08700c8edf63e8deaaf8d2e87'],
+      ['public','dist/manual-order.js','manual-order.js','git-sha1:a8d77e08f6a23a4ae56538593dd858a21d550e0e'],
       ['public','dist/manual-order-locales.json','manual-order-locales.json',null],
-      ['public','dist/travel-kit.html','travel-kit.html',null],
-      ['public','dist/travel-kit.css','travel-kit.css',null],
-      ['public','dist/travel-kit.js','travel-kit.js',null],
+      ['public','dist/travel-kit.html','travel-kit.html','git-sha1:e862868f56000d77affd91e342957f1917da0644'],
+      ['public','dist/travel-kit.css','travel-kit.css','git-sha1:187bf7a18961e1494b150927a22d99c03da71a72'],
+      ['public','dist/travel-kit.js','travel-kit.js','git-sha1:0b2d93929145d5bcff54caa532bf9661410aabf7'],
+      ['public','dist/travel-kit-locales.json','travel-kit-locales.json',null],
+      ['delivery','src/travel-kit/TravelDelivery.php','TravelDelivery.php',null],
+      ['public','src/travel-kit/delivery-api.php','admin/travel-delivery-api.php',null],
+      ['public','src/travel-kit/delivery.html','admin/travel-delivery.html',null],
+      ['public','src/travel-kit/delivery.js','admin/travel-delivery.js',null],
+      ['public','src/admin/index.html','admin/index.html','git-sha1:766da4295bffc36b30a710bd4dc3df3696bbc46b'],
+      ['public','dist/travel-download/index.html','travel-download/index.html',null],
+      ['public','dist/travel-download/download.js','travel-download/download.js',null],
+      ['public','src/travel-kit/download.php','travel-download/download.php',null],
+      ['public','src/travel-kit/download.htaccess','travel-download/.htaccess',null],
     ];
+    // Advertising is gated on a byte-for-byte match to the private verified ZIP.
+    $manifestPath=$repo.'/release-assets/travel-kit-2.0.0/product.json';
+    $manifest=json_decode(file_get_contents($manifestPath),true,16,JSON_THROW_ON_ERROR);
+    $installed=$delivery.'/product.json';$available=false;
+    if(is_file($installed)&&!is_link($installed)){
+        $p=json_decode(file_get_contents($installed),true,16,JSON_THROW_ON_ERROR);
+        $zip=$delivery.'/'.$manifest['filename'];
+        $available=$p===$manifest&&is_file($zip)&&!is_link($zip)&&filesize($zip)===$manifest['size_bytes']&&hash_equals($manifest['sha256'],hash_file('sha256',$zip));
+    }
+    $files[]=['public',$available?'release-assets/travel-kit-2.0.0/product.json':'release-assets/travel-kit-2.0.0/not-installed.json','travel-kit-release.json',null];
     foreach(['en','ar','tr','fr','es','de','it','pt','nl','ru','uk','pl','cs','ro','hu','el','sv','da','no','fi','bg','sr','hr','he','fa','ur','hi','bn','id','ms','zh','ja'] as $lang){
         $files[]=['public','dist/assets/covers/'.$lang.'/travel-kit.svg','assets/covers/'.$lang.'/travel-kit.svg',null];
     }
@@ -52,12 +75,17 @@ try{
     foreach($files as [$scope,$sourceRel,$targetRel,$before]){
         $source=hznSafe($repo,$sourceRel);
         if(!is_file($source)||filesize($source)<1||filesize($source)>2097152)throw new RuntimeException('SOURCE_INVALID');
-        $target=hznSafe($scope==='private'?$private:$web,$targetRel);$sourceHash=hznDigest($source);$current=hznDigest($target);
+        $target=hznSafe($roots[$scope],$targetRel);$sourceHash=hznDigest($source);$current=hznDigest($target);
         $total+=filesize($source);if($total>20*1024*1024)throw new RuntimeException('PAYLOAD_TOO_LARGE');
         if($current!==null&&hash_equals($current,$sourceHash))continue;
-        if($before===null){if($current!==null)throw new RuntimeException('TARGET_ALREADY_EXISTS');}
+        if($before===null){
+            if($current!==null){
+                $metadataSwap=$targetRel==='travel-kit-release.json'&&(hznDigest($repo.'/release-assets/travel-kit-2.0.0/product.json')===$current||hznDigest($repo.'/release-assets/travel-kit-2.0.0/not-installed.json')===$current);
+                if(!$metadataSwap)throw new RuntimeException('TARGET_ALREADY_EXISTS');
+            }
+        }
         elseif(str_starts_with($before,'git-sha1:')){
-            $sha=substr($before,9);if(!preg_match('/^[a-f0-9]{40}$/D',$sha)||!hznBlobMatches($target,$sha))throw new RuntimeException('PUBLIC_BASELINE_CHANGED');
+            $sha=substr($before,9);if(!preg_match('/^[a-f0-9]{40}$/D',$sha)||($current!==null&&!hznBlobMatches($target,$sha)))throw new RuntimeException('PUBLIC_BASELINE_CHANGED');
         }else throw new RuntimeException('INVALID_BASELINE');
         $changes[]=[$scope,$source,$target,$targetRel,$current,$sourceHash];
     }
@@ -71,9 +99,9 @@ try{
             $save=$backup.'/'.$scope.'/'.$targetRel;
             if($prior!==null){if(!is_dir(dirname($save))&&!mkdir(dirname($save),0700,true))throw new RuntimeException('BACKUP_FAILED');if(!copy($target,$save)||hznDigest($save)!==$prior)throw new RuntimeException('BACKUP_FAILED');}
             if(!is_dir(dirname($target))){
-                $dirMode=$scope==='private'?0700:0755;if(!mkdir(dirname($target),$dirMode,true)||!chmod(dirname($target),$dirMode))throw new RuntimeException('DIRECTORY_FAILED');
+                $dirMode=$scope==='public'?0755:0700;if(!mkdir(dirname($target),$dirMode,true)||!chmod(dirname($target),$dirMode))throw new RuntimeException('DIRECTORY_FAILED');
             }
-            $temp=$target.'.hzn-new-'.bin2hex(random_bytes(4));$temps[]=$temp;$mode=$scope==='private'?0600:0644;
+            $temp=$target.'.hzn-new-'.bin2hex(random_bytes(4));$temps[]=$temp;$mode=$scope==='public'?0644:0600;
             if(!copy($source,$temp)||hznDigest($temp)!==$expected||!chmod($temp,$mode))throw new RuntimeException('STAGING_FAILED');
             if(hznDigest($target)!==$prior)throw new RuntimeException('PUBLIC_BASELINE_CHANGED');
             if(!rename($temp,$target))throw new RuntimeException('REPLACE_FAILED');
