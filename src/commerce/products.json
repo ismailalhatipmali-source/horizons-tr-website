@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "version": "2026-10-02",
+  "mode": "bank_review",
+  "collection_enabled": false,
+  "card_enabled": false,
+  "seller": {
+    "name": "HORİZONS EĞİTİM DANIŞMANLIK TURİZM EMLAKÇILIK TİCARET LİMİTED ŞİRKETİ",
+    "address": "Akşemsettin Mah. Şehit Teğmen Mehmet Sarper Alus Sok. No: 20/A, Fatih, İstanbul, Türkiye",
+    "mersis": "0008085718200010",
+    "registry": "20594-5",
+    "tax_number": "0080857182",
+    "tax_office": "Fatih",
+    "phone": "+905522268840",
+    "email": "info@horizons-tr.com"
+  },
+  "bank_transfer": {
+    "bank": "VakıfBank",
+    "beneficiary": "HORİZONS EĞİTİM DANIŞMANLIK TURİZM EMLAKÇILIK TİCARET LTD ŞTİ",
+    "accounts": {
+      "TRY": "TR720001500158007304437467",
+      "USD": "TR840001500158048016184449",
+      "EUR": "TR550001500158048016188948"
+    },
+    "collection_enabled": false
+  },
+  "policy_version": "2026-10-02-checkout",
+  "products": {
+    "horizons-arabic-level1": {
+      "id": "horizons-arabic-level1",
+      "name": "Horizons Arabic Level 1",
+      "available": true,
+      "image": "/assets/arabic-workbook-cover-approved.jpg",
+      "fulfilment_adapter": "membership-v1",
+      "offers": [
+        {
+          "id": "individual-monthly",
+          "account_type": "individual",
+          "term": "monthly",
+          "price_minor": 999,
+          "currency": "USD",
+          "tax_included": true,
+          "max_learners": 1
+        },
+        {
+          "id": "individual-annual",
+          "account_type": "individual",
+          "term": "annual",
+          "price_minor": 9900,
+          "currency": "USD",
+          "tax_included": true,
+          "max_learners": 1
+        },
+        {
+          "id": "individual-lifetime",
+          "account_type": "individual",
+          "term": "lifetime",
+          "price_minor": 15000,
+          "currency": "USD",
+          "tax_included": true,
+          "max_learners": 1
+        },
+        {
+          "id": "family-monthly",
+          "account_type": "family",
+          "term": "monthly",
+          "price_minor": 2000,
+          "currency": "USD",
+          "tax_included": true,
+          "max_learners": 5
+        },
+        {
+          "id": "family-annual",
+          "account_type": "family",
+          "term": "annual",
+          "price_minor": 20000,
+          "currency": "USD",
+          "tax_included": true,
+          "max_learners": 5
+        },
+        {
+          "id": "family-lifetime",
+          "account_type": "family",
+          "term": "lifetime",
+          "price_minor": 25000,
+          "currency": "USD",
+          "tax_included": true,
+          "max_learners": 5
+        },
+        {
+          "id": "institution-annual",
+          "account_type": "institution",
+          "term": "annual",
+          "price_minor": 100000,
+          "currency": "USD",
+          "tax_included": true,
+          "max_learners": 100
+        }
+      ]
+    }
+  }
+}

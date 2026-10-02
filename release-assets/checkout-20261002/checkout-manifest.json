@@ -1,0 +1,3334 @@
+{
+  "version": "checkout-20261002",
+  "baseline_commit": "ee6558732406266d646e059b5d0aed17e3b042dd",
+  "requires": {
+    "learn/web-config.js": "855b5a507dd35d97ad3ab262538671fe7932e76ccc608fc5136ff4db2be579c4",
+    "assets/arabic-workbook-cover-approved.jpg": "ebd1e106f784f1fe235521ab603dc79d988a8bc04f906f0b333a0f0ce71e4ea2"
+  },
+  "files": {
+    "private/ReviewOrders.php": {
+      "source": "src/checkout/ReviewOrders.php",
+      "bytes": 7234,
+      "sha256": "cf0357bdf590cbe08505c5a6b5c6b586c8898fe2bdecafc31c5b5d1f4b646d41",
+      "before": null
+    },
+    "private/products.json": {
+      "source": "src/commerce/products.json",
+      "bytes": 2927,
+      "sha256": "648f5e5018b8b2cfac92a1e4b16dbbf037da37d67192539f2d3d4113cec590c1",
+      "before": null
+    },
+    "public/checkout-api/.htaccess": {
+      "source": "src/checkout/public.htaccess",
+      "bytes": 42,
+      "sha256": "83182e2c69d8e9c8cb6fad08be5890461d894a4b16fd25c597f5f4adde38a8c1",
+      "before": null
+    },
+    "public/checkout-api/index.php": {
+      "source": "src/checkout/public-index.php",
+      "bytes": 3057,
+      "sha256": "f1be17df21d9380e438d59751b76691f34ab6664829957b6139928efbb14d3ee",
+      "before": null
+    },
+    "public/cart.html": {
+      "source": "dist/cart.html",
+      "bytes": 2352,
+      "sha256": "abaf1d21b8ae57c285a8183318120be5546c31546a350c9c52cb990fc930292d",
+      "before": "1f81ec5a2c8bf1cc0302f44f8e44db83fe4184f080970b9d839f2f1e3d1544ca"
+    },
+    "public/checkout.css": {
+      "source": "dist/checkout.css",
+      "bytes": 3564,
+      "sha256": "fb266bf9c17dd9708ead697d075d68d3b887e7cfd61e174636dc0cd071531105",
+      "before": null
+    },
+    "public/checkout.html": {
+      "source": "dist/checkout.html",
+      "bytes": 2352,
+      "sha256": "abaf1d21b8ae57c285a8183318120be5546c31546a350c9c52cb990fc930292d",
+      "before": "614292e566314b5208bf1cc8d95c6f1858220ff52bad4e836e0cacc0214292b9"
+    },
+    "public/checkout.js": {
+      "source": "dist/checkout.js",
+      "bytes": 10378,
+      "sha256": "b1338bac788af377e9e8635123dc3759171797c72da90b1260c30a54b10f13f6",
+      "before": null
+    },
+    "public/products.json": {
+      "source": "dist/products.json",
+      "bytes": 2927,
+      "sha256": "648f5e5018b8b2cfac92a1e4b16dbbf037da37d67192539f2d3d4113cec590c1",
+      "before": null
+    },
+    "public/site-commerce.js": {
+      "source": "dist/site-commerce.js",
+      "bytes": 4365,
+      "sha256": "3d64b0964d4cb34e52138a991a8ac3888748c5bfa8fb7a9473903743adce4dca",
+      "before": "9df3306b022c3a4a3575ba128f0ce23390c3245ce84d8fec327c0a3a6f13be50"
+    },
+    "public/ar/about.html": {
+      "source": "dist/ar/about.html",
+      "bytes": 11926,
+      "sha256": "6c035da9d3128325c92c89cc992a44d059eaca7a406dc3391b9b2b46f74dc913",
+      "before": "139de49a002889ec780022d6e3a1fc312a6908fe25668c8dc65068a98292c6f0"
+    },
+    "public/ar/accessibility.html": {
+      "source": "dist/ar/accessibility.html",
+      "bytes": 11225,
+      "sha256": "1b3591f5d48fb95c879aaebb4487fa91f7f02f46e15e33b67a2bb5995e6f1dd4",
+      "before": "7c114dbb64d233e5508ba7783dd94cf350db6f7946fb6f390f1e5411199c0e04"
+    },
+    "public/ar/cart.html": {
+      "source": "dist/ar/cart.html",
+      "bytes": 28467,
+      "sha256": "67795a4d663dd86cd0eb5cdb3cb322245e75d48d3cfb896733b1b0d162a27791",
+      "before": "92ef7514e25229c4051aea4ffe7d2ebcddcf5d8d91decc14fe8e1a41549e5c08"
+    },
+    "public/ar/checkout-privacy.html": {
+      "source": "dist/ar/checkout-privacy.html",
+      "bytes": 15959,
+      "sha256": "89b949b36c460107af65f96048a4b8895e75dbab3baf7d43235a471eb1c8f3d0",
+      "before": null
+    },
+    "public/ar/checkout.html": {
+      "source": "dist/ar/checkout.html",
+      "bytes": 28731,
+      "sha256": "08f4589d5fe61f57d763a7d56efec8785152f63100dbcab581e6857ff3e07240",
+      "before": "f5090e82b76dfca91e91e87abddbbdc7108ffeb9cb3f068c0a50699dd8d8d869"
+    },
+    "public/ar/child-safety.html": {
+      "source": "dist/ar/child-safety.html",
+      "bytes": 13000,
+      "sha256": "226420a82f9e38724315116ffcf35402b2d3d0d527c87ef8a3444fb8749880d5",
+      "before": "c0c9cb30d76c56d01df9da66a61b7b07068bb01d279e7f9d4370edd0d6b67b6c"
+    },
+    "public/ar/demo.html": {
+      "source": "dist/ar/demo.html",
+      "bytes": 11533,
+      "sha256": "4359a48f7264c35c5e89745beea66201630e182b4629d77dcc5791462eefe4d8",
+      "before": "9038c41bfd7b1b97745fe84dc77c7e1640d2dad588bed32c35736504d5262e0a"
+    },
+    "public/ar/distance-sales.html": {
+      "source": "dist/ar/distance-sales.html",
+      "bytes": 16989,
+      "sha256": "c3295e792fbb5d2594f64f9f0bf33ac718ba00344fa3a2e18c1db830dfd0ecb6",
+      "before": null
+    },
+    "public/ar/index.html": {
+      "source": "dist/ar/index.html",
+      "bytes": 26540,
+      "sha256": "a813e435c21b4d1a1ffe03d11d6aecadcb40146a49a7c0283e462031aa361a34",
+      "before": "ba8cc5b6be6e696f8994d17eab42328d7b1b9bc199f14bd010a3a37e03f2533a"
+    },
+    "public/ar/legal.html": {
+      "source": "dist/ar/legal.html",
+      "bytes": 11622,
+      "sha256": "3966279f4406113d54fa54a66d8b3ca987b14488945313c0fd283e9f494f885b",
+      "before": "8891f5f66280a56caef69001704c31126a4126772e7503f42d77d4d7f079381d"
+    },
+    "public/ar/pre-information.html": {
+      "source": "dist/ar/pre-information.html",
+      "bytes": 16445,
+      "sha256": "5cfa5db50825d29350c7d2c6b4860f1fa8207dfa81a4ba414db3b7c2fcc7321a",
+      "before": null
+    },
+    "public/ar/privacy.html": {
+      "source": "dist/ar/privacy.html",
+      "bytes": 16252,
+      "sha256": "6bc389f74fd2e84d0fc821ff93da3ccb1ce5d19cebc3e8a95ccb652bf33886c2",
+      "before": "44d79800e91f3451f70b4ab8108a426ba0ade17ab81d4323365bac10bd22b9e6"
+    },
+    "public/ar/product.html": {
+      "source": "dist/ar/product.html",
+      "bytes": 14484,
+      "sha256": "fae4e76b14a043789c8a095fb8b6beccdff4f1c5d9592fde0d079b47b41729c1",
+      "before": "129e3edc7f5181c714ba4eacdc0542b3013233f9a57e2f902a04dde570a380e1"
+    },
+    "public/ar/refund-cancellation.html": {
+      "source": "dist/ar/refund-cancellation.html",
+      "bytes": 14967,
+      "sha256": "748db4015c1cac6325b18379c885a8d6c048f4eb6b0dfee19cb1d24a9e7c8787",
+      "before": null
+    },
+    "public/ar/support.html": {
+      "source": "dist/ar/support.html",
+      "bytes": 13175,
+      "sha256": "b70841908747cc0c6fea01f3ff750ee3dfbebf130031cc7adb62c002c16f2f75",
+      "before": "a7d4ac9e1d8819f782de9e21e3d5d4f8606d331e93ecae12abf5cd8470588c43"
+    },
+    "public/ar/terms.html": {
+      "source": "dist/ar/terms.html",
+      "bytes": 15342,
+      "sha256": "dec52a466c34a8ef41a9cd3b53de78e1dfc0cd42fd12a5f31a64b1a08d1bca77",
+      "before": "4164b5eae4205f8f0a4df56c8864f157d75bdb6805fffd0883f398949fd6b12e"
+    },
+    "public/ar/updates.html": {
+      "source": "dist/ar/updates.html",
+      "bytes": 11146,
+      "sha256": "a6d8916dca63c8093c706b24fe3a2f932a09a527c187e0b4b381b86c780e1b5d",
+      "before": "7d7676655ec0a2bc63c8de20f4c6503bf7cad3459375c136f06fc3293ba7f98c"
+    },
+    "public/bg/about.html": {
+      "source": "dist/bg/about.html",
+      "bytes": 12414,
+      "sha256": "aaab97ef4b3aa3bca577bec960b7f94219125364f4e025dbb316b5a646a96e4f",
+      "before": "fa554a76325dbf57a9e0fb4167a638ee2e237239743279f6e9ea9ecf54d93d8c"
+    },
+    "public/bg/accessibility.html": {
+      "source": "dist/bg/accessibility.html",
+      "bytes": 11506,
+      "sha256": "dfd74fc0ce19e235ec7913dcde65c44a5c38ad9f5f26061b4a0e1d24a0fdccc2",
+      "before": "27e6ac99f35fc9cb84b226950b036a7ce5338037ab6b3f9577534176de89fe29"
+    },
+    "public/bg/cart.html": {
+      "source": "dist/bg/cart.html",
+      "bytes": 30191,
+      "sha256": "0aeb38f0a38357526a76ede0ea4985ba6cd20fc2db5c24653842aa4491ef90ed",
+      "before": "ccf4710da198ba71986c860156270c7a8f5c1a9923f7c8f02173bfbc9029d1b7"
+    },
+    "public/bg/checkout-privacy.html": {
+      "source": "dist/bg/checkout-privacy.html",
+      "bytes": 17386,
+      "sha256": "8aad82f4c500620b76f6772b00c11b72981dab8ec1de6e7fa30f3a4c833aec19",
+      "before": null
+    },
+    "public/bg/checkout.html": {
+      "source": "dist/bg/checkout.html",
+      "bytes": 30455,
+      "sha256": "061314c4e9b627fc25306cb7e6ea7fba2553110492518e8ec24d630a6b821860",
+      "before": "63d1c0dbfd21214d05b35a16cda166cf8d1be98f03e9b4733dac9a1c1d9585e5"
+    },
+    "public/bg/child-safety.html": {
+      "source": "dist/bg/child-safety.html",
+      "bytes": 13610,
+      "sha256": "bc7c97275fa446579126e905cddae7a73f52beac83587a661775acea0d898174",
+      "before": "fadbb188696587a3614b56fa75ce81f626f076ea47c58f25ecf8c6baf626823c"
+    },
+    "public/bg/demo.html": {
+      "source": "dist/bg/demo.html",
+      "bytes": 11877,
+      "sha256": "fee7d7af81cf9909700448eb6579720329b95bde4e3e56b829666ae2e9b4aa1a",
+      "before": "f9037e89faeeed801271516d3191e939eacf67b922b2114c112493f2b4e6a3ae"
+    },
+    "public/bg/distance-sales.html": {
+      "source": "dist/bg/distance-sales.html",
+      "bytes": 16937,
+      "sha256": "fa41150e5029c24ff7e144d79d18717e75d76c5ca9a3faa1d5dc49e6d038793b",
+      "before": null
+    },
+    "public/bg/index.html": {
+      "source": "dist/bg/index.html",
+      "bytes": 19295,
+      "sha256": "49ca19911332f12d5736fe2ad996ca250fc6c2279e8d0a8ab15d2c9348c308d7",
+      "before": "71a7c7c55a568ef4831a50c16d7fc8e8e6fbb9c3e8e818c9529556805fda42a3"
+    },
+    "public/bg/legal.html": {
+      "source": "dist/bg/legal.html",
+      "bytes": 11913,
+      "sha256": "e8e3db37558e519d1f61f81c6f4cd85b04063c51324d3818a108451a3591d5f9",
+      "before": "74b335b102857642117f6d05b21368f0a49d2172b7c16d54e419da0f76d7f28f"
+    },
+    "public/bg/pre-information.html": {
+      "source": "dist/bg/pre-information.html",
+      "bytes": 16275,
+      "sha256": "e0044ab7faed1c47d9070d59b455a2b88d2b1d6dea7993420a0cb29617e816db",
+      "before": null
+    },
+    "public/bg/privacy.html": {
+      "source": "dist/bg/privacy.html",
+      "bytes": 17890,
+      "sha256": "873a7c16f36668fc0d5fd9e98a8eff63537e089eb4f4aea8becaf4152769bda7",
+      "before": "b7c74c1daea55959c78517a8ea7d67c9cbabed548503ed36f2fc35f408f59f1b"
+    },
+    "public/bg/product.html": {
+      "source": "dist/bg/product.html",
+      "bytes": 14996,
+      "sha256": "3b58aee6d8a87df4a1235353732d3d2c34d560cec34b5f5c13891a36695bf96d",
+      "before": "09df7742e82b4f857ae7567ba609fee49325dfa8028c0729ac27bcc3b94d4568"
+    },
+    "public/bg/refund-cancellation.html": {
+      "source": "dist/bg/refund-cancellation.html",
+      "bytes": 14495,
+      "sha256": "06b3377a44b1958c9a1bdab99a0a5578f158e04b8ae8c036a13c9fa118e60e64",
+      "before": null
+    },
+    "public/bg/support.html": {
+      "source": "dist/bg/support.html",
+      "bytes": 13833,
+      "sha256": "74b95aa5a8ccf060df6d843f46e98a343a1738a54da652cd8fbe8cada6b094c4",
+      "before": "af16fe5bb6a162a397f5c8cdf943586595723386de8b5c2b9b07a22508efec40"
+    },
+    "public/bg/terms.html": {
+      "source": "dist/bg/terms.html",
+      "bytes": 14894,
+      "sha256": "6b169fb71e75fb7ee9938edb9c64f33bd0cbf5c2b0daf3092fe2e8a86a122913",
+      "before": "3d9ce814e8ed0f53ac4bb42567bc9436a3e1c1ee665abc977c4564f571f83977"
+    },
+    "public/bg/updates.html": {
+      "source": "dist/bg/updates.html",
+      "bytes": 11372,
+      "sha256": "2fe3c27f7d75e88a3bdc227f80c8273e09c7037547bdac424e98713c7c4a841d",
+      "before": "8a890ad631ec6f1df40045d9c4a220c178014e9050074045cc3ef216c6c3e935"
+    },
+    "public/bn/about.html": {
+      "source": "dist/bn/about.html",
+      "bytes": 13234,
+      "sha256": "73b97d14e050e4d9021f5662d7ade90aec1c943978b72b18937162ebbee87d5d",
+      "before": "955d786f259456b46d5122b62ea24d90c0a270520d6204c52ca99a9ca5558e3d"
+    },
+    "public/bn/accessibility.html": {
+      "source": "dist/bn/accessibility.html",
+      "bytes": 11857,
+      "sha256": "7cea0ef01382d3524ae41e0173d050636f2447a4f04627bd2ed7fda854f78e69",
+      "before": "795dacca93555308df6b987b2e6562d2daeb62591dc181b581c966f270442c24"
+    },
+    "public/bn/cart.html": {
+      "source": "dist/bn/cart.html",
+      "bytes": 33563,
+      "sha256": "e7c2a63a46a7ca5f9c96df9a4d1f245d86727ddbe3166e2a095dd759f1025ea1",
+      "before": "eccc4c4a3554e1e5c3ad338ba3edc6ede2840542aca7c389518ae18739667824"
+    },
+    "public/bn/checkout-privacy.html": {
+      "source": "dist/bn/checkout-privacy.html",
+      "bytes": 19131,
+      "sha256": "c3234df602ab655a580f14ace3a3013db1e2b6d28ffe7eff79e62d544ef36dab",
+      "before": null
+    },
+    "public/bn/checkout.html": {
+      "source": "dist/bn/checkout.html",
+      "bytes": 33827,
+      "sha256": "417f04d9126991f87684a9f9456393b8fc05ecf8592835605c30ad55f64c82a9",
+      "before": "13e09059d26ecb42b18a7474732da1d6cb8724ea5cea425d6cb660189d40aff9"
+    },
+    "public/bn/child-safety.html": {
+      "source": "dist/bn/child-safety.html",
+      "bytes": 14505,
+      "sha256": "cdb7886fc630152f761727215209515cfe60f373e8483ef5642d4e54bd7e728e",
+      "before": "0650b69155352b4a7d8bb49a7b562a39bc7dcb51f7d937d124a239b193b05cd1"
+    },
+    "public/bn/demo.html": {
+      "source": "dist/bn/demo.html",
+      "bytes": 12589,
+      "sha256": "8d125ec6b9c9d5b759c48c07e343c05312b68b52222a62b105122ca250bc4762",
+      "before": "12dae2f6adf3d854b2c81177560a169f3fbfe55f5a694c70d1358a094f2811f6"
+    },
+    "public/bn/distance-sales.html": {
+      "source": "dist/bn/distance-sales.html",
+      "bytes": 18572,
+      "sha256": "ae41fa958b7b78414b97b9800c7c4af11ab8ccf4c503d133786b43f50e5b83ff",
+      "before": null
+    },
+    "public/bn/index.html": {
+      "source": "dist/bn/index.html",
+      "bytes": 20683,
+      "sha256": "e0ec30a8b160c1089acf569d7438af450418ede55f6284620a7319af31aa85af",
+      "before": "58fb423e03313ce7cef5a42094dda6aafb10227b05ed461f54978ccccd51e86d"
+    },
+    "public/bn/legal.html": {
+      "source": "dist/bn/legal.html",
+      "bytes": 12389,
+      "sha256": "2f886f2d08412a918612207d4be4d007e4b251a9f538943ea85c306686ad954e",
+      "before": "372ad4bb1bd054ae54794e0f1d821a3db9d04292df7db9d8e037d3b722ce3fe2"
+    },
+    "public/bn/pre-information.html": {
+      "source": "dist/bn/pre-information.html",
+      "bytes": 17589,
+      "sha256": "a1421a46408d39330e2c4285604522ba9fa837cad5130fa15179255a4170e044",
+      "before": null
+    },
+    "public/bn/privacy.html": {
+      "source": "dist/bn/privacy.html",
+      "bytes": 20142,
+      "sha256": "38e3adb4aaae03d6f4ddba5cf86ed1bfe5d3d1f9729e0a093d0e5a24f75a830e",
+      "before": "079ee906e792d18ec34cefac691737cab234467de6d53b00fca0d50b9df6a081"
+    },
+    "public/bn/product.html": {
+      "source": "dist/bn/product.html",
+      "bytes": 16338,
+      "sha256": "9b144913b2397a71604146042e58c16c35ea456211174a54ced1a92f50c0b261",
+      "before": "013fe0132a2acb82ec294699422d6ac0f05cdad65dd38fdb8c760aa2d8829d92"
+    },
+    "public/bn/refund-cancellation.html": {
+      "source": "dist/bn/refund-cancellation.html",
+      "bytes": 15274,
+      "sha256": "5c29589a64ff2d4419c4413fed45bcde62d0e9f227973a335fe174cc39d41a84",
+      "before": null
+    },
+    "public/bn/support.html": {
+      "source": "dist/bn/support.html",
+      "bytes": 14953,
+      "sha256": "ae64a894421345af1771c0448f3f60d32a3399e930965d23c37c8fa7e6ef0dc7",
+      "before": "b26b653ee7f87ef608c5c1454f7115efa5482bc313c43b70fddc84da38ec1afc"
+    },
+    "public/bn/terms.html": {
+      "source": "dist/bn/terms.html",
+      "bytes": 16626,
+      "sha256": "293dd17544ad47b93fe809dab4060512180f1970bbffc23d56537dd34630d5c2",
+      "before": "884f5e8c215044ad11dd3ae3ae3660f7fa1906213d35b8fbe820a70762eda199"
+    },
+    "public/bn/updates.html": {
+      "source": "dist/bn/updates.html",
+      "bytes": 11891,
+      "sha256": "91404dc83589ad562ace95261b1e7fe2445cfc42a9cd7d153817c2e43fda98a0",
+      "before": "4d30c0894929f5ba0a235aee0748ec2bd96d446d4f0db0d1475bcea38120310e"
+    },
+    "public/cs/about.html": {
+      "source": "dist/cs/about.html",
+      "bytes": 11370,
+      "sha256": "b43f08e5010022664d8973635cff8f25e7eb69e3b3399ff06f20ab20d90e29e1",
+      "before": "97fc04302db0700b79d8299a31ddfa5148bbbe7aa7f220a7e21d589790fb5902"
+    },
+    "public/cs/accessibility.html": {
+      "source": "dist/cs/accessibility.html",
+      "bytes": 10795,
+      "sha256": "ba0339da60e3a9d10892830717f7f72abb6509b11f35a9fc7e4d832b0b7c683e",
+      "before": "70fead29a2c54881ca6284d1609de09dc90fa5c374553c83d5303e6307147b07"
+    },
+    "public/cs/cart.html": {
+      "source": "dist/cs/cart.html",
+      "bytes": 25866,
+      "sha256": "a9c067ee9e52631b4e880b50b4f7c8b69b5a2192be6eddfa77909d9f172d8a69",
+      "before": "53c66076212e848b791bf06e36d3f5949c3ae7e28388d97ff386ac486d604173"
+    },
+    "public/cs/checkout-privacy.html": {
+      "source": "dist/cs/checkout-privacy.html",
+      "bytes": 14875,
+      "sha256": "7531327cef0dca2a9437f18cc99d6fe0de660b9ac9871bfbb02f3df906de178a",
+      "before": null
+    },
+    "public/cs/checkout.html": {
+      "source": "dist/cs/checkout.html",
+      "bytes": 26130,
+      "sha256": "63b9bebdd467adc5f643c44dc57913095dafa02600bc6c537e85316fcd309459",
+      "before": "24a465b47dec37d4f6d7c81570ca41bc884f5dccfc8f974fbd35f180c9d020a2"
+    },
+    "public/cs/child-safety.html": {
+      "source": "dist/cs/child-safety.html",
+      "bytes": 11984,
+      "sha256": "04ebb30d666fe9befeeb82f1181dce9cb40e2e0a361f2cbeb2c4281fda988aee",
+      "before": "06f306913a4547a9ecb906de6dc876659f71c567d62bddae07edd57b5fa98134"
+    },
+    "public/cs/demo.html": {
+      "source": "dist/cs/demo.html",
+      "bytes": 10923,
+      "sha256": "8c8e7b669b67837349ce7f74645387b2c748b534c96f3da3412030a7015c1691",
+      "before": "f9c25b714c3840a0cc8d691a1d0656873a5b6a4686cf16cf1d85f22aa90d3180"
+    },
+    "public/cs/distance-sales.html": {
+      "source": "dist/cs/distance-sales.html",
+      "bytes": 14858,
+      "sha256": "1b16b3e49af98260e0636d1e4dc928d9190968cd044e7f24da1cbca16de57bf7",
+      "before": null
+    },
+    "public/cs/index.html": {
+      "source": "dist/cs/index.html",
+      "bytes": 17134,
+      "sha256": "eba67ebd94e2477b41d8ffae3b323669864a04727fd2977a3b0334af44673039",
+      "before": "1507167b06338a0a473f25ddc11e0697407e56aac5d88e300350ad7632abac90"
+    },
+    "public/cs/legal.html": {
+      "source": "dist/cs/legal.html",
+      "bytes": 11204,
+      "sha256": "f271a6cc3e2fded7c885c3e8858d61d0d1b105dfd2ddbb0e7bfff996305408ba",
+      "before": "4e90ce7f3841eef3cbe2e873cf749dc4ddd50a3603178778c2c9978353f7eb2c"
+    },
+    "public/cs/pre-information.html": {
+      "source": "dist/cs/pre-information.html",
+      "bytes": 14506,
+      "sha256": "949042148adff16f91e83ccadbe60d4a6ab1659676cbd66333f4b3a3741c1c67",
+      "before": null
+    },
+    "public/cs/privacy.html": {
+      "source": "dist/cs/privacy.html",
+      "bytes": 14543,
+      "sha256": "49cef20046465e56da00736c737d0a97a0084c5f2ff13e270d0edfc3e61a3f02",
+      "before": "5a05a18c72e19072bcead47a39a96402d3471ebf28e40324adedaddf95732063"
+    },
+    "public/cs/product.html": {
+      "source": "dist/cs/product.html",
+      "bytes": 13120,
+      "sha256": "8a429032b2b041058dc78f3b91e7582fccd30797f15efdd7fbae649ed97d3978",
+      "before": "146930696978bc4eb7cd7c585c0235d35c55f638331f62b0034ff198f0241541"
+    },
+    "public/cs/refund-cancellation.html": {
+      "source": "dist/cs/refund-cancellation.html",
+      "bytes": 13366,
+      "sha256": "962952e8a36a9cbe9f25774ac213943307aa9a7137c7a9101dbf33070975c714",
+      "before": null
+    },
+    "public/cs/support.html": {
+      "source": "dist/cs/support.html",
+      "bytes": 12378,
+      "sha256": "efdcab72ee445cd631412fbe29939779e8ce7ca9f60f56e643c771ada50434a6",
+      "before": "257cb7290dcda0cded7c1e4355a9a37a8162ee7f5f191f79c9bc58ca0e05f9af"
+    },
+    "public/cs/terms.html": {
+      "source": "dist/cs/terms.html",
+      "bytes": 13152,
+      "sha256": "0b8fe5d0182337e23f7b2e72307e08f033743c5567e6c0d01dc2fb5632befee4",
+      "before": "bc2a675574e43bd59082c09a53750e36581da70a2d5f55d50ee013afb5961876"
+    },
+    "public/cs/updates.html": {
+      "source": "dist/cs/updates.html",
+      "bytes": 10641,
+      "sha256": "eb63bff1cc281580004e2f83094e15bfdec8f4e1786357b073bbdd6271f4e01f",
+      "before": "a4a4a21cfa48c09c280268ea5855891221c2631686ae70c2f19a6cab982ebb2a"
+    },
+    "public/da/about.html": {
+      "source": "dist/da/about.html",
+      "bytes": 11307,
+      "sha256": "622623f72e4e086e419e4f6a71f56afe406d7a8af1acbeb8bee2ebe472dd3008",
+      "before": "c32f59fac2ca5585756b251f9e32eaa50c33e2b765f891d2a22bdb75c92cd821"
+    },
+    "public/da/accessibility.html": {
+      "source": "dist/da/accessibility.html",
+      "bytes": 10771,
+      "sha256": "947156eb1efb90207502c945978c0b004df6567710672b937a5b4ff49c6a95b9",
+      "before": "1aacba229425814b8e887a74a829a9cd888b981fd1ea55c47c16731b4378e9c3"
+    },
+    "public/da/cart.html": {
+      "source": "dist/da/cart.html",
+      "bytes": 25503,
+      "sha256": "f3b815acb2fbf768d1234961b11bb61624e12f664b258f99d6f2bcc7a7c7738d",
+      "before": "56300e50c9d40bdfc7832837d5454b93c4b17684fbb26eef44dd313924a7f6be"
+    },
+    "public/da/checkout-privacy.html": {
+      "source": "dist/da/checkout-privacy.html",
+      "bytes": 14789,
+      "sha256": "bcc047a67df62da07b73cb6fb0d7d59addfa7f367d64400f48786dbe4b0faeb6",
+      "before": null
+    },
+    "public/da/checkout.html": {
+      "source": "dist/da/checkout.html",
+      "bytes": 25767,
+      "sha256": "b5bc34ea16b515673bf0846ba8bb7f008c22d9e88917b4e0b40d91d0205f1eb2",
+      "before": "628dfcfec935d6c439d22b262f5ce3436d046f84018c8dabcfdcb6efc3a1d830"
+    },
+    "public/da/child-safety.html": {
+      "source": "dist/da/child-safety.html",
+      "bytes": 11904,
+      "sha256": "7acc308afe68011fd8a076e943dfe0a81af434cfc7eb465e204ef7cee299e6a8",
+      "before": "86409089ede884d19109f7699b14855e7c01d3c023d659e425ba18bb58e919e9"
+    },
+    "public/da/demo.html": {
+      "source": "dist/da/demo.html",
+      "bytes": 10832,
+      "sha256": "bbfb44a1615303299dee76a34cee6a00cc5dd0314fceb55313a275ba3a9cf94d",
+      "before": "18974571314eeb8b4bbe7451cb730099277151b7e1f7fcd458ba4d37014a8b49"
+    },
+    "public/da/distance-sales.html": {
+      "source": "dist/da/distance-sales.html",
+      "bytes": 14829,
+      "sha256": "dbcee4c7c2850b28d0e32dc7f94555bacb0d7c4d57b1c1a8a32c4e4b58fe32a9",
+      "before": null
+    },
+    "public/da/index.html": {
+      "source": "dist/da/index.html",
+      "bytes": 17014,
+      "sha256": "1cf6a20dc3591833891e2eb884692e8bc87737c322b8430aa6396531529e5e30",
+      "before": "0212342625556062f7f52583cc3bc8936503dbe5381e9d9e856de09908a2d97e"
+    },
+    "public/da/legal.html": {
+      "source": "dist/da/legal.html",
+      "bytes": 11201,
+      "sha256": "75dd84fdc40748895ec095397741ec52e0485c6d04c5431e93fd6126ee3916e8",
+      "before": "7bea624bf79cf0e8761be9221b6ec5f45343eb96cc640d817f57bf709e09107c"
+    },
+    "public/da/pre-information.html": {
+      "source": "dist/da/pre-information.html",
+      "bytes": 14544,
+      "sha256": "0037d1ad02541750acfbf0b362c08eb39abf20fefa3966e7934b6925a0755cca",
+      "before": null
+    },
+    "public/da/privacy.html": {
+      "source": "dist/da/privacy.html",
+      "bytes": 14456,
+      "sha256": "cf3eddb06b5d454a8a1101e5c4b77e1008367d958769df7c85292bdfad4b5d15",
+      "before": "20bc28ebbc6efb43494dbabb55cd8ecf664f1c5fb0ce5ea46683a6ae250c9be6"
+    },
+    "public/da/product.html": {
+      "source": "dist/da/product.html",
+      "bytes": 13139,
+      "sha256": "6ac896deea084ce85ee911d7bb5b9bf0277180cc1e1c8584188129b6f9fd94d1",
+      "before": "88a2995e307adcb15cb91b44360ca6c1a69c440680af8ebc1f91213ef3781a49"
+    },
+    "public/da/refund-cancellation.html": {
+      "source": "dist/da/refund-cancellation.html",
+      "bytes": 13445,
+      "sha256": "ca763154bbf1fde20d8c07859d3c9ead67ba1cfb93a0e7535a247fbaa7e220d3",
+      "before": null
+    },
+    "public/da/support.html": {
+      "source": "dist/da/support.html",
+      "bytes": 12352,
+      "sha256": "fc3aab4b7859b7d4dc1582ce9c798271a079358bab9f5f3f7727cc298ba6f66f",
+      "before": "b4c7cd835dbbb276884d3031d6efd4c23c9da9c7298d3915161d8d45894c38d6"
+    },
+    "public/da/terms.html": {
+      "source": "dist/da/terms.html",
+      "bytes": 13331,
+      "sha256": "87eb806f9127878a9512c595f0736e6a228cc1b79cd2bb85a13808476f2adc93",
+      "before": "7175eac3a76ea3ffff3b9c78a1d9056be3aaad93ae241feb9efca16db7395bcc"
+    },
+    "public/da/updates.html": {
+      "source": "dist/da/updates.html",
+      "bytes": 10597,
+      "sha256": "03a5feaa11463221acc711a3878cff6d86e13ae0fb1003eb37d42cb71c30f469",
+      "before": "8d4aedca048e979d7d27ca9ebb86df091b7b31ded469187d5505c9fa3b6f087f"
+    },
+    "public/de/about.html": {
+      "source": "dist/de/about.html",
+      "bytes": 11457,
+      "sha256": "8292f9d56f9af420ef63f6894c9a7920d24b95ee5949ec7e2ab844bcb7066dc5",
+      "before": "9d68307e8a8201eec4c8ae08205c84b55be6262875bbf34453887f2e49939774"
+    },
+    "public/de/accessibility.html": {
+      "source": "dist/de/accessibility.html",
+      "bytes": 10822,
+      "sha256": "58109176fca27a60433118947171a1e0da8a8028d486a4d2dade4c6f73b09fa5",
+      "before": "067f76537d9781b216713d3f62a1da64cc21c291b1e96021a29bd3920a2104ed"
+    },
+    "public/de/cart.html": {
+      "source": "dist/de/cart.html",
+      "bytes": 26195,
+      "sha256": "f3ddb505adb04e16eb81cfdd675255ba9a1fec92a96a21b2c5ef20b9215d175a",
+      "before": "ae22188e778b6f06c17c8a3de119473ee742286e6cdd425470609759a2f71352"
+    },
+    "public/de/checkout-privacy.html": {
+      "source": "dist/de/checkout-privacy.html",
+      "bytes": 15222,
+      "sha256": "bec957cdd517424a76e8209a8bdd7c51ebd401c7b9c27e0a8be6bd5c9c9adfc3",
+      "before": null
+    },
+    "public/de/checkout.html": {
+      "source": "dist/de/checkout.html",
+      "bytes": 26459,
+      "sha256": "ac8f3e064abee629bd28c8e96179b5a707a73567c506634ff118864508c81660",
+      "before": "d94e14e1515e6f04cb809b4c289cdf60efe0ecf0a98a533f92927bc3d5570c34"
+    },
+    "public/de/child-safety.html": {
+      "source": "dist/de/child-safety.html",
+      "bytes": 12098,
+      "sha256": "002b9231cbfa0d0de738a3122a617dbef2c182b50c5d301446dcbc1f74af5c83",
+      "before": "da0c4624f651566b3b71713c771c732c2d58fddfc1350b0ec02cb801bc4a3f51"
+    },
+    "public/de/demo.html": {
+      "source": "dist/de/demo.html",
+      "bytes": 11043,
+      "sha256": "d071fe592453cab1f91891f6b25c143dcb21739a76448147f8675fe6de2ff041",
+      "before": "c45ce8db87e832748ca3b6c53816506eaf8a2115b5980bd868d7026fdf7fcc45"
+    },
+    "public/de/distance-sales.html": {
+      "source": "dist/de/distance-sales.html",
+      "bytes": 15043,
+      "sha256": "29c48a13e210263342933a5bbf5eda75755e1626c8ecbaf1c69cbf049274ea09",
+      "before": null
+    },
+    "public/de/index.html": {
+      "source": "dist/de/index.html",
+      "bytes": 17263,
+      "sha256": "c991bb2fbf024b9ba5d36af97f7d45c63beed7b902b97eccd6336ca523c311f5",
+      "before": "3a79fa19df101e766396b49ea002c16bacb27848f963a3a10f2f8434f6e9e9af"
+    },
+    "public/de/legal.html": {
+      "source": "dist/de/legal.html",
+      "bytes": 11288,
+      "sha256": "9dac5876457287e8198c358d1e3ef65fcbbd7ac7327a145ae35e974ed64567d2",
+      "before": "36ed846140853b3ced393770af84b8ad87def7a7b31b7ddd2cddb85e897e8703"
+    },
+    "public/de/pre-information.html": {
+      "source": "dist/de/pre-information.html",
+      "bytes": 14655,
+      "sha256": "d0b657c6ad2b6fdec20a235e2c5e57611b4578d3d63222cdec7b8ecfbe7b6ead",
+      "before": null
+    },
+    "public/de/privacy.html": {
+      "source": "dist/de/privacy.html",
+      "bytes": 15013,
+      "sha256": "b57b0b47ee8dc97bf2732f8252dae198e69b8c61e15651ca5e682f7874a9e478",
+      "before": "363613336dce180a2a44afd7df2ca611bba779fb83155f77a6745f789df8ba13"
+    },
+    "public/de/product.html": {
+      "source": "dist/de/product.html",
+      "bytes": 13352,
+      "sha256": "98f42263fe7a0d5a78142733839829814aac52fbe756ad73f352951a68be2950",
+      "before": "1e945a04e1ae36af3d6c0ae81933e4c69103b1f71b0c7e817822cfffb2286e87"
+    },
+    "public/de/refund-cancellation.html": {
+      "source": "dist/de/refund-cancellation.html",
+      "bytes": 13514,
+      "sha256": "4a4e92cd3639c00fa022733a40a99ee071f39c586cdcbb2ca612fe6d72c65b0f",
+      "before": null
+    },
+    "public/de/support.html": {
+      "source": "dist/de/support.html",
+      "bytes": 12583,
+      "sha256": "a68cc08023735f8411ee2334a26a826edc5ccc3d7549bb8bc572c9707a09d1f3",
+      "before": "3595711e1719c7701563cd1590557a10ea2218dee0c6b34d9feb8281e53617c9"
+    },
+    "public/de/terms.html": {
+      "source": "dist/de/terms.html",
+      "bytes": 13524,
+      "sha256": "95f9cb3a365d81b88a1bbc0462f60c3e690c1ac34c774b691c3b6295068ccf84",
+      "before": "4bc2e02d0cb49d9ba6dba52886ce432008a9bdab079cc58b9ba72079a185de14"
+    },
+    "public/de/updates.html": {
+      "source": "dist/de/updates.html",
+      "bytes": 10744,
+      "sha256": "11aa1e2e7fe4bb6962162c44c3faaefc36cdd4574e06fceb96f6ed7c9925dd7d",
+      "before": "536a93663a7d7fd34c7a7103c4c894d72666a6cce963b5dd8a434cc24887e05d"
+    },
+    "public/el/about.html": {
+      "source": "dist/el/about.html",
+      "bytes": 12691,
+      "sha256": "ec4a5313f59206b395e6ad60211761003be8ea3913305376f6f7e3760e1faa77",
+      "before": "9d066ee82a712f85c7b9083623ec363cdb7de2cfcad8e65cc94538b41500971e"
+    },
+    "public/el/accessibility.html": {
+      "source": "dist/el/accessibility.html",
+      "bytes": 11715,
+      "sha256": "8b5272a5f59e8024f596a4f443a81fe9461f1fe049a218b225119b7424e26a5c",
+      "before": "355dd859db3fcfdac54413adc059be9997edce34ee7f445d992263534e75c3f7"
+    },
+    "public/el/cart.html": {
+      "source": "dist/el/cart.html",
+      "bytes": 31007,
+      "sha256": "690e53722bb482b602a8021ccfd0d44d6216b3afee26f046418c3deaa69e4e4c",
+      "before": "bd77c7ecd53fd8da5cfd8b115433652908d3670eb90d3aa90f1e709c01feecb3"
+    },
+    "public/el/checkout-privacy.html": {
+      "source": "dist/el/checkout-privacy.html",
+      "bytes": 17798,
+      "sha256": "cbf3908ca7d480d8b034c76849fc86d7d1f0d54019aecc9992d35cb2d30ce41c",
+      "before": null
+    },
+    "public/el/checkout.html": {
+      "source": "dist/el/checkout.html",
+      "bytes": 31271,
+      "sha256": "b9f6ae58a5c63bdc9f5ac0b6fe18378d7bb8bebc5d0c1adb0b3bf54f80baecaf",
+      "before": "a80ca800789c45ad96f4607dd35cf88d047f6f0000dff340ee22738b22893aa4"
+    },
+    "public/el/child-safety.html": {
+      "source": "dist/el/child-safety.html",
+      "bytes": 13986,
+      "sha256": "06c868472d21ba55d1a89c2da7bc76c3e92e029859a01c848fb2c6c2c075b7c4",
+      "before": "fbb0add69cca50e29f8a73f2af222314caba9abeacb2349f1f51ce9585beb63f"
+    },
+    "public/el/demo.html": {
+      "source": "dist/el/demo.html",
+      "bytes": 12148,
+      "sha256": "8e5d78e5b729559122ae35eb40dc55f37f3b7632a50173595889193a6d4b612d",
+      "before": "06e253cac77b8b6a4330f76d04452046de6dbcd41d16b8573e158256775eb9de"
+    },
+    "public/el/distance-sales.html": {
+      "source": "dist/el/distance-sales.html",
+      "bytes": 17449,
+      "sha256": "ebd22a63f2e94cec2239f1d83dca9ec34c63c7a238be6a93f1f7d299f8b8ffd8",
+      "before": null
+    },
+    "public/el/index.html": {
+      "source": "dist/el/index.html",
+      "bytes": 19795,
+      "sha256": "42994d1eb106806380d8ae7e4b6f042c7781571063034784e85c97e2e9a6bdde",
+      "before": "2b6268b9b3802a727a08214617910c63078abf6ef1dcfa4394a4787295827727"
+    },
+    "public/el/legal.html": {
+      "source": "dist/el/legal.html",
+      "bytes": 12124,
+      "sha256": "90e58f7575c29d66542b494320f40f8023d6f9a422814fe887a404924f60a8c2",
+      "before": "ca9b428a240dcd59c79a142eff3cbc37e78f916d8d533825aac502f93d6024cb"
+    },
+    "public/el/pre-information.html": {
+      "source": "dist/el/pre-information.html",
+      "bytes": 16781,
+      "sha256": "240bfdfac211ac94d3669846276d4ab46e5b9120bc7eb1d64c059b85d44b7a63",
+      "before": null
+    },
+    "public/el/privacy.html": {
+      "source": "dist/el/privacy.html",
+      "bytes": 18616,
+      "sha256": "b36bda183def4385010a3b406d3757ae0e0304c68a59fe65e4519e5b1433a76d",
+      "before": "d28016481a00c53d9569f4c83a27baf8608ea5f502a9591d07d811179d4a073a"
+    },
+    "public/el/product.html": {
+      "source": "dist/el/product.html",
+      "bytes": 15505,
+      "sha256": "8a88290b465cce563bf27f995a5ff3a241fd338fa806d98bbe5b11195f20cc28",
+      "before": "e19da5fa48ea5d65397861348c79007dc8e82204a254e8ee004732216c15f975"
+    },
+    "public/el/refund-cancellation.html": {
+      "source": "dist/el/refund-cancellation.html",
+      "bytes": 14823,
+      "sha256": "a1a9cb423ae665b7d016f3420155b09953c231334641d583ade7ba2af81fb5b0",
+      "before": null
+    },
+    "public/el/support.html": {
+      "source": "dist/el/support.html",
+      "bytes": 14350,
+      "sha256": "7f352122d3b4d1b5e539d3dfaf8ee5d8c18893dd80cf9b17add41227bfce87bf",
+      "before": "d765666b2b7f70d9eecb6a712dba70e87c88f165a1df1c6563848ea2ae1572b6"
+    },
+    "public/el/terms.html": {
+      "source": "dist/el/terms.html",
+      "bytes": 15326,
+      "sha256": "48a525235aef6baaaec2f59af71dc35429a4b62f85064d6e621f1bf2979417f9",
+      "before": "6a11e7bd29355073fc9102b262d8a91d304b47f93a7e6e20286c5bfa1450d41e"
+    },
+    "public/el/updates.html": {
+      "source": "dist/el/updates.html",
+      "bytes": 11592,
+      "sha256": "28e2a7a841a5899f7f4291438ad9bbfb7b01144afb4d8c5760b4b1dd58f99859",
+      "before": "7923fe9f235b58669fb253de9ccbd36b7836dd2ca278087ed2b49683c31b4cae"
+    },
+    "public/en/about.html": {
+      "source": "dist/en/about.html",
+      "bytes": 11312,
+      "sha256": "946e77f0e6645a2276b2fbab042054bcd972f844ae7d5fc1d69b5f17e1f860fc",
+      "before": "a21b96f2de014e5340f77cf51a9354405aba0955ca627badb32c645cad8461f5"
+    },
+    "public/en/accessibility.html": {
+      "source": "dist/en/accessibility.html",
+      "bytes": 10685,
+      "sha256": "b583f112656e9af57a377e344ad15e5e035be44f514f5e328937c1f3ee121052",
+      "before": "ad302831c83237981e595b20db3378892955a8ecd50942fa84e030966df59a51"
+    },
+    "public/en/cart.html": {
+      "source": "dist/en/cart.html",
+      "bytes": 25576,
+      "sha256": "f9c3ac5a85777abbbaa8d748d9af14a298326cf3900c4e8b63e5025b7d2ec01a",
+      "before": "bd50bb67b85c7b62ab3690e1755883581f0f39031ae2318a5b0372f105efbd87"
+    },
+    "public/en/checkout-privacy.html": {
+      "source": "dist/en/checkout-privacy.html",
+      "bytes": 14549,
+      "sha256": "2bb7058fd908d51ba0db31df81b61fc3594fba79d190032f7739d9e3c8c11c1a",
+      "before": null
+    },
+    "public/en/checkout.html": {
+      "source": "dist/en/checkout.html",
+      "bytes": 25840,
+      "sha256": "5bb86af1e403efd6811f40293679089fc81641b1a47698990bd4774d4324c3f0",
+      "before": "6e5fbdb84dfe004bfd086f1eb797ad6407682c0fd88cf19bf3a054ba127d3527"
+    },
+    "public/en/child-safety.html": {
+      "source": "dist/en/child-safety.html",
+      "bytes": 11869,
+      "sha256": "988771e3dab7f38372b7befb7eadf82e8c6e69b34caf192f1804b1dc1a4381f3",
+      "before": "d245c6be50b03f3939c8f66564603a69144769c8bacd1468652cc07a666d45f0"
+    },
+    "public/en/demo.html": {
+      "source": "dist/en/demo.html",
+      "bytes": 10775,
+      "sha256": "03c98f83e94c9e64d600b9ed4209e6405659715e8f9d66cbb4a8d2af1163d7a9",
+      "before": "424c78f19ff484f5ad789f5a1c3ff6f926036fa9daba25f9f989c781dd242fc2"
+    },
+    "public/en/distance-sales.html": {
+      "source": "dist/en/distance-sales.html",
+      "bytes": 15477,
+      "sha256": "96a970cc03f3d693a077a57bd1dacc7fa8f9e8a052ed99c3614b07c24ed9e139",
+      "before": null
+    },
+    "public/en/index.html": {
+      "source": "dist/en/index.html",
+      "bytes": 16871,
+      "sha256": "a57c4ff7ba3686638f7bd2254464401e8406d79dcc68e1f02314d2dd52b998fc",
+      "before": "44a657c0eb4ccd04fd7cb0acb23270621b4897432f4024defa465b186d5931b9"
+    },
+    "public/en/legal.html": {
+      "source": "dist/en/legal.html",
+      "bytes": 11168,
+      "sha256": "283113265634781fa03aa2ca2245e58e207042c8fdd1bfa1542178d89ce74ce7",
+      "before": "12a7b9e06fdf829093638d1eccf96a5c399b33ed85a1c58a5c3c859aafa3c2b7"
+    },
+    "public/en/pre-information.html": {
+      "source": "dist/en/pre-information.html",
+      "bytes": 15111,
+      "sha256": "6ebd7af3ec90d5990bdd9d497e8e480e4cdd3119e76ddbca00e2f7b21aba9d2a",
+      "before": null
+    },
+    "public/en/privacy.html": {
+      "source": "dist/en/privacy.html",
+      "bytes": 14145,
+      "sha256": "19ebb8619fe197dc046bbd2e2e8ec5db5b11ead32a58f6f78cfba82c027402f6",
+      "before": "719451b72b0c7310e2fb27aa6c5571e2b6a21c1d4416a536df9f4bd3d9f11e10"
+    },
+    "public/en/product.html": {
+      "source": "dist/en/product.html",
+      "bytes": 13101,
+      "sha256": "5de695f41db22b188a84677f3bac530e36311725d78f021f25e9a9491a6257e7",
+      "before": "50e4090d328a60e3edc155d4e6fa1f6751ccb8f588315da51483cbd3f21ce1ef"
+    },
+    "public/en/refund-cancellation.html": {
+      "source": "dist/en/refund-cancellation.html",
+      "bytes": 14013,
+      "sha256": "b13b6f9940cf92363e4c36eaba7d5c0f43e7d35c5d62fded3b145551762d7aad",
+      "before": null
+    },
+    "public/en/support.html": {
+      "source": "dist/en/support.html",
+      "bytes": 12213,
+      "sha256": "e614a55230c09d284023e1f09dbe2630426971b90181fcbf13eff9cea9663970",
+      "before": "b37758ccb669cb06303854b41895093286c077cce6995aca4a622247c1d2f60a"
+    },
+    "public/en/terms.html": {
+      "source": "dist/en/terms.html",
+      "bytes": 13815,
+      "sha256": "9af820db4510c50dd4bd610bd7efba043f7e95115d73dd34fbf9f453a2b849da",
+      "before": "779a201a48377b233da39929ffc8a66a8a3cab409cda9eb632301f3f2063d469"
+    },
+    "public/en/updates.html": {
+      "source": "dist/en/updates.html",
+      "bytes": 10552,
+      "sha256": "f1495fcdc7915a83909df2317ef89b19ddec3441ee8e0f68886102667dd26cdd",
+      "before": "5b83283abcc74658c284387bc70ade0d6eafce199e1e968e2beb183aed0de299"
+    },
+    "public/es/about.html": {
+      "source": "dist/es/about.html",
+      "bytes": 11444,
+      "sha256": "c882d4ef0fb355e81489227bcde400ee99bf2ff2b8434a3879eb46059def6a99",
+      "before": "734fecb003eddf527b67df1e0aa34359e1bff5534c88872095e8419a9d6f7f95"
+    },
+    "public/es/accessibility.html": {
+      "source": "dist/es/accessibility.html",
+      "bytes": 10890,
+      "sha256": "94c25af0bdaa2146cb94fedc67a11e70571b0fc330db4e7a3d48122d1c81b847",
+      "before": "bf5c3412201b3c40efe42e87710d0dd007cf54524e9d42980048840cdb19020e"
+    },
+    "public/es/cart.html": {
+      "source": "dist/es/cart.html",
+      "bytes": 26125,
+      "sha256": "53450123ef47fe6302ef2dc601a161947d09adcde1d0f8e8a6c675f3d15cebea",
+      "before": "8024c5864c74684ba2684223ea3cf145afa43ba1379d837e578b372f20dab60b"
+    },
+    "public/es/checkout-privacy.html": {
+      "source": "dist/es/checkout-privacy.html",
+      "bytes": 15172,
+      "sha256": "a1a7953ede5859e2b20a13d5ae983c13c77b0e8550af4857f395d6ffbc71c32b",
+      "before": null
+    },
+    "public/es/checkout.html": {
+      "source": "dist/es/checkout.html",
+      "bytes": 26389,
+      "sha256": "86af310acff9fa0a1c20c98ae60fba3b75694c14dbd6b752f1a7f6cb7c58f429",
+      "before": "47a03751ee383669aff969114ce269ed2652429a1611b8db97e8117b6697c4ea"
+    },
+    "public/es/child-safety.html": {
+      "source": "dist/es/child-safety.html",
+      "bytes": 12110,
+      "sha256": "0b9f5b5f107439af39dd78c5fa759eb45da9df2ff0a2d70723cf9f9921a3fc5e",
+      "before": "b8a265c77364d4972ad86bb1a5fc8491950a598335ec1fa27898fadc975f4dda"
+    },
+    "public/es/demo.html": {
+      "source": "dist/es/demo.html",
+      "bytes": 10965,
+      "sha256": "d934639126250db0a741711ee745c1970ad18582d68e2d309eb01662d74cef58",
+      "before": "dcc603decdd456aa1b9368390761f98729ce0cf395828b95955321a5dd03e40e"
+    },
+    "public/es/distance-sales.html": {
+      "source": "dist/es/distance-sales.html",
+      "bytes": 15083,
+      "sha256": "d2151779127fcb78fd009876b4383cd2de50b534092a24e7dcf90758fc6707bf",
+      "before": null
+    },
+    "public/es/index.html": {
+      "source": "dist/es/index.html",
+      "bytes": 17315,
+      "sha256": "0401547c8001d381cd917bea3b6014856021d1134d585d1f8a156b3c2e7856ba",
+      "before": "70c1d3fbbc721fc31886614fc77b19747dddbd5e160aa0582930b45ba1f4776d"
+    },
+    "public/es/legal.html": {
+      "source": "dist/es/legal.html",
+      "bytes": 11275,
+      "sha256": "029eec727612657ce1b4bfd4a694d961562de46ef0cc81fb67757337bcd7d8cf",
+      "before": "0d9b3429f94ba634f4db55c40a4a81288e6f43656bc119ae23544d236b77b1db"
+    },
+    "public/es/pre-information.html": {
+      "source": "dist/es/pre-information.html",
+      "bytes": 14699,
+      "sha256": "b8724f04ec07c458e002eaf19a5aa4d8c977c65f46b912a000a815ac97803007",
+      "before": null
+    },
+    "public/es/privacy.html": {
+      "source": "dist/es/privacy.html",
+      "bytes": 14923,
+      "sha256": "55881cab5e9e616da58315e8db87ef0519734e0f9eeb11249326cb53ade12a8d",
+      "before": "9e3404075228d7d015f855ecb1ab3c0cec96c72d42aa832c01775cb61452ab0b"
+    },
+    "public/es/product.html": {
+      "source": "dist/es/product.html",
+      "bytes": 13288,
+      "sha256": "06f951043b3b6ebb018d0647db01a5ed87c7249240537bbb90ad98e81c836023",
+      "before": "f9133091961ed768e125f6cd69a2b0cb791dacece6ef0bc0e51d66707b601745"
+    },
+    "public/es/refund-cancellation.html": {
+      "source": "dist/es/refund-cancellation.html",
+      "bytes": 13535,
+      "sha256": "dcd360dd56a19fed3ccd81abd2d0a38034a8dde764be4288c04c5c9897247cb1",
+      "before": null
+    },
+    "public/es/support.html": {
+      "source": "dist/es/support.html",
+      "bytes": 12574,
+      "sha256": "eee8eedb589e03627cf4427d6b5f827548a15f05fea4fc5d7f28fa548b0fb886",
+      "before": "19c40457b84b84909192c40e5bbb352a2060d6490428a34f65df07f01df871e4"
+    },
+    "public/es/terms.html": {
+      "source": "dist/es/terms.html",
+      "bytes": 13510,
+      "sha256": "24365a9a32a97523bc9eabe684ea58841c766d46073bd2d7796023fcc2d43bd2",
+      "before": "15c7ec5bc655c22462afd92d18ca8786225454412a6276b512f3b3fe579bc1c7"
+    },
+    "public/es/updates.html": {
+      "source": "dist/es/updates.html",
+      "bytes": 10791,
+      "sha256": "9125adf6a0d16cf1476f4004c4844be9940b2340aa0a201600d6c25cc763c1c5",
+      "before": "604a1b1dd37df1c3c81d280e4330e8318838c9d10bc61a3ce8bb2e2bef1a4f39"
+    },
+    "public/fa/about.html": {
+      "source": "dist/fa/about.html",
+      "bytes": 12152,
+      "sha256": "dec77b0be03a1347429995272f1d53d900fe02014b42bda402491de194fd33c1",
+      "before": "3811e9f219d9c44906a3f6d1fb342bbf96b06cbfb98c17aaeeb62be4084933f3"
+    },
+    "public/fa/accessibility.html": {
+      "source": "dist/fa/accessibility.html",
+      "bytes": 11222,
+      "sha256": "0173e684f219cd8ad98f3cab809df6b6b314f62f00afbbbfc6bc2917704df718",
+      "before": "312ae80945864887b8094e059628c3c70c1e771f33d11ef87094ed221e3ecdc8"
+    },
+    "public/fa/cart.html": {
+      "source": "dist/fa/cart.html",
+      "bytes": 29025,
+      "sha256": "67405328e84ba1169d0a428d3592d9943a2accf876116ad7110da3f00905a3fd",
+      "before": "798e09abb23e09e9c3b596949f21211b4ae2f013d5c2e7159da9ccb866603d91"
+    },
+    "public/fa/checkout-privacy.html": {
+      "source": "dist/fa/checkout-privacy.html",
+      "bytes": 16791,
+      "sha256": "9d6b93b3c06ef40baee8206c53b2f72a2216e5223765b28541452a9975762be6",
+      "before": null
+    },
+    "public/fa/checkout.html": {
+      "source": "dist/fa/checkout.html",
+      "bytes": 29289,
+      "sha256": "e21365f9a72c704370b50b61284ac992299d95b5bc1a242a22bc203f7b692b83",
+      "before": "e1511f60e2b704c44b9379b92f93a6c8985721d2d3efc0fb32bac46760c0e556"
+    },
+    "public/fa/child-safety.html": {
+      "source": "dist/fa/child-safety.html",
+      "bytes": 13153,
+      "sha256": "936db75be2d35102ec83760e0df91a3d3008b0abf4ffc7803ef3ff7b39141572",
+      "before": "b2494532c9ccd14800116bdaf29624eb6f0b9f2ba580b6060911952e7057ccc0"
+    },
+    "public/fa/demo.html": {
+      "source": "dist/fa/demo.html",
+      "bytes": 11728,
+      "sha256": "8ba0f617e24554b59744e381c39119ed700bfc510eab38357cb6c1ce85fdb93c",
+      "before": "919e3d2212c164329513648123a8f000dec88e205133b72271b8b4435ef1ab6b"
+    },
+    "public/fa/distance-sales.html": {
+      "source": "dist/fa/distance-sales.html",
+      "bytes": 16321,
+      "sha256": "6b8168f4582fc6f098cfc239515bd36f06a0237d7bef360b915ac9229f67ffab",
+      "before": null
+    },
+    "public/fa/index.html": {
+      "source": "dist/fa/index.html",
+      "bytes": 18761,
+      "sha256": "26b113b77d2efee809a6a088a31ed2ebe0d16c5bc2744d6bf4f691a609139b89",
+      "before": "08a0904d848d004a12729855794cffec4fa6b6418d1c3372e6f5e20bfaeae181"
+    },
+    "public/fa/legal.html": {
+      "source": "dist/fa/legal.html",
+      "bytes": 11711,
+      "sha256": "13a6d9c33c9d249e7e5380abb4779abcf1095871b3547315b76863898915883a",
+      "before": "c90795b5dbe4ec05a8f1baeb463bddc82854ab18241987cf45c0db66ee366e3e"
+    },
+    "public/fa/pre-information.html": {
+      "source": "dist/fa/pre-information.html",
+      "bytes": 15746,
+      "sha256": "3fc19039311651b5a739010e4fb694c8c6ee118c131746e4f9179012dfba7f01",
+      "before": null
+    },
+    "public/fa/privacy.html": {
+      "source": "dist/fa/privacy.html",
+      "bytes": 17048,
+      "sha256": "6713aa238eb275226eaa29732a57e3099bfb1ebb0ced8fd0987e6a59ffd68f6d",
+      "before": "4a08adeea6b56dfa3b18e26c180fcb48e8d84103b43014fe26cfa4d9173a584b"
+    },
+    "public/fa/product.html": {
+      "source": "dist/fa/product.html",
+      "bytes": 14551,
+      "sha256": "4426d609f77c949dedeed9453ac4e17a3c63859026e4e918e0bb4e1c0d5fbeda",
+      "before": "0f954d5d86c59b0bfdf477d8f515ba410d5ebabe4c20cf7ac42b89bd7e35a6d5"
+    },
+    "public/fa/refund-cancellation.html": {
+      "source": "dist/fa/refund-cancellation.html",
+      "bytes": 14168,
+      "sha256": "3c654cec66581827e1c75c6e382c6fd75839b96c61685fde5b4ccc30fcbc784b",
+      "before": null
+    },
+    "public/fa/support.html": {
+      "source": "dist/fa/support.html",
+      "bytes": 13608,
+      "sha256": "86e175f4e9da98de1551fabd15d45de5d82eb7ffc5eaf3400c4a6aa3529ae78f",
+      "before": "e875711103c052a294d73467aa9cdc9856dc50a30873cd59764428a26f848b21"
+    },
+    "public/fa/terms.html": {
+      "source": "dist/fa/terms.html",
+      "bytes": 14619,
+      "sha256": "762c8ea8a175f337a7269128964e8daf98a3f0c86886b660fd1a13cd5b4be325",
+      "before": "8819cb057256274151febd6fbc7eef285a287d98b3eaee03453baba1ac9e5177"
+    },
+    "public/fa/updates.html": {
+      "source": "dist/fa/updates.html",
+      "bytes": 11299,
+      "sha256": "1a5b7adc005a76d374b866f9a087ec68688d50c648f0d0c21ab155653993c0fb",
+      "before": "d8bf8c0213fa9c3a1e4cc7bc6975b1692ae94cde0c700ce29a40e21cb52c6289"
+    },
+    "public/fi/about.html": {
+      "source": "dist/fi/about.html",
+      "bytes": 11422,
+      "sha256": "2188fc8442cf98b2a4dde255f57b8f66ffc1c002c166dba138cf100d53d7cd20",
+      "before": "a66dd9aaf16362845bf5f0b47f7167018b625830a004d1f880f493ee7ed2e40c"
+    },
+    "public/fi/accessibility.html": {
+      "source": "dist/fi/accessibility.html",
+      "bytes": 10829,
+      "sha256": "61b30f013dd528f5ac16b755781932fda6323efe95a914ffcc905b94aaeb935c",
+      "before": "2c1d88a29215e84b4c3392c2a43ae7d3d920e3f542c8251a1fbba9de2169860b"
+    },
+    "public/fi/cart.html": {
+      "source": "dist/fi/cart.html",
+      "bytes": 25821,
+      "sha256": "3e515775ba9265638ba51c8afe87fa337727f6d167c0c629202fccdcd3831fb5",
+      "before": "5a5c4acc0dbf8fb0469cca36d8002bd6fb4a4aa7b4056739538f50e9f8395767"
+    },
+    "public/fi/checkout-privacy.html": {
+      "source": "dist/fi/checkout-privacy.html",
+      "bytes": 14985,
+      "sha256": "3ccf59055521117e5f1e73b26bacb9ea3c6d06fa495e7f6839291b224617821b",
+      "before": null
+    },
+    "public/fi/checkout.html": {
+      "source": "dist/fi/checkout.html",
+      "bytes": 26085,
+      "sha256": "228d6cecd1fb089d97d2e84effb9177d869fefe42c346f4372d7a50412fc5139",
+      "before": "e63e3eb7abd95b51df18eff7f2de6d93e16ce0e5c005d43930606ed4e58a0cb8"
+    },
+    "public/fi/child-safety.html": {
+      "source": "dist/fi/child-safety.html",
+      "bytes": 11979,
+      "sha256": "baf287a6dc46ba7feac875072ff108f544a08e9507523f182ee4102c11fabca7",
+      "before": "73135191a9de00e79eb3b6c7cbced9ba89246e47df1d70fa83209189076cf07b"
+    },
+    "public/fi/demo.html": {
+      "source": "dist/fi/demo.html",
+      "bytes": 10939,
+      "sha256": "1f779c24aeb1c33101bef22b4f1c6d8b2211e3f4c0a8d2d8573ae7ce4934f494",
+      "before": "8fe6369ae6fff79a0e9c41434c7567f8a0b44c4415bb2ec15ecf4b87f4678d7b"
+    },
+    "public/fi/distance-sales.html": {
+      "source": "dist/fi/distance-sales.html",
+      "bytes": 15008,
+      "sha256": "3e13356b264a6ac13a059aee51b745c7d3e2776ff2583c6d77eddd211f6ccc3f",
+      "before": null
+    },
+    "public/fi/index.html": {
+      "source": "dist/fi/index.html",
+      "bytes": 17219,
+      "sha256": "1df5e09b7560f42bdfb1caacf0e48f1fa3b6e8ba2f6d613ba2d24ea3241c0122",
+      "before": "c1204ef14e82bba86ca2faad64a57bb2f62ce8f77e4db57fccff63587535783f"
+    },
+    "public/fi/legal.html": {
+      "source": "dist/fi/legal.html",
+      "bytes": 11182,
+      "sha256": "e35649a389e12c5f0cf6f40ec8774abe05c4d15ee3c635113a0a1dee71187f82",
+      "before": "80cf3ee2fd8f45bf8cd2fef9203a9ca26f3dd64a77e9e9da473b8a83343fb832"
+    },
+    "public/fi/pre-information.html": {
+      "source": "dist/fi/pre-information.html",
+      "bytes": 14628,
+      "sha256": "c0e325662a3260c32c6715f5faf9ab329edc6e2c0fe9adf4cc200684f6a36dc1",
+      "before": null
+    },
+    "public/fi/privacy.html": {
+      "source": "dist/fi/privacy.html",
+      "bytes": 14669,
+      "sha256": "ddf2c4ce5c6f3dd9c0ac5f036029a97e74911cec5d35d4330a7ab6cbe90f9ea5",
+      "before": "e86f332d403b2577f300c9c37336423e2b65cbe1d9ecf385d4e634868a0b1d7c"
+    },
+    "public/fi/product.html": {
+      "source": "dist/fi/product.html",
+      "bytes": 13265,
+      "sha256": "f7851a31641d51925ba28fade83b3d89bcfc11faa57a63cf7f7d74c0469d2085",
+      "before": "4c0031093fa32589974ae4cbec689cd6ceeebaa157945ef4d64a7d983edc80a2"
+    },
+    "public/fi/refund-cancellation.html": {
+      "source": "dist/fi/refund-cancellation.html",
+      "bytes": 13483,
+      "sha256": "925d6fe860ec36dae82531804e5e49def2b2851d39c5980f11277c6530a14384",
+      "before": null
+    },
+    "public/fi/support.html": {
+      "source": "dist/fi/support.html",
+      "bytes": 12367,
+      "sha256": "b6a018f58b003c1795c39c26867c88a21ae99ff25f21d8bad035268469789141",
+      "before": "518c478197dbeaba48645f7eb5d4703202ee70d15550f28ec199d8151df58300"
+    },
+    "public/fi/terms.html": {
+      "source": "dist/fi/terms.html",
+      "bytes": 13418,
+      "sha256": "8ba05425c58b8598dd5c298b24dd82a727e375224ac2179ae23b2a5a6523b68f",
+      "before": "d981bf25e4c1d40675520c154445794f40947b16ff487fd9713fb67beba6ac91"
+    },
+    "public/fi/updates.html": {
+      "source": "dist/fi/updates.html",
+      "bytes": 10711,
+      "sha256": "bf666d42c74ca0c3a3ae3ab05bbf0d11151f552e1bdac5d52a68bb216cc0fc0f",
+      "before": "3f35233b0612b62132a71c42875b8175eab34a08dc75f42d6bcb0856a340510b"
+    },
+    "public/fr/about.html": {
+      "source": "dist/fr/about.html",
+      "bytes": 11481,
+      "sha256": "c00c7dc2ec7b41b9c025f5dcaf684c1d15455308d66a55564c2cfa1a8ae6f032",
+      "before": "03577772a4d495de424d36495641489d7db88486b63a75dd2be04fd527f17d95"
+    },
+    "public/fr/accessibility.html": {
+      "source": "dist/fr/accessibility.html",
+      "bytes": 10896,
+      "sha256": "d23525a3280caacc8d4220124542604f5580aee694b3885f9868222b0f326153",
+      "before": "f7d4548e942e7326b84b80f0a9171c3da841253301f69f7522216b617d35bb40"
+    },
+    "public/fr/cart.html": {
+      "source": "dist/fr/cart.html",
+      "bytes": 26771,
+      "sha256": "fd030d182953bac4982ab99517630dfbe24d0352cd13cc9629ac3b74d663e238",
+      "before": "2f0d25736eb579434e439aa8d931bf431caae53eca794a55ab0f76ae6119cdbf"
+    },
+    "public/fr/checkout-privacy.html": {
+      "source": "dist/fr/checkout-privacy.html",
+      "bytes": 15382,
+      "sha256": "70d1faa9fc5c2060f5389d0a296b3a266b2f905c2e137ff5fc5308cee7275f13",
+      "before": null
+    },
+    "public/fr/checkout.html": {
+      "source": "dist/fr/checkout.html",
+      "bytes": 27035,
+      "sha256": "2e925125a0664bfc932dff387feffe48d476394141c0cc858c993dc8adbbe680",
+      "before": "f798c050aac8a718c32c95f749710c3d72720762693a5c522dd710bdece425c1"
+    },
+    "public/fr/child-safety.html": {
+      "source": "dist/fr/child-safety.html",
+      "bytes": 12330,
+      "sha256": "c9e3564278af27406630b9adf808c541b80b333533410101aa0c3f7c9e98e4dc",
+      "before": "44bbac29e29d7439ade3310a06549769b17858ef7701d3b8614e1fbc0702afa6"
+    },
+    "public/fr/demo.html": {
+      "source": "dist/fr/demo.html",
+      "bytes": 11037,
+      "sha256": "676262200d58f24717c8bbc4d4b361dd1c7e5b88fb5ab1286e77277aae328136",
+      "before": "49fe8458e4e0c1b8796469d859986524080486453992c25bc73ef25e259dcf89"
+    },
+    "public/fr/distance-sales.html": {
+      "source": "dist/fr/distance-sales.html",
+      "bytes": 15307,
+      "sha256": "4138ecdd32028e79341be3f62e92b37e5b0169d10d570d8208f28794e565a4ea",
+      "before": null
+    },
+    "public/fr/index.html": {
+      "source": "dist/fr/index.html",
+      "bytes": 17494,
+      "sha256": "5ba96ab818e8e0c101e4a0c09c0b3181e7e48bddf8049f6946336a30396cad1a",
+      "before": "d958393e424e562917d05a8785d01eb35b9777524564436c6a8283651bb6e634"
+    },
+    "public/fr/legal.html": {
+      "source": "dist/fr/legal.html",
+      "bytes": 11363,
+      "sha256": "217ef0bcbcd416dd69fc38c75a3eea7fbb3c8f9b82b90c554af922052c1c657b",
+      "before": "076f6912982a67fc0f67318209293ff586041eee28fb91a04bd40cbbbb284583"
+    },
+    "public/fr/pre-information.html": {
+      "source": "dist/fr/pre-information.html",
+      "bytes": 14880,
+      "sha256": "93661007a53344419642c4549db74f843ea76b3e1e79505874ebd10a440c6984",
+      "before": null
+    },
+    "public/fr/privacy.html": {
+      "source": "dist/fr/privacy.html",
+      "bytes": 15230,
+      "sha256": "ae9dcccb00ae51b8aaea0be8f0c23dc48c484c37eaee3606666e32c974026598",
+      "before": "227e3293179bc48dcaa9515a63f07020f092ff48d6018dce62d66901e44f75b8"
+    },
+    "public/fr/product.html": {
+      "source": "dist/fr/product.html",
+      "bytes": 13556,
+      "sha256": "0f53ce6e1d3a40de455fa2a36fbfc3b7c1cfeb7cdd3639eb366280bcbe9597ca",
+      "before": "948c589ff7e83e57bd36cecc1c732929d0bda6bf49c8bd8dc69c56bcc089c13c"
+    },
+    "public/fr/refund-cancellation.html": {
+      "source": "dist/fr/refund-cancellation.html",
+      "bytes": 13640,
+      "sha256": "83935a294664b5b7ba48babe983bcd6090022fa507516dbc6d2573d6e20a009e",
+      "before": null
+    },
+    "public/fr/support.html": {
+      "source": "dist/fr/support.html",
+      "bytes": 12716,
+      "sha256": "d7fe3df5ffa48e459ce98c8c1536ed4d5a0e307c8e517b887a44735d095b8d9a",
+      "before": "d345ff3a63b660ac57b13d74c2019ace5e521cfc4030b706b4a0e56d066bfb98"
+    },
+    "public/fr/terms.html": {
+      "source": "dist/fr/terms.html",
+      "bytes": 13720,
+      "sha256": "65f759cb10e2063696c6c8f36e11773f58af8efabc28546186e5c36568fc7043",
+      "before": "4abd54422b8514ca2dec1c9ef10443516cb7bde9ef329def694a7a8ea4bc5761"
+    },
+    "public/fr/updates.html": {
+      "source": "dist/fr/updates.html",
+      "bytes": 10801,
+      "sha256": "c74082365faedea92a6189bb34187927ac7ffb46f2bbd8eeb4139e93c22d8a48",
+      "before": "f49d918b3dd327b13c1ba17fda2f8179525e76e95f063869359bfa0c5607c5ed"
+    },
+    "public/he/about.html": {
+      "source": "dist/he/about.html",
+      "bytes": 11794,
+      "sha256": "c8852fd59dd4e106c287d3d1bad8a9da7f43d45b6a6c7f5f82822e4bbc33a505",
+      "before": "c0c52ab8dbbf07114b0116ea480e1f4e8405fdff776379770f625646df5f1b38"
+    },
+    "public/he/accessibility.html": {
+      "source": "dist/he/accessibility.html",
+      "bytes": 11009,
+      "sha256": "fb3e3917081334a9660b7f34f80c06299c969054d906bfba54fc547ba047ec76",
+      "before": "ecc74f165ed5044df1ef9a7a170e1e89d64a6a9075333332bf93dbaa5812e9c1"
+    },
+    "public/he/cart.html": {
+      "source": "dist/he/cart.html",
+      "bytes": 27398,
+      "sha256": "cb3f7ddf06bce8fb7d9492a18a77312fb45452e7c05b0b40a76898ce4d295811",
+      "before": "f3c6c137f179c3b9fe13c04a0009b7d6120093ae2e5c0697532105d7244c9de2"
+    },
+    "public/he/checkout-privacy.html": {
+      "source": "dist/he/checkout-privacy.html",
+      "bytes": 15826,
+      "sha256": "43af06e43bd7e144a36fef876ff51d2227cf0f2ade646373c683f0a996e42bb3",
+      "before": null
+    },
+    "public/he/checkout.html": {
+      "source": "dist/he/checkout.html",
+      "bytes": 27662,
+      "sha256": "ec637b09c686ad462530c8a3117fa3b2c8810474ee2b8b73e588bc5a31a0c391",
+      "before": "2f75e09fdadc7a6b1eabd2ca33eadbb9c4472d8a33e03c5e697e0eb804733036"
+    },
+    "public/he/child-safety.html": {
+      "source": "dist/he/child-safety.html",
+      "bytes": 12598,
+      "sha256": "aaeecff7629ec177efe5789da6580662da1b90b8b14d4d00cc89bde66937ce1f",
+      "before": "78ecde7104538dab2e15abf56ad29b6beeb4823ef85e6dc3ab61dd4cb5bf83a3"
+    },
+    "public/he/demo.html": {
+      "source": "dist/he/demo.html",
+      "bytes": 11277,
+      "sha256": "05ef904f0d4ac0af558eaa3ecc3e24d818ddfdb9ce21d5dca07c9c68a0bb2a56",
+      "before": "98a399710cecf3d055c1e568c889a78cb96d0d42d2ab7c7fa4a3c5ba4d960168"
+    },
+    "public/he/distance-sales.html": {
+      "source": "dist/he/distance-sales.html",
+      "bytes": 15619,
+      "sha256": "9a1923b941e9005779011e28c89026b603d9446508e5b4d02c4357f08b2fe200",
+      "before": null
+    },
+    "public/he/index.html": {
+      "source": "dist/he/index.html",
+      "bytes": 18008,
+      "sha256": "05a4b058d6d1994b82e923e754400b40debd249e37176c755b2245a3a18b11ae",
+      "before": "04db282e2e9ec156bf9baaa141f44ccb4a369077e7e3298152f22b4e224e8f62"
+    },
+    "public/he/legal.html": {
+      "source": "dist/he/legal.html",
+      "bytes": 11447,
+      "sha256": "ea08ad99a05d9f4024273b9dcf436aca85f43ef6e98f88456d1783c5bce2ca3f",
+      "before": "cfcf8e3e6cec7ca89549b83a2fdb5c3b0bb3eede0d3474657ccd27a36c0cc5a2"
+    },
+    "public/he/pre-information.html": {
+      "source": "dist/he/pre-information.html",
+      "bytes": 15151,
+      "sha256": "a6399c07c375a4b5c2521b8e08cfe1c3c22bfc9cb952912feaacdb2c26e61751",
+      "before": null
+    },
+    "public/he/privacy.html": {
+      "source": "dist/he/privacy.html",
+      "bytes": 15902,
+      "sha256": "6da173583b84c43075429385877be58c0d1b5961262a7ef4f602401fee4a7bfb",
+      "before": "b0ecd82bf35046c5a01f1aefbec610541b5a979e2a75d7fa81f55501a79c0607"
+    },
+    "public/he/product.html": {
+      "source": "dist/he/product.html",
+      "bytes": 13783,
+      "sha256": "acac2fa0da1cf0be18fb2feb5214d6eeec50eb210911ca505a55fee80f51ddc3",
+      "before": "61c52e6a6bf2996b04fae8e7f2772c94d96f2e0a27543229df32ca67768485d7"
+    },
+    "public/he/refund-cancellation.html": {
+      "source": "dist/he/refund-cancellation.html",
+      "bytes": 13780,
+      "sha256": "2d38d63d8c357b4249915f5f57b0c64b2a9cf322a572969359bd1f70651e2337",
+      "before": null
+    },
+    "public/he/support.html": {
+      "source": "dist/he/support.html",
+      "bytes": 12932,
+      "sha256": "308137be19af1b33cbe7a390688a1268a694b8becef88b3d303b2e428c45c7c5",
+      "before": "9a60e9d2fda48668deda4b4cd917054cbef7aaef131e76093e1fde0bd72497a8"
+    },
+    "public/he/terms.html": {
+      "source": "dist/he/terms.html",
+      "bytes": 13952,
+      "sha256": "a562927fb8caed2d5258f15b36077c07037f34e69df9167b75b440608d18c89d",
+      "before": "4f32a9c1ee3d7fe77d86e6a1335b1d2427ed9e929e17e3d821a5294bdcb66df4"
+    },
+    "public/he/updates.html": {
+      "source": "dist/he/updates.html",
+      "bytes": 10907,
+      "sha256": "170fd226b45ee5f40066a5e35002e201eb6b35bc9980497c8f925b94b7b64eca",
+      "before": "b0827b95c0f9c721d232ab66f22db6f839242e79ab6e4db4cd55db59d493f793"
+    },
+    "public/hi/about.html": {
+      "source": "dist/hi/about.html",
+      "bytes": 13216,
+      "sha256": "05c84cbab4d98bba136428af30517d2cc099023be997651a155350bdd2091745",
+      "before": "7678938a2bb59df32d5fce5f6347abc312eabdc6a5da4aa5a20f854239bab532"
+    },
+    "public/hi/accessibility.html": {
+      "source": "dist/hi/accessibility.html",
+      "bytes": 11810,
+      "sha256": "52444669d188aab20d215b674241b49424d1eebfb82b630e2e6768eb2a98c882",
+      "before": "dda64308491a5518535e798db1afb532358da6c8a4a870260cda0b415db81bb3"
+    },
+    "public/hi/cart.html": {
+      "source": "dist/hi/cart.html",
+      "bytes": 33058,
+      "sha256": "db53b3080aeb4d00e0814f34a785ae4a43b1d7b0cf698b496eef32a1e900a85d",
+      "before": "d6abe4f94171577cd90446560767d63b57b2f62c48ba5e90132ea714d2c2c4fe"
+    },
+    "public/hi/checkout-privacy.html": {
+      "source": "dist/hi/checkout-privacy.html",
+      "bytes": 19330,
+      "sha256": "7eba1839955206c404a523525a6e11fc551d0775882902d6e8d76c6b31cd05a0",
+      "before": null
+    },
+    "public/hi/checkout.html": {
+      "source": "dist/hi/checkout.html",
+      "bytes": 33322,
+      "sha256": "f396dfc8eb0ef19d15e1b754b1f7ea577ad381fe6f8d0ec5f0fc7d4b82e25c34",
+      "before": "6333028fe5f86b9655aa72157f0ad25bed5e4b10fabe588de3c1f4e807739ddc"
+    },
+    "public/hi/child-safety.html": {
+      "source": "dist/hi/child-safety.html",
+      "bytes": 14426,
+      "sha256": "67ca5806bf69adc4f7f19a0e3a1f2ef0686ac5ed5bd9eda5bb95bbe1851c5f56",
+      "before": "ea00aabe87262ed03edaf07f6de5ca6066e82cf5984ecb160589108776485cae"
+    },
+    "public/hi/demo.html": {
+      "source": "dist/hi/demo.html",
+      "bytes": 12517,
+      "sha256": "16d04ef7a49294afd92cafe5dedada20b0014431f8acd5b49fa5c5032d112532",
+      "before": "d694b2fbd5e90879224303cd54a042b578192c2c7d6df1b374a1edbf0a9b3049"
+    },
+    "public/hi/distance-sales.html": {
+      "source": "dist/hi/distance-sales.html",
+      "bytes": 18244,
+      "sha256": "73a880386b577b538fbf3366c7754242b9b58d082d92c0aa5a5fee9aed2dbd86",
+      "before": null
+    },
+    "public/hi/index.html": {
+      "source": "dist/hi/index.html",
+      "bytes": 20699,
+      "sha256": "1bf1b63a99d23b4c42e1527049923c7baa5a0a58118d28473d0b0fdb4cdc5224",
+      "before": "199e0ce2f29d71b635bc1c08c929c03a751539e22418e10aca399641c18f68c2"
+    },
+    "public/hi/legal.html": {
+      "source": "dist/hi/legal.html",
+      "bytes": 12370,
+      "sha256": "933ce4cee6f35c283a248badfc173daaec6a38f93e99ae8ab69d8d2eb8b236e2",
+      "before": "c48ed551f805e2691745951bf121341056afbba8ffa3b86f62ff8bca45c403c9"
+    },
+    "public/hi/pre-information.html": {
+      "source": "dist/hi/pre-information.html",
+      "bytes": 17343,
+      "sha256": "8b74572679c0cd3e7619af8d645b2cc4189e6d2b91d5fcc8228e3d6d64fbb46b",
+      "before": null
+    },
+    "public/hi/privacy.html": {
+      "source": "dist/hi/privacy.html",
+      "bytes": 20335,
+      "sha256": "bb635c112d6582fea0443e82009898f17c0146bdf91d58faed6968b3b9b0a4af",
+      "before": "3ac1e26fa8251f5e6ddce374859878e3b5feba3429ef182769946ac8a72ce4cb"
+    },
+    "public/hi/product.html": {
+      "source": "dist/hi/product.html",
+      "bytes": 16334,
+      "sha256": "aa6508204555429a9d5a6f65c2815628581a4282fabafee3b10f432e5d10e712",
+      "before": "85a61311e494a8dc611b8af84d27e21648e3f23e8fe5de9fabc37de51ceceb41"
+    },
+    "public/hi/refund-cancellation.html": {
+      "source": "dist/hi/refund-cancellation.html",
+      "bytes": 15159,
+      "sha256": "19df0988a1833bb21f3b147769f6c6c7630a72f4c01416bbf8b941553faaed13",
+      "before": null
+    },
+    "public/hi/support.html": {
+      "source": "dist/hi/support.html",
+      "bytes": 14948,
+      "sha256": "a9a9e97e47f7376be6da4fed9452a0494ebdae0ef4e910a5c0ed0f007cc3484d",
+      "before": "093a14202a263db2532d43fd3bba611c26770c6835d79499a75dc3dc682c6717"
+    },
+    "public/hi/terms.html": {
+      "source": "dist/hi/terms.html",
+      "bytes": 16623,
+      "sha256": "8f64450d5bf2eddb59f6facab9d6309f2ebd522ee5ba02c973f68254e6e6a247",
+      "before": "b6ceb724231dcd5525597ca61965d9378bc76a0239dc0f3af00da88b65197a55"
+    },
+    "public/hi/updates.html": {
+      "source": "dist/hi/updates.html",
+      "bytes": 11872,
+      "sha256": "b6d4d9f13d2a95a8f037b497a99334c184021b41e38dcf7cccb7a0d9d44e8f10",
+      "before": "f7d4d6a5cd20fa7c80018a5acbafeab0b00067f8d3813952598bcc5642dda44a"
+    },
+    "public/hr/about.html": {
+      "source": "dist/hr/about.html",
+      "bytes": 11331,
+      "sha256": "40a1cf42119d059027c1ae2ae99c225267ebb2f0137aa2df64114d7e30faca08",
+      "before": "42ed4ce8593c4ce0c4c53ca44b70f1fb9830ad27af0ba15177db1f3151e156b4"
+    },
+    "public/hr/accessibility.html": {
+      "source": "dist/hr/accessibility.html",
+      "bytes": 10798,
+      "sha256": "d47ee4a769a9d8973befa8494ddc87e3f90ffd7612736b876a0090d1d40c16a5",
+      "before": "253c31c9af2e68601a0a801466456f3cd3007c8c16959195cd73ffab51b15457"
+    },
+    "public/hr/cart.html": {
+      "source": "dist/hr/cart.html",
+      "bytes": 25723,
+      "sha256": "e4c2fe313b34fa5d3c53bdf0fad0c15607bf854f2b1deb7c577cc3f15cdd23de",
+      "before": "d1a5f952fc81e0bdb1309cbd1444bdb6b5e7b9d9ebfa3b78871d530ca4fda5fb"
+    },
+    "public/hr/checkout-privacy.html": {
+      "source": "dist/hr/checkout-privacy.html",
+      "bytes": 14762,
+      "sha256": "e4312773cf1b9970915b27f361d7f594b01e09ca2a48ec5bd58e449f9a301a72",
+      "before": null
+    },
+    "public/hr/checkout.html": {
+      "source": "dist/hr/checkout.html",
+      "bytes": 25987,
+      "sha256": "4bb0a725be547b136cd96162f504a953c5c24eea175dff8ad20f64b4b00748b0",
+      "before": "16308f8d9479b991cf5be0128558a03e9dc4860aac9f52786aaf9785b383d7e6"
+    },
+    "public/hr/child-safety.html": {
+      "source": "dist/hr/child-safety.html",
+      "bytes": 11883,
+      "sha256": "2c3b46db4900a7861916881a08e214565cab42f5d169cfd3b2c1c856b5d77483",
+      "before": "e6a7a35e673bf90158d09476f7d9532b79068f2a523d504be88acb4bc9ca5c3e"
+    },
+    "public/hr/demo.html": {
+      "source": "dist/hr/demo.html",
+      "bytes": 10835,
+      "sha256": "3b21b4945bf34920c61437c459c6758fce93cdd0f61d635e34ecbfca36d11f8d",
+      "before": "b798d2637f25ed0656acf6a03f58156d28ec88484366c9011a5802499563666e"
+    },
+    "public/hr/distance-sales.html": {
+      "source": "dist/hr/distance-sales.html",
+      "bytes": 14827,
+      "sha256": "11e9637e9a8d69ec564b10f1b41e430250dde55c78051a744772e6d3a138ae77",
+      "before": null
+    },
+    "public/hr/index.html": {
+      "source": "dist/hr/index.html",
+      "bytes": 17002,
+      "sha256": "8ca83b3a442d70e6795e2874e084aab330f4ae2d67c5e577b5f114d1dbb9d843",
+      "before": "eb8daa319f82628fb396cddc3703d72174ecafcfa560e6b4fc011d164022caa2"
+    },
+    "public/hr/legal.html": {
+      "source": "dist/hr/legal.html",
+      "bytes": 11188,
+      "sha256": "2961dc1f201a8f54cadc551b37e243b81d919286a28dc11deeeaa3f9bb77f9ed",
+      "before": "b673fe8de211d56b1e3208861d2d87c5ab41711cae491dcabbe32c9c076cf4a8"
+    },
+    "public/hr/pre-information.html": {
+      "source": "dist/hr/pre-information.html",
+      "bytes": 14488,
+      "sha256": "5f7e0b655132f5d37e6f60fb59e087f8fb0e088a33761ec49f7b45449fe0dbf7",
+      "before": null
+    },
+    "public/hr/privacy.html": {
+      "source": "dist/hr/privacy.html",
+      "bytes": 14340,
+      "sha256": "c34cd739353da813574a1a37a356fe19c33db0d98852c4f0e54ad7f0dbf94d75",
+      "before": "9da1c2418da2e9a3de4322c4dbd4556c27050f609bcfd3d854f07171273473c0"
+    },
+    "public/hr/product.html": {
+      "source": "dist/hr/product.html",
+      "bytes": 12989,
+      "sha256": "461388ca4199c39802798e2fc77c1fce7a6c4f63c3ebfb769eeeb69fa9980668",
+      "before": "d36ce6ef97e2f006baa7cfcdd2caf9ad1b8850afe6b6569a42baa9a3d047aecf"
+    },
+    "public/hr/refund-cancellation.html": {
+      "source": "dist/hr/refund-cancellation.html",
+      "bytes": 13315,
+      "sha256": "ec33649876f9e4a12a4692a9b21ff70f5e005ef88f787b859c9494cb840e2179",
+      "before": null
+    },
+    "public/hr/support.html": {
+      "source": "dist/hr/support.html",
+      "bytes": 12330,
+      "sha256": "697b6b16c44b4f76fbb9a132aff80569e787ba006288623177944234870c4877",
+      "before": "333f75ca41e3fd8d9f1aa6f8d38a968f4ecb908900cc7db646915644d8717afe"
+    },
+    "public/hr/terms.html": {
+      "source": "dist/hr/terms.html",
+      "bytes": 12983,
+      "sha256": "ea622000420f946929601e607f1acde6b8d5509e718cee3043e40afac3542595",
+      "before": "4797a3409a1a3b35de83cb962575f9485e219076d57866457d4c662211828195"
+    },
+    "public/hr/updates.html": {
+      "source": "dist/hr/updates.html",
+      "bytes": 10570,
+      "sha256": "578cb9bb7bc510b0d22c521af31377cd2024edeef5a438ec1e0caea4835ecc42",
+      "before": "8e683226880bf4477e254aeba6905b55cc98f6e91a03d809933f22d082361941"
+    },
+    "public/hu/about.html": {
+      "source": "dist/hu/about.html",
+      "bytes": 11507,
+      "sha256": "798e9db8368610fca19d3ffd763e9379f7510f57ccfc78c4931ff2ddc77a6bf1",
+      "before": "20b60af1a303af7c5026832d428f749fb47d42b714704843fb1f4aabd95b0145"
+    },
+    "public/hu/accessibility.html": {
+      "source": "dist/hu/accessibility.html",
+      "bytes": 10961,
+      "sha256": "d455b88ccda7a8c782870bcc53c3cf1185b6529f37792b2950c380af6ec8cfba",
+      "before": "26b73c3dac7ed659463a4d2afe7d33be7bed8dd4b225a3504dfdafc6ac16e79a"
+    },
+    "public/hu/cart.html": {
+      "source": "dist/hu/cart.html",
+      "bytes": 26711,
+      "sha256": "cb76716b0438c714534a348fc581615ef0032828525d38b399bf411962257e2f",
+      "before": "247ef6c4ad6102b477c2d09e8b66dd0fbdc41b206a210caea02f5f61eb6cdf92"
+    },
+    "public/hu/checkout-privacy.html": {
+      "source": "dist/hu/checkout-privacy.html",
+      "bytes": 15277,
+      "sha256": "d05c6eb40b97a9d8c98fbd6b8a9184e07415f8755acd1bd0d5efb21fb82c5cdd",
+      "before": null
+    },
+    "public/hu/checkout.html": {
+      "source": "dist/hu/checkout.html",
+      "bytes": 26975,
+      "sha256": "91a75508f4273246b1264111d5db4046ffa28748be3cf05c1d1df7b2b38fcb83",
+      "before": "375eea317c528e3b42ad0e421bfbc582d4c7fe01f502110ee5b479d648c96b64"
+    },
+    "public/hu/child-safety.html": {
+      "source": "dist/hu/child-safety.html",
+      "bytes": 12192,
+      "sha256": "415dfc0c9d72cfaba1a56eb16594a503af9f5a02422afd3269e3a844c87aea21",
+      "before": "852d18d11bd8b7cc87a0deefb47617b8edc5e874556bc1be2bee86b0316ebf29"
+    },
+    "public/hu/demo.html": {
+      "source": "dist/hu/demo.html",
+      "bytes": 11024,
+      "sha256": "5aee6010bc5ff59342fee612df8ba7e0cc0b1badc97cd0c659cd678bcf9830cb",
+      "before": "a884eebe00e483ef6afd28028a437f090e69ce8b57bdf6457578e17c0f018fc2"
+    },
+    "public/hu/distance-sales.html": {
+      "source": "dist/hu/distance-sales.html",
+      "bytes": 15243,
+      "sha256": "3ad6bf8bd84e45c745ae00879d043b789c6c8a0b4e97d7569f29f824fe65bef4",
+      "before": null
+    },
+    "public/hu/index.html": {
+      "source": "dist/hu/index.html",
+      "bytes": 17327,
+      "sha256": "7f0885424e44a765f3e558f0e83398f5696df8053e40278dc8a62eaa61c7ccb3",
+      "before": "5ea8ac42d0efd0d0755f6fdc30eaf0b98303b93ab563a1fb6b7dd4822db63bf7"
+    },
+    "public/hu/legal.html": {
+      "source": "dist/hu/legal.html",
+      "bytes": 11322,
+      "sha256": "8201f39001714f282a3d3e8a5c72e1f6ddba7eaebebc4e97a1569fd7831cf2c0",
+      "before": "78affd27929c92c12049367f41d5e8f15036cbc5a8e45aee104213b712371ac9"
+    },
+    "public/hu/pre-information.html": {
+      "source": "dist/hu/pre-information.html",
+      "bytes": 14878,
+      "sha256": "5ac97517eecf02fe457bbeedfe4438a70940c5b3ebf62a8486af66075a05f09e",
+      "before": null
+    },
+    "public/hu/privacy.html": {
+      "source": "dist/hu/privacy.html",
+      "bytes": 15016,
+      "sha256": "785ffa9bb8af6f437376305a507200903acc0fb8f259e6e38ab227014e2faa8f",
+      "before": "826b81a7a4301d9930c54706a9f15e484d66854b64db98f523c901a68bb12527"
+    },
+    "public/hu/product.html": {
+      "source": "dist/hu/product.html",
+      "bytes": 13423,
+      "sha256": "dc993d893f2839422b722640b5ab1a2e15b930d0e2b83c17dfc90f41f69b696d",
+      "before": "7f4cb06506d5a9999b51244fd8fc785b7620e1c53d6c83d481da0cc7ec5a52df"
+    },
+    "public/hu/refund-cancellation.html": {
+      "source": "dist/hu/refund-cancellation.html",
+      "bytes": 13621,
+      "sha256": "44a785e6fcb0ecf161aa9d97dccde07df0a4a83f8d64b98c254214855fd673b4",
+      "before": null
+    },
+    "public/hu/support.html": {
+      "source": "dist/hu/support.html",
+      "bytes": 12629,
+      "sha256": "56a8b6ac6afc813c6e80e5bb885fcb7db4e8f31837363bbb132f5fe9882a2ffa",
+      "before": "92257d965befb38642ea5be865cc5869f1b8355505122ccd895b2a531005b41a"
+    },
+    "public/hu/terms.html": {
+      "source": "dist/hu/terms.html",
+      "bytes": 13414,
+      "sha256": "df9272db2690f828f78c4a4ccdd513fbc763daefe6adc60efbd6a7d281f87003",
+      "before": "d0dce9e124337dee55c35f01e9682245782b28e736ba54e29dbb87ada2682744"
+    },
+    "public/hu/updates.html": {
+      "source": "dist/hu/updates.html",
+      "bytes": 10715,
+      "sha256": "72d530dd6aacab021495601141071acf8e33f2d20ecf497a20ee7730099cb6f6",
+      "before": "1184a56079966c2e1de14ea750ff101ce739f1886ec2d0739558770a41d08bfa"
+    },
+    "public/id/about.html": {
+      "source": "dist/id/about.html",
+      "bytes": 11383,
+      "sha256": "6edda11e12e377990fff8c3217268e47317de875c2c62be825c979af684d4206",
+      "before": "5894147219505d4086714276856704fbcc51c6d0d54c71615e3d5c093d89f226"
+    },
+    "public/id/accessibility.html": {
+      "source": "dist/id/accessibility.html",
+      "bytes": 10781,
+      "sha256": "c47a0639ed07d44c2e8bcb97d537328b9b54fe833922d1769350c97ab4d6ae3e",
+      "before": "a077bea19f148ae4ce680e9063d788bdf5c788f12d160e6e03327ed304616084"
+    },
+    "public/id/cart.html": {
+      "source": "dist/id/cart.html",
+      "bytes": 25677,
+      "sha256": "9175197ca59a579d6938fa83c54b74f06c831cacc9cc3491aa6ccdefed3fa49f",
+      "before": "4f96bbd3cae5df7cecd3ef18d705d219a1d50edbc57cb44cd9385025d0580789"
+    },
+    "public/id/checkout-privacy.html": {
+      "source": "dist/id/checkout-privacy.html",
+      "bytes": 14771,
+      "sha256": "74398e62b2184f9b41b754358e7e2a58ff6f75e7c3d88b824b3600fd3173b09a",
+      "before": null
+    },
+    "public/id/checkout.html": {
+      "source": "dist/id/checkout.html",
+      "bytes": 25941,
+      "sha256": "2a42e3765ba7d757b8ee804250febe039160cb6076dad7ca3909c2eab9f1364f",
+      "before": "113a9097cfcce50fd64a58d8dbc655f5217c32a92cf791421ae2c82091335626"
+    },
+    "public/id/child-safety.html": {
+      "source": "dist/id/child-safety.html",
+      "bytes": 11886,
+      "sha256": "d8955c34dd383f182e31676c07f508745d6e03615bf8bde3c14dbf07b389303a",
+      "before": "14d27bad44f78379659c9b928845eef236db9a13abea04d9656a394413990bd3"
+    },
+    "public/id/demo.html": {
+      "source": "dist/id/demo.html",
+      "bytes": 10849,
+      "sha256": "e469fc71f1f319210e45557d8dec66fe03a2fd05cb09ffa70beadf42fd841e44",
+      "before": "a59548e09d4d9c7be58c6fb71ce8dc22e3a8e368bcc65568bdbaa6e6d7e4df7e"
+    },
+    "public/id/distance-sales.html": {
+      "source": "dist/id/distance-sales.html",
+      "bytes": 14854,
+      "sha256": "f3b2b0c667fb3bb65ba097b8993b459b2e921d170d4414e0d5c0fbeb30c4db61",
+      "before": null
+    },
+    "public/id/index.html": {
+      "source": "dist/id/index.html",
+      "bytes": 17010,
+      "sha256": "4909d0dcd65ea540a37a1fd7f05eb328c2e560eadca85ffd268519f271fefbf4",
+      "before": "000fdebf20bd0d4a3c282ac9390826d88d345caf0999b5cf3bba8e9be9c2bd08"
+    },
+    "public/id/legal.html": {
+      "source": "dist/id/legal.html",
+      "bytes": 11202,
+      "sha256": "11aed44c7425ef163a6e5b6634468aafd3e2b41185bb1d5e843a6231c0973d6a",
+      "before": "29c8c3e4c8cbf635f4cf7c0b96258c572ef486c7c717dee34159dbe7476f70d9"
+    },
+    "public/id/pre-information.html": {
+      "source": "dist/id/pre-information.html",
+      "bytes": 14488,
+      "sha256": "db637b8e25c05dad71e643e86f38aeb2a98f38c869e27d0b5a849b7fc5721d94",
+      "before": null
+    },
+    "public/id/privacy.html": {
+      "source": "dist/id/privacy.html",
+      "bytes": 14382,
+      "sha256": "8222e91b23f8333978b491200fd51e4763d8e030b3ee93a0bd8d2a8b5579bb6d",
+      "before": "5a61e9464d3d6b42211282d16280a6384868e609398806bb8f1aeeb3638357b9"
+    },
+    "public/id/product.html": {
+      "source": "dist/id/product.html",
+      "bytes": 13030,
+      "sha256": "6b8fbcaad92befeb15978042e1a908bed7612f776bebcdb20c04e204285e871b",
+      "before": "b773e8d29fbbd37714c92665695bbf91551732588bec6674a78611c9e2e6c39c"
+    },
+    "public/id/refund-cancellation.html": {
+      "source": "dist/id/refund-cancellation.html",
+      "bytes": 13396,
+      "sha256": "ef18ef17ddd6b1947efc3464236afff822db8e732fb454ed86d51afe8986a1bd",
+      "before": null
+    },
+    "public/id/support.html": {
+      "source": "dist/id/support.html",
+      "bytes": 12288,
+      "sha256": "1a25ec70ed2ee5a7a4dca11b90af64a23f38eed3d3526e0dab9c957bc8d0d889",
+      "before": "1ab1ce375d4e1d06c14d7b9facfe517d94862a2e7ec98133ce8b0915a31d3971"
+    },
+    "public/id/terms.html": {
+      "source": "dist/id/terms.html",
+      "bytes": 13218,
+      "sha256": "7ab4959835aff1704b2a68325caa46d65368a90d06079d230161251ce24ed7af",
+      "before": "a859407e966db38be4e3331b6e566dc92affd3e3fcad7015e26493dacc116e60"
+    },
+    "public/id/updates.html": {
+      "source": "dist/id/updates.html",
+      "bytes": 10589,
+      "sha256": "174e30c16ba3c22674d15dcb2f75b3120ebb3852f15e1b2a1a9ac255f4537f77",
+      "before": "6d4faed9401f83580b6cc2bc1077aac10593995789282ba5b70f3b3c7fad2094"
+    },
+    "public/it/about.html": {
+      "source": "dist/it/about.html",
+      "bytes": 11382,
+      "sha256": "2d0944fb9b64acc1fdbbae6abb22afe8e6b2bcb2737c410423f828701d3b00cb",
+      "before": "6eb3db99a693bc249723a3fc14d28a6ca75d2f470534e565475decbdb1c24a1e"
+    },
+    "public/it/accessibility.html": {
+      "source": "dist/it/accessibility.html",
+      "bytes": 10865,
+      "sha256": "26ad61904a80db8aeddf002aa4b63af8bb14237a61dece1e32bb5588fff98493",
+      "before": "5c89fd9eb1588f84b67336a3663b85910e35dd1ac38905d2de93fc04f88aee3b"
+    },
+    "public/it/cart.html": {
+      "source": "dist/it/cart.html",
+      "bytes": 26193,
+      "sha256": "cf65cf7482e369db589a9f02b5f629ee13ee481b69628860ef1d077fd8ce1f18",
+      "before": "9532d0ba72887fe4a67f8c56bb94a2fcf240b6dfcd8ed06b7796e68bbfbc16a2"
+    },
+    "public/it/checkout-privacy.html": {
+      "source": "dist/it/checkout-privacy.html",
+      "bytes": 15036,
+      "sha256": "af16ff7c0446148745e48268bd10f206628b4b4ddf117b6bc1d7e5e557dfe054",
+      "before": null
+    },
+    "public/it/checkout.html": {
+      "source": "dist/it/checkout.html",
+      "bytes": 26457,
+      "sha256": "ff2c910d335adbc12062a5c238189711b1b409238fb844e720295351264f6c41",
+      "before": "a24d8459e241f90f0220a8db7675dfaeb80766b56d26717bbdf41653f51d811a"
+    },
+    "public/it/child-safety.html": {
+      "source": "dist/it/child-safety.html",
+      "bytes": 12099,
+      "sha256": "ecec374f02c715518413b6f9fe0338bfa3ecff35e3524c0f9257ab1633d4e50e",
+      "before": "7a9a802685cacc15060b26286b8af03b200d9ea279f9b8795116ee2224218e43"
+    },
+    "public/it/demo.html": {
+      "source": "dist/it/demo.html",
+      "bytes": 10928,
+      "sha256": "bd31aeb478c3104dd04ab60edf626a37f6534a6265679f21999187dec2b53b9f",
+      "before": "29098c62bdfe0d606ead4e7213f0282507a3fd84100ef7929c2f18894e43a70e"
+    },
+    "public/it/distance-sales.html": {
+      "source": "dist/it/distance-sales.html",
+      "bytes": 15078,
+      "sha256": "b7142a8c4a5415d11da6c99dafede5c8282147a73b489acc8860166482c9f327",
+      "before": null
+    },
+    "public/it/index.html": {
+      "source": "dist/it/index.html",
+      "bytes": 17199,
+      "sha256": "ccf22a5fe1068f472fd42352846f99d23374380d9c726ebc5a1f25b5be0edfb2",
+      "before": "97a5934c9032e54e5755bff5bae62ee0f65fee7427e52f0ff9f6402b970f3e07"
+    },
+    "public/it/legal.html": {
+      "source": "dist/it/legal.html",
+      "bytes": 11232,
+      "sha256": "7a67520651995235f16e0642e8ed22038d82b9a95f858ae21a2abefb1460d6b9",
+      "before": "c77fba25e8d6fa8319da9a3ea69b9770a15cbb147586f2c446136b027793af14"
+    },
+    "public/it/pre-information.html": {
+      "source": "dist/it/pre-information.html",
+      "bytes": 14688,
+      "sha256": "9785ac14fe14b4ecf387f296e897531430dca89ac0e5c2449410d4fcd4d272da",
+      "before": null
+    },
+    "public/it/privacy.html": {
+      "source": "dist/it/privacy.html",
+      "bytes": 14814,
+      "sha256": "5f9fa6a574d022f63d516a56a049b14a1dbce18513e1bfff34a221da94e2d1e0",
+      "before": "207cb355b0dbe82ac4ea7fa2c39c3a9d24500a9a634bbe8779b692ebb4a042b4"
+    },
+    "public/it/product.html": {
+      "source": "dist/it/product.html",
+      "bytes": 13247,
+      "sha256": "68f249e56064ccc1db0480c8028d10101c78521513d2d0ffb378e572860f7964",
+      "before": "68ee41f4b40a7aedd437dcfbda5ebff20e41f03b581870af2e87b71617927bfc"
+    },
+    "public/it/refund-cancellation.html": {
+      "source": "dist/it/refund-cancellation.html",
+      "bytes": 13481,
+      "sha256": "b6ab3996f3916daecc58455cc01ce7391896b53ca85943699d0e24555bea285e",
+      "before": null
+    },
+    "public/it/support.html": {
+      "source": "dist/it/support.html",
+      "bytes": 12488,
+      "sha256": "d2a1eb206b9eda562c32a9b66b0b16720f2cf4a6dbfbc9ba455e7c6a30ea7bfb",
+      "before": "88fa179bf3b5cab71b967b9c149db232ae412f7f1e0f7af8bd72134d48e33cba"
+    },
+    "public/it/terms.html": {
+      "source": "dist/it/terms.html",
+      "bytes": 13462,
+      "sha256": "494f4b4a1399b13b473df1cdf93b7d3dbb2d2c21eb4408969c7c239972907bf6",
+      "before": "ad1a7445aa8ef7769943e70add823d53501f469df4b983da26648ced64b96099"
+    },
+    "public/it/updates.html": {
+      "source": "dist/it/updates.html",
+      "bytes": 10754,
+      "sha256": "e94e353ebc5db1f65a10fb747660bf157f70a0894ccd543de44510be10440464",
+      "before": "f06dec49569c36caeb32edc8cc93b17c4533f1f49e49dc3ee249dff6be09313a"
+    },
+    "public/ja/about.html": {
+      "source": "dist/ja/about.html",
+      "bytes": 11659,
+      "sha256": "daaf83c4d29b095104fdb50247e6e1773b7dbd53b550c4f490b102d2fe784254",
+      "before": "5b34afccdea822bf5f2e4d8d0874207fe7e5dde083cb8e7038064f95402d0ea9"
+    },
+    "public/ja/accessibility.html": {
+      "source": "dist/ja/accessibility.html",
+      "bytes": 11008,
+      "sha256": "3c7b9f9bdd817502493b229a82385e5ed1c37258bb0a072ca48424ef4cc64331",
+      "before": "76e88fbe58744aa9a883b0b9a1a34af96fe51339dd29098882616c45dd64c862"
+    },
+    "public/ja/cart.html": {
+      "source": "dist/ja/cart.html",
+      "bytes": 26903,
+      "sha256": "4728c43e79b6348545b9d76b6709e7940b8090beba3481ca829bc1e6ec3e913f",
+      "before": "b65494ab144aa35c5fc7a8ce97c242452357b2859091e87639ead4ae224ac1bd"
+    },
+    "public/ja/checkout-privacy.html": {
+      "source": "dist/ja/checkout-privacy.html",
+      "bytes": 15435,
+      "sha256": "82976f1cfdfe370d9815f80a376589d91b31735438c9c75568451d55741ec084",
+      "before": null
+    },
+    "public/ja/checkout.html": {
+      "source": "dist/ja/checkout.html",
+      "bytes": 27167,
+      "sha256": "3a194b48820d1b58d0cb15736ede4e341374ec60ae5d3881f377539d32d6ad1c",
+      "before": "7521bf48a2eb77c0ec311922f456fb6c6e077dc3ebe7bcd4bc1a371117c93163"
+    },
+    "public/ja/child-safety.html": {
+      "source": "dist/ja/child-safety.html",
+      "bytes": 12457,
+      "sha256": "e03c59d8fc3134237b1d1e7783c40304af5afb6de095bc87acfab98249af81d9",
+      "before": "491dbae89c9253c7413d80ea5076e7f6e3aed129bf3f113257e4b82f24eb09d5"
+    },
+    "public/ja/demo.html": {
+      "source": "dist/ja/demo.html",
+      "bytes": 11219,
+      "sha256": "7062b838d26759b99a644b1ee6ae65248e6f0608c10fe08c1657d8930dce9719",
+      "before": "e53e70d23fe75a5b776131b6df8ceea29c8d6b01710224e1844e2688ce256150"
+    },
+    "public/ja/distance-sales.html": {
+      "source": "dist/ja/distance-sales.html",
+      "bytes": 15396,
+      "sha256": "27c8ff1b2a19e225786c1facfb6907430abee9315d0a7d2f21292b510635ee0b",
+      "before": null
+    },
+    "public/ja/index.html": {
+      "source": "dist/ja/index.html",
+      "bytes": 17692,
+      "sha256": "a15ef28abf89c0615a3af0afc197b058a31a386b5ee71c04a6a29d4bc6266e28",
+      "before": "aa08fac3e419dfcfa4613f207e3a02cf141d2f00ec2860c29140b03ae9adfc0c"
+    },
+    "public/ja/legal.html": {
+      "source": "dist/ja/legal.html",
+      "bytes": 11368,
+      "sha256": "d42d2ecb8b68c8279fffbb46288816be7602e48ba2a33d78c7fffcf7f9421662",
+      "before": "469bfbe968d898a62d201deb433448ef6f90d31bb6a60c62bca7b7916927e048"
+    },
+    "public/ja/pre-information.html": {
+      "source": "dist/ja/pre-information.html",
+      "bytes": 14939,
+      "sha256": "fbec825a0bc31134a7d2be89c2f79961516cf2fcddcf6bae37c0eb681c2338de",
+      "before": null
+    },
+    "public/ja/privacy.html": {
+      "source": "dist/ja/privacy.html",
+      "bytes": 15362,
+      "sha256": "e4113e376a3a9c4ce88f7f6b53f6261e369616fceb0c9ef97ed0ebc37cfe1d34",
+      "before": "e645c8a73482df373b118aa759b10a6352c6005a64d6872aca16a76a8c22c35d"
+    },
+    "public/ja/product.html": {
+      "source": "dist/ja/product.html",
+      "bytes": 13573,
+      "sha256": "e93272f318b516bd80dbc012521a5a6717651ca9790b296d2c699d335cb60733",
+      "before": "1d35bd6cccc82dbf787b0b6487bf0a069829dc665a1760a6fb5c698259a05db9"
+    },
+    "public/ja/refund-cancellation.html": {
+      "source": "dist/ja/refund-cancellation.html",
+      "bytes": 13658,
+      "sha256": "35f12da8dd84ccfed504ea713490b09c993ba1ec5f2ecaa8db6ac075394e063d",
+      "before": null
+    },
+    "public/ja/support.html": {
+      "source": "dist/ja/support.html",
+      "bytes": 12917,
+      "sha256": "5d5de26d52028b030dcd8a3f433cc0e4ce581d8827caef2dc6f60823ef7ba073",
+      "before": "c449e99442f49964303f5289474cc4fe630b73bc25899223c79ee932ec6f4b80"
+    },
+    "public/ja/terms.html": {
+      "source": "dist/ja/terms.html",
+      "bytes": 13777,
+      "sha256": "1e102e74a61db7c7d36808b25bd8d666424d82a8ca09d31a113deae1276a6496",
+      "before": "25f0eaacf467b065853df46a0554e2a43fb91f5c23ffd3f93655e81a5adc1431"
+    },
+    "public/ja/updates.html": {
+      "source": "dist/ja/updates.html",
+      "bytes": 10836,
+      "sha256": "2b1770ce21a98a9660090bbe384fc960c11a1a69de1d6a284b2dcfb2c95d3358",
+      "before": "5227188d6107e19ac8e067460524e660b120a9277609749a6619a4c6dfab7dcd"
+    },
+    "public/ms/about.html": {
+      "source": "dist/ms/about.html",
+      "bytes": 11410,
+      "sha256": "3b20cff36f9ac61e90ae9270c190002c138151220f2385d9e9b6962fde9cb161",
+      "before": "50cfe7b5af1b8fd4b1a4037dd1465c1d50ba17551e25087ad0a11871f4db2218"
+    },
+    "public/ms/accessibility.html": {
+      "source": "dist/ms/accessibility.html",
+      "bytes": 10794,
+      "sha256": "ca069525ac52828c1c7a330d6e6280e03a5fa7500eb80490b1f3192b5446eb88",
+      "before": "e730ef9e1149b709e64b1ffbd80fba582d8109d9748a737234d2ea56c9278f57"
+    },
+    "public/ms/cart.html": {
+      "source": "dist/ms/cart.html",
+      "bytes": 25628,
+      "sha256": "c4f83850b0f3182f221130f0ff60b630dc4fda267b86c3ceb00df080804a5f28",
+      "before": "d145e8abc8fcd85b3c828e84aeba22c12bcc2cd57d5590c63af6080ae870e723"
+    },
+    "public/ms/checkout-privacy.html": {
+      "source": "dist/ms/checkout-privacy.html",
+      "bytes": 14939,
+      "sha256": "1c10d88ef59597a98cfd921c95587c3e689338bb53e3ef0dabd6617c79823200",
+      "before": null
+    },
+    "public/ms/checkout.html": {
+      "source": "dist/ms/checkout.html",
+      "bytes": 25892,
+      "sha256": "8302a88e5c4da4c7667ec556226f875481dbde6956b3df955f5283b16c0a5971",
+      "before": "16a7b176c1b1fd4bbfbac22a5c92f0d7c34faf201a36e5e505235561e63f3c24"
+    },
+    "public/ms/child-safety.html": {
+      "source": "dist/ms/child-safety.html",
+      "bytes": 11989,
+      "sha256": "bda5a6fcaa0b9b0831312ba9525ea76f77f24d55ef8fb1bc517aabe44b91ba1c",
+      "before": "8b15b1a1443250c9abbd34251c4e9587e8ce06b7a7372b5c219d0b44a5c17e9b"
+    },
+    "public/ms/demo.html": {
+      "source": "dist/ms/demo.html",
+      "bytes": 10868,
+      "sha256": "16ba0c2074815eadc4ba289ee8a7e2e96ef4dd0167e25bc97313519e93a6a111",
+      "before": "6d44291bfa6ec179dde4a40c83e01525fee7bd556d9e0e68eb8b7bb28b0a9501"
+    },
+    "public/ms/distance-sales.html": {
+      "source": "dist/ms/distance-sales.html",
+      "bytes": 14861,
+      "sha256": "874d0934a633ead8663efc1bbe6e372ae5e7aabad310ecab3e4453854abd8d9f",
+      "before": null
+    },
+    "public/ms/index.html": {
+      "source": "dist/ms/index.html",
+      "bytes": 17069,
+      "sha256": "f9f21849547c8967ff67e900a6a44eddd84683109d6d80a2a57abacd83feaea3",
+      "before": "ae818988af4ba9f1089d6c05d5277532f589ed4ed99bc14b036b68f9decfc045"
+    },
+    "public/ms/legal.html": {
+      "source": "dist/ms/legal.html",
+      "bytes": 11237,
+      "sha256": "1865b259ce11913afe1ec07aa78800008b4c2eba1fe33c2c43c68856ba901048",
+      "before": "57379af31b51aade6f63dde3bd7fcd096d75f434ecfd58b220f7f95e6e467bff"
+    },
+    "public/ms/pre-information.html": {
+      "source": "dist/ms/pre-information.html",
+      "bytes": 14513,
+      "sha256": "ba17118a5a39c3f0a04fb0f67d1d8bd5dcf90a7f52c52895448bcad9c92d8271",
+      "before": null
+    },
+    "public/ms/privacy.html": {
+      "source": "dist/ms/privacy.html",
+      "bytes": 14622,
+      "sha256": "f547117606680362659c4057c4075d05d501304a9f7ce185ef3bfe12d2cac728",
+      "before": "6b5f39ef1e078f341d4ca0b8ca618657f006467a4452c6e46ed8a44ab813bae0"
+    },
+    "public/ms/product.html": {
+      "source": "dist/ms/product.html",
+      "bytes": 13086,
+      "sha256": "b7cc7e8864c7d1e18b91009e3257b58f74f10d26c176f33310f2327dc6cea2f4",
+      "before": "32c5b916f906bfcc3d2aa7876a1602597551e8f1c4575f335e9705c30c07e034"
+    },
+    "public/ms/refund-cancellation.html": {
+      "source": "dist/ms/refund-cancellation.html",
+      "bytes": 13410,
+      "sha256": "4301b394bcc1ea5ea4ec468a23b39f2882b0d5a5e2c6d0f10a84473039b4e793",
+      "before": null
+    },
+    "public/ms/support.html": {
+      "source": "dist/ms/support.html",
+      "bytes": 12360,
+      "sha256": "dd1429754397623e294b51cbd662c2718b157b654b48ac28ad8cdb5b3e198258",
+      "before": "14f9a28c42e4cefd5622542019740a265b70723f3679e6059745b3ce8c769458"
+    },
+    "public/ms/terms.html": {
+      "source": "dist/ms/terms.html",
+      "bytes": 13294,
+      "sha256": "cf734fcff76f9ac282edf4dd6f0312916eb364630f3a8586b964accd794a342c",
+      "before": "0d78032a663ddf6805bf4c5bce675012f002344fadbdd8f09178d7b804ec6492"
+    },
+    "public/ms/updates.html": {
+      "source": "dist/ms/updates.html",
+      "bytes": 10599,
+      "sha256": "454b48872453be78cff5cc8dac88098dc62fd6cbbb16281154b5dbe6e0056772",
+      "before": "84c6652a15cd76923a9710b5eaf42e74039cbaad6edfff8c405821a431142de7"
+    },
+    "public/nl/about.html": {
+      "source": "dist/nl/about.html",
+      "bytes": 11331,
+      "sha256": "305849cc715bbf5320d620cfe4c7362a2120fd7de2783518eddbad07f1a78562",
+      "before": "fc464b22d7c1f123ee7dc04b6edba6711837912a85ab39f528fa8a9c513ee1d0"
+    },
+    "public/nl/accessibility.html": {
+      "source": "dist/nl/accessibility.html",
+      "bytes": 10811,
+      "sha256": "6ecc2cd8f3c11bd64ef99eb8c6b921dab98194fb546a7bd75910aa2828d845e3",
+      "before": "721026359799069415d6fd5b4ca23281e25035578162a6e4663178192f4411eb"
+    },
+    "public/nl/cart.html": {
+      "source": "dist/nl/cart.html",
+      "bytes": 26042,
+      "sha256": "a049eaa3ab89e0ad34b9692aeb36870d1a7fdbbaa079364789fbcf57044f7a77",
+      "before": "8555954f15984c2e75630af9a666cd6cd255cf293869f2f68bd0831389929b8f"
+    },
+    "public/nl/checkout-privacy.html": {
+      "source": "dist/nl/checkout-privacy.html",
+      "bytes": 14995,
+      "sha256": "ae8eb36afdec39b805e2a609f922f06e13583b02f1258d9e60fa2b4af0f4679e",
+      "before": null
+    },
+    "public/nl/checkout.html": {
+      "source": "dist/nl/checkout.html",
+      "bytes": 26306,
+      "sha256": "69bd2bc36257477703d373218976c463737b97daa895e8465972be45386a8d84",
+      "before": "f4741d7b5b07c3a94f2ed17c27f16dea96f6d3ef419570a328c6fcf8587e45a8"
+    },
+    "public/nl/child-safety.html": {
+      "source": "dist/nl/child-safety.html",
+      "bytes": 12028,
+      "sha256": "7b2869007cbc252cfbd776a29fcb4ef42bd7a0cbbca57f934b199afebff9abd8",
+      "before": "28df5279a21874a29e14a90861dbeb60e754071c69be9caf1be9e268dd7f1d25"
+    },
+    "public/nl/demo.html": {
+      "source": "dist/nl/demo.html",
+      "bytes": 10909,
+      "sha256": "a20b2c4f576c3889f46e54409130aa02f1573e525d5c0bbbaa0ad2da8b804ed8",
+      "before": "2a46be3544e162c38a3ae903c5ef76661a0def710ce9d54855d918b2c2e7206c"
+    },
+    "public/nl/distance-sales.html": {
+      "source": "dist/nl/distance-sales.html",
+      "bytes": 15103,
+      "sha256": "9cb10606304ac09525dc35b482c9100262525d5a9f34a1cdf62a7561eda28f4f",
+      "before": null
+    },
+    "public/nl/index.html": {
+      "source": "dist/nl/index.html",
+      "bytes": 17098,
+      "sha256": "d211f0cf9cf047fac469b3d0f5effb20b546e608119f879fd316ed74289f838e",
+      "before": "913d5de8df3497f300833f456235b54d661a1b5b2d34c6fa69ba0038c6306d8a"
+    },
+    "public/nl/legal.html": {
+      "source": "dist/nl/legal.html",
+      "bytes": 11267,
+      "sha256": "d6d712a5f359b3895587ad5df2b30451c1ecd6035cc7f2a651e4b5e05cd9d638",
+      "before": "6ad091ec1f86ecca193b7814e04dfdf5f95daf261e1d4562cd3423e6804c1c15"
+    },
+    "public/nl/pre-information.html": {
+      "source": "dist/nl/pre-information.html",
+      "bytes": 14717,
+      "sha256": "91a674879985401ad6e894e44a9a278803e8a9c823cb2e65435fc5851faf0753",
+      "before": null
+    },
+    "public/nl/privacy.html": {
+      "source": "dist/nl/privacy.html",
+      "bytes": 14745,
+      "sha256": "c707acfa07d1955c3e303fabfe8195f67d57529f21282955d22493b46317f1ae",
+      "before": "88f11b6dba827e3e2d199fb2e422c769f2c59964998d93290eabd90183426758"
+    },
+    "public/nl/product.html": {
+      "source": "dist/nl/product.html",
+      "bytes": 13292,
+      "sha256": "f07e4807b8728db53c3949d47965fa0156a2bce3f05efaf42cad70ddd1fe0f1a",
+      "before": "e1b5ae4087b4ae4a285b7dea18aecd37d78a4c071fa22824ac20086936571f63"
+    },
+    "public/nl/refund-cancellation.html": {
+      "source": "dist/nl/refund-cancellation.html",
+      "bytes": 13545,
+      "sha256": "bd528611abddb45bd8b8400b633e9d086b10266065eca4001efab218541b4840",
+      "before": null
+    },
+    "public/nl/support.html": {
+      "source": "dist/nl/support.html",
+      "bytes": 12361,
+      "sha256": "f1d948ae44b036d1c0f5f21e85d159050d9c3f476558b310fb94801d0c331072",
+      "before": "9d3ef7df5770e929a77f5b76692174585b09435e88f4d58543a68b87c498f4c5"
+    },
+    "public/nl/terms.html": {
+      "source": "dist/nl/terms.html",
+      "bytes": 13510,
+      "sha256": "bfd3ed8d6fb52114dfb6ff4e35ea8b8a23d3870cba57b5529e9a4aa19214b330",
+      "before": "6efdd3fae58a18683bd7c7c64eabf1e4beda6f82e15199a4a26a42d23f2682d8"
+    },
+    "public/nl/updates.html": {
+      "source": "dist/nl/updates.html",
+      "bytes": 10672,
+      "sha256": "2af648db27c9b57e9fba1762f3504880779bb651ebf1837fa85a63972c507b7f",
+      "before": "211a51efc21c6fb1990e0913201547099efca6e8852f871cfa2040bbe2bbccbd"
+    },
+    "public/no/about.html": {
+      "source": "dist/no/about.html",
+      "bytes": 11302,
+      "sha256": "86f15f82c6a13ef826061df39281e32b4e71462642c2f36d8ba42ff01af5b745",
+      "before": "76f0d7d3384d0a3d72a2c9ef482cd07aa2d25bf228c4acb772be20b691c667e8"
+    },
+    "public/no/accessibility.html": {
+      "source": "dist/no/accessibility.html",
+      "bytes": 10835,
+      "sha256": "8776ebfc531ce43399b3b3b20a4400fc4cdc435410d3007d01e9783b189ec0fc",
+      "before": "05f9a782a1214bade41c72af85bbb574ba9f3b3b8f456f0124b6b232a336dd83"
+    },
+    "public/no/cart.html": {
+      "source": "dist/no/cart.html",
+      "bytes": 25513,
+      "sha256": "ded4992f86b8ad224e71681a7f960719a94263ba9fa0715bbf5802f95ac90ad4",
+      "before": "d3daed2f758d79db43a35c6e9c98e4edc46e1ae5e02c7c94d34ac1db82d267d2"
+    },
+    "public/no/checkout-privacy.html": {
+      "source": "dist/no/checkout-privacy.html",
+      "bytes": 14757,
+      "sha256": "060091f3933dc77c867b8722d8631df5e1010de7a1b5077d75687bf0d06c5d8d",
+      "before": null
+    },
+    "public/no/checkout.html": {
+      "source": "dist/no/checkout.html",
+      "bytes": 25777,
+      "sha256": "34e7ada7810ee32f4f2550f274f56cdd5dca4e9351c5600b7e8f01323796c98a",
+      "before": "12ec0b53be9d7c2eafe9794d6290cdff57bdec6ddc35cb9f81264710ca491e3a"
+    },
+    "public/no/child-safety.html": {
+      "source": "dist/no/child-safety.html",
+      "bytes": 11936,
+      "sha256": "dc65f4178e2ee1cccee266236a361189a3095d11e78ecc8c40baf1806c8318a9",
+      "before": "36a5e4de00560750ffe52df5007c338ee12235e79ab83dda5a3c3a4f8ef08d41"
+    },
+    "public/no/demo.html": {
+      "source": "dist/no/demo.html",
+      "bytes": 10857,
+      "sha256": "7b542fa3d8eb8e7767324d364b287f72825578b99bbd89519c1d29999ec8e5c6",
+      "before": "4d439c1897877ecbed43fb4e73f54f0678b050340d696dc6cf5d9606ce11ca6f"
+    },
+    "public/no/distance-sales.html": {
+      "source": "dist/no/distance-sales.html",
+      "bytes": 14668,
+      "sha256": "d8e40f05bbd0d04f8d9433b4ddeb5df0a57d70e3eb9caabe536322810b41951e",
+      "before": null
+    },
+    "public/no/index.html": {
+      "source": "dist/no/index.html",
+      "bytes": 17014,
+      "sha256": "6eafc45756fff392b74407edb7a8f7dcd00f10302ad1f1bbe072387d0441a000",
+      "before": "693766bc1ca4c04b3cc796553f892def3c5d42ff9f56526cbf7fbb1dff75e329"
+    },
+    "public/no/legal.html": {
+      "source": "dist/no/legal.html",
+      "bytes": 11221,
+      "sha256": "fa0772681c5bc40a29d061edff9df316b491069138570b0e0cb7089495f8e502",
+      "before": "8f0e294c622cdfcca0181e02de1be67f1c6b4d286ec7e04d9906c37508e01b3d"
+    },
+    "public/no/pre-information.html": {
+      "source": "dist/no/pre-information.html",
+      "bytes": 14393,
+      "sha256": "8dd877032810cfb39e0c1104b932916a3427d8adf4b80dcb8fd4a9e0ff0c3b6a",
+      "before": null
+    },
+    "public/no/privacy.html": {
+      "source": "dist/no/privacy.html",
+      "bytes": 14426,
+      "sha256": "e749f73181cb3fea9c6df5907a1510c6f7fabbd09ff76c37b2af1af5f7fc09a7",
+      "before": "eab93e427c996b2fba0a223e0c46f05bcd54d9a3e8563b530bfeac56dc6928b2"
+    },
+    "public/no/product.html": {
+      "source": "dist/no/product.html",
+      "bytes": 12966,
+      "sha256": "bdf96cc129c50579ed3aaf3945f47fe5dbce5d326d9d33c19b87a2cd99489d2e",
+      "before": "29a8246eafbb78f18fb79864fa8f9c5bc5a33f426eeb2efeaecdc3922d6c47fb"
+    },
+    "public/no/refund-cancellation.html": {
+      "source": "dist/no/refund-cancellation.html",
+      "bytes": 13295,
+      "sha256": "c733a3a66c72cccdc0c84dd6b0176a659984d01628781eb284aebe650403db00",
+      "before": null
+    },
+    "public/no/support.html": {
+      "source": "dist/no/support.html",
+      "bytes": 12337,
+      "sha256": "d63e8d00b8f75793bed01ae1ecd5a7394a16ab2c87c02905cda940ea19b7ba33",
+      "before": "e735dedf827a1c396f98321a8eef97fbb47da70ca89a7a6374e00def38555859"
+    },
+    "public/no/terms.html": {
+      "source": "dist/no/terms.html",
+      "bytes": 13016,
+      "sha256": "2a2e5389a7af2148df29d5dc48469afd202c3efcd4f08d2ba4eaa27e9378a05f",
+      "before": "ea2153496db68aaf37880f734bf62b7a209ba53ec4c7392af90b15ed13be815a"
+    },
+    "public/no/updates.html": {
+      "source": "dist/no/updates.html",
+      "bytes": 10623,
+      "sha256": "e0d3551eddc696d62b067f9f2572f4b14bc7bab80bd40de0c383e71b6414f0b1",
+      "before": "85e339fe70d11a764ce34aa393b4580dc97b2f079f10097f2eb4afa8648ad79f"
+    },
+    "public/pl/about.html": {
+      "source": "dist/pl/about.html",
+      "bytes": 11367,
+      "sha256": "c09e41fc9bdc905b1c0cb454619650c95285ed6be0f5056d284f06f18dab283f",
+      "before": "4850027f59715f0dc1b8099c0df9600d78f7c88b28194653e80f53985bfc28cc"
+    },
+    "public/pl/accessibility.html": {
+      "source": "dist/pl/accessibility.html",
+      "bytes": 10820,
+      "sha256": "a64d1ef08ee34a98a39a36d3415ba854cf02a7e7e45294c1823fe4dbf529809c",
+      "before": "f6371f1287bb976e56b51aad8fbdea03cd0315904e7e442f6ee6eb6755f47a10"
+    },
+    "public/pl/cart.html": {
+      "source": "dist/pl/cart.html",
+      "bytes": 25945,
+      "sha256": "0f8d5924e9d2d81d229a53e54793b0c8e21f8291a2a619f4f4dbf0c7dab6ee62",
+      "before": "eac1e0da112bdcddb84a1f35cf0aa0bb19756b2565bf4a819b4e3fe27fafd3be"
+    },
+    "public/pl/checkout-privacy.html": {
+      "source": "dist/pl/checkout-privacy.html",
+      "bytes": 14965,
+      "sha256": "c1275d87063d2cf2e428e442905885d4390b49f783bdf33dd6bb8eb2eac98ac2",
+      "before": null
+    },
+    "public/pl/checkout.html": {
+      "source": "dist/pl/checkout.html",
+      "bytes": 26209,
+      "sha256": "077671145de564a797d71e3e88ef0da312a108addac5b22d8e19f3a346c19997",
+      "before": "7ce27fb9878d4924cc17cbbfba8331aca4b3b1e782fb9bf760649f29848f29ba"
+    },
+    "public/pl/child-safety.html": {
+      "source": "dist/pl/child-safety.html",
+      "bytes": 11991,
+      "sha256": "ac9c9e0c6d326f787487f7a33b9085474b92ab7d223729c7c0b5a5e95132e75c",
+      "before": "4bbbcb132ee8aa01a4da98f29313345187fa3b40cc92dfb2c9e3190ef836274e"
+    },
+    "public/pl/demo.html": {
+      "source": "dist/pl/demo.html",
+      "bytes": 10900,
+      "sha256": "6af5748c32969ee7f4ee209638fa3c900265b07874b2d8efcca37b9fe6a1982e",
+      "before": "b84debb6a907d9eaed0ecde57a8676cdafe64ad084506979ae5262fbd370329d"
+    },
+    "public/pl/distance-sales.html": {
+      "source": "dist/pl/distance-sales.html",
+      "bytes": 14927,
+      "sha256": "bed2188641ec05859cd008e90bf04571db797ea2863076ba6005b3d524470d10",
+      "before": null
+    },
+    "public/pl/index.html": {
+      "source": "dist/pl/index.html",
+      "bytes": 17084,
+      "sha256": "f12bea264e6ab14155f2faddbe8b4e813a85d74e3e42556935edec7dfe0fb3f2",
+      "before": "4154b2eb1b4798125923377a5f9980c9f1dca5cdcaa8ed94ef909cf3eb51f372"
+    },
+    "public/pl/legal.html": {
+      "source": "dist/pl/legal.html",
+      "bytes": 11181,
+      "sha256": "2cdb56317c04266d1085546fecf19fdaa021b75f8cdff7e02cf0ced056d6e2d9",
+      "before": "581c70e2a4cf9d5434d57b6cd274144228b556268f67ccce4897a94792e72053"
+    },
+    "public/pl/pre-information.html": {
+      "source": "dist/pl/pre-information.html",
+      "bytes": 14586,
+      "sha256": "364a1bf68bf84154337d258a399fd787f126d61f1994878e34268043490e2967",
+      "before": null
+    },
+    "public/pl/privacy.html": {
+      "source": "dist/pl/privacy.html",
+      "bytes": 14626,
+      "sha256": "ac011a03675750690f5abd98838f3b0f1ae0ccfdfa99d61ea4bff8519bcd2414",
+      "before": "203d7d2c7a8dc7e06ebce7aa8e42fbc2bbc0202cb52c3b871b5a321718118ef8"
+    },
+    "public/pl/product.html": {
+      "source": "dist/pl/product.html",
+      "bytes": 13076,
+      "sha256": "8e18cb208d7a4dd44a4963c865cae98d46976a3b912d4bacb636df41d6c760d4",
+      "before": "ae1751a112a9aeb1914fc2405cd08db940d881edc2f5853797beaf5a8528c969"
+    },
+    "public/pl/refund-cancellation.html": {
+      "source": "dist/pl/refund-cancellation.html",
+      "bytes": 13406,
+      "sha256": "77e4d94fbae866ca3ef2ef8889a153edf3d2f01de535de00275bd8ad8c8b5baa",
+      "before": null
+    },
+    "public/pl/support.html": {
+      "source": "dist/pl/support.html",
+      "bytes": 12419,
+      "sha256": "4f3c4d3224848ec3c9ac255ec1dcf32f07d37b15a27256e7a1380917dae0b4f1",
+      "before": "6a6fcfe9cf9862a5f9bcdd1718c5bbbae9978778b91bc55a981abaf84445a6a0"
+    },
+    "public/pl/terms.html": {
+      "source": "dist/pl/terms.html",
+      "bytes": 13119,
+      "sha256": "39035d9c16aa5f711412f38554712a54c8c6871cd5b08e86b0f8b31081768cd5",
+      "before": "5458e0a397ad758b942b23710ea77056b75793ecfc1173798dd4712a9c7e66ce"
+    },
+    "public/pl/updates.html": {
+      "source": "dist/pl/updates.html",
+      "bytes": 10607,
+      "sha256": "8f358a8aef2b8e7f441e2b4ea546a580a3e3c25b9423253fe08e73e389fcd1bd",
+      "before": "f44452890635024d68fca51ff03677bae5b922ecaf4f7f34b659d7b2dba165ff"
+    },
+    "public/pt/about.html": {
+      "source": "dist/pt/about.html",
+      "bytes": 11418,
+      "sha256": "f0e6cc7896b45088cb1d775735122fdb97a7ace47e700a266db35bbce3c14e52",
+      "before": "5e48b00f5594ed91bf0a436476a3f696c51683d6c1a9eaba4849a30457f6fb8b"
+    },
+    "public/pt/accessibility.html": {
+      "source": "dist/pt/accessibility.html",
+      "bytes": 10852,
+      "sha256": "4575e4b81622f52108333d201eaa872e51bf6d38909ccac5b5888df6df342ad5",
+      "before": "e5093fb534a251fec20fb3062d90896b40ed227c0776742df26604492d60375e"
+    },
+    "public/pt/cart.html": {
+      "source": "dist/pt/cart.html",
+      "bytes": 26231,
+      "sha256": "225602f923fd79dffff9670ea79882dde5a40747b5c5f04cf99927f96cec2389",
+      "before": "1bb4d9547bc896d5828d6aaa207244157084bf89018498cfe7797e9133f4ae31"
+    },
+    "public/pt/checkout-privacy.html": {
+      "source": "dist/pt/checkout-privacy.html",
+      "bytes": 15038,
+      "sha256": "f4cd0f4ceb3cc4d8d71018a8f37e01c5545505bda35fb00e7832a1a1341b6e29",
+      "before": null
+    },
+    "public/pt/checkout.html": {
+      "source": "dist/pt/checkout.html",
+      "bytes": 26495,
+      "sha256": "7f0a4fda0dae116230319a4718a5a4ed8df1d7c8f46cd642cb946851f33b0275",
+      "before": "73f03365be6a9a09920c3f813a63af9a652f0d6eb64b4210a7a2ba0aedcfcdfe"
+    },
+    "public/pt/child-safety.html": {
+      "source": "dist/pt/child-safety.html",
+      "bytes": 12109,
+      "sha256": "3f36ebec49274a1c08262780aba302ced7b23fc9b2aef0d9a6012f383e63cf46",
+      "before": "a6973dc215718737701629e932a634a204f9643088e6055bfd62bc43b72ef2a4"
+    },
+    "public/pt/demo.html": {
+      "source": "dist/pt/demo.html",
+      "bytes": 11005,
+      "sha256": "4f9c11c4eddcd2571a6f0cc32bf3e52a99bd906a24fe1e9987c7bd8296624675",
+      "before": "e0b3739d7b5f8868acd5c8c27e71bc16f66a1288e4a4626384cf4978b979b06e"
+    },
+    "public/pt/distance-sales.html": {
+      "source": "dist/pt/distance-sales.html",
+      "bytes": 15210,
+      "sha256": "4b27be6590c4ba582f3848c37b44217f1456ec1630663d5b217a7811c50a6e7b",
+      "before": null
+    },
+    "public/pt/index.html": {
+      "source": "dist/pt/index.html",
+      "bytes": 17318,
+      "sha256": "48b6ed5230acc21cf1716d1ec6fa215026567cd0dbfb78815aaf4ba796c4f825",
+      "before": "4040dca75b58c3871031792dc7afe9116f7183a22541c04093219618f4467f03"
+    },
+    "public/pt/legal.html": {
+      "source": "dist/pt/legal.html",
+      "bytes": 11264,
+      "sha256": "4d39f0cb8ef7384089122c5b3d23469266660a87685cccec5559bb6909fd510f",
+      "before": "2afb3292672e8a7ddd8cfec7d000184335a536af55bf633a38aa64b3ccfc3f2a"
+    },
+    "public/pt/pre-information.html": {
+      "source": "dist/pt/pre-information.html",
+      "bytes": 14857,
+      "sha256": "c600832500e9ae580175f4d8cfcfb948dbfeb1f0365916e3972274d135ebab6b",
+      "before": null
+    },
+    "public/pt/privacy.html": {
+      "source": "dist/pt/privacy.html",
+      "bytes": 14748,
+      "sha256": "148183a0e7ce669d5cc1ab0c4585a611b894517a01f3b92bb45ebfe71e23cede",
+      "before": "9b29ca685aa2311b845956e5703840b1efe7a35f9a95da03632bdd897e09d98f"
+    },
+    "public/pt/product.html": {
+      "source": "dist/pt/product.html",
+      "bytes": 13397,
+      "sha256": "46280dab722b6bcba5a65b43262e5e9f7b03eafe4cf993389c77c19720100865",
+      "before": "c298dc5d427001ddf8bda78ae371cce834d95ce04ecc3b107a0eec46a2c77ca1"
+    },
+    "public/pt/refund-cancellation.html": {
+      "source": "dist/pt/refund-cancellation.html",
+      "bytes": 13663,
+      "sha256": "b4a5a5e0c52a1ba937af085d10366dd6847f4d86fc0eb6f0915b1ffaf321ebfd",
+      "before": null
+    },
+    "public/pt/support.html": {
+      "source": "dist/pt/support.html",
+      "bytes": 12517,
+      "sha256": "0ac45ef8330349b9711e06f358cd59047bac27abb7c5b41f90af4c74ed331906",
+      "before": "a549d3a77b779e07a4f15601c3623ac3691b5f4b74406ed2fefa221a24ba6d29"
+    },
+    "public/pt/terms.html": {
+      "source": "dist/pt/terms.html",
+      "bytes": 13561,
+      "sha256": "0e66f7abc065e5a771e1d24def3e001ad5ba766f4764ff0daae4bdda6204c413",
+      "before": "39c838a2dbeee6a75d395becad215b475e5b5317ad51879a5eb49e22bdc5a6ff"
+    },
+    "public/pt/updates.html": {
+      "source": "dist/pt/updates.html",
+      "bytes": 10761,
+      "sha256": "0b3ac541277703e9a0714f90b462d3d6de4bd3e9eda4a61cbb4c3a30eb3de400",
+      "before": "d51ddd8f82711dbae220060281c2af15e4a6e375b4b2e40c36db16a35995095e"
+    },
+    "public/ro/about.html": {
+      "source": "dist/ro/about.html",
+      "bytes": 11406,
+      "sha256": "f9fe3047aaee803170e1d0e6d5f9639efdacee2e1493946f2a5995248ebfc4f5",
+      "before": "15301ce080c70f715030ece2cd0f2b33c557cbd66cdfb9e591e857a9d904934a"
+    },
+    "public/ro/accessibility.html": {
+      "source": "dist/ro/accessibility.html",
+      "bytes": 10853,
+      "sha256": "c711ba3725e264d856fa5e3d995c53a63259239cbee2e3c08a2a475be2b53e50",
+      "before": "fa0c92b591403fe4fc5c8f47920d1bd786e46fd63c30ae93334d4f381fe225b0"
+    },
+    "public/ro/cart.html": {
+      "source": "dist/ro/cart.html",
+      "bytes": 26232,
+      "sha256": "7926617d147f435823e96ad94f99a1148c24ecdcbeb2c6e34c6dfe31fd260158",
+      "before": "eb6b4409692f1d5f6e6f691cc626a4cf5d28f10dfc523f53971580cd7366d360"
+    },
+    "public/ro/checkout-privacy.html": {
+      "source": "dist/ro/checkout-privacy.html",
+      "bytes": 15094,
+      "sha256": "1250dcaaaa6d99ad72c5eb75b852f268937adbf54dcaaa6be609623e557f135c",
+      "before": null
+    },
+    "public/ro/checkout.html": {
+      "source": "dist/ro/checkout.html",
+      "bytes": 26496,
+      "sha256": "4d5786c97559cbd524aab034a6ab29898b40902aaa8ee54a5e686c6cc5e66d62",
+      "before": "b65799878ff4702c6a726c19aba4988dbff109916914d459627ef51e4f74e438"
+    },
+    "public/ro/child-safety.html": {
+      "source": "dist/ro/child-safety.html",
+      "bytes": 12110,
+      "sha256": "97d15e364c6ff88aefe84dc3693fe82661d8e631136d26116004fc734c685ab6",
+      "before": "6b5c07da0b96817b391e8a254829abb0002b75806bcb646c8f5d56d2621b9772"
+    },
+    "public/ro/demo.html": {
+      "source": "dist/ro/demo.html",
+      "bytes": 10987,
+      "sha256": "e9aea43cdffbe79a3b51686949fe7abe12394ad25f3410e4dd305de53bb5c59c",
+      "before": "38814e8b1e79af4729273818804e96b7ec1ee2ff86c66c4d9e08d448178f9b82"
+    },
+    "public/ro/distance-sales.html": {
+      "source": "dist/ro/distance-sales.html",
+      "bytes": 15020,
+      "sha256": "42971b39dbae40462e81cf4f2e0df5b6d90583e77b16cef0a1360241f204a954",
+      "before": null
+    },
+    "public/ro/index.html": {
+      "source": "dist/ro/index.html",
+      "bytes": 17366,
+      "sha256": "139774dd5e1debb86600edff34d027ae93ebae7a767679622f34545f9d3874a8",
+      "before": "85b47bec7c61792fb2c60e72cc1a8662d3f614affb67b22eb7b533183fc1f331"
+    },
+    "public/ro/legal.html": {
+      "source": "dist/ro/legal.html",
+      "bytes": 11307,
+      "sha256": "4d2b31f0061251fb8bcbbe14cf815da5a444e18f3130eaf7ea9e70bd3e8eb5cc",
+      "before": "abdbe4cee4dc703259df02b67eb20e60cbe4db9ff173b86bb4220d29798b9495"
+    },
+    "public/ro/pre-information.html": {
+      "source": "dist/ro/pre-information.html",
+      "bytes": 14644,
+      "sha256": "b428a958dee6863db1845179b89a8580fd16bf9f8e8180bf34270d5d7b87bfbc",
+      "before": null
+    },
+    "public/ro/privacy.html": {
+      "source": "dist/ro/privacy.html",
+      "bytes": 14773,
+      "sha256": "0acf656b9e8135b35c4ba60be2f3fe4b37211ae03ed423d7b888d9f05e0c7ab4",
+      "before": "68c9253344d76560619c77cb7ef4a757295b44357b16663c064996716a6cb57a"
+    },
+    "public/ro/product.html": {
+      "source": "dist/ro/product.html",
+      "bytes": 13308,
+      "sha256": "191323e57162df2e43a7589861f1ba4dd5616266898683a4d14a2dc744ea921a",
+      "before": "8f6ac68392faa2d2dfeb67b16d33424dd23fbc6cba87bab62ce49e81857951df"
+    },
+    "public/ro/refund-cancellation.html": {
+      "source": "dist/ro/refund-cancellation.html",
+      "bytes": 13487,
+      "sha256": "da4448fcd6a4c84f094a2a3bd619eb94885a8e5c1e126c20d94970d0ee311386",
+      "before": null
+    },
+    "public/ro/support.html": {
+      "source": "dist/ro/support.html",
+      "bytes": 12567,
+      "sha256": "33d816f8777b1cb9d7ed1a3a5e58ac854da8909bf010c0293a7cd973aa277f49",
+      "before": "92f8dcd3593abf9bd51c9ce774960ff42148d937978775db793064b7f74b0a6a"
+    },
+    "public/ro/terms.html": {
+      "source": "dist/ro/terms.html",
+      "bytes": 13312,
+      "sha256": "83f59f6d89362b1c5f50738913de0f2eff61ff52b8274fef260a5f5838cfa3c3",
+      "before": "5132ab752fd63a0aa391491157e76f1a07bf13b577b477c5beded9852d6b8735"
+    },
+    "public/ro/updates.html": {
+      "source": "dist/ro/updates.html",
+      "bytes": 10717,
+      "sha256": "2bbaed8fe1854113ac6906c2a0304fb4e4d260e2eeeaa2d393b23c7f11d63092",
+      "before": "95e4b67ed97d664357d2e8cc7d27ef8842d4830ddc720d16ad0314a0b965e109"
+    },
+    "public/ru/about.html": {
+      "source": "dist/ru/about.html",
+      "bytes": 12463,
+      "sha256": "911b9f978748db0c8e6c8ac2cf7e2322de524637c3401ec92124e3e7124a06a6",
+      "before": "1766bc0c96b3cd5b3b16c027ac42ef6cfbfbc241364e6a307ec1d8f426edee31"
+    },
+    "public/ru/accessibility.html": {
+      "source": "dist/ru/accessibility.html",
+      "bytes": 11500,
+      "sha256": "e51d3c1f2bfaae25f05bb328ba7aa6daaf192f8e1e71a458b4e668df0a89b55a",
+      "before": "17ed1353e19ab0678040318049200a88f6392b64256c714dd19788395f4c2e53"
+    },
+    "public/ru/cart.html": {
+      "source": "dist/ru/cart.html",
+      "bytes": 30412,
+      "sha256": "75696a6f656bb53ee2738ff65021cfd43180d585b2bb58bb949ccdd655678e53",
+      "before": "26f1d461e57487474ad5b342033f07e6b7f0aac17a668bdbc0eccf9aa9ccb38c"
+    },
+    "public/ru/checkout-privacy.html": {
+      "source": "dist/ru/checkout-privacy.html",
+      "bytes": 17544,
+      "sha256": "625c20d2bf36cc9e920ef43b1be1a93f6d0700cd09082683c7329df9ff29ef00",
+      "before": null
+    },
+    "public/ru/checkout.html": {
+      "source": "dist/ru/checkout.html",
+      "bytes": 30676,
+      "sha256": "090ec378f36b04709d44a92c7585b30b407467c6330320aa34d8806c4daedec2",
+      "before": "d1d5816b033fad4e7bcd3aa81d5a7af1a8ca471b01c4a4826d7804e8e64364db"
+    },
+    "public/ru/child-safety.html": {
+      "source": "dist/ru/child-safety.html",
+      "bytes": 13564,
+      "sha256": "664e8c140d13a7b0633c37f6f92db5f04d346fadeca99a0775008b061278766a",
+      "before": "b308d9d73ece66270f8cc1bfa00388ebdd3283fe29cdf3c5db52c59abb546e77"
+    },
+    "public/ru/demo.html": {
+      "source": "dist/ru/demo.html",
+      "bytes": 11974,
+      "sha256": "811db4bf25a219b4db445614bf2a0b8cfc0d9b10bd8788b594a99384c6b2c3be",
+      "before": "6a2e6877b0a9d4f459c38c995a5c34d4a0175907e791a9398a08e8be81b67069"
+    },
+    "public/ru/distance-sales.html": {
+      "source": "dist/ru/distance-sales.html",
+      "bytes": 17099,
+      "sha256": "8730c43b897917993e65b412badcb79ce14b9fad20ae02af2ef95b828fa2bf3a",
+      "before": null
+    },
+    "public/ru/index.html": {
+      "source": "dist/ru/index.html",
+      "bytes": 19309,
+      "sha256": "3713f6641610ca8385b9d71aa83bdbc701b7b5d1cbed4f8ffe764723601c36c5",
+      "before": "9261f2af648128db58744ecc43198c54199f3a296afca9b767328037616a2c44"
+    },
+    "public/ru/legal.html": {
+      "source": "dist/ru/legal.html",
+      "bytes": 11969,
+      "sha256": "323fcfa28bc0b593b0b0e1de24375e251526c03cf2c269abd05e9a814c2e60cf",
+      "before": "58db011784e394afaaf2667506dfacc51441b9f6e7b82834cb927a922982d8fc"
+    },
+    "public/ru/pre-information.html": {
+      "source": "dist/ru/pre-information.html",
+      "bytes": 16416,
+      "sha256": "f79b2694bfcd2325f5e8dfcb993233120c58beb1df7d37b6a8c84ad8c538dba1",
+      "before": null
+    },
+    "public/ru/privacy.html": {
+      "source": "dist/ru/privacy.html",
+      "bytes": 17994,
+      "sha256": "4e3d81ed1cf1ab4676a3c5887a7406fc54c4d9b823b1ed5207bfa2866e836a92",
+      "before": "c90fb2f5466e5d014bdec19aec32b50dd0fd256c8dc6e6c16ecd2ccdb6e2008b"
+    },
+    "public/ru/product.html": {
+      "source": "dist/ru/product.html",
+      "bytes": 15079,
+      "sha256": "2e36ec6f15427ce3316911149af494f373d91a06de36573f8856bd98e6a32bfb",
+      "before": "ac8be95e3670669488fb0b4e11c87171a5a5b53e78998b3903aba4e6ebeb14d6"
+    },
+    "public/ru/refund-cancellation.html": {
+      "source": "dist/ru/refund-cancellation.html",
+      "bytes": 14588,
+      "sha256": "0e670f6afb8510d5dd44e02a7d936980ad7f987a48ef6559f8478b2542abc4ec",
+      "before": null
+    },
+    "public/ru/support.html": {
+      "source": "dist/ru/support.html",
+      "bytes": 13965,
+      "sha256": "adab6bdb1333ff2f103f85a798be4790d624076cb74a1080eff1bcf5bf2c44a1",
+      "before": "1ca013c26d580dd5b8f0751a02f86498d1be2b63d1cb6aff366a04b2d0c75a4d"
+    },
+    "public/ru/terms.html": {
+      "source": "dist/ru/terms.html",
+      "bytes": 15053,
+      "sha256": "bfa58e516e3f02eae395f033c72d3f2eb388432faaff42ea8985bc13dbde1f3b",
+      "before": "88ba86a2dbff1902965364006a2b23404cc4c86b881742c4e971cef299c63cfd"
+    },
+    "public/ru/updates.html": {
+      "source": "dist/ru/updates.html",
+      "bytes": 11455,
+      "sha256": "0651737d0e672500ffd0f4cbc6bab4b38775ed529515baed01b4b1623f2b7413",
+      "before": "4ae47b2c42c4170f5a87baaf3d42ae72b91dc55acef6ffa16bfa0ad5e7ffda06"
+    },
+    "public/sr/about.html": {
+      "source": "dist/sr/about.html",
+      "bytes": 12343,
+      "sha256": "c73381804e578ceac186f92a9e5504f4c50b32e3cf8a1645200b6274ebaf5a57",
+      "before": "69b2fdcd9e58afcffb5be283d653c2670852bb23dfb39b748cc2c137a8602297"
+    },
+    "public/sr/accessibility.html": {
+      "source": "dist/sr/accessibility.html",
+      "bytes": 11414,
+      "sha256": "27833928c308f5864c0e63fe91476aad6d0a2a2c226b38b86020452857e07c4c",
+      "before": "2604fc925afc7fc50bad3acf3b25304b25bbb8acc3298057e2e3817089adbf9d"
+    },
+    "public/sr/cart.html": {
+      "source": "dist/sr/cart.html",
+      "bytes": 29765,
+      "sha256": "b65774b29a21a066285def35be5cc3b8ae23c3fe1e71e9f3218d066e872e40fe",
+      "before": "96ffabc3a24d01e6b59925a2b1691c27b28a3925a576bb9e97dd9116a9ee2798"
+    },
+    "public/sr/checkout-privacy.html": {
+      "source": "dist/sr/checkout-privacy.html",
+      "bytes": 16914,
+      "sha256": "6f48854095d921a1204bfe5f7ee62a8e739cdab94c1aa6bad5e7d34fccafd85c",
+      "before": null
+    },
+    "public/sr/checkout.html": {
+      "source": "dist/sr/checkout.html",
+      "bytes": 30029,
+      "sha256": "9546d7a2a309e01d4707da83e80b80464160703a30f81f8d0330be43d2df17c2",
+      "before": "efbb0dbc4d7b44eef97fc69faf0ee5022d4031f45ff7c943f1d16b20f3b09a1f"
+    },
+    "public/sr/child-safety.html": {
+      "source": "dist/sr/child-safety.html",
+      "bytes": 13315,
+      "sha256": "4f6b0b30f326ccbb947206cd8daa6f54aac109d6285ee064d37bc8ba77fbfc0a",
+      "before": "498f3ecd49184eb748b70d41eddb4860d4fe2f084f8882e8dbcce18d2ccaeafc"
+    },
+    "public/sr/demo.html": {
+      "source": "dist/sr/demo.html",
+      "bytes": 11763,
+      "sha256": "697bbdf2ab42ab6dfba73c33cc1e15d91d0784e7b2e8abd3c06bb1726a37c990",
+      "before": "c7e72c08cd1b20adf7edc782dedcd8c86f053a934ce5b62738e60f5fa3c6a08c"
+    },
+    "public/sr/distance-sales.html": {
+      "source": "dist/sr/distance-sales.html",
+      "bytes": 16744,
+      "sha256": "a790895f19a3d13059fc54113d061156583c461fd4bb46d85b4be7c15c2b1ea0",
+      "before": null
+    },
+    "public/sr/index.html": {
+      "source": "dist/sr/index.html",
+      "bytes": 18983,
+      "sha256": "562fbd66ea24d2a72c6496011daa486763396c2f0409d673a790ce8d00b35bf0",
+      "before": "367e403327d52032d07987700e6edb1aec3f7d63c4f56182ec5a8d8bd3f003b7"
+    },
+    "public/sr/legal.html": {
+      "source": "dist/sr/legal.html",
+      "bytes": 11879,
+      "sha256": "8aebbc3019204ddfdf59883887e9d99e1b3b9bbe633dd3ceee08dcbbcddd231c",
+      "before": "65c0a0d6e8b6f4d5448524bd1441f1417a5c4665a5db444f967f4ac0eeb2e9bd"
+    },
+    "public/sr/pre-information.html": {
+      "source": "dist/sr/pre-information.html",
+      "bytes": 16143,
+      "sha256": "d52b9782c6898c27d465f05eca8b8a170a235f8448e43fba9760e41ab01c3ec8",
+      "before": null
+    },
+    "public/sr/privacy.html": {
+      "source": "dist/sr/privacy.html",
+      "bytes": 17185,
+      "sha256": "5962ce8d7843500dbcb6d223445e04a89e6331541d1a7dd73126e747575f5812",
+      "before": "354661a5ca5237ed85f50cea93a291d5356bf29d4df153123787da04d4953185"
+    },
+    "public/sr/product.html": {
+      "source": "dist/sr/product.html",
+      "bytes": 14745,
+      "sha256": "910f31df8d1d9a411fb3dadedfe5380805436c4685f91c21f5fde1b558b39342",
+      "before": "d56c07645854bdc897aa43954cf3e050ffcd3f49363607eb376f791a5d65f990"
+    },
+    "public/sr/refund-cancellation.html": {
+      "source": "dist/sr/refund-cancellation.html",
+      "bytes": 14420,
+      "sha256": "dda0a6f72b2dfabe6f3e74a193e485471bf03e008c7346282c542adc94f05a1e",
+      "before": null
+    },
+    "public/sr/support.html": {
+      "source": "dist/sr/support.html",
+      "bytes": 13716,
+      "sha256": "daf3ba369ea7c2081935c6eb92730eaf7dc36e72c2a76af591fbcabed7766ead",
+      "before": "2d4f3cfca1890b67a74c7b4e10d635efa717c7e97e97fe284c9509646ae89f6e"
+    },
+    "public/sr/terms.html": {
+      "source": "dist/sr/terms.html",
+      "bytes": 14665,
+      "sha256": "c3a4b06f940ce6851849dc282400900db3fab1cd70e645532c003157158f9a2a",
+      "before": "9f57be5bbe442dfc1fe9e9de2a4b0f94a849964532bd9559e237e98a67068e43"
+    },
+    "public/sr/updates.html": {
+      "source": "dist/sr/updates.html",
+      "bytes": 11325,
+      "sha256": "919b5bcd5e2082fdf304500e590a67a8d56b359fa8ed847f880b09489d56788d",
+      "before": "020f9b004c48ace97c482a2579d50b2fc6a6ab8abd9fe317bf05c9d02d4366ef"
+    },
+    "public/sv/about.html": {
+      "source": "dist/sv/about.html",
+      "bytes": 11385,
+      "sha256": "2b6ec17506b94cf9aaca27c5489d09b9d44b38a7e1653b6ee25ffeff39fd0706",
+      "before": "542dff6a11ee056d0150496e722cb50fbeafdde85b2bf4a05275d664dc9846ec"
+    },
+    "public/sv/accessibility.html": {
+      "source": "dist/sv/accessibility.html",
+      "bytes": 10847,
+      "sha256": "c2e67e77889dd2b42af9924d19f9b966166911b7ae70afe478f714d397789a3f",
+      "before": "db42962d425a3f3279962d11b0118b58b08272be01bb56cc64a079aa23ea5898"
+    },
+    "public/sv/cart.html": {
+      "source": "dist/sv/cart.html",
+      "bytes": 25645,
+      "sha256": "d64f9ba4cb0d39ebcbcc24b090262692549f3441d29650d7f3b3ce8ce6937521",
+      "before": "87c5921c89371f602c5231f9568dae50b4b1cb9645bbfa710707e27b6be627e7"
+    },
+    "public/sv/checkout-privacy.html": {
+      "source": "dist/sv/checkout-privacy.html",
+      "bytes": 14844,
+      "sha256": "a567540626506bb3188c1707b4fd9afa4e6f60f7d0810bead6fa0f719a73ad71",
+      "before": null
+    },
+    "public/sv/checkout.html": {
+      "source": "dist/sv/checkout.html",
+      "bytes": 25909,
+      "sha256": "0ec292b59bb0aa2383ac6444ef143bb4a5a7d3daa8cbcc988a6dcd7bed87caba",
+      "before": "a1a866d8c9a52ea57749f4712796e55ffac2dcd42ed730a91bd51cd152d1a66f"
+    },
+    "public/sv/child-safety.html": {
+      "source": "dist/sv/child-safety.html",
+      "bytes": 11930,
+      "sha256": "98f05356e2fc8d95b9359d8aee9c4deb52a4cef51e172cc03144439707515cb0",
+      "before": "20962ccf8628fbdc6297896bd82b686b4b9d949a04650be5a7eebe6b6b4a8018"
+    },
+    "public/sv/demo.html": {
+      "source": "dist/sv/demo.html",
+      "bytes": 10927,
+      "sha256": "44ca315cbf83bcdefa2d2c0eb300ece6832c0886ab5101c465cb6bca33148970",
+      "before": "1d40705a91c5be9aee41aafd33c0d43a1a634a6a71a453091276a448d3a92a47"
+    },
+    "public/sv/distance-sales.html": {
+      "source": "dist/sv/distance-sales.html",
+      "bytes": 14876,
+      "sha256": "ccbad0985f912645f6eb966510429f70c27f2e05e5035d4f25c8d0896074171b",
+      "before": null
+    },
+    "public/sv/index.html": {
+      "source": "dist/sv/index.html",
+      "bytes": 17086,
+      "sha256": "1f5f941da564974a743a5163dc05cb380e9061d9805b7e26acedfc1ddcae79b9",
+      "before": "a225a56d6fb0e7b868e1df2ed1c7e0b77b58372d2a03b7ec8515cfbba34637bb"
+    },
+    "public/sv/legal.html": {
+      "source": "dist/sv/legal.html",
+      "bytes": 11228,
+      "sha256": "52c1c4dead6c30f413f0c07ebd23dfe2655bf3e78f11fdb65f4e9705ca736402",
+      "before": "2e6c553b36743e05f0fb096f75717e4e0d759cf4a8c6b72d72c0c311644a9d48"
+    },
+    "public/sv/pre-information.html": {
+      "source": "dist/sv/pre-information.html",
+      "bytes": 14542,
+      "sha256": "cae4cddf6d99c3341f3b13dc470cff8156c37843b5d4a60660e4c45b9f480a63",
+      "before": null
+    },
+    "public/sv/privacy.html": {
+      "source": "dist/sv/privacy.html",
+      "bytes": 14501,
+      "sha256": "b8ea41555cc6994c58754668ca496423265a1e735a9c4f08f2602dc7ee544634",
+      "before": "45c229b66314f5e12c6d809dde44eb95909c93d0f97f2705f1f66573887aaf87"
+    },
+    "public/sv/product.html": {
+      "source": "dist/sv/product.html",
+      "bytes": 13192,
+      "sha256": "b276d5321ef3b7ac06a47f953798a1cd0ae8f3473b0bc64dcd5b3281940e1812",
+      "before": "9d0404e603f62fc6a03fdee99f742cb0c2c1ba243a5d8895282a8983b7c6b79b"
+    },
+    "public/sv/refund-cancellation.html": {
+      "source": "dist/sv/refund-cancellation.html",
+      "bytes": 13454,
+      "sha256": "308894a4a39922a266e179f645cd3f0153f05ab31c094b268a586dd8ec8663f6",
+      "before": null
+    },
+    "public/sv/support.html": {
+      "source": "dist/sv/support.html",
+      "bytes": 12429,
+      "sha256": "9f09d24f0a075cda81abbc45c0e3cd1b56fa9e8ccdb146e753269a780b5b9280",
+      "before": "a6cba1a0139b5968525079b1082c24bf3b9a00a21024f13cf20616aa167fe6d0"
+    },
+    "public/sv/terms.html": {
+      "source": "dist/sv/terms.html",
+      "bytes": 13385,
+      "sha256": "bb775e1f2d44b77dfbf323ec5daa18934820b4915c94ee51cd366168aa87f94d",
+      "before": "3377b512542e2e7841795323eb25ed5b5545519b95cdbec3cbb4fbabf92ab2a8"
+    },
+    "public/sv/updates.html": {
+      "source": "dist/sv/updates.html",
+      "bytes": 10660,
+      "sha256": "be7b6f7172dfb4bb3a6e20add4e4bbde371c5a026f52ea0cab5d535758b503af",
+      "before": "3605004c8a806119a270ea0cd3069ee8d9b1784be3881626b8fc8fbb01196b4b"
+    },
+    "public/tr/about.html": {
+      "source": "dist/tr/about.html",
+      "bytes": 11455,
+      "sha256": "d88b20073979267f122a5ba19f4823423d3a8e0f76d52044d36e65a8f86e1f58",
+      "before": "67d01da0d1317cb4a862a7e5435c4760926fecedc030b77228deffb8c32f096c"
+    },
+    "public/tr/accessibility.html": {
+      "source": "dist/tr/accessibility.html",
+      "bytes": 10826,
+      "sha256": "c9fe1888f4c2c040ac9ad0a0d63ad3b435a829da26dda122f792283cc25c625a",
+      "before": "c83deca8e9a42b5d57881ed4e5e6f633f031645ba6d8925f3dca6650e6216509"
+    },
+    "public/tr/cart.html": {
+      "source": "dist/tr/cart.html",
+      "bytes": 26269,
+      "sha256": "a3f3f28e8026f4c4de58e341fb3a2c3895a6dc90d37aa91ad318becb5cce2a3c",
+      "before": "e97855ef6bd1a0c12052724cd7932aa98760a4c3732f537b8a11ff79a5209135"
+    },
+    "public/tr/checkout-privacy.html": {
+      "source": "dist/tr/checkout-privacy.html",
+      "bytes": 14986,
+      "sha256": "b9c0462d1f9881dcf1ee4d72b9f4a236519297fc73b26bc087d0f3971474727e",
+      "before": null
+    },
+    "public/tr/checkout.html": {
+      "source": "dist/tr/checkout.html",
+      "bytes": 26533,
+      "sha256": "954b2c268b27c6a7448db2ab401574e3f1612f08fd12661fd0e02946a9252546",
+      "before": "c560b845ae265698faca2a7f98dd6057cf57d2153dbe4dc80f23fe6d54bca7be"
+    },
+    "public/tr/child-safety.html": {
+      "source": "dist/tr/child-safety.html",
+      "bytes": 12023,
+      "sha256": "f57dda31447f124c291161e8bf1693d1f63bbb337c9de076e05abbf49f5f3fc0",
+      "before": "9aacee0cf76a95d170f9283beae620f39d1beda40c50760d8797749156388600"
+    },
+    "public/tr/demo.html": {
+      "source": "dist/tr/demo.html",
+      "bytes": 10943,
+      "sha256": "5a3171d08874743c58f5f7ed769e58f99ff8e246a503dab19b68ee0d045915f6",
+      "before": "e0b57e4aec44f4def0c1e2eb89d6a4843a5c941aefe8d2d43ef304d676ad9e62"
+    },
+    "public/tr/distance-sales.html": {
+      "source": "dist/tr/distance-sales.html",
+      "bytes": 15663,
+      "sha256": "002bf091003984b5e44ab704770b89fdd41d6c98dde8dbfb9d55417196851481",
+      "before": null
+    },
+    "public/tr/index.html": {
+      "source": "dist/tr/index.html",
+      "bytes": 17283,
+      "sha256": "49bd9936f1eef1a8bf2b94dcef95c51df274480195a97fcf150c99d42aabfca3",
+      "before": "d4003fd5b393f3542e105fe2e7be799bf49f42e437a409e5739caff4211e06c1"
+    },
+    "public/tr/legal.html": {
+      "source": "dist/tr/legal.html",
+      "bytes": 11221,
+      "sha256": "fdf2d64e429d6bdbbffb9150451e1d506dc07fdbd2e2809f593108fbc5e17c29",
+      "before": "27e4c75b312ae064a59d5ecad3b64d6720f714978d8be58deba30277fe5b3666"
+    },
+    "public/tr/pre-information.html": {
+      "source": "dist/tr/pre-information.html",
+      "bytes": 15255,
+      "sha256": "3c6fe47ae01878124beec975a23c997db3cec55a2b79500dda3c866efb7e3523",
+      "before": null
+    },
+    "public/tr/privacy.html": {
+      "source": "dist/tr/privacy.html",
+      "bytes": 14664,
+      "sha256": "f0ec237191ec53a6cf42d6b55731fc2a0eb16a3c58cc8f33fa9ef7979ab4b031",
+      "before": "64ae902e2244a5ebcab3a2b3439b74e62745338e34e1396ea92ca7a66d2696cc"
+    },
+    "public/tr/product.html": {
+      "source": "dist/tr/product.html",
+      "bytes": 13329,
+      "sha256": "c1a92a3fc4488d1cb7c1f2b35807387b71c80b9ef40f8df0be4bb4f59bb4602f",
+      "before": "3577cb2c9dae7a6b140a3f7204fa964d33f195abe73acdde33f3637223b549ee"
+    },
+    "public/tr/refund-cancellation.html": {
+      "source": "dist/tr/refund-cancellation.html",
+      "bytes": 14093,
+      "sha256": "25eee7ff1669da14eeb7256940bcf1b477aca9b155db21f502befbf9d42a5868",
+      "before": null
+    },
+    "public/tr/support.html": {
+      "source": "dist/tr/support.html",
+      "bytes": 12510,
+      "sha256": "b5d032c11e78d3ce304dd59375fbbd19bd3d8cb0a39fa4ee44723c082182f001",
+      "before": "f4a2649da1964440cc05f394ff4b6b8b55a3a06a2ab0c8f7fc55702725f06cef"
+    },
+    "public/tr/terms.html": {
+      "source": "dist/tr/terms.html",
+      "bytes": 14036,
+      "sha256": "5904d8daf3a1c7622fe254ec63759c39e797c6fadb64546f2d135b3953c595fb",
+      "before": "9f5029fa8cff5d033bd7569d45107bfabcccffb2e250ddb8a39c0161945fe9e6"
+    },
+    "public/tr/updates.html": {
+      "source": "dist/tr/updates.html",
+      "bytes": 10678,
+      "sha256": "4c6885c38fafffec0712780a3a3890d9e8f651735ac32352979dabfe1fc5108a",
+      "before": "ee31d3275a8f156245e24a01470bb4a38fd5ff2ba2ffe62728623d406afaa315"
+    },
+    "public/uk/about.html": {
+      "source": "dist/uk/about.html",
+      "bytes": 12377,
+      "sha256": "20cbaa5ad2335edc074a65ae6ff6b833b175ef880f9bd12dc16c792cca0ef062",
+      "before": "7b2c11398a85fb907cea478467724f4b9d49e4b8186573f1143e9dc5bb05a7c9"
+    },
+    "public/uk/accessibility.html": {
+      "source": "dist/uk/accessibility.html",
+      "bytes": 11480,
+      "sha256": "d6fa79f12a080df6635b991a0bc5f0d36077274898aa67b693b037e938648822",
+      "before": "315983611f45f71054551c3cae0bfcaff8f545bdceb42bebb0729e864c7b2294"
+    },
+    "public/uk/cart.html": {
+      "source": "dist/uk/cart.html",
+      "bytes": 30444,
+      "sha256": "123b4440167c85efe97e26fd9a4d579309a0f4f502567e0e81c884984eb2b2d0",
+      "before": "6566efd0d03634658ec88fbce0b3efa376482c88133ce5c1f4ffcc9a034629bc"
+    },
+    "public/uk/checkout-privacy.html": {
+      "source": "dist/uk/checkout-privacy.html",
+      "bytes": 17390,
+      "sha256": "c632d32c037a6a1b1ef95e0bde3cc4f083a4dcbf58f89e7d932ca7c6172b816f",
+      "before": null
+    },
+    "public/uk/checkout.html": {
+      "source": "dist/uk/checkout.html",
+      "bytes": 30708,
+      "sha256": "ccb9594f21feb454c5fb5b3b0d2c89f87d70ae410707623878abdca58cb57883",
+      "before": "eb5837a2294ced7369d16adeb8dc20af9f1c5c2d258a58fdbf6f7c1095ee0522"
+    },
+    "public/uk/child-safety.html": {
+      "source": "dist/uk/child-safety.html",
+      "bytes": 13620,
+      "sha256": "77b76a5c415c002bb563a05f2fddc838a0c12da7d011152b345ffdbf945f14d1",
+      "before": "ef93429259c55a2fcd0f5d5e18c1c6c57c1d15715573c968a7002b46545a0e9f"
+    },
+    "public/uk/demo.html": {
+      "source": "dist/uk/demo.html",
+      "bytes": 11930,
+      "sha256": "2c495f389903daabb603f98a26595deef6c37045ecec1f70c89001b123a35109",
+      "before": "52054c8ad5dc8a892f66b7e3bd5f671e64ceb8e0b38d333f4ed4e70e49cc48df"
+    },
+    "public/uk/distance-sales.html": {
+      "source": "dist/uk/distance-sales.html",
+      "bytes": 17096,
+      "sha256": "c521b9e0494682bb695bc36c0dc6165f4e42adde27fad145b54a590b17fe3a11",
+      "before": null
+    },
+    "public/uk/index.html": {
+      "source": "dist/uk/index.html",
+      "bytes": 19283,
+      "sha256": "6eee7a9c058a5561587813fa87d330530adf8c474c62daaf669b28af130e31ca",
+      "before": "4fd5bf09d4559bd675abd7af95528c19c6efa34f3723c66ade2fc88dc67d1db3"
+    },
+    "public/uk/legal.html": {
+      "source": "dist/uk/legal.html",
+      "bytes": 11940,
+      "sha256": "3dc861b4d724de2bdc0450b10e79758478ed42f66e7d53c7d4c747e22621efc4",
+      "before": "f4b2de9974497e1d2ceb2430f8dc0ed0caa73fe3650ddfec227faad761e251dd"
+    },
+    "public/uk/pre-information.html": {
+      "source": "dist/uk/pre-information.html",
+      "bytes": 16429,
+      "sha256": "24f9db15c0f2282516d210280170a8dbacfeb272ac40443a18eeed9b73ce0fca",
+      "before": null
+    },
+    "public/uk/privacy.html": {
+      "source": "dist/uk/privacy.html",
+      "bytes": 17892,
+      "sha256": "3d8208799f97c8f1684640c1b6f0ff6aa214985de2f2be14aeeace589fe3d43b",
+      "before": "83b0f5f73599449d6eb44f6da671c70b7ba68286b279976b8e83c11a8725754f"
+    },
+    "public/uk/product.html": {
+      "source": "dist/uk/product.html",
+      "bytes": 14984,
+      "sha256": "5edf8ce2461cb3a7cf1ac7a2afd72f8f79c498edbe953bc6000fa44d8e8479ea",
+      "before": "03be49fece8eec24f3b60bab0a5db1495ca0dbb16c5176823a71b064faace54b"
+    },
+    "public/uk/refund-cancellation.html": {
+      "source": "dist/uk/refund-cancellation.html",
+      "bytes": 14574,
+      "sha256": "2553b50ccd3f09e55e840bf15678ba927ac9dae0b36d86878b15144721b5e289",
+      "before": null
+    },
+    "public/uk/support.html": {
+      "source": "dist/uk/support.html",
+      "bytes": 13939,
+      "sha256": "54b212a5e370ed9b916abc377ba6be0052a0592f8505ab1c31017541a8297e1d",
+      "before": "861ea3e358f2244c0d3f36d64271d103b57bc0cca973bbc979be69dc442fe96c"
+    },
+    "public/uk/terms.html": {
+      "source": "dist/uk/terms.html",
+      "bytes": 14875,
+      "sha256": "6b83e1cc581f48b7a57e7d85fb1d3682d7c50f5913236e8d9d23b11d9ec3488e",
+      "before": "e62c411c18f33aaa6b358f5320e89235dff6ddeb2019eeb6faaff275c58961fb"
+    },
+    "public/uk/updates.html": {
+      "source": "dist/uk/updates.html",
+      "bytes": 11426,
+      "sha256": "da1d7a1fbc0f55ba3782dcade4b44e81836a78a983c6e6d02f62d8c1ad4bc1de",
+      "before": "4bb3d40f8da9c04359701a3b9d2d3a21c9d557942aaf5202255fcbc20afa1259"
+    },
+    "public/ur/about.html": {
+      "source": "dist/ur/about.html",
+      "bytes": 12096,
+      "sha256": "05a6f1ed89c5c40c58ef0261d16198e08db62d15821b394ef049ea0d1eb0f785",
+      "before": "d4756d4f496688d6f37328266fc83535c35c09d717570ed473bf50556c5f36ae"
+    },
+    "public/ur/accessibility.html": {
+      "source": "dist/ur/accessibility.html",
+      "bytes": 11233,
+      "sha256": "e108e46d9326fed00eb10ce8d46e454cf99e8fb8c0fb9550211e08f5eff0ad28",
+      "before": "5c7d63a15a6fd3dd32cf548d088103c953ed7def5cb19cbbfb2f58f0157ebd16"
+    },
+    "public/ur/cart.html": {
+      "source": "dist/ur/cart.html",
+      "bytes": 29173,
+      "sha256": "bb81d813a661b6e69ce5ae89a4fb283a17d76c470fa1ab4315bc6084142e12cb",
+      "before": "10858f5b1a64c557d3f483284474e6015cc2ef3eb09165f27d31f577d944ee0b"
+    },
+    "public/ur/checkout-privacy.html": {
+      "source": "dist/ur/checkout-privacy.html",
+      "bytes": 16960,
+      "sha256": "4a91760d15ccb4e9487fca3908154cab55dfddb4c05323bd77eed07456a5d72f",
+      "before": null
+    },
+    "public/ur/checkout.html": {
+      "source": "dist/ur/checkout.html",
+      "bytes": 29437,
+      "sha256": "46c40d5f6d09440eac999c133cd8082b879fba1cdc9d1619b95d090faab67c9d",
+      "before": "5faa0afd52c01ae400bb95a6cdaf961fd2b129b7a45ad5ceb4242f923772daba"
+    },
+    "public/ur/child-safety.html": {
+      "source": "dist/ur/child-safety.html",
+      "bytes": 13101,
+      "sha256": "9e7fabd9f4f18e5336f3a29c9655bc489ac449dcb0a973f1777b967e518c8452",
+      "before": "8367dc9d46c24ecb2c4ccc5e8b00ea5dab0ab2735d85fd0ede3ddbd29be542d4"
+    },
+    "public/ur/demo.html": {
+      "source": "dist/ur/demo.html",
+      "bytes": 11568,
+      "sha256": "e2f7824de2263b0e1437c3e3bcd3e17de744c854a1f39b5985911486b047d0e4",
+      "before": "78df3b12970fbffc0b65c7b87fe31070043ea0284d2a824d9ce449e449df6112"
+    },
+    "public/ur/distance-sales.html": {
+      "source": "dist/ur/distance-sales.html",
+      "bytes": 16360,
+      "sha256": "84d8774a46f085aed56e629d49eb37475ebe231e5269b8544fa7ec4b791838fc",
+      "before": null
+    },
+    "public/ur/index.html": {
+      "source": "dist/ur/index.html",
+      "bytes": 18621,
+      "sha256": "6b7992102f9dbebf23f9f6b26caa5d8adbffa7d267d35204bd3a4aff2b73774a",
+      "before": "5f0c91ff0007796c7ae06315b8ade9c1dc59d68abfb651b55f5b7b6ac05e200b"
+    },
+    "public/ur/legal.html": {
+      "source": "dist/ur/legal.html",
+      "bytes": 11673,
+      "sha256": "e1dea6cd039037778c470e8f9601e7f5df4a7bdbe5b648492723527241ca9077",
+      "before": "1bfbee60b23699d8c810442e7fe94f1a4335677b2137c353be781ac7127a48c7"
+    },
+    "public/ur/pre-information.html": {
+      "source": "dist/ur/pre-information.html",
+      "bytes": 15844,
+      "sha256": "b23321568e5f10a420ecee09d9f217cc677e983b69e23ebd2a669deb5f52090a",
+      "before": null
+    },
+    "public/ur/privacy.html": {
+      "source": "dist/ur/privacy.html",
+      "bytes": 17232,
+      "sha256": "d99be5eec5164766fcd335ef95d2da1c5ccb3822331806680ea02b432aaf6289",
+      "before": "28a7ea9bff8e29965224e9d119ebabeca4861cdb12f201aaf2dee4472e63de0a"
+    },
+    "public/ur/product.html": {
+      "source": "dist/ur/product.html",
+      "bytes": 14423,
+      "sha256": "0ca6da08a73e165c38ef290680b938d777f2b22dd23f33ccd803506dc49c7467",
+      "before": "2070c262746c591a289f0e197200fa92bcbaea564c13e3ed47f06fefaba2664c"
+    },
+    "public/ur/refund-cancellation.html": {
+      "source": "dist/ur/refund-cancellation.html",
+      "bytes": 14181,
+      "sha256": "7e85c6199939f008f90464ba88fc2ff1c846cd202c53b660e6e6f513a0092ee9",
+      "before": null
+    },
+    "public/ur/support.html": {
+      "source": "dist/ur/support.html",
+      "bytes": 13489,
+      "sha256": "2b253f261babbf95d7dd79b6ad0f509bea9519a06012573536aafc775f26f1bd",
+      "before": "606e15fe7ba0f37d1df01ceb9832f463616a69cd091f5a28207d17f77b7f03ff"
+    },
+    "public/ur/terms.html": {
+      "source": "dist/ur/terms.html",
+      "bytes": 14743,
+      "sha256": "fe1312d0a3c336c3548386e0ce989b239cffef586290f192545fcdc7310ce070",
+      "before": "c45f1a36813e35f248939d01e877af8eb619adcd13e07f1afe086669303829ce"
+    },
+    "public/ur/updates.html": {
+      "source": "dist/ur/updates.html",
+      "bytes": 11143,
+      "sha256": "90d60f378dc484a9a5f7ca3b90b5d0ffb7a290a751b4d24560c62dc77877743a",
+      "before": "df5c542502b3e4f90f418fbbc7c7c6c3033ec7b6094d828fa25e8942217d0842"
+    },
+    "public/zh/about.html": {
+      "source": "dist/zh/about.html",
+      "bytes": 11110,
+      "sha256": "97a59afbb73a6ee533c2826c7579c7b669afebf9d0d4114600bcc36595764af6",
+      "before": "0960c8168931e01497656153a20eec0436b95a7b1a5dfa0bd1254d5984fc1ee7"
+    },
+    "public/zh/accessibility.html": {
+      "source": "dist/zh/accessibility.html",
+      "bytes": 10651,
+      "sha256": "29b47209dc00e3aae9637950a26ce48385335a66e6e2e803ee481caedd7721a7",
+      "before": "5a5b49b5d2088a8d6b3d3944f0049dd48bf00860419742d0321199cacd93de88"
+    },
+    "public/zh/cart.html": {
+      "source": "dist/zh/cart.html",
+      "bytes": 24980,
+      "sha256": "07f0258f1112b77b15206ac9c15de4a762e07d2fdb801f575cbaca0a6384d91f",
+      "before": "d732d655c9c3ffe7de58e392d7e38ea6b41a2fd8e045db5db557fa421b124052"
+    },
+    "public/zh/checkout-privacy.html": {
+      "source": "dist/zh/checkout-privacy.html",
+      "bytes": 14278,
+      "sha256": "750b46f0469ab0ae5e2958dc542852a6084e5017ca9d0cefb4dd44415c8d09f3",
+      "before": null
+    },
+    "public/zh/checkout.html": {
+      "source": "dist/zh/checkout.html",
+      "bytes": 25244,
+      "sha256": "2f94b3b813385ad56fe84bb3e72200df6d7bf45761cf19767fb2dfe97ed1a6d7",
+      "before": "21a2c7e80be9ab61355ef64781b251177c6f5e4539661deca4dabd065afa13c2"
+    },
+    "public/zh/child-safety.html": {
+      "source": "dist/zh/child-safety.html",
+      "bytes": 11546,
+      "sha256": "231ab266588409fd9b7694c1f3ef9e03470db8eaad9266efe25a53172c51aadb",
+      "before": "d627a09133eeb004a9149a16d64b731812195324d63e555ed912055120e5a6e1"
+    },
+    "public/zh/demo.html": {
+      "source": "dist/zh/demo.html",
+      "bytes": 10706,
+      "sha256": "a684d4102eaec44c938ff0aee8b2b1d314cb4cc274034abe82fb34eecf49c3b9",
+      "before": "e1bdf20d2d0bb272db366ba2c175899a55a5dab48fd5d86c0d82ceda3311f20b"
+    },
+    "public/zh/distance-sales.html": {
+      "source": "dist/zh/distance-sales.html",
+      "bytes": 14456,
+      "sha256": "9557407ef1c440530179c8a10c5bd1b38b8f4b0ba86189cb90254aebbfcd8f3d",
+      "before": null
+    },
+    "public/zh/index.html": {
+      "source": "dist/zh/index.html",
+      "bytes": 16701,
+      "sha256": "a24e062f0dd2dfa7628ede1b40965bdb307b5088b4adaffd45fc1f4b034d87c2",
+      "before": "97b6b130e5cb1e89915a6189e844e96eb7f5c7bec67dc5f44473e9cd4c36a0c9"
+    },
+    "public/zh/legal.html": {
+      "source": "dist/zh/legal.html",
+      "bytes": 10999,
+      "sha256": "922533935f903bb6832636e032162f693ab996077d5ac9b17f596c95f1652029",
+      "before": "7c1da3568b0760c7e644a16e711be94f574d595f175540c9daea7fea71b8c24d"
+    },
+    "public/zh/pre-information.html": {
+      "source": "dist/zh/pre-information.html",
+      "bytes": 14094,
+      "sha256": "0fb645f3c4d87f55e326014c275f4c5188bf59e264fe2a39e1de45c93c0c8b0c",
+      "before": null
+    },
+    "public/zh/privacy.html": {
+      "source": "dist/zh/privacy.html",
+      "bytes": 13678,
+      "sha256": "9f3b44c85ad7464f720473c851551c961b1eb76507f97aa66dee1a3673051fc6",
+      "before": "1f1237c2676d8a018004102bcfe38a84754f018e6fff87882bc5e31c6dcd5610"
+    },
+    "public/zh/product.html": {
+      "source": "dist/zh/product.html",
+      "bytes": 12732,
+      "sha256": "5ea16295882bffed124e76da24dc7bed41df2cfc5c8736160dec8137d7613153",
+      "before": "29a4cfe9667cc84e447b15d79db6950500c94c449d319e7695cd7f64b12f5f00"
+    },
+    "public/zh/refund-cancellation.html": {
+      "source": "dist/zh/refund-cancellation.html",
+      "bytes": 13085,
+      "sha256": "89a18b1a872f1976a95f73e265880061033c3ddd24a0b058629af69226d018ed",
+      "before": null
+    },
+    "public/zh/support.html": {
+      "source": "dist/zh/support.html",
+      "bytes": 12039,
+      "sha256": "5c345ac519f9b074cc31a1894f8cba80ea51911b1125d6b159d07b0f691d99bf",
+      "before": "fc8ab8a18b63494d7da55ee4677bea0238a73adf3e53c00807bbdd837ceaa5ea"
+    },
+    "public/zh/terms.html": {
+      "source": "dist/zh/terms.html",
+      "bytes": 12825,
+      "sha256": "95b077951c581b1de6e026e5cc93f6863b6149f28772ece99bd159b212b2ac87",
+      "before": "351afc269a840298aee2ddbeef2a7200538866ec1c2ca0e9e645e046157115c3"
+    },
+    "public/zh/updates.html": {
+      "source": "dist/zh/updates.html",
+      "bytes": 10442,
+      "sha256": "1496b3cc0ef938e23d387c62dda0d4f31ca16cc10cc86a5e8cfbdc5ed9cf2cba",
+      "before": "c33feec81ec37ca1ce828e972adfb909ef9cced0509daee373d2cadda8cbfcf0"
+    }
+  }
+}

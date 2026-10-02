@@ -1,33 +1,36 @@
 // Public basket metadata only. No buyer email, credentials or progress is stored.
-(() => {
+(async () => {
   'use strict';
   const configNode = document.getElementById('commerce-ui');
   if (!configNode) return;
   const ui = JSON.parse(configNode.textContent), cfg = ui.catalog;
   const KEY = 'horizons-commerce-basket-v2', OLD = 'horizons-commerce-review-v1';
-  const valid = v => v?.schema === 2 && v.product === cfg.product && v.quantity === 1 &&
-    Object.hasOwn(cfg.accounts, v.account) && Object.hasOwn(cfg.accounts[v.account].plans, v.plan);
+  let catalog;
+  const checkout=document.getElementById('checkout-config');
+  if(checkout)catalog=JSON.parse(checkout.textContent).catalog;
+  else {
+    try {const r=await fetch('/products.json?v=20261002-1',{credentials:'omit',signal:AbortSignal.timeout(8000)});if(!r.ok)throw Error();catalog=await r.json();}
+    catch {catalog={products:{[cfg.product]:{available:true,offers:Object.entries(cfg.accounts).flatMap(([account,row])=>Object.keys(row.plans).map(plan=>({id:account+'-'+plan})))}}};}
+  }
+  const normalize=v=>v?.schema===2?{schema:3,product:v.product,quantity:v.quantity,offer:v.account+'-'+v.plan}:v;
+  const valid = raw => {const v=normalize(raw);return v?.schema===3&&v.quantity===1&&catalog.products[v.product]?.available===true&&catalog.products[v.product].offers.some(o=>o.id===v.offer);};
   let selection = null;
   try {
-    const stored = JSON.parse(localStorage.getItem(KEY));
-    if (valid(stored)) selection = stored;
-    if (!selection) {
-      const legacy = JSON.parse(sessionStorage.getItem(OLD));
-      if (legacy?.schema === 1 && legacy.product === cfg.product && legacy.quantity === 1 && Object.hasOwn(cfg.accounts.individual.plans, legacy.plan)) {
-        selection = {schema:2,product:cfg.product,quantity:1,account:'individual',plan:legacy.plan};
-        localStorage.setItem(KEY, JSON.stringify(selection));
-      }
-    }
+    const stored=normalize(JSON.parse(localStorage.getItem(KEY)));
+    if(valid(stored))selection=stored;
+    if(!selection){const legacy=JSON.parse(sessionStorage.getItem(OLD));const v={schema:3,product:legacy?.product,quantity:1,offer:'individual-'+legacy?.plan};if(valid(v))selection=v;}
+    if(selection)localStorage.setItem(KEY,JSON.stringify(selection));
     sessionStorage.removeItem(OLD);
-  } catch { /* The current page still works with unavailable storage. */ }
+  }catch{}
   const link = (href, value=selection) => {
     const u = new URL(href, location.href);
-    if (value) { u.searchParams.set('account',value.account); u.searchParams.set('plan',value.plan); }
-    else { u.searchParams.delete('account'); u.searchParams.delete('plan'); }
+    u.searchParams.delete('account');u.searchParams.delete('plan');
+    if(value){u.searchParams.set('product',value.product);u.searchParams.set('offer',value.offer);}
+    else{u.searchParams.delete('product');u.searchParams.delete('offer');}
     return u.pathname + u.search + u.hash;
   };
   const cart = document.createElement('a');
-  cart.className='commerce-floating-cart'; cart.href=ui.cart_path;
+  cart.className='commerce-floating-cart'; cart.href='checkout.html';
   const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
   svg.setAttribute('viewBox','0 0 24 24'); svg.setAttribute('aria-hidden','true');
   const path=document.createElementNS(svg.namespaceURI,'path');
@@ -39,22 +42,23 @@
   function notify() {
     badge.textContent=selection?'1':'0';badge.hidden=!selection;
     label.textContent=selection?ui.checkout:ui.cart;
-    cart.href=link(ui.cart_path);cart.setAttribute('aria-label',ui.cart+' · '+(selection?'1':'0'));
+    cart.href=link('checkout.html');cart.setAttribute('aria-label',ui.cart+' · '+(selection?'1':'0'));
     live.textContent=selection?ui.checkout+' · '+ui.cart+' 1':ui.empty;
     document.dispatchEvent(new CustomEvent('horizons-basket-change'));
   }
   window.HorizonsBasket={get:()=>selection?{...selection}:null,valid,link,set(value){
     if(value!==null&&!valid(value))throw Error('INVALID_BASKET');
-    selection=value?{...value}:null;
+    selection=value?{...normalize(value)}:null;
     try {if(selection)localStorage.setItem(KEY,JSON.stringify(selection));else localStorage.removeItem(KEY);} catch {}
     notify();
   }};
   window.addEventListener('storage',event=>{
     if(event.key!==KEY&&event.key!==null)return;
-    try {const v=JSON.parse(event.key===null?localStorage.getItem(KEY):event.newValue);selection=valid(v)?v:null;}catch{selection=null;}
+    try {const v=JSON.parse(event.key===null?localStorage.getItem(KEY):event.newValue);selection=valid(v)?normalize(v):null;}catch{selection=null;}
     notify();
   });
   notify();
+  document.dispatchEvent(new CustomEvent('horizons-basket-ready'));
   const dialog=document.querySelector('[data-start-dialog]');
   if(dialog && typeof dialog.showModal==='function') {
     let opener=null;
