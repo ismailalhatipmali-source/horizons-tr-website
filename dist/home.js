@@ -74,3 +74,19 @@ if (video) {
   syncVideo();
   reducedMotion.addEventListener?.('change', syncVideo);
 }
+
+
+/* Available Travel Agent Client Kit — injected once across all 32 localized home pages. */
+(() => {
+  const catalog=document.querySelector('.catalog'); if(!catalog||document.getElementById('travel-client-kit'))return;
+  const lang=document.documentElement.lang||'en';
+  const names={en:'Travel Agent Templates & Client Kit',ar:'قوالب وكِت عمل وكيل السفر للعملاء',tr:'Seyahat Acentesi Şablonları ve Müşteri Kiti',fr:'Modèles d’agence de voyage & kit client',es:'Plantillas para agencias de viajes y kit de clientes',de:'Reisebüro-Vorlagen & Kunden-Kit',it:'Modelli per agenzie di viaggio e kit cliente',pt:'Modelos para agência de viagens e kit do cliente',nl:'Reisbureau-sjablonen & klantkit',ru:'Шаблоны турагентства и клиентский набор',uk:'Шаблони турагенції та клієнтський набір',pl:'Szablony biura podróży i zestaw klienta',cs:'Šablony cestovní kanceláře a klientský balíček',ro:'Șabloane agenție de turism și kit client',hu:'Utazási iroda sablonok és ügyfélcsomag',el:'Πρότυπα ταξιδιωτικού γραφείου & πακέτο πελάτη',sv:'Resebyråmallar & kundpaket',da:'Rejsebureauskabeloner & kundepakke',no:'Reisebyråmaler & kundepakke',fi:'Matkatoimiston mallipohjat ja asiakaspaketti',bg:'Шаблони за туристическа агенция и клиентски комплект',sr:'Шаблони туристичке агенције и клијентски пакет',hr:'Predlošci turističke agencije i klijentski paket',he:'תבניות לסוכנות נסיעות וערכת לקוח',fa:'قالب‌های آژانس مسافرتی و بسته مشتری',ur:'ٹریول ایجنسی ٹیمپلیٹس اور کلائنٹ کِٹ',hi:'ट्रैवल एजेंसी टेम्पलेट्स और क्लाइंट किट',bn:'ট্রাভেল এজেন্সি টেমপ্লেট ও ক্লায়েন্ট কিট',id:'Template Agen Perjalanan & Kit Klien',ms:'Templat Agensi Pelancongan & Kit Pelanggan',zh:'旅行社模板与客户工具包',ja:'旅行会社テンプレート＆クライアントキット'};
+  const buy={ar:'اشترِ الآن',tr:'Satın al',fr:'Acheter',es:'Comprar',de:'Kaufen',it:'Acquista',pt:'Comprar',nl:'Kopen',ru:'Купить',uk:'Купити',pl:'Kup',cs:'Koupit',ro:'Cumpără',hu:'Vásárlás',el:'Αγορά',sv:'Köp',da:'Køb',no:'Kjøp',fi:'Osta',bg:'Купи',sr:'Купи',hr:'Kupi',he:'רכישה',fa:'خرید',ur:'خریدیں',hi:'खरीदें',bn:'কিনুন',id:'Beli',ms:'Beli',zh:'购买',ja:'購入',en:'Buy now'}[lang]||'Buy now';
+  const details={ar:'التفاصيل',tr:'Detaylar',fr:'Détails',es:'Detalles',de:'Details',it:'Dettagli',pt:'Detalhes',nl:'Details',ru:'Подробнее',uk:'Деталі',pl:'Szczegóły',cs:'Podrobnosti',ro:'Detalii',hu:'Részletek',el:'Λεπτομέρειες',sv:'Detaljer',da:'Detaljer',no:'Detaljer',fi:'Tiedot',bg:'Детайли',sr:'Детаљи',hr:'Detalji',he:'פרטים',fa:'جزئیات',ur:'تفصیلات',hi:'विवरण',bn:'বিস্তারিত',id:'Detail',ms:'Butiran',zh:'详情',ja:'詳細',en:'Details'}[lang]||'Details';
+  const article=document.createElement('article');article.className='product-row';article.id='travel-client-kit';
+  article.innerHTML='<figure class="product-visual"><img loading="lazy" width="960" height="540"></figure><div class="product-info"><div class="product-meta"><span class="status">$29 USD</span></div><h3></h3><div class="product-actions"><a class="button primary-cta" ></a><a class="text-link"></a></div></div>';
+  const img=article.querySelector('img');img.src='../assets/covers/'+lang+'/travel-kit.svg';img.alt=names[lang]||names.en;
+  article.querySelector('h3').textContent=names[lang]||names.en;
+  const [buyLink,detailLink]=article.querySelectorAll('a');buyLink.href='../manual-order.html?lang='+encodeURIComponent(lang);buyLink.textContent=buy;detailLink.href='../travel-kit.html?lang='+encodeURIComponent(lang);detailLink.textContent=details;
+  catalog.appendChild(article);
+})();
