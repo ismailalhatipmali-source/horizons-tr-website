@@ -1,0 +1,121 @@
+<<<HZN0123>>> Check-in / check-out
+<<<HZN0124>>> Beds and occupancy
+<<<HZN0125>>> Address and arrival instructions
+<<<HZN0126>>> Booking reference
+<<<HZN0127>>> Confirmed requests
+<<<HZN0128>>> 12
+<<<HZN0129>>> Flight options
+<<<HZN0130>>> Use local times with time zones. Confirm baggage and fare rules for each option.
+<<<HZN0131>>> Route
+<<<HZN0132>>> Local times + time zones
+<<<HZN0133>>> Baggage allowance
+<<<HZN0134>>> Fare conditions
+<<<HZN0135>>> 13
+<<<HZN0136>>> Compare the full offers
+<<<HZN0137>>> Show total prices, inclusions and flexibility, then explain your recommendation.
+<<<HZN0138>>> Option
+<<<HZN0139>>> 14
+<<<HZN0140>>> Price breakdown
+<<<HZN0141>>> Use one currency. Reconcile the total to the approved offer and payment schedule.
+<<<HZN0142>>> Item / description
+<<<HZN0143>>> Quantity
+<<<HZN0144>>> Amount
+<<<HZN0145>>> Taxes / fees treatment
+<<<HZN0146>>> 15
+<<<HZN0147>>> Included and not included
+<<<HZN0148>>> Make exclusions and payments made directly to suppliers visible before approval.
+<<<HZN0149>>> 16
+<<<HZN0150>>> Client approval record
+<<<HZN0151>>> Record the exact version approved and retain the original approval evidence.
+<<<HZN0152>>> Approved option / version
+<<<HZN0153>>> Approved by
+<<<HZN0154>>> Evidence / file reference
+<<<HZN0155>>> 17
+<<<HZN0156>>> Payment schedule
+<<<HZN0157>>> Use the same installment references as the workbook. Separate future balances from overdue amounts.
+<<<HZN0158>>> Installment reference
+<<<HZN0159>>> Scheduled amount
+<<<HZN0160>>> Received amount
+<<<HZN0161>>> Remaining amount
+<<<HZN0162>>> Review date
+<<<HZN0163>>> 18
+<<<HZN0164>>> Booking confirmation log
+<<<HZN0165>>> A request is not a confirmation. Match each confirmed service to its supplier record.
+<<<HZN0166>>> Supplier
+<<<HZN0167>>> Last verified
+<<<HZN0168>>> 19
+<<<HZN0169>>> Change request record
+<<<HZN0170>>> Check costs and availability, obtain approval, then record the confirmed outcome.
+<<<HZN0171>>> Requested change
+<<<HZN0172>>> Original arrangement
+<<<HZN0173>>> Price and timing impact
+<<<HZN0174>>> Approval record
+<<<HZN0175>>> Confirmed outcome
+<<<HZN0176>>> 20
+<<<HZN0177>>> Final travel file
+<<<HZN0178>>> Summarise the confirmed trip and identify the latest version of the client pack.
+<<<HZN0179>>> Reference
+<<<HZN0180>>> Emergency contact route
+<<<HZN0181>>> 21
+<<<HZN0182>>> Day-by-day overview
+<<<HZN0183>>> Leave realistic travel time between activities. Duplicate this page for a longer trip.
+<<<HZN0184>>> Day / date
+<<<HZN0185>>> Plan / activity
+<<<HZN0186>>> Transport / meeting point
+<<<HZN0187>>> 22
+<<<HZN0188>>> Daily itinerary
+<<<HZN0189>>> Use local times, meeting details and confirmation references the traveler can follow.
+<<<HZN0190>>> Time + time zone
+<<<HZN0191>>> Meeting instructions
+<<<HZN0192>>> 23
+<<<HZN0193>>> Transfer details
+<<<HZN0194>>> Confirm the exact meeting point, waiting policy and support contact before travel.
+<<<HZN0195>>> Pickup point / time
+<<<HZN0196>>> Drop-off point
+<<<HZN0197>>> Vehicle / capacity / luggage
+<<<HZN0198>>> 24
+<<<HZN0199>>> Experience details
+<<<HZN0200>>> Explain what is confirmed, what to bring and which requests still need a supplier response.
+<<<HZN0201>>> Duration / buffer
+<<<HZN0202>>> Access / dietary requests
+<<<HZN0203>>> 25
+<<<HZN0204>>> Dining reservations
+<<<HZN0205>>> Verify dietary requests with the venue. Record the response instead of assuming acceptance.
+<<<HZN0206>>> Venue / restaurant
+<<<HZN0207>>> Party size
+<<<HZN0208>>> 26
+<<<HZN0209>>> Destination essentials
+<<<HZN0210>>> Add verified, destination-specific information with its source and check date.
+<<<HZN0211>>> Local practical information
+<<<HZN0212>>> Expected conditions / source
+<<<HZN0213>>> Local customs and accessibility
+<<<HZN0214>>> Source / official link
+<<<HZN0215>>> 27
+<<<HZN0216>>> Packing for this trip
+<<<HZN0217>>> Tailor the list to the itinerary, weather, activities and confirmed baggage rules.
+<<<HZN0218>>> Travel documents
+<<<HZN0219>>> Tickets and confirmations
+<<<HZN0220>>> Payment backup
+<<<HZN0221>>> Personal medication
+<<<HZN0222>>> Weather-appropriate clothing
+<<<HZN0223>>> Chargers and adapter
+<<<HZN0224>>> Activity equipment
+<<<HZN0225>>> Contact and support details
+<<<HZN0226>>> 28
+<<<HZN0227>>> Travel document checklist
+<<<HZN0228>>> Track document status and verification. Keep original documents in a secure location.
+<<<HZN0229>>> Document / requirement
+<<<HZN0230>>> Traveler
+<<<HZN0231>>> Expiry / validity
+<<<HZN0232>>> Travel identity document
+<<<HZN0233>>> Entry / transit documents
+<<<HZN0234>>> Tickets
+<<<HZN0235>>> Accommodation confirmations
+<<<HZN0236>>> Insurance decision / policy
+<<<HZN0237>>> Other traveler-specific documents
+<<<HZN0238>>> 29
+<<<HZN0239>>> Entry requirements log
+<<<HZN0240>>> Check official sources for this traveler, route and date. Record unresolved questions for follow-up.
+<<<HZN0241>>> Citizenship / residence relevant to check
+<<<HZN0242>>> Transit points
+<<<HZN0243>>> Requirement to verify
