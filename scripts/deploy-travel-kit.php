@@ -2,7 +2,7 @@
 declare(strict_types=1);
 if(PHP_SAPI!=='cli'){http_response_code(403);exit;}
 ini_set('display_errors','0');ini_set('log_errors','0');umask(0077);
-$written=[];$temps=[];$lock='';$locked=false;
+$written=[];$temps=[];$lock='';$locked=false;$directoryModes=[];
 function hznSafe(string $root,string $path):string{
     if(!preg_match('~^[A-Za-z0-9][A-Za-z0-9_./-]*$~D',$path)||str_contains('/'.$path.'/','/../')||str_contains('/'.$path.'/','/./')||str_contains($path,'//')||str_ends_with($path,'/'))throw new RuntimeException('INVALID_PATH');
     $current=rtrim($root,'/');
@@ -96,6 +96,24 @@ try{
         }else throw new RuntimeException('INVALID_BASELINE');
         $changes[]=[$scope,$source,$target,$targetRel,$current,$sourceHash];
     }
+    // mkdir(...,0755,true) is still restricted by the private 0077 umask.
+    // Repair only directories belonging to the explicitly public payload,
+    // including existing intermediate directories from an earlier publication.
+    if(($argv[2]??'')==='--publish'){
+        $publicDirs=[];
+        foreach($files as [$scope,$sourceRel,$targetRel]){
+            if($scope!=='public')continue;
+            $dir=dirname($web.'/'.$targetRel);
+            while($dir!==$web&&str_starts_with($dir,$web.'/')){$publicDirs[$dir]=true;$dir=dirname($dir);}
+        }
+        foreach(array_keys($publicDirs) as $dir){
+            if(is_link($dir))throw new RuntimeException('SYMLINK_REJECTED');
+            if(!is_dir($dir))continue;
+            $prior=fileperms($dir)&0777;
+            if($prior!==0755){$directoryModes[$dir]=$prior;if(!chmod($dir,0755))throw new RuntimeException('DIRECTORY_FAILED');}
+        }
+        if($directoryModes)file_put_contents($state.'/travel-public-directory-modes-'.gmdate('Ymd-His').'-'.bin2hex(random_bytes(4)).'.json',json_encode($directoryModes,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES));
+    }
     if(($argv[2]??'')!=='--publish'){
         echo 'READY: '.count($changes)." Travel Kit files require publication. Manual-order storage will be private.\n";
     }elseif(!$changes){
@@ -106,7 +124,9 @@ try{
             $save=$backup.'/'.$scope.'/'.$targetRel;
             if($prior!==null){if(!is_dir(dirname($save))&&!mkdir(dirname($save),0700,true))throw new RuntimeException('BACKUP_FAILED');if(!copy($target,$save)||hznDigest($save)!==$prior)throw new RuntimeException('BACKUP_FAILED');}
             if(!is_dir(dirname($target))){
-                $dirMode=$scope==='public'?0755:0700;if(!mkdir(dirname($target),$dirMode,true)||!chmod(dirname($target),$dirMode))throw new RuntimeException('DIRECTORY_FAILED');
+                $dirMode=$scope==='public'?0755:0700;
+                $oldMask=umask($scope==='public'?0022:0077);
+                try{if(!mkdir(dirname($target),$dirMode,true)||!chmod(dirname($target),$dirMode))throw new RuntimeException('DIRECTORY_FAILED');}finally{umask($oldMask);}
             }
             $temp=$target.'.hzn-new-'.bin2hex(random_bytes(4));$temps[]=$temp;$mode=$scope==='public'?0644:0600;
             if(!copy($source,$temp)||hznDigest($temp)!==$expected||!chmod($temp,$mode))throw new RuntimeException('STAGING_FAILED');
@@ -123,6 +143,7 @@ try{
         if($hadPrior){$temp=$target.'.hzn-restore';if(!copy($save,$temp)||!chmod($temp,$mode)||!rename($temp,$target))$restoreFailed=true;}
         elseif(is_file($target)&&!unlink($target))$restoreFailed=true;
     }
+    foreach(array_reverse($directoryModes,true) as $dir=>$mode){if(!chmod($dir,$mode))$restoreFailed=true;}
     $reason=$e instanceof RuntimeException&&preg_match('/^[A-Z0-9_]+$/D',$e->getMessage())?$e->getMessage():'PUBLISH_FAILED';
     fwrite(STDERR,'STOP: '.$reason.($restoreFailed?'; RESTORE_REQUIRES_ATTENTION':'; published changes rolled back')."\n");$failed=true;
 }finally{
