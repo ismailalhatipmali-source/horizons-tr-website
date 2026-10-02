@@ -97,6 +97,24 @@
           "max_learners": 100
         }
       ]
+    },
+    "travel-agent-client-kit": {
+      "id": "travel-agent-client-kit",
+      "name": "Travel Agent Templates & Client Kit",
+      "available": true,
+      "image": "/assets/covers/en/travel-kit.svg",
+      "fulfilment_adapter": "manual-email-v1",
+      "offers": [
+        {
+          "id": "business-lifetime",
+          "account_type": "business",
+          "term": "lifetime",
+          "price_minor": 2900,
+          "currency": "USD",
+          "tax_included": true,
+          "max_learners": 0
+        }
+      ]
     }
   }
 }
