@@ -14,4 +14,4 @@ with tempfile.TemporaryDirectory(prefix='hzn-workbook-video-') as temp:
   assert stat.S_IMODE(private.stat().st_mode)==0o700;assert stat.S_IMODE(secret.stat().st_mode)==0o600;assert secret.read_bytes()==b'private paid product stays private'
  verify();(web/'assets/workbook-video').chmod(0o700);r=publish();assert r.returncode==0,r.stderr;verify()
  before=(web/'assets/workbook-video/1.0.0/ar/walkthrough.mp4').read_bytes();collision=web/'workbook-video.css';collision.write_text('unexpected edit');r=publish();assert r.returncode==1 and 'PUBLIC_BASELINE_CHANGED' in r.stderr;assert collision.read_text()=='unexpected edit';assert (web/'assets/workbook-video/1.0.0/ar/walkthrough.mp4').read_bytes()==before
-print('PASS: 98 verified media files, public parent permissions, private ZIP permissions, idempotency and safe refusal of changed baselines.')
+print('PASS: 99 verified media files, public parent permissions, private ZIP permissions, idempotency and safe refusal of changed baselines.')

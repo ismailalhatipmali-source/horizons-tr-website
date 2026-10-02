@@ -622,6 +622,12 @@
       "bytes": 745,
       "sha256": "fa90101faf90d83aaeb90b15aae667b26c38d8a6952bedf30a18ad0bba176e5d",
       "before": null
+    },
+    "assets/workbook-video/1.0.0/.htaccess": {
+      "source": "dist/assets/workbook-video/1.0.0/.htaccess",
+      "bytes": 45,
+      "sha256": "da5c53c8c16d2a3f36e05f8154da4d36fa572f3ca60d1736f5a30b7976c8d291",
+      "before": null
     }
   }
 }

@@ -15,11 +15,11 @@ try {
  $state=dirname($web).'/.horizons-deploy-'.basename($web);if(is_link($state))throw new RuntimeException('SYMLINK_REJECTED');if(!is_dir($state)&&!mkdir($state,0700))throw new RuntimeException('STATE_FAILED');$lock=$state.'/deploy.lock';if(!@mkdir($lock,0700))throw new RuntimeException('DEPLOYMENT_ALREADY_RUNNING');$locked=true;
  $manifest=json_decode(file_get_contents($repo.'/release-assets/workbook-videos-1.0.0/manifest.json'),true,16,JSON_THROW_ON_ERROR);
  $languages=explode(' ','en ar tr fr es de it pt nl ru uk pl cs ro hu el sv da no fi bg sr hr he fa ur hi bn id ms zh ja');
- if(($manifest['version']??'')!=='1.0.0'||count($manifest['files']??[])!==98)throw new RuntimeException('INVALID_MANIFEST');
+ if(($manifest['version']??'')!=='1.0.0'||count($manifest['files']??[])!==99)throw new RuntimeException('INVALID_MANIFEST');
  foreach($languages as $lang)foreach(['walkthrough.mp4','poster.jpg','walkthrough.vtt'] as $name)if(!isset($manifest['files']['assets/workbook-video/1.0.0/'.$lang.'/'.$name]))throw new RuntimeException('LANGUAGE_MISSING');
  $changes=[];$total=0;
  foreach($manifest['files'] as $path=>$entry){
-  if(!preg_match('~^(?:assets/workbook-video/1\.0\.0/[a-z]{2}/(?:walkthrough\.mp4|poster\.jpg|walkthrough\.vtt)|workbook-video\.css|workbook-video-release\.json)$~D',$path)||($entry['source']??'')!=='dist/'.$path)throw new RuntimeException('UNAPPROVED_PATH');
+  if(!preg_match('~^(?:assets/workbook-video/1\.0\.0/(?:\.htaccess|[a-z]{2}/(?:walkthrough\.mp4|poster\.jpg|walkthrough\.vtt))|workbook-video\.css|workbook-video-release\.json)$~D',$path)||($entry['source']??'')!=='dist/'.$path)throw new RuntimeException('UNAPPROVED_PATH');
   $source=videoPath($repo,$entry['source']);$target=videoPath($web,$path);
   if(!is_int($entry['bytes']??null)||$entry['bytes']<1||$entry['bytes']>4*1024*1024||!is_file($source)||filesize($source)!==$entry['bytes']||!hash_equals($entry['sha256'],videoHash($source)??''))throw new RuntimeException('SOURCE_CHECKSUM_FAILED');
   $total+=$entry['bytes'];if($total>96*1024*1024)throw new RuntimeException('PAYLOAD_TOO_LARGE');$current=videoHash($target);if($current===$entry['sha256'])continue;
