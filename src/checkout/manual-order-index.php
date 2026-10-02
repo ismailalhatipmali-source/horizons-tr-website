@@ -17,13 +17,13 @@ try{
     $input=json_decode($body,true,8,JSON_THROW_ON_ERROR);if(!is_array($input)||array_is_list($input))throw new RuntimeException('INVALID_REQUEST');
     $catalog=json_decode(file_get_contents($private.'/products.json'),true,16,JSON_THROW_ON_ERROR);
     require_once $private.'/ManualOrders.php';require_once $private.'/ManualOrderMailer.php';
-    $orders=new \\HorizonsCheckout\\ManualOrders($private.'/manual-orders.sqlite',file_get_contents($private.'/key.bin'),$catalog);
+    $orders=new \HorizonsCheckout\ManualOrders($private.'/manual-orders.sqlite',file_get_contents($private.'/key.bin'),$catalog);
     $order=$orders->create($input,$client,$_SERVER['REMOTE_ADDR']??'unknown',time());
     $pointer=$web.'/activation/config-path.php';if(!is_file($pointer)||is_link($pointer))throw new RuntimeException('SERVICE_UNAVAILABLE');
     $configPath=require $pointer;$real=is_string($configPath)?realpath($configPath):false;
     if(!$real||!str_starts_with($real,$home.'/')||str_starts_with($real,$web.'/'))throw new RuntimeException('SERVICE_UNAVAILABLE');
     ob_start();try{$config=require $real;}finally{ob_end_clean();}
-    $mailer=new \\HorizonsCheckout\\ManualOrderMailer($config['smtp']??[]);
+    $mailer=new \HorizonsCheckout\ManualOrderMailer($config['smtp']??[]);
     $buyer=$order['buyer'];$product=$order['product'];$offer=$order['offer'];$amount=number_format(((int)$offer['price_minor'])/100,2,'.','').' '.$offer['currency'];
     if(!$order['owner_notified']){
         $owner=$catalog['seller']['email']??'info@horizons-tr.com';
