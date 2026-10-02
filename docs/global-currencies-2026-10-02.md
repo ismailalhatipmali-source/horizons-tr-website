@@ -29,4 +29,8 @@ Bounded deploy-display-currency.php overlay compares all targets to the exact pr
 - test_display_currency_deploy.py: exact overlay, conflict protection, backups, file permissions, repeat publishing, unchanged owner/license/mail/DB sentinels, public API catalog authority, origin and token validation.
 - Existing checkout JS/PHP and admin/settlement FX test suites pass without network or SMTP delivery.
 
-Live deployment and UI checks are recorded after publishing.
+Published commit `7f81a0fc481d76637937f8a6468cd475e57e59ee` was confirmed in cPanel at 17:41:13 Istanbul time on 2 October 2026. All 32 live checkout HTML files exactly matched the generated release. Live read-only estimates passed for SAR, CNY, JPY, KWD, AED, INR, KRW and IDR. The approved cover checksum was unchanged.
+
+Browser checks: choosing Saudi Arabia selected SAR automatically; manual override to CNY kept the selected country. USD 9.99 displayed as approximately SAR 37.46 or CNY 67.08. Selecting the existing TRY transaction quote yielded TRY 504.80 including its existing 3% margin; the displayed estimate then became approximately SAR 38.54 or CNY 69.00, without adding another margin. No payment, review order, email or license was created during live verification. Card collection remains disabled.
+
+A screenshot of the published product widget was saved as `horizons-global-currencies-20261002.jpg`.
