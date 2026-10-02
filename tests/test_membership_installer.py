@@ -57,5 +57,18 @@ file_put_contents($home.'/public_html/activation/config-path.php','<?php return 
     def test_corrupt_payload_stops(self):
         (self.bundle/'public/learn/license-core.js').write_text('corrupt fixture');r=self.run_installer(True)
         self.assertNotEqual(r.returncode,0);self.assertIn('PACKAGE_CHECKSUM_FAILED',r.stderr);self.assertFalse((self.app/'features.php').exists())
+    def test_backup_includes_committed_wal_data(self):
+        source=self.app.parent/'activation.sqlite'
+        with sqlite3.connect(source) as active:
+            self.assertEqual(active.execute('PRAGMA journal_mode=WAL').fetchone()[0],'wal')
+            active.execute('PRAGMA wal_autocheckpoint=0')
+            active.execute('CREATE TABLE backup_probe(value TEXT)')
+            active.execute('INSERT INTO backup_probe VALUES (?)',('committed while source remains open',));active.commit()
+            self.assertTrue(Path(str(source)+'-wal').is_file())
+            r=self.run_installer(True);self.assertEqual(r.returncode,0,r.stdout+r.stderr)
+            backups=list(self.app.parent.glob('membership-backup-*'))
+            with sqlite3.connect(backups[0]/'activation.sqlite') as snapshot:
+                self.assertEqual(snapshot.execute('PRAGMA integrity_check').fetchone()[0],'ok')
+                self.assertEqual(snapshot.execute('SELECT value FROM backup_probe').fetchone()[0],'committed while source remains open')
 
 if __name__=='__main__':unittest.main()

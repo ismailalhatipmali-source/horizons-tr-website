@@ -2,6 +2,21 @@
 declare(strict_types=1);
 if(PHP_SAPI!=='cli'){http_response_code(403);exit;}
 ini_set('display_errors','0');ini_set('log_errors','0');umask(0077);$written=[];
+function membershipBackupDatabase(string $source,string $destination):void{
+ if(file_exists($destination))throw new RuntimeException('BACKUP_TARGET_EXISTS');
+ if(class_exists('SQLite3')&&method_exists('SQLite3','backup')){
+  $reader=new SQLite3($source,SQLITE3_OPEN_READONLY);$reader->enableExceptions(true);$reader->busyTimeout(10000);
+  $snapshot=new SQLite3($destination,SQLITE3_OPEN_READWRITE|SQLITE3_OPEN_CREATE);$snapshot->enableExceptions(true);$snapshot->busyTimeout(10000);
+  try{if(!$reader->backup($snapshot)||$snapshot->querySingle('PRAGMA integrity_check')!=='ok')throw new RuntimeException('BACKUP_FAILED');}
+  finally{$snapshot->close();$reader->close();}
+ }else{
+  $db=new PDO('sqlite:'.$source);$db->exec('PRAGMA busy_timeout=10000');
+  if(version_compare((string)$db->query('SELECT sqlite_version()')->fetchColumn(),'3.27.0','<'))throw new RuntimeException('BACKUP_ENGINE_REQUIRED');
+  $db->exec('VACUUM INTO '.$db->quote($destination));unset($db);
+  $check=new PDO('sqlite:'.$destination);if($check->query('PRAGMA integrity_check')->fetchColumn()!=='ok')throw new RuntimeException('BACKUP_FAILED');unset($check);
+ }
+ chmod($destination,0600);
+}
 try{
  if(PHP_VERSION_ID<80200)throw new RuntimeException('PHP_82_REQUIRED');
  foreach(['pdo_sqlite','sodium','openssl'] as $ext)if(!extension_loaded($ext))throw new RuntimeException('PHP_EXTENSION_REQUIRED');
@@ -21,10 +36,11 @@ try{
   if(str_starts_with($path,'public/learn/content/')&&is_file($target)&&!hash_equals($hash,hash_file('sha256',$target)))throw new RuntimeException('EXISTING_LESSON_DIFFERS');$targets[$path]=$target;
  }
  require_once __DIR__.'/app/Core.php';\Horizons\Store::preflight($config['database_path']);new \Horizons\Crypto($config);
+ if(!(class_exists('SQLite3')&&method_exists('SQLite3','backup'))){$engine=new PDO('sqlite::memory:');if(version_compare((string)$engine->query('SELECT sqlite_version()')->fetchColumn(),'3.27.0','<'))throw new RuntimeException('BACKUP_ENGINE_REQUIRED');unset($engine);}
  if(($argv[1]??'')!=='--install'){file_put_contents(__DIR__.'/result.txt',"READY: checks passed. Nothing installed. PHP ".PHP_VERSION."; package 1.4.4; ".count($targets)." files.\n");echo "READY: see result.txt. Nothing installed.\n";exit;}
  $lock=fopen(dirname($app).'/membership-install.lock','c');if(!$lock||!flock($lock,LOCK_EX|LOCK_NB))throw new RuntimeException('INSTALL_IN_PROGRESS');
  $backup=dirname($app).'/membership-backup-'.gmdate('Ymd-His').'-'.bin2hex(random_bytes(3));if(!mkdir($backup,0700))throw new RuntimeException('BACKUP_FAILED');
- if(is_file($config['database_path'])){$db=new PDO('sqlite:'.$config['database_path']);$db->exec('PRAGMA busy_timeout=10000');$db->exec('VACUUM INTO '.$db->quote($backup.'/activation.sqlite'));unset($db);chmod($backup.'/activation.sqlite',0600);}
+ if(is_file($config['database_path']))membershipBackupDatabase($config['database_path'],$backup.'/activation.sqlite');
  $priority=static fn($p)=>match($p){'app/bootstrap.php'=>1,'app/features.php'=>2,'public/activation/index.php'=>3,default=>0};uksort($targets,static fn($a,$b)=>$priority($a)<=>$priority($b));
  foreach($targets as $path=>$target){
   if(!is_dir(dirname($target))&&!mkdir(dirname($target),str_starts_with($path,'public/')?0755:0700,true))throw new RuntimeException('DIRECTORY_FAILED');
