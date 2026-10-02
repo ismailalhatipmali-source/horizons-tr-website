@@ -1,0 +1,3388 @@
+{
+  "version": "1.4.4",
+  "base": "dce34437b65829a834016a693f06164ae1befc92",
+  "requires": {
+    "learn/index.html": "d6da886ba763eb4cbdf74f8b9094f96aa540170f9997d79e23664ba78433524a",
+    "learn/web-config.js": "5616ee29ca1b90b8e1c26c51e949b9277b8544c5b434d66b93becc6baed004a4",
+    "learn/membership-ui.js": "3dd0f38ffa288ecb9d7e6839d016cac7ee64a6a6c9d65a8574b0ad8a3bff20f5",
+    "learn/membership-manager.js": "743f87acec13187e4f25250a02cf9d3a99d5f9605747204be58d46f083b373d5",
+    "learning-api/index.php": "9c7e3d970a9b18ad6b8622b7c4ff9d15040798b29ba2e0ca5e3da8062a0adb66"
+  },
+  "files": {
+    "ar/about.html": {
+      "sha256": "d191afc84fed402f54cb20174682da0c3c2667a0d87fc7b5941c3a9f6dab7208",
+      "bytes": 11919,
+      "before": "git-sha1:1948092ed3296943b933f5f01f71736e0470bf42"
+    },
+    "ar/accessibility.html": {
+      "sha256": "7c114dbb64d233e5508ba7783dd94cf350db6f7946fb6f390f1e5411199c0e04",
+      "bytes": 11218,
+      "before": "git-sha1:df80c58e04cbc46b788f78f1aceadacd0a76c995"
+    },
+    "ar/cart.html": {
+      "sha256": "83dcb892f2dbd258007fbb715c82a5059ffd223d75907ac78cb9b3004f34f777",
+      "bytes": 19264,
+      "before": "git-sha1:ff44a365d29a0d2ffe33c30aa64937d8dc365d75"
+    },
+    "ar/checkout.html": {
+      "sha256": "a1bab66975a0985ca1f3d6e43455c4245b2f2ff62ded94854e8c3988e1110536",
+      "bytes": 27116,
+      "before": "git-sha1:f53744375c7b8f74e75b16911d71cd82eef229c9"
+    },
+    "ar/child-safety.html": {
+      "sha256": "c0c9cb30d76c56d01df9da66a61b7b07068bb01d279e7f9d4370edd0d6b67b6c",
+      "bytes": 12993,
+      "before": "git-sha1:7c919375b50db3fa941daf3e9b98679bdbb7fd44"
+    },
+    "ar/demo.html": {
+      "sha256": "8a63f882b70b9fac24bf8c3762fd8e1e60e913463c5dd1ffbf711841986f096d",
+      "bytes": 11516,
+      "before": "git-sha1:6bca1400d009888472950dbe6fb2c70850df2822"
+    },
+    "ar/index.html": {
+      "sha256": "c9fde14b0c12b64af4a8f4aab1633aa5e72abdb43b5a68fc09cd976ee464fa88",
+      "bytes": 27179,
+      "before": "git-sha1:73c1a60afb18b805b45fe8c48ba8a450be9465d3"
+    },
+    "ar/legal.html": {
+      "sha256": "7d383adf84b88d4a03dfd52a266a374fb9b4f0f3df9e1a60f06b98d43d53a480",
+      "bytes": 11745,
+      "before": "git-sha1:a3506f7723df8ae7e1eaf4f5c56574741060d6c1"
+    },
+    "ar/privacy.html": {
+      "sha256": "eed79342fdfc2a696c5ce132c2d69b699b072b802fe945ee6970659ebb0416a2",
+      "bytes": 16245,
+      "before": "git-sha1:6651c78ec187aa28b74586c8e4a7e516e04fef57"
+    },
+    "ar/product.html": {
+      "sha256": "9a14bc88fc09d18f69446cc086bf98780e17f40080abd83d72b0455c4f5617ae",
+      "bytes": 14304,
+      "before": "git-sha1:3e59ddf9adf1344682d96c475cae296c0a867e86"
+    },
+    "ar/support.html": {
+      "sha256": "325d3e853ba2eef84154fbdbe179d50eebeaf68aac9ca3a502ba08658725a1e5",
+      "bytes": 13298,
+      "before": "git-sha1:83184b8721da06946117c01435f15106d405c9c8"
+    },
+    "ar/terms.html": {
+      "sha256": "d4a319c9dd7b74661be5b5012a2e12a545f3f1c6207b16ba10c38dff5e6a95da",
+      "bytes": 15465,
+      "before": "git-sha1:e4cf5fbd2fcb5fe02eac77f85b9be3cd4c08ad44"
+    },
+    "ar/updates.html": {
+      "sha256": "7d7676655ec0a2bc63c8de20f4c6503bf7cad3459375c136f06fc3293ba7f98c",
+      "bytes": 11139,
+      "before": "git-sha1:73c0219ef748eacfd1075900277d46028c2ebae7"
+    },
+    "assets/commerce-geo/AD.json": {
+      "sha256": "1abe4e218c74557568366097e73ffc98cbb565bb95921f39649d4dccd386c06a",
+      "bytes": 382,
+      "before": null
+    },
+    "assets/commerce-geo/AE.json": {
+      "sha256": "61caa5ccc8e4ccc7a147231e755e12497d22e60d12eef17ffc63d322485bcbb0",
+      "bytes": 1150,
+      "before": null
+    },
+    "assets/commerce-geo/AF.json": {
+      "sha256": "6f607791ead66ad3f18712c93b013cfea36f4880c576b5d4533e8807803736c1",
+      "bytes": 3115,
+      "before": null
+    },
+    "assets/commerce-geo/AG.json": {
+      "sha256": "4b84ce9a0c1578d80e9d76b44f3e87af0a17e853af099867a48dc0de6853aaf2",
+      "bytes": 302,
+      "before": null
+    },
+    "assets/commerce-geo/AI.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/AL.json": {
+      "sha256": "93e83dd10740eae5c5ca744e6b652124cda4f9be6b223026a35c0c632965362c",
+      "bytes": 4562,
+      "before": null
+    },
+    "assets/commerce-geo/AM.json": {
+      "sha256": "33913d0ad4b86493027e4e929f7136236e712a6ca67703dfe953ba8a21e7ae0b",
+      "bytes": 9033,
+      "before": null
+    },
+    "assets/commerce-geo/AO.json": {
+      "sha256": "a5a181265c4f1906280de1d7e80f4e98d2b64905cf0717f9fcd5c93d88fb5dcb",
+      "bytes": 2038,
+      "before": null
+    },
+    "assets/commerce-geo/AQ.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/AR.json": {
+      "sha256": "fe9aa6ea094d30bd09311f41fa9583b8623004f5830529a8e2656b79d3be0b4c",
+      "bytes": 42195,
+      "before": null
+    },
+    "assets/commerce-geo/AS.json": {
+      "sha256": "f15ae926e449369cff6a59374a27ffa97a9b1790389c3d4baeecf41f5fa5cee7",
+      "bytes": 388,
+      "before": null
+    },
+    "assets/commerce-geo/AT.json": {
+      "sha256": "2a39cce9b668cc49377b5af4ecb6b51b05b76ab800d8705c725b55bcb173b7d3",
+      "bytes": 81039,
+      "before": null
+    },
+    "assets/commerce-geo/AU.json": {
+      "sha256": "bd6b07dc05886472f8d3cb29ec6e339d364c725ce630a5d1c7e4ade9b45d8266",
+      "bytes": 139870,
+      "before": null
+    },
+    "assets/commerce-geo/AW.json": {
+      "sha256": "75a759ff6025ac2f1a920d9c2223f1b866837a94f208b84088d09c97a83699e6",
+      "bytes": 174,
+      "before": null
+    },
+    "assets/commerce-geo/AX.json": {
+      "sha256": "ae806a0a341357abff90d44f1025336f3acedcb8319481f002f2da0c4c6e4a69",
+      "bytes": 147,
+      "before": null
+    },
+    "assets/commerce-geo/AZ.json": {
+      "sha256": "f23ada30ca179293cae3140e671898359f5ee97ff013b0bb939598a5f0e6eb3c",
+      "bytes": 5537,
+      "before": null
+    },
+    "assets/commerce-geo/BA.json": {
+      "sha256": "6f05cf8f8675ae4754f843cb04e6aa47296ac852ea5ceb228e9a50b2018b0769",
+      "bytes": 7527,
+      "before": null
+    },
+    "assets/commerce-geo/BB.json": {
+      "sha256": "6815df225a4382fc000f20bc5d10d2a1a288c7088d1707b4dc1adccc9d5e0933",
+      "bytes": 223,
+      "before": null
+    },
+    "assets/commerce-geo/BD.json": {
+      "sha256": "253c63f024f4445e1867ee88030f39136a01b3fafc1a40521c531d9ce0e440c8",
+      "bytes": 2046,
+      "before": null
+    },
+    "assets/commerce-geo/BE.json": {
+      "sha256": "10a3287c3f4e3dac1af65940eea188dba11cafaedb566650a6e27def5c8d1637",
+      "bytes": 17073,
+      "before": null
+    },
+    "assets/commerce-geo/BF.json": {
+      "sha256": "c822ca1c194edb7621ae72f364f09fc68026e9ccc8d8e91db522cef6de870db7",
+      "bytes": 3564,
+      "before": null
+    },
+    "assets/commerce-geo/BG.json": {
+      "sha256": "18110e8871a2e60138ae9d97f63a4ee2c3549a4e0840822dc11c59ec5684f3c7",
+      "bytes": 20510,
+      "before": null
+    },
+    "assets/commerce-geo/BH.json": {
+      "sha256": "0c5e574884d72837102e595d1adf6262512c1b07ef972d6c77e8a9f3b8294b51",
+      "bytes": 289,
+      "before": null
+    },
+    "assets/commerce-geo/BI.json": {
+      "sha256": "d4ba4378ba4a75363667693d55de90b0b02666fce2e042a84fc29319323f6d41",
+      "bytes": 476,
+      "before": null
+    },
+    "assets/commerce-geo/BJ.json": {
+      "sha256": "d54b03e00ba4799d594b9d32c18795212259d2d4536c568eac79fca234f2b88f",
+      "bytes": 1088,
+      "before": null
+    },
+    "assets/commerce-geo/BL.json": {
+      "sha256": "e088b0b05915006314b27550292ef36824c87b3f6bbbe695e34b16efa5afa53e",
+      "bytes": 15,
+      "before": null
+    },
+    "assets/commerce-geo/BM.json": {
+      "sha256": "14b0d475b7c02cef3aa75ef7201e791eb58dcc6cc7ad219d32e582bcf13444ed",
+      "bytes": 290,
+      "before": null
+    },
+    "assets/commerce-geo/BN.json": {
+      "sha256": "3ec26e90afc4a584c18bbaeb1413f3707ef88863d8330838b9dc93e1fef046c2",
+      "bytes": 289,
+      "before": null
+    },
+    "assets/commerce-geo/BO.json": {
+      "sha256": "7e9a339f6e826d191841ed62e857a3c46e7c39ed2f847e765c6e20c490c89c27",
+      "bytes": 10159,
+      "before": null
+    },
+    "assets/commerce-geo/BQ.json": {
+      "sha256": "ab4e4fea4542640ed2c48bf2d39f2ea52c283afa4db1e029a895b7853798ea7c",
+      "bytes": 314,
+      "before": null
+    },
+    "assets/commerce-geo/BR.json": {
+      "sha256": "88ef17c5b0dd80f39adfc63ba8623a2bc6416b8b02697e335e8fbcddd9451400",
+      "bytes": 212223,
+      "before": null
+    },
+    "assets/commerce-geo/BS.json": {
+      "sha256": "e947699a411af016435be00c870a5205489ab44b41da960a57e1d44e86a5ad3f",
+      "bytes": 797,
+      "before": null
+    },
+    "assets/commerce-geo/BT.json": {
+      "sha256": "62286b71dc0d8c0bb5e2f4436a26411225b695839d865d806c50f86940f30153",
+      "bytes": 1693,
+      "before": null
+    },
+    "assets/commerce-geo/BV.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/BW.json": {
+      "sha256": "b76a23453f599823f25999cf3cb0e9945e61021e5fc458dc6110ebe377df6626",
+      "bytes": 2235,
+      "before": null
+    },
+    "assets/commerce-geo/BY.json": {
+      "sha256": "10c7199c466933a387c9d8b227808683d7b1189318e92779211194fa84cf92de",
+      "bytes": 12463,
+      "before": null
+    },
+    "assets/commerce-geo/BZ.json": {
+      "sha256": "0453aed5eb5eeb8f661c406f7287386ceff7a031e88638fde261fda6bb09c13c",
+      "bytes": 503,
+      "before": null
+    },
+    "assets/commerce-geo/CA.json": {
+      "sha256": "fd37cd2ee226c36f2849cb679f22d7a508490f28b838c3a63aa6003cddd7250f",
+      "bytes": 38988,
+      "before": null
+    },
+    "assets/commerce-geo/CC.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/CD.json": {
+      "sha256": "ae273d2f3c65df3d73b7e9cc19c64490e5eac7601fddbea07d0cc0c2e8a039b8",
+      "bytes": 1860,
+      "before": null
+    },
+    "assets/commerce-geo/CF.json": {
+      "sha256": "f02eb42d3279f14770578349005ff868d31bdffe0d23baedac75c5564e173c89",
+      "bytes": 1112,
+      "before": null
+    },
+    "assets/commerce-geo/CG.json": {
+      "sha256": "bfadb3590046b0d7e569d0dbed6791103d5bbbb3d70c809122dae20c13e4af7e",
+      "bytes": 483,
+      "before": null
+    },
+    "assets/commerce-geo/CH.json": {
+      "sha256": "fcd3cf50e3f8b6dcc07a9f3a8563b66560e205ec1d57e5f046440ca22e6bb3c3",
+      "bytes": 55975,
+      "before": null
+    },
+    "assets/commerce-geo/CI.json": {
+      "sha256": "79673e27d9ab0efdfc7591abe1e767b77e0441c35857ed24a938177e6e5c9a95",
+      "bytes": 2760,
+      "before": null
+    },
+    "assets/commerce-geo/CK.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/CL.json": {
+      "sha256": "a8a000364f69cec3f7c13b8f0a9c8ab98fc684dfa59f66bb1236c3881512627f",
+      "bytes": 9915,
+      "before": null
+    },
+    "assets/commerce-geo/CM.json": {
+      "sha256": "53edcc1ebfea4fdc908f16e34c3a3e0d7be8558504529c87dac88d4155efbca5",
+      "bytes": 3867,
+      "before": null
+    },
+    "assets/commerce-geo/CN.json": {
+      "sha256": "6017217864a0d68ea9c552737b1e381f96485b05037de0feb50b3a8a566aa111",
+      "bytes": 97241,
+      "before": null
+    },
+    "assets/commerce-geo/CO.json": {
+      "sha256": "28df84859e15a6e8d6698de17623df65f2f1eb58d712148017fa1195373da7bf",
+      "bytes": 35141,
+      "before": null
+    },
+    "assets/commerce-geo/CR.json": {
+      "sha256": "df31d995dca195f6641a121f7f7b4facf090b1075af5d004d1ae82a89cb18a99",
+      "bytes": 4890,
+      "before": null
+    },
+    "assets/commerce-geo/CU.json": {
+      "sha256": "e338448205d6345759eafc1bae7875c48d0173a84bd5529e94ae18437a703775",
+      "bytes": 7562,
+      "before": null
+    },
+    "assets/commerce-geo/CV.json": {
+      "sha256": "d74e6fe29979b7439aa29621945fdb32ed9798a1199f299bb214acf3fdb564ac",
+      "bytes": 982,
+      "before": null
+    },
+    "assets/commerce-geo/CW.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/CX.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/CY.json": {
+      "sha256": "2af5f48ac76716af2ab1b24266d325d0c958980c9163a8f8bf12b6fc0f396cd5",
+      "bytes": 3111,
+      "before": null
+    },
+    "assets/commerce-geo/CZ.json": {
+      "sha256": "d94af387f5d4c64ca72e8c3a330620a02844ab57e2c9c78e204a71a0059d7770",
+      "bytes": 43916,
+      "before": null
+    },
+    "assets/commerce-geo/DE.json": {
+      "sha256": "40f033c657d0340a0fc711421cb67575a8b0103670dfa6330ab964b430e88640",
+      "bytes": 233427,
+      "before": null
+    },
+    "assets/commerce-geo/DJ.json": {
+      "sha256": "869d13fd03a65e5c0eafbf1c36209e7da088ed6922ea332ef6bd3095db47db8c",
+      "bytes": 312,
+      "before": null
+    },
+    "assets/commerce-geo/DK.json": {
+      "sha256": "3a7f1b1bede0823a274b75631cde7c96025d06e12dca1d2717174b62ee7f1898",
+      "bytes": 14840,
+      "before": null
+    },
+    "assets/commerce-geo/DM.json": {
+      "sha256": "1c75e0b8ddee35b320c092ba6b9021a6f90269bd4e9eca91ab9ef308ee3863ca",
+      "bytes": 548,
+      "before": null
+    },
+    "assets/commerce-geo/DO.json": {
+      "sha256": "b42ae9241b51fe0cf2313c32e5db1823d727468b8409fe5ad03d01377fbca88d",
+      "bytes": 8178,
+      "before": null
+    },
+    "assets/commerce-geo/DZ.json": {
+      "sha256": "f95b6459701eec8bb17d04b7e6c88a662d65e1a4b9dc8a7ebbd04bde7e6dc19d",
+      "bytes": 9080,
+      "before": null
+    },
+    "assets/commerce-geo/EC.json": {
+      "sha256": "e3d4033d76085adaceb93bda01256d5266b752fedc1532cbed7a8006f62645d9",
+      "bytes": 4135,
+      "before": null
+    },
+    "assets/commerce-geo/EE.json": {
+      "sha256": "3045d90e859d71942e4cf77755e0697634dd2ecf8b25873c25e8d747bb3e9f25",
+      "bytes": 4571,
+      "before": null
+    },
+    "assets/commerce-geo/EG.json": {
+      "sha256": "3dbb5a43b9e7df2dcd1a1d595bd041ba0f3d730fb75ff088a6b689684c93836c",
+      "bytes": 5318,
+      "before": null
+    },
+    "assets/commerce-geo/EH.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/ER.json": {
+      "sha256": "e3356287e4e58754469b0d030a2005c33a9fb473048aa8f2f4910bea88529531",
+      "bytes": 290,
+      "before": null
+    },
+    "assets/commerce-geo/ES.json": {
+      "sha256": "bf5fc281aba788ee325e0aa9239b0ae8dceb0fdb10eee2fffa8f59432e940692",
+      "bytes": 338680,
+      "before": null
+    },
+    "assets/commerce-geo/ET.json": {
+      "sha256": "2b244f70043192952e3048144018b7a4cb7c9b9e9aecffb0a4e424fb2e545459",
+      "bytes": 4726,
+      "before": null
+    },
+    "assets/commerce-geo/FI.json": {
+      "sha256": "0423fe8b6d57d0281ede92ae75fdca4e5bface12073e0f833a59bead1797efbd",
+      "bytes": 13147,
+      "before": null
+    },
+    "assets/commerce-geo/FJ.json": {
+      "sha256": "f1bbe7972732ccd1f47693fccb9ee500f949f1857e1626e9ecf0506e85e3d71c",
+      "bytes": 706,
+      "before": null
+    },
+    "assets/commerce-geo/FK.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/FM.json": {
+      "sha256": "a9b90cf8520948be5389716184a0a1508fd77894186201e3aa4602c5ca7345bf",
+      "bytes": 2992,
+      "before": null
+    },
+    "assets/commerce-geo/FO.json": {
+      "sha256": "046d48448e2b261f3e36bcf21158325521d005408ab7d583e226057b37e17ca6",
+      "bytes": 755,
+      "before": null
+    },
+    "assets/commerce-geo/FR.json": {
+      "sha256": "78cdd7a4332d501490b94250eee59556d2bb652e6a310fe1b466682690ce1c53",
+      "bytes": 403353,
+      "before": null
+    },
+    "assets/commerce-geo/GA.json": {
+      "sha256": "c7a12151540c41777a02bb1dd14acf8157e5db4f6466785e42e7d926bf2d4700",
+      "bytes": 794,
+      "before": null
+    },
+    "assets/commerce-geo/GB.json": {
+      "sha256": "9e9eeca1c783342c277d9dc06cbf026f27d50587555231359c0e4d184d63f2ea",
+      "bytes": 130876,
+      "before": null
+    },
+    "assets/commerce-geo/GD.json": {
+      "sha256": "59e310af6fae5f146f886c732cee9658ea2d98632e8d1cce360da7c63ad1a04a",
+      "bytes": 239,
+      "before": null
+    },
+    "assets/commerce-geo/GE.json": {
+      "sha256": "7348f1a7029e602b3ba9765b848d0fe91b97513563c1bda4281a87891a47af74",
+      "bytes": 3942,
+      "before": null
+    },
+    "assets/commerce-geo/GF.json": {
+      "sha256": "ebbc0ebb573c7780414593ca10bb91fa449ad6c31a2fe290b4574c053982b49c",
+      "bytes": 328,
+      "before": null
+    },
+    "assets/commerce-geo/GG.json": {
+      "sha256": "f9dfcf2a77bb65619a2d140d12a548576a337e56e0fb8d712f4a02922cab6339",
+      "bytes": 107,
+      "before": null
+    },
+    "assets/commerce-geo/GH.json": {
+      "sha256": "daed50ca79ee3e0a9bea97e74d3a977f1747dde1acdb2f95dd1fa10cc164ee0a",
+      "bytes": 4134,
+      "before": null
+    },
+    "assets/commerce-geo/GI.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/GL.json": {
+      "sha256": "28c87c5d35b5446bbe8df7c03287337ece1bc45012b174aa15f482537b291150",
+      "bytes": 593,
+      "before": null
+    },
+    "assets/commerce-geo/GM.json": {
+      "sha256": "9c7d2f331efcfeddb171b8ef63996b8766fed78d9585e8ffebe3f8047acfb101",
+      "bytes": 3482,
+      "before": null
+    },
+    "assets/commerce-geo/GN.json": {
+      "sha256": "99c56f94773e13c8cc59a7f01f43617254b840709a69bd6c7bd298fdb0da6de1",
+      "bytes": 1826,
+      "before": null
+    },
+    "assets/commerce-geo/GP.json": {
+      "sha256": "1183ce18a2188e5a51cbc12bc472139b2444fc1bd0dc9de26a4ca6c2d11cb05b",
+      "bytes": 1196,
+      "before": null
+    },
+    "assets/commerce-geo/GQ.json": {
+      "sha256": "5db018065647480730c9b2c0bd54e1b633d48107be74514e3dd4afa5211860ba",
+      "bytes": 763,
+      "before": null
+    },
+    "assets/commerce-geo/GR.json": {
+      "sha256": "54210285c4c72335e48ea4ea31077299ef9a0380d40703fe0c877cfcda395b2f",
+      "bytes": 35316,
+      "before": null
+    },
+    "assets/commerce-geo/GS.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/GT.json": {
+      "sha256": "28473ca6d54d61e0dd44090a3166c1bbe6ebc3b3bcbffd465d9d68434c3dbd4e",
+      "bytes": 18453,
+      "before": null
+    },
+    "assets/commerce-geo/GU.json": {
+      "sha256": "9edd6b1bce38dd48ab98f0299b75ff8a60b33a7aa15646eac6747095b0346071",
+      "bytes": 492,
+      "before": null
+    },
+    "assets/commerce-geo/GW.json": {
+      "sha256": "41a5c8e64f9e2ec6815c958d0181ad34bb11697b425ffa2a232231d6573892c0",
+      "bytes": 412,
+      "before": null
+    },
+    "assets/commerce-geo/GY.json": {
+      "sha256": "6774f33629f4db14d750428f6cb647566e22eca0c8c9de88b93b0c4d9008c2fa",
+      "bytes": 484,
+      "before": null
+    },
+    "assets/commerce-geo/HK.json": {
+      "sha256": "343d11f38b17005f0bc1fdc813204412d1e9f68d291d1f848a6aed005d80b0bd",
+      "bytes": 946,
+      "before": null
+    },
+    "assets/commerce-geo/HM.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/HN.json": {
+      "sha256": "bd8e857b8a37d1740777ab5b7336b43a8c2271db3bc47dc392d9c4c4127751fc",
+      "bytes": 18483,
+      "before": null
+    },
+    "assets/commerce-geo/HR.json": {
+      "sha256": "1c095e6490f03556000186d743527bf31d6df3dcca66815bdc7b4258310cc88e",
+      "bytes": 22055,
+      "before": null
+    },
+    "assets/commerce-geo/HT.json": {
+      "sha256": "96c362a4457ba7cc83e7f117de2b8707021f589148ad9b4932bc026bec79e78a",
+      "bytes": 4786,
+      "before": null
+    },
+    "assets/commerce-geo/HU.json": {
+      "sha256": "0dd027dc174016063fdf396375d028c58e89ec7ae54f9552e2cfd751446bf7da",
+      "bytes": 35344,
+      "before": null
+    },
+    "assets/commerce-geo/ID.json": {
+      "sha256": "0e0bee42f522edaca00bdb7bf73c667bce4c61c75cdb2018271c68e1b7929c81",
+      "bytes": 31642,
+      "before": null
+    },
+    "assets/commerce-geo/IE.json": {
+      "sha256": "ccbbede4fc1c735efe642322dd43d4243229d87d9fe6e354d7e1e3acdc22844c",
+      "bytes": 11892,
+      "before": null
+    },
+    "assets/commerce-geo/IL.json": {
+      "sha256": "8a69d651c4e19f69a4c2c43980613f042760592490253de45fb41913833af95d",
+      "bytes": 4785,
+      "before": null
+    },
+    "assets/commerce-geo/IM.json": {
+      "sha256": "614a4c6dfb8f02be1fe83a845c8f1623618a82c707e79b2c67d494fa6bc264fc",
+      "bytes": 404,
+      "before": null
+    },
+    "assets/commerce-geo/IN.json": {
+      "sha256": "180bd29a71537200dbb2847ffa52ef86523f1257347aec46f06e045cd9137c15",
+      "bytes": 129180,
+      "before": null
+    },
+    "assets/commerce-geo/IO.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/IQ.json": {
+      "sha256": "263d5ee4938fd04973f3a6a0eeea914584eec2acda4865c3f10bad8ff858d67f",
+      "bytes": 4303,
+      "before": null
+    },
+    "assets/commerce-geo/IR.json": {
+      "sha256": "c298677288db76cacf77a36846978f0fc14a8f5cb1152267fc03a246179daa67",
+      "bytes": 56188,
+      "before": null
+    },
+    "assets/commerce-geo/IS.json": {
+      "sha256": "9e7a74341743db1e2ded90f03c5f50936e3ca3163ca011767ded02730a1fdd95",
+      "bytes": 2804,
+      "before": null
+    },
+    "assets/commerce-geo/IT.json": {
+      "sha256": "e03108ff944ac59a00acd7489528c5dfd284b6b70511c33d9faabef773c73be6",
+      "bytes": 374721,
+      "before": null
+    },
+    "assets/commerce-geo/JE.json": {
+      "sha256": "676a1af9d720851aa1f20f8ea650315b27de5b2fd5c7651bf8e8393940d2af87",
+      "bytes": 2528,
+      "before": null
+    },
+    "assets/commerce-geo/JM.json": {
+      "sha256": "adab3a60a594d8687463cc6197870b96b40c951399363ffb44210be861fd51cf",
+      "bytes": 28951,
+      "before": null
+    },
+    "assets/commerce-geo/JO.json": {
+      "sha256": "ca3b5633336021b92abf0a04577e21b950646d202faa4df2bf3dbd690fc8a839",
+      "bytes": 2354,
+      "before": null
+    },
+    "assets/commerce-geo/JP.json": {
+      "sha256": "47bdf0ebaa29ca0b4c9fe42acb3f172a4d5223184213ec5587eee9fc90d98d5c",
+      "bytes": 54258,
+      "before": null
+    },
+    "assets/commerce-geo/KE.json": {
+      "sha256": "9f2d84283b7424a8cb60580109752dcb18a7f8c07e1be8c93807b417ce9e6eb3",
+      "bytes": 3905,
+      "before": null
+    },
+    "assets/commerce-geo/KG.json": {
+      "sha256": "d7e1fbcfd5b3e51735fe50103f3035c7db316fbba7844b309859a17f2b8cb73d",
+      "bytes": 1773,
+      "before": null
+    },
+    "assets/commerce-geo/KH.json": {
+      "sha256": "1023d962e9e643aae68c08b63c164a52ef75d09b0a1795f412f31f6ddc2045ca",
+      "bytes": 4076,
+      "before": null
+    },
+    "assets/commerce-geo/KI.json": {
+      "sha256": "a83cae25a40cf0ae307ec2eea86c10da2aa1834739635e5b56f192115d8dfbaa",
+      "bytes": 1312,
+      "before": null
+    },
+    "assets/commerce-geo/KM.json": {
+      "sha256": "788f0b2041bb819d89d4ff43e957742f77fa2a5441fb02578fc108f6b5a15ca5",
+      "bytes": 2606,
+      "before": null
+    },
+    "assets/commerce-geo/KN.json": {
+      "sha256": "7ff52ead5053383ced234b0635b8f6d825bb4d4043c9efd132f77c59a2e9dd60",
+      "bytes": 518,
+      "before": null
+    },
+    "assets/commerce-geo/KP.json": {
+      "sha256": "cdad46e710e5d305cf4863964dd71b470df4226d5418ca0a14787eef6160b9c8",
+      "bytes": 2668,
+      "before": null
+    },
+    "assets/commerce-geo/KR.json": {
+      "sha256": "8b66ae4af3733fe1e35b700a4b388f68e5824904c3867e2ea97f503660972830",
+      "bytes": 10033,
+      "before": null
+    },
+    "assets/commerce-geo/KW.json": {
+      "sha256": "34cf626239852f527319fb0e089dbd26285924695aa268d0a89b90f53a2a7895",
+      "bytes": 852,
+      "before": null
+    },
+    "assets/commerce-geo/KY.json": {
+      "sha256": "6d380f89fb0a8e687ddddbc68f44ced5bda8fa1e117002369b2789a031585f1e",
+      "bytes": 294,
+      "before": null
+    },
+    "assets/commerce-geo/KZ.json": {
+      "sha256": "285500d6af65d68d3fa70303ff9217a022e7d83cb1beaf145c54d1c54f58e6d9",
+      "bytes": 8053,
+      "before": null
+    },
+    "assets/commerce-geo/LA.json": {
+      "sha256": "e046342b4649cac636ff783a7e891a06e0d95bdbd92794b521b3f25233ba9f9d",
+      "bytes": 3276,
+      "before": null
+    },
+    "assets/commerce-geo/LB.json": {
+      "sha256": "e085bf2dc70b73f86417cff3578dfae99b101703d56eb77c844598f1862bb90d",
+      "bytes": 781,
+      "before": null
+    },
+    "assets/commerce-geo/LC.json": {
+      "sha256": "92031234d136250feb75f1ccd1fef57faeea4b47b1524897e3fc1e293ba9b4ad",
+      "bytes": 18302,
+      "before": null
+    },
+    "assets/commerce-geo/LI.json": {
+      "sha256": "21dcdc228bd7ce30e273b658bcdeebc1a9a5ebfe2f6bec578622eb7441759320",
+      "bytes": 297,
+      "before": null
+    },
+    "assets/commerce-geo/LICENSE.txt": {
+      "sha256": "6042621cae96bbce3a10739b480a074e25b0ea23025c00d7874582ad2c47b780",
+      "bytes": 25364,
+      "before": null
+    },
+    "assets/commerce-geo/LK.json": {
+      "sha256": "b734c8b570542c81f095acd3fbda7f89be6f90e06c82edac176d76f8988e9518",
+      "bytes": 5561,
+      "before": null
+    },
+    "assets/commerce-geo/LR.json": {
+      "sha256": "60c16364e70a507d9d868a686f8631f997f9c9e6f8f50d81c135ceb20bd07934",
+      "bytes": 599,
+      "before": null
+    },
+    "assets/commerce-geo/LS.json": {
+      "sha256": "36a9d22e92068b2548631220f4dcc46e6574e5f7e8e80984f480a27b9292b0ca",
+      "bytes": 389,
+      "before": null
+    },
+    "assets/commerce-geo/LT.json": {
+      "sha256": "7b140fe42ad3b80ef95f13708c37a06cff2957a8c5ba4df3244f52b24a9efb6e",
+      "bytes": 4409,
+      "before": null
+    },
+    "assets/commerce-geo/LU.json": {
+      "sha256": "2ee51fd0c79c142b288ca7c3ff787c1600227a419175c3fa942c786ebac687fc",
+      "bytes": 4629,
+      "before": null
+    },
+    "assets/commerce-geo/LV.json": {
+      "sha256": "6bd3021f02cb4b403da408f4a3fe2b3e08b004b301e9d037639d8ddd6eeed0c1",
+      "bytes": 3661,
+      "before": null
+    },
+    "assets/commerce-geo/LY.json": {
+      "sha256": "664ec3aa4b270faf25d4c8c9c979319ad2f4f7eec2b9db9ab4c2ce22e840d22d",
+      "bytes": 1474,
+      "before": null
+    },
+    "assets/commerce-geo/MA.json": {
+      "sha256": "cdba476f4200752e422aaf2dd64f5fe4fdaa3461958c5b9c41fd7ea4aae5384d",
+      "bytes": 6894,
+      "before": null
+    },
+    "assets/commerce-geo/MC.json": {
+      "sha256": "f77192488ad343f0a06a92c54c06aadeb89de021a351b1d7ac1b80c3b32d852c",
+      "bytes": 614,
+      "before": null
+    },
+    "assets/commerce-geo/MD.json": {
+      "sha256": "da0a4fc43bdf23a860df8f07683d64b80156af1c4364f159da8b83d74cdfbdf3",
+      "bytes": 2249,
+      "before": null
+    },
+    "assets/commerce-geo/ME.json": {
+      "sha256": "c334a6692b9420cfaaba53bdf7da055195b458fa2cf989bea8960d84a5519c51",
+      "bytes": 1169,
+      "before": null
+    },
+    "assets/commerce-geo/MF.json": {
+      "sha256": "7af13c57d13e891da5cdc005bd830361536a4d7cb29919612ed17002f226b35c",
+      "bytes": 14,
+      "before": null
+    },
+    "assets/commerce-geo/MG.json": {
+      "sha256": "9b5276d061d3b55c77b7ae9fae765807b6fe7e7ee82a4844419a5f42f6af2ef8",
+      "bytes": 371,
+      "before": null
+    },
+    "assets/commerce-geo/MH.json": {
+      "sha256": "d21596cb1de29ae722bd9ad26b36f2f56751b4a7e54cb13c10171b453755ef13",
+      "bytes": 731,
+      "before": null
+    },
+    "assets/commerce-geo/MK.json": {
+      "sha256": "4b3c79fc484f2868e80e38599a779dd9206aac7645059138a79bf1e4dc3f7395",
+      "bytes": 6134,
+      "before": null
+    },
+    "assets/commerce-geo/ML.json": {
+      "sha256": "0a4a1fbd5ddaee7d65d36574d95383cc34f0f6d8d217be27326f50abfabf5083",
+      "bytes": 1467,
+      "before": null
+    },
+    "assets/commerce-geo/MM.json": {
+      "sha256": "bbc42fadab825b40cb44d6d81aed84f881ee349b09e5c3bbd37a8834e1bc22b0",
+      "bytes": 2143,
+      "before": null
+    },
+    "assets/commerce-geo/MN.json": {
+      "sha256": "8cdf063ad80158ec56fb13446867a5cd6f257af00fde002d716be93c51988372",
+      "bytes": 1219,
+      "before": null
+    },
+    "assets/commerce-geo/MO.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/MP.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/MQ.json": {
+      "sha256": "73a082118e1e918cfe090b77609d1dd447b78eced894c1cca5c9e9b6547cec99",
+      "bytes": 1279,
+      "before": null
+    },
+    "assets/commerce-geo/MR.json": {
+      "sha256": "7a25164e72122d3d17af16a6749050a844a09704f014d40d6ae0f660ff0510d4",
+      "bytes": 1191,
+      "before": null
+    },
+    "assets/commerce-geo/MS.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/MT.json": {
+      "sha256": "e659fb18f386948253cde5bd4471b0d28db11ad9c57be4a59b2741adadbdb707",
+      "bytes": 2518,
+      "before": null
+    },
+    "assets/commerce-geo/MU.json": {
+      "sha256": "7398710729dba045600c622b1a9907ffe7094ce6c8bd2afa99186fcfbc575c81",
+      "bytes": 6488,
+      "before": null
+    },
+    "assets/commerce-geo/MV.json": {
+      "sha256": "7cbf4ea1e1c82495445a2014dfeed7a745482fc34c7b4d4e4e8dfb7a3f79437a",
+      "bytes": 647,
+      "before": null
+    },
+    "assets/commerce-geo/MW.json": {
+      "sha256": "b62f2c31fff0728a5c1c756e4f79a9e0da4828d6e8ea8a969e015b5e7b19ef0d",
+      "bytes": 2275,
+      "before": null
+    },
+    "assets/commerce-geo/MX.json": {
+      "sha256": "fbc27c947edf61cfe2a9f021abb55e2b6c64e7174f16c6584fb10b5b2cd20c5f",
+      "bytes": 396919,
+      "before": null
+    },
+    "assets/commerce-geo/MY.json": {
+      "sha256": "c3c2b8fedada65d79258a82897a25919324998b4f429f0f0dccf40378cdd3cf9",
+      "bytes": 7369,
+      "before": null
+    },
+    "assets/commerce-geo/MZ.json": {
+      "sha256": "7c059fab7db660e02849100f6bb5a52b27caa5f823f6edac0c00a7e52b37a131",
+      "bytes": 1243,
+      "before": null
+    },
+    "assets/commerce-geo/NA.json": {
+      "sha256": "b442f69f5834ff8d887d3b922bbe2c0984559207199dd21628bd713933da2da3",
+      "bytes": 1678,
+      "before": null
+    },
+    "assets/commerce-geo/NC.json": {
+      "sha256": "7b38aee489d0e57cfde5a1f7145d1a19c1910bb78b5bce70ac7dbd909de49bae",
+      "bytes": 267,
+      "before": null
+    },
+    "assets/commerce-geo/NE.json": {
+      "sha256": "0f5d05a5131dfb0185d460aa138a9282b2abc5734e52aa81e294c5b084769b1f",
+      "bytes": 2291,
+      "before": null
+    },
+    "assets/commerce-geo/NF.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/NG.json": {
+      "sha256": "26436c9d106c76e2e07420f7a06a8e950df6b5895f02f57f3564947c88f0e194",
+      "bytes": 13633,
+      "before": null
+    },
+    "assets/commerce-geo/NI.json": {
+      "sha256": "35299662f310564a032eb03248d27a1a9895b50261920edc5cfda46398250c76",
+      "bytes": 6231,
+      "before": null
+    },
+    "assets/commerce-geo/NL.json": {
+      "sha256": "76d5912fafad72009506aca4e191a103c9da5d9f1cf400fe9cf7d7435868d2a7",
+      "bytes": 51879,
+      "before": null
+    },
+    "assets/commerce-geo/NO.json": {
+      "sha256": "8dc5bfdfb4ee563e6ebdec45d5282f97ae3f84a74dbe38e3806ae06251a6cd98",
+      "bytes": 18709,
+      "before": null
+    },
+    "assets/commerce-geo/NP.json": {
+      "sha256": "22dd5cc80ef0ad0a261b8c260390a5c50a0439f531ee76e72281ffe931f8da21",
+      "bytes": 2342,
+      "before": null
+    },
+    "assets/commerce-geo/NR.json": {
+      "sha256": "9a5d08547f2fb98289f040dbe3be5ef3d786327f1b2a1f5deb3a7f44bead92e2",
+      "bytes": 166,
+      "before": null
+    },
+    "assets/commerce-geo/NU.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/NZ.json": {
+      "sha256": "e8f9bf5a1e677620f3b117cddd7b4b38646ab55fe4d661c5a41c93c00b3b170b",
+      "bytes": 5234,
+      "before": null
+    },
+    "assets/commerce-geo/OM.json": {
+      "sha256": "4f98ca9c52b31f5c004f816dcb516bb4446a354abd293e16c4cee56f80994b65",
+      "bytes": 867,
+      "before": null
+    },
+    "assets/commerce-geo/PA.json": {
+      "sha256": "a1fd2debf9f6d5d7d6c67861ff5d126dacaf4d9bb437ed064003beb325511f0c",
+      "bytes": 21401,
+      "before": null
+    },
+    "assets/commerce-geo/PE.json": {
+      "sha256": "7b54f84f6b6d3b5584ede00acc145caec221ee22ccf5c8339245627b361f6765",
+      "bytes": 19774,
+      "before": null
+    },
+    "assets/commerce-geo/PF.json": {
+      "sha256": "7405b001266b20e2450f37da030c5ddd2104ee105cc9e9528b87e86a6894915f",
+      "bytes": 1404,
+      "before": null
+    },
+    "assets/commerce-geo/PG.json": {
+      "sha256": "c0effa89cc5ebeb7de80ade9b7cec98ea589fdd5271cc5cdfaabb8e0c3ef6922",
+      "bytes": 3308,
+      "before": null
+    },
+    "assets/commerce-geo/PH.json": {
+      "sha256": "d43cba0ad01f2f226716d7e1f66202166fcea7443d4c356eb93b229801518957",
+      "bytes": 119579,
+      "before": null
+    },
+    "assets/commerce-geo/PK.json": {
+      "sha256": "eb1b471356faf45517d7c99213d92935c7d64989f5d5372c7d159b25ce81bec1",
+      "bytes": 15420,
+      "before": null
+    },
+    "assets/commerce-geo/PL.json": {
+      "sha256": "e5dcc78c6c82ceb39531face0ad0dd14b1d6aec489b6a45ce97eed19137c8049",
+      "bytes": 87030,
+      "before": null
+    },
+    "assets/commerce-geo/PM.json": {
+      "sha256": "7e25f5201137d496b72a323fe0f2e3c86e063613fa72cf6569d0a394404078ca",
+      "bytes": 41,
+      "before": null
+    },
+    "assets/commerce-geo/PN.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/PR.json": {
+      "sha256": "273a2519aa99cb272d63fb36654f04acf14b714c9750f24f22858d3e8f855fad",
+      "bytes": 2403,
+      "before": null
+    },
+    "assets/commerce-geo/PS.json": {
+      "sha256": "2ec3a78453cc3c592320fee7339dbb6ae07e5e579ee702e08081ddc9609f86a5",
+      "bytes": 3963,
+      "before": null
+    },
+    "assets/commerce-geo/PT.json": {
+      "sha256": "f9986090b2d0519813dc48f506a80f8542f778e547d51841f7f2d09c89a40fb1",
+      "bytes": 42564,
+      "before": null
+    },
+    "assets/commerce-geo/PW.json": {
+      "sha256": "78f62d38a4b95d4e8b3b01d70b050a96bbebe81da2e9dd8cb343d2664e9f07c7",
+      "bytes": 568,
+      "before": null
+    },
+    "assets/commerce-geo/PY.json": {
+      "sha256": "7e797eba319fb8738bbc7a5c38380aa3affe812d5286a75881b0e49b5919019d",
+      "bytes": 6445,
+      "before": null
+    },
+    "assets/commerce-geo/QA.json": {
+      "sha256": "18425762c068a117b60a795a30684c826bb5aebe734e518fe7fcbe7a18924bf6",
+      "bytes": 505,
+      "before": null
+    },
+    "assets/commerce-geo/RE.json": {
+      "sha256": "117753d65dfaf95fd51b08b0a3364b09671d4eae841b6dde79837a2dc4300ac4",
+      "bytes": 910,
+      "before": null
+    },
+    "assets/commerce-geo/README.txt": {
+      "sha256": "a3bf0f6fc27fbb8f626daee34c88a753489b421d8466fdfa18bf44113b54d00d",
+      "bytes": 493,
+      "before": null
+    },
+    "assets/commerce-geo/RO.json": {
+      "sha256": "15aae9c8689c8bd6fe475473f71bd9a33ce428a990edc3170d2c5b843ce13da1",
+      "bytes": 255861,
+      "before": null
+    },
+    "assets/commerce-geo/RS.json": {
+      "sha256": "289ebf90a072bc9a70e3248bd16d06b673faef50ba4a2e0da7a3febed72d5ad7",
+      "bytes": 12360,
+      "before": null
+    },
+    "assets/commerce-geo/RU.json": {
+      "sha256": "2ba93209430bf51e4c6a8a42a9ef7f3e8e47ec01c398346552452b2d35582435",
+      "bytes": 202351,
+      "before": null
+    },
+    "assets/commerce-geo/RW.json": {
+      "sha256": "10a0264c359c492b1ffd95758b9e63c979c84105a3587bd553dd7fd86eef230b",
+      "bytes": 349,
+      "before": null
+    },
+    "assets/commerce-geo/SA.json": {
+      "sha256": "59b53236b072a0dfb5c76a79a0fa0711f770ed90645e1984345fdcc5f46d9f63",
+      "bytes": 12010,
+      "before": null
+    },
+    "assets/commerce-geo/SB.json": {
+      "sha256": "16a65346befdc67da7462c8c08b690db973f096a9af0b742981950e75e277577",
+      "bytes": 172,
+      "before": null
+    },
+    "assets/commerce-geo/SC.json": {
+      "sha256": "a3ac6466b850e4de6f5f1ecd8f23ceaded4e28cd48bd8ddcc5cad47fad7329ba",
+      "bytes": 305,
+      "before": null
+    },
+    "assets/commerce-geo/SD.json": {
+      "sha256": "b9b1699b86b26cccadd37bda94515e2238b21f536795f3e1ccf4667731045032",
+      "bytes": 2067,
+      "before": null
+    },
+    "assets/commerce-geo/SE.json": {
+      "sha256": "4d3c01ee4149455d0b7b3dc4ece4e4d23e2364e8656d460065f8d53b32eacd7c",
+      "bytes": 23667,
+      "before": null
+    },
+    "assets/commerce-geo/SG.json": {
+      "sha256": "e4fc58eb56d520410387ba844f141a757957a59c9ab528fd230cd34c166625fd",
+      "bytes": 878,
+      "before": null
+    },
+    "assets/commerce-geo/SH.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/SI.json": {
+      "sha256": "3b91b198d94c8a3847049c399195ffe9498600f9f74009a5a5f38f3994e43944",
+      "bytes": 9856,
+      "before": null
+    },
+    "assets/commerce-geo/SJ.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/SK.json": {
+      "sha256": "25b8330dac06fe6ee4c812a2df6bdaa54e27992cea0ffd31717437efb7b1758a",
+      "bytes": 8366,
+      "before": null
+    },
+    "assets/commerce-geo/SL.json": {
+      "sha256": "5d8d9209701f8c131fa1c703c04808dacaa033f7fdf85f61d022e7871c1de1c0",
+      "bytes": 2639,
+      "before": null
+    },
+    "assets/commerce-geo/SM.json": {
+      "sha256": "496ab5ccf83e6d7e6b2de169488ba637d4f3c38c5aa40fe282caed261aaee505",
+      "bytes": 361,
+      "before": null
+    },
+    "assets/commerce-geo/SN.json": {
+      "sha256": "2990b432ce33006e2642312f01cecdec5236bcc9baabcc2288f9399561e8eca7",
+      "bytes": 2317,
+      "before": null
+    },
+    "assets/commerce-geo/SO.json": {
+      "sha256": "77b7b8523561fbfa64ebbf975417b49ce35192faacd1c63120c56a23b1d09b37",
+      "bytes": 1442,
+      "before": null
+    },
+    "assets/commerce-geo/SR.json": {
+      "sha256": "4e21c86062951fd32024b2213717cb2e36f900ec1f31ec04d53add9e668f72dd",
+      "bytes": 453,
+      "before": null
+    },
+    "assets/commerce-geo/SS.json": {
+      "sha256": "fcfe95c684936e7d5137d96529960ab6517e1df11be6675a4731c92006c64048",
+      "bytes": 25,
+      "before": null
+    },
+    "assets/commerce-geo/ST.json": {
+      "sha256": "820dd059bd871941dca6231ad9efb9df08bf1e1721370f31af3d6d5e538aabab",
+      "bytes": 241,
+      "before": null
+    },
+    "assets/commerce-geo/SV.json": {
+      "sha256": "09f3f12052248d5a40c61e0b24a3eff67097372dbdd1ae87b8fd13af9484c196",
+      "bytes": 3951,
+      "before": null
+    },
+    "assets/commerce-geo/SX.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/SY.json": {
+      "sha256": "beee13195a5fb42d463eec22d4aab1d0ba4eed645c8a01ab335272747aec1ee3",
+      "bytes": 4575,
+      "before": null
+    },
+    "assets/commerce-geo/SZ.json": {
+      "sha256": "a7104c7c94ea0a77006ba504a328d103fab3d8b42b1c0d6caa1263fedef8714a",
+      "bytes": 1174,
+      "before": null
+    },
+    "assets/commerce-geo/TC.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/TD.json": {
+      "sha256": "bac4a7d1cdb551e8d2733888f9f9c6b4827563be848a1914fc58db4bbdf89599",
+      "bytes": 1305,
+      "before": null
+    },
+    "assets/commerce-geo/TF.json": {
+      "sha256": "074b906c7b50d511e59b4a809db8906f8e8412d74f5632c413dc426e1c15d6cf",
+      "bytes": 106,
+      "before": null
+    },
+    "assets/commerce-geo/TG.json": {
+      "sha256": "b92f9564a7b016d3bc1725f0db758cf1eeb8715befd35e2c494b259aba99a9a1",
+      "bytes": 630,
+      "before": null
+    },
+    "assets/commerce-geo/TH.json": {
+      "sha256": "b3b6afeb05a7e70727567f414679f348d0e6c992de287530d5bc8b2f26190a91",
+      "bytes": 53236,
+      "before": null
+    },
+    "assets/commerce-geo/TJ.json": {
+      "sha256": "d5ac9a21eb9d3cdd488cfc7882208f0d15edb9d401a18bdc60f55e73e4f70879",
+      "bytes": 2218,
+      "before": null
+    },
+    "assets/commerce-geo/TK.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/TL.json": {
+      "sha256": "477fe58710de8729137d314ea57cd42f09d033158ea095ef78ca8ed3e6c7734c",
+      "bytes": 1595,
+      "before": null
+    },
+    "assets/commerce-geo/TM.json": {
+      "sha256": "2cd1856ee7eb4be78ccffe9d02abbe94f53d6c4a65043819eec4b15aee8b6e06",
+      "bytes": 870,
+      "before": null
+    },
+    "assets/commerce-geo/TN.json": {
+      "sha256": "cfa29ceac92518cc6c0d7c8556b8eeee2c95990e63ff8ab1e482b8abf342ef28",
+      "bytes": 5074,
+      "before": null
+    },
+    "assets/commerce-geo/TO.json": {
+      "sha256": "d8bd13a27dd18e9c0dad6260cf54ce1e2356a7a7ae5d3107b2f8fd93d9bd01a6",
+      "bytes": 232,
+      "before": null
+    },
+    "assets/commerce-geo/TR.json": {
+      "sha256": "2fbee7c372a8f4b128f7ae7a354375c7a498158e4f7b41aeee1ed8ea37267e99",
+      "bytes": 25990,
+      "before": null
+    },
+    "assets/commerce-geo/TT.json": {
+      "sha256": "df3c617d1cf89a76c6698ef019087a471403787b53c4cb1dcaae98b753ef1937",
+      "bytes": 889,
+      "before": null
+    },
+    "assets/commerce-geo/TV.json": {
+      "sha256": "528f8e26bc111fc116215173511befea2b740fbee79f29bbd600f1acd02b5042",
+      "bytes": 355,
+      "before": null
+    },
+    "assets/commerce-geo/TW.json": {
+      "sha256": "a6b529fbc513d206749721d157e0d54f8a08f84419e54fb9e98ef7597e0df842",
+      "bytes": 7847,
+      "before": null
+    },
+    "assets/commerce-geo/TZ.json": {
+      "sha256": "9dec9dcd0106d70f36140b2f31c384f07b861d68e17ca09bb5971c707b4b11e7",
+      "bytes": 8407,
+      "before": null
+    },
+    "assets/commerce-geo/UA.json": {
+      "sha256": "eb4fcf1d41daf03ad3e589e436ed6909fcb59b2055c889bcfffd2f00418bd1e4",
+      "bytes": 63614,
+      "before": null
+    },
+    "assets/commerce-geo/UG.json": {
+      "sha256": "9fb294036094c94b8bb79dafbb16fd8c4cabf125ed13da9d3cbde79c01c60376",
+      "bytes": 2758,
+      "before": null
+    },
+    "assets/commerce-geo/UM.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/US.json": {
+      "sha256": "fca41733beacce80692593281d21f00547700e1fb69f7737b6174f384694a0a8",
+      "bytes": 429661,
+      "before": null
+    },
+    "assets/commerce-geo/UY.json": {
+      "sha256": "09611b21aac1fa26856f76e3a998e0de551c0c79fb09bfd76acc073607965de9",
+      "bytes": 37846,
+      "before": null
+    },
+    "assets/commerce-geo/UZ.json": {
+      "sha256": "b3e953912b583548c702aee56caa2ed90a0e97ec967543e37c72c70f0a1bad38",
+      "bytes": 4420,
+      "before": null
+    },
+    "assets/commerce-geo/VA.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/VC.json": {
+      "sha256": "a2c72c386783c4f35ff71551900b533a402f955771a2ff397fbc30579412bcbf",
+      "bytes": 329,
+      "before": null
+    },
+    "assets/commerce-geo/VE.json": {
+      "sha256": "a9e34edd2e7a1620c49fe04f99fcc2409ba7fff94be21cdcf54319864056cd72",
+      "bytes": 5369,
+      "before": null
+    },
+    "assets/commerce-geo/VG.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "before": null
+    },
+    "assets/commerce-geo/VI.json": {
+      "sha256": "f79efca1f497ea3b02121758dc09d87771532d82538993a98b38be7933f4d625",
+      "bytes": 649,
+      "before": null
+    },
+    "assets/commerce-geo/VN.json": {
+      "sha256": "860e5ffa4a68cc3ac82bba1f9c3cfd296875d91981291e686ad6d0bdba52d4bd",
+      "bytes": 14244,
+      "before": null
+    },
+    "assets/commerce-geo/VU.json": {
+      "sha256": "81826cacd1180c5b5a8e4b9c00a6a9f8f8555c28497a5ae7a7a381d9e967753f",
+      "bytes": 215,
+      "before": null
+    },
+    "assets/commerce-geo/WF.json": {
+      "sha256": "3698dff4dd3a082d855e5e1df2c1c73b96d5b5323366b0a1fc6326f26a639ef2",
+      "bytes": 75,
+      "before": null
+    },
+    "assets/commerce-geo/WS.json": {
+      "sha256": "7643e350e9e4e857486c08e3d88ed5eaeefcd492833a1c8bc50eb05aba6931ad",
+      "bytes": 585,
+      "before": null
+    },
+    "assets/commerce-geo/XK.json": {
+      "sha256": "3cabc7a5feb27e2818b33db36d87af7322e688e62980a95bb2bb7afb3e4bd8f7",
+      "bytes": 766,
+      "before": null
+    },
+    "assets/commerce-geo/YE.json": {
+      "sha256": "08b9d7db851b328dc76f47063e10f2b564d328b482fb2a1a0078b56e252050da",
+      "bytes": 10200,
+      "before": null
+    },
+    "assets/commerce-geo/YT.json": {
+      "sha256": "1cf3d7d8323c8bb60734df772423ebd85bac8c9a636b62728cf817f900198657",
+      "bytes": 768,
+      "before": null
+    },
+    "assets/commerce-geo/ZA.json": {
+      "sha256": "3f3c23757d79cb2061f9c58c1557e0b4b4eba4de6e58416b435f6786ebb49939",
+      "bytes": 11952,
+      "before": null
+    },
+    "assets/commerce-geo/ZM.json": {
+      "sha256": "a28fa6a708cb12940a34706b1be0a44dfb3ff5999eb186096888caaf1e2e433e",
+      "bytes": 2149,
+      "before": null
+    },
+    "assets/commerce-geo/ZW.json": {
+      "sha256": "d497f168922451e1da05c12ef2c1deaf50fbba3684547cabe3f2006d797f2906",
+      "bytes": 3856,
+      "before": null
+    },
+    "assets/commerce-geo/countries.json": {
+      "sha256": "5ca4a22c4ff9dc69f47925c58b8bcff09d9dc68dd4b8d2efa49e8a135cb6fc12",
+      "bytes": 8550,
+      "before": null
+    },
+    "bg/about.html": {
+      "sha256": "fb8341f222a74b75b16b39fd0cc302a66e8eee8c9242cec343a971252517f8d0",
+      "bytes": 12407,
+      "before": "git-sha1:c0a7654f93c68dc434b145639f34a4e4a18f2e2f"
+    },
+    "bg/accessibility.html": {
+      "sha256": "27e6ac99f35fc9cb84b226950b036a7ce5338037ab6b3f9577534176de89fe29",
+      "bytes": 11499,
+      "before": "git-sha1:f1376a609091ed65389dce84bbd678a69b2513d3"
+    },
+    "bg/cart.html": {
+      "sha256": "fef9e69d9894aeaab4d6900356903a9928a760a2c11dfec50733ec3d0c25b1ac",
+      "bytes": 20030,
+      "before": "git-sha1:dea0db5e9be06e0dbd360735441792694f3c7c88"
+    },
+    "bg/checkout.html": {
+      "sha256": "bce69b6b4d6ec690d04305fd6f3e5f6cc6c038afb5ec4bec65e5cbb2f6fc2747",
+      "bytes": 27254,
+      "before": "git-sha1:4a17e5bd8039491a0912584189c558248c999734"
+    },
+    "bg/child-safety.html": {
+      "sha256": "fadbb188696587a3614b56fa75ce81f626f076ea47c58f25ecf8c6baf626823c",
+      "bytes": 13603,
+      "before": "git-sha1:1f7fc49b8031825311a0eaa6e9960777a924b279"
+    },
+    "bg/demo.html": {
+      "sha256": "7c2c7d26023c6bb337252f3e57ad751e8e92ce7b31beb1ea02a1a3918033295c",
+      "bytes": 11860,
+      "before": "git-sha1:d73be02ffcfa431be9c30d69565b40df1d607a6e"
+    },
+    "bg/index.html": {
+      "sha256": "cf5e42fe566fd788d92bc905bd6574ca50fa8a526876c1bc02baace000ac07cd",
+      "bytes": 20146,
+      "before": "git-sha1:c8fcd2a7088248a7b130d606b71a03de16ee6cdb"
+    },
+    "bg/legal.html": {
+      "sha256": "701c66a8340af0571a7f12489e56cbf9f00d52b4ef8faef57d473ffab2318dd7",
+      "bytes": 12027,
+      "before": "git-sha1:87272b7198ca41e10eb80d44a98238544548452a"
+    },
+    "bg/privacy.html": {
+      "sha256": "7c17819eb5561f0b928bb2e4311d55eb20942d960d6691b3211e61301d827c05",
+      "bytes": 17883,
+      "before": "git-sha1:8f16c0df1a89fe4d66246584bdb2fe4b70c70185"
+    },
+    "bg/product.html": {
+      "sha256": "a3f96674342795808e80970a7a3c8996519d16d1b0533c516c13b501626582d8",
+      "bytes": 14812,
+      "before": "git-sha1:60b011d0e9ee5018c916352b2b49f9f38c0b1eb3"
+    },
+    "bg/support.html": {
+      "sha256": "3af8beb9fbf712332062c217a9be2a076b9662fd31e13da7c9bfea2398548631",
+      "bytes": 13947,
+      "before": "git-sha1:e5d66548f3cae2d14d6f1d4fb68723d7165138d5"
+    },
+    "bg/terms.html": {
+      "sha256": "7d444688e494c5ad0eac80e048c3f7023e090091f909ab1a0ed577d6ef80dbd5",
+      "bytes": 15008,
+      "before": "git-sha1:757f4b84633e8d6c6c939b5eebf725e83ba45aad"
+    },
+    "bg/updates.html": {
+      "sha256": "8a890ad631ec6f1df40045d9c4a220c178014e9050074045cc3ef216c6c3e935",
+      "bytes": 11365,
+      "before": "git-sha1:3e6cbd59830e94333ac3f9254a44c877151417c3"
+    },
+    "bn/about.html": {
+      "sha256": "da6af10a2ff95924975c8ab1e3dcbfc30f292db5270d8f8497a90a069ad62622",
+      "bytes": 13227,
+      "before": "git-sha1:3ab0dbd9a7fac7da5fb9aa9d189ed0e28e9dbb15"
+    },
+    "bn/accessibility.html": {
+      "sha256": "795dacca93555308df6b987b2e6562d2daeb62591dc181b581c966f270442c24",
+      "bytes": 11850,
+      "before": "git-sha1:0f3c4e0ae12bc9844dbc4e62748fb1e16b6ed4e7"
+    },
+    "bn/cart.html": {
+      "sha256": "8b643a979425bbf8b76a78a37b339401899e63064fce5501abdc31db0a5d64b5",
+      "bytes": 21439,
+      "before": "git-sha1:470f0251a2237670d46b72cb920d19a00786a1cd"
+    },
+    "bn/checkout.html": {
+      "sha256": "9a9accc4719ee59527f5ff2d17f84c67b4872d7953dc01e24b5c3ead4cc0034e",
+      "bytes": 30201,
+      "before": "git-sha1:d0a853b1108bf000a15eb73f46da475914c08a9c"
+    },
+    "bn/child-safety.html": {
+      "sha256": "0650b69155352b4a7d8bb49a7b562a39bc7dcb51f7d937d124a239b193b05cd1",
+      "bytes": 14498,
+      "before": "git-sha1:8d4f39643c8810a43791ab09c9927c51f7d76197"
+    },
+    "bn/demo.html": {
+      "sha256": "f742d74d02306de606ecc8cdc4be0d66346a246e7fdbeb6fd9f22b891ecaffd1",
+      "bytes": 12572,
+      "before": "git-sha1:9fc870e42f9f09e8bde8df6073ec0ef4de166d52"
+    },
+    "bn/index.html": {
+      "sha256": "ca3f4b773dea1a34230159c7e64f6c7e1676466f65959314f231f18a3c701e25",
+      "bytes": 21908,
+      "before": "git-sha1:a027ef52869724fc3b3554a9cbd4ac97bfb53b82"
+    },
+    "bn/legal.html": {
+      "sha256": "bfeae8fca4986ac38b64e01dd5423319dc36861514a997cf4f11d207cd8ff3c2",
+      "bytes": 12394,
+      "before": "git-sha1:71a2cb6a6a7160c1eda9245b6cb17d4f2319d560"
+    },
+    "bn/privacy.html": {
+      "sha256": "23e1ade9fd6f1d0acc212d07c32c082b3b0844f2cf7c319060c957a8bd9d8427",
+      "bytes": 20135,
+      "before": "git-sha1:e6eb9129ca415afb32120933c6805df8519bd6cd"
+    },
+    "bn/product.html": {
+      "sha256": "40cfc09723e19eb566a3138aaff1aa55260767f9d5f9e024b0bc564975292800",
+      "bytes": 16147,
+      "before": "git-sha1:91f4ac154c0fc0923380779fa4f739fdc4939b8e"
+    },
+    "bn/support.html": {
+      "sha256": "2474ea6a9d53b1dc5f47083416f4e24ecb83e873c38b76e16aec7fe310b99698",
+      "bytes": 14958,
+      "before": "git-sha1:8414dd9b38c2eaf452a69491c4390e07f5b9eb6f"
+    },
+    "bn/terms.html": {
+      "sha256": "d54ee072a07c81d8da82ff069326c071a728dbd7a3536f08caea5650a02e1f71",
+      "bytes": 16631,
+      "before": "git-sha1:1d3fa8232bdcc5be6463ba76bf7dd9ea1bd65b68"
+    },
+    "bn/updates.html": {
+      "sha256": "4d30c0894929f5ba0a235aee0748ec2bd96d446d4f0db0d1475bcea38120310e",
+      "bytes": 11884,
+      "before": "git-sha1:7dfaa3aa2617853a78d14aa4bc47accbe7359d95"
+    },
+    "cart.html": {
+      "sha256": "1f81ec5a2c8bf1cc0302f44f8e44db83fe4184f080970b9d839f2f1e3d1544ca",
+      "bytes": 2399,
+      "before": "git-sha1:e41092de328fcc319e1b137c5979d778ab1fc5cf"
+    },
+    "checkout.html": {
+      "sha256": "614292e566314b5208bf1cc8d95c6f1858220ff52bad4e836e0cacc0214292b9",
+      "bytes": 2539,
+      "before": "git-sha1:b88e0fd7f00c978fe07d0e2b53f28961b086362e"
+    },
+    "commerce-cart.js": {
+      "sha256": "5759cd2fa43bba4edc4c8989acf163db4cc6c21f750a42285cbd2cdcfe9b8397",
+      "bytes": 9423,
+      "before": "git-sha1:2f6f1ed0e6785947cda8e9cf98c647cf1f86a76a"
+    },
+    "commerce.css": {
+      "sha256": "7fff9b8ca40aef6a9e6425dd12f05eaf8a9147b0bb2fd172dd75a19a9a48b069",
+      "bytes": 8434,
+      "before": "git-sha1:b1ff809da9ceef5f0dc32b3a52d5cacbdcea07c6"
+    },
+    "cs/about.html": {
+      "sha256": "a7a9e54d8699db3d73a470e6b629991fcff70e007ff4e69c3fe84556ad0453e9",
+      "bytes": 11363,
+      "before": "git-sha1:ce014fa47176b9a5ef9ea8487039f4a60651587b"
+    },
+    "cs/accessibility.html": {
+      "sha256": "70fead29a2c54881ca6284d1609de09dc90fa5c374553c83d5303e6307147b07",
+      "bytes": 10788,
+      "before": "git-sha1:68b2ec13970be0faae2e514bd34d802e5c45c7ed"
+    },
+    "cs/cart.html": {
+      "sha256": "7322321a62692b0550ec3cbb0e04d7f7dc850650a7a1a8ab28f36d1097eae9d0",
+      "bytes": 18241,
+      "before": "git-sha1:c5802fc96c53d10b8deaaafca72d9510fab13a2e"
+    },
+    "cs/checkout.html": {
+      "sha256": "71f0e8a4c2daa44d8a0b55357c98e459e91c6c355f3f32641ce2518ae15e1d69",
+      "bytes": 23687,
+      "before": "git-sha1:f0f515e25cf7c29a557ff900c789bca19b576101"
+    },
+    "cs/child-safety.html": {
+      "sha256": "06f306913a4547a9ecb906de6dc876659f71c567d62bddae07edd57b5fa98134",
+      "bytes": 11977,
+      "before": "git-sha1:778afcc85b7877fa77c5e907e3061893c15b4b1b"
+    },
+    "cs/demo.html": {
+      "sha256": "e73d95b1db85c54ee1d7c4cead1e91b659194112f73231e1cf8065a6d18f57bf",
+      "bytes": 10906,
+      "before": "git-sha1:1aadbf1ec59813ebf0b52c6b74fcac4d3b80e797"
+    },
+    "cs/index.html": {
+      "sha256": "71d317864161a6598959229e27bf78e00005ec7af813361d30ef272e30d1dcd5",
+      "bytes": 17521,
+      "before": "git-sha1:570eddd6b01aef5dc80d0eb04b34c593c742acd0"
+    },
+    "cs/legal.html": {
+      "sha256": "8f90c988d30a21e56e4cabc6c46e119b11c38d27905addacf444474ab49e7c9b",
+      "bytes": 11337,
+      "before": "git-sha1:cf9cf30a2244d4121a35cd5427006ac715e2c397"
+    },
+    "cs/privacy.html": {
+      "sha256": "820e875926eeab4769f61b98367448696d37f7e36255d25e85f50b28c7d62269",
+      "bytes": 14536,
+      "before": "git-sha1:6189f500f75ce54acd51ec19f11f152820fd90c3"
+    },
+    "cs/product.html": {
+      "sha256": "ea0288d1f7be08f24a8278954451e64385c328cde119337b3e0dc6480804777c",
+      "bytes": 12945,
+      "before": "git-sha1:61c9fb000c48fc55b926fd11edc22efb0a70eb09"
+    },
+    "cs/support.html": {
+      "sha256": "b9ea1f2708bd949fff177eb1a780554cbed859c3851637bb8f1faad5cc18d2f9",
+      "bytes": 12511,
+      "before": "git-sha1:a4cb6150ebc118ed2c50ef00016e4037c809170f"
+    },
+    "cs/terms.html": {
+      "sha256": "b5e7d3ddac13bf8f21e9971338b331c2c5794191a79c4c0b262a784af42220be",
+      "bytes": 13285,
+      "before": "git-sha1:9d60c3f6a6e84a0c2cb2a4e48f23abb7b66c3c35"
+    },
+    "cs/updates.html": {
+      "sha256": "a4a4a21cfa48c09c280268ea5855891221c2631686ae70c2f19a6cab982ebb2a",
+      "bytes": 10634,
+      "before": "git-sha1:b54b58cb9947d21d0383b6ae36df8842e3c274da"
+    },
+    "da/about.html": {
+      "sha256": "127177c2443b4a75b839c46a37380136cec3a31c7950901b13c08935a5c477f5",
+      "bytes": 11300,
+      "before": "git-sha1:a81d85a7024604538c063d60380af3d3a9528898"
+    },
+    "da/accessibility.html": {
+      "sha256": "1aacba229425814b8e887a74a829a9cd888b981fd1ea55c47c16731b4378e9c3",
+      "bytes": 10764,
+      "before": "git-sha1:3ced94223b609256c9264956b3f040e1fd734232"
+    },
+    "da/cart.html": {
+      "sha256": "188b06fc1e8173fe1bd00b41e8e586df746e49216f03b43e6e6ac36026885b12",
+      "bytes": 18049,
+      "before": "git-sha1:4809c6edc5225a90a87d11745c20fb3e7ae0daad"
+    },
+    "da/checkout.html": {
+      "sha256": "de19056217d512b30966751f4b255938fbc38dfba67ebaf8e1a607eabf321ee0",
+      "bytes": 23768,
+      "before": "git-sha1:6f97d6ab77d288309331f6367f8adb6d16e8d81a"
+    },
+    "da/child-safety.html": {
+      "sha256": "86409089ede884d19109f7699b14855e7c01d3c023d659e425ba18bb58e919e9",
+      "bytes": 11897,
+      "before": "git-sha1:e61d9847f16f69820ed338f40d56c84e332fe1f5"
+    },
+    "da/demo.html": {
+      "sha256": "215de08389f32051d443331a2c976e369199605f98b42b774c0a3f2dd6c6c8b6",
+      "bytes": 10815,
+      "before": "git-sha1:05a7753503ff30d0ec30f4a2f92ac22d376f3ff0"
+    },
+    "da/index.html": {
+      "sha256": "fc9d41b61cf84297dca5aaace3b64d121b6053d322a7f70879ddbb7e184356eb",
+      "bytes": 17386,
+      "before": "git-sha1:b9d39fbb2cbec6cadff34302cbd8d587207a5dd5"
+    },
+    "da/legal.html": {
+      "sha256": "4b2127aea833b500aa05cdb563016eb78f0e9877c14f7633f3e50c5b9a46c152",
+      "bytes": 11344,
+      "before": "git-sha1:85f2a1a5692b2145c9e7c54218eeb07b9ef8cf85"
+    },
+    "da/privacy.html": {
+      "sha256": "a92d561ccc8d0b793481ef8c1cc26c42aba3e097c2951053be602a1f68375099",
+      "bytes": 14449,
+      "before": "git-sha1:72102657b64b88618942bcb5e0a5ed240fa56c79"
+    },
+    "da/product.html": {
+      "sha256": "ba3a11ecfd3bb7cd3124c616a5eb60111510eb85f23c65b608e93311a69c8695",
+      "bytes": 12969,
+      "before": "git-sha1:d3ff391373830959b24eb7fea589e08e72c5d2fd"
+    },
+    "da/support.html": {
+      "sha256": "12ea32b740743dce77bcd0b24b4ef58407d9ee15ef724087536a2adfbb618374",
+      "bytes": 12495,
+      "before": "git-sha1:3039b7b48730f5ede46f47e5ca90a4635bf52b23"
+    },
+    "da/terms.html": {
+      "sha256": "45b7f62cc25b178212cc07fe3128c387ea3e216cabac107f062f5753b2895008",
+      "bytes": 13474,
+      "before": "git-sha1:d7f82714b9fce0acbf47a39b14d4c67f35c851dd"
+    },
+    "da/updates.html": {
+      "sha256": "8d4aedca048e979d7d27ca9ebb86df091b7b31ded469187d5505c9fa3b6f087f",
+      "bytes": 10590,
+      "before": "git-sha1:a204f43b83ac9489365a7e1d5b2f0b4f354ecb88"
+    },
+    "de/about.html": {
+      "sha256": "fdb085957ca2fccc6a58238174dfedb99c99668d6c28edcc77db05cb91abb1fe",
+      "bytes": 11450,
+      "before": "git-sha1:e8cdc0a7e9429d0666e8396431cbdd52896f5f9b"
+    },
+    "de/accessibility.html": {
+      "sha256": "067f76537d9781b216713d3f62a1da64cc21c291b1e96021a29bd3920a2104ed",
+      "bytes": 10815,
+      "before": "git-sha1:8954405d7a55e8335474df88b971ed6ebb7cbea2"
+    },
+    "de/cart.html": {
+      "sha256": "2b5f53b7e4588069a47ab2e362dc90ee46f200ed0b7527b12f084f829e37c6ce",
+      "bytes": 18364,
+      "before": "git-sha1:a2abf6ef099c20b9460ddcabb5703231af1a54b5"
+    },
+    "de/checkout.html": {
+      "sha256": "7402ea523b9c0398dce0bad15d893566b183a8567702279cdd0791149478f2e9",
+      "bytes": 24219,
+      "before": "git-sha1:e9b88d13429f181a40f8a04d9f548c6e4ee9710b"
+    },
+    "de/child-safety.html": {
+      "sha256": "da0c4624f651566b3b71713c771c732c2d58fddfc1350b0ec02cb801bc4a3f51",
+      "bytes": 12091,
+      "before": "git-sha1:8e91c58d255e7b1e8b46daf189c7a27670f76a65"
+    },
+    "de/demo.html": {
+      "sha256": "4222d883bd09e5ef18c10192e5464ff02d8a308f7252dff507c6b80c20fa6dc7",
+      "bytes": 11026,
+      "before": "git-sha1:9b93c9d43a29d604eaf76c6a14dcaeee939d1593"
+    },
+    "de/index.html": {
+      "sha256": "077d4c8414d30bed082f9db4138639656110af16a9ec6d29a6f3c665f027e938",
+      "bytes": 17720,
+      "before": "git-sha1:2972c3bc4fc74a0d8c1cc0a7790317f67d4bd3d3"
+    },
+    "de/legal.html": {
+      "sha256": "b2467739e370e51fb00192488608f5fcc14139a3856bec79f5a9e8ad75f48107",
+      "bytes": 11414,
+      "before": "git-sha1:6c9e946e82bb5403d78432ed292402f1db08a52a"
+    },
+    "de/privacy.html": {
+      "sha256": "6883d21870ec2db21306ba948071cfdddbb2989c18228fb11550e02986e35a2b",
+      "bytes": 15006,
+      "before": "git-sha1:fde1ddd416bedd465bc8a4f9b1f44790a53289a1"
+    },
+    "de/product.html": {
+      "sha256": "f77fa6cf41ef5e3459b08455d77063222ff71c68777f5991f97ba3d631cf762c",
+      "bytes": 13177,
+      "before": "git-sha1:82ad07a4fe4209c90a68a864df30de1291837cbb"
+    },
+    "de/support.html": {
+      "sha256": "c772b95e64b338ae54147fa1ad6c38a3c960cbcd881c53b6cf018290ed66b403",
+      "bytes": 12709,
+      "before": "git-sha1:6056db89b2d5f48d7e86d1eb47b44bfe29fe07a8"
+    },
+    "de/terms.html": {
+      "sha256": "6ef5d52e1ca0c3f66bcee751b8027d94cee928cc32affec0312c65d3a8e8f54b",
+      "bytes": 13650,
+      "before": "git-sha1:229ecff270ce26d4f09d2dee05726319998fd30b"
+    },
+    "de/updates.html": {
+      "sha256": "536a93663a7d7fd34c7a7103c4c894d72666a6cce963b5dd8a434cc24887e05d",
+      "bytes": 10737,
+      "before": "git-sha1:0c0eca1901e8688f358c40aaa69108a5ceab08f9"
+    },
+    "el/about.html": {
+      "sha256": "a0717c4173b662a78e33dcd501bfa137b906523590015c37cda41378834762dc",
+      "bytes": 12684,
+      "before": "git-sha1:423f9ccbacedf562e153f4481873bcfdf32c44e6"
+    },
+    "el/accessibility.html": {
+      "sha256": "355dd859db3fcfdac54413adc059be9997edce34ee7f445d992263534e75c3f7",
+      "bytes": 11708,
+      "before": "git-sha1:ff1c4198cbee87672b7622f9913d497bf0d133e0"
+    },
+    "el/cart.html": {
+      "sha256": "6401e56f18307ef76f2bc7e2f9430234c72e1522c258e49f14b0971316300471",
+      "bytes": 20466,
+      "before": "git-sha1:7ad290b55dee898ea4ad5eb597df513732fddc3a"
+    },
+    "el/checkout.html": {
+      "sha256": "d6ac5ae954878386ba9ba1e8e134308a2e453f0de915ef09f6211326e938ad91",
+      "bytes": 28071,
+      "before": "git-sha1:9e06d52354867643ab58df07f1ca19e1544bc616"
+    },
+    "el/child-safety.html": {
+      "sha256": "fbb0add69cca50e29f8a73f2af222314caba9abeacb2349f1f51ce9585beb63f",
+      "bytes": 13979,
+      "before": "git-sha1:451fa6956114015a085fb33811ae005e65e85760"
+    },
+    "el/demo.html": {
+      "sha256": "b16da9689ddbbde91df04c14bb83b3b0054f95495d5aee8ffd1c2a62f64b77c1",
+      "bytes": 12131,
+      "before": "git-sha1:32fc9e5e4f800097709948a1fff6404d8232884d"
+    },
+    "el/index.html": {
+      "sha256": "db9cffa02fa753c9d2572ebafb3c15d93047fc71e931b2a3dcc2e6e27f314043",
+      "bytes": 20783,
+      "before": "git-sha1:bc580c1a14ca28970857f6e746bc653482158522"
+    },
+    "el/legal.html": {
+      "sha256": "c60111bba533b7d41bc979675d8526a2f4b6b4089e54009dd504c1237d8e2456",
+      "bytes": 12225,
+      "before": "git-sha1:cffd0fc74cda5c45512f8a7075254c6aa7385663"
+    },
+    "el/privacy.html": {
+      "sha256": "37a8fc9463ce5baa81e020bd342bc9e8c59b437e4a5f34265111d4a7c93dc57e",
+      "bytes": 18609,
+      "before": "git-sha1:279076dca6d729f1385ded2a74832867cfea1794"
+    },
+    "el/product.html": {
+      "sha256": "0cd285f10ad14a357f1ecbafdc6e561a97c638b1c5fafcfea2ff5ef31db65081",
+      "bytes": 15323,
+      "before": "git-sha1:5a4e54fcc630dfb36e29447b570d7376e89136a6"
+    },
+    "el/support.html": {
+      "sha256": "640df4d8e69434fb0ec1712df4e671edc04807ee0576a60f57eea004a6a0117c",
+      "bytes": 14451,
+      "before": "git-sha1:88ca41648a3039274172f0da6fbedd7f03c4e6b2"
+    },
+    "el/terms.html": {
+      "sha256": "5475cebcc6872cf942d88644b87119e6807ced2988401eba11d0675ee225b28d",
+      "bytes": 15427,
+      "before": "git-sha1:3b3e42b6d942320d7c4d9ef46d5adf132fbc9bd4"
+    },
+    "el/updates.html": {
+      "sha256": "7923fe9f235b58669fb253de9ccbd36b7836dd2ca278087ed2b49683c31b4cae",
+      "bytes": 11585,
+      "before": "git-sha1:90cfcd702c25be5c54f5a6f89befae855871078f"
+    },
+    "en/about.html": {
+      "sha256": "59014a762634766610cd5c46a7d6c8c54f3004baa72f05bbcfc86ffc1bcaed5b",
+      "bytes": 11305,
+      "before": "git-sha1:3556b098851fbd9e52b13d220c84279764091407"
+    },
+    "en/accessibility.html": {
+      "sha256": "ad302831c83237981e595b20db3378892955a8ecd50942fa84e030966df59a51",
+      "bytes": 10678,
+      "before": "git-sha1:8c5ed365c83828e740be56081a12bf2c1620d0f5"
+    },
+    "en/cart.html": {
+      "sha256": "8c141e53ef3a49878d8de57ae10dfe5a356d5461910e3893c88f949b886b6ae7",
+      "bytes": 18053,
+      "before": "git-sha1:839fc331c6fa298ea3290d5c5ed807fd9215fed0"
+    },
+    "en/checkout.html": {
+      "sha256": "7654a0c9b3abe4fc05cbcb89f7eaf924a276a890570540f2766c1c6607fcc264",
+      "bytes": 24322,
+      "before": "git-sha1:19be0472b45a34a464a1d84e3be336aba4de7ace"
+    },
+    "en/child-safety.html": {
+      "sha256": "d245c6be50b03f3939c8f66564603a69144769c8bacd1468652cc07a666d45f0",
+      "bytes": 11862,
+      "before": "git-sha1:9efd8aa72f1d6820cdc42e6bdba2318c06b18feb"
+    },
+    "en/demo.html": {
+      "sha256": "d265a719850f0195bc766901cc90c628db628211539d45629a8b2fda734015a1",
+      "bytes": 10758,
+      "before": "git-sha1:7a3a9ba808bded8ccb272abf4ed34eb65bfe83ea"
+    },
+    "en/index.html": {
+      "sha256": "642f17282508933b625b1178dc5b810b6c3e97bafe73e7bd5781405a49ba3402",
+      "bytes": 17131,
+      "before": "git-sha1:773d96678dac372d07fea1260ee30ae33e42e9de"
+    },
+    "en/legal.html": {
+      "sha256": "da0591a2823f3064fc431b792f4e5c1846bf9312c745d654f8ae05392dffffd5",
+      "bytes": 11306,
+      "before": "git-sha1:0439e9f5c635740555fcd182c805a28ffc549da5"
+    },
+    "en/privacy.html": {
+      "sha256": "1d25cd1dbc19ea0cb0c2f026672710b48fac88e75b86dbab942235afb159f3a5",
+      "bytes": 14138,
+      "before": "git-sha1:d7b02f9341787052c51950d9753d888e9adfbe4e"
+    },
+    "en/product.html": {
+      "sha256": "d0209f36c1b5920e6ef97f48ba3c0e180eb1371383bdf34b98e468b30da9d213",
+      "bytes": 12931,
+      "before": "git-sha1:eeaee3355374903fa2fef060431fdadb29d8e6a4"
+    },
+    "en/support.html": {
+      "sha256": "3fcb6bf9a3844153ddb29664ffbaac65c78bbef2e0e131d05bfe813ae30adedd",
+      "bytes": 12351,
+      "before": "git-sha1:b63dca2e4da6d444913051dc2a6b04e128d63042"
+    },
+    "en/terms.html": {
+      "sha256": "26c300ad23268f01d4aae39f44305f6e28dacc7f8117748923c985d714d6e34e",
+      "bytes": 13953,
+      "before": "git-sha1:3ce9988b542056a36eb3428f9d00f342d4abb4b3"
+    },
+    "en/updates.html": {
+      "sha256": "5b83283abcc74658c284387bc70ade0d6eafce199e1e968e2beb183aed0de299",
+      "bytes": 10545,
+      "before": "git-sha1:b37c7ef30f0b289489e63311c08869957b7873aa"
+    },
+    "es/about.html": {
+      "sha256": "a1ec85015711c7dcee90dcbb0ee49b1b9de884a595d7a65ccc0cd1c2abb9f897",
+      "bytes": 11437,
+      "before": "git-sha1:66e18def444514303facc03133b7464ba061d1f1"
+    },
+    "es/accessibility.html": {
+      "sha256": "bf5c3412201b3c40efe42e87710d0dd007cf54524e9d42980048840cdb19020e",
+      "bytes": 10883,
+      "before": "git-sha1:8d8dbedba58df480ff812b2c1850a9531d43c9d7"
+    },
+    "es/cart.html": {
+      "sha256": "400de79d98f23f59753fcd095ddcffeb21d112d21430d85188e433de76b61e84",
+      "bytes": 18340,
+      "before": "git-sha1:7a684e3a476078fce303048128d65413867dbed5"
+    },
+    "es/checkout.html": {
+      "sha256": "fbbe4bd7f3205aac29def6e85bf07dcc40bc50bb53ceb63e45a5946c2e5b237a",
+      "bytes": 24146,
+      "before": "git-sha1:de1d3088a1f2478f38a92fa4f6b75507ab30f64c"
+    },
+    "es/child-safety.html": {
+      "sha256": "b8a265c77364d4972ad86bb1a5fc8491950a598335ec1fa27898fadc975f4dda",
+      "bytes": 12103,
+      "before": "git-sha1:38a7118e6887ce8d5d67a44ae2913ea9c8605f44"
+    },
+    "es/demo.html": {
+      "sha256": "a21f55342b0a177e9948f5eb04b5fe9eba01e9b455da7ae86cb84931c9231a18",
+      "bytes": 10948,
+      "before": "git-sha1:23d82835d08bddd670a46d7b19316209d502efb5"
+    },
+    "es/index.html": {
+      "sha256": "a37c30e9f2efd68f9c84f322086ee9434885970433980cdc850fa0602ec82c53",
+      "bytes": 17741,
+      "before": "git-sha1:56a848d33c1ff00a65f5f62f0f67509cf126e58e"
+    },
+    "es/legal.html": {
+      "sha256": "a1feee0f22b3d7e88c49c40c7a9beac8fefe96b76809e6dea04564f25d4a4acc",
+      "bytes": 11409,
+      "before": "git-sha1:8ff10fec344ed756b96de25b9ac1ecafb3baa81b"
+    },
+    "es/privacy.html": {
+      "sha256": "72fc695202e567d01cd59d56f98c094291ed3eab287a3df926ef9057fcc2913c",
+      "bytes": 14916,
+      "before": "git-sha1:3d1408e4981a63fe2409cc3d1f444dd1da12d9a4"
+    },
+    "es/product.html": {
+      "sha256": "b9f41cff4513fdc2a0e48a39e6a57d4c79525b75b3cfe11b4cba6794d174af8e",
+      "bytes": 13112,
+      "before": "git-sha1:67e24dcbbab06f825a658ec53e044843e9c69c38"
+    },
+    "es/support.html": {
+      "sha256": "a0d15537b12f3953ce0a5930978b0740fcc785d3668b0f2179829d3555b376a8",
+      "bytes": 12708,
+      "before": "git-sha1:3b4acd7d20b35551ff34c43266b68e757c9af094"
+    },
+    "es/terms.html": {
+      "sha256": "2d73d4aa5fb93ec07d334dd06b31baf36aa15ec345b4acefe8c5f9ce9c051c9a",
+      "bytes": 13644,
+      "before": "git-sha1:c448ede1e07ccafd28d4dc8109cfc05a207aae32"
+    },
+    "es/updates.html": {
+      "sha256": "604a1b1dd37df1c3c81d280e4330e8318838c9d10bc61a3ce8bb2e2bef1a4f39",
+      "bytes": 10784,
+      "before": "git-sha1:3b745f1e22a78dc390193559b0848683efab0ba2"
+    },
+    "fa/about.html": {
+      "sha256": "ec645ff725d82842127d58714a8d7c15fe451067b731a938569e2776fcd0007e",
+      "bytes": 12145,
+      "before": "git-sha1:adab7b7fa4dfd909bbca73a4d15c540aee10e394"
+    },
+    "fa/accessibility.html": {
+      "sha256": "312ae80945864887b8094e059628c3c70c1e771f33d11ef87094ed221e3ecdc8",
+      "bytes": 11215,
+      "before": "git-sha1:e52a8d112e68f76bc059eab3ce73228e154ef75d"
+    },
+    "fa/cart.html": {
+      "sha256": "53dbd5baf2a1b781975822e4740b69e3c91872c939f8d52529553f30da26c141",
+      "bytes": 19452,
+      "before": "git-sha1:f97a4bc31c0248abea04b01323d85e4162c0abc3"
+    },
+    "fa/checkout.html": {
+      "sha256": "03eac51ee57200cdf1a2beb773b3bde264aec00a10d782b03c20dabc5aed1df3",
+      "bytes": 26250,
+      "before": "git-sha1:0e0970e4b571738d1341aa1975d775eba1a93715"
+    },
+    "fa/child-safety.html": {
+      "sha256": "b2494532c9ccd14800116bdaf29624eb6f0b9f2ba580b6060911952e7057ccc0",
+      "bytes": 13146,
+      "before": "git-sha1:a633711c3c9b9681fce73e2b519236365cecdcdb"
+    },
+    "fa/demo.html": {
+      "sha256": "b7cd45afd66756066f2fb01a976a450386ddecaa9bf048364b276ea493170b3c",
+      "bytes": 11711,
+      "before": "git-sha1:2651a9501395553b6d8da15f8a6f5fff101c0070"
+    },
+    "fa/index.html": {
+      "sha256": "e65727f1189630a8100be8ff30086b68d0900c8f3b26be73822a8911accfa8d7",
+      "bytes": 19559,
+      "before": "git-sha1:f1cf9a0f47ac0d2765cd22adc59f2f2b8934e3ba"
+    },
+    "fa/legal.html": {
+      "sha256": "b4d8f13eacb5a2f0f275be73326bcbe45bcd354e0fa30d7c3fb46ef787f7a388",
+      "bytes": 11804,
+      "before": "git-sha1:e543845137ca3fab7408306dd89a57d51a532877"
+    },
+    "fa/privacy.html": {
+      "sha256": "6e7923a0b1c3af88644a14b7570282239d64a3116012dad766315779a003abb5",
+      "bytes": 17041,
+      "before": "git-sha1:687780c844d56837002c2516750ed923495c0f63"
+    },
+    "fa/product.html": {
+      "sha256": "a54d6a953e83d8dd0cd383157ca2b8c447e8738299d806cefa3070ecd3f16d25",
+      "bytes": 14360,
+      "before": "git-sha1:9eae42eaa31225e19550dac4d8dca2a29e378ad5"
+    },
+    "fa/support.html": {
+      "sha256": "22ddec95da621306802341ec4293a5966ed0337209a07f3997077b812f2bb437",
+      "bytes": 13701,
+      "before": "git-sha1:dae1e07641ccc9b6865ef3b984180457acc899d1"
+    },
+    "fa/terms.html": {
+      "sha256": "ad55a16b50262cb8ebfd04860adbe70b3a3e0e850f1d7f0c322550511b42f7d6",
+      "bytes": 14712,
+      "before": "git-sha1:ee593256c3db7dbdbc2ec48d17a72468ff7b29b3"
+    },
+    "fa/updates.html": {
+      "sha256": "d8bf8c0213fa9c3a1e4cc7bc6975b1692ae94cde0c700ce29a40e21cb52c6289",
+      "bytes": 11292,
+      "before": "git-sha1:df81f9c068a72a0e03b7f6ed6f328f31843a7ecf"
+    },
+    "fi/about.html": {
+      "sha256": "38998fb1be4f9a9326bc9921ef1617817b6b45553fadc9c70d98ff7f362186e3",
+      "bytes": 11415,
+      "before": "git-sha1:06c247fab4a7d60fd8a7bf12da1ca4de737f1900"
+    },
+    "fi/accessibility.html": {
+      "sha256": "2c1d88a29215e84b4c3392c2a43ae7d3d920e3f542c8251a1fbba9de2169860b",
+      "bytes": 10822,
+      "before": "git-sha1:e36c11d2f8109a1f424aeba371070c7336fd53b7"
+    },
+    "fi/cart.html": {
+      "sha256": "e09013e1059ede327e0d93a9bc287ad1ef2f9998a666c5beeec2b9d105536d5f",
+      "bytes": 18341,
+      "before": "git-sha1:53d775705ea1215b7316505c1ad376acc2d0202b"
+    },
+    "fi/checkout.html": {
+      "sha256": "78be43a8b8db12d73ff9f6a2e4c0e903fc9a99184f51fa87f610fc89cec3d02d",
+      "bytes": 23987,
+      "before": "git-sha1:8afc1d4fe80b1a7d6852bd2d95a1e25aae24f4e8"
+    },
+    "fi/child-safety.html": {
+      "sha256": "73135191a9de00e79eb3b6c7cbced9ba89246e47df1d70fa83209189076cf07b",
+      "bytes": 11972,
+      "before": "git-sha1:00c6cc8b537f0768fddeb5430abec66fab62b186"
+    },
+    "fi/demo.html": {
+      "sha256": "d2043b2bc5963eff61150191793bddfc5732d2a9e8b0ad69bf929d7e5e291033",
+      "bytes": 10922,
+      "before": "git-sha1:e0f9805c48679ed40139877479d07e701be504aa"
+    },
+    "fi/index.html": {
+      "sha256": "80a035b6a3b04fa9ed535b6f1ca75c170dc967d22c83b68c975816b723296b36",
+      "bytes": 17618,
+      "before": "git-sha1:d5c92ae7bbdc394c3b75a76da6373671526cb5f8"
+    },
+    "fi/legal.html": {
+      "sha256": "d1ce90cc598adbcec9de9d17c4a8375ebc7a6762edb4d958fa8e7a5bae6b9b5d",
+      "bytes": 11332,
+      "before": "git-sha1:3eda4d58790ac6c88c4c1033f90407d7180b9456"
+    },
+    "fi/privacy.html": {
+      "sha256": "c55d9e737483aef92c4abf8af5064c7a7643fab80e186d8eda7707f18d21a351",
+      "bytes": 14662,
+      "before": "git-sha1:f40671a07a353512749623886b179591157e9905"
+    },
+    "fi/product.html": {
+      "sha256": "de4cf6afc7cec2d28cdf01cadad635e2969ba61b8b836f002b0a51045d4042e5",
+      "bytes": 13094,
+      "before": "git-sha1:c69c7b3efcc34e8ee4344dfa61e7b728b857be45"
+    },
+    "fi/support.html": {
+      "sha256": "b1d2fa6eac13d663273d277429191bea228c220f8ac9f1c2f67e758f46bec92d",
+      "bytes": 12517,
+      "before": "git-sha1:b970fdcddfa6a7fb76089f81faad63c9858d2844"
+    },
+    "fi/terms.html": {
+      "sha256": "3dc5ee63ac292abb8c7c9775b577d383de8caf8250399e775470807fc738f614",
+      "bytes": 13568,
+      "before": "git-sha1:d64064d705a9cc6ce3cfe9ba29616eb6d5bafdad"
+    },
+    "fi/updates.html": {
+      "sha256": "3f35233b0612b62132a71c42875b8175eab34a08dc75f42d6bcb0856a340510b",
+      "bytes": 10704,
+      "before": "git-sha1:b2f08d1862c73c2f5f20ae86bccfc81d568d541e"
+    },
+    "fr/about.html": {
+      "sha256": "8fa0adbd3c1adae62c35e23523a131ff2f1763d5a721bf3950e02c7cf60a0241",
+      "bytes": 11474,
+      "before": "git-sha1:0eac291dc4ce81450cdc3a97b875e5ca2582b501"
+    },
+    "fr/accessibility.html": {
+      "sha256": "f7d4548e942e7326b84b80f0a9171c3da841253301f69f7522216b617d35bb40",
+      "bytes": 10889,
+      "before": "git-sha1:36e3cb8b66af86d76c76fd3cf8a0318c628239de"
+    },
+    "fr/cart.html": {
+      "sha256": "745c106d5446abf20101a66b46b7eef0c92b14364c0235b89b5395cf22be395d",
+      "bytes": 18517,
+      "before": "git-sha1:c4a7064d2fbdd5572664312367abddafefff618d"
+    },
+    "fr/checkout.html": {
+      "sha256": "c2334470cca86c23f6161418ca6df56ddb2e3c8510496900a52e9fca744e5b57",
+      "bytes": 24614,
+      "before": "git-sha1:06deb12325e0ded27d4165346e6a7174b2fa9d7f"
+    },
+    "fr/child-safety.html": {
+      "sha256": "44bbac29e29d7439ade3310a06549769b17858ef7701d3b8614e1fbc0702afa6",
+      "bytes": 12323,
+      "before": "git-sha1:daf86d834743241c731799ca4edac6bb99fccf47"
+    },
+    "fr/demo.html": {
+      "sha256": "843b2712b33527b3c9556505b132135b14d47fbe7c2d7a884cf7926c73a4236d",
+      "bytes": 11020,
+      "before": "git-sha1:a162767103bd5f42619abdb9dec8185b2af1d008"
+    },
+    "fr/index.html": {
+      "sha256": "fd02d8a7c11ee362d845a381d4ce8324fb24581921ceb82a339002cd4b1b99ec",
+      "bytes": 17913,
+      "before": "git-sha1:d43d4dd365c2ead34fc2e54445ca2ab58489d968"
+    },
+    "fr/legal.html": {
+      "sha256": "33a6bef98eabe16f2c5acbbd349226582a135e98cffe1f3c55cdfb24d8718c1f",
+      "bytes": 11498,
+      "before": "git-sha1:a8400c2b597bea19d4b39ca4c048524199c01de9"
+    },
+    "fr/privacy.html": {
+      "sha256": "b0d6cfd817d3b17a1b0dc94289011e14dff320c9ddfaca4f2a31e952bb9bc7a1",
+      "bytes": 15223,
+      "before": "git-sha1:7b283bc8833b7986966e1ca33e6dddbddbaf9211"
+    },
+    "fr/product.html": {
+      "sha256": "bb400e1f63c8dbf906f5167a077a93a83f38a95d85353dcf2e9193b266891aea",
+      "bytes": 13375,
+      "before": "git-sha1:ea127add88fb9289098ec5c1cc88c3eacf247ec9"
+    },
+    "fr/support.html": {
+      "sha256": "60081286c95b4e1fb51ff1535973ff7415c2e328d95c2d74a1c8e79820812011",
+      "bytes": 12851,
+      "before": "git-sha1:5431ef89b95ea187ea03c4d3eafaa69aed5c88e1"
+    },
+    "fr/terms.html": {
+      "sha256": "eec699ba646f333cae261e5304466643d57eef48fe0c45af489fb5bec2eb7905",
+      "bytes": 13855,
+      "before": "git-sha1:ca0dbd37428db4bdf3118207eb8f340e071d7d5a"
+    },
+    "fr/updates.html": {
+      "sha256": "f49d918b3dd327b13c1ba17fda2f8179525e76e95f063869359bfa0c5607c5ed",
+      "bytes": 10794,
+      "before": "git-sha1:82e12a19a8016b82a3d8abee94367385f2504911"
+    },
+    "he/about.html": {
+      "sha256": "c303139b57f1c6c9d9fe62e5fa56c9c60ba3aec5baed30c289b6fd89275c0741",
+      "bytes": 11787,
+      "before": "git-sha1:a95f76d60ecd1682bd7da6c7277cd298d44d2656"
+    },
+    "he/accessibility.html": {
+      "sha256": "ecc74f165ed5044df1ef9a7a170e1e89d64a6a9075333332bf93dbaa5812e9c1",
+      "bytes": 11002,
+      "before": "git-sha1:97e1a0a79d3605a5ab1384905cd3bf1fa59bbf60"
+    },
+    "he/cart.html": {
+      "sha256": "c773608832bb3b7ffabf9d06a4fd851aa48bf1a336911f5dde9746f044d7de93",
+      "bytes": 18893,
+      "before": "git-sha1:336acfc044c6e9a1b23ae6320420b899cfb1b4d6"
+    },
+    "he/checkout.html": {
+      "sha256": "e9548b42f1058e084fc9f2b56e8edb3f5bf7a087bbf4c659d57c4fc317cd2be1",
+      "bytes": 25103,
+      "before": "git-sha1:f25cd9725f783f7a525c7c3e70d00b5158401d50"
+    },
+    "he/child-safety.html": {
+      "sha256": "78ecde7104538dab2e15abf56ad29b6beeb4823ef85e6dc3ab61dd4cb5bf83a3",
+      "bytes": 12591,
+      "before": "git-sha1:6db7af84d6059ebba0fae5ec0189a21a7839465c"
+    },
+    "he/demo.html": {
+      "sha256": "8648b8fe642cc1a80f0dcadc606ffb1b180c26ce4433e4189216430042e945e3",
+      "bytes": 11260,
+      "before": "git-sha1:e73f5a29d5e58a30600d793bda80fc97aa7fd966"
+    },
+    "he/index.html": {
+      "sha256": "0253c703b38bec4a5e5f90b72b7ba241c96e77b41361b75dce0efd7d65540d6d",
+      "bytes": 18541,
+      "before": "git-sha1:d507943b7b4d3747114a551abf125acab8316329"
+    },
+    "he/legal.html": {
+      "sha256": "64377ad2c69e80c5ede3f4df3a89a50174cbbe7a57787507fd356b68a19acbbb",
+      "bytes": 11561,
+      "before": "git-sha1:ee7108e19131f24603de74082ece2c3d275b144c"
+    },
+    "he/privacy.html": {
+      "sha256": "3e3647f153311f07312024245bfd39a2a7c827929a61e3761346c8386d56fa97",
+      "bytes": 15895,
+      "before": "git-sha1:d7c7008589bc928d92b47febfb53a2fe06b612b3"
+    },
+    "he/product.html": {
+      "sha256": "77a75841c3b8100b9b119d3e75f042d7a87824aa1e0cfaef07719382a6ed24d4",
+      "bytes": 13599,
+      "before": "git-sha1:8532a03792fc7b3c916a9e6c5299f153d36b3c8f"
+    },
+    "he/support.html": {
+      "sha256": "8763d0ba2e7469b229c77c0ea8914b85789b7b9470414d1a53460c44bddb638a",
+      "bytes": 13046,
+      "before": "git-sha1:f64bdd6d5e8d5dfcc4e15bfdbaa2af90affcd865"
+    },
+    "he/terms.html": {
+      "sha256": "f006f6dd7b0b8495ef46654c727fc94a7e183caa646fd178b3d77b59e34048c3",
+      "bytes": 14066,
+      "before": "git-sha1:0a78bccca754dd5452e633ff1eb91c00792ac8cf"
+    },
+    "he/updates.html": {
+      "sha256": "b0827b95c0f9c721d232ab66f22db6f839242e79ab6e4db4cd55db59d493f793",
+      "bytes": 10900,
+      "before": "git-sha1:20ccc510a5b909ad6bc3ace1fd239aa9a6d65b0b"
+    },
+    "hi/about.html": {
+      "sha256": "fcb7a6ffd091b93adb1f3ab6c903cab233dbe773c239485c491c254040b1ffe5",
+      "bytes": 13209,
+      "before": "git-sha1:640edba38044adde02cdbc56e87607583746a49d"
+    },
+    "hi/accessibility.html": {
+      "sha256": "dda64308491a5518535e798db1afb532358da6c8a4a870260cda0b415db81bb3",
+      "bytes": 11803,
+      "before": "git-sha1:143e9b0d6eb0221c9132421b0b3ec6373f8818fc"
+    },
+    "hi/cart.html": {
+      "sha256": "f31bf01bed037c0d7856b47efc79d7a81cabe220c295c9a1bd029e29a7415845",
+      "bytes": 21148,
+      "before": "git-sha1:f8902ef3f5d9004c27ac4c07140211f3d925dab0"
+    },
+    "hi/checkout.html": {
+      "sha256": "56d4cce2ef2883fe0e8dc1b444864e03a699edc5d52e492182baa54df5ef9dce",
+      "bytes": 29896,
+      "before": "git-sha1:78d17b47e917505b17c32c8dc46d22e3e2343350"
+    },
+    "hi/child-safety.html": {
+      "sha256": "ea00aabe87262ed03edaf07f6de5ca6066e82cf5984ecb160589108776485cae",
+      "bytes": 14419,
+      "before": "git-sha1:0ad99fc0bbe28b2fe70f118593f30f1ad62d0d2a"
+    },
+    "hi/demo.html": {
+      "sha256": "d92a8a431e1c194220f1bd89168d208bfe7c69d51acb2bfb69103eefde53adbc",
+      "bytes": 12500,
+      "before": "git-sha1:3a71b69ee6a17e67796c77bc8e47f99b4c92ced7"
+    },
+    "hi/index.html": {
+      "sha256": "f24a998483a8eed3b8e8869387a1747718c1626af947ee23f3e65feba2ba41f4",
+      "bytes": 21978,
+      "before": "git-sha1:9ac9c899a628645857d4523b7027822e7743d06c"
+    },
+    "hi/legal.html": {
+      "sha256": "2d1bf61245ad7df3dcb42b842d0f4ce2cac57e9ac3e770fbff9059afd14b2a7c",
+      "bytes": 12434,
+      "before": "git-sha1:11cbb7ad3158d34b35743dbb1d1de7f7fa0c9ac3"
+    },
+    "hi/privacy.html": {
+      "sha256": "dd480bad6b493ff918eb0adb6e21fbef9d7f39f51c67474c4f5651850fbffbe5",
+      "bytes": 20328,
+      "before": "git-sha1:e3fef90a5577ae0d00d2fbfdbd513217d18632e9"
+    },
+    "hi/product.html": {
+      "sha256": "e3183360552c1766a61745b77255a3c3b57bdf55828aa288fe943b4331c228a8",
+      "bytes": 16143,
+      "before": "git-sha1:fa2c4229aa038187888dd01da22b96e3357b9720"
+    },
+    "hi/support.html": {
+      "sha256": "1b8de1e52e33e05b15d1ea926b0a9fd070a30c1d490e34a47e9e35965cfdc930",
+      "bytes": 15012,
+      "before": "git-sha1:ca5be40f05bdf6c2ec8caf057d87431d37f6fe3f"
+    },
+    "hi/terms.html": {
+      "sha256": "a0fe0a0e7d990aa011b0b02e1e9f97cbd8355a05c423291a07804be082594781",
+      "bytes": 16687,
+      "before": "git-sha1:df9fa83daa2f0e872f046fa5df0a0eecd65434eb"
+    },
+    "hi/updates.html": {
+      "sha256": "f7d4d6a5cd20fa7c80018a5acbafeab0b00067f8d3813952598bcc5642dda44a",
+      "bytes": 11865,
+      "before": "git-sha1:2ae75e5e8af373c3aed32abd45bba82b28d5a145"
+    },
+    "hr/about.html": {
+      "sha256": "c1d719deea97c8c63bf2f7f0e3d3ae48e755ba4f328dd3ce12f9468186bf4b85",
+      "bytes": 11324,
+      "before": "git-sha1:ed8817cf32bc6c61267e8409051aa9b0b1b49a4d"
+    },
+    "hr/accessibility.html": {
+      "sha256": "253c31c9af2e68601a0a801466456f3cd3007c8c16959195cd73ffab51b15457",
+      "bytes": 10791,
+      "before": "git-sha1:2a055e0f67f4a37ff95ea879acbd07bb62593656"
+    },
+    "hr/cart.html": {
+      "sha256": "2485efd3d969502d755ea68ee13ae95e457b5c11fa13b851164a311b665fe39d",
+      "bytes": 18181,
+      "before": "git-sha1:297fb8476a1748bbca8ff8394db9979c879b3cc9"
+    },
+    "hr/checkout.html": {
+      "sha256": "07d16325afaec08a444ed87acb30cc867d6d20da56f52cc7c07b0117196d84d3",
+      "bytes": 23437,
+      "before": "git-sha1:303433469faa35c698875a96b2b738d6a585d52e"
+    },
+    "hr/child-safety.html": {
+      "sha256": "e6a7a35e673bf90158d09476f7d9532b79068f2a523d504be88acb4bc9ca5c3e",
+      "bytes": 11876,
+      "before": "git-sha1:be8e48e409f69da6808604d3d7ebe12b378da4dc"
+    },
+    "hr/demo.html": {
+      "sha256": "afaca6b409f0a9601741e150d65a2ea2157c32f800bb58b23ead569d45477c20",
+      "bytes": 10818,
+      "before": "git-sha1:24d4dc97ee242debae8c8d1e6717f216da0da45b"
+    },
+    "hr/index.html": {
+      "sha256": "c625761014315bada211dd927d419c7906b8c3ae4e598f1206c6343b2a1ccc92",
+      "bytes": 17353,
+      "before": "git-sha1:1b42f18a17e496304ab28797530927528144228b"
+    },
+    "hr/legal.html": {
+      "sha256": "09d89edfe0bc8d16259b123a81dbb3d5d3fa9304025bbbccc8657fdffd7def29",
+      "bytes": 11327,
+      "before": "git-sha1:46c1bb4d8812881c716498edf87a10a74103c98a"
+    },
+    "hr/privacy.html": {
+      "sha256": "e0a5a4fccf39f41a4d9c3881bb0b316c18ef9870de16670352eb8f1a42bd5f9a",
+      "bytes": 14333,
+      "before": "git-sha1:56cfc05fc9f650f396a225ce3c8f928790b939a9"
+    },
+    "hr/product.html": {
+      "sha256": "abc58c2dff4c6847444d0d10d9ebd0d9399374d7ded21d93e2a1185da4ff6720",
+      "bytes": 12817,
+      "before": "git-sha1:19a8a85131e323e9ea9e987fcbcb6b57ca232151"
+    },
+    "hr/support.html": {
+      "sha256": "b10eb69136f14c1a3b4d0b936a7d6921488bacd351da5d8b3a9ff5417550fd26",
+      "bytes": 12469,
+      "before": "git-sha1:be9d4d473d8de41f9b4ec340cedac511b70d8e3e"
+    },
+    "hr/terms.html": {
+      "sha256": "403ea0f44c649a3bf9b17df656a76a028a9ff57dd70de750ea49c8b2c3f66d6e",
+      "bytes": 13122,
+      "before": "git-sha1:5c124a7304c61f30ef2dc059f44a2ee2875a691e"
+    },
+    "hr/updates.html": {
+      "sha256": "8e683226880bf4477e254aeba6905b55cc98f6e91a03d809933f22d082361941",
+      "bytes": 10563,
+      "before": "git-sha1:849545ca5c43bcb19b40611043a55e3acfc27cad"
+    },
+    "hu/about.html": {
+      "sha256": "b43da0a63d592f7329153d12802cabd4e36950050be1b9cd08bc197f89d62e21",
+      "bytes": 11500,
+      "before": "git-sha1:0356745474440d711af66cdbdbcfd13345c4027e"
+    },
+    "hu/accessibility.html": {
+      "sha256": "26b73c3dac7ed659463a4d2afe7d33be7bed8dd4b225a3504dfdafc6ac16e79a",
+      "bytes": 10954,
+      "before": "git-sha1:487e987018b5dded85f1ce581e56d8336916c15e"
+    },
+    "hu/cart.html": {
+      "sha256": "5a26db92af4aee6be0c90720372553eeba1b20f6b3bc115d3801b05437ce6b2d",
+      "bytes": 18346,
+      "before": "git-sha1:8b3b6614c0222433e9964dc4eb916f7aba947bcc"
+    },
+    "hu/checkout.html": {
+      "sha256": "9d0c7b70cbd1078320cea4c030e50d3f2023ccc4d076a2947e9bb59d00e5d016",
+      "bytes": 24199,
+      "before": "git-sha1:80a0d8a33a1dcb7ef676960f1f5cc9e8af6262a2"
+    },
+    "hu/child-safety.html": {
+      "sha256": "852d18d11bd8b7cc87a0deefb47617b8edc5e874556bc1be2bee86b0316ebf29",
+      "bytes": 12185,
+      "before": "git-sha1:58ecacbff17caef1cdfc558e95a68cacd5c777d8"
+    },
+    "hu/demo.html": {
+      "sha256": "c9de0c7a86a8f55998e5b2a8bb3846d941b294bbf9ff1f9ffc6b1a147da5cbd2",
+      "bytes": 11007,
+      "before": "git-sha1:5d513235f210a2b046072a8e67d8238de7b329ba"
+    },
+    "hu/index.html": {
+      "sha256": "9f66d10a45edc273ae1e08a1fb3c1a3c0472772c7327eb8903cbbf9d874c5823",
+      "bytes": 17822,
+      "before": "git-sha1:b5a65004a76f70612cc17c85c55137035f70794d"
+    },
+    "hu/legal.html": {
+      "sha256": "8dc39a8a214b4d5bfaa82176a5f4adf9bb2814f3cc85024853692fa8ee623350",
+      "bytes": 11440,
+      "before": "git-sha1:ac16fa7ee0a4301941dee0d6c31916f0a51343a0"
+    },
+    "hu/privacy.html": {
+      "sha256": "672d0903582adcdfe1e5eff34650cce094e3ce0bb72a2e952a08280c0c15f941",
+      "bytes": 15009,
+      "before": "git-sha1:f7085d2c3d8cf6b691b8e297293b37fc8f538603"
+    },
+    "hu/product.html": {
+      "sha256": "6aa8fd6c225e306cc18a7f11ce03d18bf36dae1945580db806ce9a1180401acd",
+      "bytes": 13244,
+      "before": "git-sha1:00e20adde00a48e73f091c2364af3a9dcf04220b"
+    },
+    "hu/support.html": {
+      "sha256": "f0cbce33e9970b968c7429e16d0311627313f870451abcda69aaebc4a13958aa",
+      "bytes": 12747,
+      "before": "git-sha1:e4fd7b364cff127bb64d65a4caf207a7fbfc8b58"
+    },
+    "hu/terms.html": {
+      "sha256": "e78f5bfdb39c3e9586ba8f54f3d184eb14c8de1df54b7d3d7106fa38cbb5f748",
+      "bytes": 13532,
+      "before": "git-sha1:cacf4781bc4f64b541c2188993914fdc509de45c"
+    },
+    "hu/updates.html": {
+      "sha256": "1184a56079966c2e1de14ea750ff101ce739f1886ec2d0739558770a41d08bfa",
+      "bytes": 10708,
+      "before": "git-sha1:e4eb473362b206aae1d8ce9f6985185c43ccade5"
+    },
+    "id/about.html": {
+      "sha256": "eab36eb2a945ee851fd3ea36a44fc37c08603b1ab896d7790cbefbe22c494396",
+      "bytes": 11376,
+      "before": "git-sha1:693431b256dd3032ce02e9bca22b278d4b65026a"
+    },
+    "id/accessibility.html": {
+      "sha256": "a077bea19f148ae4ce680e9063d788bdf5c788f12d160e6e03327ed304616084",
+      "bytes": 10774,
+      "before": "git-sha1:1b2ded1c9c9cb7131be9b48206c6b130d7d55657"
+    },
+    "id/cart.html": {
+      "sha256": "1015621dd3155faf68ed0594e02374bf0ec034f33e274d7b87f83b187cbae4ad",
+      "bytes": 18156,
+      "before": "git-sha1:ce59b19fc6ca25218252faa73ee1454793e89c8f"
+    },
+    "id/checkout.html": {
+      "sha256": "f05a1d6d3b842ec65747f10b194969d8022ada1ef00a93985be208460dc00394",
+      "bytes": 23602,
+      "before": "git-sha1:090dcac37ad0ba2e4df5939c57cbc3c627bfbec7"
+    },
+    "id/child-safety.html": {
+      "sha256": "14d27bad44f78379659c9b928845eef236db9a13abea04d9656a394413990bd3",
+      "bytes": 11879,
+      "before": "git-sha1:519b1b3e3cedbb0c915e6f7e31bb2023a31d385f"
+    },
+    "id/demo.html": {
+      "sha256": "15e4c7fedc89b8f4fe66339897cfb25459b14ae7d186432e6845dbaed002667f",
+      "bytes": 10832,
+      "before": "git-sha1:4ef2f3ae2a7758958704da66f8b7df018c43b81d"
+    },
+    "id/index.html": {
+      "sha256": "370967cd9a08680c955aba10a3381545b1b7b2db6a33ba6c6dd73beb8268123e",
+      "bytes": 17353,
+      "before": "git-sha1:99ef12fa146f7e20076255fd919f67d0de5ea197"
+    },
+    "id/legal.html": {
+      "sha256": "629a40318de9a9dfb341f6f84ff613dd4ed21374ac14fcfc8be1728af9392f9b",
+      "bytes": 11341,
+      "before": "git-sha1:addae978b148ee60e190d6d9e39d5d95c97cdcbe"
+    },
+    "id/privacy.html": {
+      "sha256": "e2e86a8df07817d384ebf11db80199a74c795e1dc6111033c42f9539ba4e712b",
+      "bytes": 14375,
+      "before": "git-sha1:a9b7b1c17d9b588f21e15923b3d219144428b1e3"
+    },
+    "id/product.html": {
+      "sha256": "aa2d90cb434192def6583a65cb337ceb3763361ee726c32ee3a69a3d78504db6",
+      "bytes": 12854,
+      "before": "git-sha1:7f683c5ba5f334af531c2059aa0fbb619b9071a6"
+    },
+    "id/support.html": {
+      "sha256": "cbf623eaa220f6db96be7b85a53da1e4141d0f0a07f3f478d94240ad135d5b6e",
+      "bytes": 12427,
+      "before": "git-sha1:38ce619f7dd3a9501b1893427f42f391c31d6463"
+    },
+    "id/terms.html": {
+      "sha256": "b3fde7bf64c072e526388ef3e2cbc92ddce8e048f8e09fc95fc7a02e900ba291",
+      "bytes": 13357,
+      "before": "git-sha1:552c58eb713083a5b8e1f4dbd3b07e5364e74b18"
+    },
+    "id/updates.html": {
+      "sha256": "6d4faed9401f83580b6cc2bc1077aac10593995789282ba5b70f3b3c7fad2094",
+      "bytes": 10582,
+      "before": "git-sha1:74b2e821a04f203d7e8ce9b7154fa8e5d75ab4d1"
+    },
+    "it/about.html": {
+      "sha256": "3cad8b2924af799a25965f9d8564fe34ba0ecafb5fc4b57fce9725f276cef25b",
+      "bytes": 11375,
+      "before": "git-sha1:54b018a290b82f2751b6166457f4981fca0b2831"
+    },
+    "it/accessibility.html": {
+      "sha256": "5c89fd9eb1588f84b67336a3663b85910e35dd1ac38905d2de93fc04f88aee3b",
+      "bytes": 10858,
+      "before": "git-sha1:54adce25e4dfdad5168cca343b4ffae749afa85e"
+    },
+    "it/cart.html": {
+      "sha256": "398583ff0bbcff82f42da8dbb47069faa835deaf26072933dc994c81d3b0860f",
+      "bytes": 18350,
+      "before": "git-sha1:24294a9ed3f048ce5bb6886e3566f36a4c7e877a"
+    },
+    "it/checkout.html": {
+      "sha256": "5e21d22ea0594ad0c860f13d5fb6be6465bc22e0fc1befe0c03ec466c129316a",
+      "bytes": 24188,
+      "before": "git-sha1:18a05984dc6d21d5b28e2345e17bc9214514faea"
+    },
+    "it/child-safety.html": {
+      "sha256": "7a9a802685cacc15060b26286b8af03b200d9ea279f9b8795116ee2224218e43",
+      "bytes": 12092,
+      "before": "git-sha1:8a6d34ba0f2e94272cb4f3f4631ec5540d0e68e6"
+    },
+    "it/demo.html": {
+      "sha256": "4e444aebca4620414f3ed481538dd0e002ae80ac38d5d389f31e01f60931b13f",
+      "bytes": 10911,
+      "before": "git-sha1:2c0ed8c4baa0792e1292c9ee74792a9c53633b42"
+    },
+    "it/index.html": {
+      "sha256": "42f2fdc1b6214cd2d234e2fafa374797b09d0a8d77bd0ba014e5d19457a1a487",
+      "bytes": 17578,
+      "before": "git-sha1:025e5635b6fda8986cc9df6599d13ef5b1195dce"
+    },
+    "it/legal.html": {
+      "sha256": "d119473dc487f6c2f7db83dcec512e7c0dff40c33ce637dfe4faf260ff35a5c5",
+      "bytes": 11375,
+      "before": "git-sha1:4539959a18aa8f0d4468be62287a4f2bc6a84eaf"
+    },
+    "it/privacy.html": {
+      "sha256": "edf0d180f6e02ba7abe4a7736c2012bd1ce65e829415ed74e40682610b7ebe4a",
+      "bytes": 14807,
+      "before": "git-sha1:445e324695566e027e9b4fbda2a32cb23bb9f5a2"
+    },
+    "it/product.html": {
+      "sha256": "13d5df3ccea96e63d4b4d88a889bb16f8b4b93819ae27e2f325f89406a8ab91b",
+      "bytes": 13072,
+      "before": "git-sha1:d08f49a1f208c14af474b60479641b6df6522717"
+    },
+    "it/support.html": {
+      "sha256": "8b9f5ea5e8c2f99362257f738c2d33a9226e25a43f20ee31c47e0752e051ddef",
+      "bytes": 12631,
+      "before": "git-sha1:254674405ef2bbf26cbb057e8d2c971464ac68fa"
+    },
+    "it/terms.html": {
+      "sha256": "a95ed3c648604c57412a55e67dbaa0fd2db9487bc3d388493b2398dee2a642d7",
+      "bytes": 13605,
+      "before": "git-sha1:7682b2a83cb0578ff974774f457afc30be1ed257"
+    },
+    "it/updates.html": {
+      "sha256": "f06dec49569c36caeb32edc8cc93b17c4533f1f49e49dc3ee249dff6be09313a",
+      "bytes": 10747,
+      "before": "git-sha1:a8db06462a82d5972c3117d87d5ccdbdfc53ff98"
+    },
+    "ja/about.html": {
+      "sha256": "152f0cc2778c62072e9d47b2c0ac9b638f730def12002c6eb5a82f6dd03c19ab",
+      "bytes": 11652,
+      "before": "git-sha1:d842c8274c61b0ba9930bdc66ce0b0f42e01684b"
+    },
+    "ja/accessibility.html": {
+      "sha256": "76e88fbe58744aa9a883b0b9a1a34af96fe51339dd29098882616c45dd64c862",
+      "bytes": 11001,
+      "before": "git-sha1:c437bb468a898ad34ae0605164cb0fdf42b45288"
+    },
+    "ja/cart.html": {
+      "sha256": "0b8117aa2f278de2ddc791035314b0b1c5622aa630473951c1dc6821867fabda",
+      "bytes": 18549,
+      "before": "git-sha1:00d0d78abcf615630be7e1b814c6d6d8fa816864"
+    },
+    "ja/checkout.html": {
+      "sha256": "737d061f015d273787e0bb14972c33558d8b485449207c1e698fc35e2ea4393c",
+      "bytes": 24602,
+      "before": "git-sha1:f4364a25252eb4e23507468c33a9654eeb009b8f"
+    },
+    "ja/child-safety.html": {
+      "sha256": "491dbae89c9253c7413d80ea5076e7f6e3aed129bf3f113257e4b82f24eb09d5",
+      "bytes": 12450,
+      "before": "git-sha1:dfaebb4b3ba20817df75aa2c0697baaac1175f45"
+    },
+    "ja/demo.html": {
+      "sha256": "26b32e866bd5d7697ce74242d64e46cd4722afd7f99bf9fb6970199166e42345",
+      "bytes": 11202,
+      "before": "git-sha1:41be5a4ef73dcc7e0d6e0272dfaa4e619e98c3cb"
+    },
+    "ja/index.html": {
+      "sha256": "33756b2ef2529d75dcbff2e507d1d8166302a9314c83f54917c0208a8d49669d",
+      "bytes": 18247,
+      "before": "git-sha1:316cec1f3755c9dc2f51351d4a0464cc3be2a9ae"
+    },
+    "ja/legal.html": {
+      "sha256": "9743d8c74fdeb723eb777dc72034fd185bcdfb694b52eadedafc761314dc6735",
+      "bytes": 11496,
+      "before": "git-sha1:1cd09251ddaba9399ee671b8520a39b99206afed"
+    },
+    "ja/privacy.html": {
+      "sha256": "8f56c063e559e50e270c9a6d58d7de0cecc11265ad6e9416787512fc20246951",
+      "bytes": 15355,
+      "before": "git-sha1:f6121c05658be92b8c5cdfc8f7197d5ee3fda3f4"
+    },
+    "ja/product.html": {
+      "sha256": "2be3e08e8b583f6e6d3429aeac822baaf27eb00a93f2864418134a56c49bb80a",
+      "bytes": 13395,
+      "before": "git-sha1:d372f74a1f989fd837ddbd87a18c9d566378134d"
+    },
+    "ja/support.html": {
+      "sha256": "9399d74e28b84acbe209b3f8e3ff6b53c2c18fe1b48a6f41c74ffbefebd12974",
+      "bytes": 13045,
+      "before": "git-sha1:3dcccc9d8a91dd6582d795cc4e23be45e5f36382"
+    },
+    "ja/terms.html": {
+      "sha256": "ef366aa6f44c0baa98ded82dcf34d802e4759467951b13b94f40fda6e1daab33",
+      "bytes": 13905,
+      "before": "git-sha1:a9e71a429ba68f397bfa6f2a98cc33c063f77fd8"
+    },
+    "ja/updates.html": {
+      "sha256": "5227188d6107e19ac8e067460524e660b120a9277609749a6619a4c6dfab7dcd",
+      "bytes": 10829,
+      "before": "git-sha1:85f34e7c2eb7aad334c94aa15ed8e1e0681947dc"
+    },
+    "location-picker.js": {
+      "sha256": "7387cfff88291e95ec71412c0a07e29996150b2925e3228f7844d7cd1203a1c9",
+      "bytes": 2433,
+      "before": null
+    },
+    "ms/about.html": {
+      "sha256": "40ef10920e517a40225feebd845f7257aef46693391b6bfa437779ec1fa2efff",
+      "bytes": 11403,
+      "before": "git-sha1:e63846b919781a0bc46febd569aeabc6c1c3de2c"
+    },
+    "ms/accessibility.html": {
+      "sha256": "e730ef9e1149b709e64b1ffbd80fba582d8109d9748a737234d2ea56c9278f57",
+      "bytes": 10787,
+      "before": "git-sha1:7d514d53391a1147e085ef8c502a0fc91e824c43"
+    },
+    "ms/cart.html": {
+      "sha256": "610d5231b637fc0b7461f3948bc5a5a76b4698932d3bfffdb74e28d28c78d478",
+      "bytes": 18129,
+      "before": "git-sha1:075ce5b88b62aa61b5c6bb21c736413f9958850c"
+    },
+    "ms/checkout.html": {
+      "sha256": "01043eeafe525ef0b09592f95446c4d41cc8e809ebaab10b40f3010def3ecddd",
+      "bytes": 23695,
+      "before": "git-sha1:715d6e0f98f9e948419d6b38b8e190e9adeb56aa"
+    },
+    "ms/child-safety.html": {
+      "sha256": "8b15b1a1443250c9abbd34251c4e9587e8ce06b7a7372b5c219d0b44a5c17e9b",
+      "bytes": 11982,
+      "before": "git-sha1:fd9ce1ca7c840d4a6ca2be3f5c0ef17a64f24c8b"
+    },
+    "ms/demo.html": {
+      "sha256": "88051d79e95d40c4f1fcee3211980460e5d458e77c687ec13ff2ac49d5a37530",
+      "bytes": 10851,
+      "before": "git-sha1:2305d01cb153393d35e1af75cd59041c461db1b0"
+    },
+    "ms/index.html": {
+      "sha256": "fc7a3b3705e96a134c1cf25f3f72ebac7353657ec831d43b1068619dd19681de",
+      "bytes": 17392,
+      "before": "git-sha1:fe7bf089f4cfbbfee108aff21e48de957bf1cc0a"
+    },
+    "ms/legal.html": {
+      "sha256": "96108c48e3234684ff537c4a9ffb2ecd6fd96ce1c5364c5a7d66223dc46d637d",
+      "bytes": 11380,
+      "before": "git-sha1:743b5a9e374b06b6aaf4d6815c118a196f21c53b"
+    },
+    "ms/privacy.html": {
+      "sha256": "06eaacbe4dc0d7f5d51e7f616063083f7fff27077bdcebf5c46989955bb356ca",
+      "bytes": 14615,
+      "before": "git-sha1:ba56a0cf245eeb1ed0cd71a2643c79526367b8ba"
+    },
+    "ms/product.html": {
+      "sha256": "6f69859355b660c620824a66975d9aa733f1bccd7c8f326ea3525951247aa5e4",
+      "bytes": 12910,
+      "before": "git-sha1:c3ebe7cd320887fa498332c4590a3b1e26f95db0"
+    },
+    "ms/support.html": {
+      "sha256": "862dafd915962b12515214a4fca64e69bc43d95b840efd498720705ae31cfa42",
+      "bytes": 12503,
+      "before": "git-sha1:dd93a68216ed5c01c64289cd2dc5ccbdbcac83f8"
+    },
+    "ms/terms.html": {
+      "sha256": "571d419d0ead32dc18496763bba5546a159689be531e1ebb8d9dd2d3641996c0",
+      "bytes": 13437,
+      "before": "git-sha1:c9a4a6287d1d9daec9b512b098eff738a2aefc32"
+    },
+    "ms/updates.html": {
+      "sha256": "84c6652a15cd76923a9710b5eaf42e74039cbaad6edfff8c405821a431142de7",
+      "bytes": 10592,
+      "before": "git-sha1:1f778d6695ca22c09331e2fd303b1ea0f3f93d45"
+    },
+    "nl/about.html": {
+      "sha256": "a969b22bcd746622506371a0e4fa61f0f7811feb5d93bafea9e1b67ee1de0841",
+      "bytes": 11324,
+      "before": "git-sha1:580050346226a9a897503359ccf67d744cd16255"
+    },
+    "nl/accessibility.html": {
+      "sha256": "721026359799069415d6fd5b4ca23281e25035578162a6e4663178192f4411eb",
+      "bytes": 10804,
+      "before": "git-sha1:7da54b7b1f4d061187519a2f670aae272e5d4a42"
+    },
+    "nl/cart.html": {
+      "sha256": "0e9b7f66c78b320df010437ee4123be1891bd350d0966ee7b191a07831abeddd",
+      "bytes": 18295,
+      "before": "git-sha1:bee6da3d59b0234bf4a0c217d03d73d3d69d9e9c"
+    },
+    "nl/checkout.html": {
+      "sha256": "e44818a1eca7957ab5a2c4ed0d22ad2f1c0ac872f7378625c0748bcdb6629f33",
+      "bytes": 24150,
+      "before": "git-sha1:7c3ec2faff2b2b530d5b2c7678d326126f52f403"
+    },
+    "nl/child-safety.html": {
+      "sha256": "28df5279a21874a29e14a90861dbeb60e754071c69be9caf1be9e268dd7f1d25",
+      "bytes": 12021,
+      "before": "git-sha1:4b58f1676d9249297d44885fae0bd30fc21ea29f"
+    },
+    "nl/demo.html": {
+      "sha256": "edc6e345f82270d3cc472d497e9af2fc7264d1f082c2788337e832e09ed75a6e",
+      "bytes": 10892,
+      "before": "git-sha1:54c50ab67425d39e75c44baae6c8c121ae378d67"
+    },
+    "nl/index.html": {
+      "sha256": "c984cfd93f8aa7453a71e584a876dc88201198238602ab2bf397250653ebb867",
+      "bytes": 17491,
+      "before": "git-sha1:cb5486d6b37f6b8ab9c24f35410d76b5df2356c4"
+    },
+    "nl/legal.html": {
+      "sha256": "58c02f175dfe4248c163f599266cc331f782751fb93d547d42fea42753658f21",
+      "bytes": 11397,
+      "before": "git-sha1:9142c52d33e51413466cb45c62246ce6d183ec28"
+    },
+    "nl/privacy.html": {
+      "sha256": "9f5173ad937c83d32fbd0e7bc069ac6b514df503598d49277677f946f993acfd",
+      "bytes": 14738,
+      "before": "git-sha1:0995c3db40179c3f1466b642733f41ab8654619c"
+    },
+    "nl/product.html": {
+      "sha256": "06b74f5f281003f78da2a1c190171c6b513cbccd5cc7dc283ab826b7c64ab396",
+      "bytes": 13121,
+      "before": "git-sha1:bf513eb36fc4e5bbc066677c2b5a20d534a26c13"
+    },
+    "nl/support.html": {
+      "sha256": "cd356be7e363ca9bbfa1c5259388d1803f9b9dd0fa7509cf68efb7420f019e4c",
+      "bytes": 12491,
+      "before": "git-sha1:063921e5acd48fa87fd33a573c31518c0e87342f"
+    },
+    "nl/terms.html": {
+      "sha256": "9f264d5755ce34038591e12a6dd22907315e7df62acf9db102afaee9e81cd590",
+      "bytes": 13640,
+      "before": "git-sha1:577a751f6d5fd752d203047fc97a83bbad13d120"
+    },
+    "nl/updates.html": {
+      "sha256": "211a51efc21c6fb1990e0913201547099efca6e8852f871cfa2040bbe2bbccbd",
+      "bytes": 10665,
+      "before": "git-sha1:d3354b4dcd78b383c767e5c4118facb14a9ec4c8"
+    },
+    "no/about.html": {
+      "sha256": "f5951eff715d4f59697fd633fbf18b16033f2683f6956ecb8cabcef34c45bdbc",
+      "bytes": 11295,
+      "before": "git-sha1:155f2087d0854d2585e2f568a049c12cb5ca365f"
+    },
+    "no/accessibility.html": {
+      "sha256": "05f9a782a1214bade41c72af85bbb574ba9f3b3b8f456f0124b6b232a336dd83",
+      "bytes": 10828,
+      "before": "git-sha1:ee80a683fb176249740097fd1c9eee7565cf5a1a"
+    },
+    "no/cart.html": {
+      "sha256": "b29998f77dc919c306c555d72a575f1464caba460c0f884801081d9aa1c4ac56",
+      "bytes": 18152,
+      "before": "git-sha1:e88ffe9884ca1e4fab5a25dabb149a486b363fec"
+    },
+    "no/checkout.html": {
+      "sha256": "77010fc757ff14482dbfa6b9316c2ad4ade0d3a71cc3f11a140c0b59fcd27672",
+      "bytes": 23470,
+      "before": "git-sha1:04f6f24073023fd9a938934adcc8a9ec254a9eef"
+    },
+    "no/child-safety.html": {
+      "sha256": "36a5e4de00560750ffe52df5007c338ee12235e79ab83dda5a3c3a4f8ef08d41",
+      "bytes": 11929,
+      "before": "git-sha1:e24619d8af4c7f47430141ad4c9bbc96c1da7420"
+    },
+    "no/demo.html": {
+      "sha256": "e7273e348d382ad930c65a59df2af476e469de82d0d72bd21b04a617fde7ebef",
+      "bytes": 10840,
+      "before": "git-sha1:380ba7641e4e81bfa39ac0055e76bcb101dfced1"
+    },
+    "no/index.html": {
+      "sha256": "0705408f566ef1dac67a595ae5d122f224d99914305410d7b0647c976596880c",
+      "bytes": 17378,
+      "before": "git-sha1:b61549a39b02e86246811abc9641cffc7d4cab8e"
+    },
+    "no/legal.html": {
+      "sha256": "fcbfc0e1be10b857d9f5e498ee14ac004e375c30bdb8e6c659ec920d8c82d767",
+      "bytes": 11365,
+      "before": "git-sha1:cc2f6124b415ffba23f5c6de1448b2d866acf8e5"
+    },
+    "no/privacy.html": {
+      "sha256": "3b98cc334bbdf6a7eeb6dbf6bc0440de54dad0137d2c6aa05936d2092fae1ea0",
+      "bytes": 14419,
+      "before": "git-sha1:ca6a02b045f3dc2afe5091a133885871e0ea97f5"
+    },
+    "no/product.html": {
+      "sha256": "496359b8af70a4ef7ae5fc87881164104b30ae6babd25d1bf245a6b34c9b90b8",
+      "bytes": 12794,
+      "before": "git-sha1:f897c5484573451247b1c5e469dafe27f0404151"
+    },
+    "no/support.html": {
+      "sha256": "f52618212820a73d1b76c02c64d23e84be40200835e83e575c2a4de4b2590842",
+      "bytes": 12481,
+      "before": "git-sha1:2a2608145b8c0060bcc714ca6ee0725205b396b2"
+    },
+    "no/terms.html": {
+      "sha256": "6f8d7f90e097292ac667585ca968123491c75f40a4020a1f89f7d6bee78250c4",
+      "bytes": 13160,
+      "before": "git-sha1:1cec88968234167a31e218cc734bf2801401b14f"
+    },
+    "no/updates.html": {
+      "sha256": "85e339fe70d11a764ce34aa393b4580dc97b2f079f10097f2eb4afa8648ad79f",
+      "bytes": 10616,
+      "before": "git-sha1:e7caa14c2e31040056fc08791451cf1d409071ad"
+    },
+    "pl/about.html": {
+      "sha256": "ba1d2cb6d4be962b3a41a73effeac9cd31ba7ecb3ca555ccb8961ad9b9ca0119",
+      "bytes": 11360,
+      "before": "git-sha1:ca0e74482072b2ffe539593c72c4434faab079c5"
+    },
+    "pl/accessibility.html": {
+      "sha256": "f6371f1287bb976e56b51aad8fbdea03cd0315904e7e442f6ee6eb6755f47a10",
+      "bytes": 10813,
+      "before": "git-sha1:fa603ebafad8bcd8d25f6f076b225a813223774a"
+    },
+    "pl/cart.html": {
+      "sha256": "a111377e833fafa2cbfd3466b68f7683c235b1b1ab1a9ad03aa36dd6dbd9d935",
+      "bytes": 18193,
+      "before": "git-sha1:93cf2da837343f27bfcc552967909f58602b7a7a"
+    },
+    "pl/checkout.html": {
+      "sha256": "0d6f6bdcac3780f1897b33c2689f99330281ae039ca99c63024b574d229fe0e6",
+      "bytes": 23665,
+      "before": "git-sha1:9038fcf764c37019807b3ba7ca184e671a2af9ab"
+    },
+    "pl/child-safety.html": {
+      "sha256": "4bbbcb132ee8aa01a4da98f29313345187fa3b40cc92dfb2c9e3190ef836274e",
+      "bytes": 11984,
+      "before": "git-sha1:cc1889726da2a500c417fadd677ab6e1ec698cc4"
+    },
+    "pl/demo.html": {
+      "sha256": "3c5beca7eaad1aa179f96792b887bbfbe1d1b5b32ee4d36c52957b9f628537bb",
+      "bytes": 10883,
+      "before": "git-sha1:4f3263ba35fa466caf73ef9af470cd02a24510f6"
+    },
+    "pl/index.html": {
+      "sha256": "daa05ac923c03435d8838b7798c5772e16d72080162223a9358c30fb5371e8ee",
+      "bytes": 17490,
+      "before": "git-sha1:255b7b933a38a7c46fd1f903d210b6778967d064"
+    },
+    "pl/legal.html": {
+      "sha256": "d9f74594f7d5e7c768dab73a696cc9f8f087187230f6e88ecaba0865362f9b9b",
+      "bytes": 11322,
+      "before": "git-sha1:cb41a002dbe51cab0c03b604868d9b09a088ebcd"
+    },
+    "pl/privacy.html": {
+      "sha256": "102d5f93409d0dffeba74d3646a3710c0846710d8456e9cacab085a540902f31",
+      "bytes": 14619,
+      "before": "git-sha1:8b3ba71b890f1d84358c8e02192689f95ef570e5"
+    },
+    "pl/product.html": {
+      "sha256": "d2440970cdad155b454ae03546b8083eb62cd24155ce9d44f79928a901693cb7",
+      "bytes": 12904,
+      "before": "git-sha1:6bc1c066647d31dbad5e5c10601b3b01e15aea29"
+    },
+    "pl/support.html": {
+      "sha256": "a832d14b7cafa3d42ba7fe5e6ac6ca7691f2297ea25f24a6042f3158e42b8a27",
+      "bytes": 12560,
+      "before": "git-sha1:5eff665dc99b4c542f08162b336a935ec48c72f1"
+    },
+    "pl/terms.html": {
+      "sha256": "c1a245b552ee01ce470d118b4bc68ab81d3f45bdc3e93df7acd9589f8c33dfe7",
+      "bytes": 13260,
+      "before": "git-sha1:6a3f8a74c54bd58c282e049626b665b3043031bf"
+    },
+    "pl/updates.html": {
+      "sha256": "f44452890635024d68fca51ff03677bae5b922ecaf4f7f34b659d7b2dba165ff",
+      "bytes": 10600,
+      "before": "git-sha1:08d2bf9bb67a6b0edd527021c7b6c7359dbac5a9"
+    },
+    "pt/about.html": {
+      "sha256": "d6eb6e9522b9b6f737e95dbece0fdfaef7b8b70b518119bff33d0a9156cf0b6c",
+      "bytes": 11411,
+      "before": "git-sha1:a636b9c000c4867f6bb89961050542ed2737202c"
+    },
+    "pt/accessibility.html": {
+      "sha256": "e5093fb534a251fec20fb3062d90896b40ed227c0776742df26604492d60375e",
+      "bytes": 10845,
+      "before": "git-sha1:a879ea02ea5a62a5fbfb90912758dfe873d02bdc"
+    },
+    "pt/cart.html": {
+      "sha256": "e83135e40909d4fc83634f1f34f6942d1e7fd2bfd1b1805f140b5928b7a61d03",
+      "bytes": 18347,
+      "before": "git-sha1:bdf3e95332940584e590bb2518829a4252e52fbc"
+    },
+    "pt/checkout.html": {
+      "sha256": "381612b82eabecb02a3066a7b1aa5c52033133fc52a7ea00331846c5b49cf7aa",
+      "bytes": 24240,
+      "before": "git-sha1:6ba41bcc48a45241991db2aeed1083da968ed159"
+    },
+    "pt/child-safety.html": {
+      "sha256": "a6973dc215718737701629e932a634a204f9643088e6055bfd62bc43b72ef2a4",
+      "bytes": 12102,
+      "before": "git-sha1:90bf0129179566e5385be9e87b7ce74b0191fd58"
+    },
+    "pt/demo.html": {
+      "sha256": "537c15a92612b6ba7eb3e5c8c40ffbd15257ebb20e39d5ea268a64d26e6f885f",
+      "bytes": 10988,
+      "before": "git-sha1:4d18479fec3ea667c73cae89c0e53dbda1bbd458"
+    },
+    "pt/index.html": {
+      "sha256": "b574819852a6ef4911a7b12291eb80e2f6fabc24a30e5e18bc1a3c0e7fc9a9bc",
+      "bytes": 17745,
+      "before": "git-sha1:cf1aea9b4059e7d7413d0955bdc4a3648870eb02"
+    },
+    "pt/legal.html": {
+      "sha256": "d7878674e68525bce098774fc80ccfba28ce66f01802fc492620f37becef17d8",
+      "bytes": 11402,
+      "before": "git-sha1:eaab2bd87a33c6357829a9795fb8ce99fac79a88"
+    },
+    "pt/privacy.html": {
+      "sha256": "375037cf73de08323e48b95cfe7531cfafaea5aed222771ac92854e7c5a1fd55",
+      "bytes": 14741,
+      "before": "git-sha1:14b087e07896c6e945ac0ab4d90ed71b87745623"
+    },
+    "pt/product.html": {
+      "sha256": "ef2dc17e087ed6d8a12b90f7b2ed87ba42c73f6aca6199b656c16b4b845ab7a9",
+      "bytes": 13221,
+      "before": "git-sha1:6eae0544631f1f7c7583a66b628edd929b704c7a"
+    },
+    "pt/support.html": {
+      "sha256": "db3b9b013ab140252a8fd41e536714674aaa533bdcfa2e80361442a36a41ce4d",
+      "bytes": 12655,
+      "before": "git-sha1:33d46c163e94a507398622ee3afe973b0c3fd361"
+    },
+    "pt/terms.html": {
+      "sha256": "52e50b8961bbaa2e1626c6ca0839354a9cea2164d0cf8deaccab3bdb5567625e",
+      "bytes": 13699,
+      "before": "git-sha1:a8f272d7145c58f8dc6734d5204a442659815bf3"
+    },
+    "pt/updates.html": {
+      "sha256": "d51ddd8f82711dbae220060281c2af15e4a6e375b4b2e40c36db16a35995095e",
+      "bytes": 10754,
+      "before": "git-sha1:22798cce1452dddfa79a0aa196ac53f7a3de7e37"
+    },
+    "ro/about.html": {
+      "sha256": "42fd201e8ad7ec44433170a2b2102c4ea58adcb7f4c324605918cd10bc43f410",
+      "bytes": 11399,
+      "before": "git-sha1:7b5bea32a71c6bcbad28e485e977fa3167792221"
+    },
+    "ro/accessibility.html": {
+      "sha256": "fa0c92b591403fe4fc5c8f47920d1bd786e46fd63c30ae93334d4f381fe225b0",
+      "bytes": 10846,
+      "before": "git-sha1:cc76e52cb2f97a3572222c81ecedd92ef981dff9"
+    },
+    "ro/cart.html": {
+      "sha256": "478c6bd302d791585d8cfba1b0ca2c65483ac025293a9f40464c24a343033023",
+      "bytes": 18274,
+      "before": "git-sha1:76a30fca0622afd9cb2ca55a38375c3916aabf6c"
+    },
+    "ro/checkout.html": {
+      "sha256": "50e7c4ba7410af932112391b36eb54f172a0e81dceb8c3652270b999c775148e",
+      "bytes": 23944,
+      "before": "git-sha1:7ea4322978f73f3859d27e76b45b8bf41a83d79f"
+    },
+    "ro/child-safety.html": {
+      "sha256": "6b5c07da0b96817b391e8a254829abb0002b75806bcb646c8f5d56d2621b9772",
+      "bytes": 12103,
+      "before": "git-sha1:a3e5294d906f565b7dae9d20ed87e815e2109657"
+    },
+    "ro/demo.html": {
+      "sha256": "1c65e7a92460af1a6089f3be5632fbcb1c6288b6759e777f91d706bee742d8ab",
+      "bytes": 10970,
+      "before": "git-sha1:72c191e7e50f922527bb1ddadcd06387987b70a2"
+    },
+    "ro/index.html": {
+      "sha256": "8095e0a187f3d990af01e25a1e23d50d70553f9f0c26546da3f87fe8f3fb6446",
+      "bytes": 17781,
+      "before": "git-sha1:461679572c0a5d9a85fca36ccf6e199401d4b57c"
+    },
+    "ro/legal.html": {
+      "sha256": "77148d3a7d59daf2e4c6f067f94129f715f35233a7e7fdba9186f60b886f1cc2",
+      "bytes": 11438,
+      "before": "git-sha1:1f6d6cbac1c9b5a85b96be75f7e3a0ead0b88234"
+    },
+    "ro/privacy.html": {
+      "sha256": "0cefe7566541f5eef33448b7aa79242070be77ec2d1f170533236d1a08242b9f",
+      "bytes": 14766,
+      "before": "git-sha1:9cbbaf2b4f324fa83d40decaa7d255e5b4cc22d9"
+    },
+    "ro/product.html": {
+      "sha256": "c425c89fd8b75bd73df433c05e320d9ef37d1a79a50ca87933cb259894744384",
+      "bytes": 13131,
+      "before": "git-sha1:78567c929b7b56711427ec3017bbc1bc82a7fa0b"
+    },
+    "ro/support.html": {
+      "sha256": "76f0e6ae0ac8e98f494a7631c0cac400da1bdd5735fae6a1708b502e88c75c69",
+      "bytes": 12698,
+      "before": "git-sha1:c0c396369271a9293f01d9d3b6268c1497fdbe27"
+    },
+    "ro/terms.html": {
+      "sha256": "c301d6f362d5bd0352f43e2913bb976da457165ad0ac87d02c0f0236193318f7",
+      "bytes": 13443,
+      "before": "git-sha1:95366b604c270338fa0f4bc9198badbf25d0fd40"
+    },
+    "ro/updates.html": {
+      "sha256": "95e4b67ed97d664357d2e8cc7d27ef8842d4830ddc720d16ad0314a0b965e109",
+      "bytes": 10710,
+      "before": "git-sha1:7246f4a5901f9ea5fd012581695efdf0546d2c08"
+    },
+    "ru/about.html": {
+      "sha256": "7cf1f75c96b0ec7ee9039bc7e51ce5cbd2f7a68fecf59b9d28bd1a7763571148",
+      "bytes": 12456,
+      "before": "git-sha1:1c1cf087da4a0cc605ceeabc48df73e9aa3daa1c"
+    },
+    "ru/accessibility.html": {
+      "sha256": "17ed1353e19ab0678040318049200a88f6392b64256c714dd19788395f4c2e53",
+      "bytes": 11493,
+      "before": "git-sha1:119c33df2a092b031c5bd9cf183e453444df7b83"
+    },
+    "ru/cart.html": {
+      "sha256": "d14fe4ad9dc06e83dd474cb3bc282594cfbfb4a2341958f3ee097776683d5b1d",
+      "bytes": 19979,
+      "before": "git-sha1:534ef08bb67af64d775ed8342e36c92e380ef506"
+    },
+    "ru/checkout.html": {
+      "sha256": "ea45693c12f760a5d769af3400a1112949fde8ea0c34d0131a1e58ac9940ff8f",
+      "bytes": 27499,
+      "before": "git-sha1:460bef688915ad7f5c31cbe4bed20e5b3288921e"
+    },
+    "ru/child-safety.html": {
+      "sha256": "b308d9d73ece66270f8cc1bfa00388ebdd3283fe29cdf3c5db52c59abb546e77",
+      "bytes": 13557,
+      "before": "git-sha1:ff097a3a5ce750c816d90e20fbb174308c727afa"
+    },
+    "ru/demo.html": {
+      "sha256": "77572964c25ebd77763464fd151b3afb0ed4b35c132717cb9bed49f042031774",
+      "bytes": 11957,
+      "before": "git-sha1:1615cb6e52bf7358aaa8e7984bd0bc277b01a852"
+    },
+    "ru/index.html": {
+      "sha256": "3a284c90e0e0e223a64e01d30cdf83bdb266d266da47c567dad55067dd594bdf",
+      "bytes": 20231,
+      "before": "git-sha1:66263d97d4795e5f4cead6ebb4c09e7e29950713"
+    },
+    "ru/legal.html": {
+      "sha256": "a92545ef147f0a619674db004fed05b45bc66372c12537466f44b2ff719246a8",
+      "bytes": 12093,
+      "before": "git-sha1:3c4b6d0e73f7665a837abe6fcc4ebdef98b1506f"
+    },
+    "ru/privacy.html": {
+      "sha256": "414f2ff09fe0e40a47f7a7c3b8acde679031fbd79cc22de37c75631a9ef91118",
+      "bytes": 17987,
+      "before": "git-sha1:6fd6cc179b4dadb6ce7c4a17398a281dda1f1218"
+    },
+    "ru/product.html": {
+      "sha256": "9bde4cb59a1f0154f8d42ceb02447a6a1a4ca2c83409b89f27a362a7bf68136e",
+      "bytes": 14891,
+      "before": "git-sha1:01afd6012a6f85a6d3b31a06f757142f38b42132"
+    },
+    "ru/support.html": {
+      "sha256": "1229148f0b333aa71f393aea63aec6cba3a9f145520b50796d9786eb9cd4325f",
+      "bytes": 14089,
+      "before": "git-sha1:d2ad289f714764793ddf0cccf0ccc2470d41ccdb"
+    },
+    "ru/terms.html": {
+      "sha256": "8bb94712d6ce63075a08a12daf7b194c5f60de5b52e229cce96ab3cf370c00b6",
+      "bytes": 15177,
+      "before": "git-sha1:f0b90aec3466c33d82abcce71ad66ab77d1f1fbb"
+    },
+    "ru/updates.html": {
+      "sha256": "4ae47b2c42c4170f5a87baaf3d42ae72b91dc55acef6ffa16bfa0ad5e7ffda06",
+      "bytes": 11448,
+      "before": "git-sha1:577eac37ec13d8c2c62622051e8fe707ce6e9308"
+    },
+    "site-commerce.js": {
+      "sha256": "9df3306b022c3a4a3575ba128f0ce23390c3245ce84d8fec327c0a3a6f13be50",
+      "bytes": 3801,
+      "before": null
+    },
+    "sr/about.html": {
+      "sha256": "91aa29653c13ab11b6f67eeebd80db298b560552d2b17256cc86b1b1bdec5f88",
+      "bytes": 12336,
+      "before": "git-sha1:36606ce810f620b33b55a3dfd3cdc8176f1a2cc6"
+    },
+    "sr/accessibility.html": {
+      "sha256": "2604fc925afc7fc50bad3acf3b25304b25bbb8acc3298057e2e3817089adbf9d",
+      "bytes": 11407,
+      "before": "git-sha1:5c6a590503d2a5d84119732dee941c9e89938eea"
+    },
+    "sr/cart.html": {
+      "sha256": "0b8beecdd57b3c636e29b97e6a1f8eb64e0b4af48dddeef59308324fed9c35f6",
+      "bytes": 19699,
+      "before": "git-sha1:74455e37fcebe7abb77af575f0528fc63246161b"
+    },
+    "sr/checkout.html": {
+      "sha256": "05c095b225b4d0dcf6430c01cc1aa82aba2ca9b4fae91df1cb2b83e6029a379d",
+      "bytes": 26700,
+      "before": "git-sha1:1c2c06d01f1113d7fe1ea5a2d072c22028e69634"
+    },
+    "sr/child-safety.html": {
+      "sha256": "498f3ecd49184eb748b70d41eddb4860d4fe2f084f8882e8dbcce18d2ccaeafc",
+      "bytes": 13308,
+      "before": "git-sha1:af2506bdbed38fa67c337a14d71db304553d9c8b"
+    },
+    "sr/demo.html": {
+      "sha256": "e80e54efa0d2a201cb05db785cc9f5fc60dbe25943cb0a63a4fc7a153418b9b4",
+      "bytes": 11746,
+      "before": "git-sha1:762ae66bff597f77904ed111a5af0aadf44a35f8"
+    },
+    "sr/index.html": {
+      "sha256": "f0b16ff37d5de3c1d06d997e6e510e1f270365442f280051cc285c11c767d2a5",
+      "bytes": 19744,
+      "before": "git-sha1:3c8aeb74dfa4030f734f0c60d561dee5823ec5a3"
+    },
+    "sr/legal.html": {
+      "sha256": "194291d330a925481753720ab016ad6711595e5f38ac1657b0a5b0944de07b24",
+      "bytes": 11987,
+      "before": "git-sha1:6bee76d1130edf523184cf20fdaaecba342ac129"
+    },
+    "sr/privacy.html": {
+      "sha256": "ec5b2c001a08ab78b86e015c3bcd37c2ac7ae3b799967ee363f31f532a07303a",
+      "bytes": 17178,
+      "before": "git-sha1:7a220be09ab3bd78bfed9495394e5d771d51b385"
+    },
+    "sr/product.html": {
+      "sha256": "04ca8ddc2a46c9e415315f9bb32c8f4220b491d5c7b166b43a51f11bd610f489",
+      "bytes": 14565,
+      "before": "git-sha1:7aaf91ddbcd15f105b3dddcdaa88a6f67308e8d2"
+    },
+    "sr/support.html": {
+      "sha256": "91e633397c0ef07f9fc4c7d88420dd2f12eece7dbabf246d4e71bd5a12778939",
+      "bytes": 13824,
+      "before": "git-sha1:4062a4cc95301e5d6baef078bb9d0f24c687578c"
+    },
+    "sr/terms.html": {
+      "sha256": "da6cf68f56b9466b18554bd127187b5341368aaafc8c29fc3262a07f471ec77a",
+      "bytes": 14773,
+      "before": "git-sha1:7ebec6af1f47c877c4c0f3d6435acec3f5c20f43"
+    },
+    "sr/updates.html": {
+      "sha256": "020f9b004c48ace97c482a2579d50b2fc6a6ab8abd9fe317bf05c9d02d4366ef",
+      "bytes": 11318,
+      "before": "git-sha1:4b43cc669f29eac6e692dbecd1c6a17bce381379"
+    },
+    "sv/about.html": {
+      "sha256": "29c3f2a2cc24466c822cf65d836806dce0c928deb90776709160425eb0bd6537",
+      "bytes": 11378,
+      "before": "git-sha1:1f74550d19b49bc392f40d62d9e2f1c627353ab3"
+    },
+    "sv/accessibility.html": {
+      "sha256": "db42962d425a3f3279962d11b0118b58b08272be01bb56cc64a079aa23ea5898",
+      "bytes": 10840,
+      "before": "git-sha1:8dc92040e9cb35c09a321264a3d94dfed0823799"
+    },
+    "sv/cart.html": {
+      "sha256": "332eb7c756a48c3c962643350b427d1fc29f6ba340c8560bcd23ab2b360ac29e",
+      "bytes": 18214,
+      "before": "git-sha1:797694d22750b067001d821f138691ee6b3107ef"
+    },
+    "sv/checkout.html": {
+      "sha256": "c6bba5b83b47348970bdba059640c331c3739fa20ab6f79a8fc38eb539d272e7",
+      "bytes": 23930,
+      "before": "git-sha1:21a8e9049827f011d9b87ad17ca7477d6a363dc5"
+    },
+    "sv/child-safety.html": {
+      "sha256": "20962ccf8628fbdc6297896bd82b686b4b9d949a04650be5a7eebe6b6b4a8018",
+      "bytes": 11923,
+      "before": "git-sha1:3e1ae6b595652e6d0fa27aa4c0147b2ce8dce445"
+    },
+    "sv/demo.html": {
+      "sha256": "f247e9ab56622e65d22902e4a9ccf8a0846f6896fcf58730f906bb9575b3b354",
+      "bytes": 10910,
+      "before": "git-sha1:92250af1fdec7f960134a449866db60810342265"
+    },
+    "sv/index.html": {
+      "sha256": "163096504edd9f9f94fce15423ae346e3e20031c58d2d505e68b116a4f24e58b",
+      "bytes": 17473,
+      "before": "git-sha1:2f6447353611380f4ae6267080f8b471ae900168"
+    },
+    "sv/legal.html": {
+      "sha256": "92af45216255ccef63f16777b14133e32196ffa50a35dc0308e9a8a3fb744182",
+      "bytes": 11365,
+      "before": "git-sha1:590232ec8eaacb100cc15e3df5edc1d06755d3e4"
+    },
+    "sv/privacy.html": {
+      "sha256": "3a38f872be4a41c00d1ca36e468c0f20508b27ea6c6a0667f72f46e590660334",
+      "bytes": 14494,
+      "before": "git-sha1:0498e6ce9ae04abad8f37a8e3f60ad4d2773e6c0"
+    },
+    "sv/product.html": {
+      "sha256": "094176e36abd773c40529745fa99460c4cc96d963d5d0b26243f763aabd23e47",
+      "bytes": 13022,
+      "before": "git-sha1:f0fcb306dff997b8158f700c1b2670fcc1c07e5d"
+    },
+    "sv/support.html": {
+      "sha256": "6d0389100119a77cfe201dce8a3fe4b3fbb0022143340aeda14ee69e2926dd9e",
+      "bytes": 12566,
+      "before": "git-sha1:d2effb468605992a44ab6d61f8e82ca48f9c772f"
+    },
+    "sv/terms.html": {
+      "sha256": "50e057e4367f5f206f2382d364bc5c1b8f29399e2d0e70c45a72a0b6c6dad641",
+      "bytes": 13522,
+      "before": "git-sha1:2f1a3f167af0e0e033db2ae9362b65c01fe01404"
+    },
+    "sv/updates.html": {
+      "sha256": "3605004c8a806119a270ea0cd3069ee8d9b1784be3881626b8fc8fbb01196b4b",
+      "bytes": 10653,
+      "before": "git-sha1:0e38f278f0e1350cde290e097767a70f36379e61"
+    },
+    "tr/about.html": {
+      "sha256": "61eae8e213cd3e3ab0af9f44428aa66428504a3915b658835ad5014aefefed9e",
+      "bytes": 11448,
+      "before": "git-sha1:a5eec52977197d830b80284b7d6432b4f3e8cf66"
+    },
+    "tr/accessibility.html": {
+      "sha256": "c83deca8e9a42b5d57881ed4e5e6f633f031645ba6d8925f3dca6650e6216509",
+      "bytes": 10819,
+      "before": "git-sha1:c9d450899588509ca97c9f8cbba2a1e063ab7153"
+    },
+    "tr/cart.html": {
+      "sha256": "f185399b4680a226566875ab2bc91d149f0d72e245fb6657803be965a5852fdd",
+      "bytes": 18243,
+      "before": "git-sha1:8b2d0d2708a6b57599f16d63cbcfa4305d33d0ca"
+    },
+    "tr/checkout.html": {
+      "sha256": "20b914f8f7ed41a48ca2c43a2d8e9a4e4133cffe0b0ebf403432122ffb4bd5d1",
+      "bytes": 24945,
+      "before": "git-sha1:7dd63b574f0e84264e1ae9f659ec6da314c64068"
+    },
+    "tr/child-safety.html": {
+      "sha256": "9aacee0cf76a95d170f9283beae620f39d1beda40c50760d8797749156388600",
+      "bytes": 12016,
+      "before": "git-sha1:b80996c1a8f7ea55a93f0e2c3c3ff2127dab32ec"
+    },
+    "tr/demo.html": {
+      "sha256": "21c3445a73f16e9d12de514dbe9a8231a97f27945e51f5d8dd6f3b7e98771ed3",
+      "bytes": 10926,
+      "before": "git-sha1:abfcd0eeb9cf30e676ab1da8cd0a3c13c5dfc4c9"
+    },
+    "tr/index.html": {
+      "sha256": "ad13afede5107a1c15b81a49a960078b9a5853e71e4ed61a698e0bdbf19dbdca",
+      "bytes": 17729,
+      "before": "git-sha1:6b773cbace53dc210c59001a3a40449bf8326fd4"
+    },
+    "tr/legal.html": {
+      "sha256": "6fd4a38dd5e7b64741122019e0cdc8ee895dfbb863cbe3e30cf28884d347fd1f",
+      "bytes": 11350,
+      "before": "git-sha1:1945fd1488f518d966af91be60b59a4c0fe42a0d"
+    },
+    "tr/privacy.html": {
+      "sha256": "d7395095e744e07065d667de356d3eb2605a83972bdc3e3d96261d69d76eccbc",
+      "bytes": 14657,
+      "before": "git-sha1:5521d00b7e4db7aef2c1d17759fc051cd5bfddcb"
+    },
+    "tr/product.html": {
+      "sha256": "382bfc9419eed5912cc40187571e26859a75e626da7e15145956f433a66984de",
+      "bytes": 13157,
+      "before": "git-sha1:50f4dba01e8278fc26c90865befe778c4a7de1a2"
+    },
+    "tr/support.html": {
+      "sha256": "b1fb5630374dc2b962ad56d4abd5ebb47f02b07f0e694941c8dc5a73a8c4d4bf",
+      "bytes": 12639,
+      "before": "git-sha1:cc1aa13c0d5fa3fbd916571db0ee4ec16de455b0"
+    },
+    "tr/terms.html": {
+      "sha256": "e6aed5332a5c1c0291355584f45e5f87a94c8a8e76757a02c7c254a2c7ffe472",
+      "bytes": 14165,
+      "before": "git-sha1:5c75e9f8d113a30e6ddf8dbfe8dbfaf0ca2cc657"
+    },
+    "tr/updates.html": {
+      "sha256": "ee31d3275a8f156245e24a01470bb4a38fd5ff2ba2ffe62728623d406afaa315",
+      "bytes": 10671,
+      "before": "git-sha1:b02b732f71f39e37fe8d2b9c1e5b650a6c48b28c"
+    },
+    "uk/about.html": {
+      "sha256": "2f24bd31fab6dfb81561aa6c0cdf90a3f62cb299146dd91b78273930bacdf1a3",
+      "bytes": 12370,
+      "before": "git-sha1:f3cea1e1ceb33352821096324535c04db7548262"
+    },
+    "uk/accessibility.html": {
+      "sha256": "315983611f45f71054551c3cae0bfcaff8f545bdceb42bebb0729e864c7b2294",
+      "bytes": 11473,
+      "before": "git-sha1:5cf1fc481910d1cb0a6b4f6dbad8a9dd6363659d"
+    },
+    "uk/cart.html": {
+      "sha256": "e8f7fb5c1f60d5fa1a3e1cc126b5745e6b53cd044580ed2102e8d68e0db7df8f",
+      "bytes": 20065,
+      "before": "git-sha1:13311c516d17deeb12fb6662193ea4f5cee5ab1c"
+    },
+    "uk/checkout.html": {
+      "sha256": "47915242b87031374628e2644414976f8c0bde3669558dee81a85a40d8ffb865",
+      "bytes": 27325,
+      "before": "git-sha1:4bcbdce36cf8c25bebc8e82f20858bcb4dfac6f0"
+    },
+    "uk/child-safety.html": {
+      "sha256": "ef93429259c55a2fcd0f5d5e18c1c6c57c1d15715573c968a7002b46545a0e9f",
+      "bytes": 13613,
+      "before": "git-sha1:f86729a87044c5a4e607ba6253798dd38ac73a90"
+    },
+    "uk/demo.html": {
+      "sha256": "5306de1baef815a26cec7945b4af632ed60effbe7c0df47e02becff3a3332fb8",
+      "bytes": 11913,
+      "before": "git-sha1:0abc53b337c8d5b8f5941b53e6d614d37b84a5ce"
+    },
+    "uk/index.html": {
+      "sha256": "14174790654830efcdb0f4c6095819c8f4570278c3f0149636b91915df3ed37d",
+      "bytes": 20209,
+      "before": "git-sha1:586e2eb2d016d79cb1f802cf6cf92e75bdecdd40"
+    },
+    "uk/legal.html": {
+      "sha256": "9d053e264a417bb705c00f1d4dbc044be9a0d872f2fb896e22b6df23316992b8",
+      "bytes": 12046,
+      "before": "git-sha1:620ced6d3695648f6ee21bf4257dac7ca6f5a660"
+    },
+    "uk/privacy.html": {
+      "sha256": "3161f73e89b895ba5feaf87281473eaf0f445e3381fa43c9d3337cdce6a014da",
+      "bytes": 17885,
+      "before": "git-sha1:a955145531fbb71dd4968c9b93760989868a81ed"
+    },
+    "uk/product.html": {
+      "sha256": "c3a62ddc5101ebfaaffde207f8cb443839c837ffe495034fd484b04890c2c026",
+      "bytes": 14798,
+      "before": "git-sha1:a7b20c519bb657b0509105ed82da801b234ab893"
+    },
+    "uk/support.html": {
+      "sha256": "65ba4d18643d293fb64824a7aea0be08c792595c325d33f19a2bafc137a6a055",
+      "bytes": 14045,
+      "before": "git-sha1:2a5a6605c173cd5dee3e3484ea55327be124c507"
+    },
+    "uk/terms.html": {
+      "sha256": "ca529fa4e344accc7d04a952fa335954e3bb1c33704a2d70e6ee2e1a7bc62f0f",
+      "bytes": 14981,
+      "before": "git-sha1:9d74038eecbc8977d90d2d2919a5fa6b2eb56975"
+    },
+    "uk/updates.html": {
+      "sha256": "4bb3d40f8da9c04359701a3b9d2d3a21c9d557942aaf5202255fcbc20afa1259",
+      "bytes": 11419,
+      "before": "git-sha1:842846b5799931f773e0832b3b32a0194168d61b"
+    },
+    "ur/about.html": {
+      "sha256": "44b694671df9ebd8f68adf28038fd4b07f4bb3895b1513e80c8bd1ca6c90c931",
+      "bytes": 12089,
+      "before": "git-sha1:40c6717e29a147260d0219df4d8a42f82431d44a"
+    },
+    "ur/accessibility.html": {
+      "sha256": "5c7d63a15a6fd3dd32cf548d088103c953ed7def5cb19cbbfb2f58f0157ebd16",
+      "bytes": 11226,
+      "before": "git-sha1:42246138ad7e8ec779804fa2aaf34937c35666c3"
+    },
+    "ur/cart.html": {
+      "sha256": "357db14dcacd9baf64cfa5cf41236ad37bfa9c9bb7d39740ace4d6960f62e62b",
+      "bytes": 19511,
+      "before": "git-sha1:57991b0f1ea5622adfc783d727dcd62d9675a7e2"
+    },
+    "ur/checkout.html": {
+      "sha256": "5fd6b8406186559d25c52360925dd7334ed8a78309fb3f4d5d2c44cf9f05f336",
+      "bytes": 26432,
+      "before": "git-sha1:fc9aa9cb243b960f4740718116eddeb78bf4d27d"
+    },
+    "ur/child-safety.html": {
+      "sha256": "8367dc9d46c24ecb2c4ccc5e8b00ea5dab0ab2735d85fd0ede3ddbd29be542d4",
+      "bytes": 13094,
+      "before": "git-sha1:995e17b5e1419cb019556eb1b764917773c438db"
+    },
+    "ur/demo.html": {
+      "sha256": "2c919fcc99ac95bb11f7c812d470815c08266813502cc93633f9cdaecc2c8e54",
+      "bytes": 11551,
+      "before": "git-sha1:011304bdc8369e099abefd697d272619208fd624"
+    },
+    "ur/index.html": {
+      "sha256": "f5ba9d44bbfe5a2cf8bbbd1c9dc7bf5a0a5eb9e66f363b0b5507b306b8d3adc6",
+      "bytes": 19385,
+      "before": "git-sha1:d5812b82919b9ca23d298b1a07e58e7285a71648"
+    },
+    "ur/legal.html": {
+      "sha256": "b8d62fd9d4ec0f4a98a6c64451f00444723d67ee957afefbcda25e6bea360570",
+      "bytes": 11757,
+      "before": "git-sha1:d8237c191348e492e2aa888a9965f20e3b57d334"
+    },
+    "ur/privacy.html": {
+      "sha256": "934f7f9dfb04426939a69e8ff227879b0fa37814720299efb98d14ef4569627c",
+      "bytes": 17225,
+      "before": "git-sha1:a706da7b4d123e59c97f641f9c46fcd5a8fb3914"
+    },
+    "ur/product.html": {
+      "sha256": "7d1bd7532ecb65de3073c060f6f7a5c09bf772e441bdb5eb357511778212c24b",
+      "bytes": 14239,
+      "before": "git-sha1:1fe976015ac077892bc46546dedbc83c8892b3c9"
+    },
+    "ur/support.html": {
+      "sha256": "086069f91e82e0d6081014aebb2963cd40a62c004fda631a307129802d17fc8c",
+      "bytes": 13573,
+      "before": "git-sha1:ec82f1f18bdde9d1c97411e476ee5188ce8a3db5"
+    },
+    "ur/terms.html": {
+      "sha256": "d7372f1f424c95a2ed496874035097e96266e80c0a268e1163462bc3d2be1f4d",
+      "bytes": 14827,
+      "before": "git-sha1:8329f608d883ab89b01d5e463facd9fbc2f3e69e"
+    },
+    "ur/updates.html": {
+      "sha256": "df5c542502b3e4f90f418fbbc7c7c6c3033ec7b6094d828fa25e8942217d0842",
+      "bytes": 11136,
+      "before": "git-sha1:dd04beb93345b32baf3b45967f9e2925baade4ae"
+    },
+    "zh/about.html": {
+      "sha256": "950e7f5858434d95934e42af52fd8b3a69080d6b7b24470de9d79c631322622b",
+      "bytes": 11103,
+      "before": "git-sha1:14525fb669b86e49fc9de5d5125822e7ae017378"
+    },
+    "zh/accessibility.html": {
+      "sha256": "5a5b49b5d2088a8d6b3d3944f0049dd48bf00860419742d0321199cacd93de88",
+      "bytes": 10644,
+      "before": "git-sha1:65664e6db002e816de8f8b66f751c1c9b82611b0"
+    },
+    "zh/cart.html": {
+      "sha256": "bf5e81a93b56b1e70875828742c4f526f60c9008849faab2d4486c2bb5a86d53",
+      "bytes": 17907,
+      "before": "git-sha1:8145b04386d5f18221af92962961c13c3e134a95"
+    },
+    "zh/checkout.html": {
+      "sha256": "fbe14e18e2d5b27643a20ed7fc47e170c35b228fa3fa692e06932f30c2eb8b49",
+      "bytes": 23001,
+      "before": "git-sha1:d0334e04097dedcec7db896ffd4f614ceb758881"
+    },
+    "zh/child-safety.html": {
+      "sha256": "d627a09133eeb004a9149a16d64b731812195324d63e555ed912055120e5a6e1",
+      "bytes": 11539,
+      "before": "git-sha1:c99cdf5b1f3add52c0b993067192e79318d56a7b"
+    },
+    "zh/demo.html": {
+      "sha256": "2281e6bebead2ee0f9954834fbfe58af56f98d8ac3e1edc30e7306950e9ee836",
+      "bytes": 10689,
+      "before": "git-sha1:f55eda6618c49af8ce0356f3079b378ba93617a2"
+    },
+    "zh/index.html": {
+      "sha256": "4728c9c8c26c8faa6c5a38231eb0237520c9d67a81b83bd4bd808675fdd948f9",
+      "bytes": 16977,
+      "before": "git-sha1:cd8ced446fc181c5067a5b947e05000a5120b5a0"
+    },
+    "zh/legal.html": {
+      "sha256": "f3756dc6be7aea077cde03d7b0cccccfd137ff1caf745a8c08411384cf6d57e2",
+      "bytes": 11145,
+      "before": "git-sha1:a7024153a74e141f189bc1614aa11cd264b26d46"
+    },
+    "zh/privacy.html": {
+      "sha256": "7b15979d5f1ef41bd9775de8ab765052736a9a5832e744ed57c235cf457731bf",
+      "bytes": 13671,
+      "before": "git-sha1:0643ff47d665dd519edceac93d83df7ceeb7608b"
+    },
+    "zh/product.html": {
+      "sha256": "e1d620558c4f9e2d35eec8051f9ef0b4d4209a5907c1c5373d982b6ad642a38c",
+      "bytes": 12557,
+      "before": "git-sha1:867c995e739dbe38f94bccebaf91530c51056f39"
+    },
+    "zh/support.html": {
+      "sha256": "c0046b72d8e81fbdc49c1d6d3e01582247cc72be38bc99663f351901dee70b11",
+      "bytes": 12185,
+      "before": "git-sha1:c6d72a7e6be2a52a549d353fdbb3d43c35ceb7b8"
+    },
+    "zh/terms.html": {
+      "sha256": "d56b140ca0cda21cde89229a05d612793aecbcfbaf24f111b87f31c1258601ae",
+      "bytes": 12971,
+      "before": "git-sha1:9e6f9918a03c26739886457432996e0aeb398d28"
+    },
+    "zh/updates.html": {
+      "sha256": "c33feec81ec37ca1ce828e972adfb909ef9cced0509daee373d2cadda8cbfcf0",
+      "bytes": 10435,
+      "before": "git-sha1:404e3b88465eaa454af6970430d6c49141edb092"
+    }
+  }
+}
