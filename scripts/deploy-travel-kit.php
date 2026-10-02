@@ -60,24 +60,27 @@ try{
         }else throw new RuntimeException('INVALID_BASELINE');
         $changes[]=[$scope,$source,$target,$targetRel,$current,$sourceHash];
     }
-    if(($argv[2]??'')!=='--publish'){echo 'READY: '.count($changes)." Travel Kit files require publication. Manual-order storage will be private.\n";exit;}
-    if(!$changes){echo "CURRENT: Travel Kit manual-order release already published.\n";exit;}
-
-    $backup=$state.'/travel-kit-backup-'.gmdate('Ymd-His').'-'.bin2hex(random_bytes(4));if(!mkdir($backup,0700))throw new RuntimeException('BACKUP_FAILED');
-    foreach($changes as [$scope,$source,$target,$targetRel,$prior,$expected]){
-        $save=$backup.'/'.$scope.'/'.$targetRel;
-        if($prior!==null){if(!is_dir(dirname($save))&&!mkdir(dirname($save),0700,true))throw new RuntimeException('BACKUP_FAILED');if(!copy($target,$save)||hznDigest($save)!==$prior)throw new RuntimeException('BACKUP_FAILED');}
-        if(!is_dir(dirname($target))){
-            $dirMode=$scope==='private'?0700:0755;if(!mkdir(dirname($target),$dirMode,true)||!chmod(dirname($target),$dirMode))throw new RuntimeException('DIRECTORY_FAILED');
+    if(($argv[2]??'')!=='--publish'){
+        echo 'READY: '.count($changes)." Travel Kit files require publication. Manual-order storage will be private.\n";
+    }elseif(!$changes){
+        echo "CURRENT: Travel Kit manual-order release already published.\n";
+    }else{
+        $backup=$state.'/travel-kit-backup-'.gmdate('Ymd-His').'-'.bin2hex(random_bytes(4));if(!mkdir($backup,0700))throw new RuntimeException('BACKUP_FAILED');
+        foreach($changes as [$scope,$source,$target,$targetRel,$prior,$expected]){
+            $save=$backup.'/'.$scope.'/'.$targetRel;
+            if($prior!==null){if(!is_dir(dirname($save))&&!mkdir(dirname($save),0700,true))throw new RuntimeException('BACKUP_FAILED');if(!copy($target,$save)||hznDigest($save)!==$prior)throw new RuntimeException('BACKUP_FAILED');}
+            if(!is_dir(dirname($target))){
+                $dirMode=$scope==='private'?0700:0755;if(!mkdir(dirname($target),$dirMode,true)||!chmod(dirname($target),$dirMode))throw new RuntimeException('DIRECTORY_FAILED');
+            }
+            $temp=$target.'.hzn-new-'.bin2hex(random_bytes(4));$temps[]=$temp;$mode=$scope==='private'?0600:0644;
+            if(!copy($source,$temp)||hznDigest($temp)!==$expected||!chmod($temp,$mode))throw new RuntimeException('STAGING_FAILED');
+            if(hznDigest($target)!==$prior)throw new RuntimeException('PUBLIC_BASELINE_CHANGED');
+            if(!rename($temp,$target))throw new RuntimeException('REPLACE_FAILED');
+            $written[]=[$target,$prior!==null,$save,$mode];
         }
-        $temp=$target.'.hzn-new-'.bin2hex(random_bytes(4));$temps[]=$temp;$mode=$scope==='private'?0600:0644;
-        if(!copy($source,$temp)||hznDigest($temp)!==$expected||!chmod($temp,$mode))throw new RuntimeException('STAGING_FAILED');
-        if(hznDigest($target)!==$prior)throw new RuntimeException('PUBLIC_BASELINE_CHANGED');
-        if(!rename($temp,$target))throw new RuntimeException('REPLACE_FAILED');
-        $written[]=[$target,$prior!==null,$save,$mode];
+        file_put_contents($backup.'/restore-map.json',json_encode($written,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES));
+        echo 'PUBLISHED Travel Kit manual-order release: '.count($written).' files. No card collection enabled; fulfilment remains manual by email. Backup: '.basename($backup)."\n";
     }
-    file_put_contents($backup.'/restore-map.json',json_encode($written,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES));
-    echo 'PUBLISHED Travel Kit manual-order release: '.count($written).' files. No card collection enabled; fulfilment remains manual by email. Backup: '.basename($backup)."\n";
 }catch(Throwable $e){
     $restoreFailed=false;
     foreach(array_reverse($written) as [$target,$hadPrior,$save,$mode]){
@@ -85,8 +88,9 @@ try{
         elseif(is_file($target)&&!unlink($target))$restoreFailed=true;
     }
     $reason=$e instanceof RuntimeException&&preg_match('/^[A-Z0-9_]+$/D',$e->getMessage())?$e->getMessage():'PUBLISH_FAILED';
-    fwrite(STDERR,'STOP: '.$reason.($restoreFailed?'; RESTORE_REQUIRES_ATTENTION':'; published changes rolled back')."\n");exit(1);
+    fwrite(STDERR,'STOP: '.$reason.($restoreFailed?'; RESTORE_REQUIRES_ATTENTION':'; published changes rolled back')."\n");$failed=true;
 }finally{
     foreach($temps as $temp)if(is_file($temp))@unlink($temp);
     if($locked)@rmdir($lock);
 }
+exit(isset($failed)?1:0);
