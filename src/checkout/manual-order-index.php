@@ -33,16 +33,17 @@ try{
         $mailer->send($owner,'HORIZONS — New manual order '.$order['reference'],$ownerBody,$buyer['email']);$orders->mark($order['reference'],'owner_notified');
     }
     if(!$order['buyer_notified']){
-        $locale=$order['locale'];
-        $copy=[
-          'ar'=>['تم استلام طلبك','استلمنا طلب الشراء الخاص بك. لم يتم اقتطاع أي مبلغ من خلال الموقع. سيتواصل معك فريق HORIZONS عبر هذا البريد لتأكيد طريقة الدفع، وبعد التحقق من الدفع سنرسل لك رابط التحميل أو بيانات التفعيل يدويًا.'],
-          'tr'=>['Sipariş talebiniz alındı','Satın alma talebinizi aldık. Web sitesi üzerinden herhangi bir ödeme tahsil edilmedi. HORIZONS ekibi ödeme yöntemini doğrulamak için bu e-posta adresinden sizinle iletişime geçecek; ödeme doğrulandıktan sonra indirme bağlantısı veya aktivasyon bilgileri manuel olarak gönderilecektir.'],
-          'fr'=>['Votre demande de commande a été reçue','Nous avons reçu votre demande d’achat. Aucun paiement n’a été prélevé sur le site. HORIZONS vous contactera par e-mail pour confirmer le mode de paiement, puis enverra manuellement le lien de téléchargement ou les informations d’activation après vérification du paiement.'],
-          'es'=>['Hemos recibido tu solicitud de compra','Hemos recibido tu solicitud de compra. No se ha cobrado ningún importe en el sitio web. HORIZONS se pondrá en contacto contigo por correo para confirmar el método de pago y, después de verificarlo, enviará manualmente el enlace de descarga o los datos de activación.'],
-          'en'=>['Your order request was received','We received your purchase request. No payment was charged on the website. HORIZONS will contact you by email to confirm the payment method; after payment is verified, the download link or activation details will be sent manually.']
-        ];$t=$copy[$locale]??$copy['en'];
-        $body=$t[1]."\n\nReference: ".$order['reference']."\nProduct: ".$product['name']."\nTotal: ".$amount."\n\nSupport: support@horizons-tr.com\n";
-        $mailer->send($buyer['email'],'HORIZONS — '.$t[0].' · '.$order['reference'],$body);$orders->mark($order['reference'],'buyer_notified');
+        $locale=$order['locale'];$localeFile=$web.'/manual-order-locales.json';
+        $allLocales=[];
+        if(is_file($localeFile)&&!is_link($localeFile)){
+            try{$allLocales=json_decode(file_get_contents($localeFile),true,32,JSON_THROW_ON_ERROR);}catch(\Throwable){$allLocales=[];}
+        }
+        $t=is_array($allLocales[$locale]??null)?$allLocales[$locale]:(is_array($allLocales['en']??null)?$allLocales['en']:[]);
+        $subjectLine=$t['saved']??'Your order request was received.';
+        $intro=$t['order_note']??'Your order details were received. No payment was charged on the website. HORIZONS will contact you by email to confirm payment and send the download link manually after verification.';
+        $referenceLabel=$t['reference']??'Order reference';$totalLabel=$t['total']??'Total';$productLabel=$t['product']??'Product';$localizedProduct=$t['product_title']??$product['name'];
+        $body=$subjectLine."\n\n".$intro."\n\n".$referenceLabel.": ".$order['reference']."\n".$productLabel.": ".$localizedProduct."\n".$totalLabel.": ".$amount."\n\nsupport@horizons-tr.com\n";
+        $mailer->send($buyer['email'],'HORIZONS — '.$localizedProduct.' · '.$order['reference'],$body);$orders->mark($order['reference'],'buyer_notified');
     }
     echo json_encode(['ok'=>true,'reference'=>$order['reference'],'status'=>'manual_pending','payment_status'=>'not_collected','collection_enabled'=>false],JSON_THROW_ON_ERROR);
 }catch(Throwable $e){
