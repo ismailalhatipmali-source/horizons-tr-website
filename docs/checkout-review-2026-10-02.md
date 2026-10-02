@@ -75,4 +75,28 @@ Validation completed before publication:
 - All 32 page field/link/CTA checks; cover SHA256 remains
   ebd1e106f784f1fe235521ab603dc79d988a8bc04f906f0b333a0f0ce71e4ea2.
 
-Live browser verification and final deployed commit will be recorded after publishing.
+## Live verification
+
+Published through cPanel at 2026-10-02 12:43:42 Europe/Istanbul (09:43:42 UTC).
+The live deployment commit is `ad0ae268c907cbf40e6373810bf9652d00389efd`,
+whose tree exactly matches local implementation commit `e7eae57`.
+
+- Turkish product page exposes Satın al linked to the generic checkout.
+- Turkish checkout rendered seven offers, the company/IBAN details and 250
+  country/territory choices; company selection exposed all three invoice fields.
+- A filled card review showed VakıfBank Sanal POS and a disabled final button.
+  No card inputs or payment attempt were involved.
+- Switching that fake test to transfer created server reference
+  `HZN-R-20261002-0880AD8478327CE3BDFF`, explicitly unpaid and review-only,
+  with no invoice, activation or email. Buyer data used an example.test email,
+  a dummy phone and an explicitly non-customer test address.
+- Arabic checkout rendered RTL, 9.99 USD inclusive of taxes, the same approved
+  cover, the floating basket, and all four policy links; neither Turkish nor
+  Arabic had horizontal overflow at the tested desktop viewport.
+- Turkish refund and checkout-KVKK pages opened successfully with the correct
+  phone, mandatory-rights wording and company identity. Only an unrelated
+  browser-extension console warning was observed during the checkout test.
+
+Browser proof: `horizons-checkout-live-20261002.jpg`. The 32-language automated
+checks above complement these live desktop checks; this is not a claim of
+testing every physical device/browser. No real payment was taken or tested.
