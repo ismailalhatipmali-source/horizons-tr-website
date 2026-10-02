@@ -24,6 +24,7 @@ async function shellFixture(){
     getState:async()=>({activated,error:null,license:activated?{purchase_email:'adult@example.test',plan:'lifetime',expires_at:null}:null}),
     signOut:async()=>{activated=false},
   });
+  await synthetic('./membership-ui.js',{initializeMembershipUI:async()=>{},updateMembershipUI:()=>{}});
   await synthetic('./web-config.js',{VERSION:'1.4.2'});
   await synthetic('./web-ui.js',{
     names:{en:'English'},language:()=> 'en',dictionaries:async()=>[{en:{}},{en:{}}],translate:(_d,_l,key)=>key,

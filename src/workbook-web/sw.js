@@ -6,7 +6,7 @@ import { MediaStore, MEDIA_LIMITS, verifiedCipher, mediaResponse } from './media
 const ROOT = new URL('./', self.location.href);
 const SHELL = 'hzn-web-shell-' + VERSION;
 const media = new MediaStore();
-const SHELL_FILES = ['','index.html','shell.css','shell.js','web-ui.js','pwa-client.js','license-core.js','asset-decoder.js','learner-store.js','progress-sync-client.js','media-store.js','web-config.js','portal-locales.json','web-locales.json','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png','asset-manifest.json'];
+const SHELL_FILES = ['','index.html','shell.css','shell.js','web-ui.js','pwa-client.js','license-core.js','membership-ui.js','membership-manager.js','asset-decoder.js','learner-store.js','progress-sync-client.js','media-store.js','web-config.js','portal-locales.json','web-locales.json','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png','asset-manifest.json'];
 let manifestPromise;
 let downloadRunning = false;
 let cancelDownload = false;

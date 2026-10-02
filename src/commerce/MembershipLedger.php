@@ -16,6 +16,10 @@ interface MembershipIssuer {
     public function revokeMembership(string $memberId, string $accountId): void;
 }
 
+interface RenewableMembershipIssuer extends MembershipIssuer {
+    public function renewGroup(string $groupId,string $renewalId,string $plan,?int $expiresAt):void;
+}
+
 /** Private integration component; no public route, no deployment/SMTP worker.
  * Actor account IDs must come from verified server authentication, not request
  * fields. A verified PurchaseLedger is the only source of paid owner grants. */
@@ -31,6 +35,9 @@ final class MembershipLedger {
         CREATE TABLE IF NOT EXISTS membership_seats (id TEXT PRIMARY KEY, group_id TEXT NOT NULL REFERENCES membership_groups(id), email_hash TEXT NOT NULL, email_cipher TEXT NOT NULL, account_id TEXT, state TEXT NOT NULL CHECK(state IN ('pending','active','removing','removed')), owner INTEGER NOT NULL DEFAULT 0);
         CREATE UNIQUE INDEX IF NOT EXISTS membership_email_active ON membership_seats(email_hash) WHERE state!='removed';
         CREATE TABLE IF NOT EXISTS membership_jobs (member_id TEXT NOT NULL REFERENCES membership_seats(id), kind TEXT NOT NULL CHECK(kind IN ('grant','revoke')), done INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(member_id,kind));");
+        $columns=array_column($this->db->query('PRAGMA table_info(membership_groups)')->fetchAll(PDO::FETCH_ASSOC),'name');
+        if(!in_array('plan',$columns,true))$this->db->exec("ALTER TABLE membership_groups ADD COLUMN plan TEXT NOT NULL DEFAULT 'annual'");
+        $this->db->exec('CREATE TABLE IF NOT EXISTS membership_renewals(order_id TEXT PRIMARY KEY,group_id TEXT NOT NULL,plan TEXT NOT NULL,expires_at INTEGER,done INTEGER NOT NULL DEFAULT 0)');
         $hash=hash_hmac('sha256','horizons-membership-key-check',$key);
         $this->db->prepare('INSERT OR IGNORE INTO membership_meta(id,key_hash) VALUES(1,?)')->execute([$hash]);
         if(!hash_equals($hash,$this->db->query('SELECT key_hash FROM membership_meta WHERE id=1')->fetchColumn()))throw new RuntimeException('MEMBERSHIP_KEY_CHANGED');
@@ -57,8 +64,9 @@ final class MembershipLedger {
         $start=strtotime($o['paid_at']);if($start===false)throw new RuntimeException('ORDER_INVALID');
         return $this->atomic(function()use($o,$type,$start){
             $prior=$this->one('SELECT * FROM membership_groups WHERE order_id=?',[$o['order_id']]);if($prior)return $prior;
-            $group='grp_'.bin2hex(random_bytes(16));$owner=$this->identifier($o['account_id']);
+            $group='grp_'.hash('sha256',$o['order_id']);$owner=$this->identifier($o['account_id']);
             $this->db->prepare('INSERT INTO membership_groups(id,order_id,owner_account,type,starts_at,expires_at) VALUES(?,?,?,?,?,?)')->execute([$group,$o['order_id'],$owner,$type,$start,$this->end($start,$o['plan'])]);
+            $this->db->prepare('UPDATE membership_groups SET plan=? WHERE id=?')->execute([$o['plan'],$group]);
             if($type!=='institution')$this->insertSeat($group,$this->email($o['email']),$owner,true);
             return $this->group($group);
         });
@@ -103,12 +111,12 @@ final class MembershipLedger {
      * Owner removal/invitation requests cannot race this issuer acknowledgement. */
     public function work(MembershipIssuer $issuer,int $now): int {
         return $this->atomic(function()use($issuer,$now){
-            $q=$this->db->query("SELECT j.member_id,j.kind,s.*,g.type,g.starts_at,g.expires_at,g.revoked FROM membership_jobs j JOIN membership_seats s ON s.id=j.member_id JOIN membership_groups g ON g.id=s.group_id WHERE j.done=0 ORDER BY CASE j.kind WHEN 'revoke' THEN 0 ELSE 1 END LIMIT 1");$job=$q->fetch(PDO::FETCH_ASSOC);if(!$job)return 0;
+            $q=$this->db->query("SELECT j.member_id,j.kind,s.*,g.type,g.plan,g.starts_at,g.expires_at,g.revoked FROM membership_jobs j JOIN membership_seats s ON s.id=j.member_id JOIN membership_groups g ON g.id=s.group_id WHERE j.done=0 ORDER BY CASE j.kind WHEN 'revoke' THEN 0 ELSE 1 END LIMIT 1");$job=$q->fetch(PDO::FETCH_ASSOC);if(!$job)return 0;
             if($job['kind']==='grant') {
                 if($job['state']!=='pending'||(int)$job['revoked']!==0||($job['expires_at']!==null&&(int)$job['expires_at']<=$now)) {
                     $this->db->prepare("UPDATE membership_jobs SET done=1 WHERE member_id=? AND kind='grant'")->execute([$job['id']]);return 1;
                 }
-                $account=$this->identifier($issuer->grantMembership(['member_id'=>$job['id'],'group_id'=>$job['group_id'],'account_type'=>$job['type'],'email'=>$this->decode($job['email_cipher']),'starts_at'=>(int)$job['starts_at'],'expires_at'=>$job['expires_at']===null?null:(int)$job['expires_at'],'device_policy'=>'any_device']));
+                $account=$this->identifier($issuer->grantMembership(['member_id'=>$job['id'],'group_id'=>$job['group_id'],'account_type'=>$job['type'],'plan'=>$job['plan'],'email'=>$this->decode($job['email_cipher']),'starts_at'=>(int)$job['starts_at'],'expires_at'=>$job['expires_at']===null?null:(int)$job['expires_at'],'device_policy'=>'any_device']));
                 // A private issuer may not collapse two distinct emails into one
                 // progress identity. The issuer must also enforce email binding.
                 $other=$this->one("SELECT id FROM membership_seats WHERE account_id=? AND email_hash!=? AND state!='removed'",[$account,$job['email_hash']]);if($other)throw new RuntimeException('ACCOUNT_EMAIL_MISMATCH');
@@ -121,4 +129,32 @@ final class MembershipLedger {
             $this->db->prepare('UPDATE membership_jobs SET done=1 WHERE member_id=? AND kind=?')->execute([$job['id'],$job['kind']]);return 1;
         });
     }
+    public function policy(string $groupId,string $actor,int $now):array {
+        $g=$this->group($groupId);$owner=hash_equals($g['owner_account'],$actor);
+        return ['account_type'=>$g['type'],'max_learners'=>['individual'=>1,'family'=>5,'institution'=>100][$g['type']],'can_manage'=>$owner,'learners'=>$owner?$this->learners($groupId,$actor,$now):[]];
+    }
+    public function ownerGroup(string $account,string $type):array|false {
+        return $this->one('SELECT * FROM membership_groups WHERE owner_account=? AND type=? AND revoked=0 ORDER BY starts_at DESC LIMIT 1',[$account,$type]);
+    }
+    public function assertPurchaseAllowed(string $email,string $type,PurchaseLedger $purchases):void {
+        $seat=$this->one("SELECT s.owner,g.type,g.expires_at FROM membership_seats s JOIN membership_groups g ON g.id=s.group_id WHERE s.email_hash=? AND s.state!='removed'",[$this->emailHash($this->email($email))]);
+        if($seat&&(!(int)$seat['owner']||$seat['type']!==$type))throw new RuntimeException('EMAIL_ALREADY_ASSIGNED');
+        if($seat&&$seat['expires_at']===null)throw new RuntimeException('SUBSCRIPTION_ALREADY_ACTIVE');
+        $account=$purchases->existingAccount($email);if($account){$owned=$this->one('SELECT type FROM membership_groups WHERE owner_account=? AND revoked=0 LIMIT 1',[$account]);if($owned&&$owned['type']!==$type)throw new RuntimeException('EMAIL_ALREADY_ASSIGNED');}
+    }
+    public function renewOwner(string $orderId,PurchaseLedger $purchases,string $account,RenewableMembershipIssuer $issuer):array|false {
+        $o=$purchases->order($orderId);if(!in_array($o['status'],['paid','access_ready'],true)||!$o['paid_at'])throw new RuntimeException('PAYMENT_REQUIRED');
+        return $this->atomic(function()use($o,$account,$issuer){
+            $g=$this->ownerGroup($account,$o['account_type']);if(!$g||$g['order_id']===$o['order_id'])return false;
+            $prior=$this->one('SELECT * FROM membership_renewals WHERE order_id=?',[$o['order_id']]);if($prior&&(int)$prior['done'])return $g;
+            $end=$prior?($prior['expires_at']===null?null:(int)$prior['expires_at']):($g['expires_at']===null?null:$this->end(max((int)$g['expires_at'],strtotime($o['paid_at'])),$o['plan']));
+            $plan=$end===null?'lifetime':$o['plan'];
+            if(!$prior)$this->db->prepare('INSERT INTO membership_renewals(order_id,group_id,plan,expires_at) VALUES(?,?,?,?)')->execute([$o['order_id'],$g['id'],$plan,$end]);
+            $issuer->renewGroup($g['id'],$o['order_id'],$plan,$end);
+            $this->db->prepare('UPDATE membership_groups SET plan=?,expires_at=? WHERE id=?')->execute([$plan,$end,$g['id']]);
+            $this->db->prepare("UPDATE membership_jobs SET done=0 WHERE kind='grant' AND member_id IN (SELECT id FROM membership_seats WHERE group_id=? AND state='pending')")->execute([$g['id']]);
+            $this->db->prepare('UPDATE membership_renewals SET done=1 WHERE order_id=?')->execute([$o['order_id']]);return $this->group($g['id']);
+        });
+    }
+
 }

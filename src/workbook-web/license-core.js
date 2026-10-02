@@ -9,7 +9,7 @@ const TOLERANCE = 5 * 60 * 1000;
 const ENCODER = new TextEncoder();
 const ID_RE = /^[A-Za-z0-9][A-Za-z0-9_-]{0,95}$/;
 const HEX_RE = /^[a-f0-9]{64}$/;
-let dbPromise, accessCache;
+let dbPromise, accessCache, memberSession=null, memberAuthentication=null;
 
 function failure(code) { return new Error(code); }
 function to64(bytes) { let out=''; for (const n of new Uint8Array(bytes)) out+=String.fromCharCode(n); return btoa(out); }
@@ -100,7 +100,8 @@ export async function validateAndUnlock(envelope, identity) {
   let l;try{l=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(raw))}catch{throw failure('LICENSE_INVALID')}
   const base=['schema','product','license_id','device_id','public_key_sha256','wrapped_key','max_devices','issued_at','purchase_email'];
   const extra=['account_id','plan','channel','starts_at','expires_at'];
-  if (!object(l) || ![2,3].includes(l.schema) || Object.keys(l).sort().join(',')!==[...base,...(l.schema===3?extra:[])].sort().join(',')) throw failure('LICENSE_INVALID');
+  const memberExtra=['device_policy','account_type','lease_expires_at'];
+  if (!object(l) || ![2,3,4].includes(l.schema) || Object.keys(l).sort().join(',')!==[...base,...(l.schema>=3?extra:[]),...(l.schema===4?memberExtra:[])].sort().join(',')) throw failure('LICENSE_INVALID');
   if (l.product!==PRODUCT || !ID_RE.test(l.license_id) || !HEX_RE.test(l.device_id) || !HEX_RE.test(l.public_key_sha256) || l.device_id!==identity.device_id) throw failure('LICENSE_INVALID');
   const spki=from64(identity.public_key);
   if (spki.length>2048 || hex(await crypto.subtle.digest('SHA-256',spki))!==l.public_key_sha256) throw failure('LICENSE_INVALID');
@@ -113,7 +114,9 @@ export async function validateAndUnlock(envelope, identity) {
     if (!ID_RE.test(l.account_id)) throw failure('LICENSE_INVALID');
     const paid=['monthly','annual','lifetime'].includes(l.plan) && l.channel==='direct' && l.max_devices===3;
     const owner=['trial_7d','evaluation_3m'].includes(l.plan) && l.channel==='owner' && l.max_devices===1;
-    if(!paid&&!owner)throw failure('LICENSE_INVALID');
+    const member=l.schema===4&&l.channel==='membership'&&l.max_devices===0&&l.device_policy==='any_device'&&['individual','family','institution'].includes(l.account_type)&&['monthly','annual','lifetime'].includes(l.plan)&&(l.account_type!=='institution'||l.plan==='annual');
+    if(l.schema===4?!member:(!paid&&!owner))throw failure('LICENSE_INVALID');
+    if(member){const lease=date(l.lease_expires_at);if(lease<=issued||lease>issued+86400000||(l.expires_at!==null&&lease>date(l.expires_at)))throw failure('LICENSE_INVALID');}
     const start=date(l.starts_at); if(start>issued)throw failure('LICENSE_INVALID');
     if(l.plan==='lifetime'){if(l.expires_at!==null)throw failure('LICENSE_INVALID')}
     else {
@@ -131,7 +134,7 @@ export async function validateAndUnlock(envelope, identity) {
 }
 
 function clockTime(access, record, online=false) {
-  if(access.license.plan==='lifetime') return Date.now();
+  if(access.license.plan==='lifetime'&&access.license.schema!==4) return Date.now();
   const now=Date.now(), issued=date(access.license.issued_at), clock=record.clock;
   if(!clock || !Number.isFinite(clock.seen) || clock.issued!==issued || clock.seen<issued)throw failure('CLOCK_STORAGE_UNAVAILABLE');
   if(online && now>issued+TOLERANCE)throw failure('CLOCK_AHEAD');
@@ -146,7 +149,8 @@ function clockTime(access, record, online=false) {
   const effective=Math.max(now,expected,clock.seen,access.seen,issued);
   access.seen=effective;
   if(effective<date(access.license.starts_at))throw failure('CLOCK_ROLLBACK');
-  if(effective>=date(access.license.expires_at))throw failure('ENTITLEMENT_EXPIRED');
+  if(access.license.expires_at!==null&&effective>=date(access.license.expires_at))throw failure('ENTITLEMENT_EXPIRED');
+  if(access.license.schema===4&&effective>=date(access.license.lease_expires_at))throw failure('MEMBERSHIP_CHECK_REQUIRED');
   return effective;
 }
 async function saveClock(record, effective) {
@@ -169,8 +173,11 @@ async function savedAccess() {
   return {identity,record,access:accessCache,marker};
 }
 export async function getAccess() {
-  const {record,access}=await savedAccess();
-  const effective=clockTime(access,record);
+  let {record,access}=await savedAccess();
+  let effective;try{effective=clockTime(access,record)}catch(e){
+    if(e.message!=='MEMBERSHIP_CHECK_REQUIRED'||globalThis.navigator?.onLine===false)throw e;
+    await refreshMembership();({record,access}=await savedAccess());effective=clockTime(access,record);
+  }
   await saveClock(record,effective);
   return {key:access.key,license:access.license};
 }
@@ -266,9 +273,9 @@ export async function decryptAsset(path, encrypted, metadata = {}) {
   try {const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.subarray(0,12),additionalData:ENCODER.encode(PRODUCT+'/'+path),tagLength:128},key,bytes.subarray(12));return await decodeContent(plain,metadata)}
   catch {throw failure('CONTENT_INVALID')}
 }
-async function post(route,input) {
+async function post(route,input,token='') {
   let response;
-  try {response=await fetch(ACTIVATION_URL+route,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input),credentials:'omit',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(35000)})}
+  try {response=await fetch(ACTIVATION_URL+route,{method:'POST',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:JSON.stringify(input),credentials:'omit',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(35000)})}
   catch {throw failure('SERVICE_UNAVAILABLE')}
   let result;try{result=await response.json()}catch{throw failure('SERVICE_UNAVAILABLE')}
   if(!response.ok || result?.ok!==true){const code=result?.error;throw Object.assign(failure(typeof code==='string'&&/^[A-Z_]{3,50}$/.test(code)?code:'SERVICE_UNAVAILABLE'),{status:response.status})}
@@ -286,7 +293,7 @@ async function saveActivation(envelope,identity) {
   const record={envelope,device_id:identity.device_id,clock:{issued,seen:issued}};
   record.clock.seen=clockTime(access,record,true);
   await change((store,done)=>{store.put(record,'activation');done()});
-  accessCache=null;progressSession=null;progressAuthentication=null;
+  accessCache=null;progressSession=null;progressAuthentication=null;memberSession=null;
   return getState();
 }
 function checkPassword(password) {
@@ -307,10 +314,45 @@ export async function loginPassword({email,password}={}) {
   return saveActivation(result.license,identity);
 }
 export async function getState() {
-  let identity;try {identity=await getIdentity();const {license}=await getAccess();return {ok:true,activated:true,error:null,device_id:identity.device_id,license:{plan:license.plan,channel:license.channel,max_devices:license.max_devices,purchase_email:license.purchase_email,starts_at:license.starts_at,expires_at:license.expires_at,issued_at:license.issued_at}}}
+  let identity;try {identity=await getIdentity();const {license}=await getAccess();return {ok:true,activated:true,error:null,device_id:identity.device_id,license:{schema:license.schema,account_type:license.account_type,plan:license.plan,channel:license.channel,max_devices:license.max_devices,purchase_email:license.purchase_email,starts_at:license.starts_at,expires_at:license.expires_at,issued_at:license.issued_at}}}
   catch(error){return {ok:true,activated:false,error:error.message,device_id:identity?.device_id??null,license:null}}
 }
 export async function signOut() {
-  await change((store,done)=>{store.delete('activation');done()});accessCache=null;progressSession=null;progressAuthentication=null;
+  await change((store,done)=>{store.delete('activation');done()});accessCache=null;progressSession=null;progressAuthentication=null;memberSession=null;
 }
 export const lock=signOut;
+
+export async function resendMembershipCode(email){return post('/v1/member/resend',{email});}
+export async function checkMembershipCode({email,code}) {
+  if(typeof email!=='string'||email.length>254||typeof code!=='string'||!/^[0-9]{8}$/.test(code))throw failure('OTP_INVALID');
+  const identity=await createIdentity();const result=await post('/v1/member/check-code',{email:email.trim(),code,device_id:identity.device_id,public_key:identity.public_key});
+  if(!/^[a-f0-9]{64}$/.test(result.setup_token||''))throw failure('SERVICE_UNAVAILABLE');return result;
+}
+export async function setupMembershipPassword({setup_token,new_password}) {
+  const identity=await getIdentity();if(!identity)throw failure('ACTIVATION_REQUIRED');
+  const result=await post('/v1/member/setup',{setup_token,new_password:checkPassword(new_password),device_id:identity.device_id,public_key:identity.public_key});return saveActivation(result.license,identity);
+}
+export async function refreshMembership() {
+  let current;try{current=await savedAccess()}catch(e){if(e.message==='ACTIVATION_REQUIRED')return null;throw e;}
+  if(current.access.license.schema!==4)return null;
+  if(memberSession?.marker===current.marker&&memberSession.expires>Date.now()+15000)return memberSession;
+  if(memberAuthentication?.marker===current.marker)return memberAuthentication.promise;
+  const pending={marker:current.marker};
+  pending.promise=(async()=>{
+    const challenge=await post('/v1/member/challenge',{license:current.record.envelope,public_key:current.identity.public_key});
+    if(!/^[a-f0-9]{48}$/.test(challenge.challenge_id||''))throw failure('SERVICE_UNAVAILABLE');
+    let plain;try{plain=new Uint8Array(await crypto.subtle.decrypt({name:'RSA-OAEP',label:ENCODER.encode(PRODUCT+'/membership-auth')},current.identity.privateKey,from64(challenge.encrypted_nonce)))}catch{throw failure('INVALID_AUTH')}
+    if(plain.byteLength!==32){plain.fill(0);throw failure('INVALID_AUTH');}
+    let result;try{result=await post('/v1/member/authenticate',{challenge_id:challenge.challenge_id,nonce:to64(plain)})}finally{plain.fill(0)}
+    if((await savedAccess()).marker!==current.marker)throw failure('ACCOUNT_CHANGED');
+    const expires=Date.parse(result.expires_at);
+    if(result.account_id!==current.access.license.account_id||!/^[a-f0-9]{64}$/.test(result.token||'')||!Number.isFinite(expires)||expires<=Date.now()||expires>Date.now()+20*60000)throw failure('INVALID_AUTH');
+    const verified=await validateAndUnlock(result.license,current.identity);if(verified.license.account_id!==current.access.license.account_id)throw failure('ACCOUNT_CHANGED');
+    await saveActivation(result.license,current.identity);memberSession={marker:(await savedAccess()).marker,token:result.token,expires};return memberSession;
+  })();memberAuthentication=pending;
+  try{return await pending.promise}catch(e){if(e.message==='ENTITLEMENT_EXPIRED')await signOut();throw e}finally{if(memberAuthentication===pending)memberAuthentication=null}
+}
+export async function requestMembership(action,input={}) {
+  if(!['list','invite','remove'].includes(action))throw failure('INVALID_REQUEST');
+  const session=await refreshMembership();if(!session)throw failure('AUTH_REQUIRED');return post('/v1/member/'+action,input,session.token);
+}

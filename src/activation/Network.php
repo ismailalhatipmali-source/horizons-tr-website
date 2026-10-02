@@ -160,7 +160,7 @@ final class SmtpMailer implements Mailer {
             // Operational parent email only. No child's name, account, or learning data.
             $locales = json_decode((string)file_get_contents(__DIR__ . '/mail-locales.json'), true, 8, JSON_THROW_ON_ERROR);
             $t = $locales[$locale] ?? $locales['en'];
-            $body = "HORIZONS Arabic Level 1\n\n" . $t['label'] . ': ' . $code . "\n\n" . $t['expiry'] . "\n\n" . $t['support'] . "\n\n" . $t['privacy'] . "\n\nhttps://horizons-tr.com/\n";
+            $body = "HORIZONS Arabic Level 1\n\n" . $t['label'] . ': ' . $code . "\n\n" . $t['expiry'] . "\n\n" . $t['support'] . "\n\n" . $t['privacy'] . "\n\nhttps://horizons-tr.com/learn/\n";
             $subject = $this->subject($t['subject']);
             $message = 'From: HORIZONS <' . $from . ">\r\nTo: <" . $email . ">\r\nSubject: " . $subject . "\r\nDate: " . gmdate('D, d M Y H:i:s') . " +0000\r\nMessage-ID: <" . bin2hex(random_bytes(16)) . "@horizons-tr.com>\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($body), 76, "\r\n");
             $this->send($stream, $message . ".\r\n");

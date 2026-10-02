@@ -1,0 +1,29 @@
+<?php
+declare(strict_types=1);
+require __DIR__.'/../src/activation/MembershipService.php';
+require __DIR__.'/../src/activation/Network.php';
+function ok(bool $v):void{if(!$v)throw new RuntimeException('ASSERTION_FAILED');}
+function denied(callable $f,string $code):void{try{$f();}catch(\Horizons\ServiceError $e){if($e->reason!==$code)throw new RuntimeException('EXPECTED_'.$code.'_GOT_'.$e->reason);return;}throw new RuntimeException('EXPECTED_'.$code);}
+function mask(string $seed,int $length):string{$out='';for($i=0;strlen($out)<$length;$i++)$out.=hash('sha256',$seed.pack('N',$i),true);return substr($out,0,$length);}
+function unwrap(string $value,$private,string $label):string{ok(openssl_private_decrypt(base64_decode($value),$raw,$private,OPENSSL_NO_PADDING));$maskedSeed=substr($raw,1,32);$masked=substr($raw,33);$seed=$maskedSeed^mask($masked,32);$db=$masked^mask($seed,strlen($masked));ok(substr($db,0,32)===hash('sha256',$label,true));$tail=ltrim(substr($db,32),"\0");ok($tail[0]==="\x01");return substr($tail,1);}
+$root=sys_get_temp_dir().'/hzn-member-flow-'.bin2hex(random_bytes(8));mkdir($root,0700);
+try{
+ $pair=sodium_crypto_sign_keypair();$key=random_bytes(32);$content=random_bytes(32);file_put_contents($root.'/vault.json',json_encode(['schema'=>1,'product'=>\Horizons\PRODUCT,'signing_private_key'=>base64_encode(sodium_crypto_sign_secretkey($pair)),'content_key'=>base64_encode($content)]));
+ $crypto=new \Horizons\Crypto(['data_key'=>base64_encode($key),'vault_path'=>$root.'/vault.json']);$clock=new class implements \Horizons\Clock{public int $time=1800000000;public function now():int{return $this->time;}};
+ $store=new \Horizons\Store($root.'/activation.sqlite',$clock);$bridge=new \Horizons\MembershipBridge($store,$crypto,$clock);
+ $mail=new class implements \Horizons\Mailer{public array $sent=[];public bool $fail=false;public function code(string $email,string $code,string $locale):void{$this->sent[]=[$email,$code,$locale];if($this->fail)throw new \Horizons\ServiceError('SERVICE_UNAVAILABLE',503);}};
+ $members=new \Horizons\MembershipService($store,$crypto,$mail,$clock);$request=['member_id'=>'school_student','group_id'=>'group_school','account_type'=>'institution','plan'=>'annual','email'=>'student@example.test','starts_at'=>$clock->now(),'expires_at'=>$clock->now()+365*86400,'device_policy'=>'any_device'];$account=$bridge->grantMembership($request);
+ $mail->fail=true;denied(fn()=>$members->deliver(),'SERVICE_UNAVAILABLE');$mail->fail=false;ok($members->deliver());ok($mail->sent[0][1]===$mail->sent[1][1]);ok(!$members->deliver());
+ $rsa=openssl_pkey_new(['private_key_bits'=>2048,'private_key_type'=>OPENSSL_KEYTYPE_RSA]);$pub=preg_replace('/-----[^-]+-----|\s/','',openssl_pkey_get_details($rsa)['key']);$identity=['device_id'=>str_repeat('a',64),'public_key'=>$pub];$input=$identity+['email'=>$request['email'],'code'=>$mail->sent[1][1]];
+ denied(fn()=>$members->issue($request['email'],$identity['device_id'],$pub,hash('sha256',base64_decode($pub))),'PASSWORD_REQUIRED');
+ denied(fn()=>$members->checkCode(array_replace($input,['code'=>'wrong']),'test'),'OTP_INVALID');$setup=$members->checkCode($input,'test');denied(fn()=>$members->checkCode($input,'test'),'OTP_INVALID');
+ $payload=$identity+['setup_token'=>$setup['setup_token'],'new_password'=>'A strong test password 123'];denied(fn()=>$members->setup(array_replace($payload,['device_id'=>str_repeat('b',64)]),'test'),'OTP_INVALID');
+ $result=$members->setup($payload,'test');$license=$crypto->verifyEnvelope($result['license']);ok($license['schema']===4&&$license['device_policy']==='any_device'&&$license['max_devices']===0&&$license['account_id']===$account);ok(\Horizons\timestamp($license['lease_expires_at'])===$clock->now()+86400);ok(unwrap($license['wrapped_key'],$rsa,\Horizons\PRODUCT)===$content);denied(fn()=>$members->setup($payload,'test'),'OTP_INVALID');
+ $clock->time+=601;$members->resend(['email'=>$request['email']],'resend');ok($members->deliver());ok($mail->sent[2][1]!==$mail->sent[1][1]);$members->resend(['email'=>'unknown@example.test'],'resend');ok(!$members->deliver());
+ $service=new \Horizons\Service($store,$crypto,new \Horizons\DisabledPurchases,$mail,$clock,false,0,$members);
+ for($i=1;$i<=5;$i++){$r=$service->passwordLogin(['device_id'=>str_pad(dechex($i),64,'0',STR_PAD_LEFT),'public_key'=>$pub,'email'=>$request['email'],'password'=>$payload['new_password']],'login');ok($crypto->verifyEnvelope($r['license'])['account_id']===$account);}
+ denied(fn()=>$service->passwordLogin($identity+['email'=>$request['email'],'password'=>'incorrect long password'],'login'),'PASSWORD_INVALID');
+ $clock->time+=86401;$challenge=$members->challenge(['license'=>$result['license'],'public_key'=>$pub],'auth');$nonce=unwrap($challenge['encrypted_nonce'],$rsa,\Horizons\PRODUCT.'/membership-auth');$authenticated=$members->authenticate(['challenge_id'=>$challenge['challenge_id'],'nonce'=>base64_encode($nonce)],'auth');ok($members->session($authenticated['token'])['account_id']===$account);
+ denied(fn()=>$members->authenticate(['challenge_id'=>$challenge['challenge_id'],'nonce'=>base64_encode($nonce)],'auth'),'INVALID_AUTH');$bridge->revokeMembership($request['member_id'],$account);denied(fn()=>$members->session($authenticated['token']),'ENTITLEMENT_EXPIRED');denied(fn()=>$members->challenge(['license'=>$authenticated['license'],'public_key'=>$pub],'auth'),'ENTITLEMENT_EXPIRED');denied(fn()=>$service->passwordLogin($identity+['email'=>$request['email'],'password'=>$payload['new_password']],'login'),'ENTITLEMENT_EXPIRED');
+ echo "PASS: real signed activation, durable fake-mail retry, one-use code, password setup, six devices, offline lease renewal, revoked session denied.\n";
+}finally{unset($service,$members,$bridge,$store);foreach(glob($root.'/*')as $p)unlink($p);rmdir($root);}

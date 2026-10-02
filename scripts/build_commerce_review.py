@@ -13,7 +13,7 @@ SRC = ROOT / 'src/commerce'
 
 def build(dest):
     catalog = json.loads((SRC / 'catalog.json').read_text())
-    if catalog['mode'] != 'review' or catalog['charges_enabled'] is not False:
+    if (catalog['mode'],catalog['charges_enabled']) not in [('review',False),('transfer',True)]:
         raise ValueError('This builder supports review only; use an audited payment service for live checkout.')
     transfer = catalog.get('bank_transfer', {})
     accounts = transfer.get('accounts', {})

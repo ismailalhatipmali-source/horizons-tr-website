@@ -88,25 +88,35 @@ final class Crypto {
         return substr($out, 0, $length);
     }
 
+    public function wrap(string $plain,string $publicKey,string $label):string {
+        [$key,,$k]=self::publicKey($publicKey);$h=32;
+        if(strlen($plain)>$k-2*$h-2)throw new ServiceError('INVALID_REQUEST');
+        $db=hash('sha256',$label,true).str_repeat("\0",$k-strlen($plain)-2*$h-2)."\x01".$plain;
+        $seed=random_bytes($h);$maskedDB=$db^self::mgf1($seed,$k-$h-1);$maskedSeed=$seed^self::mgf1($maskedDB,$h);
+        if(!openssl_public_encrypt("\0".$maskedSeed.$maskedDB,$wrapped,$key,OPENSSL_NO_PADDING))throw new ServiceError('SERVICE_UNAVAILABLE',503);
+        return base64_encode($wrapped);
+    }
+    public function verifyEnvelope(array $envelope):array {
+        if(!is_string($envelope['payload']??null)||!is_string($envelope['signature']??null))throw new ServiceError('INVALID_AUTH',401);
+        $raw=decode64($envelope['payload']);$signature=decode64($envelope['signature'],64);
+        if(!sodium_crypto_sign_verify_detached($signature,$raw,sodium_crypto_sign_publickey_from_secretkey($this->signingKey)))throw new ServiceError('INVALID_AUTH',401);
+        $value=json_decode($raw,true,8,JSON_THROW_ON_ERROR);if(!is_array($value))throw new ServiceError('INVALID_AUTH',401);return $value;
+    }
     public function license(array $entitlement, string $device, string $publicKey, string $purchaseEmail, int $now): array {
         [$key, $der, $k] = self::publicKey($publicKey);
-        // EME-OAEP from RFC 8017 section 7.1.1. PHP 8.2's OAEP default is SHA-1;
-        // encode SHA-256 explicitly, then perform the RSA operation without padding.
-        $h = 32;
-        $db = hash('sha256', PRODUCT, true) . str_repeat("\0", $k - strlen($this->contentKey) - 2 * $h - 2) . "\x01" . $this->contentKey;
-        $seed = random_bytes($h);
-        $maskedDB = $db ^ self::mgf1($seed, $k - $h - 1);
-        $maskedSeed = $seed ^ self::mgf1($maskedDB, $h);
-        if (!openssl_public_encrypt("\0" . $maskedSeed . $maskedDB, $wrapped, $key, OPENSSL_NO_PADDING)) throw new ServiceError('SERVICE_UNAVAILABLE', 503);
-        $payload = encoded([
-            'schema' => 3, 'product' => PRODUCT, 'license_id' => $entitlement['id'],
+        $wrapped=$this->wrap($this->contentKey,$publicKey,PRODUCT);
+        $membership=($entitlement['channel']??'')==='membership';
+        $fields = [
+            'schema' => $membership?4:3, 'product' => PRODUCT, 'license_id' => $entitlement['id'],
             'device_id' => $device, 'public_key_sha256' => hash('sha256', $der),
-            'wrapped_key' => base64_encode($wrapped), 'max_devices' => (int)$entitlement['max_devices'],
+            'wrapped_key' => $wrapped, 'max_devices' => (int)$entitlement['max_devices'],
             'issued_at' => utc($now), 'purchase_email' => $purchaseEmail,
             'account_id' => $entitlement['account_id'], 'plan' => $entitlement['plan'], 'channel' => $entitlement['channel'],
             'starts_at' => utc((int)$entitlement['starts_at']),
             'expires_at' => $entitlement['expires_at'] === null ? null : utc((int)$entitlement['expires_at']),
-        ]);
+        ];
+        if($membership)$fields+=['device_policy'=>'any_device','account_type'=>$entitlement['account_type'],'lease_expires_at'=>utc(min($now+86400,$entitlement['expires_at']??PHP_INT_MAX))];
+        $payload=encoded($fields);
         return ['payload' => base64_encode($payload), 'signature' => base64_encode(sodium_crypto_sign_detached($payload, $this->signingKey))];
     }
 }
@@ -256,6 +266,7 @@ final class Service {
         private readonly Clock $clock = new SystemClock,
         private readonly bool $autoTrialEnabled = false,
         private readonly int $pilotMaxGrants = 0,
+        private readonly ?MembershipService $memberships = null,
     ) {
         if ($this->pilotMaxGrants < 0 || $this->pilotMaxGrants > 100000) throw new ServiceError('SERVICE_UNAVAILABLE', 503);
     }
@@ -322,6 +333,7 @@ final class Service {
         } catch (\Throwable $e) { $this->store->rollback(); throw $e; }
         $email = $this->crypto->open($row['email_cipher']);
         $newHash=$newPassword === null ? null : $this->hashPassword($newPassword);
+        if($this->memberships?->hasAccess($email))return $this->memberships->issue($email,$device,$pub,$keyHash,null,$newHash);
         // Owner activation/recovery works without a configured commercial adapter.
         if ($row['invitation_hash'] !== null) return $this->issueOwner($row, $email, $device, $pub, $keyHash, null, null, $newHash);
         $owner = $this->store->query("SELECT id FROM entitlements WHERE email_hash=? AND channel='owner' AND starts_at IS NOT NULL AND revoked=0 AND expires_at>? ORDER BY expires_at DESC LIMIT 1", [$row['email_hash'], $this->clock->now()])->fetchColumn();
@@ -363,6 +375,7 @@ final class Service {
         $valid=password_verify($this->passwordDigest($password),is_string($account['password_hash']??null)?$account['password_hash']:$dummy);
         if (!$account || !$valid || !is_string($account['password_hash'])) throw new ServiceError('PASSWORD_INVALID',403);
         $version=(int)$account['password_version'];$now=$this->clock->now();
+        if($this->memberships?->hasAccess($address))return $this->memberships->issue($address,$device,$pub,$keyHash,$version);
         $owner=$this->store->query("SELECT id FROM entitlements WHERE email_hash=? AND channel='owner' AND starts_at IS NOT NULL AND revoked=0 AND expires_at>? ORDER BY expires_at DESC LIMIT 1",[$emailHash,$now])->fetchColumn();
         $knownPaid=$this->store->query("SELECT 1 FROM entitlements WHERE email_hash=? AND channel='direct' AND revoked=0 AND (expires_at IS NULL OR expires_at>?) LIMIT 1",[$emailHash,$now])->fetchColumn();
         try {$sale=$this->purchases->find($address);}

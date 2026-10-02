@@ -45,6 +45,7 @@ final class PurchaseLedger
             paid_at TEXT, account_id TEXT
         )");
         $columns = $this->db->query('PRAGMA table_info(purchases)')->fetchAll(PDO::FETCH_COLUMN, 1);
+        if (!in_array('fulfilment_done', $columns, true)) $this->db->exec('ALTER TABLE purchases ADD COLUMN fulfilment_done INTEGER NOT NULL DEFAULT 0');
         if (!in_array('account_type', $columns, true)) $this->db->exec("ALTER TABLE purchases ADD COLUMN account_type TEXT NOT NULL DEFAULT 'individual'");
         $this->db->exec("CREATE TABLE IF NOT EXISTS outbox (
             order_id TEXT NOT NULL REFERENCES purchases(order_id),
@@ -188,4 +189,8 @@ final class PurchaseLedger
         $q->execute([$orderId]);
         return array_map(static fn(array $r): array => ['kind' => $r['kind'], 'payload' => json_decode($r['payload'], true, 512, JSON_THROW_ON_ERROR)], $q->fetchAll(PDO::FETCH_ASSOC));
     }
+    public function unfulfilled():array{return $this->db->query("SELECT * FROM purchases WHERE status IN ('paid','access_ready') AND fulfilment_done=0 ORDER BY paid_at LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);}
+    public function markFulfilled(string $id):void{$this->db->prepare("UPDATE purchases SET fulfilment_done=1 WHERE order_id=? AND status='access_ready'")->execute([$id]);}
+    public function existingAccount(string $email):?string{$q=$this->db->prepare("SELECT account_id FROM purchases WHERE email=? AND status='access_ready' ORDER BY paid_at DESC LIMIT 1");$q->execute([strtolower(trim($email))]);return $q->fetchColumn()?:null;}
+
 }
