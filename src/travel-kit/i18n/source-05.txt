@@ -1,0 +1,46 @@
+<<<HZN0483>>> 35 — Useful answers
+<<<HZN0484>>> 36 — Your trip feedback
+<<<HZN0485>>> 37 — Welcome home
+<<<HZN0486>>> 38 — Final release review [INTERNAL WORKING FILE]
+<<<HZN0487>>> 39 — Workflow and responsibilities [INTERNAL WORKING FILE]
+<<<HZN0488>>> 40 — Trip closeout [INTERNAL WORKING FILE]
+<<<HZN0489>>> Client email scripts
+<<<HZN0490>>> ------------------------------------------
+<<<HZN0491>>> Replace every {{field}} before sending. Keep the subject and body together.
+<<<HZN0492>>> 01 Subject: We received your travel request - {{trip}}
+<<<HZN0493>>> Use when: New inquiry received
+<<<HZN0494>>> Hello {{client}},
+<<<HZN0495>>> Thank you for contacting {{agency}}. Please complete the attached trip brief with your dates, departure point, travelers, budget and essential preferences. Once we have these details, we will confirm the planning scope and next steps with you. Please flag access or dietary requests early so we can check them with suppliers.
+<<<HZN0496>>> Best regards,
+<<<HZN0497>>> {{agency}}
+<<<HZN0498>>> Next step: Document / requirement 04
+<<<HZN0499>>> 02 Subject: A few details to complete your brief
+<<<HZN0500>>> Use when: Required information is missing
+<<<HZN0501>>> We are preparing your trip file and still need: {{details}}. Please send these details by {{due}}, including the relevant time zone. We will confirm any effect on the proposal timeline after receiving them. Please use our agreed secure route for sensitive documents and never send payment-card details by email.
+<<<HZN0502>>> 03 Subject: Your travel proposal is ready - {{quote}}
+<<<HZN0503>>> Use when: Proposal is checked and ready
+<<<HZN0504>>> Your proposal {{quote}} is attached. Please review the total price, currency, included services, exclusions and supplier conditions. The quote is valid until {{due}}, subject to availability. Tell us which option you prefer and any changes you need. Your approval lets us request bookings; supplier confirmation remains a separate step.
+<<<HZN0505>>> Next step: Document / requirement 17
+<<<HZN0506>>> 04 Subject: Following up on your proposal
+<<<HZN0507>>> Use when: No decision before quote expiry
+<<<HZN0508>>> Have you had a chance to review {{quote}}? We can clarify the differences between the options or adjust the proposal to your priorities. The current validity deadline is {{due}}. If you need more time, please let us know so we can check availability and pricing again before proceeding.
+<<<HZN0509>>> Next step: Document / requirement 14
+<<<HZN0510>>> 05 Subject: Your approval has been recorded
+<<<HZN0511>>> Use when: Exact offer version approved
+<<<HZN0512>>> We have recorded your approval of {{quote}} for trip {{trip}}. The agreed details are: {{details}}. We will now coordinate the supplier requests and send the confirmations as they are received. Please follow the agreed payment schedule. We will contact you before accepting any change that requires a new decision or additional cost.
+<<<HZN0513>>> Next step: Document / requirement 19
+<<<HZN0514>>> 06 Subject: Payment reminder - {{installment}}
+<<<HZN0515>>> Use when: Installment deadline approaches
+<<<HZN0516>>> The remaining amount for installment {{installment}} is {{amount}} {{currency}}, due by {{due}}. Please use the secure payment route already agreed with our agency: {{link}}. If you have paid, send the transaction reference so we can reconcile it. Please do not email card details.
+<<<HZN0517>>> Next step: Document / requirement 18
+<<<HZN0518>>> 07 Subject: Outstanding installment - please check
+<<<HZN0519>>> Use when: A balance remains after the due date
+<<<HZN0520>>> Our records currently show {{amount}} {{currency}} outstanding on installment {{installment}}, which was due on {{due}}. This amount reflects the payments already recorded. If anything is missing, please send the transaction reference. Otherwise, contact us to confirm the next step before any supplier deadline is affected.
+<<<HZN0521>>> 08 Subject: Payment recorded - {{trip}}
+<<<HZN0522>>> Use when: Payment has been reconciled
+<<<HZN0523>>> We have recorded {{amount}} {{currency}} against installment {{installment}} for trip {{trip}}. Your updated payment statement is attached. Please check the recorded amount and remaining schedule and tell us if anything differs from your records. This message confirms our payment record; supplier booking confirmations are provided separately.
+<<<HZN0524>>> 09 Subject: A change needs your approval - {{trip}}
+<<<HZN0525>>> Use when: Change affects price or arrangements
+<<<HZN0526>>> A change has been proposed for your trip: {{details}}. The price impact is {{amount}} {{currency}}; please see the attached change record for the complete conditions. We need your decision by {{due}}. We will not treat this change as approved until we receive your explicit response and the supplier confirms the revised arrangement.
+<<<HZN0527>>> Next step: Document / requirement 20
+<<<HZN0528>>> 10 Subject: Your final travel file - please review
