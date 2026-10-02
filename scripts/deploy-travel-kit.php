@@ -42,7 +42,7 @@ try{
       ['public','dist/manual-order.html','manual-order.html',null],
       ['public','dist/manual-order.css','manual-order.css','git-sha1:8cb90df0139208e08700c8edf63e8deaaf8d2e87'],
       ['public','dist/manual-order.js','manual-order.js','git-sha1:a8d77e08f6a23a4ae56538593dd858a21d550e0e'],
-      ['public','dist/manual-order-locales.json','manual-order-locales.json',null],
+      ['public','dist/manual-order-locales.json','manual-order-locales.json','git-sha1:97640248a771e39088e85554d728821b46260522'],
       ['public','dist/travel-kit.html','travel-kit.html','git-sha1:e862868f56000d77affd91e342957f1917da0644'],
       ['public','dist/travel-kit.css','travel-kit.css','git-sha1:187bf7a18961e1494b150927a22d99c03da71a72'],
       ['public','dist/travel-kit.js','travel-kit.js','git-sha1:0b2d93929145d5bcff54caa532bf9661410aabf7'],
