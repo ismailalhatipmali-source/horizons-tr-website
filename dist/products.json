@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "2026-10-02",
+  "version": "2026-10-02-manual-orders",
   "mode": "bank_review",
   "collection_enabled": false,
   "card_enabled": false,
@@ -103,16 +103,20 @@
       "name": "Travel Agent Templates & Client Kit",
       "available": true,
       "image": "/assets/covers/en/travel-kit.svg",
-      "fulfilment_adapter": "manual-email-v1",
+      "sales_mode": "manual_email",
+      "fulfilment_adapter": "manual-download-v1",
+      "facts": [
+        "40 reusable document pages",
+        "10 operations workbook sheets",
+        "12 client email scripts"
+      ],
       "offers": [
         {
-          "id": "business-lifetime",
-          "account_type": "business",
-          "term": "lifetime",
+          "id": "single-business",
+          "label": "One-business licence",
           "price_minor": 2900,
           "currency": "USD",
-          "tax_included": true,
-          "max_learners": 0
+          "tax_included": true
         }
       ]
     }
