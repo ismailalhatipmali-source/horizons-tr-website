@@ -5,7 +5,7 @@ namespace HorizonsCheckout;
 /** Separate, non-payable bank-review records. Never imports the licence issuer. */
 final class ReviewOrders {
     private \PDO $db;
-    public function __construct(string $file, private readonly string $key, private readonly array $catalog) {
+    public function __construct(string $file, private readonly string $key, private readonly array $catalog, private readonly ?ExchangeRates $fx=null) {
         if (strlen($key)!==SODIUM_CRYPTO_SECRETBOX_KEYBYTES || is_link($file)) throw new \RuntimeException('CONFIGURATION');
         $this->db=new \PDO('sqlite:'.$file,null,null,[\PDO::ATTR_ERRMODE=>\PDO::ERRMODE_EXCEPTION]);
         chmod($file,0600);
@@ -18,13 +18,14 @@ final class ReviewOrders {
     }
     public function create(array $input,string $client,string $ip,int $now):array {
         if(($this->catalog['mode']??'')!=='bank_review'||($this->catalog['collection_enabled']??true)!==false)throw new \RuntimeException('REVIEW_UNAVAILABLE');
-        if(array_diff(array_keys($input),['request_id','product','offer','method','buyer','terms_accepted','privacy_read','permanent_acknowledged','policy_version','locale']))throw new \RuntimeException('INVALID_REQUEST');
+        if(array_diff(array_keys($input),['request_id','product','offer','method','buyer','terms_accepted','privacy_read','permanent_acknowledged','policy_version','locale','quote_token']))throw new \RuntimeException('INVALID_REQUEST');
         $request=$input['request_id']??'';
         if(!is_string($request)||!preg_match('/^[a-f0-9]{32}$/D',$request)||!is_string($input['product']??null)||!is_string($input['offer']??null))throw new \RuntimeException('INVALID_REQUEST');
         $product=$this->catalog['products'][$input['product']]??null;
         if(!$product||($product['available']??false)!==true)throw new \RuntimeException('PRODUCT_UNAVAILABLE');
         $offer=null;foreach($product['offers'] as $candidate)if($candidate['id']===$input['offer'])$offer=$candidate;
         if(!$offer)throw new \RuntimeException('OFFER_UNAVAILABLE');
+        $quote=$this->fx?->verify(is_string($input['quote_token']??null)?$input['quote_token']:'',$product['id'],$offer,$now);
         if(($input['method']??'')!=='transfer')throw new \RuntimeException('CARD_NOT_ENABLED');
         if(($input['terms_accepted']??false)!==true||($input['privacy_read']??false)!==true||($input['policy_version']??'')!==$this->catalog['policy_version'])throw new \RuntimeException('CONSENT_REQUIRED');
         if(in_array($offer['account_type']??'', ['individual','family'],true)&&($input['permanent_acknowledged']??false)!==true)throw new \RuntimeException('CONSENT_REQUIRED');
@@ -44,7 +45,8 @@ final class ReviewOrders {
         if($buyer['billing']==='company'&&!preg_match('/^[0-9]{10,11}$/D',$buyer['tax_id']))throw new \RuntimeException('INVALID_BUYER');
         $locale=$input['locale']??'en';if(!is_string($locale)||!preg_match('/^[a-z]{2}$/D',$locale))throw new \RuntimeException('INVALID_REQUEST');
         $payload=['schema'=>1,'mode'=>'bank_review','payment_status'=>'unpaid','status'=>'review_only','product'=>$product['id'],'product_name'=>$product['name'],'offer'=>$offer,'buyer'=>$buyer,'method'=>'transfer','locale'=>$locale,'policy_version'=>$this->catalog['policy_version'],'terms_accepted'=>true,'privacy_read'=>true,'permanent_acknowledged'=>$input['permanent_acknowledged']??false,'created_at'=>gmdate('c',$now),'fulfilment_status'=>'not_started','invoice_status'=>'not_issued'];
-        $fingerprint=hash_hmac('sha256',json_encode([$product['id'],$offer,$buyer,$locale,$payload['policy_version']],JSON_THROW_ON_ERROR),$this->key);
+        if($quote)$payload['quote']=$quote;
+        $fingerprint=hash_hmac('sha256',json_encode([$product['id'],$offer,$buyer,$locale,$payload['policy_version'],$quote],JSON_THROW_ON_ERROR),$this->key);
         $requestHash=hash_hmac('sha256',$client.':'.$request,$this->key);
         $bucket=hash_hmac('sha256','ip:'.$ip,$this->key);$window=intdiv($now,3600);
         $this->db->exec('BEGIN IMMEDIATE');

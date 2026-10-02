@@ -1,0 +1,21 @@
+{
+  "version": "1.5.0",
+  "type": "browser-workbook-launcher",
+  "platform": "Windows x64",
+  "url": "https://horizons-tr.com/learn/",
+  "authenticode_signed": false,
+  "files": {
+    "HORIZONS-Arabic-Setup-1.5.0.exe": {
+      "bytes": 188948,
+      "sha256": "2c00031748d7a3d3dcd761fa08bfe6b6685236cce8ed5916d1eac2887508678c"
+    },
+    "Horizons-Arabic.exe": {
+      "bytes": 43008,
+      "sha256": "02013b027ac805892ad876f8a10ce169a7e7713b4c48dc6d93b805f13ab37293"
+    },
+    "app.ico": {
+      "bytes": 24282,
+      "sha256": "e02fa6c981c8975333e421a132cace5c629b1681842ae7fb77bd875a21cf17d8"
+    }
+  }
+}

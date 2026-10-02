@@ -1,0 +1,130 @@
+{
+  "en": {
+    "download": "Install for Windows",
+    "note": "Optional: adds an icon that opens the workbook in your browser. Windows 10/11, 64-bit."
+  },
+  "ar": {
+    "download": "تثبيت أيقونة الكراسة لويندوز",
+    "note": "اختياري: يضيف أيقونة تفتح الكراسة في متصفحك. ويندوز 10 أو 11، إصدار 64 بت."
+  },
+  "tr": {
+    "download": "Windows için yükle",
+    "note": "İsteğe bağlı: çalışma kitabını tarayıcınızda açan bir simge ekler. Windows 10/11, 64 bit."
+  },
+  "fr": {
+    "download": "Installer pour Windows",
+    "note": "Facultatif : ajoute une icône ouvrant le cahier dans votre navigateur. Windows 10/11, 64 bits."
+  },
+  "es": {
+    "download": "Instalar para Windows",
+    "note": "Opcional: añade un icono que abre el cuaderno en tu navegador. Windows 10/11, 64 bits."
+  },
+  "de": {
+    "download": "Für Windows installieren",
+    "note": "Optional: fügt ein Symbol hinzu, das das Arbeitsheft im Browser öffnet. Windows 10/11, 64 Bit."
+  },
+  "it": {
+    "download": "Installa per Windows",
+    "note": "Facoltativo: aggiunge un’icona che apre il quaderno nel browser. Windows 10/11, 64 bit."
+  },
+  "pt": {
+    "download": "Instalar para Windows",
+    "note": "Opcional: adiciona um ícone que abre o caderno no navegador. Windows 10/11, 64 bits."
+  },
+  "nl": {
+    "download": "Installeren voor Windows",
+    "note": "Optioneel: voegt een pictogram toe dat het werkboek in je browser opent. Windows 10/11, 64-bits."
+  },
+  "ru": {
+    "download": "Установить для Windows",
+    "note": "Необязательно: добавляет значок для открытия тетради в браузере. Windows 10/11, 64 бита."
+  },
+  "uk": {
+    "download": "Установити для Windows",
+    "note": "Необов’язково: додає значок для відкриття зошита в браузері. Windows 10/11, 64 біти."
+  },
+  "pl": {
+    "download": "Zainstaluj dla Windows",
+    "note": "Opcjonalnie: dodaje ikonę otwierającą zeszyt w przeglądarce. Windows 10/11, 64 bity."
+  },
+  "cs": {
+    "download": "Nainstalovat pro Windows",
+    "note": "Volitelné: přidá ikonu pro otevření sešitu v prohlížeči. Windows 10/11, 64 bitů."
+  },
+  "ro": {
+    "download": "Instalează pentru Windows",
+    "note": "Opțional: adaugă o pictogramă care deschide caietul în browser. Windows 10/11, 64 de biți."
+  },
+  "hu": {
+    "download": "Telepítés Windowsra",
+    "note": "Opcionális: ikont ad hozzá, amely a böngészőben nyitja meg a munkafüzetet. Windows 10/11, 64 bites."
+  },
+  "el": {
+    "download": "Εγκατάσταση για Windows",
+    "note": "Προαιρετικό: προσθέτει εικονίδιο που ανοίγει το τετράδιο στο πρόγραμμα περιήγησης. Windows 10/11, 64 bit."
+  },
+  "sv": {
+    "download": "Installera för Windows",
+    "note": "Valfritt: lägger till en ikon som öppnar arbetsboken i webbläsaren. Windows 10/11, 64 bitar."
+  },
+  "da": {
+    "download": "Installer til Windows",
+    "note": "Valgfrit: tilføjer et ikon, der åbner arbejdsbogen i din browser. Windows 10/11, 64-bit."
+  },
+  "no": {
+    "download": "Installer for Windows",
+    "note": "Valgfritt: legger til et ikon som åpner arbeidsboken i nettleseren. Windows 10/11, 64-bit."
+  },
+  "fi": {
+    "download": "Asenna Windowsille",
+    "note": "Valinnainen: lisää kuvakkeen, joka avaa työkirjan selaimessasi. Windows 10/11, 64-bittinen."
+  },
+  "bg": {
+    "download": "Инсталиране за Windows",
+    "note": "По избор: добавя икона, която отваря тетрадката в браузъра. Windows 10/11, 64 бита."
+  },
+  "sr": {
+    "download": "Инсталирај за Windows",
+    "note": "Опционо: додаје икону која отвара радну свеску у прегледачу. Windows 10/11, 64 бита."
+  },
+  "hr": {
+    "download": "Instaliraj za Windows",
+    "note": "Neobavezno: dodaje ikonu koja otvara radnu bilježnicu u pregledniku. Windows 10/11, 64 bita."
+  },
+  "he": {
+    "download": "התקנה ל-Windows",
+    "note": "לבחירה: מוסיף סמל שפותח את חוברת הלימוד בדפדפן. Windows 10/11, ‏64 סיביות."
+  },
+  "fa": {
+    "download": "نصب برای ویندوز",
+    "note": "اختیاری: نمادی اضافه می‌کند که دفتر تمرین را در مرورگر باز می‌کند. ویندوز ۱۰ یا ۱۱، نسخهٔ ۶۴ بیتی."
+  },
+  "ur": {
+    "download": "ونڈوز کے لیے انسٹال کریں",
+    "note": "اختیاری: ایک آئیکن شامل کرتا ہے جو مشقی کتاب کو آپ کے براؤزر میں کھولتا ہے۔ ونڈوز 10 یا 11، 64 بٹ۔"
+  },
+  "hi": {
+    "download": "Windows के लिए इंस्टॉल करें",
+    "note": "वैकल्पिक: एक आइकन जोड़ता है जो कार्यपुस्तिका को आपके ब्राउज़र में खोलता है। Windows 10/11, 64-बिट।"
+  },
+  "bn": {
+    "download": "Windows-এর জন্য ইনস্টল করুন",
+    "note": "ঐচ্ছিক: একটি আইকন যোগ করে যা আপনার ব্রাউজারে অনুশীলন বই খুলবে। Windows 10/11, 64-বিট।"
+  },
+  "id": {
+    "download": "Instal untuk Windows",
+    "note": "Opsional: menambahkan ikon yang membuka buku latihan di browser Anda. Windows 10/11, 64-bit."
+  },
+  "ms": {
+    "download": "Pasang untuk Windows",
+    "note": "Pilihan: menambah ikon yang membuka buku latihan dalam pelayar anda. Windows 10/11, 64-bit."
+  },
+  "zh": {
+    "download": "安装 Windows 启动图标",
+    "note": "可选：添加一个在浏览器中打开练习册的图标。适用于 Windows 10/11，64 位。"
+  },
+  "ja": {
+    "download": "Windows 用にインストール",
+    "note": "任意：ブラウザーでワークブックを開くアイコンを追加します。Windows 10/11、64 ビット。"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "en": {
+    "pay_currency": "Payment currency",
+    "fx_total": "Total in the selected currency",
+    "fx_details": "Rate source: {source} · Date: {date} · Conversion margin: {margin}% · Valid until: {until}",
+    "fx_refresh": "Refresh exchange rate",
+    "fx_error": "A current rate is unavailable. Choose USD or try again.",
+    "fx_expired": "This quote expired. Refresh the rate and review the total."
+  },
+  "ar": {
+    "pay_currency": "عملة الدفع",
+    "fx_total": "الإجمالي بالعملة المختارة",
+    "fx_details": "مصدر السعر: {source} · التاريخ: {date} · هامش التحويل: {margin}% · صالح حتى: {until}",
+    "fx_refresh": "تحديث سعر الصرف",
+    "fx_error": "تعذّر جلب سعر حديث. اختر الدولار أو حاول مجددًا.",
+    "fx_expired": "انتهى عرض السعر. حدّث سعر الصرف وراجع الإجمالي."
+  },
+  "tr": {
+    "pay_currency": "Ödeme para birimi",
+    "fx_total": "Seçilen para biriminde toplam",
+    "fx_details": "Kur kaynağı: {source} · Tarih: {date} · Dönüşüm marjı: %{margin} · Geçerlilik: {until}",
+    "fx_refresh": "Kuru yenile",
+    "fx_error": "Güncel kur alınamadı. USD seçin veya tekrar deneyin.",
+    "fx_expired": "Teklifin süresi doldu. Kuru yenileyip toplamı kontrol edin."
+  },
+  "fr": {
+    "pay_currency": "Devise de paiement",
+    "fx_total": "Total dans la devise choisie",
+    "fx_details": "Source : {source} · Date : {date} · Marge de conversion : {margin}% · Valable jusqu’à : {until}",
+    "fx_refresh": "Actualiser le taux",
+    "fx_error": "Taux récent indisponible. Choisissez USD ou réessayez.",
+    "fx_expired": "Cette offre a expiré. Actualisez le taux et vérifiez le total."
+  },
+  "es": {
+    "pay_currency": "Moneda de pago",
+    "fx_total": "Total en la moneda elegida",
+    "fx_details": "Fuente: {source} · Fecha: {date} · Margen de conversión: {margin}% · Válido hasta: {until}",
+    "fx_refresh": "Actualizar el cambio",
+    "fx_error": "No hay un tipo reciente. Elige USD o inténtalo de nuevo.",
+    "fx_expired": "La oferta ha caducado. Actualiza el cambio y revisa el total."
+  },
+  "de": {
+    "pay_currency": "Zahlungswährung",
+    "fx_total": "Gesamtbetrag in der gewählten Währung",
+    "fx_details": "Quelle: {source} · Datum: {date} · Umrechnungsmarge: {margin}% · Gültig bis: {until}",
+    "fx_refresh": "Wechselkurs aktualisieren",
+    "fx_error": "Kein aktueller Kurs verfügbar. USD wählen oder erneut versuchen.",
+    "fx_expired": "Dieses Angebot ist abgelaufen. Kurs aktualisieren und Gesamtbetrag prüfen."
+  },
+  "it": {
+    "pay_currency": "Valuta di pagamento",
+    "fx_total": "Totale nella valuta scelta",
+    "fx_details": "Fonte: {source} · Data: {date} · Margine di conversione: {margin}% · Valido fino a: {until}",
+    "fx_refresh": "Aggiorna il cambio",
+    "fx_error": "Tasso recente non disponibile. Scegli USD o riprova.",
+    "fx_expired": "Il preventivo è scaduto. Aggiorna il cambio e verifica il totale."
+  },
+  "pt": {
+    "pay_currency": "Moeda de pagamento",
+    "fx_total": "Total na moeda escolhida",
+    "fx_details": "Fonte: {source} · Data: {date} · Margem de conversão: {margin}% · Válido até: {until}",
+    "fx_refresh": "Atualizar câmbio",
+    "fx_error": "Taxa recente indisponível. Escolha USD ou tente novamente.",
+    "fx_expired": "A cotação expirou. Atualize o câmbio e confira o total."
+  },
+  "nl": {
+    "pay_currency": "Betaalvaluta",
+    "fx_total": "Totaal in de gekozen valuta",
+    "fx_details": "Bron: {source} · Datum: {date} · Wisselmarge: {margin}% · Geldig tot: {until}",
+    "fx_refresh": "Wisselkoers vernieuwen",
+    "fx_error": "Geen recente koers beschikbaar. Kies USD of probeer opnieuw.",
+    "fx_expired": "Deze prijsopgave is verlopen. Vernieuw de koers en controleer het totaal."
+  },
+  "ru": {
+    "pay_currency": "Валюта оплаты",
+    "fx_total": "Итого в выбранной валюте",
+    "fx_details": "Источник: {source} · Дата: {date} · Наценка за конвертацию: {margin}% · Действует до: {until}",
+    "fx_refresh": "Обновить курс",
+    "fx_error": "Свежий курс недоступен. Выберите USD или повторите попытку.",
+    "fx_expired": "Срок расчёта истёк. Обновите курс и проверьте итог."
+  },
+  "uk": {
+    "pay_currency": "Валюта оплати",
+    "fx_total": "Разом у вибраній валюті",
+    "fx_details": "Джерело: {source} · Дата: {date} · Націнка за конвертацію: {margin}% · Чинний до: {until}",
+    "fx_refresh": "Оновити курс",
+    "fx_error": "Свіжий курс недоступний. Виберіть USD або спробуйте ще раз.",
+    "fx_expired": "Термін розрахунку минув. Оновіть курс і перевірте суму."
+  },
+  "pl": {
+    "pay_currency": "Waluta płatności",
+    "fx_total": "Suma w wybranej walucie",
+    "fx_details": "Źródło: {source} · Data: {date} · Marża wymiany: {margin}% · Ważne do: {until}",
+    "fx_refresh": "Odśwież kurs",
+    "fx_error": "Aktualny kurs jest niedostępny. Wybierz USD lub spróbuj ponownie.",
+    "fx_expired": "Wycena wygasła. Odśwież kurs i sprawdź sumę."
+  },
+  "cs": {
+    "pay_currency": "Měna platby",
+    "fx_total": "Celkem ve zvolené měně",
+    "fx_details": "Zdroj: {source} · Datum: {date} · Kurzová marže: {margin}% · Platnost do: {until}",
+    "fx_refresh": "Aktualizovat kurz",
+    "fx_error": "Aktuální kurz není dostupný. Zvolte USD nebo to zkuste znovu.",
+    "fx_expired": "Nabídka vypršela. Aktualizujte kurz a zkontrolujte částku."
+  },
+  "ro": {
+    "pay_currency": "Moneda plății",
+    "fx_total": "Total în moneda aleasă",
+    "fx_details": "Sursă: {source} · Data: {date} · Marjă de conversie: {margin}% · Valabil până la: {until}",
+    "fx_refresh": "Actualizează cursul",
+    "fx_error": "Cursul actual nu este disponibil. Alege USD sau încearcă din nou.",
+    "fx_expired": "Oferta a expirat. Actualizează cursul și verifică totalul."
+  },
+  "hu": {
+    "pay_currency": "Fizetési pénznem",
+    "fx_total": "Összeg a választott pénznemben",
+    "fx_details": "Forrás: {source} · Dátum: {date} · Átváltási felár: {margin}% · Érvényes eddig: {until}",
+    "fx_refresh": "Árfolyam frissítése",
+    "fx_error": "Nincs friss árfolyam. Válasszon USD-t vagy próbálja újra.",
+    "fx_expired": "Az ajánlat lejárt. Frissítse az árfolyamot és ellenőrizze az összeget."
+  },
+  "el": {
+    "pay_currency": "Νόμισμα πληρωμής",
+    "fx_total": "Σύνολο στο επιλεγμένο νόμισμα",
+    "fx_details": "Πηγή: {source} · Ημερομηνία: {date} · Περιθώριο μετατροπής: {margin}% · Ισχύει έως: {until}",
+    "fx_refresh": "Ανανέωση ισοτιμίας",
+    "fx_error": "Δεν υπάρχει πρόσφατη ισοτιμία. Επιλέξτε USD ή δοκιμάστε ξανά.",
+    "fx_expired": "Η προσφορά έληξε. Ανανεώστε την ισοτιμία και ελέγξτε το σύνολο."
+  },
+  "sv": {
+    "pay_currency": "Betalningsvaluta",
+    "fx_total": "Totalt i vald valuta",
+    "fx_details": "Källa: {source} · Datum: {date} · Växlingspåslag: {margin}% · Giltigt till: {until}",
+    "fx_refresh": "Uppdatera växelkurs",
+    "fx_error": "Ingen aktuell kurs tillgänglig. Välj USD eller försök igen.",
+    "fx_expired": "Offerten har löpt ut. Uppdatera kursen och kontrollera summan."
+  },
+  "da": {
+    "pay_currency": "Betalingsvaluta",
+    "fx_total": "I alt i den valgte valuta",
+    "fx_details": "Kilde: {source} · Dato: {date} · Vekselpåslag: {margin}% · Gyldig til: {until}",
+    "fx_refresh": "Opdater valutakurs",
+    "fx_error": "En aktuel kurs er ikke tilgængelig. Vælg USD eller prøv igen.",
+    "fx_expired": "Tilbuddet er udløbet. Opdater kursen og kontrollér beløbet."
+  },
+  "no": {
+    "pay_currency": "Betalingsvaluta",
+    "fx_total": "Totalt i valgt valuta",
+    "fx_details": "Kilde: {source} · Dato: {date} · Valutapåslag: {margin}% · Gyldig til: {until}",
+    "fx_refresh": "Oppdater valutakurs",
+    "fx_error": "Ingen aktuell kurs tilgjengelig. Velg USD eller prøv igjen.",
+    "fx_expired": "Tilbudet har utløpt. Oppdater kursen og kontroller totalen."
+  },
+  "fi": {
+    "pay_currency": "Maksuvaluutta",
+    "fx_total": "Yhteensä valitussa valuutassa",
+    "fx_details": "Lähde: {source} · Päivä: {date} · Vaihtomarginaali: {margin}% · Voimassa asti: {until}",
+    "fx_refresh": "Päivitä vaihtokurssi",
+    "fx_error": "Tuoretta kurssia ei ole saatavilla. Valitse USD tai yritä uudelleen.",
+    "fx_expired": "Tarjous on vanhentunut. Päivitä kurssi ja tarkista summa."
+  },
+  "bg": {
+    "pay_currency": "Валута на плащане",
+    "fx_total": "Общо в избраната валута",
+    "fx_details": "Източник: {source} · Дата: {date} · Надценка за превалутиране: {margin}% · Валидно до: {until}",
+    "fx_refresh": "Обнови курса",
+    "fx_error": "Няма актуален курс. Изберете USD или опитайте отново.",
+    "fx_expired": "Офертата е изтекла. Обновете курса и проверете сумата."
+  },
+  "sr": {
+    "pay_currency": "Валута плаћања",
+    "fx_total": "Укупно у изабраној валути",
+    "fx_details": "Извор: {source} · Датум: {date} · Маржа конверзије: {margin}% · Важи до: {until}",
+    "fx_refresh": "Освежи курс",
+    "fx_error": "Актуелни курс није доступан. Изаберите USD или покушајте поново.",
+    "fx_expired": "Понуда је истекла. Освежите курс и проверите износ."
+  },
+  "hr": {
+    "pay_currency": "Valuta plaćanja",
+    "fx_total": "Ukupno u odabranoj valuti",
+    "fx_details": "Izvor: {source} · Datum: {date} · Marža konverzije: {margin}% · Vrijedi do: {until}",
+    "fx_refresh": "Osvježi tečaj",
+    "fx_error": "Aktualni tečaj nije dostupan. Odaberite USD ili pokušajte ponovno.",
+    "fx_expired": "Ponuda je istekla. Osvježite tečaj i provjerite iznos."
+  },
+  "he": {
+    "pay_currency": "מטבע תשלום",
+    "fx_total": "סך הכול במטבע שנבחר",
+    "fx_details": "מקור: {source} · תאריך: {date} · מרווח המרה: {margin}% · בתוקף עד: {until}",
+    "fx_refresh": "עדכון שער החליפין",
+    "fx_error": "שער עדכני אינו זמין. בחרו USD או נסו שוב.",
+    "fx_expired": "תוקף ההצעה פג. עדכנו את השער ובדקו את הסכום."
+  },
+  "fa": {
+    "pay_currency": "ارز پرداخت",
+    "fx_total": "مجموع به ارز انتخابی",
+    "fx_details": "منبع: {source} · تاریخ: {date} · حاشیه تبدیل: {margin}% · معتبر تا: {until}",
+    "fx_refresh": "به‌روزرسانی نرخ ارز",
+    "fx_error": "نرخ تازه در دسترس نیست. دلار را انتخاب کنید یا دوباره تلاش کنید.",
+    "fx_expired": "اعتبار قیمت پایان یافت. نرخ را به‌روز و مبلغ را بررسی کنید."
+  },
+  "ur": {
+    "pay_currency": "ادائیگی کی کرنسی",
+    "fx_total": "منتخب کرنسی میں کل رقم",
+    "fx_details": "ماخذ: {source} · تاریخ: {date} · تبدیلی کا مارجن: {margin}% · کارآمد تا: {until}",
+    "fx_refresh": "شرح مبادلہ تازہ کریں",
+    "fx_error": "تازہ شرح دستیاب نہیں۔ USD منتخب کریں یا دوبارہ کوشش کریں۔",
+    "fx_expired": "اس قیمت کی مدت ختم ہوگئی۔ شرح تازہ کریں اور کل رقم دیکھیں۔"
+  },
+  "hi": {
+    "pay_currency": "भुगतान की मुद्रा",
+    "fx_total": "चुनी गई मुद्रा में कुल",
+    "fx_details": "स्रोत: {source} · तारीख: {date} · विनिमय मार्जिन: {margin}% · मान्य समय: {until}",
+    "fx_refresh": "विनिमय दर अपडेट करें",
+    "fx_error": "नई दर उपलब्ध नहीं है। USD चुनें या फिर कोशिश करें।",
+    "fx_expired": "इस मूल्य की अवधि समाप्त हो गई। दर अपडेट करके कुल राशि जाँचें।"
+  },
+  "bn": {
+    "pay_currency": "পরিশোধের মুদ্রা",
+    "fx_total": "নির্বাচিত মুদ্রায় মোট",
+    "fx_details": "উৎস: {source} · তারিখ: {date} · রূপান্তর মার্জিন: {margin}% · মেয়াদ: {until}",
+    "fx_refresh": "বিনিময় হার হালনাগাদ করুন",
+    "fx_error": "নতুন হার পাওয়া যাচ্ছে না। USD বেছে নিন বা আবার চেষ্টা করুন।",
+    "fx_expired": "এই মূল্যের মেয়াদ শেষ। হার হালনাগাদ করে মোট দেখুন।"
+  },
+  "id": {
+    "pay_currency": "Mata uang pembayaran",
+    "fx_total": "Total dalam mata uang pilihan",
+    "fx_details": "Sumber: {source} · Tanggal: {date} · Margin konversi: {margin}% · Berlaku hingga: {until}",
+    "fx_refresh": "Perbarui kurs",
+    "fx_error": "Kurs terbaru tidak tersedia. Pilih USD atau coba lagi.",
+    "fx_expired": "Penawaran kedaluwarsa. Perbarui kurs dan periksa total."
+  },
+  "ms": {
+    "pay_currency": "Mata wang pembayaran",
+    "fx_total": "Jumlah dalam mata wang pilihan",
+    "fx_details": "Sumber: {source} · Tarikh: {date} · Margin penukaran: {margin}% · Sah hingga: {until}",
+    "fx_refresh": "Kemas kini kadar",
+    "fx_error": "Kadar terkini tidak tersedia. Pilih USD atau cuba lagi.",
+    "fx_expired": "Tawaran telah tamat. Kemas kini kadar dan semak jumlah."
+  },
+  "zh": {
+    "pay_currency": "支付币种",
+    "fx_total": "所选币种的总额",
+    "fx_details": "来源：{source} · 日期：{date} · 兑换加价：{margin}% · 有效期至：{until}",
+    "fx_refresh": "刷新汇率",
+    "fx_error": "暂无最新汇率。请选择美元或重试。",
+    "fx_expired": "报价已过期。请刷新汇率并核对总额。"
+  },
+  "ja": {
+    "pay_currency": "支払い通貨",
+    "fx_total": "選択した通貨での合計",
+    "fx_details": "出典：{source} · 日付：{date} · 換算マージン：{margin}% · 有効期限：{until}",
+    "fx_refresh": "為替レートを更新",
+    "fx_error": "最新レートを取得できません。USDを選択するか再試行してください。",
+    "fx_expired": "見積もりの期限が切れました。レートを更新し、合計を確認してください。"
+  }
+}

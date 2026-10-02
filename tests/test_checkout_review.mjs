@@ -13,6 +13,7 @@ for(const lang of Object.keys(locales)){
  w.fetch=async(url,opts={})=>{
    if(String(url).includes('countries.json'))return {ok:true,json:async()=>[{code:'TR',name:'Türkiye'},{code:'DE',name:'Germany'}]};
    if(String(url).endsWith('TR.json'))return {ok:true,json:async()=>[['İstanbul','إسطنبول']]};
+   if(String(url).startsWith('/checkout-api/?')){const q=new URL(url,'https://horizons-tr.com').searchParams;return {ok:true,json:async()=>({ok:true,quote:{product:q.get('product'),offer:q.get('offer'),base_minor:999,currency:q.get('currency'),amount_minor:999,margin_bps:0,source:'USD catalog',rate_date:'2026-10-02',expires_at:Math.floor(Date.now()/1000)+900,token:'signed-fixture'}})};}
    if(url==='/checkout-api/'&&!opts.method)return {ok:true,json:async()=>({ok:true,csrf:'test-token',mode:'bank_review',collection_enabled:false})};
    if(url==='/checkout-api/'&&opts.method==='POST'){requests.push(JSON.parse(opts.body));return {ok:true,json:async()=>({ok:true,reference:'HZN-R-20261002-1234567890ABCDEF1234',mode:'bank_review',payment_status:'unpaid',collection_enabled:false,amount_minor:999,currency:'USD'})};}
    throw new Error('Unexpected request: '+url);

@@ -18,12 +18,13 @@ def esc(value):
 def build(dest):
     catalog=json.loads((SRC/'products.json').read_text())
     assert catalog['mode']=='bank_review' and catalog['collection_enabled'] is False and catalog['card_enabled'] is False
-    base=json.loads((SRC/'locales.json').read_text());accounts=json.loads((SRC/'account-locales.json').read_text());extra=json.loads((SRC/'checkout-locales.json').read_text())
+    base=json.loads((SRC/'locales.json').read_text());accounts=json.loads((SRC/'account-locales.json').read_text());extra=json.loads((SRC/'checkout-locales.json').read_text());fx_words=json.loads((SRC/'fx-locales.json').read_text())
     assert set(extra)==set(LANGS) and all(set(v)==set(extra['en']) for v in extra.values())
+    windows_words=json.loads((SRC/'windows-locales.json').read_text())
     for currency,iban in catalog['bank_transfer']['accounts'].items():
         number=''.join(str(ord(c)-55) if c.isalpha() else c for c in iban[4:]+iban[:4]);assert int(number)%97==1
     for lang in LANGS:
-        words={**base[lang],**accounts[lang],**extra[lang]}
+        words={**base[lang],**accounts[lang],**extra[lang],**fx_words[lang]}
         if lang=='tr':words['checkout']='Ödeme'
         t=lambda key:esc(words[key])
         original=(dest/lang/'product.html').read_text()
@@ -35,12 +36,12 @@ def build(dest):
         seller_html='<div class="checkout-seller" lang="tr" dir="ltr"><strong>'+esc(seller['name'])+'</strong><address>'+esc(seller['address'])+'</address><p>MERSİS: '+seller['mersis']+' · İstanbul Ticaret Sicil: '+seller['registry']+'<br/>VKN: '+seller['tax_number']+' · Vergi Dairesi: '+esc(seller['tax_office'])+'</p><a href="tel:'+seller['phone']+'">'+seller['phone']+'</a> · <a href="mailto:'+seller['email']+'">'+seller['email']+'</a></div>'
         links='<nav class="checkout-policy" aria-label="'+t('sales_title')+'">'+''.join('<a data-policy="'+path+'" href="'+path+'" target="_blank" rel="noopener">'+t(key)+'</a>' for path,key in POLICIES.items())+'</nav>'
         bank=catalog['bank_transfer'];bank_html='<div class="checkout-bank"><strong>VakıfBank</strong><p class="commerce-beneficiary" dir="ltr">'+esc(seller['name'])+'</p>'
-        iban=lambda c:'<p><b>'+c+'</b><br/><bdi class="commerce-iban" dir="ltr">'+esc(' '.join(bank['accounts'][c][i:i+4] for i in range(0,26,4)))+'</bdi></p>'
-        bank_html+=iban('TRY')+'<p>'+t('currency_note')+'</p><details><summary>USD / EUR</summary>'+iban('USD')+iban('EUR')+'</details></div>'
+        iban=lambda c:'<p data-bank-currency="'+c+'"><b>'+c+'</b><br/><bdi class="commerce-iban" dir="ltr">'+esc(' '.join(bank['accounts'][c][i:i+4] for i in range(0,26,4)))+'</bdi></p>'
+        bank_html+=iban('USD')+iban('TRY')+iban('EUR')+'<p>'+t('currency_note')+'</p></div>'
         def page(title,body,name,config=False):
             h=head.replace('product.html',name)
             h=re.sub(r'<title>.*?</title>','<title>HORIZONS · '+title+'</title>',h,flags=re.S)
-            h=h.replace('</head>','<link rel="stylesheet" href="../checkout.css?v=20261002-1"/>'+('<script defer src="../checkout.js?v=20261002-1"></script>' if config else '')+'</head>')
+            h=h.replace('</head>','<link rel="stylesheet" href="../checkout.css?v=admin-fx-1"/>'+('<script defer src="../checkout.js?v=admin-fx-1"></script>' if config else '')+'</head>')
             f=foot
             if config:f=f.replace('</body>','<script id="checkout-config" type="application/json">'+encoded({'catalog':catalog,'words':words})+'</script></body>')
             return h+body+f
@@ -52,10 +53,11 @@ def build(dest):
         main+='<fieldset class="checkout-section"><legend>'+t('billing')+'</legend><div class="commerce-fields">'+field('first_name',limit=100)+field('last_name',limit=100)+field('email','email',limit=254)+field('email_confirm','email',limit=254)+field('phone','tel',limit=40,attrs='minlength="7"')
         main+='<label class="commerce-field">'+t('country')+'<select name="country_code" required autocomplete="country"><option value="">'+t('country')+'</option></select></label>'+field('city',limit=100,attrs='list="commerce-cities"')+'<datalist id="commerce-cities"></datalist>'+field('address',limit=500)+field('postal',required=False,limit=32)
         main+='<label class="commerce-field">'+t('billing')+'<select name="billing"><option value="individual">'+t('individual')+'</option><option value="company">'+t('company')+'</option></select></label><div class="commerce-fields commerce-company" data-company hidden>'+field('company_name',required=False,limit=200)+field('tax_number',required=False,limit=11,attrs='inputmode="numeric" pattern="[0-9]{10,11}"').replace('name="tax_number"','name="tax_id"')+field('tax_office',required=False,limit=100)+'</div></div></fieldset>'
-        main+='<fieldset class="commerce-methods checkout-section"><legend>'+t('payment')+'</legend><label><input type="radio" name="method" value="transfer" checked/><span class="checkout-method-label">Havale / EFT / FAST<small>Türkiye · TRY</small></span></label><label><input type="radio" name="method" value="card"/><span class="checkout-method-label">'+t('card_title')+'<small>VakıfBank Sanal POS · '+t('unavailable')+'</small></span></label></fieldset><div data-card-panel class="checkout-notice" hidden>'+t('card_note')+'</div><div data-transfer-panel class="checkout-notice"><p>'+t('turkey_only')+'</p><p>'+t('currency_note')+'</p></div><p data-country-note class="commerce-small">'+t('turkey_only')+'</p>'
+        main+='<fieldset class="commerce-methods checkout-section"><legend>'+t('payment')+'</legend><label><input type="radio" name="method" value="transfer" checked/><span class="checkout-method-label"><span data-transfer-title>Havale</span><small data-transfer-currency>Türkiye · USD</small></span></label><label><input type="radio" name="method" value="card"/><span class="checkout-method-label">'+t('card_title')+'<small>VakıfBank Sanal POS · '+t('unavailable')+'</small></span></label></fieldset><div data-card-panel class="checkout-notice" hidden>'+t('card_note')+'</div><div data-transfer-panel class="checkout-notice"><p>'+t('turkey_only')+'</p><p>'+t('currency_note')+'</p></div><p data-country-note class="commerce-small">'+t('turkey_only')+'</p>'
+        main+='<fieldset class="checkout-section checkout-fx"><legend>'+t('pay_currency')+'</legend><label class="commerce-field">'+t('pay_currency')+'<select name="payment_currency"><option value="USD">USD</option><option value="TRY">TRY</option><option value="EUR">EUR</option></select></label><div data-fx-quote role="status"></div><button type="button" class="button ghost" data-fx-refresh>'+t('fx_refresh')+'</button></fieldset>'
         main+=links+'<div class="checkout-notice">'+t('data_note')+'</div><label class="commerce-consent"><input name="consent" type="checkbox" required/><span>'+t('terms_consent')+'</span></label><label class="commerce-consent"><input name="privacy" type="checkbox" required/><span>'+t('privacy_consent')+'</span></label><p class="commerce-email-warning" data-email-warning>'+t('permanent_warning')+'</p><label class="commerce-consent"><input type="checkbox" name="permanent" required/><span>'+t('permanent_consent')+'</span></label><button class="button" type="submit">'+t('review_order')+'</button></form>'
-        main+='<section data-checkout-review id="checkout-review" tabindex="-1" hidden><h2>'+t('review_order')+'</h2><dl id="buyer-summary" data-buyer-summary data-review-fields></dl><h3>'+t('payment')+'</h3><p data-review-method></p><p data-review-card class="checkout-notice" hidden>'+t('card_note')+'</p><p data-review-country class="checkout-notice" hidden>'+t('turkey_only')+'</p><p class="checkout-notice">'+t('review_note')+'</p><div class="checkout-actions"><button type="button" class="button" data-final-submit>'+t('submit_review')+'</button><button type="button" class="button ghost" data-edit>'+t('edit')+'</button></div><div data-receipt tabindex="-1" hidden><p class="checkout-review-only">'+t('pending')+'</p><h3>'+t('reference')+'</h3><p class="checkout-reference" data-reference></p><p>'+t('reference_note')+'</p><button type="button" class="button ghost checkout-print" data-print>'+t('print')+'</button></div></section><p class="checkout-status" role="status" aria-live="polite" data-checkout-status></p></section>'
-        main+='<aside class="commerce-panel checkout-summary"><div class="commerce-item"><img data-product-image src="'+esc(next(iter(catalog['products'].values()))['image'])+'" width="2048" height="1143" alt=""/><div><h2 data-product-name></h2><p data-offer-name></p></div></div><p class="commerce-small" data-product-facts></p><div class="commerce-total"><span>'+t('total')+'</span><strong data-total></strong></div><p>'+t('indicative')+'</p><p class="commerce-small">'+t('billing_note')+'</p>'+bank_html+links+seller_html+'</aside></div></main>'
+        main+='<section data-checkout-review id="checkout-review" tabindex="-1" hidden><h2>'+t('review_order')+'</h2><dl id="buyer-summary" data-buyer-summary data-review-fields></dl><h3>'+t('payment')+'</h3><p data-review-method></p><div data-review-quote class="checkout-notice"></div><p data-review-card class="checkout-notice" hidden>'+t('card_note')+'</p><p data-review-country class="checkout-notice" hidden>'+t('turkey_only')+'</p><p class="checkout-notice">'+t('review_note')+'</p><div class="checkout-actions"><button type="button" class="button" data-final-submit>'+t('submit_review')+'</button><button type="button" class="button ghost" data-edit>'+t('edit')+'</button></div><div data-receipt tabindex="-1" hidden><p class="checkout-review-only">'+t('pending')+'</p><h3>'+t('reference')+'</h3><p class="checkout-reference" data-reference></p><p>'+t('reference_note')+'</p><button type="button" class="button ghost checkout-print" data-print>'+t('print')+'</button></div></section><p class="checkout-status" role="status" aria-live="polite" data-checkout-status></p></section>'
+        main+='<aside class="commerce-panel checkout-summary"><div class="commerce-item"><img data-product-image src="'+esc(next(iter(catalog['products'].values()))['image'])+'" width="2048" height="1143" alt=""/><div><h2 data-product-name></h2><p data-offer-name></p></div></div><p class="commerce-small" data-product-facts></p><div class="commerce-total"><span>'+t('total')+'</span><strong data-total></strong></div><p>'+t('indicative')+'</p><div data-summary-quote class="checkout-notice"></div><p class="commerce-small">'+t('billing_note')+'</p>'+bank_html+links+seller_html+'</aside></div></main>'
         for name in ['checkout.html','cart.html']:(dest/lang/name).write_text(page(t('checkout'),main,name,True))
         # Reuse the site's existing translated consumer-rights clauses without
         # converting a non-payable review form into a completed sales agreement.
@@ -90,12 +92,18 @@ def build(dest):
             (dest/lang/name).write_text(page(t(key),body,name))
         for name in ['index.html','product.html']:
             path=dest/lang/name;s=path.read_text();s=re.sub(r'<a[^>]*data-checkout-buy[^>]*>.*?</a>','',s,flags=re.S)
+            s=re.sub(r'<div class="cta-row">\s*</div>','',s)
             link='<a class="button" data-checkout-buy href="checkout.html?product=horizons-arabic-level1">'+t('buy_now')+'</a>'
             if name=='index.html':
                 match=re.search(r'<article\b[^>]*id="arabic".*?</article>',s,re.S)
                 if not match:raise ValueError('Available product card missing')
                 card=match.group().replace('</article>','<div class="cta-row">'+link+'</div></article>');s=s[:match.start()]+card+s[match.end():]
             else:s=re.sub(r'(<h1>.*?</h1>\s*<p>.*?</p>)',lambda m:m.group()+'<div class="cta-row">'+link+'</div>',s,count=1,flags=re.S)
+            if name=='product.html':
+                s=re.sub(r'<section data-windows-download>.*?</section>','',s,flags=re.S)
+                w=windows_words[lang]
+                block='<section data-windows-download><p><a class="button ghost" href="../downloads/HORIZONS-Arabic-Setup-1.5.0.exe" download>'+esc(w['download'])+'</a></p><p class="commerce-small">'+esc(w['note'])+'</p></section>'
+                s=re.sub(r'(<figure class="product-visual">.*?</figure>)',lambda m:m.group()+block,s,count=1,flags=re.S)
             path.write_text(s)
         for path in (dest/lang).glob('*.html'):
             s=path.read_text().replace('site-commerce.js?v=accounts-3','site-commerce.js?v=checkout-20261002')

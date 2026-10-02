@@ -1,0 +1,1631 @@
+{
+  "version": "admin-fx-20261002",
+  "baseline_local": "cd70e22223bf0700816b0f4655c649bb972e24bd",
+  "production_baseline": "ad0ae268c907cbf40e6373810bf9652d00389efd",
+  "requires": {
+    "learn/web-config.js": "855b5a507dd35d97ad3ab262538671fe7932e76ccc608fc5136ff4db2be579c4",
+    "assets/arabic-workbook-cover-approved.jpg": "ebd1e106f784f1fe235521ab603dc79d988a8bc04f906f0b333a0f0ce71e4ea2"
+  },
+  "files": {
+    "admin/AdminMailer.php": {
+      "source": "src/admin/AdminMailer.php",
+      "bytes": 5347,
+      "sha256": "4f5a0e74f4c292fc4ac361f57c3e3fa24ee67c3faa8dd4c700ba3484ab1060f9",
+      "before": null
+    },
+    "admin/AdminService.php": {
+      "source": "src/admin/AdminService.php",
+      "bytes": 5385,
+      "sha256": "e09b3a8c20be73ba2d82403ea10fdcb5da19674b3a95f55b66115a71c88e30fe",
+      "before": null
+    },
+    "admin/AdminStore.php": {
+      "source": "src/admin/AdminStore.php",
+      "bytes": 10295,
+      "sha256": "df1e5d2ba43693b336cc5423438b28702e48617c0f800b279d0e24e397569e67",
+      "before": null
+    },
+    "private/ExchangeRates.php": {
+      "source": "src/checkout/ExchangeRates.php",
+      "bytes": 7210,
+      "sha256": "d16b3436cd750d37827ce4059a11f4bfeedff6d16f75cd27b96bad1c460d6579",
+      "before": null
+    },
+    "private/ReviewOrders.php": {
+      "source": "src/checkout/ReviewOrders.php",
+      "bytes": 7468,
+      "sha256": "eb0d9c46ac085e80a70d693241a2be506ed756917e2d6ceb7dfd181c967acc00",
+      "before": "cf0357bdf590cbe08505c5a6b5c6b586c8898fe2bdecafc31c5b5d1f4b646d41"
+    },
+    "public/admin/api.php": {
+      "source": "src/admin/public-api.php",
+      "bytes": 9572,
+      "sha256": "9b7064bf96bc3e2e22b74708ea86dcc7985880b06ffe6590e684c8d1765fe3b3",
+      "before": null
+    },
+    "public/checkout-api/index.php": {
+      "source": "src/checkout/public-index.php",
+      "bytes": 3784,
+      "sha256": "11732e04cdbea837ecfe7f48f8e2f75f9b49f369a1eed1c3b86cd85df6b22d69",
+      "before": "f1be17df21d9380e438d59751b76691f34ab6664829957b6139928efbb14d3ee"
+    },
+    "public/checkout.css": {
+      "source": "dist/checkout.css",
+      "bytes": 3826,
+      "sha256": "20c532b138a76ffe12475fa5502e821d2a01fdcf273bd3366c1e2a6fc64b2ba9",
+      "before": "fb266bf9c17dd9708ead697d075d68d3b887e7cfd61e174636dc0cd071531105"
+    },
+    "public/checkout.js": {
+      "source": "dist/checkout.js",
+      "bytes": 13334,
+      "sha256": "587a7c0ca29b22b8a9e36af1b1fe86abdf109ec4ed77822171d87963e6ab1443",
+      "before": "b1338bac788af377e9e8635123dc3759171797c72da90b1260c30a54b10f13f6"
+    },
+    "public/admin/.htaccess": {
+      "source": "src/admin/public.htaccess",
+      "bytes": 539,
+      "sha256": "289d464688ae2bf4fb3e79cea8671f8282dc847efd3bfcdc4bff095f561d4191",
+      "before": null
+    },
+    "public/admin/admin.css": {
+      "source": "src/admin/admin.css",
+      "bytes": 5010,
+      "sha256": "7b12f9a5fd3f72238b353df38ccae8730a818871a38ab3f68c795f7245ac8073",
+      "before": null
+    },
+    "public/admin/admin.js": {
+      "source": "src/admin/admin.js",
+      "bytes": 20652,
+      "sha256": "f3756d8a2fce275fbd0dfcd340e7d5b4f42303e614fda3e4fe761b39815d01a5",
+      "before": null
+    },
+    "public/admin/index.html": {
+      "source": "src/admin/index.html",
+      "bytes": 8133,
+      "sha256": "c3881414f96c0509dbaa59d7b3e533bb7aa07b82c7b59e6b08e922e28b06165b",
+      "before": null
+    },
+    "public/ar/cart.html": {
+      "source": "dist/ar/cart.html",
+      "bytes": 29561,
+      "sha256": "96e68341e7fbce109fec5668f1af2085c289bba890974a7871e0cbb1c8f5fa79",
+      "before": "67795a4d663dd86cd0eb5cdb3cb322245e75d48d3cfb896733b1b0d162a27791"
+    },
+    "public/ar/checkout-privacy.html": {
+      "source": "dist/ar/checkout-privacy.html",
+      "bytes": 15959,
+      "sha256": "32fe5055d617cb082f0e3b658e9d37c3eee8631c99b587f72d03ea8912d2a631",
+      "before": "89b949b36c460107af65f96048a4b8895e75dbab3baf7d43235a471eb1c8f3d0"
+    },
+    "public/ar/checkout.html": {
+      "source": "dist/ar/checkout.html",
+      "bytes": 29825,
+      "sha256": "f38ce8be9f34c653d5c1c3a4b329480bc50980aa551b7d2320ae42a375307b06",
+      "before": "08f4589d5fe61f57d763a7d56efec8785152f63100dbcab581e6857ff3e07240"
+    },
+    "public/ar/distance-sales.html": {
+      "source": "dist/ar/distance-sales.html",
+      "bytes": 16989,
+      "sha256": "df80f3c7292c136dcd2f791bf4721df1b47f4c50ca6d35ee18868296e60010ae",
+      "before": "c3295e792fbb5d2594f64f9f0bf33ac718ba00344fa3a2e18c1db830dfd0ecb6"
+    },
+    "public/ar/index.html": {
+      "source": "dist/ar/index.html",
+      "bytes": 26459,
+      "sha256": "014002fde7264ca73334c8ffaa9588f97d68ebf715009a794b66e4ea923f7666",
+      "before": "a813e435c21b4d1a1ffe03d11d6aecadcb40146a49a7c0283e462031aa361a34"
+    },
+    "public/ar/pre-information.html": {
+      "source": "dist/ar/pre-information.html",
+      "bytes": 16445,
+      "sha256": "d8634a568d10bf6a3f08eafd1ca062ce11c0c5ac89288245980434db8a1f166f",
+      "before": "5cfa5db50825d29350c7d2c6b4860f1fa8207dfa81a4ba414db3b7c2fcc7321a"
+    },
+    "public/ar/product.html": {
+      "source": "dist/ar/product.html",
+      "bytes": 14803,
+      "sha256": "cca2337c19101edcfb86306190cb2f91420fabd60e1c94aafdbaab303f7a2caf",
+      "before": "fae4e76b14a043789c8a095fb8b6beccdff4f1c5d9592fde0d079b47b41729c1"
+    },
+    "public/ar/refund-cancellation.html": {
+      "source": "dist/ar/refund-cancellation.html",
+      "bytes": 14967,
+      "sha256": "17cbd9486f12e7483ef247725cfa26a4821d24ffecb602b01e3e36b861976cf3",
+      "before": "748db4015c1cac6325b18379c885a8d6c048f4eb6b0dfee19cb1d24a9e7c8787"
+    },
+    "public/bg/cart.html": {
+      "source": "dist/bg/cart.html",
+      "bytes": 31351,
+      "sha256": "46d04584aaa922fc1f2e03bef825691df5d43d3f13237c69a8a1e124983caeda",
+      "before": "0aeb38f0a38357526a76ede0ea4985ba6cd20fc2db5c24653842aa4491ef90ed"
+    },
+    "public/bg/checkout-privacy.html": {
+      "source": "dist/bg/checkout-privacy.html",
+      "bytes": 17386,
+      "sha256": "17ac93bab6b0239b0caf2f8a363c1195aa71b7cec22588cee0dd65fae7d71c81",
+      "before": "8aad82f4c500620b76f6772b00c11b72981dab8ec1de6e7fa30f3a4c833aec19"
+    },
+    "public/bg/checkout.html": {
+      "source": "dist/bg/checkout.html",
+      "bytes": 31615,
+      "sha256": "5f829a04e5959be251dffc75f9a7db1136b7600b8bd61a460ec1d4cb7bf6ac66",
+      "before": "061314c4e9b627fc25306cb7e6ea7fba2553110492518e8ec24d630a6b821860"
+    },
+    "public/bg/distance-sales.html": {
+      "source": "dist/bg/distance-sales.html",
+      "bytes": 16937,
+      "sha256": "7eecebe4d736d12f70302fd303714a833852b9dbf9a480e62dd053591672618a",
+      "before": "fa41150e5029c24ff7e144d79d18717e75d76c5ca9a3faa1d5dc49e6d038793b"
+    },
+    "public/bg/index.html": {
+      "source": "dist/bg/index.html",
+      "bytes": 19214,
+      "sha256": "2e7546a59026cd3efe00a9332fbff04bcd652a335b5e6b6ae84cac3b48f0822f",
+      "before": "49ca19911332f12d5736fe2ad996ca250fc6c2279e8d0a8ab15d2c9348c308d7"
+    },
+    "public/bg/pre-information.html": {
+      "source": "dist/bg/pre-information.html",
+      "bytes": 16275,
+      "sha256": "be9377e48cfeaa0e7431a26bab24a6b717d74579143f4e217985ed544cf0694d",
+      "before": "e0044ab7faed1c47d9070d59b455a2b88d2b1d6dea7993420a0cb29617e816db"
+    },
+    "public/bg/product.html": {
+      "source": "dist/bg/product.html",
+      "bytes": 15306,
+      "sha256": "64dec187feec44ee22bcce245dad181be445e86984dd837baa5606dd16993eca",
+      "before": "3b58aee6d8a87df4a1235353732d3d2c34d560cec34b5f5c13891a36695bf96d"
+    },
+    "public/bg/refund-cancellation.html": {
+      "source": "dist/bg/refund-cancellation.html",
+      "bytes": 14495,
+      "sha256": "3c8bc0ef6045f31a0f5e3087ae93ba9a6fdbffffb7c2611c6c29019d40f46c2d",
+      "before": "06b3377a44b1958c9a1bdab99a0a5578f158e04b8ae8c036a13c9fa118e60e64"
+    },
+    "public/bn/cart.html": {
+      "source": "dist/bn/cart.html",
+      "bytes": 34957,
+      "sha256": "8495f3e51d175e5466cb4bde961765791330b903970b5b18f25a62032b230d89",
+      "before": "e7c2a63a46a7ca5f9c96df9a4d1f245d86727ddbe3166e2a095dd759f1025ea1"
+    },
+    "public/bn/checkout-privacy.html": {
+      "source": "dist/bn/checkout-privacy.html",
+      "bytes": 19131,
+      "sha256": "cbdae06d670fd6434e371da99ee2dc7ae0ea28b15b7a4abf9d1d6c3dc33e014b",
+      "before": "c3234df602ab655a580f14ace3a3013db1e2b6d28ffe7eff79e62d544ef36dab"
+    },
+    "public/bn/checkout.html": {
+      "source": "dist/bn/checkout.html",
+      "bytes": 35221,
+      "sha256": "60fdb6f2279e880c6deaf9a7768d1b2afe081c219d17a36027a6af996d6691d0",
+      "before": "417f04d9126991f87684a9f9456393b8fc05ecf8592835605c30ad55f64c82a9"
+    },
+    "public/bn/distance-sales.html": {
+      "source": "dist/bn/distance-sales.html",
+      "bytes": 18572,
+      "sha256": "36a673931faad102f819a0b77ae7e2ecc6f6ec138034bfb274d1c08f75e0b5bd",
+      "before": "ae41fa958b7b78414b97b9800c7c4af11ab8ccf4c503d133786b43f50e5b83ff"
+    },
+    "public/bn/index.html": {
+      "source": "dist/bn/index.html",
+      "bytes": 20602,
+      "sha256": "ed0e34753385269b353c18251924de305bec7a000029e728c214789333074e94",
+      "before": "e0ec30a8b160c1089acf569d7438af450418ede55f6284620a7319af31aa85af"
+    },
+    "public/bn/pre-information.html": {
+      "source": "dist/bn/pre-information.html",
+      "bytes": 17589,
+      "sha256": "c7afaa109af21976147e1642c3c92b8ab323c5fe84edc828cb0562fa14fa4d68",
+      "before": "a1421a46408d39330e2c4285604522ba9fa837cad5130fa15179255a4170e044"
+    },
+    "public/bn/product.html": {
+      "source": "dist/bn/product.html",
+      "bytes": 16732,
+      "sha256": "854034a3354b906bd4aef90913cdcc3e21f4c4d94cae385f77fc612fca36314f",
+      "before": "9b144913b2397a71604146042e58c16c35ea456211174a54ced1a92f50c0b261"
+    },
+    "public/bn/refund-cancellation.html": {
+      "source": "dist/bn/refund-cancellation.html",
+      "bytes": 15274,
+      "sha256": "2b8d78bc30ec3baf35ae44108d0a6ae778e44f0c3145dfafa9807fe1642da149",
+      "before": "5c29589a64ff2d4419c4413fed45bcde62d0e9f227973a335fe174cc39d41a84"
+    },
+    "public/cs/cart.html": {
+      "source": "dist/cs/cart.html",
+      "bytes": 26815,
+      "sha256": "19ce5c850eddfb51e8a798ac08e0d590661e0f83dff25569f193592b76b19f74",
+      "before": "a9c067ee9e52631b4e880b50b4f7c8b69b5a2192be6eddfa77909d9f172d8a69"
+    },
+    "public/cs/checkout-privacy.html": {
+      "source": "dist/cs/checkout-privacy.html",
+      "bytes": 14875,
+      "sha256": "63ce0085c7552cb17a7405e1a504d866231688e1ad7a49bf99486fb7a8c62a03",
+      "before": "7531327cef0dca2a9437f18cc99d6fe0de660b9ac9871bfbb02f3df906de178a"
+    },
+    "public/cs/checkout.html": {
+      "source": "dist/cs/checkout.html",
+      "bytes": 27079,
+      "sha256": "2f97e98f35e5ffaf3dba19182be0cf28b67e26f4871b5d7a8f68cc5003e687e2",
+      "before": "63b9bebdd467adc5f643c44dc57913095dafa02600bc6c537e85316fcd309459"
+    },
+    "public/cs/distance-sales.html": {
+      "source": "dist/cs/distance-sales.html",
+      "bytes": 14858,
+      "sha256": "1b4147feebf6e4ecf2757cc48a72561ee7bb1048ced771ffc501b99489cccfd9",
+      "before": "1b16b3e49af98260e0636d1e4dc928d9190968cd044e7f24da1cbca16de57bf7"
+    },
+    "public/cs/index.html": {
+      "source": "dist/cs/index.html",
+      "bytes": 17053,
+      "sha256": "39928815da5e0d0eab659882c5133364eb6378f397866f9fb786437b3c7cba92",
+      "before": "eba67ebd94e2477b41d8ffae3b323669864a04727fd2977a3b0334af44673039"
+    },
+    "public/cs/pre-information.html": {
+      "source": "dist/cs/pre-information.html",
+      "bytes": 14506,
+      "sha256": "ff20dc3797e460568502fd9d6c0fee4b45fc19157d2ccf98a0fc788379b85ece",
+      "before": "949042148adff16f91e83ccadbe60d4a6ab1659676cbd66333f4b3a3741c1c67"
+    },
+    "public/cs/product.html": {
+      "source": "dist/cs/product.html",
+      "bytes": 13374,
+      "sha256": "d0d3e06b043467a1af8e88bfb482dec5a750401eee39a5a48b31a60d512031df",
+      "before": "8a429032b2b041058dc78f3b91e7582fccd30797f15efdd7fbae649ed97d3978"
+    },
+    "public/cs/refund-cancellation.html": {
+      "source": "dist/cs/refund-cancellation.html",
+      "bytes": 13366,
+      "sha256": "a8e7d8132099c69fe6432983c925bded52f6c4be2de3ef36f9fe288f129257b7",
+      "before": "962952e8a36a9cbe9f25774ac213943307aa9a7137c7a9101dbf33070975c714"
+    },
+    "public/da/cart.html": {
+      "source": "dist/da/cart.html",
+      "bytes": 26458,
+      "sha256": "33a56cfb53c4dd46a5b4b1c3d2dc8f287dec67ae0dea2ffef5cff83f171e184c",
+      "before": "f3b815acb2fbf768d1234961b11bb61624e12f664b258f99d6f2bcc7a7c7738d"
+    },
+    "public/da/checkout-privacy.html": {
+      "source": "dist/da/checkout-privacy.html",
+      "bytes": 14789,
+      "sha256": "2e2b81d598bb2f1ed07f0549a1c130e31b452cd6b1535cdd4218d7b047639581",
+      "before": "bcc047a67df62da07b73cb6fb0d7d59addfa7f367d64400f48786dbe4b0faeb6"
+    },
+    "public/da/checkout.html": {
+      "source": "dist/da/checkout.html",
+      "bytes": 26722,
+      "sha256": "8da0dca118fa8d95524a2dd4b8f33403d5e0cdf4f6570b655da8af4c01823634",
+      "before": "b5bc34ea16b515673bf0846ba8bb7f008c22d9e88917b4e0b40d91d0205f1eb2"
+    },
+    "public/da/distance-sales.html": {
+      "source": "dist/da/distance-sales.html",
+      "bytes": 14829,
+      "sha256": "841943c89a6dd66281f9f751e734f7810be52a9a5f25d2e868aaa91a93c07077",
+      "before": "dbcee4c7c2850b28d0e32dc7f94555bacb0d7c4d57b1c1a8a32c4e4b58fe32a9"
+    },
+    "public/da/index.html": {
+      "source": "dist/da/index.html",
+      "bytes": 16933,
+      "sha256": "1b142042e9aa94138f54b0a0d361e8d5fbbe4bf7e45678b9e7cc73cf8a9c290d",
+      "before": "1cf6a20dc3591833891e2eb884692e8bc87737c322b8430aa6396531529e5e30"
+    },
+    "public/da/pre-information.html": {
+      "source": "dist/da/pre-information.html",
+      "bytes": 14544,
+      "sha256": "a54438374e8e69e5d888a3ca79ac5087dd0736817606bab6740cc3c72a758bbf",
+      "before": "0037d1ad02541750acfbf0b362c08eb39abf20fefa3966e7934b6925a0755cca"
+    },
+    "public/da/product.html": {
+      "source": "dist/da/product.html",
+      "bytes": 13390,
+      "sha256": "9e04846aa9f675ffbd657c3bd03799d4f97d0f4d2c326facfe9338b2eb63652a",
+      "before": "6ac896deea084ce85ee911d7bb5b9bf0277180cc1e1c8584188129b6f9fd94d1"
+    },
+    "public/da/refund-cancellation.html": {
+      "source": "dist/da/refund-cancellation.html",
+      "bytes": 13445,
+      "sha256": "c5e354afb61a91f56c204d6cbf4f4551fdccd43c2601dcb00923307240ffbed6",
+      "before": "ca763154bbf1fde20d8c07859d3c9ead67ba1cfb93a0e7535a247fbaa7e220d3"
+    },
+    "public/de/cart.html": {
+      "source": "dist/de/cart.html",
+      "bytes": 27202,
+      "sha256": "b68b412ef0aa44a42bd4afdefc115d62a7a8f82c9ce8b4412d53e25a4878141e",
+      "before": "f3ddb505adb04e16eb81cfdd675255ba9a1fec92a96a21b2c5ef20b9215d175a"
+    },
+    "public/de/checkout-privacy.html": {
+      "source": "dist/de/checkout-privacy.html",
+      "bytes": 15222,
+      "sha256": "640ec4b5ef9b7ba32440111bac31eec4cc17b87823b3cd0febee792aaf5e48d6",
+      "before": "bec957cdd517424a76e8209a8bdd7c51ebd401c7b9c27e0a8be6bd5c9c9adfc3"
+    },
+    "public/de/checkout.html": {
+      "source": "dist/de/checkout.html",
+      "bytes": 27466,
+      "sha256": "1678abee9c7772327d098e9908d086b3621526301e1ef160e45500b9df89b320",
+      "before": "ac8f3e064abee629bd28c8e96179b5a707a73567c506634ff118864508c81660"
+    },
+    "public/de/distance-sales.html": {
+      "source": "dist/de/distance-sales.html",
+      "bytes": 15043,
+      "sha256": "3af87477568080913c11fb7d506ae0f424f857dba985a590d2f9618b617c538a",
+      "before": "29c48a13e210263342933a5bbf5eda75755e1626c8ecbaf1c69cbf049274ea09"
+    },
+    "public/de/index.html": {
+      "source": "dist/de/index.html",
+      "bytes": 17182,
+      "sha256": "089fc59075ee17cc3708d93461d2a4d5065140f9c9bf312441a039eb946743d6",
+      "before": "c991bb2fbf024b9ba5d36af97f7d45c63beed7b902b97eccd6336ca523c311f5"
+    },
+    "public/de/pre-information.html": {
+      "source": "dist/de/pre-information.html",
+      "bytes": 14655,
+      "sha256": "6f4c0618a16299a4a178b9b70bce8eefd7e1b54d726d6ece9228f9d86764c638",
+      "before": "d0b657c6ad2b6fdec20a235e2c5e57611b4578d3d63222cdec7b8ecfbe7b6ead"
+    },
+    "public/de/product.html": {
+      "source": "dist/de/product.html",
+      "bytes": 13613,
+      "sha256": "953a60eee6a3e126ef5c6314b13ddbaff8f1abc2c6e26fb4d211af2600bf0c28",
+      "before": "98f42263fe7a0d5a78142733839829814aac52fbe756ad73f352951a68be2950"
+    },
+    "public/de/refund-cancellation.html": {
+      "source": "dist/de/refund-cancellation.html",
+      "bytes": 13514,
+      "sha256": "eece2a56b34ac97ebdabf21f8bc605e556c13d0e560153ca26edcf1ae8cdd902",
+      "before": "4a4e92cd3639c00fa022733a40a99ee071f39c586cdcbb2ca612fe6d72c65b0f"
+    },
+    "public/downloads/HORIZONS-Arabic-Setup-1.5.0.exe": {
+      "source": "release-assets/windows-1.5.0/HORIZONS-Arabic-Setup-1.5.0.exe",
+      "bytes": 188948,
+      "sha256": "2c00031748d7a3d3dcd761fa08bfe6b6685236cce8ed5916d1eac2887508678c",
+      "before": null
+    },
+    "public/el/cart.html": {
+      "source": "dist/el/cart.html",
+      "bytes": 32226,
+      "sha256": "1cdb5b2d31e44b202f8e8ea97613875d00f89ea8f6ffe12e8abcfcc925138c3c",
+      "before": "690e53722bb482b602a8021ccfd0d44d6216b3afee26f046418c3deaa69e4e4c"
+    },
+    "public/el/checkout-privacy.html": {
+      "source": "dist/el/checkout-privacy.html",
+      "bytes": 17798,
+      "sha256": "26189114ec14ab1eacdb875b90d045fb9d346765dd92021356b7faf1a13f1eca",
+      "before": "cbf3908ca7d480d8b034c76849fc86d7d1f0d54019aecc9992d35cb2d30ce41c"
+    },
+    "public/el/checkout.html": {
+      "source": "dist/el/checkout.html",
+      "bytes": 32490,
+      "sha256": "318dd607613c77130c6864a27d4274f8a2facc94d7195eae90b85862ab1ec285",
+      "before": "b9f6ae58a5c63bdc9f5ac0b6fe18378d7bb8bebc5d0c1adb0b3bf54f80baecaf"
+    },
+    "public/el/distance-sales.html": {
+      "source": "dist/el/distance-sales.html",
+      "bytes": 17449,
+      "sha256": "5b6d045c14c52437ab15e915d8ff760346e6ed18cf79d82ca52b85fa5c968625",
+      "before": "ebd22a63f2e94cec2239f1d83dca9ec34c63c7a238be6a93f1f7d299f8b8ffd8"
+    },
+    "public/el/index.html": {
+      "source": "dist/el/index.html",
+      "bytes": 19714,
+      "sha256": "3d778b31968dc198d5097bc970c5a2718361aeb0dcbf63d513d10876ac5dd64b",
+      "before": "42994d1eb106806380d8ae7e4b6f042c7781571063034784e85c97e2e9a6bdde"
+    },
+    "public/el/pre-information.html": {
+      "source": "dist/el/pre-information.html",
+      "bytes": 16781,
+      "sha256": "7c4c66f2e26a5e134bb31b947964607042e4ba938b9f6f107072df1b21562aac",
+      "before": "240bfdfac211ac94d3669846276d4ab46e5b9120bc7eb1d64c059b85d44b7a63"
+    },
+    "public/el/product.html": {
+      "source": "dist/el/product.html",
+      "bytes": 15858,
+      "sha256": "a0cadaa5d82ff470ff31f9f1f06552ba00584859f031df59dd2c1da7c3e8ddd4",
+      "before": "8a88290b465cce563bf27f995a5ff3a241fd338fa806d98bbe5b11195f20cc28"
+    },
+    "public/el/refund-cancellation.html": {
+      "source": "dist/el/refund-cancellation.html",
+      "bytes": 14823,
+      "sha256": "5f88f0870a3247772442055e366cdd8843e6816f15e4b53f002ade86d7087021",
+      "before": "a1a9cb423ae665b7d016f3420155b09953c231334641d583ade7ba2af81fb5b0"
+    },
+    "public/en/cart.html": {
+      "source": "dist/en/cart.html",
+      "bytes": 26543,
+      "sha256": "0fa49b48bf6c536ff14418fde710fa3610e97502e1e46b9253407e2004daf75f",
+      "before": "f9c3ac5a85777abbbaa8d748d9af14a298326cf3900c4e8b63e5025b7d2ec01a"
+    },
+    "public/en/checkout-privacy.html": {
+      "source": "dist/en/checkout-privacy.html",
+      "bytes": 14549,
+      "sha256": "eaaf7b8c80a8df6084ec70ae1eb0cc608a2781d5e96d115fab3ce73261286b3b",
+      "before": "2bb7058fd908d51ba0db31df81b61fc3594fba79d190032f7739d9e3c8c11c1a"
+    },
+    "public/en/checkout.html": {
+      "source": "dist/en/checkout.html",
+      "bytes": 26807,
+      "sha256": "4668b7b8ea3d1f2e538f668b7f92fc3f613bf0c809a9427658dc3674b8062bae",
+      "before": "5bb86af1e403efd6811f40293679089fc81641b1a47698990bd4774d4324c3f0"
+    },
+    "public/en/distance-sales.html": {
+      "source": "dist/en/distance-sales.html",
+      "bytes": 15477,
+      "sha256": "b09b0114f1b76581f5470f4a9bb4106979f97ad661cfb00d0810b7d2dc0c368b",
+      "before": "96a970cc03f3d693a077a57bd1dacc7fa8f9e8a052ed99c3614b07c24ed9e139"
+    },
+    "public/en/index.html": {
+      "source": "dist/en/index.html",
+      "bytes": 16790,
+      "sha256": "023f5fb7599604c5f843bed82273e23032545976235197805a9f8e08f6a0b2a7",
+      "before": "a57c4ff7ba3686638f7bd2254464401e8406d79dcc68e1f02314d2dd52b998fc"
+    },
+    "public/en/pre-information.html": {
+      "source": "dist/en/pre-information.html",
+      "bytes": 15111,
+      "sha256": "8c1fbd724aa757b029962b9c5dc6e0aeb2341fd3c01767b6dc94821ac9352446",
+      "before": "6ebd7af3ec90d5990bdd9d497e8e480e4cdd3119e76ddbca00e2f7b21aba9d2a"
+    },
+    "public/en/product.html": {
+      "source": "dist/en/product.html",
+      "bytes": 13346,
+      "sha256": "63ec1f2dce5d1d312f3a1099ca5ce4ffb4c52e31ab44a7eedf19910fcf4ab2bd",
+      "before": "5de695f41db22b188a84677f3bac530e36311725d78f021f25e9a9491a6257e7"
+    },
+    "public/en/refund-cancellation.html": {
+      "source": "dist/en/refund-cancellation.html",
+      "bytes": 14013,
+      "sha256": "2f0a8fde7720a00a75a6ac6c4204a477ff7591ec77950dcaaaaf6ca6954d177a",
+      "before": "b13b6f9940cf92363e4c36eaba7d5c0f43e7d35c5d62fded3b145551762d7aad"
+    },
+    "public/es/cart.html": {
+      "source": "dist/es/cart.html",
+      "bytes": 27087,
+      "sha256": "2afa6691310d887f97259d3b249aa5931e957aa46d613246aa2fa6e4e12292d8",
+      "before": "53450123ef47fe6302ef2dc601a161947d09adcde1d0f8e8a6c675f3d15cebea"
+    },
+    "public/es/checkout-privacy.html": {
+      "source": "dist/es/checkout-privacy.html",
+      "bytes": 15172,
+      "sha256": "f9de2b904fac8a6e643314be122da902fd0289239a2c2321f91f3d5956527e96",
+      "before": "a1a7953ede5859e2b20a13d5ae983c13c77b0e8550af4857f395d6ffbc71c32b"
+    },
+    "public/es/checkout.html": {
+      "source": "dist/es/checkout.html",
+      "bytes": 27351,
+      "sha256": "b97c6f26f18ea3f3d7f25dbd2dde7a9d633e555a6d3a120924f4deb2420baa94",
+      "before": "86af310acff9fa0a1c20c98ae60fba3b75694c14dbd6b752f1a7f6cb7c58f429"
+    },
+    "public/es/distance-sales.html": {
+      "source": "dist/es/distance-sales.html",
+      "bytes": 15083,
+      "sha256": "023955aa70ddbb45542638c769b17509cc54d184636f30da491409419f29013f",
+      "before": "d2151779127fcb78fd009876b4383cd2de50b534092a24e7dcf90758fc6707bf"
+    },
+    "public/es/index.html": {
+      "source": "dist/es/index.html",
+      "bytes": 17234,
+      "sha256": "1debbca7a2fb9b94dd58e3378c5b428450888c06e1b24dd3960f6b3067ea30c3",
+      "before": "0401547c8001d381cd917bea3b6014856021d1134d585d1f8a156b3c2e7856ba"
+    },
+    "public/es/pre-information.html": {
+      "source": "dist/es/pre-information.html",
+      "bytes": 14699,
+      "sha256": "a3845a70713640426a5039e8a8530ae41ac165b8f1b67582ea2ed8e11a40ac41",
+      "before": "b8724f04ec07c458e002eaf19a5aa4d8c977c65f46b912a000a815ac97803007"
+    },
+    "public/es/product.html": {
+      "source": "dist/es/product.html",
+      "bytes": 13536,
+      "sha256": "00b4ab066b8819247a29f3320cb0388dc4f539e6c08b37d419bd64c534bd350e",
+      "before": "06f951043b3b6ebb018d0647db01a5ed87c7249240537bbb90ad98e81c836023"
+    },
+    "public/es/refund-cancellation.html": {
+      "source": "dist/es/refund-cancellation.html",
+      "bytes": 13535,
+      "sha256": "cf5031418657040879b4f24491af39e15ef66d21edac44c7a810707a360ab198",
+      "before": "dcd360dd56a19fed3ccd81abd2d0a38034a8dde764be4288c04c5c9897247cb1"
+    },
+    "public/fa/cart.html": {
+      "source": "dist/fa/cart.html",
+      "bytes": 30158,
+      "sha256": "e3097f3d32ded7db06f4ad73d29ee78d056e36cb4a7571945b4c34a36ccfcc41",
+      "before": "67405328e84ba1169d0a428d3592d9943a2accf876116ad7110da3f00905a3fd"
+    },
+    "public/fa/checkout-privacy.html": {
+      "source": "dist/fa/checkout-privacy.html",
+      "bytes": 16791,
+      "sha256": "f1c6ed0280d29d8b14f4628ef127078e0aa41d61245a1fef615df865d948ea02",
+      "before": "9d6b93b3c06ef40baee8206c53b2f72a2216e5223765b28541452a9975762be6"
+    },
+    "public/fa/checkout.html": {
+      "source": "dist/fa/checkout.html",
+      "bytes": 30422,
+      "sha256": "12e1096b038996e6316d80813b5e4ea42d460b28bb6842fe9621552096b278b5",
+      "before": "e21365f9a72c704370b50b61284ac992299d95b5bc1a242a22bc203f7b692b83"
+    },
+    "public/fa/distance-sales.html": {
+      "source": "dist/fa/distance-sales.html",
+      "bytes": 16321,
+      "sha256": "90b5339c81ea7bfb5ba83f7c522e50c85f87b8c92a19cd7ae9e0c4ff4607b181",
+      "before": "6b8168f4582fc6f098cfc239515bd36f06a0237d7bef360b915ac9229f67ffab"
+    },
+    "public/fa/index.html": {
+      "source": "dist/fa/index.html",
+      "bytes": 18680,
+      "sha256": "edc4ccd5d70b08afcbe55824f7a1d23728e238d8a8dabc57fe5ca017e8e09aa0",
+      "before": "26b113b77d2efee809a6a088a31ed2ebe0d16c5bc2744d6bf4f691a609139b89"
+    },
+    "public/fa/pre-information.html": {
+      "source": "dist/fa/pre-information.html",
+      "bytes": 15746,
+      "sha256": "7b85b0ee5b6442b8d214bea61fc9586636836ecc70e56997876951f314b85aac",
+      "before": "3fc19039311651b5a739010e4fb694c8c6ee118c131746e4f9179012dfba7f01"
+    },
+    "public/fa/product.html": {
+      "source": "dist/fa/product.html",
+      "bytes": 14896,
+      "sha256": "6cfde954d03d8b3a725ac3f827962266a4bb7ba9efc9d6ae72a969ab0212f76d",
+      "before": "4426d609f77c949dedeed9453ac4e17a3c63859026e4e918e0bb4e1c0d5fbeda"
+    },
+    "public/fa/refund-cancellation.html": {
+      "source": "dist/fa/refund-cancellation.html",
+      "bytes": 14168,
+      "sha256": "1b5e3685300a729191f26b6a73054aa6c215f54525d648bd813cce99f0e88c06",
+      "before": "3c654cec66581827e1c75c6e382c6fd75839b96c61685fde5b4ccc30fcbc784b"
+    },
+    "public/fi/cart.html": {
+      "source": "dist/fi/cart.html",
+      "bytes": 26795,
+      "sha256": "e8e995de08ba5ec0819ac7cffc7ed73c828ce65bd6e56a271608c5649c67bc23",
+      "before": "3e515775ba9265638ba51c8afe87fa337727f6d167c0c629202fccdcd3831fb5"
+    },
+    "public/fi/checkout-privacy.html": {
+      "source": "dist/fi/checkout-privacy.html",
+      "bytes": 14985,
+      "sha256": "edd6923afcccebf1bfac1acb655bff5e1173a995b6bc04348534a01b3c78c558",
+      "before": "3ccf59055521117e5f1e73b26bacb9ea3c6d06fa495e7f6839291b224617821b"
+    },
+    "public/fi/checkout.html": {
+      "source": "dist/fi/checkout.html",
+      "bytes": 27059,
+      "sha256": "831065cf1d01dd439d2ef7cd4f379758f937011014ace8f0b1556ee34ed85adc",
+      "before": "228d6cecd1fb089d97d2e84effb9177d869fefe42c346f4372d7a50412fc5139"
+    },
+    "public/fi/distance-sales.html": {
+      "source": "dist/fi/distance-sales.html",
+      "bytes": 15008,
+      "sha256": "02e0bf6a18edea037f4a49205c266c6792d043ec039ad4522e1a2cb31e4b973e",
+      "before": "3e13356b264a6ac13a059aee51b745c7d3e2776ff2583c6d77eddd211f6ccc3f"
+    },
+    "public/fi/index.html": {
+      "source": "dist/fi/index.html",
+      "bytes": 17138,
+      "sha256": "75db1aedd8521d8244e1e8d5eaeca3b6bbeae638f7fadbb0d337074775816090",
+      "before": "1df5e09b7560f42bdfb1caacf0e48f1fa3b6e8ba2f6d613ba2d24ea3241c0122"
+    },
+    "public/fi/pre-information.html": {
+      "source": "dist/fi/pre-information.html",
+      "bytes": 14628,
+      "sha256": "58e8dff9f6aaeb7f46975f3222f9be23734f612a8fe00845c4d1b5bdec6790dd",
+      "before": "c0e325662a3260c32c6715f5faf9ab329edc6e2c0fe9adf4cc200684f6a36dc1"
+    },
+    "public/fi/product.html": {
+      "source": "dist/fi/product.html",
+      "bytes": 13517,
+      "sha256": "b55fd8d1fff5532950eeb17ecc10772e7b58b9643445b6ff1eb2a6d09ac1f13e",
+      "before": "f7851a31641d51925ba28fade83b3d89bcfc11faa57a63cf7f7d74c0469d2085"
+    },
+    "public/fi/refund-cancellation.html": {
+      "source": "dist/fi/refund-cancellation.html",
+      "bytes": 13483,
+      "sha256": "71f1d4aa1f748ddafb2aa67520411f06c0e0151883f30c7bd1b829b0c9c883a5",
+      "before": "925d6fe860ec36dae82531804e5e49def2b2851d39c5980f11277c6530a14384"
+    },
+    "public/fr/cart.html": {
+      "source": "dist/fr/cart.html",
+      "bytes": 27751,
+      "sha256": "3e297269d644f099000c4a98df877d5bbda3c4a1b5268f6bec765479a99c04ec",
+      "before": "fd030d182953bac4982ab99517630dfbe24d0352cd13cc9629ac3b74d663e238"
+    },
+    "public/fr/checkout-privacy.html": {
+      "source": "dist/fr/checkout-privacy.html",
+      "bytes": 15382,
+      "sha256": "499908e8ca158c7b16cfbe25d03bb6c64001e7a588d1de84c1e2c4d247c35545",
+      "before": "70d1faa9fc5c2060f5389d0a296b3a266b2f905c2e137ff5fc5308cee7275f13"
+    },
+    "public/fr/checkout.html": {
+      "source": "dist/fr/checkout.html",
+      "bytes": 28015,
+      "sha256": "966b90eab41656ee7c0e18cf4bfb72d08efa08b6e93467643b8d5c2016ad589f",
+      "before": "2e925125a0664bfc932dff387feffe48d476394141c0cc858c993dc8adbbe680"
+    },
+    "public/fr/distance-sales.html": {
+      "source": "dist/fr/distance-sales.html",
+      "bytes": 15307,
+      "sha256": "ae9e58f09fbab305ad72d7c819217d21a132a730a33d8d48f04094d84a6f3b53",
+      "before": "4138ecdd32028e79341be3f62e92b37e5b0169d10d570d8208f28794e565a4ea"
+    },
+    "public/fr/index.html": {
+      "source": "dist/fr/index.html",
+      "bytes": 17413,
+      "sha256": "8664163c6012fac09ae1bae28af955f1e052ab083124a07cb2877ac3f66f8df8",
+      "before": "5ba96ab818e8e0c101e4a0c09c0b3181e7e48bddf8049f6946336a30396cad1a"
+    },
+    "public/fr/pre-information.html": {
+      "source": "dist/fr/pre-information.html",
+      "bytes": 14880,
+      "sha256": "eb693b861dc80587af8be8c780d435b5f428b2efa53b01b409c83cead16feb08",
+      "before": "93661007a53344419642c4549db74f843ea76b3e1e79505874ebd10a440c6984"
+    },
+    "public/fr/product.html": {
+      "source": "dist/fr/product.html",
+      "bytes": 13813,
+      "sha256": "f2e4da3f6afed9646f961934de22a7b87a583cbdd71e7a319408e483ce90059e",
+      "before": "0f53ce6e1d3a40de455fa2a36fbfc3b7c1cfeb7cdd3639eb366280bcbe9597ca"
+    },
+    "public/fr/refund-cancellation.html": {
+      "source": "dist/fr/refund-cancellation.html",
+      "bytes": 13640,
+      "sha256": "75a74b7552a22a2881b758e73f2f56709ea760e1ac0ba69d937c4c634743e9fc",
+      "before": "83935a294664b5b7ba48babe983bcd6090022fa507516dbc6d2573d6e20a009e"
+    },
+    "public/he/cart.html": {
+      "source": "dist/he/cart.html",
+      "bytes": 28444,
+      "sha256": "24267b8dc700cd55e229c4d8432b259880999255cac68d7a5f55c6c600c885c2",
+      "before": "cb3f7ddf06bce8fb7d9492a18a77312fb45452e7c05b0b40a76898ce4d295811"
+    },
+    "public/he/checkout-privacy.html": {
+      "source": "dist/he/checkout-privacy.html",
+      "bytes": 15826,
+      "sha256": "3bc18c5d34916007586dba7f96476cf2445b146bf5c454772534fac0323edca8",
+      "before": "43af06e43bd7e144a36fef876ff51d2227cf0f2ade646373c683f0a996e42bb3"
+    },
+    "public/he/checkout.html": {
+      "source": "dist/he/checkout.html",
+      "bytes": 28708,
+      "sha256": "4ae7ddd765d081b04074ba9c35ed2036370a37f6ce69bd2bd71629a3bd55f31a",
+      "before": "ec637b09c686ad462530c8a3117fa3b2c8810474ee2b8b73e588bc5a31a0c391"
+    },
+    "public/he/distance-sales.html": {
+      "source": "dist/he/distance-sales.html",
+      "bytes": 15619,
+      "sha256": "b347c993fa6eb1ac010d9f24080626948a30ab2a1a624613887881abeb8f793a",
+      "before": "9a1923b941e9005779011e28c89026b603d9446508e5b4d02c4357f08b2fe200"
+    },
+    "public/he/index.html": {
+      "source": "dist/he/index.html",
+      "bytes": 17927,
+      "sha256": "816abb419ab72e73f2b826b873aa71252737dc95d1e47788d304ae70d455b18c",
+      "before": "05a4b058d6d1994b82e923e754400b40debd249e37176c755b2245a3a18b11ae"
+    },
+    "public/he/pre-information.html": {
+      "source": "dist/he/pre-information.html",
+      "bytes": 15151,
+      "sha256": "c13697e506aa568404ee5da35c9ced5cf5465346c3f525a8a8342d93c039c610",
+      "before": "a6399c07c375a4b5c2521b8e08cfe1c3c22bfc9cb952912feaacdb2c26e61751"
+    },
+    "public/he/product.html": {
+      "source": "dist/he/product.html",
+      "bytes": 14064,
+      "sha256": "9de8c22a767428c73f043a1ab5156bf6517d78533634d0cab082a984fb88e398",
+      "before": "acac2fa0da1cf0be18fb2feb5214d6eeec50eb210911ca505a55fee80f51ddc3"
+    },
+    "public/he/refund-cancellation.html": {
+      "source": "dist/he/refund-cancellation.html",
+      "bytes": 13780,
+      "sha256": "072d2451eb2027a916a1b57652c17fde649873dd0a2980e214f3ddf2c73148fe",
+      "before": "2d38d63d8c357b4249915f5f57b0c64b2a9cf322a572969359bd1f70651e2337"
+    },
+    "public/hi/cart.html": {
+      "source": "dist/hi/cart.html",
+      "bytes": 34425,
+      "sha256": "c6b86394c5c6eb4987a44e21a053a5ef56ba53e89870bee585e708fe0b02384b",
+      "before": "db53b3080aeb4d00e0814f34a785ae4a43b1d7b0cf698b496eef32a1e900a85d"
+    },
+    "public/hi/checkout-privacy.html": {
+      "source": "dist/hi/checkout-privacy.html",
+      "bytes": 19330,
+      "sha256": "bfbc9e9deeabdf36eae6b841fe3f8d36dae79878519e1b896fba47b0ac8f58da",
+      "before": "7eba1839955206c404a523525a6e11fc551d0775882902d6e8d76c6b31cd05a0"
+    },
+    "public/hi/checkout.html": {
+      "source": "dist/hi/checkout.html",
+      "bytes": 34689,
+      "sha256": "05d326d5aa1f09d2888c352e43ee893fbbfdbededd4a775e7746d955af6c4469",
+      "before": "f396dfc8eb0ef19d15e1b754b1f7ea577ad381fe6f8d0ec5f0fc7d4b82e25c34"
+    },
+    "public/hi/distance-sales.html": {
+      "source": "dist/hi/distance-sales.html",
+      "bytes": 18244,
+      "sha256": "2bdc4db8c210ee78ec1cf9bc72b659f40a83862ae7e7e18f1a196a69f1361f95",
+      "before": "73a880386b577b538fbf3366c7754242b9b58d082d92c0aa5a5fee9aed2dbd86"
+    },
+    "public/hi/index.html": {
+      "source": "dist/hi/index.html",
+      "bytes": 20618,
+      "sha256": "92096b604321a2c8dc81a5e1ec5e911adb7adfb7d063ef8753995bfa107c104b",
+      "before": "1bf1b63a99d23b4c42e1527049923c7baa5a0a58118d28473d0b0fdb4cdc5224"
+    },
+    "public/hi/pre-information.html": {
+      "source": "dist/hi/pre-information.html",
+      "bytes": 17343,
+      "sha256": "3f4450a3939ee3cf9554bfec9fc8631c9028a49ba9a6461b57612ea3ee8c8f89",
+      "before": "8b74572679c0cd3e7619af8d645b2cc4189e6d2b91d5fcc8228e3d6d64fbb46b"
+    },
+    "public/hi/product.html": {
+      "source": "dist/hi/product.html",
+      "bytes": 16763,
+      "sha256": "0bb2dcd6299077d6e5e8e2ca43fc3175718156a55e3747dda0ada141dda2c617",
+      "before": "aa6508204555429a9d5a6f65c2815628581a4282fabafee3b10f432e5d10e712"
+    },
+    "public/hi/refund-cancellation.html": {
+      "source": "dist/hi/refund-cancellation.html",
+      "bytes": 15159,
+      "sha256": "bab14e22e691009651f2a42a75fba520de1d43a90696e132739c8e0b92a57cf2",
+      "before": "19df0988a1833bb21f3b147769f6c6c7630a72f4c01416bbf8b941553faaed13"
+    },
+    "public/hr/cart.html": {
+      "source": "dist/hr/cart.html",
+      "bytes": 26678,
+      "sha256": "ad5d58d2187923d4d51becc5a2ebee68ff42879e48ecab40a20b5b34b75b4a3d",
+      "before": "e4c2fe313b34fa5d3c53bdf0fad0c15607bf854f2b1deb7c577cc3f15cdd23de"
+    },
+    "public/hr/checkout-privacy.html": {
+      "source": "dist/hr/checkout-privacy.html",
+      "bytes": 14762,
+      "sha256": "c38e25f005f97f28b084a1249b0daf91c0ad3abd0cca20fa248f7528db8fcc55",
+      "before": "e4312773cf1b9970915b27f361d7f594b01e09ca2a48ec5bd58e449f9a301a72"
+    },
+    "public/hr/checkout.html": {
+      "source": "dist/hr/checkout.html",
+      "bytes": 26942,
+      "sha256": "f96ed048f7d06d6d7f7da4c9b683a02be3047698519d516fb693f7cbe1aa31ab",
+      "before": "4bb0a725be547b136cd96162f504a953c5c24eea175dff8ad20f64b4b00748b0"
+    },
+    "public/hr/distance-sales.html": {
+      "source": "dist/hr/distance-sales.html",
+      "bytes": 14827,
+      "sha256": "b51b83b5a6a19b473363f56ae574330695a42126b72a8e5098d91cea9b94357f",
+      "before": "11e9637e9a8d69ec564b10f1b41e430250dde55c78051a744772e6d3a138ae77"
+    },
+    "public/hr/index.html": {
+      "source": "dist/hr/index.html",
+      "bytes": 16921,
+      "sha256": "685917c4e0e79c409bdf8402483f8ff50d22f324759f307e863b48260806634e",
+      "before": "8ca83b3a442d70e6795e2874e084aab330f4ae2d67c5e577b5f114d1dbb9d843"
+    },
+    "public/hr/pre-information.html": {
+      "source": "dist/hr/pre-information.html",
+      "bytes": 14488,
+      "sha256": "6ec5ac019330dd76352c78d0480f8056cc1f546bca35fc36bead335f5c1a57ea",
+      "before": "5f7e0b655132f5d37e6f60fb59e087f8fb0e088a33761ec49f7b45449fe0dbf7"
+    },
+    "public/hr/product.html": {
+      "source": "dist/hr/product.html",
+      "bytes": 13243,
+      "sha256": "cdac09ae3ccd60dcb9fd06e6e08572142e79a46cca1915bbc538688051e17745",
+      "before": "461388ca4199c39802798e2fc77c1fce7a6c4f63c3ebfb769eeeb69fa9980668"
+    },
+    "public/hr/refund-cancellation.html": {
+      "source": "dist/hr/refund-cancellation.html",
+      "bytes": 13315,
+      "sha256": "0aabe81ea6955a1bed03d8caf6755dc4a2e8fafcb29b9e0256f4a2beb74d325b",
+      "before": "ec33649876f9e4a12a4692a9b21ff70f5e005ef88f787b859c9494cb840e2179"
+    },
+    "public/hu/cart.html": {
+      "source": "dist/hu/cart.html",
+      "bytes": 27720,
+      "sha256": "9484e8811fcadfebfb6439342593776b6bd2f745c96c84f0cb1c7c0cdeab7dd1",
+      "before": "cb76716b0438c714534a348fc581615ef0032828525d38b399bf411962257e2f"
+    },
+    "public/hu/checkout-privacy.html": {
+      "source": "dist/hu/checkout-privacy.html",
+      "bytes": 15277,
+      "sha256": "9456dea57d41f47aae5fead656eb1615d44bd800383bf5b4790ebbd39b623eea",
+      "before": "d05c6eb40b97a9d8c98fbd6b8a9184e07415f8755acd1bd0d5efb21fb82c5cdd"
+    },
+    "public/hu/checkout.html": {
+      "source": "dist/hu/checkout.html",
+      "bytes": 27984,
+      "sha256": "1ff4ecdd75c487bb1a864aabbe4a5850ba096b63917e021b0d9956905ec28c62",
+      "before": "91a75508f4273246b1264111d5db4046ffa28748be3cf05c1d1df7b2b38fcb83"
+    },
+    "public/hu/distance-sales.html": {
+      "source": "dist/hu/distance-sales.html",
+      "bytes": 15243,
+      "sha256": "489ba20392eef51d1b0f6d9c5f34e83bae3d632877edbd549bf5d133f7dd9302",
+      "before": "3ad6bf8bd84e45c745ae00879d043b789c6c8a0b4e97d7569f29f824fe65bef4"
+    },
+    "public/hu/index.html": {
+      "source": "dist/hu/index.html",
+      "bytes": 17246,
+      "sha256": "aa9367f66bad6e32f3d0515a3911478a5cea00aff183cb1742a58894be803db5",
+      "before": "7f0885424e44a765f3e558f0e83398f5696df8053e40278dc8a62eaa61c7ccb3"
+    },
+    "public/hu/pre-information.html": {
+      "source": "dist/hu/pre-information.html",
+      "bytes": 14878,
+      "sha256": "3abe59395e1a0536833cf2d28ecefdd42e6673dd9613fd8ae2d94e8286f9d8be",
+      "before": "5ac97517eecf02fe457bbeedfe4438a70940c5b3ebf62a8486af66075a05f09e"
+    },
+    "public/hu/product.html": {
+      "source": "dist/hu/product.html",
+      "bytes": 13689,
+      "sha256": "b9de324fcb7714f7b2340973ca8be33b1e40122bca16996eeb11519433b74965",
+      "before": "dc993d893f2839422b722640b5ab1a2e15b930d0e2b83c17dfc90f41f69b696d"
+    },
+    "public/hu/refund-cancellation.html": {
+      "source": "dist/hu/refund-cancellation.html",
+      "bytes": 13621,
+      "sha256": "2ba09469c9586271ef2b0fd868f8e7dc62d9273717a8150b42a2dcb2e0be58cd",
+      "before": "44a785e6fcb0ecf161aa9d97dccde07df0a4a83f8d64b98c254214855fd673b4"
+    },
+    "public/id/cart.html": {
+      "source": "dist/id/cart.html",
+      "bytes": 26634,
+      "sha256": "4547e4f0a05b3a427ca52f1c4dd4c32969cc616eb0b9390f7b3bc7e892f28cec",
+      "before": "9175197ca59a579d6938fa83c54b74f06c831cacc9cc3491aa6ccdefed3fa49f"
+    },
+    "public/id/checkout-privacy.html": {
+      "source": "dist/id/checkout-privacy.html",
+      "bytes": 14771,
+      "sha256": "81fa6e5c946ff0033e1a1bf22f19b92753db320f14f08e44359f35bde145b8f8",
+      "before": "74398e62b2184f9b41b754358e7e2a58ff6f75e7c3d88b824b3600fd3173b09a"
+    },
+    "public/id/checkout.html": {
+      "source": "dist/id/checkout.html",
+      "bytes": 26898,
+      "sha256": "23fb92b148ca7d2cceebe780c9c44e7db7f8713aa0efa5bbd796ec65f244f266",
+      "before": "2a42e3765ba7d757b8ee804250febe039160cb6076dad7ca3909c2eab9f1364f"
+    },
+    "public/id/distance-sales.html": {
+      "source": "dist/id/distance-sales.html",
+      "bytes": 14854,
+      "sha256": "4719a4f882cc5f0dac28ddfc0a276982669d234a6a3d159dad14014af3f285ca",
+      "before": "f3b2b0c667fb3bb65ba097b8993b459b2e921d170d4414e0d5c0fbeb30c4db61"
+    },
+    "public/id/index.html": {
+      "source": "dist/id/index.html",
+      "bytes": 16929,
+      "sha256": "a33cf37130623eca881d1c0ad39f34c110900c34887eb38b27709a70fcdddeb6",
+      "before": "4909d0dcd65ea540a37a1fd7f05eb328c2e560eadca85ffd268519f271fefbf4"
+    },
+    "public/id/pre-information.html": {
+      "source": "dist/id/pre-information.html",
+      "bytes": 14488,
+      "sha256": "fdc89118edddf201369f56eea18f69186cdd980fb7bed4d4d82e9f1cd2dceeee",
+      "before": "db637b8e25c05dad71e643e86f38aeb2a98f38c869e27d0b5a849b7fc5721d94"
+    },
+    "public/id/product.html": {
+      "source": "dist/id/product.html",
+      "bytes": 13282,
+      "sha256": "193e21a9e8ae23cb0477be267770375ba4f9d337bd0b7b12eceb4e1d53c27deb",
+      "before": "6b8fbcaad92befeb15978042e1a908bed7612f776bebcdb20c04e204285e871b"
+    },
+    "public/id/refund-cancellation.html": {
+      "source": "dist/id/refund-cancellation.html",
+      "bytes": 13396,
+      "sha256": "ea48e2c827b8f2234fe25c474f3f70110d69ab0c71010a394482a36f014fd08d",
+      "before": "ef18ef17ddd6b1947efc3464236afff822db8e732fb454ed86d51afe8986a1bd"
+    },
+    "public/it/cart.html": {
+      "source": "dist/it/cart.html",
+      "bytes": 27165,
+      "sha256": "2d2ce3eea5e1d91e541ecf63c617ce371a77c4134915f602cf36b10dd69ae61b",
+      "before": "cf65cf7482e369db589a9f02b5f629ee13ee481b69628860ef1d077fd8ce1f18"
+    },
+    "public/it/checkout-privacy.html": {
+      "source": "dist/it/checkout-privacy.html",
+      "bytes": 15036,
+      "sha256": "e3b886ddf9efc732979bb792448f83cec103678785e5b280bdb0dc09b4a860d7",
+      "before": "af16ff7c0446148745e48268bd10f206628b4b4ddf117b6bc1d7e5e557dfe054"
+    },
+    "public/it/checkout.html": {
+      "source": "dist/it/checkout.html",
+      "bytes": 27429,
+      "sha256": "ac1847f05496a6950d29a761f4bbecc0e7f2215c731a5f8a04cf3315a3186711",
+      "before": "ff2c910d335adbc12062a5c238189711b1b409238fb844e720295351264f6c41"
+    },
+    "public/it/distance-sales.html": {
+      "source": "dist/it/distance-sales.html",
+      "bytes": 15078,
+      "sha256": "905c4210423745e929726629f61dbebd9a066a066e980514907cecb9ef852d0f",
+      "before": "b7142a8c4a5415d11da6c99dafede5c8282147a73b489acc8860166482c9f327"
+    },
+    "public/it/index.html": {
+      "source": "dist/it/index.html",
+      "bytes": 17118,
+      "sha256": "b66ac3bb375c6d74cef6bb5f2c6909943a6025a88185d38f7a17f358fb800ce1",
+      "before": "ccf22a5fe1068f472fd42352846f99d23374380d9c726ebc5a1f25b5be0edfb2"
+    },
+    "public/it/pre-information.html": {
+      "source": "dist/it/pre-information.html",
+      "bytes": 14688,
+      "sha256": "0babcc504892417a30bbff7f54adc9f8bb323988fdee1952f3aea0a7e41dcd53",
+      "before": "9785ac14fe14b4ecf387f296e897531430dca89ac0e5c2449410d4fcd4d272da"
+    },
+    "public/it/product.html": {
+      "source": "dist/it/product.html",
+      "bytes": 13496,
+      "sha256": "e751352e6e68249dcd0f98898e94f809d5b37ff5ed03cbb8d26dc66daedf9dba",
+      "before": "68f249e56064ccc1db0480c8028d10101c78521513d2d0ffb378e572860f7964"
+    },
+    "public/it/refund-cancellation.html": {
+      "source": "dist/it/refund-cancellation.html",
+      "bytes": 13481,
+      "sha256": "cc078663a6bac89b908f965dbaab822bb2ffc3b88bf2ce66398f8d38bfcfc917",
+      "before": "b6ab3996f3916daecc58455cc01ce7391896b53ca85943699d0e24555bea285e"
+    },
+    "public/ja/cart.html": {
+      "source": "dist/ja/cart.html",
+      "bytes": 27958,
+      "sha256": "97e79a62cb91b9dfbbb75104bfcd37fe68b9491a1f67f543de22b4fc3dce51d7",
+      "before": "4728c43e79b6348545b9d76b6709e7940b8090beba3481ca829bc1e6ec3e913f"
+    },
+    "public/ja/checkout-privacy.html": {
+      "source": "dist/ja/checkout-privacy.html",
+      "bytes": 15435,
+      "sha256": "49127c34e8746a5f334a0e3ff95b842a4cba3b3e6681cd29972c6ac718197c51",
+      "before": "82976f1cfdfe370d9815f80a376589d91b31735438c9c75568451d55741ec084"
+    },
+    "public/ja/checkout.html": {
+      "source": "dist/ja/checkout.html",
+      "bytes": 28222,
+      "sha256": "cd47e6ee5fe0a112481e0a3012e1b9c6ec45ffce4d723b0e78bf83ce53979d64",
+      "before": "3a194b48820d1b58d0cb15736ede4e341374ec60ae5d3881f377539d32d6ad1c"
+    },
+    "public/ja/distance-sales.html": {
+      "source": "dist/ja/distance-sales.html",
+      "bytes": 15396,
+      "sha256": "37c3ef87b72500d1d3ec14ee951c010947673b0372b5d24e50726e4fa1195a40",
+      "before": "27c8ff1b2a19e225786c1facfb6907430abee9315d0a7d2f21292b510635ee0b"
+    },
+    "public/ja/index.html": {
+      "source": "dist/ja/index.html",
+      "bytes": 17638,
+      "sha256": "8233678cd393805747f8f54705dadf1a44c13f571dd7ac5edcc44e0fb6fc8616",
+      "before": "a15ef28abf89c0615a3af0afc197b058a31a386b5ee71c04a6a29d4bc6266e28"
+    },
+    "public/ja/pre-information.html": {
+      "source": "dist/ja/pre-information.html",
+      "bytes": 14939,
+      "sha256": "5be4529c39e4c681f60c2dbb88c9713c8d660e75379ac5ba955dbf48eb1a05c7",
+      "before": "fbec825a0bc31134a7d2be89c2f79961516cf2fcddcf6bae37c0eb681c2338de"
+    },
+    "public/ja/product.html": {
+      "source": "dist/ja/product.html",
+      "bytes": 13863,
+      "sha256": "46d63d6d589798ee4d8bfbe9f23d632083ee2fa61b378c07548536bf6e103f98",
+      "before": "e93272f318b516bd80dbc012521a5a6717651ca9790b296d2c699d335cb60733"
+    },
+    "public/ja/refund-cancellation.html": {
+      "source": "dist/ja/refund-cancellation.html",
+      "bytes": 13658,
+      "sha256": "4f8672e10915502240762e6f52cfbd33bc41becda3582fecf58742d27ed6bd05",
+      "before": "35f12da8dd84ccfed504ea713490b09c993ba1ec5f2ecaa8db6ac075394e063d"
+    },
+    "public/ms/cart.html": {
+      "source": "dist/ms/cart.html",
+      "bytes": 26589,
+      "sha256": "cb1669defa50231ef3d62fa9e2ed29e1a942360b604e3e0d8ca46a0a8dc1952c",
+      "before": "c4f83850b0f3182f221130f0ff60b630dc4fda267b86c3ceb00df080804a5f28"
+    },
+    "public/ms/checkout-privacy.html": {
+      "source": "dist/ms/checkout-privacy.html",
+      "bytes": 14939,
+      "sha256": "01094e3c353ce17a715c6127be0675fde72952d598cf7a73427d9eb99a9fe500",
+      "before": "1c10d88ef59597a98cfd921c95587c3e689338bb53e3ef0dabd6617c79823200"
+    },
+    "public/ms/checkout.html": {
+      "source": "dist/ms/checkout.html",
+      "bytes": 26853,
+      "sha256": "440e834a6271b386d9d0ff4b68a1c3196affefb637625aeadc7fafbcbefee80c",
+      "before": "8302a88e5c4da4c7667ec556226f875481dbde6956b3df955f5283b16c0a5971"
+    },
+    "public/ms/distance-sales.html": {
+      "source": "dist/ms/distance-sales.html",
+      "bytes": 14861,
+      "sha256": "676404e62090f063e86a4dae8b466defde77fcec245cfa258eb040a5c665a83b",
+      "before": "874d0934a633ead8663efc1bbe6e372ae5e7aabad310ecab3e4453854abd8d9f"
+    },
+    "public/ms/index.html": {
+      "source": "dist/ms/index.html",
+      "bytes": 16988,
+      "sha256": "88bc419c090e1e98c3af802a0662bff5eadcfbf2cb4d75b14ab18c7768235ae8",
+      "before": "f9f21849547c8967ff67e900a6a44eddd84683109d6d80a2a57abacd83feaea3"
+    },
+    "public/ms/pre-information.html": {
+      "source": "dist/ms/pre-information.html",
+      "bytes": 14513,
+      "sha256": "b9b019b82b1fb9f43454d0e0f51a418eaf64a220120d21fd4f91bae20adc164d",
+      "before": "ba17118a5a39c3f0a04fb0f67d1d8bd5dcf90a7f52c52895448bcad9c92d8271"
+    },
+    "public/ms/product.html": {
+      "source": "dist/ms/product.html",
+      "bytes": 13337,
+      "sha256": "ce104504bb470e424a68e26956c70dacd40765af5402c5bc1ddfa33341ca472c",
+      "before": "b7cc7e8864c7d1e18b91009e3257b58f74f10d26c176f33310f2327dc6cea2f4"
+    },
+    "public/ms/refund-cancellation.html": {
+      "source": "dist/ms/refund-cancellation.html",
+      "bytes": 13410,
+      "sha256": "df51f4049b734e75f634e6c62c00c803b09e2f0546a09f6949b4e4d7b7c2e683",
+      "before": "4301b394bcc1ea5ea4ec468a23b39f2882b0d5a5e2c6d0f10a84473039b4e793"
+    },
+    "public/nl/cart.html": {
+      "source": "dist/nl/cart.html",
+      "bytes": 27003,
+      "sha256": "be5f3e18106d0234e621138574fd2f91585509080e5da6a54e89836a2f0153c0",
+      "before": "a049eaa3ab89e0ad34b9692aeb36870d1a7fdbbaa079364789fbcf57044f7a77"
+    },
+    "public/nl/checkout-privacy.html": {
+      "source": "dist/nl/checkout-privacy.html",
+      "bytes": 14995,
+      "sha256": "1b3c7c6447ee24e2482d0e5c86a924dd5ad6f3cb4905e37ee9054a5a12452aa1",
+      "before": "ae8eb36afdec39b805e2a609f922f06e13583b02f1258d9e60fa2b4af0f4679e"
+    },
+    "public/nl/checkout.html": {
+      "source": "dist/nl/checkout.html",
+      "bytes": 27267,
+      "sha256": "c2bbd2a1cdff7f0e88e462e5f1cb2d4683ac3eb68bfa5fbe50481a6447febfca",
+      "before": "69bd2bc36257477703d373218976c463737b97daa895e8465972be45386a8d84"
+    },
+    "public/nl/distance-sales.html": {
+      "source": "dist/nl/distance-sales.html",
+      "bytes": 15103,
+      "sha256": "4801848e6c85601832b053bf827607187e3f4625a5935fb26c2f07ff66ae741e",
+      "before": "9cb10606304ac09525dc35b482c9100262525d5a9f34a1cdf62a7561eda28f4f"
+    },
+    "public/nl/index.html": {
+      "source": "dist/nl/index.html",
+      "bytes": 17017,
+      "sha256": "d92f57aac93252491aa4aa6b97ea46259b1c4f5ed86c11ad94e674b255d37ec5",
+      "before": "d211f0cf9cf047fac469b3d0f5effb20b546e608119f879fd316ed74289f838e"
+    },
+    "public/nl/pre-information.html": {
+      "source": "dist/nl/pre-information.html",
+      "bytes": 14717,
+      "sha256": "f0c37fe5ee16db4165150bd56b8444f58fd47d45688089230ca7a73520a9640e",
+      "before": "91a674879985401ad6e894e44a9a278803e8a9c823cb2e65435fc5851faf0753"
+    },
+    "public/nl/product.html": {
+      "source": "dist/nl/product.html",
+      "bytes": 13552,
+      "sha256": "b42e3a689866f37090704334e71477f855700e72608bf7769c31376920463bc9",
+      "before": "f07e4807b8728db53c3949d47965fa0156a2bce3f05efaf42cad70ddd1fe0f1a"
+    },
+    "public/nl/refund-cancellation.html": {
+      "source": "dist/nl/refund-cancellation.html",
+      "bytes": 13545,
+      "sha256": "a60109ef8f3cea3d7811f40b72dab03e4b81ec379aceee8e4a7a5b32a0daccea",
+      "before": "bd528611abddb45bd8b8400b633e9d086b10266065eca4001efab218541b4840"
+    },
+    "public/no/cart.html": {
+      "source": "dist/no/cart.html",
+      "bytes": 26460,
+      "sha256": "26b1ff823f79fc6947b9a268e83e796cba41d424c7c7c0e128cbc9d687889e86",
+      "before": "ded4992f86b8ad224e71681a7f960719a94263ba9fa0715bbf5802f95ac90ad4"
+    },
+    "public/no/checkout-privacy.html": {
+      "source": "dist/no/checkout-privacy.html",
+      "bytes": 14757,
+      "sha256": "005a39c0183f9c2bff2325a4fd0319fdf3024543fff3fa1dbae0bc6875391e3b",
+      "before": "060091f3933dc77c867b8722d8631df5e1010de7a1b5077d75687bf0d06c5d8d"
+    },
+    "public/no/checkout.html": {
+      "source": "dist/no/checkout.html",
+      "bytes": 26724,
+      "sha256": "bf791527081b05ff79ff5bd90d00e5e7c1f48f1ab8f579ee2e2eb65b74c847a2",
+      "before": "34e7ada7810ee32f4f2550f274f56cdd5dca4e9351c5600b7e8f01323796c98a"
+    },
+    "public/no/distance-sales.html": {
+      "source": "dist/no/distance-sales.html",
+      "bytes": 14668,
+      "sha256": "1028d0ba74a5f1edb81fef89cad42b4bcfb295f66542915e9c8a900a7dabc35d",
+      "before": "d8e40f05bbd0d04f8d9433b4ddeb5df0a57d70e3eb9caabe536322810b41951e"
+    },
+    "public/no/index.html": {
+      "source": "dist/no/index.html",
+      "bytes": 16933,
+      "sha256": "ad9bb174b4e2bcb1b37844a2a8447bd50b6709ad5a523d172e9d3291dde55203",
+      "before": "6eafc45756fff392b74407edb7a8f7dcd00f10302ad1f1bbe072387d0441a000"
+    },
+    "public/no/pre-information.html": {
+      "source": "dist/no/pre-information.html",
+      "bytes": 14393,
+      "sha256": "99120146c4824d5848c9d4350473fee2cc8da6afdf75d9e78a9bd42134fcfcd8",
+      "before": "8dd877032810cfb39e0c1104b932916a3427d8adf4b80dcb8fd4a9e0ff0c3b6a"
+    },
+    "public/no/product.html": {
+      "source": "dist/no/product.html",
+      "bytes": 13218,
+      "sha256": "67f780cc61def50242a57503b0175d76edf597d13601ba0d21d33ebb94b790fe",
+      "before": "bdf96cc129c50579ed3aaf3945f47fe5dbce5d326d9d33c19b87a2cd99489d2e"
+    },
+    "public/no/refund-cancellation.html": {
+      "source": "dist/no/refund-cancellation.html",
+      "bytes": 13295,
+      "sha256": "4679eaa0a076d0f8bbddadea34d88d1b60d3b20b492bc99c1680e54e2689a7d0",
+      "before": "c733a3a66c72cccdc0c84dd6b0176a659984d01628781eb284aebe650403db00"
+    },
+    "public/pl/cart.html": {
+      "source": "dist/pl/cart.html",
+      "bytes": 26893,
+      "sha256": "5cbb75dfa3861980415cf57f2dbbd169c46f022961192891fff483773918aa22",
+      "before": "0f8d5924e9d2d81d229a53e54793b0c8e21f8291a2a619f4f4dbf0c7dab6ee62"
+    },
+    "public/pl/checkout-privacy.html": {
+      "source": "dist/pl/checkout-privacy.html",
+      "bytes": 14965,
+      "sha256": "31ca185dbe75df0dc0068d9e07cf087297280ee7037a3d8b76fa2411923525d9",
+      "before": "c1275d87063d2cf2e428e442905885d4390b49f783bdf33dd6bb8eb2eac98ac2"
+    },
+    "public/pl/checkout.html": {
+      "source": "dist/pl/checkout.html",
+      "bytes": 27157,
+      "sha256": "26d80a95a65ed4e11710d05df643a6075d16c1ad4d89b8f8a92f251a198ca23b",
+      "before": "077671145de564a797d71e3e88ef0da312a108addac5b22d8e19f3a346c19997"
+    },
+    "public/pl/distance-sales.html": {
+      "source": "dist/pl/distance-sales.html",
+      "bytes": 14927,
+      "sha256": "a9287f7b9f7a18649aad506f4415dbed82ca7461c2e0a75b0c286d5c9acaf627",
+      "before": "bed2188641ec05859cd008e90bf04571db797ea2863076ba6005b3d524470d10"
+    },
+    "public/pl/index.html": {
+      "source": "dist/pl/index.html",
+      "bytes": 17003,
+      "sha256": "9b96728c1600fd8b70a5594865ee6b645345481dfd759321d71fccc7b393bde7",
+      "before": "f12bea264e6ab14155f2faddbe8b4e813a85d74e3e42556935edec7dfe0fb3f2"
+    },
+    "public/pl/pre-information.html": {
+      "source": "dist/pl/pre-information.html",
+      "bytes": 14586,
+      "sha256": "0f14d7759ecfd4097cdbc7bbef7521c968ecd965ed46c1d95e1de015d24c35b4",
+      "before": "364a1bf68bf84154337d258a399fd787f126d61f1994878e34268043490e2967"
+    },
+    "public/pl/product.html": {
+      "source": "dist/pl/product.html",
+      "bytes": 13326,
+      "sha256": "e96afbccba08a26e405de2ff78a652e7c765be294d1ee8a52e65492400ba391b",
+      "before": "8e18cb208d7a4dd44a4963c865cae98d46976a3b912d4bacb636df41d6c760d4"
+    },
+    "public/pl/refund-cancellation.html": {
+      "source": "dist/pl/refund-cancellation.html",
+      "bytes": 13406,
+      "sha256": "bdf877a87c4a68cb56bd5681c6b683dc92c14b1592dafe5b61410b444f9f87f9",
+      "before": "77e4d94fbae866ca3ef2ef8889a153edf3d2f01de535de00275bd8ad8c8b5baa"
+    },
+    "public/pt/cart.html": {
+      "source": "dist/pt/cart.html",
+      "bytes": 27192,
+      "sha256": "208f30ed29ec9bf7d5e9c1591213d17599e78cc19bc6a673dfc2e682ff8353d8",
+      "before": "225602f923fd79dffff9670ea79882dde5a40747b5c5f04cf99927f96cec2389"
+    },
+    "public/pt/checkout-privacy.html": {
+      "source": "dist/pt/checkout-privacy.html",
+      "bytes": 15038,
+      "sha256": "c9281f7766c5d26565e15dae3f6a786df8bc60b653d0de13a98143fae06f956f",
+      "before": "f4cd0f4ceb3cc4d8d71018a8f37e01c5545505bda35fb00e7832a1a1341b6e29"
+    },
+    "public/pt/checkout.html": {
+      "source": "dist/pt/checkout.html",
+      "bytes": 27456,
+      "sha256": "1f69324a71d47f0098c6b46b11acd0a679f1677ecdb6b677b466186ff63c168c",
+      "before": "7f0a4fda0dae116230319a4718a5a4ed8df1d7c8f46cd642cb946851f33b0275"
+    },
+    "public/pt/distance-sales.html": {
+      "source": "dist/pt/distance-sales.html",
+      "bytes": 15210,
+      "sha256": "7be936da126ca4ed95e7658849943d243e5d8568710e5f790045890ba741363a",
+      "before": "4b27be6590c4ba582f3848c37b44217f1456ec1630663d5b217a7811c50a6e7b"
+    },
+    "public/pt/index.html": {
+      "source": "dist/pt/index.html",
+      "bytes": 17237,
+      "sha256": "1fa1d44ac0cb1153af41a634eecd2958f312c3929e16a0759028eaecf47b956d",
+      "before": "48b6ed5230acc21cf1716d1ec6fa215026567cd0dbfb78815aaf4ba796c4f825"
+    },
+    "public/pt/pre-information.html": {
+      "source": "dist/pt/pre-information.html",
+      "bytes": 14857,
+      "sha256": "86560e6505313dc647ae5a50def1ca6e9435c50f86abbbaed71dd1f1ffdce7bf",
+      "before": "c600832500e9ae580175f4d8cfcfb948dbfeb1f0365916e3972274d135ebab6b"
+    },
+    "public/pt/product.html": {
+      "source": "dist/pt/product.html",
+      "bytes": 13643,
+      "sha256": "eb8c026f280fb59aaad19cee6e7b1f5b800e01ced0354656ac0b6f68be34988f",
+      "before": "46280dab722b6bcba5a65b43262e5e9f7b03eafe4cf993389c77c19720100865"
+    },
+    "public/pt/refund-cancellation.html": {
+      "source": "dist/pt/refund-cancellation.html",
+      "bytes": 13663,
+      "sha256": "cabacc304c43115731f0f92794f9ffb3e20150f9b5ae31ccdf5af457c916573a",
+      "before": "b4a5a5e0c52a1ba937af085d10366dd6847f4d86fc0eb6f0915b1ffaf321ebfd"
+    },
+    "public/ro/cart.html": {
+      "source": "dist/ro/cart.html",
+      "bytes": 27206,
+      "sha256": "6d560884163fb11f5061434bb06e3f30c94bcb7ab1eab8a5637e5e30d57d6fc4",
+      "before": "7926617d147f435823e96ad94f99a1148c24ecdcbeb2c6e34c6dfe31fd260158"
+    },
+    "public/ro/checkout-privacy.html": {
+      "source": "dist/ro/checkout-privacy.html",
+      "bytes": 15094,
+      "sha256": "f03922e1389a163625dfa73a1c0a911e7ff693868646a049d62c86227d6b6631",
+      "before": "1250dcaaaa6d99ad72c5eb75b852f268937adbf54dcaaa6be609623e557f135c"
+    },
+    "public/ro/checkout.html": {
+      "source": "dist/ro/checkout.html",
+      "bytes": 27470,
+      "sha256": "8e9f46b382cea7b275e011cbee07ef369808e2540ba95b2a9b769aff08d8e5e2",
+      "before": "4d5786c97559cbd524aab034a6ab29898b40902aaa8ee54a5e686c6cc5e66d62"
+    },
+    "public/ro/distance-sales.html": {
+      "source": "dist/ro/distance-sales.html",
+      "bytes": 15020,
+      "sha256": "79e8facbb66c95028881396fe572a8f4ee2774ad1b5c4a07849ee4be17c622bd",
+      "before": "42971b39dbae40462e81cf4f2e0df5b6d90583e77b16cef0a1360241f204a954"
+    },
+    "public/ro/index.html": {
+      "source": "dist/ro/index.html",
+      "bytes": 17285,
+      "sha256": "040b23c6a84bc3b3e0652b79075fbc852353d74962efcc6899d23be3a268a844",
+      "before": "139774dd5e1debb86600edff34d027ae93ebae7a767679622f34545f9d3874a8"
+    },
+    "public/ro/pre-information.html": {
+      "source": "dist/ro/pre-information.html",
+      "bytes": 14644,
+      "sha256": "1987e3405048ae3b1643e0f1b1594a6650422ed0930aa318ee95939d4de34414",
+      "before": "b428a958dee6863db1845179b89a8580fd16bf9f8e8180bf34270d5d7b87bfbc"
+    },
+    "public/ro/product.html": {
+      "source": "dist/ro/product.html",
+      "bytes": 13569,
+      "sha256": "e08f629492912adef18e5853240f4413ef7bb1710d0da5fb14dd49f151ab1f89",
+      "before": "191323e57162df2e43a7589861f1ba4dd5616266898683a4d14a2dc744ea921a"
+    },
+    "public/ro/refund-cancellation.html": {
+      "source": "dist/ro/refund-cancellation.html",
+      "bytes": 13487,
+      "sha256": "50f90efb5084079f119867f6856b76978ada53a293f61e978ece0c3ff34e0b80",
+      "before": "da4448fcd6a4c84f094a2a3bd619eb94885a8e5c1e126c20d94970d0ee311386"
+    },
+    "public/ru/cart.html": {
+      "source": "dist/ru/cart.html",
+      "bytes": 31561,
+      "sha256": "47d2ca2a75c3578f72ea5f1986c113e0b070f5208e3028870628997acb55fcdb",
+      "before": "75696a6f656bb53ee2738ff65021cfd43180d585b2bb58bb949ccdd655678e53"
+    },
+    "public/ru/checkout-privacy.html": {
+      "source": "dist/ru/checkout-privacy.html",
+      "bytes": 17544,
+      "sha256": "de6041ce0cd037b56161bb4f9451059d96edcf84ce4b46e2b25ab2adb26cb66a",
+      "before": "625c20d2bf36cc9e920ef43b1be1a93f6d0700cd09082683c7329df9ff29ef00"
+    },
+    "public/ru/checkout.html": {
+      "source": "dist/ru/checkout.html",
+      "bytes": 31825,
+      "sha256": "68f4b91549bea635bd1daaf7a63f60bf0ae65fbf951c1411cfdfc5767e9ff830",
+      "before": "090ec378f36b04709d44a92c7585b30b407467c6330320aa34d8806c4daedec2"
+    },
+    "public/ru/distance-sales.html": {
+      "source": "dist/ru/distance-sales.html",
+      "bytes": 17099,
+      "sha256": "8f543b98c93a0201cd284b6dcdd0d78a2beefc36bfd0996da44c9adada76274f",
+      "before": "8730c43b897917993e65b412badcb79ce14b9fad20ae02af2ef95b828fa2bf3a"
+    },
+    "public/ru/index.html": {
+      "source": "dist/ru/index.html",
+      "bytes": 19228,
+      "sha256": "f7eb0dc955e82f5563ec5cf0361ff9cbfe450d161c41426285571dfbcc568247",
+      "before": "3713f6641610ca8385b9d71aa83bdbc701b7b5d1cbed4f8ffe764723601c36c5"
+    },
+    "public/ru/pre-information.html": {
+      "source": "dist/ru/pre-information.html",
+      "bytes": 16416,
+      "sha256": "87bb746c48cf2793c1560ac66972a3517be536b3f1bcb1eb4af2bdf91619cf0c",
+      "before": "f79b2694bfcd2325f5e8dfcb993233120c58beb1df7d37b6a8c84ad8c538dba1"
+    },
+    "public/ru/product.html": {
+      "source": "dist/ru/product.html",
+      "bytes": 15401,
+      "sha256": "e65a0c11cd9fb885730510ac702d7a076ada6fda7579eb4e4766c134816d63f2",
+      "before": "2e36ec6f15427ce3316911149af494f373d91a06de36573f8856bd98e6a32bfb"
+    },
+    "public/ru/refund-cancellation.html": {
+      "source": "dist/ru/refund-cancellation.html",
+      "bytes": 14588,
+      "sha256": "bdb028f3febcec0556718d1ca77e01ca3884ce0afc800df7aa3a3772279fa330",
+      "before": "0e670f6afb8510d5dd44e02a7d936980ad7f987a48ef6559f8478b2542abc4ec"
+    },
+    "public/sr/cart.html": {
+      "source": "dist/sr/cart.html",
+      "bytes": 30898,
+      "sha256": "7f47fa1cb7b3f55ba31ca2a6e78ecb8eba4ebaf2f583adfba8803e4b6586065f",
+      "before": "b65774b29a21a066285def35be5cc3b8ae23c3fe1e71e9f3218d066e872e40fe"
+    },
+    "public/sr/checkout-privacy.html": {
+      "source": "dist/sr/checkout-privacy.html",
+      "bytes": 16914,
+      "sha256": "a82223367c50d1f36c8a049b9559e78d6c9f556628ae97390c0be3b9b096cd34",
+      "before": "6f48854095d921a1204bfe5f7ee62a8e739cdab94c1aa6bad5e7d34fccafd85c"
+    },
+    "public/sr/checkout.html": {
+      "source": "dist/sr/checkout.html",
+      "bytes": 31162,
+      "sha256": "3823581542a0d385c44f13eefac12f5d303da12e9afdd01e4816135afb0ec42b",
+      "before": "9546d7a2a309e01d4707da83e80b80464160703a30f81f8d0330be43d2df17c2"
+    },
+    "public/sr/distance-sales.html": {
+      "source": "dist/sr/distance-sales.html",
+      "bytes": 16744,
+      "sha256": "0d5a7dfd21d93dd169c8d2e0e4b2c253b67aad646c853ca0fdc12b0b888467df",
+      "before": "a790895f19a3d13059fc54113d061156583c461fd4bb46d85b4be7c15c2b1ea0"
+    },
+    "public/sr/index.html": {
+      "source": "dist/sr/index.html",
+      "bytes": 18902,
+      "sha256": "d182f8ea94f30f42f9f14e5bdb228f5c5e67e487e2dc24dc78001a14d9da0cce",
+      "before": "562fbd66ea24d2a72c6496011daa486763396c2f0409d673a790ce8d00b35bf0"
+    },
+    "public/sr/pre-information.html": {
+      "source": "dist/sr/pre-information.html",
+      "bytes": 16143,
+      "sha256": "f562a7967c43507941a5adda729ee57ccb55a9cbcf02b6513cc59ee0f4f049c5",
+      "before": "d52b9782c6898c27d465f05eca8b8a170a235f8448e43fba9760e41ab01c3ec8"
+    },
+    "public/sr/product.html": {
+      "source": "dist/sr/product.html",
+      "bytes": 15056,
+      "sha256": "9920d055f349174d82d2f764d2f20752fbbc95026bccc9e3df6a98ac340ea5c1",
+      "before": "910f31df8d1d9a411fb3dadedfe5380805436c4685f91c21f5fde1b558b39342"
+    },
+    "public/sr/refund-cancellation.html": {
+      "source": "dist/sr/refund-cancellation.html",
+      "bytes": 14420,
+      "sha256": "fe0fe3692c4d6d057031abc95439e6a26858f05173aea8f8c704049b80677290",
+      "before": "dda0a6f72b2dfabe6f3e74a193e485471bf03e008c7346282c542adc94f05a1e"
+    },
+    "public/sv/cart.html": {
+      "source": "dist/sv/cart.html",
+      "bytes": 26609,
+      "sha256": "8bcf4aeb514782fc93e966ac80772b6652acafd489618dd8e2256ff9b8b5baa8",
+      "before": "d64f9ba4cb0d39ebcbcc24b090262692549f3441d29650d7f3b3ce8ce6937521"
+    },
+    "public/sv/checkout-privacy.html": {
+      "source": "dist/sv/checkout-privacy.html",
+      "bytes": 14844,
+      "sha256": "38de5c900ca8a30667928b792bfe3b2903985a4c1a7817a9fce4bc0a3606403f",
+      "before": "a567540626506bb3188c1707b4fd9afa4e6f60f7d0810bead6fa0f719a73ad71"
+    },
+    "public/sv/checkout.html": {
+      "source": "dist/sv/checkout.html",
+      "bytes": 26873,
+      "sha256": "3887c331b1369017194cc31b8d53f172ca72a06d434decfa1ffbdc6717122156",
+      "before": "0ec292b59bb0aa2383ac6444ef143bb4a5a7d3daa8cbcc988a6dcd7bed87caba"
+    },
+    "public/sv/distance-sales.html": {
+      "source": "dist/sv/distance-sales.html",
+      "bytes": 14876,
+      "sha256": "6ea8ec0d0659ba64048ee0dc9617a97a95c9a2860bb861523ba3f26558351e59",
+      "before": "ccbad0985f912645f6eb966510429f70c27f2e05e5035d4f25c8d0896074171b"
+    },
+    "public/sv/index.html": {
+      "source": "dist/sv/index.html",
+      "bytes": 17005,
+      "sha256": "3593b968aec77c415fcd3c4efa254ceb24ff15ffae874d82ebfe16b1475947be",
+      "before": "1f5f941da564974a743a5163dc05cb380e9061d9805b7e26acedfc1ddcae79b9"
+    },
+    "public/sv/pre-information.html": {
+      "source": "dist/sv/pre-information.html",
+      "bytes": 14542,
+      "sha256": "a8ebae9ee9d451f6a0516edf27747787c04e3111cb2f4beb6571e78946e257cc",
+      "before": "cae4cddf6d99c3341f3b13dc470cff8156c37843b5d4a60660e4c45b9f480a63"
+    },
+    "public/sv/product.html": {
+      "source": "dist/sv/product.html",
+      "bytes": 13450,
+      "sha256": "1025c5698b46df505548cab3726e8aeb8a1cc1597847d4c4ed21a9e9e6124cdf",
+      "before": "b276d5321ef3b7ac06a47f953798a1cd0ae8f3473b0bc64dcd5b3281940e1812"
+    },
+    "public/sv/refund-cancellation.html": {
+      "source": "dist/sv/refund-cancellation.html",
+      "bytes": 13454,
+      "sha256": "5f136423d49355af64dcd7a3afb1c19fbc155693217b3dbec037eec82512a7d5",
+      "before": "308894a4a39922a266e179f645cd3f0153f05ab31c094b268a586dd8ec8663f6"
+    },
+    "public/tr/cart.html": {
+      "source": "dist/tr/cart.html",
+      "bytes": 27230,
+      "sha256": "35348803528cd1c49eb0a6878ba30c4ad1d13b074e69efeec7457bc044aef426",
+      "before": "a3f3f28e8026f4c4de58e341fb3a2c3895a6dc90d37aa91ad318becb5cce2a3c"
+    },
+    "public/tr/checkout-privacy.html": {
+      "source": "dist/tr/checkout-privacy.html",
+      "bytes": 14986,
+      "sha256": "136f5093d9503c00e2a283e67614768bd805508e8ece9f90437f44c1ef9f3d6b",
+      "before": "b9c0462d1f9881dcf1ee4d72b9f4a236519297fc73b26bc087d0f3971474727e"
+    },
+    "public/tr/checkout.html": {
+      "source": "dist/tr/checkout.html",
+      "bytes": 27494,
+      "sha256": "77899f068df849713967f92bfa13d59f4033f160659513e16b7eb721592215bc",
+      "before": "954b2c268b27c6a7448db2ab401574e3f1612f08fd12661fd0e02946a9252546"
+    },
+    "public/tr/distance-sales.html": {
+      "source": "dist/tr/distance-sales.html",
+      "bytes": 15663,
+      "sha256": "15d74f14c0c4241beb52735176583624fb0f8e9b305ea54bb4a3e7612e6307fe",
+      "before": "002bf091003984b5e44ab704770b89fdd41d6c98dde8dbfb9d55417196851481"
+    },
+    "public/tr/index.html": {
+      "source": "dist/tr/index.html",
+      "bytes": 17202,
+      "sha256": "641e57186f36b45a24da3938de54eb414f60e93979a134b366dc39782e7bffcd",
+      "before": "49bd9936f1eef1a8bf2b94dcef95c51df274480195a97fcf150c99d42aabfca3"
+    },
+    "public/tr/pre-information.html": {
+      "source": "dist/tr/pre-information.html",
+      "bytes": 15255,
+      "sha256": "daa2c5c0f30fbd8e772afdc17b4ced0f8e65485d6eca6b6836b103b0a9885dcc",
+      "before": "3c6fe47ae01878124beec975a23c997db3cec55a2b79500dda3c866efb7e3523"
+    },
+    "public/tr/product.html": {
+      "source": "dist/tr/product.html",
+      "bytes": 13591,
+      "sha256": "302afa19fc1875612f6ee463a573ad16b3510598f4da26f9b1cf09793f62a16d",
+      "before": "c1a92a3fc4488d1cb7c1f2b35807387b71c80b9ef40f8df0be4bb4f59bb4602f"
+    },
+    "public/tr/refund-cancellation.html": {
+      "source": "dist/tr/refund-cancellation.html",
+      "bytes": 14093,
+      "sha256": "134c371ea950e9bb2bfbc4d5063a9689b19b0a33378f0cd4de5a3e8f01bdbf12",
+      "before": "25eee7ff1669da14eeb7256940bcf1b477aca9b155db21f502befbf9d42a5868"
+    },
+    "public/uk/cart.html": {
+      "source": "dist/uk/cart.html",
+      "bytes": 31586,
+      "sha256": "bf35df4e3e5eef6277b3dae78aa533838bac154edec753bbfcebaacd12d2299f",
+      "before": "123b4440167c85efe97e26fd9a4d579309a0f4f502567e0e81c884984eb2b2d0"
+    },
+    "public/uk/checkout-privacy.html": {
+      "source": "dist/uk/checkout-privacy.html",
+      "bytes": 17390,
+      "sha256": "94dad6a97299e4f5d4cabe0fa460970972fce29c2e6e0006920320eb7114dcd8",
+      "before": "c632d32c037a6a1b1ef95e0bde3cc4f083a4dcbf58f89e7d932ca7c6172b816f"
+    },
+    "public/uk/checkout.html": {
+      "source": "dist/uk/checkout.html",
+      "bytes": 31850,
+      "sha256": "53e5fded2ad03b16f5bfc963bea73e206aa7b32cfb88bf4878c9ddeb543f0f7e",
+      "before": "ccb9594f21feb454c5fb5b3b0d2c89f87d70ae410707623878abdca58cb57883"
+    },
+    "public/uk/distance-sales.html": {
+      "source": "dist/uk/distance-sales.html",
+      "bytes": 17096,
+      "sha256": "8587211e48bd1fd86c2a6089ea72cc805cb3be023a33690cd6d85ca1fd7f1cc7",
+      "before": "c521b9e0494682bb695bc36c0dc6165f4e42adde27fad145b54a590b17fe3a11"
+    },
+    "public/uk/index.html": {
+      "source": "dist/uk/index.html",
+      "bytes": 19202,
+      "sha256": "18a4bab8f38239a4de56487933b4967b6302fe156f0e32b1caef181354069161",
+      "before": "6eee7a9c058a5561587813fa87d330530adf8c474c62daaf669b28af130e31ca"
+    },
+    "public/uk/pre-information.html": {
+      "source": "dist/uk/pre-information.html",
+      "bytes": 16429,
+      "sha256": "fa904dcd8f40cb15dd5daaf8b08ff2690ef2e85af60c5a62aaa93f878b8cbb91",
+      "before": "24f9db15c0f2282516d210280170a8dbacfeb272ac40443a18eeed9b73ce0fca"
+    },
+    "public/uk/product.html": {
+      "source": "dist/uk/product.html",
+      "bytes": 15299,
+      "sha256": "f722d1fd55ad3d90d7d7a7122001d1a2f742be0ddf68523e52f1d4fd76668ff7",
+      "before": "5edf8ce2461cb3a7cf1ac7a2afd72f8f79c498edbe953bc6000fa44d8e8479ea"
+    },
+    "public/uk/refund-cancellation.html": {
+      "source": "dist/uk/refund-cancellation.html",
+      "bytes": 14574,
+      "sha256": "5f65a059e06d24d1cc8eb85e3323ab866038ad09c2ae7e5950b49fef325a6e8b",
+      "before": "2553b50ccd3f09e55e840bf15678ba927ac9dae0b36d86878b15144721b5e289"
+    },
+    "public/ur/cart.html": {
+      "source": "dist/ur/cart.html",
+      "bytes": 30336,
+      "sha256": "a802d646f0b8781abc0edfef4fd61efc22f2ba4d194a3b9734c4207652c82c27",
+      "before": "bb81d813a661b6e69ce5ae89a4fb283a17d76c470fa1ab4315bc6084142e12cb"
+    },
+    "public/ur/checkout-privacy.html": {
+      "source": "dist/ur/checkout-privacy.html",
+      "bytes": 16960,
+      "sha256": "113177e17f26e7fd122229069bdad2b10f9d29c74e2187405c2a2034981c174d",
+      "before": "4a91760d15ccb4e9487fca3908154cab55dfddb4c05323bd77eed07456a5d72f"
+    },
+    "public/ur/checkout.html": {
+      "source": "dist/ur/checkout.html",
+      "bytes": 30600,
+      "sha256": "26cf5d4dde54c56703e56754e93e8765d3b42fae7c31aac1ff489948e03a9dd2",
+      "before": "46c40d5f6d09440eac999c133cd8082b879fba1cdc9d1619b95d090faab67c9d"
+    },
+    "public/ur/distance-sales.html": {
+      "source": "dist/ur/distance-sales.html",
+      "bytes": 16360,
+      "sha256": "dc9e61ad3fc490ce4c979bbdc6f4111217e66158f9093fe4515c5855c8880776",
+      "before": "84d8774a46f085aed56e629d49eb37475ebe231e5269b8544fa7ec4b791838fc"
+    },
+    "public/ur/index.html": {
+      "source": "dist/ur/index.html",
+      "bytes": 18540,
+      "sha256": "3f5d905af74b53f8a1041558f2158f00974e525116fcb0e3cabc755a654e6a70",
+      "before": "6b7992102f9dbebf23f9f6b26caa5d8adbffa7d267d35204bd3a4aff2b73774a"
+    },
+    "public/ur/pre-information.html": {
+      "source": "dist/ur/pre-information.html",
+      "bytes": 15844,
+      "sha256": "cee7f3bf356ba7f1f8c0ce93cb59ae0057ae8df93b88d5ebd9f9535a4aac0cf1",
+      "before": "b23321568e5f10a420ecee09d9f217cc677e983b69e23ebd2a669deb5f52090a"
+    },
+    "public/ur/product.html": {
+      "source": "dist/ur/product.html",
+      "bytes": 14775,
+      "sha256": "0ed33c7d9c7b5274bd2973579b569f45e2ba2e03c292a739cdee2cdd72cafba3",
+      "before": "0ca6da08a73e165c38ef290680b938d777f2b22dd23f33ccd803506dc49c7467"
+    },
+    "public/ur/refund-cancellation.html": {
+      "source": "dist/ur/refund-cancellation.html",
+      "bytes": 14181,
+      "sha256": "9ca78546d047d8da9ebea9c70739df17c7ebd985336d5dbd93c3b2607383291f",
+      "before": "7e85c6199939f008f90464ba88fc2ff1c846cd202c53b660e6e6f513a0092ee9"
+    },
+    "public/zh/cart.html": {
+      "source": "dist/zh/cart.html",
+      "bytes": 25891,
+      "sha256": "4a8182647fc05459748e9a4f093929c022ae27d450095867242a1421309be02c",
+      "before": "07f0258f1112b77b15206ac9c15de4a762e07d2fdb801f575cbaca0a6384d91f"
+    },
+    "public/zh/checkout-privacy.html": {
+      "source": "dist/zh/checkout-privacy.html",
+      "bytes": 14278,
+      "sha256": "0c21ba997517471a790a926db56364f8500fdfaedcf090f4eead3a1ef56b4635",
+      "before": "750b46f0469ab0ae5e2958dc542852a6084e5017ca9d0cefb4dd44415c8d09f3"
+    },
+    "public/zh/checkout.html": {
+      "source": "dist/zh/checkout.html",
+      "bytes": 26155,
+      "sha256": "db60c9db39e1ca52da11bdc7614cb57405ceba7bc1d37274f26fedf317a9c3c0",
+      "before": "2f94b3b813385ad56fe84bb3e72200df6d7bf45761cf19767fb2dfe97ed1a6d7"
+    },
+    "public/zh/distance-sales.html": {
+      "source": "dist/zh/distance-sales.html",
+      "bytes": 14456,
+      "sha256": "fdac7bed6fd4f6d75e68acf731ac1e50e4a462c208d9cec3ad2b06e603f34ddd",
+      "before": "9557407ef1c440530179c8a10c5bd1b38b8f4b0ba86189cb90254aebbfcd8f3d"
+    },
+    "public/zh/index.html": {
+      "source": "dist/zh/index.html",
+      "bytes": 16647,
+      "sha256": "ce05f64cd1c6fe5bc27a06c8521a3cf37aafa1ad223f6e39849d5f31eb4393c7",
+      "before": "a24e062f0dd2dfa7628ede1b40965bdb307b5088b4adaffd45fc1f4b034d87c2"
+    },
+    "public/zh/pre-information.html": {
+      "source": "dist/zh/pre-information.html",
+      "bytes": 14094,
+      "sha256": "bb846594e35da2063e0dd4bda4a3e1602831205d4ddb495810b12ff5aa76eaf0",
+      "before": "0fb645f3c4d87f55e326014c275f4c5188bf59e264fe2a39e1de45c93c0c8b0c"
+    },
+    "public/zh/product.html": {
+      "source": "dist/zh/product.html",
+      "bytes": 12997,
+      "sha256": "b7310dd38f40764944978e4075df44e8c30fde6775e3428b69e2e80c9329a880",
+      "before": "5ea16295882bffed124e76da24dc7bed41df2cfc5c8736160dec8137d7613153"
+    },
+    "public/zh/refund-cancellation.html": {
+      "source": "dist/zh/refund-cancellation.html",
+      "bytes": 13085,
+      "sha256": "ae7aa187cf750271dd8895741212e0fce26e39a053379e296ed6b961fae33a8c",
+      "before": "89a18b1a872f1976a95f73e265880061033c3ddd24a0b058629af69226d018ed"
+    }
+  }
+}
