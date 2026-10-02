@@ -7,7 +7,7 @@ import vm from 'node:vm';
 async function shellFixture(){
   const calls=[],elements=new Map(),worker={};let activated=false;
   const element=id=>{
-    if(!elements.has(id))elements.set(id,{id,value:'',textContent:'',className:'',hidden:id==='active'||id==='code-form',open:false,disabled:false,
+    if(!elements.has(id))elements.set(id,{id,dataset:{},setAttribute(){},value:'',textContent:'',className:'',hidden:id==='active'||id==='code-form',open:false,disabled:false,
       focus(){this.focused=true},append(){}});
     return elements.get(id);
   };
@@ -24,10 +24,10 @@ async function shellFixture(){
     getState:async()=>({activated,error:null,license:activated?{purchase_email:'adult@example.test',plan:'lifetime',expires_at:null}:null}),
     signOut:async()=>{activated=false},
   });
-  await synthetic('./membership-ui.js',{initializeMembershipUI:async()=>{},updateMembershipUI:()=>{}});
+  await synthetic('./membership-ui.js',{initializeMembershipUI:async()=>{},updateMembershipUI:()=>{},configureMembershipLocales:()=>{}});
   await synthetic('./web-config.js',{VERSION:'1.4.2'});
   await synthetic('./web-ui.js',{
-    names:{en:'English'},language:()=> 'en',dictionaries:async()=>[{en:{}},{en:{}}],translate:(_d,_l,key)=>key,
+    names:{en:'English'},direction:()=> 'ltr',language:()=> 'en',dictionaries:async()=>[{en:{}},{en:{}}],translate:(_d,_l,key)=>key,
     registerWorker:async()=>({active:worker,waiting:null}),workerMessage:async()=>({savedFiles:0,totalFiles:1,savedBytes:0}),installControl:()=>{},
   });
   const shell=new vm.SourceTextModule(await readFile(new URL('../src/workbook-web/shell.js',import.meta.url),'utf8'),{context,identifier:'shell.js'});

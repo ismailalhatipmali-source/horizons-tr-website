@@ -15,7 +15,7 @@ export function mountMembershipManager(host,api,labels) {
     title.textContent=labels.title+' · '+next.learners.length+' / '+next.max_learners;
     const family=next.account_type==='family';form.hidden=next.account_type==='individual'||!next.can_manage;warning.hidden=!family;ackLabel.hidden=!family;ack.required=family;
     for(const learner of next.learners){
-      const row=node('li'),label=node('span',learner.email);row.append(label);
+      const row=node('li'),label=node('bdi',learner.email,{dir:'ltr'});row.append(label);
       if(next.account_type==='institution'&&next.can_manage){
         const remove=node('button',labels.remove,{type:'button'}),confirmationPanel=node('span','',{hidden:''}),message=node('span',labels.remove_warning),yes=node('button',labels.remove,{type:'button'}),cancel=node('button',labels.cancel,{type:'button'});
         confirmationPanel.append(message,yes,cancel);row.append(remove,confirmationPanel);

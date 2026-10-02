@@ -1,0 +1,124 @@
+{
+  "version": "1.4.5",
+  "requires": {
+    "learn/license-core.js": "e30a65d0eba0053e747f9a3af6c1e37d3fc0883e2dd247fa39c293ab49101f62",
+    "learn/learner-store.js": "d8a52139a7d8b7ec7c8ae7d828e38c1175243d79b515684c2cc9f89cef585f0f",
+    "learn/progress-sync-client.js": "ab58ea980a189edec798a29719e6e3a0f46c0f19fc236f5f9437b489d754aa78"
+  },
+  "files": {
+    "learn/index.html": {
+      "source": "src/workbook-web/index.html",
+      "bytes": 8621,
+      "sha256": "ac94efdb43108107a40bd3d8c6b1c1163672cffcd8687894a467790a0c465052",
+      "before": "d6da886ba763eb4cbdf74f8b9094f96aa540170f9997d79e23664ba78433524a"
+    },
+    "learn/membership-manager.js": {
+      "source": "src/workbook-web/membership-manager.js",
+      "bytes": 3970,
+      "sha256": "94e711fd4081cdcebfbaf6862706061f1d80185532983e9d52cf867bb90d9dc8",
+      "before": "743f87acec13187e4f25250a02cf9d3a99d5f9605747204be58d46f083b373d5"
+    },
+    "learn/membership-ui.js": {
+      "source": "src/workbook-web/membership-ui.js",
+      "bytes": 4491,
+      "sha256": "fee5f84548706fddfc1a7768bd959e07ba510c6b87a2d3cd6853cf784544bdfd",
+      "before": "3dd0f38ffa288ecb9d7e6839d016cac7ee64a6a6c9d65a8574b0ad8a3bff20f5"
+    },
+    "learn/portal-locales.json": {
+      "source": "src/workbook-web/portal-locales.json",
+      "bytes": 201073,
+      "sha256": "debc530eca6e45eb325785541f2c0382e25d417b460f88e76fbd94fe1d7a7aeb",
+      "before": "b4e25bab3624f026c7d063cc85493c25bac05200bb1986c04855ed35d6a557a3"
+    },
+    "learn/pwa-client.js": {
+      "source": "src/workbook-web/pwa-client.js",
+      "bytes": 3667,
+      "sha256": "2b3a0af706ea8c0016e8023609665b2ad9dbab6eaa1cd2a5b3d9cec2a41a8433",
+      "before": "616c45bb9eeebae480883e8cb86a2de1d3eb404fabc82001c4af92c71575f1a8"
+    },
+    "learn/shell.css": {
+      "source": "src/workbook-web/shell.css",
+      "bytes": 3383,
+      "sha256": "759076a5dd13c2df82e754551121632a0fc5119ab72b39e222a8ab4c05f29ca0",
+      "before": "33b9da2e18e30743ff5b500eaf6cbb5859286ed10130523a55460b19b4fe6fe1"
+    },
+    "learn/shell.js": {
+      "source": "src/workbook-web/shell.js",
+      "bytes": 8026,
+      "sha256": "690fd85d5525ae9403d0cc489543a9d17d2999352747ff668b414a6b81844f12",
+      "before": "120fc2047b34cc892123cae020ec734bbead3a825488b424b454655392919fae"
+    },
+    "learn/web-config.js": {
+      "source": "src/workbook-web/web-config.js",
+      "bytes": 536,
+      "sha256": "855b5a507dd35d97ad3ab262538671fe7932e76ccc608fc5136ff4db2be579c4",
+      "before": "5616ee29ca1b90b8e1c26c51e949b9277b8544c5b434d66b93becc6baed004a4"
+    },
+    "learn/web-locales.json": {
+      "source": "src/workbook-web/web-locales.json",
+      "bytes": 251783,
+      "sha256": "47ae0d26a9b361e3579032e7716a1f4665910d762198d9b04ff18c473f647a70",
+      "before": "7c78331001b506ae94c373c234837b9f3cdf96e7a603e9565b8a6346d25eecaa"
+    },
+    "learn/web-ui.js": {
+      "source": "src/workbook-web/web-ui.js",
+      "bytes": 4183,
+      "sha256": "bbcda6197242431ea923ab8508437f5f96bf599702e61a481a569e73bc856174",
+      "before": "a90c44ec2e8c0a3f1bb6153fd9e774ada8a0939e5874a873f64a7fcf31991f8a"
+    },
+    "try/demo-locales.js": {
+      "source": "release-assets/1.4.5/files/try/demo-locales.js",
+      "bytes": 76381,
+      "sha256": "59169863fdd3152f0db237e8febe7aa546efe0bd6a55bc12d13a7264868fc9b3",
+      "before": null
+    },
+    "try/demo-pwa.js": {
+      "source": "src/demo-pwa/demo-pwa.js",
+      "bytes": 9591,
+      "sha256": "f0df5af509822c9a882c1fbf7f506e86d94fe2140f0fe07e7e7904af3c7aa244",
+      "before": "3bcb496d6dfa90eb987f6ea4a88d4c7af62378abc1089a4f8dbc77ea4fcc4b2f"
+    },
+    "try/index.html": {
+      "source": "src/demo-pwa/index.html",
+      "bytes": 5036,
+      "sha256": "2c68fe39d5c0691d65112858cd905c49e2c596e5276eec9516a78eccd4e0217b",
+      "before": "a9efe90ea629c5f4d2d297638a3cddf99bf893908b403405b4db999776eb811d"
+    },
+    "try/release-config.js": {
+      "source": "src/demo-pwa/release-config.js",
+      "bytes": 713,
+      "sha256": "aebbe267bbda63152f6b103bbe482696c6b67668a8cf112ec755fe0c9ce61554",
+      "before": "539617a5b05f2a4c7f457cad35c35022a0277f837dc5cb6b76d26e95a4feef22"
+    },
+    "try/workbook.js": {
+      "source": "src/demo-pwa/workbook.js",
+      "bytes": 160249,
+      "sha256": "399953768f9ff451efa4fac69e6f363d0773965bf97e5db4158ad9ff07f367d7",
+      "before": "c9602cc0f6aeb459d25221809daff215ec9dff5601e38aaa0478db5bfb413e3a"
+    },
+    "learn/asset-manifest.json": {
+      "source": "release-assets/1.4.5/files/learn/asset-manifest.json",
+      "bytes": 1169103,
+      "sha256": "cfa67019d782e671db960daa7365bb4e53d1e04d494bab22fb37e5d2d241b920",
+      "before": "d04ec1658250063c32df6e301a3da01f386a36eb0a99dcfad746c653693f33f1"
+    },
+    "try/demo-asset-manifest.json": {
+      "source": "release-assets/1.4.5/files/try/demo-asset-manifest.json",
+      "bytes": 119186,
+      "sha256": "0dd6fd83f01f1b2b7c0bfbafbaa1011c792c9cab354ed2570c4078279ec1e0ec",
+      "before": "9da5e8a852b7af4a993e6edce5b57f12ee7e448b3be9cda35704c68e9b4badac"
+    },
+    "learn/sw.js": {
+      "source": "src/workbook-web/sw.js",
+      "bytes": 9621,
+      "sha256": "18bb7831caf015dc2cd99f731cb4652e01f02d486ca821ab31b01a2082dc8aaa",
+      "before": "f1fb9e9731caee0523cd0599f11401986f13e60f1dd719f4abff494626e64a82"
+    },
+    "try/sw.js": {
+      "source": "src/demo-pwa/sw.js",
+      "bytes": 11358,
+      "sha256": "7ba9ee10c277221367906d994d2a69188190d23f5807858029db92da3ef948cb",
+      "before": "70aabca02503a42a279f05b7ac69f5e81f9593380f11b4d70ccb9bf57097409f"
+    }
+  }
+}

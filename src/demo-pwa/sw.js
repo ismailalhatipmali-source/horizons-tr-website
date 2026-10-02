@@ -1,6 +1,6 @@
 /* Public five-letter demo only. No activation or paid-content access is implemented here. */
 'use strict';
-const VERSION='1.4.3';
+const VERSION='1.4.5';
 const EXPECTED=['baa','dhaa_emphatic','daad','yaa','dhaal'];
 const ROOT=new URL('./',self.location.href);
 const CACHE='hzn-public-demo-'+VERSION;

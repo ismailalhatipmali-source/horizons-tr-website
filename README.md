@@ -1,8 +1,23 @@
-# HORIZONS — Arabic Workbook web 1.4.4 / demo 1.4.3 / Windows 1.4.0
+# HORIZONS — Arabic Workbook web/demo 1.4.5 / Windows 1.4.0
 
 This repository prepares the existing HORIZONS website and Arabic Level 1 workbook for the owner's cPanel deployment. The approved company design, 32 site languages, localized pages, video, and RTL/LTR layouts remain in place. The original company preview is recorded by `preview_source_commit` in `dist/release.json`.
 
-## Live membership update 1.4.4 — 2026-10-02
+## Interface update 1.4.5 — 2026-10-02
+
+The web workbook and public demo now use the same 32 interface languages as the
+website, including activation, passwords, learner management, installation and
+offline saving. The existing Arabic lessons, recordings, approved cover and
+optional five-language word/story meanings are unchanged.
+
+Build with `python3 scripts/build_interface_update.py`. On the existing installed
+host, `.cpanel.yml` publishes the 19 public interface files using
+`scripts/deploy-interface.php`. It checks every source and installed baseline,
+backs up changed files privately, and preserves activation services, databases,
+encrypted lessons, saved progress and previously downloaded media. This overlay
+requires the existing membership release; it is not a fresh installation package.
+See [the interface release record](docs/interface-release-1.4.5.md).
+
+## Membership deployment 1.4.4 — 2026-10-02
 
 The private membership service, full workbook 1.4.4 and the account storefront
 are installed on `https://horizons-tr.com/`. The cPanel UI confirmed successful
@@ -17,11 +32,11 @@ worker runs every minute. SMTP TLS and authentication succeeded, but no email wa
 sent during verification; receipt of an activation email and a real paid
 activation/password/synchronization journey have not been verified on this host.
 
-For this already-installed host, `.cpanel.yml` now uses the small verified
+For the previous storefront deployment, `.cpanel.yml` used the small verified
 `scripts/deploy-storefront.php` publisher. It preserves workbook lessons,
 configuration, runtime databases and unrelated public files, and keeps private
 rollback backups. It deliberately requires workbook 1.4.4 to be installed first.
-This avoids rebuilding the large immutable legacy release archives on every
+This avoided rebuilding the large immutable legacy release archives on every
 storefront edit. PHP deployment diagnostics are written outside the Git checkout.
 
 See [the deployment record](docs/deployment-2026-10-02.md) for exact verification,

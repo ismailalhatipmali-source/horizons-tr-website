@@ -1,4 +1,5 @@
 import { VERSION, PRODUCT } from './web-config.js';
+// Interface release 1.4.5; encrypted lessons and learner stores are unchanged.
 import { getAccess, getState, decryptAsset } from './license-core.js';
 import { handleLearnerRequest } from './learner-store.js';
 import { MediaStore, MEDIA_LIMITS, verifiedCipher, mediaResponse } from './media-store.js';
