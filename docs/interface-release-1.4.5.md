@@ -43,6 +43,15 @@ old cached media against the new manifest before reusing it.
 
 ## Verification
 
+Published successfully: cPanel recorded deployment of
+`d73f6b2aa1f188cdedbf4e143b62a5d2a7d7d7f1` on 2026-10-02 at
+10:52:09 (as displayed by cPanel). The live `/learn/?lang=ar` shell and
+`/try/?lang=ja` demo showed 1.4.5 after closing their old cached windows once.
+Live shell checks covered Hebrew, Persian, Urdu, Bengali, German, Japanese and
+Arabic, with 32 selector options and correct RTL/LTR. The demo followed the
+Japanese URL choice and its save dialog also switched correctly to Urdu.
+The existing demo cache was readable after the upgrade (109 of 594 files saved).
+
 - All 32 languages have identical key coverage and matching interpolation tokens.
 - Activation code → password flow exercised in all 32 languages with mocked
   services; passwords are cleared and never persisted in browser storage.
