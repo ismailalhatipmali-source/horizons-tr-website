@@ -1,0 +1,18 @@
+<<<HZN0529>>> Use when: Release checklist is complete
+<<<HZN0530>>> Your final travel file for {{trip}} is attached. Please review names, dates, local times, meeting points, remaining payments and support contacts. Keep the latest version accessible during travel. Tell us promptly if you find a discrepancy. Document and entry requirements should be checked against the official sources recorded in your file.
+<<<HZN0531>>> Next step: Document / requirement 38
+<<<HZN0532>>> 11 Subject: We have received your on-trip report
+<<<HZN0533>>> Use when: Traveler reports an issue
+<<<HZN0534>>> We have recorded the following issue: {{details}}. The current next action is {{action}}, and the next update is planned for {{due}}. Please keep any relevant supplier messages or receipts. If anyone is in immediate danger or needs urgent medical assistance, contact local emergency services first rather than waiting for our response.
+<<<HZN0535>>> Next step: Document / requirement 34
+<<<HZN0536>>> 12 Subject: Welcome home - how was your trip?
+<<<HZN0537>>> Use when: Traveler has returned
+<<<HZN0538>>> Welcome home. We would value your honest feedback on what worked well and what we should improve. Please tell us about any unresolved item and preferences you would like us to remember. If you are happy for us to quote part of your feedback publicly, please give separate permission and specify the name or description we may use.
+<<<HZN0539>>> Thank you,
+<<<HZN0540>>> Next step: Document / requirement 36
+<<<HZN0541>>> Single-business licence
+<<<HZN0542>>> Your purchase permits use by one business and its staff. You may customise these templates for unlimited client projects within that business and deliver finished, non-editable documents to your travel clients.
+<<<HZN0543>>> You may not resell, sublicense, give away or publicly share editable templates, source HTML, spreadsheets or any template access links. You may not offer the files as competing templates or claim exclusive ownership of the underlying designs. No PLR or MRR rights are granted.
+<<<HZN0544>>> Keep a backup of the original files. Customisation services, hosted software, supplier integrations and guaranteed business results are not included. Use your own verified trip information and business terms.
+<<<HZN0545>>> For file defects, contact the seller through the purchase record. Remedies remain subject to applicable law and marketplace rules.
+<<<HZN0546>>> Manrope and Cairo are supplied under their separate included SIL Open Font licences. Those font licences govern the fonts and are not restricted by this template licence.

@@ -1,0 +1,82 @@
+<<<HZN0354>>> Email for approvals
+<<<HZN0355>>> Q-001 / v2
+<<<HZN0356>>> 2027-01-20 17:00 UTC
+<<<HZN0357>>> 7 nights, 2 cities, 2 adults. Independent exploration with selected guided experiences.
+<<<HZN0358>>> Local walking tour, food experience and rail connection.
+<<<HZN0359>>> Option B balances comfort and free time. All figures are fictional, not live supplier offers.
+<<<HZN0360>>> A
+<<<HZN0361>>> Standard rooms; breakfast extra
+<<<HZN0362>>> Supplier conditions
+<<<HZN0363>>> USD 5,200
+<<<HZN0364>>> B
+<<<HZN0365>>> Comfort rooms; breakfast included
+<<<HZN0366>>> C
+<<<HZN0367>>> Higher room category
+<<<HZN0368>>> Verify change costs
+<<<HZN0369>>> USD 6,150
+<<<HZN0370>>> B matches the stated budget and priorities.
+<<<HZN0371>>> 7
+<<<HZN0372>>> 2350
+<<<HZN0373>>> Included in quote
+<<<HZN0374>>> Flights
+<<<HZN0375>>> 2
+<<<HZN0376>>> 1800
+<<<HZN0377>>> Activities
+<<<HZN0378>>> 550
+<<<HZN0379>>> Transfers
+<<<HZN0380>>> 300
+<<<HZN0381>>> Rail
+<<<HZN0382>>> Planning fee
+<<<HZN0383>>> 1
+<<<HZN0384>>> TR001-DEP
+<<<HZN0385>>> 2027-01-20
+<<<HZN0386>>> 1400
+<<<HZN0387>>> 0
+<<<HZN0388>>> TR001-MID
+<<<HZN0389>>> 2027-03-15
+<<<HZN0390>>> 1960
+<<<HZN0391>>> 500
+<<<HZN0392>>> 1460
+<<<HZN0393>>> TR001-FIN
+<<<HZN0394>>> 2027-04-20
+<<<HZN0395>>> 2240
+<<<HZN0396>>> 2027-03-18
+<<<HZN0397>>> Total 5,600. Net received 1,900. Remaining 3,700. Only 1,460 is overdue on this review date.
+<<<HZN0398>>> SUP-001
+<<<HZN0399>>> DEMO-H01
+<<<HZN0400>>> Confirmed
+<<<HZN0401>>> Activity
+<<<HZN0402>>> SUP-002
+<<<HZN0403>>> DEMO-A01
+<<<HZN0404>>> Special request pending
+<<<HZN0405>>> 2027-05-10
+<<<HZN0406>>> City A
+<<<HZN0407>>> Arrival and free time
+<<<HZN0408>>> Airport transfer
+<<<HZN0409>>> 2027-05-11
+<<<HZN0410>>> Walking tour
+<<<HZN0411>>> 2027-05-12
+<<<HZN0412>>> Independent exploration
+<<<HZN0413>>> 2027-05-13
+<<<HZN0414>>> City B
+<<<HZN0415>>> Rail journey and check-in
+<<<HZN0416>>> 2027-05-14
+<<<HZN0417>>> Food experience
+<<<HZN0418>>> 2027-05-15
+<<<HZN0419>>> Free day
+<<<HZN0420>>> 2027-05-16
+<<<HZN0421>>> Free day; departure on 17 May
+<<<HZN0422>>> Collect the overdue 1,460 and resolve the supplier request before final release.
+<<<HZN0423>>> Travel advisor
+<<<HZN0424>>> 2027-03-19 12:00 UTC
+<<<HZN0425>>> Start with your own agency
+<<<HZN0426>>> This kit supports independent travel advisors and small agencies. Use it for any destination. Choose the language folder that suits the client. The five editions contain the same 40 document pages, not 200 different templates.
+<<<HZN0427>>> Unzip the download on a computer. Open Agency_Documents.html in a desktop browser. Enter the agency, client, trip reference, destination, dates and currency at the top. Shared values update across the document pages. Keep the original file as your clean master.
+<<<HZN0428>>> Use Worked_Example.html and its eight-page PDF to understand the workflow. Use Operations_Example.xlsx to inspect the calculations, then start real records in Operations_Blank.xlsx. The fictional cities, supplier codes and amounts are teaching data.
+<<<HZN0429>>> Edit, save and deliver
+<<<HZN0430>>> Click a field to enter text. Choose your agency colour and font in the toolbar. Use the page menu to navigate. Duplicate a daily itinerary or table page when you need more room. A coloured outline warns when text exceeds the page; shorten it or continue on a duplicate page.
+<<<HZN0431>>> Save completed copy downloads a new HTML file with your entries, colour, paper size and selection. Reopen that downloaded file to continue. Unsaved edits are not retained when you close the tab. Each language is a separate edition; your client’s answers are not automatically translated.
+<<<HZN0432>>> Select only the pages intended for the traveler, then Print selected pages / PDF. The client-page button excludes pages 06, 34 and 38–40, but still review your selection. Choose A4 or Letter, enable background graphics and disable browser headers/footers. Inspect the PDF before sending. Client PDFs are static; calculations remain in the workbook.
+<<<HZN0433>>> Run the operations workbook
+<<<HZN0434>>> Start in Setup: set one currency and the review date. Changing the currency label does not convert values. The review date controls overdue flags; it does not rebuild historical balances. Use a separate workbook for each currency. Enter real spreadsheet dates, not text.
+<<<HZN0435>>> Create a unique trip reference in Trips. Schedule each installment once in Installments. Record each receipt or refund in Receipts using its installment reference; the trip reference is calculated. Pale amber cells are inputs; teal cells contain formulas. Enter 0 where a known amount received is zero. Do not delete formula columns.

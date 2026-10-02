@@ -1,0 +1,110 @@
+<<<HZN0244>>> Result / action
+<<<HZN0245>>> 30
+<<<HZN0246>>> Insurance decision record
+<<<HZN0247>>> Record the traveler’s decision and refer coverage questions to the insurer.
+<<<HZN0248>>> Decision and date
+<<<HZN0249>>> Insurer / support contact
+<<<HZN0250>>> Policy reference / secure location
+<<<HZN0251>>> Questions about coverage
+<<<HZN0252>>> 31
+<<<HZN0253>>> Before departure
+<<<HZN0254>>> Review with the traveler and assign an owner to anything that remains incomplete.
+<<<HZN0255>>> Names and dates match the approved records.
+<<<HZN0256>>> Tickets and supplier confirmations are accessible.
+<<<HZN0257>>> Document and entry checks are recorded.
+<<<HZN0258>>> Baggage, meeting points and local times are clear.
+<<<HZN0259>>> Remaining payments and direct charges are understood.
+<<<HZN0260>>> Support contacts and insurance decision are available.
+<<<HZN0261>>> 32
+<<<HZN0262>>> Help and contacts
+<<<HZN0263>>> Verify every number, availability window and time zone before sharing.
+<<<HZN0264>>> Role / relationship
+<<<HZN0265>>> Availability / time zone
+<<<HZN0266>>> Agency support
+<<<HZN0267>>> Accommodation
+<<<HZN0268>>> Transfer operator
+<<<HZN0269>>> Insurance assistance
+<<<HZN0270>>> Traveler emergency contact
+<<<HZN0271>>> Local emergency services
+<<<HZN0272>>> 33
+<<<HZN0273>>> On-trip issue record
+<<<HZN0274>>> Record facts, assistance requested and the next update. In immediate danger, use local emergency services.
+<<<HZN0275>>> Issue and immediate need
+<<<HZN0276>>> Next update time
+<<<HZN0277>>> 34
+<<<HZN0278>>> Useful answers
+<<<HZN0279>>> Write answers specific to this booking and link to verified supplier instructions where needed.
+<<<HZN0280>>> Question
+<<<HZN0281>>> Answer / verified reference
+<<<HZN0282>>> 35
+<<<HZN0283>>> Your trip feedback
+<<<HZN0284>>> Invite honest feedback. Ask separately for permission before quoting the client publicly.
+<<<HZN0285>>> What worked well
+<<<HZN0286>>> What should improve
+<<<HZN0287>>> Preferences for next time
+<<<HZN0288>>> Ease of use, 1–5, and why
+<<<HZN0289>>> Permission to quote feedback
+<<<HZN0290>>> 36
+<<<HZN0291>>> Welcome home
+<<<HZN0292>>> Close the client conversation, follow up on open items and record future preferences.
+<<<HZN0293>>> Follow-up message
+<<<HZN0294>>> Open items and owner
+<<<HZN0295>>> 37
+<<<HZN0296>>> Final release review
+<<<HZN0297>>> Complete all checks before release. Payment alone does not make a client pack ready.
+<<<HZN0298>>> Client names, dates and route agree across all files.
+<<<HZN0299>>> Approved price and installment schedule reconcile.
+<<<HZN0300>>> Receipts, refunds and overdue amounts are reviewed.
+<<<HZN0301>>> Document checks and insurance decision are recorded.
+<<<HZN0302>>> Supplier confirmations and support contacts are verified.
+<<<HZN0303>>> Only intended client pages are selected for export.
+<<<HZN0304>>> The exported PDF is readable and contains no sample data.
+<<<HZN0305>>> 38
+<<<HZN0306>>> Workflow and responsibilities
+<<<HZN0307>>> Assign the next action and owner at every handover. Keep unfinished tasks visible.
+<<<HZN0308>>> Workflow stage
+<<<HZN0309>>> Completed / evidence
+<<<HZN0310>>> Discover
+<<<HZN0311>>> Confirm dates, budget and priorities.
+<<<HZN0312>>> Propose
+<<<HZN0313>>> Compare options and record validity.
+<<<HZN0314>>> Approve
+<<<HZN0315>>> Retain approval for the exact offer.
+<<<HZN0316>>> Book
+<<<HZN0317>>> Obtain confirmations from suppliers.
+<<<HZN0318>>> Prepare
+<<<HZN0319>>> Reconcile payments and review documents.
+<<<HZN0320>>> Travel
+<<<HZN0321>>> Record issues and next update times.
+<<<HZN0322>>> Close
+<<<HZN0323>>> Resolve balances and collect feedback.
+<<<HZN0324>>> 39
+<<<HZN0325>>> Trip closeout
+<<<HZN0326>>> Reconcile money, resolve remaining issues and retain only records your business needs.
+<<<HZN0327>>> Refund / adjustment record
+<<<HZN0328>>> Agency income reconciliation
+<<<HZN0329>>> Lessons and reusable preferences
+<<<HZN0330>>> Archive / retention reference
+<<<HZN0331>>> Reviewed by / date
+<<<HZN0332>>> 40
+<<<HZN0333>>> Email address
+<<<HZN0334>>> Phone + country code
+<<<HZN0335>>> Your journey, thoughtfully organised.
+<<<HZN0336>>> FICTIONAL WORKED EXAMPLE
+<<<HZN0337>>> REUSABLE TEMPLATE
+<<<HZN0338>>> Enter details
+<<<HZN0339>>> Some text exceeds a page. Shorten it or use another copy of that page before printing.
+<<<HZN0340>>> Copy prepared for download. Keep that file to retain your changes.
+<<<HZN0341>>> Select at least one page.
+<<<HZN0342>>> Keep identity and payment documents in your secure process. This file does not collect card or passport numbers.
+<<<HZN0343>>> Example Travel Studio
+<<<HZN0344>>> TR-001
+<<<HZN0345>>> Maya and Alex
+<<<HZN0346>>> USD
+<<<HZN0347>>> 2 adults; 1 double room
+<<<HZN0348>>> Client’s departure airport; details to confirm
+<<<HZN0349>>> City A + City B
+<<<HZN0350>>> 2027-05-10 / 2027-05-17
+<<<HZN0351>>> Up to 2 days either side
+<<<HZN0352>>> USD 5,600
+<<<HZN0353>>> A relaxed cultural trip with small hotels and free time.
