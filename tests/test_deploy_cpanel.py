@@ -13,7 +13,7 @@ import zipfile
 
 SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/deploy-cpanel.sh'
 VERSION = '1.4.0'
-WEB_VERSION = '1.4.2'
+WEB_VERSION = '1.4.4'
 DEMO_VERSION = '1.4.3'
 UPDATE = 'Horizons-Arabic-Level-1-1.4.0-update.zip'
 SETUP = 'HORIZONS-Arabic-Setup-1.4.0.exe'

@@ -1,6 +1,21 @@
-# HORIZONS — Arabic Workbook web 1.4.2 / demo 1.4.3 / Windows 1.4.0
+# HORIZONS — Arabic Workbook web 1.4.4 / demo 1.4.3 / Windows 1.4.0
 
 This repository prepares the existing HORIZONS website and Arabic Level 1 workbook for the owner's cPanel deployment. The approved company design, 32 site languages, localized pages, video, and RTL/LTR layouts remain in place. The original company preview is recorded by `preview_source_commit` in `dist/release.json`.
+
+## Prepared membership update 1.4.4
+
+This branch extends the existing issuer for individual/family/institution accounts,
+code → password activation, any-device login, authenticated rosters and manual
+bank-credit confirmation followed by automatic fulfilment. Public collection is
+still disabled. See src/activation/README.md and src/commerce/README.md for current
+behavior and the required hosting checks. Historical release notes below describe
+older versions; web 1.4.4 must follow the private service installation.
+
+Build the separate cPanel installation ZIP with
+`python3 scripts/build_membership_update.py`. It is produced in the sibling
+`deliverables` directory. Extract beside public_html and run the CLI preflight.
+Never publish private app/commerce source under public_html. Config, vault and
+progress are preserved, and changed files/database are backed up privately.
 
 ## Workbook entry points
 
@@ -48,7 +63,7 @@ The checked-in `.cpanel.yml` runs:
 /bin/bash scripts/deploy-cpanel.sh /home2/horizonstr/public_html/
 ```
 
-The script stages the `learn`, `demo`, `setup`, and `update` artifacts from `release-assets/1.4.0/manifest.tsv`. It verifies the expected part count, reconstructed byte size, and SHA-256 before changing public files. ZIP contents are checked against the permitted destinations. It then verifies every entry in `release-assets/1.4.2/manifest.tsv` and applies the web overlay in private staging. This shell-only update reuses the unchanged 1.4.0/1.4.1 encrypted lessons. Only approved source-to-destination mappings under `/learn/` and `/learning-api/` are allowed; runtime data and activation configuration cannot be deployed by this manifest. Website files from `dist/` and the verified release artifacts are then installed into the document root. The deployment keeps hosting-specific Apache rules and unrelated files, and keeps deployment backups outside the public document root. Ordinary publication errors restore the changed paths from those backups.
+The script stages the `learn`, `demo`, `setup`, and `update` artifacts from `release-assets/1.4.0/manifest.tsv`. It verifies the expected part count, reconstructed byte size, and SHA-256 before changing public files. ZIP contents are checked against the permitted destinations. It then verifies every entry in `release-assets/1.4.4/manifest.tsv` and applies the web overlay in private staging. This shell-only update reuses the unchanged 1.4.0/1.4.1 encrypted lessons. Only approved source-to-destination mappings under `/learn/` and `/learning-api/` are allowed; runtime data and activation configuration cannot be deployed by this manifest. Website files from `dist/` and the verified release artifacts are then installed into the document root. The deployment keeps hosting-specific Apache rules and unrelated files, and keeps deployment backups outside the public document root. Ordinary publication errors restore the changed paths from those backups.
 
 The host needs **Bash, `unzip`, `sha256sum`, and standard Unix file tools**. It does not need Node.js, Python, a package install, or a workbook build. Deployment uses standard copy/move tools; `rsync` is not required. Leave adequate disk space for the checkout, reconstructed artifacts, staging area, deployed files, and backups.
 

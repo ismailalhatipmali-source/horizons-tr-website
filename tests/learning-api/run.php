@@ -13,7 +13,8 @@ $rsa=openssl_pkey_new(['private_key_bits'=>2048,'private_key_type'=>OPENSSL_KEYT
 $device=str_repeat('a',64);$otherDevice=str_repeat('b',64);
 function signedLicense(string $account,string $license,string $device,string $hash,int $now,?int $expires=null,int $schema=3):array {
  global $secret;$l=['schema'=>$schema,'product'=>HorizonsLearning\PRODUCT,'license_id'=>$license,'device_id'=>$device,'public_key_sha256'=>$hash,'wrapped_key'=>base64_encode(str_repeat('x',256)),'max_devices'=>3,'issued_at'=>utc($now-10),'purchase_email'=>'fixture@example.test'];
- if($schema===3)$l+=['account_id'=>$account,'plan'=>$expires===null?'lifetime':'monthly','channel'=>'direct','starts_at'=>utc($now-100),'expires_at'=>$expires===null?null:utc($expires)];
+ if($schema>=3)$l+=['account_id'=>$account,'plan'=>$expires===null?'lifetime':'monthly','channel'=>'direct','starts_at'=>utc($now-100),'expires_at'=>$expires===null?null:utc($expires)];
+ if($schema===4){$l['channel']='membership';$l['max_devices']=0;$l+=['device_policy'=>'any_device','account_type'=>'family','lease_expires_at'=>utc($now+600)];}
  $raw=json($l);return ['payload'=>base64_encode($raw),'signature'=>base64_encode(sodium_crypto_sign_detached($raw,$secret))];
 }
 foreach(['acct_a'=>'license_a','acct_b'=>'license_b'] as $account=>$license){$s=$registry->prepare('INSERT INTO entitlements VALUES(?,?,?,?,?,?,?)');$s->execute([$license,hash('sha256',$account),0,$account,'direct',$now-100,null]);foreach([$device,$otherDevice] as $d){$s=$registry->prepare('INSERT INTO devices VALUES(?,?,?)');$s->execute([$license,$d,$hash]);$s=$registry->prepare('INSERT INTO account_devices VALUES(?,?,?)');$s->execute([$account,$d,$hash]);}}
@@ -53,6 +54,12 @@ $c=request('auth-challenge',['license'=>signedLicense('acct_a','license_a',$devi
 $c=request('auth-challenge',['license'=>signedLicense('acct_a','license_a',$device,$hash,$now),'public_key'=>$public]);$response=['challenge_id'=>$c['challenge_id'],'nonce'=>nonce($c)];$now+=61;fails(fn()=>request('auth-verify',$response),'INVALID_AUTH');
 fails(fn()=>request('list',[],''),'AUTH_REQUIRED');$tampered=signedLicense('acct_a','license_a',$device,$hash,$now);$tampered['payload']=base64_encode('{}');fails(fn()=>request('auth-challenge',['license'=>$tampered,'public_key'=>$public]),'INVALID_AUTH');$passed[]='proof_possession_single_use_expiry_signature';
 check(hash_file('sha256',$registryPath)===$originalHash,'No activation database writes');$passed[]='activation_database_read_only';
+$registry->exec("UPDATE entitlements SET channel='membership' WHERE id='license_a'");
+$c=request('auth-challenge',['license'=>signedLicense('acct_a','license_a',$device,$hash,$now,null,4),'public_key'=>$public]);
+$m=request('auth-verify',['challenge_id'=>$c['challenge_id'],'nonce'=>nonce($c)]);check(is_array(request('list',[],$m['token'])['profiles']),'Membership progress accepted');
+$registry->exec("UPDATE entitlements SET revoked=1 WHERE id='license_a'");fails(fn()=>request('list',[],$m['token']),'ENTITLEMENT_INACTIVE');
+$registry->exec("UPDATE entitlements SET revoked=0,channel='direct' WHERE id='license_a'");$passed[]='membership_schema4_progress_and_revocation';
+
 $registry->exec("UPDATE account_devices SET key_hash='replaced' WHERE account_id='acct_a'");fails(fn()=>request('list',[],$token),'DEVICE_REVOKED');$registry->exec("UPDATE account_devices SET key_hash='$hash' WHERE account_id='acct_a'");
 $registry->exec("UPDATE entitlements SET revoked=1 WHERE id='license_a'");fails(fn()=>request('list',[],$token),'ENTITLEMENT_INACTIVE');$registry->exec("UPDATE entitlements SET revoked=0 WHERE id='license_a'");
 $registry->exec("UPDATE entitlements SET expires_at=".($now-1)." WHERE id='license_a'");fails(fn()=>request('list',[],$token),'ENTITLEMENT_INACTIVE');$registry->exec("UPDATE entitlements SET expires_at=NULL WHERE id='license_a'");

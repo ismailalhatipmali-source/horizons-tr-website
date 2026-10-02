@@ -63,7 +63,7 @@ final class Registration {
         $raw=b64($envelope['payload']);$signature=b64($envelope['signature'],64);
         if (!sodium_crypto_sign_verify_detached($signature,$raw,b64($this->issuer,32))) throw new ApiError('INVALID_AUTH',401);
         try {$l=json_decode($raw,true,8,JSON_THROW_ON_ERROR);} catch(\Throwable $e) {throw new ApiError('INVALID_AUTH',401);}
-        if (!is_array($l) || !in_array($l['schema']??null,[2,3],true) || ($l['product']??null)!==PRODUCT) throw new ApiError('INVALID_AUTH',401);
+        if (!is_array($l) || !in_array($l['schema']??null,[2,3,4],true) || ($l['product']??null)!==PRODUCT) throw new ApiError('INVALID_AUTH',401);
         foreach (['license_id','device_id','public_key_sha256'] as $f) if (!is_string($l[$f]??null)) throw new ApiError('INVALID_AUTH',401);
         if (!preg_match('/^[A-Za-z0-9][A-Za-z0-9_-]{0,95}$/D',$l['license_id']) || !preg_match('/^[a-f0-9]{64}$/D',$l['device_id']) || !preg_match('/^[a-f0-9]{64}$/D',$l['public_key_sha256'])) throw new ApiError('INVALID_AUTH',401);
         $issued=dateValue($l['issued_at']??null);
@@ -74,10 +74,14 @@ final class Registration {
         $details=$pub?openssl_pkey_get_details($pub):false;
         if (!$details || $details['type']!==OPENSSL_KEYTYPE_RSA || $details['bits']<2048 || $details['bits']>4096 || ($details['rsa']['e']??'')!=="\x01\x00\x01" || preg_replace('/-----[^-]+-----|\s/','',$details['key'])!==$publicKey) throw new ApiError('INVALID_AUTH',401);
         $expires=null;
-        if ($l['schema']===3) {
+        if ($l['schema']>=3) {
             if (!is_string($l['account_id']??null) || !preg_match('/^[A-Za-z0-9][A-Za-z0-9_-]{0,95}$/D',$l['account_id']) || dateValue($l['starts_at']??null)>$now) throw new ApiError('INVALID_AUTH',401);
             if (($l['expires_at']??null)!==null) $expires=dateValue($l['expires_at']);
             $account=$l['account_id'];
+            if($l['schema']===4){
+                if(($l['channel']??null)!=='membership'||($l['device_policy']??null)!=='any_device'||($l['max_devices']??null)!==0)throw new ApiError('INVALID_AUTH',401);
+                $lease=dateValue($l['lease_expires_at']??null);if($lease<=$issued||$lease>$issued+86400)throw new ApiError('INVALID_AUTH',401);$expires=min($expires??PHP_INT_MAX,$lease);
+            }
         } else {
             $e=$this->one('SELECT * FROM entitlements WHERE id=?',[$l['license_id']]);
             if (!$e) throw new ApiError('INVALID_AUTH',401);
