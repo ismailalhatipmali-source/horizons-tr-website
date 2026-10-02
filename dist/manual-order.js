@@ -10,8 +10,8 @@ for(const node of document.querySelectorAll('[data-k]')){const k=node.dataset.k;
 document.getElementById('title').textContent=t.product_title||'Travel Agent Templates & Client Kit';
 document.getElementById('cover').src='assets/covers/'+lang+'/travel-kit.svg';document.getElementById('cover').alt=t.product_title||'Travel Agent Templates & Client Kit';
 document.getElementById('back-link').href='travel-kit.html?lang='+encodeURIComponent(lang);if(t.back)document.getElementById('back-link').textContent=t.back;
-document.getElementById('sales-link').href=lang+'/distance-sales.html?product=travel-agent-client-kit&offer=single-business';
-document.getElementById('privacy-link').href=lang+'/checkout-privacy.html?product=travel-agent-client-kit&offer=single-business';
+document.getElementById('sales-link').href=lang+'/terms.html';
+document.getElementById('privacy-link').href=lang+'/privacy.html';
 const note=document.getElementById('note');
 const notes={
 ar:'ترسل بيانات الطلب بشكل خاص إلى HORIZONS. لا يتم اقتطاع أي مبلغ في هذه الصفحة. سنتواصل معك عبر البريد لتأكيد طريقة الدفع، وبعد التحقق من الدفع نرسل رابط التحميل يدويًا.',
