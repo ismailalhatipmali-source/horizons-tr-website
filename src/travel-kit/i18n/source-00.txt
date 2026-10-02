@@ -1,0 +1,123 @@
+<<<HZN0000>>> html
+<<<HZN0001>>> Agency document studio
+<<<HZN0002>>> Save completed copy
+<<<HZN0003>>> Print selected pages / PDF
+<<<HZN0004>>> Select all
+<<<HZN0005>>> Select client pages
+<<<HZN0006>>> Clear selection
+<<<HZN0007>>> Paper size
+<<<HZN0008>>> A4
+<<<HZN0009>>> Letter
+<<<HZN0010>>> Agency colour
+<<<HZN0011>>> Manrope
+<<<HZN0012>>> Arial
+<<<HZN0013>>> Georgia
+<<<HZN0014>>> Set your agency details, complete the pages you need, then save a new copy. Choose client pages before printing.
+<<<HZN0015>>> Agency name
+<<<HZN0016>>> Client / group
+<<<HZN0017>>> Trip reference
+<<<HZN0018>>> Destination(s)
+<<<HZN0019>>> Travel dates
+<<<HZN0020>>> Currency code
+<<<HZN0021>>> Contact details
+<<<HZN0022>>> CLIENT DOCUMENT
+<<<HZN0023>>> Your journey, organised.
+<<<HZN0024>>> A personal travel file prepared by your agency.
+<<<HZN0025>>> Trip reference:
+<<<HZN0026>>> —
+<<<HZN0027>>> Client / group:
+<<<HZN0028>>> Currency code:
+<<<HZN0029>>> 01
+<<<HZN0030>>> Selected pages
+<<<HZN0031>>> Duplicate page
+<<<HZN0032>>> Welcome to your next trip
+<<<HZN0033>>> Introduce your agency, explain the process and give the client one clear next step.
+<<<HZN0034>>> Welcome message
+<<<HZN0035>>> Thank you for trusting us with your travel plans. We will begin with your priorities and budget, prepare suitable options and confirm the details with you before booking.
+<<<HZN0036>>> What happens next
+<<<HZN0037>>> Discovery → proposal → approval → supplier confirmation → final travel file → follow-up.
+<<<HZN0038>>> Information we need
+<<<HZN0039>>> Please complete the trip brief and traveler details. Identify essential needs early so we can check them with suppliers.
+<<<HZN0040>>> Next action and ownership
+<<<HZN0041>>> Next action
+<<<HZN0042>>> Responsible person
+<<<HZN0043>>> Deadline + time zone
+<<<HZN0044>>> 02
+<<<HZN0045>>> How we work together
+<<<HZN0046>>> Publish only service standards and terms your agency can actually provide.
+<<<HZN0047>>> Service scope
+<<<HZN0048>>> Trip discovery, proposal preparation, booking coordination, payment follow-up and preparation of the final client file. Adjust this scope to your actual services.
+<<<HZN0049>>> Working hours + time zone
+<<<HZN0050>>> Response time
+<<<HZN0051>>> Preferred contact channel
+<<<HZN0052>>> Planning fees and payment terms
+<<<HZN0053>>> Applicable terms reference
+<<<HZN0054>>> 03
+<<<HZN0055>>> Client trip brief
+<<<HZN0056>>> Collect the essentials before researching suppliers or preparing a quote.
+<<<HZN0057>>> Travel party and ages
+<<<HZN0058>>> Departure point
+<<<HZN0059>>> Date flexibility
+<<<HZN0060>>> Budget range + currency
+<<<HZN0061>>> Purpose of the trip
+<<<HZN0062>>> 04
+<<<HZN0063>>> Traveler details
+<<<HZN0064>>> Verify names against documents through your secure process. Do not store passport numbers here.
+<<<HZN0065>>> Name as on travel document
+<<<HZN0066>>> Age on departure
+<<<HZN0067>>> Room arrangement
+<<<HZN0068>>> Service requests to verify
+<<<HZN0069>>> 05
+<<<HZN0070>>> INTERNAL WORKING FILE
+<<<HZN0071>>> Discovery conversation
+<<<HZN0072>>> Capture the client’s own priorities, then confirm your understanding with them.
+<<<HZN0073>>> Preferred pace
+<<<HZN0074>>> Interests and experiences
+<<<HZN0075>>> Essential requirements
+<<<HZN0076>>> What to avoid
+<<<HZN0077>>> Decision maker and approval route
+<<<HZN0078>>> 06
+<<<HZN0079>>> Priorities and trade-offs
+<<<HZN0080>>> Separate essential requirements from preferences before recommending an option.
+<<<HZN0081>>> Preference
+<<<HZN0082>>> Priority
+<<<HZN0083>>> Acceptable trade-off
+<<<HZN0084>>> Notes
+<<<HZN0085>>> Dates
+<<<HZN0086>>> Budget
+<<<HZN0087>>> Location
+<<<HZN0088>>> Comfort
+<<<HZN0089>>> Pace
+<<<HZN0090>>> Flexibility
+<<<HZN0091>>> 07
+<<<HZN0092>>> Budget boundaries
+<<<HZN0093>>> Agree the currency, ceiling and included costs. A currency label does not convert amounts.
+<<<HZN0094>>> Maximum approved budget
+<<<HZN0095>>> Included
+<<<HZN0096>>> Not included
+<<<HZN0097>>> Budget allocation
+<<<HZN0098>>> 08
+<<<HZN0099>>> Your travel proposal
+<<<HZN0100>>> Present the recommendation, price and expiry together. Availability must be reconfirmed before booking.
+<<<HZN0101>>> Quote reference / version
+<<<HZN0102>>> Valid until + time zone
+<<<HZN0103>>> Trip summary
+<<<HZN0104>>> Key experiences
+<<<HZN0105>>> Total + currency
+<<<HZN0106>>> Recommendation and reason
+<<<HZN0107>>> 09
+<<<HZN0108>>> The trip at a glance
+<<<HZN0109>>> Keep dates, services and confirmation status consistent with the detailed itinerary.
+<<<HZN0110>>> Date
+<<<HZN0111>>> Service
+<<<HZN0112>>> Status
+<<<HZN0113>>> 10
+<<<HZN0114>>> Accommodation comparison
+<<<HZN0115>>> Compare like-for-like occupancy, meals and cancellation conditions.
+<<<HZN0116>>> Property / hotel
+<<<HZN0117>>> Meal plan
+<<<HZN0118>>> Changes / cancellation terms
+<<<HZN0119>>> Price + currency
+<<<HZN0120>>> 11
+<<<HZN0121>>> Accommodation brief
+<<<HZN0122>>> Record confirmed arrangements and keep unconfirmed requests clearly identified.

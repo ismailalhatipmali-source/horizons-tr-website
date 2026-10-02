@@ -1,0 +1,547 @@
+<<<HZN0000>>> html
+<<<HZN0001>>> Agency document studio
+<<<HZN0002>>> Save completed copy
+<<<HZN0003>>> Print selected pages / PDF
+<<<HZN0004>>> Select all
+<<<HZN0005>>> Select client pages
+<<<HZN0006>>> Clear selection
+<<<HZN0007>>> Paper size
+<<<HZN0008>>> A4
+<<<HZN0009>>> Letter
+<<<HZN0010>>> Agency colour
+<<<HZN0011>>> Manrope
+<<<HZN0012>>> Arial
+<<<HZN0013>>> Georgia
+<<<HZN0014>>> Set your agency details, complete the pages you need, then save a new copy. Choose client pages before printing.
+<<<HZN0015>>> Agency name
+<<<HZN0016>>> Client / group
+<<<HZN0017>>> Trip reference
+<<<HZN0018>>> Destination(s)
+<<<HZN0019>>> Travel dates
+<<<HZN0020>>> Currency code
+<<<HZN0021>>> Contact details
+<<<HZN0022>>> CLIENT DOCUMENT
+<<<HZN0023>>> Your journey, organised.
+<<<HZN0024>>> A personal travel file prepared by your agency.
+<<<HZN0025>>> Trip reference:
+<<<HZN0026>>> —
+<<<HZN0027>>> Client / group:
+<<<HZN0028>>> Currency code:
+<<<HZN0029>>> 01
+<<<HZN0030>>> Selected pages
+<<<HZN0031>>> Duplicate page
+<<<HZN0032>>> Welcome to your next trip
+<<<HZN0033>>> Introduce your agency, explain the process and give the client one clear next step.
+<<<HZN0034>>> Welcome message
+<<<HZN0035>>> Thank you for trusting us with your travel plans. We will begin with your priorities and budget, prepare suitable options and confirm the details with you before booking.
+<<<HZN0036>>> What happens next
+<<<HZN0037>>> Discovery → proposal → approval → supplier confirmation → final travel file → follow-up.
+<<<HZN0038>>> Information we need
+<<<HZN0039>>> Please complete the trip brief and traveler details. Identify essential needs early so we can check them with suppliers.
+<<<HZN0040>>> Next action and ownership
+<<<HZN0041>>> Next action
+<<<HZN0042>>> Responsible person
+<<<HZN0043>>> Deadline + time zone
+<<<HZN0044>>> 02
+<<<HZN0045>>> How we work together
+<<<HZN0046>>> Publish only service standards and terms your agency can actually provide.
+<<<HZN0047>>> Service scope
+<<<HZN0048>>> Trip discovery, proposal preparation, booking coordination, payment follow-up and preparation of the final client file. Adjust this scope to your actual services.
+<<<HZN0049>>> Working hours + time zone
+<<<HZN0050>>> Response time
+<<<HZN0051>>> Preferred contact channel
+<<<HZN0052>>> Planning fees and payment terms
+<<<HZN0053>>> Applicable terms reference
+<<<HZN0054>>> 03
+<<<HZN0055>>> Client trip brief
+<<<HZN0056>>> Collect the essentials before researching suppliers or preparing a quote.
+<<<HZN0057>>> Travel party and ages
+<<<HZN0058>>> Departure point
+<<<HZN0059>>> Date flexibility
+<<<HZN0060>>> Budget range + currency
+<<<HZN0061>>> Purpose of the trip
+<<<HZN0062>>> 04
+<<<HZN0063>>> Traveler details
+<<<HZN0064>>> Verify names against documents through your secure process. Do not store passport numbers here.
+<<<HZN0065>>> Name as on travel document
+<<<HZN0066>>> Age on departure
+<<<HZN0067>>> Room arrangement
+<<<HZN0068>>> Service requests to verify
+<<<HZN0069>>> 05
+<<<HZN0070>>> INTERNAL WORKING FILE
+<<<HZN0071>>> Discovery conversation
+<<<HZN0072>>> Capture the client’s own priorities, then confirm your understanding with them.
+<<<HZN0073>>> Preferred pace
+<<<HZN0074>>> Interests and experiences
+<<<HZN0075>>> Essential requirements
+<<<HZN0076>>> What to avoid
+<<<HZN0077>>> Decision maker and approval route
+<<<HZN0078>>> 06
+<<<HZN0079>>> Priorities and trade-offs
+<<<HZN0080>>> Separate essential requirements from preferences before recommending an option.
+<<<HZN0081>>> Preference
+<<<HZN0082>>> Priority
+<<<HZN0083>>> Acceptable trade-off
+<<<HZN0084>>> Notes
+<<<HZN0085>>> Dates
+<<<HZN0086>>> Budget
+<<<HZN0087>>> Location
+<<<HZN0088>>> Comfort
+<<<HZN0089>>> Pace
+<<<HZN0090>>> Flexibility
+<<<HZN0091>>> 07
+<<<HZN0092>>> Budget boundaries
+<<<HZN0093>>> Agree the currency, ceiling and included costs. A currency label does not convert amounts.
+<<<HZN0094>>> Maximum approved budget
+<<<HZN0095>>> Included
+<<<HZN0096>>> Not included
+<<<HZN0097>>> Budget allocation
+<<<HZN0098>>> 08
+<<<HZN0099>>> Your travel proposal
+<<<HZN0100>>> Present the recommendation, price and expiry together. Availability must be reconfirmed before booking.
+<<<HZN0101>>> Quote reference / version
+<<<HZN0102>>> Valid until + time zone
+<<<HZN0103>>> Trip summary
+<<<HZN0104>>> Key experiences
+<<<HZN0105>>> Total + currency
+<<<HZN0106>>> Recommendation and reason
+<<<HZN0107>>> 09
+<<<HZN0108>>> The trip at a glance
+<<<HZN0109>>> Keep dates, services and confirmation status consistent with the detailed itinerary.
+<<<HZN0110>>> Date
+<<<HZN0111>>> Service
+<<<HZN0112>>> Status
+<<<HZN0113>>> 10
+<<<HZN0114>>> Accommodation comparison
+<<<HZN0115>>> Compare like-for-like occupancy, meals and cancellation conditions.
+<<<HZN0116>>> Property / hotel
+<<<HZN0117>>> Meal plan
+<<<HZN0118>>> Changes / cancellation terms
+<<<HZN0119>>> Price + currency
+<<<HZN0120>>> 11
+<<<HZN0121>>> Accommodation brief
+<<<HZN0122>>> Record confirmed arrangements and keep unconfirmed requests clearly identified.
+<<<HZN0123>>> Check-in / check-out
+<<<HZN0124>>> Beds and occupancy
+<<<HZN0125>>> Address and arrival instructions
+<<<HZN0126>>> Booking reference
+<<<HZN0127>>> Confirmed requests
+<<<HZN0128>>> 12
+<<<HZN0129>>> Flight options
+<<<HZN0130>>> Use local times with time zones. Confirm baggage and fare rules for each option.
+<<<HZN0131>>> Route
+<<<HZN0132>>> Local times + time zones
+<<<HZN0133>>> Baggage allowance
+<<<HZN0134>>> Fare conditions
+<<<HZN0135>>> 13
+<<<HZN0136>>> Compare the full offers
+<<<HZN0137>>> Show total prices, inclusions and flexibility, then explain your recommendation.
+<<<HZN0138>>> Option
+<<<HZN0139>>> 14
+<<<HZN0140>>> Price breakdown
+<<<HZN0141>>> Use one currency. Reconcile the total to the approved offer and payment schedule.
+<<<HZN0142>>> Item / description
+<<<HZN0143>>> Quantity
+<<<HZN0144>>> Amount
+<<<HZN0145>>> Taxes / fees treatment
+<<<HZN0146>>> 15
+<<<HZN0147>>> Included and not included
+<<<HZN0148>>> Make exclusions and payments made directly to suppliers visible before approval.
+<<<HZN0149>>> 16
+<<<HZN0150>>> Client approval record
+<<<HZN0151>>> Record the exact version approved and retain the original approval evidence.
+<<<HZN0152>>> Approved option / version
+<<<HZN0153>>> Approved by
+<<<HZN0154>>> Evidence / file reference
+<<<HZN0155>>> 17
+<<<HZN0156>>> Payment schedule
+<<<HZN0157>>> Use the same installment references as the workbook. Separate future balances from overdue amounts.
+<<<HZN0158>>> Installment reference
+<<<HZN0159>>> Scheduled amount
+<<<HZN0160>>> Received amount
+<<<HZN0161>>> Remaining amount
+<<<HZN0162>>> Review date
+<<<HZN0163>>> 18
+<<<HZN0164>>> Booking confirmation log
+<<<HZN0165>>> A request is not a confirmation. Match each confirmed service to its supplier record.
+<<<HZN0166>>> Supplier
+<<<HZN0167>>> Last verified
+<<<HZN0168>>> 19
+<<<HZN0169>>> Change request record
+<<<HZN0170>>> Check costs and availability, obtain approval, then record the confirmed outcome.
+<<<HZN0171>>> Requested change
+<<<HZN0172>>> Original arrangement
+<<<HZN0173>>> Price and timing impact
+<<<HZN0174>>> Approval record
+<<<HZN0175>>> Confirmed outcome
+<<<HZN0176>>> 20
+<<<HZN0177>>> Final travel file
+<<<HZN0178>>> Summarise the confirmed trip and identify the latest version of the client pack.
+<<<HZN0179>>> Reference
+<<<HZN0180>>> Emergency contact route
+<<<HZN0181>>> 21
+<<<HZN0182>>> Day-by-day overview
+<<<HZN0183>>> Leave realistic travel time between activities. Duplicate this page for a longer trip.
+<<<HZN0184>>> Day / date
+<<<HZN0185>>> Plan / activity
+<<<HZN0186>>> Transport / meeting point
+<<<HZN0187>>> 22
+<<<HZN0188>>> Daily itinerary
+<<<HZN0189>>> Use local times, meeting details and confirmation references the traveler can follow.
+<<<HZN0190>>> Time + time zone
+<<<HZN0191>>> Meeting instructions
+<<<HZN0192>>> 23
+<<<HZN0193>>> Transfer details
+<<<HZN0194>>> Confirm the exact meeting point, waiting policy and support contact before travel.
+<<<HZN0195>>> Pickup point / time
+<<<HZN0196>>> Drop-off point
+<<<HZN0197>>> Vehicle / capacity / luggage
+<<<HZN0198>>> 24
+<<<HZN0199>>> Experience details
+<<<HZN0200>>> Explain what is confirmed, what to bring and which requests still need a supplier response.
+<<<HZN0201>>> Duration / buffer
+<<<HZN0202>>> Access / dietary requests
+<<<HZN0203>>> 25
+<<<HZN0204>>> Dining reservations
+<<<HZN0205>>> Verify dietary requests with the venue. Record the response instead of assuming acceptance.
+<<<HZN0206>>> Venue / restaurant
+<<<HZN0207>>> Party size
+<<<HZN0208>>> 26
+<<<HZN0209>>> Destination essentials
+<<<HZN0210>>> Add verified, destination-specific information with its source and check date.
+<<<HZN0211>>> Local practical information
+<<<HZN0212>>> Expected conditions / source
+<<<HZN0213>>> Local customs and accessibility
+<<<HZN0214>>> Source / official link
+<<<HZN0215>>> 27
+<<<HZN0216>>> Packing for this trip
+<<<HZN0217>>> Tailor the list to the itinerary, weather, activities and confirmed baggage rules.
+<<<HZN0218>>> Travel documents
+<<<HZN0219>>> Tickets and confirmations
+<<<HZN0220>>> Payment backup
+<<<HZN0221>>> Personal medication
+<<<HZN0222>>> Weather-appropriate clothing
+<<<HZN0223>>> Chargers and adapter
+<<<HZN0224>>> Activity equipment
+<<<HZN0225>>> Contact and support details
+<<<HZN0226>>> 28
+<<<HZN0227>>> Travel document checklist
+<<<HZN0228>>> Track document status and verification. Keep original documents in a secure location.
+<<<HZN0229>>> Document / requirement
+<<<HZN0230>>> Traveler
+<<<HZN0231>>> Expiry / validity
+<<<HZN0232>>> Travel identity document
+<<<HZN0233>>> Entry / transit documents
+<<<HZN0234>>> Tickets
+<<<HZN0235>>> Accommodation confirmations
+<<<HZN0236>>> Insurance decision / policy
+<<<HZN0237>>> Other traveler-specific documents
+<<<HZN0238>>> 29
+<<<HZN0239>>> Entry requirements log
+<<<HZN0240>>> Check official sources for this traveler, route and date. Record unresolved questions for follow-up.
+<<<HZN0241>>> Citizenship / residence relevant to check
+<<<HZN0242>>> Transit points
+<<<HZN0243>>> Requirement to verify
+<<<HZN0244>>> Result / action
+<<<HZN0245>>> 30
+<<<HZN0246>>> Insurance decision record
+<<<HZN0247>>> Record the traveler’s decision and refer coverage questions to the insurer.
+<<<HZN0248>>> Decision and date
+<<<HZN0249>>> Insurer / support contact
+<<<HZN0250>>> Policy reference / secure location
+<<<HZN0251>>> Questions about coverage
+<<<HZN0252>>> 31
+<<<HZN0253>>> Before departure
+<<<HZN0254>>> Review with the traveler and assign an owner to anything that remains incomplete.
+<<<HZN0255>>> Names and dates match the approved records.
+<<<HZN0256>>> Tickets and supplier confirmations are accessible.
+<<<HZN0257>>> Document and entry checks are recorded.
+<<<HZN0258>>> Baggage, meeting points and local times are clear.
+<<<HZN0259>>> Remaining payments and direct charges are understood.
+<<<HZN0260>>> Support contacts and insurance decision are available.
+<<<HZN0261>>> 32
+<<<HZN0262>>> Help and contacts
+<<<HZN0263>>> Verify every number, availability window and time zone before sharing.
+<<<HZN0264>>> Role / relationship
+<<<HZN0265>>> Availability / time zone
+<<<HZN0266>>> Agency support
+<<<HZN0267>>> Accommodation
+<<<HZN0268>>> Transfer operator
+<<<HZN0269>>> Insurance assistance
+<<<HZN0270>>> Traveler emergency contact
+<<<HZN0271>>> Local emergency services
+<<<HZN0272>>> 33
+<<<HZN0273>>> On-trip issue record
+<<<HZN0274>>> Record facts, assistance requested and the next update. In immediate danger, use local emergency services.
+<<<HZN0275>>> Issue and immediate need
+<<<HZN0276>>> Next update time
+<<<HZN0277>>> 34
+<<<HZN0278>>> Useful answers
+<<<HZN0279>>> Write answers specific to this booking and link to verified supplier instructions where needed.
+<<<HZN0280>>> Question
+<<<HZN0281>>> Answer / verified reference
+<<<HZN0282>>> 35
+<<<HZN0283>>> Your trip feedback
+<<<HZN0284>>> Invite honest feedback. Ask separately for permission before quoting the client publicly.
+<<<HZN0285>>> What worked well
+<<<HZN0286>>> What should improve
+<<<HZN0287>>> Preferences for next time
+<<<HZN0288>>> Ease of use, 1–5, and why
+<<<HZN0289>>> Permission to quote feedback
+<<<HZN0290>>> 36
+<<<HZN0291>>> Welcome home
+<<<HZN0292>>> Close the client conversation, follow up on open items and record future preferences.
+<<<HZN0293>>> Follow-up message
+<<<HZN0294>>> Open items and owner
+<<<HZN0295>>> 37
+<<<HZN0296>>> Final release review
+<<<HZN0297>>> Complete all checks before release. Payment alone does not make a client pack ready.
+<<<HZN0298>>> Client names, dates and route agree across all files.
+<<<HZN0299>>> Approved price and installment schedule reconcile.
+<<<HZN0300>>> Receipts, refunds and overdue amounts are reviewed.
+<<<HZN0301>>> Document checks and insurance decision are recorded.
+<<<HZN0302>>> Supplier confirmations and support contacts are verified.
+<<<HZN0303>>> Only intended client pages are selected for export.
+<<<HZN0304>>> The exported PDF is readable and contains no sample data.
+<<<HZN0305>>> 38
+<<<HZN0306>>> Workflow and responsibilities
+<<<HZN0307>>> Assign the next action and owner at every handover. Keep unfinished tasks visible.
+<<<HZN0308>>> Workflow stage
+<<<HZN0309>>> Completed / evidence
+<<<HZN0310>>> Discover
+<<<HZN0311>>> Confirm dates, budget and priorities.
+<<<HZN0312>>> Propose
+<<<HZN0313>>> Compare options and record validity.
+<<<HZN0314>>> Approve
+<<<HZN0315>>> Retain approval for the exact offer.
+<<<HZN0316>>> Book
+<<<HZN0317>>> Obtain confirmations from suppliers.
+<<<HZN0318>>> Prepare
+<<<HZN0319>>> Reconcile payments and review documents.
+<<<HZN0320>>> Travel
+<<<HZN0321>>> Record issues and next update times.
+<<<HZN0322>>> Close
+<<<HZN0323>>> Resolve balances and collect feedback.
+<<<HZN0324>>> 39
+<<<HZN0325>>> Trip closeout
+<<<HZN0326>>> Reconcile money, resolve remaining issues and retain only records your business needs.
+<<<HZN0327>>> Refund / adjustment record
+<<<HZN0328>>> Agency income reconciliation
+<<<HZN0329>>> Lessons and reusable preferences
+<<<HZN0330>>> Archive / retention reference
+<<<HZN0331>>> Reviewed by / date
+<<<HZN0332>>> 40
+<<<HZN0333>>> Email address
+<<<HZN0334>>> Phone + country code
+<<<HZN0335>>> Your journey, thoughtfully organised.
+<<<HZN0336>>> FICTIONAL WORKED EXAMPLE
+<<<HZN0337>>> REUSABLE TEMPLATE
+<<<HZN0338>>> Enter details
+<<<HZN0339>>> Some text exceeds a page. Shorten it or use another copy of that page before printing.
+<<<HZN0340>>> Copy prepared for download. Keep that file to retain your changes.
+<<<HZN0341>>> Select at least one page.
+<<<HZN0342>>> Keep identity and payment documents in your secure process. This file does not collect card or passport numbers.
+<<<HZN0343>>> Example Travel Studio
+<<<HZN0344>>> TR-001
+<<<HZN0345>>> Maya and Alex
+<<<HZN0346>>> USD
+<<<HZN0347>>> 2 adults; 1 double room
+<<<HZN0348>>> Client’s departure airport; details to confirm
+<<<HZN0349>>> City A + City B
+<<<HZN0350>>> 2027-05-10 / 2027-05-17
+<<<HZN0351>>> Up to 2 days either side
+<<<HZN0352>>> USD 5,600
+<<<HZN0353>>> A relaxed cultural trip with small hotels and free time.
+<<<HZN0354>>> Email for approvals
+<<<HZN0355>>> Q-001 / v2
+<<<HZN0356>>> 2027-01-20 17:00 UTC
+<<<HZN0357>>> 7 nights, 2 cities, 2 adults. Independent exploration with selected guided experiences.
+<<<HZN0358>>> Local walking tour, food experience and rail connection.
+<<<HZN0359>>> Option B balances comfort and free time. All figures are fictional, not live supplier offers.
+<<<HZN0360>>> A
+<<<HZN0361>>> Standard rooms; breakfast extra
+<<<HZN0362>>> Supplier conditions
+<<<HZN0363>>> USD 5,200
+<<<HZN0364>>> B
+<<<HZN0365>>> Comfort rooms; breakfast included
+<<<HZN0366>>> C
+<<<HZN0367>>> Higher room category
+<<<HZN0368>>> Verify change costs
+<<<HZN0369>>> USD 6,150
+<<<HZN0370>>> B matches the stated budget and priorities.
+<<<HZN0371>>> 7
+<<<HZN0372>>> 2350
+<<<HZN0373>>> Included in quote
+<<<HZN0374>>> Flights
+<<<HZN0375>>> 2
+<<<HZN0376>>> 1800
+<<<HZN0377>>> Activities
+<<<HZN0378>>> 550
+<<<HZN0379>>> Transfers
+<<<HZN0380>>> 300
+<<<HZN0381>>> Rail
+<<<HZN0382>>> Planning fee
+<<<HZN0383>>> 1
+<<<HZN0384>>> TR001-DEP
+<<<HZN0385>>> 2027-01-20
+<<<HZN0386>>> 1400
+<<<HZN0387>>> 0
+<<<HZN0388>>> TR001-MID
+<<<HZN0389>>> 2027-03-15
+<<<HZN0390>>> 1960
+<<<HZN0391>>> 500
+<<<HZN0392>>> 1460
+<<<HZN0393>>> TR001-FIN
+<<<HZN0394>>> 2027-04-20
+<<<HZN0395>>> 2240
+<<<HZN0396>>> 2027-03-18
+<<<HZN0397>>> Total 5,600. Net received 1,900. Remaining 3,700. Only 1,460 is overdue on this review date.
+<<<HZN0398>>> SUP-001
+<<<HZN0399>>> DEMO-H01
+<<<HZN0400>>> Confirmed
+<<<HZN0401>>> Activity
+<<<HZN0402>>> SUP-002
+<<<HZN0403>>> DEMO-A01
+<<<HZN0404>>> Special request pending
+<<<HZN0405>>> 2027-05-10
+<<<HZN0406>>> City A
+<<<HZN0407>>> Arrival and free time
+<<<HZN0408>>> Airport transfer
+<<<HZN0409>>> 2027-05-11
+<<<HZN0410>>> Walking tour
+<<<HZN0411>>> 2027-05-12
+<<<HZN0412>>> Independent exploration
+<<<HZN0413>>> 2027-05-13
+<<<HZN0414>>> City B
+<<<HZN0415>>> Rail journey and check-in
+<<<HZN0416>>> 2027-05-14
+<<<HZN0417>>> Food experience
+<<<HZN0418>>> 2027-05-15
+<<<HZN0419>>> Free day
+<<<HZN0420>>> 2027-05-16
+<<<HZN0421>>> Free day; departure on 17 May
+<<<HZN0422>>> Collect the overdue 1,460 and resolve the supplier request before final release.
+<<<HZN0423>>> Travel advisor
+<<<HZN0424>>> 2027-03-19 12:00 UTC
+<<<HZN0425>>> Start with your own agency
+<<<HZN0426>>> This kit supports independent travel advisors and small agencies. Use it for any destination. Choose the language folder that suits the client. The five editions contain the same 40 document pages, not 200 different templates.
+<<<HZN0427>>> Unzip the download on a computer. Open Agency_Documents.html in a desktop browser. Enter the agency, client, trip reference, destination, dates and currency at the top. Shared values update across the document pages. Keep the original file as your clean master.
+<<<HZN0428>>> Use Worked_Example.html and its eight-page PDF to understand the workflow. Use Operations_Example.xlsx to inspect the calculations, then start real records in Operations_Blank.xlsx. The fictional cities, supplier codes and amounts are teaching data.
+<<<HZN0429>>> Edit, save and deliver
+<<<HZN0430>>> Click a field to enter text. Choose your agency colour and font in the toolbar. Use the page menu to navigate. Duplicate a daily itinerary or table page when you need more room. A coloured outline warns when text exceeds the page; shorten it or continue on a duplicate page.
+<<<HZN0431>>> Save completed copy downloads a new HTML file with your entries, colour, paper size and selection. Reopen that downloaded file to continue. Unsaved edits are not retained when you close the tab. Each language is a separate edition; your client’s answers are not automatically translated.
+<<<HZN0432>>> Select only the pages intended for the traveler, then Print selected pages / PDF. The client-page button excludes pages 06, 34 and 38–40, but still review your selection. Choose A4 or Letter, enable background graphics and disable browser headers/footers. Inspect the PDF before sending. Client PDFs are static; calculations remain in the workbook.
+<<<HZN0433>>> Run the operations workbook
+<<<HZN0434>>> Start in Setup: set one currency and the review date. Changing the currency label does not convert values. The review date controls overdue flags; it does not rebuild historical balances. Use a separate workbook for each currency. Enter real spreadsheet dates, not text.
+<<<HZN0435>>> Create a unique trip reference in Trips. Schedule each installment once in Installments. Record each receipt or refund in Receipts using its installment reference; the trip reference is calculated. Pale amber cells are inputs; teal cells contain formulas. Enter 0 where a known amount received is zero. Do not delete formula columns.
+<<<HZN0436>>> Use the Overview warning count and each table’s Data check column to fix duplicates, missing inputs and invalid references. Invalid records are excluded from monetary totals. Prepared capacity is 100 trips, 200 installments and 300 receipts. The other limits are 100 inquiries/suppliers and 200 income/expense/task records. Start a new workbook when full; formulas do not automatically extend beyond these limits.
+<<<HZN0437>>> Follow the worked example
+<<<HZN0438>>> TR-001 has a total of USD 5,600. The three installments are 1,400, 1,960 and 2,240. Receipts of 1,400 and 500 give net client funds of 1,900. The remaining balance is 3,700. On 18 March 2027, only 1,460 is overdue; the final 2,240 is due on 20 April.
+<<<HZN0439>>> Expected commissions are calculated separately: 2,350 × 10% × 80% = 188, and 550 × 12% × 80% = 52.80. Total expected commission is 240.80. A separate planning fee of 300 gives expected agency income of 540.80. These expected amounts are not automatically treated as received.
+<<<HZN0440>>> Try this in a disposable copy: change the partial receipt from 500 to 1,000. The trip balance becomes 3,200 and the overdue installment becomes 960. Restore the value afterward. A fully paid trip can still need document, insurance, supplier or manual release checks.
+<<<HZN0441>>> Refunds, changes and corrections
+<<<HZN0442>>> For a refund, add a new receipt ID, the actual refund date, the original installment reference and a negative amount. Preserve the original receipt. A refund of 300 against the sample second installment reduces net receipts to 1,600 and increases the remaining trip balance to 4,000 while the approved price stays unchanged.
+<<<HZN0443>>> Cancellation status alone does not calculate a refund or erase the balance. Record the agreed cancellation outcome in page 20. Update the trip total and installment schedule to the documented settlement, then record money actually returned as negative receipts. Check the schedule difference returns to zero. Never infer supplier terms from this template.
+<<<HZN0444>>> If an ID is duplicated or an installment is invalid, the affected receipts are excluded until corrected. Resolve the warning rather than overwriting a calculated total. For a genuine duplicate entry, remove only the erroneous input row’s values and preserve its formulas. Keep evidence of corrections in your business records.
+<<<HZN0445>>> Client delivery and compatibility
+<<<HZN0446>>> Before delivery, complete page 38 and review the exported PDF. Confirm names, dates, currency, price version, payment schedule, supplier references and support contacts. Remove fictional data and internal pages. Send finished client PDFs; keep editable files and income records inside the licensed business.
+<<<HZN0447>>> Use a desktop Chromium-based browser for the HTML editor. Save/reopen, text overflow and PDF output were tested in Chromium. The XLSX files use standard formulas. All ten delivered workbooks were independently recalculated in LibreOffice; Microsoft Excel was not directly tested. Google Sheets, mobile editing and cloud collaboration are not included. Keep formulas intact and use your spreadsheet application’s recalculation setting.
+<<<HZN0448>>> The 12 email scripts are text you customise and send yourself. Replace every double-brace field before sending. This kit does not book travel, send messages or synchronise supplier systems. For a file problem, contact the seller through your Etsy order and describe the filename and issue without sending sensitive client data.
+<<<HZN0449>>> 01 — Your journey, organised.
+<<<HZN0450>>> 02 — Welcome to your next trip
+<<<HZN0451>>> 03 — How we work together
+<<<HZN0452>>> 04 — Client trip brief
+<<<HZN0453>>> 05 — Traveler details
+<<<HZN0454>>> 06 — Discovery conversation [INTERNAL WORKING FILE]
+<<<HZN0455>>> 07 — Priorities and trade-offs
+<<<HZN0456>>> 08 — Budget boundaries
+<<<HZN0457>>> 09 — Your travel proposal
+<<<HZN0458>>> 10 — The trip at a glance
+<<<HZN0459>>> 11 — Accommodation comparison
+<<<HZN0460>>> 12 — Accommodation brief
+<<<HZN0461>>> 13 — Flight options
+<<<HZN0462>>> 14 — Compare the full offers
+<<<HZN0463>>> 15 — Price breakdown
+<<<HZN0464>>> 16 — Included and not included
+<<<HZN0465>>> 17 — Client approval record
+<<<HZN0466>>> 18 — Payment schedule
+<<<HZN0467>>> 19 — Booking confirmation log
+<<<HZN0468>>> 20 — Change request record
+<<<HZN0469>>> 21 — Final travel file
+<<<HZN0470>>> 22 — Day-by-day overview
+<<<HZN0471>>> 23 — Daily itinerary
+<<<HZN0472>>> 24 — Transfer details
+<<<HZN0473>>> 25 — Experience details
+<<<HZN0474>>> 26 — Dining reservations
+<<<HZN0475>>> 27 — Destination essentials
+<<<HZN0476>>> 28 — Packing for this trip
+<<<HZN0477>>> 29 — Travel document checklist
+<<<HZN0478>>> 30 — Entry requirements log
+<<<HZN0479>>> 31 — Insurance decision record
+<<<HZN0480>>> 32 — Before departure
+<<<HZN0481>>> 33 — Help and contacts
+<<<HZN0482>>> 34 — On-trip issue record [INTERNAL WORKING FILE]
+<<<HZN0483>>> 35 — Useful answers
+<<<HZN0484>>> 36 — Your trip feedback
+<<<HZN0485>>> 37 — Welcome home
+<<<HZN0486>>> 38 — Final release review [INTERNAL WORKING FILE]
+<<<HZN0487>>> 39 — Workflow and responsibilities [INTERNAL WORKING FILE]
+<<<HZN0488>>> 40 — Trip closeout [INTERNAL WORKING FILE]
+<<<HZN0489>>> Client email scripts
+<<<HZN0490>>> ------------------------------------------
+<<<HZN0491>>> Replace every {{field}} before sending. Keep the subject and body together.
+<<<HZN0492>>> 01 Subject: We received your travel request - {{trip}}
+<<<HZN0493>>> Use when: New inquiry received
+<<<HZN0494>>> Hello {{client}},
+<<<HZN0495>>> Thank you for contacting {{agency}}. Please complete the attached trip brief with your dates, departure point, travelers, budget and essential preferences. Once we have these details, we will confirm the planning scope and next steps with you. Please flag access or dietary requests early so we can check them with suppliers.
+<<<HZN0496>>> Best regards,
+<<<HZN0497>>> {{agency}}
+<<<HZN0498>>> Next step: Document / requirement 04
+<<<HZN0499>>> 02 Subject: A few details to complete your brief
+<<<HZN0500>>> Use when: Required information is missing
+<<<HZN0501>>> We are preparing your trip file and still need: {{details}}. Please send these details by {{due}}, including the relevant time zone. We will confirm any effect on the proposal timeline after receiving them. Please use our agreed secure route for sensitive documents and never send payment-card details by email.
+<<<HZN0502>>> 03 Subject: Your travel proposal is ready - {{quote}}
+<<<HZN0503>>> Use when: Proposal is checked and ready
+<<<HZN0504>>> Your proposal {{quote}} is attached. Please review the total price, currency, included services, exclusions and supplier conditions. The quote is valid until {{due}}, subject to availability. Tell us which option you prefer and any changes you need. Your approval lets us request bookings; supplier confirmation remains a separate step.
+<<<HZN0505>>> Next step: Document / requirement 17
+<<<HZN0506>>> 04 Subject: Following up on your proposal
+<<<HZN0507>>> Use when: No decision before quote expiry
+<<<HZN0508>>> Have you had a chance to review {{quote}}? We can clarify the differences between the options or adjust the proposal to your priorities. The current validity deadline is {{due}}. If you need more time, please let us know so we can check availability and pricing again before proceeding.
+<<<HZN0509>>> Next step: Document / requirement 14
+<<<HZN0510>>> 05 Subject: Your approval has been recorded
+<<<HZN0511>>> Use when: Exact offer version approved
+<<<HZN0512>>> We have recorded your approval of {{quote}} for trip {{trip}}. The agreed details are: {{details}}. We will now coordinate the supplier requests and send the confirmations as they are received. Please follow the agreed payment schedule. We will contact you before accepting any change that requires a new decision or additional cost.
+<<<HZN0513>>> Next step: Document / requirement 19
+<<<HZN0514>>> 06 Subject: Payment reminder - {{installment}}
+<<<HZN0515>>> Use when: Installment deadline approaches
+<<<HZN0516>>> The remaining amount for installment {{installment}} is {{amount}} {{currency}}, due by {{due}}. Please use the secure payment route already agreed with our agency: {{link}}. If you have paid, send the transaction reference so we can reconcile it. Please do not email card details.
+<<<HZN0517>>> Next step: Document / requirement 18
+<<<HZN0518>>> 07 Subject: Outstanding installment - please check
+<<<HZN0519>>> Use when: A balance remains after the due date
+<<<HZN0520>>> Our records currently show {{amount}} {{currency}} outstanding on installment {{installment}}, which was due on {{due}}. This amount reflects the payments already recorded. If anything is missing, please send the transaction reference. Otherwise, contact us to confirm the next step before any supplier deadline is affected.
+<<<HZN0521>>> 08 Subject: Payment recorded - {{trip}}
+<<<HZN0522>>> Use when: Payment has been reconciled
+<<<HZN0523>>> We have recorded {{amount}} {{currency}} against installment {{installment}} for trip {{trip}}. Your updated payment statement is attached. Please check the recorded amount and remaining schedule and tell us if anything differs from your records. This message confirms our payment record; supplier booking confirmations are provided separately.
+<<<HZN0524>>> 09 Subject: A change needs your approval - {{trip}}
+<<<HZN0525>>> Use when: Change affects price or arrangements
+<<<HZN0526>>> A change has been proposed for your trip: {{details}}. The price impact is {{amount}} {{currency}}; please see the attached change record for the complete conditions. We need your decision by {{due}}. We will not treat this change as approved until we receive your explicit response and the supplier confirms the revised arrangement.
+<<<HZN0527>>> Next step: Document / requirement 20
+<<<HZN0528>>> 10 Subject: Your final travel file - please review
+<<<HZN0529>>> Use when: Release checklist is complete
+<<<HZN0530>>> Your final travel file for {{trip}} is attached. Please review names, dates, local times, meeting points, remaining payments and support contacts. Keep the latest version accessible during travel. Tell us promptly if you find a discrepancy. Document and entry requirements should be checked against the official sources recorded in your file.
+<<<HZN0531>>> Next step: Document / requirement 38
+<<<HZN0532>>> 11 Subject: We have received your on-trip report
+<<<HZN0533>>> Use when: Traveler reports an issue
+<<<HZN0534>>> We have recorded the following issue: {{details}}. The current next action is {{action}}, and the next update is planned for {{due}}. Please keep any relevant supplier messages or receipts. If anyone is in immediate danger or needs urgent medical assistance, contact local emergency services first rather than waiting for our response.
+<<<HZN0535>>> Next step: Document / requirement 34
+<<<HZN0536>>> 12 Subject: Welcome home - how was your trip?
+<<<HZN0537>>> Use when: Traveler has returned
+<<<HZN0538>>> Welcome home. We would value your honest feedback on what worked well and what we should improve. Please tell us about any unresolved item and preferences you would like us to remember. If you are happy for us to quote part of your feedback publicly, please give separate permission and specify the name or description we may use.
+<<<HZN0539>>> Thank you,
+<<<HZN0540>>> Next step: Document / requirement 36
+<<<HZN0541>>> Single-business licence
+<<<HZN0542>>> Your purchase permits use by one business and its staff. You may customise these templates for unlimited client projects within that business and deliver finished, non-editable documents to your travel clients.
+<<<HZN0543>>> You may not resell, sublicense, give away or publicly share editable templates, source HTML, spreadsheets or any template access links. You may not offer the files as competing templates or claim exclusive ownership of the underlying designs. No PLR or MRR rights are granted.
+<<<HZN0544>>> Keep a backup of the original files. Customisation services, hosted software, supplier integrations and guaranteed business results are not included. Use your own verified trip information and business terms.
+<<<HZN0545>>> For file defects, contact the seller through the purchase record. Remedies remain subject to applicable law and marketplace rules.
+<<<HZN0546>>> Manrope and Cairo are supplied under their separate included SIL Open Font licences. Those font licences govern the fonts and are not restricted by this template licence.

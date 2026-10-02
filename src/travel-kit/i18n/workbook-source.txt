@@ -1,0 +1,140 @@
+[[[0001]]] 100 / 200 / 300
+[[[0002]]] 100 trips; 200 installments; 300 receipts. Use a new workbook when full.
+[[[0003]]] Advisor share
+[[[0004]]] Agency income
+[[[0005]]] Agency income received
+[[[0006]]] Agency name
+[[[0007]]] Amount
+[[[0008]]] Applicable terms reference
+[[[0009]]] Booked
+[[[0010]]] Budget range + currency
+[[[0011]]] Business expenses
+[[[0012]]] Cancelled
+[[[0013]]] Category
+[[[0014]]] Check installment reference
+[[[0015]]] Check trip reference
+[[[0016]]] City A + City B
+[[[0017]]] Client / group
+[[[0018]]] Closed
+[[[0019]]] Commission
+[[[0020]]] Commission = basis × rate × share. For planning fees, enter the fee as basis. Client funds are separate.
+[[[0021]]] Commission basis / fee
+[[[0022]]] Commission rate
+[[[0023]]] Complete the inputs
+[[[0024]]] Confirmed
+[[[0025]]] Credit / review
+[[[0026]]] Currency code
+[[[0027]]] Data check
+[[[0028]]] Date
+[[[0029]]] Deadline + time zone
+[[[0030]]] Declined
+[[[0031]]] Departure date
+[[[0032]]] Destination(s)
+[[[0033]]] Document status
+[[[0034]]] Done
+[[[0035]]] Duplicate ID
+[[[0036]]] Email address
+[[[0037]]] Existing policy recorded
+[[[0038]]] Expected
+[[[0039]]] Expected commissions
+[[[0040]]] Expected planning fees
+[[[0041]]] Expense ID
+[[[0042]]] Fictional example. Replace sample records before client use.
+[[[0043]]] Give each task an owner and due date. Completed and cancelled tasks stop overdue alerts.
+[[[0044]]] High
+[[[0045]]] Inquiries
+[[[0046]]] Inquiry ID
+[[[0047]]] Installment reference
+[[[0048]]] Installments
+[[[0049]]] Instruction
+[[[0050]]] Insurance decision
+[[[0051]]] Item / description
+[[[0052]]] Keep verified contacts and terms references. A request is not a confirmation.
+[[[0053]]] Last verified
+[[[0054]]] Lost
+[[[0055]]] Low
+[[[0056]]] Manual release review
+[[[0057]]] Metric
+[[[0058]]] Net client funds recorded
+[[[0059]]] New
+[[[0060]]] Next action
+[[[0061]]] Next follow-up
+[[[0062]]] Normal
+[[[0063]]] Not applicable
+[[[0064]]] Not checked
+[[[0065]]] Notes
+[[[0066]]] One currency per workbook. Changing this label does not convert amounts.
+[[[0067]]] One inquiry per row. Won and lost inquiries no longer trigger follow-up alerts.
+[[[0068]]] Open
+[[[0069]]] Outstanding client balance
+[[[0070]]] Overdue
+[[[0071]]] Overdue inquiry follow-ups
+[[[0072]]] Overdue installments
+[[[0073]]] Overdue open tasks
+[[[0074]]] Overview
+[[[0075]]] Paid
+[[[0076]]] Pale amber cells are inputs. Teal cells contain formulas. Keep IDs unique.
+[[[0077]]] Partial
+[[[0078]]] Passed
+[[[0079]]] Payee
+[[[0080]]] Payment method
+[[[0081]]] Pending
+[[[0082]]] Phone + country code
+[[[0083]]] Plan / activity
+[[[0084]]] Planning fee
+[[[0085]]] Positive amounts are receipts; negative amounts are refunds. Invalid or duplicate records are excluded.
+[[[0086]]] Prepared capacity
+[[[0087]]] Priority
+[[[0088]]] Property / hotel
+[[[0089]]] Proposal
+[[[0090]]] Purchased
+[[[0091]]] R-001
+[[[0092]]] R-002
+[[[0093]]] Readiness
+[[[0094]]] Receipt date
+[[[0095]]] Receipt ID
+[[[0096]]] Receipts
+[[[0097]]] Received amount
+[[[0098]]] Received income minus expenses
+[[[0099]]] Reconcile schedule and receipts; then complete document, insurance, supplier and manual checks.
+[[[0100]]] Record agency business costs, not client travel costs already included in the trip.
+[[[0101]]] Record ID
+[[[0102]]] Records requiring correction
+[[[0103]]] Release review passed
+[[[0104]]] Remaining amount
+[[[0105]]] Responsible person
+[[[0106]]] Return date
+[[[0107]]] Review date
+[[[0108]]] Review date controls overdue flags. It does not reconstruct historical balances.
+[[[0109]]] Review outstanding items
+[[[0110]]] Schedule each installment once. Partial payments remain outstanding. Negative balances need review.
+[[[0111]]] Schedule minus trip total
+[[[0112]]] Scheduled
+[[[0113]]] Scheduled amount
+[[[0114]]] Set due date
+[[[0115]]] Setting
+[[[0116]]] Setup
+[[[0117]]] Source / official link
+[[[0118]]] Status
+[[[0119]]] Supplier
+[[[0120]]] Supplier ID
+[[[0121]]] Supplier status
+[[[0122]]] Suppliers
+[[[0123]]] Task ID
+[[[0124]]] Tasks
+[[[0125]]] Totals use valid records. Resolve all data warnings before relying on the balances.
+[[[0126]]] TR001-DEP
+[[[0127]]] TR001-FIN
+[[[0128]]] TR001-MID
+[[[0129]]] Traveling
+[[[0130]]] Trip reference
+[[[0131]]] Trip total
+[[[0132]]] Trips
+[[[0133]]] Trips passing release review
+[[[0134]]] Type
+[[[0135]]] Valid
+[[[0136]]] Validated amount
+[[[0137]]] Value
+[[[0138]]] Verified
+[[[0139]]] Won
+[[[0140]]] Workflow stage
