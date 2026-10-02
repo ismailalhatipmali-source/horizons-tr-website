@@ -1,0 +1,627 @@
+{
+  "version": "1.0.0",
+  "languages": [
+    "en",
+    "ar",
+    "tr",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "uk",
+    "pl",
+    "cs",
+    "ro",
+    "hu",
+    "el",
+    "sv",
+    "da",
+    "no",
+    "fi",
+    "bg",
+    "sr",
+    "hr",
+    "he",
+    "fa",
+    "ur",
+    "hi",
+    "bn",
+    "id",
+    "ms",
+    "zh",
+    "ja"
+  ],
+  "files": {
+    "assets/workbook-video/1.0.0/ar/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/ar/poster.jpg",
+      "bytes": 68962,
+      "sha256": "49247afb00d4cde314075e36b67bb02651ac32b779b74f33e4149842f3c0f9f4",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ar/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/ar/walkthrough.mp4",
+      "bytes": 837230,
+      "sha256": "ea758e758daa02dcea6dc333b50a30a62d298294622916b7ecd55c91167da7b2",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ar/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/ar/walkthrough.vtt",
+      "bytes": 1146,
+      "sha256": "3f67142f2b77991fc7c9b88c6e72f8d210e02d8dff817b5f00f89d8d21edab46",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/bg/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/bg/poster.jpg",
+      "bytes": 78505,
+      "sha256": "f846c632dc3d8cb325a495a3715f465a1af0b8bcaf957d3c51dbc04ef07993bd",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/bg/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/bg/walkthrough.mp4",
+      "bytes": 812464,
+      "sha256": "2b43cd2622763d9dc9acabcba95777d2b884710402a5cb4dfd04bb080a4e9594",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/bg/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/bg/walkthrough.vtt",
+      "bytes": 1323,
+      "sha256": "d832d8a3ae8fe840e1a23d51b8d3ec6bd847ee48a90a22b01627ca2a870ca218",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/bn/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/bn/poster.jpg",
+      "bytes": 73092,
+      "sha256": "d9c031895ab391c3b1b806c30c7d9330f2c9df67ba676f77ea91817e5b8e856e",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/bn/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/bn/walkthrough.mp4",
+      "bytes": 827430,
+      "sha256": "1ffa2c3da6e997a6eed3089568aa1a7a5868fd56853d9b35b56b32a57d94875f",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/bn/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/bn/walkthrough.vtt",
+      "bytes": 1704,
+      "sha256": "8255d4ea8eeb98583b95d215ea2cba7261af0398b96b89007ccfa42aeb395e1b",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/cs/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/cs/poster.jpg",
+      "bytes": 79743,
+      "sha256": "175ee8b2530f72c15472af1e3c6f17f21aae2e7aa110cbf8926e58e6cf864fed",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/cs/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/cs/walkthrough.mp4",
+      "bytes": 853130,
+      "sha256": "9b069e9a8e606895bf2138764966e9942d4b14adc2c9de36c5dfe05122e85060",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/cs/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/cs/walkthrough.vtt",
+      "bytes": 917,
+      "sha256": "2ac010b01d8b33f458b17ea98d83c508b956f901d1863b34931ae62760fd00ee",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/da/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/da/poster.jpg",
+      "bytes": 82396,
+      "sha256": "c8e2ebcd176b4acbc6e1ed000631197178fd1fc5e2d7530a3eae48992c297901",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/da/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/da/walkthrough.mp4",
+      "bytes": 820524,
+      "sha256": "f127097fdf7efc85046fa6d9766c7c67d332e71ef89e86e3c0cbe880d2ba049a",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/da/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/da/walkthrough.vtt",
+      "bytes": 822,
+      "sha256": "985cfe969c7fba89dc4be39051719215ea84584fa14848ab1c62f5109939f6b7",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/de/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/de/poster.jpg",
+      "bytes": 85868,
+      "sha256": "15062cd9a7be1c01381d6047778f72461b18229ab40ec1425cbbd7385f7ad4cf",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/de/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/de/walkthrough.mp4",
+      "bytes": 836278,
+      "sha256": "ad71671f389f3fcdf6f4dc8adb355568185192f6e49246ffffbad2228b77d45f",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/de/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/de/walkthrough.vtt",
+      "bytes": 991,
+      "sha256": "6fe1fa793f347261f2de34fd4135594148a279c29ec059ccf4b8fbaf589cf9af",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/el/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/el/poster.jpg",
+      "bytes": 85661,
+      "sha256": "d0346d25ff9ec5d6689a066a0d7df4d54cc6244ce4fe6f45040949c98d25f41d",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/el/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/el/walkthrough.mp4",
+      "bytes": 898885,
+      "sha256": "b61b06573ffeab9535372de43df25b172b682293f84434944dcddb87b6d95062",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/el/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/el/walkthrough.vtt",
+      "bytes": 1460,
+      "sha256": "d440265fc909222a803b0b207565c1e489b995e638c5e2b1ec4734c7ef8926ad",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/en/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/en/poster.jpg",
+      "bytes": 77381,
+      "sha256": "e0dd30760141203ee22c973d02601f1fdb855c1fba21169167d1dec6d689f8b6",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/en/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/en/walkthrough.mp4",
+      "bytes": 748348,
+      "sha256": "241d555ca8a8e9d4fffc69419d2fa2c51bb699e8e6ed1951a268b6ea4e9c9db3",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/en/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/en/walkthrough.vtt",
+      "bytes": 869,
+      "sha256": "17b8af15ba6d5982f19150b827d0ce5b467e99ce279a3d2907c1355e522b1004",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/es/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/es/poster.jpg",
+      "bytes": 79601,
+      "sha256": "80a8d5ce83464293370252c4bd961254f5170b6db1f90eaa041d873eca6abdc5",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/es/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/es/walkthrough.mp4",
+      "bytes": 778546,
+      "sha256": "ad95812a96e94ae90c9af01c9cd253b7e024d780f6ee4df5e2120c7400539af0",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/es/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/es/walkthrough.vtt",
+      "bytes": 902,
+      "sha256": "90bd92ac9a7c5fe2bc8370fb8619acd667cf1699dd91a89db381cbf9ecb854db",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fa/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/fa/poster.jpg",
+      "bytes": 65700,
+      "sha256": "f437a9bd5b775e0b51c037995a2d3108d8f43f2529aabdf1d31e74951629df98",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fa/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/fa/walkthrough.mp4",
+      "bytes": 893997,
+      "sha256": "bd04bdaf119c9329eb62835c561aa14daaf3c035d8f90a3cf2dbf1078a77c44c",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fa/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/fa/walkthrough.vtt",
+      "bytes": 1283,
+      "sha256": "bb850c5fd1e68507c5d69e35bfed3098060966d3da7152269da9402fd267ffb7",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fi/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/fi/poster.jpg",
+      "bytes": 79761,
+      "sha256": "34e2e78d84346a925c4b6532be64bbbb4b031abba4b70bcf8f19fee3bc0ef412",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fi/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/fi/walkthrough.mp4",
+      "bytes": 888743,
+      "sha256": "045714a1c8d40a9e7d619b9c6ea23aa31b38328eb88e7dd14014b9e3f78eb0fd",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fi/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/fi/walkthrough.vtt",
+      "bytes": 849,
+      "sha256": "e57b0e7ce80a027f6547887bb5f3a86699d53961c6238d6b485ec443e40258a3",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fr/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/fr/poster.jpg",
+      "bytes": 77604,
+      "sha256": "8e9fa32aa3281a390c53c94e2d985e9978e5783d227852860297ea8bc872a6e0",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fr/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/fr/walkthrough.mp4",
+      "bytes": 792008,
+      "sha256": "b116bdbb424a265e1c166335a41299b8b5e0b994071e56d6e0f52a4d14916bc8",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/fr/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/fr/walkthrough.vtt",
+      "bytes": 944,
+      "sha256": "39f980ab8d972de13ebefa4339c0562aec330b272e9fa93ba9750880ab208df6",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/he/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/he/poster.jpg",
+      "bytes": 70369,
+      "sha256": "c79023cf65b460c487dd527461073466a4d898468582f3e20cecf2c5837474a9",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/he/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/he/walkthrough.mp4",
+      "bytes": 731139,
+      "sha256": "d1798aa48a6d01ccce2d679a754b76b7e798435c9936a40651e40695ff54f5da",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/he/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/he/walkthrough.vtt",
+      "bytes": 1056,
+      "sha256": "62a5b8c7748a01b36594c262a7029fb0f8a0091f8d85f61eeed9be68dc12156a",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hi/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/hi/poster.jpg",
+      "bytes": 71854,
+      "sha256": "42e2db2f206c414f2e122c2a6042d17c5c0293221f70310d4d7cd601285f220e",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hi/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/hi/walkthrough.mp4",
+      "bytes": 757718,
+      "sha256": "891a87ff57cedd43e5f4b372512498cc45ba03b31ebf1c77754ca33877be8c30",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hi/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/hi/walkthrough.vtt",
+      "bytes": 1597,
+      "sha256": "c6df05ec865243e4e6ae23ccf9941b8b325297e71bdb91cbf19ad8dbc5fa9141",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hr/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/hr/poster.jpg",
+      "bytes": 76062,
+      "sha256": "1953a3c819c14275f9ec28d0d9257c3fd5c38c877ec4bf7e68b854a687066096",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hr/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/hr/walkthrough.mp4",
+      "bytes": 965054,
+      "sha256": "9d2b007fbef73fd06980f4d7d0b72d0644be80adf4c7cb4c799695888546a6dc",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hr/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/hr/walkthrough.vtt",
+      "bytes": 866,
+      "sha256": "b8f79984ace823d0714e4e2fc5b4e150a239a8abfcccf26f4bd49b7a57c5afa2",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hu/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/hu/poster.jpg",
+      "bytes": 76727,
+      "sha256": "44a9ac155691ac5109fa78d252bdbd683bc7218c917e30c7fe8faa7bf1657ffb",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hu/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/hu/walkthrough.mp4",
+      "bytes": 839124,
+      "sha256": "3c97a8d5a99bb38bbf481a3a71bd7880b7ef60b496799d20b7318699f36cc35e",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/hu/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/hu/walkthrough.vtt",
+      "bytes": 978,
+      "sha256": "9175c3f33280561912f719c01a1ff0edca268f27e1e548631c798feec3908e98",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/id/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/id/poster.jpg",
+      "bytes": 75146,
+      "sha256": "bff6cb0ef740180f6ed607c616ed162453f11860f0e1efad0e87a2dc58b2f589",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/id/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/id/walkthrough.mp4",
+      "bytes": 904356,
+      "sha256": "e334c230af80d0100862b62fd6d998f00a5ed05fb21c1eda6b320645061032aa",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/id/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/id/walkthrough.vtt",
+      "bytes": 854,
+      "sha256": "06323b6bb0780325bf84541bed7e8879f95fd13b5763cd7d31baa14e862cc273",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/it/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/it/poster.jpg",
+      "bytes": 77449,
+      "sha256": "339cc4f29f15509810f5c36b6c1200b8dbd1254777b992565ff6443fba4bb220",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/it/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/it/walkthrough.mp4",
+      "bytes": 886999,
+      "sha256": "f8e2214c88845b5984bc260bbb12d2a8cf2d4ebb419157cb2d5a29d9bc4bf820",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/it/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/it/walkthrough.vtt",
+      "bytes": 897,
+      "sha256": "e95405b89f92608f291e64c775f296264f37e92f370bfc61b06ee5fdf363557e",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ja/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/ja/poster.jpg",
+      "bytes": 75883,
+      "sha256": "ec6f7f932456bb7b43cf777e07cfd56c7e1bfbeb426712d9eed367ac2226299c",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ja/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/ja/walkthrough.mp4",
+      "bytes": 923718,
+      "sha256": "e664956001b2605c7debead25162d55c852f2bad5fe01f21c5e0b565ad4335ab",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ja/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/ja/walkthrough.vtt",
+      "bytes": 1029,
+      "sha256": "3fb4926558f2bb2182fa6da14c4eca6c43b889f89c8858a5f5237917d543af14",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ms/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/ms/poster.jpg",
+      "bytes": 77594,
+      "sha256": "e978ed5550549bd8b9142cac5e0da1f7b7078d072ca2cd037ddbe403b621fbc3",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ms/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/ms/walkthrough.mp4",
+      "bytes": 909186,
+      "sha256": "603670f05fa3dbb6eb11aa4c9d2994d10c1e5c63ee5d9b3553de5443b9f3e74a",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ms/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/ms/walkthrough.vtt",
+      "bytes": 860,
+      "sha256": "309a94ad6daf85aa18ccad06e12a5a717997dd9e6b90df58c9f907c1c0db1e33",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/nl/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/nl/poster.jpg",
+      "bytes": 80846,
+      "sha256": "4ed93541d64b965863ff220a78f92b7898c1ca3e533ed423100e860d01878fa7",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/nl/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/nl/walkthrough.mp4",
+      "bytes": 772183,
+      "sha256": "3e188c08c01c756965ea32019d573d4cae30f0a777a2736bc14c410215456c81",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/nl/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/nl/walkthrough.vtt",
+      "bytes": 877,
+      "sha256": "e80f632908a92491af2e77adf349a5842d45511138cc78300cbddfa33414f92f",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/no/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/no/poster.jpg",
+      "bytes": 82187,
+      "sha256": "412f6e9a54cd2a197814cc74ba267117e5e8268b8c83696b32408a57003ac03a",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/no/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/no/walkthrough.mp4",
+      "bytes": 855384,
+      "sha256": "163d08f7e8ef9645e589b3b1ef0e6bf5bf7c9053784dba0b7fc8bec354005383",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/no/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/no/walkthrough.vtt",
+      "bytes": 829,
+      "sha256": "bb503ffb47c4efc5d8cd28662fde1fce2ce1424aa84530a9c5a2031b379c0ec0",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/pl/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/pl/poster.jpg",
+      "bytes": 76689,
+      "sha256": "5bf175122f0207e61e8b29bf907a99663d5e6414bb5f35e35c0281a4ff36110d",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/pl/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/pl/walkthrough.mp4",
+      "bytes": 871027,
+      "sha256": "fc45ad55e1c69535bfde2fd503d95411da128a9c7cf8df14787365333575cde2",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/pl/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/pl/walkthrough.vtt",
+      "bytes": 861,
+      "sha256": "9b2416f1cd21dda7819199cf24828f0d317a94d4b023b9b79f4a79cb10e03a3f",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/pt/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/pt/poster.jpg",
+      "bytes": 76607,
+      "sha256": "72e61a70ad50645b7838553388c1f297aac63b010c52198db2b805d3eb00f31a",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/pt/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/pt/walkthrough.mp4",
+      "bytes": 804515,
+      "sha256": "371fc0aae6d2f2ad608eda6322c610729aaf795f66cf8b96ae15b1a345d7a056",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/pt/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/pt/walkthrough.vtt",
+      "bytes": 876,
+      "sha256": "c5e91d27c6a15c3f8c1310abe859b639e7bb01934fdb87e5570d6d0737a3e022",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ro/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/ro/poster.jpg",
+      "bytes": 75923,
+      "sha256": "d2257580243e4f8e6ee9699844eb37bdc707145c016298ff37854890e6d20354",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ro/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/ro/walkthrough.mp4",
+      "bytes": 886132,
+      "sha256": "031834c9fed3d9e1b2d345197026c725a0ec4f8dce3f9bccfad9a338f0e635b0",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ro/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/ro/walkthrough.vtt",
+      "bytes": 937,
+      "sha256": "6286692f64177e595b220bcf95d0a208b57d4d4bc9a9be573e8faf9b161ed78f",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ru/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/ru/poster.jpg",
+      "bytes": 79514,
+      "sha256": "33e2f81297d89c28ad3a37c0aca1be7ec7035b3b04db6bcc33f2c458e81636fa",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ru/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/ru/walkthrough.mp4",
+      "bytes": 864398,
+      "sha256": "d96eb4bfc007e103f3becf319ddf5d032786cb9dbdddc7e626d461587588c333",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ru/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/ru/walkthrough.vtt",
+      "bytes": 1402,
+      "sha256": "44b562bfa39436c9eb7d8f77d2c69d4a0f5c6badd882f023d5f31f1ad82fda04",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/sr/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/sr/poster.jpg",
+      "bytes": 76705,
+      "sha256": "5b09292e3edfcacdd691defc654f272df140c888d07b919366de375b143e621f",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/sr/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/sr/walkthrough.mp4",
+      "bytes": 902898,
+      "sha256": "f7dbeb7f34179729e647d430f693568dede002b280f85ad4ffa83d2d7fd396ad",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/sr/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/sr/walkthrough.vtt",
+      "bytes": 1317,
+      "sha256": "b5fc13618b06645da366c0d3152f9e39a57c6a44c1b493b9d0971fe05a11db0e",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/sv/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/sv/poster.jpg",
+      "bytes": 82750,
+      "sha256": "b14b72b95513e8a63266a5f633ace15e09a40debac96c96312451869269a3c68",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/sv/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/sv/walkthrough.mp4",
+      "bytes": 925216,
+      "sha256": "7fef36ca55a34c002da8edd45368a5e1f7fc4f6c622133839f44ac287a011288",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/sv/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/sv/walkthrough.vtt",
+      "bytes": 867,
+      "sha256": "525d9b5f5483bc3ca65af43662dc9860ca5e593ab8e5ed23571e78cbc84b6e06",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/tr/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/tr/poster.jpg",
+      "bytes": 77803,
+      "sha256": "f1ce90a2c6ffb7d244c555ae306d35ee10f3515c0da0099d03ab11619026e47a",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/tr/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/tr/walkthrough.mp4",
+      "bytes": 720590,
+      "sha256": "5e2e00fb7d8d925b33bbe1410e85220aa70b1b08b0275b8d6fcd56a1bc9e1d10",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/tr/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/tr/walkthrough.vtt",
+      "bytes": 907,
+      "sha256": "ea177ae4433863e1ff552966a15dcc77ca047169cdb5cf8fcc2b346206409334",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/uk/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/uk/poster.jpg",
+      "bytes": 76393,
+      "sha256": "946d288ccc0a3b1a09dea2457c4694714f4837800b6cb2f9b9f66b13b1209aff",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/uk/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/uk/walkthrough.mp4",
+      "bytes": 839817,
+      "sha256": "ee8da680c697c709ddee55b60662ed8e4b084d1d0a770bfd6acdbde0961e0b64",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/uk/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/uk/walkthrough.vtt",
+      "bytes": 1405,
+      "sha256": "61eb03b72abb29a9e33bbfcb702d51560a3becb693e74c88d4d3281b42a61285",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ur/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/ur/poster.jpg",
+      "bytes": 67196,
+      "sha256": "279f7d2c1606fda18034457c35a455fe184848792f09be22645895948f064711",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ur/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/ur/walkthrough.mp4",
+      "bytes": 806658,
+      "sha256": "3ae22e9ca7f030926efec70003ea97d2cf3fa57fc082ba20a5d5fadb1cf2deeb",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/ur/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/ur/walkthrough.vtt",
+      "bytes": 1223,
+      "sha256": "8294f07894e4e275a2989ee4454284a2aa5606ea22b96610952c4b63ed62a746",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/zh/poster.jpg": {
+      "source": "dist/assets/workbook-video/1.0.0/zh/poster.jpg",
+      "bytes": 74195,
+      "sha256": "9568fb8eb5738cd13bdc00206f32051bb231b5ebb59451d89a7d2acae2a220a2",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/zh/walkthrough.mp4": {
+      "source": "dist/assets/workbook-video/1.0.0/zh/walkthrough.mp4",
+      "bytes": 965444,
+      "sha256": "4371b2fe6ed11c21154346544c2061af0b0a6996201078b602a323a78bf1a54d",
+      "before": null
+    },
+    "assets/workbook-video/1.0.0/zh/walkthrough.vtt": {
+      "source": "dist/assets/workbook-video/1.0.0/zh/walkthrough.vtt",
+      "bytes": 822,
+      "sha256": "8521d8adab6c379e270e3b4a354e099997df05903f832ceaca5dfb98226c7636",
+      "before": null
+    },
+    "workbook-video-release.json": {
+      "source": "dist/workbook-video-release.json",
+      "bytes": 17039,
+      "sha256": "dcffe32ba55fefcaecd0c86049395b4b50413aa784f020ab45a087345232fe9c",
+      "before": null
+    },
+    "workbook-video.css": {
+      "source": "dist/workbook-video.css",
+      "bytes": 745,
+      "sha256": "fa90101faf90d83aaeb90b15aae667b26c38d8a6952bedf30a18ad0bba176e5d",
+      "before": null
+    }
+  }
+}

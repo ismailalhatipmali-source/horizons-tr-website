@@ -32,7 +32,7 @@ try{
     $lock=$state.'/deploy.lock';if(!@mkdir($lock,0700))throw new RuntimeException('DEPLOYMENT_ALREADY_RUNNING');$locked=true;
 
     $files=[
-      ['public','dist/home.js','home.js','git-sha1:2a0ad467ec6b80cb63154de761548496b06a8918'],
+      ['public','dist/home.js','home.js','git-sha1:34ed264f7b51d99ff2e93e8d94e529b7e4e5c366'],
       ['public','dist/products.json','products.json','git-sha1:01e60cae6b45ade0555aebf1db0ea9345d3fa727'],
       ['private','src/commerce/products.json','products.json','git-sha1:01e60cae6b45ade0555aebf1db0ea9345d3fa727'],
       ['private','src/checkout/ManualOrders.php','ManualOrders.php',null],
