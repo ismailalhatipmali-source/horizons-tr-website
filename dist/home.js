@@ -87,6 +87,6 @@ if (video) {
   article.innerHTML='<figure class="product-visual"><img loading="lazy" width="960" height="540"></figure><div class="product-info"><div class="product-meta"><span class="status">$29 · one-time</span></div><h3></h3><ul class="product-features"><li>40 document pages</li><li>10 workbook sheets</li><li>12 email scripts</li><li>32-language edition in preparation</li></ul><div class="product-actions"><a class="button primary-cta" rel="noopener"></a><a class="text-link"></a></div></div>';
   const img=article.querySelector('img');img.src='../assets/covers/'+lang+'/travel-kit.svg';img.alt=names[lang]||names.en;
   article.querySelector('h3').textContent=names[lang]||names.en;
-  const [buyLink,detailLink]=article.querySelectorAll('a');buyLink.href='https://hatipmali.gumroad.com/l/travel-agent-client-kit';buyLink.textContent=buy;detailLink.href='../travel-kit.html?lang='+encodeURIComponent(lang);detailLink.textContent=details;
+  const [buyLink,detailLink]=article.querySelectorAll('a');buyLink.href='../'+lang+'/checkout.html?product=travel-agent-client-kit&offer=business-lifetime';buyLink.textContent=buy;detailLink.href='../travel-kit.html?lang='+encodeURIComponent(lang);detailLink.textContent=details;
   catalog.appendChild(article);
 })();
