@@ -24,6 +24,7 @@ const extra=document.getElementById('success-extra');extra.textContent=notes[lan
 const form=document.getElementById('manual-order-form'),company=form.querySelector('[data-company]'),status=document.getElementById('form-status'),submit=form.querySelector('button[type=submit]');
 function syncCompany(){const on=form.elements.billing.value==='company';company.hidden=!on;for(const x of company.querySelectorAll('input')){x.required=on;x.disabled=!on;}}syncCompany();form.elements.billing.addEventListener('change',syncCompany);
 let csrf='';try{const r=await fetch('/manual-order-api/',{credentials:'same-origin',cache:'no-store'}),j=await r.json();if(j.ok)csrf=j.csrf;}catch{}
+const requestId=Array.from(crypto.getRandomValues(new Uint8Array(16)),x=>x.toString(16).padStart(2,'0')).join('');
 form.addEventListener('submit',async ev=>{
  ev.preventDefault();status.textContent='';if(!form.reportValidity())return;
  if(form.elements.email.value.trim().toLowerCase()!==form.elements.email_confirm.value.trim().toLowerCase()){status.textContent=t.error||'Please confirm the same email address.';return;}
@@ -31,7 +32,6 @@ form.addEventListener('submit',async ev=>{
  submit.disabled=true;status.textContent=t.working||'Saving…';
  const fd=new FormData(form),buyer={first_name:fd.get('first_name').trim(),last_name:fd.get('last_name').trim(),email:fd.get('email').trim(),email_confirm:fd.get('email_confirm').trim(),phone:fd.get('phone').trim(),country:fd.get('country').trim(),city:fd.get('city').trim(),billing:fd.get('billing')};
  if(buyer.billing==='company'){buyer.company_name=fd.get('company_name').trim();buyer.tax_id=fd.get('tax_id').trim();buyer.tax_office=fd.get('tax_office').trim();}
- const requestId=Array.from(crypto.getRandomValues(new Uint8Array(16)),x=>x.toString(16).padStart(2,'0')).join('');
  try{
   const r=await fetch('/manual-order-api/',{method:'POST',headers:{'Content-Type':'application/json','X-CSRF-Token':csrf},credentials:'same-origin',cache:'no-store',body:JSON.stringify({request_id:requestId,product:'travel-agent-client-kit',offer:'single-business',buyer,terms_accepted:form.elements.terms.checked,privacy_read:form.elements.privacy.checked,locale:lang})});
   const j=await r.json();if(!r.ok||j.ok!==true||!/^HZN-M-/.test(j.reference))throw Error();
