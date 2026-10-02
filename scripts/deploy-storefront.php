@@ -53,6 +53,12 @@ try {
         if (!$matches) throw new RuntimeException('PUBLIC_BASELINE_CHANGED');
         $changes[$path] = [$source, $target, $current];
     }
+    if (($argv[2] ?? '') === '--publish') {
+        // This directory contains only the public country/city dataset. Repair
+        // the restrictive umask used by the first publication of these assets.
+        $geo = $web.'/assets/commerce-geo';
+        if (is_dir($geo) && !is_link($geo) && !chmod($geo, 0755)) throw new RuntimeException('DIRECTORY_FAILED');
+    }
     if (($argv[2] ?? '') !== '--publish') { echo 'READY: '.count($changes)." changed storefront files; workbook and public baselines verified.\n"; }
     elseif (!$changes) { echo "CURRENT: storefront already published.\n"; }
     else {
@@ -62,7 +68,9 @@ try {
             $save = $backup.'/'.$path;
             if (!is_dir(dirname($save)) && !mkdir(dirname($save), 0700, true)) throw new RuntimeException('BACKUP_FAILED');
             if ($prior !== null && (!copy($target, $save) || digest($save) !== $prior)) throw new RuntimeException('BACKUP_FAILED');
-            if (!is_dir(dirname($target)) && !mkdir(dirname($target), 0755, true)) throw new RuntimeException('DIRECTORY_FAILED');
+            if (!is_dir(dirname($target))) {
+                if (!mkdir(dirname($target), 0755, true) || !chmod(dirname($target), 0755)) throw new RuntimeException('DIRECTORY_FAILED');
+            }
             $temp = $target.'.hzn-new-'.bin2hex(random_bytes(4)); $temporary[] = $temp;
             if (!copy($source, $temp) || digest($temp) !== $manifest['files'][$path]['sha256'] || !chmod($temp, 0644)) throw new RuntimeException('STAGING_FAILED');
             // Refuse a target modified after the global preflight.

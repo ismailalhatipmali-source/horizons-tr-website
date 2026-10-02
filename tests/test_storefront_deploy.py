@@ -54,6 +54,10 @@ class PublishTests(unittest.TestCase):
     def test_accepts_exact_git_blob_baseline(self):
         self.manifest['files']['ar/index.html']['before']='git-sha1:'+hashlib.sha1(b'blob 3\0old').hexdigest(); self.save()
         self.assertEqual(self.run_publish(True).returncode,0)
+    def test_public_location_directory_permissions(self):
+        geo=self.web/'assets/commerce-geo'; geo.mkdir(parents=True); geo.chmod(0o700)
+        self.assertEqual(self.run_publish(True).returncode,0)
+        self.assertEqual(geo.stat().st_mode & 0o777,0o755)
     def test_rejects_symlink_and_runtime_configuration(self):
         (self.web/'site-commerce.js').symlink_to(self.web/'learn/lesson.hzn')
         self.assertIn('SYMLINK_REJECTED',self.run_publish(True).stderr)
