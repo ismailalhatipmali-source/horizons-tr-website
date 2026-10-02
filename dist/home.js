@@ -1,6 +1,7 @@
 'use strict';
 // Load the shared localized Windows-pilot entry points without changing backend settings.
 (() => {
+  if (document.getElementById('commerce-ui')) return;
   const product = /\/product\.html(?:[?#]|$)/.test(document.querySelector('link[rel="canonical"]')?.href || location.pathname);
   if ((!document.body.classList.contains('home-page') && !product) || document.getElementById('horizons-pilot-ui')) return;
   const script = document.createElement('script');

@@ -127,6 +127,15 @@ def build(dest):
             s = re.sub(r'<a\b[^>]*data-commerce-action="buy"[^>]*>.*?</a>', '', s)
             s = re.sub(r'<a\b[^>]*data-horizons-action="(?:demo|windows)"[^>]*>.*?</a>', '', s)
             s = re.sub(r'(<a\b[^>]*data-horizons-action="open"[^>]*>).*?</a>', lambda m: re.sub(r'href="[^"]*"', 'href="cart.html#accounts"', m[1]) + t('start') + '</a>', s)
+            if name == 'index.html':
+                def current_product(match):
+                    card = match.group()
+                    card = re.sub(r'<details class="read-more">(<summary>.*?</summary>).*?</details>',
+                        lambda m: '<details class="read-more">' + m[1] + '<p>28 ' + t('lessons') + ' · 560 ' + t('cards') + ' · 56 ' + t('stories') + '</p><p>' + t('access_note') + '</p><p>' + t('updates_note') + '</p></details>', card, count=1, flags=re.S)
+                    card = re.sub(r'<ul class="product-features">.*?</ul>', '<ul class="product-features"><li>28 ' + t('lessons') + '</li><li>560 ' + t('cards') + '</li><li>56 ' + t('stories') + '</li></ul>', card, count=1, flags=re.S)
+                    card = re.sub(r'src="[^\"]*arabic-workbook-cover\.png"', 'src="../assets/covers/' + lang + '/arabic.png"', card)
+                    return card
+                s = re.sub(r'<article\b[^>]*id="arabic".*?</article>', current_product, s, count=1, flags=re.S)
             # Remove obsolete product compatibility/licence prose, preserving
             # the original curriculum description, branding and legal rights.
             if name == 'product.html':
@@ -143,6 +152,8 @@ def build(dest):
         # and support pages. Do not inject into the separately released workbook.
         for path in (dest / lang).glob('*.html'):
             s = path.read_text()
+            home_version = '20261002-memberships-1' if path.name in ('index.html', 'product.html') else '20260926-1'
+            s = re.sub(r'home\.js\?v=[^\"]+', 'home.js?v=' + home_version, s)
             s = re.sub(r'<script id="commerce-ui".*?</script>|<dialog[^>]*data-start-dialog.*?</dialog>', '', s, flags=re.S)
             s = re.sub(r'<(?:script|link)\b[^>]*(?:site-commerce\.js|commerce\.css|location-picker\.js)[^>]*>(?:</script>)?', '', s)
             deps = '<link rel="stylesheet" href="../commerce.css?v=accounts-3"/><script defer src="../site-commerce.js?v=accounts-3"></script>'

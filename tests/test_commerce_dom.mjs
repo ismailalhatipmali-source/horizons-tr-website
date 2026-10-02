@@ -3,9 +3,10 @@ import {readFile} from 'node:fs/promises';
 import {createRequire} from 'node:module';
 const require=createRequire('/tmp/horizons-demo-tools/package.json');const {JSDOM}=require('jsdom');
 const globalScript=await readFile('src/commerce/site-commerce.js','utf8'),script=await readFile('src/commerce/cart.js','utf8');
+const homeScript=await readFile('dist/home.js','utf8');
 const langs='en ar tr fr es de it pt nl ru uk pl cs ro hu el sv da no fi bg sr hr he fa ur hi bn id ms zh ja'.split(' ');
 const amounts={individual:{monthly:999,annual:9900,lifetime:15000},family:{monthly:2000,annual:20000,lifetime:25000},institution:{annual:100000}};
-function boot(html,url){const dom=new JSDOM(html,{url,runScripts:'outside-only'});dom.window.localStorage.setItem('learner-progress-sentinel','original');dom.window.sessionStorage.setItem('unrelated','original');dom.window.eval(globalScript);if(dom.window.document.querySelector('[data-commerce-page]'))dom.window.eval(script);return dom;}
+function boot(html,url){const dom=new JSDOM(html,{url,runScripts:'outside-only'});dom.window.localStorage.setItem('learner-progress-sentinel','original');dom.window.sessionStorage.setItem('unrelated','original');dom.window.matchMedia=()=>({matches:true,addEventListener(){}});const video=dom.window.document.querySelector('video');if(video)video.pause=()=>{};dom.window.eval(homeScript);assert.equal(dom.window.document.getElementById('horizons-pilot-ui'),null,'legacy installer controls must not be reinserted');dom.window.eval(globalScript);if(dom.window.document.querySelector('[data-commerce-page]'))dom.window.eval(script);return dom;}
 let plans=0;
 for(const lang of langs)for(const page of ['cart','checkout']) {
  const html=await readFile('dist/'+lang+'/'+page+'.html','utf8');

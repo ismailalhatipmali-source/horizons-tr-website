@@ -36,7 +36,7 @@ try {
     $changes = []; $total = 0;
     foreach ($manifest['files'] as $path => $entry) {
         // Only localized storefront documents and the checkout's own assets.
-        if (!preg_match('~^(?:[a-z]{2}/[a-z-]+\.html|assets/commerce-geo/(?:[A-Za-z-]+\.json|LICENSE\.txt|README\.txt)|(?:cart|checkout)\.html|(?:commerce|commerce-cart|site-commerce|location-picker)\.(?:css|js))$~D', $path)) throw new RuntimeException('UNAPPROVED_PATH');
+        if (!preg_match('~^(?:[a-z]{2}/[a-z-]+\.html|assets/commerce-geo/(?:[A-Za-z-]+\.json|LICENSE\.txt|README\.txt)|(?:cart|checkout)\.html|(?:home|commerce|commerce-cart|site-commerce|location-picker)\.(?:css|js))$~D', $path)) throw new RuntimeException('UNAPPROVED_PATH');
         $source = safePath($repo.'/dist', $path); $target = safePath($web, $path);
         if (!is_int($entry['bytes']) || $entry['bytes'] < 1 || $entry['bytes'] > 2097152
             || !is_file($source) || filesize($source) !== $entry['bytes']
