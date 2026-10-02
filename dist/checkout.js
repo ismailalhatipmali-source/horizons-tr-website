@@ -36,7 +36,7 @@
     const img=root.querySelector('[data-product-image]');img.src=p.image;img.alt=p.name;
     root.querySelector('[data-offer-name]').textContent=label(o);
     root.querySelector('[data-total]').textContent=money(o);
-    root.querySelector('[data-product-facts]').textContent=p.id==='horizons-arabic-level1'?'28 '+t.lessons+' · 560 '+t.cards+' · 56 '+t.stories:(p.id==='travel-agent-client-kit'?'40 document pages · 10 workbook sheets · 12 email scripts · manual email delivery':'');
+    root.querySelector('[data-product-facts]').textContent=p.id==='horizons-arabic-level1'?'28 '+t.lessons+' · 560 '+t.cards+' · 56 '+t.stories:'';
     const permanent=['individual','family'].includes(o.account_type);
     form.elements.permanent.required=permanent;form.elements.permanent.disabled=!permanent;form.elements.permanent.checked=false;
     form.elements.permanent.closest('label').hidden=!permanent;
