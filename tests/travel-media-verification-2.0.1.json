@@ -1,0 +1,1408 @@
+{
+  "results": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ar",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "tr",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "fr",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "es",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "de",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "it",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "pt",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "nl",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "uk",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "pl",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "cs",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ro",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "hu",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "el",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "sv",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "da",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "no",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "fi",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "bg",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "sr",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "hr",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "he",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "fa",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ur",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "hi",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "bn",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "id",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ms",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "zh",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ja",
+      "width": 1440,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ar",
+      "width": 390,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "he",
+      "width": 390,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "fa",
+      "width": 390,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ur",
+      "width": 390,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "locale": "de",
+      "width": 390,
+      "product": true,
+      "manual_order": true,
+      "no_horizontal_overflow": true
+    }
+  ],
+  "automatic_browser_languages": [
+    {
+      "locale": "en",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "ar",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": true
+    },
+    {
+      "locale": "tr",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "fr",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "es",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "de",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "it",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "pt",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "nl",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "ru",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "uk",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "pl",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "cs",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "ro",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "hu",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "el",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "sv",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "da",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "no",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "fi",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "bg",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "sr",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "hr",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "he",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": true
+    },
+    {
+      "locale": "fa",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": true
+    },
+    {
+      "locale": "ur",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": true
+    },
+    {
+      "locale": "hi",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "bn",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "id",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "ms",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "zh",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    },
+    {
+      "locale": "ja",
+      "automatic": true,
+      "localized_cover": true,
+      "interior_samples": 3,
+      "localized_video": true,
+      "rtl": false
+    }
+  ],
+  "language_count": 32,
+  "mobile_locales": 6,
+  "release_claim_gate": true,
+  "test_order": true,
+  "external_messages": 0,
+  "charge": 0,
+  "page_errors": [],
+  "media_build": [
+    {
+      "language": "en",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 67029,
+      "video_bytes": 63618,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "ar",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 64181,
+      "video_bytes": 61175,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "tr",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 74274,
+      "video_bytes": 70745,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "fr",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 73266,
+      "video_bytes": 93079,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "es",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 77948,
+      "video_bytes": 73679,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "de",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 70434,
+      "video_bytes": 76089,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "it",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 75545,
+      "video_bytes": 70658,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "pt",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 74711,
+      "video_bytes": 69483,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "nl",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 70052,
+      "video_bytes": 67543,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "ru",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 78970,
+      "video_bytes": 88184,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "uk",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 76949,
+      "video_bytes": 77396,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "pl",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 75128,
+      "video_bytes": 73498,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "cs",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 137,
+          "client": 135
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 74369,
+      "video_bytes": 67565,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "ro",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 72232,
+      "video_bytes": 70348,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "hu",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 73327,
+      "video_bytes": 72398,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "el",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 137,
+          "client": 135
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 82100,
+      "video_bytes": 94694,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "sv",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 64596,
+      "video_bytes": 63750,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "da",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 68266,
+      "video_bytes": 61895,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "no",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 66388,
+      "video_bytes": 63760,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "fi",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 137,
+          "client": 135
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 74814,
+      "video_bytes": 73624,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "bg",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 137,
+          "client": 135
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 81093,
+      "video_bytes": 80213,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "sr",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 137,
+          "client": 135
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 76848,
+      "video_bytes": 73273,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "hr",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 76583,
+      "video_bytes": 66270,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "he",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 61472,
+      "video_bytes": 58546,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "fa",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 63010,
+      "video_bytes": 62339,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "ur",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 65495,
+      "video_bytes": 60114,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "hi",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 65102,
+      "video_bytes": 61383,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "bn",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 69527,
+      "video_bytes": 65699,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "id",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 71024,
+      "video_bytes": 69872,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "ms",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 137,
+          "client": 135
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 74119,
+      "video_bytes": 70153,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "zh",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 47,
+          "client": 45
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 60301,
+      "video_bytes": 57360,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    },
+    {
+      "language": "ja",
+      "titleFont": "36px",
+      "overflow": false,
+      "boxes": [
+        {
+          "tag": "H1",
+          "scroll": 92,
+          "client": 90
+        },
+        {
+          "tag": "labels",
+          "scroll": 95,
+          "client": 95
+        },
+        {
+          "tag": "price",
+          "scroll": 42,
+          "client": 42
+        }
+      ],
+      "width": 960,
+      "cover_bytes": 70974,
+      "video_bytes": 67737,
+      "duration_seconds": 15,
+      "preview_pages": 3
+    }
+  ],
+  "deployment_fixture": {
+    "files_published": 168,
+    "repeat_deployment": "CURRENT",
+    "baseline": "6accd3de6cbdf2809c1b77143fd1f7f580884c8d"
+  },
+  "paid_archive_unchanged": true,
+  "archive_sha256": "b580a79eef1e2680bfd1b2f044a91b6c873e681f6caead731b150f93c44d7cbb"
+}

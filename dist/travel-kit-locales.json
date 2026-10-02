@@ -15,7 +15,8 @@
     "s4": "Select only the pages intended for the traveler, then Print selected pages / PDF. The client-page button excludes pages 06, 34 and 38–40, but still review your selection. Choose A4 or Letter, enable background graphics and disable browser headers/footers. Inspect the PDF before sending. Client PDFs are static; calculations remain in the workbook.",
     "lic-copy": "Your purchase permits use by one business and its staff. You may customise these templates for unlimited client projects within that business and deliver finished, non-editable documents to your travel clients.\n\nYou may not resell, sublicense, give away or publicly share editable templates, source HTML, spreadsheets or any template access links. You may not offer the files as competing templates or claim exclusive ownership of the underlying designs. No PLR or MRR rights are granted.\n\nKeep a backup of the original files. Customisation services, hosted software, supplier integrations and guaranteed business results are not included. Use your own verified trip information and business terms.",
     "checkout-note": "Your order details are sent privately to HORIZONS. No payment is charged on this page. We will contact you by email to confirm payment, then send the download link manually after payment verification.",
-    "release_verified": "32 language editions. Every edition contains the same 40 document pages."
+    "release_verified": "32 language editions. Every edition contains the same 40 document pages.",
+    "refund-copy": "For file defects, contact the seller through the purchase record. Remedies remain subject to applicable law and marketplace rules."
   },
   "ar": {
     "back-link": "المنتج",
@@ -33,7 +34,8 @@
     "s4": "اختر الصفحات المقصودة للمسافر ثم اطبع إلى PDF. يستبعد زر صفحات العميل الصفحات 06 و34 و38 إلى 40، لكن راجع اختيارك أيضًا. اختر A4 أو Letter وفعّل خلفيات الطباعة وأوقف ترويسات المتصفح. افحص PDF قبل إرساله. ملفات العميل ثابتة، والحسابات في جدول العمليات.",
     "lic-copy": "يتيح الشراء استخدام الملفات داخل منشأة واحدة بواسطة موظفيها. يمكنك تخصيص القوالب لعدد غير محدود من مشروعات العملاء داخل المنشأة، وتسليم المسافرين المستندات النهائية غير القابلة للتعديل.\n\nلا يجوز إعادة بيع القوالب القابلة للتعديل أو ملفات HTML أو الجداول أو روابط الوصول، أو ترخيصها للغير أو توزيعها مجانًا أو نشرها. ولا يجوز تقديمها كقوالب منافسة أو ادعاء ملكية حصرية لتصميماتها الأصلية. لا يتضمن الترخيص حقوق PLR أو MRR.\n\nاحتفظ بنسخة احتياطية من الأصول. لا يشمل الشراء خدمات تخصيص أو برنامجًا مستضافًا أو تكاملًا مع المورّدين أو ضمان نتائج تجارية. استخدم معلومات الرحلة الموثقة وشروط منشأتك.",
     "checkout-note": "يتم إرسال تفاصيل طلبك بشكل خاص إلى HORIZONS. لا يتم فرض أي دفع على هذه الصفحة. سنتواصل معك عبر البريد الإلكتروني لتأكيد الدفع، ثم نرسل رابط التنزيل يدويًا بعد التحقق من الدفع.",
-    "release_verified": "الحزمة متاحة بـ32 لغة. كل نسخة لغوية تتضمن صفحات المستندات الأربعين نفسها."
+    "release_verified": "الحزمة متاحة بـ32 لغة. كل نسخة لغوية تتضمن صفحات المستندات الأربعين نفسها.",
+    "refund-copy": "عند عيب في الملفات تواصل مع البائع من سجل الشراء. تبقى المعالجات خاضعة للقانون المعمول به وقواعد المنصة."
   },
   "tr": {
     "back-link": "Ürün",
@@ -51,7 +53,8 @@
     "s4": "Yolcuya gönderilecek sayfaları seçip PDF’ye yazdırın. Müşteri sayfaları düğmesi 06, 34 ve 38–40’ı dışarıda bırakır; yine de seçimi kontrol edin. A4 veya Letter seçin, arka planları açın ve tarayıcı üst/alt bilgilerini kapatın. PDF’yi göndermeden kontrol edin. Hesaplamalar çalışma kitabındadır.",
     "lic-copy": "Satın alma, dosyaların tek bir işletme ve çalışanları tarafından kullanımına izin verir. Şablonları bu işletmedeki sınırsız müşteri projesi için uyarlayabilir, müşterilerinize düzenlenemeyen son belgeleri teslim edebilirsiniz.\n\nDüzenlenebilir şablonları, HTML kaynaklarını, çalışma kitaplarını veya şablon erişim bağlantılarını yeniden satamaz, alt lisanslayamaz, ücretsiz dağıtamaz ya da herkese açık paylaşamazsınız. Rakip şablon olarak sunamaz veya temel tasarımlarda münhasır mülkiyet iddia edemezsiniz. PLR veya MRR hakkı verilmez.\n\nAsılların yedeğini saklayın. Özelleştirme hizmeti, barındırılan yazılım, tedarikçi entegrasyonu veya ticari sonuç garantisi dahil değildir. Kendi doğrulanmış seyahat bilgilerinizi ve işletme koşullarınızı kullanın.",
     "checkout-note": "Sipariş ayrıntılarınız özel olarak HORIZONS'a gönderiliyor. Bu sayfada herhangi bir ödeme alınmamaktadır. Ödemeyi onaylamak için sizinle e-posta yoluyla iletişime geçeceğiz, ardından ödeme doğrulamasının ardından indirme bağlantısını manuel olarak göndereceğiz.",
-    "release_verified": "32 dil sürümü. Her sürüm aynı 40 belge sayfasını içerir."
+    "release_verified": "32 dil sürümü. Her sürüm aynı 40 belge sayfasını içerir.",
+    "refund-copy": "Dosya kusuru için satın alma kaydından satıcıya ulaşın. Çözümler geçerli hukuk ve pazar yeri kurallarına tabidir."
   },
   "fr": {
     "back-link": "Produit",
@@ -69,7 +72,8 @@
     "s4": "Sélectionnez les pages destinées au voyageur, puis imprimez en PDF. Le bouton client exclut 06, 34 et 38 à 40 ; vérifiez néanmoins la sélection. Choisissez A4 ou Letter, activez les arrière-plans et désactivez les en-têtes du navigateur. Contrôlez le PDF avant envoi. Les calculs restent dans le classeur.",
     "lic-copy": "L’achat autorise l’utilisation par une entreprise et son personnel. Vous pouvez personnaliser les modèles pour un nombre illimité de projets clients au sein de cette entreprise et remettre à vos voyageurs les documents finaux non modifiables.\n\nVous ne pouvez ni revendre, sous-licencier, distribuer gratuitement ou partager publiquement les modèles modifiables, sources HTML, classeurs ou liens d’accès. Vous ne pouvez pas les proposer comme modèles concurrents ni revendiquer une propriété exclusive sur les créations d’origine. Aucun droit PLR ou MRR n’est accordé.\n\nConservez une sauvegarde des originaux. Les services de personnalisation, logiciels hébergés, intégrations prestataires et résultats commerciaux garantis ne sont pas inclus. Utilisez vos propres données vérifiées et conditions d’activité.",
     "checkout-note": "Les détails de votre commande sont envoyés en privé à HORIZONS. Aucun paiement n'est facturé sur cette page. Nous vous contacterons par email pour confirmer le paiement, puis enverrons le lien de téléchargement manuellement après vérification du paiement.",
-    "release_verified": "32 éditions linguistiques. Chaque édition contient les mêmes 40 pages de documents."
+    "release_verified": "32 éditions linguistiques. Chaque édition contient les mêmes 40 pages de documents.",
+    "refund-copy": "En cas de défaut, contactez le vendeur via la preuve d’achat. Les recours restent soumis au droit applicable et aux règles de la place de marché."
   },
   "es": {
     "back-link": "Producto",
@@ -87,7 +91,8 @@
     "s4": "Seleccione las páginas para el viajero e imprima a PDF. El botón de cliente excluye 06, 34 y 38–40; revise igualmente la selección. Elija A4 o Letter, active fondos y desactive encabezados del navegador. Compruebe el PDF antes de enviarlo. Los cálculos permanecen en el libro.",
     "lic-copy": "La compra permite el uso por una empresa y su personal. Puede personalizar las plantillas para un número ilimitado de proyectos de clientes dentro de esa empresa y entregar documentos finales no editables a sus viajeros.\n\nNo puede revender, sublicenciar, regalar ni compartir públicamente plantillas editables, fuentes HTML, libros de cálculo o enlaces de acceso. No puede ofrecerlos como plantillas competidoras ni atribuirse la propiedad exclusiva de los diseños originales. No se conceden derechos PLR ni MRR.\n\nConserve una copia de los originales. No se incluyen servicios de personalización, software alojado, integraciones con proveedores ni resultados comerciales garantizados. Use sus propios datos verificados y condiciones comerciales.",
     "checkout-note": "Los detalles de tu pedido se envían de forma privada a HORIZONS. No se cobra ningún pago en esta página. Nos comunicaremos con usted por correo electrónico para confirmar el pago y luego le enviaremos el enlace de descarga manualmente después de la verificación del pago.",
-    "release_verified": "32 ediciones de idioma. Cada edición contiene las mismas 40 páginas de documentos."
+    "release_verified": "32 ediciones de idioma. Cada edición contiene las mismas 40 páginas de documentos.",
+    "refund-copy": "Si existe un defecto, contacte al vendedor mediante el registro de compra. Las soluciones quedan sujetas a la ley aplicable y las normas de la plataforma."
   },
   "de": {
     "back-link": "Produkt",
@@ -105,7 +110,8 @@
     "s4": "Wählen Sie nur die für den Reisenden bestimmten Seiten aus und drucken Sie dann ausgewählte Seiten/PDF aus. Die Schaltfläche „Kundenseite“ schließt die Seiten 06, 34 und 38–40 aus, aber überprüfen Sie dennoch Ihre Auswahl. Wählen Sie A4 oder Letter, aktivieren Sie Hintergrundgrafiken und deaktivieren Sie die Kopf-/Fußzeilen des Browsers. Überprüfen Sie das PDF vor dem Senden. Client-PDFs sind statisch; Berechnungen bleiben in der Arbeitsmappe.",
     "lic-copy": "Ihr Kauf gestattet die Nutzung durch ein Unternehmen und dessen Mitarbeiter. Sie können diese Vorlagen für eine unbegrenzte Anzahl von Kundenprojekten innerhalb dieses Unternehmens anpassen und Ihren Reisekunden fertige, nicht bearbeitbare Dokumente liefern.\n\nSie dürfen bearbeitbare Vorlagen, Quell-HTML, Tabellenkalkulationen oder Links zum Zugriff auf Vorlagen nicht weiterverkaufen, unterlizenzieren, verschenken oder öffentlich teilen. Sie dürfen die Dateien nicht als konkurrierende Vorlagen anbieten oder das ausschließliche Eigentum an den zugrunde liegenden Designs beanspruchen. Es werden keine PLR- oder MRR-Rechte gewährt.\n\nErstellen Sie eine Sicherungskopie der Originaldateien. Anpassungsdienste, gehostete Software, Lieferantenintegrationen und garantierte Geschäftsergebnisse sind nicht enthalten. Verwenden Sie Ihre eigenen verifizierten Reiseinformationen und Geschäftsbedingungen.",
     "checkout-note": "Ihre Bestelldaten werden vertraulich an HORIZONS gesendet. Auf dieser Seite wird keine Zahlung erhoben. Wir werden Sie per E-Mail kontaktieren, um die Zahlung zu bestätigen, und Ihnen dann nach der Zahlungsbestätigung den Download-Link manuell zusenden.",
-    "release_verified": "32 Sprachversionen. Jede Version enthält dieselben 40 Dokumentseiten."
+    "release_verified": "32 Sprachversionen. Jede Version enthält dieselben 40 Dokumentseiten.",
+    "refund-copy": "Bei Dateimängeln kontaktieren Sie den Verkäufer über den Kaufbeleg. Die Rechtsbehelfe unterliegen weiterhin dem geltenden Recht und den Marktregeln."
   },
   "it": {
     "back-link": "Prodotto",
@@ -123,7 +129,8 @@
     "s4": "Selezionare solo le pagine destinate al viaggiatore, quindi Stampa pagine selezionate/PDF. Il pulsante della pagina cliente esclude le pagine 06, 34 e 38–40, ma rivedi comunque la selezione. Scegli A4 o Lettera, abilita la grafica di sfondo e disabilita le intestazioni/piè di pagina del browser. Ispezionare il PDF prima di inviarlo. I PDF client sono statici; i calcoli rimangono nella cartella di lavoro.",
     "lic-copy": "L'acquisto consente l'utilizzo da parte di un'azienda e del relativo personale. Puoi personalizzare questi modelli per un numero illimitato di progetti cliente all'interno di quell'azienda e consegnare documenti finiti e non modificabili ai tuoi clienti di viaggio.\n\nNon è possibile rivendere, concedere in sublicenza, regalare o condividere pubblicamente modelli modificabili, codice HTML sorgente, fogli di calcolo o collegamenti di accesso ai modelli. Non puoi offrire i file come modelli concorrenti o rivendicare la proprietà esclusiva dei disegni sottostanti. Non sono concessi diritti PLR o MRR.\n\nConservare un backup dei file originali. Non sono inclusi i servizi di personalizzazione, il software ospitato, le integrazioni dei fornitori e i risultati aziendali garantiti. Utilizza le informazioni di viaggio e i termini aziendali verificati.",
     "checkout-note": "I dettagli del tuo ordine vengono inviati privatamente a HORIZONS. Nessun pagamento viene addebitato su questa pagina. Ti contatteremo via e-mail per confermare il pagamento, quindi invieremo manualmente il collegamento per il download dopo la verifica del pagamento.",
-    "release_verified": "32 edizioni linguistiche. Ogni edizione contiene le stesse 40 pagine di documenti."
+    "release_verified": "32 edizioni linguistiche. Ogni edizione contiene le stesse 40 pagine di documenti.",
+    "refund-copy": "Per difetti di file, contattare il venditore tramite la documentazione di acquisto. I rimedi rimangono soggetti alla legge applicabile e alle regole del mercato."
   },
   "pt": {
     "back-link": "Produto",
@@ -141,7 +148,8 @@
     "s4": "Selecione apenas as páginas destinadas ao viajante e, em seguida, Imprima as páginas selecionadas/PDF. O botão da página do cliente exclui as páginas 06, 34 e 38–40, mas ainda revise sua seleção. Escolha A4 ou Carta, ative os gráficos de fundo e desative os cabeçalhos/rodapés do navegador. Inspecione o PDF antes de enviar. Os PDFs do cliente são estáticos; os cálculos permanecem na pasta de trabalho.",
     "lic-copy": "Sua compra permite o uso por uma empresa e sua equipe. Você pode personalizar esses modelos para projetos de clientes ilimitados dentro desse negócio e entregar documentos finalizados e não editáveis ​​para seus clientes de viagens.\n\nVocê não pode revender, sublicenciar, doar ou compartilhar publicamente modelos editáveis, fontes HTML, planilhas ou quaisquer links de acesso a modelos. Você não pode oferecer os arquivos como modelos concorrentes ou reivindicar propriedade exclusiva dos designs subjacentes. Nenhum direito de PLR ​​ou MRR é concedido.\n\nMantenha um backup dos arquivos originais. Serviços de customização, software hospedado, integrações de fornecedores e resultados de negócios garantidos não estão incluídos. Use suas próprias informações de viagem e termos comerciais verificados.",
     "checkout-note": "Os detalhes do seu pedido serão enviados de forma privada para a HORIZONS. Nenhum pagamento é cobrado nesta página. Entraremos em contato por e-mail para confirmar o pagamento e enviaremos o link para download manualmente após a verificação do pagamento.",
-    "release_verified": "32 edições de idioma. Cada edição contém as mesmas 40 páginas de documentos."
+    "release_verified": "32 edições de idioma. Cada edição contém as mesmas 40 páginas de documentos.",
+    "refund-copy": "Para defeitos de arquivo, entre em contato com o vendedor através do registro de compra. As soluções permanecem sujeitas à lei aplicável e às regras do mercado."
   },
   "nl": {
     "back-link": "Product",
@@ -159,7 +167,8 @@
     "s4": "Selecteer alleen de pagina's die bedoeld zijn voor de reiziger en druk vervolgens de geselecteerde pagina's af / PDF. De klantpaginaknop sluit pagina's 06, 34 en 38-40 uit, maar controleer nog steeds uw selectie. Kies A4 of Letter, schakel achtergrondafbeeldingen in en schakel browserkop- en voetteksten uit. Controleer de PDF voordat u deze verzendt. Client-PDF's zijn statisch; berekeningen blijven in de werkmap staan.",
     "lic-copy": "Uw aankoop maakt gebruik door één bedrijf en zijn personeel mogelijk. U kunt deze sjablonen aanpassen voor een onbeperkt aantal klantprojecten binnen dat bedrijf en kant-en-klare, niet-bewerkbare documenten aan uw reisklanten leveren.\n\nU mag bewerkbare sjablonen, bron-HTML, spreadsheets of koppelingen voor toegang tot sjablonen niet doorverkopen, in sublicentie geven, weggeven of publiekelijk delen. U mag de bestanden niet aanbieden als concurrerende sjablonen of het exclusieve eigendom van de onderliggende ontwerpen claimen. Er worden geen OUR- of MRR-rechten verleend.\n\nBewaar een back-up van de originele bestanden. Maatwerkdiensten, gehoste software, leveranciersintegraties en gegarandeerde bedrijfsresultaten zijn niet inbegrepen. Gebruik uw eigen geverifieerde reisinformatie en zakelijke voorwaarden.",
     "checkout-note": "Uw bestelgegevens worden privé naar HORIZONS verzonden. Er wordt op deze pagina geen betaling in rekening gebracht. We nemen per e-mail contact met u op om de betaling te bevestigen en sturen de downloadlink vervolgens handmatig na betalingsverificatie.",
-    "release_verified": "32 taalversies. Elke versie bevat dezelfde 40 documentpagina’s."
+    "release_verified": "32 taalversies. Elke versie bevat dezelfde 40 documentpagina’s.",
+    "refund-copy": "Voor bestandsgebreken kunt u contact opnemen met de verkoper via het aankoopdossier. Remedies blijven onderworpen aan de toepasselijke wetgeving en marktregels."
   },
   "ru": {
     "back-link": "Товар",
@@ -177,7 +186,8 @@
     "s4": "Выберите только страницы, предназначенные для путешественника, затем распечатайте выбранные страницы / PDF. Кнопка клиентской страницы исключает страницы 06, 34 и 38–40, но все же проверьте свой выбор. Выберите A4 или Letter, включите фоновую графику и отключите верхние и нижние колонтитулы браузера. Проверьте PDF-файл перед отправкой. Клиентские PDF-файлы являются статическими; расчеты остаются в рабочей книге.",
     "lic-copy": "Ваша покупка разрешает использование одной компании и ее сотрудников. Вы можете настроить эти шаблоны для неограниченного количества клиентских проектов в рамках этого бизнеса и доставлять готовые, нередактируемые документы своим туристическим клиентам.\n\nВы не имеете права перепродавать, сублицензировать, раздавать или публично делиться редактируемыми шаблонами, исходным HTML-кодом, электронными таблицами или любыми ссылками для доступа к шаблонам. Вы не имеете права предлагать файлы в качестве конкурирующих шаблонов или претендовать на исключительное право собственности на базовые образцы. Никакие права PLR или MRR не предоставляются.\n\nСохраните резервную копию исходных файлов. Услуги по настройке, размещенное программное обеспечение, интеграция с поставщиками и гарантированные бизнес-результаты не включены. Используйте собственную проверенную информацию о поездке и деловые условия.",
     "checkout-note": "Информация о вашем заказе будет отправлена в HORIZONS в частном порядке. На этой странице оплата не взимается. Мы свяжемся с вами по электронной почте, чтобы подтвердить оплату, а затем отправим ссылку для скачивания вручную после подтверждения оплаты.",
-    "release_verified": "32 языковые версии. Каждая версия содержит те же 40 страниц документов."
+    "release_verified": "32 языковые версии. Каждая версия содержит те же 40 страниц документов.",
+    "refund-copy": "При наличии дефектов свяжитесь с продавцом через запись о покупке. Средства правовой защиты по-прежнему регулируются действующим законодательством и правилами рынка."
   },
   "uk": {
     "back-link": "Товар",
@@ -195,7 +205,8 @@
     "s4": "Виберіть лише сторінки, призначені для мандрівника, а потім надрукуйте вибрані сторінки / PDF. Кнопка клієнтської сторінки виключає сторінки 06, 34 і 38–40, але все одно перегляньте свій вибір. Виберіть A4 або Letter, увімкніть фонову графіку та вимкніть верхні та нижні колонтитули браузера. Перевірте PDF перед надсиланням. PDF-файли клієнта статичні; розрахунки залишаються в робочому зошиті.",
     "lic-copy": "Ваша покупка дозволяє використовувати одну компанію та її персонал. Ви можете налаштувати ці шаблони для необмеженої кількості проектів клієнтів у цьому бізнесі та надавати готові документи, які не можна редагувати, своїм клієнтам, які подорожують.\n\nВи не маєте права перепродавати, субліцензувати, роздавати або публічно публікувати редаговані шаблони, вихідний HTML, електронні таблиці чи будь-які посилання для доступу до шаблонів. Ви не маєте права пропонувати файли як конкуруючі шаблони або претендувати на виключне право власності на основні проекти. Права PLR або MRR не надаються.\n\nЗберігайте резервні копії вихідних файлів. Послуги з налаштування, розміщене програмне забезпечення, інтеграція постачальників і гарантовані бізнес-результати не включені. Використовуйте власну підтверджену інформацію про поїздку та умови ведення бізнесу.",
     "checkout-note": "Деталі вашого замовлення буде надіслано приватно на HORIZONS. На цій сторінці оплата не стягується. Ми зв’яжемося з вами електронною поштою для підтвердження платежу, а потім надішлемо посилання для завантаження вручну після підтвердження платежу.",
-    "release_verified": "32 мовні версії. Кожна версія містить ті самі 40 сторінок документів."
+    "release_verified": "32 мовні версії. Кожна версія містить ті самі 40 сторінок документів.",
+    "refund-copy": "З питань дефектів файлів зв'яжіться з продавцем через запис про покупку. Засоби захисту залишаються підпорядкованими чинному законодавству та правилам ринку."
   },
   "pl": {
     "back-link": "Produkt",
@@ -213,7 +224,8 @@
     "s4": "Wybierz tylko strony przeznaczone dla podróżnego, a następnie Wydrukuj wybrane strony / PDF. Przycisk strony klienta wyklucza strony 06, 34 i 38–40, ale mimo to sprawdź swój wybór. Wybierz format A4 lub Letter, włącz grafikę tła i wyłącz nagłówki/stopki przeglądarki. Sprawdź plik PDF przed wysłaniem. Pliki PDF klienta są statyczne; obliczenia pozostają w skoroszycie.",
     "lic-copy": "Twój zakup pozwala na użytkowanie przez jedną firmę i jej pracowników. Możesz dostosować te szablony do nieograniczonej liczby projektów klientów w ramach tej firmy i dostarczać gotowe, nieedytowalne dokumenty swoim klientom z branży turystycznej.\n\nNie możesz odsprzedawać, udzielać sublicencji, rozdawać ani publicznie udostępniać edytowalnych szablonów, źródłowego kodu HTML, arkuszy kalkulacyjnych ani żadnych łączy dostępu do szablonów. Nie możesz oferować plików jako konkurencyjnych szablonów ani rościć sobie wyłącznej własności do projektów bazowych. Nie są przyznawane żadne prawa PLR ani MRR.\n\nZachowaj kopię zapasową oryginalnych plików. Usługi dostosowywania, hostowane oprogramowanie, integracja dostawców i gwarantowane wyniki biznesowe nie są uwzględnione. Skorzystaj z własnych, zweryfikowanych informacji o podróży i warunków biznesowych.",
     "checkout-note": "Szczegóły Twojego zamówienia zostaną przesłane prywatnie do HORIZONS. Na tej stronie nie są pobierane żadne płatności. Skontaktujemy się z Tobą e-mailem, aby potwierdzić płatność, a następnie wyślemy link do pobrania ręcznie po weryfikacji płatności.",
-    "release_verified": "32 wersje językowe. Każda wersja zawiera te same 40 stron dokumentów."
+    "release_verified": "32 wersje językowe. Każda wersja zawiera te same 40 stron dokumentów.",
+    "refund-copy": "W przypadku wad plików skontaktuj się ze sprzedawcą za pośrednictwem protokołu zakupu. Środki zaradcze nadal podlegają obowiązującym przepisom prawa i zasadom rynku."
   },
   "cs": {
     "back-link": "Produkt",
@@ -231,7 +243,8 @@
     "s4": "Vyberte pouze stránky určené pro cestovatele a poté Vytiskněte vybrané stránky / PDF. Tlačítko klientské stránky nezahrnuje stránky 06, 34 a 38–40, ale přesto zkontrolujte svůj výběr. Vyberte A4 nebo Letter, povolte grafiku na pozadí a deaktivujte záhlaví/zápatí prohlížeče. Před odesláním zkontrolujte PDF. Klientské PDF jsou statické; výpočty zůstávají v sešitu.",
     "lic-copy": "Váš nákup umožňuje použití jedním podnikem a jeho zaměstnanci. Tyto šablony můžete přizpůsobit pro neomezený počet klientských projektů v rámci daného podniku a doručit hotové, neupravitelné dokumenty svým klientům na cestách.\n\nNesmíte dále prodávat, poskytovat sublicence, rozdávat nebo veřejně sdílet upravitelné šablony, zdrojový kód HTML, tabulky nebo jakékoli odkazy pro přístup k šablonám. Soubory nesmíte nabízet jako konkurenční šablony ani si nárokovat výhradní vlastnictví podkladových návrhů. Nejsou udělena žádná práva PLR nebo MRR.\n\nUchovávejte si zálohu původních souborů. Nejsou zahrnuty služby přizpůsobení, hostovaný software, integrace dodavatelů a zaručené obchodní výsledky. Použijte své vlastní ověřené informace o cestě a obchodní podmínky.",
     "checkout-note": "Podrobnosti o vaší objednávce jsou odesílány soukromě společnosti HORIZONS. Na této stránce není účtována žádná platba. Budeme vás kontaktovat e-mailem pro potvrzení platby a po ověření platby ručně zašleme odkaz ke stažení.",
-    "release_verified": "32 jazykových verzí. Každá verze obsahuje stejných 40 stránek dokumentů."
+    "release_verified": "32 jazykových verzí. Každá verze obsahuje stejných 40 stránek dokumentů.",
+    "refund-copy": "V případě vad souboru kontaktujte prodejce prostřednictvím nákupního záznamu. Opravné prostředky nadále podléhají platným zákonům a pravidlům trhu."
   },
   "ro": {
     "back-link": "Produs",
@@ -249,7 +262,8 @@
     "s4": "Selectați numai paginile destinate călătorului, apoi Imprimați paginile selectate / PDF. Butonul pentru pagina client exclude paginile 06, 34 și 38–40, dar totuși examinați selecția dvs. Alegeți A4 sau Letter, activați grafica de fundal și dezactivați anteturile/subsolurile browserului. Inspectați PDF-ul înainte de a trimite. PDF-urile client sunt statice; calculele rămân în registrul de lucru.",
     "lic-copy": "Achiziția dvs. permite utilizarea de către o companie și personalul acesteia. Puteți personaliza aceste șabloane pentru proiecte de clienți nelimitate din cadrul acelei afaceri și puteți livra documente finite, care nu pot fi editate clienților dvs. de călătorie.\n\nNu puteți revinde, sublicență, oferi sau distribui public șabloane editabile, sursă HTML, foi de calcul sau orice link-uri de acces la șabloane. Nu aveți dreptul să oferiți fișierele ca șabloane concurente sau să revendicați proprietatea exclusivă asupra desenelor subiacente. Nu se acordă drepturi PLR sau MRR.\n\nPăstrați o copie de rezervă a fișierelor originale. Serviciile de personalizare, software-ul găzduit, integrările furnizorilor și rezultatele de afaceri garantate nu sunt incluse. Folosiți propriile informații verificate de călătorie și termeni de afaceri.",
     "checkout-note": "Detaliile comenzii tale sunt trimise în mod privat către HORIZONS. Nu se percepe nicio plată pe această pagină. Vă vom contacta prin e-mail pentru a confirma plata, apoi trimitem manual linkul de descărcare după verificarea plății.",
-    "release_verified": "32 de ediții lingvistice. Fiecare ediție conține aceleași 40 de pagini de documente."
+    "release_verified": "32 de ediții lingvistice. Fiecare ediție conține aceleași 40 de pagini de documente.",
+    "refund-copy": "Pentru defecte ale fișierului, contactați vânzătorul prin înregistrarea achiziției. Remediile rămân supuse legii aplicabile și regulilor pieței."
   },
   "hu": {
     "back-link": "Termék",
@@ -267,7 +281,8 @@
     "s4": "Csak az utazónak szánt oldalakat válassza ki, majd nyomtassa ki a kiválasztott oldalakat / PDF. Az ügyféloldal gombja nem tartalmazza a 06., 34. és 38–40. oldalt, de továbbra is ellenőrizze a választást. Válassza az A4-es vagy Letter-t, engedélyezze a háttérgrafikát, és tiltsa le a böngésző fejléceit/lábléceit. Elküldés előtt ellenőrizze a PDF-et. A kliens PDF-ek statikusak; a számítások a munkafüzetben maradnak.",
     "lic-copy": "Vásárlásával egy vállalkozás és annak alkalmazottai használhatják. Ezeket a sablonokat korlátlan számú ügyfélprojekthez személyre szabhatja az adott vállalkozáson belül, és kész, nem szerkeszthető dokumentumokat szállíthat utazási ügyfelei számára.\n\nNem értékesíthet tovább, nem adhat tovább licencet, nem adhat oda vagy oszthat meg nyilvánosan szerkeszthető sablonokat, forrás-HTML-kódot, táblázatokat vagy bármely sablon hozzáférési hivatkozást. Nem ajánlhatja fel a fájlokat versengő sablonként, és nem követelheti az alapul szolgáló tervek kizárólagos tulajdonjogát. Nem biztosítunk PLR vagy MRR jogokat.\n\nKészítsen biztonsági másolatot az eredeti fájlokról. A testreszabási szolgáltatásokat, a tárolt szoftvereket, a beszállítói integrációkat és a garantált üzleti eredményeket nem tartalmazza. Használja saját ellenőrzött utazási adatait és üzleti feltételeit.",
     "checkout-note": "Megrendelésének adatait privát módon elküldjük a HORIZONS-nak. Ezen az oldalon nincs fizetés. A fizetés megerősítése érdekében e-mailben felvesszük Önnel a kapcsolatot, majd a fizetés ellenőrzése után manuálisan elküldjük a letöltési linket.",
-    "release_verified": "32 nyelvi változat. Minden változat ugyanazt a 40 dokumentumoldalt tartalmazza."
+    "release_verified": "32 nyelvi változat. Minden változat ugyanazt a 40 dokumentumoldalt tartalmazza.",
+    "refund-copy": "Fájlhibák esetén vegye fel a kapcsolatot az eladóval a vásárlási nyilvántartáson keresztül. A jogorvoslatokra továbbra is az alkalmazandó törvények és a piac szabályai vonatkoznak."
   },
   "el": {
     "back-link": "Προϊόν",
@@ -285,7 +300,8 @@
     "s4": "Επιλέξτε μόνο τις σελίδες που προορίζονται για τον ταξιδιώτη και, στη συνέχεια, Εκτύπωση επιλεγμένων σελίδων / PDF. Το κουμπί πελάτη-σελίδα εξαιρεί τις σελίδες 06, 34 και 38–40, αλλά εξακολουθεί να ελέγχετε την επιλογή σας. Επιλέξτε A4 ή Letter, ενεργοποιήστε τα γραφικά φόντου και απενεργοποιήστε τις κεφαλίδες/υποσέλιδα του προγράμματος περιήγησης. Επιθεωρήστε το PDF πριν το στείλετε. Τα PDF των πελατών είναι στατικά. οι υπολογισμοί παραμένουν στο βιβλίο εργασίας.",
     "lic-copy": "Η αγορά σας επιτρέπει τη χρήση από μία επιχείρηση και το προσωπικό της. Μπορείτε να προσαρμόσετε αυτά τα πρότυπα για απεριόριστα έργα πελατών εντός αυτής της επιχείρησης και να παραδώσετε ολοκληρωμένα, μη επεξεργάσιμα έγγραφα στους ταξιδιωτικούς πελάτες σας.\n\nΔεν επιτρέπεται η μεταπώληση, η υποάδεια, η παραχώρηση ή η δημόσια κοινή χρήση επεξεργάσιμων προτύπων, πηγών HTML, υπολογιστικών φύλλων ή συνδέσμων πρόσβασης προτύπων. Δεν μπορείτε να προσφέρετε τα αρχεία ως ανταγωνιστικά πρότυπα ή να διεκδικήσετε την αποκλειστική ιδιοκτησία των υποκείμενων σχεδίων. Δεν χορηγούνται δικαιώματα ΔΔΔ ή MRR.\n\nΔιατηρήστε αντίγραφο ασφαλείας των αρχικών αρχείων. Δεν περιλαμβάνονται υπηρεσίες προσαρμογής, φιλοξενούμενο λογισμικό, ενσωματώσεις προμηθευτών και εγγυημένα επιχειρηματικά αποτελέσματα. Χρησιμοποιήστε τις δικές σας επαληθευμένες πληροφορίες ταξιδιού και επιχειρηματικούς όρους.",
     "checkout-note": "Τα στοιχεία της παραγγελίας σας αποστέλλονται ιδιωτικά στο HORIZONS. Δεν χρεώνεται πληρωμή σε αυτήν τη σελίδα. Θα επικοινωνήσουμε μαζί σας μέσω email για να επιβεβαιώσουμε την πληρωμή και, στη συνέχεια, θα στείλουμε τον σύνδεσμο λήψης με μη αυτόματο τρόπο μετά την επαλήθευση της πληρωμής.",
-    "release_verified": "32 γλωσσικές εκδόσεις. Κάθε έκδοση περιέχει τις ίδιες 40 σελίδες εγγράφων."
+    "release_verified": "32 γλωσσικές εκδόσεις. Κάθε έκδοση περιέχει τις ίδιες 40 σελίδες εγγράφων.",
+    "refund-copy": "Για ελαττώματα αρχείου, επικοινωνήστε με τον πωλητή μέσω του αρχείου αγοράς. Τα ένδικα μέσα υπόκεινται στην ισχύουσα νομοθεσία και στους κανόνες της αγοράς."
   },
   "sv": {
     "back-link": "Produkt",
@@ -303,7 +319,8 @@
     "s4": "Välj endast de sidor som är avsedda för resenären, sedan Skriv ut valda sidor / PDF. Klientsida-knappen utesluter sidorna 06, 34 och 38–40, men granska fortfarande ditt val. Välj A4 eller Letter, aktivera bakgrundsgrafik och inaktivera sidhuvuden/sidfötter i webbläsaren. Inspektera PDF-filen innan du skickar. Klient-PDF-filer är statiska; beräkningar finns kvar i arbetsboken.",
     "lic-copy": "Ditt köp tillåter användning av ett företag och dess personal. Du kan anpassa dessa mallar för obegränsade kundprojekt inom den verksamheten och leverera färdiga, icke-redigerbara dokument till dina resekunder.\n\nDu får inte sälja vidare, underlicensiera, ge bort eller offentligt dela redigerbara mallar, HTML-källkod, kalkylblad eller några mallåtkomstlänkar. Du får inte erbjuda filerna som konkurrerande mallar eller göra anspråk på exklusiv äganderätt till de underliggande designerna. Inga PLR- eller MRR-rättigheter beviljas.\n\nBehåll en säkerhetskopia av originalfilerna. Anpassningstjänster, värdprogramvara, leverantörsintegrationer och garanterade affärsresultat ingår inte. Använd din egen verifierade reseinformation och affärsvillkor.",
     "checkout-note": "Din beställningsinformation skickas privat till HORIZONS. Ingen betalning debiteras på denna sida. Vi kommer att kontakta dig via e-post för att bekräfta betalningen och skicka sedan nedladdningslänken manuellt efter betalningsverifiering.",
-    "release_verified": "32 språkversioner. Varje version innehåller samma 40 dokumentsidor."
+    "release_verified": "32 språkversioner. Varje version innehåller samma 40 dokumentsidor.",
+    "refund-copy": "För fildefekter, kontakta säljaren via köpprotokollet. Åtgärder förblir föremål för tillämplig lag och marknadsplatsregler."
   },
   "da": {
     "back-link": "Produkt",
@@ -321,7 +338,8 @@
     "s4": "Vælg kun de sider, der er beregnet til den rejsende, og udskriv derefter valgte sider / PDF. Klientside-knappen udelukker side 06, 34 og 38–40, men gennemgå stadig dit valg. Vælg A4 eller Letter, aktiver baggrundsgrafik og deaktiver browserens sidehoveder/sidefødder. Undersøg PDF'en før afsendelse. Klient-PDF'er er statiske; beregninger forbliver i projektmappen.",
     "lic-copy": "Dit køb tillader brug af én virksomhed og dens personale. Du kan tilpasse disse skabeloner til ubegrænsede kundeprojekter inden for den pågældende virksomhed og levere færdige, ikke-redigerbare dokumenter til dine rejsekunder.\n\nDu må ikke videresælge, underlicensere, give væk eller offentligt dele redigerbare skabeloner, HTML-kilde, regneark eller nogen skabelonadgangslinks. Du må ikke tilbyde filerne som konkurrerende skabeloner eller kræve eksklusivt ejerskab af de underliggende designs. Der gives ingen PLR- eller MRR-rettigheder.\n\nBehold en sikkerhedskopi af de originale filer. Tilpasningstjenester, hostet software, leverandørintegrationer og garanterede forretningsresultater er ikke inkluderet. Brug dine egne bekræftede rejseoplysninger og forretningsbetingelser.",
     "checkout-note": "Dine ordreoplysninger sendes privat til HORIZONS. Der opkræves ingen betaling på denne side. Vi vil kontakte dig via e-mail for at bekræfte betalingen, og derefter sende downloadlinket manuelt efter betalingsbekræftelse.",
-    "release_verified": "32 sprogversioner. Hver version indeholder de samme 40 dokumentsider."
+    "release_verified": "32 sprogversioner. Hver version indeholder de samme 40 dokumentsider.",
+    "refund-copy": "For filfejl, kontakt sælger via købsoversigten. Afhjælpning er fortsat underlagt gældende lovgivning og markedspladsregler."
   },
   "no": {
     "back-link": "Produkt",
@@ -339,7 +357,8 @@
     "s4": "Velg bare sidene som er beregnet på den reisende, og deretter Skriv ut valgte sider / PDF. Klientside-knappen utelukker sidene 06, 34 og 38–40, men se gjennom valget ditt. Velg A4 eller Letter, aktiver bakgrunnsgrafikk og deaktiver topptekst/bunntekst i nettleseren. Inspiser PDF-en før sending. Klient-PDF-er er statiske; beregninger forblir i arbeidsboken.",
     "lic-copy": "Kjøpet ditt tillater bruk av én bedrift og dens ansatte. Du kan tilpasse disse malene for et ubegrenset antall klientprosjekter innenfor den virksomheten og levere ferdige, ikke-redigerbare dokumenter til reisekundene dine.\n\nDu kan ikke videreselge, underlisensiere, gi bort eller offentlig dele redigerbare maler, kilde-HTML, regneark eller noen maltilgangslenker. Du kan ikke tilby filene som konkurrerende maler eller kreve eksklusivt eierskap til de underliggende designene. Ingen rettigheter til PLR eller MRR gis.\n\nBehold en sikkerhetskopi av de originale filene. Tilpasningstjenester, vertsbasert programvare, leverandørintegrasjoner og garanterte forretningsresultater er ikke inkludert. Bruk din egen bekreftede reiseinformasjon og forretningsvilkår.",
     "checkout-note": "Bestillingsdetaljene dine sendes privat til HORIZONS. Ingen betaling belastes på denne siden. Vi vil kontakte deg på e-post for å bekrefte betalingen, og deretter sende nedlastingslenken manuelt etter betalingsverifisering.",
-    "release_verified": "32 språkversjoner. Hver versjon inneholder de samme 40 dokumentsidene."
+    "release_verified": "32 språkversjoner. Hver versjon inneholder de samme 40 dokumentsidene.",
+    "refund-copy": "For filfeil, kontakt selgeren gjennom kjøpsprotokollen. Rettsmidler forblir underlagt gjeldende lov og markedsplassregler."
   },
   "fi": {
     "back-link": "Tuote",
@@ -357,7 +376,8 @@
     "s4": "Valitse vain matkustajalle tarkoitetut sivut ja tulosta sitten valitut sivut / PDF. Asiakassivupainike sulkee pois sivut 06, 34 ja 38–40, mutta tarkista valintasi silti. Valitse A4 tai Letter, ota taustagrafiikka käyttöön ja poista selaimen ylä-/alatunnisteet käytöstä. Tarkista PDF ennen lähettämistä. Asiakkaan PDF-tiedostot ovat staattisia; laskelmat jäävät työkirjaan.",
     "lic-copy": "Ostoksesi sallii yhden yrityksen ja sen henkilökunnan käytön. Voit mukauttaa näitä malleja rajoittamattomia asiakasprojekteja varten kyseisessä yrityksessä ja toimittaa valmiita, ei-muokattavia asiakirjoja matka-asiakkaillesi.\n\nEt saa jälleenmyydä, alilisensoida, lahjoittaa tai jakaa julkisesti muokattavia malleja, lähde-HTML-koodia, laskentataulukoita tai mitään mallien käyttölinkkejä. Et saa tarjota tiedostoja kilpailevina malleina tai vaatia yksinomaista omistusta taustalla oleviin malleihin. PLR- tai MRR-oikeuksia ei myönnetä.\n\nPidä varmuuskopio alkuperäisistä tiedostoista. Räätälöintipalvelut, isännöidyt ohjelmistot, toimittajaintegraatiot ja taatut liiketoimintatulokset eivät sisälly hintaan. Käytä omia vahvistettuja matkatietojasi ja liikeehtojasi.",
     "checkout-note": "Tilauksesi tiedot lähetetään yksityisesti HORIZONSille. Tällä sivulla ei veloiteta maksua. Otamme sinuun yhteyttä sähköpostitse vahvistaaksemme maksun ja lähetämme latauslinkin manuaalisesti maksun vahvistamisen jälkeen.",
-    "release_verified": "32 kieliversiota. Jokainen versio sisältää samat 40 asiakirjasivua."
+    "release_verified": "32 kieliversiota. Jokainen versio sisältää samat 40 asiakirjasivua.",
+    "refund-copy": "Jos tiedostossa on vikoja, ota yhteyttä myyjään ostotietueen kautta. Oikeuskeinot ovat edelleen sovellettavan lain ja markkinapaikan sääntöjen alaisia."
   },
   "bg": {
     "back-link": "Продукт",
@@ -375,7 +395,8 @@
     "s4": "Изберете само страниците, предназначени за пътника, след което отпечатайте избраните страници / PDF. Бутонът за клиентска страница изключва страници 06, 34 и 38–40, но все пак прегледайте избора си. Изберете A4 или Letter, активирайте фоновата графика и деактивирайте горните/долните колонтитули на браузъра. Проверете PDF преди изпращане. Клиентските PDF файлове са статични; изчисленията остават в работната книга.",
     "lic-copy": "Вашата покупка позволява използване от един бизнес и неговия персонал. Можете да персонализирате тези шаблони за неограничен брой клиентски проекти в рамките на този бизнес и да доставяте завършени документи, които не могат да се редактират, на вашите пътуващи клиенти.\n\nНямате право да препродавате, сублицензирате, подарявате или публично споделяте редактируеми шаблони, изходен HTML, електронни таблици или каквито и да било връзки за достъп до шаблони. Нямате право да предлагате файловете като конкурентни шаблони или да претендирате за изключителна собственост върху основните дизайни. Не се предоставят права за PLR или MRR.\n\nСъхранявайте резервно копие на оригиналните файлове. Услуги за персонализиране, хостван софтуер, интеграции на доставчици и гарантирани бизнес резултати не са включени. Използвайте собствена потвърдена информация за пътуване и бизнес условия.",
     "checkout-note": "Подробностите за вашата поръчка се изпращат лично до HORIZONS. На тази страница не се таксува плащане. Ще се свържем с вас по имейл, за да потвърдим плащането, след което ще изпратим ръчно връзката за изтегляне след потвърждение на плащането.",
-    "release_verified": "32 езикови версии. Всяка версия съдържа същите 40 страници документи."
+    "release_verified": "32 езикови версии. Всяка версия съдържа същите 40 страници документи.",
+    "refund-copy": "За дефекти на файлове се свържете с продавача чрез записа за покупка. Средствата за защита остават предмет на приложимото законодателство и правилата на пазара."
   },
   "sr": {
     "back-link": "Производ",
@@ -393,7 +414,8 @@
     "s4": "Изаберите само странице намењене путнику, а затим одштампајте изабране странице / ПДФ. Дугме клијентске странице искључује странице 06, 34 и 38–40, али ипак прегледајте свој избор. Изаберите А4 или Леттер, омогућите позадинску графику и онемогућите заглавља/подножја претраживача. Прегледајте ПДФ пре слања. Клијентски ПДФ-ови су статични; обрачуни остају у радној свесци.",
     "lic-copy": "Ваша куповина дозвољава коришћење једном предузећу и његовом особљу. Можете прилагодити ове шаблоне за неограничене пројекте клијената у оквиру тог посла и испоручити готове документе који се не могу уређивати својим клијентима за путовања.\n\nНе смете препродавати, подлиценцирати, поклањати или јавно делити шаблоне за уређивање, изворни ХТМЛ, табеле или било које везе за приступ шаблону. Не можете нудити датотеке као конкурентске шаблоне или тражити ексклузивно власништво над основним дизајном. ПЛР или МРР права се не додељују.\n\nЧувајте резервну копију оригиналних датотека. Услуге прилагођавања, хостовани софтвер, интеграције добављача и гарантовани пословни резултати нису укључени. Користите своје проверене информације о путовању и пословне услове.",
     "checkout-note": "Детаљи ваше поруџбине се шаљу приватно у ХОРИЗОНС. На овој страници се не наплаћује плаћање. Контактираћемо вас путем е-поште да потврдимо уплату, а затим ручно послати линк за преузимање након верификације плаћања.",
-    "release_verified": "32 језичке верзије. Свака верзија садржи истих 40 страница докумената."
+    "release_verified": "32 језичке верзије. Свака верзија садржи истих 40 страница докумената.",
+    "refund-copy": "За дефекте у фајлу, контактирајте продавца преко записа о куповини. Правни лекови остају подложни важећим законима и тржишним правилима."
   },
   "hr": {
     "back-link": "Proizvod",
@@ -411,7 +433,8 @@
     "s4": "Odaberite samo stranice namijenjene putniku, zatim Ispišite odabrane stranice / PDF. Gumb klijentske stranice isključuje stranice 06, 34 i 38–40, ali ipak pregledajte svoj odabir. Odaberite A4 ili Letter, omogućite pozadinsku grafiku i onemogućite zaglavlja/podnožja preglednika. Provjerite PDF prije slanja. Klijentski PDF-ovi su statični; izračuni ostaju u radnoj bilježnici.",
     "lic-copy": "Vaša kupnja dopušta korištenje jednoj tvrtki i njezinom osoblju. Možete prilagoditi ove predloške za neograničen broj projekata klijenata unutar te tvrtke i isporučiti gotove dokumente koji se ne mogu uređivati ​​vašim klijentima koji putuju.\n\nNe smijete preprodavati, podlicencirati, poklanjati ili javno dijeliti predloške koji se mogu uređivati, izvorni HTML, proračunske tablice ili bilo koje veze za pristup predlošku. Ne smijete nuditi datoteke kao konkurentske predloške ili zahtijevati isključivo vlasništvo nad temeljnim dizajnom. Nema prava na PLR ili MRR.\n\nČuvajte sigurnosnu kopiju izvornih datoteka. Usluge prilagodbe, hostirani softver, integracije dobavljača i zajamčeni poslovni rezultati nisu uključeni. Koristite vlastite provjerene informacije o putovanju i poslovne uvjete.",
     "checkout-note": "Podaci o vašoj narudžbi šalju se privatno na HORIZONS. Na ovoj stranici nema plaćanja. Kontaktirat ćemo vas e-poštom kako bismo potvrdili plaćanje, a zatim ručno poslati vezu za preuzimanje nakon potvrde plaćanja.",
-    "release_verified": "32 jezične verzije. Svaka verzija sadrži istih 40 stranica dokumenata."
+    "release_verified": "32 jezične verzije. Svaka verzija sadrži istih 40 stranica dokumenata.",
+    "refund-copy": "Za nedostatke datoteka kontaktirajte prodavatelja putem evidencije kupnje. Pravni lijekovi i dalje podliježu važećim zakonima i pravilima tržišta."
   },
   "he": {
     "back-link": "מוצר",
@@ -429,7 +452,8 @@
     "s4": "בחר רק את הדפים המיועדים לנוסע, ולאחר מכן הדפס דפים נבחרים / PDF. כפתור דף הלקוח אינו כולל את עמודים 06, 34 ו-38–40, אך עדיין סקור את הבחירה שלך. בחר A4 או Letter, הפעל גרפיקת רקע והשבת את הכותרות העליונות/תחתונות של הדפדפן. בדוק את ה-PDF לפני השליחה. קובצי PDF של לקוחות הם סטטיים; החישובים נשארים בחוברת העבודה.",
     "lic-copy": "הרכישה שלך מאפשרת שימוש על ידי עסק אחד והצוות שלו. אתה יכול להתאים אישית תבניות אלה עבור פרויקטים בלתי מוגבלים של לקוחות בתוך העסק הזה ולמסור מסמכים מוגמרים, שאינם ניתנים לעריכה, ללקוחות הנסיעות שלך.\n\nאינך רשאי למכור מחדש, לתת רישיון משנה, לתת או לשתף בפומבי תבניות הניתנות לעריכה, HTML מקור, גיליונות אלקטרוניים או קישורי גישה לתבניות כלשהן. אינך רשאי להציע את הקבצים כתבניות מתחרות או לתבוע בעלות בלעדית על העיצובים הבסיסיים. לא מוענקות זכויות PLR או MRR.\n\nשמור גיבוי של הקבצים המקוריים. שירותי התאמה אישית, תוכנה מתארחת, שילובי ספקים ותוצאות עסקיות מובטחות אינם כלולים. השתמש בפרטי הטיול המאומתים שלך ובתנאי העסקים שלך.",
     "checkout-note": "פרטי ההזמנה שלך נשלחים באופן פרטי אל HORIZONS. לא נגבה תשלום בדף זה. ניצור איתך קשר בדוא\"ל כדי לאשר את התשלום, ולאחר מכן נשלח את קישור ההורדה באופן ידני לאחר אימות התשלום.",
-    "release_verified": "32 גרסאות שפה. כל גרסה כוללת את אותם 40 עמודי מסמכים."
+    "release_verified": "32 גרסאות שפה. כל גרסה כוללת את אותם 40 עמודי מסמכים.",
+    "refund-copy": "לגבי פגמים בתיק, פנה למוכר באמצעות רשומת הרכישה. הסעד נשארים כפופים לחוק החל ולכללי השוק."
   },
   "fa": {
     "back-link": "محصول",
@@ -447,7 +471,8 @@
     "s4": "فقط صفحات در نظر گرفته شده برای مسافر را انتخاب کنید، سپس صفحات انتخابی / PDF را چاپ کنید. دکمه صفحه مشتری صفحات 06، 34 و 38 تا 40 را مستثنی می کند، اما همچنان انتخاب خود را بررسی کنید. A4 یا Letter را انتخاب کنید، گرافیک پس‌زمینه را فعال کنید و هدر/پانویس مرورگر را غیرفعال کنید. قبل از ارسال پی دی اف را بررسی کنید. PDF های مشتری ثابت هستند. محاسبات در کتاب کار باقی می ماند.",
     "lic-copy": "خرید شما اجازه استفاده توسط یک کسب و کار و کارکنان آن را می‌دهد. می‌توانید این الگوها را برای پروژه‌های مشتری نامحدود در آن کسب‌وکار سفارشی کنید و اسناد تکمیل‌شده و غیرقابل ویرایش را به مشتریان سفر خود تحویل دهید.\n\nشما نمی‌توانید قالب‌های قابل ویرایش، HTML منبع، صفحات گسترده یا پیوندهای دسترسی به الگو را مجدداً بفروشید، مجوز فرعی بدهید، اعطا کنید یا به صورت عمومی به اشتراک بگذارید. شما نمی توانید فایل ها را به عنوان الگوهای رقیب ارائه دهید یا ادعای مالکیت انحصاری طرح های اساسی را داشته باشید. هیچ حق PLR یا MRR اعطا نمی شود.\n\nیک نسخه پشتیبان از فایل های اصلی نگه دارید. خدمات سفارشی‌سازی، نرم‌افزار میزبانی‌شده، ادغام تامین‌کنندگان و نتایج تضمین‌شده کسب‌وکار شامل نمی‌شوند. از اطلاعات سفر و شرایط تجاری تأیید شده خود استفاده کنید.",
     "checkout-note": "جزئیات سفارش شما به صورت خصوصی به HORIZONS ارسال می‌شود. هیچ پرداختی در این صفحه دریافت نمی شود. برای تایید پرداخت از طریق ایمیل با شما تماس خواهیم گرفت، سپس پس از تایید پرداخت، لینک دانلود را به صورت دستی ارسال کنید.",
-    "release_verified": "۳۲ نسخه زبانی. هر نسخه شامل همان ۴۰ صفحه سند است."
+    "release_verified": "۳۲ نسخه زبانی. هر نسخه شامل همان ۴۰ صفحه سند است.",
+    "refund-copy": "برای نقص فایل، از طریق ثبت خرید با فروشنده تماس بگیرید. اصلاحات همچنان تابع قوانین قابل اجرا و قوانین بازار است."
   },
   "ur": {
     "back-link": "مصنوعہ",
@@ -465,7 +490,8 @@
     "s4": "صرف وہی صفحات منتخب کریں جو مسافر کے لیے ہیں، پھر منتخب صفحات/پی ڈی ایف پرنٹ کریں۔ کلائنٹ پیج بٹن صفحات 06، 34 اور 38–40 کو چھوڑ دیتا ہے، لیکن پھر بھی آپ کے انتخاب کا جائزہ لیں۔ A4 یا خط کا انتخاب کریں، پس منظر کے گرافکس کو فعال کریں اور براؤزر ہیڈر/فوٹرز کو غیر فعال کریں۔ بھیجنے سے پہلے پی ڈی ایف کا معائنہ کریں۔ کلائنٹ پی ڈی ایف جامد ہیں؛ حساب کتاب ورک بک میں رہتا ہے۔",
     "lic-copy": "آپ کی خریداری کی اجازت ایک کاروبار اور اس کا عملہ استعمال کرتی ہے۔ آپ ان ٹیمپلیٹس کو اس کاروبار کے اندر لامحدود کلائنٹ پروجیکٹس کے لیے اپنی مرضی کے مطابق بنا سکتے ہیں اور اپنے ٹریول کلائنٹس کو مکمل، ناقابل ترمیم دستاویزات فراہم کر سکتے ہیں۔\n\nآپ قابل تدوین ٹیمپلیٹس، سورس ایچ ٹی ایم ایل، اسپریڈ شیٹس یا کسی ٹیمپلیٹ تک رسائی کے لنکس کو دوبارہ فروخت، ذیلی لائسنس، دے یا عوامی طور پر شیئر نہیں کر سکتے۔ آپ فائلوں کو مسابقتی ٹیمپلیٹس کے طور پر پیش نہیں کر سکتے یا بنیادی ڈیزائن کی خصوصی ملکیت کا دعوی نہیں کر سکتے۔ کوئی PLR یا MRR حقوق نہیں دیے جاتے ہیں۔\n\nاصل فائلوں کا بیک اپ رکھیں۔ حسب ضرورت خدمات، میزبان سافٹ ویئر، سپلائر انضمام اور ضمانت شدہ کاروباری نتائج شامل نہیں ہیں۔ اپنی تصدیق شدہ سفر کی معلومات اور کاروباری شرائط استعمال کریں۔",
     "checkout-note": "آپ کے آرڈر کی تفصیلات HORIZONS کو نجی طور پر بھیجی جاتی ہیں۔ اس صفحہ پر کوئی ادائیگی چارج نہیں کی جاتی ہے۔ ادائیگی کی تصدیق کے لیے ہم آپ سے ای میل کے ذریعے رابطہ کریں گے، پھر ادائیگی کی تصدیق کے بعد ڈاؤن لوڈ لنک کو دستی طور پر بھیجیں گے۔",
-    "release_verified": "32 زبانوں کے نسخے۔ ہر نسخے میں وہی 40 دستاویزی صفحات شامل ہیں۔"
+    "release_verified": "32 زبانوں کے نسخے۔ ہر نسخے میں وہی 40 دستاویزی صفحات شامل ہیں۔",
+    "refund-copy": "فائل میں نقائص کے لیے، خریداری کے ریکارڈ کے ذریعے بیچنے والے سے رابطہ کریں۔ علاج قابل اطلاق قانون اور بازار کے قوانین کے تابع رہتے ہیں۔"
   },
   "hi": {
     "back-link": "उत्पाद",
@@ -483,7 +509,8 @@
     "s4": "केवल यात्री के लिए इच्छित पृष्ठों का चयन करें, फिर चयनित पृष्ठों/पीडीएफ को प्रिंट करें। क्लाइंट-पेज बटन पेज 06, 34 और 38-40 को छोड़ देता है, लेकिन फिर भी अपने चयन की समीक्षा करता है। A4 या लेटर चुनें, बैकग्राउंड ग्राफ़िक्स सक्षम करें और ब्राउज़र हेडर/फुटर अक्षम करें। भेजने से पहले पीडीएफ का निरीक्षण करें। क्लाइंट पीडीएफ स्थिर हैं; गणना कार्यपुस्तिका में रहती है.",
     "lic-copy": "आपकी खरीदारी एक व्यवसाय और उसके कर्मचारियों द्वारा उपयोग की अनुमति देती है। आप उस व्यवसाय के भीतर असीमित ग्राहक परियोजनाओं के लिए इन टेम्पलेट्स को अनुकूलित कर सकते हैं और अपने यात्रा ग्राहकों को तैयार, गैर-संपादन योग्य दस्तावेज़ वितरित कर सकते हैं।\n\nआप संपादन योग्य टेम्प्लेट, स्रोत HTML, स्प्रेडशीट या किसी भी टेम्प्लेट एक्सेस लिंक को पुनर्विक्रय, उप-लाइसेंस, दान या सार्वजनिक रूप से साझा नहीं कर सकते हैं। आप फ़ाइलों को प्रतिस्पर्धी टेम्पलेट के रूप में पेश नहीं कर सकते हैं या अंतर्निहित डिज़ाइन के विशेष स्वामित्व का दावा नहीं कर सकते हैं। कोई पीएलआर या एमआरआर अधिकार नहीं दिए गए हैं।\n\nमूल फ़ाइलों का बैकअप रखें। अनुकूलन सेवाएँ, होस्ट किए गए सॉफ़्टवेयर, आपूर्तिकर्ता एकीकरण और गारंटीकृत व्यावसायिक परिणाम शामिल नहीं हैं। अपनी सत्यापित यात्रा जानकारी और व्यावसायिक शर्तों का उपयोग करें।",
     "checkout-note": "आपके ऑर्डर का विवरण निजी तौर पर HORIZONS को भेजा जाता है। इस पेज पर कोई भुगतान नहीं लिया जाता है. भुगतान की पुष्टि के लिए हम आपसे ईमेल द्वारा संपर्क करेंगे, फिर भुगतान सत्यापन के बाद मैन्युअल रूप से डाउनलोड लिंक भेजेंगे।",
-    "release_verified": "32 भाषा संस्करण। प्रत्येक संस्करण में वही 40 दस्तावेज़ पृष्ठ हैं।"
+    "release_verified": "32 भाषा संस्करण। प्रत्येक संस्करण में वही 40 दस्तावेज़ पृष्ठ हैं।",
+    "refund-copy": "फ़ाइल दोषों के लिए, खरीद रिकॉर्ड के माध्यम से विक्रेता से संपर्क करें। उपचार लागू कानून और बाज़ार नियमों के अधीन रहेंगे।"
   },
   "bn": {
     "back-link": "পণ্য",
@@ -501,7 +528,8 @@
     "s4": "শুধুমাত্র ভ্রমণকারীদের উদ্দেশ্যে পৃষ্ঠাগুলি নির্বাচন করুন, তারপরে নির্বাচিত পৃষ্ঠাগুলি / PDF প্রিন্ট করুন৷ ক্লায়েন্ট-পৃষ্ঠা বোতামটি 06, 34 এবং 38-40 পৃষ্ঠাগুলি বাদ দেয়, কিন্তু তারপরও আপনার নির্বাচন পর্যালোচনা করুন। A4 বা লেটার বেছে নিন, ব্যাকগ্রাউন্ড গ্রাফিক্স সক্ষম করুন এবং ব্রাউজার হেডার/ফুটার অক্ষম করুন। পাঠানোর আগে পিডিএফ পরীক্ষা করুন। ক্লায়েন্ট পিডিএফ স্থির; গণনা ওয়ার্কবুকে থেকে যায়।",
     "lic-copy": "আপনার ক্রয়ের অনুমতি একটি ব্যবসা এবং তার কর্মীদের দ্বারা ব্যবহার করা হয়. আপনি সেই ব্যবসার মধ্যে সীমাহীন ক্লায়েন্ট প্রকল্পগুলির জন্য এই টেমপ্লেটগুলি কাস্টমাইজ করতে পারেন এবং আপনার ভ্রমণ ক্লায়েন্টদের কাছে সমাপ্ত, অ-সম্পাদনাযোগ্য নথিগুলি সরবরাহ করতে পারেন।\n\nআপনি সম্পাদনাযোগ্য টেমপ্লেট, উৎস এইচটিএমএল, স্প্রেডশীট বা কোনো টেমপ্লেট অ্যাক্সেস লিঙ্ক পুনঃবিক্রয়, সাবলাইসেন্স, প্রদান বা প্রকাশ্যে শেয়ার করতে পারবেন না। আপনি প্রতিযোগিতামূলক টেমপ্লেট হিসাবে ফাইলগুলি অফার করতে পারেন না বা অন্তর্নিহিত ডিজাইনগুলির একচেটিয়া মালিকানা দাবি করতে পারেন না। কোনো PLR বা MRR অধিকার দেওয়া হয় না।\n\nমূল ফাইলগুলির একটি ব্যাকআপ রাখুন। কাস্টমাইজেশন পরিষেবা, হোস্ট করা সফ্টওয়্যার, সরবরাহকারী একীকরণ এবং নিশ্চিত ব্যবসার ফলাফল অন্তর্ভুক্ত করা হয় না। আপনার নিজের যাচাইকৃত ট্রিপ তথ্য এবং ব্যবসা শর্তাবলী ব্যবহার করুন.",
     "checkout-note": "আপনার অর্ডারের বিবরণ ব্যক্তিগতভাবে HORIZONS-এ পাঠানো হয়েছে। এই পৃষ্ঠায় কোন পেমেন্ট চার্জ করা হয় না. অর্থপ্রদান নিশ্চিত করার জন্য আমরা আপনার সাথে ইমেলের মাধ্যমে যোগাযোগ করব, তারপরে অর্থপ্রদান যাচাইকরণের পরে ম্যানুয়ালি ডাউনলোড লিঙ্কটি পাঠাব।",
-    "release_verified": "32টি ভাষার সংস্করণ। প্রতিটি সংস্করণে একই 40টি নথির পৃষ্ঠা রয়েছে।"
+    "release_verified": "32টি ভাষার সংস্করণ। প্রতিটি সংস্করণে একই 40টি নথির পৃষ্ঠা রয়েছে।",
+    "refund-copy": "ফাইলের ত্রুটির জন্য, ক্রয় রেকর্ডের মাধ্যমে বিক্রেতার সাথে যোগাযোগ করুন। প্রতিকারগুলি প্রযোজ্য আইন এবং বাজারের নিয়মের অধীন থাকে।"
   },
   "id": {
     "back-link": "Produk",
@@ -519,7 +547,8 @@
     "s4": "Pilih hanya halaman yang ditujukan untuk traveler, lalu Cetak halaman yang dipilih / PDF. Tombol halaman klien mengecualikan halaman 06, 34 dan 38–40, namun tetap meninjau pilihan Anda. Pilih A4 atau Letter, aktifkan grafik latar belakang dan nonaktifkan header/footer browser. Periksa PDF sebelum dikirim. PDF klien bersifat statis; perhitungan tetap ada di buku kerja.",
     "lic-copy": "Pembelian Anda mengizinkan penggunaan oleh satu bisnis dan stafnya. Anda dapat menyesuaikan templat ini untuk proyek klien tanpa batas dalam bisnis tersebut dan mengirimkan dokumen yang sudah jadi dan tidak dapat diedit kepada klien perjalanan Anda.\n\nAnda tidak boleh menjual kembali, mensublisensikan, memberikan atau membagikan secara publik templat yang dapat diedit, HTML sumber, spreadsheet, atau tautan akses templat apa pun. Anda tidak boleh menawarkan file sebagai templat pesaing atau mengklaim kepemilikan eksklusif atas desain yang mendasarinya. Tidak ada hak PLR atau MRR yang diberikan.\n\nSimpan cadangan file asli. Layanan penyesuaian, perangkat lunak yang dihosting, integrasi pemasok, dan jaminan hasil bisnis tidak termasuk. Gunakan informasi perjalanan terverifikasi dan persyaratan bisnis Anda sendiri.",
     "checkout-note": "Detail pesanan Anda dikirim secara pribadi ke HORIZONS. Tidak ada pembayaran yang dibebankan pada halaman ini. Kami akan menghubungi Anda melalui email untuk mengkonfirmasi pembayaran, kemudian mengirimkan link download secara manual setelah verifikasi pembayaran.",
-    "release_verified": "32 edisi bahasa. Setiap edisi berisi 40 halaman dokumen yang sama."
+    "release_verified": "32 edisi bahasa. Setiap edisi berisi 40 halaman dokumen yang sama.",
+    "refund-copy": "Untuk cacat file, hubungi penjual melalui catatan pembelian. Upaya hukum tetap tunduk pada hukum yang berlaku dan peraturan pasar."
   },
   "ms": {
     "back-link": "Produk",
@@ -537,7 +566,8 @@
     "s4": "Pilih hanya halaman yang dimaksudkan untuk pengembara, kemudian Cetak halaman / PDF yang dipilih. Butang halaman klien mengecualikan halaman 06, 34 dan 38–40, tetapi masih menyemak pilihan anda. Pilih A4 atau Letter, dayakan grafik latar belakang dan lumpuhkan pengepala/pengaki penyemak imbas. Periksa PDF sebelum menghantar. PDF pelanggan adalah statik; pengiraan kekal dalam buku kerja.",
     "lic-copy": "Pembelian anda membenarkan penggunaan oleh satu perniagaan dan kakitangannya. Anda boleh menyesuaikan templat ini untuk projek pelanggan tanpa had dalam perniagaan tersebut dan menghantar dokumen yang telah siap dan tidak boleh diedit kepada pelanggan perjalanan anda.\n\nAnda tidak boleh menjual semula, mensublesenkan, memberi atau berkongsi secara terbuka templat boleh diedit, HTML sumber, hamparan atau sebarang pautan akses templat. Anda tidak boleh menawarkan fail sebagai templat bersaing atau menuntut pemilikan eksklusif reka bentuk asas. Tiada hak PLR atau MRR diberikan.\n\nSimpan sandaran fail asal. Perkhidmatan penyesuaian, perisian yang dihoskan, integrasi pembekal dan hasil perniagaan yang dijamin tidak disertakan. Gunakan maklumat perjalanan anda yang disahkan dan syarat perniagaan.",
     "checkout-note": "Butiran pesanan anda dihantar secara tertutup kepada HORIZONS. Tiada bayaran dikenakan pada halaman ini. Kami akan menghubungi anda melalui e-mel untuk mengesahkan pembayaran, kemudian menghantar pautan muat turun secara manual selepas pengesahan pembayaran.",
-    "release_verified": "32 edisi bahasa. Setiap edisi mengandungi 40 halaman dokumen yang sama."
+    "release_verified": "32 edisi bahasa. Setiap edisi mengandungi 40 halaman dokumen yang sama.",
+    "refund-copy": "Untuk kecacatan fail, hubungi penjual melalui rekod pembelian. Remedi tetap tertakluk kepada undang-undang dan peraturan pasaran yang berkenaan."
   },
   "zh": {
     "back-link": "产品",
@@ -555,7 +585,8 @@
     "s4": "仅选择供旅行者使用的页面，然后打印所选页面/PDF。客户页面按钮不包括第 06、34 和 38-40 页，但仍会检查您的选择。选择 A4 或 Letter，启用背景图形并禁用浏览器页眉/页脚。发送前检查 PDF。客户端 PDF 是静态的；计算保留在工作簿中。",
     "lic-copy": "您的购买允许一家企业及其员工使用。您可以为该业务中的无限客户项目定制这些模板，并向您的旅行客户提供完成的、不可编辑的文档。\n\n您不得转售、再许可、赠送或公开共享可编辑模板、源 HTML、电子表格或任何模板访问链接。您不得将这些文件作为竞争模板提供，也不得主张底层设计的排他所有权。不授予 PLR 或 MRR 权利。\n\n保留原始文件的备份。定制服务、托管软件、供应商集成和有保证的业务成果不包括在内。使用您自己验证的旅行信息和业务条款。",
     "checkout-note": "您的订单详细信息将私下发送至 HORIZONS。此页面不收取任何费用。我们将通过电子邮件与您联系以确认付款，然后在付款验证后手动发送下载链接。",
-    "release_verified": "32 种语言版本。每个版本均包含相同的 40 页文档。"
+    "release_verified": "32 种语言版本。每个版本均包含相同的 40 页文档。",
+    "refund-copy": "对于文件缺陷，请通过购买记录联系卖家。补救措施仍须遵守适用的法律和市场规则。"
   },
   "ja": {
     "back-link": "商品",
@@ -573,6 +604,7 @@
     "s4": "旅行者向けのページのみを選択し、選択したページ/PDF を印刷します。クライアント ページ ボタンではページ 06、34、および 38 ～ 40 が除外されますが、選択内容を確認してください。 A4 またはレターを選択し、背景グラフィックを有効にし、ブラウザのヘッダー/フッターを無効にします。送信する前に PDF を確認してください。クライアント PDF は静的です。計算はワークブックに残ります。",
     "lic-copy": "あなたの購入により、1 つの企業とそのスタッフによる使用が許可されます。これらのテンプレートを、そのビジネス内の無制限のクライアント プロジェクトに合わせてカスタマイズし、完成した編集不可のドキュメントを旅行クライアントに配信することができます。\n\n編集可能なテンプレート、ソース HTML、スプレッドシート、またはテンプレート アクセス リンクを再販、サブライセンス、譲渡、または公的に共有することはできません。ファイルを競合するテンプレートとして提供したり、基礎となるデザインの独占的所有権を主張したりすることはできません。 PLR または MRR の権利は付与されません。\n\n元のファイルのバックアップを保管してください。カスタマイズ サービス、ホストされるソフトウェア、サプライヤーの統合、および保証された業績は含まれません。独自に検証済みの旅行情報とビジネス用語を使用してください。",
     "checkout-note": "ご注文の詳細は、HORIZONS に非公開で送信されます。このページでは支払いは発生しません。支払いの確認についてはメールでご連絡し、支払いの確認後にダウンロード リンクを手動で送信します。",
-    "release_verified": "32言語版。各言語版には同じ40ページの書類が含まれています。"
+    "release_verified": "32言語版。各言語版には同じ40ページの書類が含まれています。",
+    "refund-copy": "ファイルの欠陥については、購入記録を通じて販売者にお問い合わせください。救済策には引き続き、適用される法律および市場の規則が適用されます。"
   }
 }

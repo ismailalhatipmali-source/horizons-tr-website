@@ -45,6 +45,27 @@ const languageNames={en:'English',ar:'العربية',tr:'Türkçe',fr:'Françai
 const languageSelect=document.getElementById('language-select');
 for(const code of L){const o=document.createElement('option');o.value=code;o.textContent=languageNames[code];o.selected=code===lang;languageSelect.append(o);}
 languageSelect.addEventListener('change',()=>{const u=new URL(location.href);u.searchParams.set('lang',languageSelect.value);location.href=u.href;});
+languageSelect.setAttribute('aria-label',languageNames[lang]);
+const previewDialog=document.getElementById('preview-dialog');
+document.getElementById('close-preview').addEventListener('click',()=>previewDialog.close());
+previewDialog.addEventListener('click',e=>{if(e.target===previewDialog)previewDialog.close();});
+(async()=>{
+try{
+ const all=await fetch('travel-kit-media.json').then(r=>{if(!r.ok)throw Error();return r.json();}),m=all[lang];if(!m)return;
+ document.getElementById('preview-title').textContent=m.preview_title;
+ document.getElementById('video-title').textContent=m.video_title;
+ document.getElementById('close-preview').textContent=m.close_preview;
+ const gallery=document.getElementById('preview-gallery');
+ for(const sample of m.samples){
+  const figure=document.createElement('figure'),button=document.createElement('button'),img=document.createElement('img'),caption=document.createElement('figcaption');
+  button.type='button';button.setAttribute('aria-label',sample.caption);img.src=sample.src;img.alt=sample.caption;img.loading='lazy';img.width=744;img.height=1053;caption.textContent=sample.caption;
+  button.append(img);figure.append(button,caption);gallery.append(figure);
+  button.addEventListener('click',()=>{const large=document.getElementById('preview-large');large.src=sample.src;large.alt=sample.caption;previewDialog.showModal();});
+ }
+ const video=document.getElementById('kit-video');video.src=m.video;video.poster='assets/covers/'+lang+'/travel-kit.svg';video.setAttribute('aria-label',m.video_title);
+ document.getElementById('previews').hidden=false;
+}catch{}
+})();
 (async()=>{
 try{
  const all=await fetch('travel-kit-locales.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();}),d=all[lang]||all.en;
@@ -52,6 +73,12 @@ try{
  for(const [id,value] of Object.entries(d)){if(id==='release_verified')continue;const n=document.getElementById(id);if(n)n.textContent=value;}
  // Product count is shown only when deployment verifies the private archive.
  const release=await fetch('travel-kit-release.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();});
- if(release.verified===true&&release.version==='2.0.0'&&Array.isArray(release.languages)&&release.languages.length===32&&L.every(c=>release.languages.includes(c))){document.getElementById('release-note').textContent=d.release_verified+' · v'+release.version;}
+ if(release.verified===true&&release.version==='2.0.0'&&Array.isArray(release.languages)&&release.languages.length===32&&L.every(c=>release.languages.includes(c))){
+  document.getElementById('release-note').textContent=d.release_verified+' · v'+release.version;
+  document.getElementById('editions-title').textContent=d.release_verified;
+  const catalog=document.getElementById('cover-catalog');
+  for(const code of L){const a=document.createElement('a'),img=document.createElement('img'),label=document.createElement('span');a.href='travel-kit.html?lang='+code;img.src='assets/covers/'+code+'/travel-kit.svg';img.alt=T[code].title;img.loading='lazy';img.width=960;img.height=540;label.textContent=languageNames[code];label.lang=code;label.dir=rtl.has(code)?'rtl':'ltr';a.append(img,label);if(code===lang)a.setAttribute('aria-current','true');catalog.append(a);}
+  document.getElementById('cover-editions').hidden=false;
+ }
 }catch{}
 })();

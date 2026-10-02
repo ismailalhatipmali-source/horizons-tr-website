@@ -5,8 +5,8 @@
 <title>HORIZONS · Travel Agent Client Kit</title>
 <meta name="description" content="Reusable travel-agency client documents, operations workbooks and email scripts.">
 <link rel="icon" href="assets/horizons-symbol.svg">
-<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="travel-kit.css">
-<script defer src="travel-kit.js"></script>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="travel-kit.css?v=2.0.1">
+<script defer src="travel-kit.js?v=2.0.1"></script>
 </head>
 <body class="travel-kit-page">
 <header class="nav"><div class="wrap nav-inner">
@@ -16,7 +16,7 @@
 </div></header>
 <main>
 <section class="kit-hero"><div class="wrap kit-grid">
-<div class="kit-copy"><span class="kicker">HORIZONS · BUSINESS TOOLS</span>
+<div class="kit-copy"><span class="kicker">HORIZONS</span>
 <h1 id="kit-title">Travel Agent Templates & Client Kit</h1>
 <p id="kit-summary">Reusable client documents, operations workbooks and ready-to-edit email scripts for travel advisors and small agencies.</p>
 <div class="kit-price"><strong>$29</strong><span id="price-note">One-time purchase · one-business licence</span></div>
@@ -30,7 +30,7 @@
 <figure class="kit-cover"><img id="kit-cover" src="assets/covers/en/travel-kit.svg" alt="Travel Agent Client Kit"></figure>
 </div></section>
 <section class="section" id="inside"><div class="wrap">
-<div class="section-head"><span class="kicker">INCLUDED</span><h2 id="inside-title">A complete client-workflow starter kit</h2></div>
+<div class="section-head"><span class="kicker">HTML · PDF · XLSX · TXT</span><h2 id="inside-title">A complete client-workflow starter kit</h2></div>
 <div class="kit-feature-grid">
 <article><strong>40</strong><h3 id="f1t">Reusable document pages</h3><p id="f1d">Client intake, proposals, comparisons, pricing, payment schedules, itineraries, transfers, checklists, feedback and internal workflow pages.</p></article>
 <article><strong>10</strong><h3 id="f2t">Operations workbook sheets</h3><p id="f2d">Track enquiries, trips, instalments, receipts, agency income, expenses, tasks and suppliers.</p></article>
@@ -38,8 +38,15 @@
 <article><strong>HTML · PDF · XLSX · TXT</strong><h3 id="f4t">Practical editable formats</h3><p id="f4d">Edit the document pack in a desktop Chromium browser and keep calculations in the supplied spreadsheets.</p></article>
 </div>
 </div></section>
+<section class="section kit-previews" id="previews" hidden><div class="wrap">
+<div class="section-head"><h2 id="preview-title"></h2></div>
+<div class="kit-gallery" id="preview-gallery"></div>
+<div class="kit-film"><h2 id="video-title"></h2><video id="kit-video" controls playsinline preload="none"></video></div>
+<details class="kit-languages" id="cover-editions" hidden><summary id="editions-title"></summary><div class="kit-cover-catalog" id="cover-catalog"></div></details>
+</div></section>
+<dialog id="preview-dialog" class="kit-lightbox"><button type="button" id="close-preview"></button><img id="preview-large" alt=""></dialog>
 <section class="section kit-demo"><div class="wrap">
-<div class="section-head"><span class="kicker">HOW IT WORKS</span><h2 id="how-title">Edit, personalise, export and send</h2></div>
+<div class="section-head"><span class="kicker">HORIZONS</span><h2 id="how-title">Edit, personalise, export and send</h2></div>
 <ol class="kit-steps">
 <li id="s1">Download and unzip the package on a computer.</li>
 <li id="s2">Open the edition you need and start with the included guide.</li>
@@ -50,7 +57,7 @@
 <section class="section"><div class="wrap kit-legal">
 <h2 id="lic-title">Licence and important limits</h2>
 <p id="lic-copy">One business and its staff may use the editable files for unlimited client projects. Editable source files may not be resold, redistributed or shared outside the licensed business. Finished non-editable documents may be delivered to clients. This is a template toolkit, not a booking platform, CRM, payment processor or automatic translation service.</p>
-<p id="refund-copy">Digital download. Voluntary refunds for change of mind are not offered after download, without limiting mandatory consumer rights.</p>
+<p id="refund-copy"></p>
 </div></section>
 </main>
 <footer class="footer"><div class="wrap footer-bottom"><span>© 2026 HORIZONS</span><a href="mailto:support@horizons-tr.com">support@horizons-tr.com</a></div></footer>

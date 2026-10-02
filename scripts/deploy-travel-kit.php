@@ -37,16 +37,17 @@ try{
       ['private','src/commerce/products.json','products.json','git-sha1:01e60cae6b45ade0555aebf1db0ea9345d3fa727'],
       ['private','src/checkout/ManualOrders.php','ManualOrders.php',null],
       ['private','src/checkout/ManualOrderMailer.php','ManualOrderMailer.php',null],
-      ['public','src/checkout/manual-order-index.php','manual-order-api/index.php',null],
+      ['private','src/checkout/ManualOrderNotifier.php','ManualOrderNotifier.php',null],
+      ['public','src/checkout/manual-order-index.php','manual-order-api/index.php','git-sha1:c8969fb69a771913ec04239faac2d8ed23f54861'],
       ['public','src/checkout/public.htaccess','manual-order-api/.htaccess',null],
       ['public','dist/manual-order.html','manual-order.html',null],
       ['public','dist/manual-order.css','manual-order.css','git-sha1:8cb90df0139208e08700c8edf63e8deaaf8d2e87'],
       ['public','dist/manual-order.js','manual-order.js','git-sha1:a8d77e08f6a23a4ae56538593dd858a21d550e0e'],
       ['public','dist/manual-order-locales.json','manual-order-locales.json','git-sha1:97640248a771e39088e85554d728821b46260522'],
-      ['public','dist/travel-kit.html','travel-kit.html','git-sha1:e862868f56000d77affd91e342957f1917da0644'],
-      ['public','dist/travel-kit.css','travel-kit.css','git-sha1:187bf7a18961e1494b150927a22d99c03da71a72'],
-      ['public','dist/travel-kit.js','travel-kit.js','git-sha1:0b2d93929145d5bcff54caa532bf9661410aabf7'],
-      ['public','dist/travel-kit-locales.json','travel-kit-locales.json',null],
+      ['public','dist/travel-kit.html','travel-kit.html','git-sha1:b08a6a90284aa426a054f2653045fdc67a2db834'],
+      ['public','dist/travel-kit.css','travel-kit.css','git-sha1:4d9a18593de14923b992629a6133bd8163d76617'],
+      ['public','dist/travel-kit.js','travel-kit.js','git-sha1:7946623fe2d89be99da0b1885009c7441d74dde8'],
+      ['public','dist/travel-kit-locales.json','travel-kit-locales.json','git-sha1:3dd633e45a143db74e1e89ebdf57b55555a50825'],
       ['delivery','src/travel-kit/TravelDelivery.php','TravelDelivery.php',null],
       ['public','src/travel-kit/delivery-api.php','admin/travel-delivery-api.php',null],
       ['public','src/travel-kit/delivery.html','admin/travel-delivery.html',null],
@@ -67,8 +68,14 @@ try{
         $available=$p===$manifest&&is_file($zip)&&!is_link($zip)&&filesize($zip)===$manifest['size_bytes']&&hash_equals($manifest['sha256'],hash_file('sha256',$zip));
     }
     $files[]=['public',$available?'release-assets/travel-kit-2.0.0/product.json':'release-assets/travel-kit-2.0.0/not-installed.json','travel-kit-release.json',null];
+    $coverBaselines=json_decode(file_get_contents($repo.'/release-assets/travel-kit-2.0.0/media-baselines.json'),true,16,JSON_THROW_ON_ERROR);
+    $files[]=['public','dist/travel-kit-media.json','travel-kit-media.json',null];
     foreach(['en','ar','tr','fr','es','de','it','pt','nl','ru','uk','pl','cs','ro','hu','el','sv','da','no','fi','bg','sr','hr','he','fa','ur','hi','bn','id','ms','zh','ja'] as $lang){
-        $files[]=['public','dist/assets/covers/'.$lang.'/travel-kit.svg','assets/covers/'.$lang.'/travel-kit.svg',null];
+        $files[]=['public','dist/assets/covers/'.$lang.'/travel-kit.svg','assets/covers/'.$lang.'/travel-kit.svg','git-sha1:'.$coverBaselines[$lang]];
+        foreach(['proposal.jpg','pricing.jpg','itinerary.jpg','preview.mp4'] as $asset){
+            $relative='assets/travel-kit/'.$lang.'/'.$asset;
+            $files[]=['public','dist/'.$relative,$relative,null];
+        }
     }
 
     $changes=[];$total=0;

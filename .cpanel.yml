@@ -4,3 +4,4 @@ deployment:
     - /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-membership-update/deployment-php.log scripts/deploy-display-currency.php /home2/horizonstr/public_html/ --publish
     - if [ -f /home2/horizonstr/horizons-product-uploads/HORIZONS_Travel_Agent_Client_Kit_32_Languages_v2.0.0.zip ]; then /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-membership-update/deployment-php.log scripts/install_travel_product.php /home2/horizonstr/public_html/ /home2/horizonstr/horizons-product-uploads/HORIZONS_Travel_Agent_Client_Kit_32_Languages_v2.0.0.zip; fi
     - /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-membership-update/deployment-php.log scripts/deploy-travel-kit.php /home2/horizonstr/public_html/ --publish
+    - /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-membership-update/deployment-php.log scripts/test_travel_mail.php /home2/horizonstr/public_html/

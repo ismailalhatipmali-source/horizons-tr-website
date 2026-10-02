@@ -1,0 +1,738 @@
+{
+  "en": {
+    "preview_title": "Preview the pages",
+    "video_title": "Short product preview",
+    "close_preview": "Close",
+    "samples": [
+      {
+        "src": "assets/travel-kit/en/proposal.jpg",
+        "caption": "Your travel proposal",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/en/pricing.jpg",
+        "caption": "Price breakdown",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/en/itinerary.jpg",
+        "caption": "Daily itinerary",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/en/preview.mp4"
+  },
+  "ar": {
+    "preview_title": "شاهد الصفحات من الداخل",
+    "video_title": "معاينة قصيرة للحزمة",
+    "close_preview": "إغلاق",
+    "samples": [
+      {
+        "src": "assets/travel-kit/ar/proposal.jpg",
+        "caption": "عرض رحلتك",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/ar/pricing.jpg",
+        "caption": "تفصيل السعر",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/ar/itinerary.jpg",
+        "caption": "برنامج يومي مفصل",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/ar/preview.mp4"
+  },
+  "tr": {
+    "preview_title": "Sayfaları inceleyin",
+    "video_title": "Kısa ürün ön izlemesi",
+    "close_preview": "Kapat",
+    "samples": [
+      {
+        "src": "assets/travel-kit/tr/proposal.jpg",
+        "caption": "Seyahat teklifiniz",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/tr/pricing.jpg",
+        "caption": "Fiyat dökümü",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/tr/itinerary.jpg",
+        "caption": "Ayrıntılı günlük program",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/tr/preview.mp4"
+  },
+  "fr": {
+    "preview_title": "Aperçu des pages",
+    "video_title": "Courte présentation du produit",
+    "close_preview": "Fermer",
+    "samples": [
+      {
+        "src": "assets/travel-kit/fr/proposal.jpg",
+        "caption": "Votre proposition de voyage",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/fr/pricing.jpg",
+        "caption": "Détail du prix",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/fr/itinerary.jpg",
+        "caption": "Programme détaillé de la journée",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/fr/preview.mp4"
+  },
+  "es": {
+    "preview_title": "Vista previa de las páginas",
+    "video_title": "Breve presentación del producto",
+    "close_preview": "Cerrar",
+    "samples": [
+      {
+        "src": "assets/travel-kit/es/proposal.jpg",
+        "caption": "Su propuesta de viaje",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/es/pricing.jpg",
+        "caption": "Desglose del precio",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/es/itinerary.jpg",
+        "caption": "Itinerario diario detallado",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/es/preview.mp4"
+  },
+  "de": {
+    "preview_title": "Einblick in die Seiten",
+    "video_title": "Kurze Produktvorschau",
+    "close_preview": "Schließen",
+    "samples": [
+      {
+        "src": "assets/travel-kit/de/proposal.jpg",
+        "caption": "09 – Ihr Reisevorschlag",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/de/pricing.jpg",
+        "caption": "15 – Preisaufschlüsselung",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/de/itinerary.jpg",
+        "caption": "23 – Täglicher Reiseplan",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/de/preview.mp4"
+  },
+  "it": {
+    "preview_title": "Anteprima delle pagine",
+    "video_title": "Breve anteprima del prodotto",
+    "close_preview": "Chiudi",
+    "samples": [
+      {
+        "src": "assets/travel-kit/it/proposal.jpg",
+        "caption": "La tua proposta di viaggio",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/it/pricing.jpg",
+        "caption": "Ripartizione dei prezzi",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/it/itinerary.jpg",
+        "caption": "Itinerario giornaliero",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/it/preview.mp4"
+  },
+  "pt": {
+    "preview_title": "Prévia das páginas",
+    "video_title": "Breve apresentação do produto",
+    "close_preview": "Fechar",
+    "samples": [
+      {
+        "src": "assets/travel-kit/pt/proposal.jpg",
+        "caption": "Sua proposta de viagem",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/pt/pricing.jpg",
+        "caption": "Detalhamento de preços",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/pt/itinerary.jpg",
+        "caption": "Itinerário diário",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/pt/preview.mp4"
+  },
+  "nl": {
+    "preview_title": "Bekijk de pagina’s",
+    "video_title": "Korte productpreview",
+    "close_preview": "Sluiten",
+    "samples": [
+      {
+        "src": "assets/travel-kit/nl/proposal.jpg",
+        "caption": "Uw reisvoorstel",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/nl/pricing.jpg",
+        "caption": "Prijsverdeling",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/nl/itinerary.jpg",
+        "caption": "Dagprogramma",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/nl/preview.mp4"
+  },
+  "ru": {
+    "preview_title": "Посмотрите страницы",
+    "video_title": "Краткий обзор набора",
+    "close_preview": "Закрыть",
+    "samples": [
+      {
+        "src": "assets/travel-kit/ru/proposal.jpg",
+        "caption": "Ваше предложение о путешествии",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/ru/pricing.jpg",
+        "caption": "Разбивка цен",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/ru/itinerary.jpg",
+        "caption": "Ежедневный маршрут",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/ru/preview.mp4"
+  },
+  "uk": {
+    "preview_title": "Перегляньте сторінки",
+    "video_title": "Короткий огляд набору",
+    "close_preview": "Закрити",
+    "samples": [
+      {
+        "src": "assets/travel-kit/uk/proposal.jpg",
+        "caption": "Ваша пропозиція подорожі",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/uk/pricing.jpg",
+        "caption": "Розбивка ціни",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/uk/itinerary.jpg",
+        "caption": "Щоденний маршрут",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/uk/preview.mp4"
+  },
+  "pl": {
+    "preview_title": "Podgląd stron",
+    "video_title": "Krótka prezentacja produktu",
+    "close_preview": "Zamknij",
+    "samples": [
+      {
+        "src": "assets/travel-kit/pl/proposal.jpg",
+        "caption": "Twoja propozycja podróży",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/pl/pricing.jpg",
+        "caption": "Podział cen",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/pl/itinerary.jpg",
+        "caption": "Dzienny plan podróży",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/pl/preview.mp4"
+  },
+  "cs": {
+    "preview_title": "Náhled stránek",
+    "video_title": "Krátká ukázka produktu",
+    "close_preview": "Zavřít",
+    "samples": [
+      {
+        "src": "assets/travel-kit/cs/proposal.jpg",
+        "caption": "Váš cestovní návrh",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/cs/pricing.jpg",
+        "caption": "Rozpis cen",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/cs/itinerary.jpg",
+        "caption": "Denní itinerář",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/cs/preview.mp4"
+  },
+  "ro": {
+    "preview_title": "Previzualizarea paginilor",
+    "video_title": "Scurtă prezentare a produsului",
+    "close_preview": "Închide",
+    "samples": [
+      {
+        "src": "assets/travel-kit/ro/proposal.jpg",
+        "caption": "Propunerea ta de călătorie",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/ro/pricing.jpg",
+        "caption": "Defalcarea prețului",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/ro/itinerary.jpg",
+        "caption": "Itinerar zilnic",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/ro/preview.mp4"
+  },
+  "hu": {
+    "preview_title": "Az oldalak előnézete",
+    "video_title": "Rövid termékbemutató",
+    "close_preview": "Bezárás",
+    "samples": [
+      {
+        "src": "assets/travel-kit/hu/proposal.jpg",
+        "caption": "Az Ön utazási javaslata",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/hu/pricing.jpg",
+        "caption": "15 – Árbontás",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/hu/itinerary.jpg",
+        "caption": "23 – Napi útiterv",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/hu/preview.mp4"
+  },
+  "el": {
+    "preview_title": "Προεπισκόπηση σελίδων",
+    "video_title": "Σύντομη παρουσίαση προϊόντος",
+    "close_preview": "Κλείσιμο",
+    "samples": [
+      {
+        "src": "assets/travel-kit/el/proposal.jpg",
+        "caption": "Η ταξιδιωτική σας πρόταση",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/el/pricing.jpg",
+        "caption": "Ανάλυση τιμών",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/el/itinerary.jpg",
+        "caption": "Καθημερινό δρομολόγιο",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/el/preview.mp4"
+  },
+  "sv": {
+    "preview_title": "Förhandsvisa sidorna",
+    "video_title": "Kort produktvisning",
+    "close_preview": "Stäng",
+    "samples": [
+      {
+        "src": "assets/travel-kit/sv/proposal.jpg",
+        "caption": "Ditt reseförslag",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/sv/pricing.jpg",
+        "caption": "Prisfördelning",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/sv/itinerary.jpg",
+        "caption": "Daglig resplan",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/sv/preview.mp4"
+  },
+  "da": {
+    "preview_title": "Se siderne",
+    "video_title": "Kort produktvisning",
+    "close_preview": "Luk",
+    "samples": [
+      {
+        "src": "assets/travel-kit/da/proposal.jpg",
+        "caption": "Dit rejseforslag",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/da/pricing.jpg",
+        "caption": "Prisfordeling",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/da/itinerary.jpg",
+        "caption": "Daglig rejseplan",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/da/preview.mp4"
+  },
+  "no": {
+    "preview_title": "Se sidene",
+    "video_title": "Kort produktvisning",
+    "close_preview": "Lukk",
+    "samples": [
+      {
+        "src": "assets/travel-kit/no/proposal.jpg",
+        "caption": "Ditt reiseforslag",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/no/pricing.jpg",
+        "caption": "Prisfordeling",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/no/itinerary.jpg",
+        "caption": "Daglig reiserute",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/no/preview.mp4"
+  },
+  "fi": {
+    "preview_title": "Sivujen esikatselu",
+    "video_title": "Lyhyt tuote-esittely",
+    "close_preview": "Sulje",
+    "samples": [
+      {
+        "src": "assets/travel-kit/fi/proposal.jpg",
+        "caption": "Matkaehdotuksesi",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/fi/pricing.jpg",
+        "caption": "15 – Hintojen erittely",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/fi/itinerary.jpg",
+        "caption": "23 – Päivittäinen matkasuunnitelma",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/fi/preview.mp4"
+  },
+  "bg": {
+    "preview_title": "Преглед на страниците",
+    "video_title": "Кратко представяне на продукта",
+    "close_preview": "Затвори",
+    "samples": [
+      {
+        "src": "assets/travel-kit/bg/proposal.jpg",
+        "caption": "Вашето предложение за пътуване",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/bg/pricing.jpg",
+        "caption": "Ценова разбивка",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/bg/itinerary.jpg",
+        "caption": "Ежедневен маршрут",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/bg/preview.mp4"
+  },
+  "sr": {
+    "preview_title": "Преглед страница",
+    "video_title": "Кратак приказ производа",
+    "close_preview": "Затвори",
+    "samples": [
+      {
+        "src": "assets/travel-kit/sr/proposal.jpg",
+        "caption": "Ваш предлог за путовање",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/sr/pricing.jpg",
+        "caption": "Преглед цена",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/sr/itinerary.jpg",
+        "caption": "Дневни итинерар",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/sr/preview.mp4"
+  },
+  "hr": {
+    "preview_title": "Pregled stranica",
+    "video_title": "Kratki prikaz proizvoda",
+    "close_preview": "Zatvori",
+    "samples": [
+      {
+        "src": "assets/travel-kit/hr/proposal.jpg",
+        "caption": "Vaš prijedlog putovanja",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/hr/pricing.jpg",
+        "caption": "Analiza cijena",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/hr/itinerary.jpg",
+        "caption": "Dnevni plan puta",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/hr/preview.mp4"
+  },
+  "he": {
+    "preview_title": "תצוגה מקדימה של הדפים",
+    "video_title": "סרטון קצר על הערכה",
+    "close_preview": "סגירה",
+    "samples": [
+      {
+        "src": "assets/travel-kit/he/proposal.jpg",
+        "caption": "09 - הצעת הנסיעה שלך",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/he/pricing.jpg",
+        "caption": "15 - פירוט מחירים",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/he/itinerary.jpg",
+        "caption": "23 - מסלול יומי",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/he/preview.mp4"
+  },
+  "fa": {
+    "preview_title": "پیش‌نمایش صفحه‌ها",
+    "video_title": "پیش‌نمایش کوتاه بسته",
+    "close_preview": "بستن",
+    "samples": [
+      {
+        "src": "assets/travel-kit/fa/proposal.jpg",
+        "caption": "09 - پیشنهاد سفر شما",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/fa/pricing.jpg",
+        "caption": "15 - تفکیک قیمت",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/fa/itinerary.jpg",
+        "caption": "23 - برنامه سفر روزانه",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/fa/preview.mp4"
+  },
+  "ur": {
+    "preview_title": "صفحات کا پیش نظارہ",
+    "video_title": "کِٹ کا مختصر پیش نظارہ",
+    "close_preview": "بند کریں",
+    "samples": [
+      {
+        "src": "assets/travel-kit/ur/proposal.jpg",
+        "caption": "آپ کی سفری تجویز",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/ur/pricing.jpg",
+        "caption": "قیمتوں میں کمی",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/ur/itinerary.jpg",
+        "caption": "روزانہ کا سفر نامہ",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/ur/preview.mp4"
+  },
+  "hi": {
+    "preview_title": "पृष्ठों की झलक देखें",
+    "video_title": "उत्पाद का संक्षिप्त परिचय",
+    "close_preview": "बंद करें",
+    "samples": [
+      {
+        "src": "assets/travel-kit/hi/proposal.jpg",
+        "caption": "आपका यात्रा प्रस्ताव",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/hi/pricing.jpg",
+        "caption": "मूल्य विश्लेषण",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/hi/itinerary.jpg",
+        "caption": "दैनिक यात्रा कार्यक्रम",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/hi/preview.mp4"
+  },
+  "bn": {
+    "preview_title": "পাতাগুলোর পূর্বরূপ দেখুন",
+    "video_title": "পণ্যের সংক্ষিপ্ত পরিচিতি",
+    "close_preview": "বন্ধ করুন",
+    "samples": [
+      {
+        "src": "assets/travel-kit/bn/proposal.jpg",
+        "caption": "আপনার ভ্রমণের প্রস্তাব",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/bn/pricing.jpg",
+        "caption": "মূল্য ভাঙ্গন",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/bn/itinerary.jpg",
+        "caption": "দৈনিক ভ্রমণসূচী",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/bn/preview.mp4"
+  },
+  "id": {
+    "preview_title": "Pratinjau halaman",
+    "video_title": "Pratinjau singkat produk",
+    "close_preview": "Tutup",
+    "samples": [
+      {
+        "src": "assets/travel-kit/id/proposal.jpg",
+        "caption": "Usulan perjalananmu",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/id/pricing.jpg",
+        "caption": "Rincian harga",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/id/itinerary.jpg",
+        "caption": "Rencana perjalanan harian",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/id/preview.mp4"
+  },
+  "ms": {
+    "preview_title": "Pratonton halaman",
+    "video_title": "Pratonton ringkas produk",
+    "close_preview": "Tutup",
+    "samples": [
+      {
+        "src": "assets/travel-kit/ms/proposal.jpg",
+        "caption": "Cadangan perjalanan anda",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/ms/pricing.jpg",
+        "caption": "Pecahan harga",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/ms/itinerary.jpg",
+        "caption": "Jadual perjalanan harian",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/ms/preview.mp4"
+  },
+  "zh": {
+    "preview_title": "查看内页预览",
+    "video_title": "产品短视频",
+    "close_preview": "关闭",
+    "samples": [
+      {
+        "src": "assets/travel-kit/zh/proposal.jpg",
+        "caption": "您的旅行建议",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/zh/pricing.jpg",
+        "caption": "价格细目",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/zh/itinerary.jpg",
+        "caption": "每日行程",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/zh/preview.mp4"
+  },
+  "ja": {
+    "preview_title": "ページのプレビュー",
+    "video_title": "商品のショートプレビュー",
+    "close_preview": "閉じる",
+    "samples": [
+      {
+        "src": "assets/travel-kit/ja/proposal.jpg",
+        "caption": "旅行の提案",
+        "page": 9
+      },
+      {
+        "src": "assets/travel-kit/ja/pricing.jpg",
+        "caption": "価格内訳",
+        "page": 15
+      },
+      {
+        "src": "assets/travel-kit/ja/itinerary.jpg",
+        "caption": "1 日の旅程",
+        "page": 23
+      }
+    ],
+    "video": "assets/travel-kit/ja/preview.mp4"
+  }
+}
