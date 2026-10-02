@@ -35,6 +35,7 @@ try{
       ['private','src/checkout/ManualOrders.php','ManualOrders.php',null],
       ['private','src/checkout/ManualOrderMailer.php','ManualOrderMailer.php',null],
       ['public','src/checkout/manual-order-index.php','manual-order-api/index.php',null],
+      ['public','src/checkout/public.htaccess','manual-order-api/.htaccess',null],
       ['public','dist/manual-order.html','manual-order.html',null],
       ['public','dist/manual-order.css','manual-order.css',null],
       ['public','dist/manual-order.js','manual-order.js',null],
