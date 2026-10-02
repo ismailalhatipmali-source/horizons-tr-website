@@ -2,7 +2,33 @@
 
 This repository prepares the existing HORIZONS website and Arabic Level 1 workbook for the owner's cPanel deployment. The approved company design, 32 site languages, localized pages, video, and RTL/LTR layouts remain in place. The original company preview is recorded by `preview_source_commit` in `dist/release.json`.
 
-## Prepared membership update 1.4.4
+## Live membership update 1.4.4 — 2026-10-02
+
+The private membership service, full workbook 1.4.4 and the account storefront
+are installed on `https://horizons-tr.com/`. The cPanel UI confirmed successful
+publication of `7b4dbd549a4145484cd09ce8a6b2dcbecaa55ba0` at 08:59:39
+Istanbul time on 2026-10-02. **Public checkout is still a non-collecting preview;
+neither bank-transfer sales nor card collection is enabled.**
+
+The live browser checks confirmed the start dialog, free demo, seven account
+prices, persistent cart, 250 country/territory suggestions, country-dependent
+city suggestions, and the workbook's email-code activation entry. The private
+worker runs every minute. SMTP TLS and authentication succeeded, but no email was
+sent during verification; receipt of an activation email and a real paid
+activation/password/synchronization journey have not been verified on this host.
+
+For this already-installed host, `.cpanel.yml` now uses the small verified
+`scripts/deploy-storefront.php` publisher. It preserves workbook lessons,
+configuration, runtime databases and unrelated public files, and keeps private
+rollback backups. It deliberately requires workbook 1.4.4 to be installed first.
+This avoids rebuilding the large immutable legacy release archives on every
+storefront edit. PHP deployment diagnostics are written outside the Git checkout.
+
+See [the deployment record](docs/deployment-2026-10-02.md) for exact verification,
+remaining sales work and operational commands. The older release/deployment
+instructions below are historical context, not the current storefront command.
+
+## Membership implementation
 
 This branch extends the existing issuer for individual/family/institution accounts,
 code → password activation, any-device login, authenticated rosters and manual
