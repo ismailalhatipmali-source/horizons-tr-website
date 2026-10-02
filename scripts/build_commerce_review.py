@@ -9,6 +9,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LANGS = 'en ar tr fr es de it pt nl ru uk pl cs ro hu el sv da no fi bg sr hr he fa ur hi bn id ms zh ja'.split()
 SRC = ROOT / 'src/commerce'
+APPROVED_COVER = '../assets/arabic-workbook-cover-approved.jpg'
+
+
+def approved_cover(match):
+    """Keep the owner's approved artwork instead of generated locale covers."""
+    tag = match.group()
+    if not re.search(r'src="[^"]*(?:covers/[a-z]{2}/arabic\.png|arabic-workbook-cover(?:-approved)?\.(?:png|jpg))"', tag):
+        return tag
+    tag = re.sub(r'src="[^"]*"', 'src="' + APPROVED_COVER + '"', tag)
+    tag = re.sub(r'\bwidth="\d+"', 'width="2048"', tag)
+    return re.sub(r'\bheight="\d+"', 'height="1143"', tag)
 
 
 def build(dest):
@@ -152,6 +163,7 @@ def build(dest):
         # and support pages. Do not inject into the separately released workbook.
         for path in (dest / lang).glob('*.html'):
             s = path.read_text()
+            s = re.sub(r'<img\b[^>]*>', approved_cover, s)
             home_version = '20261002-memberships-1' if path.name in ('index.html', 'product.html') else '20260926-1'
             s = re.sub(r'home\.js\?v=[^\"]+', 'home.js?v=' + home_version, s)
             s = re.sub(r'<script id="commerce-ui".*?</script>|<dialog[^>]*data-start-dialog.*?</dialog>', '', s, flags=re.S)

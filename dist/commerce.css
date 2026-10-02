@@ -9,6 +9,7 @@
 .commerce-panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;min-width:0;box-shadow:var(--shadow)}
 .commerce-panel h2{font-size:1.2rem;line-height:1.7}.commerce-panel p{color:var(--muted)}
 .commerce-item{display:flex;gap:20px;align-items:center}.commerce-item img{width:125px;border-radius:12px;flex-shrink:0}
+img[src$="/arabic-workbook-cover-approved.jpg"]{height:auto;aspect-ratio:2048/1143;object-fit:contain}
 .commerce-item h2{font-size:1.15rem;margin:0 0 8px}.commerce-item p{margin:0}.commerce-item>div{min-width:0}
 .commerce-facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:14px 0;font-size:.9rem;color:var(--muted)}
 .commerce-total{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-top:1px solid var(--line);margin-top:20px}

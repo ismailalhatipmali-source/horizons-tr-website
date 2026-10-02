@@ -20,14 +20,14 @@
       "before": "git-sha1:df80c58e04cbc46b788f78f1aceadacd0a76c995"
     },
     "ar/cart.html": {
-      "sha256": "83dcb892f2dbd258007fbb715c82a5059ffd223d75907ac78cb9b3004f34f777",
-      "bytes": 19264,
-      "before": "git-sha1:ff44a365d29a0d2ffe33c30aa64937d8dc365d75"
+      "sha256": "92ef7514e25229c4051aea4ffe7d2ebcddcf5d8d91decc14fe8e1a41549e5c08",
+      "bytes": 19281,
+      "before": "83dcb892f2dbd258007fbb715c82a5059ffd223d75907ac78cb9b3004f34f777"
     },
     "ar/checkout.html": {
-      "sha256": "a1bab66975a0985ca1f3d6e43455c4245b2f2ff62ded94854e8c3988e1110536",
-      "bytes": 27116,
-      "before": "git-sha1:f53744375c7b8f74e75b16911d71cd82eef229c9"
+      "sha256": "81b3e0c07dd5cf2d29a3bb3843946fe8c3181a6f600d091e63a2cec89f1a82de",
+      "bytes": 27133,
+      "before": "a1bab66975a0985ca1f3d6e43455c4245b2f2ff62ded94854e8c3988e1110536"
     },
     "ar/child-safety.html": {
       "sha256": "c0c9cb30d76c56d01df9da66a61b7b07068bb01d279e7f9d4370edd0d6b67b6c",
@@ -35,14 +35,14 @@
       "before": "git-sha1:7c919375b50db3fa941daf3e9b98679bdbb7fd44"
     },
     "ar/demo.html": {
-      "sha256": "8a63f882b70b9fac24bf8c3762fd8e1e60e913463c5dd1ffbf711841986f096d",
-      "bytes": 11516,
-      "before": "git-sha1:6bca1400d009888472950dbe6fb2c70850df2822"
+      "sha256": "9038c41bfd7b1b97745fe84dc77c7e1640d2dad588bed32c35736504d5262e0a",
+      "bytes": 11526,
+      "before": "8a63f882b70b9fac24bf8c3762fd8e1e60e913463c5dd1ffbf711841986f096d"
     },
     "ar/index.html": {
-      "sha256": "93eb8b4e8896abc841ebf845440a306235d90545847d5d847cbbb148096af2e2",
-      "bytes": 26301,
-      "before": "c9fde14b0c12b64af4a8f4aab1633aa5e72abdb43b5a68fc09cd976ee464fa88"
+      "sha256": "ba8cc5b6be6e696f8994d17eab42328d7b1b9bc199f14bd010a3a37e03f2533a",
+      "bytes": 26316,
+      "before": "93eb8b4e8896abc841ebf845440a306235d90545847d5d847cbbb148096af2e2"
     },
     "ar/legal.html": {
       "sha256": "7d383adf84b88d4a03dfd52a266a374fb9b4f0f3df9e1a60f06b98d43d53a480",
@@ -55,9 +55,9 @@
       "before": "git-sha1:6651c78ec187aa28b74586c8e4a7e516e04fef57"
     },
     "ar/product.html": {
-      "sha256": "9a14bc88fc09d18f69446cc086bf98780e17f40080abd83d72b0455c4f5617ae",
-      "bytes": 14304,
-      "before": "git-sha1:3e59ddf9adf1344682d96c475cae296c0a867e86"
+      "sha256": "129e3edc7f5181c714ba4eacdc0542b3013233f9a57e2f902a04dde570a380e1",
+      "bytes": 14314,
+      "before": "9a14bc88fc09d18f69446cc086bf98780e17f40080abd83d72b0455c4f5617ae"
     },
     "ar/support.html": {
       "sha256": "325d3e853ba2eef84154fbdbe179d50eebeaf68aac9ca3a502ba08658725a1e5",
@@ -1350,14 +1350,14 @@
       "before": "git-sha1:f1376a609091ed65389dce84bbd678a69b2513d3"
     },
     "bg/cart.html": {
-      "sha256": "fef9e69d9894aeaab4d6900356903a9928a760a2c11dfec50733ec3d0c25b1ac",
-      "bytes": 20030,
-      "before": "git-sha1:dea0db5e9be06e0dbd360735441792694f3c7c88"
+      "sha256": "ccf4710da198ba71986c860156270c7a8f5c1a9923f7c8f02173bfbc9029d1b7",
+      "bytes": 20047,
+      "before": "fef9e69d9894aeaab4d6900356903a9928a760a2c11dfec50733ec3d0c25b1ac"
     },
     "bg/checkout.html": {
-      "sha256": "bce69b6b4d6ec690d04305fd6f3e5f6cc6c038afb5ec4bec65e5cbb2f6fc2747",
-      "bytes": 27254,
-      "before": "git-sha1:4a17e5bd8039491a0912584189c558248c999734"
+      "sha256": "a90e38f0f88a5b10403a4d894e7e8c79d9938dca24d3eb9a86ada797ebfcfda8",
+      "bytes": 27271,
+      "before": "bce69b6b4d6ec690d04305fd6f3e5f6cc6c038afb5ec4bec65e5cbb2f6fc2747"
     },
     "bg/child-safety.html": {
       "sha256": "fadbb188696587a3614b56fa75ce81f626f076ea47c58f25ecf8c6baf626823c",
@@ -1365,14 +1365,14 @@
       "before": "git-sha1:1f7fc49b8031825311a0eaa6e9960777a924b279"
     },
     "bg/demo.html": {
-      "sha256": "7c2c7d26023c6bb337252f3e57ad751e8e92ce7b31beb1ea02a1a3918033295c",
-      "bytes": 11860,
-      "before": "git-sha1:d73be02ffcfa431be9c30d69565b40df1d607a6e"
+      "sha256": "f9037e89faeeed801271516d3191e939eacf67b922b2114c112493f2b4e6a3ae",
+      "bytes": 11870,
+      "before": "7c2c7d26023c6bb337252f3e57ad751e8e92ce7b31beb1ea02a1a3918033295c"
     },
     "bg/index.html": {
-      "sha256": "bc3604da22d1ade6123325c714284ec30dbce4ebb23d54cdd1e2a903346c0669",
-      "bytes": 19052,
-      "before": "cf5e42fe566fd788d92bc905bd6574ca50fa8a526876c1bc02baace000ac07cd"
+      "sha256": "71a7c7c55a568ef4831a50c16d7fc8e8e6fbb9c3e8e818c9529556805fda42a3",
+      "bytes": 19067,
+      "before": "bc3604da22d1ade6123325c714284ec30dbce4ebb23d54cdd1e2a903346c0669"
     },
     "bg/legal.html": {
       "sha256": "701c66a8340af0571a7f12489e56cbf9f00d52b4ef8faef57d473ffab2318dd7",
@@ -1385,9 +1385,9 @@
       "before": "git-sha1:8f16c0df1a89fe4d66246584bdb2fe4b70c70185"
     },
     "bg/product.html": {
-      "sha256": "a3f96674342795808e80970a7a3c8996519d16d1b0533c516c13b501626582d8",
-      "bytes": 14812,
-      "before": "git-sha1:60b011d0e9ee5018c916352b2b49f9f38c0b1eb3"
+      "sha256": "09df7742e82b4f857ae7567ba609fee49325dfa8028c0729ac27bcc3b94d4568",
+      "bytes": 14822,
+      "before": "a3f96674342795808e80970a7a3c8996519d16d1b0533c516c13b501626582d8"
     },
     "bg/support.html": {
       "sha256": "3af8beb9fbf712332062c217a9be2a076b9662fd31e13da7c9bfea2398548631",
@@ -1415,14 +1415,14 @@
       "before": "git-sha1:0f3c4e0ae12bc9844dbc4e62748fb1e16b6ed4e7"
     },
     "bn/cart.html": {
-      "sha256": "8b643a979425bbf8b76a78a37b339401899e63064fce5501abdc31db0a5d64b5",
-      "bytes": 21439,
-      "before": "git-sha1:470f0251a2237670d46b72cb920d19a00786a1cd"
+      "sha256": "eccc4c4a3554e1e5c3ad338ba3edc6ede2840542aca7c389518ae18739667824",
+      "bytes": 21456,
+      "before": "8b643a979425bbf8b76a78a37b339401899e63064fce5501abdc31db0a5d64b5"
     },
     "bn/checkout.html": {
-      "sha256": "9a9accc4719ee59527f5ff2d17f84c67b4872d7953dc01e24b5c3ead4cc0034e",
-      "bytes": 30201,
-      "before": "git-sha1:d0a853b1108bf000a15eb73f46da475914c08a9c"
+      "sha256": "d95b7419f379cec425ca655e6fa38351890514126253fc4af6006492aa5577a8",
+      "bytes": 30218,
+      "before": "9a9accc4719ee59527f5ff2d17f84c67b4872d7953dc01e24b5c3ead4cc0034e"
     },
     "bn/child-safety.html": {
       "sha256": "0650b69155352b4a7d8bb49a7b562a39bc7dcb51f7d937d124a239b193b05cd1",
@@ -1430,14 +1430,14 @@
       "before": "git-sha1:8d4f39643c8810a43791ab09c9927c51f7d76197"
     },
     "bn/demo.html": {
-      "sha256": "f742d74d02306de606ecc8cdc4be0d66346a246e7fdbeb6fd9f22b891ecaffd1",
-      "bytes": 12572,
-      "before": "git-sha1:9fc870e42f9f09e8bde8df6073ec0ef4de166d52"
+      "sha256": "12dae2f6adf3d854b2c81177560a169f3fbfe55f5a694c70d1358a094f2811f6",
+      "bytes": 12582,
+      "before": "f742d74d02306de606ecc8cdc4be0d66346a246e7fdbeb6fd9f22b891ecaffd1"
     },
     "bn/index.html": {
-      "sha256": "bd86f255b593320ea7cda6c3386f4cd87821d20a18492838996c9e61b3389cf6",
-      "bytes": 20433,
-      "before": "ca3f4b773dea1a34230159c7e64f6c7e1676466f65959314f231f18a3c701e25"
+      "sha256": "58fb423e03313ce7cef5a42094dda6aafb10227b05ed461f54978ccccd51e86d",
+      "bytes": 20448,
+      "before": "bd86f255b593320ea7cda6c3386f4cd87821d20a18492838996c9e61b3389cf6"
     },
     "bn/legal.html": {
       "sha256": "bfeae8fca4986ac38b64e01dd5423319dc36861514a997cf4f11d207cd8ff3c2",
@@ -1450,9 +1450,9 @@
       "before": "git-sha1:e6eb9129ca415afb32120933c6805df8519bd6cd"
     },
     "bn/product.html": {
-      "sha256": "40cfc09723e19eb566a3138aaff1aa55260767f9d5f9e024b0bc564975292800",
-      "bytes": 16147,
-      "before": "git-sha1:91f4ac154c0fc0923380779fa4f739fdc4939b8e"
+      "sha256": "013fe0132a2acb82ec294699422d6ac0f05cdad65dd38fdb8c760aa2d8829d92",
+      "bytes": 16157,
+      "before": "40cfc09723e19eb566a3138aaff1aa55260767f9d5f9e024b0bc564975292800"
     },
     "bn/support.html": {
       "sha256": "2474ea6a9d53b1dc5f47083416f4e24ecb83e873c38b76e16aec7fe310b99698",
@@ -1485,9 +1485,9 @@
       "before": "git-sha1:2f6f1ed0e6785947cda8e9cf98c647cf1f86a76a"
     },
     "commerce.css": {
-      "sha256": "7fff9b8ca40aef6a9e6425dd12f05eaf8a9147b0bb2fd172dd75a19a9a48b069",
-      "bytes": 8434,
-      "before": "git-sha1:b1ff809da9ceef5f0dc32b3a52d5cacbdcea07c6"
+      "sha256": "d6477fdc00005916c823c4ab78a673003cfd234e1a5e25f6b97b7d5e9d0a620d",
+      "bytes": 8537,
+      "before": "7fff9b8ca40aef6a9e6425dd12f05eaf8a9147b0bb2fd172dd75a19a9a48b069"
     },
     "cs/about.html": {
       "sha256": "a7a9e54d8699db3d73a470e6b629991fcff70e007ff4e69c3fe84556ad0453e9",
@@ -1500,14 +1500,14 @@
       "before": "git-sha1:68b2ec13970be0faae2e514bd34d802e5c45c7ed"
     },
     "cs/cart.html": {
-      "sha256": "7322321a62692b0550ec3cbb0e04d7f7dc850650a7a1a8ab28f36d1097eae9d0",
-      "bytes": 18241,
-      "before": "git-sha1:c5802fc96c53d10b8deaaafca72d9510fab13a2e"
+      "sha256": "53c66076212e848b791bf06e36d3f5949c3ae7e28388d97ff386ac486d604173",
+      "bytes": 18258,
+      "before": "7322321a62692b0550ec3cbb0e04d7f7dc850650a7a1a8ab28f36d1097eae9d0"
     },
     "cs/checkout.html": {
-      "sha256": "71f0e8a4c2daa44d8a0b55357c98e459e91c6c355f3f32641ce2518ae15e1d69",
-      "bytes": 23687,
-      "before": "git-sha1:f0f515e25cf7c29a557ff900c789bca19b576101"
+      "sha256": "eeb733c9f30d8304134377ab9a4182287367b15afdfade25c72a7cc0d862e0b4",
+      "bytes": 23704,
+      "before": "71f0e8a4c2daa44d8a0b55357c98e459e91c6c355f3f32641ce2518ae15e1d69"
     },
     "cs/child-safety.html": {
       "sha256": "06f306913a4547a9ecb906de6dc876659f71c567d62bddae07edd57b5fa98134",
@@ -1515,14 +1515,14 @@
       "before": "git-sha1:778afcc85b7877fa77c5e907e3061893c15b4b1b"
     },
     "cs/demo.html": {
-      "sha256": "e73d95b1db85c54ee1d7c4cead1e91b659194112f73231e1cf8065a6d18f57bf",
-      "bytes": 10906,
-      "before": "git-sha1:1aadbf1ec59813ebf0b52c6b74fcac4d3b80e797"
+      "sha256": "f9c25b714c3840a0cc8d691a1d0656873a5b6a4686cf16cf1d85f22aa90d3180",
+      "bytes": 10916,
+      "before": "e73d95b1db85c54ee1d7c4cead1e91b659194112f73231e1cf8065a6d18f57bf"
     },
     "cs/index.html": {
-      "sha256": "7ec9a659e8fbfe1963b5d887b38e8493031a8ae6027c7a5bf2e9f1975aabaa56",
-      "bytes": 16900,
-      "before": "71d317864161a6598959229e27bf78e00005ec7af813361d30ef272e30d1dcd5"
+      "sha256": "1507167b06338a0a473f25ddc11e0697407e56aac5d88e300350ad7632abac90",
+      "bytes": 16915,
+      "before": "7ec9a659e8fbfe1963b5d887b38e8493031a8ae6027c7a5bf2e9f1975aabaa56"
     },
     "cs/legal.html": {
       "sha256": "8f90c988d30a21e56e4cabc6c46e119b11c38d27905addacf444474ab49e7c9b",
@@ -1535,9 +1535,9 @@
       "before": "git-sha1:6189f500f75ce54acd51ec19f11f152820fd90c3"
     },
     "cs/product.html": {
-      "sha256": "ea0288d1f7be08f24a8278954451e64385c328cde119337b3e0dc6480804777c",
-      "bytes": 12945,
-      "before": "git-sha1:61c9fb000c48fc55b926fd11edc22efb0a70eb09"
+      "sha256": "146930696978bc4eb7cd7c585c0235d35c55f638331f62b0034ff198f0241541",
+      "bytes": 12955,
+      "before": "ea0288d1f7be08f24a8278954451e64385c328cde119337b3e0dc6480804777c"
     },
     "cs/support.html": {
       "sha256": "b9ea1f2708bd949fff177eb1a780554cbed859c3851637bb8f1faad5cc18d2f9",
@@ -1565,14 +1565,14 @@
       "before": "git-sha1:3ced94223b609256c9264956b3f040e1fd734232"
     },
     "da/cart.html": {
-      "sha256": "188b06fc1e8173fe1bd00b41e8e586df746e49216f03b43e6e6ac36026885b12",
-      "bytes": 18049,
-      "before": "git-sha1:4809c6edc5225a90a87d11745c20fb3e7ae0daad"
+      "sha256": "56300e50c9d40bdfc7832837d5454b93c4b17684fbb26eef44dd313924a7f6be",
+      "bytes": 18066,
+      "before": "188b06fc1e8173fe1bd00b41e8e586df746e49216f03b43e6e6ac36026885b12"
     },
     "da/checkout.html": {
-      "sha256": "de19056217d512b30966751f4b255938fbc38dfba67ebaf8e1a607eabf321ee0",
-      "bytes": 23768,
-      "before": "git-sha1:6f97d6ab77d288309331f6367f8adb6d16e8d81a"
+      "sha256": "56d76956bfee43a2f58abd0fe52c827931852453cb142bcd1b356032470d76f5",
+      "bytes": 23785,
+      "before": "de19056217d512b30966751f4b255938fbc38dfba67ebaf8e1a607eabf321ee0"
     },
     "da/child-safety.html": {
       "sha256": "86409089ede884d19109f7699b14855e7c01d3c023d659e425ba18bb58e919e9",
@@ -1580,14 +1580,14 @@
       "before": "git-sha1:e61d9847f16f69820ed338f40d56c84e332fe1f5"
     },
     "da/demo.html": {
-      "sha256": "215de08389f32051d443331a2c976e369199605f98b42b774c0a3f2dd6c6c8b6",
-      "bytes": 10815,
-      "before": "git-sha1:05a7753503ff30d0ec30f4a2f92ac22d376f3ff0"
+      "sha256": "18974571314eeb8b4bbe7451cb730099277151b7e1f7fcd458ba4d37014a8b49",
+      "bytes": 10825,
+      "before": "215de08389f32051d443331a2c976e369199605f98b42b774c0a3f2dd6c6c8b6"
     },
     "da/index.html": {
-      "sha256": "9413f68db2ba04e7efb06546a887c6f2645cf7632cf78d74b48951aaca7d13e7",
-      "bytes": 16785,
-      "before": "fc9d41b61cf84297dca5aaace3b64d121b6053d322a7f70879ddbb7e184356eb"
+      "sha256": "0212342625556062f7f52583cc3bc8936503dbe5381e9d9e856de09908a2d97e",
+      "bytes": 16800,
+      "before": "9413f68db2ba04e7efb06546a887c6f2645cf7632cf78d74b48951aaca7d13e7"
     },
     "da/legal.html": {
       "sha256": "4b2127aea833b500aa05cdb563016eb78f0e9877c14f7633f3e50c5b9a46c152",
@@ -1600,9 +1600,9 @@
       "before": "git-sha1:72102657b64b88618942bcb5e0a5ed240fa56c79"
     },
     "da/product.html": {
-      "sha256": "ba3a11ecfd3bb7cd3124c616a5eb60111510eb85f23c65b608e93311a69c8695",
-      "bytes": 12969,
-      "before": "git-sha1:d3ff391373830959b24eb7fea589e08e72c5d2fd"
+      "sha256": "88a2995e307adcb15cb91b44360ca6c1a69c440680af8ebc1f91213ef3781a49",
+      "bytes": 12979,
+      "before": "ba3a11ecfd3bb7cd3124c616a5eb60111510eb85f23c65b608e93311a69c8695"
     },
     "da/support.html": {
       "sha256": "12ea32b740743dce77bcd0b24b4ef58407d9ee15ef724087536a2adfbb618374",
@@ -1630,14 +1630,14 @@
       "before": "git-sha1:8954405d7a55e8335474df88b971ed6ebb7cbea2"
     },
     "de/cart.html": {
-      "sha256": "2b5f53b7e4588069a47ab2e362dc90ee46f200ed0b7527b12f084f829e37c6ce",
-      "bytes": 18364,
-      "before": "git-sha1:a2abf6ef099c20b9460ddcabb5703231af1a54b5"
+      "sha256": "ae22188e778b6f06c17c8a3de119473ee742286e6cdd425470609759a2f71352",
+      "bytes": 18381,
+      "before": "2b5f53b7e4588069a47ab2e362dc90ee46f200ed0b7527b12f084f829e37c6ce"
     },
     "de/checkout.html": {
-      "sha256": "7402ea523b9c0398dce0bad15d893566b183a8567702279cdd0791149478f2e9",
-      "bytes": 24219,
-      "before": "git-sha1:e9b88d13429f181a40f8a04d9f548c6e4ee9710b"
+      "sha256": "c6ebfe52b664c81da9a16fcaa9e6265b70690bcf7063e6c660f09e28307d331e",
+      "bytes": 24236,
+      "before": "7402ea523b9c0398dce0bad15d893566b183a8567702279cdd0791149478f2e9"
     },
     "de/child-safety.html": {
       "sha256": "da0c4624f651566b3b71713c771c732c2d58fddfc1350b0ec02cb801bc4a3f51",
@@ -1645,14 +1645,14 @@
       "before": "git-sha1:8e91c58d255e7b1e8b46daf189c7a27670f76a65"
     },
     "de/demo.html": {
-      "sha256": "4222d883bd09e5ef18c10192e5464ff02d8a308f7252dff507c6b80c20fa6dc7",
-      "bytes": 11026,
-      "before": "git-sha1:9b93c9d43a29d604eaf76c6a14dcaeee939d1593"
+      "sha256": "c45ce8db87e832748ca3b6c53816506eaf8a2115b5980bd868d7026fdf7fcc45",
+      "bytes": 11036,
+      "before": "4222d883bd09e5ef18c10192e5464ff02d8a308f7252dff507c6b80c20fa6dc7"
     },
     "de/index.html": {
-      "sha256": "25df5499601812612555fa3e21222cbb038a95f3254555ddb57cc05959577407",
-      "bytes": 17029,
-      "before": "077d4c8414d30bed082f9db4138639656110af16a9ec6d29a6f3c665f027e938"
+      "sha256": "3a79fa19df101e766396b49ea002c16bacb27848f963a3a10f2f8434f6e9e9af",
+      "bytes": 17044,
+      "before": "25df5499601812612555fa3e21222cbb038a95f3254555ddb57cc05959577407"
     },
     "de/legal.html": {
       "sha256": "b2467739e370e51fb00192488608f5fcc14139a3856bec79f5a9e8ad75f48107",
@@ -1665,9 +1665,9 @@
       "before": "git-sha1:fde1ddd416bedd465bc8a4f9b1f44790a53289a1"
     },
     "de/product.html": {
-      "sha256": "f77fa6cf41ef5e3459b08455d77063222ff71c68777f5991f97ba3d631cf762c",
-      "bytes": 13177,
-      "before": "git-sha1:82ad07a4fe4209c90a68a864df30de1291837cbb"
+      "sha256": "1e945a04e1ae36af3d6c0ae81933e4c69103b1f71b0c7e817822cfffb2286e87",
+      "bytes": 13187,
+      "before": "f77fa6cf41ef5e3459b08455d77063222ff71c68777f5991f97ba3d631cf762c"
     },
     "de/support.html": {
       "sha256": "c772b95e64b338ae54147fa1ad6c38a3c960cbcd881c53b6cf018290ed66b403",
@@ -1695,14 +1695,14 @@
       "before": "git-sha1:ff1c4198cbee87672b7622f9913d497bf0d133e0"
     },
     "el/cart.html": {
-      "sha256": "6401e56f18307ef76f2bc7e2f9430234c72e1522c258e49f14b0971316300471",
-      "bytes": 20466,
-      "before": "git-sha1:7ad290b55dee898ea4ad5eb597df513732fddc3a"
+      "sha256": "bd77c7ecd53fd8da5cfd8b115433652908d3670eb90d3aa90f1e709c01feecb3",
+      "bytes": 20483,
+      "before": "6401e56f18307ef76f2bc7e2f9430234c72e1522c258e49f14b0971316300471"
     },
     "el/checkout.html": {
-      "sha256": "d6ac5ae954878386ba9ba1e8e134308a2e453f0de915ef09f6211326e938ad91",
-      "bytes": 28071,
-      "before": "git-sha1:9e06d52354867643ab58df07f1ca19e1544bc616"
+      "sha256": "f384427b02bd80e4a604cf0d545ec5959e31f02e9b8ba1a5adc23511aa9dab97",
+      "bytes": 28088,
+      "before": "d6ac5ae954878386ba9ba1e8e134308a2e453f0de915ef09f6211326e938ad91"
     },
     "el/child-safety.html": {
       "sha256": "fbb0add69cca50e29f8a73f2af222314caba9abeacb2349f1f51ce9585beb63f",
@@ -1710,14 +1710,14 @@
       "before": "git-sha1:451fa6956114015a085fb33811ae005e65e85760"
     },
     "el/demo.html": {
-      "sha256": "b16da9689ddbbde91df04c14bb83b3b0054f95495d5aee8ffd1c2a62f64b77c1",
-      "bytes": 12131,
-      "before": "git-sha1:32fc9e5e4f800097709948a1fff6404d8232884d"
+      "sha256": "06e253cac77b8b6a4330f76d04452046de6dbcd41d16b8573e158256775eb9de",
+      "bytes": 12141,
+      "before": "b16da9689ddbbde91df04c14bb83b3b0054f95495d5aee8ffd1c2a62f64b77c1"
     },
     "el/index.html": {
-      "sha256": "2c50f13f7657e97086b9190f15a609319504a611de5b717e1dce0ef8e4528765",
-      "bytes": 19554,
-      "before": "db9cffa02fa753c9d2572ebafb3c15d93047fc71e931b2a3dcc2e6e27f314043"
+      "sha256": "2b6268b9b3802a727a08214617910c63078abf6ef1dcfa4394a4787295827727",
+      "bytes": 19569,
+      "before": "2c50f13f7657e97086b9190f15a609319504a611de5b717e1dce0ef8e4528765"
     },
     "el/legal.html": {
       "sha256": "c60111bba533b7d41bc979675d8526a2f4b6b4089e54009dd504c1237d8e2456",
@@ -1730,9 +1730,9 @@
       "before": "git-sha1:279076dca6d729f1385ded2a74832867cfea1794"
     },
     "el/product.html": {
-      "sha256": "0cd285f10ad14a357f1ecbafdc6e561a97c638b1c5fafcfea2ff5ef31db65081",
-      "bytes": 15323,
-      "before": "git-sha1:5a4e54fcc630dfb36e29447b570d7376e89136a6"
+      "sha256": "e19da5fa48ea5d65397861348c79007dc8e82204a254e8ee004732216c15f975",
+      "bytes": 15333,
+      "before": "0cd285f10ad14a357f1ecbafdc6e561a97c638b1c5fafcfea2ff5ef31db65081"
     },
     "el/support.html": {
       "sha256": "640df4d8e69434fb0ec1712df4e671edc04807ee0576a60f57eea004a6a0117c",
@@ -1760,14 +1760,14 @@
       "before": "git-sha1:8c5ed365c83828e740be56081a12bf2c1620d0f5"
     },
     "en/cart.html": {
-      "sha256": "8c141e53ef3a49878d8de57ae10dfe5a356d5461910e3893c88f949b886b6ae7",
-      "bytes": 18053,
-      "before": "git-sha1:839fc331c6fa298ea3290d5c5ed807fd9215fed0"
+      "sha256": "bd50bb67b85c7b62ab3690e1755883581f0f39031ae2318a5b0372f105efbd87",
+      "bytes": 18070,
+      "before": "8c141e53ef3a49878d8de57ae10dfe5a356d5461910e3893c88f949b886b6ae7"
     },
     "en/checkout.html": {
-      "sha256": "7654a0c9b3abe4fc05cbcb89f7eaf924a276a890570540f2766c1c6607fcc264",
-      "bytes": 24322,
-      "before": "git-sha1:19be0472b45a34a464a1d84e3be336aba4de7ace"
+      "sha256": "fe389ade482b162f07d0a5ad87cf9f507888bceb1bb68a48059eb7836bc8ad64",
+      "bytes": 24339,
+      "before": "7654a0c9b3abe4fc05cbcb89f7eaf924a276a890570540f2766c1c6607fcc264"
     },
     "en/child-safety.html": {
       "sha256": "d245c6be50b03f3939c8f66564603a69144769c8bacd1468652cc07a666d45f0",
@@ -1775,14 +1775,14 @@
       "before": "git-sha1:9efd8aa72f1d6820cdc42e6bdba2318c06b18feb"
     },
     "en/demo.html": {
-      "sha256": "d265a719850f0195bc766901cc90c628db628211539d45629a8b2fda734015a1",
-      "bytes": 10758,
-      "before": "git-sha1:7a3a9ba808bded8ccb272abf4ed34eb65bfe83ea"
+      "sha256": "424c78f19ff484f5ad789f5a1c3ff6f926036fa9daba25f9f989c781dd242fc2",
+      "bytes": 10768,
+      "before": "d265a719850f0195bc766901cc90c628db628211539d45629a8b2fda734015a1"
     },
     "en/index.html": {
-      "sha256": "4480169c53c0832d8c79f8ce3107ebd29670394ae04eed104a3fed3e3e79c83b",
-      "bytes": 16642,
-      "before": "642f17282508933b625b1178dc5b810b6c3e97bafe73e7bd5781405a49ba3402"
+      "sha256": "44a657c0eb4ccd04fd7cb0acb23270621b4897432f4024defa465b186d5931b9",
+      "bytes": 16657,
+      "before": "4480169c53c0832d8c79f8ce3107ebd29670394ae04eed104a3fed3e3e79c83b"
     },
     "en/legal.html": {
       "sha256": "da0591a2823f3064fc431b792f4e5c1846bf9312c745d654f8ae05392dffffd5",
@@ -1795,9 +1795,9 @@
       "before": "git-sha1:d7b02f9341787052c51950d9753d888e9adfbe4e"
     },
     "en/product.html": {
-      "sha256": "d0209f36c1b5920e6ef97f48ba3c0e180eb1371383bdf34b98e468b30da9d213",
-      "bytes": 12931,
-      "before": "git-sha1:eeaee3355374903fa2fef060431fdadb29d8e6a4"
+      "sha256": "50e4090d328a60e3edc155d4e6fa1f6751ccb8f588315da51483cbd3f21ce1ef",
+      "bytes": 12941,
+      "before": "d0209f36c1b5920e6ef97f48ba3c0e180eb1371383bdf34b98e468b30da9d213"
     },
     "en/support.html": {
       "sha256": "3fcb6bf9a3844153ddb29664ffbaac65c78bbef2e0e131d05bfe813ae30adedd",
@@ -1825,14 +1825,14 @@
       "before": "git-sha1:8d8dbedba58df480ff812b2c1850a9531d43c9d7"
     },
     "es/cart.html": {
-      "sha256": "400de79d98f23f59753fcd095ddcffeb21d112d21430d85188e433de76b61e84",
-      "bytes": 18340,
-      "before": "git-sha1:7a684e3a476078fce303048128d65413867dbed5"
+      "sha256": "8024c5864c74684ba2684223ea3cf145afa43ba1379d837e578b372f20dab60b",
+      "bytes": 18357,
+      "before": "400de79d98f23f59753fcd095ddcffeb21d112d21430d85188e433de76b61e84"
     },
     "es/checkout.html": {
-      "sha256": "fbbe4bd7f3205aac29def6e85bf07dcc40bc50bb53ceb63e45a5946c2e5b237a",
-      "bytes": 24146,
-      "before": "git-sha1:de1d3088a1f2478f38a92fa4f6b75507ab30f64c"
+      "sha256": "acb8db630dac96f9bf625fa64312785d1fbc6c1017f0a95da5bc840cf1b07d01",
+      "bytes": 24163,
+      "before": "fbbe4bd7f3205aac29def6e85bf07dcc40bc50bb53ceb63e45a5946c2e5b237a"
     },
     "es/child-safety.html": {
       "sha256": "b8a265c77364d4972ad86bb1a5fc8491950a598335ec1fa27898fadc975f4dda",
@@ -1840,14 +1840,14 @@
       "before": "git-sha1:38a7118e6887ce8d5d67a44ae2913ea9c8605f44"
     },
     "es/demo.html": {
-      "sha256": "a21f55342b0a177e9948f5eb04b5fe9eba01e9b455da7ae86cb84931c9231a18",
-      "bytes": 10948,
-      "before": "git-sha1:23d82835d08bddd670a46d7b19316209d502efb5"
+      "sha256": "dcc603decdd456aa1b9368390761f98729ce0cf395828b95955321a5dd03e40e",
+      "bytes": 10958,
+      "before": "a21f55342b0a177e9948f5eb04b5fe9eba01e9b455da7ae86cb84931c9231a18"
     },
     "es/index.html": {
-      "sha256": "0241feaff213fe7115606b409769db9367212bbafa627fe29239b221eee4666f",
-      "bytes": 17080,
-      "before": "a37c30e9f2efd68f9c84f322086ee9434885970433980cdc850fa0602ec82c53"
+      "sha256": "70c1d3fbbc721fc31886614fc77b19747dddbd5e160aa0582930b45ba1f4776d",
+      "bytes": 17095,
+      "before": "0241feaff213fe7115606b409769db9367212bbafa627fe29239b221eee4666f"
     },
     "es/legal.html": {
       "sha256": "a1feee0f22b3d7e88c49c40c7a9beac8fefe96b76809e6dea04564f25d4a4acc",
@@ -1860,9 +1860,9 @@
       "before": "git-sha1:3d1408e4981a63fe2409cc3d1f444dd1da12d9a4"
     },
     "es/product.html": {
-      "sha256": "b9f41cff4513fdc2a0e48a39e6a57d4c79525b75b3cfe11b4cba6794d174af8e",
-      "bytes": 13112,
-      "before": "git-sha1:67e24dcbbab06f825a658ec53e044843e9c69c38"
+      "sha256": "f9133091961ed768e125f6cd69a2b0cb791dacece6ef0bc0e51d66707b601745",
+      "bytes": 13122,
+      "before": "b9f41cff4513fdc2a0e48a39e6a57d4c79525b75b3cfe11b4cba6794d174af8e"
     },
     "es/support.html": {
       "sha256": "a0d15537b12f3953ce0a5930978b0740fcc785d3668b0f2179829d3555b376a8",
@@ -1890,14 +1890,14 @@
       "before": "git-sha1:e52a8d112e68f76bc059eab3ce73228e154ef75d"
     },
     "fa/cart.html": {
-      "sha256": "53dbd5baf2a1b781975822e4740b69e3c91872c939f8d52529553f30da26c141",
-      "bytes": 19452,
-      "before": "git-sha1:f97a4bc31c0248abea04b01323d85e4162c0abc3"
+      "sha256": "798e09abb23e09e9c3b596949f21211b4ae2f013d5c2e7159da9ccb866603d91",
+      "bytes": 19469,
+      "before": "53dbd5baf2a1b781975822e4740b69e3c91872c939f8d52529553f30da26c141"
     },
     "fa/checkout.html": {
-      "sha256": "03eac51ee57200cdf1a2beb773b3bde264aec00a10d782b03c20dabc5aed1df3",
-      "bytes": 26250,
-      "before": "git-sha1:0e0970e4b571738d1341aa1975d775eba1a93715"
+      "sha256": "ce2b4fbf2043b55f3a28733af703510f47a586b4a6eaf15dd444b2e6d2b08826",
+      "bytes": 26267,
+      "before": "03eac51ee57200cdf1a2beb773b3bde264aec00a10d782b03c20dabc5aed1df3"
     },
     "fa/child-safety.html": {
       "sha256": "b2494532c9ccd14800116bdaf29624eb6f0b9f2ba580b6060911952e7057ccc0",
@@ -1905,14 +1905,14 @@
       "before": "git-sha1:a633711c3c9b9681fce73e2b519236365cecdcdb"
     },
     "fa/demo.html": {
-      "sha256": "b7cd45afd66756066f2fb01a976a450386ddecaa9bf048364b276ea493170b3c",
-      "bytes": 11711,
-      "before": "git-sha1:2651a9501395553b6d8da15f8a6f5fff101c0070"
+      "sha256": "919e3d2212c164329513648123a8f000dec88e205133b72271b8b4435ef1ab6b",
+      "bytes": 11721,
+      "before": "b7cd45afd66756066f2fb01a976a450386ddecaa9bf048364b276ea493170b3c"
     },
     "fa/index.html": {
-      "sha256": "c7ddb4ca8bdc3ad4fe5cecf96f7a7cf05e1d24d3e579ce3051b01524d378fb07",
-      "bytes": 18511,
-      "before": "e65727f1189630a8100be8ff30086b68d0900c8f3b26be73822a8911accfa8d7"
+      "sha256": "08a0904d848d004a12729855794cffec4fa6b6418d1c3372e6f5e20bfaeae181",
+      "bytes": 18526,
+      "before": "c7ddb4ca8bdc3ad4fe5cecf96f7a7cf05e1d24d3e579ce3051b01524d378fb07"
     },
     "fa/legal.html": {
       "sha256": "b4d8f13eacb5a2f0f275be73326bcbe45bcd354e0fa30d7c3fb46ef787f7a388",
@@ -1925,9 +1925,9 @@
       "before": "git-sha1:687780c844d56837002c2516750ed923495c0f63"
     },
     "fa/product.html": {
-      "sha256": "a54d6a953e83d8dd0cd383157ca2b8c447e8738299d806cefa3070ecd3f16d25",
-      "bytes": 14360,
-      "before": "git-sha1:9eae42eaa31225e19550dac4d8dca2a29e378ad5"
+      "sha256": "0f954d5d86c59b0bfdf477d8f515ba410d5ebabe4c20cf7ac42b89bd7e35a6d5",
+      "bytes": 14370,
+      "before": "a54d6a953e83d8dd0cd383157ca2b8c447e8738299d806cefa3070ecd3f16d25"
     },
     "fa/support.html": {
       "sha256": "22ddec95da621306802341ec4293a5966ed0337209a07f3997077b812f2bb437",
@@ -1955,14 +1955,14 @@
       "before": "git-sha1:e36c11d2f8109a1f424aeba371070c7336fd53b7"
     },
     "fi/cart.html": {
-      "sha256": "e09013e1059ede327e0d93a9bc287ad1ef2f9998a666c5beeec2b9d105536d5f",
-      "bytes": 18341,
-      "before": "git-sha1:53d775705ea1215b7316505c1ad376acc2d0202b"
+      "sha256": "5a5c4acc0dbf8fb0469cca36d8002bd6fb4a4aa7b4056739538f50e9f8395767",
+      "bytes": 18358,
+      "before": "e09013e1059ede327e0d93a9bc287ad1ef2f9998a666c5beeec2b9d105536d5f"
     },
     "fi/checkout.html": {
-      "sha256": "78be43a8b8db12d73ff9f6a2e4c0e903fc9a99184f51fa87f610fc89cec3d02d",
-      "bytes": 23987,
-      "before": "git-sha1:8afc1d4fe80b1a7d6852bd2d95a1e25aae24f4e8"
+      "sha256": "776da897766f680058216dc601ce4f396ed6aa2dece9ca012911576baa971936",
+      "bytes": 24004,
+      "before": "78be43a8b8db12d73ff9f6a2e4c0e903fc9a99184f51fa87f610fc89cec3d02d"
     },
     "fi/child-safety.html": {
       "sha256": "73135191a9de00e79eb3b6c7cbced9ba89246e47df1d70fa83209189076cf07b",
@@ -1970,14 +1970,14 @@
       "before": "git-sha1:00c6cc8b537f0768fddeb5430abec66fab62b186"
     },
     "fi/demo.html": {
-      "sha256": "d2043b2bc5963eff61150191793bddfc5732d2a9e8b0ad69bf929d7e5e291033",
-      "bytes": 10922,
-      "before": "git-sha1:e0f9805c48679ed40139877479d07e701be504aa"
+      "sha256": "8fe6369ae6fff79a0e9c41434c7567f8a0b44c4415bb2ec15ecf4b87f4678d7b",
+      "bytes": 10932,
+      "before": "d2043b2bc5963eff61150191793bddfc5732d2a9e8b0ad69bf929d7e5e291033"
     },
     "fi/index.html": {
-      "sha256": "9e0b6841d771ae7264d380d028da13f174d6f40c267a92482b3ed50093bc77a9",
-      "bytes": 16989,
-      "before": "80a035b6a3b04fa9ed535b6f1ca75c170dc967d22c83b68c975816b723296b36"
+      "sha256": "c1204ef14e82bba86ca2faad64a57bb2f62ce8f77e4db57fccff63587535783f",
+      "bytes": 17004,
+      "before": "9e0b6841d771ae7264d380d028da13f174d6f40c267a92482b3ed50093bc77a9"
     },
     "fi/legal.html": {
       "sha256": "d1ce90cc598adbcec9de9d17c4a8375ebc7a6762edb4d958fa8e7a5bae6b9b5d",
@@ -1990,9 +1990,9 @@
       "before": "git-sha1:f40671a07a353512749623886b179591157e9905"
     },
     "fi/product.html": {
-      "sha256": "de4cf6afc7cec2d28cdf01cadad635e2969ba61b8b836f002b0a51045d4042e5",
-      "bytes": 13094,
-      "before": "git-sha1:c69c7b3efcc34e8ee4344dfa61e7b728b857be45"
+      "sha256": "4c0031093fa32589974ae4cbec689cd6ceeebaa157945ef4d64a7d983edc80a2",
+      "bytes": 13104,
+      "before": "de4cf6afc7cec2d28cdf01cadad635e2969ba61b8b836f002b0a51045d4042e5"
     },
     "fi/support.html": {
       "sha256": "b1d2fa6eac13d663273d277429191bea228c220f8ac9f1c2f67e758f46bec92d",
@@ -2020,14 +2020,14 @@
       "before": "git-sha1:36e3cb8b66af86d76c76fd3cf8a0318c628239de"
     },
     "fr/cart.html": {
-      "sha256": "745c106d5446abf20101a66b46b7eef0c92b14364c0235b89b5395cf22be395d",
-      "bytes": 18517,
-      "before": "git-sha1:c4a7064d2fbdd5572664312367abddafefff618d"
+      "sha256": "2f0d25736eb579434e439aa8d931bf431caae53eca794a55ab0f76ae6119cdbf",
+      "bytes": 18534,
+      "before": "745c106d5446abf20101a66b46b7eef0c92b14364c0235b89b5395cf22be395d"
     },
     "fr/checkout.html": {
-      "sha256": "c2334470cca86c23f6161418ca6df56ddb2e3c8510496900a52e9fca744e5b57",
-      "bytes": 24614,
-      "before": "git-sha1:06deb12325e0ded27d4165346e6a7174b2fa9d7f"
+      "sha256": "b7911754e93023a51847a721af554e830b428084ba9254d5fc945cd4a5b55731",
+      "bytes": 24631,
+      "before": "c2334470cca86c23f6161418ca6df56ddb2e3c8510496900a52e9fca744e5b57"
     },
     "fr/child-safety.html": {
       "sha256": "44bbac29e29d7439ade3310a06549769b17858ef7701d3b8614e1fbc0702afa6",
@@ -2035,14 +2035,14 @@
       "before": "git-sha1:daf86d834743241c731799ca4edac6bb99fccf47"
     },
     "fr/demo.html": {
-      "sha256": "843b2712b33527b3c9556505b132135b14d47fbe7c2d7a884cf7926c73a4236d",
-      "bytes": 11020,
-      "before": "git-sha1:a162767103bd5f42619abdb9dec8185b2af1d008"
+      "sha256": "49fe8458e4e0c1b8796469d859986524080486453992c25bc73ef25e259dcf89",
+      "bytes": 11030,
+      "before": "843b2712b33527b3c9556505b132135b14d47fbe7c2d7a884cf7926c73a4236d"
     },
     "fr/index.html": {
-      "sha256": "9f9ada1b15d660b9404b819e4baf1562d46819f98b1c07c3bb41b48742a47996",
-      "bytes": 17254,
-      "before": "fd02d8a7c11ee362d845a381d4ce8324fb24581921ceb82a339002cd4b1b99ec"
+      "sha256": "d958393e424e562917d05a8785d01eb35b9777524564436c6a8283651bb6e634",
+      "bytes": 17269,
+      "before": "9f9ada1b15d660b9404b819e4baf1562d46819f98b1c07c3bb41b48742a47996"
     },
     "fr/legal.html": {
       "sha256": "33a6bef98eabe16f2c5acbbd349226582a135e98cffe1f3c55cdfb24d8718c1f",
@@ -2055,9 +2055,9 @@
       "before": "git-sha1:7b283bc8833b7986966e1ca33e6dddbddbaf9211"
     },
     "fr/product.html": {
-      "sha256": "bb400e1f63c8dbf906f5167a077a93a83f38a95d85353dcf2e9193b266891aea",
-      "bytes": 13375,
-      "before": "git-sha1:ea127add88fb9289098ec5c1cc88c3eacf247ec9"
+      "sha256": "948c589ff7e83e57bd36cecc1c732929d0bda6bf49c8bd8dc69c56bcc089c13c",
+      "bytes": 13385,
+      "before": "bb400e1f63c8dbf906f5167a077a93a83f38a95d85353dcf2e9193b266891aea"
     },
     "fr/support.html": {
       "sha256": "60081286c95b4e1fb51ff1535973ff7415c2e328d95c2d74a1c8e79820812011",
@@ -2085,14 +2085,14 @@
       "before": "git-sha1:97e1a0a79d3605a5ab1384905cd3bf1fa59bbf60"
     },
     "he/cart.html": {
-      "sha256": "c773608832bb3b7ffabf9d06a4fd851aa48bf1a336911f5dde9746f044d7de93",
-      "bytes": 18893,
-      "before": "git-sha1:336acfc044c6e9a1b23ae6320420b899cfb1b4d6"
+      "sha256": "f3c6c137f179c3b9fe13c04a0009b7d6120093ae2e5c0697532105d7244c9de2",
+      "bytes": 18910,
+      "before": "c773608832bb3b7ffabf9d06a4fd851aa48bf1a336911f5dde9746f044d7de93"
     },
     "he/checkout.html": {
-      "sha256": "e9548b42f1058e084fc9f2b56e8edb3f5bf7a087bbf4c659d57c4fc317cd2be1",
-      "bytes": 25103,
-      "before": "git-sha1:f25cd9725f783f7a525c7c3e70d00b5158401d50"
+      "sha256": "a6c35c344589dd48bb4841d57917736866fe965e8d49db1bb186ea607b39de1f",
+      "bytes": 25120,
+      "before": "e9548b42f1058e084fc9f2b56e8edb3f5bf7a087bbf4c659d57c4fc317cd2be1"
     },
     "he/child-safety.html": {
       "sha256": "78ecde7104538dab2e15abf56ad29b6beeb4823ef85e6dc3ab61dd4cb5bf83a3",
@@ -2100,14 +2100,14 @@
       "before": "git-sha1:6db7af84d6059ebba0fae5ec0189a21a7839465c"
     },
     "he/demo.html": {
-      "sha256": "8648b8fe642cc1a80f0dcadc606ffb1b180c26ce4433e4189216430042e945e3",
-      "bytes": 11260,
-      "before": "git-sha1:e73f5a29d5e58a30600d793bda80fc97aa7fd966"
+      "sha256": "98a399710cecf3d055c1e568c889a78cb96d0d42d2ab7c7fa4a3c5ba4d960168",
+      "bytes": 11270,
+      "before": "8648b8fe642cc1a80f0dcadc606ffb1b180c26ce4433e4189216430042e945e3"
     },
     "he/index.html": {
-      "sha256": "b9ed4b06999b93ad5695277e2badfeae7a2a0c2da0980f500e2ab47b51ae05e1",
-      "bytes": 17765,
-      "before": "0253c703b38bec4a5e5f90b72b7ba241c96e77b41361b75dce0efd7d65540d6d"
+      "sha256": "04db282e2e9ec156bf9baaa141f44ccb4a369077e7e3298152f22b4e224e8f62",
+      "bytes": 17780,
+      "before": "b9ed4b06999b93ad5695277e2badfeae7a2a0c2da0980f500e2ab47b51ae05e1"
     },
     "he/legal.html": {
       "sha256": "64377ad2c69e80c5ede3f4df3a89a50174cbbe7a57787507fd356b68a19acbbb",
@@ -2120,9 +2120,9 @@
       "before": "git-sha1:d7c7008589bc928d92b47febfb53a2fe06b612b3"
     },
     "he/product.html": {
-      "sha256": "77a75841c3b8100b9b119d3e75f042d7a87824aa1e0cfaef07719382a6ed24d4",
-      "bytes": 13599,
-      "before": "git-sha1:8532a03792fc7b3c916a9e6c5299f153d36b3c8f"
+      "sha256": "61c52e6a6bf2996b04fae8e7f2772c94d96f2e0a27543229df32ca67768485d7",
+      "bytes": 13609,
+      "before": "77a75841c3b8100b9b119d3e75f042d7a87824aa1e0cfaef07719382a6ed24d4"
     },
     "he/support.html": {
       "sha256": "8763d0ba2e7469b229c77c0ea8914b85789b7b9470414d1a53460c44bddb638a",
@@ -2150,14 +2150,14 @@
       "before": "git-sha1:143e9b0d6eb0221c9132421b0b3ec6373f8818fc"
     },
     "hi/cart.html": {
-      "sha256": "f31bf01bed037c0d7856b47efc79d7a81cabe220c295c9a1bd029e29a7415845",
-      "bytes": 21148,
-      "before": "git-sha1:f8902ef3f5d9004c27ac4c07140211f3d925dab0"
+      "sha256": "d6abe4f94171577cd90446560767d63b57b2f62c48ba5e90132ea714d2c2c4fe",
+      "bytes": 21165,
+      "before": "f31bf01bed037c0d7856b47efc79d7a81cabe220c295c9a1bd029e29a7415845"
     },
     "hi/checkout.html": {
-      "sha256": "56d4cce2ef2883fe0e8dc1b444864e03a699edc5d52e492182baa54df5ef9dce",
-      "bytes": 29896,
-      "before": "git-sha1:78d17b47e917505b17c32c8dc46d22e3e2343350"
+      "sha256": "4492089cc6d1b404cc89406e1319af332ea77d0eef3ce95ffdc2d2c8f7c3651b",
+      "bytes": 29913,
+      "before": "56d4cce2ef2883fe0e8dc1b444864e03a699edc5d52e492182baa54df5ef9dce"
     },
     "hi/child-safety.html": {
       "sha256": "ea00aabe87262ed03edaf07f6de5ca6066e82cf5984ecb160589108776485cae",
@@ -2165,14 +2165,14 @@
       "before": "git-sha1:0ad99fc0bbe28b2fe70f118593f30f1ad62d0d2a"
     },
     "hi/demo.html": {
-      "sha256": "d92a8a431e1c194220f1bd89168d208bfe7c69d51acb2bfb69103eefde53adbc",
-      "bytes": 12500,
-      "before": "git-sha1:3a71b69ee6a17e67796c77bc8e47f99b4c92ced7"
+      "sha256": "d694b2fbd5e90879224303cd54a042b578192c2c7d6df1b374a1edbf0a9b3049",
+      "bytes": 12510,
+      "before": "d92a8a431e1c194220f1bd89168d208bfe7c69d51acb2bfb69103eefde53adbc"
     },
     "hi/index.html": {
-      "sha256": "e14dca34e84bf077fe9ec8a142e0a3cf2af99cf1177256a6532799a6d1c92a4c",
-      "bytes": 20449,
-      "before": "f24a998483a8eed3b8e8869387a1747718c1626af947ee23f3e65feba2ba41f4"
+      "sha256": "199e0ce2f29d71b635bc1c08c929c03a751539e22418e10aca399641c18f68c2",
+      "bytes": 20464,
+      "before": "e14dca34e84bf077fe9ec8a142e0a3cf2af99cf1177256a6532799a6d1c92a4c"
     },
     "hi/legal.html": {
       "sha256": "2d1bf61245ad7df3dcb42b842d0f4ce2cac57e9ac3e770fbff9059afd14b2a7c",
@@ -2185,9 +2185,9 @@
       "before": "git-sha1:e3fef90a5577ae0d00d2fbfdbd513217d18632e9"
     },
     "hi/product.html": {
-      "sha256": "e3183360552c1766a61745b77255a3c3b57bdf55828aa288fe943b4331c228a8",
-      "bytes": 16143,
-      "before": "git-sha1:fa2c4229aa038187888dd01da22b96e3357b9720"
+      "sha256": "85a61311e494a8dc611b8af84d27e21648e3f23e8fe5de9fabc37de51ceceb41",
+      "bytes": 16153,
+      "before": "e3183360552c1766a61745b77255a3c3b57bdf55828aa288fe943b4331c228a8"
     },
     "hi/support.html": {
       "sha256": "1b8de1e52e33e05b15d1ea926b0a9fd070a30c1d490e34a47e9e35965cfdc930",
@@ -2215,14 +2215,14 @@
       "before": "git-sha1:2a055e0f67f4a37ff95ea879acbd07bb62593656"
     },
     "hr/cart.html": {
-      "sha256": "2485efd3d969502d755ea68ee13ae95e457b5c11fa13b851164a311b665fe39d",
-      "bytes": 18181,
-      "before": "git-sha1:297fb8476a1748bbca8ff8394db9979c879b3cc9"
+      "sha256": "d1a5f952fc81e0bdb1309cbd1444bdb6b5e7b9d9ebfa3b78871d530ca4fda5fb",
+      "bytes": 18198,
+      "before": "2485efd3d969502d755ea68ee13ae95e457b5c11fa13b851164a311b665fe39d"
     },
     "hr/checkout.html": {
-      "sha256": "07d16325afaec08a444ed87acb30cc867d6d20da56f52cc7c07b0117196d84d3",
-      "bytes": 23437,
-      "before": "git-sha1:303433469faa35c698875a96b2b738d6a585d52e"
+      "sha256": "ad7f1de5fd2e3d7c5f26f43ba9b322d419a9d8798b046b9f51710861d6af5ed6",
+      "bytes": 23454,
+      "before": "07d16325afaec08a444ed87acb30cc867d6d20da56f52cc7c07b0117196d84d3"
     },
     "hr/child-safety.html": {
       "sha256": "e6a7a35e673bf90158d09476f7d9532b79068f2a523d504be88acb4bc9ca5c3e",
@@ -2230,14 +2230,14 @@
       "before": "git-sha1:be8e48e409f69da6808604d3d7ebe12b378da4dc"
     },
     "hr/demo.html": {
-      "sha256": "afaca6b409f0a9601741e150d65a2ea2157c32f800bb58b23ead569d45477c20",
-      "bytes": 10818,
-      "before": "git-sha1:24d4dc97ee242debae8c8d1e6717f216da0da45b"
+      "sha256": "b798d2637f25ed0656acf6a03f58156d28ec88484366c9011a5802499563666e",
+      "bytes": 10828,
+      "before": "afaca6b409f0a9601741e150d65a2ea2157c32f800bb58b23ead569d45477c20"
     },
     "hr/index.html": {
-      "sha256": "44015f0808f1a9bb14227ac7ea0db302de2e82d4e45e6ad69603f428e227a85a",
-      "bytes": 16771,
-      "before": "c625761014315bada211dd927d419c7906b8c3ae4e598f1206c6343b2a1ccc92"
+      "sha256": "eb8daa319f82628fb396cddc3703d72174ecafcfa560e6b4fc011d164022caa2",
+      "bytes": 16786,
+      "before": "44015f0808f1a9bb14227ac7ea0db302de2e82d4e45e6ad69603f428e227a85a"
     },
     "hr/legal.html": {
       "sha256": "09d89edfe0bc8d16259b123a81dbb3d5d3fa9304025bbbccc8657fdffd7def29",
@@ -2250,9 +2250,9 @@
       "before": "git-sha1:56cfc05fc9f650f396a225ce3c8f928790b939a9"
     },
     "hr/product.html": {
-      "sha256": "abc58c2dff4c6847444d0d10d9ebd0d9399374d7ded21d93e2a1185da4ff6720",
-      "bytes": 12817,
-      "before": "git-sha1:19a8a85131e323e9ea9e987fcbcb6b57ca232151"
+      "sha256": "d36ce6ef97e2f006baa7cfcdd2caf9ad1b8850afe6b6569a42baa9a3d047aecf",
+      "bytes": 12827,
+      "before": "abc58c2dff4c6847444d0d10d9ebd0d9399374d7ded21d93e2a1185da4ff6720"
     },
     "hr/support.html": {
       "sha256": "b10eb69136f14c1a3b4d0b936a7d6921488bacd351da5d8b3a9ff5417550fd26",
@@ -2280,14 +2280,14 @@
       "before": "git-sha1:487e987018b5dded85f1ce581e56d8336916c15e"
     },
     "hu/cart.html": {
-      "sha256": "5a26db92af4aee6be0c90720372553eeba1b20f6b3bc115d3801b05437ce6b2d",
-      "bytes": 18346,
-      "before": "git-sha1:8b3b6614c0222433e9964dc4eb916f7aba947bcc"
+      "sha256": "247ef6c4ad6102b477c2d09e8b66dd0fbdc41b206a210caea02f5f61eb6cdf92",
+      "bytes": 18363,
+      "before": "5a26db92af4aee6be0c90720372553eeba1b20f6b3bc115d3801b05437ce6b2d"
     },
     "hu/checkout.html": {
-      "sha256": "9d0c7b70cbd1078320cea4c030e50d3f2023ccc4d076a2947e9bb59d00e5d016",
-      "bytes": 24199,
-      "before": "git-sha1:80a0d8a33a1dcb7ef676960f1f5cc9e8af6262a2"
+      "sha256": "0cee893990400a8e9fa9cc49a7e351173ca398eaa6f6c9b351cbba7d31e9cc82",
+      "bytes": 24216,
+      "before": "9d0c7b70cbd1078320cea4c030e50d3f2023ccc4d076a2947e9bb59d00e5d016"
     },
     "hu/child-safety.html": {
       "sha256": "852d18d11bd8b7cc87a0deefb47617b8edc5e874556bc1be2bee86b0316ebf29",
@@ -2295,14 +2295,14 @@
       "before": "git-sha1:58ecacbff17caef1cdfc558e95a68cacd5c777d8"
     },
     "hu/demo.html": {
-      "sha256": "c9de0c7a86a8f55998e5b2a8bb3846d941b294bbf9ff1f9ffc6b1a147da5cbd2",
-      "bytes": 11007,
-      "before": "git-sha1:5d513235f210a2b046072a8e67d8238de7b329ba"
+      "sha256": "a884eebe00e483ef6afd28028a437f090e69ce8b57bdf6457578e17c0f018fc2",
+      "bytes": 11017,
+      "before": "c9de0c7a86a8f55998e5b2a8bb3846d941b294bbf9ff1f9ffc6b1a147da5cbd2"
     },
     "hu/index.html": {
-      "sha256": "3d379e345a5b61139f02fc05f6f37e87e77cd7b26516dcc65714490fc16f473f",
-      "bytes": 17089,
-      "before": "9f66d10a45edc273ae1e08a1fb3c1a3c0472772c7327eb8903cbbf9d874c5823"
+      "sha256": "5ea8ac42d0efd0d0755f6fdc30eaf0b98303b93ab563a1fb6b7dd4822db63bf7",
+      "bytes": 17104,
+      "before": "3d379e345a5b61139f02fc05f6f37e87e77cd7b26516dcc65714490fc16f473f"
     },
     "hu/legal.html": {
       "sha256": "8dc39a8a214b4d5bfaa82176a5f4adf9bb2814f3cc85024853692fa8ee623350",
@@ -2315,9 +2315,9 @@
       "before": "git-sha1:f7085d2c3d8cf6b691b8e297293b37fc8f538603"
     },
     "hu/product.html": {
-      "sha256": "6aa8fd6c225e306cc18a7f11ce03d18bf36dae1945580db806ce9a1180401acd",
-      "bytes": 13244,
-      "before": "git-sha1:00e20adde00a48e73f091c2364af3a9dcf04220b"
+      "sha256": "7f4cb06506d5a9999b51244fd8fc785b7620e1c53d6c83d481da0cc7ec5a52df",
+      "bytes": 13254,
+      "before": "6aa8fd6c225e306cc18a7f11ce03d18bf36dae1945580db806ce9a1180401acd"
     },
     "hu/support.html": {
       "sha256": "f0cbce33e9970b968c7429e16d0311627313f870451abcda69aaebc4a13958aa",
@@ -2345,14 +2345,14 @@
       "before": "git-sha1:1b2ded1c9c9cb7131be9b48206c6b130d7d55657"
     },
     "id/cart.html": {
-      "sha256": "1015621dd3155faf68ed0594e02374bf0ec034f33e274d7b87f83b187cbae4ad",
-      "bytes": 18156,
-      "before": "git-sha1:ce59b19fc6ca25218252faa73ee1454793e89c8f"
+      "sha256": "4f96bbd3cae5df7cecd3ef18d705d219a1d50edbc57cb44cd9385025d0580789",
+      "bytes": 18173,
+      "before": "1015621dd3155faf68ed0594e02374bf0ec034f33e274d7b87f83b187cbae4ad"
     },
     "id/checkout.html": {
-      "sha256": "f05a1d6d3b842ec65747f10b194969d8022ada1ef00a93985be208460dc00394",
-      "bytes": 23602,
-      "before": "git-sha1:090dcac37ad0ba2e4df5939c57cbc3c627bfbec7"
+      "sha256": "9587de74439c41ea0ae1bb3181102fd96d3b591bac4ea88b38a2cbe278dd1190",
+      "bytes": 23619,
+      "before": "f05a1d6d3b842ec65747f10b194969d8022ada1ef00a93985be208460dc00394"
     },
     "id/child-safety.html": {
       "sha256": "14d27bad44f78379659c9b928845eef236db9a13abea04d9656a394413990bd3",
@@ -2360,14 +2360,14 @@
       "before": "git-sha1:519b1b3e3cedbb0c915e6f7e31bb2023a31d385f"
     },
     "id/demo.html": {
-      "sha256": "15e4c7fedc89b8f4fe66339897cfb25459b14ae7d186432e6845dbaed002667f",
-      "bytes": 10832,
-      "before": "git-sha1:4ef2f3ae2a7758958704da66f8b7df018c43b81d"
+      "sha256": "a59548e09d4d9c7be58c6fb71ce8dc22e3a8e368bcc65568bdbaa6e6d7e4df7e",
+      "bytes": 10842,
+      "before": "15e4c7fedc89b8f4fe66339897cfb25459b14ae7d186432e6845dbaed002667f"
     },
     "id/index.html": {
-      "sha256": "7cd4449573a67f7f60d02b974db3d731b38e4ff8e7b16cf509588e9f5cca2d9d",
-      "bytes": 16775,
-      "before": "370967cd9a08680c955aba10a3381545b1b7b2db6a33ba6c6dd73beb8268123e"
+      "sha256": "000fdebf20bd0d4a3c282ac9390826d88d345caf0999b5cf3bba8e9be9c2bd08",
+      "bytes": 16790,
+      "before": "7cd4449573a67f7f60d02b974db3d731b38e4ff8e7b16cf509588e9f5cca2d9d"
     },
     "id/legal.html": {
       "sha256": "629a40318de9a9dfb341f6f84ff613dd4ed21374ac14fcfc8be1728af9392f9b",
@@ -2380,9 +2380,9 @@
       "before": "git-sha1:a9b7b1c17d9b588f21e15923b3d219144428b1e3"
     },
     "id/product.html": {
-      "sha256": "aa2d90cb434192def6583a65cb337ceb3763361ee726c32ee3a69a3d78504db6",
-      "bytes": 12854,
-      "before": "git-sha1:7f683c5ba5f334af531c2059aa0fbb619b9071a6"
+      "sha256": "b773e8d29fbbd37714c92665695bbf91551732588bec6674a78611c9e2e6c39c",
+      "bytes": 12864,
+      "before": "aa2d90cb434192def6583a65cb337ceb3763361ee726c32ee3a69a3d78504db6"
     },
     "id/support.html": {
       "sha256": "cbf623eaa220f6db96be7b85a53da1e4141d0f0a07f3f478d94240ad135d5b6e",
@@ -2410,14 +2410,14 @@
       "before": "git-sha1:54adce25e4dfdad5168cca343b4ffae749afa85e"
     },
     "it/cart.html": {
-      "sha256": "398583ff0bbcff82f42da8dbb47069faa835deaf26072933dc994c81d3b0860f",
-      "bytes": 18350,
-      "before": "git-sha1:24294a9ed3f048ce5bb6886e3566f36a4c7e877a"
+      "sha256": "9532d0ba72887fe4a67f8c56bb94a2fcf240b6dfcd8ed06b7796e68bbfbc16a2",
+      "bytes": 18367,
+      "before": "398583ff0bbcff82f42da8dbb47069faa835deaf26072933dc994c81d3b0860f"
     },
     "it/checkout.html": {
-      "sha256": "5e21d22ea0594ad0c860f13d5fb6be6465bc22e0fc1befe0c03ec466c129316a",
-      "bytes": 24188,
-      "before": "git-sha1:18a05984dc6d21d5b28e2345e17bc9214514faea"
+      "sha256": "e744b3c8e1d4291e4baeb78ff75360d7fe5a6c88ff9d3b3719d03e6fd2cc9d09",
+      "bytes": 24205,
+      "before": "5e21d22ea0594ad0c860f13d5fb6be6465bc22e0fc1befe0c03ec466c129316a"
     },
     "it/child-safety.html": {
       "sha256": "7a9a802685cacc15060b26286b8af03b200d9ea279f9b8795116ee2224218e43",
@@ -2425,14 +2425,14 @@
       "before": "git-sha1:8a6d34ba0f2e94272cb4f3f4631ec5540d0e68e6"
     },
     "it/demo.html": {
-      "sha256": "4e444aebca4620414f3ed481538dd0e002ae80ac38d5d389f31e01f60931b13f",
-      "bytes": 10911,
-      "before": "git-sha1:2c0ed8c4baa0792e1292c9ee74792a9c53633b42"
+      "sha256": "29098c62bdfe0d606ead4e7213f0282507a3fd84100ef7929c2f18894e43a70e",
+      "bytes": 10921,
+      "before": "4e444aebca4620414f3ed481538dd0e002ae80ac38d5d389f31e01f60931b13f"
     },
     "it/index.html": {
-      "sha256": "41651b578e4e9d96184dc5c2bc271622b15c6857a272f4e187e3f635c8caf674",
-      "bytes": 16965,
-      "before": "42f2fdc1b6214cd2d234e2fafa374797b09d0a8d77bd0ba014e5d19457a1a487"
+      "sha256": "97a5934c9032e54e5755bff5bae62ee0f65fee7427e52f0ff9f6402b970f3e07",
+      "bytes": 16980,
+      "before": "41651b578e4e9d96184dc5c2bc271622b15c6857a272f4e187e3f635c8caf674"
     },
     "it/legal.html": {
       "sha256": "d119473dc487f6c2f7db83dcec512e7c0dff40c33ce637dfe4faf260ff35a5c5",
@@ -2445,9 +2445,9 @@
       "before": "git-sha1:445e324695566e027e9b4fbda2a32cb23bb9f5a2"
     },
     "it/product.html": {
-      "sha256": "13d5df3ccea96e63d4b4d88a889bb16f8b4b93819ae27e2f325f89406a8ab91b",
-      "bytes": 13072,
-      "before": "git-sha1:d08f49a1f208c14af474b60479641b6df6522717"
+      "sha256": "68ee41f4b40a7aedd437dcfbda5ebff20e41f03b581870af2e87b71617927bfc",
+      "bytes": 13082,
+      "before": "13d5df3ccea96e63d4b4d88a889bb16f8b4b93819ae27e2f325f89406a8ab91b"
     },
     "it/support.html": {
       "sha256": "8b9f5ea5e8c2f99362257f738c2d33a9226e25a43f20ee31c47e0752e051ddef",
@@ -2475,14 +2475,14 @@
       "before": "git-sha1:c437bb468a898ad34ae0605164cb0fdf42b45288"
     },
     "ja/cart.html": {
-      "sha256": "0b8117aa2f278de2ddc791035314b0b1c5622aa630473951c1dc6821867fabda",
-      "bytes": 18549,
-      "before": "git-sha1:00d0d78abcf615630be7e1b814c6d6d8fa816864"
+      "sha256": "b65494ab144aa35c5fc7a8ce97c242452357b2859091e87639ead4ae224ac1bd",
+      "bytes": 18566,
+      "before": "0b8117aa2f278de2ddc791035314b0b1c5622aa630473951c1dc6821867fabda"
     },
     "ja/checkout.html": {
-      "sha256": "737d061f015d273787e0bb14972c33558d8b485449207c1e698fc35e2ea4393c",
-      "bytes": 24602,
-      "before": "git-sha1:f4364a25252eb4e23507468c33a9654eeb009b8f"
+      "sha256": "ce0f9971df3d48022ce1faeea8ed225fe2af813428a885995365f5ed77fb881e",
+      "bytes": 24619,
+      "before": "737d061f015d273787e0bb14972c33558d8b485449207c1e698fc35e2ea4393c"
     },
     "ja/child-safety.html": {
       "sha256": "491dbae89c9253c7413d80ea5076e7f6e3aed129bf3f113257e4b82f24eb09d5",
@@ -2490,14 +2490,14 @@
       "before": "git-sha1:dfaebb4b3ba20817df75aa2c0697baaac1175f45"
     },
     "ja/demo.html": {
-      "sha256": "26b32e866bd5d7697ce74242d64e46cd4722afd7f99bf9fb6970199166e42345",
-      "bytes": 11202,
-      "before": "git-sha1:41be5a4ef73dcc7e0d6e0272dfaa4e619e98c3cb"
+      "sha256": "e53e70d23fe75a5b776131b6df8ceea29c8d6b01710224e1844e2688ce256150",
+      "bytes": 11212,
+      "before": "26b32e866bd5d7697ce74242d64e46cd4722afd7f99bf9fb6970199166e42345"
     },
     "ja/index.html": {
-      "sha256": "042edf6584c8fbac0bdf4e1cadbaff83f745a96bfc614a604023499d1c744ae8",
-      "bytes": 17482,
-      "before": "33756b2ef2529d75dcbff2e507d1d8166302a9314c83f54917c0208a8d49669d"
+      "sha256": "aa08fac3e419dfcfa4613f207e3a02cf141d2f00ec2860c29140b03ae9adfc0c",
+      "bytes": 17497,
+      "before": "042edf6584c8fbac0bdf4e1cadbaff83f745a96bfc614a604023499d1c744ae8"
     },
     "ja/legal.html": {
       "sha256": "9743d8c74fdeb723eb777dc72034fd185bcdfb694b52eadedafc761314dc6735",
@@ -2510,9 +2510,9 @@
       "before": "git-sha1:f6121c05658be92b8c5cdfc8f7197d5ee3fda3f4"
     },
     "ja/product.html": {
-      "sha256": "2be3e08e8b583f6e6d3429aeac822baaf27eb00a93f2864418134a56c49bb80a",
-      "bytes": 13395,
-      "before": "git-sha1:d372f74a1f989fd837ddbd87a18c9d566378134d"
+      "sha256": "1d35bd6cccc82dbf787b0b6487bf0a069829dc665a1760a6fb5c698259a05db9",
+      "bytes": 13405,
+      "before": "2be3e08e8b583f6e6d3429aeac822baaf27eb00a93f2864418134a56c49bb80a"
     },
     "ja/support.html": {
       "sha256": "9399d74e28b84acbe209b3f8e3ff6b53c2c18fe1b48a6f41c74ffbefebd12974",
@@ -2545,14 +2545,14 @@
       "before": "git-sha1:7d514d53391a1147e085ef8c502a0fc91e824c43"
     },
     "ms/cart.html": {
-      "sha256": "610d5231b637fc0b7461f3948bc5a5a76b4698932d3bfffdb74e28d28c78d478",
-      "bytes": 18129,
-      "before": "git-sha1:075ce5b88b62aa61b5c6bb21c736413f9958850c"
+      "sha256": "d145e8abc8fcd85b3c828e84aeba22c12bcc2cd57d5590c63af6080ae870e723",
+      "bytes": 18146,
+      "before": "610d5231b637fc0b7461f3948bc5a5a76b4698932d3bfffdb74e28d28c78d478"
     },
     "ms/checkout.html": {
-      "sha256": "01043eeafe525ef0b09592f95446c4d41cc8e809ebaab10b40f3010def3ecddd",
-      "bytes": 23695,
-      "before": "git-sha1:715d6e0f98f9e948419d6b38b8e190e9adeb56aa"
+      "sha256": "16292c93d217e99d23080801a003c414d7df4e66c7fc1bd3151dca152f454aba",
+      "bytes": 23712,
+      "before": "01043eeafe525ef0b09592f95446c4d41cc8e809ebaab10b40f3010def3ecddd"
     },
     "ms/child-safety.html": {
       "sha256": "8b15b1a1443250c9abbd34251c4e9587e8ce06b7a7372b5c219d0b44a5c17e9b",
@@ -2560,14 +2560,14 @@
       "before": "git-sha1:fd9ce1ca7c840d4a6ca2be3f5c0ef17a64f24c8b"
     },
     "ms/demo.html": {
-      "sha256": "88051d79e95d40c4f1fcee3211980460e5d458e77c687ec13ff2ac49d5a37530",
-      "bytes": 10851,
-      "before": "git-sha1:2305d01cb153393d35e1af75cd59041c461db1b0"
+      "sha256": "6d44291bfa6ec179dde4a40c83e01525fee7bd556d9e0e68eb8b7bb28b0a9501",
+      "bytes": 10861,
+      "before": "88051d79e95d40c4f1fcee3211980460e5d458e77c687ec13ff2ac49d5a37530"
     },
     "ms/index.html": {
-      "sha256": "5680e33c794368ce0fd60da4424349aaf338aeb8477a3f9904f86db797c33748",
-      "bytes": 16834,
-      "before": "fc7a3b3705e96a134c1cf25f3f72ebac7353657ec831d43b1068619dd19681de"
+      "sha256": "ae818988af4ba9f1089d6c05d5277532f589ed4ed99bc14b036b68f9decfc045",
+      "bytes": 16849,
+      "before": "5680e33c794368ce0fd60da4424349aaf338aeb8477a3f9904f86db797c33748"
     },
     "ms/legal.html": {
       "sha256": "96108c48e3234684ff537c4a9ffb2ecd6fd96ce1c5364c5a7d66223dc46d637d",
@@ -2580,9 +2580,9 @@
       "before": "git-sha1:ba56a0cf245eeb1ed0cd71a2643c79526367b8ba"
     },
     "ms/product.html": {
-      "sha256": "6f69859355b660c620824a66975d9aa733f1bccd7c8f326ea3525951247aa5e4",
-      "bytes": 12910,
-      "before": "git-sha1:c3ebe7cd320887fa498332c4590a3b1e26f95db0"
+      "sha256": "32c5b916f906bfcc3d2aa7876a1602597551e8f1c4575f335e9705c30c07e034",
+      "bytes": 12920,
+      "before": "6f69859355b660c620824a66975d9aa733f1bccd7c8f326ea3525951247aa5e4"
     },
     "ms/support.html": {
       "sha256": "862dafd915962b12515214a4fca64e69bc43d95b840efd498720705ae31cfa42",
@@ -2610,14 +2610,14 @@
       "before": "git-sha1:7da54b7b1f4d061187519a2f670aae272e5d4a42"
     },
     "nl/cart.html": {
-      "sha256": "0e9b7f66c78b320df010437ee4123be1891bd350d0966ee7b191a07831abeddd",
-      "bytes": 18295,
-      "before": "git-sha1:bee6da3d59b0234bf4a0c217d03d73d3d69d9e9c"
+      "sha256": "8555954f15984c2e75630af9a666cd6cd255cf293869f2f68bd0831389929b8f",
+      "bytes": 18312,
+      "before": "0e9b7f66c78b320df010437ee4123be1891bd350d0966ee7b191a07831abeddd"
     },
     "nl/checkout.html": {
-      "sha256": "e44818a1eca7957ab5a2c4ed0d22ad2f1c0ac872f7378625c0748bcdb6629f33",
-      "bytes": 24150,
-      "before": "git-sha1:7c3ec2faff2b2b530d5b2c7678d326126f52f403"
+      "sha256": "86baf26544f4dd87ba2e36922722c20ce1af57c320898324f214f33c9e092610",
+      "bytes": 24167,
+      "before": "e44818a1eca7957ab5a2c4ed0d22ad2f1c0ac872f7378625c0748bcdb6629f33"
     },
     "nl/child-safety.html": {
       "sha256": "28df5279a21874a29e14a90861dbeb60e754071c69be9caf1be9e268dd7f1d25",
@@ -2625,14 +2625,14 @@
       "before": "git-sha1:4b58f1676d9249297d44885fae0bd30fc21ea29f"
     },
     "nl/demo.html": {
-      "sha256": "edc6e345f82270d3cc472d497e9af2fc7264d1f082c2788337e832e09ed75a6e",
-      "bytes": 10892,
-      "before": "git-sha1:54c50ab67425d39e75c44baae6c8c121ae378d67"
+      "sha256": "2a46be3544e162c38a3ae903c5ef76661a0def710ce9d54855d918b2c2e7206c",
+      "bytes": 10902,
+      "before": "edc6e345f82270d3cc472d497e9af2fc7264d1f082c2788337e832e09ed75a6e"
     },
     "nl/index.html": {
-      "sha256": "c9597b4d0146d4798eb46f0ea3c36fc600046e385711f399f9c293519647d630",
-      "bytes": 16868,
-      "before": "c984cfd93f8aa7453a71e584a876dc88201198238602ab2bf397250653ebb867"
+      "sha256": "913d5de8df3497f300833f456235b54d661a1b5b2d34c6fa69ba0038c6306d8a",
+      "bytes": 16883,
+      "before": "c9597b4d0146d4798eb46f0ea3c36fc600046e385711f399f9c293519647d630"
     },
     "nl/legal.html": {
       "sha256": "58c02f175dfe4248c163f599266cc331f782751fb93d547d42fea42753658f21",
@@ -2645,9 +2645,9 @@
       "before": "git-sha1:0995c3db40179c3f1466b642733f41ab8654619c"
     },
     "nl/product.html": {
-      "sha256": "06b74f5f281003f78da2a1c190171c6b513cbccd5cc7dc283ab826b7c64ab396",
-      "bytes": 13121,
-      "before": "git-sha1:bf513eb36fc4e5bbc066677c2b5a20d534a26c13"
+      "sha256": "e1b5ae4087b4ae4a285b7dea18aecd37d78a4c071fa22824ac20086936571f63",
+      "bytes": 13131,
+      "before": "06b74f5f281003f78da2a1c190171c6b513cbccd5cc7dc283ab826b7c64ab396"
     },
     "nl/support.html": {
       "sha256": "cd356be7e363ca9bbfa1c5259388d1803f9b9dd0fa7509cf68efb7420f019e4c",
@@ -2675,14 +2675,14 @@
       "before": "git-sha1:ee80a683fb176249740097fd1c9eee7565cf5a1a"
     },
     "no/cart.html": {
-      "sha256": "b29998f77dc919c306c555d72a575f1464caba460c0f884801081d9aa1c4ac56",
-      "bytes": 18152,
-      "before": "git-sha1:e88ffe9884ca1e4fab5a25dabb149a486b363fec"
+      "sha256": "d3daed2f758d79db43a35c6e9c98e4edc46e1ae5e02c7c94d34ac1db82d267d2",
+      "bytes": 18169,
+      "before": "b29998f77dc919c306c555d72a575f1464caba460c0f884801081d9aa1c4ac56"
     },
     "no/checkout.html": {
-      "sha256": "77010fc757ff14482dbfa6b9316c2ad4ade0d3a71cc3f11a140c0b59fcd27672",
-      "bytes": 23470,
-      "before": "git-sha1:04f6f24073023fd9a938934adcc8a9ec254a9eef"
+      "sha256": "c124860cbfbc2d09be228858a3a5534dcd9cb7481a09573165fb22488e6f25b6",
+      "bytes": 23487,
+      "before": "77010fc757ff14482dbfa6b9316c2ad4ade0d3a71cc3f11a140c0b59fcd27672"
     },
     "no/child-safety.html": {
       "sha256": "36a5e4de00560750ffe52df5007c338ee12235e79ab83dda5a3c3a4f8ef08d41",
@@ -2690,14 +2690,14 @@
       "before": "git-sha1:e24619d8af4c7f47430141ad4c9bbc96c1da7420"
     },
     "no/demo.html": {
-      "sha256": "e7273e348d382ad930c65a59df2af476e469de82d0d72bd21b04a617fde7ebef",
-      "bytes": 10840,
-      "before": "git-sha1:380ba7641e4e81bfa39ac0055e76bcb101dfced1"
+      "sha256": "4d439c1897877ecbed43fb4e73f54f0678b050340d696dc6cf5d9606ce11ca6f",
+      "bytes": 10850,
+      "before": "e7273e348d382ad930c65a59df2af476e469de82d0d72bd21b04a617fde7ebef"
     },
     "no/index.html": {
-      "sha256": "b94aa74ea9bc6b0bff370ed4b2efa9b34255a9d7f357eae1ee355231841bf570",
-      "bytes": 16783,
-      "before": "0705408f566ef1dac67a595ae5d122f224d99914305410d7b0647c976596880c"
+      "sha256": "693766bc1ca4c04b3cc796553f892def3c5d42ff9f56526cbf7fbb1dff75e329",
+      "bytes": 16798,
+      "before": "b94aa74ea9bc6b0bff370ed4b2efa9b34255a9d7f357eae1ee355231841bf570"
     },
     "no/legal.html": {
       "sha256": "fcbfc0e1be10b857d9f5e498ee14ac004e375c30bdb8e6c659ec920d8c82d767",
@@ -2710,9 +2710,9 @@
       "before": "git-sha1:ca6a02b045f3dc2afe5091a133885871e0ea97f5"
     },
     "no/product.html": {
-      "sha256": "496359b8af70a4ef7ae5fc87881164104b30ae6babd25d1bf245a6b34c9b90b8",
-      "bytes": 12794,
-      "before": "git-sha1:f897c5484573451247b1c5e469dafe27f0404151"
+      "sha256": "29a8246eafbb78f18fb79864fa8f9c5bc5a33f426eeb2efeaecdc3922d6c47fb",
+      "bytes": 12804,
+      "before": "496359b8af70a4ef7ae5fc87881164104b30ae6babd25d1bf245a6b34c9b90b8"
     },
     "no/support.html": {
       "sha256": "f52618212820a73d1b76c02c64d23e84be40200835e83e575c2a4de4b2590842",
@@ -2740,14 +2740,14 @@
       "before": "git-sha1:fa603ebafad8bcd8d25f6f076b225a813223774a"
     },
     "pl/cart.html": {
-      "sha256": "a111377e833fafa2cbfd3466b68f7683c235b1b1ab1a9ad03aa36dd6dbd9d935",
-      "bytes": 18193,
-      "before": "git-sha1:93cf2da837343f27bfcc552967909f58602b7a7a"
+      "sha256": "eac1e0da112bdcddb84a1f35cf0aa0bb19756b2565bf4a819b4e3fe27fafd3be",
+      "bytes": 18210,
+      "before": "a111377e833fafa2cbfd3466b68f7683c235b1b1ab1a9ad03aa36dd6dbd9d935"
     },
     "pl/checkout.html": {
-      "sha256": "0d6f6bdcac3780f1897b33c2689f99330281ae039ca99c63024b574d229fe0e6",
-      "bytes": 23665,
-      "before": "git-sha1:9038fcf764c37019807b3ba7ca184e671a2af9ab"
+      "sha256": "fca4daa310e4b26409918eca822aa688f343c0cb0616260b8d631e488ecc306f",
+      "bytes": 23682,
+      "before": "0d6f6bdcac3780f1897b33c2689f99330281ae039ca99c63024b574d229fe0e6"
     },
     "pl/child-safety.html": {
       "sha256": "4bbbcb132ee8aa01a4da98f29313345187fa3b40cc92dfb2c9e3190ef836274e",
@@ -2755,14 +2755,14 @@
       "before": "git-sha1:cc1889726da2a500c417fadd677ab6e1ec698cc4"
     },
     "pl/demo.html": {
-      "sha256": "3c5beca7eaad1aa179f96792b887bbfbe1d1b5b32ee4d36c52957b9f628537bb",
-      "bytes": 10883,
-      "before": "git-sha1:4f3263ba35fa466caf73ef9af470cd02a24510f6"
+      "sha256": "b84debb6a907d9eaed0ecde57a8676cdafe64ad084506979ae5262fbd370329d",
+      "bytes": 10893,
+      "before": "3c5beca7eaad1aa179f96792b887bbfbe1d1b5b32ee4d36c52957b9f628537bb"
     },
     "pl/index.html": {
-      "sha256": "b728cb4539031858c7f64819aa58cb413defa081947660d30d5552ba84e0abfd",
-      "bytes": 16853,
-      "before": "daa05ac923c03435d8838b7798c5772e16d72080162223a9358c30fb5371e8ee"
+      "sha256": "4154b2eb1b4798125923377a5f9980c9f1dca5cdcaa8ed94ef909cf3eb51f372",
+      "bytes": 16868,
+      "before": "b728cb4539031858c7f64819aa58cb413defa081947660d30d5552ba84e0abfd"
     },
     "pl/legal.html": {
       "sha256": "d9f74594f7d5e7c768dab73a696cc9f8f087187230f6e88ecaba0865362f9b9b",
@@ -2775,9 +2775,9 @@
       "before": "git-sha1:8b3ba71b890f1d84358c8e02192689f95ef570e5"
     },
     "pl/product.html": {
-      "sha256": "d2440970cdad155b454ae03546b8083eb62cd24155ce9d44f79928a901693cb7",
-      "bytes": 12904,
-      "before": "git-sha1:6bc1c066647d31dbad5e5c10601b3b01e15aea29"
+      "sha256": "ae1751a112a9aeb1914fc2405cd08db940d881edc2f5853797beaf5a8528c969",
+      "bytes": 12914,
+      "before": "d2440970cdad155b454ae03546b8083eb62cd24155ce9d44f79928a901693cb7"
     },
     "pl/support.html": {
       "sha256": "a832d14b7cafa3d42ba7fe5e6ac6ca7691f2297ea25f24a6042f3158e42b8a27",
@@ -2805,14 +2805,14 @@
       "before": "git-sha1:a879ea02ea5a62a5fbfb90912758dfe873d02bdc"
     },
     "pt/cart.html": {
-      "sha256": "e83135e40909d4fc83634f1f34f6942d1e7fd2bfd1b1805f140b5928b7a61d03",
-      "bytes": 18347,
-      "before": "git-sha1:bdf3e95332940584e590bb2518829a4252e52fbc"
+      "sha256": "1bb4d9547bc896d5828d6aaa207244157084bf89018498cfe7797e9133f4ae31",
+      "bytes": 18364,
+      "before": "e83135e40909d4fc83634f1f34f6942d1e7fd2bfd1b1805f140b5928b7a61d03"
     },
     "pt/checkout.html": {
-      "sha256": "381612b82eabecb02a3066a7b1aa5c52033133fc52a7ea00331846c5b49cf7aa",
-      "bytes": 24240,
-      "before": "git-sha1:6ba41bcc48a45241991db2aeed1083da968ed159"
+      "sha256": "b431f983a883bb1617f9f77292f80c82e47980488f377af232a85977ef2d6680",
+      "bytes": 24257,
+      "before": "381612b82eabecb02a3066a7b1aa5c52033133fc52a7ea00331846c5b49cf7aa"
     },
     "pt/child-safety.html": {
       "sha256": "a6973dc215718737701629e932a634a204f9643088e6055bfd62bc43b72ef2a4",
@@ -2820,14 +2820,14 @@
       "before": "git-sha1:90bf0129179566e5385be9e87b7ce74b0191fd58"
     },
     "pt/demo.html": {
-      "sha256": "537c15a92612b6ba7eb3e5c8c40ffbd15257ebb20e39d5ea268a64d26e6f885f",
-      "bytes": 10988,
-      "before": "git-sha1:4d18479fec3ea667c73cae89c0e53dbda1bbd458"
+      "sha256": "e0b3739d7b5f8868acd5c8c27e71bc16f66a1288e4a4626384cf4978b979b06e",
+      "bytes": 10998,
+      "before": "537c15a92612b6ba7eb3e5c8c40ffbd15257ebb20e39d5ea268a64d26e6f885f"
     },
     "pt/index.html": {
-      "sha256": "c33627d2900fc85eb05c4c6668baafa5dc8c9ac9abbb7aa1333ee7cd4ca9a649",
-      "bytes": 17083,
-      "before": "b574819852a6ef4911a7b12291eb80e2f6fabc24a30e5e18bc1a3c0e7fc9a9bc"
+      "sha256": "4040dca75b58c3871031792dc7afe9116f7183a22541c04093219618f4467f03",
+      "bytes": 17098,
+      "before": "c33627d2900fc85eb05c4c6668baafa5dc8c9ac9abbb7aa1333ee7cd4ca9a649"
     },
     "pt/legal.html": {
       "sha256": "d7878674e68525bce098774fc80ccfba28ce66f01802fc492620f37becef17d8",
@@ -2840,9 +2840,9 @@
       "before": "git-sha1:14b087e07896c6e945ac0ab4d90ed71b87745623"
     },
     "pt/product.html": {
-      "sha256": "ef2dc17e087ed6d8a12b90f7b2ed87ba42c73f6aca6199b656c16b4b845ab7a9",
-      "bytes": 13221,
-      "before": "git-sha1:6eae0544631f1f7c7583a66b628edd929b704c7a"
+      "sha256": "c298dc5d427001ddf8bda78ae371cce834d95ce04ecc3b107a0eec46a2c77ca1",
+      "bytes": 13231,
+      "before": "ef2dc17e087ed6d8a12b90f7b2ed87ba42c73f6aca6199b656c16b4b845ab7a9"
     },
     "pt/support.html": {
       "sha256": "db3b9b013ab140252a8fd41e536714674aaa533bdcfa2e80361442a36a41ce4d",
@@ -2870,14 +2870,14 @@
       "before": "git-sha1:cc76e52cb2f97a3572222c81ecedd92ef981dff9"
     },
     "ro/cart.html": {
-      "sha256": "478c6bd302d791585d8cfba1b0ca2c65483ac025293a9f40464c24a343033023",
-      "bytes": 18274,
-      "before": "git-sha1:76a30fca0622afd9cb2ca55a38375c3916aabf6c"
+      "sha256": "eb6b4409692f1d5f6e6f691cc626a4cf5d28f10dfc523f53971580cd7366d360",
+      "bytes": 18291,
+      "before": "478c6bd302d791585d8cfba1b0ca2c65483ac025293a9f40464c24a343033023"
     },
     "ro/checkout.html": {
-      "sha256": "50e7c4ba7410af932112391b36eb54f172a0e81dceb8c3652270b999c775148e",
-      "bytes": 23944,
-      "before": "git-sha1:7ea4322978f73f3859d27e76b45b8bf41a83d79f"
+      "sha256": "f8b8ec0e814023c5b81c6e1acb5061d2dee7c6d61193721322588d35bf6197b4",
+      "bytes": 23961,
+      "before": "50e7c4ba7410af932112391b36eb54f172a0e81dceb8c3652270b999c775148e"
     },
     "ro/child-safety.html": {
       "sha256": "6b5c07da0b96817b391e8a254829abb0002b75806bcb646c8f5d56d2621b9772",
@@ -2885,14 +2885,14 @@
       "before": "git-sha1:a3e5294d906f565b7dae9d20ed87e815e2109657"
     },
     "ro/demo.html": {
-      "sha256": "1c65e7a92460af1a6089f3be5632fbcb1c6288b6759e777f91d706bee742d8ab",
-      "bytes": 10970,
-      "before": "git-sha1:72c191e7e50f922527bb1ddadcd06387987b70a2"
+      "sha256": "38814e8b1e79af4729273818804e96b7ec1ee2ff86c66c4d9e08d448178f9b82",
+      "bytes": 10980,
+      "before": "1c65e7a92460af1a6089f3be5632fbcb1c6288b6759e777f91d706bee742d8ab"
     },
     "ro/index.html": {
-      "sha256": "ac66613831af20c58cdce3a9cbbba8a28113a40f63b48279ba07e00aed3716a8",
-      "bytes": 17130,
-      "before": "8095e0a187f3d990af01e25a1e23d50d70553f9f0c26546da3f87fe8f3fb6446"
+      "sha256": "85b47bec7c61792fb2c60e72cc1a8662d3f614affb67b22eb7b533183fc1f331",
+      "bytes": 17145,
+      "before": "ac66613831af20c58cdce3a9cbbba8a28113a40f63b48279ba07e00aed3716a8"
     },
     "ro/legal.html": {
       "sha256": "77148d3a7d59daf2e4c6f067f94129f715f35233a7e7fdba9186f60b886f1cc2",
@@ -2905,9 +2905,9 @@
       "before": "git-sha1:9cbbaf2b4f324fa83d40decaa7d255e5b4cc22d9"
     },
     "ro/product.html": {
-      "sha256": "c425c89fd8b75bd73df433c05e320d9ef37d1a79a50ca87933cb259894744384",
-      "bytes": 13131,
-      "before": "git-sha1:78567c929b7b56711427ec3017bbc1bc82a7fa0b"
+      "sha256": "8f6ac68392faa2d2dfeb67b16d33424dd23fbc6cba87bab62ce49e81857951df",
+      "bytes": 13141,
+      "before": "c425c89fd8b75bd73df433c05e320d9ef37d1a79a50ca87933cb259894744384"
     },
     "ro/support.html": {
       "sha256": "76f0e6ae0ac8e98f494a7631c0cac400da1bdd5735fae6a1708b502e88c75c69",
@@ -2935,14 +2935,14 @@
       "before": "git-sha1:119c33df2a092b031c5bd9cf183e453444df7b83"
     },
     "ru/cart.html": {
-      "sha256": "d14fe4ad9dc06e83dd474cb3bc282594cfbfb4a2341958f3ee097776683d5b1d",
-      "bytes": 19979,
-      "before": "git-sha1:534ef08bb67af64d775ed8342e36c92e380ef506"
+      "sha256": "26f1d461e57487474ad5b342033f07e6b7f0aac17a668bdbc0eccf9aa9ccb38c",
+      "bytes": 19996,
+      "before": "d14fe4ad9dc06e83dd474cb3bc282594cfbfb4a2341958f3ee097776683d5b1d"
     },
     "ru/checkout.html": {
-      "sha256": "ea45693c12f760a5d769af3400a1112949fde8ea0c34d0131a1e58ac9940ff8f",
-      "bytes": 27499,
-      "before": "git-sha1:460bef688915ad7f5c31cbe4bed20e5b3288921e"
+      "sha256": "ccc377b83bb28b8797f9b3e48e1aff5a8ab969cc9ec3b056b96181c37453ec2e",
+      "bytes": 27516,
+      "before": "ea45693c12f760a5d769af3400a1112949fde8ea0c34d0131a1e58ac9940ff8f"
     },
     "ru/child-safety.html": {
       "sha256": "b308d9d73ece66270f8cc1bfa00388ebdd3283fe29cdf3c5db52c59abb546e77",
@@ -2950,14 +2950,14 @@
       "before": "git-sha1:ff097a3a5ce750c816d90e20fbb174308c727afa"
     },
     "ru/demo.html": {
-      "sha256": "77572964c25ebd77763464fd151b3afb0ed4b35c132717cb9bed49f042031774",
-      "bytes": 11957,
-      "before": "git-sha1:1615cb6e52bf7358aaa8e7984bd0bc277b01a852"
+      "sha256": "6a2e6877b0a9d4f459c38c995a5c34d4a0175907e791a9398a08e8be81b67069",
+      "bytes": 11967,
+      "before": "77572964c25ebd77763464fd151b3afb0ed4b35c132717cb9bed49f042031774"
     },
     "ru/index.html": {
-      "sha256": "4cfe2ff48ba22842930634ee1c3c97eb8410c971e4d42124c56aecb8fe8aa00e",
-      "bytes": 19062,
-      "before": "3a284c90e0e0e223a64e01d30cdf83bdb266d266da47c567dad55067dd594bdf"
+      "sha256": "9261f2af648128db58744ecc43198c54199f3a296afca9b767328037616a2c44",
+      "bytes": 19077,
+      "before": "4cfe2ff48ba22842930634ee1c3c97eb8410c971e4d42124c56aecb8fe8aa00e"
     },
     "ru/legal.html": {
       "sha256": "a92545ef147f0a619674db004fed05b45bc66372c12537466f44b2ff719246a8",
@@ -2970,9 +2970,9 @@
       "before": "git-sha1:6fd6cc179b4dadb6ce7c4a17398a281dda1f1218"
     },
     "ru/product.html": {
-      "sha256": "9bde4cb59a1f0154f8d42ceb02447a6a1a4ca2c83409b89f27a362a7bf68136e",
-      "bytes": 14891,
-      "before": "git-sha1:01afd6012a6f85a6d3b31a06f757142f38b42132"
+      "sha256": "ac8be95e3670669488fb0b4e11c87171a5a5b53e78998b3903aba4e6ebeb14d6",
+      "bytes": 14901,
+      "before": "9bde4cb59a1f0154f8d42ceb02447a6a1a4ca2c83409b89f27a362a7bf68136e"
     },
     "ru/support.html": {
       "sha256": "1229148f0b333aa71f393aea63aec6cba3a9f145520b50796d9786eb9cd4325f",
@@ -3005,14 +3005,14 @@
       "before": "git-sha1:5c6a590503d2a5d84119732dee941c9e89938eea"
     },
     "sr/cart.html": {
-      "sha256": "0b8beecdd57b3c636e29b97e6a1f8eb64e0b4af48dddeef59308324fed9c35f6",
-      "bytes": 19699,
-      "before": "git-sha1:74455e37fcebe7abb77af575f0528fc63246161b"
+      "sha256": "96ffabc3a24d01e6b59925a2b1691c27b28a3925a576bb9e97dd9116a9ee2798",
+      "bytes": 19716,
+      "before": "0b8beecdd57b3c636e29b97e6a1f8eb64e0b4af48dddeef59308324fed9c35f6"
     },
     "sr/checkout.html": {
-      "sha256": "05c095b225b4d0dcf6430c01cc1aa82aba2ca9b4fae91df1cb2b83e6029a379d",
-      "bytes": 26700,
-      "before": "git-sha1:1c2c06d01f1113d7fe1ea5a2d072c22028e69634"
+      "sha256": "ce9570330fcc88661b130f41deb210d573cb9ff1dafce5e776ce7659404255e0",
+      "bytes": 26717,
+      "before": "05c095b225b4d0dcf6430c01cc1aa82aba2ca9b4fae91df1cb2b83e6029a379d"
     },
     "sr/child-safety.html": {
       "sha256": "498f3ecd49184eb748b70d41eddb4860d4fe2f084f8882e8dbcce18d2ccaeafc",
@@ -3020,14 +3020,14 @@
       "before": "git-sha1:af2506bdbed38fa67c337a14d71db304553d9c8b"
     },
     "sr/demo.html": {
-      "sha256": "e80e54efa0d2a201cb05db785cc9f5fc60dbe25943cb0a63a4fc7a153418b9b4",
-      "bytes": 11746,
-      "before": "git-sha1:762ae66bff597f77904ed111a5af0aadf44a35f8"
+      "sha256": "c7e72c08cd1b20adf7edc782dedcd8c86f053a934ce5b62738e60f5fa3c6a08c",
+      "bytes": 11756,
+      "before": "e80e54efa0d2a201cb05db785cc9f5fc60dbe25943cb0a63a4fc7a153418b9b4"
     },
     "sr/index.html": {
-      "sha256": "716494472d2fd933b11a4aa19c9d252d464a63ecbe38767ec421d163fd558c88",
-      "bytes": 18744,
-      "before": "f0b16ff37d5de3c1d06d997e6e510e1f270365442f280051cc285c11c767d2a5"
+      "sha256": "367e403327d52032d07987700e6edb1aec3f7d63c4f56182ec5a8d8bd3f003b7",
+      "bytes": 18759,
+      "before": "716494472d2fd933b11a4aa19c9d252d464a63ecbe38767ec421d163fd558c88"
     },
     "sr/legal.html": {
       "sha256": "194291d330a925481753720ab016ad6711595e5f38ac1657b0a5b0944de07b24",
@@ -3040,9 +3040,9 @@
       "before": "git-sha1:7a220be09ab3bd78bfed9495394e5d771d51b385"
     },
     "sr/product.html": {
-      "sha256": "04ca8ddc2a46c9e415315f9bb32c8f4220b491d5c7b166b43a51f11bd610f489",
-      "bytes": 14565,
-      "before": "git-sha1:7aaf91ddbcd15f105b3dddcdaa88a6f67308e8d2"
+      "sha256": "d56c07645854bdc897aa43954cf3e050ffcd3f49363607eb376f791a5d65f990",
+      "bytes": 14575,
+      "before": "04ca8ddc2a46c9e415315f9bb32c8f4220b491d5c7b166b43a51f11bd610f489"
     },
     "sr/support.html": {
       "sha256": "91e633397c0ef07f9fc4c7d88420dd2f12eece7dbabf246d4e71bd5a12778939",
@@ -3070,14 +3070,14 @@
       "before": "git-sha1:8dc92040e9cb35c09a321264a3d94dfed0823799"
     },
     "sv/cart.html": {
-      "sha256": "332eb7c756a48c3c962643350b427d1fc29f6ba340c8560bcd23ab2b360ac29e",
-      "bytes": 18214,
-      "before": "git-sha1:797694d22750b067001d821f138691ee6b3107ef"
+      "sha256": "87c5921c89371f602c5231f9568dae50b4b1cb9645bbfa710707e27b6be627e7",
+      "bytes": 18231,
+      "before": "332eb7c756a48c3c962643350b427d1fc29f6ba340c8560bcd23ab2b360ac29e"
     },
     "sv/checkout.html": {
-      "sha256": "c6bba5b83b47348970bdba059640c331c3739fa20ab6f79a8fc38eb539d272e7",
-      "bytes": 23930,
-      "before": "git-sha1:21a8e9049827f011d9b87ad17ca7477d6a363dc5"
+      "sha256": "d12f37b20c794ce0f9ab452dc9e496025c8f7b19006f451c9fe4fffd8bf49d1b",
+      "bytes": 23947,
+      "before": "c6bba5b83b47348970bdba059640c331c3739fa20ab6f79a8fc38eb539d272e7"
     },
     "sv/child-safety.html": {
       "sha256": "20962ccf8628fbdc6297896bd82b686b4b9d949a04650be5a7eebe6b6b4a8018",
@@ -3085,14 +3085,14 @@
       "before": "git-sha1:3e1ae6b595652e6d0fa27aa4c0147b2ce8dce445"
     },
     "sv/demo.html": {
-      "sha256": "f247e9ab56622e65d22902e4a9ccf8a0846f6896fcf58730f906bb9575b3b354",
-      "bytes": 10910,
-      "before": "git-sha1:92250af1fdec7f960134a449866db60810342265"
+      "sha256": "1d40705a91c5be9aee41aafd33c0d43a1a634a6a71a453091276a448d3a92a47",
+      "bytes": 10920,
+      "before": "f247e9ab56622e65d22902e4a9ccf8a0846f6896fcf58730f906bb9575b3b354"
     },
     "sv/index.html": {
-      "sha256": "92df1d1218e796c81c6f6fded13eee2da7af04c20ed80ba31f8fad3060105937",
-      "bytes": 16857,
-      "before": "163096504edd9f9f94fce15423ae346e3e20031c58d2d505e68b116a4f24e58b"
+      "sha256": "a225a56d6fb0e7b868e1df2ed1c7e0b77b58372d2a03b7ec8515cfbba34637bb",
+      "bytes": 16872,
+      "before": "92df1d1218e796c81c6f6fded13eee2da7af04c20ed80ba31f8fad3060105937"
     },
     "sv/legal.html": {
       "sha256": "92af45216255ccef63f16777b14133e32196ffa50a35dc0308e9a8a3fb744182",
@@ -3105,9 +3105,9 @@
       "before": "git-sha1:0498e6ce9ae04abad8f37a8e3f60ad4d2773e6c0"
     },
     "sv/product.html": {
-      "sha256": "094176e36abd773c40529745fa99460c4cc96d963d5d0b26243f763aabd23e47",
-      "bytes": 13022,
-      "before": "git-sha1:f0fcb306dff997b8158f700c1b2670fcc1c07e5d"
+      "sha256": "9d0404e603f62fc6a03fdee99f742cb0c2c1ba243a5d8895282a8983b7c6b79b",
+      "bytes": 13032,
+      "before": "094176e36abd773c40529745fa99460c4cc96d963d5d0b26243f763aabd23e47"
     },
     "sv/support.html": {
       "sha256": "6d0389100119a77cfe201dce8a3fe4b3fbb0022143340aeda14ee69e2926dd9e",
@@ -3135,14 +3135,14 @@
       "before": "git-sha1:c9d450899588509ca97c9f8cbba2a1e063ab7153"
     },
     "tr/cart.html": {
-      "sha256": "f185399b4680a226566875ab2bc91d149f0d72e245fb6657803be965a5852fdd",
-      "bytes": 18243,
-      "before": "git-sha1:8b2d0d2708a6b57599f16d63cbcfa4305d33d0ca"
+      "sha256": "e97855ef6bd1a0c12052724cd7932aa98760a4c3732f537b8a11ff79a5209135",
+      "bytes": 18260,
+      "before": "f185399b4680a226566875ab2bc91d149f0d72e245fb6657803be965a5852fdd"
     },
     "tr/checkout.html": {
-      "sha256": "20b914f8f7ed41a48ca2c43a2d8e9a4e4133cffe0b0ebf403432122ffb4bd5d1",
-      "bytes": 24945,
-      "before": "git-sha1:7dd63b574f0e84264e1ae9f659ec6da314c64068"
+      "sha256": "6146a816c64b3f85e9d820efdc200e1522e4b340a5a12262ea6c4e88b76d95f4",
+      "bytes": 24962,
+      "before": "20b914f8f7ed41a48ca2c43a2d8e9a4e4133cffe0b0ebf403432122ffb4bd5d1"
     },
     "tr/child-safety.html": {
       "sha256": "9aacee0cf76a95d170f9283beae620f39d1beda40c50760d8797749156388600",
@@ -3150,14 +3150,14 @@
       "before": "git-sha1:b80996c1a8f7ea55a93f0e2c3c3ff2127dab32ec"
     },
     "tr/demo.html": {
-      "sha256": "21c3445a73f16e9d12de514dbe9a8231a97f27945e51f5d8dd6f3b7e98771ed3",
-      "bytes": 10926,
-      "before": "git-sha1:abfcd0eeb9cf30e676ab1da8cd0a3c13c5dfc4c9"
+      "sha256": "e0b57e4aec44f4def0c1e2eb89d6a4843a5c941aefe8d2d43ef304d676ad9e62",
+      "bytes": 10936,
+      "before": "21c3445a73f16e9d12de514dbe9a8231a97f27945e51f5d8dd6f3b7e98771ed3"
     },
     "tr/index.html": {
-      "sha256": "c251a020a73a2b8925830f63500e5ee0a5f0bd7d44f0edfd33711ab1d7fccc0d",
-      "bytes": 17052,
-      "before": "ad13afede5107a1c15b81a49a960078b9a5853e71e4ed61a698e0bdbf19dbdca"
+      "sha256": "d4003fd5b393f3542e105fe2e7be799bf49f42e437a409e5739caff4211e06c1",
+      "bytes": 17067,
+      "before": "c251a020a73a2b8925830f63500e5ee0a5f0bd7d44f0edfd33711ab1d7fccc0d"
     },
     "tr/legal.html": {
       "sha256": "6fd4a38dd5e7b64741122019e0cdc8ee895dfbb863cbe3e30cf28884d347fd1f",
@@ -3170,9 +3170,9 @@
       "before": "git-sha1:5521d00b7e4db7aef2c1d17759fc051cd5bfddcb"
     },
     "tr/product.html": {
-      "sha256": "382bfc9419eed5912cc40187571e26859a75e626da7e15145956f433a66984de",
-      "bytes": 13157,
-      "before": "git-sha1:50f4dba01e8278fc26c90865befe778c4a7de1a2"
+      "sha256": "3577cb2c9dae7a6b140a3f7204fa964d33f195abe73acdde33f3637223b549ee",
+      "bytes": 13167,
+      "before": "382bfc9419eed5912cc40187571e26859a75e626da7e15145956f433a66984de"
     },
     "tr/support.html": {
       "sha256": "b1fb5630374dc2b962ad56d4abd5ebb47f02b07f0e694941c8dc5a73a8c4d4bf",
@@ -3200,14 +3200,14 @@
       "before": "git-sha1:5cf1fc481910d1cb0a6b4f6dbad8a9dd6363659d"
     },
     "uk/cart.html": {
-      "sha256": "e8f7fb5c1f60d5fa1a3e1cc126b5745e6b53cd044580ed2102e8d68e0db7df8f",
-      "bytes": 20065,
-      "before": "git-sha1:13311c516d17deeb12fb6662193ea4f5cee5ab1c"
+      "sha256": "6566efd0d03634658ec88fbce0b3efa376482c88133ce5c1f4ffcc9a034629bc",
+      "bytes": 20082,
+      "before": "e8f7fb5c1f60d5fa1a3e1cc126b5745e6b53cd044580ed2102e8d68e0db7df8f"
     },
     "uk/checkout.html": {
-      "sha256": "47915242b87031374628e2644414976f8c0bde3669558dee81a85a40d8ffb865",
-      "bytes": 27325,
-      "before": "git-sha1:4bcbdce36cf8c25bebc8e82f20858bcb4dfac6f0"
+      "sha256": "f37de29a96cec2e2eaa3fe0ce7996a38c2ce64c98d22e8db03edeec56831454b",
+      "bytes": 27342,
+      "before": "47915242b87031374628e2644414976f8c0bde3669558dee81a85a40d8ffb865"
     },
     "uk/child-safety.html": {
       "sha256": "ef93429259c55a2fcd0f5d5e18c1c6c57c1d15715573c968a7002b46545a0e9f",
@@ -3215,14 +3215,14 @@
       "before": "git-sha1:f86729a87044c5a4e607ba6253798dd38ac73a90"
     },
     "uk/demo.html": {
-      "sha256": "5306de1baef815a26cec7945b4af632ed60effbe7c0df47e02becff3a3332fb8",
-      "bytes": 11913,
-      "before": "git-sha1:0abc53b337c8d5b8f5941b53e6d614d37b84a5ce"
+      "sha256": "52054c8ad5dc8a892f66b7e3bd5f671e64ceb8e0b38d333f4ed4e70e49cc48df",
+      "bytes": 11923,
+      "before": "5306de1baef815a26cec7945b4af632ed60effbe7c0df47e02becff3a3332fb8"
     },
     "uk/index.html": {
-      "sha256": "49c01b7275303f405fe33e70c5a88f39fe280e2f3fdd67e1903defd3c3f70cb7",
-      "bytes": 19038,
-      "before": "14174790654830efcdb0f4c6095819c8f4570278c3f0149636b91915df3ed37d"
+      "sha256": "4fd5bf09d4559bd675abd7af95528c19c6efa34f3723c66ade2fc88dc67d1db3",
+      "bytes": 19053,
+      "before": "49c01b7275303f405fe33e70c5a88f39fe280e2f3fdd67e1903defd3c3f70cb7"
     },
     "uk/legal.html": {
       "sha256": "9d053e264a417bb705c00f1d4dbc044be9a0d872f2fb896e22b6df23316992b8",
@@ -3235,9 +3235,9 @@
       "before": "git-sha1:a955145531fbb71dd4968c9b93760989868a81ed"
     },
     "uk/product.html": {
-      "sha256": "c3a62ddc5101ebfaaffde207f8cb443839c837ffe495034fd484b04890c2c026",
-      "bytes": 14798,
-      "before": "git-sha1:a7b20c519bb657b0509105ed82da801b234ab893"
+      "sha256": "03be49fece8eec24f3b60bab0a5db1495ca0dbb16c5176823a71b064faace54b",
+      "bytes": 14808,
+      "before": "c3a62ddc5101ebfaaffde207f8cb443839c837ffe495034fd484b04890c2c026"
     },
     "uk/support.html": {
       "sha256": "65ba4d18643d293fb64824a7aea0be08c792595c325d33f19a2bafc137a6a055",
@@ -3265,14 +3265,14 @@
       "before": "git-sha1:42246138ad7e8ec779804fa2aaf34937c35666c3"
     },
     "ur/cart.html": {
-      "sha256": "357db14dcacd9baf64cfa5cf41236ad37bfa9c9bb7d39740ace4d6960f62e62b",
-      "bytes": 19511,
-      "before": "git-sha1:57991b0f1ea5622adfc783d727dcd62d9675a7e2"
+      "sha256": "10858f5b1a64c557d3f483284474e6015cc2ef3eb09165f27d31f577d944ee0b",
+      "bytes": 19528,
+      "before": "357db14dcacd9baf64cfa5cf41236ad37bfa9c9bb7d39740ace4d6960f62e62b"
     },
     "ur/checkout.html": {
-      "sha256": "5fd6b8406186559d25c52360925dd7334ed8a78309fb3f4d5d2c44cf9f05f336",
-      "bytes": 26432,
-      "before": "git-sha1:fc9aa9cb243b960f4740718116eddeb78bf4d27d"
+      "sha256": "71c3d59d6b7a2c22c01be4c295e2c8559a855f4ed4b3377e42ab86e191dda5b0",
+      "bytes": 26449,
+      "before": "5fd6b8406186559d25c52360925dd7334ed8a78309fb3f4d5d2c44cf9f05f336"
     },
     "ur/child-safety.html": {
       "sha256": "8367dc9d46c24ecb2c4ccc5e8b00ea5dab0ab2735d85fd0ede3ddbd29be542d4",
@@ -3280,14 +3280,14 @@
       "before": "git-sha1:995e17b5e1419cb019556eb1b764917773c438db"
     },
     "ur/demo.html": {
-      "sha256": "2c919fcc99ac95bb11f7c812d470815c08266813502cc93633f9cdaecc2c8e54",
-      "bytes": 11551,
-      "before": "git-sha1:011304bdc8369e099abefd697d272619208fd624"
+      "sha256": "78df3b12970fbffc0b65c7b87fe31070043ea0284d2a824d9ce449e449df6112",
+      "bytes": 11561,
+      "before": "2c919fcc99ac95bb11f7c812d470815c08266813502cc93633f9cdaecc2c8e54"
     },
     "ur/index.html": {
-      "sha256": "b0a866051b840f29cfddb1611e3bb6a42d204eae692521ead472d17b353185d2",
-      "bytes": 18378,
-      "before": "f5ba9d44bbfe5a2cf8bbbd1c9dc7bf5a0a5eb9e66f363b0b5507b306b8d3adc6"
+      "sha256": "5f0c91ff0007796c7ae06315b8ade9c1dc59d68abfb651b55f5b7b6ac05e200b",
+      "bytes": 18393,
+      "before": "b0a866051b840f29cfddb1611e3bb6a42d204eae692521ead472d17b353185d2"
     },
     "ur/legal.html": {
       "sha256": "b8d62fd9d4ec0f4a98a6c64451f00444723d67ee957afefbcda25e6bea360570",
@@ -3300,9 +3300,9 @@
       "before": "git-sha1:a706da7b4d123e59c97f641f9c46fcd5a8fb3914"
     },
     "ur/product.html": {
-      "sha256": "7d1bd7532ecb65de3073c060f6f7a5c09bf772e441bdb5eb357511778212c24b",
-      "bytes": 14239,
-      "before": "git-sha1:1fe976015ac077892bc46546dedbc83c8892b3c9"
+      "sha256": "2070c262746c591a289f0e197200fa92bcbaea564c13e3ed47f06fefaba2664c",
+      "bytes": 14249,
+      "before": "7d1bd7532ecb65de3073c060f6f7a5c09bf772e441bdb5eb357511778212c24b"
     },
     "ur/support.html": {
       "sha256": "086069f91e82e0d6081014aebb2963cd40a62c004fda631a307129802d17fc8c",
@@ -3330,14 +3330,14 @@
       "before": "git-sha1:65664e6db002e816de8f8b66f751c1c9b82611b0"
     },
     "zh/cart.html": {
-      "sha256": "bf5e81a93b56b1e70875828742c4f526f60c9008849faab2d4486c2bb5a86d53",
-      "bytes": 17907,
-      "before": "git-sha1:8145b04386d5f18221af92962961c13c3e134a95"
+      "sha256": "d732d655c9c3ffe7de58e392d7e38ea6b41a2fd8e045db5db557fa421b124052",
+      "bytes": 17924,
+      "before": "bf5e81a93b56b1e70875828742c4f526f60c9008849faab2d4486c2bb5a86d53"
     },
     "zh/checkout.html": {
-      "sha256": "fbe14e18e2d5b27643a20ed7fc47e170c35b228fa3fa692e06932f30c2eb8b49",
-      "bytes": 23001,
-      "before": "git-sha1:d0334e04097dedcec7db896ffd4f614ceb758881"
+      "sha256": "1a3df94a66a36fd76a47e67b687775f4b546c49775c721a3628f5620bcf193fb",
+      "bytes": 23018,
+      "before": "fbe14e18e2d5b27643a20ed7fc47e170c35b228fa3fa692e06932f30c2eb8b49"
     },
     "zh/child-safety.html": {
       "sha256": "d627a09133eeb004a9149a16d64b731812195324d63e555ed912055120e5a6e1",
@@ -3345,14 +3345,14 @@
       "before": "git-sha1:c99cdf5b1f3add52c0b993067192e79318d56a7b"
     },
     "zh/demo.html": {
-      "sha256": "2281e6bebead2ee0f9954834fbfe58af56f98d8ac3e1edc30e7306950e9ee836",
-      "bytes": 10689,
-      "before": "git-sha1:f55eda6618c49af8ce0356f3079b378ba93617a2"
+      "sha256": "e1bdf20d2d0bb272db366ba2c175899a55a5dab48fd5d86c0d82ceda3311f20b",
+      "bytes": 10699,
+      "before": "2281e6bebead2ee0f9954834fbfe58af56f98d8ac3e1edc30e7306950e9ee836"
     },
     "zh/index.html": {
-      "sha256": "af31a4a9b6489633fdfe775012a500c5e2e5a3c034d3d909973f2a57817d1957",
-      "bytes": 16494,
-      "before": "4728c9c8c26c8faa6c5a38231eb0237520c9d67a81b83bd4bd808675fdd948f9"
+      "sha256": "97b6b130e5cb1e89915a6189e844e96eb7f5c7bec67dc5f44473e9cd4c36a0c9",
+      "bytes": 16509,
+      "before": "af31a4a9b6489633fdfe775012a500c5e2e5a3c034d3d909973f2a57817d1957"
     },
     "zh/legal.html": {
       "sha256": "f3756dc6be7aea077cde03d7b0cccccfd137ff1caf745a8c08411384cf6d57e2",
@@ -3365,9 +3365,9 @@
       "before": "git-sha1:0643ff47d665dd519edceac93d83df7ceeb7608b"
     },
     "zh/product.html": {
-      "sha256": "e1d620558c4f9e2d35eec8051f9ef0b4d4209a5907c1c5373d982b6ad642a38c",
-      "bytes": 12557,
-      "before": "git-sha1:867c995e739dbe38f94bccebaf91530c51056f39"
+      "sha256": "29a4cfe9667cc84e447b15d79db6950500c94c449d319e7695cd7f64b12f5f00",
+      "bytes": 12567,
+      "before": "e1d620558c4f9e2d35eec8051f9ef0b4d4209a5907c1c5373d982b6ad642a38c"
     },
     "zh/support.html": {
       "sha256": "c0046b72d8e81fbdc49c1d6d3e01582247cc72be38bc99663f351901dee70b11",
@@ -3388,6 +3388,11 @@
       "sha256": "d27398713137b2d2b29d9c0bd4846d6ba96cbbab0da1fa274787b60822210011",
       "bytes": 3293,
       "before": "git-sha1:41383592349218ac342cf786e52aad6cee4e7fcc"
+    },
+    "assets/arabic-workbook-cover-approved.jpg": {
+      "before": null,
+      "sha256": "ebd1e106f784f1fe235521ab603dc79d988a8bc04f906f0b333a0f0ce71e4ea2",
+      "bytes": 615405
     }
   }
 }
