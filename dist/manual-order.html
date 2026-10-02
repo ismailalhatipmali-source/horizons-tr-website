@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HORIZONS · Manual order</title>
+<link rel="icon" href="assets/horizons-symbol.svg">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="manual-order.css">
+<script defer src="manual-order.js"></script>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+<a class="brand" href="./"><img src="assets/horizons-logo-approved.png" alt="HORIZONS"></a>
+<a class="button ghost" id="back-link" href="travel-kit.html">Back to product</a>
+</div></header>
+<main class="manual-order-main">
+<div class="wrap manual-order-grid">
+<section class="manual-order-card">
+<span class="kicker">HORIZONS · MANUAL ORDER</span>
+<h1 id="title">Travel Agent Templates & Client Kit</h1>
+<p class="manual-order-note" id="note">Your details are sent privately to HORIZONS. No payment is charged on this page. We will contact you by email to confirm payment, then send the download link manually after payment verification.</p>
+<form id="manual-order-form" novalidate>
+<div class="manual-fields">
+<label><span data-k="first_name">First name</span><input name="first_name" maxlength="100" autocomplete="given-name" required></label>
+<label><span data-k="last_name">Last name</span><input name="last_name" maxlength="100" autocomplete="family-name" required></label>
+<label><span data-k="email">Email</span><input name="email" type="email" maxlength="254" autocomplete="email" required></label>
+<label><span data-k="email_confirm">Confirm email</span><input name="email_confirm" type="email" maxlength="254" autocomplete="email" required></label>
+<label><span data-k="phone">Phone number</span><input name="phone" type="tel" maxlength="40" autocomplete="tel" required></label>
+<label><span data-k="country">Country</span><input name="country" maxlength="100" autocomplete="country-name" required></label>
+<label><span data-k="city">City</span><input name="city" maxlength="100" autocomplete="address-level2" required></label>
+<label><span data-k="billing">Invoice type</span><select name="billing"><option value="individual" data-k="individual">Individual</option><option value="company" data-k="company">Company</option></select></label>
+</div>
+<div class="manual-company" data-company hidden>
+<label><span data-k="company_name">Company name</span><input name="company_name" maxlength="200" autocomplete="organization"></label>
+<label><span data-k="tax_number">Tax number</span><input name="tax_id" maxlength="64"></label>
+<label><span data-k="tax_office">Tax office</span><input name="tax_office" maxlength="100"></label>
+</div>
+<p class="privacy-note" data-k="data_note">Your contact and invoice details are sent privately to HORIZONS for order review.</p>
+<label class="manual-consent"><input name="terms" type="checkbox" required><span data-k="terms_consent">I accept the sales terms.</span></label>
+<label class="manual-consent"><input name="privacy" type="checkbox" required><span data-k="privacy_consent">I have read the privacy notice.</span></label>
+<div class="manual-links"><a id="sales-link" href="en/distance-sales.html" target="_blank" rel="noopener" data-k="sales_title">Distance sales agreement</a><a id="privacy-link" href="en/checkout-privacy.html" target="_blank" rel="noopener" data-k="privacy_title">Privacy</a></div>
+<button class="button manual-submit" type="submit" data-k="submit">Send order request</button>
+<p id="form-status" class="manual-status" role="status" aria-live="polite"></p>
+</form>
+<section id="success" class="manual-success" hidden tabindex="-1">
+<h2>✓ HORIZONS</h2>
+<p data-k="saved">Your order request is recorded.</p>
+<p><strong data-k="reference">Order reference</strong><br><bdi id="reference" class="manual-reference"></bdi></p>
+<p id="success-extra">No payment was charged on this page. HORIZONS will contact you by email with the next step.</p>
+</section>
+</section>
+<aside class="manual-summary">
+<img id="cover" src="assets/covers/en/travel-kit.svg" alt="">
+<div class="manual-price"><span data-k="total">Total</span><strong>$29 USD</strong></div>
+<ul><li>40 reusable document pages</li><li>10 operations workbook sheets</li><li>12 client email scripts</li><li>One-business licence</li></ul>
+</aside>
+</div>
+</main>
+<footer class="footer"><div class="wrap footer-bottom"><span>© 2026 HORIZONS</span><a href="mailto:support@horizons-tr.com">support@horizons-tr.com</a></div></footer>
+</body>
+</html>
