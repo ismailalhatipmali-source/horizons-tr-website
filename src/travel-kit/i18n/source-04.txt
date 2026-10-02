@@ -1,0 +1,47 @@
+<<<HZN0436>>> Use the Overview warning count and each table’s Data check column to fix duplicates, missing inputs and invalid references. Invalid records are excluded from monetary totals. Prepared capacity is 100 trips, 200 installments and 300 receipts. The other limits are 100 inquiries/suppliers and 200 income/expense/task records. Start a new workbook when full; formulas do not automatically extend beyond these limits.
+<<<HZN0437>>> Follow the worked example
+<<<HZN0438>>> TR-001 has a total of USD 5,600. The three installments are 1,400, 1,960 and 2,240. Receipts of 1,400 and 500 give net client funds of 1,900. The remaining balance is 3,700. On 18 March 2027, only 1,460 is overdue; the final 2,240 is due on 20 April.
+<<<HZN0439>>> Expected commissions are calculated separately: 2,350 × 10% × 80% = 188, and 550 × 12% × 80% = 52.80. Total expected commission is 240.80. A separate planning fee of 300 gives expected agency income of 540.80. These expected amounts are not automatically treated as received.
+<<<HZN0440>>> Try this in a disposable copy: change the partial receipt from 500 to 1,000. The trip balance becomes 3,200 and the overdue installment becomes 960. Restore the value afterward. A fully paid trip can still need document, insurance, supplier or manual release checks.
+<<<HZN0441>>> Refunds, changes and corrections
+<<<HZN0442>>> For a refund, add a new receipt ID, the actual refund date, the original installment reference and a negative amount. Preserve the original receipt. A refund of 300 against the sample second installment reduces net receipts to 1,600 and increases the remaining trip balance to 4,000 while the approved price stays unchanged.
+<<<HZN0443>>> Cancellation status alone does not calculate a refund or erase the balance. Record the agreed cancellation outcome in page 20. Update the trip total and installment schedule to the documented settlement, then record money actually returned as negative receipts. Check the schedule difference returns to zero. Never infer supplier terms from this template.
+<<<HZN0444>>> If an ID is duplicated or an installment is invalid, the affected receipts are excluded until corrected. Resolve the warning rather than overwriting a calculated total. For a genuine duplicate entry, remove only the erroneous input row’s values and preserve its formulas. Keep evidence of corrections in your business records.
+<<<HZN0445>>> Client delivery and compatibility
+<<<HZN0446>>> Before delivery, complete page 38 and review the exported PDF. Confirm names, dates, currency, price version, payment schedule, supplier references and support contacts. Remove fictional data and internal pages. Send finished client PDFs; keep editable files and income records inside the licensed business.
+<<<HZN0447>>> Use a desktop Chromium-based browser for the HTML editor. Save/reopen, text overflow and PDF output were tested in Chromium. The XLSX files use standard formulas. All ten delivered workbooks were independently recalculated in LibreOffice; Microsoft Excel was not directly tested. Google Sheets, mobile editing and cloud collaboration are not included. Keep formulas intact and use your spreadsheet application’s recalculation setting.
+<<<HZN0448>>> The 12 email scripts are text you customise and send yourself. Replace every double-brace field before sending. This kit does not book travel, send messages or synchronise supplier systems. For a file problem, contact the seller through your Etsy order and describe the filename and issue without sending sensitive client data.
+<<<HZN0449>>> 01 — Your journey, organised.
+<<<HZN0450>>> 02 — Welcome to your next trip
+<<<HZN0451>>> 03 — How we work together
+<<<HZN0452>>> 04 — Client trip brief
+<<<HZN0453>>> 05 — Traveler details
+<<<HZN0454>>> 06 — Discovery conversation [INTERNAL WORKING FILE]
+<<<HZN0455>>> 07 — Priorities and trade-offs
+<<<HZN0456>>> 08 — Budget boundaries
+<<<HZN0457>>> 09 — Your travel proposal
+<<<HZN0458>>> 10 — The trip at a glance
+<<<HZN0459>>> 11 — Accommodation comparison
+<<<HZN0460>>> 12 — Accommodation brief
+<<<HZN0461>>> 13 — Flight options
+<<<HZN0462>>> 14 — Compare the full offers
+<<<HZN0463>>> 15 — Price breakdown
+<<<HZN0464>>> 16 — Included and not included
+<<<HZN0465>>> 17 — Client approval record
+<<<HZN0466>>> 18 — Payment schedule
+<<<HZN0467>>> 19 — Booking confirmation log
+<<<HZN0468>>> 20 — Change request record
+<<<HZN0469>>> 21 — Final travel file
+<<<HZN0470>>> 22 — Day-by-day overview
+<<<HZN0471>>> 23 — Daily itinerary
+<<<HZN0472>>> 24 — Transfer details
+<<<HZN0473>>> 25 — Experience details
+<<<HZN0474>>> 26 — Dining reservations
+<<<HZN0475>>> 27 — Destination essentials
+<<<HZN0476>>> 28 — Packing for this trip
+<<<HZN0477>>> 29 — Travel document checklist
+<<<HZN0478>>> 30 — Entry requirements log
+<<<HZN0479>>> 31 — Insurance decision record
+<<<HZN0480>>> 32 — Before departure
+<<<HZN0481>>> 33 — Help and contacts
+<<<HZN0482>>> 34 — On-trip issue record [INTERNAL WORKING FILE]
