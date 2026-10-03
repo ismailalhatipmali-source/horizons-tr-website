@@ -4,6 +4,7 @@
  * learner save, export, import and sync paths retain them.
  */
 const PHONICS_DATA = /*PHONICS_DATA*/;
+const PHONICS_OUTLINES = /*PHONICS_OUTLINES*/;
 const PHONICS_KEYS=['alif','baa','taa','thaa','jiim','haa','khaa','daal','dhaal','raa','zaay','siin','shiin','saad','daad','taa_emphatic','dhaa_emphatic','ayn','ghayn','faa','qaaf','kaaf','laam','miim','nuun','haa_breath','waaw','yaa'];
 const PHONICS_GLYPHS=['ا','ب','ت','ث','ج','ح','خ','د','ذ','ر','ز','س','ش','ص','ض','ط','ظ','ع','غ','ف','ق','ك','ل','م','ن','ه','و','ي'];
 const PHONICS_NAMES=['ألف','باء','تاء','ثاء','جيم','حاء','خاء','دال','ذال','راء','زاي','سين','شين','صاد','ضاد','طاء','ظاء','عين','غين','فاء','قاف','كاف','لام','ميم','نون','هاء','واو','ياء'];
@@ -22,6 +23,8 @@ const pShuffle=items=>{const out=[...items];for(let i=out.length-1;i>0;i--){cons
 let phonicsOpen=false,phonicsMode='learn',phonicsLetter=1,phonicsStage='length',phonicsFocus='all',phonicsSession=null,phonicsSessionOwner=null;
 let phonicsAudio=new Audio(),phonicsToken=0,phonicsTimer=0,phonicsPlaying=false;
 const originalPhonicsStop=stop,originalPhonicsRender=render,originalPhonicsNav=nav,originalPhonicsSetLearner=setLearner;
+const originalPhonicsTypography=applyTypography;
+applyTypography=function(options={}){originalPhonicsTypography(options);$$('[data-p-glyph]').forEach(host=>{const item=PHONICS_BY_ID.get(host.dataset.pGlyph);if(item)host.innerHTML=pGlyphVisual(item);});};
 stop=function(){phonicsToken++;clearTimeout(phonicsTimer);phonicsAudio.onended=null;phonicsAudio.onerror=null;phonicsAudio.pause();try{phonicsAudio.currentTime=0}catch{}phonicsPlaying=false;$$('[data-p-audio],[data-p-pair],[data-p-question],[data-p-compare]').forEach(b=>{b.classList.remove('playing');b.setAttribute('aria-pressed','false')});originalPhonicsStop();};
 setLearner=function(profile){phonicsOpen=false;phonicsSession=null;phonicsMode='learn';phonicsFocus='all';stop();return originalPhonicsSetLearner(profile);};
 nav=function(changes){phonicsOpen=false;phonicsSession=null;return originalPhonicsNav(changes);};
@@ -32,16 +35,20 @@ function mountPhonicsNav(){
  host.querySelectorAll('[data-p-course]').forEach(button=>button.onclick=()=>{if(button.dataset.pCourse==='phonics'){stop();if(state.course==='lesson')state.bookmarks[state.chapter]=bookmark();phonicsOpen=true;render();}else nav({course:button.dataset.pCourse});});
 }
 function pLabel(item){return item.text+' · '+pt(item.vowel)+' · '+pt(item.length==='short'?'short':'long');}
-/* All SVG character runs share font, baseline, bidi direction and positioning.
- * Fill-only tspans retain the full Arabic shaping context: no isolated marks,
- * inserted spaces, per-letter x positions or presentation-form substitutions.
- * An identical unsegmented base text under the colour layer guarantees a joined
- * silhouette, including the lam-alif ligature. Screen readers get the full text.
+/* Shape each whole syllable once during the build, using the five bundled fonts.
+ * Paint each resulting glyph outline once at its font-defined position. Splitting
+ * combining marks into browser text runs caused the old duplicate/misaligned
+ * marks. Paths retain both Arabic joining and mark placement across browsers.
+ * Keep the exact Unicode syllable in the accessible label and rebuild only the
+ * visible outlines when the learner changes the reading font.
  */
+function pGlyphVisual(item){
+ const fonts=PHONICS_OUTLINES.glyphs[item.id],shape=fonts[typographyFont().id]??fonts['noto-naskh'];
+ const paths=shape.paths.map(path=>`<path fill="var(--phonics-${esc(path.color)})" d="${esc(path.d)}"/>`).join('');
+ return `<svg viewBox="${PHONICS_OUTLINES.view_box}" aria-hidden="true" focusable="false"><g transform="${esc(shape.transform)}">${paths}</g></svg>${item.length==='long'?'<i class="phonics-madd-line" aria-hidden="true"></i>':''}`;
+}
 function pGlyph(item,compact=false){
- const chars=Array.from(item.text);let lastBase=-1;for(let i=0;i<chars.length;i++)if(!/\p{M}/u.test(chars[i]))lastBase=i;
- const coloured=chars.map((c,i)=>`<tspan fill="${/\p{M}/u.test(c)?'var(--phonics-'+item.vowel+')':item.length==='long'&&i===lastBase?'var(--phonics-madd)':'transparent'}">${esc(c)}</tspan>`).join('');
- return `<span class="phonics-glyph ${compact?'compact':''}" role="img" aria-label="${esc(pLabel(item))}" lang="ar"><svg viewBox="0 0 340 180" aria-hidden="true" focusable="false"><text x="170" y="122" text-anchor="middle" direction="rtl" lang="ar" fill="var(--phonics-ink)">${esc(item.text)}</text><text x="170" y="122" text-anchor="middle" direction="rtl" lang="ar">${coloured}</text></svg>${item.length==='long'?'<i class="phonics-madd-line" aria-hidden="true"></i>':''}</span>`;
+ return `<span class="phonics-glyph ${compact?'compact':''}" data-p-glyph="${esc(item.id)}" role="img" aria-label="${esc(pLabel(item))}" lang="ar">${pGlyphVisual(item)}</span>`;
 }
 function pSound(item,css='secondary'){return `<button type="button" class="${css} sound" data-p-audio="${esc(item.id)}" aria-label="${esc(pt('listen')+' '+pLabel(item))}" aria-pressed="false">${SPEAKER}${esc(pt('listen'))}</button>`;}
 function pLetterName(i){return alphabet.letters.find(l=>l.id==='alphabet.'+PHONICS_KEYS[i])?.spokenNameText??PHONICS_NAMES[i];}

@@ -62,6 +62,11 @@ try{
     if(substr_count($original,$tail)!==1)throw new RuntimeException('APPLICATION_HOOK_NOT_FOUND');
     $extension=file_get_contents(pp($repo,'src/phonics/phonics-extension.js'));
     if(substr_count($extension,'/*PHONICS_DATA*/')!==1)throw new RuntimeException('EXTENSION_DATA_INVALID');
+    if(substr_count($extension,'/*PHONICS_OUTLINES*/')!==1)throw new RuntimeException('EXTENSION_GLYPHS_INVALID');
+    $outlines=file_get_contents(pp($assets,'glyphs.json'));
+    $glyphs=json_decode($outlines,true,32,JSON_THROW_ON_ERROR);
+    if(($glyphs['schema_version']??null)!==1||count($glyphs['glyphs']??[])!==168||count($glyphs['font_ids']??[])!==5)throw new RuntimeException('EXTENSION_GLYPHS_INVALID');
+    $extension=str_replace('/*PHONICS_OUTLINES*/',json_encode($glyphs,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_THROW_ON_ERROR),$extension);
     $css=file_get_contents(pp($repo,'src/phonics/phonics.css'));
     $rows=[];$payloads=[];$seen=[];
     foreach($release['audio'] as $item){
@@ -91,9 +96,10 @@ try{
     foreach(['all'] as $group){if(!isset($manifest['groups'][$group]))throw new RuntimeException('MANIFEST_GROUP_REQUIRED');$manifest['groups'][$group]=array_values(array_unique(array_merge($manifest['groups'][$group],$paths)));sort($manifest['groups'][$group]);}
     $manifest['groups']['phonics']=$paths;sort($manifest['groups']['phonics']);
     $manifest['phonics_release']='phonics-20261003';
+    $manifest['phonics_visual_release']='phonics-glyphs-20261003-r2';
     $swPath=pp($learn,'sw.js');$sw=file_get_contents($swPath);
-    $suffix="const SHELL = 'hzn-web-shell-' + VERSION + '-phonics-20261003';";
-    $replace=["const SHELL = 'hzn-web-shell-' + VERSION;","const SHELL = 'hzn-web-shell-' + VERSION + '-thaa-20261003';",$suffix];
+    $suffix="const SHELL = 'hzn-web-shell-' + VERSION + '-phonics-20261003-r2';";
+    $replace=["const SHELL = 'hzn-web-shell-' + VERSION;","const SHELL = 'hzn-web-shell-' + VERSION + '-thaa-20261003';","const SHELL = 'hzn-web-shell-' + VERSION + '-phonics-20261003';",$suffix];
     $matches=0;foreach($replace as $marker)$matches+=substr_count($sw,$marker);
     if($matches!==1)throw new RuntimeException('UNKNOWN_WORKER');
     $sw=str_replace($replace,$suffix,$sw);

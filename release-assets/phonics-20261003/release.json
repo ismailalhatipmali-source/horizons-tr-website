@@ -1,6 +1,7 @@
 {
   "schema": 1,
   "patch": "phonics-20261003",
+  "visual_revision": "phonics-glyphs-20261003-r2",
   "audio": [
     {
       "id": "phonics.alif.fatha.short",
@@ -1684,8 +1685,9 @@
     }
   ],
   "sources": {
-    "src/phonics/phonics-extension.js": "9104fac64da375c5465cc02830be1c26c885ae1bea8d1fb156ef9964fa6feb3f",
-    "src/phonics/phonics.css": "d20141f5c02d9c992a219f881e34cdc16cbdd3507f3ec139fc8e42a01ed2dd01",
-    "release-assets/phonics-20261003/audio-manifest.json": "ccaae6f4ac116e295513bbec61f9fca284c7d2e3b6d5b1c6e7a00488e3fe1a30"
+    "src/phonics/phonics-extension.js": "d1235758919f71325c2dcbf4bdc86f515be74b62b00a9dbb918b47b737324e21",
+    "src/phonics/phonics.css": "c4a5b7830b495cbdae5b15271802f754df7e3142fad1bb0775d39ebb46af8e3f",
+    "release-assets/phonics-20261003/audio-manifest.json": "ccaae6f4ac116e295513bbec61f9fca284c7d2e3b6d5b1c6e7a00488e3fe1a30",
+    "release-assets/phonics-20261003/glyphs.json": "2b0316a43fbcd893c1dcc6349af8062e74a869d367790e5696b7f455d50b2444"
   }
 }
