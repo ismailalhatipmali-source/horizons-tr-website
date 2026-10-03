@@ -13,12 +13,20 @@ function hznBlending2Path(string $root, string $relative): string {
     return $path;
 }
 function hznBlending2SupersedingState(string $web): ?array {
+    // A later localizer may update only the encrypted player and cache suffix.
+    // Validate that private receipt before accepting its inherited audio pins.
+    $meaningBridge = __DIR__ . '/meaning-preservation.php';
+    $meaningState = null;
+    if (is_file($meaningBridge)) {
+        require_once $meaningBridge;
+        $meaningState = hznMeaningSupersedingState($web);
+    } elseif (is_file(dirname($web) . '/.horizons-meaning/receipt.json')) throw new RuntimeException('MEANING_BRIDGE_REQUIRED');
     $home = dirname($web); $state = hznBlending2Path($home, '.horizons-blending2');
     $receiptPath = hznBlending2Path($state, 'receipt.json');
     if (!is_file($receiptPath)) return null;
     $real = realpath($receiptPath);
     if (!$real || dirname($real) !== $state || !str_starts_with($real, $home . '/') || str_starts_with($real, $web . '/') || filesize($real) > 262144) throw new RuntimeException('PRIVATE_RECEIPT_REQUIRED');
-    $receipt = json_decode(file_get_contents($real), true, 16, JSON_THROW_ON_ERROR);
+    $receipt = $meaningState['receipt'] ?? json_decode(file_get_contents($real), true, 16, JSON_THROW_ON_ERROR);
     if (!is_array($receipt) || ($receipt['schema'] ?? null) !== 1 || ($receipt['patch'] ?? '') !== 'blending2-20261003' || ($receipt['closed_count'] ?? null) !== 250 || ($receipt['open_count'] ?? null) !== 81 || !preg_match('/^[a-f0-9]{64}$/D', $receipt['release_sha256'] ?? '') || !is_array($receipt['hashes'] ?? null) || count($receipt['hashes']) !== 253) throw new RuntimeException('SUPERSEDING_RECEIPT_INVALID');
     $learn = hznBlending2Path($web, 'learn');
     foreach (['asset-manifest.json', 'sw.js'] as $name) {
@@ -29,7 +37,8 @@ function hznBlending2SupersedingState(string $web): ?array {
     $manifest = json_decode(file_get_contents(hznBlending2Path($learn, 'asset-manifest.json')), true, 32, JSON_THROW_ON_ERROR);
     if (($manifest['product'] ?? '') !== 'horizons-arabic-level1' || ($manifest['version'] ?? '') !== '1.4.6' || ($manifest['content_versions'] ?? []) !== ['1.4.0', '1.4.1'] || ($manifest['phonics_release'] ?? '') !== 'phonics-20261003' || ($manifest['phonics_visual_release'] ?? '') !== 'phonics-glyphs-20261003-r2' || ($manifest['blending2_release'] ?? '') !== 'blending2-20261003' || ($manifest['blending2_closed_count'] ?? null) !== 250 || ($manifest['blending2_open_count'] ?? null) !== 81) throw new RuntimeException('SUPERSEDING_MANIFEST_INVALID');
     $worker = file_get_contents(hznBlending2Path($learn, 'sw.js'));
-    if (substr_count($worker, "const SHELL = 'hzn-web-shell-' + VERSION + '-blending2-20261003';") !== 1) throw new RuntimeException('SUPERSEDING_WORKER_INVALID');
+    $suffix = $meaningState === null ? 'blending2-20261003' : 'meanings-20261003-r1';
+    if (substr_count($worker, "const SHELL = 'hzn-web-shell-' + VERSION + '-" . $suffix . "';") !== 1) throw new RuntimeException('SUPERSEDING_WORKER_INVALID');
     $closed = []; $opened = [];
     foreach ($manifest['groups']['blending2'] ?? [] as $path) {
         if (preg_match('~^course/audio/blending2/blend2\.closed\.[a-z_]+\.(?:fatha|damma|kasra)\.[a-z_]+\.mp3$~D', $path)) $closed[] = $path;
