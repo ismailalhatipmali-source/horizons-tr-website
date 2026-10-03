@@ -44,6 +44,14 @@ try {
     $url='content/1.4.1/'.$path.'.hzn';$target=checkedPath($learn,$url);
     $cipher=is_file($target)?file_get_contents($target):'';$aad=$product.'/'.$path;
     $decoded=strlen($cipher)>28?openssl_decrypt(substr($cipher,12,-16),'aes-256-gcm',$key,OPENSSL_RAW_DATA,substr($cipher,0,12),substr($cipher,-16),$aad):false;
+    require_once __DIR__.'/blending2-preservation.php';
+    $blending2State=hznBlending2SupersedingState($web);
+    if($blending2State!==null) {
+        $current=$manifest['files'][$path]??[];
+        if($decoded!==$plain||$current!==['url'=>$url,'sha256'=>hash('sha256',$cipher),'bytes'=>strlen($cipher),'mime'=>'audio/mpeg']) throw new RuntimeException('SUPERSEDED_THAA_CHANGED');
+        echo "OK: THAA_AUDIO_PATCH; 0 files updated; verified newer blending2 release preserved.\n";
+        return;
+    }
     if($decoded!==$plain) {
         $nonce=random_bytes(12);$tag='';
         $body=openssl_encrypt($plain,'aes-256-gcm',$key,OPENSSL_RAW_DATA,$nonce,$tag,$aad,16);

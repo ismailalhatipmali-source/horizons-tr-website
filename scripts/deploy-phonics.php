@@ -41,6 +41,8 @@ try{
     foreach($release['sources']??[] as $path=>$sha){if(!preg_match('/^[a-f0-9]{64}$/',$sha)||hash_file('sha256',pp($repo,$path))!==$sha)throw new RuntimeException('SOURCE_CHECKSUM_FAILED');}
     $manifestPath=pp($learn,'asset-manifest.json');$manifest=json_decode(file_get_contents($manifestPath),true,32,JSON_THROW_ON_ERROR);
     if(($manifest['version']??'')!=='1.4.6'||($manifest['product']??'')!==$product||($manifest['content_versions']??[])!==['1.4.0','1.4.1'])throw new RuntimeException('WORKBOOK_UPDATE_REQUIRED');
+    require_once __DIR__.'/blending2-preservation.php';
+    $blending2State=hznBlending2SupersedingState($web);
     $receiptPath=pp($private,'receipt.json');$receipt=is_file($receiptPath)?json_decode(file_get_contents($receiptPath),true,32,JSON_THROW_ON_ERROR):null;
     $workPath='workbook.js';$entry=$manifest['files'][$workPath]??null;
     if(!$entry||!in_array($entry['url'],['content/1.4.0/workbook.js.hzn','content/1.4.1/workbook.js.hzn'],true))throw new RuntimeException('UNKNOWN_APPLICATION');
@@ -48,14 +50,16 @@ try{
     // Pin the original ciphertext to the previous released manifest. On retries
     // accept only the exact application recorded by our last completed publish.
     $baseline=json_decode(file_get_contents(pp($repo,'release-assets/1.4.6/files/learn/asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);
-    if($entry['sha256']!==$baseline['files'][$workPath]['sha256']&&($receipt['hashes'][$entry['url']]??'')!==hash('sha256',$raw))throw new RuntimeException('APPLICATION_BASELINE_CHANGED');
+    if($blending2State===null&&$entry['sha256']!==$baseline['files'][$workPath]['sha256']&&($receipt['hashes'][$entry['url']]??'')!==hash('sha256',$raw))throw new RuntimeException('APPLICATION_BASELINE_CHANGED');
     $original=pdecode($raw,$key,$product.'/'.$workPath);
     if(($entry['encoding']??null)==='gzip'){$original=gzdecode($original,32*1024*1024);if($original===false||strlen($original)!==($entry['decoded_bytes']??-1))throw new RuntimeException('APPLICATION_ENCODING_INVALID');}
     elseif(isset($entry['encoding']))throw new RuntimeException('APPLICATION_ENCODING_INVALID');
     $begin="\n// HZN_PHONICS_20261003_BEGIN\n";$end="\n// HZN_PHONICS_20261003_END\n";
+    $installedPhonicsBlock=null;
     if(str_contains($original,$begin)){
         $start=strpos($original,$begin);$finish=strpos($original,$end,$start);
         if($finish===false||substr_count($original,$begin)!==1||substr_count($original,$end)!==1)throw new RuntimeException('EXTENSION_INVALID');
+        $installedPhonicsBlock=substr($original,$start,$finish+strlen($end)-$start);
         $original=substr($original,0,$start).substr($original,$finish+strlen($end));
     }
     $tail="\ninit();\n\n})();";
@@ -74,11 +78,21 @@ try{
         if(!preg_match('/^phonics\.[a-z_]+\.(fatha|damma|kasra)\.(short|long)$/',$id)||$path!=='course/audio/phonics/'.$id.'.mp3'||isset($seen[$id]))throw new RuntimeException('AUDIO_MAPPING_INVALID');
         $seen[$id]=true;$plain=file_get_contents(pp($assets,'audio/'.$id.'.mp3'));
         if(hash('sha256',$plain)!==($item['sha256']??''))throw new RuntimeException('AUDIO_CHECKSUM_FAILED');
+        if($blending2State!==null) {
+            $current=$manifest['files'][$path]??[];$url='content/1.4.1/'.$path.'.hzn';
+            $existing=file_get_contents(pp($learn,$url));
+            if($current!==['url'=>$url,'sha256'=>hash('sha256',$existing),'bytes'=>strlen($existing),'mime'=>'audio/mpeg']||pdecode($existing,$key,$product.'/'.$path)!==$plain)throw new RuntimeException('SUPERSEDED_PHONICS_CHANGED');
+        }
         $rows[]=['id'=>$id,'text'=>$item['text'],'path'=>$path,'letterKey'=>$item['letterKey'],'vowel'=>$item['vowel'],'length'=>$item['length'],'index'=>$item['index']];
         $payloads[$path]=[$plain,'audio/mpeg',false];
     }
     $extension=str_replace('/*PHONICS_DATA*/',json_encode($rows,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_THROW_ON_ERROR),$extension);
     $style="const phonicsStyle=document.createElement('style');phonicsStyle.textContent=".json_encode($css,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_THROW_ON_ERROR).";document.head.append(phonicsStyle);\n";
+    if($blending2State!==null) {
+        if($installedPhonicsBlock!==$begin.$style.$extension.$end)throw new RuntimeException('SUPERSEDED_PHONICS_CHANGED');
+        echo "OK: PHONICS_SECTION; 0 files updated; exact phonics layer and newer blending2 release preserved.\n";
+        return;
+    }
     $app=str_replace($tail,$begin.$style.$extension.$end.$tail,$original);
     $payloads[$workPath]=[$app,'text/javascript; charset=utf-8',true];
     $writes=[];$hashes=[];

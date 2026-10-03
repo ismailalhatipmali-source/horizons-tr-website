@@ -46,6 +46,8 @@ try {
     if (!$app || !str_starts_with($app,$home.'/') || str_starts_with($app,$web.'/') || is_link($config['code_path'])) throw new RuntimeException('PRIVATE_SOURCE_REQUIRED');
     $commerce=realpath(dirname($app).'/commerce');
     if (!$commerce || is_link(dirname($app).'/commerce') || !str_starts_with($commerce,$home.'/') || str_starts_with($commerce,$web.'/')) throw new RuntimeException('PRIVATE_SOURCE_REQUIRED');
+    require_once __DIR__.'/blending2-preservation.php';
+    $blending2State = hznBlending2SupersedingState($web);
     // A later phonics deployment records exact public hashes outside the web
     // root. Only those two shared files may be retained by this older deployer.
     $phonicsHashes = [];
@@ -66,6 +68,11 @@ try {
                     if (is_string($sha) && preg_match('/^[a-f0-9]{64}$/D',$sha)) $phonicsHashes['public/learn/'.$name] = $sha;
                 }
             }
+        }
+    }
+    if ($blending2State !== null) {
+        foreach (['asset-manifest.json','sw.js'] as $name) {
+            $phonicsHashes['public/learn/'.$name] = $blending2State['receipt']['hashes'][$name];
         }
     }
     $changes = []; $total = 0;

@@ -9,6 +9,7 @@ with tempfile.TemporaryDirectory(prefix='hzn-phonics-deploy-') as d:
     home=Path(d);repo=home/'repo';web=home/'public_html';learn=web/'learn'
     learn.mkdir(parents=True);(web/'activation').mkdir();(repo/'scripts').mkdir(parents=True)
     shutil.copy(ROOT/'scripts/deploy-phonics.php',repo/'scripts/deploy-phonics.php')
+    shutil.copy(ROOT/'scripts/blending2-preservation.php',repo/'scripts/blending2-preservation.php')
     shutil.copytree(ROOT/'src/phonics',repo/'src/phonics')
     shutil.copytree(ROOT/'release-assets/phonics-20261003',repo/'release-assets/phonics-20261003')
     (repo/'release-assets/1.4.6/files/learn').mkdir(parents=True)
