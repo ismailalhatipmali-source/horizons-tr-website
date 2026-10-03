@@ -68,6 +68,25 @@ try {
         $total += $entry['bytes']; if ($total > 20971520) throw new RuntimeException('PAYLOAD_TOO_LARGE');
         $current = digest($target);
         if ($current === $entry['sha256']) continue;
+        // Preserve the subsequently approved single-letter correction on reruns.
+        if ($path === 'public/learn/sw.js' && is_file($target)
+            && file_get_contents($target) === str_replace("const SHELL = 'hzn-web-shell-' + VERSION;", "const SHELL = 'hzn-web-shell-' + VERSION + '-thaa-20261003';", file_get_contents($source))) continue;
+        if ($path === 'public/learn/asset-manifest.json' && is_file($target)) {
+            $live=json_decode(file_get_contents($target),true,32,JSON_THROW_ON_ERROR);
+            $base=json_decode(file_get_contents($source),true,32,JSON_THROW_ON_ERROR);
+            $audioPath='course/audio/female-final/alphabet.thaa.mp3';
+            $audio=$live['files'][$audioPath]??[];
+            $live['files'][$audioPath]=$base['files'][$audioPath];
+            if ($live === $base && ($audio['url']??'')==='content/1.4.1/'.$audioPath.'.hzn') {
+                $audioFile=safePath($web,'learn/'.$audio['url']);
+                $vault=json_decode(file_get_contents($config['vault_path']),true,8,JSON_THROW_ON_ERROR);
+                $key=base64_decode($vault['content_key']??'',true);
+                $cipher=is_file($audioFile)?file_get_contents($audioFile):'';
+                $plain=(is_string($key)&&strlen($key)===32&&strlen($cipher)>28)?openssl_decrypt(substr($cipher,12,-16),'aes-256-gcm',$key,OPENSSL_RAW_DATA,substr($cipher,0,12),substr($cipher,-16),'horizons-arabic-level1/'.$audioPath):false;
+                if ($audio===['url'=>'content/1.4.1/'.$audioPath.'.hzn','sha256'=>hash('sha256',$cipher),'bytes'=>strlen($cipher),'mime'=>'audio/mpeg'] && is_string($plain)
+                    && hash('sha256',$plain)==='77aaaf8101f7db0c28e180ac3cc0966211c18d8438826bff339975f43c24adaa') continue;
+            }
+        }
         $baseline = $entry['before'];
         if (is_array($baseline)) { $matches = in_array($current, $baseline, true); }
         elseif (is_string($baseline) && str_starts_with($baseline, 'git-sha1:') && $current !== null) {
