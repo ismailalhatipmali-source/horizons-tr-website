@@ -91,7 +91,7 @@
       }
     },
     "institution": {
-      "max_learners": 100,
+      "max_learners": 500,
       "email_replaceable": true,
       "device_policy": "any_device",
       "plans": {

@@ -142,7 +142,7 @@ final class PurchaseLedger
                 'schema' => 1, 'order_id' => $orderId,
                 'product' => 'horizons-arabic-level1', 'purchase_email' => $current['email'],
                 'plan' => $current['plan'], 'channel' => 'direct',
-                'account_type' => $current['account_type'], 'max_learners' => ['individual'=>1,'family'=>5,'institution'=>100][$current['account_type']],
+                'account_type' => $current['account_type'], 'max_learners' => ['individual'=>1,'family'=>5,'institution'=>500][$current['account_type']],
                 'device_policy' => 'any_device',
                 'paid_at' => $paid,
             ];

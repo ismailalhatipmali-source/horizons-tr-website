@@ -94,7 +94,7 @@
           "price_minor": 100000,
           "currency": "USD",
           "tax_included": true,
-          "max_learners": 100
+          "max_learners": 500
         }
       ]
     },

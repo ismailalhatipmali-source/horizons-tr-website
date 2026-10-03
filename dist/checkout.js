@@ -35,6 +35,7 @@
     root.querySelector('[data-product-name]').textContent=p.name;
     const img=root.querySelector('[data-product-image]');img.src=p.image;img.alt=p.name;
     root.querySelector('[data-offer-name]').textContent=label(o);
+    const policy=root.querySelector('[data-institution-policy]');if(policy){policy.hidden=o.account_type!=='institution';policy.textContent=o.account_type==='institution'?[t.count_institution,t.institution_note].join(' · '):'';}
     root.querySelector('[data-total]').textContent=money(o);
     root.querySelector('[data-product-facts]').textContent=p.id==='horizons-arabic-level1'?'28 '+t.lessons+' · 560 '+t.cards+' · 56 '+t.stories:'';
     const permanent=['individual','family'].includes(o.account_type);

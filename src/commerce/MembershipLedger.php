@@ -87,7 +87,7 @@ final class MembershipLedger {
             $same=$this->one("SELECT * FROM membership_seats WHERE group_id=? AND email_hash=? AND state!='removed'",[$groupId,$this->emailHash($email)]);
             if($same)return ['id'=>$same['id'],'email'=>$email,'state'=>$same['state'],'owner'=>(bool)$same['owner']];
             $q=$this->db->prepare("SELECT count(*) FROM membership_seats WHERE group_id=? AND state!='removed'");$q->execute([$groupId]);
-            if((int)$q->fetchColumn()>=($g['type']==='family'?5:100))throw new RuntimeException('LEARNER_LIMIT');
+            if((int)$q->fetchColumn()>=($g['type']==='family'?5:500))throw new RuntimeException('LEARNER_LIMIT');
             return $this->insertSeat($groupId,$email,null);
         });
     }
@@ -131,7 +131,7 @@ final class MembershipLedger {
     }
     public function policy(string $groupId,string $actor,int $now):array {
         $g=$this->group($groupId);$owner=hash_equals($g['owner_account'],$actor);
-        return ['account_type'=>$g['type'],'max_learners'=>['individual'=>1,'family'=>5,'institution'=>100][$g['type']],'can_manage'=>$owner,'learners'=>$owner?$this->learners($groupId,$actor,$now):[]];
+        return ['account_type'=>$g['type'],'max_learners'=>['individual'=>1,'family'=>5,'institution'=>500][$g['type']],'can_manage'=>$owner,'learners'=>$owner?$this->learners($groupId,$actor,$now):[]];
     }
     public function ownerGroup(string $account,string $type):array|false {
         return $this->one('SELECT * FROM membership_groups WHERE owner_account=? AND type=? AND revoked=0 ORDER BY starts_at DESC LIMIT 1',[$account,$type]);

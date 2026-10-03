@@ -6,7 +6,7 @@ const labels={title:'Learners',email:'Email',email_confirm:'Confirm email',add:'
 for(const type of ['individual','family','institution']) {
  const dom=new JSDOM('<div id="host"></div>',{url:'https://example.test',runScripts:'outside-only'}),w=dom.window,d=w.document;w.eval(source+';window.mount=mountMembershipManager');
  const learners=[{id:'owner',email:'owner@example.test'}],calls=[];
- const api={async list(){return {account_type:type,max_learners:{individual:1,family:5,institution:100}[type],can_manage:true,learners:[...learners]};},async invite(v){calls.push(v);learners.push({id:'new',email:v.email});},async remove(id){calls.push(id);learners.splice(learners.findIndex(x=>x.id===id),1);}};
+ const api={async list(){return {account_type:type,max_learners:{individual:1,family:5,institution:500}[type],can_manage:true,learners:[...learners]};},async invite(v){calls.push(v);learners.push({id:'new',email:v.email});},async remove(id){calls.push(id);learners.splice(learners.findIndex(x=>x.id===id),1);}};
  const component=w.mount(d.getElementById('host'),api,labels);await component.refresh();const form=d.querySelector('form'),[email,confirm]=form.querySelectorAll('input[type=email]');
  if(type==='individual'){assert.equal(form.hidden,true);assert.equal(d.querySelector('li button'),null);}
  else {

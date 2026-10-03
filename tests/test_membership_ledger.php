@@ -50,15 +50,17 @@ try {
  check(count($issuer->grants)===4);check(count(array_unique(array_column($issuer->grants,'account')))===4);
  foreach($m->learners($family['id'],'stable-trial-owner',$now)as $r)check($r['state']==='active');
  $school=$owner('institution','annual','admin@example.test','school-admin');check(count($m->learners($school['id'],'school-admin',$now))===0);
+ check($m->policy($school['id'],'school-admin',$now)['max_learners']===500);
+ $start=(new DateTimeImmutable('@'.$school['starts_at']))->setTimezone(new DateTimeZone('UTC'));$year=$start->modify('first day of this month')->modify('+12 months');$year=$year->setDate((int)$year->format('Y'),(int)$year->format('m'),min((int)$start->format('d'),(int)$year->format('t')));check((int)$school['expires_at']===$year->getTimestamp());
  rejects(fn()=>$m->invite($school['id'],'school-admin','family1@example.test','family1@example.test',false,$now),'EMAIL_ALREADY_ASSIGNED');
- $students=[];for($i=0;$i<100;$i++)$students[]=$m->invite($school['id'],'school-admin',"student$i@example.test","student$i@example.test",false,$now);
+ $students=[];for($i=0;$i<500;$i++)$students[]=$m->invite($school['id'],'school-admin',"student$i@example.test","student$i@example.test",false,$now);
  rejects(fn()=>$m->invite($school['id'],'school-admin','overflow@example.test','overflow@example.test',false,$now),'LEARNER_LIMIT');
  rejects(fn()=>$m->remove($school['id'],'school-admin',$familySeats[0]['id'],$now),'MEMBER_NOT_FOUND');
  $m->remove($school['id'],'school-admin',$students[0]['id'],$now);$m->remove($school['id'],'school-admin',$students[0]['id'],$now);
  rejects(fn()=>$m->invite($school['id'],'school-admin','replacement@example.test','replacement@example.test',false,$now),'LEARNER_LIMIT');
  check($m->work($issuer,$now)===1);check(array_key_exists($students[0]['id'],$issuer->revoked));
  $m->invite($school['id'],'school-admin','replacement@example.test','replacement@example.test',false,$now);while($m->work($issuer,$now)){}
- check(count($m->learners($school['id'],'school-admin',$now))===100);
+ check(count($m->learners($school['id'],'school-admin',$now))===500);
  check(!isset($issuer->grants[$students[0]['id']]));
  // Active removal revokes the member before freeing the slot and never touches
  // another member or the family owner's stable identity.
@@ -68,5 +70,5 @@ try {
  rejects(fn()=>$m->invite($family['id'],'stable-trial-owner','future@example.test','future@example.test',true,(int)$family['expires_at']),'MEMBERSHIP_EXPIRED');
  check(!str_contains(file_get_contents($root.'/members.sqlite'),'family1@example.test'));
  check((fileperms($root.'/members.sqlite')&0777)===0600);
- echo "PASS: verified paid owners; individual 1, family 5 including owner, institution 100; annual-only institution; fixed family emails and confirmation; account isolation; encrypted emails; idempotent issuer retries; revocation before seat replacement; shared expiry. No production issuer, SMTP or HTTP integration is asserted.\n";
+ echo "PASS: verified paid owners; individual 1, family 5 including owner, institution 500; annual-only institution; fixed family emails and confirmation; account isolation; encrypted emails; idempotent issuer retries; revocation before seat replacement; shared expiry. No production issuer, SMTP or HTTP integration is asserted.\n";
 }finally{foreach(glob($root.'/*sqlite*')as $f)unlink($f);rmdir($root.'/public_html');rmdir($root);}

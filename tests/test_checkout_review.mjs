@@ -20,6 +20,7 @@ for(const lang of Object.keys(locales)){
  };
  w.print=()=>{};w.eval(read('src/commerce/site-commerce.js'));w.eval(read('src/commerce/checkout.js'));await new Promise(r=>setTimeout(r,0));
  const d=w.document,f=d.querySelector('form[data-buyer-form]');
+ f.elements.offer.value='institution-annual';f.elements.offer.dispatchEvent(new w.Event('change',{bubbles:true}));assert.equal(d.querySelector('[data-institution-policy]').hidden,false);assert.ok(d.querySelector('[data-institution-policy]').textContent.includes(JSON.parse(d.querySelector('#checkout-config').textContent).words.count_institution));f.elements.offer.value='individual-monthly';f.elements.offer.dispatchEvent(new w.Event('change',{bubbles:true}));await new Promise(r=>setTimeout(r,0));assert.equal(d.querySelector('[data-institution-policy]').hidden,true);
  assert.equal(f.elements.offer.options.length,7,lang);assert.equal(d.documentElement.dir,['ar','he','fa','ur'].includes(lang)?'rtl':'ltr');
  for(const id of ['company_name','tax_id','tax_office'])assert.equal(f.elements[id].disabled,true);
  f.elements.billing.value='company';f.elements.billing.dispatchEvent(new w.Event('change',{bubbles:true}));for(const id of ['company_name','tax_id','tax_office'])assert.equal(f.elements[id].required,true);

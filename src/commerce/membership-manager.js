@@ -11,7 +11,7 @@ export function mountMembershipManager(host,api,labels) {
   function lock(value){busy=value;submit.disabled=value||!policy||policy.learners.length>=policy.max_learners;for(const b of list.querySelectorAll('button'))b.disabled=value;}
   async function refresh(){
     const next=await api.list();if(disposed)return;
-    if(!next||!['individual','family','institution'].includes(next.account_type)||!Array.isArray(next.learners)||next.max_learners!==({individual:1,family:5,institution:100})[next.account_type])throw Error('INVALID_MEMBERSHIP_RESPONSE');
+    if(!next||!['individual','family','institution'].includes(next.account_type)||!Array.isArray(next.learners)||next.max_learners!==({individual:1,family:5,institution:500})[next.account_type])throw Error('INVALID_MEMBERSHIP_RESPONSE');
     policy=next;list.replaceChildren();
     title.textContent=labels.title+' · '+next.learners.length+' / '+next.max_learners;
     const family=next.account_type==='family';form.hidden=next.account_type==='individual'||!next.can_manage;warning.hidden=!family;ackLabel.hidden=!family;ack.required=family;

@@ -9,7 +9,7 @@
   const checkout=document.getElementById('checkout-config');
   if(checkout)catalog=JSON.parse(checkout.textContent).catalog;
   else {
-    try {const r=await fetch('/products.json?v=20261002-1',{credentials:'omit',signal:AbortSignal.timeout(8000)});if(!r.ok)throw Error();catalog=await r.json();}
+    try {const r=await fetch('/products.json?v=institution-20261003',{credentials:'omit',signal:AbortSignal.timeout(8000)});if(!r.ok)throw Error();catalog=await r.json();}
     catch {catalog={products:{[cfg.product]:{available:true,offers:Object.entries(cfg.accounts).flatMap(([account,row])=>Object.keys(row.plans).map(plan=>({id:account+'-'+plan})))}}};}
   }
   const normalize=v=>v?.schema===2?{schema:3,product:v.product,quantity:v.quantity,offer:v.account+'-'+v.plan}:v;
