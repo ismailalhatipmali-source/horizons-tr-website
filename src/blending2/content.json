@@ -1,0 +1,1316 @@
+{
+  "schema_version": 1,
+  "section": "03",
+  "title_ar": "الدمج الثنائي",
+  "status": "content_prepared_not_published",
+  "source_release": "phonics-20261003",
+  "voice": "Erinome",
+  "new_recordings_required": 27,
+  "open_cards": [
+    {
+      "id": "blend2.open.baa_fatha",
+      "text": "بَا",
+      "letter_key": "baa",
+      "vowel": "fatha",
+      "phonics_id": "phonics.baa.fatha.long",
+      "glyph_id": "phonics.baa.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.baa.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.baa_damma",
+      "text": "بُو",
+      "letter_key": "baa",
+      "vowel": "damma",
+      "phonics_id": "phonics.baa.damma.long",
+      "glyph_id": "phonics.baa.damma.long",
+      "audio_path": "course/audio/phonics/phonics.baa.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.baa_kasra",
+      "text": "بِي",
+      "letter_key": "baa",
+      "vowel": "kasra",
+      "phonics_id": "phonics.baa.kasra.long",
+      "glyph_id": "phonics.baa.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.baa.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.taa_fatha",
+      "text": "تَا",
+      "letter_key": "taa",
+      "vowel": "fatha",
+      "phonics_id": "phonics.taa.fatha.long",
+      "glyph_id": "phonics.taa.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.taa.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.taa_damma",
+      "text": "تُو",
+      "letter_key": "taa",
+      "vowel": "damma",
+      "phonics_id": "phonics.taa.damma.long",
+      "glyph_id": "phonics.taa.damma.long",
+      "audio_path": "course/audio/phonics/phonics.taa.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.taa_kasra",
+      "text": "تِي",
+      "letter_key": "taa",
+      "vowel": "kasra",
+      "phonics_id": "phonics.taa.kasra.long",
+      "glyph_id": "phonics.taa.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.taa.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.thaa_fatha",
+      "text": "ثَا",
+      "letter_key": "thaa",
+      "vowel": "fatha",
+      "phonics_id": "phonics.thaa.fatha.long",
+      "glyph_id": "phonics.thaa.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.thaa.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.thaa_damma",
+      "text": "ثُو",
+      "letter_key": "thaa",
+      "vowel": "damma",
+      "phonics_id": "phonics.thaa.damma.long",
+      "glyph_id": "phonics.thaa.damma.long",
+      "audio_path": "course/audio/phonics/phonics.thaa.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.thaa_kasra",
+      "text": "ثِي",
+      "letter_key": "thaa",
+      "vowel": "kasra",
+      "phonics_id": "phonics.thaa.kasra.long",
+      "glyph_id": "phonics.thaa.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.thaa.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.jiim_fatha",
+      "text": "جَا",
+      "letter_key": "jiim",
+      "vowel": "fatha",
+      "phonics_id": "phonics.jiim.fatha.long",
+      "glyph_id": "phonics.jiim.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.jiim.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.jiim_damma",
+      "text": "جُو",
+      "letter_key": "jiim",
+      "vowel": "damma",
+      "phonics_id": "phonics.jiim.damma.long",
+      "glyph_id": "phonics.jiim.damma.long",
+      "audio_path": "course/audio/phonics/phonics.jiim.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.jiim_kasra",
+      "text": "جِي",
+      "letter_key": "jiim",
+      "vowel": "kasra",
+      "phonics_id": "phonics.jiim.kasra.long",
+      "glyph_id": "phonics.jiim.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.jiim.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.haa_fatha",
+      "text": "حَا",
+      "letter_key": "haa",
+      "vowel": "fatha",
+      "phonics_id": "phonics.haa.fatha.long",
+      "glyph_id": "phonics.haa.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.haa.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.haa_damma",
+      "text": "حُو",
+      "letter_key": "haa",
+      "vowel": "damma",
+      "phonics_id": "phonics.haa.damma.long",
+      "glyph_id": "phonics.haa.damma.long",
+      "audio_path": "course/audio/phonics/phonics.haa.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.haa_kasra",
+      "text": "حِي",
+      "letter_key": "haa",
+      "vowel": "kasra",
+      "phonics_id": "phonics.haa.kasra.long",
+      "glyph_id": "phonics.haa.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.haa.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.khaa_fatha",
+      "text": "خَا",
+      "letter_key": "khaa",
+      "vowel": "fatha",
+      "phonics_id": "phonics.khaa.fatha.long",
+      "glyph_id": "phonics.khaa.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.khaa.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.khaa_damma",
+      "text": "خُو",
+      "letter_key": "khaa",
+      "vowel": "damma",
+      "phonics_id": "phonics.khaa.damma.long",
+      "glyph_id": "phonics.khaa.damma.long",
+      "audio_path": "course/audio/phonics/phonics.khaa.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.khaa_kasra",
+      "text": "خِي",
+      "letter_key": "khaa",
+      "vowel": "kasra",
+      "phonics_id": "phonics.khaa.kasra.long",
+      "glyph_id": "phonics.khaa.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.khaa.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.daal_fatha",
+      "text": "دَا",
+      "letter_key": "daal",
+      "vowel": "fatha",
+      "phonics_id": "phonics.daal.fatha.long",
+      "glyph_id": "phonics.daal.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.daal.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.daal_damma",
+      "text": "دُو",
+      "letter_key": "daal",
+      "vowel": "damma",
+      "phonics_id": "phonics.daal.damma.long",
+      "glyph_id": "phonics.daal.damma.long",
+      "audio_path": "course/audio/phonics/phonics.daal.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.daal_kasra",
+      "text": "دِي",
+      "letter_key": "daal",
+      "vowel": "kasra",
+      "phonics_id": "phonics.daal.kasra.long",
+      "glyph_id": "phonics.daal.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.daal.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.dhaal_fatha",
+      "text": "ذَا",
+      "letter_key": "dhaal",
+      "vowel": "fatha",
+      "phonics_id": "phonics.dhaal.fatha.long",
+      "glyph_id": "phonics.dhaal.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.dhaal.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.dhaal_damma",
+      "text": "ذُو",
+      "letter_key": "dhaal",
+      "vowel": "damma",
+      "phonics_id": "phonics.dhaal.damma.long",
+      "glyph_id": "phonics.dhaal.damma.long",
+      "audio_path": "course/audio/phonics/phonics.dhaal.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.dhaal_kasra",
+      "text": "ذِي",
+      "letter_key": "dhaal",
+      "vowel": "kasra",
+      "phonics_id": "phonics.dhaal.kasra.long",
+      "glyph_id": "phonics.dhaal.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.dhaal.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.raa_fatha",
+      "text": "رَا",
+      "letter_key": "raa",
+      "vowel": "fatha",
+      "phonics_id": "phonics.raa.fatha.long",
+      "glyph_id": "phonics.raa.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.raa.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.raa_damma",
+      "text": "رُو",
+      "letter_key": "raa",
+      "vowel": "damma",
+      "phonics_id": "phonics.raa.damma.long",
+      "glyph_id": "phonics.raa.damma.long",
+      "audio_path": "course/audio/phonics/phonics.raa.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.raa_kasra",
+      "text": "رِي",
+      "letter_key": "raa",
+      "vowel": "kasra",
+      "phonics_id": "phonics.raa.kasra.long",
+      "glyph_id": "phonics.raa.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.raa.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.zaay_fatha",
+      "text": "زَا",
+      "letter_key": "zaay",
+      "vowel": "fatha",
+      "phonics_id": "phonics.zaay.fatha.long",
+      "glyph_id": "phonics.zaay.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.zaay.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.zaay_damma",
+      "text": "زُو",
+      "letter_key": "zaay",
+      "vowel": "damma",
+      "phonics_id": "phonics.zaay.damma.long",
+      "glyph_id": "phonics.zaay.damma.long",
+      "audio_path": "course/audio/phonics/phonics.zaay.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.zaay_kasra",
+      "text": "زِي",
+      "letter_key": "zaay",
+      "vowel": "kasra",
+      "phonics_id": "phonics.zaay.kasra.long",
+      "glyph_id": "phonics.zaay.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.zaay.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.siin_fatha",
+      "text": "سَا",
+      "letter_key": "siin",
+      "vowel": "fatha",
+      "phonics_id": "phonics.siin.fatha.long",
+      "glyph_id": "phonics.siin.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.siin.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.siin_damma",
+      "text": "سُو",
+      "letter_key": "siin",
+      "vowel": "damma",
+      "phonics_id": "phonics.siin.damma.long",
+      "glyph_id": "phonics.siin.damma.long",
+      "audio_path": "course/audio/phonics/phonics.siin.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.siin_kasra",
+      "text": "سِي",
+      "letter_key": "siin",
+      "vowel": "kasra",
+      "phonics_id": "phonics.siin.kasra.long",
+      "glyph_id": "phonics.siin.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.siin.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.shiin_fatha",
+      "text": "شَا",
+      "letter_key": "shiin",
+      "vowel": "fatha",
+      "phonics_id": "phonics.shiin.fatha.long",
+      "glyph_id": "phonics.shiin.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.shiin.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.shiin_damma",
+      "text": "شُو",
+      "letter_key": "shiin",
+      "vowel": "damma",
+      "phonics_id": "phonics.shiin.damma.long",
+      "glyph_id": "phonics.shiin.damma.long",
+      "audio_path": "course/audio/phonics/phonics.shiin.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.shiin_kasra",
+      "text": "شِي",
+      "letter_key": "shiin",
+      "vowel": "kasra",
+      "phonics_id": "phonics.shiin.kasra.long",
+      "glyph_id": "phonics.shiin.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.shiin.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.saad_fatha",
+      "text": "صَا",
+      "letter_key": "saad",
+      "vowel": "fatha",
+      "phonics_id": "phonics.saad.fatha.long",
+      "glyph_id": "phonics.saad.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.saad.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.saad_damma",
+      "text": "صُو",
+      "letter_key": "saad",
+      "vowel": "damma",
+      "phonics_id": "phonics.saad.damma.long",
+      "glyph_id": "phonics.saad.damma.long",
+      "audio_path": "course/audio/phonics/phonics.saad.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.saad_kasra",
+      "text": "صِي",
+      "letter_key": "saad",
+      "vowel": "kasra",
+      "phonics_id": "phonics.saad.kasra.long",
+      "glyph_id": "phonics.saad.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.saad.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.daad_fatha",
+      "text": "ضَا",
+      "letter_key": "daad",
+      "vowel": "fatha",
+      "phonics_id": "phonics.daad.fatha.long",
+      "glyph_id": "phonics.daad.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.daad.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.daad_damma",
+      "text": "ضُو",
+      "letter_key": "daad",
+      "vowel": "damma",
+      "phonics_id": "phonics.daad.damma.long",
+      "glyph_id": "phonics.daad.damma.long",
+      "audio_path": "course/audio/phonics/phonics.daad.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.daad_kasra",
+      "text": "ضِي",
+      "letter_key": "daad",
+      "vowel": "kasra",
+      "phonics_id": "phonics.daad.kasra.long",
+      "glyph_id": "phonics.daad.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.daad.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.taa_emphatic_fatha",
+      "text": "طَا",
+      "letter_key": "taa_emphatic",
+      "vowel": "fatha",
+      "phonics_id": "phonics.taa_emphatic.fatha.long",
+      "glyph_id": "phonics.taa_emphatic.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.taa_emphatic.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.taa_emphatic_damma",
+      "text": "طُو",
+      "letter_key": "taa_emphatic",
+      "vowel": "damma",
+      "phonics_id": "phonics.taa_emphatic.damma.long",
+      "glyph_id": "phonics.taa_emphatic.damma.long",
+      "audio_path": "course/audio/phonics/phonics.taa_emphatic.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.taa_emphatic_kasra",
+      "text": "طِي",
+      "letter_key": "taa_emphatic",
+      "vowel": "kasra",
+      "phonics_id": "phonics.taa_emphatic.kasra.long",
+      "glyph_id": "phonics.taa_emphatic.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.taa_emphatic.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.dhaa_emphatic_fatha",
+      "text": "ظَا",
+      "letter_key": "dhaa_emphatic",
+      "vowel": "fatha",
+      "phonics_id": "phonics.dhaa_emphatic.fatha.long",
+      "glyph_id": "phonics.dhaa_emphatic.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.dhaa_emphatic.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.dhaa_emphatic_damma",
+      "text": "ظُو",
+      "letter_key": "dhaa_emphatic",
+      "vowel": "damma",
+      "phonics_id": "phonics.dhaa_emphatic.damma.long",
+      "glyph_id": "phonics.dhaa_emphatic.damma.long",
+      "audio_path": "course/audio/phonics/phonics.dhaa_emphatic.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.dhaa_emphatic_kasra",
+      "text": "ظِي",
+      "letter_key": "dhaa_emphatic",
+      "vowel": "kasra",
+      "phonics_id": "phonics.dhaa_emphatic.kasra.long",
+      "glyph_id": "phonics.dhaa_emphatic.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.dhaa_emphatic.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.ayn_fatha",
+      "text": "عَا",
+      "letter_key": "ayn",
+      "vowel": "fatha",
+      "phonics_id": "phonics.ayn.fatha.long",
+      "glyph_id": "phonics.ayn.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.ayn.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.ayn_damma",
+      "text": "عُو",
+      "letter_key": "ayn",
+      "vowel": "damma",
+      "phonics_id": "phonics.ayn.damma.long",
+      "glyph_id": "phonics.ayn.damma.long",
+      "audio_path": "course/audio/phonics/phonics.ayn.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.ayn_kasra",
+      "text": "عِي",
+      "letter_key": "ayn",
+      "vowel": "kasra",
+      "phonics_id": "phonics.ayn.kasra.long",
+      "glyph_id": "phonics.ayn.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.ayn.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.ghayn_fatha",
+      "text": "غَا",
+      "letter_key": "ghayn",
+      "vowel": "fatha",
+      "phonics_id": "phonics.ghayn.fatha.long",
+      "glyph_id": "phonics.ghayn.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.ghayn.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.ghayn_damma",
+      "text": "غُو",
+      "letter_key": "ghayn",
+      "vowel": "damma",
+      "phonics_id": "phonics.ghayn.damma.long",
+      "glyph_id": "phonics.ghayn.damma.long",
+      "audio_path": "course/audio/phonics/phonics.ghayn.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.ghayn_kasra",
+      "text": "غِي",
+      "letter_key": "ghayn",
+      "vowel": "kasra",
+      "phonics_id": "phonics.ghayn.kasra.long",
+      "glyph_id": "phonics.ghayn.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.ghayn.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.faa_fatha",
+      "text": "فَا",
+      "letter_key": "faa",
+      "vowel": "fatha",
+      "phonics_id": "phonics.faa.fatha.long",
+      "glyph_id": "phonics.faa.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.faa.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.faa_damma",
+      "text": "فُو",
+      "letter_key": "faa",
+      "vowel": "damma",
+      "phonics_id": "phonics.faa.damma.long",
+      "glyph_id": "phonics.faa.damma.long",
+      "audio_path": "course/audio/phonics/phonics.faa.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.faa_kasra",
+      "text": "فِي",
+      "letter_key": "faa",
+      "vowel": "kasra",
+      "phonics_id": "phonics.faa.kasra.long",
+      "glyph_id": "phonics.faa.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.faa.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.qaaf_fatha",
+      "text": "قَا",
+      "letter_key": "qaaf",
+      "vowel": "fatha",
+      "phonics_id": "phonics.qaaf.fatha.long",
+      "glyph_id": "phonics.qaaf.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.qaaf.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.qaaf_damma",
+      "text": "قُو",
+      "letter_key": "qaaf",
+      "vowel": "damma",
+      "phonics_id": "phonics.qaaf.damma.long",
+      "glyph_id": "phonics.qaaf.damma.long",
+      "audio_path": "course/audio/phonics/phonics.qaaf.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.qaaf_kasra",
+      "text": "قِي",
+      "letter_key": "qaaf",
+      "vowel": "kasra",
+      "phonics_id": "phonics.qaaf.kasra.long",
+      "glyph_id": "phonics.qaaf.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.qaaf.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.kaaf_fatha",
+      "text": "كَا",
+      "letter_key": "kaaf",
+      "vowel": "fatha",
+      "phonics_id": "phonics.kaaf.fatha.long",
+      "glyph_id": "phonics.kaaf.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.kaaf.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.kaaf_damma",
+      "text": "كُو",
+      "letter_key": "kaaf",
+      "vowel": "damma",
+      "phonics_id": "phonics.kaaf.damma.long",
+      "glyph_id": "phonics.kaaf.damma.long",
+      "audio_path": "course/audio/phonics/phonics.kaaf.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.kaaf_kasra",
+      "text": "كِي",
+      "letter_key": "kaaf",
+      "vowel": "kasra",
+      "phonics_id": "phonics.kaaf.kasra.long",
+      "glyph_id": "phonics.kaaf.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.kaaf.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.laam_fatha",
+      "text": "لَا",
+      "letter_key": "laam",
+      "vowel": "fatha",
+      "phonics_id": "phonics.laam.fatha.long",
+      "glyph_id": "phonics.laam.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.laam.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.laam_damma",
+      "text": "لُو",
+      "letter_key": "laam",
+      "vowel": "damma",
+      "phonics_id": "phonics.laam.damma.long",
+      "glyph_id": "phonics.laam.damma.long",
+      "audio_path": "course/audio/phonics/phonics.laam.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.laam_kasra",
+      "text": "لِي",
+      "letter_key": "laam",
+      "vowel": "kasra",
+      "phonics_id": "phonics.laam.kasra.long",
+      "glyph_id": "phonics.laam.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.laam.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.miim_fatha",
+      "text": "مَا",
+      "letter_key": "miim",
+      "vowel": "fatha",
+      "phonics_id": "phonics.miim.fatha.long",
+      "glyph_id": "phonics.miim.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.miim.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.miim_damma",
+      "text": "مُو",
+      "letter_key": "miim",
+      "vowel": "damma",
+      "phonics_id": "phonics.miim.damma.long",
+      "glyph_id": "phonics.miim.damma.long",
+      "audio_path": "course/audio/phonics/phonics.miim.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.miim_kasra",
+      "text": "مِي",
+      "letter_key": "miim",
+      "vowel": "kasra",
+      "phonics_id": "phonics.miim.kasra.long",
+      "glyph_id": "phonics.miim.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.miim.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.nuun_fatha",
+      "text": "نَا",
+      "letter_key": "nuun",
+      "vowel": "fatha",
+      "phonics_id": "phonics.nuun.fatha.long",
+      "glyph_id": "phonics.nuun.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.nuun.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.nuun_damma",
+      "text": "نُو",
+      "letter_key": "nuun",
+      "vowel": "damma",
+      "phonics_id": "phonics.nuun.damma.long",
+      "glyph_id": "phonics.nuun.damma.long",
+      "audio_path": "course/audio/phonics/phonics.nuun.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.nuun_kasra",
+      "text": "نِي",
+      "letter_key": "nuun",
+      "vowel": "kasra",
+      "phonics_id": "phonics.nuun.kasra.long",
+      "glyph_id": "phonics.nuun.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.nuun.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.haa_breath_fatha",
+      "text": "هَا",
+      "letter_key": "haa_breath",
+      "vowel": "fatha",
+      "phonics_id": "phonics.haa_breath.fatha.long",
+      "glyph_id": "phonics.haa_breath.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.haa_breath.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.haa_breath_damma",
+      "text": "هُو",
+      "letter_key": "haa_breath",
+      "vowel": "damma",
+      "phonics_id": "phonics.haa_breath.damma.long",
+      "glyph_id": "phonics.haa_breath.damma.long",
+      "audio_path": "course/audio/phonics/phonics.haa_breath.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.haa_breath_kasra",
+      "text": "هِي",
+      "letter_key": "haa_breath",
+      "vowel": "kasra",
+      "phonics_id": "phonics.haa_breath.kasra.long",
+      "glyph_id": "phonics.haa_breath.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.haa_breath.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": false
+    },
+    {
+      "id": "blend2.open.waaw_fatha",
+      "text": "وَا",
+      "letter_key": "waaw",
+      "vowel": "fatha",
+      "phonics_id": "phonics.waaw.fatha.long",
+      "glyph_id": "phonics.waaw.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.waaw.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": true
+    },
+    {
+      "id": "blend2.open.waaw_damma",
+      "text": "وُو",
+      "letter_key": "waaw",
+      "vowel": "damma",
+      "phonics_id": "phonics.waaw.damma.long",
+      "glyph_id": "phonics.waaw.damma.long",
+      "audio_path": "course/audio/phonics/phonics.waaw.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": true
+    },
+    {
+      "id": "blend2.open.waaw_kasra",
+      "text": "وِي",
+      "letter_key": "waaw",
+      "vowel": "kasra",
+      "phonics_id": "phonics.waaw.kasra.long",
+      "glyph_id": "phonics.waaw.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.waaw.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": true
+    },
+    {
+      "id": "blend2.open.yaa_fatha",
+      "text": "يَا",
+      "letter_key": "yaa",
+      "vowel": "fatha",
+      "phonics_id": "phonics.yaa.fatha.long",
+      "glyph_id": "phonics.yaa.fatha.long",
+      "audio_path": "course/audio/phonics/phonics.yaa.fatha.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": true
+    },
+    {
+      "id": "blend2.open.yaa_damma",
+      "text": "يُو",
+      "letter_key": "yaa",
+      "vowel": "damma",
+      "phonics_id": "phonics.yaa.damma.long",
+      "glyph_id": "phonics.yaa.damma.long",
+      "audio_path": "course/audio/phonics/phonics.yaa.damma.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": true
+    },
+    {
+      "id": "blend2.open.yaa_kasra",
+      "text": "يِي",
+      "letter_key": "yaa",
+      "vowel": "kasra",
+      "phonics_id": "phonics.yaa.kasra.long",
+      "glyph_id": "phonics.yaa.kasra.long",
+      "audio_path": "course/audio/phonics/phonics.yaa.kasra.long.mp3",
+      "audio_status": "approved_reuse",
+      "advanced": true
+    }
+  ],
+  "closed_words": [
+    {
+      "id": "blend2.closed.man",
+      "recording_order": 1,
+      "text": "مَنْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.miim.fatha.short",
+      "final_letter": "نْ",
+      "meaning": {
+        "ar": "سؤال عن الشخص"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.man.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.nam",
+      "recording_order": 2,
+      "text": "نَمْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.nuun.fatha.short",
+      "final_letter": "مْ",
+      "meaning": {
+        "ar": "اذهب إلى النوم"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.nam.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.hal",
+      "recording_order": 3,
+      "text": "هَلْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.haa_breath.fatha.short",
+      "final_letter": "لْ",
+      "meaning": {
+        "ar": "سؤال جوابه نعم أو لا"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.hal.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.bal",
+      "recording_order": 4,
+      "text": "بَلْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.baa.fatha.short",
+      "final_letter": "لْ",
+      "meaning": {
+        "ar": "لتصحيح المعلومة أو الانتقال إلى غيرها"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.bal.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.lam",
+      "recording_order": 5,
+      "text": "لَمْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.laam.fatha.short",
+      "final_letter": "مْ",
+      "meaning": {
+        "ar": "نفي حدث في الماضي"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.lam.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.lan",
+      "recording_order": 6,
+      "text": "لَنْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.laam.fatha.short",
+      "final_letter": "نْ",
+      "meaning": {
+        "ar": "نفي حدث في المستقبل"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.lan.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.an_ayn",
+      "recording_order": 7,
+      "text": "عَنْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.ayn.fatha.short",
+      "final_letter": "نْ",
+      "meaning": {
+        "ar": "لذكر الموضوع أو الابتعاد"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.an_ayn.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.an_hamza",
+      "recording_order": 8,
+      "text": "أَنْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.alif.fatha.short",
+      "final_letter": "نْ",
+      "meaning": {
+        "ar": "أداة تربط أجزاء الجملة"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.an_hamza.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.am",
+      "recording_order": 9,
+      "text": "أَمْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.alif.fatha.short",
+      "final_letter": "مْ",
+      "meaning": {
+        "ar": "للسؤال عن الاختيار"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.am.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.da",
+      "recording_order": 10,
+      "text": "دَعْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.daal.fatha.short",
+      "final_letter": "عْ",
+      "meaning": {
+        "ar": "اترك"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.da.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.da_emphatic",
+      "recording_order": 11,
+      "text": "ضَعْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.daad.fatha.short",
+      "final_letter": "عْ",
+      "meaning": {
+        "ar": "اجعل الشيء في مكان"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.da_emphatic.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.qad",
+      "recording_order": 12,
+      "text": "قَدْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.qaaf.fatha.short",
+      "final_letter": "دْ",
+      "meaning": {
+        "ar": "تفيد تحقق الحدث مع الماضي"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.qad.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.sal",
+      "recording_order": 13,
+      "text": "سَلْ",
+      "vowel": "fatha",
+      "first_sound_id": "phonics.siin.fatha.short",
+      "final_letter": "لْ",
+      "meaning": {
+        "ar": "اسأل"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.sal.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.qum",
+      "recording_order": 14,
+      "text": "قُمْ",
+      "vowel": "damma",
+      "first_sound_id": "phonics.qaaf.damma.short",
+      "final_letter": "مْ",
+      "meaning": {
+        "ar": "انهض"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.qum.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.qul",
+      "recording_order": 15,
+      "text": "قُلْ",
+      "vowel": "damma",
+      "first_sound_id": "phonics.qaaf.damma.short",
+      "final_letter": "لْ",
+      "meaning": {
+        "ar": "تكلّم واذكر"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.qul.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.khudh",
+      "recording_order": 16,
+      "text": "خُذْ",
+      "vowel": "damma",
+      "first_sound_id": "phonics.khaa.damma.short",
+      "final_letter": "ذْ",
+      "meaning": {
+        "ar": "تناول الشيء"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.khudh.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.kul",
+      "recording_order": 17,
+      "text": "كُلْ",
+      "vowel": "damma",
+      "first_sound_id": "phonics.kaaf.damma.short",
+      "final_letter": "لْ",
+      "meaning": {
+        "ar": "تناول الطعام"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.kul.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.sum",
+      "recording_order": 18,
+      "text": "صُمْ",
+      "vowel": "damma",
+      "first_sound_id": "phonics.saad.damma.short",
+      "final_letter": "مْ",
+      "meaning": {
+        "ar": "امتنع عن الطعام والشراب للصيام"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.sum.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.ud",
+      "recording_order": 19,
+      "text": "عُدْ",
+      "vowel": "damma",
+      "first_sound_id": "phonics.ayn.damma.short",
+      "final_letter": "دْ",
+      "meaning": {
+        "ar": "ارجع"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.ud.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.min",
+      "recording_order": 20,
+      "text": "مِنْ",
+      "vowel": "kasra",
+      "first_sound_id": "phonics.miim.kasra.short",
+      "final_letter": "نْ",
+      "meaning": {
+        "ar": "تدل على البداية أو المصدر"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.min.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.in",
+      "recording_order": 21,
+      "text": "إِنْ",
+      "vowel": "kasra",
+      "first_sound_id": "phonics.alif.kasra.short",
+      "final_letter": "نْ",
+      "meaning": {
+        "ar": "أداة شرط"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.in.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.sir",
+      "recording_order": 22,
+      "text": "سِرْ",
+      "vowel": "kasra",
+      "first_sound_id": "phonics.siin.kasra.short",
+      "final_letter": "رْ",
+      "meaning": {
+        "ar": "امشِ"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.sir.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.sil",
+      "recording_order": 23,
+      "text": "صِلْ",
+      "vowel": "kasra",
+      "first_sound_id": "phonics.saad.kasra.short",
+      "final_letter": "لْ",
+      "meaning": {
+        "ar": "اربط"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.sil.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.zid",
+      "recording_order": 24,
+      "text": "زِدْ",
+      "vowel": "kasra",
+      "first_sound_id": "phonics.zaay.kasra.short",
+      "final_letter": "دْ",
+      "meaning": {
+        "ar": "اجعله أكثر"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.zid.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.qif",
+      "recording_order": 25,
+      "text": "قِفْ",
+      "vowel": "kasra",
+      "first_sound_id": "phonics.qaaf.kasra.short",
+      "final_letter": "فْ",
+      "meaning": {
+        "ar": "توقف"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.qif.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.bi",
+      "recording_order": 26,
+      "text": "بِعْ",
+      "vowel": "kasra",
+      "first_sound_id": "phonics.baa.kasra.short",
+      "final_letter": "عْ",
+      "meaning": {
+        "ar": "أعطِ الشيء مقابل ثمن"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.bi.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    },
+    {
+      "id": "blend2.closed.ish",
+      "recording_order": 27,
+      "text": "عِشْ",
+      "vowel": "kasra",
+      "first_sound_id": "phonics.ayn.kasra.short",
+      "final_letter": "شْ",
+      "meaning": {
+        "ar": "واصل الحياة"
+      },
+      "normal_audio_path": null,
+      "expected_audio_path": "course/audio/blending2/blend2.closed.ish.normal.mp3",
+      "audio_status": "awaiting_recording_and_approval"
+    }
+  ],
+  "teaching_audio_sequence": [
+    "existing_initial_cv",
+    "visual_join_without_isolated_coda_audio",
+    "approved_complete_cvc"
+  ],
+  "closed_transcript": [
+    "مَنْ",
+    "نَمْ",
+    "هَلْ",
+    "بَلْ",
+    "لَمْ",
+    "لَنْ",
+    "عَنْ",
+    "أَنْ",
+    "أَمْ",
+    "دَعْ",
+    "ضَعْ",
+    "قَدْ",
+    "سَلْ",
+    "قُمْ",
+    "قُلْ",
+    "خُذْ",
+    "كُلْ",
+    "صُمْ",
+    "عُدْ",
+    "مِنْ",
+    "إِنْ",
+    "سِرْ",
+    "صِلْ",
+    "زِدْ",
+    "قِفْ",
+    "بِعْ",
+    "عِشْ"
+  ]
+}
