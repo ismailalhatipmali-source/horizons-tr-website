@@ -70,8 +70,14 @@ try {
         file_put_contents($backup.'/paths.json',json_encode(array_keys($originals),JSON_THROW_ON_ERROR));
     }
     foreach($writes as $dest=>$bytes) {
+        $directory=$learn;
+        foreach(explode('/',substr(dirname($dest),strlen($learn)+1)) as $part) {
+            if($part==='') continue;
+            $directory.='/'.$part;
+            if(!is_dir($directory)&&!mkdir($directory,0755)) throw new RuntimeException('DIRECTORY_FAILED');
+            if(!chmod($directory,0755)) throw new RuntimeException('DIRECTORY_FAILED');
+        }
         if(!array_key_exists($dest,$originals)) continue;
-        if(!is_dir(dirname($dest))&&!mkdir(dirname($dest),0755,true)) throw new RuntimeException('DIRECTORY_FAILED');
         atomicWrite($dest,$bytes);$changed[]=$dest;
     }
     echo "OK: THAA_AUDIO_PATCH; ".count($changed)." files updated; encrypted audio verified.\n";
