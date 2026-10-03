@@ -8,3 +8,4 @@ deployment:
     - /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-membership-update/deployment-php.log scripts/deploy-travel-kit.php /home2/horizonstr/public_html/ --publish
     - /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-membership-update/deployment-php.log scripts/test_travel_mail.php /home2/horizonstr/public_html/
     - /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-membership-update/deployment-php.log scripts/deploy-thaa-audio.php /home2/horizonstr/public_html/
+    - /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-membership-update/deployment-php.log scripts/deploy-phonics.php /home2/horizonstr/public_html/

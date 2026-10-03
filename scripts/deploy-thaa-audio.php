@@ -55,8 +55,9 @@ try {
     $swPath=checkedPath($learn,'sw.js');$sw=file_get_contents($swPath);
     $old="const SHELL = 'hzn-web-shell-' + VERSION;";
     $new="const SHELL = 'hzn-web-shell-' + VERSION + '-thaa-20261003';";
-    if(!str_contains($sw,$old)&&!str_contains($sw,$new)) throw new RuntimeException('UNKNOWN_WORKER');
-    $sw=str_replace($old,$new,$sw);
+    $phonics="const SHELL = 'hzn-web-shell-' + VERSION + '-phonics-20261003';";
+    if(!str_contains($sw,$old)&&!str_contains($sw,$new)&&!str_contains($sw,$phonics)) throw new RuntimeException('UNKNOWN_WORKER');
+    if(!str_contains($sw,$phonics)) $sw=str_replace($old,$new,$sw);
     $writes=[$target=>$cipher,$manifestPath=>json_encode($manifest,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR)."\n",$swPath=>$sw];
     $backup=$state.'/backup-'.gmdate('Ymd-His').'-'.bin2hex(random_bytes(4));
     foreach($writes as $dest=>$bytes) {

@@ -1,0 +1,1691 @@
+{
+  "schema": 1,
+  "patch": "phonics-20261003",
+  "audio": [
+    {
+      "id": "phonics.alif.fatha.short",
+      "text": "أَ",
+      "letterKey": "alif",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 0,
+      "path": "course/audio/phonics/phonics.alif.fatha.short.mp3",
+      "sha256": "3065651cdb6234466975a62d4b5e9da31cd1e138a8b7a7e3d7cf33e3a7315b42"
+    },
+    {
+      "id": "phonics.alif.fatha.long",
+      "text": "آ",
+      "letterKey": "alif",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 1,
+      "path": "course/audio/phonics/phonics.alif.fatha.long.mp3",
+      "sha256": "7481e0326ab7976b88dffc5343cc55309966a062a5864d85457b61603ec66914"
+    },
+    {
+      "id": "phonics.alif.damma.short",
+      "text": "أُ",
+      "letterKey": "alif",
+      "vowel": "damma",
+      "length": "short",
+      "index": 2,
+      "path": "course/audio/phonics/phonics.alif.damma.short.mp3",
+      "sha256": "6299eee375788a182b5190cd28836fe22a5102a55c034c9c04f5b158eb627a09"
+    },
+    {
+      "id": "phonics.alif.damma.long",
+      "text": "أُو",
+      "letterKey": "alif",
+      "vowel": "damma",
+      "length": "long",
+      "index": 3,
+      "path": "course/audio/phonics/phonics.alif.damma.long.mp3",
+      "sha256": "bfcf402b147b599d96d25cf4aea59ef7ed9e8043dd49889b44bc56e858419a01"
+    },
+    {
+      "id": "phonics.alif.kasra.short",
+      "text": "إِ",
+      "letterKey": "alif",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 4,
+      "path": "course/audio/phonics/phonics.alif.kasra.short.mp3",
+      "sha256": "691df17c4214c176106a26cca4af0f7a56384d9250fedbf2f0873267583fc7cd"
+    },
+    {
+      "id": "phonics.alif.kasra.long",
+      "text": "إِي",
+      "letterKey": "alif",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 5,
+      "path": "course/audio/phonics/phonics.alif.kasra.long.mp3",
+      "sha256": "6924f6532adc8b79bfc0ed4bdee8c9500c843d1d6164a865b0ae5b03c119c010"
+    },
+    {
+      "id": "phonics.baa.fatha.short",
+      "text": "بَ",
+      "letterKey": "baa",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 6,
+      "path": "course/audio/phonics/phonics.baa.fatha.short.mp3",
+      "sha256": "29f4df15651977846ef68364df413ba2ea7ffe88b45836cb6da27ccfe80dc6cf"
+    },
+    {
+      "id": "phonics.baa.fatha.long",
+      "text": "بَا",
+      "letterKey": "baa",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 7,
+      "path": "course/audio/phonics/phonics.baa.fatha.long.mp3",
+      "sha256": "3c0ac40560c90eac89707a81cbdf1af29858f09bd3d7929e10eac312577c9175"
+    },
+    {
+      "id": "phonics.baa.damma.short",
+      "text": "بُ",
+      "letterKey": "baa",
+      "vowel": "damma",
+      "length": "short",
+      "index": 8,
+      "path": "course/audio/phonics/phonics.baa.damma.short.mp3",
+      "sha256": "b72cdb74d5aa3b96895c5a4ce015a9ae828e88488d09b6230ef4ba324c1410fa"
+    },
+    {
+      "id": "phonics.baa.damma.long",
+      "text": "بُو",
+      "letterKey": "baa",
+      "vowel": "damma",
+      "length": "long",
+      "index": 9,
+      "path": "course/audio/phonics/phonics.baa.damma.long.mp3",
+      "sha256": "435f32b8dc08403e15bbae3e394548f916515c5799a3e7ad04031c1f8ff72ae4"
+    },
+    {
+      "id": "phonics.baa.kasra.short",
+      "text": "بِ",
+      "letterKey": "baa",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 10,
+      "path": "course/audio/phonics/phonics.baa.kasra.short.mp3",
+      "sha256": "189133cc5f0a97bc89361f5fae54013d8c6c922128101449a7b8d27a5cf9fc63"
+    },
+    {
+      "id": "phonics.baa.kasra.long",
+      "text": "بِي",
+      "letterKey": "baa",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 11,
+      "path": "course/audio/phonics/phonics.baa.kasra.long.mp3",
+      "sha256": "4b261cde97b437cf28b777ecc5bf4baed78d882a46ee1293bcc448cc038840cb"
+    },
+    {
+      "id": "phonics.taa.fatha.short",
+      "text": "تَ",
+      "letterKey": "taa",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 12,
+      "path": "course/audio/phonics/phonics.taa.fatha.short.mp3",
+      "sha256": "6a198afb5bff9e31d8ef200df9c08ac021bf5901708fbd78b239955664313e79"
+    },
+    {
+      "id": "phonics.taa.fatha.long",
+      "text": "تَا",
+      "letterKey": "taa",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 13,
+      "path": "course/audio/phonics/phonics.taa.fatha.long.mp3",
+      "sha256": "4f6f7159ea49d0deaa11903f0ae2febba4bc672c559c046ad7860ce061a44c00"
+    },
+    {
+      "id": "phonics.taa.damma.short",
+      "text": "تُ",
+      "letterKey": "taa",
+      "vowel": "damma",
+      "length": "short",
+      "index": 14,
+      "path": "course/audio/phonics/phonics.taa.damma.short.mp3",
+      "sha256": "6eb308ec8bdcb2ffb37c9281f369b576aba68bada7a7f4cbf9f3d4d233f90072"
+    },
+    {
+      "id": "phonics.taa.damma.long",
+      "text": "تُو",
+      "letterKey": "taa",
+      "vowel": "damma",
+      "length": "long",
+      "index": 15,
+      "path": "course/audio/phonics/phonics.taa.damma.long.mp3",
+      "sha256": "a65ec49c53288998c70e63c2c4d60035e6702a99489db16f4794061cae9b0994"
+    },
+    {
+      "id": "phonics.taa.kasra.short",
+      "text": "تِ",
+      "letterKey": "taa",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 16,
+      "path": "course/audio/phonics/phonics.taa.kasra.short.mp3",
+      "sha256": "27ea2dde5f01e27f3741c531529dd4ebd43a29f995fe4b5806c9ead6ea645887"
+    },
+    {
+      "id": "phonics.taa.kasra.long",
+      "text": "تِي",
+      "letterKey": "taa",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 17,
+      "path": "course/audio/phonics/phonics.taa.kasra.long.mp3",
+      "sha256": "787a6c0488bd59d545ee21e2c12e8407b811746a8d7cb735e284954c38b30ec4"
+    },
+    {
+      "id": "phonics.thaa.fatha.short",
+      "text": "ثَ",
+      "letterKey": "thaa",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 18,
+      "path": "course/audio/phonics/phonics.thaa.fatha.short.mp3",
+      "sha256": "a704e73c1cc3bb9493aad67d00e29566168bda736d5a0c5eb559a1f4e7b89d7f"
+    },
+    {
+      "id": "phonics.thaa.fatha.long",
+      "text": "ثَا",
+      "letterKey": "thaa",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 19,
+      "path": "course/audio/phonics/phonics.thaa.fatha.long.mp3",
+      "sha256": "ab0f6827a4c680819e84bb6ee7df2dbdcf2747c60df7f637cfa1eb2f970ad556"
+    },
+    {
+      "id": "phonics.thaa.damma.short",
+      "text": "ثُ",
+      "letterKey": "thaa",
+      "vowel": "damma",
+      "length": "short",
+      "index": 20,
+      "path": "course/audio/phonics/phonics.thaa.damma.short.mp3",
+      "sha256": "8aa842ef8c1d9e5bc98d6fb57a4d2d0df3aa8b9626ebec78aadcbbb8919b95a8"
+    },
+    {
+      "id": "phonics.thaa.damma.long",
+      "text": "ثُو",
+      "letterKey": "thaa",
+      "vowel": "damma",
+      "length": "long",
+      "index": 21,
+      "path": "course/audio/phonics/phonics.thaa.damma.long.mp3",
+      "sha256": "95a96bbafbc0ef6166893add7724fbef232fffb560784d8e4e7adeae07f964e1"
+    },
+    {
+      "id": "phonics.thaa.kasra.short",
+      "text": "ثِ",
+      "letterKey": "thaa",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 22,
+      "path": "course/audio/phonics/phonics.thaa.kasra.short.mp3",
+      "sha256": "e6fe50e2692f68e77bcd5c612a93ae993a6bfb1117e0463adf2ec13214fc453e"
+    },
+    {
+      "id": "phonics.thaa.kasra.long",
+      "text": "ثِي",
+      "letterKey": "thaa",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 23,
+      "path": "course/audio/phonics/phonics.thaa.kasra.long.mp3",
+      "sha256": "c2cf795e4ebf2c7626c32e6cae7ca0d71d6e040f8d78f8aedcdb1d758bc0b7de"
+    },
+    {
+      "id": "phonics.jiim.fatha.short",
+      "text": "جَ",
+      "letterKey": "jiim",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 24,
+      "path": "course/audio/phonics/phonics.jiim.fatha.short.mp3",
+      "sha256": "28fc4aa0e1c2f103a22d291cc8389edbeea08973ae7b090114b8f2f8ef2adc47"
+    },
+    {
+      "id": "phonics.jiim.fatha.long",
+      "text": "جَا",
+      "letterKey": "jiim",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 25,
+      "path": "course/audio/phonics/phonics.jiim.fatha.long.mp3",
+      "sha256": "144d426ee5347a438b93163ca9875e72e9c4fbbeb26214ac404e4174714293a5"
+    },
+    {
+      "id": "phonics.jiim.damma.short",
+      "text": "جُ",
+      "letterKey": "jiim",
+      "vowel": "damma",
+      "length": "short",
+      "index": 26,
+      "path": "course/audio/phonics/phonics.jiim.damma.short.mp3",
+      "sha256": "072fa35c4832e7228c1e6350ef0fafead969b189ac6676af9ff9de64dc6d2401"
+    },
+    {
+      "id": "phonics.jiim.damma.long",
+      "text": "جُو",
+      "letterKey": "jiim",
+      "vowel": "damma",
+      "length": "long",
+      "index": 27,
+      "path": "course/audio/phonics/phonics.jiim.damma.long.mp3",
+      "sha256": "9a223e54a4a3fbe05b46cf4b81fded42aabf2e70b5471b93562ee3546059be0f"
+    },
+    {
+      "id": "phonics.jiim.kasra.short",
+      "text": "جِ",
+      "letterKey": "jiim",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 28,
+      "path": "course/audio/phonics/phonics.jiim.kasra.short.mp3",
+      "sha256": "2968746c420e24f288321616100070a2e2c544858aec162cf7d6c983158f47e1"
+    },
+    {
+      "id": "phonics.jiim.kasra.long",
+      "text": "جِي",
+      "letterKey": "jiim",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 29,
+      "path": "course/audio/phonics/phonics.jiim.kasra.long.mp3",
+      "sha256": "e9124e08852aea21246c0971d7f8d248ba99e58c138e9d80f6741b9e6156890e"
+    },
+    {
+      "id": "phonics.haa.fatha.short",
+      "text": "حَ",
+      "letterKey": "haa",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 30,
+      "path": "course/audio/phonics/phonics.haa.fatha.short.mp3",
+      "sha256": "df5d9c88dae27f881e279c36c96ad15eaeac3b3f94c9556bcc041e3adbf2963b"
+    },
+    {
+      "id": "phonics.haa.fatha.long",
+      "text": "حَا",
+      "letterKey": "haa",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 31,
+      "path": "course/audio/phonics/phonics.haa.fatha.long.mp3",
+      "sha256": "5bf3d2047f57452f12cc495ad695029ad4c8ca7f3baf565906aa0618960b2385"
+    },
+    {
+      "id": "phonics.haa.damma.short",
+      "text": "حُ",
+      "letterKey": "haa",
+      "vowel": "damma",
+      "length": "short",
+      "index": 32,
+      "path": "course/audio/phonics/phonics.haa.damma.short.mp3",
+      "sha256": "2dc86fbb83aef7e09f018249e2caf280f3ed79892897901a4ebd0bdefb983865"
+    },
+    {
+      "id": "phonics.haa.damma.long",
+      "text": "حُو",
+      "letterKey": "haa",
+      "vowel": "damma",
+      "length": "long",
+      "index": 33,
+      "path": "course/audio/phonics/phonics.haa.damma.long.mp3",
+      "sha256": "0d40277b8d442a71788c329c34f1a11e9f06e96f7e4325389e5f6a5b976ba75c"
+    },
+    {
+      "id": "phonics.haa.kasra.short",
+      "text": "حِ",
+      "letterKey": "haa",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 34,
+      "path": "course/audio/phonics/phonics.haa.kasra.short.mp3",
+      "sha256": "bb1f60bee9687fa9a78bb0265c68f74a4c3e89d5c3f3909b5f8ae0b09db3efef"
+    },
+    {
+      "id": "phonics.haa.kasra.long",
+      "text": "حِي",
+      "letterKey": "haa",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 35,
+      "path": "course/audio/phonics/phonics.haa.kasra.long.mp3",
+      "sha256": "558ac7054da05688de2759fd3d5dff03d18f05efb072c440b5a8160bcb2b5db7"
+    },
+    {
+      "id": "phonics.khaa.fatha.short",
+      "text": "خَ",
+      "letterKey": "khaa",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 36,
+      "path": "course/audio/phonics/phonics.khaa.fatha.short.mp3",
+      "sha256": "276841338acc2de086ffdf20980df64b001dfad81d638af7702dbdc7720b6134"
+    },
+    {
+      "id": "phonics.khaa.fatha.long",
+      "text": "خَا",
+      "letterKey": "khaa",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 37,
+      "path": "course/audio/phonics/phonics.khaa.fatha.long.mp3",
+      "sha256": "cd077277633673d92b2201cb260587b3c27c6cfdb7cb891dd236d65c3066d0d4"
+    },
+    {
+      "id": "phonics.khaa.damma.short",
+      "text": "خُ",
+      "letterKey": "khaa",
+      "vowel": "damma",
+      "length": "short",
+      "index": 38,
+      "path": "course/audio/phonics/phonics.khaa.damma.short.mp3",
+      "sha256": "0a31c4c5c22fefeec9d4936e57af27def4c8e8676cefad283b00e48947e983ad"
+    },
+    {
+      "id": "phonics.khaa.damma.long",
+      "text": "خُو",
+      "letterKey": "khaa",
+      "vowel": "damma",
+      "length": "long",
+      "index": 39,
+      "path": "course/audio/phonics/phonics.khaa.damma.long.mp3",
+      "sha256": "b135810ef87e7357d8cd53e628ac1e497a4bb4ae6f95bae696de562daddc808a"
+    },
+    {
+      "id": "phonics.khaa.kasra.short",
+      "text": "خِ",
+      "letterKey": "khaa",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 40,
+      "path": "course/audio/phonics/phonics.khaa.kasra.short.mp3",
+      "sha256": "4e5daed6c27fd7805b8b10d9fd73092d80803fa58fd5608ce3ef2387e715ff0b"
+    },
+    {
+      "id": "phonics.khaa.kasra.long",
+      "text": "خِي",
+      "letterKey": "khaa",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 41,
+      "path": "course/audio/phonics/phonics.khaa.kasra.long.mp3",
+      "sha256": "8f00dfbd50ba269782c5de6018b6114df01081a7380e41a1f6c0719b3284bd01"
+    },
+    {
+      "id": "phonics.daal.fatha.short",
+      "text": "دَ",
+      "letterKey": "daal",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 42,
+      "path": "course/audio/phonics/phonics.daal.fatha.short.mp3",
+      "sha256": "056da5e52c3b6160d20858f137d4cdf76700940ca4dfc91ba320545b9757d8b8"
+    },
+    {
+      "id": "phonics.daal.fatha.long",
+      "text": "دَا",
+      "letterKey": "daal",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 43,
+      "path": "course/audio/phonics/phonics.daal.fatha.long.mp3",
+      "sha256": "18c2c73cff58b7d4e5b13d91904fdf4730923a57090597a3a502e411efd35c11"
+    },
+    {
+      "id": "phonics.daal.damma.short",
+      "text": "دُ",
+      "letterKey": "daal",
+      "vowel": "damma",
+      "length": "short",
+      "index": 44,
+      "path": "course/audio/phonics/phonics.daal.damma.short.mp3",
+      "sha256": "db6d677af56b8fa34f8f01e65e3d9becd3c79e3b3acf89dd73e9711ef57102e0"
+    },
+    {
+      "id": "phonics.daal.damma.long",
+      "text": "دُو",
+      "letterKey": "daal",
+      "vowel": "damma",
+      "length": "long",
+      "index": 45,
+      "path": "course/audio/phonics/phonics.daal.damma.long.mp3",
+      "sha256": "f5ea87365e5a61cb143689dbfe84ad0ba96de3fe1bf94c4b6d3eb4425f38847a"
+    },
+    {
+      "id": "phonics.daal.kasra.short",
+      "text": "دِ",
+      "letterKey": "daal",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 46,
+      "path": "course/audio/phonics/phonics.daal.kasra.short.mp3",
+      "sha256": "ba6f38e186d542edc3b637e382b0a67a516c2c0b549d00e91fb9772e0c4fcc9c"
+    },
+    {
+      "id": "phonics.daal.kasra.long",
+      "text": "دِي",
+      "letterKey": "daal",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 47,
+      "path": "course/audio/phonics/phonics.daal.kasra.long.mp3",
+      "sha256": "214919d34f4cd245579bef9eb32c15f2da9bb8c22dea0101fd6aed27a9377d3a"
+    },
+    {
+      "id": "phonics.dhaal.fatha.short",
+      "text": "ذَ",
+      "letterKey": "dhaal",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 48,
+      "path": "course/audio/phonics/phonics.dhaal.fatha.short.mp3",
+      "sha256": "823a4367dae1256393241e932f027ec9dbf2db4b07166473b7292d4835f84547"
+    },
+    {
+      "id": "phonics.dhaal.fatha.long",
+      "text": "ذَا",
+      "letterKey": "dhaal",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 49,
+      "path": "course/audio/phonics/phonics.dhaal.fatha.long.mp3",
+      "sha256": "b5c9e8ca2d2b4c5cec7ba73ca99a439c2feb1ca13be22c39fb3ad175664171c8"
+    },
+    {
+      "id": "phonics.dhaal.damma.short",
+      "text": "ذُ",
+      "letterKey": "dhaal",
+      "vowel": "damma",
+      "length": "short",
+      "index": 50,
+      "path": "course/audio/phonics/phonics.dhaal.damma.short.mp3",
+      "sha256": "9973abbff9f4556c410c5b234208efa9a394bc89b01aef09564d31d2c1bb7916"
+    },
+    {
+      "id": "phonics.dhaal.damma.long",
+      "text": "ذُو",
+      "letterKey": "dhaal",
+      "vowel": "damma",
+      "length": "long",
+      "index": 51,
+      "path": "course/audio/phonics/phonics.dhaal.damma.long.mp3",
+      "sha256": "22e6af2437b42617b6d814dada76edd0173e019d9febbe156b020a55acad9a2c"
+    },
+    {
+      "id": "phonics.dhaal.kasra.short",
+      "text": "ذِ",
+      "letterKey": "dhaal",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 52,
+      "path": "course/audio/phonics/phonics.dhaal.kasra.short.mp3",
+      "sha256": "18df671a63f85b88c29491d40198e35dd0341f7dff5682ce5c25a6ea3f76679a"
+    },
+    {
+      "id": "phonics.dhaal.kasra.long",
+      "text": "ذِي",
+      "letterKey": "dhaal",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 53,
+      "path": "course/audio/phonics/phonics.dhaal.kasra.long.mp3",
+      "sha256": "5833fd25de61620bd8d28038f6eb3edfd6d3ec13ce4d64e8a16fa8019bd2fa8a"
+    },
+    {
+      "id": "phonics.raa.fatha.short",
+      "text": "رَ",
+      "letterKey": "raa",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 54,
+      "path": "course/audio/phonics/phonics.raa.fatha.short.mp3",
+      "sha256": "52e857f25f9eed70357bb42d6e479ff561bfa6cc8e7cba587d470d300767d3eb"
+    },
+    {
+      "id": "phonics.raa.fatha.long",
+      "text": "رَا",
+      "letterKey": "raa",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 55,
+      "path": "course/audio/phonics/phonics.raa.fatha.long.mp3",
+      "sha256": "bc1d422ecad23832e196abc246449556542ae6cd5fb3c9018af49d985ac27474"
+    },
+    {
+      "id": "phonics.raa.damma.short",
+      "text": "رُ",
+      "letterKey": "raa",
+      "vowel": "damma",
+      "length": "short",
+      "index": 56,
+      "path": "course/audio/phonics/phonics.raa.damma.short.mp3",
+      "sha256": "7a1b7b8d2fa2f659645d3a83f0a40af74fd88379854097300379afe12327644f"
+    },
+    {
+      "id": "phonics.raa.damma.long",
+      "text": "رُو",
+      "letterKey": "raa",
+      "vowel": "damma",
+      "length": "long",
+      "index": 57,
+      "path": "course/audio/phonics/phonics.raa.damma.long.mp3",
+      "sha256": "bd1d5509f60b9b6ad37e40738da37e80ae75bde2407a611875c5b54bfee599e6"
+    },
+    {
+      "id": "phonics.raa.kasra.short",
+      "text": "رِ",
+      "letterKey": "raa",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 58,
+      "path": "course/audio/phonics/phonics.raa.kasra.short.mp3",
+      "sha256": "90e87603e3fda844499a433d8933129762b45b8770a174a7083fa8abb976a846"
+    },
+    {
+      "id": "phonics.raa.kasra.long",
+      "text": "رِي",
+      "letterKey": "raa",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 59,
+      "path": "course/audio/phonics/phonics.raa.kasra.long.mp3",
+      "sha256": "02b624d80d04a54b9a1d6afb7b6bed307cda309c2d3953c7acd7ed9132bfd1b3"
+    },
+    {
+      "id": "phonics.zaay.fatha.short",
+      "text": "زَ",
+      "letterKey": "zaay",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 60,
+      "path": "course/audio/phonics/phonics.zaay.fatha.short.mp3",
+      "sha256": "a2d9e96ec284a5613097cac4ec3507ca407d734bb55e8c19bd54252bc2ca1831"
+    },
+    {
+      "id": "phonics.zaay.fatha.long",
+      "text": "زَا",
+      "letterKey": "zaay",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 61,
+      "path": "course/audio/phonics/phonics.zaay.fatha.long.mp3",
+      "sha256": "ca173a9a200bdf48285b8a24b8b18e69228875ed8613040a3f55f9b03d80c46f"
+    },
+    {
+      "id": "phonics.zaay.damma.short",
+      "text": "زُ",
+      "letterKey": "zaay",
+      "vowel": "damma",
+      "length": "short",
+      "index": 62,
+      "path": "course/audio/phonics/phonics.zaay.damma.short.mp3",
+      "sha256": "c07c410126282eb16243c1c5e4eb901cda785e5e8c4ba5bd2b13dbfabd674b13"
+    },
+    {
+      "id": "phonics.zaay.damma.long",
+      "text": "زُو",
+      "letterKey": "zaay",
+      "vowel": "damma",
+      "length": "long",
+      "index": 63,
+      "path": "course/audio/phonics/phonics.zaay.damma.long.mp3",
+      "sha256": "1d63a8ea9301669cb40e72b9d31aeebfaf18bdf1e5e84383178294864ec4f9ff"
+    },
+    {
+      "id": "phonics.zaay.kasra.short",
+      "text": "زِ",
+      "letterKey": "zaay",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 64,
+      "path": "course/audio/phonics/phonics.zaay.kasra.short.mp3",
+      "sha256": "7f0a4369205ddf987c4b6f9414dd337d5bf1216acc29b4e0809edcd2599c0ae7"
+    },
+    {
+      "id": "phonics.zaay.kasra.long",
+      "text": "زِي",
+      "letterKey": "zaay",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 65,
+      "path": "course/audio/phonics/phonics.zaay.kasra.long.mp3",
+      "sha256": "dcb8d067deb50ec8167572a54fe4c2fe78dd6fd944a1359a7afcd5c59e000c6a"
+    },
+    {
+      "id": "phonics.siin.fatha.short",
+      "text": "سَ",
+      "letterKey": "siin",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 66,
+      "path": "course/audio/phonics/phonics.siin.fatha.short.mp3",
+      "sha256": "ce2554e527c87e4e7deb8e3a01b3e2443579c793058191cc1bbf7430c16af399"
+    },
+    {
+      "id": "phonics.siin.fatha.long",
+      "text": "سَا",
+      "letterKey": "siin",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 67,
+      "path": "course/audio/phonics/phonics.siin.fatha.long.mp3",
+      "sha256": "aa26d5d1119210f7c89baf0b69c04a70a793a02f945b118ac87bd893d4dfb2c8"
+    },
+    {
+      "id": "phonics.siin.damma.short",
+      "text": "سُ",
+      "letterKey": "siin",
+      "vowel": "damma",
+      "length": "short",
+      "index": 68,
+      "path": "course/audio/phonics/phonics.siin.damma.short.mp3",
+      "sha256": "c6e5b0983417ae26fcfddb76edbfd8aa1e57a94a930d0e817bdfc69ae859933c"
+    },
+    {
+      "id": "phonics.siin.damma.long",
+      "text": "سُو",
+      "letterKey": "siin",
+      "vowel": "damma",
+      "length": "long",
+      "index": 69,
+      "path": "course/audio/phonics/phonics.siin.damma.long.mp3",
+      "sha256": "ab06da24fa35c6b6313d7b4a7452204721ae020f4536442b2c0121b3d83e2ae4"
+    },
+    {
+      "id": "phonics.siin.kasra.short",
+      "text": "سِ",
+      "letterKey": "siin",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 70,
+      "path": "course/audio/phonics/phonics.siin.kasra.short.mp3",
+      "sha256": "d4f6f8f363feeaa1ff76fde4c7ba9948c637443ae0c57ff9850b80eb894cae08"
+    },
+    {
+      "id": "phonics.siin.kasra.long",
+      "text": "سِي",
+      "letterKey": "siin",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 71,
+      "path": "course/audio/phonics/phonics.siin.kasra.long.mp3",
+      "sha256": "07b878a853608e82f62f0fcb7396d208988489c4cce9a8e1fb674d6956b07130"
+    },
+    {
+      "id": "phonics.shiin.fatha.short",
+      "text": "شَ",
+      "letterKey": "shiin",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 72,
+      "path": "course/audio/phonics/phonics.shiin.fatha.short.mp3",
+      "sha256": "49583deb216fdce6588dbea158cf5cad16010140be7f5e83bdaf2fe8586334db"
+    },
+    {
+      "id": "phonics.shiin.fatha.long",
+      "text": "شَا",
+      "letterKey": "shiin",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 73,
+      "path": "course/audio/phonics/phonics.shiin.fatha.long.mp3",
+      "sha256": "659d75a0b82d9e5052aed747b90cad275a8a4f00e71c8acb1c55b799968712e5"
+    },
+    {
+      "id": "phonics.shiin.damma.short",
+      "text": "شُ",
+      "letterKey": "shiin",
+      "vowel": "damma",
+      "length": "short",
+      "index": 74,
+      "path": "course/audio/phonics/phonics.shiin.damma.short.mp3",
+      "sha256": "6b09da58fed9c2fafb3527d82b577045860d31b3af89876ab5040baf01a2c72d"
+    },
+    {
+      "id": "phonics.shiin.damma.long",
+      "text": "شُو",
+      "letterKey": "shiin",
+      "vowel": "damma",
+      "length": "long",
+      "index": 75,
+      "path": "course/audio/phonics/phonics.shiin.damma.long.mp3",
+      "sha256": "f8d1cfce888c38680aa162e0c325368d4dd7dd6978b3186a4f011cbaf79c7d4b"
+    },
+    {
+      "id": "phonics.shiin.kasra.short",
+      "text": "شِ",
+      "letterKey": "shiin",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 76,
+      "path": "course/audio/phonics/phonics.shiin.kasra.short.mp3",
+      "sha256": "0899fe6b1ff65172bc444f9508018771381c239b268bdf75dca922af7d51658a"
+    },
+    {
+      "id": "phonics.shiin.kasra.long",
+      "text": "شِي",
+      "letterKey": "shiin",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 77,
+      "path": "course/audio/phonics/phonics.shiin.kasra.long.mp3",
+      "sha256": "2882239233f75625fbebfe893c7664f13b770688187b75378e8bb2a54bf3d847"
+    },
+    {
+      "id": "phonics.saad.fatha.short",
+      "text": "صَ",
+      "letterKey": "saad",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 78,
+      "path": "course/audio/phonics/phonics.saad.fatha.short.mp3",
+      "sha256": "70dec896db84d929c6dff9e22beca8ccf3124338cb939f70626eef595f14b954"
+    },
+    {
+      "id": "phonics.saad.fatha.long",
+      "text": "صَا",
+      "letterKey": "saad",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 79,
+      "path": "course/audio/phonics/phonics.saad.fatha.long.mp3",
+      "sha256": "cb048cce222297f9ec9b61498fec31fb0a47ff51885a511ca828f6996a78a260"
+    },
+    {
+      "id": "phonics.saad.damma.short",
+      "text": "صُ",
+      "letterKey": "saad",
+      "vowel": "damma",
+      "length": "short",
+      "index": 80,
+      "path": "course/audio/phonics/phonics.saad.damma.short.mp3",
+      "sha256": "8222ebeb74625266ad533afaac24d7bb639a3f140b28daf5883cf2bfe7f90c05"
+    },
+    {
+      "id": "phonics.saad.damma.long",
+      "text": "صُو",
+      "letterKey": "saad",
+      "vowel": "damma",
+      "length": "long",
+      "index": 81,
+      "path": "course/audio/phonics/phonics.saad.damma.long.mp3",
+      "sha256": "142acfa4b36841f50ce6bb5bba9181d8cf89b8e3004692bbb7314c6171db0217"
+    },
+    {
+      "id": "phonics.saad.kasra.short",
+      "text": "صِ",
+      "letterKey": "saad",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 82,
+      "path": "course/audio/phonics/phonics.saad.kasra.short.mp3",
+      "sha256": "c4eb91ee6e7bf80ee995783436c3764fcefeca60b64d6c12ccffd5e2305ae222"
+    },
+    {
+      "id": "phonics.saad.kasra.long",
+      "text": "صِي",
+      "letterKey": "saad",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 83,
+      "path": "course/audio/phonics/phonics.saad.kasra.long.mp3",
+      "sha256": "5c80e916a408f8dbbfd912eeadd1559015fe4df041d053d5f76930f6871eff08"
+    },
+    {
+      "id": "phonics.daad.fatha.short",
+      "text": "ضَ",
+      "letterKey": "daad",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 84,
+      "path": "course/audio/phonics/phonics.daad.fatha.short.mp3",
+      "sha256": "485621c33680f62c787b7f6666cf703e8fd6bb7e77641dbf60006be60f04814c"
+    },
+    {
+      "id": "phonics.daad.fatha.long",
+      "text": "ضَا",
+      "letterKey": "daad",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 85,
+      "path": "course/audio/phonics/phonics.daad.fatha.long.mp3",
+      "sha256": "a8aec1ede1b28861a425123884ab4db1b79d6310e3b07ea7a93b8a26459cf8d4"
+    },
+    {
+      "id": "phonics.daad.damma.short",
+      "text": "ضُ",
+      "letterKey": "daad",
+      "vowel": "damma",
+      "length": "short",
+      "index": 86,
+      "path": "course/audio/phonics/phonics.daad.damma.short.mp3",
+      "sha256": "031cbb41bfd0d7865c5deeba973b6d57963eeeeca45a6a88054a0efd408d5fef"
+    },
+    {
+      "id": "phonics.daad.damma.long",
+      "text": "ضُو",
+      "letterKey": "daad",
+      "vowel": "damma",
+      "length": "long",
+      "index": 87,
+      "path": "course/audio/phonics/phonics.daad.damma.long.mp3",
+      "sha256": "e465527eb40b0173a64029f70153d4481d625cb65c4deee03ec2211630872f7e"
+    },
+    {
+      "id": "phonics.daad.kasra.short",
+      "text": "ضِ",
+      "letterKey": "daad",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 88,
+      "path": "course/audio/phonics/phonics.daad.kasra.short.mp3",
+      "sha256": "032631fec56c251bb5a0db007f6afdbb6277e06dcb8c4943a9787a60b4cb48cf"
+    },
+    {
+      "id": "phonics.daad.kasra.long",
+      "text": "ضِي",
+      "letterKey": "daad",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 89,
+      "path": "course/audio/phonics/phonics.daad.kasra.long.mp3",
+      "sha256": "f71d9b42a8e8463a0a9b77917544b32fe224144447825cdeee97d2be0eb22f9b"
+    },
+    {
+      "id": "phonics.taa_emphatic.fatha.short",
+      "text": "طَ",
+      "letterKey": "taa_emphatic",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 90,
+      "path": "course/audio/phonics/phonics.taa_emphatic.fatha.short.mp3",
+      "sha256": "fd7722246540905d8bf1dacec8749d6c408a25bb8fa99ccacfe0d35c6162cf41"
+    },
+    {
+      "id": "phonics.taa_emphatic.fatha.long",
+      "text": "طَا",
+      "letterKey": "taa_emphatic",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 91,
+      "path": "course/audio/phonics/phonics.taa_emphatic.fatha.long.mp3",
+      "sha256": "57eb8810e29f9252cf678cee0f0bba1bc211e8ec337ea650d5b86f846d481440"
+    },
+    {
+      "id": "phonics.taa_emphatic.damma.short",
+      "text": "طُ",
+      "letterKey": "taa_emphatic",
+      "vowel": "damma",
+      "length": "short",
+      "index": 92,
+      "path": "course/audio/phonics/phonics.taa_emphatic.damma.short.mp3",
+      "sha256": "ae16e1e7866f7ddee2b8e1af41ddefd9ad27ef5335bd09740e9bc63c343fb0f3"
+    },
+    {
+      "id": "phonics.taa_emphatic.damma.long",
+      "text": "طُو",
+      "letterKey": "taa_emphatic",
+      "vowel": "damma",
+      "length": "long",
+      "index": 93,
+      "path": "course/audio/phonics/phonics.taa_emphatic.damma.long.mp3",
+      "sha256": "c5e91775367f35763181cff53140df20ace3ab9e3c8eae4269f107e631364897"
+    },
+    {
+      "id": "phonics.taa_emphatic.kasra.short",
+      "text": "طِ",
+      "letterKey": "taa_emphatic",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 94,
+      "path": "course/audio/phonics/phonics.taa_emphatic.kasra.short.mp3",
+      "sha256": "c5614ee8fd26837d17fc751b1b005870d59664cc9e284eeb8120844023d88435"
+    },
+    {
+      "id": "phonics.taa_emphatic.kasra.long",
+      "text": "طِي",
+      "letterKey": "taa_emphatic",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 95,
+      "path": "course/audio/phonics/phonics.taa_emphatic.kasra.long.mp3",
+      "sha256": "ed4654ef67884e1e3e955f913ba9a1d0db5d48649195946f726236f1090f422f"
+    },
+    {
+      "id": "phonics.dhaa_emphatic.fatha.short",
+      "text": "ظَ",
+      "letterKey": "dhaa_emphatic",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 96,
+      "path": "course/audio/phonics/phonics.dhaa_emphatic.fatha.short.mp3",
+      "sha256": "152c39c12a5e6d1b9600ff91dd6d850717b68caacd8fca77a63e9a1ebe389dd1"
+    },
+    {
+      "id": "phonics.dhaa_emphatic.fatha.long",
+      "text": "ظَا",
+      "letterKey": "dhaa_emphatic",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 97,
+      "path": "course/audio/phonics/phonics.dhaa_emphatic.fatha.long.mp3",
+      "sha256": "6b5a5edd8a8629a59d401f3d09bd1b2a05a5008f9acd2419d3889508860379bd"
+    },
+    {
+      "id": "phonics.dhaa_emphatic.damma.short",
+      "text": "ظُ",
+      "letterKey": "dhaa_emphatic",
+      "vowel": "damma",
+      "length": "short",
+      "index": 98,
+      "path": "course/audio/phonics/phonics.dhaa_emphatic.damma.short.mp3",
+      "sha256": "42eaf352aa524a744a6291c527c3239f5469c14ce38b3ed197877cf47e63397d"
+    },
+    {
+      "id": "phonics.dhaa_emphatic.damma.long",
+      "text": "ظُو",
+      "letterKey": "dhaa_emphatic",
+      "vowel": "damma",
+      "length": "long",
+      "index": 99,
+      "path": "course/audio/phonics/phonics.dhaa_emphatic.damma.long.mp3",
+      "sha256": "5128e8a76d05ea6f9242dbb73c5418a7cfd0c6e97a2a004dd780d524d6848174"
+    },
+    {
+      "id": "phonics.dhaa_emphatic.kasra.short",
+      "text": "ظِ",
+      "letterKey": "dhaa_emphatic",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 100,
+      "path": "course/audio/phonics/phonics.dhaa_emphatic.kasra.short.mp3",
+      "sha256": "d77be95ffc50d7dde00ce5a8b9fe51a24562c2af8961a067ac524791569cf367"
+    },
+    {
+      "id": "phonics.dhaa_emphatic.kasra.long",
+      "text": "ظِي",
+      "letterKey": "dhaa_emphatic",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 101,
+      "path": "course/audio/phonics/phonics.dhaa_emphatic.kasra.long.mp3",
+      "sha256": "30b1638ff9207c8d8a33d40b636344aaf54e2ed3774d2b5334a84b43da695ce0"
+    },
+    {
+      "id": "phonics.ayn.fatha.short",
+      "text": "عَ",
+      "letterKey": "ayn",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 102,
+      "path": "course/audio/phonics/phonics.ayn.fatha.short.mp3",
+      "sha256": "e5deca76841addcde34f3208361cf7b15714b91c8553ee0b6e77ff18bb84d442"
+    },
+    {
+      "id": "phonics.ayn.fatha.long",
+      "text": "عَا",
+      "letterKey": "ayn",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 103,
+      "path": "course/audio/phonics/phonics.ayn.fatha.long.mp3",
+      "sha256": "74f0b628eb2f84315669d1a0477061df977cd4484e0e870616466c0d02c01b6b"
+    },
+    {
+      "id": "phonics.ayn.damma.short",
+      "text": "عُ",
+      "letterKey": "ayn",
+      "vowel": "damma",
+      "length": "short",
+      "index": 104,
+      "path": "course/audio/phonics/phonics.ayn.damma.short.mp3",
+      "sha256": "4969853c84826a2712214e692c4d4b4410cc2f91d0a0677887dd37fc63206323"
+    },
+    {
+      "id": "phonics.ayn.damma.long",
+      "text": "عُو",
+      "letterKey": "ayn",
+      "vowel": "damma",
+      "length": "long",
+      "index": 105,
+      "path": "course/audio/phonics/phonics.ayn.damma.long.mp3",
+      "sha256": "93732a477334ca1010d18744a33379d0930bdec15390dc1d2274a2ce0dfc8599"
+    },
+    {
+      "id": "phonics.ayn.kasra.short",
+      "text": "عِ",
+      "letterKey": "ayn",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 106,
+      "path": "course/audio/phonics/phonics.ayn.kasra.short.mp3",
+      "sha256": "c3bc2fa906ffefbc1a3d7168eb6fe8528a7337918695d4937294a0593fc1777d"
+    },
+    {
+      "id": "phonics.ayn.kasra.long",
+      "text": "عِي",
+      "letterKey": "ayn",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 107,
+      "path": "course/audio/phonics/phonics.ayn.kasra.long.mp3",
+      "sha256": "17263445432f5c8fe8d22d6ee1de959c501a490e0179f5d1affc04c7c34a3f5b"
+    },
+    {
+      "id": "phonics.ghayn.fatha.short",
+      "text": "غَ",
+      "letterKey": "ghayn",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 108,
+      "path": "course/audio/phonics/phonics.ghayn.fatha.short.mp3",
+      "sha256": "d94cbd09cfc6d703b7557e7dec744a88cd3a46f48e55ee8ebc84a3aa331cea93"
+    },
+    {
+      "id": "phonics.ghayn.fatha.long",
+      "text": "غَا",
+      "letterKey": "ghayn",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 109,
+      "path": "course/audio/phonics/phonics.ghayn.fatha.long.mp3",
+      "sha256": "f14dd9531fe3f50906565f2eb8fc667c7170e0e9e5c72568576a54336e1926d7"
+    },
+    {
+      "id": "phonics.ghayn.damma.short",
+      "text": "غُ",
+      "letterKey": "ghayn",
+      "vowel": "damma",
+      "length": "short",
+      "index": 110,
+      "path": "course/audio/phonics/phonics.ghayn.damma.short.mp3",
+      "sha256": "ad86933321c269c2bb40a5e009227dfd9ae20a6f75fa31a85b32cc1065bc34cc"
+    },
+    {
+      "id": "phonics.ghayn.damma.long",
+      "text": "غُو",
+      "letterKey": "ghayn",
+      "vowel": "damma",
+      "length": "long",
+      "index": 111,
+      "path": "course/audio/phonics/phonics.ghayn.damma.long.mp3",
+      "sha256": "45101d77ba876ef6c2fb25c37ae97680a8724fab7ecb7407502e1ef2282226e9"
+    },
+    {
+      "id": "phonics.ghayn.kasra.short",
+      "text": "غِ",
+      "letterKey": "ghayn",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 112,
+      "path": "course/audio/phonics/phonics.ghayn.kasra.short.mp3",
+      "sha256": "60cd020776d01d104bd1ed83d2286520899f22af1ee4eed899ef07206bf343df"
+    },
+    {
+      "id": "phonics.ghayn.kasra.long",
+      "text": "غِي",
+      "letterKey": "ghayn",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 113,
+      "path": "course/audio/phonics/phonics.ghayn.kasra.long.mp3",
+      "sha256": "424a87e6b03da798a4e8ca1d0651f380de3d784180b7d0798b373c68df17e2f6"
+    },
+    {
+      "id": "phonics.faa.fatha.short",
+      "text": "فَ",
+      "letterKey": "faa",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 114,
+      "path": "course/audio/phonics/phonics.faa.fatha.short.mp3",
+      "sha256": "3a0090e8a43af4d7b37e11c62e3080172fdf25d65ef606c2d7350066589497d2"
+    },
+    {
+      "id": "phonics.faa.fatha.long",
+      "text": "فَا",
+      "letterKey": "faa",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 115,
+      "path": "course/audio/phonics/phonics.faa.fatha.long.mp3",
+      "sha256": "a6a714b64520b7f3f0b345e57003f8247245a1f6da045dea33f18db60a7b92d2"
+    },
+    {
+      "id": "phonics.faa.damma.short",
+      "text": "فُ",
+      "letterKey": "faa",
+      "vowel": "damma",
+      "length": "short",
+      "index": 116,
+      "path": "course/audio/phonics/phonics.faa.damma.short.mp3",
+      "sha256": "c6b8ef2a9bfca5a4f411265866ea5702fde68786bfb434388fb47f3ddf106895"
+    },
+    {
+      "id": "phonics.faa.damma.long",
+      "text": "فُو",
+      "letterKey": "faa",
+      "vowel": "damma",
+      "length": "long",
+      "index": 117,
+      "path": "course/audio/phonics/phonics.faa.damma.long.mp3",
+      "sha256": "bfa4b1db6ca87d2fba81b1d63b10781a954d902afb83f5a8970731c3a2fe36fa"
+    },
+    {
+      "id": "phonics.faa.kasra.short",
+      "text": "فِ",
+      "letterKey": "faa",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 118,
+      "path": "course/audio/phonics/phonics.faa.kasra.short.mp3",
+      "sha256": "a6f2eea58ad24211fcc38c8f8b3e49a2cb76ca7c28f4808a45df13edae2ceb35"
+    },
+    {
+      "id": "phonics.faa.kasra.long",
+      "text": "فِي",
+      "letterKey": "faa",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 119,
+      "path": "course/audio/phonics/phonics.faa.kasra.long.mp3",
+      "sha256": "a9fc20c243e7abde11154cd73ff2ef9cac98126746dff0f1ce31c433de53e8a1"
+    },
+    {
+      "id": "phonics.qaaf.fatha.short",
+      "text": "قَ",
+      "letterKey": "qaaf",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 120,
+      "path": "course/audio/phonics/phonics.qaaf.fatha.short.mp3",
+      "sha256": "fb6a90d6e55d87b0b4db7f26a6b49e201d320498dc308ba0080296bc714ad473"
+    },
+    {
+      "id": "phonics.qaaf.fatha.long",
+      "text": "قَا",
+      "letterKey": "qaaf",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 121,
+      "path": "course/audio/phonics/phonics.qaaf.fatha.long.mp3",
+      "sha256": "d410536b5358eaa94153b884ea477db8463ce9027196da0c03334953eed55b65"
+    },
+    {
+      "id": "phonics.qaaf.damma.short",
+      "text": "قُ",
+      "letterKey": "qaaf",
+      "vowel": "damma",
+      "length": "short",
+      "index": 122,
+      "path": "course/audio/phonics/phonics.qaaf.damma.short.mp3",
+      "sha256": "52ef68556f08f0aecf04800a1871cb2d8168606bb901034ddcb455bb3f825776"
+    },
+    {
+      "id": "phonics.qaaf.damma.long",
+      "text": "قُو",
+      "letterKey": "qaaf",
+      "vowel": "damma",
+      "length": "long",
+      "index": 123,
+      "path": "course/audio/phonics/phonics.qaaf.damma.long.mp3",
+      "sha256": "ac7e34b6d3fafc6ab1234de16858acfa4328679f2ec183e702acb3e8f44c4a3d"
+    },
+    {
+      "id": "phonics.qaaf.kasra.short",
+      "text": "قِ",
+      "letterKey": "qaaf",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 124,
+      "path": "course/audio/phonics/phonics.qaaf.kasra.short.mp3",
+      "sha256": "5134ee1d1e2a4b7ae7259227695eb57c22285d8b3e03431112fc6096262eb81e"
+    },
+    {
+      "id": "phonics.qaaf.kasra.long",
+      "text": "قِي",
+      "letterKey": "qaaf",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 125,
+      "path": "course/audio/phonics/phonics.qaaf.kasra.long.mp3",
+      "sha256": "ebb9fb9c4ca2c2312fac1945f266f160697dc9cdf28944dd99866ba7bcc3c07a"
+    },
+    {
+      "id": "phonics.kaaf.fatha.short",
+      "text": "كَ",
+      "letterKey": "kaaf",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 126,
+      "path": "course/audio/phonics/phonics.kaaf.fatha.short.mp3",
+      "sha256": "ba056e92f8a619f9eac9a69745fbeeeae36d2449f87e678030a4f726460c5eaa"
+    },
+    {
+      "id": "phonics.kaaf.fatha.long",
+      "text": "كَا",
+      "letterKey": "kaaf",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 127,
+      "path": "course/audio/phonics/phonics.kaaf.fatha.long.mp3",
+      "sha256": "af0a7e1efafb262a0193d0d440bb690e2c943e034342858670d504fa45bcfe0f"
+    },
+    {
+      "id": "phonics.kaaf.damma.short",
+      "text": "كُ",
+      "letterKey": "kaaf",
+      "vowel": "damma",
+      "length": "short",
+      "index": 128,
+      "path": "course/audio/phonics/phonics.kaaf.damma.short.mp3",
+      "sha256": "34ac94bb67c38c530797f10181f585ae04dd151db1f4f101b4ba1d2b8b3127c5"
+    },
+    {
+      "id": "phonics.kaaf.damma.long",
+      "text": "كُو",
+      "letterKey": "kaaf",
+      "vowel": "damma",
+      "length": "long",
+      "index": 129,
+      "path": "course/audio/phonics/phonics.kaaf.damma.long.mp3",
+      "sha256": "c02dfc1a2318e9515814aa539080b898cf26b479b68620a86933cc15984cab5f"
+    },
+    {
+      "id": "phonics.kaaf.kasra.short",
+      "text": "كِ",
+      "letterKey": "kaaf",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 130,
+      "path": "course/audio/phonics/phonics.kaaf.kasra.short.mp3",
+      "sha256": "8367c330eb163426b4ba83d620c64991de5c2d381b11a56aa8e31195066bc40f"
+    },
+    {
+      "id": "phonics.kaaf.kasra.long",
+      "text": "كِي",
+      "letterKey": "kaaf",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 131,
+      "path": "course/audio/phonics/phonics.kaaf.kasra.long.mp3",
+      "sha256": "9a8abcf983018a8c639aabcdb9fcc8680c12b3176e3fc38f7035a5f974acd68a"
+    },
+    {
+      "id": "phonics.laam.fatha.short",
+      "text": "لَ",
+      "letterKey": "laam",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 132,
+      "path": "course/audio/phonics/phonics.laam.fatha.short.mp3",
+      "sha256": "41dfb806c387ce1a9233896eb57921bcb4bb660f3c304d502187fdf4f44e2ded"
+    },
+    {
+      "id": "phonics.laam.fatha.long",
+      "text": "لَا",
+      "letterKey": "laam",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 133,
+      "path": "course/audio/phonics/phonics.laam.fatha.long.mp3",
+      "sha256": "bd3bbdc99f408c01020d9d6c9f539bbd6095683091d36c9d1a16efcff5a25e6d"
+    },
+    {
+      "id": "phonics.laam.damma.short",
+      "text": "لُ",
+      "letterKey": "laam",
+      "vowel": "damma",
+      "length": "short",
+      "index": 134,
+      "path": "course/audio/phonics/phonics.laam.damma.short.mp3",
+      "sha256": "4fd1567cabd1b8e434020586b298b39872f0018cec4d471bb5b89e14433de4fd"
+    },
+    {
+      "id": "phonics.laam.damma.long",
+      "text": "لُو",
+      "letterKey": "laam",
+      "vowel": "damma",
+      "length": "long",
+      "index": 135,
+      "path": "course/audio/phonics/phonics.laam.damma.long.mp3",
+      "sha256": "27f8c4ae8ab1d0555d9dea309a8dcbbd237b4d9157819be1c79f3a3e1c970e3a"
+    },
+    {
+      "id": "phonics.laam.kasra.short",
+      "text": "لِ",
+      "letterKey": "laam",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 136,
+      "path": "course/audio/phonics/phonics.laam.kasra.short.mp3",
+      "sha256": "ecbaec838e9a45299ade3e883fd109bda694e9716c0a547fdf2f799a32fcd574"
+    },
+    {
+      "id": "phonics.laam.kasra.long",
+      "text": "لِي",
+      "letterKey": "laam",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 137,
+      "path": "course/audio/phonics/phonics.laam.kasra.long.mp3",
+      "sha256": "f20121292e5dc0cb5514035332129b24f1f756e15a62cb8017d9966be5f058d2"
+    },
+    {
+      "id": "phonics.miim.fatha.short",
+      "text": "مَ",
+      "letterKey": "miim",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 138,
+      "path": "course/audio/phonics/phonics.miim.fatha.short.mp3",
+      "sha256": "e88ef68b60d9a0bc60a3a5cf0d6bd5dd18817ee2cce830d396bcef1dd771d3fa"
+    },
+    {
+      "id": "phonics.miim.fatha.long",
+      "text": "مَا",
+      "letterKey": "miim",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 139,
+      "path": "course/audio/phonics/phonics.miim.fatha.long.mp3",
+      "sha256": "8a66867d3dce463ead9f97e76f957351e7e136005acbcf889a8ba91475f70fe7"
+    },
+    {
+      "id": "phonics.miim.damma.short",
+      "text": "مُ",
+      "letterKey": "miim",
+      "vowel": "damma",
+      "length": "short",
+      "index": 140,
+      "path": "course/audio/phonics/phonics.miim.damma.short.mp3",
+      "sha256": "ee112b04fdd9c4d5d23aad270240c0e1d3ef71e30902032b1969803a713de722"
+    },
+    {
+      "id": "phonics.miim.damma.long",
+      "text": "مُو",
+      "letterKey": "miim",
+      "vowel": "damma",
+      "length": "long",
+      "index": 141,
+      "path": "course/audio/phonics/phonics.miim.damma.long.mp3",
+      "sha256": "366e7bf4ac655ee5eefaa13e886e3b845a8de9367e4147bf07f410cec0a20a62"
+    },
+    {
+      "id": "phonics.miim.kasra.short",
+      "text": "مِ",
+      "letterKey": "miim",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 142,
+      "path": "course/audio/phonics/phonics.miim.kasra.short.mp3",
+      "sha256": "0706244c5bc0e5fcd560aba2d66fedf306213056c2c8770b6e0e3f1367058b7b"
+    },
+    {
+      "id": "phonics.miim.kasra.long",
+      "text": "مِي",
+      "letterKey": "miim",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 143,
+      "path": "course/audio/phonics/phonics.miim.kasra.long.mp3",
+      "sha256": "1d3d59f18436c1cdbcd128eb2ca247fa7047b595a3b9e0d9a1465d0d59b017c7"
+    },
+    {
+      "id": "phonics.nuun.fatha.short",
+      "text": "نَ",
+      "letterKey": "nuun",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 144,
+      "path": "course/audio/phonics/phonics.nuun.fatha.short.mp3",
+      "sha256": "6147a11721591e8055c7f90aded0a7575b6694706864d2ea8e5c15cead3f2726"
+    },
+    {
+      "id": "phonics.nuun.fatha.long",
+      "text": "نَا",
+      "letterKey": "nuun",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 145,
+      "path": "course/audio/phonics/phonics.nuun.fatha.long.mp3",
+      "sha256": "4d4ba9a2768ddf020c7b1de678168cd804504c86fef768f97826b1472304e17b"
+    },
+    {
+      "id": "phonics.nuun.damma.short",
+      "text": "نُ",
+      "letterKey": "nuun",
+      "vowel": "damma",
+      "length": "short",
+      "index": 146,
+      "path": "course/audio/phonics/phonics.nuun.damma.short.mp3",
+      "sha256": "df7dabefe03bb7c35fdf74e3c2721bdd853d2d9e3d9d94ca41e1b949b8300205"
+    },
+    {
+      "id": "phonics.nuun.damma.long",
+      "text": "نُو",
+      "letterKey": "nuun",
+      "vowel": "damma",
+      "length": "long",
+      "index": 147,
+      "path": "course/audio/phonics/phonics.nuun.damma.long.mp3",
+      "sha256": "7bd3614affbcf91b33a84043e4e63004badce621f64a8d8579b63fea2fc7cd1b"
+    },
+    {
+      "id": "phonics.nuun.kasra.short",
+      "text": "نِ",
+      "letterKey": "nuun",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 148,
+      "path": "course/audio/phonics/phonics.nuun.kasra.short.mp3",
+      "sha256": "252c7fda0046b8806ed378ec81292813b7774354fa9a0746535ee782f0cc2877"
+    },
+    {
+      "id": "phonics.nuun.kasra.long",
+      "text": "نِي",
+      "letterKey": "nuun",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 149,
+      "path": "course/audio/phonics/phonics.nuun.kasra.long.mp3",
+      "sha256": "5943ef5661818d1d0c8afc535e95d40a4cba8a44126ad8e2f7bdc20b6815aa2b"
+    },
+    {
+      "id": "phonics.haa_breath.fatha.short",
+      "text": "هَ",
+      "letterKey": "haa_breath",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 150,
+      "path": "course/audio/phonics/phonics.haa_breath.fatha.short.mp3",
+      "sha256": "67b6a0f6cdb71241a7029a12101eae8706e540982785ab683fc91ec42ec6d766"
+    },
+    {
+      "id": "phonics.haa_breath.fatha.long",
+      "text": "هَا",
+      "letterKey": "haa_breath",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 151,
+      "path": "course/audio/phonics/phonics.haa_breath.fatha.long.mp3",
+      "sha256": "30a0c270f0ad38d8b28b31d0856420c94a0561bfbb58a0533e93dacee6ade955"
+    },
+    {
+      "id": "phonics.haa_breath.damma.short",
+      "text": "هُ",
+      "letterKey": "haa_breath",
+      "vowel": "damma",
+      "length": "short",
+      "index": 152,
+      "path": "course/audio/phonics/phonics.haa_breath.damma.short.mp3",
+      "sha256": "f9fa3fba75d8bb561c0e1fb1dd7d316dc05f0d902953e3ba56383ce07b083136"
+    },
+    {
+      "id": "phonics.haa_breath.damma.long",
+      "text": "هُو",
+      "letterKey": "haa_breath",
+      "vowel": "damma",
+      "length": "long",
+      "index": 153,
+      "path": "course/audio/phonics/phonics.haa_breath.damma.long.mp3",
+      "sha256": "76a27c827ee0908446a7dc95b480cc0bd9d1e5a84fa1e043ad71a79bab36bb7a"
+    },
+    {
+      "id": "phonics.haa_breath.kasra.short",
+      "text": "هِ",
+      "letterKey": "haa_breath",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 154,
+      "path": "course/audio/phonics/phonics.haa_breath.kasra.short.mp3",
+      "sha256": "b791dcc1639060717842d8c8673854f9b82c587e72ef09c6f347d8a1abaa0f0e"
+    },
+    {
+      "id": "phonics.haa_breath.kasra.long",
+      "text": "هِي",
+      "letterKey": "haa_breath",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 155,
+      "path": "course/audio/phonics/phonics.haa_breath.kasra.long.mp3",
+      "sha256": "ba64d1861c5d3abfd86c9d1d913113dfe5a4ced8b725f76c53bd9412087f4599"
+    },
+    {
+      "id": "phonics.waaw.fatha.short",
+      "text": "وَ",
+      "letterKey": "waaw",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 156,
+      "path": "course/audio/phonics/phonics.waaw.fatha.short.mp3",
+      "sha256": "dfde3cd1f7202339b9733c27a8972667d045e444c20849c47238678bd7c9d243"
+    },
+    {
+      "id": "phonics.waaw.fatha.long",
+      "text": "وَا",
+      "letterKey": "waaw",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 157,
+      "path": "course/audio/phonics/phonics.waaw.fatha.long.mp3",
+      "sha256": "698f9cffc22b9b3a2bfebfbb1768292d056b59902cc76ff32cc2381d39bb58db"
+    },
+    {
+      "id": "phonics.waaw.damma.short",
+      "text": "وُ",
+      "letterKey": "waaw",
+      "vowel": "damma",
+      "length": "short",
+      "index": 158,
+      "path": "course/audio/phonics/phonics.waaw.damma.short.mp3",
+      "sha256": "463bcfa493b237f977ff5c0ff7dacefb5f1c2375c4a3669c4acb9c4100c9f588"
+    },
+    {
+      "id": "phonics.waaw.damma.long",
+      "text": "وُو",
+      "letterKey": "waaw",
+      "vowel": "damma",
+      "length": "long",
+      "index": 159,
+      "path": "course/audio/phonics/phonics.waaw.damma.long.mp3",
+      "sha256": "b05d420e1349f0e2458e094f3d8f69d1121e8b20bb1a4ffa7b9da295620d502f"
+    },
+    {
+      "id": "phonics.waaw.kasra.short",
+      "text": "وِ",
+      "letterKey": "waaw",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 160,
+      "path": "course/audio/phonics/phonics.waaw.kasra.short.mp3",
+      "sha256": "8e39d67ba39a738892e144db44a6f45921c4cd81615e5d1aca5d7c793dca4ea1"
+    },
+    {
+      "id": "phonics.waaw.kasra.long",
+      "text": "وِي",
+      "letterKey": "waaw",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 161,
+      "path": "course/audio/phonics/phonics.waaw.kasra.long.mp3",
+      "sha256": "db1f448a69ae3afbcbce18c44d601be1d60b9c1908fd85275332cc4ca6ed525d"
+    },
+    {
+      "id": "phonics.yaa.fatha.short",
+      "text": "يَ",
+      "letterKey": "yaa",
+      "vowel": "fatha",
+      "length": "short",
+      "index": 162,
+      "path": "course/audio/phonics/phonics.yaa.fatha.short.mp3",
+      "sha256": "7e150a9ac57103fcafd9c2277940804ead38ae76c4f1acecd83851199ee36d55"
+    },
+    {
+      "id": "phonics.yaa.fatha.long",
+      "text": "يَا",
+      "letterKey": "yaa",
+      "vowel": "fatha",
+      "length": "long",
+      "index": 163,
+      "path": "course/audio/phonics/phonics.yaa.fatha.long.mp3",
+      "sha256": "e40cfe6e85c0735fe9cd1bf371f3e1115f3ec9db588609848c24ae0869e4dab5"
+    },
+    {
+      "id": "phonics.yaa.damma.short",
+      "text": "يُ",
+      "letterKey": "yaa",
+      "vowel": "damma",
+      "length": "short",
+      "index": 164,
+      "path": "course/audio/phonics/phonics.yaa.damma.short.mp3",
+      "sha256": "338faa7682ce8ebef1d959ac3e05bd0d1f23b0dd089ab77511391fd0e6b418f3"
+    },
+    {
+      "id": "phonics.yaa.damma.long",
+      "text": "يُو",
+      "letterKey": "yaa",
+      "vowel": "damma",
+      "length": "long",
+      "index": 165,
+      "path": "course/audio/phonics/phonics.yaa.damma.long.mp3",
+      "sha256": "bbc8c4228289a5f5efd31a95d8c584c852d8e8a938aef6f9cc0c97ad4e657b8b"
+    },
+    {
+      "id": "phonics.yaa.kasra.short",
+      "text": "يِ",
+      "letterKey": "yaa",
+      "vowel": "kasra",
+      "length": "short",
+      "index": 166,
+      "path": "course/audio/phonics/phonics.yaa.kasra.short.mp3",
+      "sha256": "ce4fb0dda998eaa200de1dfa284f7b9fdae5456ddd05f38df5013b26ed448548"
+    },
+    {
+      "id": "phonics.yaa.kasra.long",
+      "text": "يِي",
+      "letterKey": "yaa",
+      "vowel": "kasra",
+      "length": "long",
+      "index": 167,
+      "path": "course/audio/phonics/phonics.yaa.kasra.long.mp3",
+      "sha256": "ed86dc3a557ad677acb44cb0f2eb69eb476b73484d912cfbf3356869f3781f49"
+    }
+  ],
+  "sources": {
+    "src/phonics/phonics-extension.js": "9104fac64da375c5465cc02830be1c26c885ae1bea8d1fb156ef9964fa6feb3f",
+    "src/phonics/phonics.css": "d20141f5c02d9c992a219f881e34cdc16cbdd3507f3ec139fc8e42a01ed2dd01",
+    "release-assets/phonics-20261003/audio-manifest.json": "ccaae6f4ac116e295513bbec61f9fca284c7d2e3b6d5b1c6e7a00488e3fe1a30"
+  }
+}

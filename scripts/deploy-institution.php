@@ -46,6 +46,28 @@ try {
     if (!$app || !str_starts_with($app,$home.'/') || str_starts_with($app,$web.'/') || is_link($config['code_path'])) throw new RuntimeException('PRIVATE_SOURCE_REQUIRED');
     $commerce=realpath(dirname($app).'/commerce');
     if (!$commerce || is_link(dirname($app).'/commerce') || !str_starts_with($commerce,$home.'/') || str_starts_with($commerce,$web.'/')) throw new RuntimeException('PRIVATE_SOURCE_REQUIRED');
+    // A later phonics deployment records exact public hashes outside the web
+    // root. Only those two shared files may be retained by this older deployer.
+    $phonicsHashes = [];
+    $phonicsDirectory = $home.'/.horizons-phonics';
+    $phonicsReceipt = $phonicsDirectory.'/receipt.json';
+    if (is_link($phonicsDirectory) || is_link($phonicsReceipt)) throw new RuntimeException('SYMLINK_REJECTED');
+    if (is_file($phonicsReceipt)) {
+        $receiptReal = realpath($phonicsReceipt);
+        if (!$receiptReal || dirname($receiptReal) !== $phonicsDirectory
+            || !str_starts_with($receiptReal,$home.'/') || str_starts_with($receiptReal,$web.'/')) throw new RuntimeException('PRIVATE_RECEIPT_REQUIRED');
+        if (filesize($phonicsReceipt) <= 262144) {
+            $receipt = json_decode(file_get_contents($phonicsReceipt),true,8);
+            if (is_array($receipt) && ($receipt['schema']??null) === 1
+                && ($receipt['patch']??null) === 'phonics-20261003'
+                && is_array($receipt['hashes']??null) && count($receipt['hashes']) <= 1000) {
+                foreach (['asset-manifest.json','sw.js'] as $name) {
+                    $sha = $receipt['hashes'][$name]??null;
+                    if (is_string($sha) && preg_match('/^[a-f0-9]{64}$/D',$sha)) $phonicsHashes['public/learn/'.$name] = $sha;
+                }
+            }
+        }
+    }
     $changes = []; $total = 0;
     foreach ($manifest['files'] as $path => $entry) {
         $isPrivate = !str_starts_with($path,'public/');
@@ -68,6 +90,7 @@ try {
         $total += $entry['bytes']; if ($total > 20971520) throw new RuntimeException('PAYLOAD_TOO_LARGE');
         $current = digest($target);
         if ($current === $entry['sha256']) continue;
+        if (isset($phonicsHashes[$path]) && $current !== null && hash_equals($phonicsHashes[$path],$current)) continue;
         // Preserve the subsequently approved single-letter correction on reruns.
         if ($path === 'public/learn/sw.js' && is_file($target)
             && file_get_contents($target) === str_replace("const SHELL = 'hzn-web-shell-' + VERSION;", "const SHELL = 'hzn-web-shell-' + VERSION + '-thaa-20261003';", file_get_contents($source))) continue;
