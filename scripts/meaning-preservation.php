@@ -36,6 +36,9 @@ function hznMeaningSupersedingState(string $web): ?array {
     if (substr_count($worker, "const SHELL = 'hzn-web-shell-' + VERSION + '-meanings-20261003-r1';") !== 1) throw new RuntimeException('MEANING_WORKER_INVALID');
     $entry = $manifest['files']['workbook.js'] ?? [];
     if (($entry['url'] ?? '') !== 'content/1.4.1/workbook.js.hzn' || ($entry['sha256'] ?? '') !== $receipt['hashes'][$entry['url']] || filesize(hznMeaningPath($learn, $entry['url'])) !== ($entry['bytes'] ?? -1)) throw new RuntimeException('MEANING_APPLICATION_DAMAGED');
+    $api = $receipt['learning_api'] ?? [];
+    $apiPath = hznMeaningPath($web, 'learning-api/Core.php');
+    if (($api['relative'] ?? '') !== 'learning-api/Core.php' || !preg_match('/^[a-f0-9]{64}$/D', $api['sha256'] ?? '') || !is_file($apiPath) || !hash_equals($api['sha256'], hash_file('sha256', $apiPath))) throw new RuntimeException('MEANING_LEARNING_API_CHANGED');
     $inherited = $receipt['inherited_blending2_receipt'] ?? null;
     if (!is_array($inherited) || count($inherited['hashes'] ?? []) !== 253) throw new RuntimeException('MEANING_BASELINE_RECEIPT_REQUIRED');
     foreach ($receipt['hashes'] as $relative => $sha) $inherited['hashes'][$relative] = $sha;

@@ -106,7 +106,7 @@ function validateDocument(array $input): array {
     if (!is_string($nickname) || preg_match('//u',$nickname)!==1 || preg_match('/[\x00-\x1f\x7f]/u',$nickname) || preg_match_all('/./us',$nickname)>80 || !is_array($settings) || !is_array($p)) throw new ApiError('INVALID_FIELD',400,['field'=>'profile']);
     keys($settings,['locale','meaningLocale','typography']);
     $typography=$settings['typography'];
-    if (!in_array($settings['locale'],LANGUAGES,true) || !in_array($settings['meaningLocale'],['ar','en','tr','fr','es'],true) || !is_array($typography)) throw new ApiError('INVALID_FIELD',400,['field'=>'settings']);
+    if (!in_array($settings['locale'],LANGUAGES,true) || !in_array($settings['meaningLocale'],LANGUAGES,true) || !is_array($typography)) throw new ApiError('INVALID_FIELD',400,['field'=>'settings']);
     keys($typography,['schemaVersion','font','size']);
     if ($typography['schemaVersion']!==1 || !in_array($typography['font'],['noto-naskh','amiri','scheherazade','noto-sans','noto-kufi'],true) || !is_int($typography['size']) || $typography['size']<0 || $typography['size']>4) throw new ApiError('INVALID_FIELD',400,['field'=>'typography']);
     keys($p,['schemaVersion','bookId','contentVersion','audioRevision','locale','course','chapter','tab','word','quiz','quizMode','story','frame','form','alphabetMode','letter','meaning','guide','heard','attempts','written','bookmarks']);
