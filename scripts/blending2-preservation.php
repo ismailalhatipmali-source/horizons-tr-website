@@ -37,7 +37,7 @@ function hznBlending2SupersedingState(string $web): ?array {
     $manifest = json_decode(file_get_contents(hznBlending2Path($learn, 'asset-manifest.json')), true, 32, JSON_THROW_ON_ERROR);
     if (($manifest['product'] ?? '') !== 'horizons-arabic-level1' || ($manifest['version'] ?? '') !== '1.4.6' || ($manifest['content_versions'] ?? []) !== ['1.4.0', '1.4.1'] || ($manifest['phonics_release'] ?? '') !== 'phonics-20261003' || ($manifest['phonics_visual_release'] ?? '') !== 'phonics-glyphs-20261003-r2' || ($manifest['blending2_release'] ?? '') !== 'blending2-20261003' || ($manifest['blending2_closed_count'] ?? null) !== 250 || ($manifest['blending2_open_count'] ?? null) !== 81) throw new RuntimeException('SUPERSEDING_MANIFEST_INVALID');
     $worker = file_get_contents(hznBlending2Path($learn, 'sw.js'));
-    $suffix = $meaningState === null ? 'blending2-20261003' : 'meanings-20261003-r1';
+    $suffix = isset($meaningState['blending3_receipt']) ? 'blending3-20261004-r2' : ($meaningState === null ? 'blending2-20261003' : 'meanings-20261003-r1');
     if (substr_count($worker, "const SHELL = 'hzn-web-shell-' + VERSION + '-" . $suffix . "';") !== 1) throw new RuntimeException('SUPERSEDING_WORKER_INVALID');
     $closed = []; $opened = [];
     foreach ($manifest['groups']['blending2'] ?? [] as $path) {
@@ -66,3 +66,4 @@ function hznBlending2SupersedingState(string $web): ?array {
     }
     return ['manifest' => $manifest, 'receipt' => $receipt];
 }
+
