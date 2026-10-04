@@ -30,13 +30,15 @@ function hznDemoExperienceState(string $web,array $creator,string $creatorReceip
     if(!is_file($path))return null;
     if(realpath($path)!==$path||str_starts_with($path,rtrim($web,'/').'/')||(fileperms($private)&0777)!==0700)throw new RuntimeException('DEMO_PRIVATE_RECEIPT_REQUIRED');
     $receipt=json_decode(hznCreatorPublicRead($path),true,16,JSON_THROW_ON_ERROR);
+    require_once __DIR__.'/comprehensive-meaning-preservation.php';
+    $successor=hznCMState($web);$currentRoot=$successor===null?$web:$successor['baseline_root'];
     if(($receipt['schema']??null)!==1||($receipt['patch']??'')!==HZN_DEMO_EXPERIENCE_RELEASE
         ||($receipt['creator_receipt_sha256']??'')!==$creatorReceiptSha||($creator['hashes']??[])!==HZN_DEMO_CREATOR_HASHES
         ||($creator['manifest_sha256']??'')!==HZN_DEMO_CREATOR_MANIFEST_SHA256
         ||array_keys($receipt['hashes']??[])!==HZN_DEMO_EXPERIENCE_PATHS||array_keys($receipt['before_hashes']??[])!==HZN_DEMO_EXPERIENCE_PATHS
         ||!preg_match('/^[a-f0-9]{64}$/D',$receipt['manifest_sha256']??''))throw new RuntimeException('DEMO_RECEIPT_INVALID');
     foreach(HZN_DEMO_EXPERIENCE_PATHS as $relative){
-        $file=hznCreatorPublicPath($web,$relative);$sha=$receipt['hashes'][$relative];
+        $file=hznCreatorPublicPath($currentRoot,$relative);$sha=$receipt['hashes'][$relative];
         if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!is_file($file)||!hash_equals($sha,hash_file('sha256',$file)))throw new RuntimeException('DEMO_PUBLIC_CHANGED');
         $before=hznCreatorPublicPath($private,'baseline/'.$relative);
         if($relative==='try/demo-experience.css'){
@@ -45,16 +47,17 @@ function hznDemoExperienceState(string $web,array $creator,string $creatorReceip
             ||!is_file($before)||!hash_equals(HZN_DEMO_BASELINE_HASHES[$relative],hash_file('sha256',$before)))throw new RuntimeException('DEMO_BASELINE_CHANGED');
     }
     $baseline=json_decode(hznCreatorPublicRead(hznCreatorPublicPath($private,'baseline/try/demo-asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);
-    $manifest=json_decode(hznCreatorPublicRead(hznCreatorPublicPath($web,'try/demo-asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);
+    $manifest=json_decode(hznCreatorPublicRead(hznCreatorPublicPath($currentRoot,'try/demo-asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);
     $projected=$manifest;foreach(['index.html','workbook.js'] as $name)$projected['files'][$name]=$baseline['files'][$name];
     unset($projected['files']['demo-experience.css']);$projected['shell']=array_values(array_filter($projected['shell'],fn($name)=>$name!=='demo-experience.css'));
     if($projected!==$baseline||count($manifest['files'])!==count($baseline['files'])+1
         ||count(array_filter($manifest['shell'],fn($name)=>$name==='demo-experience.css'))!==1)throw new RuntimeException('DEMO_CURRICULUM_CHANGED');
     foreach(['index.html','workbook.js','demo-experience.css'] as $name){
-        $entry=$manifest['files'][$name]??[];$file=hznCreatorPublicPath($web,'try/'.$name);
+        $entry=$manifest['files'][$name]??[];$file=hznCreatorPublicPath($currentRoot,'try/'.$name);
         if(($entry['sha256']??'')!==$receipt['hashes']['try/'.$name]||($entry['bytes']??-1)!==filesize($file))throw new RuntimeException('DEMO_MANIFEST_INVALID');
     }
-    if(hznDemoExperienceWorker(hznCreatorPublicRead(hznCreatorPublicPath($private,'baseline/try/sw.js')))!==hznCreatorPublicRead(hznCreatorPublicPath($web,'try/sw.js')))throw new RuntimeException('DEMO_WORKER_CHANGED');
-    if(hznDemoExperiencePaidWorker(hznCreatorPublicRead(hznCreatorPublicPath($private,'baseline/learn/sw.js')))!==hznCreatorPublicRead(hznCreatorPublicPath($web,'learn/sw.js')))throw new RuntimeException('DEMO_PAID_WORKER_CHANGED');
+    if(hznDemoExperienceWorker(hznCreatorPublicRead(hznCreatorPublicPath($private,'baseline/try/sw.js')))!==hznCreatorPublicRead(hznCreatorPublicPath($currentRoot,'try/sw.js')))throw new RuntimeException('DEMO_WORKER_CHANGED');
+    if(hznDemoExperiencePaidWorker(hznCreatorPublicRead(hznCreatorPublicPath($private,'baseline/learn/sw.js')))!==hznCreatorPublicRead(hznCreatorPublicPath($currentRoot,'learn/sw.js')))throw new RuntimeException('DEMO_PAID_WORKER_CHANGED');
+    if($successor!==null){foreach(HZN_DEMO_EXPERIENCE_PATHS as $relative)$receipt['hashes'][$relative]=$successor['hashes'][$relative];$receipt['comprehensive_meaning']=$successor;}
     return $receipt;
 }

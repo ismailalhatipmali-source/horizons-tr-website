@@ -81,9 +81,11 @@ function hznResponsiveState(string $web, array $original, string $originalReceip
     hznResponsiveCheckHistory($private, $receipt, $original, $originalReceiptSha);
     require_once __DIR__.'/creator-public-preservation.php';
     $creatorState=hznCreatorPublicState($web);$demo=$creatorState['demo_experience']??null;
+    $successor=$demo['comprehensive_meaning']??null;
     if($demo!==null&&$receipt['patch']!==HZN_RESPONSIVE_RELEASE)throw new RuntimeException('RESPONSIVE_DEMO_LINEAGE_INVALID');
     $responsiveWorker=$demo===null?hznB3Path($web,'learn/sw.js'):hznB3Path($home,'.horizons-demo-experience/baseline/learn/sw.js');
     $learn = hznB3Path($web, 'learn');
+    $currentLearn=$successor===null?$learn:hznB3Path($successor['baseline_root'],'learn');
     $qa = $receipt['public_qa'] ?? [];
     $qaPath = hznB3Path($learn, 'layout-check/index.html');
     $qaEntries = is_dir(dirname($qaPath)) ? scandir(dirname($qaPath)) : false;
@@ -96,7 +98,7 @@ function hznResponsiveState(string $web, array $original, string $originalReceip
     $backups = ['asset-manifest.json' => 'baseline-manifest.json', 'sw.js' => 'baseline-sw.js', 'content/1.4.1/workbook.js.hzn' => 'baseline-workbook.hzn'];
     foreach ($shared as $relative) {
         $sha = $receipt['hashes'][$relative];
-        $current = $relative==='sw.js'?$responsiveWorker:hznB3Path($learn, $relative);
+        $current = $relative==='sw.js'?$responsiveWorker:hznB3Path($currentLearn, $relative);
         $before = hznB3Path($private, $backups[$relative]);
         if (!preg_match('/^[a-f0-9]{64}$/D', $sha) || !is_file($current) || !hash_equals($sha, hash_file('sha256', $current))
             || !is_file($before) || !hash_equals($original['hashes'][$relative], hash_file('sha256', $before))) {
@@ -106,7 +108,7 @@ function hznResponsiveState(string $web, array $original, string $originalReceip
     $baselineRaw = hznB3Read(hznB3Path($private, 'baseline-manifest.json'));
     if (strlen($baselineRaw) > 4194304) throw new RuntimeException('RESPONSIVE_BASELINE_INVALID');
     $baseline = json_decode($baselineRaw, true, 32, JSON_THROW_ON_ERROR);
-    $manifest = json_decode(hznB3Read(hznB3Path($learn, 'asset-manifest.json')), true, 32, JSON_THROW_ON_ERROR);
+    $manifest = json_decode(hznB3Read(hznB3Path($currentLearn, 'asset-manifest.json')), true, 32, JSON_THROW_ON_ERROR);
     $projected = $manifest;
     $projected['files']['workbook.js'] = $baseline['files']['workbook.js'];
     if (hznResponsiveJson($projected) !== hznResponsiveJson($baseline)) {
@@ -119,5 +121,6 @@ function hznResponsiveState(string $web, array $original, string $originalReceip
         throw new RuntimeException('RESPONSIVE_WORKER_CHANGED');
     }
     if($demo!==null){$receipt['hashes']['sw.js']=$demo['hashes']['learn/sw.js'];$receipt['worker_suffix'].='-demo-experience-20261004-r1';}
+    if($successor!==null){foreach($shared as $relative)$receipt['hashes'][$relative]=$successor['hashes']['learn/'.$relative];$receipt['plain_after_sha256']=$successor['plain_after_sha256'];$receipt['worker_suffix']=$successor['worker_suffix'];$receipt['comprehensive_meaning']=$successor;}
     return $receipt;
 }

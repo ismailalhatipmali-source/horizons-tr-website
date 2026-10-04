@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "version": "comprehensive-meaning-20261004-r1",
+  "predecessor_demo_manifest_sha256": "4ae2afa672ed4ab2c6236a256c535b0557b1dd7b8cb9740994ad2735e77575af",
+  "files": {
+    "try/index.html": {
+      "source": "release-assets/comprehensive-meaning-20261004-r1/files/try/index.html",
+      "before": "da8dc563a0f1bc585b329c3a118c343037cc01eee4d10a9238292cf37484c7d0",
+      "sha256": "da8dc563a0f1bc585b329c3a118c343037cc01eee4d10a9238292cf37484c7d0",
+      "bytes": 5825
+    },
+    "try/workbook.js": {
+      "source": "release-assets/comprehensive-meaning-20261004-r1/files/try/workbook.js",
+      "before": "cc32b4183ecd75af9196a4cd209f7894147b9415152caa6ff1d1357d8f2d15c7",
+      "sha256": "44523c84d110b19784ebfb3433a9d3cf102a44fcd42d7c48591411b53728c4a5",
+      "bytes": 637757
+    },
+    "try/sw.js": {
+      "source": "release-assets/comprehensive-meaning-20261004-r1/files/try/sw.js",
+      "before": "2d5185ed0e7f86c6b3da87ffe521f53c8f08aba25e4522a7ef7db7a8aa1c74a6",
+      "sha256": "abd09799d2ef09c3b0b58de9af096770dcde1cc650b14427fb302ea71b205c2b",
+      "bytes": 11468
+    },
+    "learn/index.html": {
+      "source": "release-assets/comprehensive-meaning-20261004-r1/files/learn/index.html",
+      "before": "6a3a347d69ec994cc21680086ef0a7d6e762195fbc1dc2f2b5604c3b0a7ea418",
+      "sha256": "6a3a347d69ec994cc21680086ef0a7d6e762195fbc1dc2f2b5604c3b0a7ea418",
+      "bytes": 56787
+    },
+    "try/demo-asset-manifest.json": {
+      "source": "release-assets/comprehensive-meaning-20261004-r1/files/try/demo-asset-manifest.json",
+      "before": "ce39a6d1d25c65a2735fb0f759744cacac2dbaaaca80471aec3453f731c0c133",
+      "sha256": "9d9ab520c3f5c0560e5aad37c750980a749f42c097c53dffd6067df36fb55790",
+      "bytes": 119395
+    },
+    "try/demo-experience.css": {
+      "source": "release-assets/comprehensive-meaning-20261004-r1/files/try/demo-experience.css",
+      "before": "f49b4e68f040cf7c7db97fc312f77cd21895b59f3a8a587127d4d06df6cb65a1",
+      "sha256": "f49b4e68f040cf7c7db97fc312f77cd21895b59f3a8a587127d4d06df6cb65a1",
+      "bytes": 20408
+    },
+    "learn/sw.js": {
+      "source": "release-assets/comprehensive-meaning-20261004-r1/files/learn/sw.js",
+      "before": "b1e196995ae8e59f2af87c59d7f0a9e430239c74c25a601f426305c0b0ea666d",
+      "sha256": "fbad8e592c3d387628dadce401f61075539f141e2cfebcd93413ba6ea219f99f",
+      "bytes": 9733
+    }
+  },
+  "input_sources": {
+    "src/workbook-web/story-meaning-control.js": "0f139cd08a1ef1f9d96104ac05c83f3fd50bc512517f94ddde40e95626fedc99",
+    "src/demo-pwa/demo-meaning-extension.js": "dd732c84c95eb65fe9395b62ade0ab468651726b533cfc315abb682f17fdf029",
+    "src/demo-pwa/demo-meanings-locales.json": "60cb9117a32b32d0c2aff09c2986570d00feceb475dcb9c830fa015d8f1d5c1e"
+  },
+  "interface_languages": [
+    "en",
+    "ar",
+    "tr",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "uk",
+    "pl",
+    "cs",
+    "ro",
+    "hu",
+    "el",
+    "sv",
+    "da",
+    "no",
+    "fi",
+    "bg",
+    "sr",
+    "hr",
+    "he",
+    "fa",
+    "ur",
+    "hi",
+    "bn",
+    "id",
+    "ms",
+    "zh",
+    "ja"
+  ],
+  "free_chapter_ids": [
+    "baa",
+    "dhaa_emphatic",
+    "daad",
+    "yaa",
+    "dhaal"
+  ],
+  "free_word_count": 100,
+  "free_story_count": 10,
+  "demo_curriculum_count": 497,
+  "compiled_demo_hook_sha256": "33a918d6b4187e8c9cbefc2d42b3fe6c1b309a48e02f9e840ab01cbd85c21059"
+}
