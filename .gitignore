@@ -12,3 +12,6 @@ release-assets/**/.part-*
 /dist/downloads/
 /dist/updates/
 /dist/activation/
+
+# Hosting runtime log.
+/error_log
