@@ -33,7 +33,7 @@ try {
     if (realpath($private) !== $private || (fileperms($private) & 0777) !== 0700) throw new RuntimeException('RESPONSIVE_PRIVATE_STATE_REQUIRED');
     $lock = fopen(hznB3Path($private, 'deploy.lock'), 'c');
     if (!$lock || !flock($lock, LOCK_EX | LOCK_NB)) throw new RuntimeException('DEPLOYMENT_BUSY');
-    $sourceNames = ['src/workbook-web/responsive-workbook.css', 'src/workbook-web/blending3-responsive.css', 'src/workbook-web/blending3-component.js', 'src/workbook-web/layout-check.html'];
+    $sourceNames = ['src/workbook-web/responsive-workbook.css', 'src/workbook-web/blending3-responsive.css', 'src/workbook-web/blending3-component.js', 'src/workbook-web/layout-check.html', 'src/workbook-web/creator-credit-locales.json', 'src/workbook-web/creator-credit.js'];
     $sources = []; $sourceHashes = [];
     foreach ($sourceNames as $name) {
         $path = hznB3Path($repo, $name);
@@ -48,7 +48,7 @@ try {
         echo "OK: WORKBOOK_RESPONSIVE_UI; 0 files updated; approved sections and recordings preserved.\n";
         exit(0);
     }
-    if ($priorUi !== null && $priorUi['patch'] !== 'workbook-responsive-20261004-r1') throw new RuntimeException('RESPONSIVE_UPGRADE_REQUIRED');
+    if ($priorUi !== null && $priorUi['patch'] !== 'workbook-responsive-20261004-r2') throw new RuntimeException('RESPONSIVE_UPGRADE_REQUIRED');
     $manifestPath = hznB3Path($learn, 'asset-manifest.json');
     $workerPath = hznB3Path($learn, 'sw.js');
     $appPath = hznB3Path($learn, 'content/1.4.1/workbook.js.hzn');
@@ -57,10 +57,10 @@ try {
     if ($priorUi !== null) {
         $priorReceiptRaw = hznB3Read(hznB3Path($private, 'receipt.json'));
         $upgradeFrom = ['patch' => $priorUi['patch'], 'receipt_sha256' => hash('sha256', $priorReceiptRaw)];
-        $upgradeWrites = [hznB3Path($private, 'r1-receipt.json') => $priorReceiptRaw,
-            hznB3Path($private, 'r1-manifest.json') => $manifestRaw, hznB3Path($private, 'r1-sw.js') => $worker,
-            hznB3Path($private, 'r1-workbook.hzn') => $cipherBefore,
-            hznB3Path($private, 'r1-qa.html') => hznB3Read(hznB3Path($learn, 'layout-check/index.html'))];
+        $upgradeWrites = [hznB3Path($private, 'r2-receipt.json') => $priorReceiptRaw,
+            hznB3Path($private, 'r2-manifest.json') => $manifestRaw, hznB3Path($private, 'r2-sw.js') => $worker,
+            hznB3Path($private, 'r2-workbook.hzn') => $cipherBefore,
+            hznB3Path($private, 'r2-qa.html') => hznB3Read(hznB3Path($learn, 'layout-check/index.html'))];
         foreach ($upgradeWrites as $path => $bytes) if (file_exists($path)) throw new RuntimeException('RESPONSIVE_UPGRADE_HISTORY_CONFLICT');
         // Regenerate from the verified immutable original encrypted baseline.
         // An interface upgrade must never stack CSS/component replacements.
@@ -108,6 +108,17 @@ try {
     if (substr_count($app, $oldShadow) !== 1 || substr_count($app, $tail) !== 1) throw new RuntimeException('RESPONSIVE_APPLICATION_HOOK_CHANGED');
     $extension = "\n/*WORKBOOK_RESPONSIVE_UI_BEGIN*/\nconst hznResponsiveStyle=document.createElement('style');\nhznResponsiveStyle.dataset.horizonsUi='" . HZN_RESPONSIVE_RELEASE . "';\nhznResponsiveStyle.textContent="
         . json_encode($sources[$sourceNames[0]], JSON_HEX_TAG | JSON_THROW_ON_ERROR) . ";\ndocument.head.appendChild(hznResponsiveStyle);\n/*WORKBOOK_RESPONSIVE_UI_END*/\n";
+    $creatorLocales = json_decode($sources[$sourceNames[4]], true, 8, JSON_THROW_ON_ERROR);
+    if (($creatorLocales['schema_version'] ?? null) !== 1 || ($creatorLocales['names'] ?? []) !== ['ar' => 'إسماعيل الخطيب', 'tr' => 'İsmail Alhatip']
+        || !is_array($creatorLocales['labels'] ?? null)) throw new RuntimeException('CREATOR_CREDIT_LOCALES_INVALID');
+    $creatorLanguages = array_keys($creatorLocales['labels']); $requiredLanguages = $manifest['blending3_languages']; sort($creatorLanguages); sort($requiredLanguages);
+    if ($creatorLanguages !== $requiredLanguages || count($creatorLanguages) !== 32) throw new RuntimeException('CREATOR_CREDIT_LOCALES_INVALID');
+    foreach ($creatorLocales['labels'] as $label) if (!is_string($label) || trim($label) === '') throw new RuntimeException('CREATOR_CREDIT_LOCALES_INVALID');
+    $creatorHook = $sources[$sourceNames[5]];
+    if (substr_count($creatorHook, '/*HZN_CREATOR_CREDIT_LOCALES*/') !== 1 || substr_count($creatorHook, '/*CREATOR_CREDIT_BEGIN*/') !== 1
+        || substr_count($creatorHook, '/*CREATOR_CREDIT_END*/') !== 1 || str_contains($app, '/*CREATOR_CREDIT_BEGIN*/')) throw new RuntimeException('CREATOR_CREDIT_HOOK_INVALID');
+    $creatorHook = str_replace('/*HZN_CREATOR_CREDIT_LOCALES*/', json_encode($creatorLocales, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_THROW_ON_ERROR), $creatorHook);
+    $extension .= "\n" . rtrim($creatorHook, "\r\n") . "\n";
     $updated = str_replace($oldComponent, $newComponent, $app);
     $updated = str_replace($oldShadow, $newShadow, $updated);
     $updated = str_replace($tail, $extension . $tail, $updated);

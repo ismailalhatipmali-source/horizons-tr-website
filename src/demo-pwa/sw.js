@@ -3,7 +3,7 @@
 const VERSION='1.4.5';
 const EXPECTED=['baa','dhaa_emphatic','daad','yaa','dhaal'];
 const ROOT=new URL('./',self.location.href);
-const CACHE='hzn-public-demo-'+VERSION;
+const CACHE='hzn-public-demo-'+VERSION+'-creator-credit-20261004-r1';
 const MANIFEST='demo-asset-manifest.json';
 let manifestPromise,downloading=false,cancelled=false,downloadController=null;
 const address=path=>new URL(path,ROOT).href;
@@ -14,7 +14,7 @@ async function savedFile(cache,path,item){
   const current=await cache.match(address(path));if(current)return current;
   if(!item)return;
   for(const name of await caches.keys()){
-    if(name===CACHE||!/^hzn-public-demo-\d+\.\d+\.\d+$/.test(name))continue;
+    if(name===CACHE||!/^hzn-public-demo-\d+\.\d+\.\d+(?:-creator-credit-\d{8}-r\d+)?$/.test(name))continue;
     const prior=await (await caches.open(name)).match(address(path));
     if(prior){try{return await checked(prior,item);}catch{}}
   }

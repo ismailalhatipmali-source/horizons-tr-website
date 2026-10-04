@@ -1,0 +1,3094 @@
+{
+  "version": "1.4.5",
+  "edition": "demo",
+  "chapterIds": [
+    "baa",
+    "dhaa_emphatic",
+    "daad",
+    "yaa",
+    "dhaal"
+  ],
+  "files": {
+    "CREDITS.txt": {
+      "bytes": 1710,
+      "sha256": "953d04b6736e2327f95d99c22e6e380753dbe5a6edd4235f8ee418bc3824ca08",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "LICENSE.txt": {
+      "bytes": 18546,
+      "sha256": "08dbd406853a492ecc1de353c6bcfaf947115cda2ff6f2860c5f3bacf19a67a6",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "PRIVACY_AND_LICENCE.html": {
+      "bytes": 9147,
+      "sha256": "a9c4d799b1f069044b202e5c11fe17525d9641c814f03960c83ff01052d83597",
+      "mime": "text/html; charset=utf-8"
+    },
+    "START_HERE.html": {
+      "bytes": 15852,
+      "sha256": "c12be3f0672eb19b6cc13f867e235d5e5925bd1c59ffeaf21e238085caf4222d",
+      "mime": "text/html; charset=utf-8"
+    },
+    "activity-layout.css": {
+      "bytes": 18102,
+      "sha256": "85a0c22151858b773998b3c46a89e8f28b9d0ccb3abb51c813787c6a6c1ffc48",
+      "mime": "text/css; charset=utf-8"
+    },
+    "book.css": {
+      "bytes": 13887,
+      "sha256": "a88ae8c044bf1ee072bcd978e5548fef3e92548f922c9f8fefc0452c6eb79823",
+      "mime": "text/css; charset=utf-8"
+    },
+    "book.js": {
+      "bytes": 63090,
+      "sha256": "79351efaf97399ae010f5ba8aa0dc7e1a24504bc462a576d1e3807e7462cd33d",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "course/CREDITS.txt": {
+      "bytes": 1710,
+      "sha256": "953d04b6736e2327f95d99c22e6e380753dbe5a6edd4235f8ee418bc3824ca08",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "course/audio/female-final/alphabet.baa.mp3": {
+      "bytes": 13524,
+      "sha256": "cd40f890c81c6ec8dbdfa2932fc5a0a6e58370c74666609b145a26a6cc40c6f7",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/alphabet.daad.mp3": {
+      "bytes": 14464,
+      "sha256": "87f01482f55250a116d0f24070e3c1142f736862dcf7b493c73338e36467e795",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/alphabet.dhaa_emphatic.mp3": {
+      "bytes": 14151,
+      "sha256": "dabaa37ed567d09d2cbefc850e9b5019f05efca42b55e62f9acc6627394b78b4",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/alphabet.dhaal.mp3": {
+      "bytes": 13837,
+      "sha256": "70f9b995fbcab58495efc6ab03d3e5ffd0178f2fb3e371c114a75e74de9b3f71",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/alphabet.yaa.mp3": {
+      "bytes": 13210,
+      "sha256": "5efdbb670d699859ed83791cdc2b710df816e12196c9023c0e68bc970fe276a1",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-01.mp3": {
+      "bytes": 28884,
+      "sha256": "91fe332f6a215f1586edae6399fc01f59e1aa0c713c4f86334f010d679e8db42",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-02.mp3": {
+      "bytes": 23868,
+      "sha256": "657c90decba0d2e2bd09d2701c9a3eb41994329b5afa9279f8382c12d2a8bee4",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-03.mp3": {
+      "bytes": 22928,
+      "sha256": "dec6220f0ca04e0c9c29a2e52ffc0a2af150f551aa3d28d00b8f74bbb237a94e",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-04.mp3": {
+      "bytes": 27316,
+      "sha256": "64a611e61608c6e9cd640f6e2cf8d7ab22de0d71c712ecb7c023f556295e4775",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-05.mp3": {
+      "bytes": 23241,
+      "sha256": "b6b67bd5cfddc82b04d5039a2bc52a3806b29c5e2001c1f3b26cf4f6171061d4",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-06.mp3": {
+      "bytes": 20734,
+      "sha256": "9551c58bfef5b0e552b0f0c92ff1c1c798260227b0815e28cda9479271667cd5",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-07.mp3": {
+      "bytes": 23868,
+      "sha256": "5098240ddadef44c0f6e1978581c94fbc8a4803ca797a91f6a9fee7f406cb1c8",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-08.mp3": {
+      "bytes": 19793,
+      "sha256": "57931db3a818d20b8437eec5750a1bf9b97c7880017fd929825c729d1244a2df",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-09.mp3": {
+      "bytes": 23555,
+      "sha256": "331d16217bf1b7db46b33ba124af0e640770482735a04db320022ed1d4727474",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-10.mp3": {
+      "bytes": 26063,
+      "sha256": "6baddbac367c4da5d5905c36d4b7fc6b536c59a12c97c880a59dfe2db4e36ff9",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-11.mp3": {
+      "bytes": 21047,
+      "sha256": "2f22590412f903140daea037d3a753096e4fd29e69e5d37c481fe8f24f7a7ee3",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-12.mp3": {
+      "bytes": 23868,
+      "sha256": "fa1f3b0fae7f96cc74097ce78ae42d78c2d3f7037fcf856e650295da1d6a29e2",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-13.mp3": {
+      "bytes": 21360,
+      "sha256": "6d0e7bc94f658afe5857872e52690f6606739355a31010ce6738bc5633f80293",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-14.mp3": {
+      "bytes": 26689,
+      "sha256": "a93bd65ba4a2f8f5dfaecec4227ed97ea4a631cb1f26440728c7ce76a2061030",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-15.mp3": {
+      "bytes": 20734,
+      "sha256": "f6ce692dad13a403220cbe6197b2f721504d23fbe7bd2d2e7d16ea9b1e9918f6",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-16.mp3": {
+      "bytes": 18539,
+      "sha256": "ce8adab437cc5454240efdc2410e5ca8afab8d0275a00b629e469bb837b2fa99",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-17.mp3": {
+      "bytes": 19166,
+      "sha256": "75d1b89d09cd793a97c97c069bb972efc2e52b7000791cefe37dd00b80258471",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-18.mp3": {
+      "bytes": 23868,
+      "sha256": "5508e5c5cd4d5d27940a9688552d1681f9c3de3e1a442c6a042ce7fc9c9ddf57",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-19.mp3": {
+      "bytes": 26689,
+      "sha256": "0049e159ff78ce74e610cb964d473f628ae67208d86a93bf58ef03f2e195fac6",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.baa-20.mp3": {
+      "bytes": 23555,
+      "sha256": "1cb533dd94d3e1bf77360fb51f54f8259e2c580f9110ba3024ecd06179d86239",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-01.mp3": {
+      "bytes": 31705,
+      "sha256": "a2f252b2c395f50f44320c422ad64c50a17f81e525df1c35af650fd6b8cd5fb9",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-02.mp3": {
+      "bytes": 35780,
+      "sha256": "f5971b5b0daf1df8220e8f684aa45de492e9d3a227f3753c0aa2d089a6de5069",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-03.mp3": {
+      "bytes": 39855,
+      "sha256": "3b23301c71d56fa6749d6b135997b69ca87de0aa200092300449f5abd039af42",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-04.mp3": {
+      "bytes": 28884,
+      "sha256": "a59665771e00ab85795ea1dbbb520da5590a6b72b6990942e329741dec697dfb",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-05.mp3": {
+      "bytes": 32018,
+      "sha256": "0e0be252ad5f57319b4b1e5f1d26b73698d45fa98b4d4706749caf17c429af1f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-06.mp3": {
+      "bytes": 49886,
+      "sha256": "525e3fc411f12c2cac79154d897b94963b4822686ebf0d504ed68d6f1abbea2a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-07.mp3": {
+      "bytes": 39542,
+      "sha256": "9c3fefeb8c0ac585a8194a915493aed1bc49bce07b0d74f4e2c34e529aecca3c",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-08.mp3": {
+      "bytes": 33899,
+      "sha256": "351019b0e7427da3ddf33b50b94960b5f6451bd1cb8cb74b9d3718e5324042aa",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-09.mp3": {
+      "bytes": 37034,
+      "sha256": "67c67531e343d3d555959b56a621de186f36ebc076a24f9a35044d76a5c9bd98",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-10.mp3": {
+      "bytes": 37034,
+      "sha256": "82aaf7af842559f4f0beea326e6f2fb2b4e13932828c89e44e4b0383c1e59fef",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-11.mp3": {
+      "bytes": 39542,
+      "sha256": "3d9890b3a6ebbe70017332e3da513fb73fc8e965b85136aa223bc3b2a13b1393",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-12.mp3": {
+      "bytes": 34213,
+      "sha256": "292c640b2a2c938fbc09df8d012d79a0e9d5d7bbc1a767349a1825312f3a04ad",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-13.mp3": {
+      "bytes": 25436,
+      "sha256": "65bce76f222dfde0ab3d5b8a63267b1d25515d9a31b84a853bea000b2a09a583",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-14.mp3": {
+      "bytes": 21674,
+      "sha256": "4ca503911c64e835959b1a802ec096f44513d6c1cd6521d2bbb88ecf5502fd05",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-15.mp3": {
+      "bytes": 34526,
+      "sha256": "4aba10088c7a4792c4571912aabca28718df65d7166a140d2e8b974f9715adfd",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-16.mp3": {
+      "bytes": 30765,
+      "sha256": "adf2b830bb5367bbabbaba2edc712b107d382ab3db9d12b951dd6216f524c48e",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-17.mp3": {
+      "bytes": 28884,
+      "sha256": "e53abddce0c1858dfdacf7a9eef43a4c25cc9983a2e317d3609e3945d253ad66",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-18.mp3": {
+      "bytes": 40169,
+      "sha256": "385b588b87830b9dc0a70e89d5fd9f80ceab32f1f849c68757218a15964680fb",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-19.mp3": {
+      "bytes": 42990,
+      "sha256": "823e01e1c8d81ad7bc22c603bc46a6593090e67ddec7a43791eef44edb5aa02f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.daad-20.mp3": {
+      "bytes": 29197,
+      "sha256": "213ebbe4b147c4a6d509ba306836d7353615ecb4299e77437561498db71007d0",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-01.mp3": {
+      "bytes": 42363,
+      "sha256": "f4167ac7c81acdc38bd89820937e021436f157adddd592dfe6d809a96553385e",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-02.mp3": {
+      "bytes": 38288,
+      "sha256": "9432d11c0aacfe4e4bda6af45e8e01fda755a33ba70c58fd0425339b830fae91",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-03.mp3": {
+      "bytes": 42990,
+      "sha256": "6d7ecc0c79562d3a4dfbd2df82d2cf4687c63fe6b3e99f34461ccb915a2e29f2",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-04.mp3": {
+      "bytes": 35467,
+      "sha256": "a64e2bc237b087f8ef640da27c49e2e119425b1196765e3d2eaa2ad47baac048",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-05.mp3": {
+      "bytes": 36407,
+      "sha256": "54da7afa58300338cdfab4295ada7d2ce4e5c1b816621f9d9a3108c56b80b52a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-06.mp3": {
+      "bytes": 35780,
+      "sha256": "9569288906ef112aab6a9ae5822bd81f43f3353ce737e68ea9c0c9184f673c73",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-07.mp3": {
+      "bytes": 33899,
+      "sha256": "febaa11439d7ebf537838f221612bc01ca947d807d0f33e62c5483c5071d6569",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-08.mp3": {
+      "bytes": 42990,
+      "sha256": "801fc024fea616a41cd83a00b05990413148afe4788964648427421ec4f36f45",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-09.mp3": {
+      "bytes": 39542,
+      "sha256": "1557c5343efa5c5a7d8e22c286974600fb4d79c71ed39f6673a754fea90b9f2a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-10.mp3": {
+      "bytes": 42990,
+      "sha256": "509c033dd14f3ed429356d50f362a971838e7aa96c74247f35406da0ce9c99f0",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-11.mp3": {
+      "bytes": 37034,
+      "sha256": "b106659f1622c8d6ce8bbc54f0a069ade3d5b8a1ed4522e5976f053581414df6",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-12.mp3": {
+      "bytes": 33586,
+      "sha256": "46548a606d127845aa1075a4ce8f1665ce9477ababf22117c600bad7f3e21d9a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-13.mp3": {
+      "bytes": 38601,
+      "sha256": "fe0cf9d7dd680f655e64d17511ab50130e4e5d3d772179bcde65dcf727cf4d34",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-14.mp3": {
+      "bytes": 40169,
+      "sha256": "dd15c92aaeb648874c339594ce516485c33206866028d9737e8fc66c6796c0e0",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-15.mp3": {
+      "bytes": 30765,
+      "sha256": "e3062d35951f18074face67cb48a1cb543ff38396206a447c1f42d15d97b3671",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-16.mp3": {
+      "bytes": 30451,
+      "sha256": "ed47fab7d0765572be6214d5d6d54e3706df45903863ec0ad1869c000f46e9d1",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-17.mp3": {
+      "bytes": 30765,
+      "sha256": "a2f027d6273a0f9ab9e0b5ec43cb6a6587948aaa7218387c6ee82cef50ddaab9",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-18.mp3": {
+      "bytes": 43930,
+      "sha256": "4591530d6733a2468076425fcfb9b42b1a08985f967dd97609a0795f0ce85295",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-19.mp3": {
+      "bytes": 43617,
+      "sha256": "d7fd5d9599fc8dc712489b9ff36f0ba52a69987b7fcedf8e86092792a21d0cc2",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaa_emphatic-20.mp3": {
+      "bytes": 42049,
+      "sha256": "386f0eded3a9a81dedc5dfa77ec03d6f35229da316678d8e2ad88d5b0be1336f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-01.mp3": {
+      "bytes": 38601,
+      "sha256": "9f07039a5ef1523f8d532933efe33d070584a438806a88c69226f06d852ea900",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-02.mp3": {
+      "bytes": 37034,
+      "sha256": "fa8d22994e9fed1b4139f8ab9ea6fec035e92f6f6c34c79613734ddb5a9c2c4f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-03.mp3": {
+      "bytes": 33272,
+      "sha256": "b799c752aa2a7ea24df4c30b746d2835a23408ada1e475935a4668fa47d10a7c",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-04.mp3": {
+      "bytes": 34213,
+      "sha256": "61e2b6409f7ed9dc0c3209d23a2addf0a6e152b1730472e538ed68e7c178401a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-05.mp3": {
+      "bytes": 34526,
+      "sha256": "c2961f7b90621dd9d4643f830d456576be755d512f6122fe84ac973bf21055d1",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-06.mp3": {
+      "bytes": 35153,
+      "sha256": "a9cb01c6cdeb8ef692ac4d8dfcdf3fb4c4dea7db6fa9b1d25b61656d5bd84625",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-07.mp3": {
+      "bytes": 38601,
+      "sha256": "81a141338f48141259fccdd550871534880d3701bbbe0bc42c5bb48f139e657d",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-08.mp3": {
+      "bytes": 38288,
+      "sha256": "93cd5350dabf49a8956703e3e655d2e310bfd23be707a95af54b606393a6947d",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-09.mp3": {
+      "bytes": 33272,
+      "sha256": "8a48c06ac5e7986f7a4b3f46f4af158cf23dcb8ddce24e3b047e67f68241d767",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-10.mp3": {
+      "bytes": 32332,
+      "sha256": "eb12909724c21e4e7bce2ebec96e512e8ad87a8112f20e64c47035c3c4fc632b",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-11.mp3": {
+      "bytes": 39228,
+      "sha256": "a753f5c6270db6bc864567ec8701a3cd50512402f2c9a5c7ee5c42374f99929d",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-12.mp3": {
+      "bytes": 45184,
+      "sha256": "b5740e29f9e30656ac0c6e1831129f42c401c2b382fbe0b3586a9f63a7f07b91",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-13.mp3": {
+      "bytes": 36094,
+      "sha256": "d2b66af440cf11fcc2ae8ee4e2876cdf5542a1fff037f42f7fc5e39a227db1c7",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-14.mp3": {
+      "bytes": 44871,
+      "sha256": "8f32c9dd78574e3deb63444cdbef286cf5669f904e43225942b6b2a520f5ba0c",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-15.mp3": {
+      "bytes": 36407,
+      "sha256": "3aafa3abfc87fa29329cd59a00e1833a5bead99237b6efa46b21f252d0bbb668",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-16.mp3": {
+      "bytes": 31078,
+      "sha256": "471e1b677ba253b3dc9314a58c71f7f9c01d92114102d2a29ffda0f90a725c2f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-17.mp3": {
+      "bytes": 39228,
+      "sha256": "cb5065d559ebeef7a91ed15793ff5c391394de5261f3891f401e8ca9edc55dad",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-18.mp3": {
+      "bytes": 47692,
+      "sha256": "dcdb62ffd31fa0d677e503d4297c88d9db9fe354274c5abd8a144526bf1c8534",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-19.mp3": {
+      "bytes": 34840,
+      "sha256": "00c3050e66305aea53327fc0aa6a5ee3d4ceaf96a63c7e89cbd946765b3e1b59",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.dhaal-20.mp3": {
+      "bytes": 35780,
+      "sha256": "e2754b79be9685ea133433744d237940f9c308e79e49da9edca74b96d4ec1ced",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-01.mp3": {
+      "bytes": 42049,
+      "sha256": "6b11ae10452913bbba368716662b0ecefe7699a4f87f7e2de6122e21467764ea",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-02.mp3": {
+      "bytes": 38288,
+      "sha256": "65e8265d0afcd07c5d17f94371175fff72c0b6b547ca72943493ed3bd1e5c6f8",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-03.mp3": {
+      "bytes": 45184,
+      "sha256": "cdacbbf3bdab456a4aec01babe2ea1a68356f9c076a3e5b2c3d3907e7e75e628",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-04.mp3": {
+      "bytes": 36407,
+      "sha256": "9c851a722f5436de3c2c53ea00370b5ee4b3b2f66aafcc0436c8029cb2ffb004",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-05.mp3": {
+      "bytes": 32645,
+      "sha256": "9cf4f27aca0708af76cd3de073b3e946abaf9026f2615bf65cd6dfd16cc2d833",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-06.mp3": {
+      "bytes": 41736,
+      "sha256": "cd3ff3a1358495e4dfa11044e350ac202c4fe23bf6766d73b67b79a908c372a2",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-07.mp3": {
+      "bytes": 30765,
+      "sha256": "53785f11c72d183281674662d41d7d93cc7b776125005f0da9eedd24405bc789",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-08.mp3": {
+      "bytes": 33586,
+      "sha256": "64979c6f7fd482fa3bc1d63a60a75162b4354ea4cf62779a5a2b408fbc5b621f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-09.mp3": {
+      "bytes": 38601,
+      "sha256": "690310d107fb8727a7289158ad80745424cf356d06fb37f5dfdfa5631216582a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-10.mp3": {
+      "bytes": 37347,
+      "sha256": "76620800a039f64a885ffe4baf9149a206def82b5a854d544f7e14bf2a120f70",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-11.mp3": {
+      "bytes": 35780,
+      "sha256": "7d64ae8f3f8fc7f76770ebb4b0e95a520efe4e32060f2547f5c63850233a7be2",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-12.mp3": {
+      "bytes": 43930,
+      "sha256": "2280c93ec09608d48d91fd0fe4a9a4220eca701555cfc934ecc3b983939c584d",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-13.mp3": {
+      "bytes": 35467,
+      "sha256": "fa6e757003af567ab895567c3d21a964d6b913e2d27914a3f8f37876b546c1a4",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-14.mp3": {
+      "bytes": 33272,
+      "sha256": "3203f46338a411ced37e8570b2c46c0fc6d88c4aa5563e5905874a5dde734b61",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-15.mp3": {
+      "bytes": 41109,
+      "sha256": "55fe5ab33de306972d52c599b14e20c1afb3160a2f90cb94744dd26b0d092ef9",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-16.mp3": {
+      "bytes": 50513,
+      "sha256": "17afe8f49023eebdcf072b4b8549ff9c79338f999110fbcd508685bd1f9afd73",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-17.mp3": {
+      "bytes": 31078,
+      "sha256": "06f187435a2098d3efa9742e6bc8d8348336a4db8090fd02c1f829e25660f3a8",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-18.mp3": {
+      "bytes": 35780,
+      "sha256": "17b73a327f3edbfd8c9ba0427102a1869d5dd1ceef70950bc81932f254fce128",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-19.mp3": {
+      "bytes": 32018,
+      "sha256": "7d33325d99bb065245970afb89de4ec5f01637aef6e8be59e59cb025833eef8b",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/sentence.yaa-20.mp3": {
+      "bytes": 32332,
+      "sha256": "30e45cf746bd216c2566ef4079689e00f90ca7dc57b0b28a108094c48bfb1d70",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.baa-story-01-1.mp3": {
+      "bytes": 23868,
+      "sha256": "1e61fdfb1580f2dd7d491ea58da331e2b0b213fcf5101e3cb55827c99243c2ab",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.baa-story-01-2.mp3": {
+      "bytes": 24182,
+      "sha256": "653915350da3c7bfddc2739f5c25da040dc48574bff4fec59e5025aefc1b7214",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.baa-story-01-3.mp3": {
+      "bytes": 29824,
+      "sha256": "2a86e0e758cad56ee578aac68e7d4f0c9ffa07bedcff066ad8dd073eb2e7a730",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.baa-story-01-4.mp3": {
+      "bytes": 30138,
+      "sha256": "4fa65fd6d99c9bf1e38a1bea7a2f8b59f1fdbe550b78ccf915c56729b8ea2aea",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.baa-story-02-1.mp3": {
+      "bytes": 45811,
+      "sha256": "3d9249fba7bbf69a8241e4695301b8d65f9b35b6c5e0f92aa6e74a6b81a07f6b",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.baa-story-02-2.mp3": {
+      "bytes": 28570,
+      "sha256": "f66d583a3b09f0f07515d95b7de08fc699704475b0f765bcfc0749b86aa968e7",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.baa-story-02-3.mp3": {
+      "bytes": 27630,
+      "sha256": "0c4fbf59b487fc5f7e5aa3a7005e95d2787271436f1c568634debfa66eaf29bd",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.baa-story-02-4.mp3": {
+      "bytes": 40796,
+      "sha256": "7cd39858955b04753f26564e775686f715ef59ff64e0c744a4b022ffdd884693",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.daad-story-01-1.mp3": {
+      "bytes": 29197,
+      "sha256": "3fb43698094bda58f3f1f0c1c4ceb5a242142547c145bd3f1cdddbaf0ad77ef5",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.daad-story-01-2.mp3": {
+      "bytes": 41423,
+      "sha256": "2a781670a890c5d6c9e0496220bf409e9119bfeb296915bfd67e77152d95edf3",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.daad-story-01-3.mp3": {
+      "bytes": 29824,
+      "sha256": "6eef870a9596ee7b325ebfe6b5e0360dc4a8082eaaeb8aad8c9c565863d48eb8",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.daad-story-01-4.mp3": {
+      "bytes": 42049,
+      "sha256": "94c8dfca19801ef2e413b1580d69b03fa82885b831d1def07a19208bc720f888",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.daad-story-02-1.mp3": {
+      "bytes": 29511,
+      "sha256": "901266bca2f42e2351d5e6eeaad938f8220d1c3d2e3f01fe30567e44a68943ce",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.daad-story-02-2.mp3": {
+      "bytes": 33272,
+      "sha256": "bf227a10e5bc775a0f116d1ed512a91db2286ae3650dc64ac896ac06287d60f3",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.daad-story-02-3.mp3": {
+      "bytes": 38288,
+      "sha256": "c17b40d9d5d49a48b2f6f03c8a8bfa91725f8b906ebc56468b3614337d7e4408",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.daad-story-02-4.mp3": {
+      "bytes": 45184,
+      "sha256": "846d7d6c85afbb8b71a6f866d5a135df8a806673e74cb974275c92a7bb21b90a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaa_emphatic-story-01-1.mp3": {
+      "bytes": 34213,
+      "sha256": "0a1ae6a711a6dda1203e90a165e68acf663e3e73417033cbf21969a8ff9eea73",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaa_emphatic-story-01-2.mp3": {
+      "bytes": 46125,
+      "sha256": "b7d1922ff42f17278c7a7c2aace4d4c92813fcaa1a093ad44f134622e061ae16",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaa_emphatic-story-01-3.mp3": {
+      "bytes": 36407,
+      "sha256": "23ca5d9b7224aaf8652f11808c7b962693629f4aa48fdac83af43f9b16147b3b",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaa_emphatic-story-01-4.mp3": {
+      "bytes": 49886,
+      "sha256": "ceb853777c5e0c168aff9796b60abd6d0ef4a44a25daf3f02e24fe0b4a9a7510",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaa_emphatic-story-02-1.mp3": {
+      "bytes": 33899,
+      "sha256": "609e21a44e858b1b0d33492ba014a513ea539edf879b801db0484c1414a80048",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaa_emphatic-story-02-2.mp3": {
+      "bytes": 43930,
+      "sha256": "4b224a6fb4d1e793ac4daf06b04934459155d2a3da92ea5636ffb2f74e6530c2",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaa_emphatic-story-02-3.mp3": {
+      "bytes": 41109,
+      "sha256": "c685f822605c709a1a444e074b84b989fe85bee6b2cf02fccd486801ca2140f6",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaa_emphatic-story-02-4.mp3": {
+      "bytes": 46125,
+      "sha256": "6bff03c1b528d7b2cddbaa787266ec137317c78a61bb8ce4edab577a7958a0b9",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaal-story-01-1.mp3": {
+      "bytes": 31391,
+      "sha256": "4a72cbca644a9eb3cb9cc8ef7c5f8a2ec834b6020bd74bc68a0af3b6c4c68aa4",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaal-story-01-2.mp3": {
+      "bytes": 39855,
+      "sha256": "ded85518ce43246ff3904e0717de7859abdd37868913da2ccff1fd96f5ec0864",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaal-story-01-3.mp3": {
+      "bytes": 38915,
+      "sha256": "b6203865b4a355b9990c5531144a42c692a9c173ed5c307ad54dad9c5b470d0e",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaal-story-01-4.mp3": {
+      "bytes": 51140,
+      "sha256": "10590dae50c4d0f7638c43b8aa7d9af54bd6870af8ff9f4066a1082210f90192",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaal-story-02-1.mp3": {
+      "bytes": 47065,
+      "sha256": "3bcb186b75e911554508c4723a404057b401678e12644b143e4bf1e78bd00260",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaal-story-02-2.mp3": {
+      "bytes": 42676,
+      "sha256": "0aba8f8a359cc67efa4fd72bbf001a79537a6c7c4374d14761feeae29e74eb48",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaal-story-02-3.mp3": {
+      "bytes": 44557,
+      "sha256": "5c110b0f8f53e2456395e17d1974caaf64935afcd2aff2566ef58b9aa13934c6",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.dhaal-story-02-4.mp3": {
+      "bytes": 52080,
+      "sha256": "1e2a0fb27c6e56b9aba1c65637323319e4f8198ccf00a82fd1818d577247fbf3",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.yaa-story-01-1.mp3": {
+      "bytes": 38288,
+      "sha256": "cbb4a9b85be479c382ddaf47e84442344312cc499139c42e0ea4110ccc7c550b",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.yaa-story-01-2.mp3": {
+      "bytes": 25436,
+      "sha256": "e0b685273a8d12eff3b172e266c42c8bb07f78e439b15e6ed700d926e03b9d88",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.yaa-story-01-3.mp3": {
+      "bytes": 24182,
+      "sha256": "ab1f28f75ac5b28f05e1110c1062a016f18473b5c18d01463f37decb9c5b8c11",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.yaa-story-01-4.mp3": {
+      "bytes": 52707,
+      "sha256": "4c85593195eb2602fd93d893a2a3c8107d30372b5d72c5811a82bfe35ff17ff5",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.yaa-story-02-1.mp3": {
+      "bytes": 45184,
+      "sha256": "1992f2c35a257e3c35ece224aa5f26f4d3acb945a1f695ccdc23909abe1bab97",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.yaa-story-02-2.mp3": {
+      "bytes": 52080,
+      "sha256": "e4eea676149fa913f2062c00dd75d56d89ad74ada02a453adfaa3b332b17d5b6",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.yaa-story-02-3.mp3": {
+      "bytes": 32959,
+      "sha256": "749d78038e28593c25275adf55298b9e5597c5b4214ced6e475929939050abfa",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/story.yaa-story-02-4.mp3": {
+      "bytes": 69635,
+      "sha256": "37967659ecc5b00903142c0db3cf22a034e2b2c5d88bb8b57e5a910976c7deaa",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-01.mp3": {
+      "bytes": 11956,
+      "sha256": "a5cf80f4d79441610a9b314c938f86bc508591ab39dddb8d608e3a607a1a4d09",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-02.mp3": {
+      "bytes": 11956,
+      "sha256": "d49f613b3570e707fb276d3a1640adcd7217d33ffa53c65819ec855f39327aa3",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-03.mp3": {
+      "bytes": 11956,
+      "sha256": "d0caa62d59eec15d2fd726f7e03e46923c82738460f41d104b8ee54e3f84d85e",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-04.mp3": {
+      "bytes": 13837,
+      "sha256": "c5de1194e4a5cdefb17db50330233702c7cb1fbd3f5e97777375024963093107",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-05.mp3": {
+      "bytes": 11956,
+      "sha256": "5332aaa93791e0c215cf60c3bbebd7b9ea398b55f5bb41225d41ed6c05d01242",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-06.mp3": {
+      "bytes": 11016,
+      "sha256": "91aeeb2eb5fca8d1315cea1016de0dced60fb79a0396f100f2b06ef2421c9dc6",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-07.mp3": {
+      "bytes": 11329,
+      "sha256": "1214f44db4e27b42854791f66e2b0e84fd8e2e661eb273b355cc9e02d0ca4d30",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-08.mp3": {
+      "bytes": 11643,
+      "sha256": "6fee9f7e509aee5a62b42f2c65fa38cba3f68daf7ddc8d830938bb2178f5d0ce",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-09.mp3": {
+      "bytes": 10703,
+      "sha256": "54ade484285406d76b9985dfb03377ecc3c99e5c6646df847cab8691972d45d6",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-10.mp3": {
+      "bytes": 11956,
+      "sha256": "3637474b17545d2ea31e0a7109626cd60b333db2b3a4087a953da1a9a48a4d93",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-11.mp3": {
+      "bytes": 10703,
+      "sha256": "2f61a2c88e6fb0cb87e44b6fce78766c3d3c7890bfb3158720af009743d1d696",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-12.mp3": {
+      "bytes": 11643,
+      "sha256": "b82bf11e028d14973eccc23b430084ba1eb3a14a9a174669cabd1b4409f91e9d",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-13.mp3": {
+      "bytes": 12897,
+      "sha256": "fb2a2b42e2c6d327906b9fdf1af3554ec20fd4669c44069052e7edcf0ea40142",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-14.mp3": {
+      "bytes": 12270,
+      "sha256": "75a3b0ca8a3a5bcb8cbc53df248f41bc6e84ecf74630018bf336df4124e575f0",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-15.mp3": {
+      "bytes": 12583,
+      "sha256": "aac2b3fa37741c854958329ee04f29daca2ba72bbef03d637ca95f3d7a7de5ee",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-16.mp3": {
+      "bytes": 11643,
+      "sha256": "523ddebbb3e3a4deea05268db5f2a19e9ddf7cb1b89aaf6f09631f599e6716d3",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-17.mp3": {
+      "bytes": 13837,
+      "sha256": "16bec585d0250a180c8dc1857f4eef252f156382894e583c488bfde956aa0962",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-18.mp3": {
+      "bytes": 11329,
+      "sha256": "8d1f2b2c28de711458cc361f74ffa8f24a259adba6eef2cb84be565fb2ba7fde",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-19.mp3": {
+      "bytes": 11643,
+      "sha256": "38e828d8989c4d032d60051280a94dd4130bf9a1b898bd53af789d5144663ca7",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.baa-20.mp3": {
+      "bytes": 10703,
+      "sha256": "f5a2670ac7caf62da513255150a1565f524bc26adef13f9370c648eafe8408dc",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-01.mp3": {
+      "bytes": 14464,
+      "sha256": "bc51c496c8d2f635c34286942f5da55fb721a54a14c2ae0494ee206c89f1871c",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-02.mp3": {
+      "bytes": 14151,
+      "sha256": "7fdd3f1793324239ebc18b83f2c93dfe50ba50f617c50b87443b2af0bb175ec5",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-03.mp3": {
+      "bytes": 12897,
+      "sha256": "dd5433c0ab6f0b2245ec3be3058b96e25219b689be1e3bf1b790ebc6e081db75",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-04.mp3": {
+      "bytes": 15405,
+      "sha256": "1cee8369e0d87caf87af3a3c096ab07a1615366b8ca4cd1879756508074c7a61",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-05.mp3": {
+      "bytes": 13524,
+      "sha256": "30f055f457f095f8bc7e03f720573bb7561d1e77adf04a3a1404cafee74bb461",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-06.mp3": {
+      "bytes": 16031,
+      "sha256": "540cd6d804f47956b3c12817e44d165f9c486a6afeeb0ed478e84d3bbd4b2aae",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-07.mp3": {
+      "bytes": 12897,
+      "sha256": "762a66e69133a67ba984440efc606c864c58422addd564047917cf3467780b39",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-08.mp3": {
+      "bytes": 12897,
+      "sha256": "67b982f67af53b200ef881c20b0e124bd905b2e2ce6157393140c0125ffba00b",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-09.mp3": {
+      "bytes": 14151,
+      "sha256": "ae89bccf13ee3625794b9b813e3227f45b5eef71ceeba6d939492436233c05a7",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-10.mp3": {
+      "bytes": 12897,
+      "sha256": "db151f9824b01aa58ee1bda24b7adf32b7efdaac0c87579b222c270bd107764b",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-11.mp3": {
+      "bytes": 14464,
+      "sha256": "c99242552c77ee13ad5a1ea1594ee81ee8c1fe7b65427989ea6a5b77afaacd86",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-12.mp3": {
+      "bytes": 14464,
+      "sha256": "3ff02a86ed88fb61a5a4bc27d93e51b7a1fb0b0df504b826b57347736fee388f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-13.mp3": {
+      "bytes": 13210,
+      "sha256": "e61c8f6920d24d8d98c8bf8b5b1d151340244a4db6ab511455b69a4f5c199c7a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-14.mp3": {
+      "bytes": 13837,
+      "sha256": "7ecab4834190c2a3f1e16437fa28cd2c8306a32de6ab7944720ffdcc308256ba",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-15.mp3": {
+      "bytes": 13524,
+      "sha256": "ad7180e210ad225682c30c8cc95a1d370bbf8f219dc80ba668044007aa92f828",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-16.mp3": {
+      "bytes": 12897,
+      "sha256": "bf7b861e710567cdeaa603e09bfb4c58083712b9c4eb5467d760d97b41c3a697",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-17.mp3": {
+      "bytes": 11329,
+      "sha256": "c08d054bd74f21b7125e067656efea45d921588325feed2be72ec157efa90cdd",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-18.mp3": {
+      "bytes": 14464,
+      "sha256": "6a1e5d928e6cbc0ff2c3c1bdb9dbc38bc7a27a493f9cf901077378106b59fb54",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-19.mp3": {
+      "bytes": 14778,
+      "sha256": "e0f95f3cb303720d2762758cd7762d64c4b1d42955119182d2a2e66728947a7f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.daad-20.mp3": {
+      "bytes": 13837,
+      "sha256": "fa557f4f424814336c38a015359512a37112806b60c23104c7958eb1495047d5",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-01.mp3": {
+      "bytes": 15405,
+      "sha256": "6d1de91afde2aa06112d4bff297c7ff63bc7f72b7ec1fd70c0fd9d8b4b23d5e5",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-02.mp3": {
+      "bytes": 15718,
+      "sha256": "d06aa959df43aa7fb7376a9a0d8d6fea1c92620fdbddea45c00eaaa39862b965",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-03.mp3": {
+      "bytes": 16972,
+      "sha256": "fefd1cfa32e845066a9d294fed73c9349c7f027a7a817e07a76772104ef03143",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-04.mp3": {
+      "bytes": 16031,
+      "sha256": "afce880efdc2dde36d77c9b2a3860d18d65f9d384b35e407e824164b2b70a377",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-05.mp3": {
+      "bytes": 15091,
+      "sha256": "54f57309be18b69fc7d3bbee840fcf1f173b8e961e7e2db60f6f894610fea1e8",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-06.mp3": {
+      "bytes": 16972,
+      "sha256": "fd41199dd4169823d74ca286bd97fe4348607bca393fdf344e107b5c823eb927",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-07.mp3": {
+      "bytes": 15718,
+      "sha256": "76b81d1856314ecdd9f347918a9d0ceed7730c373fe7c50ecb578b104b8666e2",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-08.mp3": {
+      "bytes": 16031,
+      "sha256": "2c162a50c6b508bf678e40e681ef3d8e6e7ca483395bc6252946911d7d899cfd",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-09.mp3": {
+      "bytes": 18853,
+      "sha256": "469668d23c86147e0f3d0f64a6f5248f27654c2c1759b35c68b6b6bf5be62ae0",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-10.mp3": {
+      "bytes": 22301,
+      "sha256": "5b3ff41148e0bc4e57808e3bb58732961d07a7a8741befe601121e75ada36d7d",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-11.mp3": {
+      "bytes": 15718,
+      "sha256": "8413b12dd86b9fa27930be210434e76033d3a56ad2df2b37d6f6094443c8993f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-12.mp3": {
+      "bytes": 18853,
+      "sha256": "97d40e85959837f9005397e26ba3cfe2e7ba66e147ba404c234410af8ea1711c",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-13.mp3": {
+      "bytes": 20420,
+      "sha256": "00d3673a8bff53e3c1a9b7f60dac64d00d975e2ed38e6565136bd138b3f3ff98",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-14.mp3": {
+      "bytes": 19793,
+      "sha256": "ec6d07568b72ad9eddf218a3824b75b4b6499c9a380ff5241fe62ee45a4bb2b9",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-15.mp3": {
+      "bytes": 19793,
+      "sha256": "40cda8a5b1ff26ba8412861425547ac05c45dd3fec394463fba3758c9f40958e",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-16.mp3": {
+      "bytes": 18853,
+      "sha256": "33f12aad831421df2b726072f0002b2ca9bb7be913886d045d74036dbeb183d9",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-17.mp3": {
+      "bytes": 16031,
+      "sha256": "56e34b741ef0bc2c5d8637e6459d95ce34ee9482bd9ea1de53e7058f90ab899c",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-18.mp3": {
+      "bytes": 18539,
+      "sha256": "9ff645028eff435edc0d98abaf7a62e2dc80f5f7b5236c798a3e23f3f9be0931",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-19.mp3": {
+      "bytes": 22301,
+      "sha256": "693322e32b1b079968bbdf4a8fcaa74377485eacf84a79923e1d665b56da632e",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaa_emphatic-20.mp3": {
+      "bytes": 16658,
+      "sha256": "32f0199e6d4a73a58a4fc10595be044666fb9d534f733f1123f468e4c6f45f73",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-01.mp3": {
+      "bytes": 17599,
+      "sha256": "f5ca50115a46008340799cfb3290c05125deda558e5327b1b134c8aa44342a87",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-02.mp3": {
+      "bytes": 17285,
+      "sha256": "13cbafc8ec029c4036b3250ae2cd12086179fe6f716e0ca1f9cedeb547c9522c",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-03.mp3": {
+      "bytes": 16345,
+      "sha256": "829bc34384d88820ecc4ca8fb03604f98deedf99c5e3ee286b9113aa365b70a3",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-04.mp3": {
+      "bytes": 16972,
+      "sha256": "f408e8f0bdfea6799a2ca33f0a36268545ca1875f8b63ca25f1b043595d34eaf",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-05.mp3": {
+      "bytes": 19166,
+      "sha256": "4c9f8caa4d85ead68240c67837d0f159e28e5c80dd85ed44826caf9083085804",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-06.mp3": {
+      "bytes": 16972,
+      "sha256": "c40b31b4e3a7b70732f374b6873abc7dd3d8c2f40c2933481061aaff057c201f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-07.mp3": {
+      "bytes": 20734,
+      "sha256": "e3c754a084554ff541c7a1c0d8708589c130654958ed36e90df5919ae984b729",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-08.mp3": {
+      "bytes": 14151,
+      "sha256": "72eb34d7f80a01047f343792e7c26abc8c41a83cdcb6c36b55b4f9d98d9c5072",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-09.mp3": {
+      "bytes": 19480,
+      "sha256": "9fc463b10a35c0a0c72020ca42100015d22caf9b76c4001cfddc13902222206a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-10.mp3": {
+      "bytes": 20420,
+      "sha256": "2a4e3518931af9ced18ab71fe2fc48f63c0cb519718553b0dc84c6760fc0cd91",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-11.mp3": {
+      "bytes": 18226,
+      "sha256": "e23c5f7eb31c02030afe5066be30b451cfaa406e79d454d761fa7fd0c436c008",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-12.mp3": {
+      "bytes": 16658,
+      "sha256": "ff0791a0139156c037b40f3578be4694176ca12a2734c7a86153dfd5278d0fac",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-13.mp3": {
+      "bytes": 18226,
+      "sha256": "f4e7112bb99f2ee1674c549f244fbaf41560976e2edca15215350d38632bdec7",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-14.mp3": {
+      "bytes": 18539,
+      "sha256": "3da57ae3993294b4eb82c9a59949a66cb4345a7da88d98a82595715e02ea0045",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-15.mp3": {
+      "bytes": 16658,
+      "sha256": "a02bb6a2e9b0f6f4848a3f1f435b74040dd7a7e8ad8b16a3fb2ecdfe81d84ab0",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-16.mp3": {
+      "bytes": 18853,
+      "sha256": "92ae33bf417c4f7ccda5dcff2da293c4407fac0a1de6e27fc98f021f4dad584e",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-17.mp3": {
+      "bytes": 16345,
+      "sha256": "9fea31a4a987c8f25b6839bc70a44111473ab4eae1c0f0f7c7b8f26e35593690",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-18.mp3": {
+      "bytes": 17285,
+      "sha256": "d73c30e50d79835d0b850080bc72956ba339e88f407e638a232c5f65b397704f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-19.mp3": {
+      "bytes": 17285,
+      "sha256": "5553ebc64e12c332aca88ab1ba7b55ba7b77ed3fa1c924258e3af73b598d3be7",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.dhaal-20.mp3": {
+      "bytes": 17285,
+      "sha256": "1e7e846b51017c06db48e03746f3828788fa0b33f6e0ff16f1c02ebddb0eb2f0",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-01.mp3": {
+      "bytes": 11956,
+      "sha256": "d00f7cb751f44e09917ba9b11e14544139db123b7c2b3975be7c8de47eda4b12",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-02.mp3": {
+      "bytes": 16345,
+      "sha256": "7b1d31adca74f2b5d80a2e7630fbd665cdcbe796d315ae6d9c79a9fa50875346",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-03.mp3": {
+      "bytes": 17912,
+      "sha256": "1c45883da927f321b1ffbac0dfe1ebd262f8a347febc425a471375644319c1a2",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-04.mp3": {
+      "bytes": 19166,
+      "sha256": "7bfe14e84602ad6aef41bd8a39ca3073dbbafda4971d0db9039a54cd79bc7144",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-05.mp3": {
+      "bytes": 13524,
+      "sha256": "e929d465bc0c10f5d16a37279deafd00ea6ea5cc682201d130b2d92277022b8d",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-06.mp3": {
+      "bytes": 13524,
+      "sha256": "f2872bf297e3d4ab8d1d9dba105b4edb7fc64a677c093fbfc3c2cd589e1a40a1",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-07.mp3": {
+      "bytes": 15405,
+      "sha256": "913d03396aea218d6c3494f0bca19a6af498eb4f7573fa91f30f4ff7b6372b6a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-08.mp3": {
+      "bytes": 13210,
+      "sha256": "f27ecd31c23ad7255a127f6ac2638b0f45e9d38701f6581210febf45a024bfb7",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-09.mp3": {
+      "bytes": 13837,
+      "sha256": "2c320083460e16a0c1879c56b47bcde2aa8b0bdf899824c4fe6eeb4af9c9fd66",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-10.mp3": {
+      "bytes": 18539,
+      "sha256": "6d09c9130475e9b90f6b74d7f351594ec6e2afc2658d37ddf02af631d46a4181",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-11.mp3": {
+      "bytes": 15405,
+      "sha256": "371dad663895ab9dc02ad74e986138037d9af6b44a8130c48193166ae65c4b6f",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-12.mp3": {
+      "bytes": 16345,
+      "sha256": "c3c5a9f12dda98203975b8a9b367a7737779f25a4c7ff453bd62a7d2f51a235a",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-13.mp3": {
+      "bytes": 17285,
+      "sha256": "ba5d7b44b70e7d87cef24c09eaa547ca205555ae4000c80c5ee53cabf410649d",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-14.mp3": {
+      "bytes": 15091,
+      "sha256": "14db3531e34794e2cf3f759e7f546fe0b100f7b47009f3578095213f9eb7a890",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-15.mp3": {
+      "bytes": 14778,
+      "sha256": "2ce69da138c452ca00a0edc05bf2814df52ac79b4b73c657467d4904c4063aee",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-16.mp3": {
+      "bytes": 13524,
+      "sha256": "701bb53342b8705dd0905fe9647d61e5b3fe3d10223cca5aaee8cb978c41a983",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-17.mp3": {
+      "bytes": 14151,
+      "sha256": "e8e72a8f52284b08e664580a6188e558d26d63ee5df586e8fbfb505a80a23da3",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-18.mp3": {
+      "bytes": 15405,
+      "sha256": "f39b00522cd28816a4f95acd5c7d6f55fb498b84b56608c0726ea2631b218e44",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-19.mp3": {
+      "bytes": 15091,
+      "sha256": "076b12b63882d83dfd68b75b89e1c554bface3a8b3b10eaac58c92a2e4afee03",
+      "mime": "audio/mpeg"
+    },
+    "course/audio/female-final/word.yaa-20.mp3": {
+      "bytes": 14778,
+      "sha256": "77945932500ea15560f702fdabc4f42612f8742a7c69320bcccea77197d50a36",
+      "mime": "audio/mpeg"
+    },
+    "course/audio-index.json": {
+      "bytes": 223142,
+      "sha256": "01c6e3f8d1479a78bc03cb7eca6f507b03c4ea36d7b05a5ee75e66978c38390a",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/chapters/baa.json": {
+      "bytes": 46319,
+      "sha256": "9881fa14504aa7327a3de743f1a337fd61543937f597d78ea56b5e3933c4f728",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/chapters/daad.json": {
+      "bytes": 23296,
+      "sha256": "b90bfedb81af37538983dc3c5115aaf7376fd10480424151a692142017ad9d5a",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/chapters/dhaa_emphatic.json": {
+      "bytes": 25142,
+      "sha256": "f8fb7ee648a3b84a80f0015306ace77e255027494d6e8456e1e60b72ecffc80c",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/chapters/dhaal.json": {
+      "bytes": 25988,
+      "sha256": "51802731dd1609b7e8892fd064ca76120b469c65ef90fd25f8e96eeea265a12d",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/chapters/yaa.json": {
+      "bytes": 25443,
+      "sha256": "91289d5c42968dfa0728080abafdff726332746f1e6760b8f631020ea179a2b3",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/course.json": {
+      "bytes": 8398,
+      "sha256": "c7dd71ab3932f0e8a096f831ba1c83d6682188426ec0b3130876634ccfe87367",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/locales/ui.json": {
+      "bytes": 400801,
+      "sha256": "e76238f21b7fd470d6a3329f07a7e67b44e031c1ba326197979c6c72975e925d",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/scene-index.json": {
+      "bytes": 162932,
+      "sha256": "1b8edff89340ea5b4897fd05245662efb9cff9c9b5c8921f36080cff76cc87dc",
+      "mime": "application/json; charset=utf-8"
+    },
+    "course/scenes-final/0003072d4e63e884518452a9.webp": {
+      "bytes": 293566,
+      "sha256": "9cb6bc848c71bcba5756b82e39191ac968de23ba1be24301d546d18b8cd5542b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/00d58f64be8d0d6201345af9.webp": {
+      "bytes": 178474,
+      "sha256": "df1a8f1c0bd58e69ac1bc728959412f70161a952685f3b5dfc2b9e4bc3a12f83",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/01e1eb72dd59084a8707cc75.webp": {
+      "bytes": 245948,
+      "sha256": "41d8c35dda9ed3b9f9f7f0cf9dcffcd8f211effbb753bea8d6835ac5a21810da",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/01fb8cb25df7f136e632a252.webp": {
+      "bytes": 283738,
+      "sha256": "f6ba2844268c2f6fe9536be14251454bb90d18c2070939a2e1493f58e307ee20",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/03624514ed42c44ea2d9c7ee.webp": {
+      "bytes": 302498,
+      "sha256": "50922bec0e59ff7821d447970a5474288da49eb1602291dbb5ce4a84f4af9bf3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/044bca25ec83c924a0b5eff6.webp": {
+      "bytes": 207436,
+      "sha256": "2338c388181dae3471139683ffc1c21026153a4cc775249999a246cb7d27932c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/05b8e5a2607177d79ef0d027.webp": {
+      "bytes": 106758,
+      "sha256": "779d83f96a8fa1f4e1d2fe3a09c51ec025856d27ddebf8a79e16171619506860",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/077a2d74e0f6908878560800.webp": {
+      "bytes": 270938,
+      "sha256": "d250a7f7718f3304a5985d80e58417b24612317ae537a3211a5deb43f59de697",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/098d4edcee4f082a88b28eda.webp": {
+      "bytes": 201648,
+      "sha256": "9c7b9f8483370ce1ed8a56ae7a2efed381070cd0158e905d42f2c36d0968ef02",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/09f22cd67f51836fd5f82b1a.webp": {
+      "bytes": 351184,
+      "sha256": "24b8959d61a72e934b35dc4a83a812e61e3420a0e95e4e9029235301b4f9811a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0a1e6250b72daffc3740f4a9.webp": {
+      "bytes": 326308,
+      "sha256": "3cef4b7f171a8445c747c828658e7ed17ce71d830f62421b6a04ffd1dfa4c8f5",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0ab7302d32efb4746165094f.webp": {
+      "bytes": 357040,
+      "sha256": "fd03dc2e59dcd5789b2c45830e4775ece66c187f23f0fa4ce338616db6a4f7cb",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0ba21cd641a7e588ba6cedaa.webp": {
+      "bytes": 325850,
+      "sha256": "fd4cf4f8a5fbc04ffdedb1d3a6634b5972fccdc14c9724f8da1ba8d274d09eba",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0bafaf6ba1fd30b87f40a576.webp": {
+      "bytes": 178134,
+      "sha256": "091dd288cb831e5f5d40aed43e8c39022da43c8209c504cc397ec4ee7fbeb63f",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0c25b9409cee5a63207fe4b1.webp": {
+      "bytes": 168026,
+      "sha256": "f7a582f405bb7732f43af4681c4daef9ba86a56baad6a34d74cbd905bdcdb7e2",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0c4fc8ec8d7db4298043f9b9.webp": {
+      "bytes": 288456,
+      "sha256": "563fa190f973d01bdcb774dff2ce889093e056544d8b2f959d08ecf84e546649",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0c79e6c5d3b3a96d1e70249c.webp": {
+      "bytes": 362224,
+      "sha256": "8523b278d67c133dd604356f92eac9d70147017f7b9902510c31b9430031debe",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0d4ec55b7c0353db64031f36.webp": {
+      "bytes": 274744,
+      "sha256": "c967324fc63ce1c712c6077111c95770cefe0e4d3b57d15d7d814e8f43e3ff7b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/0d561e01f77ad337b7bcf128.webp": {
+      "bytes": 173710,
+      "sha256": "4711f1cc4cdfef424b83db89fc67030261c219ffe3805c7a22b9676e85597221",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/10d885684f14f389b681e395.webp": {
+      "bytes": 302650,
+      "sha256": "d45776a6978a8de745f85476c2d4c8f5221f94299ca76e89f16925718a1266b7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/13c7179859be96396d294790.webp": {
+      "bytes": 264214,
+      "sha256": "f5372354242f4e240fe24d09ee7ab7b53403eb6c0261ab8b5902caff6682d679",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/13c9c911887ffc676bc6d2b0.webp": {
+      "bytes": 163922,
+      "sha256": "c5f107aea02349c71b5a6fe0f1d5ae8ebe1ceea5af31e00a6e127e54d7465026",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/1638ee94b7c1378c7a352a59.webp": {
+      "bytes": 422470,
+      "sha256": "39d659153dd84f39efeabe2cd5bf8edf7b88bccb2328178956a9661452323b62",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/165bb2e46e4a292eb9b447e9.webp": {
+      "bytes": 349050,
+      "sha256": "65deee1ff59c58f85cd4d1ccb6ae7717b8d4c91af1b19a0814f9dc90940785cd",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/171b991b4217c9fb762215dd.webp": {
+      "bytes": 314452,
+      "sha256": "5f5cc365f1d90427d356264ba35c28557c018ee9cdde8cb5dd51da5f6444ba26",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/19c516caf7bd36b071797937.webp": {
+      "bytes": 198878,
+      "sha256": "1946941ed02334d1a0873f134f4d7d94d050952c89aab37b784dbe1f90062bc4",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/1a3c5a7c2cfd357bdf2e7225.webp": {
+      "bytes": 225364,
+      "sha256": "6f50b261a5f06a49658e8229acc2db44ece8e9899c35922bc699b6e2fe8abfac",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/1a442dab76df2fc3eda16fa0.webp": {
+      "bytes": 242644,
+      "sha256": "8c660346f9d094a74372d0185cc9e79beb697c96d5f9194118cf821ff206ead0",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/1d52fc27b12552ae66470260.webp": {
+      "bytes": 253722,
+      "sha256": "6ee07821089153dff658492dbba54c82870ca0fcf58b4df16749926c0795314f",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/1ee6c51ddc844262b84ff47e.webp": {
+      "bytes": 259600,
+      "sha256": "6d5561849207057642d087d919d6f1e690d0ba45c5dcdef2a0363e04aa9788fe",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/20fb33afdca7c60a5a945980.webp": {
+      "bytes": 303860,
+      "sha256": "39a2686922e101558c89cf70ce24b7d7905539493b5496cdb8e625cf969a28ba",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/22cb7709970f00889856a284.webp": {
+      "bytes": 282854,
+      "sha256": "f45ae618af6cadd703dbde0b7be3ca661edde53046e71d151d5b3457f51d4205",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/241abbae43397405c81e56c1.webp": {
+      "bytes": 242956,
+      "sha256": "62a1313af5b8405bae49a6b8295ebe1c91f9b263b7e093ff018e3a527f841415",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/253120995ed0ff1fe972bede.webp": {
+      "bytes": 314102,
+      "sha256": "2d9b1dc83f91d050fbca3bf3ac5b099b67b6bcb622913b4bba25703fb228d234",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/2678818442d91fb1c7fc101c.webp": {
+      "bytes": 195854,
+      "sha256": "4cef624c3a1da617253cdf6a98b68296e85f8cd2bbe961b55d21a7068aa04cb7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/283d8dbfdae8889331eb2881.webp": {
+      "bytes": 240026,
+      "sha256": "04718f1774c3571aa7d15560ad09ac647b836a014b40da83792f6bfd7e2fb3b9",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/29886e64778fe3ccf69bc55a.webp": {
+      "bytes": 80474,
+      "sha256": "3e7dbd5b5d893f482b612a5bf3e70d7577b6d41bd96e8158d505d9097eeb2376",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/2a83d60f3694ab536f9b5936.webp": {
+      "bytes": 342874,
+      "sha256": "fd7c5b666b13af85bd6b066ffe51d1f60ff858f945230572e7169718ea7fd200",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/2b0d4f32bc49d63e1984417f.webp": {
+      "bytes": 352320,
+      "sha256": "dbb19bba439cdf504aa493f7577502c7a2cdf4ec4212f77ee88f8fbe7f28afe4",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/2ea76a5d7dd9fd2fa90875d6.webp": {
+      "bytes": 259436,
+      "sha256": "183c55aeadb05d5b2ecbbd58a7c6fa69d4983fefe6d44b3ec3558a1977cd4c39",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/307e2e793d5c02463486ad2b.webp": {
+      "bytes": 301376,
+      "sha256": "b664817cd82002a64f8642743172d21d8670077b1b2a565459e4cda8830bc6bc",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/32085665c6c2009816204e08.webp": {
+      "bytes": 263088,
+      "sha256": "ac2582db0d91e64431f39cdf84c94d898819899d21d39a8ff507cc50266511b1",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/32821b7f6504c71172b06e70.webp": {
+      "bytes": 89034,
+      "sha256": "54ba918a319f886554fc934cbde453d45f4f7ada95ca8ebefb7d8e54ec8f8881",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/342e41e6b69b180779b7ff81.webp": {
+      "bytes": 283422,
+      "sha256": "15d496121434545320ec1bc49c8b16572131e94cd11c3619291f4e8bd53e0356",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/34ecfd74231db5e85136ea2a.webp": {
+      "bytes": 176432,
+      "sha256": "4156a63201376147d38b4d50f8a25ac8fa5b88093eec3e6d22ac7e5c4a8ac1a8",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/3565bc47003205f8ad65e028.webp": {
+      "bytes": 174312,
+      "sha256": "1f34a8dc9a04c6d22d5c52c72e14ef6febbe658b62591cf25a1552b82f44c483",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/391d8dfb76c8eab89dad221d.webp": {
+      "bytes": 305862,
+      "sha256": "0d4e31753c2b55ad7e9aa94bf5dd824f16634a8476bdb1125f92d198a99fd290",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/39b335d312bd685c8e961bbd.webp": {
+      "bytes": 338090,
+      "sha256": "44a41c0d897508da3c05e2cf160763256c6701dc15a4f42b7520ff29e00f2fb2",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/39d18075ce06d4187c127af0.webp": {
+      "bytes": 182004,
+      "sha256": "4c3539c43b23147100e439840c4078a1ce5cb04763919f501ae0986a58892b77",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/3ad0b5f6b1220dca93900d52.webp": {
+      "bytes": 239968,
+      "sha256": "a980618de08c43e3c56262e5f9da8904ecb361fa3e5234ab3e917a5f14664ff7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/3b0d2f02aecc599a914acbea.webp": {
+      "bytes": 379270,
+      "sha256": "166e1737374109f07b503c7646cfa9e12f2ad75cc9976658cb6ad304fd1e281d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/3d6bfb7a89fcaeb22fa7ddc4.webp": {
+      "bytes": 229732,
+      "sha256": "29ed76ea2ee68269a59889f2533584b61dbb88a0c0cdf00af06f74ebe591781e",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/3d91ff40a7f3ae94063daf39.webp": {
+      "bytes": 193486,
+      "sha256": "8c031d7c9c555af6aac69ce7c982315228131eeb51a15fecf53bbf714325a216",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/40bbe345d4014f9d78526222.webp": {
+      "bytes": 222984,
+      "sha256": "71459b6300ee61d10254904379d39280ebe13943aa14b5ab024d5cebfcdcdbe0",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/41dc3c1be609440847c698eb.webp": {
+      "bytes": 304260,
+      "sha256": "d410760ffceb6cdc570ba57f46108260edf94f7d2ce0a21bbe352134f4ce5e51",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/42025a1372a7a360ac60e773.webp": {
+      "bytes": 286686,
+      "sha256": "38fe7a14a4d697169dcc00f68cbf4fa57aa74707e7dcac4f68a5b38cf75d715e",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/4359e7a5405a7624ce84c157.webp": {
+      "bytes": 234918,
+      "sha256": "81b39ec446616919bd980077d4b3d21830bfc9237043b378c1b05bb965891afd",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/43a8813631827652b3949f68.webp": {
+      "bytes": 230544,
+      "sha256": "fabda11914f2040f855f7329ba10d30f862d7fdf7d272e8de48d50027f1ae69a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/443242df466ae20715d8ebc3.webp": {
+      "bytes": 247912,
+      "sha256": "9c68de38df350408269bbf2eda66d07290f07fe8508c5f27760d52ad9e929a00",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/443327aa94df94077a03faea.webp": {
+      "bytes": 175968,
+      "sha256": "b32e544a203aa3ff9e09e65246d0e1acd9ea72d66b3dad07c2b62abaed5cbd64",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/47cfc2968a64b578ee667e26.webp": {
+      "bytes": 126440,
+      "sha256": "e672e9b0ddbdd9f5f7709e0ce8f074fbc4433b1977b1fbd97ae99701a5162e75",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/48453b37bfbfc123c735a1b7.webp": {
+      "bytes": 313712,
+      "sha256": "73c9a0dd41ca0b2acb9a788c2a2ec70e5a35b439e53511127441c24fb44b4fa7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/48c68a2881eb4874ed764b77.webp": {
+      "bytes": 236488,
+      "sha256": "d8d85d7b6d7fbc7ea16c7c3d64171bfc8dcea91ed6218dd702c9b188ee68d66b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/4a4030d16c79f53ac04468af.webp": {
+      "bytes": 294562,
+      "sha256": "fbeb81cb3084b830ba59360841faf5c876fa76376168a2dcc62fc7633fe1745a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/4b00ad0c4f390fe934daa550.webp": {
+      "bytes": 395074,
+      "sha256": "1c9766b2dbc12d841de6f2426a75b70dea54e6334cc5d07048c6c7b86321c088",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/4e79601b9adbd6699432cbf7.webp": {
+      "bytes": 330900,
+      "sha256": "8e44a8fd4b8dffbaeae3bafca3f8ee8b9c5d33c283f3de0e69e9868317ca635b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/4fd5a588dcba106ad3b72b78.webp": {
+      "bytes": 293458,
+      "sha256": "e4de20219197bdc2959702baf3a01ebe814f2b563c8f5d8a9938c51bdb746fbe",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/501c210f3d54beffa908b599.webp": {
+      "bytes": 293804,
+      "sha256": "e77c1c3d9e7691376aca4d739b09ec16f4a07636f5ec1f6eb3d91dec3ebf3775",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/50f3a7eeb3e3fc32d35b6af4.webp": {
+      "bytes": 308886,
+      "sha256": "258adf67a6ec39c40a3b56a0b80b95755555c418e2d88f2c5ff0bc8ff326aec9",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/52c97ec827e672d7c0c8335d.webp": {
+      "bytes": 168034,
+      "sha256": "2a949e7d9e5f9536a1ebdd933848b66b225cd177a5559992cf1144849898ab79",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/5349d33151bd2d3be9e86f39.webp": {
+      "bytes": 352442,
+      "sha256": "2ddcbb572a1fc92198d0f886d571cc7d6adc5614e823b8bcfd9f646c92aaea58",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/53ef336696646671b23f7eae.webp": {
+      "bytes": 255716,
+      "sha256": "3e7d4d4b57a229a48bd6f921311f48b30e4f45acf496ed364003e8a13e33b964",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/5443d1d5a1b75afcd385000f.webp": {
+      "bytes": 305350,
+      "sha256": "490f8b4cde1659c5aa8580d7b3d5a43f864bbc55b60e8e77019ca326a2291555",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/55dcaca8e0039ed511e8eb74.webp": {
+      "bytes": 340384,
+      "sha256": "1d1d240802c55fd24667d3d1d5b638f77f665c49b50a1a008cf83c6b36e40d1d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/565659144027cc7f0f5d28e9.webp": {
+      "bytes": 232626,
+      "sha256": "6188883698d22522b2552f31330743c722868a9c11afd6a8b4182ddafc465f5d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/57992492f20b43c0e0973720.webp": {
+      "bytes": 382266,
+      "sha256": "ba4462fdd95415288d30471ce4b6ee6f80c3010f33bdf683ed9cdc81b42f421d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/57c61e3e320d8f3360402223.webp": {
+      "bytes": 211794,
+      "sha256": "9dd6588941fad47e78987ea8bfecd398d7f2ced58b889ce36b9de03f4ed62c61",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/59602be1a8708c38de3e8c58.webp": {
+      "bytes": 325158,
+      "sha256": "de3bad487dd03cdb3a95477ae985c7f2dde5a1057b3bdcbdcffe9892aee1386d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/59bc24ddd0c6e53108a451c4.webp": {
+      "bytes": 160054,
+      "sha256": "575435d41e3bb4e25d80d49f7e63d508870c5edc536bb1b1bc8c853f94b1b063",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/5c4ca50a9415b27494f30c74.webp": {
+      "bytes": 251286,
+      "sha256": "f70fdf07e6d028a1701bb248b379041a62f03cbef2e85b48c9e9960b13790036",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/5c77a321aa82faa7cd07e3d0.webp": {
+      "bytes": 371410,
+      "sha256": "b139b1085803d0d6365aa64a32aa65a8a75232b85bbd107b263cb068b1fad95d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/5e3dbe525bfa1893d3d6787b.webp": {
+      "bytes": 167960,
+      "sha256": "f05590a02809701ba4d44d083e032809beac26262be29f4fd8e68de175228630",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/5e4000600f7aca23a69d0662.webp": {
+      "bytes": 228346,
+      "sha256": "ffbacacbb1c152e15079df108e4d3c131bddb9cd19bdaf5c28973f5bd318b453",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/5e969b08d922b0313b9dc1c2.webp": {
+      "bytes": 215250,
+      "sha256": "ebbb7ed7d330484d3d4812ac6f98b84525555709e58051e0b1ac92ae39cf0202",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/645eea9c2682dbda9737152d.webp": {
+      "bytes": 152578,
+      "sha256": "991ab8defccf7aedf057840a65fd7f283f51c01829c2338d942a282337cb9059",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/64a3323041e550cee900dc31.webp": {
+      "bytes": 366230,
+      "sha256": "9a484fa9f2658e9eef0c0d65337e8a6718362e68e793a09510d0bd1f16815c29",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/653f8caefcee3086dca21573.webp": {
+      "bytes": 224156,
+      "sha256": "5b25dc8d63d174b46a501eb791d695a48120ca3ce07edac8052d3c79d35e4ce1",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/658613357871e0c71e5fade8.webp": {
+      "bytes": 280258,
+      "sha256": "8ffee84a87feb6486d3593787a1e9b5137600411cbe0ea0f0d833e981c75d843",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6912636bd396fbfa8ceb1113.webp": {
+      "bytes": 188442,
+      "sha256": "b294a88c476dbee7abe79d03060f13088c202e78b9929d532f47de710796c4ec",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/692f0e82badad9ca9aceb1e9.webp": {
+      "bytes": 208222,
+      "sha256": "1b2fad54819428bf422fc05ed4fd315dc027b64937c0f987d37dffb220a5e0c0",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6a4cf3b1e1a2f2bf92192357.webp": {
+      "bytes": 260462,
+      "sha256": "ed40b79b9e4b49fcb6d049688a95e5c110fbf8bcbef69a4154c946cc586c8308",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6a9e9095c37a74eaff4b3281.webp": {
+      "bytes": 234356,
+      "sha256": "5cf4c62558c5dabfd4edd62363f5d0263550aa1614ebd378ccd1fd247a6590d6",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6b2e816c7059fdea00c60a6a.webp": {
+      "bytes": 247936,
+      "sha256": "dd3e265d0a8958aa7ae7e3057987983ee30ce885f695895dfa03bf3343b42fe3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6b717fef435257cc74c554a1.webp": {
+      "bytes": 348368,
+      "sha256": "09f4ed99550d59de14c2196cd38cb352328d4875a884710ecd4e701ab07bb30c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6e3abafcc1875f5757a90853.webp": {
+      "bytes": 301504,
+      "sha256": "24a23025672f69eded10447cddcb8400f2b210143ac2df85d7f7536ca5dd2dac",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6ea498f1ad889b9d8381bbc0.webp": {
+      "bytes": 226896,
+      "sha256": "9a6c85cbbd51214a1205cce3a84257d07f0e783b0b43c3574bb7a8da53e06217",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6eb4703d9473f13c15d13012.webp": {
+      "bytes": 296614,
+      "sha256": "b895a00e54a6b9d21625a4027d95ae69dc33a57fbfa59e0bd97c6ff788121346",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6eb5a01fc2863e9257419743.webp": {
+      "bytes": 363528,
+      "sha256": "1da93b9b2ed6747276c1814c42bdd0b9a8d1549808300ba0cfc1397928189acf",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/6f4fdfa19638f4b577f7edc4.webp": {
+      "bytes": 381980,
+      "sha256": "27e4594c8ac2fdd9f0241b43e3a5e7ff848d0ba404b0242ef9db38008ad75a41",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/714e8479cf6f2d1914755674.webp": {
+      "bytes": 141216,
+      "sha256": "d0a3b06977f1f4aaefc95a4124f08e8775e79ae8447f1600ba31e34319583429",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/71810e3f25b6cb4f14b07f48.webp": {
+      "bytes": 244912,
+      "sha256": "74143c7d1e3350f0cd2974e495e967766adcb9a945127a5cc501bddbad233bd7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/71f0e48a4b29fa95e209fe91.webp": {
+      "bytes": 266858,
+      "sha256": "cf2e87072396d15726d67c7fe310fe4bb2c2b4eb79056f522df9aca2c684eff5",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/72622e9a1eac6ad974938d2b.webp": {
+      "bytes": 316476,
+      "sha256": "80fccfb4226e5f591b981ec7ba2c97c31644c1d59ab96a745762dad738621290",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/73b0b6d13368aa7e8aad89b2.webp": {
+      "bytes": 166574,
+      "sha256": "b20742a0aa3980483e7e8966217b32835063650b90d61e0b905723d28375df11",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/73e4811cd8a6c09aadac5de0.webp": {
+      "bytes": 172660,
+      "sha256": "1f963c21c349e281e668c80fccd01cdc4547417c5c758398b6cca76d344de586",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/74115a278064a03343c6424f.webp": {
+      "bytes": 290310,
+      "sha256": "83e37b21fb4cb46a56f8fb970f1c40997949b07f8a7f9a4bbead400dbdfca554",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/7424468d7c1064ab3c7b6800.webp": {
+      "bytes": 110244,
+      "sha256": "12f3dd365cda7dee6b7716346b4895f53b3f14d664d2b30d01222b6f38b3a87c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/74f41d67395231c6ac002d08.webp": {
+      "bytes": 344300,
+      "sha256": "7bd063e751929cda21c0db01a85715706b97cddb3c7579d8c9eabe3ab283e255",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/758250411b7a92a64a518884.webp": {
+      "bytes": 246540,
+      "sha256": "93e6384ba797d4db52a19622eafca3636b28ed7cc2937016835eef3e6cbd85d1",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/760663eccd47ef2c3b9488bb.webp": {
+      "bytes": 419720,
+      "sha256": "8dfcb18dcee3f9960972fe1750bbd9ae5b15a3aef49b5cfd5ed5ed9577099c77",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/767faa18eafeb065f854277f.webp": {
+      "bytes": 166920,
+      "sha256": "3cb1453f09bc2d5852a69de5c589fb216b34d716d39b91865a4bdbf5fe048c63",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/77cef6731a97a88b454ec7c0.webp": {
+      "bytes": 267378,
+      "sha256": "37fd17676ff815314559ec9adca4df5b057a3837ea1195c2cf415759f690f1d5",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/78d8d91e5eeded5fe07fd42e.webp": {
+      "bytes": 345450,
+      "sha256": "0402ae04140179bf05d2071aa0e4f9f440c25f037e15fc16d4b4df217903b965",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/7945e5475d272e402e1bc3c9.webp": {
+      "bytes": 224846,
+      "sha256": "ee610f51ae90bc79793105d8e00a4bbc746d32166faf65eb17c2f532d3c85cb3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/795dacb536272254ed099fae.webp": {
+      "bytes": 241436,
+      "sha256": "84eff813e34ccb272950614e724218aee23e7940be11ad9f23cd61087f687159",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/79f76950ecdac13a2d83a7ac.webp": {
+      "bytes": 351462,
+      "sha256": "219d855d64730f60c9ef10955d3d85f38b762ce2da9557b0484b9acb907a9ec6",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/79fc8a7356f759feef0a4bb1.webp": {
+      "bytes": 174856,
+      "sha256": "1c7d6210d3fd511183c13239133364f8e05592181e568ca1ef63fcc61945ac36",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/7a9a17523ff6a4e8cdc6e436.webp": {
+      "bytes": 281230,
+      "sha256": "c23c85aeaba0cc63bba2b23abde522e89a9facafb469de974476cf7067e9d5e2",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/7bb49478234750a67b221449.webp": {
+      "bytes": 300346,
+      "sha256": "fb80e3f89e6d8dc527ebee6979ef738afa78afdcb826664445c2f1157f0acbf0",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/7d26e2b4c8e5f63b00be7dcc.webp": {
+      "bytes": 414390,
+      "sha256": "81d73501664e7eb30dae2bbb5141d94543493dd4902c37c41686a2ffea58a55a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/7d31b07b7c473795223859ae.webp": {
+      "bytes": 231506,
+      "sha256": "c3a54c7737bcfc4f0684112af46d2aafcfaadbac72f395f419ba0c340880030b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/7d8b084953978269042e51d8.webp": {
+      "bytes": 336058,
+      "sha256": "43aa5d8c0e7071060ed68c08915cfec86bc4bbcffddc778728c36ad473050332",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/811519c85821cb3ce3265db6.webp": {
+      "bytes": 226954,
+      "sha256": "3d52c5a721cd367bdaaeaa6075cbcfc5b7d05351beef675aa1315efdb9aa5a99",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/813444785555dcda93b81be3.webp": {
+      "bytes": 320122,
+      "sha256": "cf4eb86e684a4a917d16ead8eecaa8721f00a14272d76133de5d4d715005ca7b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/829f1e706c005451e74c5489.webp": {
+      "bytes": 269114,
+      "sha256": "2972e6175f8b8a281f6a008f7f958bae41325ec21643d65732cbda5c8f2f5ec6",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/842d025f5a0beeb4ac2cd76d.webp": {
+      "bytes": 264858,
+      "sha256": "f06af318a513ed6cc61588a545ed344cb457e397217cce32bab05d017f2a0490",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/84a4925ad9d19fe3eb97f9db.webp": {
+      "bytes": 333612,
+      "sha256": "816a63cec0553ae539861b8439c5a1dbeeb57de1b3fbbe25764d703d0ddd24e3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/8507d3f0bb6205023d8f9e5f.webp": {
+      "bytes": 342804,
+      "sha256": "7ca5293fbc85874c947a523eed9cbb3fd433379ec13fd6e359261b65b3ad5552",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/856b79ad6615f233497125fc.webp": {
+      "bytes": 371592,
+      "sha256": "701c8cdc1530ad91257a0fa296f25eea004376045d294ddb5975fc4353372061",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/85aa72b65c6aa1d738670ebe.webp": {
+      "bytes": 382896,
+      "sha256": "ea88668b94dacec4e6eb2b21b7caa5711ca73e42029748954a1461a47e5b71cf",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/8c6fd4534334643c4f850e39.webp": {
+      "bytes": 356524,
+      "sha256": "21d01edfaad200dfb0b08998727ab72fdf1b969a5b42f742a4b33bc43e5240f1",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/8cb8defd7b1e93bf55360bc5.webp": {
+      "bytes": 140894,
+      "sha256": "00e13b9cad405cacf0cce34534ec8a386919e5168fffa6b2ee2a8e82984e5873",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/8f3afc33e9ab1f9b29b19614.webp": {
+      "bytes": 322954,
+      "sha256": "8020ce56fadbfe191922dce177db564862823b23eeac170fef7cc2eb8c1ca023",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/8f84cb294ec154b9d7ae4068.webp": {
+      "bytes": 323924,
+      "sha256": "cd16558c0f35e27f7eaef9ec60a61feac7e2a7e8ef627cd969ad574a036be27b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/8fcd8326c097258fcd38fe0a.webp": {
+      "bytes": 413616,
+      "sha256": "2e144e38a4b94fb3582aeb45deba1a14efe098da87ee87f4caeb444c647046e0",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/904e6c0fbf983eca97c6417a.webp": {
+      "bytes": 311796,
+      "sha256": "086dcaa5eae4055c75b01a6ab31d7a3c53124423f92611583bd7a0df1f56a325",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/90d5aca6af8b4b4f4fbd96a6.webp": {
+      "bytes": 378604,
+      "sha256": "962dbe07117e492a743012fb8bc167c0e3e4109de34fd9603e37e3fb23976019",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/90ecee73428d1ba4d0e59f78.webp": {
+      "bytes": 317284,
+      "sha256": "9ceba8fa03d1b7ad0fd9545fbc6d08d8e5c5066811d6907e030bed9e9a256f92",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/91eaa0baac8bd7c5716b672d.webp": {
+      "bytes": 242500,
+      "sha256": "a8eeb3a4823d23b86b1872fb234666f3b0d87a08b58a0fd123b65579acee8a87",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9254fb278afef42671eaf612.webp": {
+      "bytes": 245298,
+      "sha256": "1bbfe2609d6520d6990736bc78afb0898f22dc7d5db69365c125e119914148db",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/938d73576b3e297681e291f9.webp": {
+      "bytes": 274336,
+      "sha256": "eea8291431bf50e350b2b65ad781737b46ec3a1696a49abf2daf784f84f5ea1e",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/93a90d54a029437f8d6c1dba.webp": {
+      "bytes": 289104,
+      "sha256": "fa7cb77d9ab1890582d2b9bb7ca31e0e798e0b6ec0a622811c23ebc8542b444b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/940bf0d3be0e66553d2aad47.webp": {
+      "bytes": 325406,
+      "sha256": "93c075ad6837861ad5ca3b3fe50255008c670e209675a7ba040f870175fcbd8d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9462e08fe1a2fd62e9bf72a8.webp": {
+      "bytes": 343870,
+      "sha256": "b70fdbe2ee61dfcf0f19abd46fe2d5eb9cff5dcb558c465fa359b9b103429163",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/960e26bb23048d11b4447632.webp": {
+      "bytes": 157602,
+      "sha256": "7a03f40da96c95c275a7b2a63e1c231e160c4fff16ee09a124309b2259cdc7ef",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9819d957ceeff39d9d107ca3.webp": {
+      "bytes": 267498,
+      "sha256": "1d05c263443173fe1e5f99b6de2bec3ea2bb18854db0dfa5eb4dc4e262551c0f",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/983911fd25b4346c51e32847.webp": {
+      "bytes": 250344,
+      "sha256": "4b59958226b1af1885c287eeaf43e6fc96d46b3e7bfd74efe1c42eff6ea979a4",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9a35741fccd33931eed67dcd.webp": {
+      "bytes": 356614,
+      "sha256": "5c083e81fe0c95aefb1968e7b3ff642551cbdc553b63c80afeeaed7c20e762fb",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9ace43d06adc65036bbfe92f.webp": {
+      "bytes": 329074,
+      "sha256": "497d4b73e2254fa3ec94a3384b95047d9c3ef8dd8c141569b3aa8696916a9c4c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9b6aeb2fb1f16258d9ce907c.webp": {
+      "bytes": 274682,
+      "sha256": "9ba5b730fad835fd5fbd2da0e5e9b485c298e8f27ce336f6d0403ea5a9fdc941",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9c137ec91b375041b1247735.webp": {
+      "bytes": 251118,
+      "sha256": "7587dc9483a5256de101d0a0156f0828be045eddb99fecae391ff683c0861e46",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9e41586df145ef32f2eae61b.webp": {
+      "bytes": 150566,
+      "sha256": "f3fdb853a54407c834f4e61adf9fc21f5c1922525558aecea44d8d0cab64f643",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9ecd4b6e8562264e284645bc.webp": {
+      "bytes": 336696,
+      "sha256": "7bdc09e22e87be76d7c38f6de0772a1001b7ff0debf675dbcbf64936750cbff5",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9ed8e5840f70b42fb8b6f2f8.webp": {
+      "bytes": 351990,
+      "sha256": "62c97fae73c0e2f73519dd759e90b22fa7b1307159a06fb1e70bb159b0f6468b",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/9f52fdcb794c424b96e5084f.webp": {
+      "bytes": 316598,
+      "sha256": "474ccb4ca6acc8e97ff2b6929b68c605ca2c29b0ed54959d3e8603036801ddfd",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a05e6231c61902f082598e1a.webp": {
+      "bytes": 369426,
+      "sha256": "939d9984398adb46096b91087bbc645cc97f13817e846e0e649380bc268fdbc7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a1817e121418c580e11e4cb8.webp": {
+      "bytes": 455124,
+      "sha256": "30433f9bc24cf44cc53752779c1b72de3c09e89cc5190883815b1137508c4c30",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a22990cfc65af5269b3cfb4b.webp": {
+      "bytes": 348096,
+      "sha256": "1eb3d1ec55426011c57109b684d87e51b4533aa26970d5c27b6c7d754fc1459c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a25409db82cd0e5d4e11e3af.webp": {
+      "bytes": 383830,
+      "sha256": "954ea107c5c33bea0838d259decea23c774426d592ab020548b753dc38493b06",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a29e3353b44c448ca6f89e6f.webp": {
+      "bytes": 246016,
+      "sha256": "271cfc7bbb66da1e43f3b2d798fcace4324fb46d504d3192a5a025663619ddb4",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a2e646ee082e87e3d87a3ad1.webp": {
+      "bytes": 373230,
+      "sha256": "f679893c738e56b5c9c8fc10ac68641de8856c61f49849986be7527f5cc2d143",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a79544c645099578a43614f8.webp": {
+      "bytes": 275010,
+      "sha256": "afec91ff889e9d85638beff976c978dd3a2b887e9eb6e148080f891f7189c7f2",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a9998e5eda211b2718614f2d.webp": {
+      "bytes": 233836,
+      "sha256": "aeb5dba6c350faaf00f4498d69b01f0bcfe4511e3298ad704f5c71cead394e15",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/a99f732fc82b4d28a1550a42.webp": {
+      "bytes": 468214,
+      "sha256": "ac756dcdeb2184e00defc04a429e9198782efff3a506b65b3cad0cf505638c58",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/aabff22592f5c7c13aec8047.webp": {
+      "bytes": 304730,
+      "sha256": "a3c447476ef499d7e2043a3f8d9868988209ecf623f5e8a38a236aae59e748e5",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/aafeb1e5288a39295ec6c8b7.webp": {
+      "bytes": 224024,
+      "sha256": "51cc27b5b4da63759734f196398174825c89fa135a3a222b0bc2b18fb8f2277c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ab0708a18d31c69764a5dfee.webp": {
+      "bytes": 268328,
+      "sha256": "71718dfc33668c5b0d5417abb538b5659e056693ce98e0ac4a7e027288887ee5",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ab8408f71240f0e37eb3c19f.webp": {
+      "bytes": 207914,
+      "sha256": "062d04edcde812554c72ed75266ec25e4fcc4bca808b771618543fcb50102cad",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ad7f696d91900cbc75a3a622.webp": {
+      "bytes": 179310,
+      "sha256": "754b938ef61b1a911d4103830b4669f185cbb1a073fe1648fc09a076d94a3896",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ae3e9f6a09842fc809d0148b.webp": {
+      "bytes": 276840,
+      "sha256": "4bbb5b712e621f62a66c8c365f88ac5a6c17611bd8618a451e4a6068797289cf",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ae5235943880bb212d75c441.webp": {
+      "bytes": 270526,
+      "sha256": "e36713fb2e3371c1f186036658ac9cc43c3ebd9f759765a5cb05a5b593b5914e",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ae66ca5798392326bcc14051.webp": {
+      "bytes": 245038,
+      "sha256": "3412986441376bd52fdcb3e5ba8edfc359c574c83a97537d5ce40df43141fa4d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/aec228e8941f1462ed42653f.webp": {
+      "bytes": 241158,
+      "sha256": "05b1053354b1baed7a4165be4e37affe14fada56aad10c2b126fca881738103f",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/aed9089886714a8b33371199.webp": {
+      "bytes": 224074,
+      "sha256": "27b89f0ed7c284548e472bec5bbb6af72e0f28883c85d6cd829ed795b8ebde64",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/af21eb541625f6cc678a41e1.webp": {
+      "bytes": 183558,
+      "sha256": "e58f606fbbdefc4a6d239e6c9158c11911c404a015e1be73e162543d5e5dd921",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/b2b095d50d89455ce8b6b21b.webp": {
+      "bytes": 330962,
+      "sha256": "07689a05e0641522cb53d61a939296855b7da9794db4e167ec50d016b554ec2a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/b328b19ddf2f0950fc1ac117.webp": {
+      "bytes": 333400,
+      "sha256": "ad4aa757e6d5a717456341518b50799b7aba3a035a63333b4466dfc5282ae0a7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/b3b4d528172d79513e41108c.webp": {
+      "bytes": 289908,
+      "sha256": "72e9c3dcd3d9c91431b21157f9bc07cabec023eafaae121ef9651779a0829cde",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/b3ebc507d6079b4cf411e871.webp": {
+      "bytes": 352118,
+      "sha256": "32edcef65c8052571ac6a392d182c700a8705aa953f7cb38ed23b39e7f2dc248",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/b8fd951699d6b8a7a6cd0890.webp": {
+      "bytes": 255442,
+      "sha256": "9fedecd10af898205cf655a79067488c010725d25945b9b1933da2ed916e75c5",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/b9643f9f1dcf64af42af7456.webp": {
+      "bytes": 219010,
+      "sha256": "493ff49e59c976cda6a0d0563c4f5dbd3c3479f4889435c0c6a06c71580f61f0",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ba2907b5e9ffc36e75cfbf63.webp": {
+      "bytes": 238188,
+      "sha256": "53dbec56657bf470c1aab072c9a37719b4cac238083b2ee4e5f315eea7d43458",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/bd1f729d1e6e80df420a5c83.webp": {
+      "bytes": 311002,
+      "sha256": "a788dc6de8f89161ef399d232dce7a51e6ca0b27d9a44779363642c29d08b80e",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/bd68063f9f333c97ecb17213.webp": {
+      "bytes": 397192,
+      "sha256": "a292bd55939720a3c9abb05b946adefc05715d208f05baaf432d17e288fb4896",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/be0e9c81740efcb10a02ee8b.webp": {
+      "bytes": 264242,
+      "sha256": "4f7c90e83a34e12393270447db0a7aa46ae27a5c62035753762ad7e6ab6b77a3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/bf086c24835d853c5fd0f8a0.webp": {
+      "bytes": 534760,
+      "sha256": "2584b47993d48075df178a80396335d24c0e053f7f7990c3b09586f99e73d856",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/c06342a343314ca52376d2a4.webp": {
+      "bytes": 287044,
+      "sha256": "1ecc2535bc2ea91c5591c872e7b7e5f1a855d997b0a8c77d0aadbecebf95ae3d",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/c2d1e355ea441fa5c46dd58c.webp": {
+      "bytes": 286182,
+      "sha256": "437c0481f2a7991cac504d09cf1ed81ad3f329b988556b06acb7c179b5051c6a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/c3e77686e78a61d2e29fb5a2.webp": {
+      "bytes": 331216,
+      "sha256": "c9da312446c25daa5dc1880d97c1574f425b908c1e46cda06f9625ab5de42ae3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/c46a0c6b1f80d39520f7564a.webp": {
+      "bytes": 291344,
+      "sha256": "0cdf9dfe887aa18ef9cd53e1648ac4a9efdb9ac416083a99fb2c03554303b75a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/c8f4a6c03fa7fc2de28208fa.webp": {
+      "bytes": 505472,
+      "sha256": "d2168a1ae9068627205772ac696ff6d824122d5ae5f31267d989a1e02ebc9b1c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ca22c7794e8b34db53acc338.webp": {
+      "bytes": 325944,
+      "sha256": "313447f64990b5732833989d273f1dacb82fed0950af3518b6a63a54b532b089",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/cb2efeafafa30de66780570c.webp": {
+      "bytes": 252580,
+      "sha256": "9f88dab6a0ef3e5b4cedbb076b8e7eedd3d3314529b6eb7cc850e571b6724b14",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/cb585200be4bd3e20d300d34.webp": {
+      "bytes": 191192,
+      "sha256": "fe0d3fccd3f71f5b412b69bd0e23de3f6291ea6fa5b879fac15c5fc28aaca75a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/cde6f1ca33fd34179f356f9f.webp": {
+      "bytes": 388798,
+      "sha256": "f93a621b0fea50e045da04713126e810578ad2e89aea43890576b8e428720d33",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/cec3a307b86197b2b63031e6.webp": {
+      "bytes": 177028,
+      "sha256": "69f79198df80266afd7cdb681709942e12d0c02e842695b05c88b4322f1c8934",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/cf223f25538da0a577a6b579.webp": {
+      "bytes": 266550,
+      "sha256": "315ad26d661553b8f408bedc8890ffb92ac53b07feba5afa5d59f119d9c73535",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/cfcd72bb3c94dee33f5e32d5.webp": {
+      "bytes": 338724,
+      "sha256": "382999cf83d8a81fee1593075169f8d9c36a42eece1221df3b4e5baa689636aa",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/d12272e5b3108ee9e780bb56.webp": {
+      "bytes": 195454,
+      "sha256": "2aa111c7d09ae5e67d58973f5a09a40cde29e96b3a9d4189cf6d13bebe2ae3f8",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/d34d8b9961d76147535fc583.webp": {
+      "bytes": 350734,
+      "sha256": "91583fa79dec788dfd3d7c416e3739943657d233db39be977471d71da44ad8ea",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/d4efda24db007301100628ac.webp": {
+      "bytes": 180930,
+      "sha256": "b6bb05828528640caf27582cb5217a0a2a877d1b6e314907783084a96f51fbdf",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/d635baaedff45fc6104d4051.webp": {
+      "bytes": 239120,
+      "sha256": "9d3a87405b88bbe71794211676d3659daa962e699f5deb1cd86ebebd05549bfb",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/d63e2b961075d17b5c5cbafb.webp": {
+      "bytes": 222784,
+      "sha256": "641fd62dc77f3b79ff3cd18f686fb8db8e37aa44cb80ed450eb2ad2d9907d400",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/d72a1573acb27eb29ffb5f78.webp": {
+      "bytes": 205772,
+      "sha256": "0390a76d782bbf407868fb2262160b7c7463cc6aba6e8965447d79a2ec1dbb3a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/d9f0ebfe58174cc9b20f7930.webp": {
+      "bytes": 378558,
+      "sha256": "64461096996bb0d4c1835af16757a98f1f480fca38188bad6bc6b66dfc965208",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/dad3cfb9917d33ffb9634a84.webp": {
+      "bytes": 250826,
+      "sha256": "857a9d41ef175dfa0f7f832bfd1458a72753daf19d18e14b9aba43ec20ca26db",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/dbcdcf1d3c06a0df35c96d00.webp": {
+      "bytes": 246308,
+      "sha256": "78d9a7031ac728ce38f3eead08f49f61f93a2c1570932f11e545e35b97c4f5d2",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/dd49225cd2078639a7733d56.webp": {
+      "bytes": 164246,
+      "sha256": "c22fa1fa3c4bb0254257e3a18fbab3cb510ad59c39628b34b66b4f7525ad7b36",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/dec398297ac8d1e88565eb40.webp": {
+      "bytes": 268734,
+      "sha256": "b9741bd4468b048200c0737c803481ef03442e0cee9ecdab66efe9b955f31261",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/df2c0eb8eb64aa87153859f3.webp": {
+      "bytes": 315560,
+      "sha256": "adf3b9a0ed1efcd86d850fb895e345824a8648cd5939f28f31321cd47dbe51de",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/dff62df533dc89c071790621.webp": {
+      "bytes": 151942,
+      "sha256": "951109216fb68aae824cfca40b704a8781e63ce7fd1db1bef2611253545d80a4",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e0136a6454f2ea6ff6f58376.webp": {
+      "bytes": 381178,
+      "sha256": "6a6717d35f5d0a603d6547b946589835cc6222ad27f8c40c7f6e9a5d1ffe1911",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e0587db9ba7c5b5ab64a07eb.webp": {
+      "bytes": 299610,
+      "sha256": "cbb060f16b47bb85c3040ceb51744b0a456f0f7e613a328c7c99b4d4825bc613",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e2152e162aab624986aef906.webp": {
+      "bytes": 294740,
+      "sha256": "d68fd38811c44e284788f58741410e2f4b98a3bcf43cebd26409980b38cfab76",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e24090b800d55fe7edec64b3.webp": {
+      "bytes": 316336,
+      "sha256": "7dadc62c0e4fd40ad0c1e15217e492c3fb90b8f3488fa57ed93be6f8a67e97f6",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e245f0e3d2e426c2dad4d41d.webp": {
+      "bytes": 180820,
+      "sha256": "fead4fd9b33232267fc9502e390236d816944e8c503a08ff1ff428b0468c4e49",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e2b23e491187443f6e6362f6.webp": {
+      "bytes": 375460,
+      "sha256": "b1286084777ad216994646d392a723f63a72665fcf6d900c47effe7434a32ca4",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e2b579c7566d0b08506d05ba.webp": {
+      "bytes": 217334,
+      "sha256": "d058fe965554412a4664f48c44668febc2bb47b3b3613bc0a6e5282562f8e2b1",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e2dc542e03cbad75be1e88ac.webp": {
+      "bytes": 330748,
+      "sha256": "031a1feaadf98f1a7573f11f51f806e1635baec55db06db08067a8a89a69b4c1",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e397cf8803a7b522a0201dcd.webp": {
+      "bytes": 278814,
+      "sha256": "489dd6d874f9eaf5841202b5cf7acd560752d4a4f24e71ccf78d065a81cb0dd7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e445c23aeca045275d816797.webp": {
+      "bytes": 328188,
+      "sha256": "e7b9748c946aac9e2252d773d243711d9a48143909a4fcfeca61dc1d81a93413",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e63f8126d4593bc8067ee870.webp": {
+      "bytes": 162824,
+      "sha256": "ec18375bb83b54c82826d7086d10c2ddbf2e85f0652c9db3a5676b6acd2739cd",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e814621e876ba094f4afd8b3.webp": {
+      "bytes": 294640,
+      "sha256": "464b6f695e33200734f6cf72f056c41f2069be5280bf0d12a878aab3be49c9a8",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e87e7aab56d020ef2387d9bb.webp": {
+      "bytes": 280198,
+      "sha256": "10ef38758cb145be142fb4c8d494b73f357ae7fc57de99d23e30f18ab239558a",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e8f5009367f98d1671da0146.webp": {
+      "bytes": 189264,
+      "sha256": "2cf1f1bb807fb1b88056183dd97c8dec5ed59cea56d4ac40f24ce093e8c2eb95",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e9938fc3ef249a4a5e103cd8.webp": {
+      "bytes": 258980,
+      "sha256": "837ce86090f80a564badda0751269a7124a58d4eef7d5113dc6c859eca7c03fa",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/e9a3b8f63cea6137b85df40d.webp": {
+      "bytes": 241196,
+      "sha256": "ced022d33b1151085f1c9ba5bffc92391beab4b3e84c1807d56363eb62044efc",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/eb7913e83e80e474791db1aa.webp": {
+      "bytes": 246516,
+      "sha256": "3ba45cf197191c25c5da9ca6b73055ba3a580f2b6a4f0d2b06c74d1b9890086c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ed08e533e0df17b3279cb677.webp": {
+      "bytes": 271380,
+      "sha256": "167f66db924419c22694810bf06970154a4692128d4ebd327d50dfd12e535716",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ee0dc18805a3c0653082b62f.webp": {
+      "bytes": 533724,
+      "sha256": "609ac550bb855ed600fa4917a12651e6fbcf4a1c63bce82c6393dc2e911862b0",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ee66642e8d49b6faedaa4134.webp": {
+      "bytes": 341682,
+      "sha256": "77ef367326de221bcfb03d8ceb4fc7d33a263f0e7ebcd89d9ed6932486a1e4ce",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/ef38ba2f1b391333f8b4eebf.webp": {
+      "bytes": 235834,
+      "sha256": "87abdd91e048903e8e6e8121570be62c4117b1f8aaf5d3c9342eabe9714c17a3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/f26da2eb249289c5d6f9c82c.webp": {
+      "bytes": 142456,
+      "sha256": "78ac0dc35b9df6620bf5145bd7df3f48e3cc19cca8ea0b1cdacefd074720246c",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/f4473eb8482eb3f8d101eaff.webp": {
+      "bytes": 182656,
+      "sha256": "f2ef648c97b0b10e6745b10f93dae2c37972603c4b96a0be68852c528b10c8a3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/f57ccb378447c495ea45f0e1.webp": {
+      "bytes": 291538,
+      "sha256": "94b6315f72362358f893927f6fa4480a5cd2cf0d0ec26200565a7808b80c97b7",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/f820213b7bb97e05e2295548.webp": {
+      "bytes": 172742,
+      "sha256": "a106f8bb566a9b2339ab9a8d1169703d423af0d3577a68d91c58086a7df64192",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/f82dcb1e2c7c3ed1ebced047.webp": {
+      "bytes": 115752,
+      "sha256": "a5a21ec05f5ff2d2853669b4f6251c3ebcf44880ffb0e42d408c7db3e5f28d96",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/f949944fd925387d0074480c.webp": {
+      "bytes": 282352,
+      "sha256": "cb77decdd5a10ea76cc87b2ad89476e2d1a50fc20208449902bb6f27f3763465",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/faae6f1fb948978ce3b1a5df.webp": {
+      "bytes": 444388,
+      "sha256": "43614cb204ce39c912036a933e7f750fe040b8490472b5fe47e0b3537ef51dd3",
+      "mime": "image/webp"
+    },
+    "course/scenes-final/fc9b6245f3a468b473249990.webp": {
+      "bytes": 285314,
+      "sha256": "46fe490585372b4d9eab022851727cc8fe60347257db6487ad8d160770ce0c6a",
+      "mime": "image/webp"
+    },
+    "course/tracing.json": {
+      "bytes": 287418,
+      "sha256": "f4dd3e35991bc21a5246b7a10bad3d88a5451b2c605ee177ba20f651512f2de1",
+      "mime": "application/json; charset=utf-8"
+    },
+    "demo-pwa.js": {
+      "bytes": 9591,
+      "sha256": "f0df5af509822c9a882c1fbf7f506e86d94fe2140f0fe07e7e7904af3c7aa244",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "desktop-controls.css": {
+      "bytes": 1291,
+      "sha256": "7c9c41470db9faff4e690505252dc6af6651b4e5c6acb943adf28383367b8938",
+      "mime": "text/css; charset=utf-8"
+    },
+    "expanded.css": {
+      "bytes": 18581,
+      "sha256": "6456ccd5c23d5c1d751ed5bc82438eff70f46df8a44ed143d3ba5be9001908bc",
+      "mime": "text/css; charset=utf-8"
+    },
+    "fonts/Amiri-Bold.ttf": {
+      "bytes": 413500,
+      "sha256": "f6d598013a0a0a00dc732d8a22e5848d52384fbcd3771bfdde0e9f85f94d90d8",
+      "mime": "font/ttf"
+    },
+    "fonts/Amiri-Regular.ttf": {
+      "bytes": 431128,
+      "sha256": "72b2702e947f423f5e553224d4bb6f5e32bfbda230a42cad2830b052de24245f",
+      "mime": "font/ttf"
+    },
+    "fonts/NotoKufiArabic-Bold.ttf": {
+      "bytes": 287368,
+      "sha256": "ffd4190ce8cb521cb186cc2cbaca2a2fdff1d848d1189bb499ded060ce3517d9",
+      "mime": "font/ttf"
+    },
+    "fonts/NotoKufiArabic-Regular.ttf": {
+      "bytes": 265300,
+      "sha256": "e07e440b4310bc6081992f9dacedc8f69700b5682281b8062aae4d392798cf35",
+      "mime": "font/ttf"
+    },
+    "fonts/NotoNaskhArabic-Bold.ttf": {
+      "bytes": 325232,
+      "sha256": "d328b92b6bb762fd61d6438dddb7b00dd0663115afb292a358101808efe117b2",
+      "mime": "font/ttf"
+    },
+    "fonts/NotoNaskhArabic-Regular.ttf": {
+      "bytes": 291980,
+      "sha256": "c9a039ce48a477243c1eb7d561b13de115cfd651d8a83fa42e2f4d63c2e11b00",
+      "mime": "font/ttf"
+    },
+    "fonts/NotoSansArabic-Bold.ttf": {
+      "bytes": 260904,
+      "sha256": "457926cb001ac787dc7415c89e6f5b1c4ce3a0f2c91d0cabc1bc19a05638e7de",
+      "mime": "font/ttf"
+    },
+    "fonts/NotoSansArabic-Regular.ttf": {
+      "bytes": 250880,
+      "sha256": "d6efa4c9fac8ecefd2de19676acc3a396ba7aee99ba7a2d513950246841b6725",
+      "mime": "font/ttf"
+    },
+    "fonts/OFL-Amiri.txt": {
+      "bytes": 4386,
+      "sha256": "7ae6c7814fbd0b3be949a2e57f14d73a363d0ad1afe9965b348bbdd26f5fd0aa",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "fonts/OFL-NotoArabic.txt": {
+      "bytes": 4382,
+      "sha256": "a7a5a25eb188bf1cd96982030d53e23c33485c69b1044a562254226857ee13af",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "fonts/OFL-Scheherazade.txt": {
+      "bytes": 4417,
+      "sha256": "7cf51662c128f6017415e6a39e14296e12a95b71ecab8766e9d583a7e03d6804",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "fonts/OFL.txt": {
+      "bytes": 4382,
+      "sha256": "a7a5a25eb188bf1cd96982030d53e23c33485c69b1044a562254226857ee13af",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "fonts/README.txt": {
+      "bytes": 1158,
+      "sha256": "386213268ab916e8dd07c8ffaef95c7e15647c3af91ac7fe206ecc32447e1b23",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "fonts/Scheherazade-Bold.ttf": {
+      "bytes": 547772,
+      "sha256": "62dde529b296df074efbf75b40a986e8ff82e997b98cec9ad7ab6795bb17a622",
+      "mime": "font/ttf"
+    },
+    "fonts/Scheherazade-Regular.ttf": {
+      "bytes": 500396,
+      "sha256": "034c3ed203ccf91e20a75181350759cc5878e0e369bb0e2e83acee15a829184f",
+      "mime": "font/ttf"
+    },
+    "guides/ar.html": {
+      "bytes": 9232,
+      "sha256": "296e55d1b95e90aaa5e44b5a28e99ec8e0fa95a2be1d562882504e46c8fd46df",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/assets/fonts/Arabic-Bold.ttf": {
+      "bytes": 88092,
+      "sha256": "88bf2c05030270ff807258d899abad648ee552bfd75ad1c5267f30937dc85bc5",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/Arabic-Regular.ttf": {
+      "bytes": 85452,
+      "sha256": "4af130dddccf853c6b7d0b56876646d8437fb56563f60c36dfe60759f10c820d",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/Bengali-Bold.ttf": {
+      "bytes": 162268,
+      "sha256": "ce1d0f106ad9cbd20652e83375ffbc8b3e8e4bc86a98c0aafb11e45ab615bc4a",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/Bengali-Regular.ttf": {
+      "bytes": 155756,
+      "sha256": "37fad23dc83bcc79d286b0d76b4230797d41e6669f0d1ba704cca901ead6560c",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/CJKjp-Regular.otf": {
+      "bytes": 16467736,
+      "sha256": "68a3fc98800b2a27b371f2fb79991daf3633bd89309d4ffaa6946fd587f375b5",
+      "mime": "font/otf"
+    },
+    "guides/assets/fonts/CJKsc-Regular.otf": {
+      "bytes": 16437364,
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "mime": "font/otf"
+    },
+    "guides/assets/fonts/Devanagari-Bold.ttf": {
+      "bytes": 156068,
+      "sha256": "6e447ac869cc92330dcb1b03a3574bdd5575fc730fb1dc2e4e91cea9a4208e57",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/Devanagari-Regular.ttf": {
+      "bytes": 149092,
+      "sha256": "8bdc1f86d25fef50d8b117d30017f3dd405ffec022131ba0c9bcab645753aed9",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/Hebrew-Bold.ttf": {
+      "bytes": 11640,
+      "sha256": "1c369ebb19f24c4254915ae9b8949fff3303a4f9a1a8abe808063147514af5f8",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/Hebrew-Regular.ttf": {
+      "bytes": 11612,
+      "sha256": "a7518b4ea5855fa649b2990cf172539b34ae5087f3279023a23338c5649d9cf2",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/LICENSES.txt": {
+      "bytes": 19953,
+      "sha256": "ec4df4e0ecf124943fc0345324d6196faf36f5bea4ff6da272580e00cc9764a9",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "guides/assets/fonts/Latin-Bold.ttf": {
+      "bytes": 72300,
+      "sha256": "18de4121d59ba29283cda8ffe3ad7d60589454cb0216e8fcd31b82f3fc92f626",
+      "mime": "font/ttf"
+    },
+    "guides/assets/fonts/Latin-Regular.ttf": {
+      "bytes": 72276,
+      "sha256": "5680cd8a4147bb222dd1d656fda1e131c696aa67901a0db0f30c56e50e5b3371",
+      "mime": "font/ttf"
+    },
+    "guides/assets/guide.js": {
+      "bytes": 146,
+      "sha256": "4d605ebd4f2293de593fb79c215e7303df94e74a32418f1ea404d8af46234e3d",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "guides/assets/horizons-logo-approved.png": {
+      "bytes": 920937,
+      "sha256": "c996f6885da10eb68cb24cfb1919927c650c15e039e7da2ce4262108e0468cb5",
+      "mime": "image/png"
+    },
+    "guides/assets/typography.css": {
+      "bytes": 3335,
+      "sha256": "2d7134931c5faae350903c4ddb25fcf63271eca3de547c75a5a7b1a6b31a07ec",
+      "mime": "text/css; charset=utf-8"
+    },
+    "guides/bg.html": {
+      "bytes": 8775,
+      "sha256": "72008cc44ffd8094c788f0b9a098663e8d6e601edab3b2fd737c0fe0622612f3",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/bn.html": {
+      "bytes": 9166,
+      "sha256": "1c26eea98518ab0acf08b7eb60b39bd3dd338761b38baf92515c5f904314d01a",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/cs.html": {
+      "bytes": 7554,
+      "sha256": "fe11834f1c5730b4bbdcfde6666d146fe30207edb6053c922d22fc79df2f1fa5",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/da.html": {
+      "bytes": 7566,
+      "sha256": "358f72a47729d37a9931a38400e160e1072e64141b772bd93f47a32dca3a87f9",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/de.html": {
+      "bytes": 7872,
+      "sha256": "f6542f25f06feffddfba7de58a3a58ae7fff42ba41bdb2933b45581a794b22ae",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/el.html": {
+      "bytes": 9110,
+      "sha256": "7db70f0415621ccf2776835c8f932c42b6d3c73175005fd19ecb42f0119f3287",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/en.html": {
+      "bytes": 7572,
+      "sha256": "a6798a92badf1b2acf2864f5465dbda028fbd6f4b87e6a2d66bc77436ca45d06",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/es.html": {
+      "bytes": 7983,
+      "sha256": "e5b16b1cbc7c0c3f50225b25054d14ae6a5d7f24b0eee2046dadb4e5aece322e",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/fa.html": {
+      "bytes": 8326,
+      "sha256": "1025dce59f5fd7220782bf6662f36ff2692621d21c06dbef07dfc437cc38a1d6",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/fi.html": {
+      "bytes": 7606,
+      "sha256": "7b8b0a937a52ca9a9bdf3e57a215cb0574c0f2c44b148e64997a982f92d6cb24",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/fr.html": {
+      "bytes": 8244,
+      "sha256": "5bf632f584a23ee40055bbc78fed42268fe865806902176e2b7bf412f65b365a",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/he.html": {
+      "bytes": 7997,
+      "sha256": "ac0b116ac3947765a1dd219b63722da5f4697f623307ad59a8e69e30deb0df41",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/hi.html": {
+      "bytes": 9175,
+      "sha256": "0832e6fc96ea416c3fb1ed7598799f37d17bdad3442e1ae97644f91d4b77934f",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/hr.html": {
+      "bytes": 7595,
+      "sha256": "14e315d9923fd0e9d469273b56c2955a0eb7a38109d580ef987ef77f2acf590a",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/hu.html": {
+      "bytes": 7765,
+      "sha256": "58f973cce7845ed7318db79f6cff8a5ff77bf75219ab23ca74e98104da9e9dcf",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/id.html": {
+      "bytes": 7578,
+      "sha256": "594d99381632ea36a8739735397e5ee91a80577ee1c0933da31f8eb5abb58861",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/it.html": {
+      "bytes": 7743,
+      "sha256": "2c53a527b593733221d367e900d0fc46c798e28c13acd8f3a3e33af1d8c08c10",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/ja.html": {
+      "bytes": 8098,
+      "sha256": "a30b2265436d894b138ba011e8b76c0c541f9bcc2ba6c1d7bd002e1b92430480",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/ms.html": {
+      "bytes": 7576,
+      "sha256": "e9d3cbf6b6ec0a3750a30a23c3055286135622455980f0561a96d78ac260786c",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/nl.html": {
+      "bytes": 7745,
+      "sha256": "65150e1da2973cc9c0dcc60db540e76136a25b289194b5564741939c2071b345",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/no.html": {
+      "bytes": 7559,
+      "sha256": "22c316f041ce39615950256f6f27362cf957e16b17a9170f6220ce381b9ab259",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/pl.html": {
+      "bytes": 7619,
+      "sha256": "bcc98e58974185bde869627f2ed05cbc7f1996cb9b5f9c3dcbf931ac44683e57",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/pt.html": {
+      "bytes": 7753,
+      "sha256": "a82bc7697318aca499963a3d67b9ee2b30470d9cee335a99ff875ad31057b63e",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/ro.html": {
+      "bytes": 7724,
+      "sha256": "b74b74a619c2d6d9ffce8298c1f748f0ecd59a315a899c04a99fdca11bb96a78",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/ru.html": {
+      "bytes": 8744,
+      "sha256": "3bf032519af27604192fd19cba82c717481617b87c51d587d6f564449710c30d",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/sr.html": {
+      "bytes": 8577,
+      "sha256": "e77e91fbbe0586ee74e83f54e93f0a7582d6963559d7257940f9631214c6244d",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/sv.html": {
+      "bytes": 7610,
+      "sha256": "8e5ad9cb3b41a62d33e1a4565f3b57d4977f6cd4360701eb13295081d7c1c115",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/tr.html": {
+      "bytes": 7860,
+      "sha256": "fe5bbda8b81f4c998cd96cb7bee614542548247daca07ed6345ec3db8bcfa18d",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/uk.html": {
+      "bytes": 8702,
+      "sha256": "6a1ed196db95c6b84c2fac965731a30434aeb3a343736d2ae0a7f7700b710a97",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/ur.html": {
+      "bytes": 8275,
+      "sha256": "5c179fb8417952dbd0660040bee5cf87ce64900a2f3e07070699d2338d5deac0",
+      "mime": "text/html; charset=utf-8"
+    },
+    "guides/zh.html": {
+      "bytes": 7508,
+      "sha256": "cb88edbd5b3f80b01f7ad35f6f84f8887f09af16f96f6f2c92639aae9d28f002",
+      "mime": "text/html; charset=utf-8"
+    },
+    "icon.svg": {
+      "bytes": 218,
+      "sha256": "94110cde99f882a6a27cc119f2fe71daba12cfcc6222b7167e17db2a5199975e",
+      "mime": "image/svg+xml"
+    },
+    "icons/apple-touch-icon.png": {
+      "bytes": 7714,
+      "sha256": "4a9b7db37fd2ebbd27843a3f64ad13521c4ab23eef559476227e5e93b3fa46d9",
+      "mime": "image/png"
+    },
+    "icons/icon-192.png": {
+      "bytes": 8072,
+      "sha256": "6b1cc8a7eaea784776bc181bed87c454800fbfc3e411fa3c430714aef02189aa",
+      "mime": "image/png"
+    },
+    "icons/icon-512.png": {
+      "bytes": 35715,
+      "sha256": "a1c720837af5a404306957510a2cb59f0b38a8491f75e7c4ce04ad39d49436c1",
+      "mime": "image/png"
+    },
+    "import-worker.js": {
+      "bytes": 6032,
+      "sha256": "71fe5ef1ebaf8a2f4f2cc6556bedba137bd21176bd9e953b769f9955f7bde19d",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "index.html": {
+      "bytes": 5268,
+      "sha256": "5877c9bca0ecdff0a5fc394aebc9edd9e7d220beb9d79a0c90ea9eaa4d3740b0",
+      "mime": "text/html; charset=utf-8"
+    },
+    "learner-locales.json": {
+      "bytes": 77484,
+      "sha256": "19d9c83247ab39629041753ea3565d571ed25be8fc0c3a9477cc84bdf0f38709",
+      "mime": "application/json; charset=utf-8"
+    },
+    "learners.css": {
+      "bytes": 798,
+      "sha256": "e8c9a72b3acc1dade60ac8f0969f1b351bf3207a4fd7006695460e6c2b2e606f",
+      "mime": "text/css; charset=utf-8"
+    },
+    "learners.js": {
+      "bytes": 84331,
+      "sha256": "40716fb74ad92e25c23f9a98e38bdf6e35049cc5e73835a82aaeccd00e2f841f",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "manifest.webmanifest": {
+      "bytes": 513,
+      "sha256": "8fccc9076a1bce17fad7cebccb57aaefba5e34d953a2d34961446e18735df09a",
+      "mime": "application/manifest+json"
+    },
+    "offline-client.js": {
+      "bytes": 639,
+      "sha256": "eaafd240d1341cb2a07903457ac9379d6b1460ef34cdc0822590b3b20b9fe4fc",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "pen-guide.js": {
+      "bytes": 5887,
+      "sha256": "7e56a65cf7989a9a5c75d65c0e90c821386a72a39c654469808e96272fa3ae89",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "release-config.js": {
+      "bytes": 713,
+      "sha256": "aebbe267bbda63152f6b103bbe482696c6b67668a8cf112ec755fe0c9ce61554",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "release-config.json": {
+      "bytes": 900,
+      "sha256": "c181ddbc3dfa52bb9d115c5d143a2b487d5677c31bbed5295e0668f51621dfa5",
+      "mime": "application/json; charset=utf-8"
+    },
+    "startup.js": {
+      "bytes": 198,
+      "sha256": "052d7b56753befc23a6309fc3f62572ac4653df0af9ddb9e2b9ac593e95c0cb1",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "storage.js": {
+      "bytes": 5921,
+      "sha256": "1a045c83bad4157dbc9185fc660fa878103d8c39a24d9692e4a218eab42983aa",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "styles.css": {
+      "bytes": 18251,
+      "sha256": "b8f358e62799faa00167a40dd48d3ff8bdefa294b3e25c4d2891533b3667180f",
+      "mime": "text/css; charset=utf-8"
+    },
+    "ui-fonts.css": {
+      "bytes": 2296,
+      "sha256": "351e497ea62a2b18298c120a5deee9dd44b0a4b6e40e27cd4d4a5b3295a9e854",
+      "mime": "text/css; charset=utf-8"
+    },
+    "vendor/FFLATE-LICENSE.txt": {
+      "bytes": 1069,
+      "sha256": "805f6cb28bb8b6d3a0badd83c93bccd9671fa01a3b4b92b7042b0743325ac243",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "vendor/SHA256-LICENSE.txt": {
+      "bytes": 1076,
+      "sha256": "0fea2e0cffe72ee17adc25c42e55daf5c87c6e9cd5b3362ee4213890bda0ee7c",
+      "mime": "text/plain; charset=utf-8"
+    },
+    "vendor/fflate.js": {
+      "bytes": 32665,
+      "sha256": "c3b34f2e9f5e74d4d7d64e01cac7a0c01954c6c406414d42185c7b53d6875ddf",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "vendor/sha256.js": {
+      "bytes": 9229,
+      "sha256": "4b53da9acab6a5d4010107be2025002fe1a22da64804dd5200b46895cb899219",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "workbook-data.js": {
+      "bytes": 1115278,
+      "sha256": "5cba4341afbad80b2f21a8dc07fb1985baa7e25ba1ddcb206a4b7d657d5a0242",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "workbook.js": {
+      "bytes": 166861,
+      "sha256": "0574fe4429f0858ea63a0dc7127d957997045c827e890b1abf2fd1722ca52c8a",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    "demo-locales.js": {
+      "bytes": 76381,
+      "sha256": "59169863fdd3152f0db237e8febe7aa546efe0bd6a55bc12d13a7264868fc9b3",
+      "mime": "application/javascript"
+    }
+  },
+  "shell": [
+    "CREDITS.txt",
+    "LICENSE.txt",
+    "PRIVACY_AND_LICENCE.html",
+    "START_HERE.html",
+    "activity-layout.css",
+    "book.css",
+    "book.js",
+    "course/CREDITS.txt",
+    "course/audio-index.json",
+    "course/chapters/baa.json",
+    "course/chapters/daad.json",
+    "course/chapters/dhaa_emphatic.json",
+    "course/chapters/dhaal.json",
+    "course/chapters/yaa.json",
+    "course/course.json",
+    "course/locales/ui.json",
+    "course/scene-index.json",
+    "course/tracing.json",
+    "demo-pwa.js",
+    "desktop-controls.css",
+    "expanded.css",
+    "fonts/Amiri-Bold.ttf",
+    "fonts/Amiri-Regular.ttf",
+    "fonts/NotoKufiArabic-Bold.ttf",
+    "fonts/NotoKufiArabic-Regular.ttf",
+    "fonts/NotoNaskhArabic-Bold.ttf",
+    "fonts/NotoNaskhArabic-Regular.ttf",
+    "fonts/NotoSansArabic-Bold.ttf",
+    "fonts/NotoSansArabic-Regular.ttf",
+    "fonts/OFL-Amiri.txt",
+    "fonts/OFL-NotoArabic.txt",
+    "fonts/OFL-Scheherazade.txt",
+    "fonts/OFL.txt",
+    "fonts/README.txt",
+    "fonts/Scheherazade-Bold.ttf",
+    "fonts/Scheherazade-Regular.ttf",
+    "guides/ar.html",
+    "guides/assets/fonts/Arabic-Bold.ttf",
+    "guides/assets/fonts/Arabic-Regular.ttf",
+    "guides/assets/fonts/Bengali-Bold.ttf",
+    "guides/assets/fonts/Bengali-Regular.ttf",
+    "guides/assets/fonts/CJKjp-Regular.otf",
+    "guides/assets/fonts/CJKsc-Regular.otf",
+    "guides/assets/fonts/Devanagari-Bold.ttf",
+    "guides/assets/fonts/Devanagari-Regular.ttf",
+    "guides/assets/fonts/Hebrew-Bold.ttf",
+    "guides/assets/fonts/Hebrew-Regular.ttf",
+    "guides/assets/fonts/LICENSES.txt",
+    "guides/assets/fonts/Latin-Bold.ttf",
+    "guides/assets/fonts/Latin-Regular.ttf",
+    "guides/assets/guide.js",
+    "guides/assets/horizons-logo-approved.png",
+    "guides/assets/typography.css",
+    "guides/bg.html",
+    "guides/bn.html",
+    "guides/cs.html",
+    "guides/da.html",
+    "guides/de.html",
+    "guides/el.html",
+    "guides/en.html",
+    "guides/es.html",
+    "guides/fa.html",
+    "guides/fi.html",
+    "guides/fr.html",
+    "guides/he.html",
+    "guides/hi.html",
+    "guides/hr.html",
+    "guides/hu.html",
+    "guides/id.html",
+    "guides/it.html",
+    "guides/ja.html",
+    "guides/ms.html",
+    "guides/nl.html",
+    "guides/no.html",
+    "guides/pl.html",
+    "guides/pt.html",
+    "guides/ro.html",
+    "guides/ru.html",
+    "guides/sr.html",
+    "guides/sv.html",
+    "guides/tr.html",
+    "guides/uk.html",
+    "guides/ur.html",
+    "guides/zh.html",
+    "icon.svg",
+    "icons/apple-touch-icon.png",
+    "icons/icon-192.png",
+    "icons/icon-512.png",
+    "import-worker.js",
+    "index.html",
+    "learner-locales.json",
+    "learners.css",
+    "learners.js",
+    "manifest.webmanifest",
+    "offline-client.js",
+    "pen-guide.js",
+    "release-config.js",
+    "release-config.json",
+    "startup.js",
+    "storage.js",
+    "styles.css",
+    "ui-fonts.css",
+    "vendor/FFLATE-LICENSE.txt",
+    "vendor/SHA256-LICENSE.txt",
+    "vendor/fflate.js",
+    "vendor/sha256.js",
+    "workbook-data.js",
+    "workbook.js",
+    "demo-locales.js"
+  ]
+}

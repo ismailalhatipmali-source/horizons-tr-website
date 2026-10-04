@@ -75,6 +75,10 @@ try {
             $phonicsHashes['public/learn/'.$name] = $blending2State['receipt']['hashes'][$name];
         }
     }
+    // Retain the later, verified creator attribution in the public workbook entry.
+    require_once __DIR__.'/creator-public-preservation.php';
+    $creatorPublicState = hznCreatorPublicState($web);
+    if ($creatorPublicState !== null) $phonicsHashes['public/learn/index.html'] = $creatorPublicState['hashes']['learn/index.html'];
     $changes = []; $total = 0;
     foreach ($manifest['files'] as $path => $entry) {
         $isPrivate = !str_starts_with($path,'public/');

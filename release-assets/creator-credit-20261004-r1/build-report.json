@@ -1,0 +1,34 @@
+{
+  "release": "creator-credit-20261004-r1",
+  "public_files": 5,
+  "languages": 32,
+  "demo_curriculum_and_media_preserved": 497,
+  "demo_manifest_entries": 594,
+  "demo_progress_keys_unchanged": true,
+  "demo_navigation_binding_preserved": true,
+  "paid_activation_html_reversible_exact": true,
+  "demo_manifest_only_index_workbook_changed": true,
+  "compiled_creator_sha256": "f4295505a782db31339fe960bf952910d083118dce4a33909faea8906ef39c4b",
+  "files": {
+    "try/index.html": {
+      "bytes": 5268,
+      "sha256": "5877c9bca0ecdff0a5fc394aebc9edd9e7d220beb9d79a0c90ea9eaa4d3740b0"
+    },
+    "try/workbook.js": {
+      "bytes": 166861,
+      "sha256": "0574fe4429f0858ea63a0dc7127d957997045c827e890b1abf2fd1722ca52c8a"
+    },
+    "try/sw.js": {
+      "bytes": 11419,
+      "sha256": "eb26d7daa8d783f143001b88b1a4af8bcf8736a51e37f492636795e066aedb7d"
+    },
+    "learn/index.html": {
+      "bytes": 15792,
+      "sha256": "5b60b2f560615419df2a9bef483e69b94975e84e877680dec5ac0b3bab7ae9df"
+    },
+    "try/demo-asset-manifest.json": {
+      "bytes": 119186,
+      "sha256": "121713f1e49d276b714ab682feb29364f7b92c6c4d1cbac81e40037a821715c0"
+    }
+  }
+}

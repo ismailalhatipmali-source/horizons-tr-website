@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "version": "creator-credit-20261004-r1",
+  "files": {
+    "try/index.html": {
+      "source": "src/demo-pwa/index.html",
+      "before": "2c68fe39d5c0691d65112858cd905c49e2c596e5276eec9516a78eccd4e0217b",
+      "sha256": "5877c9bca0ecdff0a5fc394aebc9edd9e7d220beb9d79a0c90ea9eaa4d3740b0",
+      "bytes": 5268
+    },
+    "try/workbook.js": {
+      "source": "src/demo-pwa/workbook.js",
+      "before": "399953768f9ff451efa4fac69e6f363d0773965bf97e5db4158ad9ff07f367d7",
+      "sha256": "0574fe4429f0858ea63a0dc7127d957997045c827e890b1abf2fd1722ca52c8a",
+      "bytes": 166861
+    },
+    "try/sw.js": {
+      "source": "src/demo-pwa/sw.js",
+      "before": "7ba9ee10c277221367906d994d2a69188190d23f5807858029db92da3ef948cb",
+      "sha256": "eb26d7daa8d783f143001b88b1a4af8bcf8736a51e37f492636795e066aedb7d",
+      "bytes": 11419
+    },
+    "learn/index.html": {
+      "source": "src/workbook-web/index.html",
+      "before": "bbcb72be19cc26dd2947fdffb1297a35ba6bcab778b5945e98fd8380025d5307",
+      "sha256": "5b60b2f560615419df2a9bef483e69b94975e84e877680dec5ac0b3bab7ae9df",
+      "bytes": 15792
+    },
+    "try/demo-asset-manifest.json": {
+      "source": "release-assets/creator-credit-20261004-r1/files/try/demo-asset-manifest.json",
+      "before": "0dd6fd83f01f1b2b7c0bfbafbaa1011c792c9cab354ed2570c4078279ec1e0ec",
+      "sha256": "121713f1e49d276b714ab682feb29364f7b92c6c4d1cbac81e40037a821715c0",
+      "bytes": 119186
+    }
+  },
+  "shared_sources": {
+    "src/workbook-web/creator-credit-locales.json": "c4ec746e0e082c217fdf7977a4dfe0e4f4726558ee1df16eb7fb2d2fcd73e015",
+    "src/workbook-web/creator-credit.js": "bd5e2a11d65d8239c6219c05c9eb06b28d790fb05f67969c68f634437eceaa72"
+  },
+  "compiled_credit_sha256": "f4295505a782db31339fe960bf952910d083118dce4a33909faea8906ef39c4b",
+  "demo_curriculum_count": 497,
+  "demo_curriculum_sha256": "267cb3aa8c64cd35fca83db83f444af97a14b3a592d6d0a54f1bfcf329b87866",
+  "chapter_ids": [
+    "baa",
+    "dhaa_emphatic",
+    "daad",
+    "yaa",
+    "dhaal"
+  ],
+  "interface_languages": [
+    "en",
+    "ar",
+    "tr",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "uk",
+    "pl",
+    "cs",
+    "ro",
+    "hu",
+    "el",
+    "sv",
+    "da",
+    "no",
+    "fi",
+    "bg",
+    "sr",
+    "hr",
+    "he",
+    "fa",
+    "ur",
+    "hi",
+    "bn",
+    "id",
+    "ms",
+    "zh",
+    "ja"
+  ]
+}

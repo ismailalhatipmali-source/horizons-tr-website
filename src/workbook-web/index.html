@@ -6,4 +6,74 @@
 <section id="activation" class="panel"><h2 data-w="accessTitle">التجربة الكاملة أو استعادة الوصول</h2><p data-w="trialNote">تجربة مجانية لمدة 7 أيام لأول 100 حساب بالغ، على جهاز واحد. استخدم بريدك نفسه لاستعادة رخصتك.</p><details id="membership-code-option"><summary data-m="activate">تفعيل الاشتراك برمز البريد</summary><form id="membership-code-form"><label data-m="email" for="membership-email">البريد الإلكتروني</label><input id="membership-email" type="email" autocomplete="email" required maxlength="254" dir="ltr"><label data-m="code" for="membership-code">رمز التفعيل</label><input id="membership-code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{8}" maxlength="8" required dir="ltr"><button data-m="continue" type="submit">متابعة</button><button id="membership-resend" data-m="resend" type="button" class="secondary">إرسال رمز جديد</button></form><form id="membership-password-form" hidden><p data-m="verified">تم التحقق من البريد. اختر كلمة مرور لحسابك.</p><label data-m="password" for="membership-password">كلمة المرور</label><input id="membership-password" type="password" minlength="12" maxlength="256" autocomplete="new-password" required><label data-m="confirm_password" for="membership-confirm">تأكيد كلمة المرور</label><input id="membership-confirm" type="password" minlength="12" maxlength="256" autocomplete="new-password" required><button data-m="activate" type="submit">تفعيل الاشتراك</button><button id="membership-back" data-m="back" type="button" class="secondary">العودة إلى رمز التفعيل</button></form></details><h3 data-w="passwordLoginTitle">لدي حساب وكلمة مرور</h3><form id="password-form"><label for="login-email" data-w="email">البريد الإلكتروني للشخص البالغ</label><input id="login-email" type="email" autocomplete="email" maxlength="254" dir="ltr" required><label for="login-password" data-w="password">كلمة مرور الكراسة</label><input id="login-password" type="password" autocomplete="current-password" minlength="12" maxlength="256" required><button id="password-submit" type="submit" data-w="signIn">تسجيل الدخول</button></form><details id="code-option"><summary data-w="codeOption">أول تفعيل أو نسيت كلمة المرور؟ استخدم رمز البريد</summary><form id="email-form"><label for="email" data-w="email">البريد الإلكتروني للشخص البالغ</label><input id="email" type="email" autocomplete="email" maxlength="254" dir="ltr" required><details><summary data-w="invitation">لدي رمز دعوة خاص</summary><label class="sr-only" for="invitation" data-t="invitation">Invitation</label><input id="invitation" maxlength="256" autocomplete="off" dir="ltr"></details><button id="send" type="submit" data-t="sendCode">إرسال الرمز</button></form><form id="code-form" hidden><label for="code" data-t="code">رمز من 8 أرقام</label><input id="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{8}" maxlength="8" dir="ltr" required><p class="note" data-w="passwordSetupNote">اختر كلمة مرور من 12 حرفًا على الأقل. يمكنك تغييرها لاحقًا برمز جديد يصل إلى بريدك. يمكنك تسجيل الدخول إلى اشتراكك من أي جهاز بالبريد وكلمة المرور.</p><label for="new-password" data-w="newPassword">كلمة مرور جديدة</label><input id="new-password" type="password" autocomplete="new-password" minlength="12" maxlength="256" required><label for="confirm-password" data-w="confirmPassword">تأكيد كلمة المرور</label><input id="confirm-password" type="password" autocomplete="new-password" minlength="12" maxlength="256" required><button id="verify" type="submit" data-t="verify">تفعيل</button></form></details></section>
 <section id="membership-manager" class="panel" hidden></section><p id="status" role="status" aria-live="polite"></p><section class="panel" id="offline-panel"><h2 data-w="offlineTitle">الدروس المحفوظة دون إنترنت</h2><p data-w="offlineNote">إضافة الأيقونة لا تنزّل كل الدروس. احفظها هنا أو احفظ حرفًا من داخل الكراسة. قد يمحو الجهاز بيانات الموقع؛ صدّر نسخة من تقدمك دوريًا.</p><p id="offline-state" role="status"></p><progress id="progress" hidden></progress><div class="actions"><button id="save-all" data-w="saveAll">حفظ جميع الدروس</button><button id="verify-saved" class="secondary" data-w="verifySaved">فحص الملفات المحفوظة</button><button id="cancel" class="secondary" data-w="cancel" hidden>إيقاف التنزيل</button><button id="clear" class="text-button" data-w="clear">حذف الدروس المنزّلة</button></div></section>
 <details class="panel"><summary data-w="options">طرق التشغيل والتثبيت</summary><p data-w="deviceNote">كل متصفح أو ملف مستخدم يُسجّل منفصلًا؛ حذف بيانات الموقع قد يتطلب التفعيل مجددًا. الاشتراك الفردي لمتعلم واحد، والعائلي لخمسة متعلمين، والمؤسسة حتى 500 متعلم، مع الدخول من أي جهاز.</p><p data-w="iphoneNote">آيفون وآيباد: افتح الصفحة في Safari، ثم مشاركة ← إضافة إلى الشاشة الرئيسية، مع اختيار فتح كتطبيق ويب إذا ظهر.</p><p data-w="androidNote">أندرويد: افتح الصفحة في Chrome، ثم اختر تثبيت التطبيق أو إضافة إلى الشاشة الرئيسية من قائمة المتصفح.</p></details>
-<p><a href="app/api/learners/export" download="HORIZONS-learners-backup.json" data-t="export">تصدير تقدم المتعلمين</a></p><footer><p data-w="privacy">يُرسل بريد حساب البالغ وكلمة المرور عند استخدامها ومعرّف الجهاز ومفتاحه العام ورمز الدعوة الاختياري إلى خدمة التفعيل عبر HTTPS. تُحفظ كلمة المرور على الخادم بصيغة تجزئة فقط؛ ويبقى تقدم المتعلمين محليًا ما لم تفعّل المزامنة بصورة مستقلة.</p><p><a href="mailto:support@horizons-tr.com">support@horizons-tr.com</a> · <a href="../" data-w="website">الموقع الرئيسي</a></p><small>© 2026 HORIZONS · 1.4.5 · إسماعيل الخطيب</small></footer></main></body></html>
+<p><a href="app/api/learners/export" download="HORIZONS-learners-backup.json" data-t="export">تصدير تقدم المتعلمين</a></p><footer><p data-w="privacy">يُرسل بريد حساب البالغ وكلمة المرور عند استخدامها ومعرّف الجهاز ومفتاحه العام ورمز الدعوة الاختياري إلى خدمة التفعيل عبر HTTPS. تُحفظ كلمة المرور على الخادم بصيغة تجزئة فقط؛ ويبقى تقدم المتعلمين محليًا ما لم تفعّل المزامنة بصورة مستقلة.</p><p><a href="mailto:support@horizons-tr.com">support@horizons-tr.com</a> · <a href="../" data-w="website">الموقع الرئيسي</a></p><p class="author-credit" data-hzn-creator-credit><span class="hzn-creator-credit-content" lang="ar" dir="rtl"><span class="hzn-creator-role">الفكرة والتصميم والتطوير وإدارة المشروع:</span><span class="hzn-creator-names" dir="ltr"><bdi lang="ar" dir="rtl"><b>إسماعيل الخطيب</b></bdi><span aria-hidden="true">—</span><bdi lang="tr" dir="ltr"><b>İsmail Alhatip</b></bdi></span></span></p><small>© 2026 HORIZONS · 1.4.5</small></footer></main><script>/*CREATOR_CREDIT_BEGIN*/
+/* Generic creator attribution shared by the demo, licensed workbook and entry page.
+ * Replace the single locale placeholder with creator-credit-locales.json at build time.
+ * No curriculum, licensing state or learner records are read or modified. */
+(function(){
+ 'use strict';
+ const DATA={"schema_version":1,"names":{"ar":"إسماعيل الخطيب","tr":"İsmail Alhatip"},"labels":{"en":"Concept, design, development and project management:","ar":"الفكرة والتصميم والتطوير وإدارة المشروع:","tr":"Fikir, tasarım, geliştirme ve proje yönetimi:","fr":"Idée, conception, développement et gestion de projet :","es":"Idea, diseño, desarrollo y gestión del proyecto:","de":"Idee, Gestaltung, Entwicklung und Projektleitung:","it":"Idea, progettazione, sviluppo e gestione del progetto:","pt":"Ideia, design, desenvolvimento e gestão do projeto:","nl":"Idee, ontwerp, ontwikkeling en projectleiding:","ru":"Идея, дизайн, разработка и управление проектом:","uk":"Ідея, дизайн, розробка та управління проєктом:","pl":"Pomysł, projektowanie, rozwój i zarządzanie projektem:","cs":"Nápad, návrh, vývoj a řízení projektu:","ro":"Idee, design, dezvoltare și management de proiect:","hu":"Ötlet, tervezés, fejlesztés és projektvezetés:","el":"Ιδέα, σχεδιασμός, ανάπτυξη και διαχείριση έργου:","sv":"Idé, design, utveckling och projektledning:","da":"Idé, design, udvikling og projektledelse:","no":"Idé, design, utvikling og prosjektledelse:","fi":"Idea, suunnittelu, kehitys ja projektin johtaminen:","bg":"Идея, дизайн, разработка и управление на проекта:","sr":"Идеја, дизајн, развој и управљање пројектом:","hr":"Ideja, dizajn, razvoj i upravljanje projektom:","he":"רעיון, עיצוב, פיתוח וניהול הפרויקט:","fa":"ایده، طراحی، توسعه و مدیریت پروژه:","ur":"تصور، ڈیزائن، ڈویلپمنٹ اور منصوبے کا انتظام:","hi":"अवधारणा, डिज़ाइन, विकास और परियोजना प्रबंधन:","bn":"ধারণা, নকশা, উন্নয়ন ও প্রকল্প ব্যবস্থাপনা:","id":"Ide, desain, pengembangan, dan pengelolaan proyek:","ms":"Idea, reka bentuk, pembangunan dan pengurusan projek:","zh":"构思、设计、开发与项目管理：","ja":"構想・設計・開発・プロジェクト管理："}};
+ const RTL=new Set(['ar','he','fa','ur']);
+ const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+ function normalizeLocale(value){
+  const raw=String(value??'').trim().toLowerCase().replaceAll('_','-').split('-')[0];
+  const code=({iw:'he',nb:'no',nn:'no'})[raw]??raw;
+  return Object.hasOwn(DATA.labels,code)?code:'en';
+ }
+ function currentLocale(){
+  return normalizeLocale(typeof locale!=='undefined'?locale:document.documentElement.lang);
+ }
+ function markup(value){
+  const code=normalizeLocale(value??currentLocale()),dir=RTL.has(code)?'rtl':'ltr';
+  return `<span class="hzn-creator-credit-content" lang="${code}" dir="${dir}"><span class="hzn-creator-role">${esc(DATA.labels[code])}</span><span class="hzn-creator-names" dir="ltr"><bdi lang="ar" dir="rtl"><b>${esc(DATA.names.ar)}</b></bdi><span aria-hidden="true"> — </span><bdi lang="tr" dir="ltr"><b>${esc(DATA.names.tr)}</b></bdi></span></span>`;
+ }
+ function ensureStyle(){
+  if(document.getElementById('hzn-creator-credit-style'))return;
+  const style=document.createElement('style');style.id='hzn-creator-credit-style';
+  style.textContent='.hzn-creator-credit-content{display:inline-flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:.1em .45em;max-width:100%;line-height:1.8;text-align:center}.hzn-creator-role{flex:1 0 100%;max-width:100%;overflow-wrap:anywhere;font-weight:500}.hzn-creator-names{display:inline-flex;flex-wrap:wrap;align-items:baseline;justify-content:center;column-gap:.35em;max-width:100%;direction:ltr;unicode-bidi:isolate;white-space:normal}.hzn-creator-names bdi{max-width:100%;unicode-bidi:isolate}.hzn-creator-names b{font-weight:650}@media print{.hzn-creator-credit-content{line-height:1.5;break-inside:avoid}}';
+  document.head.append(style);
+ }
+ function sync(value){
+  const code=normalizeLocale(value??currentLocale()),html=markup(code);
+  ensureStyle();
+  document.querySelectorAll('.author-credit,.print-author,[data-hzn-creator-credit]').forEach(node=>{
+   if(node.innerHTML!==html)node.innerHTML=html;
+   node.lang=code;node.dir=RTL.has(code)?'rtl':'ltr';
+  });
+  const meta=document.querySelector('meta[name="author"]');
+  if(meta)meta.setAttribute('content',DATA.names.ar+' — '+DATA.names.tr);
+  return html;
+ }
+ function wrapAfter(original){
+  const wrapped=function(...args){const result=original.apply(this,args);sync();return result;};
+  wrapped.hznCreatorCreditHook=true;return wrapped;
+ }
+ function installWorkbookHooks(){
+  const installed=[];
+  // These lexical functions are available when this block is installed inside
+  // the protected workbook closure before init(), rather than as a global script.
+  if(typeof render==='function'&&!render.hznCreatorCreditHook){render=wrapAfter(render);installed.push('render');}
+  if(typeof settings==='function'&&!settings.hznCreatorCreditHook){settings=wrapAfter(settings);installed.push('settings');}
+  if(typeof sheetHead==='function'&&!sheetHead.hznCreatorCreditHook){
+   const original=sheetHead,previous=typeof AUTHOR_CREDIT==='string'?AUTHOR_CREDIT:null;
+   const wrapped=function(...args){
+    const html=original.apply(this,args);
+    return typeof html==='string'&&previous?html.replaceAll(previous,markup(currentLocale())):html;
+   };
+   wrapped.hznCreatorCreditHook=true;sheetHead=wrapped;installed.push('sheetHead');
+  }
+  return installed;
+ }
+ globalThis.hznCreatorCreditMarkup=markup;
+ globalThis.hznCreatorCredit=Object.freeze({schemaVersion:DATA.schema_version,markup,sync,installWorkbookHooks,normalizeLocale,labels:Object.freeze({...DATA.labels}),names:Object.freeze({...DATA.names})});
+ installWorkbookHooks();sync();
+ // beforeprint is synchronous: freshly generated worksheets are localized even
+ // when fonts/images are already ready and printing starts immediately.
+ addEventListener('beforeprint',()=>sync());
+ if(typeof MutationObserver==='function'){
+  const observer=new MutationObserver(()=>sync());
+  observer.observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+ }
+})();
+/*CREATOR_CREDIT_END*/
+</script></body></html>

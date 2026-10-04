@@ -1082,7 +1082,7 @@ function lessonText(value,letter=data?.letter){
 const IS_DEMO=window.HORIZONS_RELEASE?.edition==='demo';
 const BUILD_LABEL='1.4.5';
 const LOCAL_SERVER_MODE=!(navigator.serviceWorker&&location.pathname.startsWith('/learn/app/'))&& (location.protocol==='file:'||/(?:^|[?&])local=1(?:&|$)/.test(location.search??'')||location.hostname==='127.0.0.1');
-const AUTHOR_CREDIT='<span lang="ar" dir="rtl">إعداد وتنفيذ: <b>إسماعيل الخطيب</b></span><span aria-hidden="true"> · </span><span lang="en" dir="ltr">ismail alhatip</span>';
+const AUTHOR_CREDIT=()=>hznCreatorCreditMarkup(locale);
 const SPEAKER='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4 6 8H2v8h4l5 4zM15 8q5 4 0 8M18 4q10 8 0 16"/></svg>';
 const DBKEY=IS_DEMO?'horizons-arabic-level1|demo|1':'horizons-arabic-complete|0.3.0|local-1',AUDIO_REVISION='female-2026-09-24',FORMS=['isolated','initial','medial','final'],LANGS=["en", "ar", "tr", "fr", "es", "de", "it", "pt", "nl", "ru", "uk", "pl", "cs", "ro", "hu", "el", "sv", "da", "no", "fi", "bg", "sr", "hr", "he", "fa", "ur", "hi", "bn", "id", "ms", "zh", "ja"];
 let course,chapters={},guideBank={},sceneIndex={},data,alphabet,dict,audioIndex={},traces,state,locale='ar',audio=new Audio(),playing='',heardQuestion=false,answer='',feedback='',observer,activePointer,toastTimer,savingError=false;
@@ -1288,9 +1288,9 @@ function setupCanvas(onStroke=()=>{}){const c=$('#ink');let pointCount=0;const t
 function draw(){const c=$('#ink');if(!c)return;const r=c.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,3);c.width=Math.round(r.width*dpr);c.height=Math.round(r.height*dpr);const ctx=c.getContext('2d');ctx.scale(c.width/560,c.height/290);ctx.translate(0,-70);ctx.strokeStyle='#0b253b';ctx.fillStyle='#0b253b';ctx.lineWidth=5;ctx.lineCap='round';ctx.lineJoin='round';for(const stroke of state.ink[inkKey()]){if(!stroke.length)continue;if(stroke.length===1){ctx.beginPath();ctx.arc(stroke[0].x,stroke[0].y,3,0,Math.PI*2);ctx.fill()}else{ctx.beginPath();ctx.moveTo(stroke[0].x,stroke[0].y);for(const p of stroke.slice(1))ctx.lineTo(p.x,p.y);ctx.stroke()}}}
 function confirmAction(message,fn){$('#confirm-title').textContent=t('confirm');$('#confirm-message').textContent=message;$('#confirm-cancel').textContent=t('cancel');$('#confirm-yes').textContent=t('confirm');$('#confirm-dialog').showModal();$('#confirm-cancel').onclick=()=>$('#confirm-dialog').close();$('#confirm-yes').onclick=()=>{$('#confirm-dialog').close();fn()}}
 function download(data,name,type){const u=URL.createObjectURL(new Blob([data],{type})),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),10000)}
-function settings(){stopPenDemo();stop();$('#settings-title').textContent=t('adultHelp');$('#close-settings').setAttribute('aria-label',t('close'));$('#settings-content').innerHTML=`<section class="setting-section"><h3>${esc(learnerStorage.enabled?lt('saved'):t('localOnly'))}</h3><p>${esc(learnerStorage.enabled?lt('cloud'):t('storageNote'))}</p><button id="export-progress" class="secondary">${esc(t('exportProgress'))}</button><button id="restore-progress" class="secondary">${esc(t('importProgress'))}</button><button id="reset-progress" class="text-button">${esc(t('resetProgress'))}</button></section><section class="setting-section"><h3>${esc(t('offlineTitle'))}</h3><p>${esc(t(LOCAL_SERVER_MODE?'localServerReady':'offlineNote'))}</p>${LOCAL_SERVER_MODE?'':`<button id="cache-all" class="primary">${esc(t('downloadAll'))}</button>`}<p id="offline-progress" role="status"></p></section><section class="setting-section"><h3>${esc(t('printSheet'))}</h3><p>${esc(t('currentPrintNotice'))}</p><div class="print-actions"><button id="print-all-writing" class="secondary">${esc(t('printAllWriting'))}</button><button id="print-all-alphabet" class="secondary">${esc(t('printAlphabet'))}</button></div></section><section class="setting-section"><h3>${esc(t('aboutWorkbook'))}</h3><p>${esc(t('scopeNote'))}</p><p>${esc(t('releaseScope'))}</p><p>${esc(t('voiceUpdate'))}</p><p>${esc(t('privacyBrief'))}</p><p><a href="guides/${locale}.html" target="_blank">${esc(t('releaseHelp'))}</a> · <a href="guides/${locale}.html#privacy" target="_blank">${esc(t('releasePolicy'))}</a></p><p>${esc(t('readTogether'))}</p><p>${esc(t('joiningHelp'))}</p><p><a href="course/CREDITS.txt" target="_blank">${esc(t('credits'))}</a></p></section><p class="author-credit dialog-author">${AUTHOR_CREDIT}</p>`;$('#settings').showModal();$('#print-all-writing').onclick=()=>printAllWriting();$('#print-all-alphabet').onclick=()=>printAlphabet();if($('#cache-all'))$('#cache-all').onclick=()=>downloadOffline('all',$('#cache-all'));$('#export-progress').onclick=()=>download(JSON.stringify(state,null,2),IS_DEMO?'HORIZONS-Demo-progress.json':'HORIZONS-Level1-progress.json','application/json');$('#restore-progress').onclick=()=>$('#progress-input').click();$('#reset-progress').onclick=()=>confirmAction(t('resetConfirm'),()=>{state=fresh();render();save();$('#settings').close()});}
+function settings(){stopPenDemo();stop();$('#settings-title').textContent=t('adultHelp');$('#close-settings').setAttribute('aria-label',t('close'));$('#settings-content').innerHTML=`<section class="setting-section"><h3>${esc(learnerStorage.enabled?lt('saved'):t('localOnly'))}</h3><p>${esc(learnerStorage.enabled?lt('cloud'):t('storageNote'))}</p><button id="export-progress" class="secondary">${esc(t('exportProgress'))}</button><button id="restore-progress" class="secondary">${esc(t('importProgress'))}</button><button id="reset-progress" class="text-button">${esc(t('resetProgress'))}</button></section><section class="setting-section"><h3>${esc(t('offlineTitle'))}</h3><p>${esc(t(LOCAL_SERVER_MODE?'localServerReady':'offlineNote'))}</p>${LOCAL_SERVER_MODE?'':`<button id="cache-all" class="primary">${esc(t('downloadAll'))}</button>`}<p id="offline-progress" role="status"></p></section><section class="setting-section"><h3>${esc(t('printSheet'))}</h3><p>${esc(t('currentPrintNotice'))}</p><div class="print-actions"><button id="print-all-writing" class="secondary">${esc(t('printAllWriting'))}</button><button id="print-all-alphabet" class="secondary">${esc(t('printAlphabet'))}</button></div></section><section class="setting-section"><h3>${esc(t('aboutWorkbook'))}</h3><p>${esc(t('scopeNote'))}</p><p>${esc(t('releaseScope'))}</p><p>${esc(t('voiceUpdate'))}</p><p>${esc(t('privacyBrief'))}</p><p><a href="guides/${locale}.html" target="_blank">${esc(t('releaseHelp'))}</a> · <a href="guides/${locale}.html#privacy" target="_blank">${esc(t('releasePolicy'))}</a></p><p>${esc(t('readTogether'))}</p><p>${esc(t('joiningHelp'))}</p><p><a href="course/CREDITS.txt" target="_blank">${esc(t('credits'))}</a></p></section><p class="author-credit dialog-author">${AUTHOR_CREDIT()}</p>`;$('#settings').showModal();$('#print-all-writing').onclick=()=>printAllWriting();$('#print-all-alphabet').onclick=()=>printAlphabet();if($('#cache-all'))$('#cache-all').onclick=()=>downloadOffline('all',$('#cache-all'));$('#export-progress').onclick=()=>download(JSON.stringify(state,null,2),IS_DEMO?'HORIZONS-Demo-progress.json':'HORIZONS-Level1-progress.json','application/json');$('#restore-progress').onclick=()=>$('#progress-input').click();$('#reset-progress').onclick=()=>confirmAction(t('resetConfirm'),()=>{state=fresh();render();save();$('#settings').close()});}
 async function downloadOffline(group,button){if(LOCAL_SERVER_MODE){notice(t('localServerReady'));return}if(button)button.disabled=true;const status=$('#offline-progress');try{await prepareOffline(group,({done,total})=>{const msg=t('offlineProgress',{done,total});if(status)status.textContent=msg;if(button)button.textContent=msg});notice(t(group==='all'?'offlineAllReady':'offlineReady'));if(status)status.textContent=t('offlineAllReady')}catch(e){const key=e.code==='LOCAL_SERVER'?'localServerReady':e.code==='UNSUPPORTED'?'offlineUnsupported':e.code==='UPDATE_REQUIRED'?'offlineUpdateRequired':'offlineFailed';notice(t(key));if(status)status.textContent=t(key)}finally{if(button){button.disabled=false;button.textContent=t(group==='all'?'downloadAll':'chapterDownload')}}}
-function sheetHead(title){return `<header class="worksheet-head"><div class="worksheet-brand"><b>HORIZONS</b><p class="print-author">${AUTHOR_CREDIT}</p></div><h1>${esc(title)}</h1></header>`}
+function sheetHead(title){return `<header class="worksheet-head"><div class="worksheet-brand"><b>HORIZONS</b><p class="print-author">${AUTHOR_CREDIT()}</p></div><h1>${esc(title)}</h1></header>`}
 async function printHtml(html){
  stopPenDemo();stop();$('#settings').close();const sheet=$('#print-sheet');sheet.innerHTML=html;sheet.dir=['ar','he','fa','ur'].includes(locale)?'rtl':'ltr';sheet.lang=locale;sheet.className='expanded-print';
  await document.fonts.ready;const imgs=[...sheet.querySelectorAll('img')];await Promise.all(imgs.map(im=>im.complete?Promise.resolve():new Promise(r=>{im.onload=r;im.onerror=r})));
@@ -1323,6 +1323,78 @@ if(typeof matchMedia==='function'){
 }
 if(typeof addEventListener==='function')addEventListener('storage',event=>{if(!learnerStorage.enabled&&(event.key===TYPOGRAPHY_KEY||event.key===null)){typographyStorageReadable=true;typography=loadTypographyPrefs(typography);applyTypography()}});
 addEventListener('beforeunload',event=>{if(learnerStorage.enabled&&(learnerSaving||learnerStorage.pending)){event.preventDefault();event.returnValue=''}});
+/*CREATOR_CREDIT_BEGIN*/
+/* Generic creator attribution shared by the demo, licensed workbook and entry page.
+ * Replace the single locale placeholder with creator-credit-locales.json at build time.
+ * No curriculum, licensing state or learner records are read or modified. */
+(function(){
+ 'use strict';
+ const DATA={"schema_version":1,"names":{"ar":"إسماعيل الخطيب","tr":"İsmail Alhatip"},"labels":{"en":"Concept, design, development and project management:","ar":"الفكرة والتصميم والتطوير وإدارة المشروع:","tr":"Fikir, tasarım, geliştirme ve proje yönetimi:","fr":"Idée, conception, développement et gestion de projet :","es":"Idea, diseño, desarrollo y gestión del proyecto:","de":"Idee, Gestaltung, Entwicklung und Projektleitung:","it":"Idea, progettazione, sviluppo e gestione del progetto:","pt":"Ideia, design, desenvolvimento e gestão do projeto:","nl":"Idee, ontwerp, ontwikkeling en projectleiding:","ru":"Идея, дизайн, разработка и управление проектом:","uk":"Ідея, дизайн, розробка та управління проєктом:","pl":"Pomysł, projektowanie, rozwój i zarządzanie projektem:","cs":"Nápad, návrh, vývoj a řízení projektu:","ro":"Idee, design, dezvoltare și management de proiect:","hu":"Ötlet, tervezés, fejlesztés és projektvezetés:","el":"Ιδέα, σχεδιασμός, ανάπτυξη και διαχείριση έργου:","sv":"Idé, design, utveckling och projektledning:","da":"Idé, design, udvikling og projektledelse:","no":"Idé, design, utvikling og prosjektledelse:","fi":"Idea, suunnittelu, kehitys ja projektin johtaminen:","bg":"Идея, дизайн, разработка и управление на проекта:","sr":"Идеја, дизајн, развој и управљање пројектом:","hr":"Ideja, dizajn, razvoj i upravljanje projektom:","he":"רעיון, עיצוב, פיתוח וניהול הפרויקט:","fa":"ایده، طراحی، توسعه و مدیریت پروژه:","ur":"تصور، ڈیزائن، ڈویلپمنٹ اور منصوبے کا انتظام:","hi":"अवधारणा, डिज़ाइन, विकास और परियोजना प्रबंधन:","bn":"ধারণা, নকশা, উন্নয়ন ও প্রকল্প ব্যবস্থাপনা:","id":"Ide, desain, pengembangan, dan pengelolaan proyek:","ms":"Idea, reka bentuk, pembangunan dan pengurusan projek:","zh":"构思、设计、开发与项目管理：","ja":"構想・設計・開発・プロジェクト管理："}};
+ const RTL=new Set(['ar','he','fa','ur']);
+ const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+ function normalizeLocale(value){
+  const raw=String(value??'').trim().toLowerCase().replaceAll('_','-').split('-')[0];
+  const code=({iw:'he',nb:'no',nn:'no'})[raw]??raw;
+  return Object.hasOwn(DATA.labels,code)?code:'en';
+ }
+ function currentLocale(){
+  return normalizeLocale(typeof locale!=='undefined'?locale:document.documentElement.lang);
+ }
+ function markup(value){
+  const code=normalizeLocale(value??currentLocale()),dir=RTL.has(code)?'rtl':'ltr';
+  return `<span class="hzn-creator-credit-content" lang="${code}" dir="${dir}"><span class="hzn-creator-role">${esc(DATA.labels[code])}</span><span class="hzn-creator-names" dir="ltr"><bdi lang="ar" dir="rtl"><b>${esc(DATA.names.ar)}</b></bdi><span aria-hidden="true"> — </span><bdi lang="tr" dir="ltr"><b>${esc(DATA.names.tr)}</b></bdi></span></span>`;
+ }
+ function ensureStyle(){
+  if(document.getElementById('hzn-creator-credit-style'))return;
+  const style=document.createElement('style');style.id='hzn-creator-credit-style';
+  style.textContent='.hzn-creator-credit-content{display:inline-flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:.1em .45em;max-width:100%;line-height:1.8;text-align:center}.hzn-creator-role{flex:1 0 100%;max-width:100%;overflow-wrap:anywhere;font-weight:500}.hzn-creator-names{display:inline-flex;flex-wrap:wrap;align-items:baseline;justify-content:center;column-gap:.35em;max-width:100%;direction:ltr;unicode-bidi:isolate;white-space:normal}.hzn-creator-names bdi{max-width:100%;unicode-bidi:isolate}.hzn-creator-names b{font-weight:650}@media print{.hzn-creator-credit-content{line-height:1.5;break-inside:avoid}}';
+  document.head.append(style);
+ }
+ function sync(value){
+  const code=normalizeLocale(value??currentLocale()),html=markup(code);
+  ensureStyle();
+  document.querySelectorAll('.author-credit,.print-author,[data-hzn-creator-credit]').forEach(node=>{
+   if(node.innerHTML!==html)node.innerHTML=html;
+   node.lang=code;node.dir=RTL.has(code)?'rtl':'ltr';
+  });
+  const meta=document.querySelector('meta[name="author"]');
+  if(meta)meta.setAttribute('content',DATA.names.ar+' — '+DATA.names.tr);
+  return html;
+ }
+ function wrapAfter(original){
+  const wrapped=function(...args){const result=original.apply(this,args);sync();return result;};
+  wrapped.hznCreatorCreditHook=true;return wrapped;
+ }
+ function installWorkbookHooks(){
+  const installed=[];
+  // These lexical functions are available when this block is installed inside
+  // the protected workbook closure before init(), rather than as a global script.
+  if(typeof render==='function'&&!render.hznCreatorCreditHook){render=wrapAfter(render);installed.push('render');}
+  if(typeof settings==='function'&&!settings.hznCreatorCreditHook){settings=wrapAfter(settings);installed.push('settings');}
+  if(typeof sheetHead==='function'&&!sheetHead.hznCreatorCreditHook){
+   const original=sheetHead,previous=typeof AUTHOR_CREDIT==='string'?AUTHOR_CREDIT:null;
+   const wrapped=function(...args){
+    const html=original.apply(this,args);
+    return typeof html==='string'&&previous?html.replaceAll(previous,markup(currentLocale())):html;
+   };
+   wrapped.hznCreatorCreditHook=true;sheetHead=wrapped;installed.push('sheetHead');
+  }
+  return installed;
+ }
+ globalThis.hznCreatorCreditMarkup=markup;
+ globalThis.hznCreatorCredit=Object.freeze({schemaVersion:DATA.schema_version,markup,sync,installWorkbookHooks,normalizeLocale,labels:Object.freeze({...DATA.labels}),names:Object.freeze({...DATA.names})});
+ installWorkbookHooks();sync();
+ // beforeprint is synchronous: freshly generated worksheets are localized even
+ // when fonts/images are already ready and printing starts immediately.
+ addEventListener('beforeprint',()=>sync());
+ if(typeof MutationObserver==='function'){
+  const observer=new MutationObserver(()=>sync());
+  observer.observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+ }
+})();
+/*CREATOR_CREDIT_END*/
+
+
 init();
 
 })();

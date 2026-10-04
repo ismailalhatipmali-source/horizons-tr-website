@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "names": {
+    "ar": "إسماعيل الخطيب",
+    "tr": "İsmail Alhatip"
+  },
+  "labels": {
+    "en": "Concept, design, development and project management:",
+    "ar": "الفكرة والتصميم والتطوير وإدارة المشروع:",
+    "tr": "Fikir, tasarım, geliştirme ve proje yönetimi:",
+    "fr": "Idée, conception, développement et gestion de projet :",
+    "es": "Idea, diseño, desarrollo y gestión del proyecto:",
+    "de": "Idee, Gestaltung, Entwicklung und Projektleitung:",
+    "it": "Idea, progettazione, sviluppo e gestione del progetto:",
+    "pt": "Ideia, design, desenvolvimento e gestão do projeto:",
+    "nl": "Idee, ontwerp, ontwikkeling en projectleiding:",
+    "ru": "Идея, дизайн, разработка и управление проектом:",
+    "uk": "Ідея, дизайн, розробка та управління проєктом:",
+    "pl": "Pomysł, projektowanie, rozwój i zarządzanie projektem:",
+    "cs": "Nápad, návrh, vývoj a řízení projektu:",
+    "ro": "Idee, design, dezvoltare și management de proiect:",
+    "hu": "Ötlet, tervezés, fejlesztés és projektvezetés:",
+    "el": "Ιδέα, σχεδιασμός, ανάπτυξη και διαχείριση έργου:",
+    "sv": "Idé, design, utveckling och projektledning:",
+    "da": "Idé, design, udvikling og projektledelse:",
+    "no": "Idé, design, utvikling og prosjektledelse:",
+    "fi": "Idea, suunnittelu, kehitys ja projektin johtaminen:",
+    "bg": "Идея, дизайн, разработка и управление на проекта:",
+    "sr": "Идеја, дизајн, развој и управљање пројектом:",
+    "hr": "Ideja, dizajn, razvoj i upravljanje projektom:",
+    "he": "רעיון, עיצוב, פיתוח וניהול הפרויקט:",
+    "fa": "ایده، طراحی، توسعه و مدیریت پروژه:",
+    "ur": "تصور، ڈیزائن، ڈویلپمنٹ اور منصوبے کا انتظام:",
+    "hi": "अवधारणा, डिज़ाइन, विकास और परियोजना प्रबंधन:",
+    "bn": "ধারণা, নকশা, উন্নয়ন ও প্রকল্প ব্যবস্থাপনা:",
+    "id": "Ide, desain, pengembangan, dan pengelolaan proyek:",
+    "ms": "Idea, reka bentuk, pembangunan dan pengurusan projek:",
+    "zh": "构思、设计、开发与项目管理：",
+    "ja": "構想・設計・開発・プロジェクト管理："
+  }
+}
