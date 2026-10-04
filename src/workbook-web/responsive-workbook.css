@@ -286,6 +286,32 @@ dialog {
 }
 
 @media (max-width: 760px) {
+  /* Keep the title and progress on separate rows at narrow widths. */
+  .lesson-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 10px;
+  }
+
+  .lesson-heading > div {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .lesson-heading .progress-box {
+    display: block;
+    flex: none;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .lesson-heading .progress-box small {
+    text-align: start;
+  }
+
   .topbar .brand {
     gap: 8px;
   }

@@ -42,15 +42,32 @@ try {
     }
     $installed = hznB3State($web);
     if (!$installed || !hznBlending2SupersedingState($web)) throw new RuntimeException('APPROVED_SECTION04_REQUIRED');
-    if ($installed['responsive_receipt'] !== null) {
+    $priorUi = $installed['responsive_receipt'];
+    if ($priorUi !== null && $priorUi['patch'] === HZN_RESPONSIVE_RELEASE) {
         if ($installed['responsive_receipt']['sources'] !== $sourceHashes) throw new RuntimeException('RESPONSIVE_SOURCE_REVISION_CHANGED');
         echo "OK: WORKBOOK_RESPONSIVE_UI; 0 files updated; approved sections and recordings preserved.\n";
         exit(0);
     }
+    if ($priorUi !== null && $priorUi['patch'] !== 'workbook-responsive-20261004-r1') throw new RuntimeException('RESPONSIVE_UPGRADE_REQUIRED');
     $manifestPath = hznB3Path($learn, 'asset-manifest.json');
     $workerPath = hznB3Path($learn, 'sw.js');
     $appPath = hznB3Path($learn, 'content/1.4.1/workbook.js.hzn');
     $manifestRaw = hznB3Read($manifestPath); $worker = hznB3Read($workerPath); $cipherBefore = hznB3Read($appPath);
+    $upgradeWrites = []; $upgradeFrom = null;
+    if ($priorUi !== null) {
+        $priorReceiptRaw = hznB3Read(hznB3Path($private, 'receipt.json'));
+        $upgradeFrom = ['patch' => $priorUi['patch'], 'receipt_sha256' => hash('sha256', $priorReceiptRaw)];
+        $upgradeWrites = [hznB3Path($private, 'r1-receipt.json') => $priorReceiptRaw,
+            hznB3Path($private, 'r1-manifest.json') => $manifestRaw, hznB3Path($private, 'r1-sw.js') => $worker,
+            hznB3Path($private, 'r1-workbook.hzn') => $cipherBefore,
+            hznB3Path($private, 'r1-qa.html') => hznB3Read(hznB3Path($learn, 'layout-check/index.html'))];
+        foreach ($upgradeWrites as $path => $bytes) if (file_exists($path)) throw new RuntimeException('RESPONSIVE_UPGRADE_HISTORY_CONFLICT');
+        // Regenerate from the verified immutable original encrypted baseline.
+        // An interface upgrade must never stack CSS/component replacements.
+        $manifestRaw = hznB3Read(hznB3Path($private, 'baseline-manifest.json'));
+        $worker = hznB3Read(hznB3Path($private, 'baseline-sw.js'));
+        $cipherBefore = hznB3Read(hznB3Path($private, 'baseline-workbook.hzn'));
+    }
     $manifest = json_decode($manifestRaw, true, 32, JSON_THROW_ON_ERROR);
     $configPointer = require hznB3Path($web, 'activation/config-path.php');
     if (!is_string($configPointer) || is_link($configPointer) || !($configReal = realpath($configPointer))
@@ -65,7 +82,7 @@ try {
     $compressed = hznResponsiveDecrypt($cipherBefore, $key);
     $app = gzdecode($compressed, 33554432);
     if ($app === false || strlen($app) !== $manifest['files']['workbook.js']['decoded_bytes']
-        || !hash_equals($installed['receipt']['plain_workbook_sha256'], hash('sha256', $app))) throw new RuntimeException('RESPONSIVE_APPLICATION_BASELINE_CHANGED');
+        || !hash_equals($priorUi['plain_before_sha256'] ?? $installed['receipt']['plain_workbook_sha256'], hash('sha256', $app))) throw new RuntimeException('RESPONSIVE_APPLICATION_BASELINE_CHANGED');
     $startToken = 'function mountBlending3Component(root,DATA,config){';
     $endToken = "\nconst B3_QUAD_TITLES=";
     if (substr_count($app, $startToken) !== 1 || substr_count($app, $endToken) !== 1 || str_contains($app, '/*WORKBOOK_RESPONSIVE_UI_BEGIN*/')) {
@@ -125,13 +142,16 @@ try {
     }
     $qaDirectoryMode = is_dir($qaDirectory) ? fileperms($qaDirectory) & 07777 : null;
     $writes[hznB3Path($qaDirectory, 'index.html')] = $sources[$sourceNames[3]];
-    $writes[hznB3Path($private, 'baseline-manifest.json')] = $manifestRaw;
-    $writes[hznB3Path($private, 'baseline-sw.js')] = $worker;
-    $writes[hznB3Path($private, 'baseline-workbook.hzn')] = $cipherBefore;
+    if ($priorUi === null) {
+        $writes[hznB3Path($private, 'baseline-manifest.json')] = $manifestRaw;
+        $writes[hznB3Path($private, 'baseline-sw.js')] = $worker;
+        $writes[hznB3Path($private, 'baseline-workbook.hzn')] = $cipherBefore;
+    }
+    foreach ($upgradeWrites as $path => $bytes) $writes[$path] = $bytes;
     $writes[hznB3Path($private, 'receipt.json')] = hznResponsiveJson(['schema' => 1, 'patch' => HZN_RESPONSIVE_RELEASE,
         'worker_suffix' => HZN_RESPONSIVE_WORKER_SUFFIX, 'original_blending3_receipt_sha256' => hash_file('sha256', hznB3Path($home, '.horizons-blending3/receipt.json')),
         'plain_before_sha256' => hash('sha256', $app), 'plain_after_sha256' => hash('sha256', $updated), 'hashes' => $hashes, 'sources' => $sourceHashes,
-        'public_qa' => ['relative' => 'layout-check/index.html', 'sha256' => $sourceHashes[$sourceNames[3]]]]) . "\n";
+        'public_qa' => ['relative' => 'layout-check/index.html', 'sha256' => $sourceHashes[$sourceNames[3]]], 'upgrade_from' => $upgradeFrom]) . "\n";
     foreach ($writes as $path => $bytes) $originals[$path] = ['bytes' => is_file($path) ? hznB3Read($path) : null, 'mode' => is_file($path) ? fileperms($path) & 0777 : null];
     $backup = hznB3Path($private, 'backup-' . gmdate('Ymd-His') . '-' . bin2hex(random_bytes(4)));
     if (!mkdir($backup, 0700)) throw new RuntimeException('RESPONSIVE_BACKUP_FAILED');

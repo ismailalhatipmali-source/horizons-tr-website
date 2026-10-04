@@ -2,6 +2,14 @@
 function mountBlending3Component(root,DATA,config){
  const $=s=>root.querySelector(s);
  const supported=Object.keys(DATA.ui.locales);
+ // Reuse document-level workbook faces: shadow @font-face support differs across browsers.
+ const fontFamilies={
+  'noto-naskh':'"HZN Noto Naskh Arabic",serif',
+  'amiri':'"HZN Amiri",serif',
+  'scheherazade':'"HZN Scheherazade",serif',
+  'noto-sans':'"HZN Noto Sans Arabic",sans-serif',
+  'noto-kufi':'"HZN Noto Kufi Arabic",sans-serif'
+ };
  const deviceLanguage=config.locale;
  const state={locale:supported.includes(deviceLanguage)?deviceLanguage:'ar',font:config.font,size:1,lesson:1,index:0,mode:'learn',meaning:false,segments:false,activeSegment:null,answer:false,choice:null,practice:false,ratings:{},reviewed:new Set()};
  if(config.snapshot)Object.assign(state,config.snapshot,{locale:config.locale});
@@ -88,7 +96,7 @@ function mountBlending3Component(root,DATA,config){
   const focusAttribute=['data-index','data-segment','data-choice','data-rating','data-word'].find(k=>active?.hasAttribute(k));
   const focusValue=focusAttribute?active.getAttribute(focusAttribute):null;
   stopAudio();
-  root.host.lang=state.locale;root.host.dir=isRtl()?'rtl':'ltr';root.host.style.setProperty('--reader-font',`'hzn-${state.font}'`);root.host.style.setProperty('--word-size',state.size);
+  root.host.lang=state.locale;root.host.dir=isRtl()?'rtl':'ltr';root.host.style.setProperty('--reader-font',fontFamilies[state.font]??fontFamilies['noto-naskh']);root.host.style.setProperty('--word-size',state.size);
   
   const textNodes={title:'title',intro:'intro','review-label':'reviewVersion',notice:'audioReviewNotice','language-label':'language','font-label':'font','font-summary':'font','size-label':'textSize','lesson-heading':'lessons','all-label':'allWords',footer:'sectionStatus'};
   for(const [id,key] of Object.entries(textNodes))$('#'+id).textContent=t(key);

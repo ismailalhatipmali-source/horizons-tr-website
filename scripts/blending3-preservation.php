@@ -37,7 +37,7 @@ function hznB3State(string $web):?array {
     $projected['groups']['all']=array_values(array_filter($projected['groups']['all'],fn($p)=>!in_array($p,$paths,true)));
     foreach(['blending3_release','blending3_word_count','blending3_practice_count','blending3_approved_clips','blending3_lesson_count','blending3_languages'] as $key)unset($projected[$key]);
     if(hznB3Json($projected)!==hznB3Json($baseline))throw new RuntimeException('BLENDING3_PREVIOUS_CONTENT_CHANGED');
-    $suffix=$responsive===null?'blending3-20261004-r2':HZN_RESPONSIVE_WORKER_SUFFIX;
+    $suffix=$responsive===null?'blending3-20261004-r2':$responsive['worker_suffix'];
     $old="const SHELL = 'hzn-web-shell-' + VERSION + '-meanings-20261003-r1';";$new="const SHELL = 'hzn-web-shell-' + VERSION + '-".$suffix."';";
     $before=hznB3Read($workerPath);if(substr_count($before,$old)!==1||str_replace($old,$new,$before)!==hznB3Read(hznB3Path($learn,'sw.js')))throw new RuntimeException('BLENDING3_WORKER_CHANGED');
     $oldMeaning=hznB3Path($home,'.horizons-meaning/receipt.json');if(!is_file($oldMeaning)||!hash_equals($receipt['inherited_meaning_receipt_sha256']??'',hash_file('sha256',$oldMeaning)))throw new RuntimeException('BLENDING3_INHERITED_RECEIPT_CHANGED');
