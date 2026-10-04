@@ -1,0 +1,468 @@
+/* Layout-only corrections. This stylesheet contains no curriculum or media. */
+@media screen {
+html:has(#course-nav) {
+  width: 100%;
+  min-width: 0;
+}
+
+body:has(#course-nav) {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+body:has(#course-nav) *,
+body:has(#course-nav) *::before,
+body:has(#course-nav) *::after {
+  box-sizing: border-box;
+}
+
+body:has(#course-nav) main,
+#reader-controls,
+#activity-navigation,
+#activity,
+#hzn-blending3-host {
+  min-width: 0;
+  max-width: 100%;
+}
+
+body:has(#course-nav) main {
+  width: 100%;
+  max-width: 1160px;
+  margin-inline: auto;
+  padding-inline: clamp(12px, 2.8vw, 28px);
+}
+
+.topbar,
+.topbar .top-actions,
+.topbar .language,
+.reader-controls,
+.typography-toolbar,
+.learner-toolbar {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.topbar {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-inline: clamp(12px, 2.8vw, 28px);
+}
+
+.topbar .brand {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.topbar .top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.topbar select,
+.reader-controls select,
+.typography-toolbar select,
+.learner-toolbar select,
+.blending2-filters select,
+.phonics-focus select {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.reader-controls,
+.typography-toolbar,
+.learner-toolbar {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.learner-toolbar #learner-select {
+  flex: 1 1 180px;
+  width: 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+#learner-save-status {
+  flex: 1 1 100%;
+  min-width: 0;
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.lesson-heading,
+.activity-header {
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.lesson-heading > div,
+.activity-header > div {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.lesson-heading .progress-box {
+  flex: 0 1 240px;
+  width: 240px;
+  max-width: 100%;
+}
+
+#lesson-title,
+#lesson-subtitle,
+.activity-header h2,
+.activity-header p {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* A stable two-row overview: all six sections remain visible. */
+body[data-course] #course-nav.course-nav {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+body[data-course] #course-nav.course-nav > button {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 68px;
+  height: auto;
+  padding: 11px 12px;
+  border-radius: 16px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+  line-height: 1.55;
+}
+
+body[data-course] #course-nav.course-nav > button > span,
+body[data-course] #course-nav.course-nav > button > small {
+  flex-shrink: 0;
+}
+
+#stages {
+  min-width: 0;
+  width: 100%;
+}
+
+#stages > button {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  height: auto;
+}
+
+#activity {
+  width: 100%;
+}
+
+.alphabet-layout,
+.alphabet-grid,
+.chapter-grid,
+.word-scene-layout,
+.illustration-panel,
+.vocab-panel,
+.story-layout,
+.story-text,
+.writing-workspace,
+.writing-reference,
+.writing-surface,
+.phonics-row,
+.phonics-pair,
+.blending2-study-card {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.sentence-scene img,
+.story-picture img,
+.trace-wrap,
+.trace-wrap svg,
+.vocab-strip img {
+  max-width: 100%;
+}
+
+.activity .vocab-word,
+.sentence,
+.story-sentence,
+.trace-example,
+.translation,
+.phonics-hint,
+.phonics-note,
+.blending2-meaning,
+.blending2-practice-note {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.vocab-strip,
+.word-overview .vocab-strip {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+  gap: 10px;
+}
+
+.vocab-strip > button {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.vocab-strip > button .arabic {
+  display: block;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 1.9;
+}
+
+.blending2-filters label,
+.phonics-quiz-controls fieldset {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.blending2-card-actions,
+.phonics-feedback-actions,
+.trace-tools,
+.pen-demo-tools,
+.section-bottom {
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.lesson-footer {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+dialog {
+  width: min(680px, calc(100vw - 24px));
+  max-width: calc(100vw - 24px);
+  min-width: 0;
+  max-height: calc(100dvh - 24px);
+}
+
+.setting-section,
+.font-choice-grid,
+.typography-settings,
+.learner-settings {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .alphabet-layout,
+  .word-scene-layout,
+  .story-layout,
+  .writing-workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .phonics-row {
+    display: block;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar .brand {
+    gap: 8px;
+  }
+
+  .topbar .brand svg {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+
+  .topbar .brand > span {
+    font-size: 16px;
+    letter-spacing: .08em;
+  }
+
+  .topbar .brand small {
+    font-size: 8px;
+    letter-spacing: .12em;
+  }
+
+  .topbar .language select {
+    width: 100px;
+    min-width: 0;
+  }
+
+  .topbar .icon-button {
+    flex: 0 0 44px;
+    width: 44px;
+    min-height: 44px;
+    padding-inline: 6px;
+  }
+
+  .typography-toolbar {
+    gap: 10px;
+  }
+
+  .reading-options {
+    flex: 1 1 160px;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .reading-options-panel {
+    min-width: 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .typography-control {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body[data-course] #course-nav.course-nav {
+    gap: 7px;
+  }
+
+  body[data-course] #course-nav.course-nav > button {
+    min-height: 76px;
+    padding: 9px 7px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border-radius: 13px;
+  }
+
+  body[data-course] #course-nav.course-nav > button > span {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  body[data-course] #course-nav.course-nav > button > small {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  #stages.four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #stages > button {
+    padding-inline: 8px;
+  }
+
+  .activity-header {
+    align-items: start;
+  }
+
+  .activity-header > button {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .alphabet-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .chapter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blending2-choices,
+  .phonics-choices,
+  .sentence-choices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blending2-filters label {
+    flex: 1 1 140px;
+  }
+
+  .lesson-footer > button {
+    max-width: calc(50% - 5px);
+    white-space: normal;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar .top-actions {
+    display: contents;
+  }
+
+  .word-scene-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "switch"
+      "picture"
+      "word"
+      "sentence"
+      "meaning"
+      "tags";
+  }
+
+  .word-overview .vocab-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 380px) {
+  .topbar {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .topbar .brand {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .topbar .top-actions > .language {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: stretch;
+  }
+
+  .topbar .language select {
+    width: 100%;
+  }
+
+  .topbar .top-actions > #settings-button {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .topbar .hzn-account-links {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .alphabet-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .vocab-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+}

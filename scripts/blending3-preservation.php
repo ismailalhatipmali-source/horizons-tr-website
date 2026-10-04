@@ -12,9 +12,13 @@ function hznB3Json(array $x):string {return json_encode($x,JSON_UNESCAPED_UNICOD
 function hznB3State(string $web):?array {
     $home=dirname($web);$state=hznB3Path($home,'.horizons-blending3');$path=hznB3Path($state,'receipt.json');if(!is_file($path))return null;
     if(realpath($path)!==$path||str_starts_with($path,$web.'/')||filesize($path)>262144)throw new RuntimeException('BLENDING3_PRIVATE_RECEIPT_REQUIRED');
-    $receipt=json_decode(hznB3Read($path),true,32,JSON_THROW_ON_ERROR);
+    $receiptRaw=hznB3Read($path);$receipt=json_decode($receiptRaw,true,32,JSON_THROW_ON_ERROR);
     if(($receipt['schema']??null)!==1||($receipt['patch']??'')!=='blending3-20261004-r2'||($receipt['word_count']??0)!==150||($receipt['approved_clips']??0)!==150||($receipt['practice_count']??0)!==12||count($receipt['hashes']??[])!==153)throw new RuntimeException('BLENDING3_RECEIPT_INVALID');
     foreach(['release_sha256','baseline_manifest_sha256','baseline_sw_sha256','plain_workbook_sha256'] as $key)if(!preg_match('/^[a-f0-9]{64}$/D',$receipt[$key]??''))throw new RuntimeException('BLENDING3_RECEIPT_INVALID');
+    $responsive=null;$responsiveBridge=__DIR__.'/workbook-responsive-preservation.php';
+    if(is_file($responsiveBridge)){require_once $responsiveBridge;$responsive=hznResponsiveState($web,$receipt,hash('sha256',$receiptRaw));}
+    elseif(is_file(dirname($web).'/.horizons-workbook-responsive/receipt.json'))throw new RuntimeException('RESPONSIVE_BRIDGE_REQUIRED');
+    if($responsive!==null){foreach($responsive['hashes'] as $p=>$sha)$receipt['hashes'][$p]=$sha;$receipt['plain_workbook_sha256']=$responsive['plain_after_sha256'];}
     $learn=hznB3Path($web,'learn');$expected=['asset-manifest.json','sw.js','content/1.4.1/workbook.js.hzn'];
     $paths=$receipt['audio_paths']??[];if(count($paths)!==150||count(array_unique($paths))!==150)throw new RuntimeException('BLENDING3_AUDIO_COUNT_INVALID');
     foreach($paths as $p){if(!preg_match('~^course/audio/blending3/blending3_r2_0[123]_[0-9]{3}\.wav$~D',$p))throw new RuntimeException('BLENDING3_AUDIO_PATH_INVALID');$expected[]='content/1.4.1/'.$p.'.hzn';}
@@ -33,8 +37,9 @@ function hznB3State(string $web):?array {
     $projected['groups']['all']=array_values(array_filter($projected['groups']['all'],fn($p)=>!in_array($p,$paths,true)));
     foreach(['blending3_release','blending3_word_count','blending3_practice_count','blending3_approved_clips','blending3_lesson_count','blending3_languages'] as $key)unset($projected[$key]);
     if(hznB3Json($projected)!==hznB3Json($baseline))throw new RuntimeException('BLENDING3_PREVIOUS_CONTENT_CHANGED');
-    $old="const SHELL = 'hzn-web-shell-' + VERSION + '-meanings-20261003-r1';";$new="const SHELL = 'hzn-web-shell-' + VERSION + '-blending3-20261004-r2';";
+    $suffix=$responsive===null?'blending3-20261004-r2':HZN_RESPONSIVE_WORKER_SUFFIX;
+    $old="const SHELL = 'hzn-web-shell-' + VERSION + '-meanings-20261003-r1';";$new="const SHELL = 'hzn-web-shell-' + VERSION + '-".$suffix."';";
     $before=hznB3Read($workerPath);if(substr_count($before,$old)!==1||str_replace($old,$new,$before)!==hznB3Read(hznB3Path($learn,'sw.js')))throw new RuntimeException('BLENDING3_WORKER_CHANGED');
     $oldMeaning=hznB3Path($home,'.horizons-meaning/receipt.json');if(!is_file($oldMeaning)||!hash_equals($receipt['inherited_meaning_receipt_sha256']??'',hash_file('sha256',$oldMeaning)))throw new RuntimeException('BLENDING3_INHERITED_RECEIPT_CHANGED');
-    return ['manifest'=>$manifest,'baseline'=>$baseline,'receipt'=>$receipt];
+    return ['manifest'=>$manifest,'baseline'=>$baseline,'receipt'=>$receipt,'worker_suffix'=>$suffix,'responsive_receipt'=>$responsive];
 }

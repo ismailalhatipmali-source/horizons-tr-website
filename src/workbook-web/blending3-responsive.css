@@ -1,0 +1,294 @@
+/* Applied inside the three-letter reader's shadow root. Layout only. */
+:host {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.app {
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  padding: clamp(12px, 2vw, 22px);
+  container-name: blending3;
+  container-type: inline-size;
+}
+
+.page-heading,
+.settings,
+.workbench,
+.lesson-panel,
+.reader,
+.reader-inner,
+.semantic,
+.semantic-layout,
+.semantic-layout > div,
+.all-words {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.page-heading {
+  flex-wrap: wrap;
+}
+
+.page-heading > div {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.page-heading h1,
+.page-heading p,
+.notice,
+.reading-instruction,
+.lesson-skill,
+.skill-note,
+.semantic p,
+.semantic h2,
+.meaning-option {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.settings label,
+.settings .font-setting,
+.settings .size-control {
+  min-width: min(160px, 100%);
+  max-width: 100%;
+}
+
+.settings select,
+.settings input,
+.lesson-panel select {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.workbench {
+  grid-template-columns: 260px minmax(0, 1fr);
+}
+
+.word-grid,
+.all-word-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 132px), 1fr));
+  gap: 9px;
+}
+
+.word-chip,
+.all-word-grid button {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 72px;
+  height: auto;
+  padding: 10px 12px;
+  font: 30px/1.8 var(--reader-font);
+  text-align: center;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+  border-radius: 14px;
+}
+
+.all-word-grid button {
+  font-size: 26px;
+  min-height: 66px;
+}
+
+.modes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.mode-tab {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 48px;
+  height: auto;
+  padding: 10px 6px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+}
+
+.target-glyph {
+  max-width: 100%;
+  height: auto;
+}
+
+.segments,
+.word-tools,
+.rating-buttons {
+  min-width: 0;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.segments .segment-button {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.segments .segment-button svg {
+  max-width: 100%;
+}
+
+.tool-button,
+.rating-buttons button,
+.practice-switch,
+.pager button {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.semantic-layout > div {
+  flex: 1;
+}
+
+.meaning-option {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.pager {
+  gap: 8px;
+}
+
+.pager button {
+  max-width: 40%;
+  padding-inline: 14px;
+}
+
+@container blending3 (max-width: 850px) {
+  .workbench {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .lesson-panel,
+  .reader {
+    width: 100%;
+  }
+
+  .word-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lesson-panel h2 {
+    display: none;
+  }
+
+  .lesson-count,
+  .review-count {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .workbench {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .lesson-panel,
+  .reader {
+    width: 100%;
+  }
+
+  .word-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .lesson-panel {
+    padding: 12px;
+  }
+
+  .word-grid,
+  .all-word-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .word-chip {
+    min-height: 70px;
+    font-size: 28px;
+    padding: 10px 8px;
+  }
+
+  .all-word-grid button {
+    min-height: 66px;
+    padding-inline: 6px;
+  }
+
+  .reader-inner {
+    padding: 14px 12px 18px;
+  }
+
+  .modes {
+    padding: 10px 10px 0;
+    gap: 6px;
+  }
+
+  .mode-tab {
+    font-size: 15px;
+    padding-inline: 5px;
+  }
+
+  .semantic-layout {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .semantic-image {
+    width: 88px;
+    height: 88px;
+  }
+
+  .semantic-layout > div {
+    flex: 1 1 150px;
+  }
+
+  .segment-button svg {
+    width: 82px;
+    height: 58px;
+  }
+
+  .pager {
+    padding: 12px;
+  }
+
+  .pager button {
+    padding: 9px 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  .settings > label,
+  .settings > .font-setting {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+
+  .meaning-options {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .word-chip,
+  .all-word-grid button {
+    font-size: 25px;
+  }
+
+  .mode-tab {
+    font-size: 14px;
+  }
+}
