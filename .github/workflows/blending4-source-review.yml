@@ -1,0 +1,26 @@
+name: Section 05 source review
+on:
+  push:
+    branches: ['work/blending4-20261004']
+    paths: ['.github/workflows/blending4-source-review.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare source snapshot
+        run: |
+          mkdir -p /tmp/horizons-review
+          git archive HEAD src scripts release-assets docs tests .cpanel.yml .gitignore README.md | tar -x -C /tmp/horizons-review
+          git rev-parse HEAD > /tmp/horizons-review/REVIEW_COMMIT.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: horizons-section05-source-review
+          path: /tmp/horizons-review/
+          include-hidden-files: true
+          retention-days: 2
