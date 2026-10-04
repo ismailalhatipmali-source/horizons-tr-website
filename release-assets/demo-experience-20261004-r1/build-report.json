@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "release": "demo-experience-20261004-r1",
+  "public_allowlist": [
+    "try/index.html",
+    "try/workbook.js",
+    "try/sw.js",
+    "learn/index.html",
+    "try/demo-asset-manifest.json",
+    "try/demo-experience.css",
+    "learn/sw.js"
+  ],
+  "demo_manifest_entries": 595,
+  "unchanged_manifest_entries": 592,
+  "curriculum_media_preserved": 497,
+  "public_letter_metadata_count": 28,
+  "interface_languages": 32,
+  "original_app_outside_hook_unchanged": true,
+  "paid_activation_outside_demo_link_hook_unchanged": true,
+  "paid_worker_only_cache_suffix_changed": true,
+  "compiled_demo_hook_sha256": "2cee4fd508235bb7e64334ccc1d3b855166451b2bb3fe7dd2cc0416dd4d6084d"
+}

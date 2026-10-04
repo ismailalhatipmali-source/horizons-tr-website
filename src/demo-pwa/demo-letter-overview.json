@@ -1,0 +1,170 @@
+[
+  {
+    "id": "alif",
+    "letter": "ا",
+    "name": "أَلِف",
+    "order": 1
+  },
+  {
+    "id": "baa",
+    "letter": "ب",
+    "name": "بَاء",
+    "order": 2
+  },
+  {
+    "id": "taa",
+    "letter": "ت",
+    "name": "تَاء",
+    "order": 3
+  },
+  {
+    "id": "thaa",
+    "letter": "ث",
+    "name": "ثَاء",
+    "order": 4
+  },
+  {
+    "id": "jiim",
+    "letter": "ج",
+    "name": "جِيم",
+    "order": 5
+  },
+  {
+    "id": "haa",
+    "letter": "ح",
+    "name": "حَاء",
+    "order": 6
+  },
+  {
+    "id": "khaa",
+    "letter": "خ",
+    "name": "خَاء",
+    "order": 7
+  },
+  {
+    "id": "daal",
+    "letter": "د",
+    "name": "دَال",
+    "order": 8
+  },
+  {
+    "id": "dhaal",
+    "letter": "ذ",
+    "name": "ذَال",
+    "order": 9
+  },
+  {
+    "id": "raa",
+    "letter": "ر",
+    "name": "رَاء",
+    "order": 10
+  },
+  {
+    "id": "zaay",
+    "letter": "ز",
+    "name": "زَاي",
+    "order": 11
+  },
+  {
+    "id": "siin",
+    "letter": "س",
+    "name": "سِين",
+    "order": 12
+  },
+  {
+    "id": "shiin",
+    "letter": "ش",
+    "name": "شِين",
+    "order": 13
+  },
+  {
+    "id": "saad",
+    "letter": "ص",
+    "name": "صَاد",
+    "order": 14
+  },
+  {
+    "id": "daad",
+    "letter": "ض",
+    "name": "ضَاد",
+    "order": 15
+  },
+  {
+    "id": "taa_emphatic",
+    "letter": "ط",
+    "name": "طَاء",
+    "order": 16
+  },
+  {
+    "id": "dhaa_emphatic",
+    "letter": "ظ",
+    "name": "ظَاء",
+    "order": 17
+  },
+  {
+    "id": "ayn",
+    "letter": "ع",
+    "name": "عَيْن",
+    "order": 18
+  },
+  {
+    "id": "ghayn",
+    "letter": "غ",
+    "name": "غَيْن",
+    "order": 19
+  },
+  {
+    "id": "faa",
+    "letter": "ف",
+    "name": "فَاء",
+    "order": 20
+  },
+  {
+    "id": "qaaf",
+    "letter": "ق",
+    "name": "قَاف",
+    "order": 21
+  },
+  {
+    "id": "kaaf",
+    "letter": "ك",
+    "name": "كَاف",
+    "order": 22
+  },
+  {
+    "id": "laam",
+    "letter": "ل",
+    "name": "لَام",
+    "order": 23
+  },
+  {
+    "id": "miim",
+    "letter": "م",
+    "name": "مِيم",
+    "order": 24
+  },
+  {
+    "id": "nuun",
+    "letter": "ن",
+    "name": "نُون",
+    "order": 25
+  },
+  {
+    "id": "haa_breath",
+    "letter": "ه",
+    "name": "هَاء",
+    "order": 26
+  },
+  {
+    "id": "waaw",
+    "letter": "و",
+    "name": "وَاو",
+    "order": 27
+  },
+  {
+    "id": "yaa",
+    "letter": "ي",
+    "name": "يَاء",
+    "order": 28
+  }
+]

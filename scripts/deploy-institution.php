@@ -75,7 +75,8 @@ try {
             $phonicsHashes['public/learn/'.$name] = $blending2State['receipt']['hashes'][$name];
         }
     }
-    // Retain the later, verified creator attribution in the public workbook entry.
+    // Retain creator attribution and its authenticated demo UI successor in
+    // the public entry. The preservation helper verifies both receipt chains.
     require_once __DIR__.'/creator-public-preservation.php';
     $creatorPublicState = hznCreatorPublicState($web);
     if ($creatorPublicState !== null) $phonicsHashes['public/learn/index.html'] = $creatorPublicState['hashes']['learn/index.html'];

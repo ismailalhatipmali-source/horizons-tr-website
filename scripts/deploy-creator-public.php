@@ -17,12 +17,14 @@ try{
         ||count($manifest['interface_languages']??[])!==32||count(array_unique($manifest['interface_languages']??[]))!==32
         ||array_keys($manifest['shared_sources']??[])!==['src/workbook-web/creator-credit-locales.json','src/workbook-web/creator-credit.js'])throw new RuntimeException('CREATOR_MANIFEST_INVALID');
     foreach($manifest['shared_sources'] as $relative=>$sha)if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!hash_equals($sha,hash('sha256',hznCreatorPublicRead(hznCreatorPublicPath($repo,$relative)))))throw new RuntimeException('CREATOR_SHARED_SOURCE_CHANGED');
+    // Later public UI receipts authenticate their current files and preserve
+    // this exact creator baseline. Do not republish obsolete creator sources.
+    $current=hznCreatorPublicState($web);if($current){if(!hash_equals($current['manifest_sha256'],hash('sha256',$manifestRaw)))throw new RuntimeException('CREATOR_DIFFERENT_RELEASE_INSTALLED');echo "CURRENT: creator attribution verified; 32 languages; 497 demo curriculum/media preserved.\n";exit;}
     $payloads=[];$total=0;
     foreach($allowed as $relative=>$source){
         $entry=$manifest['files'][$relative];if(($entry['source']??'')!==$source||!is_int($entry['bytes']??null)||$entry['bytes']<1||$entry['bytes']>2097152||!preg_match('/^[a-f0-9]{64}$/D',$entry['sha256']??'')||!preg_match('/^[a-f0-9]{64}$/D',$entry['before']??''))throw new RuntimeException('CREATOR_SOURCE_INVALID');
         $raw=hznCreatorPublicRead(hznCreatorPublicPath($repo,$source));$total+=strlen($raw);if(strlen($raw)!==$entry['bytes']||!hash_equals($entry['sha256'],hash('sha256',$raw))||$total>2097152)throw new RuntimeException('CREATOR_SOURCE_CHANGED');$payloads[$relative]=$raw;
     }
-    $current=hznCreatorPublicState($web);if($current){if(!hash_equals($current['manifest_sha256'],hash('sha256',$manifestRaw)))throw new RuntimeException('CREATOR_DIFFERENT_RELEASE_INSTALLED');echo "CURRENT: creator attribution verified; 32 languages; 497 demo curriculum/media preserved.\n";exit;}
     foreach($allowed as $relative=>$source){$target=hznCreatorPublicPath($web,$relative);$raw=hznCreatorPublicRead($target);if(!hash_equals($manifest['files'][$relative]['before'],hash('sha256',$raw)))throw new RuntimeException('CREATOR_PUBLIC_BASELINE_CHANGED');$originals[$relative]=['bytes'=>$raw,'mode'=>fileperms($target)&0777];}
     $baseline=json_decode($originals['try/demo-asset-manifest.json']['bytes'],true,32,JSON_THROW_ON_ERROR);$demo=json_decode($payloads['try/demo-asset-manifest.json'],true,32,JSON_THROW_ON_ERROR);$projection=$demo;foreach(['index.html','workbook.js']as$name)$projection['files'][$name]=$baseline['files'][$name];
     if($projection!==$baseline||($demo['version']??'')!=='1.4.5'||($demo['edition']??'')!=='demo'||($demo['chapterIds']??[])!==$manifest['chapter_ids'])throw new RuntimeException('CREATOR_DEMO_CONTENT_CHANGED');

@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "version": "demo-experience-20261004-r1",
+  "files": {
+    "try/index.html": {
+      "source": "release-assets/demo-experience-20261004-r1/files/try/index.html",
+      "before": "5877c9bca0ecdff0a5fc394aebc9edd9e7d220beb9d79a0c90ea9eaa4d3740b0",
+      "sha256": "da8dc563a0f1bc585b329c3a118c343037cc01eee4d10a9238292cf37484c7d0",
+      "bytes": 5825
+    },
+    "try/workbook.js": {
+      "source": "release-assets/demo-experience-20261004-r1/files/try/workbook.js",
+      "before": "0574fe4429f0858ea63a0dc7127d957997045c827e890b1abf2fd1722ca52c8a",
+      "sha256": "cc32b4183ecd75af9196a4cd209f7894147b9415152caa6ff1d1357d8f2d15c7",
+      "bytes": 216220
+    },
+    "try/sw.js": {
+      "source": "release-assets/demo-experience-20261004-r1/files/try/sw.js",
+      "before": "eb26d7daa8d783f143001b88b1a4af8bcf8736a51e37f492636795e066aedb7d",
+      "sha256": "2d5185ed0e7f86c6b3da87ffe521f53c8f08aba25e4522a7ef7db7a8aa1c74a6",
+      "bytes": 11440
+    },
+    "learn/index.html": {
+      "source": "release-assets/demo-experience-20261004-r1/files/learn/index.html",
+      "before": "5b60b2f560615419df2a9bef483e69b94975e84e877680dec5ac0b3bab7ae9df",
+      "sha256": "6a3a347d69ec994cc21680086ef0a7d6e762195fbc1dc2f2b5604c3b0a7ea418",
+      "bytes": 56787
+    },
+    "try/demo-asset-manifest.json": {
+      "source": "release-assets/demo-experience-20261004-r1/files/try/demo-asset-manifest.json",
+      "before": "121713f1e49d276b714ab682feb29364f7b92c6c4d1cbac81e40037a821715c0",
+      "sha256": "ce39a6d1d25c65a2735fb0f759744cacac2dbaaaca80471aec3453f731c0c133",
+      "bytes": 119395
+    },
+    "try/demo-experience.css": {
+      "source": "release-assets/demo-experience-20261004-r1/files/try/demo-experience.css",
+      "before": null,
+      "sha256": "f49b4e68f040cf7c7db97fc312f77cd21895b59f3a8a587127d4d06df6cb65a1",
+      "bytes": 20408
+    },
+    "learn/sw.js": {
+      "source": "release-assets/demo-experience-20261004-r1/files/learn/sw.js",
+      "before": "b1fb25fd68b21fdd6f0dfc892297b31bd2205b490f1fa7f145ee3d38758cae71",
+      "sha256": "b1e196995ae8e59f2af87c59d7f0a9e430239c74c25a601f426305c0b0ea666d",
+      "bytes": 9699
+    }
+  },
+  "input_sources": {
+    "src/demo-pwa/index.html": "da8dc563a0f1bc585b329c3a118c343037cc01eee4d10a9238292cf37484c7d0",
+    "src/demo-pwa/workbook.js": "0574fe4429f0858ea63a0dc7127d957997045c827e890b1abf2fd1722ca52c8a",
+    "src/demo-pwa/sw.js": "eb26d7daa8d783f143001b88b1a4af8bcf8736a51e37f492636795e066aedb7d",
+    "src/workbook-web/index.html": "de520c01ca7814dbb71ffd99f24ac04fdadc89b3d037f58aa4b3a7885b242088",
+    "src/demo-pwa/demo-experience.css": "f49b4e68f040cf7c7db97fc312f77cd21895b59f3a8a587127d4d06df6cb65a1",
+    "src/demo-pwa/demo-experience.js": "bdc7b1b2d59aeba7f4d87f187218d6f3beae666a19e833b14c5a9fb928846a25",
+    "src/demo-pwa/demo-experience-locales.json": "9a71b43fd5ceef1d1449b9caa5465a3ec4e5e5a0f215c9b9373f391091b67b41",
+    "src/demo-pwa/demo-letter-overview.json": "20e0bed6e980777b365517bd2096df0f07ead4c8ada255aa0a6b0edd4e514696",
+    "release-assets/demo-experience-20261004-r1/baseline-learn-sw.js": "b1fb25fd68b21fdd6f0dfc892297b31bd2205b490f1fa7f145ee3d38758cae71"
+  },
+  "demo_curriculum_count": 497,
+  "demo_curriculum_sha256": "267cb3aa8c64cd35fca83db83f444af97a14b3a592d6d0a54f1bfcf329b87866",
+  "chapter_ids": [
+    "baa",
+    "dhaa_emphatic",
+    "daad",
+    "yaa",
+    "dhaal"
+  ],
+  "interface_languages": [
+    "en",
+    "ar",
+    "tr",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "uk",
+    "pl",
+    "cs",
+    "ro",
+    "hu",
+    "el",
+    "sv",
+    "da",
+    "no",
+    "fi",
+    "bg",
+    "sr",
+    "hr",
+    "he",
+    "fa",
+    "ur",
+    "hi",
+    "bn",
+    "id",
+    "ms",
+    "zh",
+    "ja"
+  ],
+  "compiled_demo_hook_sha256": "2cee4fd508235bb7e64334ccc1d3b855166451b2bb3fe7dd2cc0416dd4d6084d",
+  "public_letter_metadata_count": 28
+}

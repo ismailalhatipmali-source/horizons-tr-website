@@ -79,6 +79,10 @@ function hznResponsiveState(string $web, array $original, string $originalReceip
     $shared = ['asset-manifest.json', 'sw.js', 'content/1.4.1/workbook.js.hzn'];
     hznResponsiveCheckReceipt($receipt, $original, $originalReceiptSha);
     hznResponsiveCheckHistory($private, $receipt, $original, $originalReceiptSha);
+    require_once __DIR__.'/creator-public-preservation.php';
+    $creatorState=hznCreatorPublicState($web);$demo=$creatorState['demo_experience']??null;
+    if($demo!==null&&$receipt['patch']!==HZN_RESPONSIVE_RELEASE)throw new RuntimeException('RESPONSIVE_DEMO_LINEAGE_INVALID');
+    $responsiveWorker=$demo===null?hznB3Path($web,'learn/sw.js'):hznB3Path($home,'.horizons-demo-experience/baseline/learn/sw.js');
     $learn = hznB3Path($web, 'learn');
     $qa = $receipt['public_qa'] ?? [];
     $qaPath = hznB3Path($learn, 'layout-check/index.html');
@@ -92,7 +96,7 @@ function hznResponsiveState(string $web, array $original, string $originalReceip
     $backups = ['asset-manifest.json' => 'baseline-manifest.json', 'sw.js' => 'baseline-sw.js', 'content/1.4.1/workbook.js.hzn' => 'baseline-workbook.hzn'];
     foreach ($shared as $relative) {
         $sha = $receipt['hashes'][$relative];
-        $current = hznB3Path($learn, $relative);
+        $current = $relative==='sw.js'?$responsiveWorker:hznB3Path($learn, $relative);
         $before = hznB3Path($private, $backups[$relative]);
         if (!preg_match('/^[a-f0-9]{64}$/D', $sha) || !is_file($current) || !hash_equals($sha, hash_file('sha256', $current))
             || !is_file($before) || !hash_equals($original['hashes'][$relative], hash_file('sha256', $before))) {
@@ -111,8 +115,9 @@ function hznResponsiveState(string $web, array $original, string $originalReceip
     $old = "const SHELL = 'hzn-web-shell-' + VERSION + '-blending3-20261004-r2';";
     $new = "const SHELL = 'hzn-web-shell-' + VERSION + '-" . $receipt['worker_suffix'] . "';";
     $beforeWorker = hznB3Read(hznB3Path($private, 'baseline-sw.js'));
-    if (substr_count($beforeWorker, $old) !== 1 || str_replace($old, $new, $beforeWorker) !== hznB3Read(hznB3Path($learn, 'sw.js'))) {
+    if (substr_count($beforeWorker, $old) !== 1 || str_replace($old, $new, $beforeWorker) !== hznB3Read($responsiveWorker)) {
         throw new RuntimeException('RESPONSIVE_WORKER_CHANGED');
     }
+    if($demo!==null){$receipt['hashes']['sw.js']=$demo['hashes']['learn/sw.js'];$receipt['worker_suffix'].='-demo-experience-20261004-r1';}
     return $receipt;
 }

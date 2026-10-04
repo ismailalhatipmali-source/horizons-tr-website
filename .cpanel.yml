@@ -14,3 +14,4 @@ deployment:
     - if [ ! -f /home2/horizonstr/.horizons-blending3/receipt.json ] && [ -f /home2/horizonstr/horizons-blending3-update/release-assets/blending3-20261004-r2/release.json ]; then /usr/local/bin/ea-php82 -d error_log=/home2/horizonstr/horizons-blending3-update/deployment-php.log /home2/horizonstr/horizons-blending3-update/scripts/deploy-blending3.php /home2/horizonstr/public_html/; fi
     - /usr/local/bin/ea-php82 scripts/deploy-creator-public.php /home2/horizonstr/public_html/ --publish
     - /usr/local/bin/ea-php82 scripts/deploy-workbook-responsive.php /home2/horizonstr/public_html/
+    - /usr/local/bin/ea-php82 scripts/deploy-demo-experience.php /home2/horizonstr/public_html/ --publish
