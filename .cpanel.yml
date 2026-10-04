@@ -15,3 +15,4 @@ deployment:
     - /usr/local/bin/ea-php82 scripts/deploy-creator-public.php /home2/horizonstr/public_html/ --publish
     - /usr/local/bin/ea-php82 scripts/deploy-workbook-responsive.php /home2/horizonstr/public_html/
     - /usr/local/bin/ea-php82 scripts/deploy-demo-experience.php /home2/horizonstr/public_html/ --publish
+    - /usr/local/bin/ea-php82 scripts/deploy-workbook-review.php /home2/horizonstr/public_html/ --publish

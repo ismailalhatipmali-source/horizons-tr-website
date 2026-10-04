@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Cache-Control" content="no-store">
+<title>HORIZONS — مراجعة أحجام الشاشات</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#e9efe9;color:#0b253b;font:16px/1.7 system-ui,sans-serif}header{padding:16px;background:#fffdf8;border-bottom:1px solid #bfcec5}h1{font-size:22px;margin:0 0 5px}p{margin:5px 0}form{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin-top:12px}label{display:grid;gap:4px;min-width:130px}button,select{font:inherit;min-height:44px;border:1px solid #95b5a8;border-radius:10px;background:white;color:#0b253b;padding:7px 12px}button{cursor:pointer;background:#07766e;color:white}button:disabled{opacity:.5;cursor:wait}button:focus-visible,select:focus-visible{outline:3px solid #ab591d;outline-offset:3px}#review-status{font-weight:650}#review-stage{direction:ltr;overflow:auto;padding:16px;max-width:100%;background:#d7e2dc}#review-frame{display:block;width:390px;height:1150px;max-width:none;border:0;background:white;box-shadow:0 3px 18px #0b253b22}#review-overview{display:flex;flex-wrap:wrap;gap:20px;align-items:start}#review-overview[hidden]{display:none}#review-overview section{flex:0 0 auto}#review-overview h2{font-size:16px;margin:0;padding:5px 10px;background:white}#review-overview iframe{display:block;border:0;max-width:none;height:1100px;background:white}pre{direction:ltr;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;margin:0;padding:16px;font:13px/1.5 monospace;background:#fffdf8}small{color:#45686b}
+#review-frame[hidden]{display:none}
+</style>
+</head>
+<body>
+<header>
+<h1>مراجعة المطوّر — أحجام الشاشات</h1>
+<p>تعرض هذه الصفحة الكراسة التجريبية الفعلية داخل إطار بعرض محدد. عرض الدمج الثلاثي يستخدم صفحة الاختبار الاصطناعية فقط، دون المنهج المدفوع.</p>
+<small>Developer review. Measurements cover the currently visible screen; inspect text and Arabic marks visually as well. This page does not change lessons, licensing, or user progress by itself.</small>
+<form id="review-controls">
+<label>الصفحة<select id="review-target"><option value="demo">النسخة التجريبية الفعلية</option><option value="paid-fixture">الدمج الثلاثي — بيانات اصطناعية</option></select></label>
+<label>عرض الإطار<select id="review-width"><option>320</option><option>360</option><option selected>390</option><option>414</option><option>768</option><option>1024</option><option>1440</option></select></label>
+<button id="review-measure" type="button">افحص الشاشة الحالية</button>
+<button id="review-run" type="button">افحص الأحجام السبعة</button>
+<button id="review-show-overview" type="button">اعرض الأحجام معًا</button>
+</form>
+<p id="review-status" role="status">جارٍ فتح الصفحة…</p>
+</header>
+<div id="review-stage"><iframe id="review-frame" title="HORIZONS workbook at 390 pixels" width="390" height="1150" src="/try/?lang=ar"></iframe><div id="review-overview" hidden></div></div>
+<pre id="review-results" aria-live="polite">Loading…</pre>
+<script>
+(()=>{
+ 'use strict';
+ const widths=[320,360,390,414,768,1024,1440];
+ const frame=document.querySelector('#review-frame'), widthControl=document.querySelector('#review-width'), targetControl=document.querySelector('#review-target'), result=document.querySelector('#review-results'), status=document.querySelector('#review-status'), overview=document.querySelector('#review-overview');
+ const targets={demo:'/try/?lang=ar','paid-fixture':'/learn/layout-check/index.html'};
+ let running=false, navigationId=0;
+ const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+ const visible=e=>Boolean(e&&e.getClientRects().length&&e.ownerDocument.defaultView.getComputedStyle(e).visibility!=='hidden');
+ const round=n=>Math.round(n*10)/10;
+ function describe(e){return{tag:e.tagName.toLowerCase(),id:e.id||null,class:e.className?.baseVal??String(e.className||''),text:(e.textContent||'').trim().replace(/\s+/g,' ').slice(0,100)};}
+ function dimensions(e){const b=e.getBoundingClientRect();return {...describe(e),width:round(b.width),height:round(b.height),ratio:round(b.width/b.height),scrollWidth:e.scrollWidth,clientWidth:e.clientWidth,fontSize:e.ownerDocument.defaultView.getComputedStyle(e).fontSize,lineHeight:e.ownerDocument.defaultView.getComputedStyle(e).lineHeight};}
+ function textClipping(scope){
+  const d=scope.ownerDocument||scope, findings=[];
+  const nodes=d.createTreeWalker(scope,d.defaultView.NodeFilter.SHOW_TEXT);
+  let text;
+  while((text=nodes.nextNode())){
+   if(!text.textContent.trim())continue;
+   const el=text.parentElement;if(!el||!visible(el)||['SCRIPT','STYLE','OPTION','TEXTAREA','SVG','TEXT'].includes(el.tagName)||el.closest('pre,.sr-only'))continue;
+   const range=d.createRange();range.selectNodeContents(text);
+   for(const box of range.getClientRects()){
+    if(!box.width||!box.height)continue;
+    let ancestor=el;
+    while(ancestor&&ancestor!==scope){
+     const cs=d.defaultView.getComputedStyle(ancestor),rect=ancestor.getBoundingClientRect();
+     const clipX=['hidden','clip'].includes(cs.overflowX),clipY=['hidden','clip'].includes(cs.overflowY);
+     if((clipX&&(box.left<rect.left-1||box.right>rect.right+1))||(clipY&&(box.top<rect.top-1||box.bottom>rect.bottom+1))){findings.push({text:text.textContent.trim().slice(0,100),container:describe(ancestor),horizontal:clipX&&(box.left<rect.left-1||box.right>rect.right+1),vertical:clipY&&(box.top<rect.top-1||box.bottom>rect.bottom+1)});break;}
+     ancestor=ancestor.parentElement;
+    }
+   }
+  }
+  return [...new Map(findings.map(f=>[JSON.stringify(f),f])).values()];
+ }
+ function metrics(){
+  const d=frame.contentDocument,w=frame.contentWindow;
+  if(!d||!w)throw Error('Review iframe is unavailable.');
+  const shadow=d.querySelector('#hzn-blending3-host')?.shadowRoot;
+  const scopes=[d,...(shadow?[shadow]:[])];
+  const nav=d.querySelector('#course-nav');
+  const navButtons=nav?[...nav.querySelectorAll('button')].filter(visible):[];
+  const cards=[...d.querySelectorAll('.alphabet-grid .letter-card,.chapter-grid .chapter-card,.word-overview .vocab-strip > button')].filter(visible);
+  if(shadow)cards.push(...[...shadow.querySelectorAll('.word-chip,.all-word-grid button')].filter(visible));
+  const clippedText=scopes.flatMap(scope=>textClipping(scope===d?d.body:scope));
+  const buttonOverflow=scopes.flatMap(scope=>[...scope.querySelectorAll('button')].filter(visible).filter(e=>e.scrollWidth>e.clientWidth+1).map(dimensions));
+  const touchTargets=scopes.flatMap(scope=>[...scope.querySelectorAll('button,a,select,summary,input:not([type=file])')].filter(visible).filter(e=>!e.matches('input[type=checkbox],input[type=range]')).filter(e=>{const b=e.getBoundingClientRect();return b.height<40||b.width<40;}).map(dimensions));
+  const heading=d.querySelector('.lesson-heading'),title=d.querySelector('.lesson-heading > div:first-child'),progress=d.querySelector('.lesson-heading .progress-box');
+  return {
+   target:targetControl.value,sourceUrl:w.location.href,fixture:shadow?'synthetic-only':'actual-public-demo',requestedWidth:Number(widthControl.value),viewport:w.innerWidth,documentWidth:d.documentElement.scrollWidth,horizontalOverflow:d.documentElement.scrollWidth>w.innerWidth+1,fontsReady:d.fonts.status==='loaded',locale:d.documentElement.lang,direction:d.documentElement.dir,readerFont:d.documentElement.dataset.typographyFont||null,readerSize:d.documentElement.dataset.typographySize||null,
+   navColumns:nav?w.getComputedStyle(nav).gridTemplateColumns.split(' ').length:0,navButtons:navButtons.length,navGeometry:navButtons.map(dimensions),letterCards:d.querySelectorAll('.alphabet-grid .letter-card').length,chapterCards:d.querySelectorAll('.chapter-grid .chapter-card').length,cardGeometry:cards.map(dimensions),
+   clippedText,buttonOverflow,compactTouchTargets:touchTargets,openDialogs:[...d.querySelectorAll('dialog[open]')].map(dimensions),heading:heading&&title?{width:round(heading.getBoundingClientRect().width),titleWidth:round(title.getBoundingClientRect().width),progressWidth:progress&&visible(progress)?round(progress.getBoundingClientRect().width):null}:null,
+   limitations:['Text ranges detect box clipping, not the exact ink bounds of Arabic marks. Visual inspection is required.','Only visible panels are measured. Locked dialogs, free lessons, settings, and additional practice require separate UI checks.','Compact targets are reported for review; they are not automatically classified as accessibility failures.','The paid three-letter fixture uses synthetic content, not a licensed user session.']
+  };
+ }
+ async function ready(){
+  for(let tries=0;tries<150;tries++){
+   const d=frame.contentDocument;
+   if(d&&d.readyState==='complete'&&(d.querySelector('#course-nav button')||d.querySelector('#hzn-blending3-host')?.shadowRoot?.querySelector('.word-chip'))){await d.fonts.ready;await pause(120);return;}
+   await pause(100);
+  }
+  throw Error('Workbook did not finish loading within 15 seconds.');
+ }
+ function singleMode(){overview.hidden=true;frame.hidden=false;document.querySelector('#review-show-overview').textContent='اعرض الأحجام معًا';}
+ function setWidth(width){widthControl.value=String(width);frame.width=String(width);frame.style.width=width+'px';frame.title='HORIZONS workbook at '+width+' pixels';}
+ function paint(value){result.textContent=JSON.stringify(value,null,2);result.dataset.state=value.horizontalOverflow||value.clippedText?.length||value.buttonOverflow?.length?'review':'pass';status.textContent='تم فحص عرض '+value.viewport+' بكسل — '+value.locale;}
+ async function measure(){try{await ready();paint(metrics());}catch(error){status.textContent=error.message;result.dataset.state='error';}}
+ widthControl.addEventListener('change',async()=>{singleMode();setWidth(Number(widthControl.value));await pause(180);await measure();});
+ targetControl.addEventListener('change',()=>{singleMode();navigationId++;status.textContent='جارٍ فتح الصفحة…';frame.src=targets[targetControl.value];});
+ frame.addEventListener('load',()=>{if(!running)measure();});
+ document.querySelector('#review-measure').addEventListener('click',measure);
+ document.querySelector('#review-run').addEventListener('click',async()=>{
+  if(running)return;running=true;singleMode();const restore=Number(widthControl.value),runId=navigationId;const disabled=[...document.querySelectorAll('#review-controls button,#review-controls select')];disabled.forEach(e=>e.disabled=true);
+  try{await ready();const checks=[];for(const width of widths){if(runId!==navigationId)throw Error('Review navigation changed.');setWidth(width);status.textContent='جارٍ فحص '+width+' بكسل…';await pause(220);await frame.contentDocument.fonts.ready;checks.push(metrics());}result.textContent=JSON.stringify({status:checks.every(c=>!c.horizontalOverflow&&!c.clippedText.length&&!c.buttonOverflow.length)?'pass':'review',target:targetControl.value,checks},null,2);result.dataset.state=JSON.parse(result.textContent).status;status.textContent='اكتمل فحص الأحجام السبعة.';}
+  catch(error){status.textContent=error.message;result.dataset.state='error';}
+  finally{setWidth(restore);disabled.forEach(e=>e.disabled=false);running=false;}
+ });
+ document.querySelector('#review-show-overview').addEventListener('click',()=>{
+  if(!overview.hidden){singleMode();return;}
+  frame.hidden=true;overview.hidden=false;overview.replaceChildren();
+  for(const width of widths){const section=document.createElement('section'),heading=document.createElement('h2'),child=document.createElement('iframe');heading.textContent=width+' px';child.width=String(width);child.style.width=width+'px';child.title='HORIZONS '+width+' pixels';child.src=targets[targetControl.value];section.append(heading,child);overview.append(section);}
+  document.querySelector('#review-show-overview').textContent='عد إلى الإطار المفرد';status.textContent='معاينة الأحجام السبعة — تفاعل مع كل إطار لفحص الدروس.';
+ });
+ document.querySelector('#review-controls').addEventListener('submit',event=>event.preventDefault());
+})();
+</script>
+</body>
+</html>
