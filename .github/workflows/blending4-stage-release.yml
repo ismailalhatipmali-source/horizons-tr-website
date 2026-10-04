@@ -1,0 +1,64 @@
+name: Verify and stage Section 05 release
+on:
+  push:
+    branches: ['work/blending4-20261004']
+    paths: ['.github/workflows/blending4-stage-release.yml', '.section05-stage/**']
+permissions:
+  contents: write
+jobs:
+  stage:
+    if: github.repository == 'ismailalhatipmali-source/horizons-tr-website'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reconstruct and verify the reviewed public source patch
+        shell: python
+        run: |
+          import base64, hashlib, json, lzma, pathlib, subprocess
+          expected_base = '35224ea3ecfb5493baf0f9a4f3328c8f86987849'
+          main = subprocess.check_output(['git','ls-remote','origin','refs/heads/main'],text=True).split()[0]
+          assert main == expected_base, 'Main changed; review required before staging'
+          encoded = ''.join(pathlib.Path(f'.section05-stage/part-{i}.txt').read_text() for i in range(1,4))
+          raw = lzma.decompress(base64.b64decode(encoded,validate=True))
+          assert hashlib.sha256(raw).hexdigest() == '6a2f34fb4466a0654a86c75bae393a78981022d14c545de6adae953def44202b', 'Source envelope mismatch'
+          files = json.loads(raw)
+          expected = {
+            'src/workbook-web/blending4-component.js': 'a66b838a5f10dba8f4cbbf162798d52d0b04f3db5acb6bab301fc851df103a2c',
+            'src/workbook-web/blending4-component.css': 'ff9ba6d56165214bd08873ca43117a6c3696a5d334021b2f90ee2064be7aac3a',
+            'src/workbook-web/blending4-extension.js': 'de3fb4cca3172fb25d87e7ee1c91693b618f50d2d40b95efef4acfcc2c284367',
+            'scripts/deploy-blending4.php': 'f467561fedc29aaa88cd083d87cd8e6e0770c8c728fd9e7dcd6820ec009a9384',
+            'scripts/blending4-preservation.php': '53729d371284de54a61a49719e95a197de6087e4f1133a2f88f2897764ce1148',
+            'scripts/comprehensive-meaning-preservation.php': '555fb5016090d0b927a6ef52af444930d207864dac0e92d6dd6b1e68573e8796',
+            'scripts/blending3-preservation.php': '5533f823c104dccf17cfb4f040568850a8dc3bdb49603a2e969c67239b93b92f',
+            'release-assets/blending4-20261004-r1/manifest.json': '68059cbde172a66284d2f815a31d34c949e41f6b39c76597aa4a4bc8adb1b90a',
+            '.cpanel.yml': '4cf19cfe66865173631adc30a8b7d21910a4681786b1e6a8b991c5d9b2d7431d'
+          }
+          assert set(files) == set(expected), 'Unexpected source paths'
+          dest = pathlib.Path('/tmp/horizons-section05-release')
+          subprocess.run(['git','worktree','add','--detach',str(dest),expected_base],check=True)
+          for path,text in files.items():
+            data = text.encode('utf-8')
+            assert hashlib.sha256(data).hexdigest() == expected[path], path
+            target = dest/path
+            target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_bytes(data)
+            if path.endswith('.php'):
+              subprocess.run(['php','-l',str(target)],check=True)
+            elif path.endswith('.js'):
+              subprocess.run(['node','--check',str(target)],check=True)
+          subprocess.run(['php','-r','require "scripts/blending4-preservation.php"; $r=hznB4Release(getcwd()); echo "Verified: ".count($r["assets"])." private asset specifications; 159 recordings; 32 languages.\\n";'],cwd=dest,check=True)
+          subprocess.run(['git','add','--',*expected.keys()],cwd=dest,check=True)
+          changed = subprocess.check_output(['git','diff','--cached','--name-only'],cwd=dest,text=True).splitlines()
+          assert set(changed) == set(expected), 'Commit scope mismatch'
+          subprocess.run(['git','diff','--cached','--check'],cwd=dest,check=True)
+          subprocess.run(['git','diff','--cached','--stat'],cwd=dest,check=True)
+          subprocess.run(['git','config','user.name','github-actions[bot]'],cwd=dest,check=True)
+          subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],cwd=dest,check=True)
+          subprocess.run(['git','commit','-m','Add Section 05 publisher and protected four-letter blending integration'],cwd=dest,check=True)
+          subprocess.run(['git','push','origin','HEAD:refs/heads/release/blending4-20261005-r1'],cwd=dest,check=True)
+          commit = subprocess.check_output(['git','rev-parse','HEAD'],cwd=dest,text=True).strip()
+          print('STAGED_RELEASE_COMMIT='+commit)
+          print('Main and the live hosting were not modified by this staging job.')
