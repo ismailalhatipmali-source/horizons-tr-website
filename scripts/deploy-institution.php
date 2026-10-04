@@ -80,6 +80,9 @@ try {
     require_once __DIR__.'/creator-public-preservation.php';
     $creatorPublicState = hznCreatorPublicState($web);
     if ($creatorPublicState !== null) $phonicsHashes['public/learn/index.html'] = $creatorPublicState['hashes']['learn/index.html'];
+    require_once __DIR__.'/demo-marketing-preservation.php';
+    $marketingState=hznMCState($web);
+    if($marketingState!==null)foreach($marketingState['hashes'] as $relative=>$sha)$phonicsHashes['public/'.$relative]=$sha;
     $changes = []; $total = 0;
     foreach ($manifest['files'] as $path => $entry) {
         $isPrivate = !str_starts_with($path,'public/');

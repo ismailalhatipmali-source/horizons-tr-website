@@ -1,0 +1,130 @@
+{
+  "en": {
+    "demo_intro": "Explore the workbook’s interactive demo and try the available lessons. Unlock the locked sections by purchasing the full version.",
+    "product_subtitle": "Explore the interactive workbook without an account or payment."
+  },
+  "ar": {
+    "demo_intro": "استكشف التجربة التفاعلية للكراسة، وجرّب الدروس المتاحة. تفتح الأقسام المقفلة عند شراء النسخة الكاملة.",
+    "product_subtitle": "استكشف الكراسة التفاعلية دون حساب أو دفع."
+  },
+  "tr": {
+    "demo_intro": "Çalışma kitabının etkileşimli demosunu keşfedin ve erişilebilir dersleri deneyin. Kilitli bölümler, tam sürümü satın aldığınızda açılır.",
+    "product_subtitle": "Hesap açmadan veya ödeme yapmadan etkileşimli çalışma kitabını keşfedin."
+  },
+  "fr": {
+    "demo_intro": "Découvrez la démo interactive du cahier et essayez les leçons disponibles. L’achat de la version complète donne accès aux sections verrouillées.",
+    "product_subtitle": "Découvrez le cahier interactif sans compte ni paiement."
+  },
+  "es": {
+    "demo_intro": "Explora la demo interactiva del cuaderno y prueba las lecciones disponibles. Las secciones bloqueadas se desbloquean al comprar la versión completa.",
+    "product_subtitle": "Explora el cuaderno interactivo sin cuenta ni pago."
+  },
+  "de": {
+    "demo_intro": "Entdecken Sie die interaktive Demo des Arbeitshefts und probieren Sie die verfügbaren Lektionen aus. Mit dem Kauf der Vollversion werden die gesperrten Bereiche freigeschaltet.",
+    "product_subtitle": "Entdecken Sie das interaktive Arbeitsheft ohne Konto oder Zahlung."
+  },
+  "it": {
+    "demo_intro": "Esplora la demo interattiva del quaderno e prova le lezioni disponibili. Le sezioni bloccate si sbloccano acquistando la versione completa.",
+    "product_subtitle": "Esplora il quaderno interattivo senza creare un account né effettuare un pagamento."
+  },
+  "pt": {
+    "demo_intro": "Explore a demonstração interativa do caderno e experimente as lições disponíveis. As seções bloqueadas ficam disponíveis ao comprar a versão completa.",
+    "product_subtitle": "Explore o caderno interativo sem criar uma conta nem efetuar um pagamento."
+  },
+  "nl": {
+    "demo_intro": "Ontdek de interactieve demo van het werkboek en probeer de beschikbare lessen. De vergrendelde onderdelen worden toegankelijk wanneer u de volledige versie koopt.",
+    "product_subtitle": "Ontdek het interactieve werkboek zonder account of betaling."
+  },
+  "ru": {
+    "demo_intro": "Изучите интерактивную демоверсию рабочей тетради и попробуйте доступные уроки. Закрытые разделы открываются после покупки полной версии.",
+    "product_subtitle": "Познакомьтесь с интерактивной рабочей тетрадью без регистрации и оплаты."
+  },
+  "uk": {
+    "demo_intro": "Ознайомтеся з інтерактивною демоверсією робочого зошита та спробуйте доступні уроки. Закриті розділи відкриваються після придбання повної версії.",
+    "product_subtitle": "Ознайомтеся з інтерактивним робочим зошитом без реєстрації та оплати."
+  },
+  "pl": {
+    "demo_intro": "Poznaj interaktywne demo zeszytu ćwiczeń i wypróbuj dostępne lekcje. Zablokowane sekcje odblokujesz po zakupie pełnej wersji.",
+    "product_subtitle": "Poznaj interaktywny zeszyt ćwiczeń bez zakładania konta i płacenia."
+  },
+  "cs": {
+    "demo_intro": "Prozkoumejte interaktivní ukázku pracovního sešitu a vyzkoušejte dostupné lekce. Uzamčené části se zpřístupní po zakoupení plné verze.",
+    "product_subtitle": "Prozkoumejte interaktivní pracovní sešit bez účtu a placení."
+  },
+  "ro": {
+    "demo_intro": "Explorează demonstrația interactivă a caietului și încearcă lecțiile disponibile. Secțiunile blocate devin accesibile după cumpărarea versiunii complete.",
+    "product_subtitle": "Explorează caietul interactiv fără cont și fără plată."
+  },
+  "hu": {
+    "demo_intro": "Fedezze fel a munkafüzet interaktív bemutatóját, és próbálja ki az elérhető leckéket. A lezárt részek a teljes verzió megvásárlásával válnak elérhetővé.",
+    "product_subtitle": "Fedezze fel az interaktív munkafüzetet fiók létrehozása és fizetés nélkül."
+  },
+  "el": {
+    "demo_intro": "Εξερευνήστε τη διαδραστική δοκιμαστική έκδοση του τετραδίου και δοκιμάστε τα διαθέσιμα μαθήματα. Οι κλειδωμένες ενότητες ξεκλειδώνουν με την αγορά της πλήρους έκδοσης.",
+    "product_subtitle": "Εξερευνήστε το διαδραστικό τετράδιο χωρίς λογαριασμό ή πληρωμή."
+  },
+  "sv": {
+    "demo_intro": "Utforska arbetsbokens interaktiva demo och prova de tillgängliga lektionerna. De låsta avsnitten öppnas när du köper den fullständiga versionen.",
+    "product_subtitle": "Utforska den interaktiva arbetsboken utan konto eller betalning."
+  },
+  "da": {
+    "demo_intro": "Udforsk arbejdsbogens interaktive demo, og prøv de tilgængelige lektioner. De låste afsnit åbnes, når du køber den fulde version.",
+    "product_subtitle": "Udforsk den interaktive arbejdsbog uden konto eller betaling."
+  },
+  "no": {
+    "demo_intro": "Utforsk arbeidsbokens interaktive demo og prøv de tilgjengelige leksjonene. De låste delene åpnes når du kjøper fullversjonen.",
+    "product_subtitle": "Utforsk den interaktive arbeidsboken uten konto eller betaling."
+  },
+  "fi": {
+    "demo_intro": "Tutustu työkirjan interaktiiviseen demoon ja kokeile saatavilla olevia oppitunteja. Lukitut osiot avautuvat, kun ostat täysversion.",
+    "product_subtitle": "Tutustu interaktiiviseen työkirjaan ilman käyttäjätiliä tai maksua."
+  },
+  "bg": {
+    "demo_intro": "Разгледайте интерактивната демоверсия на учебната тетрадка и изпробвайте достъпните уроци. Заключените раздели се отварят при закупуване на пълната версия.",
+    "product_subtitle": "Разгледайте интерактивната учебна тетрадка без регистрация и плащане."
+  },
+  "sr": {
+    "demo_intro": "Истражите интерактивну демо-верзију радне свеске и испробајте доступне лекције. Закључани одељци се откључавају куповином пуне верзије.",
+    "product_subtitle": "Истражите интерактивну радну свеску без налога и плаћања."
+  },
+  "hr": {
+    "demo_intro": "Istražite interaktivnu demonstraciju radne bilježnice i isprobajte dostupne lekcije. Zaključani odjeljci otključavaju se kupnjom pune verzije.",
+    "product_subtitle": "Istražite interaktivnu radnu bilježnicu bez računa i plaćanja."
+  },
+  "he": {
+    "demo_intro": "גלו את ההדגמה האינטראקטיבית של חוברת הלימוד ונסו את השיעורים הזמינים. הסעיפים הנעולים נפתחים עם רכישת הגרסה המלאה.",
+    "product_subtitle": "גלו את חוברת הלימוד האינטראקטיבית ללא חשבון או תשלום."
+  },
+  "fa": {
+    "demo_intro": "نسخهٔ آزمایشی تعاملی دفتر تمرین را بررسی کنید و درس‌های در دسترس را امتحان کنید. بخش‌های قفل‌شده با خرید نسخهٔ کامل باز می‌شوند.",
+    "product_subtitle": "دفتر تمرین تعاملی را بدون حساب کاربری یا پرداخت بررسی کنید."
+  },
+  "ur": {
+    "demo_intro": "ورک بک کے تعاملی آزمائشی نسخے کو دیکھیں اور دستیاب اسباق آزمائیں۔ مکمل نسخہ خریدنے پر بند حصے کھل جائیں گے۔",
+    "product_subtitle": "اکاؤنٹ بنائے یا ادائیگی کیے بغیر تعاملی ورک بک کو دیکھیں۔"
+  },
+  "hi": {
+    "demo_intro": "वर्कबुक का इंटरैक्टिव डेमो देखें और उपलब्ध पाठ आज़माएँ। पूरा संस्करण खरीदने पर लॉक किए गए भाग खुल जाते हैं।",
+    "product_subtitle": "बिना खाता बनाए या भुगतान किए इंटरैक्टिव वर्कबुक देखें।"
+  },
+  "bn": {
+    "demo_intro": "ওয়ার্কবুকের ইন্টারঅ্যাকটিভ ডেমো দেখুন এবং উপলব্ধ পাঠগুলো চেষ্টা করুন। পূর্ণ সংস্করণ কিনলে লক করা বিভাগগুলো খুলে যায়।",
+    "product_subtitle": "অ্যাকাউন্ট তৈরি বা অর্থ প্রদান ছাড়াই ইন্টারঅ্যাকটিভ ওয়ার্কবুক দেখুন।"
+  },
+  "id": {
+    "demo_intro": "Jelajahi demo interaktif buku latihan dan coba pelajaran yang tersedia. Bagian yang terkunci akan terbuka setelah Anda membeli versi lengkap.",
+    "product_subtitle": "Jelajahi buku latihan interaktif tanpa akun atau pembayaran."
+  },
+  "ms": {
+    "demo_intro": "Terokai demo interaktif buku latihan dan cuba pelajaran yang tersedia. Bahagian yang dikunci akan dibuka apabila anda membeli versi penuh.",
+    "product_subtitle": "Terokai buku latihan interaktif tanpa akaun atau bayaran."
+  },
+  "zh": {
+    "demo_intro": "探索互动练习册的演示版，体验当前开放的课程。购买完整版后即可解锁锁定的部分。",
+    "product_subtitle": "无需注册账户或付款，即可探索互动练习册。"
+  },
+  "ja": {
+    "demo_intro": "ワークブックのインタラクティブなデモで、利用できるレッスンを試してみましょう。完全版を購入すると、ロックされたセクションが利用できるようになります。",
+    "product_subtitle": "アカウント登録や支払いなしで、インタラクティブなワークブックを体験できます。"
+  }
+}

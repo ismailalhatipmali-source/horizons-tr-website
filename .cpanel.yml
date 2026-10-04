@@ -17,3 +17,4 @@ deployment:
     - /usr/local/bin/ea-php82 scripts/deploy-demo-experience.php /home2/horizonstr/public_html/ --publish
     - /usr/local/bin/ea-php82 scripts/deploy-workbook-review.php /home2/horizonstr/public_html/ --publish
     - /usr/local/bin/ea-php82 scripts/deploy-comprehensive-meaning.php /home2/horizonstr/public_html/ --publish
+    - /usr/local/bin/ea-php82 scripts/deploy-demo-marketing.php /home2/horizonstr/public_html/ --publish
