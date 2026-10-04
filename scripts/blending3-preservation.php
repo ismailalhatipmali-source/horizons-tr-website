@@ -33,7 +33,8 @@ function hznB3State(string $web):?array {
     if(($manifest['groups']['blending3']??[])!==array_merge(['workbook.js'],$paths))throw new RuntimeException('BLENDING3_GROUP_INVALID');
     $e=$manifest['files']['workbook.js']??[];
     if(($e['url']??'')!=='content/1.4.1/workbook.js.hzn'||($e['sha256']??'')!==$receipt['hashes'][$e['url']]||filesize(hznB3Path($learn,$e['url']))!==($e['bytes']??-1)||($e['encoding']??'')!=='gzip'||($e['decoded_bytes']??0)<1||$e['decoded_bytes']>33554432)throw new RuntimeException('BLENDING3_APPLICATION_INVALID');
-    $projected=$manifest;foreach($paths as $p)unset($projected['files'][$p]);$projected['files']['workbook.js']=$baseline['files']['workbook.js'];unset($projected['groups']['blending3']);
+    $b4=$responsive['comprehensive_meaning']['blending4']??null;
+    $projected=$b4===null?$manifest:$b4['baseline_manifest'];foreach($paths as $p)unset($projected['files'][$p]);$projected['files']['workbook.js']=$baseline['files']['workbook.js'];unset($projected['groups']['blending3']);
     $projected['groups']['all']=array_values(array_filter($projected['groups']['all'],fn($p)=>!in_array($p,$paths,true)));
     foreach(['blending3_release','blending3_word_count','blending3_practice_count','blending3_approved_clips','blending3_lesson_count','blending3_languages'] as $key)unset($projected[$key]);
     if(hznB3Json($projected)!==hznB3Json($baseline))throw new RuntimeException('BLENDING3_PREVIOUS_CONTENT_CHANGED');
