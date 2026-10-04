@@ -13,14 +13,29 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Prepare source snapshot
+      - name: Prepare code-only source snapshot
+        shell: python
         run: |
-          mkdir -p /tmp/horizons-review
-          git archive HEAD src scripts release-assets docs tests .cpanel.yml .gitignore README.md | tar -x -C /tmp/horizons-review
-          git rev-parse HEAD > /tmp/horizons-review/REVIEW_COMMIT.txt
+          import pathlib, shutil, subprocess, json
+          target=pathlib.Path('/tmp/horizons-review')
+          selected=[]
+          for name in subprocess.check_output(['git','ls-files'],text=True).splitlines():
+              p=pathlib.Path(name)
+              if p.parts[0] not in ['src','scripts','release-assets','docs','tests'] and name not in ['.cpanel.yml','.gitignore','README.md']:
+                  continue
+              if p.suffix.lower() not in ['.js','.mjs','.cjs','.json','.php','.py','.css','.html','.md','.yml','.txt'] and name!='.gitignore':
+                  continue
+              if p.stat().st_size>10_000_000:
+                  continue
+              dest=target/p
+              dest.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copyfile(p,dest)
+              selected.append({'path':name,'bytes':p.stat().st_size})
+          (target/'REVIEW_FILES.json').write_text(json.dumps(selected,indent=2))
+          (target/'REVIEW_COMMIT.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
       - uses: actions/upload-artifact@v4
         with:
-          name: horizons-section05-source-review
+          name: horizons-section05-code-review
           path: /tmp/horizons-review/
           include-hidden-files: true
           retention-days: 2
