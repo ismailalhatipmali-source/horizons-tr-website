@@ -38,6 +38,7 @@ try {
     if (is_link($private) || (file_exists($private) && !is_dir($private))) throw new RuntimeException('PRIVATE_ROOT_INVALID');
     require_once __DIR__.'/demo-marketing-preservation.php';
     $marketingState=hznMCState($web);
+    require_once __DIR__.'/pricing-cards-preservation.php';$pricingState=hznPCState($web);
     $changes = []; $total = 0;
     foreach ($manifest['files'] as $path => $entry) {
         $isPrivate = str_starts_with($path, 'private/');
@@ -60,6 +61,7 @@ try {
         $current = digest($target);
         if ($current === $entry['sha256']) continue;
         if($marketingState!==null&&str_starts_with($path,'public/')&&isset($marketingState['hashes'][substr($path,7)])&&$current!==null&&hash_equals($marketingState['hashes'][substr($path,7)],$current))continue;
+        if($pricingState!==null&&str_starts_with($path,'public/')&&isset($pricingState['hashes'][substr($path,7)])&&$current!==null&&hash_equals($pricingState['hashes'][substr($path,7)],$current))continue;
         $baseline = $entry['before'];
         if (is_array($baseline)) { $matches = in_array($current, $baseline, true); }
         elseif (is_string($baseline) && str_starts_with($baseline, 'git-sha1:') && $current !== null) {

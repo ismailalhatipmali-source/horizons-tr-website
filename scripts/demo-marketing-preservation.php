@@ -46,10 +46,17 @@ function hznMCState(string $web):?array {
         ||array_keys($receipt['inherited_receipts']??[])!==HZN_DEMO_MARKETING_ANCESTORS)throw new RuntimeException('MARKETING_RECEIPT_INVALID');
     foreach(HZN_DEMO_MARKETING_ANCESTORS as $name){$sha=$receipt['inherited_receipts'][$name];if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!hash_equals($sha,hash('sha256',hznMCRead(hznMCPath($home,$name)))))throw new RuntimeException('MARKETING_INHERITED_RECEIPT_CHANGED');}
     require_once __DIR__.'/comprehensive-meaning-preservation.php';if(hznCMState($web)===null)throw new RuntimeException('MARKETING_APPROVED_APP_REQUIRED');
+    require_once __DIR__.'/pricing-cards-preservation.php';$pricingState=hznPCState($web);
     foreach($paths as $relative){$entry=$release['files'][$relative];$current=hznMCPath($web,$relative);$baseline=hznMCPath($private,'baseline/'.$relative);
         if($receipt['hashes'][$relative]!==$entry['sha256']||$receipt['before_hashes'][$relative]!==$entry['before']||!is_int($receipt['before_modes'][$relative])||$receipt['before_modes'][$relative]<0||$receipt['before_modes'][$relative]>0777)throw new RuntimeException('MARKETING_RECEIPT_HASHES_INVALID');
         if(!is_file($baseline)||(fileperms($baseline)&0777)!==0600||!hash_equals($entry['before'],hash_file('sha256',$baseline)))throw new RuntimeException('MARKETING_BASELINE_CHANGED');
-        if(!is_file($current)||(fileperms($current)&0777)!==0644||!hash_equals($entry['sha256'],hash_file('sha256',$current))||hznMCReplace(hznMCRead($baseline),$entry)!==hznMCRead($current))throw new RuntimeException('MARKETING_PUBLIC_CHANGED');
+        $marketingRaw=hznMCReplace(hznMCRead($baseline),$entry);
+        if($pricingState!==null&&isset($pricingState['hashes'][$relative])){
+            if($pricingState['before_hashes'][$relative]!==$entry['sha256']||!hash_equals($entry['sha256'],hash('sha256',$marketingRaw)))throw new RuntimeException('MARKETING_SUCCESSOR_INVALID');
+            $expected=$pricingState['hashes'][$relative];
+        }else{$expected=$entry['sha256'];}
+        if(!is_file($current)||(fileperms($current)&0777)!==0644||!hash_equals($expected,hash_file('sha256',$current))
+           ||($pricingState===null&&$marketingRaw!==hznMCRead($current)))throw new RuntimeException('MARKETING_PUBLIC_CHANGED');
     }
     return $receipt;
 }

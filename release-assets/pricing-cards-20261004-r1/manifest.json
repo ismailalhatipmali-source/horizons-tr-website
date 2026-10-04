@@ -1,0 +1,641 @@
+{
+  "schema": 1,
+  "version": "pricing-cards-20261004-r1",
+  "languages": [
+    "en",
+    "ar",
+    "tr",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "uk",
+    "pl",
+    "cs",
+    "ro",
+    "hu",
+    "el",
+    "sv",
+    "da",
+    "no",
+    "fi",
+    "bg",
+    "sr",
+    "hr",
+    "he",
+    "fa",
+    "ur",
+    "hi",
+    "bn",
+    "id",
+    "ms",
+    "zh",
+    "ja"
+  ],
+  "marketing_manifest_sha256": "75314ed29500a894a867e25aeacd2329959bc63e1fecbd7efd56ee0f28f0f83e",
+  "files": {
+    "checkout.js": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/checkout.js",
+      "before": "a86a62d5e1c9628964e935616ba9f36a4f23126769e57452d49f9729001ddc30",
+      "sha256": "e9577430430be8e2109b0cbc6c867cee37d409b5f35a097d2894f337440a911c",
+      "bytes": 16277
+    },
+    "checkout.css": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/checkout.css",
+      "before": "20c532b138a76ffe12475fa5502e821d2a01fdcf273bd3366c1e2a6fc64b2ba9",
+      "sha256": "4e51700050be2d9944c9ea2de104a8f7bfd0843b366d84b07d8f80f80861b3b4",
+      "bytes": 5534
+    },
+    "display-currency.js": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/display-currency.js",
+      "before": "3373e55899ed8452e00dee1c89f39b1c866d8ccfeb04917db0c6d105e1cf75e5",
+      "sha256": "6a7b960a4d8005353be65a8b2b15d1133d6e0f19b553926ce8b19326cf46fbb2",
+      "bytes": 41288
+    },
+    "display-currency.css": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/display-currency.css",
+      "before": "f74a8848c121d736202b3c45441b5fc9f07c54552e07de93cf6a0546e2139e1a",
+      "sha256": "53ca9b0b8031d68c3d6705d047ed173b3b9bb392f61905283ec8908ba0e1216d",
+      "bytes": 3480
+    },
+    "en/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/en/product.html",
+      "before": "c26180e1e67ad72ad377f3503c9d8a3a1169857eccaf2eb3c1b74300c83368d3",
+      "sha256": "016675b680ab0bd913d97374bea93dad3290f4fa9cfe8e41fdd2bee4788046ae",
+      "bytes": 19564
+    },
+    "en/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/en/checkout.html",
+      "before": "dae0fe2139af246d294d0b107118f91efeb872af41842cb54df49617766b3ff2",
+      "sha256": "9052d4054b750760e7c9ad8777adfa7c61bb3b31a42cb2f148a7fa9d5593a748",
+      "bytes": 29472
+    },
+    "en/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/en/cart.html",
+      "before": "c319e2038b11f0e59ce5adc54a5cf4e872a33ad6a42c8bf1246e5634010ec0fa",
+      "sha256": "11d1881f5a33414e52f5fd57cd0a130d15351f2d26d8fdb7f8a2f9b3302b250d",
+      "bytes": 29208
+    },
+    "ar/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ar/product.html",
+      "before": "0296c77b250a69adf3a781960436cd70a5d0d35c901e42c2ac1c5ca3f72ff2c6",
+      "sha256": "5dc4d769e6084000d0689acc3c2348206a2a88e58ccb53c595e4957603c55d7f",
+      "bytes": 21943
+    },
+    "ar/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ar/checkout.html",
+      "before": "ecd1da40cad7ec9323dfbabb2ac24c2e78dbe6e4c75ede74ae2f4b287ab611fc",
+      "sha256": "b39aa55204005d637cf94014d78dfd72783e92bcbf0cc015b9b18196bba085da",
+      "bytes": 32952
+    },
+    "ar/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ar/cart.html",
+      "before": "e0c1d8a4b75eb9790820f4d4b9110dee29ac93b3150a0d90e54e103fa3b0d2a9",
+      "sha256": "0fac7c15808f963a326fe45d8112b79658ca6fee7644f99d91ebb434fe95439c",
+      "bytes": 32688
+    },
+    "tr/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/tr/product.html",
+      "before": "2ac3e71b87cdb9322911b7e3e8047d3a7c3f7b8433ca1d36f1a89ea3ec77c8a9",
+      "sha256": "672b793eb68d57fa79abd58310b547bac92a87d04f832f2f7c4404a1ce526c5e",
+      "bytes": 20060
+    },
+    "tr/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/tr/checkout.html",
+      "before": "eae13fef1c5d03b4915e6e2affbfe5553fdf711bb4b4decd5c10a19f4190d4bd",
+      "sha256": "e1f631fdbb322ac3fa0fcb57492d87f292f5b83c35f84a3a1d0a19f2349fcfee",
+      "bytes": 30345
+    },
+    "tr/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/tr/cart.html",
+      "before": "e202c08d63dbe188a624dcec139d60b9b1646b9b8d695a934a01fa6b34b579e9",
+      "sha256": "c06a82de080f6594edce6c1b7696083646fb8e15a2af6d97770fe5d250daf395",
+      "bytes": 30081
+    },
+    "fr/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fr/product.html",
+      "before": "ae9d17ea807620b7b859488c5040f3e14d20466dc899b0e0d8841c4be7d48c53",
+      "sha256": "57e20930cadc39fb6b3520a1dfe24a7f21a35490761aa187dd8c9bdedfa1be4c",
+      "bytes": 20352
+    },
+    "fr/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fr/checkout.html",
+      "before": "78fd70a9a49c1b4dab0685d6f54e5a632fb849017b12c2f0aaab5f86b1f45470",
+      "sha256": "4b02f7657d4984e9507486f877f9be7248ea9d82ed980fa0f1205f48aa38d248",
+      "bytes": 30843
+    },
+    "fr/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fr/cart.html",
+      "before": "b64083e55f6545dc9a33d6810ca0edaf2d6bfc29275a8183bc5b9d86de0f7d70",
+      "sha256": "aa840e5c50ef2c6593bd6aa25d3212cbb2186e7b4bea1b4f2ed94cea19afe828",
+      "bytes": 30579
+    },
+    "es/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/es/product.html",
+      "before": "f8eea2767038f0485347df8bbb27f47f45b46b1bb5b48498cadf372a0b172921",
+      "sha256": "928ca1e652fc960a2e7aab966d3925614d675bb8e2ec9f37582358186723981c",
+      "bytes": 19860
+    },
+    "es/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/es/checkout.html",
+      "before": "5e3c98c1c48b603bf3bf6e1b1fa37bfadce76ac60fe15248b031cb6c46de3143",
+      "sha256": "d36b42ab26db52ea7d8268089d374c2dc4567e934c853df25a88c91b592cf4e8",
+      "bytes": 30029
+    },
+    "es/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/es/cart.html",
+      "before": "003cf2653a676789fc91f077f7610f8bfbb64dd42c37a1678a1f2f498853531e",
+      "sha256": "0fee129b47faf634a5509bfe0f941e8abc0c6db7a627589bfdaff9dbb7cdcb64",
+      "bytes": 29765
+    },
+    "de/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/de/product.html",
+      "before": "515e36a1abe1b16626090a7054ddfd17c778ba5821aa160a0f4020826dedec17",
+      "sha256": "2490fba0d1e68bbf16e9f0e5a6c6475310403974d3c1afcfce882eb44ce58b1e",
+      "bytes": 20114
+    },
+    "de/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/de/checkout.html",
+      "before": "0f816ec1c7c6c41d2c2f1d8f05c48073d2e7325ff984fef80b77231e73e3a60f",
+      "sha256": "78fa89b313526e32eb1d21c6498f0fd4fd1e41d499831cbf070d43b82837ec0e",
+      "bytes": 30297
+    },
+    "de/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/de/cart.html",
+      "before": "7248d7d9a06dd55b26d651a58cd8b50b1e47095f93293ae4b924f51f3e6d7157",
+      "sha256": "2c7d2a2186601a3f863e521d614c2ae03cce2bb127516bc0e4addb700bb25379",
+      "bytes": 30033
+    },
+    "it/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/it/product.html",
+      "before": "b863651d1f0bfd7679dcf2ae2ca252ef71fca73634ac02e8e2dcd3eecc21d0e3",
+      "sha256": "eaf3d02c43a7b864248dc9ca5244ddf5ad23676540f61a1bae218a604298a4a8",
+      "bytes": 19860
+    },
+    "it/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/it/checkout.html",
+      "before": "161a4aa0d84f2bf1fd231d7080311e96e00373b5c534a50062581aa36ac67aa7",
+      "sha256": "83b02bc72e816ba74cb455fe6b01d7f01e1257f823d612418f24bd43d816b755",
+      "bytes": 30228
+    },
+    "it/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/it/cart.html",
+      "before": "7c458f97a1c3102557ce2b693fd57f1a415b290edde0c44c1f474cb6a09a54b8",
+      "sha256": "168eddfd1b9d2858db8bbe564bf41952c07fb3b151f12c184acd759a57b53231",
+      "bytes": 29964
+    },
+    "pt/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/pt/product.html",
+      "before": "c239e5ac3a01d743bccdb1838bb5c901edbf98cbd9083583381fa72af76cc69e",
+      "sha256": "cb718f56b0d3fa92b0fc4abbb4586662b6d7cc01dab4f55c589ed34e4577df49",
+      "bytes": 19929
+    },
+    "pt/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/pt/checkout.html",
+      "before": "7f6ab302008865f59357ee581e0c9e5456022a02de1f88eca43f19e4b3a48663",
+      "sha256": "395905f98c49f7e8f2b7e6c4fb6b138baf64d0ae38646469a3d94e88ae40a964",
+      "bytes": 30126
+    },
+    "pt/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/pt/cart.html",
+      "before": "daa73ee631488c372151ad31d4d65b64ab291cfe54d21c9cae936aa954937ed5",
+      "sha256": "7a60d25b1d2d78845b166242de715c601a461d43c7fe869eb243053e841deb11",
+      "bytes": 29862
+    },
+    "nl/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/nl/product.html",
+      "before": "788aa21598f24967a138597de868d933353942fad983bc421a2b3e089e22cc10",
+      "sha256": "786b9c10ec143a13dd8f0ae7dd03e6621c35802de3c9610a075acd3980977a36",
+      "bytes": 19800
+    },
+    "nl/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/nl/checkout.html",
+      "before": "0bf8eabb2b4b0453eb5b58fec62905b7895ce650f064c14311b1e5bd5be9079d",
+      "sha256": "953afbcebe30e7f65ecbb997411e5dbef1a2a6d7549450770ad429ed0b2eaae1",
+      "bytes": 29942
+    },
+    "nl/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/nl/cart.html",
+      "before": "a4cc8e49c3ff44e4d934ba92f443130074196caef2ef65e62383221261658ccb",
+      "sha256": "d563616789028a88e90ce82855729bd385640f39fad22f55a5e016151bc43092",
+      "bytes": 29678
+    },
+    "ru/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ru/product.html",
+      "before": "6ffd1e7b149ae76d02e0c6f9de9ed2267e955ef860380b3696e19cbbebffb79f",
+      "sha256": "6c5039a2982dcd589486df0b2a0061ab4bcbce2ff4558e1b6bfa82c2b11ea546",
+      "bytes": 23813
+    },
+    "ru/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ru/checkout.html",
+      "before": "3aae515d363b3996a9aae6facbea875c4b7c4aadf1831e1e7067a0ed34b2763c",
+      "sha256": "e8bb4984367214d16377f6d82974249476ce782cd51fcedf38d272486af243eb",
+      "bytes": 35548
+    },
+    "ru/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ru/cart.html",
+      "before": "1e5bf8583f83e6104763793c37e40c975f5398b42f5cb45d2774a829eb6f4e02",
+      "sha256": "ed194410f896276e053030595ce93ad48c83575cf0bb2d405920acacbba82242",
+      "bytes": 35284
+    },
+    "uk/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/uk/product.html",
+      "before": "e86f14bf1554376fe1a3dbfb0ddc8883313484719ecb84767e076aa74e8f7d84",
+      "sha256": "1218b447ae7648671bcbb1b020e66d5c8094bd023bfa9960c21bd52c8f23a811",
+      "bytes": 23588
+    },
+    "uk/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/uk/checkout.html",
+      "before": "4fcf63e55e7fc30a08fd70358de84cdbe82177427fcbd8b7d8dd40c502849be1",
+      "sha256": "0d21a3e272f36f640a8592ddbe63b8c2c44114c7c879112c81ca0005672a6ad4",
+      "bytes": 35529
+    },
+    "uk/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/uk/cart.html",
+      "before": "b0ce11c46fb15327b90ca46116bb9f0fd185fb39b880d1742bdaa860de1e10fc",
+      "sha256": "b4dd10dfba1a1ba8bc38f8004bf0d4b42ae26787d4c89abadcb2489b4bc65e70",
+      "bytes": 35265
+    },
+    "pl/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/pl/product.html",
+      "before": "32e48b489d86c9c63118c9fe14533d8493f6bc91414a7fe80b83323fdebf4c6e",
+      "sha256": "4b0f93531d81ec62dc3f16821fa1c3225a27da155aab175173d326af5ddcb155",
+      "bytes": 19526
+    },
+    "pl/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/pl/checkout.html",
+      "before": "020f6a01a1bf5a117ab511a775b9ebc30888aa6c301189b661897ea6ce2bfb77",
+      "sha256": "892cc8dfdc51e1f2e59560824d667cd9add100e4c9b68f6cb38dce208479710d",
+      "bytes": 29752
+    },
+    "pl/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/pl/cart.html",
+      "before": "01c443ba91f65a230575c482c156d1c04df7abf9dfdc60e1de8dd7e249a7e20d",
+      "sha256": "576e5d07a62826444b3255e3643b675cdca7b1ca0524b0631708c28cd7df74f8",
+      "bytes": 29488
+    },
+    "cs/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/cs/product.html",
+      "before": "18300ec3148b8466cd35b76b99f8b1a848efe7f89189c4b10a918a1ca6ef684a",
+      "sha256": "212afe4a5410d090f08447efd9ed6ae8960204348e4e9acb7713b1c5901c2791",
+      "bytes": 19626
+    },
+    "cs/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/cs/checkout.html",
+      "before": "92a72157deae2ca063181dbebfa71e755413a563b2b03f2a05a9d6b36912a198",
+      "sha256": "c4d008f38eee8638aef27e9438fda91ef4c6c1b06210a0aed077825da141ccb4",
+      "bytes": 29649
+    },
+    "cs/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/cs/cart.html",
+      "before": "a57c157f6081f292b11d4d9de0dd2358e6bf401f015b38067cdb7b60a3590bcd",
+      "sha256": "9841d0dcb326a63d27c1be0da355f63fcdf8322784a4c91da25a7e4d3e16ee9d",
+      "bytes": 29385
+    },
+    "ro/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ro/product.html",
+      "before": "419f90912b6f173fadf7c17ddf8c9d28bda16c3ee7aeaf8bc7fc47074a447a10",
+      "sha256": "4a16ca542464eb3e84491f9265fca64c656a91cd5e943de5915c16fb93c54805",
+      "bytes": 19958
+    },
+    "ro/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ro/checkout.html",
+      "before": "84dd43d606ebe89d043a6d08fcc7a9de9c081af5945e11358553c4b416e22f1d",
+      "sha256": "ff2fdb3617483ee0acf72314d082198ef38fa40ddf3690ecf9d5e5eebd425bd3",
+      "bytes": 30124
+    },
+    "ro/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ro/cart.html",
+      "before": "fe3e0e1443d23cd3b499a97e8fd4b980f660581ff415b0eb372e8de0070b58c0",
+      "sha256": "22742cce36724f824382aa666e4808aed97b881b7b0972e0638f45e83b9f3f98",
+      "bytes": 29860
+    },
+    "hu/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hu/product.html",
+      "before": "46c6f54abd71223fa9ab4000d567ec657d9285b3156e86355803ea13b8c9f30e",
+      "sha256": "8d389d0dfaca1309c7b7ec1441ed9e81e571716d9e5224e1234055eea803494e",
+      "bytes": 20203
+    },
+    "hu/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hu/checkout.html",
+      "before": "2612b33d1a521e7712acbdd8c626beec97ed5f2c62e64e0ea8f3b301ee29a6c1",
+      "sha256": "c4db09438a4a5cebace66333359feffdb514f6917be19bb94b21506e4604f8c2",
+      "bytes": 30838
+    },
+    "hu/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hu/cart.html",
+      "before": "c7134352f8fad3645776507973dce16873a5e3264657988e5fa3a2ae11da480b",
+      "sha256": "ab00e9ff279bdeefc166565039c0cc82685f9b5d587836a28fc042ccc76c96a1",
+      "bytes": 30574
+    },
+    "el/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/el/product.html",
+      "before": "b9000b585c77a8b9aed79c90e4013db434f9a4f9488a6a3330aae318d600b022",
+      "sha256": "a923644e6e8b2a9726aae630171c17ee57933fea6d6d32c99ffcf0f3108cd489",
+      "bytes": 24528
+    },
+    "el/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/el/checkout.html",
+      "before": "3eeb24cd2627dc647d4e3240feb95ce84c04b121ed07da0586dcae9df234a9d1",
+      "sha256": "17aba1b6466d1e3ff9e40fdbc9f3d871c20c4174667421ad94650693bc2eb666",
+      "bytes": 36497
+    },
+    "el/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/el/cart.html",
+      "before": "4364e6505b89ba746edcb977daa2eab8cbb737ebafdc7e4df1f8e0def4ffe021",
+      "sha256": "fad5348911cc0702dfeb27d5e068cba2e3be5487320ef59f6174ae4d5b1a23ca",
+      "bytes": 36233
+    },
+    "sv/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/sv/product.html",
+      "before": "7613bea0e9abbc973f4c83fb75e1e70279d6ddce8ae46075e7982ae413b85a51",
+      "sha256": "41bbba6cce6abfec4afbca4a0df5c325a8b0f9e4363733c05d6c3cb06de7227b",
+      "bytes": 19686
+    },
+    "sv/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/sv/checkout.html",
+      "before": "d3cb531869cdf75b09160b2074b7e451dde96e5c3cbaf4bee0299f6515f3fc25",
+      "sha256": "0f8a2d6a4e1b9a87fed865b8a986d9da8fd81dbcdedde7830add7419671edd1a",
+      "bytes": 29462
+    },
+    "sv/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/sv/cart.html",
+      "before": "95e417cd9f06d00250bbd17818229b0efe2ffbb70ee24a004c0dc0412e0c90df",
+      "sha256": "7264e0f21ac7c114c8ec6a78c33be10b0fd7fc6e096b941792d286bcc5ed598d",
+      "bytes": 29198
+    },
+    "da/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/da/product.html",
+      "before": "686e5c948ac21dc2520b75e32aade17707814f3c136dea6374248fd0665d330c",
+      "sha256": "c426063392f74cad923612f32642b5738de14c7f85f051c13338d6e83a53f6ee",
+      "bytes": 19463
+    },
+    "da/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/da/checkout.html",
+      "before": "ee91b2271a000789a27032e4d928f47c06fed2593fb23368ddfeb21269a40733",
+      "sha256": "ae211448df62c3dc3050827618e238cf417c17062f656ef87196387b5af313f9",
+      "bytes": 29256
+    },
+    "da/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/da/cart.html",
+      "before": "2415d8a2ac825785b9bb5d5ea088c1f355f8cd7c2b4c73b64bc7ed823c66c0a0",
+      "sha256": "7c48037cd53bddbdb44ab0cc409f03b495b03acdc16373d6c1bc55010e665cc5",
+      "bytes": 28992
+    },
+    "no/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/no/product.html",
+      "before": "029e0b15d4a35097aef2c5636d12faeb0e807117a221bd6ade85006ef1f00356",
+      "sha256": "744246b2ce7eb98fb48befd9f1e94ef1998da7ea08fb0eb1963ff440df1e6701",
+      "bytes": 19291
+    },
+    "no/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/no/checkout.html",
+      "before": "a4b6bdc37e80c4fbd41f08ca38899e0d6994149ebb4c3876f966a67d03542b20",
+      "sha256": "519732f62fcd66009e03742193fa4b890f0ae72805ecf101690fe60d57c0dce8",
+      "bytes": 29244
+    },
+    "no/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/no/cart.html",
+      "before": "0ba29ec3d21b67038ac725aae444fa1daeb8c55fb2c5961ee089ed438758803a",
+      "sha256": "c5352560e39cd34f3ae4fa2a73854a3c0531d8ebd826222e471b6b87f855e47a",
+      "bytes": 28980
+    },
+    "fi/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fi/product.html",
+      "before": "2a6c651e5fa2fb744ea282031aa1ebf50180e12ad9d5bcf478e4e7deb3d9e0d2",
+      "sha256": "967723969b7f215f49a84892b924adb603a12b4f8087af598edbb30e06947372",
+      "bytes": 19849
+    },
+    "fi/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fi/checkout.html",
+      "before": "18482c7293da140ea233904f406fafbcd6451a2dc3c4f45689a34dca4b570fec",
+      "sha256": "02996f0f812c3979524fe598d5e733b13e023b470623de258fd472f29385d88e",
+      "bytes": 29724
+    },
+    "fi/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fi/cart.html",
+      "before": "9aa796180ac4fd1c0babd5029cf23fa741aab699722cc646cb1b9dfe74c45ce4",
+      "sha256": "840a745760f356cbf7d4babe025ca9e4e40fcb1d08ea18e7ae8788f459fdaf88",
+      "bytes": 29460
+    },
+    "bg/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/bg/product.html",
+      "before": "6ebb63e5a3445c34f2ab3890a3c93e0d9ee0dccd4fa918997501cbcdfaf0f624",
+      "sha256": "9d99aa0d4303d0bbdcf3a3abf2b438f84c01183c152af82499bdeb58186ffca7",
+      "bytes": 23593
+    },
+    "bg/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/bg/checkout.html",
+      "before": "17a24ed61539642caa768ba1821601b3add2ad4be44bcf938f2ec89ac9c2dff9",
+      "sha256": "8ddc1bca5b0f60b385b90f179df53217e442258f4ef4a311fce4fd009ce7567e",
+      "bytes": 35433
+    },
+    "bg/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/bg/cart.html",
+      "before": "b9d878f177faceea873360eb0398e4f4e00ece436038c607b8a19170e2def9e5",
+      "sha256": "517b29ebfd09624dfd76754fab119f6505b41885d13d4c25b4342560aaa21fc7",
+      "bytes": 35169
+    },
+    "sr/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/sr/product.html",
+      "before": "17ae1663b22214bccb9e140a9f24ee00deadd9112c67452d9db1e88fecd57a49",
+      "sha256": "2adf54fc78b2519fae2bfdc95b5ca180cf6ed53f84bab6c1f008b690ff836282",
+      "bytes": 22977
+    },
+    "sr/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/sr/checkout.html",
+      "before": "7491d55a9a52b9938532341369f3d7b33782e661a7d2e452860e3592a81937b0",
+      "sha256": "7ebe79d3b565907bab698cda530825f9ab4496590ed26be99b66b8210fcf0967",
+      "bytes": 34649
+    },
+    "sr/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/sr/cart.html",
+      "before": "8120a24b45eff3eeb48c1fc45743206fda4d8220f0c962fe61093514d78bdcab",
+      "sha256": "0d64b6a6f896092014beab0863884408b0000a981e4cfa02dc9ffe7640564b68",
+      "bytes": 34385
+    },
+    "hr/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hr/product.html",
+      "before": "f9bad592490e9cc60f145cc76c35d4c27ab769c221e0ebd0b309651293a84151",
+      "sha256": "1b1ef713e79e8018af41c65ba7d61c23b320be980b3cd3799a4f5143a78a1f2e",
+      "bytes": 19362
+    },
+    "hr/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hr/checkout.html",
+      "before": "a92095e34ab4c2bae21bcbfd98ec847ca753b573ad8d85725494b79d379282ef",
+      "sha256": "52abd5e0047dc42dd8cf907d39635687a13f942049b645b9956e72152e637f2f",
+      "bytes": 29510
+    },
+    "hr/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hr/cart.html",
+      "before": "a9db16929cfb58605d61d34141b251a7465a071bc32f1f2074e4e6697f673391",
+      "sha256": "60252ca80ce04b60b29d760687f7c84aa17c23b59b25139033eda463e530e658",
+      "bytes": 29246
+    },
+    "he/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/he/product.html",
+      "before": "6b785ca02008dfeb283c6443dda75158582920cf6bea2285002edc249a6767a0",
+      "sha256": "ea4c5e98de45a0146a16b354f57a68953c37e07c791f1b40f0eb006de4b8a003",
+      "bytes": 21077
+    },
+    "he/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/he/checkout.html",
+      "before": "8c2acb71bda49896c44919362c62fd4bb4fcf136adba0fe07e1b50174e40d6d7",
+      "sha256": "9791a78cb012145e2f4f659c132c6b5fd8115608886e01d1d0d718d1e13d3b6c",
+      "bytes": 31713
+    },
+    "he/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/he/cart.html",
+      "before": "57e7c760fe9b09f46e4a555f0d534a8b1d0d96b752217fd5a60d17fc4fa838f4",
+      "sha256": "057a1bd01eb38fa1e8a730271664df3c2d8c25785fea42cdd5e578f953f87cf4",
+      "bytes": 31449
+    },
+    "fa/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fa/product.html",
+      "before": "e450c315f9fd8146656e0e8f0f7e3b72dc2d470332edfbb207589e363c9c2ba9",
+      "sha256": "7221489098bd634501ab0a9d2c8bd1fc3abcf92d28db57d324fa3f298c911f83",
+      "bytes": 22612
+    },
+    "fa/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fa/checkout.html",
+      "before": "0e12a86ce7a8c26ce2878d051bef1440891da75f43ebb696f23f594b642e2e9d",
+      "sha256": "64847549b07498fedd9774466af23fc581c493d78aa94e79b735c327fea40537",
+      "bytes": 33808
+    },
+    "fa/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/fa/cart.html",
+      "before": "843b6f8cb35f88ca13e074d6ab25ca93f54ee19ee3ec59009944803d263b6f34",
+      "sha256": "1824a3859bf989b77d023f02ca5b11f0501dd48d5d1d431ffbb4627db204c886",
+      "bytes": 33544
+    },
+    "ur/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ur/product.html",
+      "before": "9c78e39e4def8a450f109e9eac16098f565c387304fb9bcbb6e5d1f75186c82b",
+      "sha256": "fd2a7fcedb8f9796c50a0f31dce6f344c659ce34b130257570b6e4281353961a",
+      "bytes": 22631
+    },
+    "ur/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ur/checkout.html",
+      "before": "93ea913eb9c4322d741dc215df4351d2d81a4cc398b17df8f42fc827deb65b26",
+      "sha256": "72f64994a0cf385e307025ba3eb807641a12249af408af2473b64301811c34fc",
+      "bytes": 34216
+    },
+    "ur/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ur/cart.html",
+      "before": "78d00a77556be66e997755c490d325cae2f396d453f6a714cd8bfd112ce2bae6",
+      "sha256": "32c62b001408d50c6760b7e974d7624a909485b6c5c35c8d146e3c973fbbaf02",
+      "bytes": 33952
+    },
+    "hi/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hi/product.html",
+      "before": "11fd5b88c84bab30b539a6f20d57e1989cffcec2d0bca286ffe8b4012b7bc0b0",
+      "sha256": "98415fc806c070a8258b46a5cdfb3056a057977947357e12b7be5ca41b0913ef",
+      "bytes": 26245
+    },
+    "hi/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hi/checkout.html",
+      "before": "01f6744066c3a7c891f02ee5d2354c139c1f50a79927c821e383e623439681ed",
+      "sha256": "39ddc7fca34554376588be6c1011da2c42f7db1621c0e695104af1689b0ebdb8",
+      "bytes": 39144
+    },
+    "hi/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/hi/cart.html",
+      "before": "a6bdc3056c20062f8ea8fa164e0fb4ba930dd4c236c4ff00965896a91059b010",
+      "sha256": "1b5bf51e7f1e4d42fe365191ad61202ff4079ad7c6b7a548a0ac672aab533554",
+      "bytes": 38880
+    },
+    "bn/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/bn/product.html",
+      "before": "45496e59a3468650e920a0a273aab77bf3ec458e3f9ddbd263980e462aaadcf9",
+      "sha256": "1619b8ad0f920e997bca90c67e8432b85b81f1d003399085a10670e6712e5fcb",
+      "bytes": 26661
+    },
+    "bn/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/bn/checkout.html",
+      "before": "efdaa23bc279ee79886a7daf4385b629aa154c37ccbea2a527e8e2962eb8e0ce",
+      "sha256": "6dca975c757cfe527b4194394015d6760b1b7ed168290ce561305fcdcd6b81cc",
+      "bytes": 39980
+    },
+    "bn/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/bn/cart.html",
+      "before": "53e3556e1844fcc49cfc814c5d0fd3ebd50b32a3533f5b6074319f05be762d68",
+      "sha256": "6f55fc763189482dd05dfddf6d8295fceaf330429e07e047e54f855ab6287330",
+      "bytes": 39716
+    },
+    "id/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/id/product.html",
+      "before": "3b438a6dee5f60f1571507de7497180d1037ecd958005d462149c93897fdce40",
+      "sha256": "83b014a9f8c9cacbcb8877d5a00ccac02290d47acc6c983b34ef0098a30086a7",
+      "bytes": 19458
+    },
+    "id/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/id/checkout.html",
+      "before": "11364131ed3a7a8c1b4038f2f669b627507121b059d6a7fecb15ca704a4fd08d",
+      "sha256": "72bbc163a17abf413cfb5a2c5def46c7d16ae31eeda46dd2c18e32348b0d0db8",
+      "bytes": 29522
+    },
+    "id/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/id/cart.html",
+      "before": "50d744ca93fc8de13e7faa3c18a2bbf5c27154be9016d9abe154fe9c05bfa491",
+      "sha256": "ad0e1700113eaf72438502fb4b33aa5cd591c6fba70e8b20e7a32c8dad8c46b1",
+      "bytes": 29258
+    },
+    "ms/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ms/product.html",
+      "before": "ef9eef0578e246a87a0e42ea32aa8e91a7f1b5f1c9fbe77921689ca1eb441c9e",
+      "sha256": "32f02190a1b34b57b92f2256c9a634838df45e1f5cc6192ae5e1557bd1e8049f",
+      "bytes": 19496
+    },
+    "ms/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ms/checkout.html",
+      "before": "0a682f87c69fa3b32c5ef28474caee1ef8d73308b58ece82b5127b58c506d81e",
+      "sha256": "372fb27cb79bf7b4e1eba84a80df03fea2155bb87ea0189023bfecc6e69c1240",
+      "bytes": 29465
+    },
+    "ms/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ms/cart.html",
+      "before": "93dbf55c22e509d89e23796fe31c91a5ff722102019f063774429c7bc4c5ad54",
+      "sha256": "605897df548d28a48a278925137ea71684791e8d0c4c9a17980c6570edd06855",
+      "bytes": 29201
+    },
+    "zh/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/zh/product.html",
+      "before": "27ca8a3301531d9e979befc96584863b1c167dbe64e2bffaf8cae8cdecc05d5b",
+      "sha256": "23fa7b9ffeccca95f83b259d1671d74f9478171193104c6cd663509a3fc108ad",
+      "bytes": 18863
+    },
+    "zh/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/zh/checkout.html",
+      "before": "59ea6a6db346969b32723c3b65d37112c489a0d4cb86e97556bfdbe75200f843",
+      "sha256": "abf061bc90aca50da075830ca5a0f22c0367d743d6fca517547c007e31582d27",
+      "bytes": 28601
+    },
+    "zh/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/zh/cart.html",
+      "before": "c73a92a73403759e53de51dcbd898f1a731b1d6705ba3c16160d81243ee3dc0b",
+      "sha256": "1f38feca391720bbebc8b419c16287fbc187e349a2c61eab20e9d372cdb016d5",
+      "bytes": 28337
+    },
+    "ja/product.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ja/product.html",
+      "before": "39597c22b8e4a0952decf1490c94e7ad7354d8b69f00fbabe13ab41f027bf6ec",
+      "sha256": "17bfb2b37b1f0b0ab8c6677f60138a065e18125c29b7352474a4488783b572cd",
+      "bytes": 20625
+    },
+    "ja/checkout.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ja/checkout.html",
+      "before": "ee29e33c411ab7b362bceac7e185cbe6502b8dc50e07f5618dcbf9cf0aa3a608",
+      "sha256": "87e7fb8cdbd9d0023b7732c95ac9153ab50c300aa285894efa7e1977bb2eac72",
+      "bytes": 31115
+    },
+    "ja/cart.html": {
+      "source": "release-assets/pricing-cards-20261004-r1/files/ja/cart.html",
+      "before": "40130fd76492a552dcc830314d309b8cc3774d7d634404abb54aab2d92788143",
+      "sha256": "9eab59c724ed5a332845225341785b9ff59c7c809210f46fc3a511135442e273",
+      "bytes": 30851
+    }
+  }
+}
