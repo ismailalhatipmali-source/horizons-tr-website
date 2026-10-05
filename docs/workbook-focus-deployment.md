@@ -53,36 +53,56 @@ HZN_JSDOM_PATH="$PWD/node_modules/jsdom/lib/api.js" node tests/test_focus_shell.
 
 Rebuild and rerun the gate after any pinned source change. A stale manifest must fail `FOCUS_SOURCE_CHANGED`; do not remove that check to make the tests pass. Record the tested manifest SHA256 and source hashes with the results.
 
-These tests do **not** prove that the current licensed application and its complete private server receipt chain work. The paid component transformation fixture is explicitly synthetic. Public-demo browser checks, licensed browser checks and real private-chain staging verification are independent acceptance gates. A successful Git push is also not evidence of hosting publication.
+These local tests do **not** prove that the current licensed application and its complete private server receipt chain work. The paid component transformation fixture is explicitly synthetic. The current private chain and actual encrypted-player transformation must also pass the default dry run on the authorized host. Browser checks remain separate evidence: a successful dry run does not prove licensed interactions, and a successful Git push does not prove hosting publication.
 
 ## Before any hosting publication
 
 1. Verify the actual repository, web root, current HEAD and hosted release. The previously known web root is `/home2/horizonstr/public_html`; do not assume a different account has that path.
-2. Use an authorized staging copy of the current application and receipt chain. Keep private receipts, encrypted backups and the vault outside the staging public root. Use isolated test learners. Do not copy production learner databases into a public fixture or expose credentials.
-3. Verify the existing complete B4/CM/B3/B2 chain, run the new deployer's default dry run against that staging root, then publish only to staging. Test its automatic failure recovery there.
-4. Complete licensed full-workbook browser QA: all six sections, activity gates, audio, learner isolation, settings, resume/history, writing/rotation, update/offline behavior and the required viewports. Check the demo independently.
-5. Review the complete diff and compare upstream HEAD again. Confirm every historical cPanel task remains. Save a recovery copy and keep the final release hash in the deployment record.
+2. Run the new deployer's default dry run against the verified production root using the reviewed source checkout. This is read-only: it validates the complete B4/CM/B3/B2 receipt chain, decrypts and transforms the actual player in memory, reverse-checks the transformation, and verifies that educational manifest content is preserved. Require `READY`; investigate any failure without changing old receipts or disabling source checks.
+3. Test induced failures and automatic recovery in an isolated test environment, never against production. The local 16-case deployment suite has exercised failures after each of the six writes, verifier failure, concurrency and recovery. A separate full licensed staging application is an additional option, not a prerequisite imposed by the user handoff.
+4. Review the complete diff and compare upstream HEAD again. Confirm every historical cPanel task remains. Confirm the deployer's private baseline backups will be created before any public write, retain the reviewed source, and record the final release hash. Do not publish with a known content, access, privacy or progress-loss failure.
+5. After the checks pass, publish only the six permitted UI targets with this deployer. Verify the public demo after publication and test the licensed application through valid authorized access when available. Report any unavailable licensed checks explicitly; they remain unverified rather than implicitly passed.
 
-From the repository root, these commands illustrate the two distinct operations. Replace the example staging root with its verified absolute path:
+From the reviewed repository root, these commands illustrate the two distinct operations. Use the verified production root, or the verified isolated staging root when staging is being used:
 
 ```bash
-/usr/local/bin/ea-php82 scripts/deploy-workbook-focus.php /home2/horizonstr/staging-public
-/usr/local/bin/ea-php82 scripts/deploy-workbook-focus.php /home2/horizonstr/staging-public --publish
+/usr/local/bin/ea-php82 scripts/deploy-workbook-focus.php /home2/horizonstr/public_html
+/usr/local/bin/ea-php82 scripts/deploy-workbook-focus.php /home2/horizonstr/public_html --publish
 ```
 
 The first command performs validation and prepares the encrypted transformation in memory without creating a lock, receipt, directory or public file. It must report `READY` before the second operation. `--publish` is the only CLI argument that enables publication.
 
-The production task stays **last** in `.cpanel.yml`, after B4. Keep all preceding tasks. Do not run that task or the full cPanel pipeline until the private-chain and licensed-browser gates pass. The full pipeline also includes unrelated tasks; it is not a harmless UI dry run.
+The production task stays **last** in `.cpanel.yml`, after B4. Keep all preceding tasks. For this limited UI publication, invoke only the reviewed focus deployer after its dry run succeeds. The full pipeline also includes unrelated publication tasks and a mail test; it is not a harmless UI dry run. Where interactive shell access is disabled, the host's native cPanel Cron Jobs can invoke the CLI script through a one-shot guard, writing its result to a private log. Remove the job after execution. Do not expose a public PHP runner or remove the CLI-only guard.
+
+### Optional isolated staging
+
+Use an authorized staging copy under a separate parent, for example `/home2/horizonstr/focus-qa-20261005/public_html`. The deployer resolves private state relative to the web root's parent, so staging must never share a receipt directory or lock with production. Copy the complete required private receipt and encrypted-backup chain into `/home2/horizonstr/focus-qa-20261005/`, preserving exact bytes and modes. Keep the staging configuration and vault outside its public root and point the configuration only to staging paths. Deployer-only verification needs no learner database; a runnable licensed staging application needs a separate test database and isolated test learners. Do not connect staging to production learner databases, copy those databases into a public fixture or expose credentials. Run the default dry run before publishing to staging, and keep any additional induced failures confined to that isolated environment.
+
+### Hosting dry-run record — 2026-10-05
+
+The native cPanel one-shot dry run completed against `/home2/horizonstr/public_html` from `/home2/horizonstr/repositories/horizons-workbook-focus-review` at `d091bb3`. GitHub `main` remained at `b737a92`. Its result was:
+
+```text
+READY: six UI targets verified, reversible player transformation, content manifests preserved; no files written.
+```
+
+This records successful validation of the actual hosted private receipt chain and player transformation. The dry run itself does not claim publication or licensed browser verification.
+
+### Hosting publication record — 2026-10-05
+
+The limited focus publication completed at 11:29 Europe/Istanbul from the same reviewed checkout. The host reported `PUBLISHED: focus UI; educational assets and prior receipts preserved. Verify browsers and licensed audio before declaring completion.` All six published targets were subsequently checked by HTTP, including the encrypted player against its updated manifest. The three temporary focus Cron Jobs were removed; existing backup and membership jobs were retained. No main-branch merge or full cPanel pipeline run was performed.
+
+The fresh `www.horizons-tr.com` demo origin displayed the new interface, loaded the Baa lesson images and supported Next navigation without horizontal overflow. Both word and sentence recordings completed, and visible listening progress advanced from 0 to 1 of 20. The existing cached browser on `horizons-tr.com` continued to show the old interface and an update-available notice after tabs were closed; production cached-client migration remains unverified. `/learn/` displayed the activation/password form, but full licensed interaction checks remain pending because valid licensed browser credentials were unavailable. See [the hosted verification record](workbook-focus-hosted-2026-10-05.md) for evidence and limits. These two browser origins have separate local storage; the fresh-origin check is not evidence of migration of existing learner state.
 
 On publication, the deployer locks its own transaction, rechecks concurrent file/receipt changes, writes both players, both manifests, then both workers, and validates the resulting receipt and every predecessor. Repeating an already verified installation reports `CURRENT` without changing files. Any interrupted, unexpected or conflicting state must be investigated, not accepted by editing stored hashes.
 
-After actual production publication, verify `/try/` and authorized `/learn/app/` on the hosted origin, both manifests/workers, navigation, audio and a previously cached client. Record hosting verification separately from build/test/Git status. Never clear learner storage as an update workaround.
+After actual production publication, verify `/try/` and both manifests/workers on the hosted origin. With valid licensed access, verify `/learn/app/`, all six sections, activity gates, audio, learner isolation, settings, resume/history, writing/rotation and update/offline behavior, including a previously cached client. Record completed and unavailable checks separately from build/test/Git status. Never clear learner storage as an update workaround.
 
 ## Automatic recovery versus deliberate rollback
 
 The deployer automatically reverses its own writes when publication or final verification fails. It restores original bytes and modes only while each target still matches the bytes/mode written by that transaction. A later external edit is preserved; backups remain and the deployer reports `FOCUS_RESTORE_REQUIRES_ATTENTION`. Do not retry publication over that state.
 
-There is no post-publication `--rollback` CLI. Deliberate rollback therefore requires a controlled administrator procedure. Rehearse it on the authorized staging copy before production. Do not substitute an unreviewed recursive copy command.
+There is no post-publication `--rollback` CLI. Deliberate rollback therefore requires the controlled administrator procedure below; the automatic failure-recovery tests do not constitute a rehearsal of that procedure. Use an authorized isolated copy for rehearsal when available. Do not substitute an unreviewed recursive copy command.
 
 ### Read-only chain checks
 

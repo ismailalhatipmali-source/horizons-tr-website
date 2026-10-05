@@ -21,10 +21,10 @@ The implementation is a presentation successor for the existing workbook. It is 
 | Trial boundaries | All4 paid sections remain locked; five existing free chapter IDs retained; B4 label reflects full edition | Pass; no paid payload added to trial |
 | B3/B4 rendering | Generic successor modules; B4 real private dataset with159 entries/27 lessons and640 configuration checks; assessment gate and zoom state browser tests | Component tests pass; B3 content fixture is synthetic |
 | Content preservation |497 public teaching/media manifest entries unchanged; reverse transformation reproduces original demo bytes | Pass for public artifacts |
-| Publication safeguards |16 PHP tests including encryption, exact transforms, historical pins, each write fault, concurrency and symlinks | Local gate passes; actual private server chain pending |
-| Full licensed workbook | Shared shell plus exact protected-reader patch prepared | Actual end-to-end licensed application remains untested |
-| Update and offline | Old tab stays stable until closed; new cached player hash verified; progress and word3 preserved; offline image/audio work with zero network requests | Pass in real demo browser |
-| Production deployment | No main merge or hosting publication performed during local preparation | Pending host access and licensed gates |
+| Publication safeguards |16 PHP tests including encryption, exact transforms, historical pins, each write fault, concurrency and symlinks; actual hosted private-chain dry run returned READY | Local gate and hosted dry run pass |
+| Full licensed workbook | Actual encrypted player transformed and published; `/learn/` activation/password form loads | Actual end-to-end licensed interaction remains untested; valid browser credentials unavailable |
+| Update and offline | Local cached-client test preserved progress and word3; offline image/audio worked with zero network requests. Existing production no-www browser still displayed the old cache and update notice | Local test passes; production cached-client migration remains unverified |
+| Production deployment | Focus-only publication returned PUBLISHED at11:29 Europe/Istanbul; HTTP checked all six targets; fresh www-origin demo displayed new UI, Baa images and working Next navigation without horizontal overflow | Published; limited hosted smoke passes; no main merge |
 
 ## Display measurements
 
@@ -54,13 +54,12 @@ HZN_AUDIO_EDGE_ONLY=1 HZN_DEMO_ROOT=/absolute/staging-after/try node tests/test_
 
 Each accepts `HZN_QA_OUTPUT` for private screenshots/results. See `docs/workbook-focus-deployment.md` for build, PHP and jsdom commands. B4's pure configuration test accepts the path to authorized private `data.json`; that file is not distributed with the test.
 
-The browser used was portable Chromium153, headless, with CSS viewport emulation. Firefox, WebKit, physical iOS/Android devices and a real software keyboard were not tested. The320px/200% check doubles educational font variables; it is explicitly a text-size simulation, not evidence of operating-system or browser zoom. Account isolation used disposable synthetic profiles in the reader contract test; real licensed learner/database integration still needs authorized staging.
+The local browser used was portable Chromium153, headless, with CSS viewport emulation. Firefox, WebKit, physical iOS/Android devices and a real software keyboard were not tested. The320px/200% check doubles educational font variables; it is explicitly a text-size simulation, not evidence of operating-system or browser zoom. Account isolation used disposable synthetic profiles in the reader contract test; real licensed learner/database integration still needs authorized access and isolated test learners. Later hosted-browser observations and their limits are recorded in [the hosted verification record](workbook-focus-hosted-2026-10-05.md).
 
-## Remaining release gates
+## Remaining verification
 
-- Verify the current private B4/CM/B3/B2 receipts and run the default dry run on an authorized staging copy.
-- Exercise the actual licensed application across all six sections, including its encrypted loader, learner store and offline lifecycle.
-- Verify current cPanel paths and final upstream HEAD, then limited production publication and hosted smoke tests.
+- Exercise the actual licensed application through valid authorized access across all six sections, including its encrypted loader, learner store and offline lifecycle.
+- Resolve and verify the existing production no-www browser's cached-client transition without clearing learner data. A fresh www-origin check does not demonstrate migration of an existing browser profile.
 - Repeat the successful public-demo cache migration check on the licensed application; public and licensed workers have separate contracts.
 
 Rollback scope and the protected manual recovery procedure are documented in `docs/workbook-focus-deployment.md`. Existing private receipts must never be edited to silence a validation error.
