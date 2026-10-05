@@ -84,6 +84,8 @@ function hznFocusProjection(array $before,array $after,bool $paid):void {
 // This function reads predecessor receipts directly: calling predecessor State() here
 // would recurse through their successor bridge. They validate separately at the edge.
 function hznFocusState(string $web):?array {
+    require_once __DIR__.'/trial-pause-preservation.php';
+    $trialPause=hznTrialPauseState($web);
     $home=dirname($web);$private=hznFocusPath($home,'.horizons-workbook-focus');$path=hznFocusPath($private,'receipt.json');if(!is_file($path))return null;
     if(realpath($private)!==$private||(fileperms($private)&0777)!==0700||(fileperms($path)&0777)!==0600)throw new RuntimeException('FOCUS_PRIVATE_RECEIPT_REQUIRED');
     $r=json_decode(hznFocusRead($path,262144),true,32,JSON_THROW_ON_ERROR);$release=hznFocusRelease(dirname(__DIR__));
@@ -92,7 +94,7 @@ function hznFocusState(string $web):?array {
     $b4=$prior['.horizons-blending4/receipt.json'];$cm=$prior['.horizons-comprehensive-meaning/receipt.json'];
     if(($b4['release']??'')!=='blending4-20261004-r1'||($cm['patch']??'')!=='comprehensive-meaning-20261004-r1'||($r['plain_before_sha256']??'')!==($b4['plain_after_sha256']??'')||!hznFocusSha($r['plain_before_sha256']??''))throw new RuntimeException('FOCUS_LINEAGE_INVALID');
     $base=hznFocusPath($private,'baseline');
-    foreach(HZN_FOCUS_PATHS as $p){$expected=str_starts_with($p,'try/')?($cm['hashes'][$p]??''):($b4['hashes'][$p]??'');$backup=hznFocusPath($base,$p);$target=hznFocusPath($web,$p);
+    foreach(HZN_FOCUS_PATHS as $p){$expected=str_starts_with($p,'try/')?($cm['hashes'][$p]??''):($b4['hashes'][$p]??'');$backup=hznFocusPath($base,$p);$target=hznFocusPath($trialPause!==null&&$p==='learn/sw.js'?$trialPause['baseline_root']:$web,$p);
         if(($r['before_hashes'][$p]??'')!==$expected||!hznFocusSha($expected)||!hash_equals($expected,hash('sha256',hznFocusRead($backup)))||(fileperms($backup)&0777)!==0600||$r['before_modes'][$p]!==0644)throw new RuntimeException('FOCUS_BASELINE_CHANGED');
         if(!hznFocusSha($r['hashes'][$p]??'')||!hash_equals($r['hashes'][$p],hash('sha256',hznFocusRead($target)))||(fileperms($target)&0777)!==0644)throw new RuntimeException('FOCUS_PUBLIC_CHANGED');
         if(isset($release['files'][$p])&&($expected!==$release['files'][$p]['before']||$r['hashes'][$p]!==$release['files'][$p]['sha256']))throw new RuntimeException('FOCUS_PUBLIC_RELEASE_CHANGED');
@@ -100,7 +102,8 @@ function hznFocusState(string $web):?array {
     foreach(['try'=>false,'learn'=>true] as $edition=>$paid){$manifest=$paid?'asset-manifest.json':'demo-asset-manifest.json';$old=json_decode(hznFocusRead(hznFocusPath($base,$edition.'/'.$manifest)),true,32,JSON_THROW_ON_ERROR);$new=json_decode(hznFocusRead(hznFocusPath($web,$edition.'/'.$manifest)),true,32,JSON_THROW_ON_ERROR);hznFocusProjection($old,$new,$paid);$app=$paid?'learn/content/1.4.1/workbook.js.hzn':'try/workbook.js';$entry=$new['files']['workbook.js']??[];
         if(($entry['sha256']??'')!==$r['hashes'][$app]||($entry['bytes']??0)!==filesize(hznFocusPath($web,$app)))throw new RuntimeException('FOCUS_MANIFEST_INVALID');
         if($paid&&(($entry['encoding']??'')!=='gzip'||($entry['decoded_bytes']??0)<1||$entry['decoded_bytes']>33554432))throw new RuntimeException('FOCUS_APPLICATION_INVALID');
-        if(hznFocusWorker(hznFocusRead(hznFocusPath($base,$edition.'/sw.js')),$paid)!==hznFocusRead(hznFocusPath($web,$edition.'/sw.js')))throw new RuntimeException('FOCUS_WORKER_CHANGED');
+        $workerRoot=$trialPause!==null&&$paid?$trialPause['baseline_root']:$web;
+        if(hznFocusWorker(hznFocusRead(hznFocusPath($base,$edition.'/sw.js')),$paid)!==hznFocusRead(hznFocusPath($workerRoot,$edition.'/sw.js')))throw new RuntimeException('FOCUS_WORKER_CHANGED');
     }
     if(hznFocusPatch(hznFocusRead(hznFocusPath($base,'try/workbook.js')),dirname(__DIR__),$release,false)!==hznFocusRead(hznFocusPath($web,'try/workbook.js')))throw new RuntimeException('FOCUS_DEMO_PATCH_CHANGED');
     $r['baseline_root']=$base;$r['worker_suffix']=HZN_FOCUS_PAID_SUFFIX;return $r;

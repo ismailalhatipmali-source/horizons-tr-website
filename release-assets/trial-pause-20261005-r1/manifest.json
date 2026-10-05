@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "release": "trial-pause-20261005-r1",
+  "copy_source": {
+    "path": "src/trial-pause/portal-copy.json",
+    "sha256": "3e4cc592f9ba7c88efb2f014b114b448cc2ffde593bbaecedc1ddbc2a0274eaf"
+  },
+  "files": {
+    "learn/index.html": {
+      "before": "6a3a347d69ec994cc21680086ef0a7d6e762195fbc1dc2f2b5604c3b0a7ea418",
+      "sha256": "4d5f8d5e8cb6650c4ad92d745ec29fbe50035b9190ae1399d7cb1f9d8903bcff",
+      "bytes": 56792,
+      "source": "release-assets/trial-pause-20261005-r1/files/learn/index.html"
+    },
+    "learn/web-locales.json": {
+      "before": "91e59287ad3f4eb4c5eedc2abc20334186ffd42a8e38e463438edb6dd89c0764",
+      "sha256": "6e48c8426460f16385de582817677444851f9b1c94acf46ba02855daf52ae254",
+      "bytes": 254209,
+      "source": "release-assets/trial-pause-20261005-r1/files/learn/web-locales.json"
+    },
+    "learn/sw.js": {
+      "before": "951593ecb7ea7dcaa95bb6fd78fd61ccc86cf075ea0cb96434617686a1b97bc5",
+      "sha256": "5a990c5104c79883109f64b55b30abc0a7c7b58e514873e2f09e9392b42d8ef5",
+      "bytes": 9806,
+      "source": "release-assets/trial-pause-20261005-r1/files/learn/sw.js"
+    }
+  }
+}
