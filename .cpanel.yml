@@ -21,3 +21,4 @@ deployment:
     - /usr/local/bin/ea-php82 scripts/deploy-pricing-cards.php /home2/horizonstr/public_html/ --publish
     - if [ -f /home2/horizonstr/horizons-blending4-update/course/blending4/data.json ] || [ -f /home2/horizonstr/.horizons-blending4/receipt.json ]; then /usr/local/bin/ea-php82 scripts/deploy-blending4.php /home2/horizonstr/public_html /home2/horizonstr/horizons-blending4-update --publish; fi
     - /usr/local/bin/ea-php82 scripts/deploy-workbook-focus.php /home2/horizonstr/public_html --publish
+    - /usr/local/bin/ea-php82 scripts/deploy-trial-pause.php /home2/horizonstr/public_html --publish

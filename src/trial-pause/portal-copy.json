@@ -1,0 +1,162 @@
+{
+  "en": {
+    "accessTitle": "Sign in or activate access",
+    "trialNote": "The free full-workbook trial is paused. Full workbook access requires an eligible account or private invitation.",
+    "pilotFull": "The free full-workbook trial is paused. Existing account holders can sign in or restore access."
+  },
+  "ar": {
+    "accessTitle": "تسجيل الدخول أو تفعيل الوصول",
+    "trialNote": "التجربة المجانية للكراسة الكاملة متوقفة حاليًا. تتطلب الكراسة الكاملة حسابًا مؤهلًا أو دعوة خاصة.",
+    "pilotFull": "التجربة المجانية للكراسة الكاملة متوقفة حاليًا. يمكن لأصحاب الحسابات الحالية تسجيل الدخول أو استعادة الوصول."
+  },
+  "tr": {
+    "accessTitle": "Giriş yapın veya erişimi etkinleştirin",
+    "trialNote": "Tam çalışma kitabının ücretsiz denemesi şu anda durduruldu. Tam çalışma kitabına erişim için uygun bir hesap veya özel davet gerekir.",
+    "pilotFull": "Tam çalışma kitabının ücretsiz denemesi şu anda durduruldu. Mevcut hesap sahipleri giriş yapabilir veya erişimlerini geri yükleyebilir."
+  },
+  "fr": {
+    "accessTitle": "Se connecter ou activer l’accès",
+    "trialNote": "L’essai gratuit du cahier complet est suspendu. L’accès au cahier complet nécessite un compte admissible ou une invitation privée.",
+    "pilotFull": "L’essai gratuit du cahier complet est suspendu. Les titulaires d’un compte existant peuvent se connecter ou rétablir leur accès."
+  },
+  "es": {
+    "accessTitle": "Inicia sesión o activa el acceso",
+    "trialNote": "La prueba gratuita del cuaderno completo está suspendida. Para acceder al cuaderno completo se necesita una cuenta habilitada o una invitación privada.",
+    "pilotFull": "La prueba gratuita del cuaderno completo está suspendida. Las personas que ya tienen una cuenta pueden iniciar sesión o recuperar el acceso."
+  },
+  "de": {
+    "accessTitle": "Anmelden oder Zugang aktivieren",
+    "trialNote": "Der kostenlose Testzugang zum vollständigen Arbeitsbuch ist pausiert. Für den Zugang zum vollständigen Arbeitsbuch ist ein berechtigtes Konto oder eine private Einladung erforderlich.",
+    "pilotFull": "Der kostenlose Testzugang zum vollständigen Arbeitsbuch ist pausiert. Bestehende Kontoinhaber können sich anmelden oder ihren Zugang wiederherstellen."
+  },
+  "it": {
+    "accessTitle": "Accedi o attiva l’accesso",
+    "trialNote": "La prova gratuita del quaderno completo è sospesa. Per accedere al quaderno completo è necessario un account idoneo o un invito privato.",
+    "pilotFull": "La prova gratuita del quaderno completo è sospesa. Chi ha già un account può accedere o ripristinare l’accesso."
+  },
+  "pt": {
+    "accessTitle": "Iniciar sessão ou ativar o acesso",
+    "trialNote": "O teste gratuito do caderno completo está suspenso. O acesso ao caderno completo requer uma conta elegível ou um convite privado.",
+    "pilotFull": "O teste gratuito do caderno completo está suspenso. Quem já tem uma conta pode iniciar sessão ou recuperar o acesso."
+  },
+  "nl": {
+    "accessTitle": "Inloggen of toegang activeren",
+    "trialNote": "De gratis proefperiode voor het volledige werkboek is gepauzeerd. Voor toegang tot het volledige werkboek is een geschikt account of een persoonlijke uitnodiging vereist.",
+    "pilotFull": "De gratis proefperiode voor het volledige werkboek is gepauzeerd. Bestaande accounthouders kunnen inloggen of hun toegang herstellen."
+  },
+  "ru": {
+    "accessTitle": "Войти или активировать доступ",
+    "trialNote": "Бесплатный пробный доступ к полной рабочей тетради приостановлен. Для доступа к полной рабочей тетради требуется подходящая учётная запись или личное приглашение.",
+    "pilotFull": "Бесплатный пробный доступ к полной рабочей тетради приостановлен. Владельцы существующих учётных записей могут войти или восстановить доступ."
+  },
+  "uk": {
+    "accessTitle": "Увійти або активувати доступ",
+    "trialNote": "Безкоштовний пробний доступ до повного робочого зошита призупинено. Для доступу до повного робочого зошита потрібен відповідний обліковий запис або приватне запрошення.",
+    "pilotFull": "Безкоштовний пробний доступ до повного робочого зошита призупинено. Власники чинних облікових записів можуть увійти або відновити доступ."
+  },
+  "pl": {
+    "accessTitle": "Zaloguj się lub aktywuj dostęp",
+    "trialNote": "Bezpłatny okres próbny pełnego zeszytu ćwiczeń został wstrzymany. Dostęp do pełnego zeszytu ćwiczeń wymaga uprawnionego konta lub prywatnego zaproszenia.",
+    "pilotFull": "Bezpłatny okres próbny pełnego zeszytu ćwiczeń został wstrzymany. Obecni posiadacze kont mogą się zalogować lub odzyskać dostęp."
+  },
+  "cs": {
+    "accessTitle": "Přihlásit se nebo aktivovat přístup",
+    "trialNote": "Bezplatný zkušební přístup k úplnému pracovnímu sešitu je pozastaven. Přístup k úplnému pracovnímu sešitu vyžaduje oprávněný účet nebo soukromou pozvánku.",
+    "pilotFull": "Bezplatný zkušební přístup k úplnému pracovnímu sešitu je pozastaven. Stávající uživatelé se mohou přihlásit nebo obnovit přístup."
+  },
+  "ro": {
+    "accessTitle": "Conectează-te sau activează accesul",
+    "trialNote": "Perioada de probă gratuită pentru caietul complet este suspendată. Accesul la caietul complet necesită un cont eligibil sau o invitație privată.",
+    "pilotFull": "Perioada de probă gratuită pentru caietul complet este suspendată. Deținătorii conturilor existente se pot conecta sau își pot restabili accesul."
+  },
+  "hu": {
+    "accessTitle": "Bejelentkezés vagy hozzáférés aktiválása",
+    "trialNote": "A teljes munkafüzet ingyenes próbaidőszaka szünetel. A teljes munkafüzethez jogosult fiók vagy privát meghívó szükséges.",
+    "pilotFull": "A teljes munkafüzet ingyenes próbaidőszaka szünetel. A meglévő fiókok tulajdonosai bejelentkezhetnek vagy visszaállíthatják hozzáférésüket."
+  },
+  "el": {
+    "accessTitle": "Σύνδεση ή ενεργοποίηση πρόσβασης",
+    "trialNote": "Η δωρεάν δοκιμή του πλήρους βιβλίου εργασιών έχει ανασταλεί. Η πρόσβαση στο πλήρες βιβλίο εργασιών απαιτεί επιλέξιμο λογαριασμό ή ιδιωτική πρόσκληση.",
+    "pilotFull": "Η δωρεάν δοκιμή του πλήρους βιβλίου εργασιών έχει ανασταλεί. Οι κάτοχοι υπάρχοντος λογαριασμού μπορούν να συνδεθούν ή να επαναφέρουν την πρόσβασή τους."
+  },
+  "sv": {
+    "accessTitle": "Logga in eller aktivera åtkomst",
+    "trialNote": "Den kostnadsfria provperioden för hela arbetsboken är pausad. För åtkomst till hela arbetsboken krävs ett berättigat konto eller en privat inbjudan.",
+    "pilotFull": "Den kostnadsfria provperioden för hela arbetsboken är pausad. Befintliga kontoinnehavare kan logga in eller återställa sin åtkomst."
+  },
+  "da": {
+    "accessTitle": "Log ind eller aktivér adgang",
+    "trialNote": "Den gratis prøveperiode for hele arbejdsbogen er sat på pause. Adgang til hele arbejdsbogen kræver en berettiget konto eller en privat invitation.",
+    "pilotFull": "Den gratis prøveperiode for hele arbejdsbogen er sat på pause. Eksisterende kontohavere kan logge ind eller gendanne deres adgang."
+  },
+  "no": {
+    "accessTitle": "Logg inn eller aktiver tilgang",
+    "trialNote": "Den gratis prøveperioden for hele arbeidsboken er satt på pause. Tilgang til hele arbeidsboken krever en kvalifisert konto eller en privat invitasjon.",
+    "pilotFull": "Den gratis prøveperioden for hele arbeidsboken er satt på pause. Eksisterende kontoeiere kan logge inn eller gjenopprette tilgangen."
+  },
+  "fi": {
+    "accessTitle": "Kirjaudu sisään tai aktivoi käyttöoikeus",
+    "trialNote": "Koko työkirjan maksuton kokeilu on keskeytetty. Koko työkirjan käyttö edellyttää oikeutettua tiliä tai yksityistä kutsua.",
+    "pilotFull": "Koko työkirjan maksuton kokeilu on keskeytetty. Nykyiset tilinomistajat voivat kirjautua sisään tai palauttaa käyttöoikeutensa."
+  },
+  "bg": {
+    "accessTitle": "Влезте или активирайте достъпа",
+    "trialNote": "Безплатният пробен достъп до цялата учебна тетрадка е спрян. Достъпът до цялата учебна тетрадка изисква отговарящ на условията профил или лична покана.",
+    "pilotFull": "Безплатният пробен достъп до цялата учебна тетрадка е спрян. Притежателите на съществуващи профили могат да влязат или да възстановят достъпа си."
+  },
+  "sr": {
+    "accessTitle": "Пријавите се или активирајте приступ",
+    "trialNote": "Бесплатна проба целе радне свеске је паузирана. За приступ целој радној свесци потребан је одговарајући налог или приватна позивница.",
+    "pilotFull": "Бесплатна проба целе радне свеске је паузирана. Власници постојећих налога могу да се пријаве или поврате приступ."
+  },
+  "hr": {
+    "accessTitle": "Prijavite se ili aktivirajte pristup",
+    "trialNote": "Besplatna proba cijele radne bilježnice privremeno je obustavljena. Za pristup cijeloj radnoj bilježnici potreban je odgovarajući račun ili privatna pozivnica.",
+    "pilotFull": "Besplatna proba cijele radne bilježnice privremeno je obustavljena. Vlasnici postojećih računa mogu se prijaviti ili obnoviti pristup."
+  },
+  "he": {
+    "accessTitle": "כניסה או הפעלת גישה",
+    "trialNote": "ההתנסות החינמית בחוברת העבודה המלאה הושהתה. הגישה לחוברת העבודה המלאה מחייבת חשבון זכאי או הזמנה פרטית.",
+    "pilotFull": "ההתנסות החינמית בחוברת העבודה המלאה הושהתה. בעלי חשבונות קיימים יכולים להיכנס או לשחזר את הגישה."
+  },
+  "fa": {
+    "accessTitle": "ورود یا فعال‌سازی دسترسی",
+    "trialNote": "آزمایش رایگان کاربرگ کامل فعلاً متوقف شده است. دسترسی به کاربرگ کامل به حساب واجد شرایط یا دعوت‌نامهٔ خصوصی نیاز دارد.",
+    "pilotFull": "آزمایش رایگان کاربرگ کامل فعلاً متوقف شده است. دارندگان حساب‌های موجود می‌توانند وارد شوند یا دسترسی خود را بازیابی کنند."
+  },
+  "ur": {
+    "accessTitle": "سائن اِن کریں یا رسائی فعال کریں",
+    "trialNote": "مکمل ورک بک کی مفت آزمائش فی الحال معطل ہے۔ مکمل ورک بک تک رسائی کے لیے اہل اکاؤنٹ یا نجی دعوت نامہ ضروری ہے۔",
+    "pilotFull": "مکمل ورک بک کی مفت آزمائش فی الحال معطل ہے۔ موجودہ اکاؤنٹ رکھنے والے سائن اِن کر سکتے ہیں یا اپنی رسائی بحال کر سکتے ہیں۔"
+  },
+  "hi": {
+    "accessTitle": "साइन इन करें या पहुँच सक्रिय करें",
+    "trialNote": "पूरी कार्यपुस्तिका का निःशुल्क परीक्षण फिलहाल बंद है। पूरी कार्यपुस्तिका खोलने के लिए पात्र खाता या निजी आमंत्रण आवश्यक है।",
+    "pilotFull": "पूरी कार्यपुस्तिका का निःशुल्क परीक्षण फिलहाल बंद है। मौजूदा खाताधारक साइन इन करके या अपना प्रवेश बहाल करके इसका उपयोग कर सकते हैं।"
+  },
+  "bn": {
+    "accessTitle": "সাইন ইন করুন বা প্রবেশাধিকার সক্রিয় করুন",
+    "trialNote": "সম্পূর্ণ অনুশীলন বইয়ের বিনামূল্যের ট্রায়াল আপাতত বন্ধ। সম্পূর্ণ অনুশীলন বই ব্যবহারের জন্য যোগ্য অ্যাকাউন্ট বা ব্যক্তিগত আমন্ত্রণ প্রয়োজন।",
+    "pilotFull": "সম্পূর্ণ অনুশীলন বইয়ের বিনামূল্যের ট্রায়াল আপাতত বন্ধ। বিদ্যমান অ্যাকাউন্টধারীরা সাইন ইন বা প্রবেশাধিকার পুনরুদ্ধার করতে পারেন।"
+  },
+  "id": {
+    "accessTitle": "Masuk atau aktifkan akses",
+    "trialNote": "Uji coba gratis buku kerja lengkap sedang dihentikan sementara. Akses ke buku kerja lengkap memerlukan akun yang memenuhi syarat atau undangan pribadi.",
+    "pilotFull": "Uji coba gratis buku kerja lengkap sedang dihentikan sementara. Pemilik akun yang sudah ada dapat masuk atau memulihkan akses."
+  },
+  "ms": {
+    "accessTitle": "Log masuk atau aktifkan akses",
+    "trialNote": "Percubaan percuma buku kerja penuh dihentikan sementara. Akses kepada buku kerja penuh memerlukan akaun yang layak atau jemputan peribadi.",
+    "pilotFull": "Percubaan percuma buku kerja penuh dihentikan sementara. Pemegang akaun sedia ada boleh log masuk atau memulihkan akses."
+  },
+  "zh": {
+    "accessTitle": "登录或激活访问权限",
+    "trialNote": "完整练习册的免费试用现已暂停。 访问完整练习册需要符合条件的账户或私人邀请。",
+    "pilotFull": "完整练习册的免费试用现已暂停。现有账户持有人可以登录或恢复访问权限。"
+  },
+  "ja": {
+    "accessTitle": "ログインまたはアクセスを有効化",
+    "trialNote": "ワークブック全体の無料体験は現在停止しています。 ワークブック全体を利用するには、対象となるアカウントまたは個別の招待が必要です。",
+    "pilotFull": "ワークブック全体の無料体験は現在停止しています。既存のアカウントをお持ちの方は、ログインするかアクセスを復元できます。"
+  }
+}
