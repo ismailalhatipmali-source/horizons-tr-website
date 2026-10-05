@@ -1,0 +1,119 @@
+/* Section 05 focus layout. Does not contain curriculum, glyphs or media. */
+:host {
+  --ink:#163047; --fatha:#cc503c; --damma:#2767ae; --kasra:#16826e;
+  --sukun:#6b657d; --shadda:#934393; --madd:#ba8018; --line:#d9e4e7;
+  --muted:#526873; --word-size:1;
+  display:block; min-width:0; width:100%; color:var(--ink);
+  font:16px/1.65 system-ui,Arial,sans-serif;
+}
+* { box-sizing:border-box; }
+:host [hidden] { display:none; }
+button,input,select { font:inherit; }
+button,select,input {
+  border:1px solid var(--line); border-radius:12px; background:#fff;
+  color:var(--ink); min-height:44px; max-width:100%; min-width:0;
+}
+button { cursor:pointer; padding:8px 14px; white-space:normal; overflow-wrap:anywhere; }
+button:hover { background:#edf7f5; }
+button:disabled { cursor:default; opacity:.65; }
+button[aria-pressed=true],button[aria-selected=true] { background:#e1f3ef; border-color:#278777; }
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible {
+  outline:3px solid #258d84; outline-offset:3px;
+}
+.b4 { max-width:1120px; margin:auto; min-width:0; padding:0; }
+.b4-header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:6px 16px; margin:0 0 8px; }
+.b4-header h2 { margin:0; font-size:17px; line-height:1.5; overflow-wrap:anywhere; }
+.review-count { font-size:12px; color:var(--muted); }
+.review-count b { display:inline-block; margin-inline-start:6px; color:var(--ink); white-space:nowrap; }
+.lesson-layout { display:flex; flex-direction:column; gap:8px; min-width:0; }
+.lessons { min-width:0; background:#fff; border:1px solid var(--line); border-radius:14px; }
+.lessons>summary,.settings-panel>summary { min-height:44px; cursor:pointer; padding:8px 14px; font-size:14px; font-weight:650; }
+.lesson-directory { padding:0 14px 14px; }
+.lessons label,.controls label { font-size:13px; font-weight:650; min-width:0; }
+.lessons select,.controls select,.controls input { display:block; width:100%; padding:8px; margin-top:5px; }
+.skill-note,.directory-help { font-size:13px; color:var(--muted); margin:8px 0; }
+.word-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr)); gap:8px; margin-bottom:12px; }
+.word-chip { font:calc(27px * var(--word-size))/1.85 var(--reader-font); padding:5px 8px; overflow:visible; }
+#review { font-size:13px; }
+.reader { background:#fff; border:1px solid var(--line); border-radius:18px; min-width:0; box-shadow:0 4px 20px #16304706; }
+.modes { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:4px; padding:6px; background:#f0f6f4; border-radius:17px 17px 0 0; border-bottom:1px solid var(--line); }
+.modes button { font-size:14px; padding:8px 6px; border-color:transparent; line-height:1.45; }
+#reader-inner { padding:12px 18px; min-width:0; outline:none; }
+.reading-instruction { text-align:center; margin:0; color:var(--muted); font-size:14px; overflow-wrap:anywhere; }
+.target-visual { display:flex; justify-content:center; align-items:center; min-height:120px; }
+.target-glyph { display:block; width:min(100%,calc(350px * var(--word-size))); height:auto; overflow:visible; }
+.inactive-segment { opacity:.2; }
+.word-tools { display:flex; justify-content:center; flex-wrap:wrap; gap:8px; margin:8px 0; }
+.primary { background:#176c67; color:#fff; border-color:#176c67; }
+.primary:hover { background:#125650; color:#fff; }
+.segments { display:flex; flex-wrap:wrap; justify-content:center; gap:7px; margin:10px 0; }
+.segment-button { padding:0; width:calc(96px * var(--word-size)); max-width:100%; line-height:0; }
+.segment-glyph { display:block; width:100%; height:auto; min-height:55px; overflow:visible; }
+.semantic { margin-top:12px; background:#fffaf0; border:1px solid #eadebf; border-radius:15px; padding:12px; min-width:0; }
+.semantic-layout { display:flex; gap:16px; align-items:center; min-width:0; }
+.semantic-layout>div { min-width:0; flex:1; }
+.semantic-image { width:120px; height:120px; object-fit:contain; border-radius:13px; }
+.semantic h2 { font-size:13px; color:var(--muted); margin:0; }
+.meaning-value { font-size:calc(21px * var(--word-size)); line-height:1.6; margin:3px 0; font-weight:650; overflow-wrap:anywhere; }
+.semantic p[data-word-type] { font-size:13px; margin:6px 0; }
+.grammar-tags { display:flex; flex-wrap:wrap; gap:5px; }
+.grammar-tags span { background:#e5eeeb; border:1px solid #d5e4de; border-radius:99px; padding:3px 9px; font-size:12px; overflow-wrap:anywhere; }
+.usage-label { font-size:12px; margin:8px 0 0; color:var(--muted); }
+.example { font:calc(24px * var(--word-size))/2 var(--reader-font); margin:0; overflow-wrap:anywhere; }
+.grammar-note,.reading-convention { font-size:12px; color:var(--muted); margin:8px 0 0; overflow-wrap:anywhere; }
+.meaning-options { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px; }
+.meaning-options button { font-size:calc(17px * var(--word-size)); min-height:56px; line-height:1.5; }
+.meaning-options.arabic-options button { font:calc(28px * var(--word-size))/1.9 var(--reader-font); }
+.meaning-options .correct { background:#d7f1df; border-color:#2e8153; }
+.meaning-options .wrong { background:#fee7e0; border-color:#b0543e; }
+.feedback { text-align:center; font-weight:650; margin:8px 0; }
+.read-rating { display:flex; flex-wrap:wrap; gap:7px; justify-content:center; margin-top:10px; }
+.read-rating p { width:100%; margin:0; font-size:12px; text-align:center; color:var(--muted); }
+.read-rating button { font-size:13px; }
+.pager { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:8px 16px; border-top:1px solid var(--line); }
+.pager button { min-width:75px; }
+.pager span { font-size:14px; white-space:nowrap; }
+.all-words { margin-top:12px; border-top:1px solid var(--line); }
+.all-words summary { cursor:pointer; font-weight:650; padding:8px 0; min-height:44px; }
+.all-words label { display:block; font-size:13px; margin-top:8px; }
+.all-words input { width:100%; padding:7px 12px; margin:7px 0 12px; }
+.all-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,140px),1fr)); gap:8px; }
+.all-grid button { font:calc(26px * var(--word-size))/1.9 var(--reader-font); overflow:visible; }
+.empty { text-align:center; padding:30px 10px; }
+svg { pointer-events:none; }
+.settings-panel { margin-bottom:8px; background:#fff; border:1px solid var(--line); border-radius:14px; }
+.controls { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:0; padding:0 14px 14px; align-items:end; }
+.controls input { padding:0; accent-color:#247d73; }
+@media(max-width:650px) {
+  .b4-header h2 { font-size:16px; }
+  .review-count { font-size:12px; }
+  #reader-inner { padding:10px 12px; }
+  .semantic-layout { flex-wrap:wrap; gap:10px; }
+  .semantic-layout>div { flex:1 1 170px; }
+  .semantic-image { width:96px; height:96px; }
+  .controls { grid-template-columns:1fr 1fr; }
+  .controls label:last-child { grid-column:1/-1; }
+  .pager { padding:8px 12px; }
+}
+@media(max-width:420px) {
+  .modes { grid-template-columns:1fr 1fr; }
+  .semantic { padding:10px; }
+  .meaning-options { grid-template-columns:1fr; }
+  .word-tools { gap:6px; }
+  .word-tools button { padding-inline:10px; font-size:14px; }
+  .controls { grid-template-columns:1fr; }
+  .controls label:last-child { grid-column:auto; }
+}
+@media print {
+  .controls,.modes,.pager,.word-tools,.lessons,.all-words,.read-rating { display:none; }
+  .reader { border:none; box-shadow:none; }
+}
+
+/* At enlarged word sizes, retain the selected physical glyph size. Only this
+   zoomed figure may scroll horizontally; ordinary cards never gain a scrollbox. */
+:host { container-type:inline-size; }
+:host([data-word-zoomed="true"]) .target-visual { display:block; overflow-x:auto; overscroll-behavior-inline:contain; padding-block:4px; }
+:host([data-word-zoomed="true"]) .target-glyph { width:calc(350px * var(--word-size)); max-width:none; margin-inline:auto; }
+@supports (width:1cqi) {
+ :host([data-word-zoomed="true"]) .target-glyph { width:calc(min(350px, 100cqi - 28px) * var(--word-size)); }
+}

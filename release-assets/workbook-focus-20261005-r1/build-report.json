@@ -1,0 +1,13 @@
+{
+  "release": "workbook-focus-20261005-r1",
+  "build": "PASS",
+  "interface_languages": 32,
+  "new_copy_keys": 11,
+  "demo_teaching_manifest_entries_unchanged": 497,
+  "demo_teaching_manifest_sha256": "573dd7e38cb34406aac09a9991ac44427195ac104644d123a218896acadeee29",
+  "original_demo_restored_byte_for_byte": true,
+  "paid_reader": "Private in-place patch prepared; not decrypted or validated by this build",
+  "browser_verification": "Separate required gate",
+  "deployment": "Not performed by build",
+  "demo_workbook_byte_delta": 49103
+}

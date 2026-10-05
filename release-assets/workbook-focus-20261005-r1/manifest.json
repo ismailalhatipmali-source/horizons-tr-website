@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "release": "workbook-focus-20261005-r1",
+  "sources": {
+    "src/workbook-focus/focus-shell.js": "3857b94184716726ae1ac5d66b5cda34a1f0ab56ad4fb2b4187df7d4b5c2bed2",
+    "src/workbook-focus/focus-shell.css": "ac587ff7760d2d9e54c4bb5f515da3aa93ba7caef4b991e59e54ba4dca1088b3",
+    "src/workbook-focus/focus-locales.json": "e6c3f9693e2be71b64ab6044aaeba7594f321390ce5b3684eed81e3c494f0c37",
+    "src/workbook-focus/blending4-component.js": "667a8616c782f05089bf983573810abbe682c1f59c4809a64f4d40e5190f348f",
+    "src/workbook-focus/blending4-component.css": "778287336ab7a83a4e35170ac96fe3b31423ccbce65886da674ebe0c80243450",
+    "scripts/comprehensive-meaning-preservation.php": "4e73cd7ab4fb3dee69796fce056d679dd5befd733864867ef586ee958c4acaf0",
+    "scripts/blending4-preservation.php": "b48cb141e1f79cf99ca250444502eb0874b4d5fd025fd1d72ba13c7ffcfa9651",
+    "src/workbook-focus/blending3-component.js": "163df9a343121a13bb7dc80dfd8c2dfdc3a69b6a7b7f585224e14776ffb514d9",
+    "src/workbook-focus/blending3-responsive.css": "c95feca7d6de0f3012a7f6430b44c86b071fbd9efba5304ea71d23b73be48cbf"
+  },
+  "compiled_hook": {
+    "source": "release-assets/workbook-focus-20261005-r1/focus-hook.js",
+    "bytes": 49198,
+    "sha256": "99fa806239eb2659bce23130dd32f1a8b928820ed088228fae4c1e1bb515f8a2"
+  },
+  "files": {
+    "try/workbook.js": {
+      "source": "release-assets/workbook-focus-20261005-r1/files/try/workbook.js",
+      "before": "44523c84d110b19784ebfb3433a9d3cf102a44fcd42d7c48591411b53728c4a5",
+      "bytes": 686860,
+      "sha256": "623d60b81455d790da1bd4015f8e828c2c597672fcfde9b63e9707982cd1f572"
+    },
+    "try/demo-asset-manifest.json": {
+      "source": "release-assets/workbook-focus-20261005-r1/files/try/demo-asset-manifest.json",
+      "before": "9d9ab520c3f5c0560e5aad37c750980a749f42c097c53dffd6067df36fb55790",
+      "bytes": 119395,
+      "sha256": "53178af02565a53dd73110d314722605271773dfb6cd20acb0b2a6fbdfe4e2ef"
+    },
+    "try/sw.js": {
+      "source": "release-assets/workbook-focus-20261005-r1/files/try/sw.js",
+      "before": "abd09799d2ef09c3b0b58de9af096770dcde1cc650b14427fb302ea71b205c2b",
+      "bytes": 11476,
+      "sha256": "4cd2611ca44f3cc26730e957509fe151bb80cdfea8c192e623fe82dc9549e8d7"
+    }
+  },
+  "languages": [
+    "en",
+    "ar",
+    "tr",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "uk",
+    "pl",
+    "cs",
+    "ro",
+    "hu",
+    "el",
+    "sv",
+    "da",
+    "no",
+    "fi",
+    "bg",
+    "sr",
+    "hr",
+    "he",
+    "fa",
+    "ur",
+    "hi",
+    "bn",
+    "id",
+    "ms",
+    "zh",
+    "ja"
+  ]
+}

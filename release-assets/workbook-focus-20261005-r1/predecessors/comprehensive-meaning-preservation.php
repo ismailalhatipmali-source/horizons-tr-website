@@ -41,7 +41,7 @@ function hznCMRelease(string $repo):array {
 }
 function hznCMState(string $web):?array {
     require_once __DIR__.'/blending4-preservation.php';
-    $focus=hznFocusState($web);$blending4=hznB4State($web);
+    $blending4=hznB4State($web);
     $home=dirname($web);$private=hznCMPath($home,'.horizons-comprehensive-meaning');$path=hznCMPath($private,'receipt.json');if(!is_file($path))return null;
     if(realpath($private)!==$private||(fileperms($private)&0777)!==0700||realpath($path)!==$path||(fileperms($path)&0777)!==0600||filesize($path)>65536)throw new RuntimeException('COMPREHENSIVE_PRIVATE_RECEIPT_REQUIRED');
     $receipt=json_decode(hznCMRead($path),true,16,JSON_THROW_ON_ERROR);$release=hznCMRelease(dirname(__DIR__));
@@ -56,21 +56,20 @@ function hznCMState(string $web):?array {
     if(($demo['patch']??'')!=='demo-experience-20261004-r1'||($demo['manifest_sha256']??'')!==HZN_COMPREHENSIVE_MEANING_DEMO_MANIFEST_SHA256||($paid['patch']??'')!=='workbook-responsive-20261004-r3'||($paid['plain_after_sha256']??'')!==$receipt['plain_before_sha256'])throw new RuntimeException('COMPREHENSIVE_BASELINE_LINEAGE_INVALID');
     $expected=$demo['hashes'];$expected['learn/asset-manifest.json']=$paid['hashes']['asset-manifest.json'];$expected['learn/content/1.4.1/workbook.js.hzn']=$paid['hashes']['content/1.4.1/workbook.js.hzn'];
     if($receipt['before_hashes']!==$expected)throw new RuntimeException('COMPREHENSIVE_BASELINE_HASHES_INVALID');
-    foreach(HZN_COMPREHENSIVE_MEANING_PATHS as $name){$file=hznB4PreviousPath($web,$name,$blending4,$focus);$backup=hznCMPath($private,'baseline/'.$name);$sha=$receipt['hashes'][$name];$before=$receipt['before_hashes'][$name];
-        if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!is_file($file)||(fileperms($file)&0777)!==((($blending4!==null&&in_array($name,HZN_B4_SHARED,true))||($focus!==null&&in_array($name,HZN_FOCUS_PATHS,true)))?0600:0644)||!hash_equals($sha,hash_file('sha256',$file)))throw new RuntimeException('COMPREHENSIVE_PUBLIC_CHANGED');
+    foreach(HZN_COMPREHENSIVE_MEANING_PATHS as $name){$file=hznB4PreviousPath($web,$name,$blending4);$backup=hznCMPath($private,'baseline/'.$name);$sha=$receipt['hashes'][$name];$before=$receipt['before_hashes'][$name];
+        if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!is_file($file)||(fileperms($file)&0777)!==($blending4!==null&&in_array($name,HZN_B4_SHARED,true)?0600:0644)||!hash_equals($sha,hash_file('sha256',$file)))throw new RuntimeException('COMPREHENSIVE_PUBLIC_CHANGED');
         if(!is_file($backup)||(fileperms($backup)&0777)!==0600||!hash_equals($before,hash_file('sha256',$backup))||!is_int($receipt['before_modes'][$name])||$receipt['before_modes'][$name]<0||$receipt['before_modes'][$name]>0777)throw new RuntimeException('COMPREHENSIVE_BASELINE_CHANGED');
         if(isset($release['files'][$name])&&$before!==$release['files'][$name]['before'])throw new RuntimeException('COMPREHENSIVE_BASELINE_RELEASE_CHANGED');
         if(isset($release['files'][$name])&&($sha!==$release['files'][$name]['sha256']||filesize($file)!==$release['files'][$name]['bytes']))throw new RuntimeException('COMPREHENSIVE_RELEASE_PAYLOAD_CHANGED');
     }
     $baselineRoot=hznCMPath($private,'baseline');
-    $old=json_decode(hznCMRead(hznCMPath($baselineRoot,'try/demo-asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);$new=json_decode(hznCMRead(hznFocusPreviousPath($web,'try/demo-asset-manifest.json',$focus)),true,32,JSON_THROW_ON_ERROR);$project=$new;$project['files']['workbook.js']=$old['files']['workbook.js'];
-    if($project!==$old||($new['files']['workbook.js']['sha256']??'')!==$receipt['hashes']['try/workbook.js']||($new['files']['workbook.js']['bytes']??-1)!==filesize(hznFocusPreviousPath($web,'try/workbook.js',$focus)))throw new RuntimeException('COMPREHENSIVE_DEMO_CONTENT_CHANGED');
-    $old=json_decode(hznCMRead(hznCMPath($baselineRoot,'learn/asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);$new=json_decode(hznCMRead(hznB4PreviousPath($web,'learn/asset-manifest.json',$blending4,$focus)),true,32,JSON_THROW_ON_ERROR);$project=$new;$project['files']['workbook.js']=$old['files']['workbook.js'];$entry=$new['files']['workbook.js'];
-    if($project!==$old||($entry['sha256']??'')!==$receipt['hashes']['learn/content/1.4.1/workbook.js.hzn']||($entry['bytes']??-1)!==filesize(hznB4PreviousPath($web,'learn/content/1.4.1/workbook.js.hzn',$blending4,$focus))||($entry['encoding']??'')!=='gzip'||($entry['decoded_bytes']??0)<1||$entry['decoded_bytes']>33554432)throw new RuntimeException('COMPREHENSIVE_PAID_CONTENT_CHANGED');
-    foreach(['try/sw.js'=>false,'learn/sw.js'=>true] as $name=>$paidWorker)if(hznCMWorker(hznCMRead(hznCMPath($baselineRoot,$name)),$paidWorker)!==hznCMRead(hznB4PreviousPath($web,$name,$blending4,$focus)))throw new RuntimeException('COMPREHENSIVE_WORKER_CHANGED');
+    $old=json_decode(hznCMRead(hznCMPath($baselineRoot,'try/demo-asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);$new=json_decode(hznCMRead(hznCMPath($web,'try/demo-asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);$project=$new;$project['files']['workbook.js']=$old['files']['workbook.js'];
+    if($project!==$old||($new['files']['workbook.js']['sha256']??'')!==$receipt['hashes']['try/workbook.js']||($new['files']['workbook.js']['bytes']??-1)!==filesize(hznCMPath($web,'try/workbook.js')))throw new RuntimeException('COMPREHENSIVE_DEMO_CONTENT_CHANGED');
+    $old=json_decode(hznCMRead(hznCMPath($baselineRoot,'learn/asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);$new=json_decode(hznCMRead(hznB4PreviousPath($web,'learn/asset-manifest.json',$blending4)),true,32,JSON_THROW_ON_ERROR);$project=$new;$project['files']['workbook.js']=$old['files']['workbook.js'];$entry=$new['files']['workbook.js'];
+    if($project!==$old||($entry['sha256']??'')!==$receipt['hashes']['learn/content/1.4.1/workbook.js.hzn']||($entry['bytes']??-1)!==filesize(hznB4PreviousPath($web,'learn/content/1.4.1/workbook.js.hzn',$blending4))||($entry['encoding']??'')!=='gzip'||($entry['decoded_bytes']??0)<1||$entry['decoded_bytes']>33554432)throw new RuntimeException('COMPREHENSIVE_PAID_CONTENT_CHANGED');
+    foreach(['try/sw.js'=>false,'learn/sw.js'=>true] as $name=>$paidWorker)if(hznCMWorker(hznCMRead(hznCMPath($baselineRoot,$name)),$paidWorker)!==hznCMRead(hznB4PreviousPath($web,$name,$blending4)))throw new RuntimeException('COMPREHENSIVE_WORKER_CHANGED');
     foreach(['try/index.html','learn/index.html','try/demo-experience.css'] as $name)if($receipt['hashes'][$name]!==$receipt['before_hashes'][$name])throw new RuntimeException('COMPREHENSIVE_UNRELATED_UI_CHANGED');
     $receipt['baseline_root']=$baselineRoot;
     if($blending4!==null){foreach(HZN_B4_SHARED as $p)$receipt['hashes'][$p]=$blending4['hashes'][$p];$receipt['plain_after_sha256']=$blending4['plain_after_sha256'];$receipt['worker_suffix']=$blending4['worker_suffix'];$receipt['blending4']=$blending4;}
-    if($focus!==null){foreach(HZN_FOCUS_PUBLIC as $p)$receipt['hashes'][$p]=$focus['hashes'][$p];$receipt['workbook_focus']=$focus;}
     return $receipt;
 }

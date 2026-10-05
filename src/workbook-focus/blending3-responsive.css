@@ -1,0 +1,66 @@
+/* Section 04 focus successor, loaded after its preserved generic base style. */
+:host { display:block; width:100%; max-width:100%; min-width:0; background:transparent; }
+.app { width:100%; max-width:1120px; min-width:0; padding:0; }
+.page-heading,.settings,.workbench,.lesson-panel,.reader,.reader-inner,.semantic,.semantic-layout,.semantic-layout>div,.all-words { min-width:0; max-width:100%; }
+.app .page-heading { flex-wrap:wrap; align-items:center; gap:6px 16px; margin-bottom:8px; }
+.page-heading>div { min-width:0; max-width:100%; }
+.app .page-heading h1 { margin:0; font-size:17px; line-height:1.5; overflow-wrap:anywhere; }
+.app .page-heading .review-count { display:block; border:0; padding:0; margin:0; font-size:12px; }
+.app .workbench { display:flex; flex-direction:column; gap:8px; }
+.focus-lessons,.focus-settings { width:100%; min-width:0; border:1px solid var(--line); border-radius:14px; background:#fff; }
+.focus-settings { margin:0 0 8px; }
+.focus-lessons>summary,.focus-settings>summary { cursor:pointer; min-height:44px; padding:8px 14px; font-size:14px; font-weight:650; line-height:1.65; }
+.focus-lessons>summary:focus-visible,.focus-settings>summary:focus-visible { outline:3px solid #157e88; outline-offset:3px; }
+.app .lesson-panel { width:100%; padding:0 14px 14px; border:0; border-radius:0 0 14px 14px; background:transparent; }
+.focus-settings .settings { margin:0; padding:0 14px 14px; }
+.settings label,.settings .font-setting,.settings .size-control { min-width:min(160px,100%); max-width:100%; }
+.settings select,.settings input,.lesson-panel select { min-width:0; max-width:100%; }
+.app .word-grid,.app .all-word-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr)); gap:8px; }
+.app .word-chip,.app .all-word-grid button { display:grid; place-items:center; width:100%; min-width:0; max-width:100%; min-height:60px; height:auto; padding:6px 8px; font:calc(27px * var(--word-size))/1.85 var(--reader-font); text-align:center; white-space:normal; overflow-wrap:anywhere; overflow:visible; border-radius:12px; }
+.app .reader { width:100%; min-width:0; overflow:visible; border-radius:18px; }
+.app .modes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px; padding:6px; background:#f0f6f4; border-radius:17px 17px 0 0; border-bottom:1px solid var(--line); }
+.app .mode-tab { min-width:0; max-width:100%; min-height:44px; height:auto; padding:8px 6px; white-space:normal; overflow-wrap:anywhere; font-size:14px; line-height:1.45; }
+.app .reader-inner { padding:12px 18px; }
+.app .reading-instruction { font-size:14px; margin:0; overflow-wrap:anywhere; }
+.app .target-visual { min-height:120px; }
+.app .target-glyph { max-width:100%; width:min(calc(350px * var(--word-size)),100%); height:auto; max-height:none; overflow:visible; }
+.segments,.word-tools,.rating-buttons { min-width:0; max-width:100%; flex-wrap:wrap; }
+.app .segments .segment-button { min-width:0; width:calc(96px * var(--word-size)); max-width:100%; padding:0; }
+.app .segments .segment-button svg { display:block; width:100%; max-width:100%; height:auto; min-height:55px; overflow:visible; }
+.tool-button,.rating-buttons button,.practice-switch,.pager button { min-width:0; max-width:100%; min-height:44px; white-space:normal; overflow-wrap:anywhere; }
+.app .semantic { margin-top:12px; padding:12px; background:#fffaf0; border-color:#eadebf; }
+.app .semantic-image { width:120px; height:120px; }
+.semantic-layout>div { flex:1; }
+.app .semantic h2 { font-size:13px; margin:0; }
+.semantic .focus-meaning-value { font-size:calc(21px * var(--word-size)); font-weight:650; color:#185f55; line-height:1.6; overflow-wrap:anywhere; margin:3px 0; }
+.app .meaning-option { font-size:calc(17px * var(--word-size)); min-width:0; max-width:100%; min-height:56px; }
+.app .reading-convention { font-size:12px; margin:8px 0 0; }
+.app .pager { gap:8px; padding:8px 16px; border-radius:0 0 17px 17px; background:#fff; }
+.app .pager button { max-width:40%; padding:8px 14px; }
+.app .all-words { margin-top:12px; padding:0; border:0; border-top:1px solid var(--line); border-radius:0; background:transparent; }
+.app .all-words>summary { min-height:44px; padding:8px 0; font-size:14px; }
+.app .footer,#intro { font-size:13px; color:var(--muted); margin:8px 0 0; }
+@media(max-width:650px) {
+ .app .page-heading h1 { font-size:16px; }
+ .app .reader-inner { padding:10px 12px; }
+ .semantic-layout { flex-wrap:wrap; gap:10px; }
+ .semantic-layout>div { flex:1 1 170px; }
+ .app .semantic-image { width:96px; height:96px; }
+ .app .pager { padding:8px 12px; }
+ .app .word-tools { gap:6px; }
+ .app .tool-button { padding-inline:10px; font-size:14px; }
+}
+@media(max-width:370px) {
+ .settings>label,.settings>.font-setting { flex-basis:100%; min-width:0; }
+ .meaning-options { grid-template-columns:minmax(0,1fr); }
+ .app .mode-tab { font-size:13px; }
+}
+
+/* At enlarged word sizes, retain the selected physical glyph size. Only this
+   zoomed figure may scroll horizontally; ordinary cards never gain a scrollbox. */
+:host { container-type:inline-size; }
+:host([data-word-zoomed="true"]) .target-visual { display:block; overflow-x:auto; overscroll-behavior-inline:contain; padding-block:4px; }
+:host([data-word-zoomed="true"]) .target-glyph { width:calc(350px * var(--word-size)); max-width:none; margin-inline:auto; }
+@supports (width:1cqi) {
+ :host([data-word-zoomed="true"]) .target-glyph { width:calc(min(350px, 100cqi - 28px) * var(--word-size)); }
+}
