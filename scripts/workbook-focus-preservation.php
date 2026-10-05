@@ -96,7 +96,8 @@ function hznFocusState(string $web):?array {
     $base=hznFocusPath($private,'baseline');
     foreach(HZN_FOCUS_PATHS as $p){$expected=str_starts_with($p,'try/')?($cm['hashes'][$p]??''):($b4['hashes'][$p]??'');$backup=hznFocusPath($base,$p);$target=hznFocusPath($trialPause!==null&&$p==='learn/sw.js'?$trialPause['baseline_root']:$web,$p);
         if(($r['before_hashes'][$p]??'')!==$expected||!hznFocusSha($expected)||!hash_equals($expected,hash('sha256',hznFocusRead($backup)))||(fileperms($backup)&0777)!==0600||$r['before_modes'][$p]!==0644)throw new RuntimeException('FOCUS_BASELINE_CHANGED');
-        if(!hznFocusSha($r['hashes'][$p]??'')||!hash_equals($r['hashes'][$p],hash('sha256',hznFocusRead($target)))||(fileperms($target)&0777)!==0644)throw new RuntimeException('FOCUS_PUBLIC_CHANGED');
+        $targetMode=$trialPause!==null&&$p==='learn/sw.js'?0600:0644;
+        if(!hznFocusSha($r['hashes'][$p]??'')||!hash_equals($r['hashes'][$p],hash('sha256',hznFocusRead($target)))||(fileperms($target)&0777)!==$targetMode)throw new RuntimeException('FOCUS_PUBLIC_CHANGED');
         if(isset($release['files'][$p])&&($expected!==$release['files'][$p]['before']||$r['hashes'][$p]!==$release['files'][$p]['sha256']))throw new RuntimeException('FOCUS_PUBLIC_RELEASE_CHANGED');
     }
     foreach(['try'=>false,'learn'=>true] as $edition=>$paid){$manifest=$paid?'asset-manifest.json':'demo-asset-manifest.json';$old=json_decode(hznFocusRead(hznFocusPath($base,$edition.'/'.$manifest)),true,32,JSON_THROW_ON_ERROR);$new=json_decode(hznFocusRead(hznFocusPath($web,$edition.'/'.$manifest)),true,32,JSON_THROW_ON_ERROR);hznFocusProjection($old,$new,$paid);$app=$paid?'learn/content/1.4.1/workbook.js.hzn':'try/workbook.js';$entry=$new['files']['workbook.js']??[];
