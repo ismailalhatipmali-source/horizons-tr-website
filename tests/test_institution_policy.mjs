@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
-const {JSDOM}=createRequire('/tmp/horizons-demo-tools/package.json')('jsdom');
+const {JSDOM}=createRequire(import.meta.url)('jsdom');
 const read=p=>fs.readFileSync(p,'utf8');
 const labels=JSON.parse(read('src/commerce/account-locales.json'));
 for(const [lang,words] of Object.entries(labels)){

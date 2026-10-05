@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createRequire} from 'node:module';
 import vm from 'node:vm';
-const {JSDOM}=createRequire('/tmp/horizons-demo-tools/package.json')('jsdom');
+const {JSDOM}=createRequire(import.meta.url)('jsdom');
 const read=p=>readFile(new URL('../'+p,import.meta.url),'utf8');
 const web=JSON.parse(await read('src/workbook-web/web-locales.json'));
 const portal=JSON.parse(await read('src/workbook-web/portal-locales.json'));

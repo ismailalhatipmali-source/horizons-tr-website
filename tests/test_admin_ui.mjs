@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
-const require=createRequire('/tmp/horizons-demo-tools/package.json'),{JSDOM}=require('jsdom');
+const require=createRequire(import.meta.url),{JSDOM}=require('jsdom');
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const catalog=JSON.parse(read('src/commerce/products.json'));
 const dom=new JSDOM(read('src/admin/index.html'),{url:'https://horizons-tr.com/admin/',runScripts:'outside-only'}),w=dom.window,d=w.document;

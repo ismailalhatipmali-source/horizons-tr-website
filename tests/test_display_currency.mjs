@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';import {createRequire} from 'node:module';
-const require=createRequire('/tmp/horizons-demo-tools/package.json');const {JSDOM}=require('jsdom');
+const require=createRequire(import.meta.url);const {JSDOM}=require('jsdom');
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const metadata=JSON.parse(read('src/commerce/display-currencies.json')),catalog=JSON.parse(read('src/commerce/products.json')),translations=JSON.parse(read('src/commerce/display-currency-locales.json'));
 const countries=JSON.parse(read('dist/assets/commerce-geo/countries.json'));

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';import {createRequire} from 'node:module';
-const {JSDOM}=createRequire('/tmp/horizons-demo-tools/package.json')('jsdom');
+const {JSDOM}=createRequire(import.meta.url)('jsdom');
 const source=(await readFile('src/commerce/membership-manager.js','utf8')).replace('export function','function');
 const labels={title:'Learners',email:'Email',email_confirm:'Confirm email',add:'Invite',remove:'Remove',cancel:'Cancel',permanent_warning:'Email cannot be replaced',permanent_consent:'I understand',remove_warning:'Revoke learner access?',removed:'Removed',invited:'Invitation queued',error:'Unavailable'};
 for(const type of ['individual','family','institution']) {

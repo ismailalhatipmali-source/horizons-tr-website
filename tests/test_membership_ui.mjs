@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createRequire} from 'node:module';
-const {JSDOM}=createRequire('/tmp/horizons-demo-tools/package.json')('jsdom');
+const {JSDOM}=createRequire(import.meta.url)('jsdom');
 const html=await readFile('src/workbook-web/index.html','utf8');
 const source=(await readFile('src/workbook-web/membership-ui.js','utf8')).replace(/^import .*;\n/gm,'').replaceAll('export async function','async function').replaceAll('export function','function');
 const web=JSON.parse(await readFile('src/workbook-web/web-locales.json','utf8')),portal=JSON.parse(await readFile('src/workbook-web/portal-locales.json','utf8'));

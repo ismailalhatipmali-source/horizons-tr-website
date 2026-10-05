@@ -1,5 +1,29 @@
 # HORIZONS — Arabic Workbook web/demo 1.4.5 / Windows 1.4.0
 
+## Current deployment and maintenance — 2026-10-05
+
+The authoritative publication instructions are the checked-in `.cpanel.yml`
+and the private receipts on the hosting account. The older full-installation
+commands below are historical, and must not replace the current overlay chain.
+`dist/release.json` records the original base release; it does not identify every
+subsequent live overlay or prove that GitHub HEAD has been published.
+
+The current chain publishes scoped updates and ends with
+`deploy-workbook-focus.php` and `deploy-trial-pause.php`. Some publishers require
+private inputs beside `public_html`, including the blending updates and travel
+product upload. Keep those inputs and all receipt baseline folders until their
+dependencies and rollback use have been checked. Do not copy `src`, `scripts`,
+`tests`, `release-assets`, or private inputs into the document root.
+
+The public offer for the seven-day **full-workbook** trial is paused. The public five-letter
+`/try/` demo remains separate. The trial-pause publisher changes public messaging
+only; the private activation configuration must also keep `auto_trial_enabled`
+disabled. Existing paid and invited entitlements must be preserved.
+
+See [the maintenance record](docs/maintenance-2026-10-05.md) for verified scope,
+unresolved hosting work, the private inventory command, and repeatable local test
+setup. No release assets were pruned during this maintenance pass.
+
 This repository prepares the existing HORIZONS website and Arabic Level 1 workbook for the owner's cPanel deployment. The approved company design, 32 site languages, localized pages, video, and RTL/LTR layouts remain in place. The original company preview is recorded by `preview_source_commit` in `dist/release.json`.
 
 ## Interface update 1.4.5 — 2026-10-02
@@ -9,8 +33,8 @@ website, including activation, passwords, learner management, installation and
 offline saving. The existing Arabic lessons, recordings, approved cover and
 optional five-language word/story meanings are unchanged.
 
-Build with `python3 scripts/build_interface_update.py`. On the existing installed
-host, `.cpanel.yml` publishes the 19 public interface files using
+Build with `python3 scripts/build_interface_update.py`. The historical interface
+deployment publishes the 19 public interface files using
 `scripts/deploy-interface.php`. It checks every source and installed baseline,
 backs up changed files privately, and preserves activation services, databases,
 encrypted lessons, saved progress and previously downloaded media. This overlay

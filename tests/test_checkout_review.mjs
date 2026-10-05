@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
-const require=createRequire('/tmp/horizons-demo-tools/package.json');
+const require=createRequire(import.meta.url);
 const {JSDOM}=require('jsdom');
 const root=new URL('../',import.meta.url);
 const read=p=>fs.readFileSync(new URL(p,root),'utf8');

@@ -1,0 +1,7 @@
+{
+  "name": "horizons-maintenance-tests",
+  "private": true,
+  "description": "Local-only DOM regression dependencies; never deployed to public_html.",
+  "engines": { "node": ">=18" },
+  "devDependencies": { "jsdom": "26.1.0" }
+}
