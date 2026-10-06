@@ -2,8 +2,10 @@
 
 `src/security/public.htaccess` is the reviewed Apache 2.4 policy. The identical
 block is included in `dist/.htaccess` so a base deployment retains it. Existing
-cPanel handlers and PHP ini files are preserved. The scoped production chain in
-`.cpanel.yml` does not apply this policy automatically.
+cPanel handlers and PHP ini files are preserved. The temporary `.cpanel.yml` task runs only the guarded Apache transaction.
+The original product publication chain is retained in Git at commit
+`4a9e26d0c3edec60787e6d42be1f7d2b1157763f` and must be restored after this
+host verification completes.
 
 The policy denies direct HTTP access to known PHP configuration/bootstrap files,
 environment files, SQLite/SQL files, editor/backup files, private keys and VCS
@@ -98,3 +100,21 @@ are outside PATH. A skipped runtime suite is not a pass. Production verification
 was blocked on 2026-10-06 by unavailable browser credential state; no hosting
 configuration change, ini change, additional quarantine move or live release
 deployment is established by these repository changes.
+
+## Temporary cPanel deployment task
+
+When Terminal is unavailable, the existing live repository's **Update from
+Remote** button performs the fast-forward update, and **Deploy HEAD Commit**
+runs `scripts/deploy-cpanel-hardening.sh`. cPanel refuses a dirty working tree;
+the wrapper independently verifies the exact private checkout, clean main branch,
+reviewed ancestor and separate document root. It shares the existing deployment
+lock and runs only `execute-hardening.php`, without running the product publishers
+or sending test mail. The deployment log records the exact host HEAD and private
+result path.
+
+This task temporarily replaces the normal `.cpanel.yml` task. After reviewing a
+successful private receipt, restore the original `.cpanel.yml` bytes from commit
+`4a9e26d0c3edec60787e6d42be1f7d2b1157763f` in a new fast-forward commit.
+Update the host checkout again to restore the task; that update does not require
+running the unrelated product deployment chain. Do not reset or force a host
+checkout with local changes.
