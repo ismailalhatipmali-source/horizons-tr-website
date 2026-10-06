@@ -1,6 +1,3 @@
-DirectoryIndex disabled
-DirectoryIndex index.html index.php
-Options -Indexes
 # BEGIN HORIZONS HARDENING
 # Apache 2.4 authorization; compatible with PHP-FPM, without handler changes.
 <FilesMatch "(?i)^(?:[.]env(?:[.].*)?|[.]ht.*|[.]user[.]ini|php[.]ini|error_log|[.]cpanel[.]yml|config(?:-path)?[.]php(?:[.].*)?|(?:bootstrap|Core|features|owner-vault)[.]php(?:[.].*)?|key[.]bin|composer[.](?:json|lock)|package(?:-lock)?[.]json|.*[.](?:sqlite(?:3)?(?:-wal|-shm)?|db(?:-wal|-shm)?|sql(?:[.](?:gz|bz2|xz|zip))?|bak|backup|bkp|old|orig|save|swp|swo|pem|key|ini|log)|.*~)$">
@@ -16,19 +13,3 @@ Options -Indexes
   Require all denied
 </If>
 # END HORIZONS HARDENING
-ErrorDocument 404 /404.html
-AddDefaultCharset UTF-8
-<IfModule mod_mime.c>
-  AddType font/woff2 .woff2
-  AddType video/mp4 .mp4
-  AddType audio/mpeg .mp3
-  AddType image/webp .webp
-</IfModule>
-<IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-  Header set Referrer-Policy "no-referrer"
-  Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
-  <FilesMatch "\.(html|css|js)$">
-    Header set Cache-Control "no-cache"
-  </FilesMatch>
-</IfModule>

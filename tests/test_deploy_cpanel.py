@@ -174,6 +174,27 @@ class DeploymentTests(unittest.TestCase):
         self.assertEqual(second.returncode, 0, second.stdout + second.stderr)
         self.assertEqual(snapshot(self.target), after)
 
+    def test_scoped_hardening_migrates_once_without_losing_host_rules(self):
+        policy = '# BEGIN HORIZONS HARDENING\nNEW_GUARD\n# END HORIZONS HARDENING\n'
+        self.write(self.repo / 'dist/.htaccess', 'Options -Indexes\n' + policy)
+        self.write(self.target / '.htaccess', 'HOST_RULE_BEFORE\n# BEGIN HORIZONS HARDENING\nOLD_GUARD\n# END HORIZONS HARDENING\nHOST_RULE_AFTER\n')
+        result = self.run_deploy()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        result = self.run_deploy()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        current = (self.target / '.htaccess').read_text()
+        self.assertEqual(current.count('# BEGIN HORIZONS HARDENING'), 1)
+        self.assertIn(policy, current)
+        self.assertNotIn('OLD_GUARD', current)
+        self.assertIn('HOST_RULE_BEFORE\n', current)
+        self.assertIn('HOST_RULE_AFTER\n', current)
+
+    def test_malformed_scoped_hardening_stops_before_public_writes(self):
+        self.write(self.repo / 'dist/.htaccess', '# BEGIN HORIZONS HARDENING\nGUARD\n# END HORIZONS HARDENING\n')
+        self.write(self.target / '.htaccess', 'HOST_RULE\n# BEGIN HORIZONS HARDENING\nmissing end\n')
+        result = self.assert_rejected_without_public_changes()
+        self.assertIn('Malformed HORIZONS hardening block', result.stderr)
+
     def test_corrupt_last_artifact_fails_before_public_writes(self):
         p = self.assets / 'update/part-0000'
         value = bytearray(p.read_bytes()); value[-1] ^= 1; p.write_bytes(value)

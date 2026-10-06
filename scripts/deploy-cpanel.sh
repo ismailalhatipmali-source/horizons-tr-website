@@ -305,6 +305,15 @@ if [[ -f "$TARGET_DIR/.htaccess" ]]; then
   awk '/^# BEGIN HORIZONS MANAGED$/{if(inside || begins++)exit 1;inside=1;next} /^# END HORIZONS MANAGED$/{if(!inside)exit 1;inside=0;next} END{if(inside)exit 1}' "$TARGET_DIR/.htaccess" || fail 'Malformed existing HORIZONS Apache block; no files were published'
   awk '/^# BEGIN HORIZONS MANAGED$/{inside=1;next} /^# END HORIZONS MANAGED$/{inside=0;next} !inside{print}' "$TARGET_DIR/.htaccess" > "$HTACCESS"
 fi
+# A prior scoped hardening publication may live outside the managed block.
+# Migrate it into the current source policy once, preserving all host directives.
+if [[ "$(awk '/^# BEGIN HORIZONS HARDENING$/{n++} END{print n+0}' "$SOURCE_DIR/.htaccess")" != 0 ]]; then
+  for access_file in "$SOURCE_DIR/.htaccess" "$HTACCESS"; do
+    awk '/^# BEGIN HORIZONS HARDENING$/{if(inside || begins++)exit 1;inside=1;next} /^# END HORIZONS HARDENING$/{if(!inside)exit 1;inside=0;next} END{if(inside)exit 1}' "$access_file" || fail 'Malformed HORIZONS hardening block; no files were published'
+  done
+  awk '/^# BEGIN HORIZONS HARDENING$/{inside=1;next} /^# END HORIZONS HARDENING$/{inside=0;next} !inside{print}' "$HTACCESS" > "$STAGE/root-host.htaccess"
+  mv -- "$STAGE/root-host.htaccess" "$HTACCESS"
+fi
 {
   printf '# BEGIN HORIZONS MANAGED\n'
   cat -- "$SOURCE_DIR/.htaccess"
