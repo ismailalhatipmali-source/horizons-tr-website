@@ -184,6 +184,7 @@ class DeploymentTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         current = (self.target / '.htaccess').read_text()
         self.assertEqual(current.count('# BEGIN HORIZONS HARDENING'), 1)
+        self.assertTrue(current.startswith(policy))
         self.assertIn(policy, current)
         self.assertNotIn('OLD_GUARD', current)
         self.assertIn('HOST_RULE_BEFORE\n', current)

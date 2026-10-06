@@ -54,11 +54,11 @@ function hzn_compose(string $original, string $policy): string {
     if ($begins !== $ends || $begins > 1) { hzn_fail('Malformed or duplicate hardening markers.'); }
     if ($begins === 1) {
         $pattern = '/^# BEGIN HORIZONS HARDENING\r?\n.*?^# END HORIZONS HARDENING(?:\r?\n|$)/ms';
-        $updated = preg_replace_callback($pattern, static fn(array $match): string => $policy, $original, 1, $count);
+        $updated = preg_replace($pattern, '', $original, 1, $count);
         if ($updated === null || $count !== 1) { hzn_fail('Malformed hardening marker boundaries.'); }
-        return $updated;
+        return $policy . $updated;
     }
-    return $original . ($original !== '' && !str_ends_with($original, "\n") ? "\n" : '') . $policy;
+    return $policy . $original;
 }
 function hzn_private(string $directory): void {
     hzn_path($directory);

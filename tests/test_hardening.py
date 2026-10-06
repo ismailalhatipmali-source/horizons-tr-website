@@ -48,7 +48,7 @@ class ReversiblePublicationTests(unittest.TestCase):
         self.assertEqual(self.target.read_bytes(), self.original)
         self.assertEqual(list(self.home.iterdir()), [self.web])
         batch = self.apply()
-        self.assertTrue(self.target.read_bytes().startswith(self.original))
+        self.assertTrue(self.target.read_bytes().endswith(self.original))
         self.assertEqual((batch / 'root.htaccess.original').read_bytes(), self.original)
         manifest = json.loads((batch / 'manifest.json').read_text())
         self.assertEqual(manifest['original_sha256'], hashlib.sha256(self.original).hexdigest())
@@ -107,6 +107,16 @@ class ReversiblePublicationTests(unittest.TestCase):
         release = (ROOT / 'dist/.htaccess').read_text()
         self.assertEqual(release.count('# BEGIN HORIZONS HARDENING'), 1)
         self.assertIn(POLICY.read_text().strip() + '\n', release)
+
+    def test_existing_guard_moves_before_host_passthrough_without_duplication(self):
+        policy = POLICY.read_bytes()
+        self.original = b'RewriteEngine On\nRewriteRule ^ - [L]\n' + policy + b'# host tail\n'
+        self.target.write_bytes(self.original)
+        batch = self.apply()
+        self.assertEqual(self.target.read_bytes(), policy + b'RewriteEngine On\nRewriteRule ^ - [L]\n# host tail\n')
+        self.assertEqual(json.loads(self.run_cli('apply').stdout)['status'], 'unchanged')
+        self.assertEqual(self.run_cli('restore', batch).returncode, 0)
+        self.assertEqual(self.target.read_bytes(), self.original)
 
 @unittest.skipUnless(APACHE and MODULES.is_dir(), 'Apache 2.4 binary and modules required')
 class ApacheAccessTests(unittest.TestCase):

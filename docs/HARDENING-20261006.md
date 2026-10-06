@@ -14,7 +14,10 @@ are denied in `assets`, `downloads`, `updates`, `try` and `learn/content`.
 Application entry points in activation, learning-api, admin, checkout-api,
 manual-order-api and travel-download remain usable. PHP includes are unaffected.
 Apache authorization is used without changing PHP-FPM handlers or disabling PHP
-globally. No public upload endpoint was found in the reviewed API sources; private
+globally. Independent `RewriteRule [F,L]` guards run before existing host rules;
+expression authorization is retained for Apache child-directory inheritance.
+Both the scoped publisher and the base publisher place the security block first
+while preserving the remaining host directives. No public upload endpoint was found in the reviewed API sources; private
 product staging is outside the document root. Unreviewed live upload directories
 still require a filesystem inventory and their own verified protection.
 
@@ -55,11 +58,16 @@ customers or mutate orders during these checks.
 
 `scripts/execute-hardening.php /home2/horizonstr/public_html` wraps the scoped
 publisher in private configuration snapshots, baseline and post-publication HTTP
-checks, and inert synthetic probes. It checks nine existing public routes, tests
-13 denied filenames plus a readable control file in a random assets subdirectory,
-and moves all probe bytes to private retention. A normal post-publication HTTP
+checks, and inert synthetic probes. It checks nine existing public routes and
+creates 14 inert files in each of `assets`, `downloads`, `updates`, `try` and
+`learn/content`. It verifies 95 requests including controls, alternate/compound
+extensions, encoded filenames and PATH_INFO, then moves all 70 probe files to
+private retention. Failed probe status, body hash and marker exposure are recorded
+before rollback. A normal post-publication HTTP
 failure triggers exact rollback using the publisher's retained batch. Subsequent
 operator edits still cause restore to fail closed rather than overwrite them.
+The corrected runner also checks the nine public routes after rollback and
+reports a separate HTTP verification error if that check fails.
 
 The transaction calls the publisher in the same PHP process. HTTP checks use
 PHP's HTTPS stream with certificate and hostname verification, a 12-second read
@@ -105,10 +113,11 @@ marker rejection and deployment failures without touching a host.
 
 Set `HZN_TEST_PHP`, `HZN_TEST_APACHE`, and `HZN_TEST_APACHE_MODULES` when the runtimes
 are outside PATH. A skipped runtime suite is not a pass. The guarded-runner suite
-passes five actual Apache cases with all six process functions disabled,
+passes seven actual Apache cases with all six process functions disabled,
 including publication, idempotence, exact rollback after an injected HTTP
-failure, redirect rejection and oversized-response rejection. The original
-publisher's six Apache/restore tests also pass.
+failure, redirect rejection, oversized-response rejection, enforcement without
+expression sections despite an existing host pass-through, and retained failed
+probe diagnostics. The publisher's seven Apache/restore tests also pass.
 
 The private host receipt from 2026-10-06T16:48:48Z proves only configuration
 snapshots and the pre-publication `proc_open()` failure. The CLI was PHP 8.2.34
@@ -116,6 +125,14 @@ with `allow_url_fopen=1` and `allow_url_include=1`; effective web/FPM values rem
 unverified. No Apache publication, ini change or additional quarantine move is
 established by that failed attempt. Review the corrected host receipt before
 claiming production verification.
+
+The next host receipt, 2026-10-06T18:19:15Z, proves publication and exact successful
+rollback after the first inert PHP-denial check failed. All nine public routes
+passed before and after publication. The previous runner did not retain the
+failed probe's status, so that receipt does not establish whether it was a
+200, 404 or another response, nor does it identify the host webserver. The added
+rewrite enforcement addresses that observed denial failure without assuming a
+specific frontend; the next host run must verify all five namespaces.
 
 ## Temporary cPanel deployment task
 

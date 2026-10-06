@@ -301,6 +301,8 @@ if [[ -d "$TARGET_DIR/learn/content" ]]; then
 fi
 HTACCESS="$STAGE/root.htaccess"
 : > "$HTACCESS"
+: > "$STAGE/root-guard.htaccess"
+ROOT_SOURCE="$SOURCE_DIR/.htaccess"
 if [[ -f "$TARGET_DIR/.htaccess" ]]; then
   awk '/^# BEGIN HORIZONS MANAGED$/{if(inside || begins++)exit 1;inside=1;next} /^# END HORIZONS MANAGED$/{if(!inside)exit 1;inside=0;next} END{if(inside)exit 1}' "$TARGET_DIR/.htaccess" || fail 'Malformed existing HORIZONS Apache block; no files were published'
   awk '/^# BEGIN HORIZONS MANAGED$/{inside=1;next} /^# END HORIZONS MANAGED$/{inside=0;next} !inside{print}' "$TARGET_DIR/.htaccess" > "$HTACCESS"
@@ -313,12 +315,18 @@ if [[ "$(awk '/^# BEGIN HORIZONS HARDENING$/{n++} END{print n+0}' "$SOURCE_DIR/.
   done
   awk '/^# BEGIN HORIZONS HARDENING$/{inside=1;next} /^# END HORIZONS HARDENING$/{inside=0;next} !inside{print}' "$HTACCESS" > "$STAGE/root-host.htaccess"
   mv -- "$STAGE/root-host.htaccess" "$HTACCESS"
+  awk '/^# BEGIN HORIZONS HARDENING$/{inside=1} inside{print} /^# END HORIZONS HARDENING$/{inside=0}' "$SOURCE_DIR/.htaccess" > "$STAGE/root-guard.htaccess"
+  awk '/^# BEGIN HORIZONS HARDENING$/{inside=1;next} /^# END HORIZONS HARDENING$/{inside=0;next} !inside{print}' "$SOURCE_DIR/.htaccess" > "$STAGE/root-release.htaccess"
+  ROOT_SOURCE="$STAGE/root-release.htaccess"
 fi
 {
+  cat -- "$STAGE/root-guard.htaccess"
+  cat -- "$HTACCESS"
   printf '# BEGIN HORIZONS MANAGED\n'
-  cat -- "$SOURCE_DIR/.htaccess"
+  cat -- "$ROOT_SOURCE"
   printf '\n# END HORIZONS MANAGED\n'
-} >> "$HTACCESS"
+} > "$STAGE/root-composed.htaccess"
+mv -- "$STAGE/root-composed.htaccess" "$HTACCESS"
 find "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" "$STAGE/api-extracted" -type d -exec chmod 755 {} +
 find "$STAGE/site" "$STAGE/learn-extracted" "$STAGE/demo-extracted" "$STAGE/update-extracted" "$STAGE/api-extracted" -type f -exec chmod 644 {} +
 chmod 644 "$STAGE/assembled/setup" "$HTACCESS"

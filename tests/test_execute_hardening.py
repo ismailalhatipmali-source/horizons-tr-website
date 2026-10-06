@@ -1,6 +1,6 @@
 """Real Apache fixture for one-command publication and automatic reversal."""
 from pathlib import Path
-import http.client, http.server, json, os, shutil, socket, stat, subprocess, tempfile, threading, time, unittest, urllib.request
+import http.client, http.server, json, os, re, shutil, socket, stat, subprocess, tempfile, threading, time, unittest, urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 PHP = os.environ.get('HZN_TEST_PHP') or shutil.which('php')
@@ -13,7 +13,7 @@ class ExecuteHardeningTests(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory(prefix='hzn-guarded-')
         self.home = Path(self.tmp.name); self.home.chmod(0o755)
         self.web = self.home / 'public_html'; self.web.mkdir(mode=0o755)
-        for name in ['assets','learn','try','admin','travel-download','activation','learning-api','checkout-api','manual-order-api']:
+        for name in ['assets','downloads','updates','learn','learn/content','try','admin','travel-download','activation','learning-api','checkout-api','manual-order-api']:
             (self.web / name).mkdir(mode=0o755)
         for name in ['index.html','learn/index.html','try/index.html','admin/index.html','travel-download/index.html']:
             p=self.web/name; p.write_text('INERT PUBLIC PAGE '+name); p.chmod(0o644)
@@ -21,6 +21,7 @@ class ExecuteHardeningTests(unittest.TestCase):
             p=self.web/route/'index.html';p.write_text(json.dumps({'ok':True,'collection_enabled':False,'mode':mode}));p.chmod(0o644)
         p=self.web/'method-error.json';p.write_text('{"ok":false,"error":"METHOD_NOT_ALLOWED"}');p.chmod(0o644)
         self.original = b'Options -Indexes\nDirectoryIndex index.html\nErrorDocument 405 /method-error.json\nRewriteEngine On\nRewriteRule ^(?:activation|learning-api)/ - [R=405,END]\n'
+        self.runner = ROOT/'scripts/execute-hardening.php'
         self.access = self.web / '.htaccess';self.access.write_bytes(self.original);self.access.chmod(0o644)
         (self.web / '.user.ini').write_text('allow_url_fopen = On\n');(self.web / '.user.ini').chmod(0o640)
         with socket.socket() as s:s.bind(('127.0.0.1',0));self.port=s.getsockname()[1]
@@ -51,12 +52,21 @@ class ExecuteHardeningTests(unittest.TestCase):
     def invoke(self, base=None):
         # Match the hosting restriction without changing a system ini file.
         return subprocess.run([PHP,'-d','disable_functions=proc_open,exec,shell_exec,system,passthru,popen',
-                               str(ROOT/'scripts/execute-hardening.php'),str(self.web),base or self.base,'--fixture'],
+                               str(self.runner),str(self.web),base or self.base,'--fixture'],
                               capture_output=True,text=True,timeout=40)
 
     def result(self, run):
         receipt=json.loads(run.stdout)
         return json.loads(Path(receipt['result']).read_text()),receipt
+
+    def assert_private_retention(self, result):
+        self.assertEqual(set(result['retained_probe_directories']),{'assets','downloads','updates','try','learn/content'})
+        for namespace,directory in result['retained_probe_directories'].items():
+            private=Path(directory)
+            self.assertEqual(stat.S_IMODE(private.stat().st_mode),0o700)
+            self.assertEqual(len(list(private.iterdir())),14)
+            for p in private.iterdir():self.assertEqual(stat.S_IMODE(p.stat().st_mode),0o600)
+            self.assertEqual(list((self.web/namespace).glob('hzn-guard-*')),[])
 
     def test_publish_http_verify_and_retain_all_probe_bytes_privately(self):
         run=self.invoke();self.assertEqual(run.returncode,0,run.stderr+run.stdout)
@@ -67,11 +77,11 @@ class ExecuteHardeningTests(unittest.TestCase):
         self.assertEqual(result['web_ini_status'],'still_requires_actual_FPM_configuration_verification')
         self.assertEqual(result['execution'],{'child_processes':False,'http_transport':'verified_php_streams'})
         self.assertEqual(len(result['http_before']),9);self.assertEqual(len(result['http_after']),9)
-        self.assertEqual(len(result['probe_checks']),14)
-        private=Path(result['retained_probe_directory'])
-        self.assertEqual(stat.S_IMODE(private.stat().st_mode),0o700)
-        self.assertEqual(len(list(private.iterdir())),14)
-        for p in private.iterdir():self.assertEqual(stat.S_IMODE(p.stat().st_mode),0o600)
+        self.assertEqual(len(result['probe_checks']),95)
+        for name,check in result['probe_checks'].items():
+            self.assertEqual(check['status'],200 if name.endswith('/control.txt') else 403,name)
+            self.assertEqual(check['marker_exposed'],name.endswith('/control.txt'),name)
+        self.assert_private_retention(result)
         self.assertEqual(list((self.web/'assets').iterdir()),[])
         self.assertEqual((Path(receipt['batch'])/'root.htaccess.original').read_bytes(),self.original)
         repeat=self.invoke();self.assertEqual(repeat.returncode,0,repeat.stderr+repeat.stdout)
@@ -96,7 +106,8 @@ class ExecuteHardeningTests(unittest.TestCase):
         result,_=self.result(run);self.assertEqual(result['status'],'failed_restored')
         self.assertEqual(self.access.read_bytes(),self.original)
         self.assertEqual(stat.S_IMODE(self.access.stat().st_mode),0o644)
-        self.assertTrue(Path(result['retained_probe_directory']).is_dir())
+        self.assert_private_retention(result)
+        self.assertEqual(len(result['http_after_rollback']),9)
         self.assertEqual(list((self.web/'assets').iterdir()),[])
 
     def test_redirect_is_not_followed_or_treated_as_a_healthy_page(self):
@@ -121,5 +132,44 @@ class ExecuteHardeningTests(unittest.TestCase):
         self.assertNotIn('publication',result)
         self.assertEqual(self.access.read_bytes(),before)
         self.assertEqual(list((self.web/'assets').iterdir()),[])
+
+    def test_rewrite_guard_blocks_before_host_passthrough_without_expression_sections(self):
+        # Model a frontend that does not enforce Apache expression sections.
+        # Keep authorization for sensitive filenames and the independent rewrite guard.
+        repo=self.home/'fixture-repo'
+        (repo/'scripts').mkdir(parents=True);(repo/'src/security').mkdir(parents=True)
+        for name in ['execute-hardening.php','deploy-hardening.php']:
+            shutil.copyfile(ROOT/'scripts'/name,repo/'scripts'/name)
+        policy=(ROOT/'src/security/public.htaccess').read_text()
+        policy=re.sub(r'<If [^\n]*>\n.*?</If>\n','',policy,flags=re.S)
+        (repo/'src/security/public.htaccess').write_text(policy)
+        self.runner=repo/'scripts/execute-hardening.php'
+        self.access.write_bytes(self.original+b'RewriteRule ^ - [L]\n')
+        run=self.invoke();self.assertEqual(run.returncode,0,run.stderr+run.stdout)
+        result,_=self.result(run)
+        self.assertEqual(result['status'],'applied_http_verified')
+        self.assertEqual(len(result['probe_checks']),95)
+        self.assertTrue(self.access.read_bytes().startswith(policy.encode()))
+        self.assert_private_retention(result)
+
+    def test_failed_denial_records_actual_status_and_exposure_then_restores(self):
+        repo=self.home/'fixture-repo'
+        (repo/'scripts').mkdir(parents=True);(repo/'src/security').mkdir(parents=True)
+        for name in ['execute-hardening.php','deploy-hardening.php']:
+            shutil.copyfile(ROOT/'scripts'/name,repo/'scripts'/name)
+        policy=(ROOT/'src/security/public.htaccess').read_text()
+        policy=re.sub(r'<If [^\n]*>\n.*?</If>\n','',policy,flags=re.S)
+        policy='\n'.join(line for line in policy.splitlines() if not line.startswith(('RewriteCond','RewriteRule')))+'\n'
+        (repo/'src/security/public.htaccess').write_text(policy)
+        self.runner=repo/'scripts/execute-hardening.php'
+        run=self.invoke();self.assertNotEqual(run.returncode,0)
+        result,_=self.result(run)
+        self.assertEqual(result['status'],'failed_restored')
+        self.assertEqual(result['probe_checks']['assets/probe.php']['status'],200)
+        self.assertTrue(result['probe_checks']['assets/probe.php']['marker_exposed'])
+        self.assertIn('status=200; marker_exposed=true',result['error'])
+        self.assertEqual(self.access.read_bytes(),self.original)
+        self.assertEqual(len(result['http_after_rollback']),9)
+        self.assert_private_retention(result)
 
 if __name__=='__main__':unittest.main()

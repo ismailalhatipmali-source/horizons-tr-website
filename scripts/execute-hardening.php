@@ -73,7 +73,7 @@ function guardHealthy(string $base, string $nonce, ?array $before = null): array
     return $result;
 }
 
-$run = null; $probe = null; $lock = null; $batch = null; $success = false; $exitCode = 1;
+$run = null; $probes = []; $lock = null; $batch = null; $success = false; $exitCode = 1;
 $record = ['schema'=>1,'status'=>'preparing','scope'=>'Apache root policy only; no ini, customer, cron or quarantine changes'];
 try {
     $web = guardPath($argv[1]??''); $fixture = ($argv[3]??'') === '--fixture';
@@ -82,8 +82,11 @@ try {
     if ($fixture && (!preg_match('~^http://127[.]0[.]0[.]1:[0-9]+$~D',$base) || str_starts_with($web,'/home2/horizonstr/'))) throw new RuntimeException('Unsafe fixture target');
     $repo = guardPath(dirname(__DIR__));
     if (!is_dir($web) || str_starts_with($web.'/',$repo.'/') || str_starts_with($repo.'/',$web.'/')) throw new RuntimeException('Invalid document root');
-    guardPath($web.'/assets');
-    if (!is_dir($web.'/assets')) throw new RuntimeException('Static assets directory missing');
+    $namespaces = ['assets','downloads','updates','try','learn/content'];
+    foreach ($namespaces as $namespace) {
+        guardPath($web.'/'.$namespace);
+        if (!is_dir($web.'/'.$namespace)) throw new RuntimeException('Static namespace missing: '.$namespace);
+    }
     $state = dirname($web).'/.horizons-hardening-'.basename($web); guardPrivate($state);
     $lock = $state.'/verification.lock';
     if (!@mkdir($lock,0700)) { $lock = null; throw new RuntimeException('Another verification is running'); }
@@ -103,26 +106,36 @@ try {
         $record['config_snapshots'][$name] = ['sha256'=>hash('sha256',$bytes),'bytes'=>strlen($bytes),'original_mode'=>fileperms($path)&0777];
     }
     $before = guardHealthy($base,$nonce); $record['http_before'] = $before;
-    $marker = 'HZN-INERT-PROBE-'.$nonce; $probe = $web.'/assets/hzn-guard-'.$nonce;
-    if (!mkdir($probe,0755) || !chmod($probe,0755)) throw new RuntimeException('Probe directory unavailable');
+    $marker = 'HZN-INERT-PROBE-'.$nonce;
     $names = ['control.txt','probe.php','probe.PHP','probe.php7','probe.php82','probe.phtml','probe.pht','probe.phar','probe.phps',
         'probe.php.jpg','probe.jpg.php8','config-path.php','backup.sqlite','.env.probe'];
-    foreach ($names as $name) guardWrite($probe.'/'.$name,$marker,0644);
-    $control = guardHttp($base,'/assets/'.basename($probe).'/control.txt',$nonce);
-    if ($control['status'] !== 200 || $control['body'] !== $marker) throw new RuntimeException('Control probe is not publicly readable');
+    foreach ($namespaces as $namespace) {
+        $probe = $web.'/'.$namespace.'/hzn-guard-'.$nonce;
+        if (!mkdir($probe,0755)) throw new RuntimeException('Probe directory unavailable: '.$namespace);
+        $probes[$namespace] = $probe;
+        if (!chmod($probe,0755)) throw new RuntimeException('Probe permissions failed: '.$namespace);
+        foreach ($names as $name) guardWrite($probe.'/'.$name,$marker,0644);
+        $control = guardHttp($base,'/'.$namespace.'/'.basename($probe).'/control.txt',$nonce);
+        if ($control['status'] !== 200 || $control['body'] !== $marker) throw new RuntimeException('Control probe is not publicly readable: '.$namespace);
+    }
     // Durable journal precedes publication, including all probe move mappings.
-    $record['probe_original_paths'] = array_map(static fn(string $n): string=>$probe.'/'.$n,$names);
+    $record['probe_original_paths'] = [];
+    foreach ($probes as $probe) foreach ($names as $name) $record['probe_original_paths'][] = $probe.'/'.$name;
     guardWrite($run.'/preflight.json',json_encode($record,JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR)."\n");
     $apply = hzn_execute('apply',$web); $batch = $apply['batch']??null;
     $record['publication'] = $apply;
     guardWrite($run.'/publication.json',json_encode($apply,JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR)."\n");
     $record['http_after'] = guardHealthy($base,$nonce,$before);
-    foreach ($names as $name) {
-        $x = guardHttp($base,'/assets/'.basename($probe).'/'.$name,$nonce);
+    $checks = array_merge($names,['probe%2ephp','probe.%70hp','probe.php/extra','probe.php.jpg/extra','probe.jpg.php8/extra']);
+    foreach ($probes as $namespace=>$probe) foreach ($checks as $name) {
+        $x = guardHttp($base,'/'.$namespace.'/'.basename($probe).'/'.$name,$nonce);
+        $exposed = str_contains($x['body'],$marker);
+        $saved = $x; unset($saved['body']);
+        $saved['marker_exposed'] = $exposed;
+        $record['probe_checks'][$namespace.'/'.$name] = $saved;
         if ($name === 'control.txt') {
             if ($x['status'] !== 200 || $x['body'] !== $marker) throw new RuntimeException('Control probe changed after publication');
-        } elseif ($x['status'] !== 403 || str_contains($x['body'],$marker)) throw new RuntimeException('Static execution/file access probe failed: '.$name);
-        unset($x['body']); $record['probe_checks'][$name] = $x;
+        } elseif ($x['status'] !== 403 || $exposed) throw new RuntimeException('Static execution/file access probe failed: '.$namespace.'/'.$name.'; status='.$x['status'].'; marker_exposed='.($exposed?'true':'false'));
     }
     $record['status'] = $batch === null ? 'verified_unchanged' : 'applied_http_verified';
     $record['web_ini_status'] = 'still_requires_actual_FPM_configuration_verification';
@@ -133,20 +146,25 @@ try {
         try {
             $record['rollback'] = ['exit_code'=>0,'receipt'=>hzn_execute('restore',$web,$batch)];
             $record['status'] = 'failed_restored';
+            try { $record['http_after_rollback'] = guardHealthy($base,$nonce,$record['http_before']??null); }
+            catch (Throwable $rollbackHttpError) { $record['rollback_http_error'] = $rollbackHttpError->getMessage(); }
         } catch (Throwable $restoreError) {
             $record['rollback'] = ['exit_code'=>1,'error'=>$restoreError->getMessage()];
             $record['status'] = 'failed_restore_requires_review';
         }
     }
 } finally {
-    if ($probe !== null && is_dir($probe) && !is_link($probe) && $run !== null) {
-        $retained = $run.'/probes-retained';
-        if (rename($probe,$retained)) {
+    if ($probes !== [] && $run !== null) {
+        guardPrivate($run.'/probes-retained');
+        foreach ($probes as $namespace=>$probe) {
+        $retained = $run.'/probes-retained/'.str_replace('/','-',$namespace);
+        if (is_dir($probe) && !is_link($probe) && rename($probe,$retained)) {
             chmod($retained,0700);
             foreach (glob($retained.'/*') as $file) if (is_file($file)&&!is_link($file)) chmod($file,0600);
             if (is_file($retained.'/.env.probe')) chmod($retained.'/.env.probe',0600);
-            $record['retained_probe_directory'] = $retained;
+            $record['retained_probe_directories'][$namespace] = $retained;
         } else { $record['probe_cleanup'] = 'move_failed_requires_review'; $record['status'] = 'probe_retention_requires_review'; $exitCode = 1; }
+        }
     }
     if ($run !== null) {
         guardWrite($run.'/result.json',json_encode($record,JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR)."\n");
