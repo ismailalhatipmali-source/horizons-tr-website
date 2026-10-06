@@ -3,6 +3,7 @@ declare(strict_types=1);
 // A single private CLI transaction: back up, publish, HTTP-test, retain probes.
 if (PHP_SAPI !== 'cli') { http_response_code(404); exit; }
 umask(0077);
+require_once __DIR__ . '/deploy-hardening.php';
 function guardPath(string $path): string {
     if ($path === '' || $path[0] !== '/' || preg_match('~//|(?:^|/)\.{1,2}(?:/|$)|[\x00-\x1f]~', $path)) throw new RuntimeException('Invalid absolute path');
     $path = rtrim($path, '/'); $current = '';
@@ -30,19 +31,24 @@ function guardWrite(string $path, string $bytes, int $mode = 0600): void {
     } finally { fclose($f); }
     if (!chmod($path, $mode) || hash_file('sha256', $path) !== hash('sha256', $bytes)) throw new RuntimeException('Write verification failed');
 }
-function guardRun(array $command): array {
-    $pipes = []; $process = proc_open($command, [0=>['pipe','r'],1=>['pipe','w'],2=>['pipe','w']], $pipes);
-    if (!is_resource($process)) throw new RuntimeException('CLI execution unavailable');
-    fclose($pipes[0]); $stdout = stream_get_contents($pipes[1]); $stderr = stream_get_contents($pipes[2]);
-    fclose($pipes[1]); fclose($pipes[2]);
-    return [proc_close($process), $stdout, $stderr];
-}
 function guardHttp(string $base, string $route, string $nonce): array {
-    [$code,$out] = guardRun(['curl','--silent','--show-error','--connect-timeout','4','--max-time','12',
-        '--max-filesize','1048576','--header','Cache-Control: no-cache','--write-out',"\n%{http_code}",
-        $base . $route . '?hzn_guard=' . $nonce]);
-    if ($code !== 0 || ($pos = strrpos($out, "\n")) === false) throw new RuntimeException('HTTP transport failed: ' . $route);
-    $body = substr($out, 0, $pos); $status = (int)substr($out, $pos + 1);
+    $context = stream_context_create([
+        'http'=>['method'=>'GET','timeout'=>12.0,'ignore_errors'=>true,'follow_location'=>0,'max_redirects'=>0,
+            'header'=>['Cache-Control: no-cache','Connection: close'],'user_agent'=>'HORIZONS-private-hardening/1'],
+        'ssl'=>['verify_peer'=>true,'verify_peer_name'=>true,'allow_self_signed'=>false],
+    ]);
+    $stream = @fopen($base . $route . '?hzn_guard=' . $nonce, 'rb', false, $context);
+    if ($stream === false) throw new RuntimeException('Verified HTTP connection failed: ' . $route);
+    try {
+        $body = stream_get_contents($stream, 1048577);
+        $meta = stream_get_meta_data($stream);
+        if ($body === false || strlen($body)>1048576 || ($meta['timed_out']??false)) throw new RuntimeException('HTTP read failed or exceeded the limit: ' . $route);
+        $status = 0;
+        foreach ($meta['wrapper_data']??[] as $line) {
+            if (preg_match('~^HTTP/[0-9.]+ ([0-9]{3})(?: |$)~D', $line, $match)) $status = (int)$match[1];
+        }
+        if ($status === 0) throw new RuntimeException('Missing HTTP status: ' . $route);
+    } finally { fclose($stream); }
     return ['path'=>$route,'status'=>$status,'sha256'=>hash('sha256',$body),'body'=>$body];
 }
 function guardHealthy(string $base, string $nonce, ?array $before = null): array {
@@ -85,6 +91,7 @@ try {
     $record['created_at_utc'] = gmdate('c'); $record['target'] = $web;
     $record['cli_runtime'] = ['version'=>PHP_VERSION,'sapi'=>PHP_SAPI,'allow_url_include'=>ini_get('allow_url_include'),
         'allow_url_fopen'=>ini_get('allow_url_fopen'),'loaded_ini'=>php_ini_loaded_file(),'web_sapi_effective'=>'unverified'];
+    $record['execution'] = ['child_processes'=>false,'http_transport'=>'verified_php_streams'];
     guardPrivate($run.'/config-snapshots');
     foreach (['.htaccess','.user.ini','php.ini'] as $name) {
         $path = guardPath($web.'/'.$name);
@@ -106,9 +113,7 @@ try {
     // Durable journal precedes publication, including all probe move mappings.
     $record['probe_original_paths'] = array_map(static fn(string $n): string=>$probe.'/'.$n,$names);
     guardWrite($run.'/preflight.json',json_encode($record,JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR)."\n");
-    [$code,$output] = guardRun([PHP_BINARY,$repo.'/scripts/deploy-hardening.php','apply',$web]);
-    if ($code !== 0) throw new RuntimeException('Root policy publication failed; inspect private journal');
-    $apply = json_decode($output,true,16,JSON_THROW_ON_ERROR); $batch = $apply['batch']??null;
+    $apply = hzn_execute('apply',$web); $batch = $apply['batch']??null;
     $record['publication'] = $apply;
     guardWrite($run.'/publication.json',json_encode($apply,JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR)."\n");
     $record['http_after'] = guardHealthy($base,$nonce,$before);
@@ -125,10 +130,13 @@ try {
 } catch (Throwable $error) {
     $record['status'] = 'failed'; $record['error'] = $error->getMessage();
     if ($batch !== null) {
-        [$code,$out] = guardRun([PHP_BINARY,dirname(__DIR__).'/scripts/deploy-hardening.php','restore',$web,$batch]);
-        $record['rollback'] = ['exit_code'=>$code];
-        if ($code === 0) { $record['rollback']['receipt'] = json_decode($out,true); $record['status'] = 'failed_restored'; }
-        else $record['status'] = 'failed_restore_requires_review';
+        try {
+            $record['rollback'] = ['exit_code'=>0,'receipt'=>hzn_execute('restore',$web,$batch)];
+            $record['status'] = 'failed_restored';
+        } catch (Throwable $restoreError) {
+            $record['rollback'] = ['exit_code'=>1,'error'=>$restoreError->getMessage()];
+            $record['status'] = 'failed_restore_requires_review';
+        }
     }
 } finally {
     if ($probe !== null && is_dir($probe) && !is_link($probe) && $run !== null) {

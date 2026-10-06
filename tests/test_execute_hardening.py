@@ -1,6 +1,6 @@
 """Real Apache fixture for one-command publication and automatic reversal."""
 from pathlib import Path
-import json, os, shutil, socket, stat, subprocess, tempfile, time, unittest, urllib.request
+import http.client, http.server, json, os, shutil, socket, stat, subprocess, tempfile, threading, time, unittest, urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 PHP = os.environ.get('HZN_TEST_PHP') or shutil.which('php')
@@ -48,9 +48,11 @@ class ExecuteHardeningTests(unittest.TestCase):
         except subprocess.TimeoutExpired:self.server.kill();self.server.communicate()
         self.tmp.cleanup()
 
-    def invoke(self, env=None):
-        return subprocess.run([PHP,str(ROOT/'scripts/execute-hardening.php'),str(self.web),self.base,'--fixture'],
-                              capture_output=True,text=True,timeout=40,env=env)
+    def invoke(self, base=None):
+        # Match the hosting restriction without changing a system ini file.
+        return subprocess.run([PHP,'-d','disable_functions=proc_open,exec,shell_exec,system,passthru,popen',
+                               str(ROOT/'scripts/execute-hardening.php'),str(self.web),base or self.base,'--fixture'],
+                              capture_output=True,text=True,timeout=40)
 
     def result(self, run):
         receipt=json.loads(run.stdout)
@@ -63,6 +65,7 @@ class ExecuteHardeningTests(unittest.TestCase):
         self.assertEqual((self.web/'.user.ini').read_text(),'allow_url_fopen = On\n')
         self.assertEqual(stat.S_IMODE((self.web/'.user.ini').stat().st_mode),0o640)
         self.assertEqual(result['web_ini_status'],'still_requires_actual_FPM_configuration_verification')
+        self.assertEqual(result['execution'],{'child_processes':False,'http_transport':'verified_php_streams'})
         self.assertEqual(len(result['http_before']),9);self.assertEqual(len(result['http_after']),9)
         self.assertEqual(len(result['probe_checks']),14)
         private=Path(result['retained_probe_directory'])
@@ -75,20 +78,39 @@ class ExecuteHardeningTests(unittest.TestCase):
         second,_=self.result(repeat);self.assertEqual(second['status'],'verified_unchanged')
 
     def test_failed_http_check_restores_exact_bytes_and_keeps_evidence(self):
-        wrapper=self.home/'bin';wrapper.mkdir();fake=wrapper/'curl'
-        real=shutil.which('curl')
-        fake.write_text('#!/usr/bin/env python3\nimport os,subprocess,sys\nfrom pathlib import Path\n'
-            'r=subprocess.run([os.environ["TEST_REAL_CURL"],*sys.argv[1:]],capture_output=True)\n'
-            'out=r.stdout\n'
-            'if "/learn/?" in sys.argv[-1] and b"# BEGIN HORIZONS HARDENING" in Path(os.environ["TEST_HTACCESS"]).read_bytes():out=out.rsplit(b"\\n",1)[0]+b"\\n503"\n'
-            'sys.stdout.buffer.write(out);sys.stderr.buffer.write(r.stderr);sys.exit(r.returncode)\n')
-        fake.chmod(0o755)
-        env=os.environ.copy();env.update(PATH=str(wrapper)+os.pathsep+env['PATH'],TEST_REAL_CURL=real,TEST_HTACCESS=str(self.access))
-        run=self.invoke(env);self.assertNotEqual(run.returncode,0)
+        access,apache_port=self.access,self.port
+        class Proxy(http.server.BaseHTTPRequestHandler):
+            def log_message(self,*args):pass
+            def do_GET(self):
+                conn=http.client.HTTPConnection('127.0.0.1',apache_port,timeout=5)
+                try:
+                    conn.request('GET',self.path);response=conn.getresponse();body=response.read();status=response.status
+                    if self.path.startswith('/learn/?') and b'# BEGIN HORIZONS HARDENING' in access.read_bytes():status=503
+                    self.send_response(status);self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
+                finally:conn.close()
+        proxy=http.server.ThreadingHTTPServer(('127.0.0.1',0),Proxy)
+        worker=threading.Thread(target=proxy.serve_forever,daemon=True);worker.start()
+        try:run=self.invoke(f'http://127.0.0.1:{proxy.server_port}')
+        finally:proxy.shutdown();proxy.server_close();worker.join(timeout=5)
+        self.assertNotEqual(run.returncode,0)
         result,_=self.result(run);self.assertEqual(result['status'],'failed_restored')
         self.assertEqual(self.access.read_bytes(),self.original)
         self.assertEqual(stat.S_IMODE(self.access.stat().st_mode),0o644)
         self.assertTrue(Path(result['retained_probe_directory']).is_dir())
+        self.assertEqual(list((self.web/'assets').iterdir()),[])
+
+    def test_redirect_is_not_followed_or_treated_as_a_healthy_page(self):
+        self.access.write_bytes(self.original+b'RewriteRule ^learn/ /try/ [R=302,END]\n')
+        before=self.access.read_bytes();run=self.invoke();self.assertNotEqual(run.returncode,0)
+        result,_=self.result(run);self.assertEqual(result['error'],'HTTP route failed: /learn/')
+        self.assertNotIn('publication',result);self.assertEqual(self.access.read_bytes(),before)
+        self.assertEqual(list((self.web/'assets').iterdir()),[])
+
+    def test_oversized_response_refuses_publication(self):
+        (self.web/'learn/index.html').write_bytes(b'A'*1048577)
+        before=self.access.read_bytes();run=self.invoke();self.assertNotEqual(run.returncode,0)
+        result,_=self.result(run);self.assertIn('exceeded the limit: /learn/',result['error'])
+        self.assertNotIn('publication',result);self.assertEqual(self.access.read_bytes(),before)
         self.assertEqual(list((self.web/'assets').iterdir()),[])
         self.assertFalse((self.home/'.horizons-hardening-public_html/verification.lock').exists())
 

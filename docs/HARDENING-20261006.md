@@ -61,6 +61,14 @@ and moves all probe bytes to private retention. A normal post-publication HTTP
 failure triggers exact rollback using the publisher's retained batch. Subsequent
 operator edits still cause restore to fail closed rather than overwrite them.
 
+The transaction calls the publisher in the same PHP process. HTTP checks use
+PHP's HTTPS stream with certificate and hostname verification, a 12-second read
+timeout, no redirect following and a 1 MiB response limit. It requires the
+existing `allow_url_fopen` capability but does not change that setting or enable
+any disabled process function. The host attempt on 2026-10-06 stopped at the
+disabled `proc_open()` call before publication; the corrected runner needs no
+`proc_open`, `exec`, `shell_exec`, `system`, `passthru` or `popen`.
+
 The receipt distinguishes Apache policy verification from the still-unverified
 web/FPM ini settings. It does not alter ini files, customer state, cron, passwords,
 existing quarantines or product files. Configuration snapshots and receipts are
@@ -96,10 +104,18 @@ authorization and allowed route bytes, not production PHP handler behavior.
 marker rejection and deployment failures without touching a host.
 
 Set `HZN_TEST_PHP`, `HZN_TEST_APACHE`, and `HZN_TEST_APACHE_MODULES` when the runtimes
-are outside PATH. A skipped runtime suite is not a pass. Production verification
-was blocked on 2026-10-06 by unavailable browser credential state; no hosting
-configuration change, ini change, additional quarantine move or live release
-deployment is established by these repository changes.
+are outside PATH. A skipped runtime suite is not a pass. The guarded-runner suite
+passes five actual Apache cases with all six process functions disabled,
+including publication, idempotence, exact rollback after an injected HTTP
+failure, redirect rejection and oversized-response rejection. The original
+publisher's six Apache/restore tests also pass.
+
+The private host receipt from 2026-10-06T16:48:48Z proves only configuration
+snapshots and the pre-publication `proc_open()` failure. The CLI was PHP 8.2.34
+with `allow_url_fopen=1` and `allow_url_include=1`; effective web/FPM values remain
+unverified. No Apache publication, ini change or additional quarantine move is
+established by that failed attempt. Review the corrected host receipt before
+claiming production verification.
 
 ## Temporary cPanel deployment task
 

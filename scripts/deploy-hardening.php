@@ -66,9 +66,10 @@ function hzn_private(string $directory): void {
     if (!chmod($directory, 0700)) { hzn_fail('Could not secure private state directory.'); }
 }
 
-$lock = null; $exitCode = 0;
-try {
-    $action = $argv[1] ?? ''; $web = hzn_path($argv[2] ?? '');
+function hzn_execute(string $action, string $web, ?string $restoreBatch = null): array {
+    $lock = null;
+    try {
+    $web = hzn_path($web);
     if (!in_array($action, ['status', 'apply', 'restore'], true) || !is_dir($web)) {
         hzn_fail('Usage: php scripts/deploy-hardening.php status|apply WEBROOT; restore WEBROOT BATCH');
     }
@@ -84,8 +85,7 @@ try {
         $updated = hzn_compose($original, hzn_policy());
         $status = $updated === $original ? 'unchanged' : 'pending';
         if ($action === 'status' || $status === 'unchanged') {
-            echo json_encode(['status' => $status, 'target' => $target, 'sha256' => hash('sha256', $original)], JSON_THROW_ON_ERROR) . "\n";
-            exit(0);
+            return ['status' => $status, 'target' => $target, 'sha256' => hash('sha256', $original)];
         }
     }
     hzn_private($state); $lock = $state . '/lock';
@@ -107,10 +107,10 @@ try {
         hzn_path($target);
         if (!rename($batch . '/publication.pending', $target)) { hzn_fail('Atomic publication failed.'); }
         if (hash_file('sha256', $target) !== $manifest['published_sha256']) { hzn_fail('Publication verification failed; retained backup requires review.'); }
-        echo json_encode(['status' => 'applied', 'batch' => $batch, 'target' => $target,
-            'sha256' => $manifest['published_sha256'], 'host_http_verification' => 'required'], JSON_THROW_ON_ERROR) . "\n";
+        return ['status' => 'applied', 'batch' => $batch, 'target' => $target,
+            'sha256' => $manifest['published_sha256'], 'host_http_verification' => 'required'];
     } else {
-        $batch = hzn_path($argv[3] ?? '');
+        $batch = hzn_path($restoreBatch ?? '');
         if (dirname($batch) !== $state || !preg_match('/^batch-[0-9]{8}T[0-9]{6}Z-[a-f0-9]{16}$/', basename($batch))) {
             hzn_fail('Restore batch is outside this document root private state.');
         }
@@ -137,12 +137,21 @@ try {
             if (hzn_read($target) !== $original || !rename($target, $restore . '/root.htaccess.removed-from-public')) { hzn_fail('Restore conflict or move failure.'); }
             chmod($restore . '/root.htaccess.removed-from-public', 0600);
         }
-        echo json_encode(['status' => 'restored', 'target' => $target, 'retained_displaced_configuration' => $restore], JSON_THROW_ON_ERROR) . "\n";
+        return ['status' => 'restored', 'target' => $target, 'retained_displaced_configuration' => $restore];
     }
-} catch (Throwable $error) {
-    fwrite(STDERR, 'HORIZONS hardening stopped: ' . $error->getMessage() . "\n");
-    $exitCode = 1;
-} finally {
-    if ($lock !== null) { rmdir($lock); }
+    } finally {
+        if ($lock !== null) { rmdir($lock); }
+    }
 }
-exit($exitCode);
+
+// Including this private CLI file exposes the same reversible transaction
+// without spawning a child process. Direct CLI use keeps its existing contract.
+if (realpath($_SERVER['SCRIPT_FILENAME'] ?? '') === __FILE__) {
+    try {
+        $receipt = hzn_execute($argv[1] ?? '', $argv[2] ?? '', $argv[3] ?? null);
+        echo json_encode($receipt, JSON_THROW_ON_ERROR) . "\n";
+    } catch (Throwable $error) {
+        fwrite(STDERR, 'HORIZONS hardening stopped: ' . $error->getMessage() . "\n");
+        exit(1);
+    }
+}
