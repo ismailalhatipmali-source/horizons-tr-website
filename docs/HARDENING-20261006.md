@@ -2,10 +2,11 @@
 
 `src/security/public.htaccess` is the reviewed Apache 2.4 policy. The identical
 block is included in `dist/.htaccess` so a base deployment retains it. Existing
-cPanel handlers and PHP ini files are preserved. The temporary `.cpanel.yml` task runs only the guarded Apache transaction.
-The original product publication chain is retained in Git at commit
-`4a9e26d0c3edec60787e6d42be1f7d2b1157763f` and must be restored after this
-host verification completes.
+cPanel handlers and PHP ini files are preserved. The temporary scoped
+`.cpanel.yml` task has been reverted in the repository to the exact original
+blob `3a8bfe2e0842a3598e6b760b269b94223584cfe9` (8431 bytes). The host checkout
+still needs a clean fast-forward update to receive this restoration. Do not run
+the general product publication chain merely to verify this Apache policy.
 
 The policy denies direct HTTP access to known PHP configuration/bootstrap files,
 environment files, SQLite/SQL files, editor/backup files, private keys and VCS
@@ -134,20 +135,31 @@ failed probe's status, so that receipt does not establish whether it was a
 rewrite enforcement addresses that observed denial failure without assuming a
 specific frontend; the next host run must verify all five namespaces.
 
-## Temporary cPanel deployment task
+## Temporary cPanel deployment task and recovery
 
-When Terminal is unavailable, the existing live repository's **Update from
+During scoped verification, when Terminal was unavailable, the live repository's **Update from
 Remote** button performs the fast-forward update, and **Deploy HEAD Commit**
-runs `scripts/deploy-cpanel-hardening.sh`. cPanel refuses a dirty working tree;
+ran `scripts/deploy-cpanel-hardening.sh` through a temporary task. cPanel refuses a dirty working tree;
 the wrapper independently verifies the exact private checkout, clean main branch,
 reviewed ancestor and separate document root. It shares the existing deployment
 lock and runs only `execute-hardening.php`, without running the product publishers
 or sending test mail. The deployment log records the exact host HEAD and private
 result path.
 
-This task temporarily replaces the normal `.cpanel.yml` task. After reviewing a
-successful private receipt, restore the original `.cpanel.yml` bytes from commit
-`4a9e26d0c3edec60787e6d42be1f7d2b1157763f` in a new fast-forward commit.
-Update the host checkout again to restore the task; that update does not require
-running the unrelated product deployment chain. Do not reset or force a host
-checkout with local changes.
+Host receipts at 18:19:15Z and 18:37:19Z on 2026-10-06 reported successful exact
+rollback after failed static PHP-denial checks. The later receipt explicitly
+recorded an inert PHP probe returning 200 and exposing its marker, and all nine
+public routes passed after rollback. Host enforcement remains unverified.
+
+After the browser connection remained unusable even after the owner cleared its
+session data, the temporary repository task was reverted to its exact original
+bytes. Configuration snapshots and all previous evidence remain private. Resume
+by reading the actual host `.htaccess`, `.user.ini`, `php.ini` and relevant child
+rules before another apply attempt. Do not infer a webserver type or effective
+FPM settings from CLI or from the failed probe alone.
+
+A clean **Update from Remote** restores the normal task on the host checkout;
+that update does not require running the unrelated product deployment chain.
+Do not reset or force a checkout with local changes. The scoped wrapper remains
+available for a reviewed private CLI invocation after the actual host mismatch
+has been resolved; the normal `.cpanel.yml` no longer invokes it automatically.
