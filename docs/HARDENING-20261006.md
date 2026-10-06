@@ -49,7 +49,28 @@ contents. Verify legitimate downloads and every supported locale, both direction
 the workbook, trial pause and existing PHP API errors. Do not send mail, pay, create
 customers or mutate orders during these checks.
 
-## Restore
+## One-command guarded execution
+
+`scripts/execute-hardening.php /home2/horizonstr/public_html` wraps the scoped
+publisher in private configuration snapshots, baseline and post-publication HTTP
+checks, and inert synthetic probes. It checks nine existing public routes, tests
+13 denied filenames plus a readable control file in a random assets subdirectory,
+and moves all probe bytes to private retention. A normal post-publication HTTP
+failure triggers exact rollback using the publisher's retained batch. Subsequent
+operator edits still cause restore to fail closed rather than overwrite them.
+
+The receipt distinguishes Apache policy verification from the still-unverified
+web/FPM ini settings. It does not alter ini files, customer state, cron, passwords,
+existing quarantines or product files. Configuration snapshots and receipts are
+0700/0600 outside public_html. The `--fixture` option is restricted to loopback
+HTTP and refuses the real production document root.
+
+Run this from a clean live-main checkout after a fast-forward update. Inspect the
+terminal's resulting status and private result path. `applied_http_verified` means
+this scoped Apache transaction passed; it does not certify complete host cleanup
+or effective FPM settings. Browser/hosting access is still required to run it.
+
+## Restore a retained batch
 
 Pass the exact batch path printed by apply:
 
