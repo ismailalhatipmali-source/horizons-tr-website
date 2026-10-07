@@ -84,7 +84,35 @@ while IFS= read -r line || [[ -n "$line" ]]; do
     [[ "$line" == $'HORIZONS_RELEASE_V1\t'"$VERSION" ]] || fail 'Manifest header/version mismatch'
     continue
   fi
-  [[ "$(awk -F '\t' '{print NFst="$(sha256sum -- "$output")"; digest="${digest%% *}"
+  [[ "$(awk -F '\t' '{print NF}' <<< "$line")" == 5 ]] || fail "Manifest row $line_number must contain exactly five tab-separated fields"
+  IFS=$'\t' read -r kind filename bytes sha parts <<< "$line"
+  case "$kind" in learn|demo|setup|update) ;; *) fail "Unknown artifact kind: $kind";; esac
+  [[ -z "${FILENAMES[$kind]+present}" ]] || fail "Repeated artifact kind: $kind"
+  [[ "$filename" =~ ^[A-Za-z0-9][A-Za-z0-9._-]+$ ]] || fail 'Unsafe artifact filename'
+  case "$kind:$filename" in setup:*.exe|learn:*.zip|demo:*.zip|update:*.zip) ;; *) fail 'Artifact extension does not match its kind';; esac
+  [[ "$bytes" =~ ^[1-9][0-9]{0,9}$ && "$bytes" -le 2147483648 ]] || fail 'Invalid artifact size'
+  [[ "$sha" =~ ^[0-9a-f]{64}$ ]] || fail 'Invalid SHA-256 digest'
+  [[ "$parts" =~ ^[1-9][0-9]{0,3}$ ]] || fail 'Invalid chunk count'
+  FILENAMES[$kind]="$filename"; SIZES[$kind]="$bytes"; HASHES[$kind]="$sha"; PARTS[$kind]="$parts"
+done < "$MANIFEST"
+[[ "$line_number" == 5 && ${#FILENAMES[@]} == 4 ]] || fail 'Manifest must declare exactly learn, demo, setup and update'
+for kind in learn demo setup update; do
+  [[ -n "${FILENAMES[$kind]+present}" ]] || fail "Missing artifact: $kind"
+  directory="$ASSETS_DIR/$kind"
+  [[ -d "$directory" && ! -L "$directory" ]] || fail "Missing/unsafe chunk directory: $kind"
+  entries=("$directory"/*)
+  [[ ${#entries[@]} -eq ${PARTS[$kind]} ]] || fail "Unexpected or missing chunk files: $kind"
+  output="$STAGE/assembled/$kind"; : > "$output"
+  for ((i=0; i<${PARTS[$kind]}; i++)); do
+    printf -v name 'part-%04d' "$i"
+    chunk="$directory/$name"
+    [[ -f "$chunk" && ! -L "$chunk" ]] || fail "Missing/unsafe chunk: $kind/$name"
+    size="$(stat -c '%s' -- "$chunk")"
+    [[ "$size" -ge 1 && "$size" -le 16777216 ]] || fail "Chunk exceeds the 16 MiB limit: $kind/$name"
+    cat -- "$chunk" >> "$output"
+  done
+  [[ "$(stat -c '%s' -- "$output")" == "${SIZES[$kind]}" ]] || fail "Assembled size mismatch: $kind"
+  digest="$(sha256sum -- "$output")"; digest="${digest%% *}"
   [[ "$digest" == "${HASHES[$kind]}" ]] || fail "Assembled SHA-256 mismatch: $kind"
   printf 'Verified %s: %s bytes.\n' "$kind" "${SIZES[$kind]}"
 done
