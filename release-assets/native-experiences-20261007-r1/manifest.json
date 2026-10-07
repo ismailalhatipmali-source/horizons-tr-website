@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "release": "native-experiences-20261007-r1",
+  "status": "candidate-not-published",
+  "paths": [
+    "try/workbook.js",
+    "learn/content/1.4.1/workbook.js.hzn",
+    "try/demo-asset-manifest.json",
+    "learn/asset-manifest.json",
+    "try/sw.js",
+    "learn/sw.js"
+  ],
+  "sources": {
+    "native-experiences.js": "3ca4bc800dbbb16192230bc561766ca7b81dbb02601ca116c37f06a44357823d",
+    "native-experiences.css": "4dd01ddc22483a568536f1543e4eb11c9d71dbc065085caad1ed6b221ec19558",
+    "native-shadow.css": "0dac65f850ac32cc410ec31d4d398a29a6491013db25b3828a576ac0847ab57b",
+    "native-locales.json": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
+    "native-art.json": "1118859c33fc3ae0b71ec6813004abe496a560dde86fb714eea1e300afbd860d",
+    "native-visibility.css": "ea9659f0910c3033412d4514fbd7641c9b2e1bb46914502b934ef2ea984d0b7b"
+  },
+  "code": {
+    "scripts/native-ui-publication.php": "63f534994b7f306a8b1ddfbcbb13b0be47279f7222f89e35b58d2d828dd92866",
+    "scripts/native-ui-state.php": "fc214c8d6d8bf4fcec1b0b062aff4577060baa37d75caa809e51114455908b44",
+    "scripts/native-ui-plan.php": "610cdfd7c428cd6e19e2d290e28ded0a886940f095deabe34d90a62451ee6a15",
+    "scripts/deploy-native-ui.php": "f71ce27ecb6a1a6de284d35cc65d49bcc4ed8d0c6e844d9266870edbc4591d2f",
+    "scripts/workbook-focus-preservation.php": "97c5c4be9ab63e5777a336c25a464649fc34d06f296f044d93e37d7912f9f0ad",
+    "scripts/trial-pause-preservation.php": "f1cbf09db0d46fccd2170d1a2647ee478629f40d15bcf7ff3d47b6b3190a93d3"
+  },
+  "addon_sha256": "d22d6a239420d63552bce801608250e9a3ddc82d05607aa40872b058827efc3a",
+  "addon_bytes": 79777
+}

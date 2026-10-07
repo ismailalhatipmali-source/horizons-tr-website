@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-07",
+  "component_version": "0.3.0",
+  "tested_source_commit": "3a084db1ad731517c91e8d3a89d3eadd1c1145a4",
+  "remote_blob_identity_verified": true,
+  "tests_passed": 18,
+  "builder_tests": 10,
+  "browser_contract_tests": 8,
+  "layout_cases": 64,
+  "horizontal_overflow_failures": 0,
+  "browser": "Chromium 144.0.7559.96",
+  "playwright": "1.57.0",
+  "python": "3.13.5",
+  "languages": 32,
+  "new_ui_keys_per_language": 27,
+  "uses_synthetic_reader_fixture": true,
+  "real_audio_playback_tested": false,
+  "real_persistent_storage_reopen_tested": false,
+  "authenticated_workbook_tested": false,
+  "production_deployed": false,
+  "physical_devices_tested": false,
+  "sources": {
+    "scripts/stage_workbook_experiences.py": {
+      "git_blob_sha1": "9beb8413921c00761a9d2d9026da6093f3afa3f3",
+      "sha256": "96fb6df87bcf709f4cc8242c34694c8a228c1c0013636f0ab5eb660186941afa",
+      "bytes": 5856
+    },
+    "src/workbook-experiences/native-art.json": {
+      "git_blob_sha1": "5b99c5deef6bf7f46ef8fcce19343a89c916176e",
+      "sha256": "1118859c33fc3ae0b71ec6813004abe496a560dde86fb714eea1e300afbd860d",
+      "bytes": 5667
+    },
+    "src/workbook-experiences/native-experiences.css": {
+      "git_blob_sha1": "35d709ad5da6df388e5434d21e57c134abc86d7a",
+      "sha256": "4dd01ddc22483a568536f1543e4eb11c9d71dbc065085caad1ed6b221ec19558",
+      "bytes": 17984
+    },
+    "src/workbook-experiences/native-experiences.js": {
+      "git_blob_sha1": "bdc5961cf6dc046e4c3be381e2df5bd69ff4496f",
+      "sha256": "3ca4bc800dbbb16192230bc561766ca7b81dbb02601ca116c37f06a44357823d",
+      "bytes": 14196
+    },
+    "src/workbook-experiences/native-locales.json": {
+      "git_blob_sha1": "1ae74ddc0691719236f16caf18a75ba5e81f8b75",
+      "sha256": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
+      "bytes": 23543
+    },
+    "src/workbook-experiences/native-shadow.css": {
+      "git_blob_sha1": "7bc94d50355df779aff504add429c6311fb98df3",
+      "sha256": "0dac65f850ac32cc410ec31d4d398a29a6491013db25b3828a576ac0847ab57b",
+      "bytes": 3903
+    },
+    "tests/test_native_experiences.py": {
+      "git_blob_sha1": "d244b67ea51bbd3334487600d3c0af9b74a40f26",
+      "sha256": "7da8a4a745eaeabccdbf8ce8ad0acc502c02afd3a1520987b8c885d7e0e49f46",
+      "bytes": 17261
+    }
+  }
+}

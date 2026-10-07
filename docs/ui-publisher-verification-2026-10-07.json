@@ -1,0 +1,30 @@
+{
+  "status": "candidate-not-deployed",
+  "tests": {
+    "publication": 35,
+    "bridge": 4,
+    "pipeline": 3,
+    "existing_contract": 18,
+    "all_passed": true
+  },
+  "test_scope": "synthetic filesystem, crypto and browser fixtures; not a real host/paid reader",
+  "git_blob_shas": {
+    ".cpanel.yml": "1ba6d713c3e9466e7c5b1642a602af8a8a9285ea",
+    ".github/workflows/native-ui-publication.yml": "3ad86cc2308d9958ce5cc3d751572606617de69d",
+    "scripts/native-ui-publication.php": "aab72d7751e38dec454293ce7d6741950a244f32",
+    "scripts/native-ui-state.php": "b55aaa834d860f5cecb697c7223ee9097a09ee9a",
+    "scripts/native-ui-plan.php": "d0a1e45424cfbfee96dfe038d61d81a8282beebd",
+    "scripts/deploy-native-ui.php": "3964f7d517a06db0556c1abad265282e08867a6f",
+    "scripts/workbook-focus-preservation.php": "afb18198e2f1733db50f7d46fb53fcba2be0fa47",
+    "scripts/trial-pause-preservation.php": "834f2519d6f8821ed6548f65f4048493a56dd223",
+    "scripts/build_native_ui_manifest.py": "fbedc31218e7e1ea1a9b16cfc5f906a2c3002c15",
+    "tests/test_native_publication.php": "0c6f211b0c61bd5a2bec7b35f643cbe536425b8b",
+    "tests/test_native_chain_bridge.php": "cf3a8f534aaaad0493270fe8b067dbc91c4fd6a0",
+    "tests/test_native_pipeline.py": "e10994eca4f355b0e663227a5e03c185016292d3",
+    "release-assets/native-experiences-20261007-r1/manifest.json": "f06bdc1ba9ce6198b639bc4bde08a3762ecaa112",
+    "release-assets/native-experiences-20261007-r1/manifest.sha256": "d349a4b0675c3d922c67dcfff8500f2465870422",
+    "docs/ui-publisher-2026-10-07.md": "a32a829aed6407e4538d40663cec86abcef509ef"
+  },
+  "production_deployed": false,
+  "host_preflight_run": false
+}

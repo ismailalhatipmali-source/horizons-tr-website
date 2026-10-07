@@ -1,0 +1,84 @@
+/* HORIZONS comfort controls — phase 1, 2026-10-07.
+ * Targets verified from src/workbook-focus/focus-shell.css/js.
+ * No content selectors, event handlers, storage, media or entitlement changes.
+ * This is a staging overlay, NOT the four-experience production migration.
+ */
+@media screen {
+ body.hzn-focus {
+  --hzn-paper:#f6f2e7;--hzn-navy:#193447;--hzn-teal:#216965;
+  --hzn-line:#bdcbc2;--hzn-comfort-bg:#edeade;
+  --hzn-control-bg:#e0e8e1;--hzn-control-hover:#cfdfd5;
+  --hzn-control-ink:#234b49;--hzn-control-line:#6a8076;
+  --hzn-on-primary:#fffdf6;--hzn-primary-hover:#175852;--hzn-focus-ring:#174b60;
+  background:var(--hzn-comfort-bg);color:var(--hzn-navy);
+ }
+ /* Palettes ready for the approved experience selector. No default experience
+    or learner choice is changed by this stylesheet. */
+ [data-hzn-experience=sprout] body.hzn-focus,body.hzn-focus[data-hzn-experience=sprout] {
+  --hzn-comfort-bg:#eaeedd;--hzn-paper:#f3f3e5;--hzn-teal:#426a3b;
+  --hzn-control-bg:#e0e8d2;--hzn-control-hover:#d0dfd5;--hzn-control-line:#718065;
+  --hzn-control-ink:#334e30;--hzn-primary-hover:#31532c;
+ }
+ [data-hzn-experience=adventure] body.hzn-focus,body.hzn-focus[data-hzn-experience=adventure] {
+  --hzn-comfort-bg:#e3ece2;--hzn-paper:#f0f2e5;--hzn-teal:#1e6852;
+  --hzn-control-bg:#dce8da;--hzn-control-hover:#c8ddc9;--hzn-control-line:#62816e;
+  --hzn-control-ink:#254e3a;--hzn-primary-hover:#16513e;
+ }
+ [data-hzn-experience=discovery] body.hzn-focus,body.hzn-focus[data-hzn-experience=discovery] {
+  --hzn-comfort-bg:#e3e9e7;--hzn-paper:#eff2ec;--hzn-teal:#285f6b;
+  --hzn-control-bg:#dbe7e4;--hzn-control-hover:#c6dcd6;--hzn-control-line:#6b8080;
+  --hzn-control-ink:#254b58;--hzn-primary-hover:#204e58;
+ }
+ html.dark body.hzn-focus,body.hzn-focus.dark {
+  --hzn-comfort-bg:#132630;--hzn-paper:#1c3440;--hzn-navy:#e3eded;--hzn-teal:#8dccc0;
+  --hzn-line:#526f76;--hzn-control-bg:#284550;--hzn-control-hover:#345962;
+  --hzn-control-ink:#e1efeb;--hzn-control-line:#789b9e;
+  --hzn-on-primary:#132e34;--hzn-primary-hover:#b8e2d6;--hzn-focus-ring:#f2c777;
+ }
+ body.hzn-focus>.topbar,body.hzn-focus #activity,body.hzn-focus .hzn-focus-dialog,body.hzn-focus #settings {
+  background:var(--hzn-paper);border-color:var(--hzn-line);
+ }
+ body.hzn-focus .hzn-home-welcome {
+  background:var(--hzn-paper);border-color:var(--hzn-line);
+ }
+ body.hzn-focus :is(.hzn-top-controls button,.hzn-back-lessons,.media-switch button,.sound,.trace-tools button,.pen-demo-tools button,.lesson-footer button,.hzn-dialog-close,#close-settings) {
+  background:var(--hzn-control-bg);color:var(--hzn-control-ink);
+  border:1.5px solid var(--hzn-control-line);min-height:44px;
+  box-shadow:0 2px 0 #17384612;
+ }
+ body.hzn-focus :is(.hzn-top-controls button,.hzn-back-lessons,.media-switch button,.sound,.trace-tools button,.pen-demo-tools button,.lesson-footer button,.hzn-dialog-close,#close-settings):hover:not(:disabled) {
+  background:var(--hzn-control-hover);border-color:var(--hzn-teal);color:var(--hzn-control-ink);
+ }
+ body.hzn-focus :is(.hzn-resume,.hzn-top-controls #hzn-lessons-button,.lesson-footer button.primary) {
+  background:var(--hzn-teal);color:var(--hzn-on-primary);border:1.5px solid var(--hzn-teal);
+ }
+ body.hzn-focus :is(.hzn-resume,.hzn-top-controls #hzn-lessons-button,.lesson-footer button.primary):hover:not(:disabled) {
+  background:var(--hzn-primary-hover);color:var(--hzn-on-primary);border-color:var(--hzn-primary-hover);
+ }
+ body.hzn-focus #stages {background:var(--hzn-control-bg);}
+ body.hzn-focus #stages button {color:var(--hzn-control-ink);border:1.5px solid var(--hzn-control-line);background:var(--hzn-paper);}
+ body.hzn-focus #stages button[aria-pressed=true],body.hzn-focus #stages button.active {
+  background:var(--hzn-teal);color:var(--hzn-on-primary);border-color:var(--hzn-teal);
+ }
+ body.hzn-focus #course-nav.course-nav button {background:var(--hzn-paper);border-color:var(--hzn-control-line);color:var(--hzn-navy);}
+ body.hzn-focus #course-nav.course-nav button[aria-pressed=true] {background:var(--hzn-control-bg);border-color:var(--hzn-teal);box-shadow:inset 0 0 0 1px var(--hzn-teal);}
+ body.hzn-focus :is(#hzn-language-dock select,#hzn-account-controls select) {
+  background:var(--hzn-control-bg);color:var(--hzn-control-ink);border:1.5px solid var(--hzn-control-line);
+ }
+ body.hzn-focus :is(.hzn-top-controls,.trace-tools,.pen-demo-tools,.lesson-footer,.media-switch) button svg {
+  color:inherit;opacity:1;
+ }
+ /* Do not force all SVG strokes or invert images: some icons are filled and
+    educational illustrations use meaningful colours. */
+ body.hzn-focus :is(button,a,summary,select,input,textarea):focus-visible {
+  outline:3px solid var(--hzn-focus-ring);outline-offset:3px;
+ }
+ body.hzn-focus :is(.hzn-top-controls button,.hzn-back-lessons,.media-switch button,.sound,.trace-tools button,.pen-demo-tools button,.lesson-footer button,.hzn-dialog-close,#close-settings):disabled {
+  opacity:1;background:var(--hzn-paper);color:var(--hzn-control-ink);
+  border:1.5px dashed var(--hzn-control-line);box-shadow:none;cursor:not-allowed;
+ }
+}
+@media(forced-colors:active){
+ body.hzn-focus button{border-color:ButtonText;}
+ body.hzn-focus button[aria-pressed=true]{outline:2px solid Highlight;}
+}
