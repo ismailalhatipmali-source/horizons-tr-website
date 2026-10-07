@@ -9,53 +9,14 @@
  const q=selector=>document.querySelector(selector);
  const text=key=>COPY[locale]?.[key]??COPY.en[key];
  const sectionNames=['alphabet','phonics','blending2','blending3','blending4','catalog'];
- const experienceNames=['sprouts','adventure','discovery','focus'];
  const componentNames=new Set(['phonics','blending2','blending3','blending4']);
  const memory=new Map();
- const experienceMemory=new Map();
  const components=new Map();
  let view='home',owner=null,installed=false,returnFocus=null,restoring=false,wordObserver;
  let home,homeNav,drawer,drawerNav,accountDialog,languageDock,utilityDock,toolbar,backButton;
  const original={render,nav,setLearner,learnerToolbar,openSettingsWithTypography,applyTypography};
  function learnerKey(){return (IS_DEMO?'demo:':'full:')+(learnerStorage.enabled?learnerStorage.current?.id||'pending':'local');}
  function storageKey(){return 'horizons.focus-location.v1:'+learnerKey();}
- function experienceKey(){return 'horizons.experience.v1:'+learnerKey();}
- function experience(){
-  const key=learnerKey();if(experienceMemory.has(key))return experienceMemory.get(key);
-  let value;try{value=localStorage.getItem(experienceKey());}catch{}
-  value=experienceNames.includes(value)?value:'focus';experienceMemory.set(key,value);return value;
- }
- function selectExperience(value){
-  if(!experienceNames.includes(value))return;
-  experienceMemory.set(learnerKey(),value);
-  try{localStorage.setItem(experienceKey(),value);}catch{}
-  syncExperience();
- }
- function experiencePicker(place){
-  const group=element('section',{class:'hzn-experience-picker','aria-labelledby':'hzn-experience-title-'+place});
-  const heading=element('h2',{id:'hzn-experience-title-'+place});group.append(heading);
-  const choices=element('div',{class:'hzn-experience-choices'});
-  for(const name of experienceNames){
-   const choice=button('hzn-experience-'+place+'-'+name,()=>selectExperience(name));
-   choice.className='hzn-experience-choice';choice.dataset.experienceChoice=name;
-   const ornament=element('span',{class:'hzn-experience-ornament','aria-hidden':'true'});
-   const label=element('strong'),description=element('small');
-   choice.append(ornament,label,description);choices.append(choice);
-  }
-  group.append(choices);return group;
- }
- function syncExperience(){
-  const selected=experience();document.body.dataset.hznExperience=selected;
-  for(const picker of document.querySelectorAll('.hzn-experience-picker')){
-   picker.querySelector('h2').textContent=text('experienceTitle');
-   for(const choice of picker.querySelectorAll('[data-experience-choice]')){
-    const name=choice.dataset.experienceChoice;
-    choice.querySelector('strong').textContent=text('experience'+name);
-    choice.querySelector('small').textContent=text('experience'+name+'Hint');
-    choice.setAttribute('aria-pressed',String(name===selected));
-   }
-  }
- }
  function locationRecord(){
   const key=learnerKey();if(memory.has(key))return memory.get(key);
   let row=null;try{row=JSON.parse(localStorage.getItem(storageKey()));}catch{}
@@ -141,8 +102,7 @@
   const welcome=element('div',{class:'hzn-home-welcome'}),heading=element('h1',{id:'hzn-home-title',tabindex:'-1'}),hint=element('p',{id:'hzn-home-hint'});
   const resume=button('hzn-resume',startOrResume);resume.className='primary hzn-resume';
   const resumeLabel=element('span',{id:'hzn-resume-label'}),resumeTitle=element('small',{id:'hzn-resume-title'});resume.append(resumeLabel,resumeTitle);
-  welcome.append(heading,hint,resume);homeNav=element('div',{id:'hzn-home-nav'});
-  home.append(experiencePicker('home'),welcome,homeNav);main.prepend(home);
+  welcome.append(heading,hint,resume);homeNav=element('div',{id:'hzn-home-nav'});home.append(welcome,homeNav);main.prepend(home);
   drawer=createDialog('hzn-lessons-dialog','hzn-lessons-title');drawerNav=element('div',{class:'hzn-drawer-nav'});drawer.append(drawerNav);
   accountDialog=createDialog('hzn-account-dialog','hzn-account-title');accountDialog.append(element('div',{id:'hzn-account-controls'}));
   const accountHelp=button('hzn-account-help',()=>{accountDialog.close();openSettings();});accountHelp.className='secondary';accountDialog.append(accountHelp);
@@ -155,7 +115,6 @@
   const language=q('#locale')?.closest('label')||q('#locale');
   languageDock=element('section',{id:'hzn-language-dock',class:'setting-section'});if(language)languageDock.append(language);
   q('#settings').append(languageDock);
-  q('#settings').append(experiencePicker('settings'));
   utilityDock=element('section',{id:'hzn-utility-dock',class:'setting-section'});q('#settings').append(utilityDock);
   const collectUtilities=()=>{const actions=q('.top-actions');if(!actions)return;for(const node of [...actions.children])utilityDock.append(node);};
   collectUtilities();
@@ -229,7 +188,6 @@
   if(!state||!q('#activity'))return;
   const nextOwner=learnerKey();if(nextOwner!==owner){owner=nextOwner;view='home';closePanels();if(installed)saveHistory('home',true);}
   install();
-  syncExperience();
   const currentProfile=learnerStorage.enabled?learnerStorage.current:null;
   q('#hzn-home-title').textContent=text('homeTitle');q('#hzn-home-hint').textContent=text('homeHint');
   q('#hzn-resume-label').textContent=text(hasProgress()?'resume':'start');
@@ -284,6 +242,6 @@
  };
  addEventListener('resize',wordAccess);
  document.fonts?.ready.then(wordAccess);
- globalThis.hznFocusShell=Object.freeze({sync,currentLearnerKey:learnerKey,rememberComponent,restoreComponent,showHome,openSettings,currentExperience:experience});
+ globalThis.hznFocusShell=Object.freeze({sync,currentLearnerKey:learnerKey,rememberComponent,restoreComponent,showHome,openSettings});
 })();
 /*WORKBOOK_FOCUS_END*/
