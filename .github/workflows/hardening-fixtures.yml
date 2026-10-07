@@ -5,19 +5,23 @@ on:
     paths:
       - 'scripts/deploy-cpanel.sh'
       - 'scripts/deploy-hardening.php'
+      - 'scripts/audit-public-metadata.php'
       - 'src/security/**'
       - 'dist/.htaccess'
       - 'tests/test_deploy_cpanel.py'
       - 'tests/test_hardening.py'
+      - 'tests/test_public_metadata_audit.py'
       - '.github/workflows/hardening-fixtures.yml'
   pull_request:
     paths:
       - 'scripts/deploy-cpanel.sh'
       - 'scripts/deploy-hardening.php'
+      - 'scripts/audit-public-metadata.php'
       - 'src/security/**'
       - 'dist/.htaccess'
       - 'tests/test_deploy_cpanel.py'
       - 'tests/test_hardening.py'
+      - 'tests/test_public_metadata_audit.py'
       - '.github/workflows/hardening-fixtures.yml'
 permissions:
   contents: read
@@ -32,10 +36,12 @@ jobs:
           sparse-checkout: |
             scripts/deploy-cpanel.sh
             scripts/deploy-hardening.php
+            scripts/audit-public-metadata.php
             src/security
             dist/.htaccess
             tests/test_deploy_cpanel.py
             tests/test_hardening.py
+            tests/test_public_metadata_audit.py
           sparse-checkout-cone-mode: false
       - name: Install fixture runtimes
         run: |
@@ -47,5 +53,7 @@ jobs:
         run: |
           bash -n scripts/deploy-cpanel.sh
           php -l scripts/deploy-hardening.php
+          php -l scripts/audit-public-metadata.php
           python3 -m unittest discover -s tests -p test_deploy_cpanel.py -v
           python3 -m unittest discover -s tests -p test_hardening.py -v
+          python3 -m unittest discover -s tests -p test_public_metadata_audit.py -v
