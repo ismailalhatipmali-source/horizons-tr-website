@@ -76,5 +76,8 @@ function hznCMState(string $web):?array {
     $receipt['baseline_root']=$baselineRoot;
     if($blending4!==null){foreach(HZN_B4_SHARED as $p)$receipt['hashes'][$p]=$blending4['hashes'][$p];$receipt['plain_after_sha256']=$blending4['plain_after_sha256'];$receipt['worker_suffix']=$blending4['worker_suffix'];$receipt['blending4']=$blending4;}
     if($focus!==null){foreach(HZN_FOCUS_PUBLIC as $p)$receipt['hashes'][$p]=$focus['hashes'][$p];$receipt['workbook_focus']=$focus;}
+    // Older B3/meaning/B2 validators consume this verified successor contract.
+    // Trial pause changed only the paid worker cache suffix, not lesson assets.
+    if($trialPause!==null){$receipt['hashes']['learn/sw.js']=$trialPause['hashes']['learn/sw.js'];$receipt['worker_suffix'].='-'.HZN_TRIAL_PAUSE_RELEASE;}
     return $receipt;
 }
