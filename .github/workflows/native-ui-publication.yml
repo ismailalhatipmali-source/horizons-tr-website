@@ -15,6 +15,7 @@ on:
       - 'tests/test_native_publication.php'
       - 'tests/test_native_chain_bridge.php'
       - 'tests/test_native_pipeline.py'
+      - 'tests/test_native_cold_check.php'
       - '.github/workflows/native-ui-publication.yml'
 permissions:
   contents: read
@@ -34,6 +35,7 @@ jobs:
             tests/test_native_publication.php
             tests/test_native_chain_bridge.php
             tests/test_native_pipeline.py
+            tests/test_native_cold_check.php
           sparse-checkout-cone-mode: false
       - name: Syntax, immutable-source build and filesystem fixtures
         run: |
@@ -47,3 +49,4 @@ jobs:
           php tests/test_native_publication.php
           php tests/test_native_chain_bridge.php
           python3 tests/test_native_pipeline.py
+          php tests/test_native_cold_check.php

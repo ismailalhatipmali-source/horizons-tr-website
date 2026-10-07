@@ -2,6 +2,7 @@
 declare(strict_types=1);
 require_once __DIR__ . '/native-ui-state.php';
 function hznUiChain(string $web): array {
+    require_once __DIR__ . '/trial-pause-preservation.php';
     require_once __DIR__ . '/workbook-focus-preservation.php';
     require_once __DIR__ . '/blending4-preservation.php';
     require_once __DIR__ . '/comprehensive-meaning-preservation.php';
