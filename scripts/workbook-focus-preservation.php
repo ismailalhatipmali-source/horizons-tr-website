@@ -25,12 +25,12 @@ function hznFocusRelease(string $repo):array {
     foreach($r['sources'] as $p=>$sha){
         if(!is_string($sha)||!hznFocusSha($sha))throw new RuntimeException('FOCUS_SOURCE_CHANGED');
         $source=hznFocusPath($repo,$p);
-        if($p==='scripts/comprehensive-meaning-preservation.php'&&!hash_equals($sha,hash('sha256',hznFocusRead($source,2097152)))){
+        if(in_array($p,['scripts/comprehensive-meaning-preservation.php','scripts/blending4-preservation.php'],true)&&!hash_equals($sha,hash('sha256',hznFocusRead($source,2097152)))){
             // Keep the installed focus manifest and receipt immutable. The new
             // validator and byte-exact historical source are pinned together.
             require_once __DIR__.'/native-ui-state.php';
             $nativeRelease=hznUiRelease($repo);
-            $historical='release-assets/native-experiences-20261007-r1/predecessors/comprehensive-meaning-preservation.php';
+            $historical='release-assets/native-experiences-20261007-r1/predecessors/'.basename($p);
             if(($nativeRelease['code'][$historical]??'')!==$sha||!isset($nativeRelease['code'][$p]))throw new RuntimeException('FOCUS_SUCCESSOR_SOURCE_UNPINNED');
             $source=hznFocusPath($repo,$historical);
         }

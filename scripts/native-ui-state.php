@@ -6,7 +6,10 @@ const HZN_UI_CODE = ['scripts/native-ui-publication.php', 'scripts/native-ui-sta
     'scripts/workbook-focus-preservation.php', 'scripts/trial-pause-preservation.php',
     'scripts/comprehensive-meaning-preservation.php',
     'scripts/blending3-preservation.php', 'scripts/meaning-preservation.php', 'scripts/blending2-preservation.php',
-    'release-assets/native-experiences-20261007-r1/predecessors/comprehensive-meaning-preservation.php'];
+    'release-assets/native-experiences-20261007-r1/predecessors/comprehensive-meaning-preservation.php',
+    'scripts/blending4-preservation.php',
+    'release-assets/native-experiences-20261007-r1/predecessors/blending4-preservation.php',
+    'release-assets/native-experiences-20261007-r1/predecessors/blending3-preservation.php'];
 /* Validate checked-in sources every time. Never interpret a receipt as a permission
  * to skip the release hash, fixed path set, historical receipts or private backups. */
 function hznUiRelease(string $repo): array {

@@ -15,7 +15,9 @@ try{
     $p=$tmp.'/scripts/comprehensive-meaning-preservation.php';$raw=file_get_contents($p);file_put_contents($p,$raw."\n// foreign edit\n");pinReject(fn()=>hznFocusRelease($tmp));file_put_contents($p,$raw);echo "PASS modified_successor_is_rejected\n";
     $p=$tmp.'/release-assets/'.HZN_UI_RELEASE.'/predecessors/comprehensive-meaning-preservation.php';$raw=file_get_contents($p);file_put_contents($p,$raw."\n// foreign archive\n");pinReject(fn()=>hznFocusRelease($tmp));file_put_contents($p,$raw);echo "PASS modified_historical_archive_is_rejected\n";
     if($native['code']['release-assets/'.HZN_UI_RELEASE.'/predecessors/comprehensive-meaning-preservation.php']!==$focus['sources']['scripts/comprehensive-meaning-preservation.php'])throw new RuntimeException('HISTORICAL_SOURCE_PIN_MISMATCH');
-    echo "RESULT 3/3 passed\n";
+    foreach(['scripts/blending4-preservation.php','release-assets/'.HZN_UI_RELEASE.'/predecessors/blending4-preservation.php','release-assets/'.HZN_UI_RELEASE.'/predecessors/blending3-preservation.php'] as $p){$p=$tmp.'/'.$p;$raw=file_get_contents($p);file_put_contents($p,$raw."\n// foreign pin\n");pinReject(fn()=>hznFocusRelease($tmp));file_put_contents($p,$raw);echo "PASS B4_B3_successor_archive_pin_rejects_tamper\n";}
+    if($native['code']['release-assets/'.HZN_UI_RELEASE.'/predecessors/blending4-preservation.php']!==$focus['sources']['scripts/blending4-preservation.php'])throw new RuntimeException('HISTORICAL_SOURCE_PIN_MISMATCH');
+    echo "RESULT 6/6 passed\n";
 }finally{
     $it=new RecursiveIteratorIterator(new RecursiveDirectoryIterator($tmp,FilesystemIterator::SKIP_DOTS),RecursiveIteratorIterator::CHILD_FIRST);foreach($it as $x){$x->isDir()?rmdir($x->getPathname()):unlink($x->getPathname());}rmdir($tmp);
 }

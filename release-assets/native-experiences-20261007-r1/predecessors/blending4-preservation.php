@@ -25,12 +25,6 @@ function hznB4Release(string $repo):array{
    if(!isset($focusRelease['sources'][$p]))throw new RuntimeException('BLENDING4_SUCCESSOR_SOURCE_UNPINNED');
    $source=hznB4Path($repo,'release-assets/'.HZN_FOCUS_RELEASE.'/predecessors/comprehensive-meaning-preservation.php');
   }
-  if($p==='scripts/blending3-preservation.php'&&!hash_equals($sha,hash('sha256',hznB4Read($source)))){
-   require_once __DIR__.'/native-ui-state.php';$nativeRelease=hznUiRelease($repo);
-   $historical='release-assets/native-experiences-20261007-r1/predecessors/blending3-preservation.php';
-   if(($nativeRelease['code'][$historical]??'')!==$sha||!isset($nativeRelease['code'][$p]))throw new RuntimeException('BLENDING4_SUCCESSOR_SOURCE_UNPINNED');
-   $source=hznB4Path($repo,$historical);
-  }
   if(!hash_equals($sha,hash('sha256',hznB4Read($source))))throw new RuntimeException('BLENDING4_SOURCE_CHANGED');
  }
  $paths=['course/blending4/data.json'];for($i=1;$i<=159;$i++)$paths[]='course/audio/blending4/blending4_r1_'.str_pad((string)$i,3,'0',STR_PAD_LEFT).'.wav';
