@@ -19,7 +19,15 @@
     "experiencediscovery": "Discovery",
     "experiencediscoveryHint": "Explore cards and challenges",
     "experiencefocus": "Focus",
-    "experiencefocusHint": "Read calmly and resume quickly"
+    "experiencefocusHint": "Read calmly and resume quickly",
+    "futureTitle": "Coming soon · 7 sections",
+    "futurepronouns": "Pronouns",
+    "futurepossessives": "Possessive pronouns",
+    "futurenumbers": "Numbers",
+    "futurecolors": "Colors",
+    "futurecalendar": "Days and months",
+    "futuredirections": "Directions",
+    "futurestories": "Short stories"
   },
   "ar": {
     "homeTitle": "رحلتك مع اللغة العربية",
@@ -41,7 +49,15 @@
     "experiencediscovery": "اكتشاف",
     "experiencediscoveryHint": "بطاقات وتحديات منظّمة",
     "experiencefocus": "تركيز",
-    "experiencefocusHint": "قراءة هادئة واستئناف سريع"
+    "experiencefocusHint": "قراءة هادئة واستئناف سريع",
+    "futureTitle": "قريبًا · ٧ أقسام",
+    "futurepronouns": "الضمائر",
+    "futurepossessives": "ضمائر الملكية",
+    "futurenumbers": "الأرقام",
+    "futurecolors": "الألوان",
+    "futurecalendar": "أيام الأسبوع والأشهر",
+    "futuredirections": "الاتجاهات",
+    "futurestories": "قصص قصيرة مستقلة"
   },
   "tr": {
     "homeTitle": "Arapça öğrenme yolculuğunuz",
@@ -63,7 +79,15 @@
     "experiencediscovery": "Keşif",
     "experiencediscoveryHint": "Kartları ve görevleri keşfet",
     "experiencefocus": "Odak",
-    "experiencefocusHint": "Sakin oku, hızla devam et"
+    "experiencefocusHint": "Sakin oku, hızla devam et",
+    "futureTitle": "Yakında · 7 bölüm",
+    "futurepronouns": "Zamirler",
+    "futurepossessives": "İyelik zamirleri",
+    "futurenumbers": "Sayılar",
+    "futurecolors": "Renkler",
+    "futurecalendar": "Günler ve aylar",
+    "futuredirections": "Yönler",
+    "futurestories": "Kısa öyküler"
   },
   "fr": {
     "homeTitle": "Votre parcours d’apprentissage de l’arabe",
@@ -85,7 +109,15 @@
     "experiencediscovery": "Découverte",
     "experiencediscoveryHint": "Explorez cartes et défis",
     "experiencefocus": "Concentration",
-    "experiencefocusHint": "Lisez sereinement et reprenez vite"
+    "experiencefocusHint": "Lisez sereinement et reprenez vite",
+    "futureTitle": "Bientôt · 7 sections",
+    "futurepronouns": "Pronoms",
+    "futurepossessives": "Pronoms possessifs",
+    "futurenumbers": "Nombres",
+    "futurecolors": "Couleurs",
+    "futurecalendar": "Jours et mois",
+    "futuredirections": "Directions",
+    "futurestories": "Histoires courtes"
   },
   "es": {
     "homeTitle": "Tu camino para aprender árabe",
@@ -107,7 +139,15 @@
     "experiencediscovery": "Descubrimiento",
     "experiencediscoveryHint": "Explora tarjetas y retos",
     "experiencefocus": "Enfoque",
-    "experiencefocusHint": "Lee con calma y retoma enseguida"
+    "experiencefocusHint": "Lee con calma y retoma enseguida",
+    "futureTitle": "Próximamente · 7 secciones",
+    "futurepronouns": "Pronombres",
+    "futurepossessives": "Pronombres posesivos",
+    "futurenumbers": "Números",
+    "futurecolors": "Colores",
+    "futurecalendar": "Días y meses",
+    "futuredirections": "Direcciones",
+    "futurestories": "Historias breves"
   },
   "de": {
     "homeTitle": "Dein Weg zum Arabischlernen",
@@ -129,7 +169,15 @@
     "experiencediscovery": "Entdecken",
     "experiencediscoveryHint": "Erkunde Karten und Aufgaben",
     "experiencefocus": "Fokus",
-    "experiencefocusHint": "Lies in Ruhe und mach direkt weiter"
+    "experiencefocusHint": "Lies in Ruhe und mach direkt weiter",
+    "futureTitle": "Demnächst · 7 Bereiche",
+    "futurepronouns": "Pronomen",
+    "futurepossessives": "Possessivpronomen",
+    "futurenumbers": "Zahlen",
+    "futurecolors": "Farben",
+    "futurecalendar": "Wochentage und Monate",
+    "futuredirections": "Richtungen",
+    "futurestories": "Kurze Geschichten"
   },
   "it": {
     "homeTitle": "Il tuo percorso per imparare l’arabo",
@@ -151,7 +199,15 @@
     "experiencediscovery": "Scoperta",
     "experiencediscoveryHint": "Esplora schede e sfide",
     "experiencefocus": "Concentrazione",
-    "experiencefocusHint": "Leggi con calma e riprendi subito"
+    "experiencefocusHint": "Leggi con calma e riprendi subito",
+    "futureTitle": "Prossimamente · 7 sezioni",
+    "futurepronouns": "Pronomi",
+    "futurepossessives": "Pronomi possessivi",
+    "futurenumbers": "Numeri",
+    "futurecolors": "Colori",
+    "futurecalendar": "Giorni e mesi",
+    "futuredirections": "Direzioni",
+    "futurestories": "Storie brevi"
   },
   "pt": {
     "homeTitle": "Sua jornada de aprendizagem do árabe",
@@ -173,7 +229,15 @@
     "experiencediscovery": "Descoberta",
     "experiencediscoveryHint": "Explore cartões e desafios",
     "experiencefocus": "Foco",
-    "experiencefocusHint": "Leia com calma e retome rapidamente"
+    "experiencefocusHint": "Leia com calma e retome rapidamente",
+    "futureTitle": "Em breve · 7 secções",
+    "futurepronouns": "Pronomes",
+    "futurepossessives": "Pronomes possessivos",
+    "futurenumbers": "Números",
+    "futurecolors": "Cores",
+    "futurecalendar": "Dias e meses",
+    "futuredirections": "Direções",
+    "futurestories": "Histórias curtas"
   },
   "nl": {
     "homeTitle": "Jouw leerreis in het Arabisch",
@@ -195,7 +259,15 @@
     "experiencediscovery": "Ontdekken",
     "experiencediscoveryHint": "Verken kaarten en uitdagingen",
     "experiencefocus": "Focus",
-    "experiencefocusHint": "Lees rustig en ga snel verder"
+    "experiencefocusHint": "Lees rustig en ga snel verder",
+    "futureTitle": "Binnenkort · 7 onderdelen",
+    "futurepronouns": "Voornaamwoorden",
+    "futurepossessives": "Bezittelijke voornaamwoorden",
+    "futurenumbers": "Getallen",
+    "futurecolors": "Kleuren",
+    "futurecalendar": "Dagen en maanden",
+    "futuredirections": "Richtingen",
+    "futurestories": "Korte verhalen"
   },
   "ru": {
     "homeTitle": "Ваш путь к изучению арабского",
@@ -217,7 +289,15 @@
     "experiencediscovery": "Открытие",
     "experiencediscoveryHint": "Изучайте карточки и задания",
     "experiencefocus": "Фокус",
-    "experiencefocusHint": "Читайте спокойно и быстро продолжайте"
+    "experiencefocusHint": "Читайте спокойно и быстро продолжайте",
+    "futureTitle": "Скоро · 7 разделов",
+    "futurepronouns": "Местоимения",
+    "futurepossessives": "Притяжательные местоимения",
+    "futurenumbers": "Числа",
+    "futurecolors": "Цвета",
+    "futurecalendar": "Дни недели и месяцы",
+    "futuredirections": "Направления",
+    "futurestories": "Короткие рассказы"
   },
   "uk": {
     "homeTitle": "Ваш шлях до вивчення арабської",
@@ -239,7 +319,15 @@
     "experiencediscovery": "Відкриття",
     "experiencediscoveryHint": "Досліджуйте картки та завдання",
     "experiencefocus": "Зосередження",
-    "experiencefocusHint": "Читайте спокійно й швидко продовжуйте"
+    "experiencefocusHint": "Читайте спокійно й швидко продовжуйте",
+    "futureTitle": "Незабаром · 7 розділів",
+    "futurepronouns": "Займенники",
+    "futurepossessives": "Присвійні займенники",
+    "futurenumbers": "Числа",
+    "futurecolors": "Кольори",
+    "futurecalendar": "Дні тижня та місяці",
+    "futuredirections": "Напрямки",
+    "futurestories": "Короткі оповідання"
   },
   "pl": {
     "homeTitle": "Twoja podróż z językiem arabskim",
@@ -261,7 +349,15 @@
     "experiencediscovery": "Odkrywanie",
     "experiencediscoveryHint": "Poznawaj karty i wyzwania",
     "experiencefocus": "Skupienie",
-    "experiencefocusHint": "Czytaj spokojnie i szybko wracaj"
+    "experiencefocusHint": "Czytaj spokojnie i szybko wracaj",
+    "futureTitle": "Wkrótce · 7 działów",
+    "futurepronouns": "Zaimki",
+    "futurepossessives": "Zaimki dzierżawcze",
+    "futurenumbers": "Liczby",
+    "futurecolors": "Kolory",
+    "futurecalendar": "Dni i miesiące",
+    "futuredirections": "Kierunki",
+    "futurestories": "Krótkie opowieści"
   },
   "cs": {
     "homeTitle": "Vaše cesta za arabštinou",
@@ -283,7 +379,15 @@
     "experiencediscovery": "Objevování",
     "experiencediscoveryHint": "Prozkoumejte karty a výzvy",
     "experiencefocus": "Soustředění",
-    "experiencefocusHint": "Čtěte v klidu a rychle navazujte"
+    "experiencefocusHint": "Čtěte v klidu a rychle navazujte",
+    "futureTitle": "Brzy · 7 oddílů",
+    "futurepronouns": "Zájmena",
+    "futurepossessives": "Přivlastňovací zájmena",
+    "futurenumbers": "Čísla",
+    "futurecolors": "Barvy",
+    "futurecalendar": "Dny a měsíce",
+    "futuredirections": "Směry",
+    "futurestories": "Krátké příběhy"
   },
   "ro": {
     "homeTitle": "Călătoria ta în învățarea limbii arabe",
@@ -305,7 +409,15 @@
     "experiencediscovery": "Descoperire",
     "experiencediscoveryHint": "Explorează fișe și provocări",
     "experiencefocus": "Concentrare",
-    "experiencefocusHint": "Citește liniștit și reia rapid"
+    "experiencefocusHint": "Citește liniștit și reia rapid",
+    "futureTitle": "În curând · 7 secțiuni",
+    "futurepronouns": "Pronume",
+    "futurepossessives": "Pronume posesive",
+    "futurenumbers": "Numere",
+    "futurecolors": "Culori",
+    "futurecalendar": "Zile și luni",
+    "futuredirections": "Direcții",
+    "futurestories": "Povești scurte"
   },
   "hu": {
     "homeTitle": "Az arab nyelvtanulás útján",
@@ -327,7 +439,15 @@
     "experiencediscovery": "Felfedezés",
     "experiencediscoveryHint": "Fedezz fel kártyákat és kihívásokat",
     "experiencefocus": "Fókusz",
-    "experiencefocusHint": "Olvass nyugodtan, folytasd gyorsan"
+    "experiencefocusHint": "Olvass nyugodtan, folytasd gyorsan",
+    "futureTitle": "Hamarosan · 7 rész",
+    "futurepronouns": "Névmások",
+    "futurepossessives": "Birtokos névmások",
+    "futurenumbers": "Számok",
+    "futurecolors": "Színek",
+    "futurecalendar": "Napok és hónapok",
+    "futuredirections": "Irányok",
+    "futurestories": "Rövid történetek"
   },
   "el": {
     "homeTitle": "Το ταξίδι σας στην εκμάθηση των αραβικών",
@@ -349,7 +469,15 @@
     "experiencediscovery": "Ανακάλυψη",
     "experiencediscoveryHint": "Εξερεύνησε κάρτες και προκλήσεις",
     "experiencefocus": "Εστίαση",
-    "experiencefocusHint": "Διάβασε ήρεμα και συνέχισε γρήγορα"
+    "experiencefocusHint": "Διάβασε ήρεμα και συνέχισε γρήγορα",
+    "futureTitle": "Σύντομα · 7 ενότητες",
+    "futurepronouns": "Αντωνυμίες",
+    "futurepossessives": "Κτητικές αντωνυμίες",
+    "futurenumbers": "Αριθμοί",
+    "futurecolors": "Χρώματα",
+    "futurecalendar": "Ημέρες και μήνες",
+    "futuredirections": "Κατευθύνσεις",
+    "futurestories": "Σύντομες ιστορίες"
   },
   "sv": {
     "homeTitle": "Din resa mot att lära dig arabiska",
@@ -371,7 +499,15 @@
     "experiencediscovery": "Upptäck",
     "experiencediscoveryHint": "Utforska kort och utmaningar",
     "experiencefocus": "Fokus",
-    "experiencefocusHint": "Läs i lugn och ro och fortsätt snabbt"
+    "experiencefocusHint": "Läs i lugn och ro och fortsätt snabbt",
+    "futureTitle": "Kommer snart · 7 avsnitt",
+    "futurepronouns": "Pronomen",
+    "futurepossessives": "Possessiva pronomen",
+    "futurenumbers": "Tal",
+    "futurecolors": "Färger",
+    "futurecalendar": "Dagar och månader",
+    "futuredirections": "Riktningar",
+    "futurestories": "Korta berättelser"
   },
   "da": {
     "homeTitle": "Din rejse mod at lære arabisk",
@@ -393,7 +529,15 @@
     "experiencediscovery": "Opdagelse",
     "experiencediscoveryHint": "Udforsk kort og udfordringer",
     "experiencefocus": "Fokus",
-    "experiencefocusHint": "Læs roligt og fortsæt hurtigt"
+    "experiencefocusHint": "Læs roligt og fortsæt hurtigt",
+    "futureTitle": "Kommer snart · 7 afsnit",
+    "futurepronouns": "Pronominer",
+    "futurepossessives": "Ejestedord",
+    "futurenumbers": "Tal",
+    "futurecolors": "Farver",
+    "futurecalendar": "Dage og måneder",
+    "futuredirections": "Retninger",
+    "futurestories": "Korte historier"
   },
   "no": {
     "homeTitle": "Din reise mot å lære arabisk",
@@ -415,7 +559,15 @@
     "experiencediscovery": "Oppdagelse",
     "experiencediscoveryHint": "Utforsk kort og utfordringer",
     "experiencefocus": "Fokus",
-    "experiencefocusHint": "Les rolig og fortsett raskt"
+    "experiencefocusHint": "Les rolig og fortsett raskt",
+    "futureTitle": "Kommer snart · 7 deler",
+    "futurepronouns": "Pronomen",
+    "futurepossessives": "Eiendomspronomen",
+    "futurenumbers": "Tall",
+    "futurecolors": "Farger",
+    "futurecalendar": "Dager og måneder",
+    "futuredirections": "Retninger",
+    "futurestories": "Korte fortellinger"
   },
   "fi": {
     "homeTitle": "Matkasi arabian kielen oppimiseen",
@@ -437,7 +589,15 @@
     "experiencediscovery": "Löytäminen",
     "experiencediscoveryHint": "Tutki kortteja ja haasteita",
     "experiencefocus": "Keskittyminen",
-    "experiencefocusHint": "Lue rauhassa ja jatka nopeasti"
+    "experiencefocusHint": "Lue rauhassa ja jatka nopeasti",
+    "futureTitle": "Tulossa pian · 7 osiota",
+    "futurepronouns": "Pronominit",
+    "futurepossessives": "Omistuspronominit",
+    "futurenumbers": "Numerot",
+    "futurecolors": "Värit",
+    "futurecalendar": "Päivät ja kuukaudet",
+    "futuredirections": "Suunnat",
+    "futurestories": "Lyhyet tarinat"
   },
   "bg": {
     "homeTitle": "Вашият път към изучаването на арабски",
@@ -459,7 +619,15 @@
     "experiencediscovery": "Откриване",
     "experiencediscoveryHint": "Разглеждайте карти и задачи",
     "experiencefocus": "Фокус",
-    "experiencefocusHint": "Четете спокойно и продължавайте бързо"
+    "experiencefocusHint": "Четете спокойно и продължавайте бързо",
+    "futureTitle": "Очаквайте · 7 раздела",
+    "futurepronouns": "Местоимения",
+    "futurepossessives": "Притежателни местоимения",
+    "futurenumbers": "Числа",
+    "futurecolors": "Цветове",
+    "futurecalendar": "Дни и месеци",
+    "futuredirections": "Посоки",
+    "futurestories": "Кратки разкази"
   },
   "sr": {
     "homeTitle": "Vaše putovanje kroz učenje arapskog",
@@ -481,7 +649,15 @@
     "experiencediscovery": "Откривање",
     "experiencediscoveryHint": "Истражите картице и изазове",
     "experiencefocus": "Фокус",
-    "experiencefocusHint": "Читајте мирно и брзо наставите"
+    "experiencefocusHint": "Читајте мирно и брзо наставите",
+    "futureTitle": "Ускоро · 7 одељака",
+    "futurepronouns": "Заменице",
+    "futurepossessives": "Присвојне заменице",
+    "futurenumbers": "Бројеви",
+    "futurecolors": "Боје",
+    "futurecalendar": "Дани и месеци",
+    "futuredirections": "Правци",
+    "futurestories": "Кратке приче"
   },
   "hr": {
     "homeTitle": "Vaše putovanje kroz učenje arapskog",
@@ -503,7 +679,15 @@
     "experiencediscovery": "Otkrivanje",
     "experiencediscoveryHint": "Istraži kartice i izazove",
     "experiencefocus": "Fokus",
-    "experiencefocusHint": "Čitaj mirno i brzo nastavi"
+    "experiencefocusHint": "Čitaj mirno i brzo nastavi",
+    "futureTitle": "Uskoro · 7 cjelina",
+    "futurepronouns": "Zamjenice",
+    "futurepossessives": "Posvojne zamjenice",
+    "futurenumbers": "Brojevi",
+    "futurecolors": "Boje",
+    "futurecalendar": "Dani i mjeseci",
+    "futuredirections": "Smjerovi",
+    "futurestories": "Kratke priče"
   },
   "he": {
     "homeTitle": "המסע שלכם ללימוד ערבית",
@@ -525,7 +709,15 @@
     "experiencediscovery": "גילוי",
     "experiencediscoveryHint": "גלו כרטיסיות ואתגרים",
     "experiencefocus": "מיקוד",
-    "experiencefocusHint": "קראו בנחת והמשיכו במהירות"
+    "experiencefocusHint": "קראו בנחת והמשיכו במהירות",
+    "futureTitle": "בקרוב · 7 חלקים",
+    "futurepronouns": "כינויי גוף",
+    "futurepossessives": "כינויי שייכות",
+    "futurenumbers": "מספרים",
+    "futurecolors": "צבעים",
+    "futurecalendar": "ימים וחודשים",
+    "futuredirections": "כיוונים",
+    "futurestories": "סיפורים קצרים"
   },
   "fa": {
     "homeTitle": "مسیر شما در یادگیری زبان عربی",
@@ -547,7 +739,15 @@
     "experiencediscovery": "کشف",
     "experiencediscoveryHint": "کارت‌ها و چالش‌ها را کاوش کنید",
     "experiencefocus": "تمرکز",
-    "experiencefocusHint": "آرام بخوانید و سریع ادامه دهید"
+    "experiencefocusHint": "آرام بخوانید و سریع ادامه دهید",
+    "futureTitle": "به‌زودی · ۷ بخش",
+    "futurepronouns": "ضمیرها",
+    "futurepossessives": "ضمیرهای ملکی",
+    "futurenumbers": "عددها",
+    "futurecolors": "رنگ‌ها",
+    "futurecalendar": "روزها و ماه‌ها",
+    "futuredirections": "جهت‌ها",
+    "futurestories": "داستان‌های کوتاه"
   },
   "ur": {
     "homeTitle": "عربی سیکھنے کا آپ کا سفر",
@@ -569,7 +769,15 @@
     "experiencediscovery": "دریافت",
     "experiencediscoveryHint": "کارڈ اور چیلنج دریافت کریں",
     "experiencefocus": "توجہ",
-    "experiencefocusHint": "سکون سے پڑھیں اور جلد دوبارہ شروع کریں"
+    "experiencefocusHint": "سکون سے پڑھیں اور جلد دوبارہ شروع کریں",
+    "futureTitle": "جلد آ رہا ہے · ۷ حصے",
+    "futurepronouns": "ضمائر",
+    "futurepossessives": "ملکی ضمائر",
+    "futurenumbers": "اعداد",
+    "futurecolors": "رنگ",
+    "futurecalendar": "دن اور مہینے",
+    "futuredirections": "سمتیں",
+    "futurestories": "مختصر کہانیاں"
   },
   "hi": {
     "homeTitle": "अरबी सीखने की आपकी यात्रा",
@@ -591,7 +799,15 @@
     "experiencediscovery": "खोज",
     "experiencediscoveryHint": "कार्ड और चुनौतियाँ खोजें",
     "experiencefocus": "एकाग्रता",
-    "experiencefocusHint": "शांति से पढ़ें और जल्दी आगे बढ़ें"
+    "experiencefocusHint": "शांति से पढ़ें और जल्दी आगे बढ़ें",
+    "futureTitle": "जल्द आ रहे हैं · 7 खंड",
+    "futurepronouns": "सर्वनाम",
+    "futurepossessives": "स्वामित्व सूचक सर्वनाम",
+    "futurenumbers": "संख्याएँ",
+    "futurecolors": "रंग",
+    "futurecalendar": "दिन और महीने",
+    "futuredirections": "दिशाएँ",
+    "futurestories": "छोटी कहानियाँ"
   },
   "bn": {
     "homeTitle": "আপনার আরবি শেখার যাত্রা",
@@ -613,7 +829,15 @@
     "experiencediscovery": "আবিষ্কার",
     "experiencediscoveryHint": "কার্ড ও চ্যালেঞ্জ দেখুন",
     "experiencefocus": "মনোযোগ",
-    "experiencefocusHint": "শান্তভাবে পড়ুন ও দ্রুত চালিয়ে যান"
+    "experiencefocusHint": "শান্তভাবে পড়ুন ও দ্রুত চালিয়ে যান",
+    "futureTitle": "শিগগিরই · ৭টি বিভাগ",
+    "futurepronouns": "সর্বনাম",
+    "futurepossessives": "অধিকারবাচক সর্বনাম",
+    "futurenumbers": "সংখ্যা",
+    "futurecolors": "রং",
+    "futurecalendar": "দিন ও মাস",
+    "futuredirections": "দিকনির্দেশ",
+    "futurestories": "ছোট গল্প"
   },
   "id": {
     "homeTitle": "Perjalanan Anda belajar bahasa Arab",
@@ -635,7 +859,15 @@
     "experiencediscovery": "Penemuan",
     "experiencediscoveryHint": "Jelajahi kartu dan tantangan",
     "experiencefocus": "Fokus",
-    "experiencefocusHint": "Baca dengan tenang dan lanjutkan cepat"
+    "experiencefocusHint": "Baca dengan tenang dan lanjutkan cepat",
+    "futureTitle": "Segera hadir · 7 bagian",
+    "futurepronouns": "Kata ganti",
+    "futurepossessives": "Kata ganti kepunyaan",
+    "futurenumbers": "Angka",
+    "futurecolors": "Warna",
+    "futurecalendar": "Hari dan bulan",
+    "futuredirections": "Arah",
+    "futurestories": "Cerita pendek"
   },
   "ms": {
     "homeTitle": "Perjalanan anda mempelajari bahasa Arab",
@@ -657,7 +889,15 @@
     "experiencediscovery": "Penemuan",
     "experiencediscoveryHint": "Terokai kad dan cabaran",
     "experiencefocus": "Fokus",
-    "experiencefocusHint": "Baca dengan tenang dan sambung segera"
+    "experiencefocusHint": "Baca dengan tenang dan sambung segera",
+    "futureTitle": "Akan datang · 7 bahagian",
+    "futurepronouns": "Kata ganti nama",
+    "futurepossessives": "Kata ganti milik",
+    "futurenumbers": "Nombor",
+    "futurecolors": "Warna",
+    "futurecalendar": "Hari dan bulan",
+    "futuredirections": "Arah",
+    "futurestories": "Cerita pendek"
   },
   "zh": {
     "homeTitle": "你的阿拉伯语学习之旅",
@@ -679,7 +919,15 @@
     "experiencediscovery": "探索",
     "experiencediscoveryHint": "探索卡片与挑战",
     "experiencefocus": "专注",
-    "experiencefocusHint": "安静阅读，快速继续"
+    "experiencefocusHint": "安静阅读，快速继续",
+    "futureTitle": "即将推出 · 7 个单元",
+    "futurepronouns": "代词",
+    "futurepossessives": "物主代词",
+    "futurenumbers": "数字",
+    "futurecolors": "颜色",
+    "futurecalendar": "星期与月份",
+    "futuredirections": "方向",
+    "futurestories": "短篇故事"
   },
   "ja": {
     "homeTitle": "あなたのアラビア語学習の旅",
@@ -701,6 +949,14 @@
     "experiencediscovery": "発見",
     "experiencediscoveryHint": "カードと課題を探る",
     "experiencefocus": "集中",
-    "experiencefocusHint": "落ち着いて読み、すぐに再開"
+    "experiencefocusHint": "落ち着いて読み、すぐに再開",
+    "futureTitle": "近日公開 · 7つの単元",
+    "futurepronouns": "代名詞",
+    "futurepossessives": "所有代名詞",
+    "futurenumbers": "数字",
+    "futurecolors": "色",
+    "futurecalendar": "曜日と月",
+    "futuredirections": "方向",
+    "futurestories": "短い物語"
   }
 }
