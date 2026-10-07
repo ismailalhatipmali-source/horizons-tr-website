@@ -1,0 +1,59 @@
+name: Hardening publication fixtures
+on:
+  push:
+    branches: [main, 'horizons-hardening/**']
+    paths:
+      - 'scripts/deploy-cpanel.sh'
+      - 'scripts/deploy-hardening.php'
+      - 'scripts/audit-public-metadata.php'
+      - 'src/security/**'
+      - 'dist/.htaccess'
+      - 'tests/test_deploy_cpanel.py'
+      - 'tests/test_hardening.py'
+      - 'tests/test_public_metadata_audit.py'
+      - '.github/workflows/hardening-fixtures.yml'
+  pull_request:
+    paths:
+      - 'scripts/deploy-cpanel.sh'
+      - 'scripts/deploy-hardening.php'
+      - 'scripts/audit-public-metadata.php'
+      - 'src/security/**'
+      - 'dist/.htaccess'
+      - 'tests/test_deploy_cpanel.py'
+      - 'tests/test_hardening.py'
+      - 'tests/test_public_metadata_audit.py'
+      - '.github/workflows/hardening-fixtures.yml'
+permissions:
+  contents: read
+jobs:
+  isolated-fixtures:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # verified official v4 ref
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scripts/deploy-cpanel.sh
+            scripts/deploy-hardening.php
+            scripts/audit-public-metadata.php
+            src/security
+            dist/.htaccess
+            tests/test_deploy_cpanel.py
+            tests/test_hardening.py
+            tests/test_public_metadata_audit.py
+          sparse-checkout-cone-mode: false
+      - name: Install fixture runtimes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y apache2 php-cli unzip
+          command -v bash php apache2 unzip
+          test -d /usr/lib/apache2/modules
+      - name: Syntax and isolated regression checks
+        run: |
+          bash -n scripts/deploy-cpanel.sh
+          php -l scripts/deploy-hardening.php
+          php -l scripts/audit-public-metadata.php
+          python3 -m unittest discover -s tests -p test_deploy_cpanel.py -v
+          python3 -m unittest discover -s tests -p test_hardening.py -v
+          python3 -m unittest discover -s tests -p test_public_metadata_audit.py -v

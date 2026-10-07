@@ -163,3 +163,7 @@ that update does not require running the unrelated product deployment chain.
 Do not reset or force a checkout with local changes. The scoped wrapper remains
 available for a reviewed private CLI invocation after the actual host mismatch
 has been resolved; the normal `.cpanel.yml` no longer invokes it automatically.
+# Historical implementation record
+
+The URI Rewrite/If authorization policy described below failed on the actual host and was restored. Current implementation and source persistence are documented in [HARDENING-20261007.md](HARDENING-20261007.md). Do not repeat the old policy or interpret root-only apply as complete static-directory protection.
+
