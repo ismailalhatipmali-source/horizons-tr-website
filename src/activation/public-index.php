@@ -15,7 +15,7 @@ try{
         $provided=$route===$base.'/v1/gumroad'?($_SERVER['HTTP_X_HORIZONS_WEBHOOK_SECRET']??''):substr($route,strlen($base.'/v1/gumroad/'));\Horizons\authenticateWebhook($config['webhook_secret'],$provided);parse_str($raw,$input);
         $id=$input['sale_id']??'';$event=$input['event_id']??null;if(!is_string($id)||strlen($id)>120||($event!==null&&!is_string($event)))throw new \Horizons\ServiceError('INVALID_REQUEST');$service->synchronize($id,$event);$result=['ok'=>true];
     }else{
-        if(!str_starts_with(strtolower($_SERVER['CONTENT_TYPE']??''),'application/json'))throw new \Horizons\ServiceError('INVALID_REQUEST',415);$input=json_decode($raw,true,8,JSON_THROW_ON_ERROR);if(!is_array($input)||array_is_list($input))throw new \Horizons\ServiceError('INVALID_REQUEST');
+        if(!str_starts_with(strtolower($_SERVER['CONTENT_TYPE']??''),'application/json'))throw new \Horizons\ServiceError('INVALID_REQUEST',415);$input=json_decode($raw,true,8,JSON_THROW_ON_ERROR);if(!is_array($input)||!str_starts_with(ltrim($raw),'{'))throw new \Horizons\ServiceError('INVALID_REQUEST');
         $memberRoute=str_starts_with($route,$base.'/v1/member/');$transferRoute=$route===$base.'/v1/transfer/create';
         if($memberRoute||$transferRoute){$origin=$_SERVER['HTTP_ORIGIN']??'';$expected='https://'.strtolower($_SERVER['HTTP_HOST']??'');if(($_SERVER['HTTP_SEC_FETCH_SITE']??'')==='cross-site'||($origin!==''&&strtolower($origin)!==$expected))throw new \Horizons\ServiceError('FORBIDDEN',403);}
         if($transferRoute){
