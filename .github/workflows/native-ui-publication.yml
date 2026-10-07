@@ -1,0 +1,46 @@
+name: Native UI publication fixtures
+on:
+  pull_request:
+    paths:
+      - '.cpanel.yml'
+      - 'scripts/native-ui-*'
+      - 'scripts/deploy-native-ui.php'
+      - 'scripts/build_native_ui_manifest.py'
+      - 'scripts/workbook-focus-preservation.php'
+      - 'scripts/trial-pause-preservation.php'
+      - 'src/workbook-experiences/**'
+      - 'release-assets/native-experiences-20261007-r1/**'
+      - 'tests/test_native_publication.php'
+      - 'tests/test_native_chain_bridge.php'
+      - 'tests/test_native_pipeline.py'
+      - '.github/workflows/native-ui-publication.yml'
+permissions:
+  contents: read
+jobs:
+  publication-fixtures:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            .cpanel.yml
+            scripts
+            src/workbook-experiences
+            release-assets/native-experiences-20261007-r1
+            tests/test_native_publication.php
+            tests/test_native_chain_bridge.php
+            tests/test_native_pipeline.py
+          sparse-checkout-cone-mode: false
+      - name: Syntax, immutable-source build and filesystem fixtures
+        run: |
+          set -euo pipefail
+          php --version
+          node --version
+          for p in scripts/native-ui-*.php scripts/deploy-native-ui.php scripts/workbook-focus-preservation.php scripts/trial-pause-preservation.php; do php -l "$p"; done
+          python3 scripts/build_native_ui_manifest.py
+          git diff --exit-code -- release-assets/native-experiences-20261007-r1
+          php tests/test_native_publication.php
+          php tests/test_native_chain_bridge.php
+          python3 tests/test_native_pipeline.py

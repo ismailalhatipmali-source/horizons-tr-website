@@ -50,6 +50,8 @@ function hznTrialPauseRelease(string $repo): array {
     return $release;
 }
 function hznTrialPauseState(string $web): ?array {
+    require_once __DIR__ . '/native-ui-state.php';
+    $nativeUi = hznUiState($web);
     $private = hznTrialPausePath(dirname($web), '.horizons-trial-pause');
     if (!file_exists($private)) return null;
     $receiptPath = hznTrialPausePath($private, 'receipt.json');
@@ -67,9 +69,10 @@ function hznTrialPauseState(string $web): ?array {
     foreach (HZN_TRIAL_PAUSE_PATHS as $name) {
         $entry = $release['files'][$name];
         $baseline = hznTrialPausePath($private, 'baseline/' . $name);
-        $current = hznTrialPausePath($web, $name);
+        $current = hznUiPreviousPath($web, $name, $nativeUi);
+        $currentMode = hznUiPreviousMode($name, $nativeUi);
         if (($r['before_hashes'][$name] ?? '') !== $entry['before'] || ($r['hashes'][$name] ?? '') !== $entry['sha256'] ||
-            (fileperms($baseline) & 0777) !== 0600 || (fileperms($current) & 0777) !== 0644 ||
+            (fileperms($baseline) & 0777) !== 0600 || (fileperms($current) & 0777) !== $currentMode ||
             !hash_equals($entry['before'], hash('sha256', hznTrialPauseRead($baseline))) ||
             !hash_equals($entry['sha256'], hash('sha256', hznTrialPauseRead($current))))
             throw new RuntimeException('TRIAL_PAUSE_PUBLIC_CHANGED');
