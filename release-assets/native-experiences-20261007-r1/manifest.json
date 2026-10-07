@@ -25,7 +25,7 @@
     "scripts/deploy-native-ui.php": "f71ce27ecb6a1a6de284d35cc65d49bcc4ed8d0c6e844d9266870edbc4591d2f",
     "scripts/workbook-focus-preservation.php": "88d9438cd3fec505b0260394461a60f43785179424d04566da34520a9d0169e2",
     "scripts/trial-pause-preservation.php": "f1cbf09db0d46fccd2170d1a2647ee478629f40d15bcf7ff3d47b6b3190a93d3",
-    "scripts/comprehensive-meaning-preservation.php": "b8bdd43f5559d30d2f6eab843be30719d0382755a74d535f22597d6d0b639150",
+    "scripts/comprehensive-meaning-preservation.php": "99f7cf834759168cc113a37116265be601c0bf1c754ab90f2cc90cf5d4bcc91e",
     "release-assets/native-experiences-20261007-r1/predecessors/comprehensive-meaning-preservation.php": "4e73cd7ab4fb3dee69796fce056d679dd5befd733864867ef586ee958c4acaf0"
   },
   "addon_sha256": "d22d6a239420d63552bce801608250e9a3ddc82d05607aa40872b058827efc3a",

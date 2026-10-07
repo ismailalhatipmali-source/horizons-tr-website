@@ -23,7 +23,7 @@ const HZN_FOCUS_PUBLIC=['try/workbook.js','try/demo-asset-manifest.json','try/sw
 function hznFocusState(string $web):?array{return null;}
 function hznB4State(string $web):?array{return null;}
 function hznFocusPreviousPath(string $web,string $p,?array $focus):string{return $web.'/'.$p;}
-function hznB4PreviousPath(string $web,string $p,?array $b4,?array $focus=null):string{return $web.'/'.$p;}
+function hznB4PreviousPath(string $web,string $p,?array $b4,?array $focus=null):string{$trial=dirname($web).'/.horizons-trial-pause/baseline/'.$p;return $p==='learn/sw.js'&&is_file($trial)?$trial:$web.'/'.$p;}
 PHP
 );
 require $repo.'/scripts/comprehensive-meaning-preservation.php';
@@ -58,15 +58,16 @@ $trialRelease=['files'=>[]]; $trial=['schema'=>1,'release'=>HZN_TRIAL_PAUSE_RELE
 foreach(HZN_TRIAL_PAUSE_PATHS as $p){$oldTrial=$current[$p]??'old-locales';$now='trial-paused-'.$p;put($trialDir.'/baseline/'.$p,$oldTrial,0600);put($f['web'].'/'.$p,$now);
     $trialRelease['files'][$p]=['before'=>hznUiHash($oldTrial),'sha256'=>hznUiHash($now)];$trial['before_hashes'][$p]=hznUiHash($oldTrial);$trial['hashes'][$p]=hznUiHash($now);}
 $trialRaw=hznUiJson($trial); put($trialDir.'/receipt.json',$trialRaw,0600);
-// CM does not use the trial worker directly: production B4/focus resolves that
-// worker to earlier validated backups. The fixture resolver models this path.
-$b4Source=file_get_contents($repo.'/scripts/blending4-preservation.php');
-// Functions already loaded cannot be replaced. Restore only the fixture worker
-// and update trial's worker contract to match the CM worker for this isolated test.
-put($f['web'].'/learn/sw.js',$current['learn/sw.js']);
-$trialRelease['files']['learn/sw.js']['sha256']=hznUiHash($current['learn/sw.js']);$trial['hashes']['learn/sw.js']=hznUiHash($current['learn/sw.js']);
+// Production B4/focus resolves historical workers to authenticated backups.
+// Keep the current trial worker distinct to test downstream successor propagation.
+$trialWorker=str_replace("';",'-'.HZN_TRIAL_PAUSE_RELEASE."';",$current['learn/sw.js']);
+put($f['web'].'/learn/sw.js',$trialWorker);
+$trialRelease['files']['learn/sw.js']['sha256']=hznUiHash($trialWorker);$trial['hashes']['learn/sw.js']=hznUiHash($trialWorker);
 $trialRaw=hznUiJson($trial);put($trialDir.'/receipt.json',$trialRaw,0600);
 run('trial_entry_uses_validated_historical_baseline_without_writes',function()use($f){$before=treeHash($f['home']);check(hznCMState($f['web'])!==null);check(treeHash($f['home'])===$before);});
+run('trial_worker_contract_propagates_to_older_validators',function()use($f,$trialWorker,$afterHashes){$state=hznCMState($f['web']);check($state['hashes']['learn/sw.js']===hznUiHash($trialWorker));check($state['worker_suffix']===HZN_COMPREHENSIVE_MEANING_WORKER_SUFFIX.'-'.HZN_TRIAL_PAUSE_RELEASE);foreach($afterHashes as $p=>$sha)if($p!=='learn/sw.js')check($state['hashes'][$p]===$sha);});
+run('current_trial_worker_tamper_rejected',function()use($f,$trialWorker){put($f['web'].'/learn/sw.js','foreign-worker');rejects(fn()=>hznCMState($f['web']),'TRIAL_PAUSE_PUBLIC_CHANGED');put($f['web'].'/learn/sw.js',$trialWorker);});
+run('trial_worker_baseline_tamper_rejected',function()use($f,$trialDir,$current){put($trialDir.'/baseline/learn/sw.js','foreign-worker-baseline',0600);rejects(fn()=>hznCMState($f['web']),'TRIAL_PAUSE_PUBLIC_CHANGED');put($trialDir.'/baseline/learn/sw.js',$current['learn/sw.js'],0600);});
 run('current_trial_entry_tamper_rejected',function()use($f){$p=$f['web'].'/learn/index.html';$raw=file_get_contents($p);put($p,'foreign-edit');rejects(fn()=>hznCMState($f['web']),'TRIAL_PAUSE_PUBLIC_CHANGED');put($p,$raw);});
 run('trial_baseline_tamper_rejected',function()use($f,$trialDir){$p=$trialDir.'/baseline/learn/index.html';$raw=file_get_contents($p);put($p,'foreign-baseline',0600);rejects(fn()=>hznCMState($f['web']),'TRIAL_PAUSE_PUBLIC_CHANGED');put($p,$raw,0600);});
 run('trial_baseline_mode_rejected',function()use($f,$trialDir){$p=$trialDir.'/baseline/learn/index.html';chmod($p,0644);clearstatcache();rejects(fn()=>hznCMState($f['web']),'TRIAL_PAUSE_PUBLIC_CHANGED');chmod($p,0600);clearstatcache();});
