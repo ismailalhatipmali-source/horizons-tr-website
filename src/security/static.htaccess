@@ -1,0 +1,6 @@
+# BEGIN HORIZONS LOCAL STATIC HARDENING
+Options -Indexes
+<FilesMatch "(?i)\.(?:php[0-9]*|phtml|pht|phar|phps)(?:\..*)?$">
+Require all denied
+</FilesMatch>
+# END HORIZONS LOCAL STATIC HARDENING

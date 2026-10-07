@@ -47,6 +47,7 @@ class DeploymentTests(unittest.TestCase):
         self.target = self.base / 'public_html'
         (self.repo / 'scripts').mkdir(parents=True)
         shutil.copy2(SCRIPT, self.repo / 'scripts/deploy-cpanel.sh')
+        self.write(self.repo / 'src/security/static.htaccess', (SCRIPT.parents[1] / 'src/security/static.htaccess').read_text())
         self.assets = self.repo / 'release-assets' / VERSION
         self.payloads = {
             'learn': ('learn.zip', archive([regular('learn/index.html', 'new learning'), regular('learn/.htaccess', 'Options -Indexes'), regular('learn/content/1.4.0/book.hzn', 'encrypted fixture')])),
@@ -174,6 +175,53 @@ class DeploymentTests(unittest.TestCase):
         self.assertEqual(second.returncode, 0, second.stdout + second.stderr)
         self.assertEqual(snapshot(self.target), after)
 
+    def test_static_guards_survive_replacement_and_repeat(self):
+        policy = (self.repo / 'src/security/static.htaccess').read_text()
+        namespaces = ['assets', 'downloads', 'updates', 'try', 'learn/content']
+        for namespace in namespaces:
+            self.write(self.target / namespace / '.htaccess', policy)
+        for _ in range(2):
+            result = self.run_deploy()
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            for namespace in namespaces:
+                target = self.target / namespace / '.htaccess'
+                self.assertEqual(target.read_text(), policy, namespace)
+                self.assertEqual(stat.S_IMODE(target.stat().st_mode), 0o644)
+
+    def test_custom_static_guard_conflict_rejects_before_public_writes(self):
+        self.write(self.target / 'try/.htaccess', 'CUSTOM_HOST_RULE\n')
+        result = self.assert_rejected_without_public_changes()
+        self.assertIn('Review custom static security rules', result.stderr)
+
+    def test_static_guard_symlink_rejects_before_public_writes(self):
+        outside = self.base / 'outside-security-policy'
+        outside.write_text('KEEP_PRIVATE')
+        (self.target / 'try/.htaccess').symlink_to(outside)
+        self.assert_rejected_without_public_changes()
+        self.assertEqual(outside.read_text(), 'KEEP_PRIVATE')
+
+    def test_missing_static_policy_rejects_before_public_writes(self):
+        (self.repo / 'src/security/static.htaccess').unlink()
+        self.assert_rejected_without_public_changes()
+
+    def test_manual_local_root_guard_migrates_once(self):
+        policy = '# BEGIN HORIZONS HARDENING\nNEW_GUARD\n# END HORIZONS HARDENING\n'
+        local = '# BEGIN HORIZONS LOCAL SENSITIVE FILE GUARD\nMANUAL_GUARD\n# END HORIZONS LOCAL SENSITIVE FILE GUARD\n'
+        self.write(self.repo / 'dist/.htaccess', 'Options -Indexes\n' + policy)
+        self.write(self.target / '.htaccess', 'HOST_RULE_BEFORE\n' + local + 'HOST_RULE_AFTER\n')
+        for _ in range(2):
+            result = self.run_deploy()
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        current = (self.target / '.htaccess').read_text()
+        self.assertEqual(current.count('# BEGIN HORIZONS HARDENING'), 1)
+        self.assertNotIn('MANUAL_GUARD', current)
+        self.assertIn('HOST_RULE_BEFORE', current)
+        self.assertIn('HOST_RULE_AFTER', current)
+
+    def test_malformed_manual_root_guard_rejects_before_public_writes(self):
+        self.write(self.target / '.htaccess', '# BEGIN HORIZONS LOCAL SENSITIVE FILE GUARD\nmissing end\n')
+        self.assert_rejected_without_public_changes()
+
     def test_scoped_hardening_migrates_once_without_losing_host_rules(self):
         policy = '# BEGIN HORIZONS HARDENING\nNEW_GUARD\n# END HORIZONS HARDENING\n'
         self.write(self.repo / 'dist/.htaccess', 'Options -Indexes\n' + policy)
@@ -275,6 +323,15 @@ class DeploymentTests(unittest.TestCase):
         self.write_payloads()
         self.assert_rejected_without_public_changes()
         self.assertFalse((self.base / 'escape').exists())
+
+    def test_archive_vcs_metadata_is_rejected_before_public_writes(self):
+        self.payloads['demo'] = ('demo.zip', archive([regular('try/index.html', 'x'), regular('try/.git/config', 'private fixture')]))
+        self.write_payloads()
+        self.assert_rejected_without_public_changes()
+
+    def test_nested_source_vcs_metadata_is_rejected_before_public_writes(self):
+        self.write(self.repo / 'dist/assets/nested/.git/config', 'private fixture')
+        self.assert_rejected_without_public_changes()
 
     def test_zip_symlink_is_rejected_before_extraction(self):
         self.payloads['demo'] = ('demo.zip', archive([regular('try/index.html', 'x'), ('try/link', b'../../activation', stat.S_IFLNK | 0o777)]))

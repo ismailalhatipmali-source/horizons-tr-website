@@ -135,7 +135,7 @@ class ApacheAccessTests(unittest.TestCase):
                        'updates/arabic-level-1.json', '.well-known/acme-challenge/probe',
                        'activation/index.php', 'learning-api/index.php', 'checkout-api/index.php',
                        'manual-order-api/index.php', 'admin/index.php', 'travel-download/index.php']
-            blocked = ['.env', '.env.production', 'php.ini', '.user.ini', '.htpasswd', '.git/config',
+            blocked = ['.env', '.env.production', 'php.ini', '.user.ini', '.htpasswd', 'owner-vault.json',
                        'error_log', 'runtime.log', '.cpanel.yml', 'activation/config.php.zip',
                        'activation/config-path.php', 'activation/config.php', 'learning-api/bootstrap.php',
                        'admin/key.bin', 'backup.sqlite', 'backup.sqlite-wal', 'database.sql.gz',
@@ -146,8 +146,11 @@ class ApacheAccessTests(unittest.TestCase):
             for route in allowed + blocked: write(web / route, 'INERT_FIXTURE:' + route)
             blocked += ['.htaccess', 'assets/probe%2ephp', 'assets/probe.%70hp',
                         'try/probe.php/extra', 'learn/content/probe.php.jpg/extra']
-            # Test inherited protections even when an application has child rules.
-            write(web / 'try/.htaccess', 'RewriteEngine On\nRewriteRule ^unrelated$ index.html [L]\n')
+            # Static guards are local; they supplement child application rewrites.
+            for namespace in ['assets', 'downloads', 'updates', 'try', 'learn/content']:
+                write(web / namespace / '.htaccess', (ROOT / 'src/security/static.htaccess').read_text())
+            with (web / 'try/.htaccess').open('a') as handle:
+                handle.write('RewriteEngine On\nRewriteRule ^unrelated$ index.html [L]\n')
             with socket.socket() as sock:
                 sock.bind(('127.0.0.1', 0)); port = sock.getsockname()[1]
             config = base / 'httpd.conf'
@@ -186,3 +189,4 @@ class ApacheAccessTests(unittest.TestCase):
                 except subprocess.TimeoutExpired: server.kill(); server.communicate()
 
 if __name__ == '__main__': unittest.main()
+

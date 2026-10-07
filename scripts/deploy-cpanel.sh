@@ -36,6 +36,7 @@ case "$REPO_DIR/" in "$TARGET_DIR/"*) fail 'Repository must be outside the docum
 [[ -f "$OVERLAY_MANIFEST" && ! -L "$OVERLAY_MANIFEST" && ! -L "$OVERLAY_DIR" ]] || fail 'Missing or unsafe web overlay manifest'
 [[ -f "$DEMO_OVERLAY_MANIFEST" && ! -L "$DEMO_OVERLAY_MANIFEST" && ! -L "$DEMO_OVERLAY_DIR" ]] || fail 'Missing or unsafe demo overlay manifest'
 [[ -z "$(find "$SOURCE_DIR" \( -type l -o \( ! -type d ! -type f \) \) -print -quit)" ]] || fail 'Website source contains a link or special file'
+[[ -z "$(find "$SOURCE_DIR" \( -name .git -o -name .svn -o -name .hg \) -print -quit)" ]] || fail 'Website source contains VCS metadata'
 
 # Private staging and retained backups are siblings of public_html, never public.
 STATE_DIR="$TARGET_PARENT/.horizons-deploy-$TARGET_NAME"
@@ -83,35 +84,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
     [[ "$line" == $'HORIZONS_RELEASE_V1\t'"$VERSION" ]] || fail 'Manifest header/version mismatch'
     continue
   fi
-  [[ "$(awk -F '\t' '{print NF}' <<< "$line")" == 5 ]] || fail "Manifest row $line_number must contain exactly five tab-separated fields"
-  IFS=$'\t' read -r kind filename bytes sha parts <<< "$line"
-  case "$kind" in learn|demo|setup|update) ;; *) fail "Unknown artifact kind: $kind";; esac
-  [[ -z "${FILENAMES[$kind]+present}" ]] || fail "Repeated artifact kind: $kind"
-  [[ "$filename" =~ ^[A-Za-z0-9][A-Za-z0-9._-]+$ ]] || fail 'Unsafe artifact filename'
-  case "$kind:$filename" in setup:*.exe|learn:*.zip|demo:*.zip|update:*.zip) ;; *) fail 'Artifact extension does not match its kind';; esac
-  [[ "$bytes" =~ ^[1-9][0-9]{0,9}$ && "$bytes" -le 2147483648 ]] || fail 'Invalid artifact size'
-  [[ "$sha" =~ ^[0-9a-f]{64}$ ]] || fail 'Invalid SHA-256 digest'
-  [[ "$parts" =~ ^[1-9][0-9]{0,3}$ ]] || fail 'Invalid chunk count'
-  FILENAMES[$kind]="$filename"; SIZES[$kind]="$bytes"; HASHES[$kind]="$sha"; PARTS[$kind]="$parts"
-done < "$MANIFEST"
-[[ "$line_number" == 5 && ${#FILENAMES[@]} == 4 ]] || fail 'Manifest must declare exactly learn, demo, setup and update'
-for kind in learn demo setup update; do
-  [[ -n "${FILENAMES[$kind]+present}" ]] || fail "Missing artifact: $kind"
-  directory="$ASSETS_DIR/$kind"
-  [[ -d "$directory" && ! -L "$directory" ]] || fail "Missing/unsafe chunk directory: $kind"
-  entries=("$directory"/*)
-  [[ ${#entries[@]} -eq ${PARTS[$kind]} ]] || fail "Unexpected or missing chunk files: $kind"
-  output="$STAGE/assembled/$kind"; : > "$output"
-  for ((i=0; i<${PARTS[$kind]}; i++)); do
-    printf -v name 'part-%04d' "$i"
-    chunk="$directory/$name"
-    [[ -f "$chunk" && ! -L "$chunk" ]] || fail "Missing/unsafe chunk: $kind/$name"
-    size="$(stat -c '%s' -- "$chunk")"
-    [[ "$size" -ge 1 && "$size" -le 16777216 ]] || fail "Chunk exceeds the 16 MiB limit: $kind/$name"
-    cat -- "$chunk" >> "$output"
-  done
-  [[ "$(stat -c '%s' -- "$output")" == "${SIZES[$kind]}" ]] || fail "Assembled size mismatch: $kind"
-  digest="$(sha256sum -- "$output")"; digest="${digest%% *}"
+  [[ "$(awk -F '\t' '{print NFst="$(sha256sum -- "$output")"; digest="${digest%% *}"
   [[ "$digest" == "${HASHES[$kind]}" ]] || fail "Assembled SHA-256 mismatch: $kind"
   printf 'Verified %s: %s bytes.\n' "$kind" "${SIZES[$kind]}"
 done
@@ -125,6 +98,7 @@ validate_archive() {
   while IFS= read -r name || [[ -n "$name" ]]; do
     [[ -n "$name" && "$name" =~ ^[A-Za-z0-9_./-]+$ && "$name" != /* && "$name" != *//* ]] || fail "Unsafe ZIP path in $kind"
     [[ "/$name/" != */../* && "/$name/" != */./* ]] || fail "ZIP path traversal in $kind"
+    case "/$name/" in */.git/*|*/.svn/*|*/.hg/*) fail "VCS metadata in $kind ZIP";; esac
     case "$kind:$name" in
       learn:learn/|learn:learn/*|demo:try/|demo:try/*) ;;
       update:downloads/|update:updates/|update:downloads/Horizons-Arabic-Level-1-"$VERSION"-update.zip|update:updates/arabic-level-1.json) ;;
@@ -277,6 +251,26 @@ preflight_tree() {
     if [[ -d "$child" ]]; then safe_destination "$path" directory; preflight_tree "$child" "$path"; else safe_destination "$path" file; fi
   done
 }
+# Stage the locally verified static policy before validating public destinations.
+# Existing custom rules are conflicts, not files we silently replace.
+STATIC_POLICY="$REPO_DIR/src/security/static.htaccess"
+[[ -f "$STATIC_POLICY" && ! -L "$STATIC_POLICY" && ! -L "$REPO_DIR/src" && ! -L "$REPO_DIR/src/security" ]] || fail 'Missing or unsafe static security policy'
+for namespace in assets downloads updates try learn/content; do
+  case "$namespace" in
+    try) staged="$STAGE/demo-extracted/try";;
+    learn/content) staged="$STAGE/learn-extracted/learn/content";;
+    *) staged="$STAGE/site/$namespace";;
+  esac
+  safe_destination "$namespace/.htaccess" file
+  for existing in "$TARGET_DIR/$namespace/.htaccess" "$staged/.htaccess"; do
+    [[ ! -L "$existing" ]] || fail "Static security policy is a symbolic link: $namespace"
+    if [[ -e "$existing" ]]; then
+      [[ -f "$existing" ]] && cmp -s -- "$STATIC_POLICY" "$existing" || fail "Review custom static security rules before publication: $namespace"
+    fi
+  done
+  mkdir -p -- "$staged"
+  cp -- "$STATIC_POLICY" "$staged/.htaccess"
+done
 preflight_tree "$STAGE/site" ''
 for name in learn try learning-api; do
   safe_destination "$name" directory
@@ -306,6 +300,14 @@ ROOT_SOURCE="$SOURCE_DIR/.htaccess"
 if [[ -f "$TARGET_DIR/.htaccess" ]]; then
   awk '/^# BEGIN HORIZONS MANAGED$/{if(inside || begins++)exit 1;inside=1;next} /^# END HORIZONS MANAGED$/{if(!inside)exit 1;inside=0;next} END{if(inside)exit 1}' "$TARGET_DIR/.htaccess" || fail 'Malformed existing HORIZONS Apache block; no files were published'
   awk '/^# BEGIN HORIZONS MANAGED$/{inside=1;next} /^# END HORIZONS MANAGED$/{inside=0;next} !inside{print}' "$TARGET_DIR/.htaccess" > "$HTACCESS"
+fi
+# Migrate the host-verified manual root block into the canonical root policy.
+# Validate complete markers before removing it, preserving every other host rule.
+if [[ "$(awk '/^# BEGIN HORIZONS LOCAL SENSITIVE FILE GUARD$/{n++} END{print n+0}' "$HTACCESS")" != 0 || "$(awk '/^# END HORIZONS LOCAL SENSITIVE FILE GUARD$/{n++} END{print n+0}' "$HTACCESS")" != 0 ]]; then
+  [[ "$(awk '/^# BEGIN HORIZONS HARDENING$/{n++} END{print n+0}' "$SOURCE_DIR/.htaccess")" == 1 ]] || fail 'Canonical root policy required before migrating local guard'
+  awk '/^# BEGIN HORIZONS LOCAL SENSITIVE FILE GUARD$/{if(inside || begins++)exit 1;inside=1;next} /^# END HORIZONS LOCAL SENSITIVE FILE GUARD$/{if(!inside)exit 1;inside=0;next} END{if(inside)exit 1}' "$HTACCESS" || fail 'Malformed local sensitive-file guard; no files were published'
+  awk '/^# BEGIN HORIZONS LOCAL SENSITIVE FILE GUARD$/{inside=1;next} /^# END HORIZONS LOCAL SENSITIVE FILE GUARD$/{inside=0;next} !inside{print}' "$HTACCESS" > "$STAGE/root-local-migrated.htaccess"
+  mv -- "$STAGE/root-local-migrated.htaccess" "$HTACCESS"
 fi
 # A prior scoped hardening publication may live outside the managed block.
 # Migrate it into the current source policy once, preserving all host directives.

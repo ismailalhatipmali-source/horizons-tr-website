@@ -2,26 +2,9 @@ DirectoryIndex disabled
 DirectoryIndex index.html index.php
 Options -Indexes
 # BEGIN HORIZONS HARDENING
-# Apache 2.4 authorization; compatible with PHP-FPM, without handler changes.
-# Run these rules before existing host redirects or pass-through rules.
-# The rewrite guard supplements expression authorization on hosting frontends.
-RewriteEngine On
-RewriteCond %{REQUEST_URI} (?:^|/)[.](?:git|svn|hg)(?:/|$) [NC]
-RewriteRule ^ - [F,L]
-RewriteCond %{REQUEST_URI} ^/(?:assets|downloads|updates|try|learn/content)/.*[.](?:php[0-9]*|phtml|pht|phar|phps)(?:[./].*)?$ [NC]
-RewriteRule ^ - [F,L]
-<FilesMatch "(?i)^(?:[.]env(?:[.].*)?|[.]ht.*|[.]user[.]ini|php[.]ini|error_log|[.]cpanel[.]yml|config(?:-path)?[.]php(?:[.].*)?|(?:bootstrap|Core|features|owner-vault)[.]php(?:[.].*)?|key[.]bin|composer[.](?:json|lock)|package(?:-lock)?[.]json|.*[.](?:sqlite(?:3)?(?:-wal|-shm)?|db(?:-wal|-shm)?|sql(?:[.](?:gz|bz2|xz|zip))?|bak|backup|bkp|old|orig|save|swp|swo|pem|key|ini|log)|.*~)$">
-  Require all denied
+<FilesMatch "(?i)(?:^\.env(?:\..*)?$|^\.ht.*$|^\.user\.ini$|^php\.ini$|^error_log$|^\.cpanel\.yml$|^config(?:-path)?\.php(?:\..*)?$|^(?:bootstrap|Core|features)\.php(?:\..*)?$|^owner-vault\.(?:json|php)(?:\..*)?$|^key\.bin$|^composer\.(?:json|lock)$|^package(?:-lock)?\.json$|\.(?:sqlite(?:3)?(?:-wal|-shm)?|db(?:-wal|-shm)?|sql(?:\.(?:gz|bz2|xz|zip))?|bak|backup|bkp|old|orig|save|swp|swo|pem|key|ini|log)$|~$)">
+Require all denied
 </FilesMatch>
-# Conditional authorization also applies when a child directory has rewrites.
-<If "%{REQUEST_URI} =~ m#(?:^|/)[.](?:git|svn|hg)(?:/|$)#i">
-  Require all denied
-</If>
-# These namespaces contain static releases, never public PHP endpoints.
-# Deny alternate/compound extensions and PATH_INFO before any PHP handler.
-<If "%{REQUEST_URI} =~ m#^/(?:assets|downloads|updates|try|learn/content)/.*[.](?:php[0-9]*|phtml|pht|phar|phps)(?:[./].*)?$#i">
-  Require all denied
-</If>
 # END HORIZONS HARDENING
 ErrorDocument 404 /404.html
 AddDefaultCharset UTF-8
@@ -39,3 +22,4 @@ AddDefaultCharset UTF-8
     Header set Cache-Control "no-cache"
   </FilesMatch>
 </IfModule>
+
