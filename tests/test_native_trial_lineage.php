@@ -21,9 +21,9 @@ const HZN_B4_SHARED=['learn/asset-manifest.json','learn/sw.js','learn/content/1.
 const HZN_FOCUS_PATHS=['try/workbook.js','try/demo-asset-manifest.json','try/sw.js','learn/content/1.4.1/workbook.js.hzn','learn/asset-manifest.json','learn/sw.js'];
 const HZN_FOCUS_PUBLIC=['try/workbook.js','try/demo-asset-manifest.json','try/sw.js'];
 function hznFocusState(string $web):?array{return null;}
-function hznB4State(string $web):?array{return null;}
+function hznB4State(string $web):?array{return $GLOBALS['fixtureB4']??null;}
 function hznFocusPreviousPath(string $web,string $p,?array $focus):string{return $web.'/'.$p;}
-function hznB4PreviousPath(string $web,string $p,?array $b4,?array $focus=null):string{$trial=dirname($web).'/.horizons-trial-pause/baseline/'.$p;return $p==='learn/sw.js'&&is_file($trial)?$trial:$web.'/'.$p;}
+function hznB4PreviousPath(string $web,string $p,?array $b4,?array $focus=null):string{return $b4!==null&&in_array($p,HZN_B4_SHARED,true)?$b4['baseline_root'].'/'.$p:$web.'/'.$p;}
 PHP
 );
 require $repo.'/scripts/comprehensive-meaning-preservation.php';
@@ -64,6 +64,8 @@ $trialWorker=str_replace("';",'-'.HZN_TRIAL_PAUSE_RELEASE."';",$current['learn/s
 put($f['web'].'/learn/sw.js',$trialWorker);
 $trialRelease['files']['learn/sw.js']['sha256']=hznUiHash($trialWorker);$trial['hashes']['learn/sw.js']=hznUiHash($trialWorker);
 $trialRaw=hznUiJson($trial);put($trialDir.'/receipt.json',$trialRaw,0600);
+$fixtureB4=['baseline_root'=>$trialDir.'/baseline','hashes'=>[],'plain_after_sha256'=>hznUiHash('new-plain'),'worker_suffix'=>HZN_COMPREHENSIVE_MEANING_WORKER_SUFFIX];
+foreach(HZN_B4_SHARED as $p){put($trialDir.'/baseline/'.$p,$current[$p],0600);$fixtureB4['hashes'][$p]=$afterHashes[$p];}
 run('trial_entry_uses_validated_historical_baseline_without_writes',function()use($f){$before=treeHash($f['home']);check(hznCMState($f['web'])!==null);check(treeHash($f['home'])===$before);});
 run('trial_worker_contract_propagates_to_older_validators',function()use($f,$trialWorker,$afterHashes){$state=hznCMState($f['web']);check($state['hashes']['learn/sw.js']===hznUiHash($trialWorker));check($state['worker_suffix']===HZN_COMPREHENSIVE_MEANING_WORKER_SUFFIX.'-'.HZN_TRIAL_PAUSE_RELEASE);foreach($afterHashes as $p=>$sha)if($p!=='learn/sw.js')check($state['hashes'][$p]===$sha);});
 run('current_trial_worker_tamper_rejected',function()use($f,$trialWorker){put($f['web'].'/learn/sw.js','foreign-worker');rejects(fn()=>hznCMState($f['web']),'TRIAL_PAUSE_PUBLIC_CHANGED');put($f['web'].'/learn/sw.js',$trialWorker);});
