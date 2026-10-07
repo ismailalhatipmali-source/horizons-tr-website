@@ -44,15 +44,15 @@ class PipelineTests(unittest.TestCase):
         r = subprocess.run(['/bin/bash', '-c', harmless], check=True, capture_output=True, timeout=5)
         self.assertEqual(r.stdout, b'old-released-UI-RAN')
 
-    def test_current_cpanel_has_only_read_only_gate(self):
-        self.assertEqual(shlex.split(task(ROOT / '.cpanel.yml')), ['/bin/bash', 'scripts/check-native-ui-host.sh'])
+    def test_current_cpanel_has_scoped_publish_gate(self):
+        self.assertEqual(shlex.split(task(ROOT / '.cpanel.yml')), ['/bin/bash', 'scripts/publish-native-ui-host.sh'])
         wrapper = (ROOT / 'scripts/check-native-ui-host.sh').read_text()
         self.assertNotIn('--publish', wrapper)
         self.assertNotIn('--rollback', wrapper)
         self.assertNotIn('--recover', wrapper)
         subprocess.run(['/bin/bash', '-n', str(ROOT / 'scripts/check-native-ui-host.sh')], check=True, capture_output=True)
 
-    def run_gate(self, *, php_exit=0, branch='main', busy=False, linked=False, wrong_root=False, bad_web=False, missing_php=False):
+    def run_gate(self, *, publish=False, php_exit=0, branch='main', busy=False, linked=False, wrong_root=False, bad_web=False, missing_php=False):
         with tempfile.TemporaryDirectory() as td:
             home = Path(td)
             repo = home / 'repo'; repo.mkdir(); (repo / '.git').mkdir()
@@ -70,7 +70,7 @@ class PipelineTests(unittest.TestCase):
             if not missing_php:
                 php.write_text('#!/bin/bash\nprintf "PHP_ARGS:%s\\n" "$*"\nexit ' + str(php_exit) + '\n')
                 php.chmod(0o700)
-            script = (ROOT / 'scripts/check-native-ui-host.sh').read_text()
+            script = (ROOT / ('scripts/publish-native-ui-host.sh' if publish else 'scripts/check-native-ui-host.sh')).read_text()
             for a,b in ((REPO,str(repo)),(WEB,str(web)),(LOCK,str(lock)),(PHP,str(php))):
                 script = script.replace(a,b)
             def snapshot():
@@ -86,6 +86,20 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(r.returncode,0,r.stderr)
         self.assertIn(('PHP_ARGS:-d display_errors=0 -d log_errors=0 ' + str(repo) + '/scripts/deploy-native-ui.php ' + str(web) + ' --check').encode(),r.stdout)
         self.assertNotIn(b'--publish',r.stdout)
+
+    def test_publish_invokes_only_scoped_transaction(self):
+        r,repo,web = self.run_gate(publish=True)
+        self.assertEqual(r.returncode,0,r.stderr)
+        self.assertIn(('PHP_ARGS:-d display_errors=0 -d log_errors=0 ' + str(repo) + '/scripts/deploy-native-ui.php ' + str(web) + ' --publish').encode(),r.stdout)
+
+    def test_publish_failure_is_reported(self):
+        r,_,_ = self.run_gate(publish=True,php_exit=9)
+        self.assertEqual(r.returncode,9)
+
+    def test_publish_busy_host_is_rejected(self):
+        r,_,_ = self.run_gate(publish=True,busy=True)
+        self.assertIn(b'BUSY',r.stderr)
+        self.assertNotIn(b'PHP_ARGS',r.stdout)
 
     def test_failure_propagates_without_publication(self):
         r,_,_ = self.run_gate(php_exit=9)

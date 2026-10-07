@@ -13,6 +13,7 @@ CODE = ['scripts/native-ui-publication.php', 'scripts/native-ui-state.php',
         'scripts/native-ui-plan.php', 'scripts/deploy-native-ui.php',
         'scripts/workbook-focus-preservation.php', 'scripts/trial-pause-preservation.php',
         'scripts/comprehensive-meaning-preservation.php',
+        'scripts/blending3-preservation.php', 'scripts/meaning-preservation.php', 'scripts/blending2-preservation.php',
         'release-assets/native-experiences-20261007-r1/predecessors/comprehensive-meaning-preservation.php']
 PATHS = ['try/workbook.js', 'learn/content/1.4.1/workbook.js.hzn',
          'try/demo-asset-manifest.json', 'learn/asset-manifest.json', 'try/sw.js', 'learn/sw.js']
