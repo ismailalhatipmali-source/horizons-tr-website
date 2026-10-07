@@ -10,6 +10,9 @@ on:
       - 'scripts/build_native_ui_manifest.py'
       - 'scripts/workbook-focus-preservation.php'
       - 'scripts/trial-pause-preservation.php'
+      - 'scripts/comprehensive-meaning-preservation.php'
+      - 'tests/test_native_trial_lineage.php'
+      - 'tests/test_native_historical_pins.php'
       - 'src/workbook-experiences/**'
       - 'release-assets/native-experiences-20261007-r1/**'
       - 'tests/test_native_publication.php'
@@ -31,11 +34,15 @@ jobs:
             .cpanel.yml
             scripts
             src/workbook-experiences
+            src/workbook-focus
+            release-assets/workbook-focus-20261005-r1
             release-assets/native-experiences-20261007-r1
             tests/test_native_publication.php
             tests/test_native_chain_bridge.php
             tests/test_native_pipeline.py
             tests/test_native_cold_check.php
+            tests/test_native_trial_lineage.php
+            tests/test_native_historical_pins.php
           sparse-checkout-cone-mode: false
       - name: Syntax, immutable-source build and filesystem fixtures
         run: |
@@ -43,10 +50,12 @@ jobs:
           bash -n scripts/check-native-ui-host.sh
           php --version
           node --version
-          for p in scripts/native-ui-*.php scripts/deploy-native-ui.php scripts/workbook-focus-preservation.php scripts/trial-pause-preservation.php; do php -l "$p"; done
+          for p in scripts/native-ui-*.php scripts/deploy-native-ui.php scripts/workbook-focus-preservation.php scripts/trial-pause-preservation.php scripts/comprehensive-meaning-preservation.php; do php -l "$p"; done
           python3 scripts/build_native_ui_manifest.py
           git diff --exit-code -- release-assets/native-experiences-20261007-r1
           php tests/test_native_publication.php
           php tests/test_native_chain_bridge.php
           python3 tests/test_native_pipeline.py
           php tests/test_native_cold_check.php
+          php tests/test_native_trial_lineage.php
+          php tests/test_native_historical_pins.php
