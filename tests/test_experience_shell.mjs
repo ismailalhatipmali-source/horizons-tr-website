@@ -42,6 +42,7 @@ w.eval(baseline.replace(tail,'\n'+demo+'\n'+shell+'\n'+prepare+'\n})();'));
 const api=w.shellFixture,query=selector=>d.querySelector(selector),sameState=()=>JSON.stringify(api.state());
 assert.equal(d.body.dataset.focusView,'home');
 assert.equal(d.body.dataset.hznExperience,'focus');
+assert.equal(query('#hzn-home .hzn-future-list').children.length,7);
 for(const mode of ['sprouts','adventure','discovery','focus']){
  query('#hzn-experience-home-'+mode).click();
  assert.equal(d.body.dataset.hznExperience,mode);
@@ -83,6 +84,7 @@ query('#hzn-back-lessons').click();query('#hzn-resume').click();assert.equal(api
 for(const lang of Object.keys(JSON.parse(read('src/workbook-experiences/experience-locales.json')))){
  api.locale(lang);assert.equal(query('#hzn-home-title').textContent,JSON.parse(read('src/workbook-experiences/experience-locales.json'))[lang].homeTitle);
  assert.equal(query('#hzn-experience-home-sprouts strong').textContent,JSON.parse(read('src/workbook-experiences/experience-locales.json'))[lang].experiencesprouts);
+ assert.equal(query('#hzn-home .hzn-future summary').textContent,JSON.parse(read('src/workbook-experiences/experience-locales.json'))[lang].futureTitle);
  assert.equal(d.querySelectorAll('#hzn-home').length,1);assert.equal(d.querySelectorAll('#hzn-lessons-button').length,1);
 }
 // Isolated synthetic adult-owned learner records: UI location keys do not mix.
