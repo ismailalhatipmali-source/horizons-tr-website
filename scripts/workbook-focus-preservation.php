@@ -22,7 +22,20 @@ function hznFocusRelease(string $repo):array {
     $r=json_decode($raw,true,32,JSON_THROW_ON_ERROR);$sources=array_keys($r['sources']??[]);$expected=HZN_FOCUS_SOURCES;
     if(in_array('src/workbook-focus/blending3-responsive.css',$sources,true)||in_array('src/workbook-focus/blending3-component.js',$sources,true))$expected=array_merge($expected,['src/workbook-focus/blending3-responsive.css','src/workbook-focus/blending3-component.js']);sort($sources);sort($expected);
     if(($r['schema']??0)!==1||($r['release']??'')!==HZN_FOCUS_RELEASE||$sources!==$expected||array_keys($r['files']??[])!==HZN_FOCUS_PUBLIC||count($r['languages']??[])!==32||count(array_unique($r['languages']))!==32)throw new RuntimeException('FOCUS_RELEASE_INVALID');
-    foreach($r['sources'] as $p=>$sha)if(!is_string($sha)||!hznFocusSha($sha)||!hash_equals($sha,hash('sha256',hznFocusRead(hznFocusPath($repo,$p),2097152))))throw new RuntimeException('FOCUS_SOURCE_CHANGED');
+    foreach($r['sources'] as $p=>$sha){
+        if(!is_string($sha)||!hznFocusSha($sha))throw new RuntimeException('FOCUS_SOURCE_CHANGED');
+        $source=hznFocusPath($repo,$p);
+        if($p==='scripts/comprehensive-meaning-preservation.php'&&!hash_equals($sha,hash('sha256',hznFocusRead($source,2097152)))){
+            // Keep the installed focus manifest and receipt immutable. The new
+            // validator and byte-exact historical source are pinned together.
+            require_once __DIR__.'/native-ui-state.php';
+            $nativeRelease=hznUiRelease($repo);
+            $historical='release-assets/native-experiences-20261007-r1/predecessors/comprehensive-meaning-preservation.php';
+            if(($nativeRelease['code'][$historical]??'')!==$sha||!isset($nativeRelease['code'][$p]))throw new RuntimeException('FOCUS_SUCCESSOR_SOURCE_UNPINNED');
+            $source=hznFocusPath($repo,$historical);
+        }
+        if(!hash_equals($sha,hash('sha256',hznFocusRead($source,2097152))))throw new RuntimeException('FOCUS_SOURCE_CHANGED');
+    }
     $hook=$r['compiled_hook']??[];if(($hook['source']??'')!==$prefix.'/focus-hook.js')throw new RuntimeException('FOCUS_HOOK_INVALID');
     foreach(array_merge($r['files'],['hook'=>$hook]) as $p=>$entry){
         if($p!=='hook'&&(($entry['source']??'')!==$prefix.'/files/'.$p||!hznFocusSha($entry['before']??'')))throw new RuntimeException('FOCUS_PAYLOAD_INVALID');

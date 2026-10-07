@@ -41,10 +41,6 @@ function hznCMRelease(string $repo):array {
 }
 function hznCMState(string $web):?array {
     require_once __DIR__.'/blending4-preservation.php';
-    require_once __DIR__.'/trial-pause-preservation.php';
-    // Verify the successor first; only its authenticated pre-trial entry page
-    // may stand in for the historical public shell. Never accept arbitrary drift.
-    $trialPause=hznTrialPauseState($web);
     $focus=hznFocusState($web);$blending4=hznB4State($web);
     $home=dirname($web);$private=hznCMPath($home,'.horizons-comprehensive-meaning');$path=hznCMPath($private,'receipt.json');if(!is_file($path))return null;
     if(realpath($private)!==$private||(fileperms($private)&0777)!==0700||realpath($path)!==$path||(fileperms($path)&0777)!==0600||filesize($path)>65536)throw new RuntimeException('COMPREHENSIVE_PRIVATE_RECEIPT_REQUIRED');
@@ -60,8 +56,8 @@ function hznCMState(string $web):?array {
     if(($demo['patch']??'')!=='demo-experience-20261004-r1'||($demo['manifest_sha256']??'')!==HZN_COMPREHENSIVE_MEANING_DEMO_MANIFEST_SHA256||($paid['patch']??'')!=='workbook-responsive-20261004-r3'||($paid['plain_after_sha256']??'')!==$receipt['plain_before_sha256'])throw new RuntimeException('COMPREHENSIVE_BASELINE_LINEAGE_INVALID');
     $expected=$demo['hashes'];$expected['learn/asset-manifest.json']=$paid['hashes']['asset-manifest.json'];$expected['learn/content/1.4.1/workbook.js.hzn']=$paid['hashes']['content/1.4.1/workbook.js.hzn'];
     if($receipt['before_hashes']!==$expected)throw new RuntimeException('COMPREHENSIVE_BASELINE_HASHES_INVALID');
-    foreach(HZN_COMPREHENSIVE_MEANING_PATHS as $name){$file=$trialPause!==null&&$name==='learn/index.html'?hznCMPath($trialPause['baseline_root'],$name):hznB4PreviousPath($web,$name,$blending4,$focus);$backup=hznCMPath($private,'baseline/'.$name);$sha=$receipt['hashes'][$name];$before=$receipt['before_hashes'][$name];
-        if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!is_file($file)||(fileperms($file)&0777)!==((($trialPause!==null&&$name==='learn/index.html')||($blending4!==null&&in_array($name,HZN_B4_SHARED,true))||($focus!==null&&in_array($name,HZN_FOCUS_PATHS,true)))?0600:0644)||!hash_equals($sha,hash_file('sha256',$file)))throw new RuntimeException('COMPREHENSIVE_PUBLIC_CHANGED');
+    foreach(HZN_COMPREHENSIVE_MEANING_PATHS as $name){$file=hznB4PreviousPath($web,$name,$blending4,$focus);$backup=hznCMPath($private,'baseline/'.$name);$sha=$receipt['hashes'][$name];$before=$receipt['before_hashes'][$name];
+        if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!is_file($file)||(fileperms($file)&0777)!==((($blending4!==null&&in_array($name,HZN_B4_SHARED,true))||($focus!==null&&in_array($name,HZN_FOCUS_PATHS,true)))?0600:0644)||!hash_equals($sha,hash_file('sha256',$file)))throw new RuntimeException('COMPREHENSIVE_PUBLIC_CHANGED');
         if(!is_file($backup)||(fileperms($backup)&0777)!==0600||!hash_equals($before,hash_file('sha256',$backup))||!is_int($receipt['before_modes'][$name])||$receipt['before_modes'][$name]<0||$receipt['before_modes'][$name]>0777)throw new RuntimeException('COMPREHENSIVE_BASELINE_CHANGED');
         if(isset($release['files'][$name])&&$before!==$release['files'][$name]['before'])throw new RuntimeException('COMPREHENSIVE_BASELINE_RELEASE_CHANGED');
         if(isset($release['files'][$name])&&($sha!==$release['files'][$name]['sha256']||filesize($file)!==$release['files'][$name]['bytes']))throw new RuntimeException('COMPREHENSIVE_RELEASE_PAYLOAD_CHANGED');
