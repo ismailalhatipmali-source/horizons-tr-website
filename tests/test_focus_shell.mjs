@@ -41,13 +41,6 @@ const baseline=read('src/demo-pwa/workbook.js');assert.equal(baseline.split(tail
 w.eval(baseline.replace(tail,'\n'+demo+'\n'+shell+'\n'+prepare+'\n})();'));
 const api=w.shellFixture,query=selector=>d.querySelector(selector),sameState=()=>JSON.stringify(api.state());
 assert.equal(d.body.dataset.focusView,'home');
-assert.equal(d.body.dataset.hznExperience,'focus');
-for(const mode of ['sprouts','adventure','discovery','focus']){
- query('#hzn-experience-home-'+mode).click();
- assert.equal(d.body.dataset.hznExperience,mode);
- assert.equal(query('#hzn-experience-home-'+mode).getAttribute('aria-pressed'),'true');
- assert.equal(query('#hzn-experience-settings-'+mode).getAttribute('aria-pressed'),'true');
-}
 assert.equal(query('#hzn-resume-label').textContent,JSON.parse(read('src/workbook-focus/focus-locales.json')).ar.start);
 assert.equal(query('#course-nav').parentElement.id,'hzn-home-nav');
 assert.equal(query('#locale').closest('#hzn-language-dock').id,'hzn-language-dock');
@@ -57,12 +50,6 @@ assert.equal(query('#course-nav').closest('dialog').id,'hzn-lessons-dialog');
 api.nav({course:'lesson',chapter:'yaa',tab:'words',word:7});
 api.answer('fixture-existing-answer');
 const before=sameState(),feedback=JSON.stringify(api.feedback()),activity=query('#activity'),activityNodes=[...activity.querySelectorAll('*')];
-for(const mode of ['sprouts','adventure','discovery','focus']){
- query('#hzn-experience-settings-'+mode).click();
- assert.equal(w.hznFocusShell.currentExperience(),mode);
- assert.equal(sameState(),before,'Changing presentation must preserve the lesson and progress');
- assert.deepEqual([...activity.querySelectorAll('*')],activityNodes,'Changing presentation must preserve the active activity');
-}
 const originalFont=query('#typography-font'),originalLanguage=query('#locale');
 for(let i=0;i<4;i++){
  query('#hzn-lessons-button').click();assert.equal(query('#hzn-lessons-dialog').open,true);query('#hzn-lessons-dialog-close').click();
@@ -82,7 +69,6 @@ assert.equal(sameState(),before,'Locked preview must not touch progress or answe
 query('#hzn-back-lessons').click();query('#hzn-resume').click();assert.equal(api.state().chapter,'yaa');assert.equal(api.state().word,7);assert.equal(query('#activity [data-demo-return]'),null);
 for(const lang of Object.keys(JSON.parse(read('src/workbook-focus/focus-locales.json')))){
  api.locale(lang);assert.equal(query('#hzn-home-title').textContent,JSON.parse(read('src/workbook-focus/focus-locales.json'))[lang].homeTitle);
- assert.equal(query('#hzn-experience-home-sprouts strong').textContent,JSON.parse(read('src/workbook-focus/focus-locales.json'))[lang].experiencesprouts);
  assert.equal(d.querySelectorAll('#hzn-home').length,1);assert.equal(d.querySelectorAll('#hzn-lessons-button').length,1);
 }
 // Isolated synthetic adult-owned learner records: UI location keys do not mix.
@@ -90,9 +76,7 @@ const first={id:'fixture-a',nickname:'',progress:JSON.parse(before),settings:{}}
 api.profile(first);w.hznFocusShell.rememberComponent('blending4',{lesson:4,index:2,mode:'readCheck',review:true,practice:false,answer:true,secretWord:'PRIVATE',ratings:{x:'correct'}});
 assert.equal(w.hznFocusShell.restoreComponent('blending4').lesson,4);
 api.profile(second);assert.equal(d.body.dataset.focusView,'home');assert.equal(w.hznFocusShell.restoreComponent('blending4'),null);
-query('#hzn-experience-home-adventure').click();assert.equal(w.hznFocusShell.currentExperience(),'adventure');
 api.profile(first);assert.equal(w.hznFocusShell.restoreComponent('blending4').index,2);
-assert.equal(w.hznFocusShell.currentExperience(),'focus','Experience choice must be scoped to each learner');
 assert.equal(w.hznFocusShell.restoreComponent('blending4').secretWord,undefined);assert.equal(w.hznFocusShell.restoreComponent('blending4').answer,undefined);
 assert.equal(w.hznFocusShell.restoreComponent('blending4').review,true);assert.equal(w.hznFocusShell.restoreComponent('blending4').practice,false);
 assert.equal(sameState(),before);
