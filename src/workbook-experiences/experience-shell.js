@@ -10,12 +10,13 @@
  const text=key=>COPY[locale]?.[key]??COPY.en[key];
  const sectionNames=['alphabet','phonics','blending2','blending3','blending4','catalog'];
  const experienceNames=['sprouts','adventure','discovery','focus'];
+ const futureNames=['pronouns','possessives','numbers','colors','calendar','directions','stories'];
  const componentNames=new Set(['phonics','blending2','blending3','blending4']);
  const memory=new Map();
  const experienceMemory=new Map();
  const components=new Map();
  let view='home',owner=null,installed=false,returnFocus=null,restoring=false,wordObserver;
- let home,homeNav,drawer,drawerNav,accountDialog,languageDock,utilityDock,toolbar,backButton;
+ let home,homeNav,future,drawer,drawerNav,accountDialog,languageDock,utilityDock,toolbar,backButton;
  const original={render,nav,setLearner,learnerToolbar,openSettingsWithTypography,applyTypography};
  function learnerKey(){return (IS_DEMO?'demo:':'full:')+(learnerStorage.enabled?learnerStorage.current?.id||'pending':'local');}
  function storageKey(){return 'horizons.focus-location.v1:'+learnerKey();}
@@ -142,7 +143,12 @@
   const resume=button('hzn-resume',startOrResume);resume.className='primary hzn-resume';
   const resumeLabel=element('span',{id:'hzn-resume-label'}),resumeTitle=element('small',{id:'hzn-resume-title'});resume.append(resumeLabel,resumeTitle);
   welcome.append(heading,hint,resume);homeNav=element('div',{id:'hzn-home-nav'});
-  home.append(experiencePicker('home'),welcome,homeNav);main.prepend(home);
+  future=element('details',{class:'hzn-future'});
+  future.append(element('summary'));
+  const futureList=element('div',{class:'hzn-future-list'});
+  for(const name of futureNames)futureList.append(element('span',{'data-future-section':name}));
+  future.append(futureList);
+  home.append(experiencePicker('home'),welcome,homeNav,future);main.prepend(home);
   drawer=createDialog('hzn-lessons-dialog','hzn-lessons-title');drawerNav=element('div',{class:'hzn-drawer-nav'});drawer.append(drawerNav);
   accountDialog=createDialog('hzn-account-dialog','hzn-account-title');accountDialog.append(element('div',{id:'hzn-account-controls'}));
   const accountHelp=button('hzn-account-help',()=>{accountDialog.close();openSettings();});accountHelp.className='secondary';accountDialog.append(accountHelp);
@@ -232,6 +238,8 @@
   syncExperience();
   const currentProfile=learnerStorage.enabled?learnerStorage.current:null;
   q('#hzn-home-title').textContent=text('homeTitle');q('#hzn-home-hint').textContent=text('homeHint');
+  future.querySelector('summary').textContent=text('futureTitle');
+  for(const item of future.querySelectorAll('[data-future-section]'))item.textContent=text('future'+item.dataset.futureSection);
   q('#hzn-resume-label').textContent=text(hasProgress()?'resume':'start');
   let title=IS_DEMO&&q('#activity [data-demo-return]')
    ?state.course==='lesson'?t('letterLesson',{letter:data.letter}):t(state.course==='catalog'?'courseTitle':'alphabet')
