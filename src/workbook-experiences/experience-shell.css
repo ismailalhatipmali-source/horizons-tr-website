@@ -199,6 +199,10 @@
  body.hzn-focus #settings .hzn-experience-choice{min-height:116px;padding:10px}
  body.hzn-focus #settings .hzn-experience-choice strong{font-size:16px}
  body.hzn-focus #settings .hzn-experience-choice small{font-size:12px}
+ body.hzn-focus .hzn-future{margin:18px 0;padding:12px 16px;border:1px solid var(--hzn-line);border-radius:12px;background:var(--hzn-paper)}
+ body.hzn-focus .hzn-future summary{cursor:pointer;font-size:15px;font-weight:650;min-height:44px;display:list-item;padding:8px 0}
+ body.hzn-focus .hzn-future-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;padding:8px 0}
+ body.hzn-focus .hzn-future-list span{display:block;padding:10px 12px;border:1px dashed var(--hzn-line);border-radius:8px;font-size:14px;line-height:1.5;opacity:.8}
  /* Sprouts: a single large activity in a soft, bright reading surface. */
  body.hzn-focus[data-hzn-experience=sprouts]{--hzn-paper:#fffef5;--hzn-navy:#195249;--hzn-teal:#087c68;--hzn-line:#b9dfd1;background:#def4ec}
  body.hzn-focus[data-hzn-experience=sprouts] .hzn-home-welcome{background:#fff9d9;border:2px solid #f3d681;border-radius:32px}
