@@ -10,6 +10,8 @@ function hznB3Path(string $root,string $relative):string {
 function hznB3Read(string $path):string {$b=file_get_contents($path);if($b===false)throw new RuntimeException('BLENDING3_READ_FAILED');return $b;}
 function hznB3Json(array $x):string {return json_encode($x,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_THROW_ON_ERROR);}
 function hznB3State(string $web):?array {
+    require_once __DIR__.'/native-ui-state.php';
+    $nativeUi=hznUiState($web);
     $home=dirname($web);$state=hznB3Path($home,'.horizons-blending3');$path=hznB3Path($state,'receipt.json');if(!is_file($path))return null;
     if(realpath($path)!==$path||str_starts_with($path,$web.'/')||filesize($path)>262144)throw new RuntimeException('BLENDING3_PRIVATE_RECEIPT_REQUIRED');
     $receiptRaw=hznB3Read($path);$receipt=json_decode($receiptRaw,true,32,JSON_THROW_ON_ERROR);
@@ -23,16 +25,16 @@ function hznB3State(string $web):?array {
     $paths=$receipt['audio_paths']??[];if(count($paths)!==150||count(array_unique($paths))!==150)throw new RuntimeException('BLENDING3_AUDIO_COUNT_INVALID');
     foreach($paths as $p){if(!preg_match('~^course/audio/blending3/blending3_r2_0[123]_[0-9]{3}\.wav$~D',$p))throw new RuntimeException('BLENDING3_AUDIO_PATH_INVALID');$expected[]='content/1.4.1/'.$p.'.hzn';}
     $actual=array_keys($receipt['hashes']);sort($actual);sort($expected);if($actual!==$expected)throw new RuntimeException('BLENDING3_RECEIPT_INVALID');
-    foreach($receipt['hashes'] as $p=>$sha){$file=hznB3Path($learn,$p);if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!is_file($file)||!hash_equals($sha,hash_file('sha256',$file)))throw new RuntimeException('BLENDING3_ASSET_CHANGED');}
+    foreach($receipt['hashes'] as $p=>$sha){$file=hznUiPreviousPath($web,'learn/'.$p,$nativeUi);if(!preg_match('/^[a-f0-9]{64}$/D',$sha)||!is_file($file)||!hash_equals($sha,hash_file('sha256',$file)))throw new RuntimeException('BLENDING3_ASSET_CHANGED');}
     $baselinePath=hznB3Path($state,'baseline-manifest.json');$workerPath=hznB3Path($state,'baseline-sw.js');
     if(!is_file($baselinePath)||filesize($baselinePath)>4194304||!hash_equals($receipt['baseline_manifest_sha256'],hash_file('sha256',$baselinePath))||!is_file($workerPath)||!hash_equals($receipt['baseline_sw_sha256'],hash_file('sha256',$workerPath)))throw new RuntimeException('BLENDING3_BASELINE_DAMAGED');
     $baseline=json_decode(hznB3Read($baselinePath),true,32,JSON_THROW_ON_ERROR);
-    $manifest=json_decode(hznB3Read(hznB3Path($learn,'asset-manifest.json')),true,32,JSON_THROW_ON_ERROR);
+    $manifest=json_decode(hznB3Read(hznUiPreviousPath($web,'learn/'.'asset-manifest.json',$nativeUi)),true,32,JSON_THROW_ON_ERROR);
     if(($manifest['blending3_release']??'')!==$receipt['patch']||($manifest['blending3_word_count']??0)!==150||($manifest['blending3_practice_count']??0)!==12||($manifest['blending3_approved_clips']??0)!==150||($manifest['blending3_lesson_count']??0)!==25||($manifest['blending3_languages']??[])!==($baseline['meaning_languages']??[]))throw new RuntimeException('BLENDING3_MANIFEST_INVALID');
-    foreach($paths as $p){$e=$manifest['files'][$p]??[];$file=hznB3Path($learn,'content/1.4.1/'.$p.'.hzn');if(($e['url']??'')!=='content/1.4.1/'.$p.'.hzn'||($e['mime']??'')!=='audio/wav'||($e['sha256']??'')!==$receipt['hashes'][$e['url']]||filesize($file)!==($e['bytes']??-1))throw new RuntimeException('BLENDING3_AUDIO_INVALID');}
+    foreach($paths as $p){$e=$manifest['files'][$p]??[];$file=hznUiPreviousPath($web,'learn/'.'content/1.4.1/'.$p.'.hzn',$nativeUi);if(($e['url']??'')!=='content/1.4.1/'.$p.'.hzn'||($e['mime']??'')!=='audio/wav'||($e['sha256']??'')!==$receipt['hashes'][$e['url']]||filesize($file)!==($e['bytes']??-1))throw new RuntimeException('BLENDING3_AUDIO_INVALID');}
     if(($manifest['groups']['blending3']??[])!==array_merge(['workbook.js'],$paths))throw new RuntimeException('BLENDING3_GROUP_INVALID');
     $e=$manifest['files']['workbook.js']??[];
-    if(($e['url']??'')!=='content/1.4.1/workbook.js.hzn'||($e['sha256']??'')!==$receipt['hashes'][$e['url']]||filesize(hznB3Path($learn,$e['url']))!==($e['bytes']??-1)||($e['encoding']??'')!=='gzip'||($e['decoded_bytes']??0)<1||$e['decoded_bytes']>33554432)throw new RuntimeException('BLENDING3_APPLICATION_INVALID');
+    if(($e['url']??'')!=='content/1.4.1/workbook.js.hzn'||($e['sha256']??'')!==$receipt['hashes'][$e['url']]||filesize(hznUiPreviousPath($web,'learn/'.$e['url'],$nativeUi))!==($e['bytes']??-1)||($e['encoding']??'')!=='gzip'||($e['decoded_bytes']??0)<1||$e['decoded_bytes']>33554432)throw new RuntimeException('BLENDING3_APPLICATION_INVALID');
     $b4=$responsive['comprehensive_meaning']['blending4']??null;
     $projected=$b4===null?$manifest:$b4['baseline_manifest'];foreach($paths as $p)unset($projected['files'][$p]);$projected['files']['workbook.js']=$baseline['files']['workbook.js'];unset($projected['groups']['blending3']);
     $projected['groups']['all']=array_values(array_filter($projected['groups']['all'],fn($p)=>!in_array($p,$paths,true)));
@@ -40,7 +42,7 @@ function hznB3State(string $web):?array {
     if(hznB3Json($projected)!==hznB3Json($baseline))throw new RuntimeException('BLENDING3_PREVIOUS_CONTENT_CHANGED');
     $suffix=$responsive===null?'blending3-20261004-r2':$responsive['worker_suffix'];
     $old="const SHELL = 'hzn-web-shell-' + VERSION + '-meanings-20261003-r1';";$new="const SHELL = 'hzn-web-shell-' + VERSION + '-".$suffix."';";
-    $before=hznB3Read($workerPath);if(substr_count($before,$old)!==1||str_replace($old,$new,$before)!==hznB3Read(hznB3Path($learn,'sw.js')))throw new RuntimeException('BLENDING3_WORKER_CHANGED');
+    $before=hznB3Read($workerPath);if(substr_count($before,$old)!==1||str_replace($old,$new,$before)!==hznB3Read(hznUiPreviousPath($web,'learn/'.'sw.js',$nativeUi)))throw new RuntimeException('BLENDING3_WORKER_CHANGED');
     $oldMeaning=hznB3Path($home,'.horizons-meaning/receipt.json');if(!is_file($oldMeaning)||!hash_equals($receipt['inherited_meaning_receipt_sha256']??'',hash_file('sha256',$oldMeaning)))throw new RuntimeException('BLENDING3_INHERITED_RECEIPT_CHANGED');
     return ['manifest'=>$manifest,'baseline'=>$baseline,'receipt'=>$receipt,'worker_suffix'=>$suffix,'responsive_receipt'=>$responsive];
 }

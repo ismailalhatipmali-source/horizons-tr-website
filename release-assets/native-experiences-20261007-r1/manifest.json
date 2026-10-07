@@ -20,12 +20,15 @@
   },
   "code": {
     "scripts/native-ui-publication.php": "63f534994b7f306a8b1ddfbcbb13b0be47279f7222f89e35b58d2d828dd92866",
-    "scripts/native-ui-state.php": "db2d67fdbdb86011d4e50323310f15329bd26842fb61258dea0545d39e832de5",
+    "scripts/native-ui-state.php": "f51aad2848ccdd22a7e057b6fcd2acc2be40d29dc98e9123d243ded2b892def1",
     "scripts/native-ui-plan.php": "610cdfd7c428cd6e19e2d290e28ded0a886940f095deabe34d90a62451ee6a15",
     "scripts/deploy-native-ui.php": "f71ce27ecb6a1a6de284d35cc65d49bcc4ed8d0c6e844d9266870edbc4591d2f",
     "scripts/workbook-focus-preservation.php": "88d9438cd3fec505b0260394461a60f43785179424d04566da34520a9d0169e2",
     "scripts/trial-pause-preservation.php": "f1cbf09db0d46fccd2170d1a2647ee478629f40d15bcf7ff3d47b6b3190a93d3",
     "scripts/comprehensive-meaning-preservation.php": "99f7cf834759168cc113a37116265be601c0bf1c754ab90f2cc90cf5d4bcc91e",
+    "scripts/blending3-preservation.php": "79be3a4bcc5a2509d4521349c90866f3a4825b0040be0b864a450640f486671a",
+    "scripts/meaning-preservation.php": "33cd9bb1838888c1c14465872cd4bd84e23c40431ec8df34e435ca1ecf61cd52",
+    "scripts/blending2-preservation.php": "763f39a0ebab327be6591ea5f252258e4e1b37f3a547bbd555d3f3e3e5276d0e",
     "release-assets/native-experiences-20261007-r1/predecessors/comprehensive-meaning-preservation.php": "4e73cd7ab4fb3dee69796fce056d679dd5befd733864867ef586ee958c4acaf0"
   },
   "addon_sha256": "d22d6a239420d63552bce801608250e9a3ddc82d05607aa40872b058827efc3a",

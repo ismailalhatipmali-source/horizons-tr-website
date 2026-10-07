@@ -6,6 +6,10 @@ on:
       - 'scripts/native-ui-*'
       - 'scripts/deploy-native-ui.php'
       - 'scripts/check-native-ui-host.sh'
+      - 'scripts/publish-native-ui-host.sh'
+      - 'scripts/blending3-preservation.php'
+      - 'scripts/meaning-preservation.php'
+      - 'scripts/blending2-preservation.php'
       - 'scripts/cpanel-*.yml'
       - 'scripts/build_native_ui_manifest.py'
       - 'scripts/workbook-focus-preservation.php'
@@ -48,9 +52,11 @@ jobs:
         run: |
           set -euo pipefail
           bash -n scripts/check-native-ui-host.sh
+          bash -n scripts/publish-native-ui-host.sh
           php --version
           node --version
           for p in scripts/native-ui-*.php scripts/deploy-native-ui.php scripts/workbook-focus-preservation.php scripts/trial-pause-preservation.php scripts/comprehensive-meaning-preservation.php; do php -l "$p"; done
+          for p in scripts/blending3-preservation.php scripts/meaning-preservation.php scripts/blending2-preservation.php; do php -l "$p"; done
           python3 scripts/build_native_ui_manifest.py
           git diff --exit-code -- release-assets/native-experiences-20261007-r1
           php tests/test_native_publication.php

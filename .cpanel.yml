@@ -1,7 +1,5 @@
-# HORIZONS UI HOST CHECK ONLY. This task does not publish any website files.
-# The former production task is retained in scripts/cpanel-production-before-native-ui.yml.
-# Restore/enable publication only in a separately reviewed follow-up after host verification.
+# HORIZONS native UI: scoped six-file transaction; private rollback retained.
 ---
 deployment:
   tasks:
-    - "/bin/bash scripts/check-native-ui-host.sh"
+    - "/bin/bash scripts/publish-native-ui-host.sh"
