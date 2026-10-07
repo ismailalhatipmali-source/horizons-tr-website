@@ -5,6 +5,8 @@ on:
       - '.cpanel.yml'
       - 'scripts/native-ui-*'
       - 'scripts/deploy-native-ui.php'
+      - 'scripts/check-native-ui-host.sh'
+      - 'scripts/cpanel-*.yml'
       - 'scripts/build_native_ui_manifest.py'
       - 'scripts/workbook-focus-preservation.php'
       - 'scripts/trial-pause-preservation.php'
@@ -36,6 +38,7 @@ jobs:
       - name: Syntax, immutable-source build and filesystem fixtures
         run: |
           set -euo pipefail
+          bash -n scripts/check-native-ui-host.sh
           php --version
           node --version
           for p in scripts/native-ui-*.php scripts/deploy-native-ui.php scripts/workbook-focus-preservation.php scripts/trial-pause-preservation.php; do php -l "$p"; done
