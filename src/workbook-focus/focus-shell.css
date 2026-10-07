@@ -177,6 +177,100 @@
   body.hzn-focus .word-scene-layout .illustration-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(80px,.6fr);align-items:center}
   body.hzn-focus .word-scene-layout .media-switch{grid-template-columns:1fr}
  }
+ /* The four experiences share the reader and its lesson state, not a card template. */
+ body.hzn-focus .hzn-experience-picker{margin:0 0 18px}
+ body.hzn-focus .hzn-experience-picker h2{font-size:18px;line-height:1.5;margin:0 0 10px}
+ body.hzn-focus .hzn-experience-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+ body.hzn-focus .hzn-experience-choice{display:flex;flex-direction:column;align-items:flex-start;min-width:0;min-height:146px;width:100%;padding:15px;border:2px solid transparent;border-radius:17px;text-align:start;cursor:pointer;line-height:1.45;box-shadow:none;transition:transform .18s ease,box-shadow .18s ease}
+ body.hzn-focus .hzn-experience-choice:hover{transform:translateY(-2px);box-shadow:0 8px 22px #102c4120}
+ body.hzn-focus .hzn-experience-choice[aria-pressed=true]{border-color:currentColor;box-shadow:0 0 0 3px #ffffff inset}
+ body.hzn-focus .hzn-experience-choice strong{font-size:19px;line-height:1.4}
+ body.hzn-focus .hzn-experience-choice small{font-size:13px;line-height:1.55;margin-top:4px;font-weight:500}
+ body.hzn-focus .hzn-experience-ornament{display:block;width:54px;height:24px;margin-bottom:12px;border-radius:20px}
+ body.hzn-focus [data-experience-choice=sprouts]{background:#e0f7ed;color:#16594b}
+ body.hzn-focus [data-experience-choice=sprouts] .hzn-experience-ornament{background:radial-gradient(circle at 12px 12px,#ffb849 0 10px,transparent 11px),radial-gradient(circle at 37px 12px,#57b4cd 0 9px,transparent 10px)}
+ body.hzn-focus [data-experience-choice=adventure]{background:#193b65;color:#fff}
+ body.hzn-focus [data-experience-choice=adventure] .hzn-experience-ornament{background:radial-gradient(circle at 7px 12px,#ffca6b 0 5px,transparent 6px),radial-gradient(circle at 29px 12px,#ffca6b 0 5px,transparent 6px),radial-gradient(circle at 51px 12px,#ffca6b 0 5px,transparent 6px),linear-gradient(#ffca6b,#ffca6b) center/42px 2px no-repeat}
+ body.hzn-focus [data-experience-choice=discovery]{background:#eee9fa;color:#452b75}
+ body.hzn-focus [data-experience-choice=discovery] .hzn-experience-ornament{border-radius:6px;background:linear-gradient(90deg,#6a4aaa 0 29%,transparent 29% 35%,#39a69c 35% 64%,transparent 64% 70%,#e7a647 70%)}
+ body.hzn-focus [data-experience-choice=focus]{background:#eef1f2;color:#14334b}
+ body.hzn-focus [data-experience-choice=focus] .hzn-experience-ornament{border-radius:3px;background:linear-gradient(#13354c,#13354c) 0 2px/54px 2px no-repeat,linear-gradient(#b89856,#b89856) 0 11px/38px 2px no-repeat,linear-gradient(#b89856,#b89856) 0 20px/46px 2px no-repeat}
+ body.hzn-focus #settings .hzn-experience-picker{padding:12px 0;border-bottom:1px solid var(--hzn-line)}
+ body.hzn-focus #settings .hzn-experience-choice{min-height:116px;padding:10px}
+ body.hzn-focus #settings .hzn-experience-choice strong{font-size:16px}
+ body.hzn-focus #settings .hzn-experience-choice small{font-size:12px}
+ /* Sprouts: a single large activity in a soft, bright reading surface. */
+ body.hzn-focus[data-hzn-experience=sprouts]{--hzn-paper:#fffef5;--hzn-navy:#195249;--hzn-teal:#087c68;--hzn-line:#b9dfd1;background:#def4ec}
+ body.hzn-focus[data-hzn-experience=sprouts] .hzn-home-welcome{background:#fff9d9;border:2px solid #f3d681;border-radius:32px}
+ body.hzn-focus[data-hzn-experience=sprouts] #course-nav.course-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ body.hzn-focus[data-hzn-experience=sprouts] #course-nav.course-nav button{min-height:130px;border:2px solid #badfce;border-radius:26px;background:#fffef8;font-size:19px}
+ body.hzn-focus[data-hzn-experience=sprouts] #stages{background:transparent;gap:8px}
+ body.hzn-focus[data-hzn-experience=sprouts] #stages button{border-radius:24px;background:#ecf7ec;border:2px solid #bfdfcd;font-size:16px;min-height:54px}
+ body.hzn-focus[data-hzn-experience=sprouts] #stages button[aria-pressed=true]{background:#ffcd6b;color:#184b42;border-color:#efa83d}
+ body.hzn-focus[data-hzn-experience=sprouts] #activity{background:#fffef7;border:2px solid #bedfce;border-radius:28px;padding:clamp(14px,3vw,30px)}
+ body.hzn-focus[data-hzn-experience=sprouts] .word-scene-layout{grid-template-columns:minmax(0,1fr);gap:16px;max-width:820px;margin:auto}
+ body.hzn-focus[data-hzn-experience=sprouts] .sentence-scene{max-width:420px}
+ body.hzn-focus[data-hzn-experience=sprouts] .vocab-panel{grid-template-columns:minmax(0,1fr);gap:12px}
+ body.hzn-focus[data-hzn-experience=sprouts] .sentence-block{border:0;border-top:1px solid var(--hzn-line);padding:14px 0}
+ /* Adventure: stations and lesson steps form a visible route. */
+ body.hzn-focus[data-hzn-experience=adventure]{--hzn-paper:#fffdf5;--hzn-navy:#193b65;--hzn-teal:#e08235;--hzn-line:#a9bed7;background:#dcecf4}
+ body.hzn-focus[data-hzn-experience=adventure] .hzn-home-welcome{background:#193b65;color:#fff;border:0;border-radius:20px}
+ body.hzn-focus[data-hzn-experience=adventure] #hzn-home-hint{color:#dbe7f1}
+ body.hzn-focus[data-hzn-experience=adventure] .hzn-resume{background:#ffc66b;color:#183753;border-color:#ffc66b}
+ body.hzn-focus[data-hzn-experience=adventure] #course-nav.course-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 24px;padding:10px 0}
+ body.hzn-focus[data-hzn-experience=adventure] #course-nav.course-nav button{min-height:132px;background:#fffdf7;border:2px solid #8baed0;border-radius:18px;box-shadow:5px 5px 0 #193b65}
+ body.hzn-focus[data-hzn-experience=adventure] #course-nav.course-nav button[aria-pressed=true]{background:#fff0cc;border-color:#e4973a}
+ body.hzn-focus[data-hzn-experience=adventure] #course-nav.course-nav button>span:first-child{display:grid;place-items:center;width:32px;height:32px;background:#193b65;color:white;border-radius:50%;font-weight:700}
+ body.hzn-focus[data-hzn-experience=adventure] #stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;background:transparent;padding:8px 0}
+ body.hzn-focus[data-hzn-experience=adventure] #stages button{border:2px dashed #7597b4;background:#f7fbf8;border-radius:14px;min-height:66px}
+ body.hzn-focus[data-hzn-experience=adventure] #stages button[aria-pressed=true]{background:#193b65;color:white;border-style:solid}
+ body.hzn-focus[data-hzn-experience=adventure] #activity{border:2px solid #a9bed7;border-radius:18px;box-shadow:8px 8px 0 #193b6520}
+ /* Discovery: a structured challenge board with the material in distinct panels. */
+ body.hzn-focus[data-hzn-experience=discovery]{--hzn-paper:#fff;--hzn-navy:#342953;--hzn-teal:#397d8c;--hzn-line:#c8bee0;background:#f0eef8}
+ body.hzn-focus[data-hzn-experience=discovery] .hzn-home-welcome{background:#3c2d64;color:white;border:0;border-radius:12px}
+ body.hzn-focus[data-hzn-experience=discovery] #hzn-home-hint{color:#e4dff2}
+ body.hzn-focus[data-hzn-experience=discovery] #course-nav.course-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ body.hzn-focus[data-hzn-experience=discovery] #course-nav.course-nav button{min-height:116px;border-radius:10px;border:1px solid #c7badd;border-top:6px solid #6c55a7;background:#fff}
+ body.hzn-focus[data-hzn-experience=discovery] #course-nav.course-nav button[aria-pressed=true]{background:#e9faf7;border-top-color:#258e89}
+ body.hzn-focus[data-hzn-experience=discovery] #stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:transparent;gap:8px;padding:0}
+ body.hzn-focus[data-hzn-experience=discovery] #stages button{background:#fff;border:1px solid #c6badd;border-radius:9px;min-height:54px}
+ body.hzn-focus[data-hzn-experience=discovery] #stages button[aria-pressed=true]{background:#3c2d64;color:white;border-color:#3c2d64}
+ body.hzn-focus[data-hzn-experience=discovery] #activity{border-radius:12px;border-top:6px solid #6c55a7}
+ body.hzn-focus[data-hzn-experience=discovery] .vocab-panel{border:1px solid #e1dcec;border-radius:10px;padding:14px}
+ /* Focus: a compact reading list and a quiet lesson, with immediate resume. */
+ body.hzn-focus[data-hzn-experience=focus]{--hzn-paper:#fffdf8;--hzn-navy:#15354b;--hzn-teal:#126b70;--hzn-line:#d0d7d9;background:#f3f1eb}
+ body.hzn-focus[data-hzn-experience=focus] .hzn-home-welcome{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px 20px;border-radius:8px;background:#fffdf8;border-inline-start:4px solid #af9255;padding:18px 22px}
+ body.hzn-focus[data-hzn-experience=focus] .hzn-home-welcome #hzn-home-hint{margin:0}
+ body.hzn-focus[data-hzn-experience=focus] .hzn-resume{grid-column:2;grid-row:1/span 2;min-width:180px;border-radius:8px}
+ body.hzn-focus[data-hzn-experience=focus] #course-nav.course-nav{grid-template-columns:1fr;gap:0;border-top:1px solid var(--hzn-line)}
+ body.hzn-focus[data-hzn-experience=focus] #course-nav.course-nav button{display:grid;grid-template-columns:40px minmax(0,1fr) auto;align-items:center;gap:12px;min-height:64px;padding:9px 14px;border:0;border-bottom:1px solid var(--hzn-line);border-radius:0;background:#fffdf8}
+ body.hzn-focus[data-hzn-experience=focus] #course-nav.course-nav button[aria-pressed=true]{background:#e5f0ef}
+ body.hzn-focus[data-hzn-experience=focus] #course-nav.course-nav small{margin:0}
+ body.hzn-focus[data-hzn-experience=focus] #stages{background:transparent;padding:0;border-bottom:1px solid var(--hzn-line);border-radius:0}
+ body.hzn-focus[data-hzn-experience=focus] #stages button{min-height:44px;border-radius:0;background:transparent;border:0;border-bottom:3px solid transparent}
+ body.hzn-focus[data-hzn-experience=focus] #stages button[aria-pressed=true]{border-bottom-color:#af9255;color:#15354b}
+ body.hzn-focus[data-hzn-experience=focus] #activity{border-radius:8px;box-shadow:none}
+ body.hzn-focus #hzn-lessons-dialog #course-nav.course-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ body.hzn-focus[data-hzn-experience=focus] #hzn-lessons-dialog #course-nav.course-nav{grid-template-columns:1fr}
+ body.hzn-focus #hzn-lessons-dialog #course-nav.course-nav button{min-height:72px;box-shadow:none}
+ @media(max-width:760px){
+  body.hzn-focus .hzn-experience-choices{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body.hzn-focus .hzn-experience-choice{min-height:126px;padding:12px}
+  body.hzn-focus .hzn-experience-choice strong{font-size:17px}
+  body.hzn-focus .hzn-experience-choice small{font-size:12px}
+  body.hzn-focus[data-hzn-experience=sprouts] #course-nav.course-nav,body.hzn-focus[data-hzn-experience=adventure] #course-nav.course-nav,body.hzn-focus[data-hzn-experience=discovery] #course-nav.course-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body.hzn-focus[data-hzn-experience=sprouts] .word-scene-layout{display:flex;flex-direction:column}
+  body.hzn-focus[data-hzn-experience=sprouts] .word-scene-layout .vocab-panel{display:flex;flex-direction:column;width:100%}
+  body.hzn-focus[data-hzn-experience=adventure] #stages,body.hzn-focus[data-hzn-experience=discovery] #stages{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body.hzn-focus[data-hzn-experience=focus] .hzn-home-welcome{display:block}
+  body.hzn-focus[data-hzn-experience=focus] .hzn-resume{margin-top:12px}
+ }
+ @media(max-width:390px){
+  body.hzn-focus .hzn-experience-choices{gap:6px}
+  body.hzn-focus .hzn-experience-choice{min-height:122px;padding:9px}
+  body.hzn-focus[data-hzn-experience=focus] #course-nav.course-nav button{grid-template-columns:28px minmax(0,1fr);gap:6px}
+  body.hzn-focus[data-hzn-experience=focus] #course-nav.course-nav small{grid-column:2}
+ }
  @media(prefers-reduced-motion:reduce){body.hzn-focus *,body.hzn-focus *::before,body.hzn-focus *::after{scroll-behavior:auto;transition:none;animation:none}}
 }
 @media print{#hzn-home,.hzn-top-controls,.hzn-back-lessons,.hzn-focus-dialog{display:none}}
