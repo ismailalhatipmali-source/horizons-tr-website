@@ -10,16 +10,7 @@
     "close": "Close",
     "backToLessons": "Back to lessons",
     "letterIndex": "Letter index",
-    "activityOptions": "Activity options",
-    "experienceTitle": "Choose how to learn",
-    "experiencesprouts": "Sprouts",
-    "experiencesproutsHint": "One large activity at a time",
-    "experienceadventure": "Adventure",
-    "experienceadventureHint": "Follow short learning stations",
-    "experiencediscovery": "Discovery",
-    "experiencediscoveryHint": "Explore cards and challenges",
-    "experiencefocus": "Focus",
-    "experiencefocusHint": "Read calmly and resume quickly"
+    "activityOptions": "Activity options"
   },
   "ar": {
     "homeTitle": "رحلتك مع اللغة العربية",
@@ -32,16 +23,7 @@
     "close": "إغلاق",
     "backToLessons": "العودة إلى الدروس",
     "letterIndex": "فهرس الحروف",
-    "activityOptions": "خيارات النشاط",
-    "experienceTitle": "اختر طريقة التعلّم",
-    "experiencesprouts": "براعم",
-    "experiencesproutsHint": "نشاط كبير واحد، خطوة بخطوة",
-    "experienceadventure": "مغامرة",
-    "experienceadventureHint": "تقدّم عبر محطات قصيرة",
-    "experiencediscovery": "اكتشاف",
-    "experiencediscoveryHint": "بطاقات وتحديات منظّمة",
-    "experiencefocus": "تركيز",
-    "experiencefocusHint": "قراءة هادئة واستئناف سريع"
+    "activityOptions": "خيارات النشاط"
   },
   "tr": {
     "homeTitle": "Arapça öğrenme yolculuğunuz",
@@ -54,16 +36,7 @@
     "close": "Kapat",
     "backToLessons": "Derslere dön",
     "letterIndex": "Harf dizini",
-    "activityOptions": "Etkinlik seçenekleri",
-    "experienceTitle": "Öğrenme biçimini seç",
-    "experiencesprouts": "Filizler",
-    "experiencesproutsHint": "Her seferinde tek büyük etkinlik",
-    "experienceadventure": "Macera",
-    "experienceadventureHint": "Kısa öğrenme duraklarını izle",
-    "experiencediscovery": "Keşif",
-    "experiencediscoveryHint": "Kartları ve görevleri keşfet",
-    "experiencefocus": "Odak",
-    "experiencefocusHint": "Sakin oku, hızla devam et"
+    "activityOptions": "Etkinlik seçenekleri"
   },
   "fr": {
     "homeTitle": "Votre parcours d’apprentissage de l’arabe",
@@ -76,16 +49,7 @@
     "close": "Fermer",
     "backToLessons": "Retour aux leçons",
     "letterIndex": "Index des lettres",
-    "activityOptions": "Options de l’activité",
-    "experienceTitle": "Choisissez votre parcours",
-    "experiencesprouts": "Premiers pas",
-    "experiencesproutsHint": "Une grande activité à la fois",
-    "experienceadventure": "Aventure",
-    "experienceadventureHint": "Avancez par étapes courtes",
-    "experiencediscovery": "Découverte",
-    "experiencediscoveryHint": "Explorez cartes et défis",
-    "experiencefocus": "Concentration",
-    "experiencefocusHint": "Lisez sereinement et reprenez vite"
+    "activityOptions": "Options de l’activité"
   },
   "es": {
     "homeTitle": "Tu camino para aprender árabe",
@@ -98,16 +62,7 @@
     "close": "Cerrar",
     "backToLessons": "Volver a las lecciones",
     "letterIndex": "Índice de letras",
-    "activityOptions": "Opciones de la actividad",
-    "experienceTitle": "Elige cómo aprender",
-    "experiencesprouts": "Brotes",
-    "experiencesproutsHint": "Una actividad grande a la vez",
-    "experienceadventure": "Aventura",
-    "experienceadventureHint": "Avanza por estaciones breves",
-    "experiencediscovery": "Descubrimiento",
-    "experiencediscoveryHint": "Explora tarjetas y retos",
-    "experiencefocus": "Enfoque",
-    "experiencefocusHint": "Lee con calma y retoma enseguida"
+    "activityOptions": "Opciones de la actividad"
   },
   "de": {
     "homeTitle": "Dein Weg zum Arabischlernen",
@@ -120,16 +75,7 @@
     "close": "Schließen",
     "backToLessons": "Zurück zu den Lektionen",
     "letterIndex": "Buchstabenverzeichnis",
-    "activityOptions": "Übungsoptionen",
-    "experienceTitle": "Wähle deinen Lernweg",
-    "experiencesprouts": "Erste Schritte",
-    "experiencesproutsHint": "Eine große Übung nach der anderen",
-    "experienceadventure": "Abenteuer",
-    "experienceadventureHint": "Folge kurzen Lernstationen",
-    "experiencediscovery": "Entdecken",
-    "experiencediscoveryHint": "Erkunde Karten und Aufgaben",
-    "experiencefocus": "Fokus",
-    "experiencefocusHint": "Lies in Ruhe und mach direkt weiter"
+    "activityOptions": "Übungsoptionen"
   },
   "it": {
     "homeTitle": "Il tuo percorso per imparare l’arabo",
@@ -142,16 +88,7 @@
     "close": "Chiudi",
     "backToLessons": "Torna alle lezioni",
     "letterIndex": "Indice delle lettere",
-    "activityOptions": "Opzioni dell’attività",
-    "experienceTitle": "Scegli come imparare",
-    "experiencesprouts": "Germogli",
-    "experiencesproutsHint": "Una grande attività alla volta",
-    "experienceadventure": "Avventura",
-    "experienceadventureHint": "Segui brevi tappe di studio",
-    "experiencediscovery": "Scoperta",
-    "experiencediscoveryHint": "Esplora schede e sfide",
-    "experiencefocus": "Concentrazione",
-    "experiencefocusHint": "Leggi con calma e riprendi subito"
+    "activityOptions": "Opzioni dell’attività"
   },
   "pt": {
     "homeTitle": "Sua jornada de aprendizagem do árabe",
@@ -164,16 +101,7 @@
     "close": "Fechar",
     "backToLessons": "Voltar às lições",
     "letterIndex": "Índice de letras",
-    "activityOptions": "Opções da atividade",
-    "experienceTitle": "Escolha como aprender",
-    "experiencesprouts": "Brotos",
-    "experiencesproutsHint": "Uma atividade grande de cada vez",
-    "experienceadventure": "Aventura",
-    "experienceadventureHint": "Siga etapas curtas de aprendizagem",
-    "experiencediscovery": "Descoberta",
-    "experiencediscoveryHint": "Explore cartões e desafios",
-    "experiencefocus": "Foco",
-    "experiencefocusHint": "Leia com calma e retome rapidamente"
+    "activityOptions": "Opções da atividade"
   },
   "nl": {
     "homeTitle": "Jouw leerreis in het Arabisch",
@@ -186,16 +114,7 @@
     "close": "Sluiten",
     "backToLessons": "Terug naar de lessen",
     "letterIndex": "Letteroverzicht",
-    "activityOptions": "Activiteitsopties",
-    "experienceTitle": "Kies hoe je leert",
-    "experiencesprouts": "Eerste stappen",
-    "experiencesproutsHint": "Eén grote activiteit per keer",
-    "experienceadventure": "Avontuur",
-    "experienceadventureHint": "Volg korte leerhaltes",
-    "experiencediscovery": "Ontdekken",
-    "experiencediscoveryHint": "Verken kaarten en uitdagingen",
-    "experiencefocus": "Focus",
-    "experiencefocusHint": "Lees rustig en ga snel verder"
+    "activityOptions": "Activiteitsopties"
   },
   "ru": {
     "homeTitle": "Ваш путь к изучению арабского",
@@ -208,16 +127,7 @@
     "close": "Закрыть",
     "backToLessons": "Вернуться к урокам",
     "letterIndex": "Список букв",
-    "activityOptions": "Параметры задания",
-    "experienceTitle": "Выберите способ обучения",
-    "experiencesprouts": "Ростки",
-    "experiencesproutsHint": "Одно большое занятие за раз",
-    "experienceadventure": "Приключение",
-    "experienceadventureHint": "Двигайтесь по коротким этапам",
-    "experiencediscovery": "Открытие",
-    "experiencediscoveryHint": "Изучайте карточки и задания",
-    "experiencefocus": "Фокус",
-    "experiencefocusHint": "Читайте спокойно и быстро продолжайте"
+    "activityOptions": "Параметры задания"
   },
   "uk": {
     "homeTitle": "Ваш шлях до вивчення арабської",
@@ -230,16 +140,7 @@
     "close": "Закрити",
     "backToLessons": "Повернутися до уроків",
     "letterIndex": "Перелік літер",
-    "activityOptions": "Параметри завдання",
-    "experienceTitle": "Оберіть спосіб навчання",
-    "experiencesprouts": "Паростки",
-    "experiencesproutsHint": "Одне велике заняття за раз",
-    "experienceadventure": "Пригода",
-    "experienceadventureHint": "Рухайтеся короткими етапами",
-    "experiencediscovery": "Відкриття",
-    "experiencediscoveryHint": "Досліджуйте картки та завдання",
-    "experiencefocus": "Зосередження",
-    "experiencefocusHint": "Читайте спокійно й швидко продовжуйте"
+    "activityOptions": "Параметри завдання"
   },
   "pl": {
     "homeTitle": "Twoja podróż z językiem arabskim",
@@ -252,16 +153,7 @@
     "close": "Zamknij",
     "backToLessons": "Wróć do lekcji",
     "letterIndex": "Spis liter",
-    "activityOptions": "Opcje ćwiczenia",
-    "experienceTitle": "Wybierz sposób nauki",
-    "experiencesprouts": "Pierwsze kroki",
-    "experiencesproutsHint": "Jedno duże ćwiczenie naraz",
-    "experienceadventure": "Przygoda",
-    "experienceadventureHint": "Przechodź krótkie etapy nauki",
-    "experiencediscovery": "Odkrywanie",
-    "experiencediscoveryHint": "Poznawaj karty i wyzwania",
-    "experiencefocus": "Skupienie",
-    "experiencefocusHint": "Czytaj spokojnie i szybko wracaj"
+    "activityOptions": "Opcje ćwiczenia"
   },
   "cs": {
     "homeTitle": "Vaše cesta za arabštinou",
@@ -274,16 +166,7 @@
     "close": "Zavřít",
     "backToLessons": "Zpět na lekce",
     "letterIndex": "Přehled písmen",
-    "activityOptions": "Možnosti cvičení",
-    "experienceTitle": "Vyberte způsob učení",
-    "experiencesprouts": "První kroky",
-    "experiencesproutsHint": "Vždy jedna velká aktivita",
-    "experienceadventure": "Dobrodružství",
-    "experienceadventureHint": "Postupujte po krátkých zastávkách",
-    "experiencediscovery": "Objevování",
-    "experiencediscoveryHint": "Prozkoumejte karty a výzvy",
-    "experiencefocus": "Soustředění",
-    "experiencefocusHint": "Čtěte v klidu a rychle navazujte"
+    "activityOptions": "Možnosti cvičení"
   },
   "ro": {
     "homeTitle": "Călătoria ta în învățarea limbii arabe",
@@ -296,16 +179,7 @@
     "close": "Închide",
     "backToLessons": "Înapoi la lecții",
     "letterIndex": "Lista literelor",
-    "activityOptions": "Opțiunile activității",
-    "experienceTitle": "Alege cum înveți",
-    "experiencesprouts": "Primii pași",
-    "experiencesproutsHint": "O singură activitate mare pe rând",
-    "experienceadventure": "Aventură",
-    "experienceadventureHint": "Urmează etape scurte de învățare",
-    "experiencediscovery": "Descoperire",
-    "experiencediscoveryHint": "Explorează fișe și provocări",
-    "experiencefocus": "Concentrare",
-    "experiencefocusHint": "Citește liniștit și reia rapid"
+    "activityOptions": "Opțiunile activității"
   },
   "hu": {
     "homeTitle": "Az arab nyelvtanulás útján",
@@ -318,16 +192,7 @@
     "close": "Bezárás",
     "backToLessons": "Vissza a leckékhez",
     "letterIndex": "Betűk jegyzéke",
-    "activityOptions": "Feladatbeállítások",
-    "experienceTitle": "Válassz tanulási módot",
-    "experiencesprouts": "Első lépések",
-    "experiencesproutsHint": "Egyszerre egy nagy feladat",
-    "experienceadventure": "Kaland",
-    "experienceadventureHint": "Haladj rövid állomásokon át",
-    "experiencediscovery": "Felfedezés",
-    "experiencediscoveryHint": "Fedezz fel kártyákat és kihívásokat",
-    "experiencefocus": "Fókusz",
-    "experiencefocusHint": "Olvass nyugodtan, folytasd gyorsan"
+    "activityOptions": "Feladatbeállítások"
   },
   "el": {
     "homeTitle": "Το ταξίδι σας στην εκμάθηση των αραβικών",
@@ -340,16 +205,7 @@
     "close": "Κλείσιμο",
     "backToLessons": "Επιστροφή στα μαθήματα",
     "letterIndex": "Ευρετήριο γραμμάτων",
-    "activityOptions": "Επιλογές δραστηριότητας",
-    "experienceTitle": "Διάλεξε τρόπο μάθησης",
-    "experiencesprouts": "Πρώτα βήματα",
-    "experiencesproutsHint": "Μία μεγάλη δραστηριότητα κάθε φορά",
-    "experienceadventure": "Περιπέτεια",
-    "experienceadventureHint": "Προχώρα σε μικρούς σταθμούς",
-    "experiencediscovery": "Ανακάλυψη",
-    "experiencediscoveryHint": "Εξερεύνησε κάρτες και προκλήσεις",
-    "experiencefocus": "Εστίαση",
-    "experiencefocusHint": "Διάβασε ήρεμα και συνέχισε γρήγορα"
+    "activityOptions": "Επιλογές δραστηριότητας"
   },
   "sv": {
     "homeTitle": "Din resa mot att lära dig arabiska",
@@ -362,16 +218,7 @@
     "close": "Stäng",
     "backToLessons": "Tillbaka till lektionerna",
     "letterIndex": "Bokstavsöversikt",
-    "activityOptions": "Aktivitetsalternativ",
-    "experienceTitle": "Välj hur du vill lära dig",
-    "experiencesprouts": "Första stegen",
-    "experiencesproutsHint": "En stor aktivitet i taget",
-    "experienceadventure": "Äventyr",
-    "experienceadventureHint": "Följ korta lässtationer",
-    "experiencediscovery": "Upptäck",
-    "experiencediscoveryHint": "Utforska kort och utmaningar",
-    "experiencefocus": "Fokus",
-    "experiencefocusHint": "Läs i lugn och ro och fortsätt snabbt"
+    "activityOptions": "Aktivitetsalternativ"
   },
   "da": {
     "homeTitle": "Din rejse mod at lære arabisk",
@@ -384,16 +231,7 @@
     "close": "Luk",
     "backToLessons": "Tilbage til lektionerne",
     "letterIndex": "Bogstavoversigt",
-    "activityOptions": "Aktivitetsindstillinger",
-    "experienceTitle": "Vælg din måde at lære på",
-    "experiencesprouts": "Første skridt",
-    "experiencesproutsHint": "Én stor aktivitet ad gangen",
-    "experienceadventure": "Eventyr",
-    "experienceadventureHint": "Følg korte læringsstationer",
-    "experiencediscovery": "Opdagelse",
-    "experiencediscoveryHint": "Udforsk kort og udfordringer",
-    "experiencefocus": "Fokus",
-    "experiencefocusHint": "Læs roligt og fortsæt hurtigt"
+    "activityOptions": "Aktivitetsindstillinger"
   },
   "no": {
     "homeTitle": "Din reise mot å lære arabisk",
@@ -406,16 +244,7 @@
     "close": "Lukk",
     "backToLessons": "Tilbake til leksjonene",
     "letterIndex": "Bokstavoversikt",
-    "activityOptions": "Aktivitetsvalg",
-    "experienceTitle": "Velg hvordan du vil lære",
-    "experiencesprouts": "Første steg",
-    "experiencesproutsHint": "Én stor aktivitet om gangen",
-    "experienceadventure": "Eventyr",
-    "experienceadventureHint": "Følg korte læringsstasjoner",
-    "experiencediscovery": "Oppdagelse",
-    "experiencediscoveryHint": "Utforsk kort og utfordringer",
-    "experiencefocus": "Fokus",
-    "experiencefocusHint": "Les rolig og fortsett raskt"
+    "activityOptions": "Aktivitetsvalg"
   },
   "fi": {
     "homeTitle": "Matkasi arabian kielen oppimiseen",
@@ -428,16 +257,7 @@
     "close": "Sulje",
     "backToLessons": "Takaisin oppitunteihin",
     "letterIndex": "Kirjainluettelo",
-    "activityOptions": "Tehtävän asetukset",
-    "experienceTitle": "Valitse oppimistapa",
-    "experiencesprouts": "Ensiaskeleet",
-    "experiencesproutsHint": "Yksi suuri tehtävä kerrallaan",
-    "experienceadventure": "Seikkailu",
-    "experienceadventureHint": "Etene lyhyiden etappien kautta",
-    "experiencediscovery": "Löytäminen",
-    "experiencediscoveryHint": "Tutki kortteja ja haasteita",
-    "experiencefocus": "Keskittyminen",
-    "experiencefocusHint": "Lue rauhassa ja jatka nopeasti"
+    "activityOptions": "Tehtävän asetukset"
   },
   "bg": {
     "homeTitle": "Вашият път към изучаването на арабски",
@@ -450,16 +270,7 @@
     "close": "Затвори",
     "backToLessons": "Обратно към уроците",
     "letterIndex": "Списък с буквите",
-    "activityOptions": "Опции на упражнението",
-    "experienceTitle": "Изберете начин на учене",
-    "experiencesprouts": "Първи стъпки",
-    "experiencesproutsHint": "Едно голямо занимание наведнъж",
-    "experienceadventure": "Приключение",
-    "experienceadventureHint": "Напредвайте през кратки етапи",
-    "experiencediscovery": "Откриване",
-    "experiencediscoveryHint": "Разглеждайте карти и задачи",
-    "experiencefocus": "Фокус",
-    "experiencefocusHint": "Четете спокойно и продължавайте бързо"
+    "activityOptions": "Опции на упражнението"
   },
   "sr": {
     "homeTitle": "Vaše putovanje kroz učenje arapskog",
@@ -472,16 +283,7 @@
     "close": "Zatvori",
     "backToLessons": "Nazad na lekcije",
     "letterIndex": "Spisak slova",
-    "activityOptions": "Opcije aktivnosti",
-    "experienceTitle": "Изаберите начин учења",
-    "experiencesprouts": "Први кораци",
-    "experiencesproutsHint": "Једна велика активност одједном",
-    "experienceadventure": "Авантура",
-    "experienceadventureHint": "Напредујте кроз кратке станице",
-    "experiencediscovery": "Откривање",
-    "experiencediscoveryHint": "Истражите картице и изазове",
-    "experiencefocus": "Фокус",
-    "experiencefocusHint": "Читајте мирно и брзо наставите"
+    "activityOptions": "Opcije aktivnosti"
   },
   "hr": {
     "homeTitle": "Vaše putovanje kroz učenje arapskog",
@@ -494,16 +296,7 @@
     "close": "Zatvori",
     "backToLessons": "Natrag na lekcije",
     "letterIndex": "Popis slova",
-    "activityOptions": "Opcije aktivnosti",
-    "experienceTitle": "Odaberi način učenja",
-    "experiencesprouts": "Prvi koraci",
-    "experiencesproutsHint": "Jedna velika aktivnost odjednom",
-    "experienceadventure": "Pustolovina",
-    "experienceadventureHint": "Napreduj kroz kratke postaje",
-    "experiencediscovery": "Otkrivanje",
-    "experiencediscoveryHint": "Istraži kartice i izazove",
-    "experiencefocus": "Fokus",
-    "experiencefocusHint": "Čitaj mirno i brzo nastavi"
+    "activityOptions": "Opcije aktivnosti"
   },
   "he": {
     "homeTitle": "המסע שלכם ללימוד ערבית",
@@ -516,16 +309,7 @@
     "close": "סגירה",
     "backToLessons": "חזרה לשיעורים",
     "letterIndex": "רשימת האותיות",
-    "activityOptions": "אפשרויות הפעילות",
-    "experienceTitle": "בחרו דרך ללמוד",
-    "experiencesprouts": "ניצנים",
-    "experiencesproutsHint": "פעילות גדולה אחת בכל פעם",
-    "experienceadventure": "הרפתקה",
-    "experienceadventureHint": "התקדמו בין תחנות קצרות",
-    "experiencediscovery": "גילוי",
-    "experiencediscoveryHint": "גלו כרטיסיות ואתגרים",
-    "experiencefocus": "מיקוד",
-    "experiencefocusHint": "קראו בנחת והמשיכו במהירות"
+    "activityOptions": "אפשרויות הפעילות"
   },
   "fa": {
     "homeTitle": "مسیر شما در یادگیری زبان عربی",
@@ -538,16 +322,7 @@
     "close": "بستن",
     "backToLessons": "بازگشت به درس‌ها",
     "letterIndex": "فهرست حروف",
-    "activityOptions": "گزینه‌های فعالیت",
-    "experienceTitle": "روش یادگیری را انتخاب کنید",
-    "experiencesprouts": "جوانه‌ها",
-    "experiencesproutsHint": "هر بار یک فعالیت بزرگ",
-    "experienceadventure": "ماجراجویی",
-    "experienceadventureHint": "از ایستگاه‌های کوتاه بگذرید",
-    "experiencediscovery": "کشف",
-    "experiencediscoveryHint": "کارت‌ها و چالش‌ها را کاوش کنید",
-    "experiencefocus": "تمرکز",
-    "experiencefocusHint": "آرام بخوانید و سریع ادامه دهید"
+    "activityOptions": "گزینه‌های فعالیت"
   },
   "ur": {
     "homeTitle": "عربی سیکھنے کا آپ کا سفر",
@@ -560,16 +335,7 @@
     "close": "بند کریں",
     "backToLessons": "اسباق پر واپس جائیں",
     "letterIndex": "حروف کی فہرست",
-    "activityOptions": "سرگرمی کے اختیارات",
-    "experienceTitle": "سیکھنے کا طریقہ چنیں",
-    "experiencesprouts": "کلیاں",
-    "experiencesproutsHint": "ایک وقت میں ایک بڑی سرگرمی",
-    "experienceadventure": "مہم جوئی",
-    "experienceadventureHint": "مختصر مرحلوں سے آگے بڑھیں",
-    "experiencediscovery": "دریافت",
-    "experiencediscoveryHint": "کارڈ اور چیلنج دریافت کریں",
-    "experiencefocus": "توجہ",
-    "experiencefocusHint": "سکون سے پڑھیں اور جلد دوبارہ شروع کریں"
+    "activityOptions": "سرگرمی کے اختیارات"
   },
   "hi": {
     "homeTitle": "अरबी सीखने की आपकी यात्रा",
@@ -582,16 +348,7 @@
     "close": "बंद करें",
     "backToLessons": "पाठों पर वापस जाएँ",
     "letterIndex": "अक्षर सूची",
-    "activityOptions": "गतिविधि के विकल्प",
-    "experienceTitle": "सीखने का तरीका चुनें",
-    "experiencesprouts": "अंकुर",
-    "experiencesproutsHint": "एक बार में एक बड़ी गतिविधि",
-    "experienceadventure": "रोमांच",
-    "experienceadventureHint": "छोटे पड़ावों से आगे बढ़ें",
-    "experiencediscovery": "खोज",
-    "experiencediscoveryHint": "कार्ड और चुनौतियाँ खोजें",
-    "experiencefocus": "एकाग्रता",
-    "experiencefocusHint": "शांति से पढ़ें और जल्दी आगे बढ़ें"
+    "activityOptions": "गतिविधि के विकल्प"
   },
   "bn": {
     "homeTitle": "আপনার আরবি শেখার যাত্রা",
@@ -604,16 +361,7 @@
     "close": "বন্ধ করুন",
     "backToLessons": "পাঠে ফিরে যান",
     "letterIndex": "বর্ণের তালিকা",
-    "activityOptions": "কার্যক্রমের বিকল্প",
-    "experienceTitle": "শেখার ধরন বেছে নিন",
-    "experiencesprouts": "কুঁড়ি",
-    "experiencesproutsHint": "একবারে একটি বড় কার্যক্রম",
-    "experienceadventure": "অভিযান",
-    "experienceadventureHint": "ছোট ছোট ধাপে এগোন",
-    "experiencediscovery": "আবিষ্কার",
-    "experiencediscoveryHint": "কার্ড ও চ্যালেঞ্জ দেখুন",
-    "experiencefocus": "মনোযোগ",
-    "experiencefocusHint": "শান্তভাবে পড়ুন ও দ্রুত চালিয়ে যান"
+    "activityOptions": "কার্যক্রমের বিকল্প"
   },
   "id": {
     "homeTitle": "Perjalanan Anda belajar bahasa Arab",
@@ -626,16 +374,7 @@
     "close": "Tutup",
     "backToLessons": "Kembali ke pelajaran",
     "letterIndex": "Daftar huruf",
-    "activityOptions": "Pilihan aktivitas",
-    "experienceTitle": "Pilih cara belajar",
-    "experiencesprouts": "Tunas",
-    "experiencesproutsHint": "Satu kegiatan besar setiap kali",
-    "experienceadventure": "Petualangan",
-    "experienceadventureHint": "Ikuti tahap belajar yang singkat",
-    "experiencediscovery": "Penemuan",
-    "experiencediscoveryHint": "Jelajahi kartu dan tantangan",
-    "experiencefocus": "Fokus",
-    "experiencefocusHint": "Baca dengan tenang dan lanjutkan cepat"
+    "activityOptions": "Pilihan aktivitas"
   },
   "ms": {
     "homeTitle": "Perjalanan anda mempelajari bahasa Arab",
@@ -648,16 +387,7 @@
     "close": "Tutup",
     "backToLessons": "Kembali ke pelajaran",
     "letterIndex": "Senarai huruf",
-    "activityOptions": "Pilihan aktiviti",
-    "experienceTitle": "Pilih cara belajar",
-    "experiencesprouts": "Tunas",
-    "experiencesproutsHint": "Satu aktiviti besar pada satu masa",
-    "experienceadventure": "Pengembaraan",
-    "experienceadventureHint": "Ikuti perhentian pembelajaran ringkas",
-    "experiencediscovery": "Penemuan",
-    "experiencediscoveryHint": "Terokai kad dan cabaran",
-    "experiencefocus": "Fokus",
-    "experiencefocusHint": "Baca dengan tenang dan sambung segera"
+    "activityOptions": "Pilihan aktiviti"
   },
   "zh": {
     "homeTitle": "你的阿拉伯语学习之旅",
@@ -670,16 +400,7 @@
     "close": "关闭",
     "backToLessons": "返回课程",
     "letterIndex": "字母目录",
-    "activityOptions": "学习活动选项",
-    "experienceTitle": "选择学习方式",
-    "experiencesprouts": "萌芽",
-    "experiencesproutsHint": "一次完成一项大活动",
-    "experienceadventure": "冒险",
-    "experienceadventureHint": "沿着简短的学习关卡前进",
-    "experiencediscovery": "探索",
-    "experiencediscoveryHint": "探索卡片与挑战",
-    "experiencefocus": "专注",
-    "experiencefocusHint": "安静阅读，快速继续"
+    "activityOptions": "学习活动选项"
   },
   "ja": {
     "homeTitle": "あなたのアラビア語学習の旅",
@@ -692,15 +413,6 @@
     "close": "閉じる",
     "backToLessons": "レッスンに戻る",
     "letterIndex": "文字の一覧",
-    "activityOptions": "学習活動のオプション",
-    "experienceTitle": "学び方を選ぶ",
-    "experiencesprouts": "めばえ",
-    "experiencesproutsHint": "大きな活動を一つずつ",
-    "experienceadventure": "冒険",
-    "experienceadventureHint": "短い学習ステップを進む",
-    "experiencediscovery": "発見",
-    "experiencediscoveryHint": "カードと課題を探る",
-    "experiencefocus": "集中",
-    "experiencefocusHint": "落ち着いて読み、すぐに再開"
+    "activityOptions": "学習活動のオプション"
   }
 }
