@@ -17,4 +17,6 @@ IFS= read -r head < .git/HEAD
 [[ -x "$php" ]] || fail PHP82
 [[ -f scripts/deploy-native-ui.php && ! -L scripts/deploy-native-ui.php ]] || fail CHECK_ENTRY
 printf 'HORIZONS NATIVE UI - guarded six-file publication.\n'
+"$php" -d display_errors=0 -d log_errors=0 "$repo/scripts/deploy-native-ui.php" "$web" --check
+"$php" -d display_errors=0 -d log_errors=0 "$repo/scripts/deploy-theory-reference.php" "$web" --publish
 exec "$php" -d display_errors=0 -d log_errors=0 "$repo/scripts/deploy-native-ui.php" "$web" --publish

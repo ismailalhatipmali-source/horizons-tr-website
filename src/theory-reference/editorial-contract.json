@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "title": "HORIZONS — المرجع النظري المرافق",
+  "owner": {"name_ar": "إسماعيل الخطيب", "name_latin": "İsmail Alhatip", "contact_email": "ismail.alhatip@horizons-tr.com", "email_status":"owner_will_create_mailbox; delivery_unverified"},
+  "publication_status": "authoring_private_review",
+  "target_languages": ["en","ar","tr","fr","es","de","it","pt","nl","ru","uk","pl","cs","ro","hu","el","sv","da","no","fi","bg","sr","hr","he","fa","ur","hi","bn","id","ms","zh","ja"],
+  "scope": "Modern Standard Arabic for beginning readers; dialect variation explicitly labelled, not treated as error",
+  "section_map": [
+    {"id":"alphabet","number":"01","title_ar":"الحروف العربية","includes":["script-foundations","28-letter-profiles","alif-and-hamza","joining","dots","shape-and-sound"]},
+    {"id":"phonics","number":"02","title_ar":"التأسيس الصوتي","includes":["short-vowels","long-vowels","sukun","shaddah","auditory-discrimination"]},
+    {"id":"blending2","number":"03","title_ar":"الدمج الثنائي","includes":["open-syllables","closed-syllables","sound-not-letter-name"]},
+    {"id":"blending3","number":"04","title_ar":"الدمج الثلاثي","includes":["three-unit-blends","syllable-boundaries","length-and-order"]},
+    {"id":"blending4","number":"05","title_ar":"الدمج الرباعي","includes":["longer-blends","reading-for-meaning","retrieval-and-transfer"]},
+    {"id":"catalog","number":"06","title_ar":"دروس الحروف","includes":["letter-specific-expanded-vocabulary","word-families","sentences","teacher-notes"]}
+  ],
+  "letter_chapter_contract": ["learning-goals","letter-name-versus-sound","articulation-and-IPA","native-language-bridge-with-limitations","isolated-and-connected-forms","why-forms-change","marked-word-examples","contrast-and-common-errors","guided-practice","self-check-with-explanation","teacher-notes","sources-and-attribution"],
+  "principles": [
+    "Original authored prose and examples; no copying textbook pages, tables, images or recordings without documented reuse rights.",
+    "Citations identify the specific claim they support. Naming a source is not itself permission to reproduce it.",
+    "Separate sources actually consulted from proposed bibliography; no invented page numbers or quotations.",
+    "Arabic targets remain Arabic in every translation. IPA is a stable phonetic aid; spelling-based approximations are labelled, never presented as exact equivalence.",
+    "A native-language bridge is optional; when no safe match is established, teach articulation rather than inventing a matching word.",
+    "All translations must retain examples, learning objectives and answer rationale and receive a per-locale review status.",
+    "Translation draft is not reviewed publication. No English fallback masquerading as a complete translated chapter.",
+    "No fixed page-count goal. Screen pagination and print pagination may differ.",
+    "Every print page carries author identity and approved contact email. Publication blocked until email is supplied.",
+    "Theory reading/quiz data is separate from authoritative workbook progress and entitlements.",
+    "Printed exercises include their answers in a separate answer section, not missing behind a collapsed interactive control."
+  ]
+}
