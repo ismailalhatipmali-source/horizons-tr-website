@@ -74,29 +74,6 @@
       const stages=q('#stages');
       if(stages)attr(doc.body,'data-hzn-has-stages',!stages.hidden);
     }
-    function correctListenLabels(container) {
-      // Only rendered controls: keep the curriculum, recordings and progress intact.
-      const fix = value => value.replace(/إ(?=[\u064B-\u065F]*س[\u064B-\u065F]*ت[\u064B-\u065F]*م[\u064B-\u065F]*ع)/gu, 'ا');
-      for (const control of container.querySelectorAll('button')) {
-        const walker = doc.createTreeWalker(control, win.NodeFilter.SHOW_TEXT);
-        for (let node = walker.nextNode(); node; node = walker.nextNode()) {
-          const corrected = fix(node.nodeValue);
-          if (corrected !== node.nodeValue) node.nodeValue = corrected;
-        }
-        for (const key of ['aria-label','title']) {
-          const value = control.getAttribute(key);
-          if (value !== null && fix(value) !== value) control.setAttribute(key, fix(value));
-        }
-      }
-    }
-    function syncLayout() {
-      const topbar = q('body>.topbar');
-      if (topbar) {
-        const height = Math.ceil(topbar.getBoundingClientRect().height) + 'px';
-        if (doc.body.style.getPropertyValue('--hx-topbar-height') !== height) doc.body.style.setProperty('--hx-topbar-height', height);
-      }
-      correctListenLabels(doc);
-    }
     function syncShadows() {
       const activity=q('#activity');if(!activity)return;
       const found=new Set();
@@ -115,7 +92,6 @@
             if(entry.style.textContent!==assets.shadow)entry.style.textContent=assets.shadow;
             if(entry.style.parentNode!==root)root.append(entry.style);
             attr(host,'data-hzn-experience',record.experience);attr(host,'data-hzn-tone',record.tone);
-            correctListenLabels(root);
           }
           visit(root);
         }
@@ -132,7 +108,7 @@
       attr(trigger,'aria-label',t('brightness')+': '+t(record.tone));
       attr(trigger,'aria-pressed',record.tone==='dark');
       if(!win.hznCompactHome)text(trigger,(record.tone==='dark'?'âک¾ ':'âک€ ')+t(record.tone));
-      installFuture();syncStageMenu();syncLayout();syncShadows();
+      installFuture();syncStageMenu();syncShadows();
     }
     function mount() {
       const shell=win.hznFocusShell;
@@ -161,17 +137,16 @@
     }
     function destroy() {
       if(destroyed)return;destroyed=true;documentObserver?.disconnect();win.clearInterval(pollTimer);
-      doc.removeEventListener('change',onChange);win.removeEventListener('storage',onStorage);win.removeEventListener('resize',schedule);
+      doc.removeEventListener('change',onChange);win.removeEventListener('storage',onStorage);
       for(const [root,entry] of shadows){entry.observer.disconnect();entry.style.remove();root.host.removeAttribute('data-hzn-experience');root.host.removeAttribute('data-hzn-tone');}
       shadows.clear();for(const n of created)n.remove();
-      doc.body.style.removeProperty('--hx-topbar-height');
       doc.querySelectorAll('[data-hzn-step]').forEach(n=>n.removeAttribute('data-hzn-step'));
       for(const key of ['data-hzn-experience','data-hzn-tone','data-hzn-experiences-ready','data-hzn-has-stages'])doc.body.removeAttribute(key);
       if(win.hznExperiences===api)delete win.hznExperiences;
     }
     const api=Object.freeze({version:VERSION,setTone,refresh:schedule,destroy,
       snapshot:()=>Object.freeze({mounted,experience:record.experience,tone:record.tone,persistent,shadowReaders:shadows.size})});
-    doc.addEventListener('change',onChange);win.addEventListener('storage',onStorage);win.addEventListener('resize',schedule);
+    doc.addEventListener('change',onChange);win.addEventListener('storage',onStorage);
     documentObserver=new win.MutationObserver(schedule);
     documentObserver.observe(doc.documentElement,{childList:true,subtree:true,attributes:true,
       attributeFilter:['lang','dir','data-focus-view','data-course','hidden','aria-pressed']});

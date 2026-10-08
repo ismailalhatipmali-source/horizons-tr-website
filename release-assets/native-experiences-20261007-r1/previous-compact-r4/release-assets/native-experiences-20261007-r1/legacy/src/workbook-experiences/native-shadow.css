@@ -12,17 +12,21 @@
 :host([data-hzn-experience]) .target-visual{background:#f5f0e4;border-radius:16px;margin:9px 0;padding:5px}
 :host([data-hzn-experience]) .segment-button{background:#f5f0e4!important;border-color:var(--hx-line);color:#163047}
 :host([data-hzn-experience]) .target-glyph,:host([data-hzn-experience]) .segment-glyph{overflow:visible}
+:host([data-hzn-experience=adventure]) .modes{display:flex;flex-wrap:wrap;gap:9px;padding:12px;border-style:dashed;border-radius:22px}
+:host([data-hzn-experience=adventure]) .modes button{flex:1 1 120px;border-radius:24px;min-height:49px}
+:host([data-hzn-experience=adventure]) .reader{border-radius:24px;border-bottom-width:5px}
+:host([data-hzn-experience=discovery]) .modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:10px}
+:host([data-hzn-experience=discovery]) .modes button{border-radius:13px;min-height:54px}
+:host([data-hzn-experience=sprout]) .reader{max-width:780px;margin-inline:auto;border-radius:27px}
+:host([data-hzn-experience=sprout]) .modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:10px;gap:9px}
+:host([data-hzn-experience=sprout]) .modes button,:host([data-hzn-experience=sprout]) .word-tools button,:host([data-hzn-experience=sprout]) .pager button{min-height:52px;font-size:16px}
+:host([data-hzn-experience=sprout]) .semantic-layout{flex-direction:column;text-align:center}
+:host([data-hzn-experience=sprout]) .target-visual{min-height:150px}
+@media(min-width:960px){
+ :host([data-hzn-experience=focus]) .reader{display:grid;grid-template-columns:170px minmax(0,1fr);align-items:start}
+ :host([data-hzn-experience=focus]) .modes{grid-column:1;grid-row:1/3;display:flex;flex-direction:column;gap:8px;padding:10px;border:0;background:var(--hx-soft)}
+ :host([data-hzn-experience=focus]) .modes button{text-align:start;min-height:55px}
+ :host([data-hzn-experience=focus]) #reader-inner,:host([data-hzn-experience=focus]) .pager{grid-column:2}
+}
 @media(max-width:420px){:host([data-hzn-experience]) #reader-inner{padding:12px}:host([data-hzn-experience]) .modes{gap:6px;padding:7px}:host([data-hzn-experience]) .meaning-options{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){:host([data-hzn-experience]) *{animation:none!important;transition:none!important}}
-
-/* In verified readers, only the base ink follows the tone; educational marks
- * retain their authored vowel colours and every original glyph path. */
-:host([data-hzn-experience][data-hzn-tone=dark]){--ink:#f0f0f0}
-:host([data-hzn-experience]) :is(.target-visual,.segment-button){background:var(--hx-soft)!important;color:var(--hx-ink);border-radius:var(--hx-card-radius,16px)}
-:host([data-hzn-experience]) :is(.reader,.lessons,.semantic,.all-words,.word-chip,.segment-button){border-radius:var(--hx-card-radius,16px)}
-:host([data-hzn-experience]) :is(.controls,.modes){gap:6px;margin-bottom:24px}
-:host([data-hzn-experience]) .modes button{padding:5px 8px;min-height:44px;font-size:13px;background:transparent;color:var(--hx-ink)}
-:host([data-hzn-experience]) .modes button[aria-pressed=true]{background:var(--hx-accent);color:var(--hx-on)}
-:host([data-hzn-experience][data-hzn-tone=dark]) :is(.word-chip,.all-words,.review-count,.grammar-tags span){background:var(--hx-soft);color:var(--hx-ink);border-color:var(--hx-line)}
-:host([data-hzn-experience]) :is(.word-chip,.segment-button,.all-grid button):active:not(:disabled){opacity:.78;transform:scale(.98)}
-@media(prefers-reduced-motion:reduce){:host([data-hzn-experience]) :is(.word-chip,.segment-button,.all-grid button):active{transform:none}}

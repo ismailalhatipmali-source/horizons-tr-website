@@ -1,0 +1,8 @@
+/* The native reader owns visibility. Layout must not expose hidden panels.
+ * This guard changes no state, content, permissions or event handlers.
+ * Applied after the four-experience sheet by the private staging builder. */
+@media screen {
+body[data-hzn-experiences-ready] #hzn-home[hidden],
+body[data-hzn-experiences-ready] #stages[hidden],
+body[data-hzn-experiences-ready] #hzn-exp-stage-menu[hidden]{display:none!important}
+}
