@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "release": "workbook-experiences-20261007-r1",
+  "predecessor_manifest_sha256": "402b0be57e53ba27137ecd1404b3f356ca058b71eafea085aa4592c56a0a6756",
+  "sources": {
+    "src/workbook-experiences/experience-shell.js": "c63a1000158624646dc30eaecbf11462bb5190807a0f33409816e5a7e34c2253",
+    "src/workbook-experiences/experience-shell.css": "83b85a9537b3cbaecc2ec7defda335a899ac52b4d2321cf1c3b336f03294d933",
+    "src/workbook-experiences/experience-locales.json": "73eed4b5a515d3b646cd378d7fed2e1cb951baa94c00d80e646421f1ec2c9b04"
+  },
+  "compiled_hook": {
+    "source": "release-assets/workbook-experiences-20261007-r1/experience-hook.js",
+    "sha256": "d0f92e658e1b6ca8ff71eae7dc3c11e3069012a3dbbfbaa97800091a4cb2a1d0",
+    "bytes": 87809
+  },
+  "files": {
+    "try/workbook.js": {
+      "source": "release-assets/workbook-experiences-20261007-r1/files/try/workbook.js",
+      "before": "623d60b81455d790da1bd4015f8e828c2c597672fcfde9b63e9707982cd1f572",
+      "sha256": "f1e834e0d08b940a7bf63b3d8858e5f7ef2540464b3b432e71f93e32a468959d",
+      "bytes": 725471
+    },
+    "try/demo-asset-manifest.json": {
+      "source": "release-assets/workbook-experiences-20261007-r1/files/try/demo-asset-manifest.json",
+      "before": "53178af02565a53dd73110d314722605271773dfb6cd20acb0b2a6fbdfe4e2ef",
+      "sha256": "7de24c27b29f483b48e605bf6c0eca866cc7db1f06d7c3d56144eac994fe2c72",
+      "bytes": 119395
+    },
+    "try/sw.js": {
+      "source": "release-assets/workbook-experiences-20261007-r1/files/try/sw.js",
+      "before": "4cd2611ca44f3cc26730e957509fe151bb80cdfea8c192e623fe82dc9549e8d7",
+      "sha256": "728dfd3d1378733964a72fd4cd02e7f7230d44f4baecc149c594c9de5edb1be5",
+      "bytes": 11503
+    }
+  },
+  "languages": [
+    "en",
+    "ar",
+    "tr",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "uk",
+    "pl",
+    "cs",
+    "ro",
+    "hu",
+    "el",
+    "sv",
+    "da",
+    "no",
+    "fi",
+    "bg",
+    "sr",
+    "hr",
+    "he",
+    "fa",
+    "ur",
+    "hi",
+    "bn",
+    "id",
+    "ms",
+    "zh",
+    "ja"
+  ]
+}

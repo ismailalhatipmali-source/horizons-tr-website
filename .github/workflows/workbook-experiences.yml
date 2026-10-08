@@ -1,0 +1,24 @@
+name: Workbook experiences review
+on:
+  pull_request:
+    paths:
+      - 'src/workbook-experiences/**'
+      - 'scripts/build_workbook_experiences.py'
+      - 'tests/test_experience_shell.mjs'
+      - '.github/workflows/workbook-experiences.yml'
+  workflow_dispatch:
+jobs:
+  demo-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm install --no-save --no-audit --no-fund jsdom@26
+      - run: python scripts/build_workbook_experiences.py
+      - run: HZN_JSDOM_PATH="$PWD/node_modules/jsdom/lib/api.js" node tests/test_experience_shell.mjs
+      - run: git diff --exit-code -- release-assets/workbook-experiences-20261007-r1
