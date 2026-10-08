@@ -14,15 +14,3 @@
 :host([data-hzn-experience]) .target-glyph,:host([data-hzn-experience]) .segment-glyph{overflow:visible}
 @media(max-width:420px){:host([data-hzn-experience]) #reader-inner{padding:12px}:host([data-hzn-experience]) .modes{gap:6px;padding:7px}:host([data-hzn-experience]) .meaning-options{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){:host([data-hzn-experience]) *{animation:none!important;transition:none!important}}
-
-/* In verified readers, only the base ink follows the tone; educational marks
- * retain their authored vowel colours and every original glyph path. */
-:host([data-hzn-experience][data-hzn-tone=dark]){--ink:#f0f0f0}
-:host([data-hzn-experience]) :is(.target-visual,.segment-button){background:var(--hx-soft)!important;color:var(--hx-ink);border-radius:var(--hx-card-radius,16px)}
-:host([data-hzn-experience]) :is(.reader,.lessons,.semantic,.all-words,.word-chip,.segment-button){border-radius:var(--hx-card-radius,16px)}
-:host([data-hzn-experience]) :is(.controls,.modes){gap:6px;margin-bottom:24px}
-:host([data-hzn-experience]) .modes button{padding:5px 8px;min-height:44px;font-size:13px;background:transparent;color:var(--hx-ink)}
-:host([data-hzn-experience]) .modes button[aria-pressed=true]{background:var(--hx-accent);color:var(--hx-on)}
-:host([data-hzn-experience][data-hzn-tone=dark]) :is(.word-chip,.all-words,.review-count,.grammar-tags span){background:var(--hx-soft);color:var(--hx-ink);border-color:var(--hx-line)}
-:host([data-hzn-experience]) :is(.word-chip,.segment-button,.all-grid button):active:not(:disabled){opacity:.78;transform:scale(.98)}
-@media(prefers-reduced-motion:reduce){:host([data-hzn-experience]) :is(.word-chip,.segment-button,.all-grid button):active{transform:none}}

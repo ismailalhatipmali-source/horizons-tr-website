@@ -27,6 +27,7 @@ on:
       - 'tests/test_native_chain_bridge.php'
       - 'tests/test_native_pipeline.py'
       - 'tests/test_native_cold_check.php'
+      - 'tests/test_activity_ui.mjs'
       - '.github/workflows/native-ui-publication.yml'
 permissions:
   contents: read
@@ -53,6 +54,9 @@ jobs:
             tests/test_native_cold_check.php
             tests/test_native_trial_lineage.php
             tests/test_native_historical_pins.php
+            tests/package.json
+            tests/package-lock.json
+            tests/test_activity_ui.mjs
           sparse-checkout-cone-mode: false
       - name: Syntax, immutable-source build and filesystem fixtures
         run: |
@@ -73,3 +77,5 @@ jobs:
           php tests/test_native_cold_check.php
           php tests/test_native_trial_lineage.php
           php tests/test_native_historical_pins.php
+          npm ci --prefix tests --ignore-scripts --no-audit --no-fund
+          node tests/test_activity_ui.mjs
