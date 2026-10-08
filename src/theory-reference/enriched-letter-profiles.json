@@ -1,0 +1,1151 @@
+[
+  {
+    "letter": "ا",
+    "ipa": "aː",
+    "forms": "ا — ـا",
+    "notes": {
+      "ar": "الألف المدية تدل على حركة طويلة في مثل بَاب، ولا تحمل حركة قصيرة بنفسها. أَ وإِ وأُ تعرض همزة على حامل ألف؛ لا نخلط صوت الهمزة /ʔ/ بصوت المد /aː/. الألف تقبل اتصالًا من السابق ولا تتصل بما يليها يسارًا.",
+      "en": "Vowel alif writes long /aː/ in بَاب. Hamza in أَ, إِ and أُ is the consonant /ʔ/, written on a carrier; it is not the same sound as vowel alif. Alif can receive a preceding connection but does not join the next letter on its left.",
+      "tr": "Med elifi, بَاب içinde uzun /aː/ yazar. أَ, إِ ve أُ içindeki hemze /ʔ/ ünsüzüdür; taşıyıcı üzerine yazılması onu med sesi yapmaz. Elif önceki bağlantıyı alabilir ama solundaki sonraki harfe bağlanmaz."
+    },
+    "examples": [
+      {
+        "ar": "بَاب",
+        "meanings": {
+          "en": "door",
+          "tr": "kapı",
+          "ar": "مدخل يفتح ويغلق"
+        }
+      },
+      {
+        "ar": "كِتَاب",
+        "meanings": {
+          "en": "book",
+          "tr": "kitap",
+          "ar": "صفحات مجتمعة للقراءة"
+        }
+      },
+      {
+        "ar": "نَار",
+        "meanings": {
+          "en": "fire",
+          "tr": "ateş",
+          "ar": "اشتعال يعطي حرارة وضوءًا"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ب",
+    "ipa": "b",
+    "forms": "ب — بـ — ـبـ — ـب",
+    "notes": {
+      "ar": "نغلق الشفتين ثم نطلقهما مع صوت مجهور. للباء نقطة واحدة أسفل الجسم، وتقبل الاتصال في الجهتين عند السماح بذلك. قارنها بصريًا بالتاء والثاء، وصوتيًا بصوت /p/ عند الحاجة دون اعتبارهما الصوت نفسه.",
+      "en": "Close the lips, then release them with voicing for /b/. Baa has one dot below its body. It can join on both sides when the neighbouring letters allow it. Its shape relatives taa and thaa do not share its lip articulation. /p/ is a different sound, not an alternative spelling of baa.",
+      "tr": "/b/ için dudakları kapat, sonra ses titreşimiyle aç. Bânın gövdesinin altında bir noktası vardır. Komşu harfler izin verirse iki yönden bağlanır. Benzer biçimli tâ ve sâ aynı dudak sesini taşımaz. /p/, bânın başka yazımı değil farklı sestir."
+    },
+    "examples": [
+      {
+        "ar": "بَاب",
+        "meanings": {
+          "en": "door",
+          "tr": "kapı",
+          "ar": "مدخل يفتح ويغلق"
+        }
+      },
+      {
+        "ar": "جَبَل",
+        "meanings": {
+          "en": "mountain",
+          "tr": "dağ",
+          "ar": "ارتفاع كبير من الأرض"
+        }
+      },
+      {
+        "ar": "كِتَاب",
+        "meanings": {
+          "en": "book",
+          "tr": "kitap",
+          "ar": "صفحات مجتمعة للقراءة"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ت",
+    "ipa": "t",
+    "forms": "ت — تـ — ـتـ — ـت",
+    "notes": {
+      "ar": "يتكوّن الصوت بإغلاق أمامي عند منطقة الأسنان أو ما يليها ثم إطلاقه دون جهر في الصامت. للتاء نقطتان فوق الجسم. لا نخلط ت بالتاء المربوطة ة؛ للأخيرة حكم مرتبط بالوصل والوقف سيُشرح منفصلًا.",
+      "en": "Make a front tongue closure near the teeth or just behind them, then release for /t/ without consonant voicing in the target model. Taa has two dots above. It is not identical to final taa marbūṭa ة, whose reading depends on connection and pause.",
+      "tr": "/t/ için dilin ön kısmında, dişler yakınında veya hemen arkasında kapanma oluşturup hedef modelde ünsüzü ötümsüz bırak. Tânın üstünde iki nokta vardır. Bağlantı ve durağa göre okunan son tâ merbûta ة ile aynı değildir."
+    },
+    "examples": [
+      {
+        "ar": "تَمْر",
+        "meanings": {
+          "en": "dates (fruit)",
+          "tr": "hurma",
+          "ar": "ثمر شجر النخيل"
+        }
+      },
+      {
+        "ar": "بِنْت",
+        "meanings": {
+          "en": "girl / daughter",
+          "tr": "kız / kız evlat",
+          "ar": "طفلة أو ابنة بحسب السياق"
+        }
+      },
+      {
+        "ar": "بَيْت",
+        "meanings": {
+          "en": "house / home",
+          "tr": "ev",
+          "ar": "مكان للسكن"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ث",
+    "ipa": "θ",
+    "forms": "ث — ثـ — ـثـ — ـث",
+    "notes": {
+      "ar": "صوت احتكاكي مهموس عند الأسنان؛ الهواء يمر دون إغلاق كامل. للثاء ثلاث نقاط فوق الجسم، وتسمح بالاتصال في الجهتين. لا نستبدلها بتاء أو سين في هدف التدريب الفصيح، ولا نعمّم المثال الإنجليزي على كل كتابة th.",
+      "en": "Allow air through a gentle narrowing at the teeth for voiceless /θ/. Do not make the full closure used for /t/. Thaa has three dots above and can join on both sides. English think provides one useful comparison; the spelling th does not always represent this sound.",
+      "tr": "Ötümsüz /θ/ için dişler yakınındaki hafif daralmadan hava geçir; /t/ gibi tam kapanma yapma. Sânın üstünde üç nokta vardır ve iki taraftan bağlanabilir. İngilizce think bir karşılaştırma sağlar; her th yazımı bu sesi göstermez."
+    },
+    "examples": [
+      {
+        "ar": "ثَوْب",
+        "meanings": {
+          "en": "garment",
+          "tr": "giysi",
+          "ar": "لباس"
+        }
+      },
+      {
+        "ar": "كَثِير",
+        "meanings": {
+          "en": "many / much",
+          "tr": "çok",
+          "ar": "عدد كبير أو كمية كبيرة"
+        }
+      },
+      {
+        "ar": "حَدِيث",
+        "meanings": {
+          "en": "speech / conversation, in this vocabulary example",
+          "tr": "bu kelime örneğinde söz / konuşma",
+          "ar": "كلام أو محادثة في هذا المثال"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ج",
+    "ipa": "dʒ",
+    "forms": "ج — جـ — ـجـ — ـج",
+    "notes": {
+      "ar": "يعرض هذا الملف /dʒ/ نموذجًا تدريبيًا للجيم. توجد تنوعات معروفة في نطقها بين البيئات العربية؛ يجب مطابقة التسجيل المستعمل قبل تثبيت المقارنة. نقطة الجيم داخل الجزء السفلي، فتختلف بصريًا عن الحاء والخاء.",
+      "en": "This reference uses /dʒ/ as its training model for jeem. Other pronunciations occur across Arabic-speaking communities. Match a listening recording to the stated model. Jeem’s dot is in the lower part, distinguishing it visually from ح and خ; that dot does not explain the articulation.",
+      "tr": "Bu kaynak cîm için /dʒ/ eğitim modelini kullanır. Arapça konuşulan topluluklarda başka söylenişler vardır. Dinleme kaydı belirtilen modele uymalıdır. Alt bölgedeki nokta cîmi ح ve خ biçimlerinden ayırır; nokta sesin oluşumunu açıklamaz."
+    },
+    "examples": [
+      {
+        "ar": "جَمَل",
+        "meanings": {
+          "en": "camel",
+          "tr": "deve",
+          "ar": "حيوان ذو سنام"
+        }
+      },
+      {
+        "ar": "نَجْم",
+        "meanings": {
+          "en": "star",
+          "tr": "yıldız",
+          "ar": "جرم مضيء نراه في السماء"
+        }
+      },
+      {
+        "ar": "تَاج",
+        "meanings": {
+          "en": "crown",
+          "tr": "taç",
+          "ar": "زينة توضع على الرأس"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ح",
+    "ipa": "ħ",
+    "forms": "ح — حـ — ـحـ — ـح",
+    "notes": {
+      "ar": "الحاء صوت حلقي مهموس، وليست هاء عادية ولا خاء. نتجنب وصفها بمجرد «هاء قوية» لأن القوة لا تفسر موضع النطق. ليس في جسم الحاء نقطة؛ نقارن ح وج وخ بصريًا ثم ندرّب أصواتها منفصلة.",
+      "en": "Ḥaa is the voiceless pharyngeal consonant /ħ/, not ordinary /h/ and not khaa. Calling it a “strong h” does not locate the sound. Avoid painful throat squeezing. The body has no dot: identify ح, ج and خ visually, then compare their different sounds.",
+      "tr": "Hâ /ħ/ ötümsüz yutaksıl ünsüzdür; normal /h/ veya hı değildir. “Güçlü h” demek oluşum yerini açıklamaz. Boğazı acıtacak sıkmadan kaçın. Gövdesi noktasızdır; ح, ج ve خ biçimlerini tanı, sonra ayrı seslerini karşılaştır."
+    },
+    "examples": [
+      {
+        "ar": "حَبْل",
+        "meanings": {
+          "en": "rope",
+          "tr": "ip",
+          "ar": "أداة طويلة للربط"
+        }
+      },
+      {
+        "ar": "بَحْر",
+        "meanings": {
+          "en": "sea",
+          "tr": "deniz",
+          "ar": "ماء مالح واسع"
+        }
+      },
+      {
+        "ar": "مِلْح",
+        "meanings": {
+          "en": "salt",
+          "tr": "tuz",
+          "ar": "مادة نستعملها لتتبيل الطعام"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "خ",
+    "ipa": "x~χ",
+    "forms": "خ — خـ — ـخـ — ـخ",
+    "notes": {
+      "ar": "الخاء صوت احتكاكي مهموس في المنطقة الخلفية، وقد يختلف موضعه الدقيق بحسب السياق والمتحدث. لها نقطة فوق الجسم، فلا نخلطها بالحاء أو الجيم. التشبيه بصوت أجنبي يحتاج تحديد لغة المثال ولهجته، لا كتابة kh وحدها.",
+      "en": "Khaa is voiceless friction in a back region of the vocal tract, represented here by /x~χ/. The exact place can vary with speaker and context. Its dot is above the body. A foreign comparison needs a specified language and variety; writing kh alone does not teach the sound.",
+      "tr": "Hı, ses yolunun arka bölgesinde ötümsüz sürtünmedir; burada /x~χ/ ile gösterilir. Kesin oluşum yeri konuşmacı ve bağlama göre değişebilir. Noktası gövdenin üstündedir. Yabancı karşılaştırma için dil ve çeşitleme belirtilmeli; yalnızca kh yazmak sesi öğretmez."
+    },
+    "examples": [
+      {
+        "ar": "خُبْز",
+        "meanings": {
+          "en": "bread",
+          "tr": "ekmek",
+          "ar": "طعام مصنوع من العجين"
+        }
+      },
+      {
+        "ar": "نَخْل",
+        "meanings": {
+          "en": "date palms",
+          "tr": "hurma ağaçları",
+          "ar": "أشجار تثمر التمر"
+        }
+      },
+      {
+        "ar": "مَطْبَخ",
+        "meanings": {
+          "en": "kitchen",
+          "tr": "mutfak",
+          "ar": "مكان إعداد الطعام"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "د",
+    "ipa": "d",
+    "forms": "د — ـد",
+    "notes": {
+      "ar": "الدال صامت مجهور يُنتج بإغلاق أمامي ثم إطلاق. شكلها بلا نقطة، وتقبل اتصالًا من السابق ولا تصل الحرف التالي يسارًا. نميّزها من الذال بصريًا، ومن التاء صوتيًا عند الحاجة.",
+      "en": "Daal /d/ uses a voiced front closure and release. It has no dot and does not join the following letter on its left. Compare it with dotted dhaal visually and with taa for consonant voicing, without changing the vowel at the same time.",
+      "tr": "Dâl /d/ ön bölgede ötümlü kapanma ve bırakmayla oluşur. Noktasızdır; solundaki sonraki harfe bağlanmaz. Noktalı zâl ile biçimi, tâ ile ötümlülüğü karşılaştırırken ünlüyü aynı tut."
+    },
+    "examples": [
+      {
+        "ar": "دَرْس",
+        "meanings": {
+          "en": "lesson",
+          "tr": "ders",
+          "ar": "وحدة للتعلم"
+        }
+      },
+      {
+        "ar": "يَد",
+        "meanings": {
+          "en": "hand",
+          "tr": "el",
+          "ar": "جزء الجسم الذي نمسك به الأشياء"
+        }
+      },
+      {
+        "ar": "وَلَد",
+        "meanings": {
+          "en": "boy, in this vocabulary example",
+          "tr": "bu kelime örneğinde erkek çocuk",
+          "ar": "صبي في هذا المثال"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ذ",
+    "ipa": "ð",
+    "forms": "ذ — ـذ",
+    "notes": {
+      "ar": "الذال صوت احتكاكي مجهور عند الأسنان في الهدف الفصيح هنا. لا يوجد إغلاق كامل كالذي في الدال، وليس هو /θ/ المهموس. النقطة فوق الجسم تميزه من الدال، والذال لا يتصل بالحرف الذي يليه يسارًا.",
+      "en": "Dhaal /ð/ is voiced dental friction in this Standard Arabic target. It does not use daal’s full closure and differs from voiceless /θ/. Its dot is above, and it does not join the following letter on its left. English this is a possible bridge, not a rule for all th spellings.",
+      "tr": "Zâl /ð/ bu fasih hedefte ötümlü diş sürtünmesidir. Dâlin tam kapanmasını yapmaz ve ötümsüz /θ/ sesinden farklıdır. Üstünde nokta vardır; sonraki harfe bağlanmaz. İngilizce this yardımcı olabilir; bütün th yazımları için kural değildir."
+    },
+    "examples": [
+      {
+        "ar": "ذَهَب",
+        "meanings": {
+          "en": "gold",
+          "tr": "altın",
+          "ar": "معدن ثمين"
+        }
+      },
+      {
+        "ar": "أُذُن",
+        "meanings": {
+          "en": "ear",
+          "tr": "kulak",
+          "ar": "عضو السمع"
+        }
+      },
+      {
+        "ar": "لَذِيذ",
+        "meanings": {
+          "en": "delicious",
+          "tr": "lezzetli",
+          "ar": "طعام أو شراب مستحسن الطعم"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ر",
+    "ipa": "r",
+    "forms": "ر — ـر",
+    "notes": {
+      "ar": "الراء صوت يتضمن حركة قصيرة أو تكرارًا لطرف اللسان بحسب النطق والسياق؛ الرمز العام /r/ هنا لا يفرض عدد اهتزازات واحدًا. الراء بلا نقطة ولا تصل الحرف التالي يسارًا. لا نطلب من المتعلم ضغط اللسان أو الحنجرة بقوة.",
+      "en": "Raa involves a brief tongue-tip contact or repeated contacts according to context and pronunciation. General /r/ does not require one fixed number of taps. Raa has no dot and does not join onward to the left. Forceful tongue or throat pressure is not a learning goal.",
+      "tr": "Râ, bağlam ve söylenişe göre dil ucunun kısa veya tekrarlı temasını içerir. Genel /r/ tek bir sabit titreşim sayısı zorunlu kılmaz. Noktasızdır; sola doğru sonraki harfe bağlanmaz. Dil veya boğazı zorlamak öğrenme hedefi değildir."
+    },
+    "examples": [
+      {
+        "ar": "رَمْل",
+        "meanings": {
+          "en": "sand",
+          "tr": "kum",
+          "ar": "حبيبات ناعمة من الصخور"
+        }
+      },
+      {
+        "ar": "بَحْر",
+        "meanings": {
+          "en": "sea",
+          "tr": "deniz",
+          "ar": "ماء مالح واسع"
+        }
+      },
+      {
+        "ar": "قَمَر",
+        "meanings": {
+          "en": "moon",
+          "tr": "ay",
+          "ar": "جرم يدور حول الأرض"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ز",
+    "ipa": "z",
+    "forms": "ز — ـز",
+    "notes": {
+      "ar": "الزاي صوت احتكاكي مجهور أمامي. يشبه جسم الراء بصريًا مع نقطة فوقه، لكنه ليس راء مع حركة إضافية. لا يتصل بما يليه يسارًا؛ جرّب تمييزه من السين في الصوت دون الاعتماد على موضع النقطة وحده.",
+      "en": "Zaay /z/ is voiced front friction. Its body resembles raa with a dot above, but it is not raa with an extra vowel. It does not join the next letter on the left. Compare /z/ and /s/ by listening for voicing while keeping the following vowel the same.",
+      "tr": "Zây /z/ ön bölgede ötümlü sürtünmedir. Gövdesi üstünde nokta bulunan râya benzer; fakat ek ünlülü râ değildir. Sonraki harfe bağlanmaz. Ardındaki ünlüyü sabit tutarak /z/ ile /s/ seslerini ötümlülük açısından karşılaştır."
+    },
+    "examples": [
+      {
+        "ar": "زَيْت",
+        "meanings": {
+          "en": "oil",
+          "tr": "yağ",
+          "ar": "سائل دهني"
+        }
+      },
+      {
+        "ar": "مَوْز",
+        "meanings": {
+          "en": "bananas",
+          "tr": "muz",
+          "ar": "ثمر نبات الموز"
+        }
+      },
+      {
+        "ar": "خُبْز",
+        "meanings": {
+          "en": "bread",
+          "tr": "ekmek",
+          "ar": "طعام مصنوع من العجين"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "س",
+    "ipa": "s",
+    "forms": "س — سـ — ـسـ — ـس",
+    "notes": {
+      "ar": "السين صوت احتكاكي مهموس، ويختلف عن الثاء في موضع التضييق. جسمها بلا نقاط، وتظهر أسنان الشكل بدرجات مختلفة بحسب الخط. نثبت هوية الحرف في خط واضح قبل مقارنة الخطوط.",
+      "en": "Seen /s/ is voiceless friction, with a different narrowing location from thaa. It has no dots; the drawn teeth can look different across fonts. First establish its identity in a clear font, then compare handwriting styles without treating every stylistic variation as a new letter.",
+      "tr": "Sîn /s/ ötümsüz sürtünmedir; daralma yeri sâdan farklıdır. Noktasızdır; yazıdaki dişler farklı fontlarda değişebilir. Önce açık bir fontta kimliğini öğren, sonra her biçim farkını yeni harf saymadan yazı tarzlarını karşılaştır."
+    },
+    "examples": [
+      {
+        "ar": "سَمَك",
+        "meanings": {
+          "en": "fish",
+          "tr": "balık",
+          "ar": "حيوانات مائية في المعنى العام هنا"
+        }
+      },
+      {
+        "ar": "شَمْس",
+        "meanings": {
+          "en": "sun",
+          "tr": "güneş",
+          "ar": "النجم الذي يضيء نهار الأرض"
+        }
+      },
+      {
+        "ar": "دَرْس",
+        "meanings": {
+          "en": "lesson",
+          "tr": "ders",
+          "ar": "وحدة للتعلم"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ش",
+    "ipa": "ʃ",
+    "forms": "ش — شـ — ـشـ — ـش",
+    "notes": {
+      "ar": "الشين صوت احتكاكي مهموس يختلف عن السين في موضع التضييق. لها ثلاث نقاط فوق جسم قريب من السين، ولا تعني ثلاث نقاط أن صوتها هو الثاء. ندرب المقارنة سَ/شَ مع تثبيت الحركة.",
+      "en": "Sheen /ʃ/ is voiceless friction with a different narrowing from seen. Three dots sit above a related body. Three dots do not make it thaa: written shape and articulation are separate properties. Compare سَ and شَ while keeping the vowel unchanged.",
+      "tr": "Şîn /ʃ/ sînden farklı yerde daralma içeren ötümsüz sürtünmedir. Benzer gövdenin üstünde üç noktası vardır. Üç nokta onu sâ yapmaz; yazı biçimi ile ses oluşumu ayrıdır. Ünlüyü sabit tutarak سَ ve شَ karşılaştır."
+    },
+    "examples": [
+      {
+        "ar": "شَمْس",
+        "meanings": {
+          "en": "sun",
+          "tr": "güneş",
+          "ar": "النجم الذي يضيء نهار الأرض"
+        }
+      },
+      {
+        "ar": "عُشْب",
+        "meanings": {
+          "en": "grass / herbage",
+          "tr": "ot",
+          "ar": "نباتات صغيرة لينة الساق في الاستعمال العام"
+        }
+      },
+      {
+        "ar": "رِيش",
+        "meanings": {
+          "en": "feathers",
+          "tr": "tüyler",
+          "ar": "غطاء جسم الطيور"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ص",
+    "ipa": "sˤ",
+    "forms": "ص — صـ — ـصـ — ـص",
+    "notes": {
+      "ar": "الصاد من الأصوات المفخمة في الهدف الفصيح. ليست مجرد سين أعلى صوتًا؛ يصاحبها إعداد خلفي يؤثر في جرس الصوت والحركات المجاورة. قارن سَ/صَ دون مبالغة أو شد مؤلم، ولا يوجد في جسم الصاد نقطة.",
+      "en": "Ṣaad /sˤ/ is an emphatic consonant in the chosen model. It is not simply a louder /s/: an additional back articulation affects its quality and neighbouring vowels. The body has no dot. Compare سَ and صَ without painful tension or an exaggerated forced sound.",
+      "tr": "Sâd /sˤ/ seçilen modelde kalın ünsüzdür. Yalnızca yüksek sesli /s/ değildir; ek arka oluşum ses rengini ve komşu ünlüleri etkiler. Gövde noktasızdır. سَ ile صَ karşılaştırırken acı veren gerginlik veya abartılı zorlamadan kaçın."
+    },
+    "examples": [
+      {
+        "ar": "صَبْر",
+        "meanings": {
+          "en": "patience",
+          "tr": "sabır",
+          "ar": "تحمل وانتظار مع ضبط النفس"
+        }
+      },
+      {
+        "ar": "عَصِير",
+        "meanings": {
+          "en": "juice",
+          "tr": "meyve suyu",
+          "ar": "شراب يستخرج من ثمر أو غيره"
+        }
+      },
+      {
+        "ar": "قَفَص",
+        "meanings": {
+          "en": "cage",
+          "tr": "kafes",
+          "ar": "وعاء بقضبان لحفظ حيوان أو طائر"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ض",
+    "ipa": "dˤ",
+    "forms": "ض — ضـ — ـضـ — ـض",
+    "notes": {
+      "ar": "يمثل /dˤ/ نموذجًا شائعًا للضاد في الفصحى المعاصرة، لا وصفًا لكل نطق تاريخي أو لهجي. لها نقطة فوق جسم الصاد. لا نخلطها بالظاء؛ التفريق يحتاج ملاحظة إغلاق الصامت مقابل الاحتكاك في النموذج المستهدف.",
+      "en": "Ḍaad /dˤ/ represents a common contemporary Standard Arabic target, not every historical or dialectal pronunciation. A dot distinguishes it from ṣaad’s body. Do not merge it with ẓaa: in the chosen model one uses closure, the other friction.",
+      "tr": "Dâd /dˤ/ yaygın çağdaş fasih hedefi gösterir; bütün tarihî veya lehçesel söylenişleri değil. Nokta onu sâd gövdesinden ayırır. Zâ /ðˤ/ ile birleştirme: seçilen modelde biri kapanma, diğeri sürtünme içerir."
+    },
+    "examples": [
+      {
+        "ar": "ضَوْء",
+        "meanings": {
+          "en": "light",
+          "tr": "ışık",
+          "ar": "ما يجعل الأشياء مرئية"
+        }
+      },
+      {
+        "ar": "بَيْض",
+        "meanings": {
+          "en": "eggs",
+          "tr": "yumurtalar",
+          "ar": "جمع بيضة"
+        }
+      },
+      {
+        "ar": "أَرْض",
+        "meanings": {
+          "en": "earth / land",
+          "tr": "yer / toprak",
+          "ar": "سطح نعيش عليه أو قطعة من اليابسة بحسب السياق"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ط",
+    "ipa": "tˤ",
+    "forms": "ط — طـ — ـطـ — ـط",
+    "notes": {
+      "ar": "الطاء صامت مفخم مع إغلاق أمامي ثم إطلاق في النموذج المقصود. ليست تاء مكتوبة بخط مزخرف أو تاء يقال اسمها بصوت أعلى. جسمها بلا نقطة؛ قارن طَ/تَ مع الانتباه إلى تأثير التفخيم.",
+      "en": "Ṭaa /tˤ/ combines a front closure and release with emphasis. It is neither decorated taa nor taa said more loudly. Its body has no dot. Compare تَ and طَ while noticing the effect on vowel quality as well as the consonant.",
+      "tr": "Tâ /tˤ/ ön kapanma ve bırakmayı kalınlaşmayla birleştirir. Süslenmiş tâ veya daha yüksek sesli /t/ değildir. Gövdesi noktasızdır. تَ ve طَ karşılaştırırken ünsüzün yanında ünlünün ses rengini de fark et."
+    },
+    "examples": [
+      {
+        "ar": "طِين",
+        "meanings": {
+          "en": "clay / mud",
+          "tr": "kil / çamur",
+          "ar": "تراب ممزوج بالماء أو مادة قابلة للتشكيل"
+        }
+      },
+      {
+        "ar": "قِطَار",
+        "meanings": {
+          "en": "train",
+          "tr": "tren",
+          "ar": "وسيلة نقل تسير على سكة"
+        }
+      },
+      {
+        "ar": "خَيْط",
+        "meanings": {
+          "en": "thread",
+          "tr": "iplik",
+          "ar": "ليف رفيع للخياطة أو الربط"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ظ",
+    "ipa": "ðˤ",
+    "forms": "ظ — ظـ — ـظـ — ـظ",
+    "notes": {
+      "ar": "يعرض /ðˤ/ الهدف التدريبي للظاء هنا، مع ضرورة التنبيه إلى التنوع في الاستعمال. هي مفخمة ولها نقطة فوق جسم الطاء. لا نعرّفها بعبارة «ضاد أخرى»؛ نعطي وصفًا ومقارنة واضحة في التسجيل المعتمد.",
+      "en": "Ẓaa /ðˤ/ is the stated emphatic dental-friction target here; variation must be labelled. A dot sits above ṭaa’s body. “Another ḍaad” is not an adequate description. Use a clear recording consistent with the chosen distinction rather than making the spellings sound identical.",
+      "tr": "Zâ /ðˤ/ burada kalın diş sürtünmesi hedefidir; farklı söylenişler açıkça belirtilmelidir. Tâ gövdesinin üstünde noktası vardır. “Başka bir dâd” yeterli açıklama değildir. Yazımları aynı okutmak yerine belirtilen ayrımla uyumlu kayıt kullan."
+    },
+    "examples": [
+      {
+        "ar": "ظِلّ",
+        "meanings": {
+          "en": "shade / shadow",
+          "tr": "gölge",
+          "ar": "منطقة يحجب عنها الضوء"
+        }
+      },
+      {
+        "ar": "عَظْم",
+        "meanings": {
+          "en": "bone",
+          "tr": "kemik",
+          "ar": "جزء صلب من هيكل الجسم"
+        }
+      },
+      {
+        "ar": "حَظّ",
+        "meanings": {
+          "en": "luck",
+          "tr": "şans",
+          "ar": "نصيب من التوفيق في الاستعمال هنا"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ع",
+    "ipa": "ʕ",
+    "forms": "ع — عـ — ـعـ — ـع",
+    "notes": {
+      "ar": "العين صوت حلقي مجهور، لا مجرد حركة طويلة ولا همزة مخففة. لا نطلب من المتعلم عصر الحنجرة؛ نستخدم نموذجًا سمعيًا وملاحظة تدريجية. الجسم بلا نقطة ويختلف شكل اتصاله كثيرًا عن الهيئة المستقلة.",
+      "en": "ʿAyn /ʕ/ is a voiced pharyngeal consonant, not a long vowel or a weakened hamza. Learn from a gentle model rather than squeezing the throat. It has no dot, and its joined forms differ markedly from the independent outline. Visual recognition and sound practice need separate attention.",
+      "tr": "Ayn /ʕ/ ötümlü yutaksıl ünsüzdür; uzun ünlü veya zayıf hemze değildir. Boğazı sıkmak yerine rahat bir örnekle öğren. Noktasızdır; bağlantılı biçimleri bağımsız biçimden belirgin farklıdır. Görsel tanıma ve ses çalışmasını ayrı ele al."
+    },
+    "examples": [
+      {
+        "ar": "عَيْن",
+        "meanings": {
+          "en": "eye, in this vocabulary example",
+          "tr": "bu kelime örneğinde göz",
+          "ar": "عضو البصر في هذه البطاقة"
+        }
+      },
+      {
+        "ar": "لَعِبَ",
+        "meanings": {
+          "ar": "قام باللعب؛ فعل ماضٍ للمفرد المذكر في هذه البطاقة",
+          "en": "he played",
+          "tr": "oynadı (eril tekil)"
+        },
+        "note_ar": "فعل ماضٍ في هذه البطاقة، لا اسم لعبة."
+      },
+      {
+        "ar": "جَمْع",
+        "meanings": {
+          "en": "collecting / gathering",
+          "tr": "toplama / bir araya getirme",
+          "ar": "ضم أشياء أو أشخاص بعضهم إلى بعض"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "غ",
+    "ipa": "ɣ~ʁ",
+    "forms": "غ — غـ — ـغـ — ـغ",
+    "notes": {
+      "ar": "الغين صوت احتكاكي مجهور في المنطقة الخلفية، مع اختلاف موضعه الدقيق في النطق. لها نقطة فوق جسم العين، لكن إضافة نقطة ليست تفسيرًا لإنتاج الصوت. قارنها بالخاء في الجهر، وبالعين في الموضع، دون افتراض التطابق.",
+      "en": "Ghayn is voiced friction in a back region, shown as /ɣ~ʁ/ for the range described here. Its dot above resembles ʿayn visually, not acoustically. Compare it with khaa for voicing and with ʿayn for place, without claiming identical articulation.",
+      "tr": "Gayn arka bölgede ötümlü sürtünmedir; açıklanan aralık /ɣ~ʁ/ olarak gösterilir. Aynla üst noktası dışında biçimce ilişkilidir; sesçe aynı değildir. Ötümlülük için hı, oluşum yeri için aynla karşılaştır; tam eşitlik iddia etme."
+    },
+    "examples": [
+      {
+        "ar": "غُرْفَة",
+        "meanings": {
+          "en": "room",
+          "tr": "oda",
+          "ar": "جزء من مبنى له حدود"
+        }
+      },
+      {
+        "ar": "صَغِير",
+        "meanings": {
+          "en": "small",
+          "tr": "küçük",
+          "ar": "قليل الحجم في المثال"
+        }
+      },
+      {
+        "ar": "فَرَاغ",
+        "meanings": {
+          "en": "empty space / vacancy",
+          "tr": "boşluk",
+          "ar": "مكان خالٍ أو عدم شغل"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ف",
+    "ipa": "f",
+    "forms": "ف — فـ — ـفـ — ـف",
+    "notes": {
+      "ar": "يمر الهواء بين الشفة السفلى والأسنان العليا في صوت احتكاكي مهموس. في الخط المشرقي المستخدم هنا للفاء نقطة فوق الجسم؛ قد تختلف بعض تقاليد الخط المغاربي وسيُوسم ذلك عند عرضه. لا ننسب كل اختلاف خطي إلى خطأ الطالب.",
+      "en": "Faa /f/ lets air pass between the lower lip and upper teeth without consonant voicing. In the eastern writing convention used here, one dot is above. Some Maghrebi conventions differ and should be labelled when shown. A writing tradition is not automatically a learner’s mistake.",
+      "tr": "Fâ /f/ alt dudak ile üst dişler arasından ötümsüz hava geçirir. Buradaki doğu yazı geleneğinde üstte bir noktası vardır. Bazı Mağrip gelenekleri farklıdır; gösterildiğinde belirtilmelidir. Yazı geleneği farkı otomatik öğrenci hatası değildir."
+    },
+    "examples": [
+      {
+        "ar": "فِيل",
+        "meanings": {
+          "en": "elephant",
+          "tr": "fil",
+          "ar": "حيوان كبير له خرطوم"
+        }
+      },
+      {
+        "ar": "مِفْتَاح",
+        "meanings": {
+          "en": "key",
+          "tr": "anahtar",
+          "ar": "أداة لفتح قفل"
+        }
+      },
+      {
+        "ar": "صُوف",
+        "meanings": {
+          "en": "wool",
+          "tr": "yün",
+          "ar": "ألياف تؤخذ من بعض الحيوانات"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ق",
+    "ipa": "q",
+    "forms": "ق — قـ — ـقـ — ـق",
+    "notes": {
+      "ar": "القاف صامت إغلاق خلفي مهموس في النموذج الفصيح /q/، أبعد خلفًا من موضع الكاف. لها نقطتان فوق الجسم في الخط المشرقي هنا. توجد اختلافات لهجية شائعة، لكن تسجيل الدرس يحدد هدف التدريب ولا تُخلط تلك الأهداف خفية.",
+      "en": "Qaaf /q/ uses a voiceless back closure in this Standard Arabic model, farther back than kaaf. It has two dots above in this writing convention. Familiar dialect pronunciations do not silently change the listening target; identify which model a lesson is practising.",
+      "tr": "Kāf /q/ bu fasih modelde kâftan daha arkada ötümsüz kapanma kullanır. Bu yazı geleneğinde üstte iki noktası vardır. Yaygın lehçe söylenişleri dinleme hedefini sessizce değiştirmemelidir; dersin hangi modeli çalıştığını belirt."
+    },
+    "examples": [
+      {
+        "ar": "قَمَر",
+        "meanings": {
+          "en": "moon",
+          "tr": "ay",
+          "ar": "جرم يدور حول الأرض"
+        }
+      },
+      {
+        "ar": "بَقَر",
+        "meanings": {
+          "en": "cattle",
+          "tr": "sığır",
+          "ar": "اسم جنس لحيوانات معروفة"
+        }
+      },
+      {
+        "ar": "سُوق",
+        "meanings": {
+          "en": "market",
+          "tr": "pazar",
+          "ar": "مكان بيع وشراء"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ك",
+    "ipa": "k",
+    "forms": "ك — كـ — ـكـ — ـك",
+    "notes": {
+      "ar": "الكاف تُنتج بإغلاق مؤخر اللسان عند المنطقة الخلفية من سقف الفم ثم إطلاق. لا نخلطها بالقاف لمجرد أن كليهما صامت خلفي. العلامة داخل الكاف المستقلة جزء من عرف رسمها، لا همزة منفصلة نقرأها.",
+      "en": "Kaaf /k/ closes the back of the tongue against the back roof region and releases. It is not identical to qaaf merely because both sounds are back consonants. The small sign inside independent ك is part of its written form, not a separate hamza to pronounce.",
+      "tr": "Kâf /k/, dilin arkasının damağın arka bölgesine kapanıp bırakılmasıyla oluşur. İki ses de arkada diye kāf ile aynı değildir. Bağımsız ك içindeki küçük işaret yazı biçiminin parçasıdır; okunacak ayrı hemze değildir."
+    },
+    "examples": [
+      {
+        "ar": "كِتَاب",
+        "meanings": {
+          "en": "book",
+          "tr": "kitap",
+          "ar": "صفحات مجتمعة للقراءة"
+        }
+      },
+      {
+        "ar": "سَمَك",
+        "meanings": {
+          "en": "fish",
+          "tr": "balık",
+          "ar": "حيوانات مائية في المعنى العام هنا"
+        }
+      },
+      {
+        "ar": "مَلَك",
+        "meanings": {
+          "en": "angel",
+          "tr": "melek",
+          "ar": "مخلوق غيبي في الاستعمال هنا؛ لا كلمة مَلِك بمعنى صاحب الحكم"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ل",
+    "ipa": "l",
+    "forms": "ل — لـ — ـلـ — ـل",
+    "notes": {
+      "ar": "اللام صوت جانبي مجهور؛ يمر الهواء بجانب اللسان مع اتصال طرفه أمامًا. نركز على النموذج العادي للمبتدئ، ونؤجل الحالات الخاصة والتفخيم المرتبط بالسياق إلى فصلها. اللام تتصل في الجهتين، وقد يظهر تركيب لا في رسم واحد.",
+      "en": "Laam /l/ is voiced and lateral: air passes alongside the tongue while its tip contacts the front region. Begin with the ordinary training model; introduce special emphatic contexts separately. Laam joins both ways, and لا may be drawn as a combined shape without becoming a new alphabet letter.",
+      "tr": "Lâm /l/ ötümlü yan sestir; dil ucu önde temas ederken hava dilin yanından geçer. Önce olağan eğitim modeliyle başla; özel kalın bağlamları ayrı öğret. İki yönde bağlanır. لا birleşik çizilse de yeni alfabe harfi olmaz."
+    },
+    "examples": [
+      {
+        "ar": "لَيْل",
+        "meanings": {
+          "en": "night",
+          "tr": "gece",
+          "ar": "وقت الظلام بين الغروب والفجر في الاستعمال العام"
+        }
+      },
+      {
+        "ar": "قَلَم",
+        "meanings": {
+          "en": "pen",
+          "tr": "kalem",
+          "ar": "أداة للكتابة"
+        }
+      },
+      {
+        "ar": "جَبَل",
+        "meanings": {
+          "en": "mountain",
+          "tr": "dağ",
+          "ar": "ارتفاع كبير من الأرض"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "م",
+    "ipa": "m",
+    "forms": "م — مـ — ـمـ — ـم",
+    "notes": {
+      "ar": "الميم صوت أنفي مجهور مع إغلاق الشفتين. الفرق عن الباء ليس شكل الشفتين وحده؛ في الميم يمر الهواء عبر الأنف. يتغير جسم الميم في الاتصال، لكن الاسم والهوية لا يتغيران.",
+      "en": "Meem /m/ is a voiced nasal consonant with closed lips. It differs from baa not just by shape: air goes through the nose during meem. Its body changes when joining, but its name and letter identity stay the same.",
+      "tr": "Mîm /m/, dudaklar kapalıyken oluşan ötümlü geniz ünsüzüdür. Bâdan yalnızca biçimle ayrılmaz; mîmde hava burundan geçer. Bağlantıda gövde değişebilir, harfin adı ve kimliği değişmez."
+    },
+    "examples": [
+      {
+        "ar": "مَاء",
+        "meanings": {
+          "en": "water",
+          "tr": "su",
+          "ar": "السائل الذي نشربه ونستعمله للحياة"
+        }
+      },
+      {
+        "ar": "قَمَر",
+        "meanings": {
+          "en": "moon",
+          "tr": "ay",
+          "ar": "جرم يدور حول الأرض"
+        }
+      },
+      {
+        "ar": "قَلَم",
+        "meanings": {
+          "en": "pen",
+          "tr": "kalem",
+          "ar": "أداة للكتابة"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ن",
+    "ipa": "n",
+    "forms": "ن — نـ — ـنـ — ـن",
+    "notes": {
+      "ar": "النون صوت أنفي مجهور مع إغلاق أمامي للسان. لها نقطة فوق الجسم في الرسم المستخدم. نقارن ن وم في موضع الإغلاق، ونفرق بين نون مكتوبة وتنوين يُسمع في سياقات معينة دون حرف نون ظاهر.",
+      "en": "Noon /n/ is a voiced nasal with a front tongue closure. One dot is above in this convention. Compare noon and meem by closure location. A written noon differs from tanwīn: certain endings include an /n/ sound without a separate noon letter in the spelling.",
+      "tr": "Nûn /n/ dilin ön kısmında kapanmayla oluşan ötümlü geniz sesidir. Bu yazımda üstte bir noktası vardır. Mîmle kapanma yerini karşılaştır. Yazılı nûn ile tenvin farklıdır; bazı sonlarda ayrı nûn harfi yazılmadan /n/ sesi duyulur."
+    },
+    "examples": [
+      {
+        "ar": "نُور",
+        "meanings": {
+          "en": "light",
+          "tr": "ışık",
+          "ar": "ضوء"
+        }
+      },
+      {
+        "ar": "عَيْن",
+        "meanings": {
+          "en": "eye, in this vocabulary example",
+          "tr": "bu kelime örneğinde göz",
+          "ar": "عضو البصر في هذه البطاقة"
+        }
+      },
+      {
+        "ar": "لَبَن",
+        "meanings": {
+          "en": "milk or a dairy product, depending on region",
+          "tr": "bölgeye göre süt veya süt ürünü",
+          "ar": "الحليب أو منتج لبني بحسب البلد"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ه",
+    "ipa": "h",
+    "forms": "ه — هـ — ـهـ — ـه",
+    "notes": {
+      "ar": "الهاء صوت مهموس لا يحتاج إلى تضييق الحاء الحلقي نفسه. يتنوع جسمها بين ه وهـ وـهـ وـه، ولذلك يساعد شرح الاتصال أكثر من حفظ صورة واحدة. لا نخلط هاء آخر الكلمة بالتاء المربوطة لمجرد تشابه الوقف في بعض الأمثلة.",
+      "en": "Haa /h/ is voiceless and does not use ḥaa’s pharyngeal narrowing. Its forms ه, هـ, ـهـ and ـه are visually varied, so joining helps explain them. Do not identify every final ة as ordinary haa just because a pause reading can sound similar.",
+      "tr": "Hâ /h/ ötümsüzdür; /ħ/ sesinin yutaksıl daralmasını kullanmaz. ه, هـ, ـهـ ve ـه biçimleri farklı görünür; bağlantıyı açıklamak yararlıdır. Durakta ses benzer olabilir diye her son ة biçimini normal hâ sayma."
+    },
+    "examples": [
+      {
+        "ar": "هِلَال",
+        "meanings": {
+          "en": "crescent moon",
+          "tr": "hilal",
+          "ar": "شكل القمر المقوس"
+        }
+      },
+      {
+        "ar": "نَهْر",
+        "meanings": {
+          "en": "river",
+          "tr": "nehir",
+          "ar": "مجرى ماء"
+        }
+      },
+      {
+        "ar": "وَجْه",
+        "meanings": {
+          "en": "face",
+          "tr": "yüz",
+          "ar": "الجزء الأمامي من الرأس"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "و",
+    "ipa": "w / uː",
+    "forms": "و — ـو",
+    "notes": {
+      "ar": "الواو قد تكون صامتًا /w/ في وَلَد، أو حرف مد /uː/ في نُور، بحسب البنية. في ثَوْب لا نستنتج أنها مد /uː/ من وجود شكل الواو وحده. تقبل اتصالًا من السابق ولا تصل ما يليها يسارًا.",
+      "en": "Waw can be the consonant /w/ in وَلَد or help write long /uː/ in نُور. In ثَوْب, its role is not long /uː/: read the vowel pattern. Waw accepts a preceding connection but does not join the next letter on its left.",
+      "tr": "Vav, وَلَد içinde /w/ ünsüzü veya نُور içinde uzun /uː/ yazımının parçası olabilir. ثَوْب içinde uzun /uː/ değildir; ünlü yapısını oku. Önceki bağlantıyı alır, solundaki sonraki harfe bağlanmaz."
+    },
+    "examples": [
+      {
+        "ar": "وَلَد",
+        "meanings": {
+          "en": "boy, in this vocabulary example",
+          "tr": "bu kelime örneğinde erkek çocuk",
+          "ar": "صبي في هذا المثال"
+        }
+      },
+      {
+        "ar": "نُور",
+        "meanings": {
+          "en": "light",
+          "tr": "ışık",
+          "ar": "ضوء"
+        }
+      },
+      {
+        "ar": "ثَوْب",
+        "meanings": {
+          "en": "garment",
+          "tr": "giysi",
+          "ar": "لباس"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  },
+  {
+    "letter": "ي",
+    "ipa": "j / iː",
+    "forms": "ي — يـ — ـيـ — ـي",
+    "notes": {
+      "ar": "الياء قد تكون صامتًا /j/ في يَد، أو حرف مد /iː/ في فِيل. في بَيْت تدخل في تركيب مختلف عن مد الياء، فينبغي قراءة الحركة والسياق معًا. تختلف الياء المنقوطة عن الألف المقصورة ى التي لا تُقرأ تلقائيًا ياء.",
+      "en": "Yaa can be the consonant /j/ in يَد or help write long /iː/ in فِيل. بَيْت has another pattern, /aj/, rather than long /iː/. Dotted yaa differs from alif maqṣūra ى, which must not automatically be read as yaa.",
+      "tr": "Yâ, يَد içinde /j/ ünsüzü veya فِيل içinde uzun /iː/ yazımının parçasıdır. بَيْت, uzun /iː/ değil /aj/ yapısını içerir. Noktalı yâ ile elif-i maksûre ى farklıdır; ى otomatik yâ okunmaz."
+    },
+    "examples": [
+      {
+        "ar": "يَد",
+        "meanings": {
+          "en": "hand",
+          "tr": "el",
+          "ar": "جزء الجسم الذي نمسك به الأشياء"
+        }
+      },
+      {
+        "ar": "فِيل",
+        "meanings": {
+          "en": "elephant",
+          "tr": "fil",
+          "ar": "حيوان كبير له خرطوم"
+        }
+      },
+      {
+        "ar": "بَيْت",
+        "meanings": {
+          "en": "house / home",
+          "tr": "ev",
+          "ar": "مكان للسكن"
+        }
+      }
+    ],
+    "source_ids": [
+      "ipa",
+      "unicode"
+    ],
+    "review_status": "translation_draft"
+  }
+]

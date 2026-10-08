@@ -1,0 +1,1550 @@
+{
+  "language": "nl",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Letters en schrift: de deur naar lezen openen",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Drie verschillende dingen: naam, klank en vorm",
+          "paragraphs": [
+            "Stel je een doos met bouwstenen voor. Hun namen helpen je de juiste steen te vinden, maar door de namen te herhalen bouw je geen huis. Ook een letter heeft een naam, een geschreven vorm en een rol in een gesproken woord. ب heet bāʾ. In بَاب begin je echter met /b/, gevolgd door de lange klinker /aː/. Lees niet de drie letternamen in plaats van het woord. Letternamen blijven nuttig als je naar een spelling vraagt.",
+            "Volg het Arabische woord van rechts naar links. Let eerst op de basisvorm, dan op de punten en daarna op de uitspraaktekens. بَ en تَ hebben verwante basisvormen, maar hun punten geven verschillende letters aan. Fatḥa vervangen door kasra geeft بِ; het verandert bāʾ niet in tāʾ. Dek de rest van de regel af als die te druk lijkt. Een letter herkennen is al een prestatie voordat je het hele woord kunt lezen."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Waarom verandert een letter van vorm?",
+          "paragraphs": [
+            "Arabische letters delen een schrijfspoor, zoals mensen die elkaars handen vasthouden. ب, بـ, ـبـ en ـب zijn verbindingsvormen van één letter, geen vier nieuwe letters. In بَاب verbindt de eerste bāʾ zich met alif, maar alif zet de verbinding niet door naar de laatste bāʾ. Die kleine onderbreking maakt geen tweede woord.",
+            "De letters ا, د, ذ, ر, ز en و kunnen een verbinding van de voorafgaande letter ontvangen als dat is toegestaan, maar verbinden niet met de volgende letter links. Zet niet bij elke onderbreking van de schrijfverbinding een spatie. Spaties scheiden woorden; verbindingsregels vormen letters binnen een woord. Bekijk een echt voorbeeld voordat je alle regels probeert te onthouden."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza en betekenis",
+          "paragraphs": [
+            "In بَاب schrijft alif de lange klinker /aː/. In أَخ begint het woord met hamza /ʔ/, gedragen door alif. Hamza is een medeklinker, geen lange klinker. Volgens de spellingregels kan hamza als ء, أ, إ, ؤ of ئ worden geschreven. De vorm van de drager maakt deze gevallen niet tot dezelfde klank als klinkeralif.",
+            "Verbind elke stap met betekenis. Een deur kan open; een boek bevat leesbare bladzijden; een pen gebruik je om te schrijven. Verander de volgorde van de kaarten en bekijk ze opnieuw na een korte pauze. De plaats van een kaart herkennen oefent het geheugen, maar zelfstandig lezen betekent de geschreven informatie herkennen waar die ook verschijnt."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "deur",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "boek",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "broer",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "huis / thuis",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "licht",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Maakt de onderbreking van de verbinding in بَاب twee woorden? Is de letternaam bāʾ de volledige lezing van بَاب?",
+        "answer": "Beide keren nee. بَاب is één woord: alif verbindt niet verder. Bāʾ benoemt een letter; /baːb/ leest de klanken van het woord in hun volgorde."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Klinkertekens: kleine tekens veranderen de lezing",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Een klinkerteken is geen punt",
+          "paragraphs": [
+            "Zet بَ, بُ en بِ naast elkaar. Alle drie gebruiken bāʾ. Fatḥa geeft korte /a/ aan, ḍamma korte /u/ en kasra korte /i/. Mond, tong en lippen passen zich aan verschillende klinkers aan. Harder praten verandert de ene klinker niet in een andere.",
+            "In بِ staan de punt van bāʾ en de kasra dicht bij elkaar onder de letter. De punt identificeert de letter; kasra stuurt de uitspraak. Verander het klinkerteken en bāʾ blijft bāʾ. Kleur helpt deze functies in het boek te onderscheiden, maar vormen en labels moeten ook bij zwart-wit afdrukken begrijpelijk blijven."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Lengte, geen luidheid",
+          "paragraphs": [
+            "Vergelijk بَ met بَا, بُ met بُو en بِ met بِي. De klinker duurt in het tweede onderdeel van ieder paar langer; bāʾ wordt geen andere medeklinker. In /baː/ geeft ː de lengte van de vorige klinker aan. Het is geen extra Arabische letter en geen vaste stopwatchduur voor iedere spreker.",
+            "Alif, wāw en yāʾ werken niet elke keer als lange klinkers. Wāw in وَلَد is /w/ en yāʾ in يَد is /j/. Wāw in نُور helpt /uː/ schrijven en yāʾ in فِيل helpt /iː/ schrijven. Lees het plaatselijke patroon in plaats van een functie alleen uit de letternaam te raden."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda en tanwīn",
+          "paragraphs": [
+            "Sukūn in بِنْت herinnert je eraan in dit patroon geen klinker na nūn toe te voegen. Het wist /n/ niet uit. Shadda in أُمّ geeft een verdubbelde medeklinker aan, niet een langere voorafgaande klinker. أَمْ /ʔam/ en أُمّ /ʔumm/ verschillen zowel in klinker als medeklinkerlengte; het is dus geen minimaal paar met één variabele. Gebruik duidelijk gemarkeerde oefensyllaben als je één kenmerk isoleert.",
+            "Tanwīn in كِتَابٌ hoort bij de naamwoordsuitgang in een grammaticale context. Een passende doorlopende lezing bevat /un/; bij de gewone pauze op dit woord lees je /kitaːb/. Dit voorbeeld is geen algemene regel voor iedere uitgang. Behoud het geschreven teken en leg het verschil tussen doorlopende lezing en pauze uit."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "meisje / dochter",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "olifant",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "jongen",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "hand",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "moeder",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "licht",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Staat wāw hier in نُور voor /w/? Verwijdert sukūn nūn uit بِنْت?",
+        "answer": "Nee. Wāw in نُور schrijft de lange klinker /uː/. Nūn in بِنْت wordt in dit patroon zonder extra klinker erna uitgesproken."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Twee eenheden samenvoegen: een eerste lezing opbouwen",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Wat voegen we samen?",
+          "paragraphs": [
+            "In het werkboek noemt samenvoegen van twee eenheden een oefenfase met twee geschreven eenheden. Het aantal letters is niet altijd gelijk aan het aantal klanken of lettergrepen. بَا bevat bāʾ en alif, maar staat voor een medeklinker gevolgd door een lange klinker. Het zijn geen twee medeklinkers, en een los oefenonderdeel hoeft geen betekenisvol woord te zijn.",
+            "Begin met بَ, dan بَا en vervolgens تَا en ثَا. De eerste vergelijking verandert de klinkerlengte; de volgende verandert de medeklinker bij dezelfde lange klinker. Geef tijd om te kijken en daarna te lezen. Letternamen herhalen in plaats van de gevraagde klanken maakt het samenvoegen moeilijker te begrijpen."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Open en gesloten lettergrepen",
+          "paragraphs": [
+            "بَا eindigt op een klinker en is hier een open lettergreep. بَرْ eindigt op een medeklinker en is gesloten. „Gesloten” beschrijft het einde van de lettergreep; het betekent niet dat je de hele uitspraak je mond dicht houdt. Lees بَرْ zonder extra eindklinker. بَرَ lezen verandert de structuur.",
+            "Gebruik een vinger om je plaats te volgen en verminder die hulp geleidelijk. Aanwijzen helpt bij het volgen, maar bewijst geen correcte uitspraak. Laat na een vertrouwde lettergreep een nieuwe met hetzelfde patroon zien. Dat controleert of de leerling de regel kan toepassen buiten een onthouden kaart."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "Van onderdeel naar woord",
+          "paragraphs": [
+            "بَا is een onderdeel van بَاب. بِي is een onderdeel van de getoonde lezing van بِيض. Niet elke lettergreep hoeft een zelfstandige woordenboekbetekenis te hebben. Voeg eerst samen en vraag daarna wat het hele woord betekent. Zo gaat het doel verder dan snel lezen.",
+            "Bepaal bij een fout wat veranderde: medeklinker, klinkerkwaliteit, lengte of een extra klank. Een concreet probleem benoemen helpt meer dan alles opnieuw laten beginnen. Als meerdere kenmerken lastig zijn, oefen dan eerst één hanteerbaar kenmerk voordat je ze weer samenvoegt."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "oefenlettergreep; hier geen woord",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "oefenlettergreep",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "oefenlettergreep",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "oefenlettergreep in dit voorbeeld",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "deur",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "eieren",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Waarom zijn بَا en بَرْ niet hetzelfde type lettergreep?",
+        "answer": "بَا eindigt op een lange klinker; بَرْ eindigt op een medeklinker. Het onderscheid beschrijft hun eindes, niet puntenaantal of luidheid."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Drie eenheden samenvoegen: betekenisvolle onderdelen lezen",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Drie letters, maar hoeveel lettergrepen?",
+          "paragraphs": [
+            "بَاب en جَبَل hebben ieder drie basisletters. In de gekozen pauzelezingen heeft /baːb/ één lettergreep en /dʒa.bal/ twee. De punt in deze klankweergave markeert een lettergreepgrens; het is niet de geschreven punt van jīm. Alleen letters tellen geeft het aantal lettergrepen niet.",
+            "Schrijf de letters en hun tekens en bekijk vervolgens het klankpatroon. Begin voor جَبَل met جَ en eindig met بَلْ in de pauzelezing. Voeg ze samen zonder bāʾ weg te laten of een extra klank in te voegen. Een woord opdelen is tijdelijke hulp, niet de manier om iedere gewone zin uit te spreken."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Lettervolgorde draagt betekenis",
+          "paragraphs": [
+            "قَلْب betekent hart; كَلْب betekent hond. Qāf veranderen in kāf verandert de betekenis. بَحْر betekent zee en حَبْر inkt; deze vergelijking verandert volgorde én klinkers en is dus geen minimaal paar met één kenmerk. Kijk naar de geschreven details in plaats van te gokken met een bekende afbeelding.",
+            "Kies woorden waarvan je de betekenis kunt laten zien. Vraag na het lezen of inkt voor schrijven of zwemmen dient. Betekenis kan een gok onthullen, maar vervangt het kijken naar de letters niet. Leg een nieuw woord uit in plaats van onbekende woordenschat als leesfalen te behandelen."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Zorgvuldig lezen vóór vlot lezen",
+          "paragraphs": [
+            "Lees drie woorden zonder wedstrijd. Markeer één woord om terug te komen en probeer het na een makkelijker voorbeeld opnieuw. Vloeiend lezen omvat passend lezen, begrip en herstel, niet alleen woorden per minuut. Moedig een kind niet aan aarzeling door gokken te verbergen.",
+            "Laat voor overdracht op جَبَل het woord جَمَل volgen. Bāʾ verandert in mīm in een bekend patroon. Een berg is hooggelegen land; een kameel een dier. Vraag een ander echt woord met bekende letters, maar leg uit dat niet iedere mogelijke rangschikking een Arabisch woord vormt."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "berg",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "kameel",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "hart",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "hond",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "zee",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "inkt",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Welke letter verandert van جَبَل naar جَمَل? Hebben بَاب en جَبَل evenveel lettergrepen?",
+        "answer": "Bāʾ wordt mīm. بَاب heeft één lettergreep in de getoonde pauzelezing; جَبَل heeft er twee. Alleen het aantal letters is onvoldoende."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Vier eenheden samenvoegen: langer lezen zonder overbelasting",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Langer is niet altijd moeilijker",
+          "paragraphs": [
+            "كِتَاب heeft vier basisletters. De pauzelezing /ki.taːb/ bevat een eerste korte lettergreep en daarna een lettergreep met lange klinker en afsluitende bāʾ. Gebruik wat je in بَاب hebt geleerd in plaats van elk onderdeel als nieuw te behandelen. Schriftlengte alleen meet de leesmoeilijkheid niet.",
+            "Wāw in ثَوْب schrijft in deze lezing geen /uː/: /aw/ is een andere reeks. بَيْت bevat /aj/, geen /iː/. Succes komt van klinker en structuur onderzoeken, niet van de regel dat iedere wāw „oe” is en iedere yāʾ „ie”. Beheers één voorbeeld voordat je een nieuw contrast toevoegt."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "Een zin voegt relaties toe",
+          "paragraphs": [
+            "هَذَا كِتَابٌ wijst een nabij voorwerp aan: „Dit is een boek.” هَذِهِ حَقِيبَةٌ gebruikt de vrouwelijke aanwijzende vorm bij tas. Bij het vervangen van een naamwoord moet je mogelijk de bijbehorende woorden controleren, niet alleen een label wisselen. Vraag wat wordt aangewezen en welke vormen daarbij passen.",
+            "الكِتَابُ جَدِيدٌ zegt „Het boek is nieuw”. الكِتَابُ الجَدِيدُ duidt „het nieuwe boek” aan; die woordgroep alleen geeft niet dezelfde volledige boodschap. Het lidwoord is geen versiering. Een eenvoudige situatie kan een grammaticale relatie tonen voordat vaktermen worden ingevoerd."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Een vaardigheid naar nieuwe tekst overdragen",
+          "paragraphs": [
+            "Vergelijk كِتَاب en كَاتِب. Hun basisconsonanten zijn verwant, maar alifpositie en klinkers verschillen. Het eerste is een boek, het tweede een schrijver. Verwante wortels geven niet ieder woord dezelfde betekenis. Dit introduceert woordfamilies zonder te doen alsof alle afleiding tegelijk wordt geleerd.",
+            "Lees een korte regel, verberg hem even en vraag naar de algemene betekenis. Laat hem terugkomen om één detail te controleren. Zo scheid je klankgeheugen, begrip en terugkeer naar schriftelijk bewijs. Hulp vragen bij een nieuw woord hoort bij leren; dit naslagwerk moet niet als een eindeloze toets voelen."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "boek",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "schrijver",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "tas",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "Dit is een boek."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Het boek is nieuw."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "het nieuwe boek"
+        }
+      ],
+      "exercise": {
+        "question": "Geven الكِتَابُ جَدِيدٌ en الكِتَابُ الجَدِيدُ op zichzelf dezelfde boodschap?",
+        "answer": "Nee. Het eerste zegt dat het boek nieuw is; het tweede duidt het nieuwe boek aan zonder dezelfde volledige uitspraak te doen."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Letternaslag: van vorm naar woordgebruik",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Een betrouwbare kaart voor iedere letter",
+          "paragraphs": [
+            "Stel bij elke letter dezelfde vragen: Hoe heet hij? Waar ontstaat de klank? Hoe verbindt hij? Wat onderscheidt hem van een vergelijkbare vorm? Welke duidelijke woorden gebruiken hem? Een vaste kaart voorkomt dat een les onverklaarde afbeeldingen wordt. Je hoeft bij het eerste bezoek niet alles te beantwoorden.",
+            "Dit hoofdstuk bevat kaarten voor de 28 alfabetletters. Alifs plaats in het alfabet betekent niet dat hamza en lange /aː/ dezelfde klank zijn. Wāw en yāʾ hebben contextafhankelijke rollen. Lees de kaartnotitie voordat je het symbool met de spelling van je eigen taal vergelijkt."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Vormfamilies zijn geen klankfamilies",
+          "paragraphs": [
+            "ب, ت en ث hebben verwante basisvormen, maar bāʾ ontstaat aan de lippen, tāʾ met een voorste sluiting en thāʾ met tandwrijving in het gekozen Standaardarabische model. Thāʾs drie punten verklaren zijn klank niet, en shīns drie punten maken hem geen thāʾ. Gebruik visuele families voor herkennen en articulatiebeschrijvingen voor uitspraak.",
+            "Vergelijk ثَ met تَ bij dezelfde fatḥa. Vergelijk س en ص door nadrukkelijkheid of emfasis uit te leggen, niet luidheid. Sommige Arabische klanken hebben geen directe overeenkomst in de taal van de leerling. Leg dan de articulatie uit en gebruik een luistermodel in plaats van een exacte vreemde overeenkomst te verzinnen."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Woordenschat, zinnen en overdracht",
+          "paragraphs": [
+            "Vind een letter aan het begin, in het midden en aan het einde en maak met één genoemd woord een betekenisvolle zin. Stapel geen zeldzame woorden op om het boek te vergroten. Varieer positie en betekenis, leg elk nieuw woord uit en geef context bij woorden met meerdere betekenissen.",
+            "Dialectverschil is geen tekortkoming van de sprekers. Het naslagwerk benoemt de Standaardarabische doelvorm en erkent variatie in jīm, qāf en andere klanken in Arabischtalige gemeenschappen. Een luisteroefening moet een opname gebruiken die past bij het doel dat de uitleg en symbolen aangeven."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "deur",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "berg",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "boek",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "vruchten / oogstproducten",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "sneeuw",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "vos",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "Betekent de vergelijkbare vorm van ب, ت en ث dat hun klanken op dezelfde articulatieplaats worden gevormd? Wordt jīm overal identiek uitgesproken?",
+        "answer": "Nee. Vorm is geschreven informatie; articulatie is een andere eigenschap. Jīm varieert: benoem het gekozen doel en markeer andere modellen duidelijk."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Voornaamwoorden: wie ben ik, wie ben jij?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Een woord dat de spreker volgt",
+          "paragraphs": [
+            "Als Layla „ik” zegt, bedoelt zij Layla; als Omar „ik” zegt, bedoelt hij Omar. Een voornaamwoord is geen vaste persoonsnaam: de verwijzing komt uit de spreeksituatie. „Jij” wijst naar de aangesprokene, „hij” en „zij” naar iemand over wie wordt gesproken. Oefen rolwisselingen voordat je de tabel onthoudt.",
+            "Arabisch onderscheidt أَنْتَ voor een mannelijke enkelvoudige aangesprokene en أَنْتِ voor een vrouwelijke. Engels gebruikt you voor beide; Nederlands jij maakt ook geen geslachtsonderscheid. Dat maakt het Arabische onderscheid niet optioneel. Turks o komt overeen met zowel هُوَ als هِيَ; vertalen naar Arabisch vereist het controleren van de bedoelde verwijzing, niet mechanisch vervangen."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Enkelvoud, tweevoud en meervoud",
+          "paragraphs": [
+            "أَنَا is eerste persoon enkelvoud. نَحْنُ verwijst naar een groep inclusief de spreker en kan twee of meer mensen omvatten. أَنْتُمَا spreekt twee mensen aan, هُمَا verwijst naar twee; beide werken voor mannelijke en vrouwelijke verwijzingen. أَنْتُمْ / أَنْتُنَّ en هُمْ / هُنَّ onderscheiden meervoudsvormen. Mannelijke meervoudsvormen kunnen in Standaardarabisch afhankelijk van de context een gemengde groep omvatten.",
+            "Niet iedere taal heeft een apart éénwoordig tweevoudsvoornaamwoord. أَنْتُمَا kan in het Nederlands als „jullie twee”, in het Engels als you two en in het Turks als ikiniz worden uitgelegd. Dat verklaart de verwijzing, maar garandeert niet hetzelfde gebruik in iedere situatie. Vergelijk betekenissen naast vormen."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Het voornaamwoord en wat erop volgt",
+          "paragraphs": [
+            "أَنَا طَالِبٌ en أَنَا طَالِبَةٌ beginnen met hetzelfde voornaamwoord; het volgende naamwoord verandert volgens het geslacht van de spreker. هُوَ طَالِبٌ en هِيَ طَالِبَةٌ veranderen voornaamwoord en naamwoord samen. Een voorbeeld met een mannelijke student maakt أَنَا niet uitsluitend mannelijk.",
+            "In أَنَا أَقْرَأُ en نَحْنُ نَقْرَأُ verandert de werkwoordsvorm. De eerste أَ hoort hier bij de werkwoordsvervoeging van de eerste persoon, niet bij bezit. Een werkwoord kan genoeg informatie bevatten om het aparte voornaamwoord in een heldere context weg te laten. „Ben / is / zijn” in een vertaling verplicht niet tot een equivalent woord in iedere Arabische nominale zin in de tegenwoordige tijd."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "ik",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "jij (mannelijk enkelvoud)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "jij (vrouwelijk enkelvoud)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "wij",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "hij",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "zij (vrouwelijk enkelvoud)",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "jullie twee"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "zij beiden"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "jullie (mannelijk meervoud; context kan een gemengde groep omvatten)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "jullie (vrouwelijk meervoud)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "zij (mannelijk meervoud; context kan een gemengde groep omvatten)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "zij (vrouwelijk meervoud)"
+        }
+      ],
+      "exercise": {
+        "question": "Layla spreekt over zichzelf en daarna over Omar. Welke twee voornaamwoorden passen? Is نَحْنُ alleen mannelijk?",
+        "answer": "أَنَا voor zichzelf; هُوَ voor Omar in dit voorbeeld. نَحْنُ onderscheidt het geslacht van de sprekers niet; de context bepaalt de groep."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Bezit en relaties: meer dan een label",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Eén voorwerp, twee sprekers",
+          "paragraphs": [
+            "Omar houdt een boek vast en zegt كِتَابِي, „mijn boek”. Spreek je hem aan, dan zeg je كِتَابُكَ, „jouw boek”. Spreek je met Layla over hem, dan zeg je كِتَابُهُ, „zijn boek”. Het boek is niet veranderd; de spreekrelatie wel. Het zijn geen drie categorieën boeken.",
+            "Spreek Layla aan met كِتَابُكِ en praat over haar met كِتَابُهَا. Het verschil tussen كَ en كِ is klein in schrift en klank, maar belangrijk voor de verwijzing. Nederlands gebruikt normaal een apart woord vóór het naamwoord; deze Arabische vormen verbinden het voornaamwoord aan het naamwoord."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "De relatie is niet altijd eigendom",
+          "paragraphs": [
+            "كِتَابُنَا koppelt een boek aan onze groep. أُمِّي betekent „mijn moeder”; het behandelt een persoon niet als eigendom. مَدْرَسَتِي kan de school zijn waar ik naartoe ga, niet een gebouw dat ik bezit. Naamwoord en context tonen de relatie die het aangehechte voornaamwoord uitdrukt.",
+            "In مَدْرَسَة → مَدْرَسَتِي wordt tāʾ marbūṭa als gewone tāʾ geschreven wanneer dit voornaamwoord wordt aangehecht. Maak daar niet de regel van dat iedere laatste hāʾ tāʾ wordt. Vergelijk وَجْهِي, „mijn gezicht”: de hāʾ van وَجْه blijft hāʾ."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Naamwoord, naamval en bepaaldheid",
+          "paragraphs": [
+            "كِتَابُكَ is één gekozen vorm in de tabel. In رَأَيْتُ كِتَابَكَ, „Ik zag jouw boek”, verandert de naamwoordsuitgang met de grammaticale rol; كَ verwijst nog steeds naar de mannelijke enkelvoudige aangesprokene. Leer de voorgaande ḍamma niet als vast onderdeel van „jouw”.",
+            "In de gebruikelijke combinatie van naamwoord en bezitsvoornaamwoord zet je geen tanwīn op het naamwoord en voeg je niet het lidwoord toe alsof het een los naamwoord zonder bezit is. كِتَابِي benoemt de relatie en is in dit gebruik bepaald. Leer een correct voorbeeld voordat je gevorderde uitzonderingen verzamelt."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "mijn boek"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "jouw boek (mannelijke enkelvoudige aangesprokene)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "jouw boek (vrouwelijke enkelvoudige aangesprokene)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "zijn boek"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "haar boek"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "ons boek"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "mijn school"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "mijn gezicht"
+        }
+      ],
+      "exercise": {
+        "question": "Layla zegt „mijn boek”. Hoe verwijs je ernaar als je haar aanspreekt en vervolgens met iemand anders over haar praat?",
+        "answer": "كِتَابُكِ als je haar aanspreekt; كِتَابُهَا als je over haar praat. De voornaamwoordverwijzing volgt de spreekrelatie."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Getallen: symbool, woord en hoeveelheid",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Ieder voorwerp één keer tellen",
+          "paragraphs": [
+            "Leg drie pennen op tafel. Raak elke pen één keer aan terwijl je één telstap zet en benoem daarna de grootte van de groep. Dezelfde pen twee keer tellen geeft een verkeerd totaal. De pennen anders neerleggen zonder er een toe te voegen of weg te nemen laat er drie: de vorm van de rij is niet de hoeveelheid.",
+            "٣ en 3 vertegenwoordigen hetzelfde getal in de twee getoonde cijfersystemen. ثَلَاثَة is een Arabisch telwoord, niet de vorm van een cijfer. Een geschreven getal kan boeken, stappen of minuten tellen; bepaal wat wordt geteld om het gebruik te begrijpen."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Los tellen en naamwoorden tellen",
+          "paragraphs": [
+            "Hardop tellen begint met één tot tien, maar getalsgroepen vragen meer aandacht. ثَلَاثَةُ كُتُبٍ betekent drie boeken en ثَلَاثُ سَيَّارَاتٍ drie auto’s. In dit patroon van drie tot tien contrasteert de getalvorm met het grammaticale geslacht van het getelde naamwoord in enkelvoud; het getelde naamwoord staat in genitief meervoud. Pas dit niet op één en twee toe.",
+            "كِتَابٌ وَاحِدٌ en سَيَّارَةٌ وَاحِدَةٌ laten overeenstemming met één zien. De getoonde nominatieve tweevoudsvormen كِتَابَانِ en سَيَّارَتَانِ geven al twee aan. Een woord voor twee hoeft niet in elke tweevoudsgroep te worden toegevoegd."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Hoeveelheid, volgorde en vergelijking",
+          "paragraphs": [
+            "ثَلَاثَة beantwoordt „hoeveel?”, الثَّالِث „welke positie?”. Drie boeken zijn niet hetzelfde als het derde boek. Nul pennen betekent geen pennen in de getelde groep, niet dat niets van welke soort dan ook bestaat.",
+            "Vergelijk twee echte groepen: twee pennen en vier pennen. De tweede heeft er meer en de eerste minder. Hebben beide er vier, dan zijn de aantallen gelijk, ook bij andere kleuren of lengtes. Koppel de vergelijking aan een aangegeven eigenschap en probeer een nieuw voorbeeld."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "nul"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "één"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "twee"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "drie"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "vier"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "vijf"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "zes"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "zeven"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "acht"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "negen"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "tien"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "derde"
+        }
+      ],
+      "exercise": {
+        "question": "Je legt drie cirkels anders neer zonder er een toe te voegen. Hoeveel blijven? Benoemt „derde” de hoeveelheid?",
+        "answer": "Er blijven drie. „Derde” is een plaats in een volgorde, geen hoeveelheid. Tel ieder onderdeel eenmaal, niet de tussenruimtes."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Kleuren: benoemen, beschrijven en overeenstemmen",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Hetzelfde voorwerp, andere beschrijving",
+          "paragraphs": [
+            "Twee pennen doen hetzelfde werk, maar één is rood en de andere blauw. „Pen” benoemt de voorwerpcategorie; de kleur helpt bepalen welke je bedoelt. Kleur zegt niets over de waarde van een persoon of welk geslacht een voorwerp mag gebruiken. Schermen tonen kleuren ook verschillend: benoem steeds de kleurstaal in plaats van alleen kleur te gebruiken.",
+            "قَلَمٌ أَحْمَرُ is een rode pen; سَيَّارَةٌ حَمْرَاءُ een rode auto. Het bijvoeglijk naamwoord verandert volgens het grammaticale geslacht van het Arabische naamwoord, niet dat van de eigenaar. Engels en Turks veranderen hun kleurbijvoeglijk naamwoord in deze voorbeelden niet op die manier. De Nederlandse vormen rood/rode zijn geen vervanging voor dit Arabische geslachtsonderscheid."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Niet iedere kleur volgt het patroon van rood",
+          "paragraphs": [
+            "Leer أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء en أَسْوَد/سَوْدَاء als één patroongroep. وَرْدِيّ/وَرْدِيَّة en بُنِّيّ/بُنِّيَّة volgen een ander patroon. Verzin niet ieder vrouwelijk kleurwoord door اء toe te voegen.",
+            "قَلَمٌ أَحْمَرُ betekent „een rode pen”. القَلَمُ الأَحْمَرُ duidt „de rode pen” aan. القَلَمُ أَحْمَرُ zegt „De pen is rood”. De lidwoordplaats verandert de relatie, niet alleen de zichtbare woordvorm."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Beschrijving zonder kleurstaal",
+          "paragraphs": [
+            "Schrijf de kleurnaam naast de markering en voeg vorm of label toe om antwoorden te onderscheiden. Een leerling kan slechtziend zijn of kleuren anders waarnemen. Taalvermogen moet niet afhangen van het onderscheiden van twee bijna gelijke groentinten.",
+            "Begin met één naamwoord en bijvoeglijk naamwoord: auto met حَمْرَاء, pen met أَحْمَر. Verander daarna het voorwerp om overdracht te testen in plaats van één paar onthouden. Meervoudsovereenstemming heeft extra regels. Generaliseer overeenstemming bij afzonderlijke personen niet naar alle meervouden van dingen."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "rood: mannelijk — vrouwelijk"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "blauw: mannelijk — vrouwelijk"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "groen: mannelijk — vrouwelijk"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "geel: mannelijk — vrouwelijk"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "wit: mannelijk — vrouwelijk"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "zwart: mannelijk — vrouwelijk"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "roze: mannelijk — vrouwelijk"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "bruin: mannelijk — vrouwelijk"
+        }
+      ],
+      "exercise": {
+        "question": "Vul „een ... auto” aan met groen en „een ... pen” met wit. Wat bepaalt de Arabische vorm?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Het grammaticale geslacht van het Arabische naamwoord, niet dat van de eigenaar, bepaalt hier de overeenstemming."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Dagen en maanden: spreektijd en afspraken",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "Vandaag verandert zijn verwijzing",
+          "paragraphs": [
+            "Vandaag is de dag waarop je spreekt; gisteren gaat eraan vooraf en morgen komt erna. „Kom morgen” kan onduidelijk zijn als iemand het bericht dagen later zonder verzenddatum leest. Een vaste datum zoals 8 oktober 2026 identificeert een dag, maar een afspraak kan ook kalendersysteem, tijd en tijdzone nodig hebben.",
+            "De zeven weekdagnamen blijven hetzelfde als de ene kalender maandag begint en een andere zondag of zaterdag. Weergavevolgorde, eerste weekdag en weekendgewoonten verschillen. Leer de reeks en verbind die vervolgens met de plaatselijke kalender van de leerling."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Verschillende namen voor dezelfde maand",
+          "paragraphs": [
+            "Januari kan in verschillende Arabischtalige regio’s يناير of كانون الثاني heten, februari فبراير of شباط en maart مارس of آذار. Eén lijst leren maakt regionale alternatieven niet verkeerd. Bepaal kalendersysteem en regionale naamgeving bij een onbekende naam.",
+            "Muḥarram, Ṣafar en Ramaḍān horen bij de hidjrakalender en zijn geen vertalingen van gregoriaanse maandnamen. Maanjaren en zonnejaren verschillen. Januari door Muḥarram vervangen rekent een datum niet om. Gebruik een betrouwbare kalender voor een echte afspraak."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Een duidelijke afspraak lezen",
+          "paragraphs": [
+            "„Ik lees vrijdag” kan verduidelijking over welke vrijdag nodig hebben. „Ik lees iedere vrijdag” beschrijft een herhaalde activiteit. „Iedere” verandert de boodschap. Vraag of de handeling één keer plaatsvindt of herhaald wordt en bepaal de geschreven aanwijzing.",
+            "Een cijferdatum als 03/04 kan dubbelzinnig zijn bij verschillende dag-maandvolgorde. Een geschreven maandnaam of afgesproken datumformaat helpt. Gebruik een duidelijk leervoorbeeld; controleer bij echte planning de datum in plaats van naar het uiterlijk te gokken."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "vandaag"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "gisteren"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "morgen"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "zaterdag"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "zondag"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "maandag"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "dinsdag"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "woensdag"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "donderdag"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "vrijdag"
+        }
+      ],
+      "exercise": {
+        "question": "Als vandaag dinsdag is, welke weekdag is morgen? Zijn januari en Muḥarram namen van dezelfde maand?",
+        "answer": "Woensdag. Nee: januari is gregoriaans en Muḥarram hoort bij de hidjrakalender. Werkelijke datums koppelen vereist een correcte kalenderomrekening."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Plaats en richting: kies eerst je referentie",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Waar, ten opzichte van wat?",
+          "paragraphs": [
+            "Een boek ligt boven een tafel; een tas eronder. „Boven” en „onder” beschrijven relaties. Het boek is niet in iedere mogelijke beschrijving gewoon „boven”: benoem de referentie, boven de tafel. „Binnen” en „buiten” vereisen ook een passende grens, zoals in de tas of buiten de kamer.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ betekent „Leg het boek op tafel”. De getoonde verbonden lezing bevat de kasra op ضَعِ. Behandel niet iedere verbindingsklinker als vast onderdeel van het losstaande werkwoord. Begrijp eerst de opdracht en voeg het grammaticale detail toe als het nuttig is."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Wiens rechterkant?",
+          "paragraphs": [
+            "Steek je rechterhand op. Iemand tegenover jou kan zijn rechterhand hebben aan de kant die jij als links ziet. „Aan jouw rechterkant” is duidelijker dan „rechts” wanneer waarnemers anders gericht zijn. Reken een kind niet fout omdat het een referentiepunt gebruikt dat je niet hebt aangegeven.",
+            "Noord, zuid, oost en west zijn geografische richtingen, geen vaste synoniemen van boven, onder, rechts en links op papier. Een kaart heeft een oriëntatieaanwijzing of duidelijke conventie nodig. Je lichaam draaien verandert waar je rechterkant naartoe wijst; het verplaatst het noorden niet."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "De volgorde hoort bij de betekenis",
+          "paragraphs": [
+            "„Neem het boek en doe het daarna in de tas.” „Daarna” bewaart een volgorde. Geef korte opdrachten met bekende voorwerpen en laat de leerling de bedoelde handeling uitleggen voordat die beweegt. Dat scheidt woordbegrip van een toevallig juiste lichamelijke gok.",
+            "Het boek zit in de tas en de tas staat onder de stoel. Dat betekent niet dat het boek boven de tas ligt. Scheid een vermelde relatie van eentje die meer informatie vereist. Teken voor meerdere plaatsen een eenvoudig gelabeld plan in plaats van alleen te vertrouwen op het onthouden van beeldposities."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "boven / op, afhankelijk van de context"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "onder"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "voor"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "achter"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "binnen / in"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "buiten"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "rechts"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "links"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "noord"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "zuid"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "oost"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "west"
+        }
+      ],
+      "exercise": {
+        "question": "Een boek zit in een tas onder een stoel. Is het boek boven de tas? Wijst je rechterkant na draaien in dezelfde geografische richting?",
+        "answer": "Nee: het zit in de tas. Nee: je rechterkant verandert met je oriëntatie, anders dan de geografische referentie."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Verhalen: lees de tekst en volg de aanwijzingen",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Origineel verhaal: het raam en de pen",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Layla opende het raam. Ze legde een blauwe pen op tafel en ging daarna naar school. Toen ze terugkwam, kon ze de pen niet vinden. Ze keek onder de stoel en vond hem. Ze pakte hem en schreef een korte brief. De tekst zegt niet wie de pen verplaatste of dat de wind hem naar beneden blies. Dit verhaal is oorspronkelijk HORIZONS-schrijfwerk, geen gekopieerd gepubliceerd verhaal."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Drie lezingen, drie doelen",
+          "paragraphs": [
+            "Vraag bij de eerste lezing wie de hoofdpersoon is en welk probleem zij heeft. Onderbreek niet bij ieder teken. Volg de tweede keer de reeks: waar was de pen en waar werd hij gevonden? Bekijk de derde keer de taal: هُ in وَجَدَتْهُ verwijst naar de pen; de werkwoordsvormen passen bij Layla in dit verhaal.",
+            "De pen is blauw; „kort” beschrijft de lengte van haar brief, niet de kleur. De tekst geeft de briefkleur niet. Vervang ontbrekend bewijs niet door een plausibel antwoord. Je mag een verzonnen einde schrijven, maar benoem dat als je eigen verzinsel, niet als gebeurtenis in het oorspronkelijke verhaal."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Een kleine woordenlijst en zelfstandig schrijven",
+          "paragraphs": [
+            "Een raam is een opening in een muur, een tafel biedt een oppervlak voor voorwerpen en een brief is geschreven communicatie aan iemand. Deze woorden uitleggen kan een woordenschatobstakel wegnemen zonder het hele verhaal vooraf te vertellen. Kies daarna een andere titel en onderbouw die met bewijs uit de tekst.",
+            "Vervang de pen door een boek en vervolgens Layla door Omar. Een vrouwelijk voorwerp kiezen kan bijvoeglijke vormen veranderen; de persoon mannelijk maken verandert de relevante werkwoorden. Controleer elke verwijzing in plaats van alleen een naam te vervangen. Het doel is een samenhangende nieuwe tekst, geen automatische woordvervanging."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "raam",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "tafel",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "stoel",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "brief / bericht",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "en zij vond hem"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "daarna"
+        }
+      ],
+      "exercise": {
+        "question": "Waar vond Layla de pen? Wie verplaatste hem? Waarnaar verwijst هُ in وَجَدَتْهُ?",
+        "answer": "Onder de stoel. De tekst vertelt niet wie hem verplaatste. هُ verwijst naar de pen. Scheid genoemde informatie van informatie die de schrijver niet gaf."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Klinkeralif schrijft lange /aː/ in بَاب. Hamza in أَ, إِ en أُ is de medeklinker /ʔ/ op een drager, niet dezelfde klank als klinkeralif. Alif ontvangt een voorafgaande verbinding maar verbindt niet met de volgende letter links.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "deur"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "boek"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "vuur"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Sluit de lippen en laat ze met stemgeving los voor /b/. Bāʾ heeft één punt onder zijn basisvorm en verbindt aan beide kanten als de buurletters dat toestaan. De verwante vormen tāʾ en thāʾ delen zijn liparticulatie niet. /p/ is een andere klank, geen andere spelling van bāʾ.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "deur"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "berg"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "boek"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Maak met de voorste tong een sluiting bij of net achter de tanden en laat los voor /t/, zonder medeklinkerstemgeving in het doelmodel. Tāʾ heeft twee punten boven. Het is niet hetzelfde als laatste tāʾ marbūṭa ة, waarvan de lezing afhangt van verbinding en pauze.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "dadels (vruchten)"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "meisje / dochter"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "huis / thuis"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Laat lucht door een lichte vernauwing bij de tanden voor stemloze /θ/. Maak niet de volledige sluiting van /t/. Thāʾ heeft drie punten boven en verbindt aan beide kanten. Engels think biedt een bruikbare vergelijking, maar th staat niet altijd voor deze klank. Standaardnederlands heeft geen exact equivalent.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "kledingstuk"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "veel"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "spraak / gesprek, in dit woordenschatvoorbeeld"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Dit naslagwerk gebruikt /dʒ/ als oefenmodel voor jīm. Arabischtalige gemeenschappen kennen andere uitspraken. Stem de luisteropname af op het vermelde model. Jīms punt staat onderin en onderscheidt hem zichtbaar van ح en خ; de punt verklaart de articulatie niet.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "kameel"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "ster"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "kroon"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "Ḥāʾ is de stemloze faryngale medeklinker /ħ/, niet gewone /h/ en niet khāʾ. „Sterke h” benoemt de plaats niet. Vermijd pijnlijk samenknijpen van de keel. De basisvorm heeft geen punt: herken ح, ج en خ visueel en vergelijk daarna hun verschillende klanken.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "touw"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "zee"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "zout"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "Khāʾ is stemloze wrijving achterin het spraakkanaal, hier /x~χ/. De precieze plaats kan met spreker en context variëren. De punt staat boven. Een buitenlandse vergelijking moet taal en variëteit vermelden; alleen kh schrijven leert de klank niet.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "brood"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "dadelpalmen"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "keuken"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "Dāl /d/ gebruikt een stemhebbende voorste sluiting en vrijgave. Het heeft geen punt en verbindt niet met de volgende letter links. Vergelijk visueel met gepunte dhāl en voor stemgeving met tāʾ, zonder tegelijk de klinker te veranderen.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "les"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "hand"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "jongen, in dit woordenschatvoorbeeld"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "Dhāl /ð/ is stemhebbende tandwrijving in dit Standaardarabische doel. Het gebruikt niet dāls volledige sluiting en verschilt van stemloze /θ/. De punt staat boven; het verbindt niet met de volgende letter links. Engels this is een mogelijke brug, geen regel voor iedere th-spelling. Standaardnederlands heeft geen exact equivalent.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "goud"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "oor"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "heerlijk"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "Rāʾ gebruikt een kort tongpuntcontact of herhaalde contacten volgens context en uitspraak. Algemene /r/ vereist geen vast aantal tikken. Rāʾ heeft geen punt en verbindt niet verder naar links. Sterke druk met tong of keel is geen leerdoel.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "zand"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "zee"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "maan"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "Zāy /z/ is stemhebbende voorste wrijving. De basisvorm lijkt op rāʾ met een punt boven, maar het is geen rāʾ met extra klinker. Het verbindt niet met de volgende letter links. Vergelijk /z/ en /s/ door naar stemgeving te luisteren bij dezelfde volgende klinker.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "olie"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "bananen"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "brood"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "Sīn /s/ is stemloze wrijving met een andere vernauwingsplaats dan thāʾ. Het heeft geen punten; de getekende tandjes verschillen per lettertype. Herken eerst de identiteit in een helder lettertype en vergelijk dan handschriftstijlen zonder iedere stijlvariant als nieuwe letter te behandelen.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "vis"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "zon"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "les"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "Shīn /ʃ/ is stemloze wrijving met een andere vernauwing dan sīn. Drie punten staan boven een verwante basisvorm. Drie punten maken het geen thāʾ: schriftvorm en articulatie zijn aparte eigenschappen. Vergelijk سَ en شَ met dezelfde klinker.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "zon"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "gras / kruidachtige begroeiing"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "veren"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "Ṣād /sˤ/ is emfatisch in het gekozen model. Het is niet alleen een luidere /s/: extra achterarticulatie beïnvloedt de klankkwaliteit en naburige klinkers. De basisvorm heeft geen punt. Vergelijk سَ en صَ zonder pijnlijke spanning of overdreven geforceerde klank.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "geduld"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "sap"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "kooi"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "Ḍād /dˤ/ geeft een gangbaar hedendaags Standaardarabisch doel weer, niet elke historische of dialectuitspraak. Een punt onderscheidt het van ṣāds basisvorm. Voeg het niet samen met ẓāʾ: in het gekozen model gebruikt het ene sluiting en het andere wrijving.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "licht"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "eieren"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "aarde / land"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "Ṭāʾ /tˤ/ combineert voorste sluiting en vrijgave met emfasis. Het is geen versierde tāʾ of harder gesproken tāʾ. De basisvorm heeft geen punt. Vergelijk تَ en طَ en let op het effect op klinkerkwaliteit én medeklinker.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "klei / modder"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "trein"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "draad"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "Ẓāʾ /ðˤ/ is hier het genoemde doel van emfatische tandwrijving; variatie moet worden gemarkeerd. Een punt staat boven ṭāʾs basisvorm. „Nog een ḍād” is geen goede beschrijving. Gebruik een heldere opname passend bij het gekozen onderscheid in plaats van beide spellingen gelijk te laten klinken.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "schaduw"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "bot"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "geluk"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ʿAyn /ʕ/ is een stemhebbende faryngale medeklinker, geen lange klinker of verzwakte hamza. Leer met een zacht model in plaats van de keel samen te knijpen. Het heeft geen punt en de verbonden vormen wijken duidelijk af van de losse omtrek. Visueel herkennen en klankoefening vragen aparte aandacht.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "oog, in dit woordenschatvoorbeeld"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "hij speelde"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "verzamelen / bijeenbrengen"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "Ghayn is stemhebbende wrijving achterin, hier /ɣ~ʁ/ voor de beschreven reeks. Met de punt boven lijkt de vorm op ʿayn, niet de klank. Vergelijk voor stemgeving met khāʾ en voor plaats met ʿayn, zonder identieke articulatie te beweren.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "kamer"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "klein"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "lege ruimte / vrije plaats"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "Fāʾ /f/ laat lucht tussen onderlip en boventanden door zonder medeklinkerstemgeving. In de hier gebruikte oostelijke schrijfconventie staat één punt boven. Sommige Maghrebijnse conventies verschillen en moeten worden benoemd wanneer ze worden getoond. Een schrijftraditie is niet automatisch een fout van de leerling.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "olifant"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "sleutel"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "wol"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "Qāf /q/ gebruikt een stemloze achterste sluiting in dit Standaardarabische model, verder achterin dan kāf. In deze schrijfconventie staan twee punten boven. Bekende dialectuitspraken veranderen niet stilzwijgend het luisterdoel; benoem het model van de les.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "maan"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "runderen"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "markt"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "Kāf /k/ sluit de achterkant van de tong tegen het achterste gehemelte en laat los. Het is niet identiek aan qāf omdat beide achtermedeklinkers zijn. Het kleine teken in losse ك hoort bij de schriftvorm, niet bij een afzonderlijke uit te spreken hamza.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "boek"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "vis"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "engel"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "Lām /l/ is stemhebbend en lateraal: lucht loopt langs de tong terwijl de punt voorin contact maakt. Begin met het gewone oefenmodel; introduceer bijzondere emfatische contexten apart. Lām verbindt in beide richtingen en لا kan als gecombineerde vorm worden getekend zonder een nieuwe alfabetletter te worden.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "nacht"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "berg"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "Mīm /m/ is een stemhebbende nasale medeklinker met gesloten lippen. Het verschilt niet alleen in vorm van bāʾ: lucht gaat bij mīm door de neus. De basisvorm verandert bij verbinding, maar naam en letteridentiteit blijven hetzelfde.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "water"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "maan"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "Nūn /n/ is stemhebbend en nasaal met een voorste tongsluiting. In deze conventie staat één punt boven. Vergelijk nūn en mīm via de sluitingsplaats. Geschreven nūn verschilt van tanwīn: bepaalde eindes bevatten /n/ zonder aparte nūn-letter in de spelling.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "licht"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "oog, in dit woordenschatvoorbeeld"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "melk of zuivelproduct, afhankelijk van de regio"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "Hāʾ /h/ is stemloos en gebruikt niet de faryngale vernauwing van ḥāʾ. ه, هـ, ـهـ en ـه zien er verschillend uit; verbindingen helpen ze verklaren. Identificeer niet iedere laatste ة als gewone hāʾ omdat een pauzelezing vergelijkbaar kan klinken.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "maansikkel"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "rivier"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "gezicht"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "Wāw kan de medeklinker /w/ in وَلَد zijn of lange /uː/ in نُور helpen schrijven. In ثَوْب is de functie geen lange /uː/: lees het klinkerpatroon. Wāw ontvangt een vorige verbinding maar verbindt niet met de volgende letter links.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "jongen, in dit woordenschatvoorbeeld"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "licht"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "kledingstuk"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "Yāʾ kan de medeklinker /j/ in يَد zijn of lange /iː/ in فِيل helpen schrijven. بَيْت heeft een ander patroon, /aj/, geen lange /iː/. Gepunte yāʾ verschilt van alif maqṣūra ى, die je niet automatisch als yāʾ mag lezen.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "hand"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "olifant"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "huis / thuis"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "Begrijp stap voor stap en pas toe wat je leert.",
+    "warning": "Uitgebreide werkversie: redactionele en gespecialiseerde menselijke controle blijven nodig.",
+    "examples": "Voorbeelden en betekenissen",
+    "practice": "Probeer het zelf",
+    "answer": "Uitgelegd antwoord",
+    "notes": "Leeshulpen",
+    "contents": "Inhoud",
+    "view": "Weergave",
+    "all": "Hele boek",
+    "original": "Oorspronkelijke HORIZONS-uitleg",
+    "answers": "Antwoorden en uitleg",
+    "forms": "Schriftvormen",
+    "words": "Woorden in context",
+    "draft": "Werkversie",
+    "font": "Arabisch lettertype",
+    "theme": "Wissel tussen licht en donker thema"
+  },
+  "notation_note": "ː geeft de lengte van de vorige klinker aan; ˤ markeert medeklinkeremfasis in deze weergave; . markeert een lettergreepgrens; ~ scheidt alternatieven in de beschreven reeks, niet twee opeenvolgende klanken. / / omkadert een klankweergave, geen Arabische spelling. Losse woordvoorbeelden gebruiken pauzelezingen; zinsvertalingen beweren niet stilzwijgend één uitspraak voor verbinding en pauze.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Na volledige vertaling zijn 13 hoofdstukken, 39 onderdelen, 104 betekenissen, 13 oefeningen en 28 letterkaarten vergeleken met de Engelse en Arabische bronnen. Arabische voorbeelden, IPA, verbindingsvormen en de oorspronkelijke Arabische verhaalalinea zijn exact gecontroleerd.",
+          "Verschillen tussen letter en klank, lange klinker en geminatie, verbinding en pauze, enkelvoud/tweevoud/meervoud, bezit en relatie en naamwoordgroep versus volledige zin zijn behouden.",
+          "Jij/jullie geven de Arabische geslachtsverschillen niet weer; de labels verduidelijken die. Zij wordt uitdrukkelijk als vrouwelijk enkelvoud of meervoud benoemd om Nederlandse dubbelzinnigheid niet naar de Arabische tabel over te brengen.",
+          "Uitspraakteken is verduidelijkt zodat de leerling klinker- en uitspraakmarkeringen niet met gewone interpunctie verwart. Het verhaal voegt geen oorzaak toe voor het verplaatsen van de pen."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Tweede afzonderlijke doorlezing na de betekeniscontrole: Nederlandse woordvolgorde, lidwoorden, verwijzingen, werkwoordsvormen, pedagogische gebiedende wijs en spelling gecontroleerd op het complete bestand.",
+          "Werkwoordsverbuiging is gecorrigeerd naar werkwoordsvervoeging; de onjuiste vorm buurklankers is vervangen door naburige klinkers. De aanspreekvorm je blijft consistent.",
+          "Technische termen worden met voorbeelden toegelicht. Regionale en contextuele woordbetekenissen blijven herkenbaar, waaronder melk of zuivelproduct. Geen algemene opvulalinea’s of Engelse vervangtekst.",
+          "Zelfcontrole door het model, geen menselijke moedertaalcontrole of garantie van volledige foutloosheid."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

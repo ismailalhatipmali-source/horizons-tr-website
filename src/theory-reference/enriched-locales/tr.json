@@ -1,0 +1,1554 @@
+{
+  "language": "tr",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Harfler ve yazı: okumaya açılan kapı",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Üç ayrı şey: ad, ses ve biçim",
+          "paragraphs": [
+            "Bir kutu yapı parçası düşün. Parçaların adlarını söylemek, hangi parçayı aradığını anlamana yardım eder; ancak yalnızca adları söyleyerek ev kuramazsın. Harfin de adı, yazıdaki biçimi ve kelimedeki sesi vardır. ب harfinin adı bâdır. بَاب okurken harf adlarını art arda söylemeyiz; /b/ sesini uzun /aː/ ile birleştiririz. Harf adları, bir kelimenin nasıl yazıldığını sormak için yine yararlıdır.",
+            "Arapça kelimeyi sağdan sola izle. Önce gövdeyi, sonra noktaları, ardından okuma işaretlerini fark et. بَ ile تَ benzer gövdelere sahiptir; noktalar farklı harfleri gösterir. Üstün yerine esre koyunca بِ olur; bâ harfi tâya dönüşmez. Satır kalabalıksa geri kalanını kapat. Bütün kelimeyi okuyamasan bile harfi tanımak önemli bir adımdır."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Harfin biçimi neden değişir?",
+          "paragraphs": [
+            "Arapça harfler, el ele tutuşan kişiler gibi ortak bir yazı çizgisi paylaşabilir. ب, بـ, ـبـ ve ـب dört ayrı harf değil, aynı harfin bağlantı biçimleridir. بَاب kelimesinde ilk bâ, elife bağlanır; elif son bâya bağlantı uzatmaz. Bu küçük kopukluk ikinci bir kelime oluşturmaz.",
+            "ا، د، ذ، ر، ز، و harfleri uygun durumda önceki harfe bağlanabilir; ancak solundaki sonraki harfe bağlanmaz. Çizgi koptu diye kelimenin içine boşluk koyma. Boşluk kelimeleri ayırır; bağlantı kuralları kelime içindeki biçimleri belirler. Kuralı ezberlemeden önce gerçek bir kelimede gözlemle."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Elif, hemze ve anlam",
+          "paragraphs": [
+            "بَاب içinde elif uzun /aː/ ünlüsünü gösterir. أَخ kelimesi ise elifin taşıdığı /ʔ/ hemze sesiyle başlar. Hemze ünsüzdür; uzun ünlü değildir. Yazım kurallarına göre ء، أ، إ، ؤ، ئ biçimlerinde görülebilir. Taşıyıcının biçimi, sesi otomatik olarak elifin uzun ünlüsüne dönüştürmez.",
+            "Her adımı anlamla birleştir: kapı açılır, kitap okunacak sayfalar içerir, kalem yazmaya yarar. Kartların yerini değiştir ve kısa bir aradan sonra tekrar dön. Yalnızca kartın sırasını hatırlamak yeterli değildir; bağımsız okuma, yazılı kelimeyi farklı yerde de tanımaktır."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "kapı",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "kitap",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "kalem",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "erkek kardeş",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "ev",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "ışık",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "بَاب içindeki bağlantı kopukluğu iki kelime mi oluşturur? Bâ harfinin adı, بَاب kelimesinin tamamının okunuşu mudur?",
+        "answer": "İkisi de hayır. بَاب tek kelimedir; elif sonraki harfe bağlanmaz. Bâ bir harfin adıdır; /baːb/ kelimenin seslerini sırasıyla okur."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Harekeler: küçük işaretler okunuşu değiştirir",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Hareke, nokta değildir",
+          "paragraphs": [
+            "بَ, بُ ve بِ örneklerini yan yana koy. Üçünde de bâ vardır. Üstün kısa /a/, ötre kısa /u/, esre kısa /i/ ünlüsünü gösterir. Ünlüye göre ağız, dil ve dudakların duruşu değişir. Sesi yükseltmek, bir ünlüyü başka bir ünlüye dönüştürmez.",
+            "بِ içinde bânın noktası ile esre birbirine yakın görünür. Nokta harfin kimliğini, esre okunuşunu belirtir. Hareke değişse de bâ aynı harftir. Renk bu görevleri ayırt etmeye yardım eder; siyah beyaz baskıda da biçim ve açıklamalar anlaşılır olmalıdır."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Uzunluk, ses yüksekliği değildir",
+          "paragraphs": [
+            "بَ ile بَا, بُ ile بُو, بِ ile بِي örneklerini karşılaştır. Her çiftin ikincisinde ünlü uzar; bâ başka bir ünsüze dönüşmez. /baː/ içindeki ː, önceki ünlünün uzunluğunu gösterir. Arapça kelimeye eklenen bir harf ya da her konuşmada aynı saniye süresi değildir.",
+            "Elif, vav ve yâ her görüldüğünde uzun ünlü değildir. وَلَد içindeki vav /w/, يَد içindeki yâ /j/ ünsüzüdür. نُور içindeki vav /uː/, فِيل içindeki yâ /iː/ uzun ünlüsünün yazımına katılır. Harfin işlevini yalnızca adına bakarak tahmin etme; çevresindeki yapıyı oku."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Cezim, şedde ve tenvin",
+          "paragraphs": [
+            "بِنْت içindeki cezim, bu yapıda nûndan sonra ünlü eklememeyi hatırlatır; /n/ sesini silmez. أُمّ içindeki şedde, önceki ünlünün uzamasını değil ünsüzün iki katlı oluşunu gösterir. أَمْ /ʔam/ ile أُمّ /ʔumm/ hem ünlü hem ünsüz uzunluğu bakımından farklıdır. Yalnızca tek özelliği karşılaştırmak için kelime olduğu iddia edilmeyen alıştırma heceleri kullan.",
+            "كِتَابٌ içindeki tenvin, ismin dilbilgisel sonuna aittir. Uygun bağlantılı okumada /un/ duyulur; bu kelimede olağan durak okuması /kitaːb/ olur. Bu örnek her son ek için genel kural değildir. Yazıdaki işareti koruyarak bağlantılı okuma ile durak arasındaki farkı açıkla."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "kız / kız evlat",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "fil",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "erkek çocuk",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "el",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "anne",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "ışık",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "نُور içinde vav burada /w/ midir? بِنْت içindeki cezim nûnu siler mi?",
+        "answer": "Hayır. نُور içindeki vav uzun /uː/ ünlüsünü yazar. بِنْت içindeki nûn okunur; bu yapıda ardından ünlü eklenmez."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "İkili birleştirme: ilk okunuşu kurmak",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Neyi birleştiriyoruz?",
+          "paragraphs": [
+            "Karesede ikili birleştirme, iki yazılı birimi birleştirme alıştırmasının adıdır. Harf sayısı her zaman ses ya da hece sayısıyla aynı değildir. بَا, bâ ve elif içerir; bir ünsüz ile uzun ünlüyü gösterir. İki ünsüz değildir ve tek başına anlamlı kelime olmak zorunda değildir.",
+            "بَ ile başla; sonra بَا, تَا ve ثَا oku. İlk karşılaştırmada ünlü uzunluğu değişir. Sonrakinde uzun ünlü korunurken ünsüz değişir. Öğrenciye bakmak ve okumak için süre tanı. İstenen sesler yerine harf adlarını tekrarlamak birleştirmeyi zorlaştırır."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Açık ve kapalı heceler",
+          "paragraphs": [
+            "بَا bir ünlüyle bittiği için burada açık hecedir. بَرْ bir ünsüzle bittiği için kapalıdır. “Kapalı”, okurken ağzın sürekli kapalı kalması anlamına gelmez; hecenin sonunu tanımlar. بَرْ okurken râdan sonra ünlü ekleme. بَرَ okumak yapıyı değiştirir.",
+            "Yerini takip etmek için parmağını kullan; sonra bu yardımı azalt. Parmakla takip, doğru telaffuzun kanıtı değildir. Tanıdık bir heceden sonra aynı kurala uyan yeni bir hece göster. Böylece kartı ezberlemek yerine kuralı başka örneğe taşıyıp taşımadığını görürsün."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "Parçadan kelimeye",
+          "paragraphs": [
+            "بَا, بَاب kelimesinin bir parçasıdır. بِي, gösterilen بِيض okunuşunun bir parçasıdır. Her hecenin ayrı sözlük anlamı olması gerekmez. Önce sesleri birleştir, sonra bütün kelimenin anlamını sor. Alıştırmanın amacı yalnızca hızlı okumak değildir.",
+            "Yanlış okuma olduğunda değişen şeyi belirle: ünsüz mü, ünlü türü mü, uzunluk mu, eklenen ses mi? Belirli sorunu adlandırmak, her şeyi baştan yaptırmaktan yararlıdır. Birkaç özellik zor geliyorsa önce tek bir özelliği çalış, sonra yeniden birleştir."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "alıştırma hecesi; burada kelime değildir",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "alıştırma hecesi",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "alıştırma hecesi",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "bu örnekte alıştırma hecesi",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "kapı",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "yumurtalar",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "بَا ile بَرْ neden aynı hece türü değildir?",
+        "answer": "بَا uzun ünlüyle, بَرْ ünsüzle biter. Ayrım, nokta sayısını ya da ses yüksekliğini değil hece sonunu açıklar."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Üçlü birleştirme: anlamlı birimleri okumak",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Üç harf, ama kaç hece?",
+          "paragraphs": [
+            "بَاب ve جَبَل üçer temel harf içerir. Seçilen durak okunuşunda /baːb/ tek hece, /dʒa.bal/ iki hecedir. Ses gösterimindeki nokta hece sınırını belirtir; cîmin yazıdaki noktası değildir. Yalnızca harfleri sayarak hece sayısını bulamazsın.",
+            "Harfleri harekeleriyle yaz ve ses yapısını incele. جَبَل için جَ ile başla, durak okumasında بَلْ ile bitir. Bâyı atlamadan veya araya başka ses koymadan birleştir. Parçalara ayırmak geçici yardımdır; normal konuşmadaki her kelimeyi böyle kesmeyiz."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Harf sırası anlam taşır",
+          "paragraphs": [
+            "قَلْب kalp, كَلْب köpek demektir. Kâf ile kāf arasındaki değişiklik anlamı değiştirir. بَحْر deniz, حَبْر mürekkeptir; bu örnekte sıra ve ünlüler de değişir. Yalnızca tek özelliği değiştiren bir karşılaştırma değildir. Tanıdık resimden tahmin etmek yerine yazılı ayrıntılara bak.",
+            "Anlamı gösterilebilen kelimeler seç. Okuduktan sonra mürekkebin yazmak için mi yüzmek için mi kullanıldığını sor. Anlam, tahmini fark ettirebilir; ancak harflere bakmanın yerini tutmaz. Yeni kelimeyi bilmemek, tek başına okuma başarısızlığı değildir."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Önce dikkatli okuma, sonra akıcılık",
+          "paragraphs": [
+            "Üç kelimeyi yarışmadan oku. Tekrar çalışılması gerekeni işaretle ve daha kolay bir örnekten sonra dön. Akıcılık yalnızca dakikadaki kelime sayısı değildir; uygun okuma, anlama ve gerektiğinde düzeltmeyi de içerir. Tereddüdü tahminle gizlemeyi teşvik etme.",
+            "جَبَل ardından جَمَل oku. Tanıdık yapıda bâ, mîme dönüşür. İlki dağ, ikincisi devedir. Bilinen harflerden başka gerçek bir kelime bulmayı dene; fakat her harf sıralamasının Arapça kelime oluşturmadığını açıkla."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "dağ",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "deve",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "kalp",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "köpek",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "deniz",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "mürekkep",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "جَبَل ile جَمَل arasında hangi harf değişir? بَاب ile جَبَل aynı sayıda heceye mi sahiptir?",
+        "answer": "Bâ, mîme dönüşür. Gösterilen durak okumasında بَاب tek, جَبَل iki hecedir. Yalnızca harf sayısı yeterli değildir."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Dörtlü birleştirme: zorlanmadan daha uzun okuma",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Daha uzun her zaman daha zor değildir",
+          "paragraphs": [
+            "كِتَاب dört temel harften oluşur. Durak okuması /ki.taːb/, kısa ilk hece ve uzun ünlüyle son bâ içeren ikinci heceden oluşur. بَاب içinde öğrendiğin beceriyi yeniden kullan; her parçayı tamamen yeni sayma. Yazılı uzunluk tek başına okuma zorluğunu belirlemez.",
+            "ثَوْب içindeki vav burada /uː/ değildir; /aw/ farklı bir dizidir. بَيْت içinde /iː/ değil /aj/ vardır. Her vavı “u”, her yâyı “i” saymak yerine harekeye ve yapıya bak. Yeni karşılaştırma eklemeden önce tek örneği sağlamlaştır."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "Cümle ilişkiler ekler",
+          "paragraphs": [
+            "هَذَا كِتَابٌ, “Bu bir kitaptır” diyerek yakındaki nesneyi tanıtır. هَذِهِ حَقِيبَةٌ, çanta için dişil işaret sözcüğü kullanır. İsmi değiştirdiğinde ilişkili sözcükleri de kontrol et; tek etiketi değiştirmek yeterli olmayabilir.",
+            "الكِتَابُ جَدِيدٌ, “Kitap yenidir” der. الكِتَابُ الجَدِيدُ ise “yeni kitap” ifadesidir; tek başına aynı tamamlanmış yargıyı vermez. Belirlilik takısı süs değildir. Dilbilgisi terimlerinden önce basit bir durumda iki ilişkiyi karşılaştırabiliriz."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Beceriyi yeni metne taşımak",
+          "paragraphs": [
+            "كِتَاب ile كَاتِب karşılaştır. Temel ünsüzler ilişkilidir; elifin yeri ve ünlüler farklıdır. İlki kitap, ikincisi yazardır. Aynı kökle ilişkili olmak aynı anlamı taşımak değildir. Bu, bütün türetme sistemini bir anda öğretmeden kelime ailelerine giriş yapar.",
+            "Kısa bir satır oku, kısa süreliğine gizle ve genel anlamı sor. Sonra bir ayrıntıyı yazıdan kontrol et. Böylece sesleri hatırlamak, anlamak ve yazılı kanıta dönmek ayrılır. Yeni kelime için yardım istemek öğrenmenin parçasıdır; bu kaynak sürekli sınav gibi hissettirmemelidir."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "kitap",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "yazar",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "çanta",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "Bu bir kitaptır."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Kitap yenidir."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "yeni kitap"
+        }
+      ],
+      "exercise": {
+        "question": "الكِتَابُ جَدِيدٌ ile الكِتَابُ الجَدِيدُ tek başlarına aynı mesajı mı verir?",
+        "answer": "Hayır. İlki kitabın yeni olduğunu bildirir; ikincisi yeni kitabı belirtir, aynı tamamlanmış yargıyı tek başına vermez."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Harf rehberi: biçimden kelimenin kullanımına",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Her harf için tutarlı bir yol",
+          "paragraphs": [
+            "Her harf için aynı soruları kullan: adı ne, ses nerede oluşur, nasıl bağlanır, benzer biçimden neyle ayrılır, hangi anlaşılır kelimelerde kullanılır? Tutarlı sıra, dersi açıklamasız resimlere dönüşmekten korur. İlk çalışmada her soruyu bitirmek gerekmez.",
+            "Bu bölümde 28 alfabe harfinin kartları bulunur. Elifin alfabe sırası, hemze ile uzun /aː/ sesini aynı yapmaz. Vav ve yânın görevi bağlama bağlıdır. Sembolü anadilindeki yazımla karşılaştırmadan önce kartın açıklamasını oku."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Biçim ailesi, ses ailesi değildir",
+          "paragraphs": [
+            "ب, ت ve ث benzer gövdelidir; fakat bâ dudaklarda, tâ ön bölgede kapanmayla, sâ ise seçilen fasih modelde dişler yakınında sürtünmeyle oluşur. Üç nokta, sâ sesinin nedenini açıklamaz; şînin üç noktası da onu sâ yapmaz. Görsel aile tanımaya, ses açıklaması telaffuza yardım eder.",
+            "ثَ ile تَ karşılaştırırken üstünü sabit tut. س ile ص arasındaki farkı ses yüksekliğiyle değil kalınlaşmayla açıkla. Bazı Arapça seslerin anadilinde doğrudan karşılığı yoktur. Böyle durumda uydurma tam eşdeğer yerine sesin oluşumunu anlat ve dinleme örneği kullan."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Kelime, cümle ve aktarım",
+          "paragraphs": [
+            "Harfi başta, ortada ve sonda bulduktan sonra listedeki bir kelimeyle anlamlı cümle kur. Kitabı büyütmek için nadir kelimeleri yığma. Konum ve anlamı çeşitlendir, yeni kelimeyi açıkla; birden çok anlam varsa bağlam ekle.",
+            "Lehçe farkı, konuşanların kusuru değildir. Kaynak, öğrenilen fasih hedefi belirtir; cîm, kāf ve başka seslerin Arapça konuşulan yerlerde farklı duyulabileceğini açıklar. Dinleme alıştırmasındaki kayıt, açıklama ve sembollerin belirttiği hedefle uyuşmalıdır."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "kapı",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "dağ",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "kitap",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "meyve / ürün",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "kar",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "tilki",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "ب, ت ve ث benzer biçimli diye sesleri aynı yerde mi oluşur? Cîm her toplulukta aynı mı söylenir?",
+        "answer": "Hayır. Biçim yazılı bilgidir; sesin oluşum yeri ayrı özelliktir. Cîmin farklı söylenişleri vardır; hedefi belirt ve diğerlerini açıkça adlandır."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Zamirler: ben kimim, sen kimsin?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Konuşmacıya göre değişen gönderim",
+          "paragraphs": [
+            "Leyla “ben” dediğinde Leylayı, Ömer “ben” dediğinde Ömeri kasteder. Zamir sabit bir kişinin adı değildir; gönderimi konuşma durumundan anlaşılır. “Sen” konuşulan kişiyi, “o” hakkında konuşulan kişiyi gösterir. Tabloyu ezberlemeden önce rolleri değiştir.",
+            "Arapçada أَنْتَ eril tekil, أَنْتِ dişil tekil muhatap içindir. Türkçede ikisinin karşılığı sen olur; bu durum Arapçadaki ayrımı isteğe bağlı yapmaz. Türkçe o, hem هُوَ hem هِيَ için kullanılabilir. Arapça cümle kurarken yalnızca kelime değiştirmek yerine kimi kastettiğine bak."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Tekil, ikil ve çoğul",
+          "paragraphs": [
+            "أَنَا tekil konuşmacıdır. نَحْنُ konuşmacıyı içeren, iki veya daha fazla kişiden oluşabilen gruptur. أَنْتُمَا iki muhatap, هُمَا hakkında konuşulan iki kişi içindir; ikisi de eril ve dişil gönderimde kullanılabilir. أَنْتُمْ / أَنْتُنَّ ile هُمْ / هُنَّ çoğul biçimleri ayırır. Fasih Arapçada eril çoğul, bağlama göre karma grubu da kapsayabilir.",
+            "Her dilde ayrı tek sözcüklü ikil zamir yoktur. أَنْتُمَا için Türkçe ikiniz açıklaması kullanılabilir. Bu, gönderimi açıklar; bütün bağlamlarda birebir kullanım eşitliği demek değildir. Biçim kadar anlamı da karşılaştır."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Zamir ve onu izleyen yapı",
+          "paragraphs": [
+            "أَنَا طَالِبٌ ve أَنَا طَالِبَةٌ aynı zamirle başlar; ardından gelen isim konuşmacıya uygun biçimi alır. هُوَ طَالِبٌ ve هِيَ طَالِبَةٌ hem zamiri hem ismi değiştirir. İlk örnekte erkek öğrenci bulunması, أَنَا zamirini yalnızca erile ait yapmaz.",
+            "أَنَا أَقْرَأُ ile نَحْنُ نَقْرَأُ içinde fiil biçimi değişir. Bu örnekte ilk أَ, birinci tekil fiil çekimine aittir; iyelik zamiri değildir. Fiil yeterli bilgi taşıyorsa açık bağlamda ayrı zamir söylenmeyebilir. Çevirideki Türkçe ekler veya İngilizce am/is/are, her Arapça isim cümlesine ayrı kelime eklemeyi gerektirmez."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "ben",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "sen (eril tekil)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "sen (dişil tekil)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "biz",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "o (eril)",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "o (dişil)",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "ikiniz"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "ikisi"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "siz (eril çoğul; bağlama göre karma grup)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "siz (dişil çoğul)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "onlar (eril çoğul; bağlama göre karma grup)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "onlar (dişil çoğul)"
+        }
+      ],
+      "exercise": {
+        "question": "Leyla önce kendisi, sonra Ömer hakkında konuşuyor. Hangi iki zamir uygundur? نَحْنُ yalnızca eril midir?",
+        "answer": "Kendisi için أَنَا, bu örnekte Ömer için هُوَ. نَحْنُ konuşmacıların cinsiyetini ayırmaz; grubu bağlam belirler."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "İyelik ve ilişkiler: etiketten fazlası",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Bir nesne, iki konuşmacı",
+          "paragraphs": [
+            "Ömer bir kitap tutup كِتَابِي, yani kitabım der. Ona كِتَابُكَ, yani kitabın diye hitap edersin. Leylaya ondan söz ederken كِتَابُهُ, yani onun kitabı dersin. Kitap değişmedi; konuşma ilişkisi değişti. Bunlar üç kitap türü değildir.",
+            "Leylaya hitap ederken كِتَابُكِ, ondan söz ederken كِتَابُهَا kullanılır. كَ ile كِ yazı ve seste küçük, gönderimde önemli farktır. Türkçe kitabın cinsiyet ayrımı yapmaz; Arapça karşılığı seçerken muhatabı dikkate al."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "İlişki her zaman sahiplik değildir",
+          "paragraphs": [
+            "كِتَابُنَا kitabı grubumuzla ilişkilendirir. أُمِّي annem demektir; kişiyi sahip olunan eşya yapmaz. مَدْرَسَتِي, sahip olduğum bina değil, gittiğim okul olabilir. İlişkinin türünü isim ve bağlam belirler.",
+            "مَدْرَسَة → مَدْرَسَتِي örneğinde tâ merbûta, zamir bağlanınca açık tâ biçiminde yazılır. Her son hânın tâya dönüştüğünü sanma. وَجْهِي, yüzüm demektir; وَجْه içindeki hâ korunur."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "İsim, durum eki ve belirlilik",
+          "paragraphs": [
+            "Tablodaki كِتَابُكَ seçilmiş bir biçimdir. رَأَيْتُ كِتَابَكَ, kitabını gördüm, cümlesinde ismin son harekesi görevine göre değişir; كَ eril tekil muhatabı göstermeye devam eder. Önceki ötreyi “senin” anlamının değişmez parçası olarak ezberleme.",
+            "İsme iyelik zamiri bağlanan olağan yapıda isme tenvin koymayız ve onu bağımsız ismiş gibi belirlilik takısıyla kullanmayız. كِتَابِي bu kullanımda belirli bir ilişki gösterir. İleri istisnalardan önce doğru örneği öğren."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "kitabım"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "kitabın (eril tekil muhatap)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "kitabın (dişil tekil muhatap)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "onun kitabı (eril)"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "onun kitabı (dişil)"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "kitabımız"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "okulum"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "yüzüm"
+        }
+      ],
+      "exercise": {
+        "question": "Leyla kitabım diyor. Ona doğrudan hitap ederken, sonra başka birine Leyladan söz ederken hangi biçimi kullanırsın?",
+        "answer": "Ona hitap ederken كِتَابُكِ, hakkında konuşurken كِتَابُهَا. Zamirin gönderimi konuşma ilişkisine göre değişir."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Sayılar: simge, kelime ve miktar",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Her nesneyi bir kez say",
+          "paragraphs": [
+            "Masaya üç kalem koy. Her kaleme bir kez dokunarak her dokunuşta bir sayı söyle; sonra grubun miktarını belirt. Aynı kalemi iki kez saymak toplamı yanlış verir. Kalem eklemeden veya çıkarmadan dizilişi değiştirmek sayıyı değiştirmez; sıra biçimi miktar değildir.",
+            "٣ ve 3 gösterilen iki rakam sisteminde aynı sayıdır. ثَلَاثَة Arapça sayı sözcüğüdür, rakamın biçimi değildir. Sayı kitapları, adımları veya dakikaları sayabilir; neyin sayıldığını belirle."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Tek başına sayma ve isimle sayma",
+          "paragraphs": [
+            "Tek başına sayarken birden ona kadar sayı sözcüklerini öğreniriz. Ancak ثَلَاثَةُ كُتُبٍ üç kitap, ثَلَاثُ سَيَّارَاتٍ üç araba demektir. Bu üç-on kalıbında sayı, sayılan ismin tekil dilbilgisel cinsiyetine karşıt biçim alır; sayılan isim çoğul ve mecrur olur. Aynı kuralı bir ve ikiye uygulama.",
+            "كِتَابٌ وَاحِدٌ ile سَيَّارَةٌ وَاحِدَةٌ, bir sayısının uyumunu gösterir. Gösterilen merfu ikil كِتَابَانِ ve سَيَّارَتَانِ zaten iki anlamı taşır. Her ikil yapıya ayrıca iki sözcüğü eklemek gerekmez."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Miktar, sıra ve karşılaştırma",
+          "paragraphs": [
+            "ثَلَاثَة kaç sorusuna, الثَّالِث hangi sıra sorusuna cevap verir. Üç kitap ile üçüncü kitap aynı değildir. Sıfır kalem, sayılan grupta kalem olmadığını belirtir; dünyada hiçbir şey olmadığını değil.",
+            "İki kalemle dört kalemi karşılaştır. İkinci grup sayıca daha çoktur. İkisinde de dört varsa renk ve uzunluk değişse bile miktarları eşittir. Karşılaştırılan özelliği açıkça belirle, sonra yeni örneğe geç."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "sıfır"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "bir"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "iki"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "üç"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "dört"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "beş"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "altı"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "yedi"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "sekiz"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "dokuz"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "on"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "üçüncü"
+        }
+      ],
+      "exercise": {
+        "question": "Üç dairenin yerini, ekleme yapmadan değiştiriyorsun. Kaç daire kalır? Üçüncü miktarın adı mıdır?",
+        "answer": "Üç kalır. Üçüncü sıra konumudur, miktar değildir. Nesneleri birer kez say; aralarındaki boşlukları değil."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Renkler: adlandırma, niteleme ve uyum",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Aynı nesne, farklı nitelik",
+          "paragraphs": [
+            "İki kalem aynı işi görür; biri kırmızı, diğeri mavidir. Kalem nesnenin türünü, renk ise hangisini kastettiğini belirtir. Renk, kişinin değerini veya nesneyi hangi cinsiyetin kullanabileceğini belirlemez. Ekranlar da renkleri farklı gösterir; renk örneğinin adını yaz.",
+            "قَلَمٌ أَحْمَرُ kırmızı kalem, سَيَّارَةٌ حَمْرَاءُ kırmızı araba demektir. Sıfat, sahibinin cinsiyetine değil ismin dilbilgisel cinsiyetine göre değişir. Türkçe ve İngilizce bu örneklerde renk sıfatını böyle değiştirmez."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Her renk kırmızının kalıbını izlemez",
+          "paragraphs": [
+            "أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء ve أَسْوَد/سَوْدَاء bir kalıp grubudur. وَرْدِيّ/وَرْدِيَّة ile بُنِّيّ/بُنِّيَّة başka kalıptadır. Her renk sıfatına tahminen اء ekleme.",
+            "قَلَمٌ أَحْمَرُ bir kırmızı kalem, القَلَمُ الأَحْمَرُ belirli kırmızı kalem ifadesidir. القَلَمُ أَحْمَرُ, kalem kırmızıdır der. Belirlilik takısının yeri yalnızca görünüşü değil kelimeler arasındaki ilişkiyi değiştirir."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Renk örneği olmadan anlaşılır açıklama",
+          "paragraphs": [
+            "Rengin adını işaretin yanına yaz; cevapları ayırmak için gerekirse şekil veya etiket ekle. Öğrencinin görmesi zayıf olabilir veya renkleri farklı algılayabilir. Dil becerisi, birbirine yakın iki yeşil tonunu ayırmaya bağlı olmamalıdır.",
+            "Tekil isim ve sıfatla başla: araba için حَمْرَاء, kalem için أَحْمَر. Sonra nesneyi değiştirerek uyumun başka örneğe aktarılmasını kontrol et. Çoğul uyumun başka kuralları vardır; tekil kişi uyumunu bütün eşya çoğullarına yayma."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "kırmızı: eril — dişil"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "mavi: eril — dişil"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "yeşil: eril — dişil"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "sarı: eril — dişil"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "beyaz: eril — dişil"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "siyah: eril — dişil"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "pembe: eril — dişil"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "kahverengi: eril — dişil"
+        }
+      ],
+      "exercise": {
+        "question": "Yeşil araba ve beyaz kalem ifadelerinin Arapça sıfatlarını tamamla. Biçimi ne belirler?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Bu örneklerde uyumu sahibin cinsiyeti değil ismin dilbilgisel cinsiyeti belirler."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Günler ve aylar: konuşma zamanı ve randevu zamanı",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "Bugünün gönderimi değişir",
+          "paragraphs": [
+            "Bugün konuşulan gündür; dün önceki, yarın sonraki gündür. Gönderim tarihini bilmeden günler sonra okunan “yarın gel” mesajı belirsiz olabilir. 8 Ekim 2026 gibi sabit tarih günü belirler; randevu için takvim sistemi, saat ve saat dilimi de gerekebilir.",
+            "Takvim pazartesi, pazar veya cumartesiyle başlasa da yedi günün adı değişmez. Gösterim sırası, haftanın başlangıcı ve tatil gelenekleri farklıdır. Sıralamayı öğren, sonra öğrencinin yaşadığı yerdeki takvimle ilişkilendir."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Aynı ayın farklı adları",
+          "paragraphs": [
+            "Miladi yılın ilk ayına bazı bölgelerde يناير, bazılarında كانون الثاني denir. İkinci ay فبراير veya شباط, üçüncü مارس veya آذار olabilir. Tek liste öğrenmek diğer bölgesel adları yanlış yapmaz. Bilinmeyen ad için takvim sistemini ve bölgesel kullanımı belirle.",
+            "Muharrem, safer ve ramazan hicri takvimdendir; miladi ay adlarının çevirisi değildir. Ay yılı ile güneş yılı farklıdır. Ocak adını muharremle değiştirmek tarih dönüşümü yapmaz. Gerçek randevu için güvenilir takvim kullan."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Açık bir randevuyu okumak",
+          "paragraphs": [
+            "Cuma günü okurum ifadesinde hangi cuma sorusu gerekebilir. Her cuma okurum tekrarlanan etkinliktir. Her sözcüğü anlamı değiştirir. Etkinliğin bir kez mi tekrarlı mı olduğunu sor; sonra yazılı ipucunu bul.",
+            "03/04 gibi sayısal tarih, gün-ay sırası farklıysa belirsiz olabilir. Ay adını yazmak veya üzerinde anlaşılmış biçim kullanmak yardımcıdır. Eğitim örneğini açık tut; gerçek planlamada görünüşten tahmin etmek yerine tarihi doğrula."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "bugün"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "dün"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "yarın"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "cumartesi"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "pazar"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "pazartesi"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "salı"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "çarşamba"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "perşembe"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "cuma"
+        }
+      ],
+      "exercise": {
+        "question": "Bugün salıysa yarın hangi gün? Ocak ile muharrem aynı ayın iki adı mıdır?",
+        "answer": "Çarşamba. Hayır; ocak miladi, muharrem hicridir. Gerçek tarih eşleştirmesi doğru takvim dönüşümü gerektirir."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Yer ve yön: önce referansını belirle",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Neye göre nerede?",
+          "paragraphs": [
+            "Kitap masanın üzerinde, çanta altındadır. Üstünde ve altında iki şey arasındaki ilişkiyi anlatır. Kitap her açıklamada yalnızca “üstte” değildir; referansı belirt: masanın üstünde. İçinde ve dışında da çanta veya oda gibi uygun bir sınır gerektirir.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ, kitabı masanın üstüne koy demektir. Gösterilen bağlantılı okumada ضَعِ üzerinde esre vardır; her bağlantı ünlüsünü fiilin bağımsız biçiminin kalıcı parçası sayma. Önce yönergeyi anla, sonra yararlı olduğunda dilbilgisel ayrıntıya geç."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Kimin sağı?",
+          "paragraphs": [
+            "Sağ elini kaldır. Karşındaki kişinin sağ eli, senin gördüğün sol tarafta olabilir. Gözlemciler farklı yöne bakıyorsa “senin sağında” daha açıktır. Açıklamadığın başka bir referansı kullanan çocuğu yanlış sayma.",
+            "Kuzey, güney, doğu ve batı coğrafi yönlerdir; sayfanın üstü, altı, sağı ve solunun değişmez eşanlamlıları değildir. Harita yön işareti veya açık gösterim kuralı ister. Vücudunu çevirmek sağının baktığı yönü değiştirir; kuzeyi değiştirmez."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "Adım sırası anlamın parçasıdır",
+          "paragraphs": [
+            "Kitabı al, sonra çantanın içine koy. Sonra sözcüğü sıralamayı korur. Bilinen nesnelerle kısa yönergeler ver; hareketten önce öğrenci ne yapacağını açıklasın. Böylece kelimeyi anlamak ile doğru hareketi tesadüfen tahmin etmek ayrılır.",
+            "Kitap çantanın içinde, çanta sandalyenin altındadır. Bu, kitap çantanın üstündedir demek değildir. Söylenen ilişkiyle ek bilgi gerektiren ilişkiyi ayır. Birkaç yer için yalnızca resim konumunu ezberlemek yerine etiketli basit plan çiz."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "üstünde / üzerinde, bağlama göre"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "altında"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "önünde"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "arkasında"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "içinde"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "dışında"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "sağ"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "sol"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "kuzey"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "güney"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "doğu"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "batı"
+        }
+      ],
+      "exercise": {
+        "question": "Kitap, sandalyenin altındaki çantanın içinde. Kitap çantanın üstünde mi? Döndüğünde sağın aynı coğrafi yöne mi bakar?",
+        "answer": "Hayır; çantanın içinde. Hayır; sağın vücut yöneliminle değişir, coğrafi yön referansı böyle değişmez."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Öyküler: metni oku, kanıtını izle",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Özgün öykü: pencere ve kalem",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Leyla pencereyi açtı. Masanın üstüne mavi bir kalem koydu, sonra okula gitti. Döndüğünde kalemi bulamadı. Sandalyenin altına baktı ve onu buldu. Kalemi alıp kısa bir mektup yazdı. Metin kalemi kimin hareket ettirdiğini söylemez; rüzgârın düşürdüğünü kanıtlamaz. Bu öykü HORIZONS için özgün olarak yazıldı; yayımlanmış öyküden kopyalanmadı."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Üç okuma, üç amaç",
+          "paragraphs": [
+            "İlk okumada karakteri ve sorununu sor; her işarette durma. İkincide olay sırasını izle: kalem önce neredeydi, nerede bulundu? Üçüncüde dili incele: وَجَدَتْهُ içindeki هُ kaleme gönderir; fiil biçimleri anlatıda Leylaya uygundur.",
+            "Kalem mavidir; mektubun kısa olması uzunluğunu anlatır, rengini değil. Metin mektubun rengini vermez. Eksik kanıt yerine makul görünen cevap koyma. Hayalî son yazabilirsin; ancak özgün metindeki olay değil, kendi yazın olduğunu belirt."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Küçük sözlük ve bağımsız yazma",
+          "paragraphs": [
+            "Pencere duvardaki açıklık, masa nesneler için yüzey, mektup birine yazılı iletişimdir. Bu kelimeleri önceden açıklamak, bütün öyküyü anlatmadan kelime engelini kaldırır. Sonra başka başlık seç ve metinden kanıtla gerekçelendir.",
+            "Kalemi kitapla, Leylayı Ömerle değiştir. Dişil nesne seçmek sıfatları, karakteri erile çevirmek ilgili fiilleri değiştirebilir. Tek adı değiştirmek yerine bütün gönderimleri kontrol et. Amaç otomatik sözcük değiştirme değil, tutarlı yeni metindir."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "pencere",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "masa",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "sandalye",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "mektup / mesaj",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "ve onu buldu"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "sonra"
+        }
+      ],
+      "exercise": {
+        "question": "Leyla kalemi nerede buldu? Kim hareket ettirdi? وَجَدَتْهُ içindeki هُ neyi gösterir?",
+        "answer": "Sandalyenin altında. Metin kimin hareket ettirdiğini söylemez. هُ kaleme gönderir. Açık bilgiyi, yazarın vermediği bilgiden ayır."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Med elifi, بَاب içinde uzun /aː/ yazar. أَ, إِ ve أُ içindeki hemze /ʔ/ ünsüzüdür; taşıyıcı üzerine yazılması onu med sesi yapmaz. Elif önceki bağlantıyı alabilir ama solundaki sonraki harfe bağlanmaz.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "kapı"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "kitap"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "ateş"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "/b/ için dudakları kapat, sonra ses titreşimiyle aç. Bânın gövdesinin altında bir noktası vardır. Komşu harfler izin verirse iki yönden bağlanır. Benzer biçimli tâ ve sâ aynı dudak sesini taşımaz. /p/, bânın başka yazımı değil farklı sestir.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "kapı"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "dağ"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "kitap"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "/t/ için dilin ön kısmında, dişler yakınında veya hemen arkasında kapanma oluşturup hedef modelde ünsüzü ötümsüz bırak. Tânın üstünde iki nokta vardır. Bağlantı ve durağa göre okunan son tâ merbûta ة ile aynı değildir.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "hurma"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "kız / kız evlat"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "ev"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Ötümsüz /θ/ için dişler yakınındaki hafif daralmadan hava geçir; /t/ gibi tam kapanma yapma. Sânın üstünde üç nokta vardır ve iki taraftan bağlanabilir. İngilizce think bir karşılaştırma sağlar; her th yazımı bu sesi göstermez.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "giysi"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "çok"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "bu kelime örneğinde söz / konuşma"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Bu kaynak cîm için /dʒ/ eğitim modelini kullanır. Arapça konuşulan topluluklarda başka söylenişler vardır. Dinleme kaydı belirtilen modele uymalıdır. Alt bölgedeki nokta cîmi ح ve خ biçimlerinden ayırır; nokta sesin oluşumunu açıklamaz.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "deve"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "yıldız"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "taç"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "Hâ /ħ/ ötümsüz yutaksıl ünsüzdür; normal /h/ veya hı değildir. “Güçlü h” demek oluşum yerini açıklamaz. Boğazı acıtacak sıkmadan kaçın. Gövdesi noktasızdır; ح, ج ve خ biçimlerini tanı, sonra ayrı seslerini karşılaştır.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "ip"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "deniz"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "tuz"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "Hı, ses yolunun arka bölgesinde ötümsüz sürtünmedir; burada /x~χ/ ile gösterilir. Kesin oluşum yeri konuşmacı ve bağlama göre değişebilir. Noktası gövdenin üstündedir. Yabancı karşılaştırma için dil ve çeşitleme belirtilmeli; yalnızca kh yazmak sesi öğretmez.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "ekmek"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "hurma ağaçları"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "mutfak"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "Dâl /d/ ön bölgede ötümlü kapanma ve bırakmayla oluşur. Noktasızdır; solundaki sonraki harfe bağlanmaz. Noktalı zâl ile biçimi, tâ ile ötümlülüğü karşılaştırırken ünlüyü aynı tut.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "ders"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "el"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "bu kelime örneğinde erkek çocuk"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "Zâl /ð/ bu fasih hedefte ötümlü diş sürtünmesidir. Dâlin tam kapanmasını yapmaz ve ötümsüz /θ/ sesinden farklıdır. Üstünde nokta vardır; sonraki harfe bağlanmaz. İngilizce this yardımcı olabilir; bütün th yazımları için kural değildir.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "altın"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "kulak"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "lezzetli"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "Râ, bağlam ve söylenişe göre dil ucunun kısa veya tekrarlı temasını içerir. Genel /r/ tek bir sabit titreşim sayısı zorunlu kılmaz. Noktasızdır; sola doğru sonraki harfe bağlanmaz. Dil veya boğazı zorlamak öğrenme hedefi değildir.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "kum"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "deniz"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "ay"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "Zây /z/ ön bölgede ötümlü sürtünmedir. Gövdesi üstünde nokta bulunan râya benzer; fakat ek ünlülü râ değildir. Sonraki harfe bağlanmaz. Ardındaki ünlüyü sabit tutarak /z/ ile /s/ seslerini ötümlülük açısından karşılaştır.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "yağ"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "muz"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "ekmek"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "Sîn /s/ ötümsüz sürtünmedir; daralma yeri sâdan farklıdır. Noktasızdır; yazıdaki dişler farklı fontlarda değişebilir. Önce açık bir fontta kimliğini öğren, sonra her biçim farkını yeni harf saymadan yazı tarzlarını karşılaştır.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "balık"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "güneş"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "ders"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "Şîn /ʃ/ sînden farklı yerde daralma içeren ötümsüz sürtünmedir. Benzer gövdenin üstünde üç noktası vardır. Üç nokta onu sâ yapmaz; yazı biçimi ile ses oluşumu ayrıdır. Ünlüyü sabit tutarak سَ ve شَ karşılaştır.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "güneş"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "ot"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "tüyler"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "Sâd /sˤ/ seçilen modelde kalın ünsüzdür. Yalnızca yüksek sesli /s/ değildir; ek arka oluşum ses rengini ve komşu ünlüleri etkiler. Gövde noktasızdır. سَ ile صَ karşılaştırırken acı veren gerginlik veya abartılı zorlamadan kaçın.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "sabır"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "meyve suyu"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "kafes"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "Dâd /dˤ/ yaygın çağdaş fasih hedefi gösterir; bütün tarihî veya lehçesel söylenişleri değil. Nokta onu sâd gövdesinden ayırır. Zâ /ðˤ/ ile birleştirme: seçilen modelde biri kapanma, diğeri sürtünme içerir.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "ışık"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "yumurtalar"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "yer / toprak"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "Tâ /tˤ/ ön kapanma ve bırakmayı kalınlaşmayla birleştirir. Süslenmiş tâ veya daha yüksek sesli /t/ değildir. Gövdesi noktasızdır. تَ ve طَ karşılaştırırken ünsüzün yanında ünlünün ses rengini de fark et.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "kil / çamur"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "tren"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "iplik"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "Zâ /ðˤ/ burada kalın diş sürtünmesi hedefidir; farklı söylenişler açıkça belirtilmelidir. Tâ gövdesinin üstünde noktası vardır. “Başka bir dâd” yeterli açıklama değildir. Yazımları aynı okutmak yerine belirtilen ayrımla uyumlu kayıt kullan.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "gölge"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "kemik"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "şans"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "Ayn /ʕ/ ötümlü yutaksıl ünsüzdür; uzun ünlü veya zayıf hemze değildir. Boğazı sıkmak yerine rahat bir örnekle öğren. Noktasızdır; bağlantılı biçimleri bağımsız biçimden belirgin farklıdır. Görsel tanıma ve ses çalışmasını ayrı ele al.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "bu kelime örneğinde göz"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "oynadı (eril tekil)"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "toplama / bir araya getirme"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "Gayn arka bölgede ötümlü sürtünmedir; açıklanan aralık /ɣ~ʁ/ olarak gösterilir. Aynla üst noktası dışında biçimce ilişkilidir; sesçe aynı değildir. Ötümlülük için hı, oluşum yeri için aynla karşılaştır; tam eşitlik iddia etme.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "oda"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "küçük"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "boşluk"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "Fâ /f/ alt dudak ile üst dişler arasından ötümsüz hava geçirir. Buradaki doğu yazı geleneğinde üstte bir noktası vardır. Bazı Mağrip gelenekleri farklıdır; gösterildiğinde belirtilmelidir. Yazı geleneği farkı otomatik öğrenci hatası değildir.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "fil"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "anahtar"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "yün"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "Kāf /q/ bu fasih modelde kâftan daha arkada ötümsüz kapanma kullanır. Bu yazı geleneğinde üstte iki noktası vardır. Yaygın lehçe söylenişleri dinleme hedefini sessizce değiştirmemelidir; dersin hangi modeli çalıştığını belirt.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "ay"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "sığır"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "pazar"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "Kâf /k/, dilin arkasının damağın arka bölgesine kapanıp bırakılmasıyla oluşur. İki ses de arkada diye kāf ile aynı değildir. Bağımsız ك içindeki küçük işaret yazı biçiminin parçasıdır; okunacak ayrı hemze değildir.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "kitap"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "balık"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "melek"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "Lâm /l/ ötümlü yan sestir; dil ucu önde temas ederken hava dilin yanından geçer. Önce olağan eğitim modeliyle başla; özel kalın bağlamları ayrı öğret. İki yönde bağlanır. لا birleşik çizilse de yeni alfabe harfi olmaz.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "gece"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "kalem"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "dağ"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "Mîm /m/, dudaklar kapalıyken oluşan ötümlü geniz ünsüzüdür. Bâdan yalnızca biçimle ayrılmaz; mîmde hava burundan geçer. Bağlantıda gövde değişebilir, harfin adı ve kimliği değişmez.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "su"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "ay"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "kalem"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "Nûn /n/ dilin ön kısmında kapanmayla oluşan ötümlü geniz sesidir. Bu yazımda üstte bir noktası vardır. Mîmle kapanma yerini karşılaştır. Yazılı nûn ile tenvin farklıdır; bazı sonlarda ayrı nûn harfi yazılmadan /n/ sesi duyulur.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "ışık"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "bu kelime örneğinde göz"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "bölgeye göre süt veya süt ürünü"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "Hâ /h/ ötümsüzdür; /ħ/ sesinin yutaksıl daralmasını kullanmaz. ه, هـ, ـهـ ve ـه biçimleri farklı görünür; bağlantıyı açıklamak yararlıdır. Durakta ses benzer olabilir diye her son ة biçimini normal hâ sayma.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "hilal"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "nehir"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "yüz"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "Vav, وَلَد içinde /w/ ünsüzü veya نُور içinde uzun /uː/ yazımının parçası olabilir. ثَوْب içinde uzun /uː/ değildir; ünlü yapısını oku. Önceki bağlantıyı alır, solundaki sonraki harfe bağlanmaz.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "bu kelime örneğinde erkek çocuk"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "ışık"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "giysi"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "Yâ, يَد içinde /j/ ünsüzü veya فِيل içinde uzun /iː/ yazımının parçasıdır. بَيْت, uzun /iː/ değil /aj/ yapısını içerir. Noktalı yâ ile elif-i maksûre ى farklıdır; ى otomatik yâ okunmaz.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "el"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "fil"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "ev"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "HORIZONS eşlikçi kaynak — genişletilmiş editör baskısı",
+    "warning": "İnceleme sürümü. İçerik ve çeviriler bağımsız incelemeden henüz geçmedi.",
+    "examples": "Örnekler ve anlamları",
+    "practice": "Dene ve seçimini açıkla",
+    "answer": "Cevap ve gerekçe",
+    "notes": "Telaffuz anahtarı",
+    "contents": "İçindekiler",
+    "view": "Bölümün tamamını oku",
+    "all": "Mevcut bütün bölümleri yazdır",
+    "original": "HORIZONS için özgün açıklamalar ve örnekler. Bağlantılı kaynaklar, kaynak listesindeki belirtilen noktaları destekler.",
+    "answers": "Alıştırma cevapları",
+    "forms": "Yazı biçimleri",
+    "words": "Kelimeler ve anlamları",
+    "draft": "Editör taslağı",
+    "font": "Arapça yazı tipi",
+    "theme": "Açık ve koyu görünümü değiştir"
+  },
+  "notation_note": "ː önceki ünlünün uzunluğunu; ˤ bu gösterimde ünsüz kalınlaşmasını; . hece sınırını gösterir. ~ açıklanan aralıktaki alternatifleri ayırır; iki sesi art arda okutmaz. / / Arapça yazım değil ses gösterimidir. Tek kelime örnekleri durak okumasıdır; cümle çevirisi bağlantı ve durağı tek telaffuz saymaz.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Checked consonant versus letter name, long vowels versus shadda, paused word readings versus connected sentence examples.",
+          "Checked all12pronouns including gender-specific Arabic forms with English/Turkish neutral counterparts; dual glosses explain rather than invent an identical form.",
+          "Corrected ع example to لَعِبَ, the past-tense verb, rather than presenting the unlabelled form as a noun.",
+          "Original story retains identical Arabic and distinguishes stated facts from unsupported explanations."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Read the Arabic, English and Turkish prose for connected meaning and instructional tone; preserved meanings and answer reasoning rather than substituting labels.",
+          "Reviewed number polarity for3–10, one agreement, case-specific dual forms, adjective/article distinction and possessive suffix reference.",
+          "Checked nonjoining letters, hamza versus vowel alif and contextual waw/yaa roles.",
+          "Examples and letter glosses identify context-sensitive meanings such as لبن and عين; Turkish o and sen include gender notes where needed."
+        ]
+      }
+    ],
+    "native_human_review": false,
+    "limitations": [
+      "These are model reviews, not an independent native human or academic review.",
+      "The present volume is a foundation reference; it is not a complete encyclopedia of Arabic linguistics."
+    ]
+  }
+}

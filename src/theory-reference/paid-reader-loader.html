@@ -1,0 +1,27 @@
+<!doctype html><html lang="ar"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HORIZONS — المرجع النظري</title><style>html,body{margin:0;height:100%;background:#f5f7fa}iframe{display:block;width:100%;height:100%;border:0}#pending{padding:24px;color:#162c44;font:18px system-ui,sans-serif;text-align:center}</style></head><body><p id="pending" role="status">HORIZONS · …</p><script type="module">
+import {getAccess,decryptAsset} from '/learn/license-core.js';
+const META=__HZN_REFERENCE_METADATA__;
+const params=new URLSearchParams(location.search);
+let frame,checking=false;
+function lock(){frame?.remove();const target=new URL('/learn/index.html',location.origin);target.searchParams.set('reason','ACTIVATION_REQUIRED');target.searchParams.set('lang',params.get('lang')||'ar');location.replace(target.href);}
+try{
+ const before=await getAccess();
+ const response=await fetch(META.url,{cache:'no-store',credentials:'omit',redirect:'error'});
+ if(!response.ok)throw Error('REFERENCE_UNAVAILABLE');
+ const bytes=new Uint8Array(await response.arrayBuffer());
+ if(bytes.byteLength!==META.bytes)throw Error('REFERENCE_DAMAGED');
+ const actual=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');
+ if(actual!==META.sha256)throw Error('REFERENCE_DAMAGED');
+ const plain=await decryptAsset('theory-reference.html',bytes,{encoding:'gzip',decoded_bytes:META.decoded_bytes,mime:'text/html'});
+ const after=await getAccess();if(after.key!==before.key)throw Error('ACCOUNT_CHANGED');
+ const html=new TextDecoder('utf-8',{fatal:true}).decode(plain);
+ const query=JSON.stringify(params.toString()).replaceAll('<','\\u003c');
+ const bootstrap='<script>window.HZN_REFERENCE_QUERY='+query+';<'+ '/script>';
+ frame=document.createElement('iframe');frame.title='HORIZONS';frame.setAttribute('sandbox','allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox');
+ frame.srcdoc=html.replace('<head>','<head>'+bootstrap);document.body.replaceChildren(frame);
+ // Keep the decrypted reference inside an opaque sandbox. Recheck access after
+ // focus/visibility changes and periodically; never persist its plaintext.
+ async function recheck(){if(checking)return;checking=true;try{const active=await getAccess();if(active.key!==before.key)lock();}catch{lock();}finally{checking=false;}}
+ addEventListener('focus',recheck);document.addEventListener('visibilitychange',()=>{if(!document.hidden)recheck();});setInterval(recheck,15000);
+}catch{lock();}
+</script></body></html>

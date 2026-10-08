@@ -1,0 +1,1546 @@
+{
+  "language": "ro",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Literele și scrierea: deschidem poarta lecturii",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Trei lucruri diferite: nume, sunet, formă",
+          "paragraphs": [
+            "Imaginează-ți o cutie cu piese de construcție. Numele ajută să găsești piesele, dar repetarea lor nu construiește o casă. Litera are și ea un nume, o formă scrisă și un rol într-un cuvânt rostit. ب se numește ba. În بَاب începem însă cu /b/, urmat de vocala lungă /aː/. Nu citi numele celor trei litere în locul cuvântului. Numele rămân utile când întrebi cum se scrie ceva.",
+            "Urmărește cuvântul arab de la dreapta la stânga. Observă întâi corpul, apoi punctele, apoi semnele de citire. بَ și تَ au corpuri înrudite, dar punctele indică litere diferite. Înlocuirea fatḥa cu kasra produce بِ, nu transformă ba în ta. Acoperă restul rândului dacă pare aglomerat. Recunoașterea unei litere este o reușită chiar înainte de citirea întregului cuvânt."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "De ce se schimbă forma literei?",
+          "paragraphs": [
+            "Literele arabe împart o linie de scriere, ca niște oameni care se țin de mâini. ب, بـ, ـبـ și ـب sunt forme legate ale aceleiași litere, nu patru litere noi. În بَاب primul ba se leagă de alif, dar alif nu continuă legătura către ultimul ba. Acea întrerupere nu creează al doilea cuvânt.",
+            "ا, د, ذ, ر, ز și و pot primi legătura literei precedente când este permis, dar nu leagă litera următoare din stânga. Nu introduce spațiu la fiecare întrerupere a liniei. Spațiile separă cuvinte; regulile de legare formează litere în interiorul cuvântului. Privește un exemplu real înainte să memorezi toate regulile."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza și sensul",
+          "paragraphs": [
+            "În بَاب alif scrie vocala lungă /aː/. أَخ începe cu hamza /ʔ/, purtată de alif. Hamza este consoană, nu vocală lungă. După regulile ortografice, poate fi ء, أ, إ, ؤ sau ئ. Forma suportului nu face din acestea același sunet ca alif vocalic.",
+            "Leagă fiecare pas de sens: ușa se deschide, cartea are pagini de citit, pixul servește la scris. Schimbă ordinea cartonașelor și revino după o pauză. Memorarea locului cartonașului exersează memoria, dar citirea independentă înseamnă recunoașterea informației scrise oriunde apare."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "ușă",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "carte",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pix",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "frate",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "casă / cămin",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lumină",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Întreruperea legăturii din بَاب creează două cuvinte? Numele ba reprezintă citirea completă a lui بَاب?",
+        "answer": "Nu în ambele cazuri. بَاب este un cuvânt: alif nu leagă mai departe. Ba numește litera; /baːb/ citește sunetele cuvântului în ordine."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Semnele vocalice: semne mici schimbă citirea",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Semnul vocalic nu este punct",
+          "paragraphs": [
+            "Pune بَ, بُ și بِ alături. Toate au ba. Fatḥa indică /a/ scurt, ḍamma /u/ scurt, kasra /i/ scurt. Gura, limba și buzele se adaptează vocalelor. Creșterea volumului nu transformă o vocală în alta.",
+            "În بِ punctul lui ba și kasra sunt apropiate sub literă. Punctul identifică litera, kasra îi ghidează citirea. Schimbă semnul vocalic și ba rămâne ba. Culoarea separă funcțiile în carte, dar forma și etichetele trebuie să fie clare și la imprimarea alb-negru."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Lungime, nu volum",
+          "paragraphs": [
+            "Compară بَ cu بَا, بُ cu بُو și بِ cu بِي. În al doilea element vocala durează mai mult; ba nu devine altă consoană. În /baː/, ː marchează lungimea vocalei precedente. Nu este literă arabă în plus și nici durată fixă pe cronometru pentru fiecare vorbitor.",
+            "Alif, waw și ya nu sunt vocale lungi la fiecare apariție. Waw în وَلَد este /w/, ya în يَد este /j/. Waw din نُور ajută la scrierea /uː/, ya din فِيل la /iː/. Citește modelul local, nu ghici rolul din numele literei."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda și tanwīn",
+          "paragraphs": [
+            "Sukūn din بِنْت amintește să nu adaugi vocală după nun în acest model. Nu șterge /n/. Shadda din أُمّ arată o consoană dublată, nu lungirea vocalei precedente. أَمْ /ʔam/ și أُمّ /ʔumm/ diferă și prin vocală, deci nu sunt o pereche minimală cu o singură variabilă. Folosește silabe de exercițiu etichetate clar pentru izolarea unei trăsături.",
+            "Tanwīn din كِتَابٌ ține de terminația substantivului în context gramatical. Citirea legată potrivită include /un/; pauza obișnuită pe acest cuvânt dă /kitaːb/. Exemplul nu este regulă universală pentru orice terminație. Păstrează semnul în scris și explică diferența dintre citirea legată și pauză."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "fată / fiică",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "elefant",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "băiat",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "mână",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "mamă",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lumină",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Waw reprezintă aici /w/ în نُور? Sukūn elimină nun din بِنْت?",
+        "answer": "Nu. Waw din نُور scrie vocala lungă /uː/. Nun din بِنْت se pronunță fără vocală adăugată după el în acest model."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Combinarea a două unități: primele citiri",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Ce combinăm?",
+          "paragraphs": [
+            "În caiet, combinarea a două unități numește o etapă cu două unități scrise. Numărul literelor nu egalează mereu numărul sunetelor sau silabelor. بَا are ba și alif, dar reprezintă o consoană urmată de vocală lungă. Nu sunt două consoane; elementul izolat de exercițiu nu trebuie să fie cuvânt cu sens.",
+            "Începe cu بَ, apoi بَا, apoi تَا și ثَا. Prima comparație schimbă lungimea vocalei; următoarea consoana, păstrând vocala lungă. Lasă timp pentru privire și apoi citire. Repetarea numelor literelor în locul sunetelor îngreunează combinarea."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Silabe deschise și închise",
+          "paragraphs": [
+            "بَا se termină aici cu vocală: silabă deschisă. بَرْ se termină cu consoană: silabă închisă. „Închisă” descrie finalul, nu ținerea gurii închise toată rostirea. Citește بَرْ fără vocală finală. بَرَ schimbă structura.",
+            "Ține locul cu degetul, apoi renunță treptat. Indicarea ajută urmărirea, nu dovedește corectitudinea pronunției. După silaba familiară introdu una nouă cu același model. Verifici transferul regulii dincolo de cartonașul memorat."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "De la parte la cuvânt",
+          "paragraphs": [
+            "بَا este parte din بَاب; بِي din citirea afișată a lui بِيض. Nu fiecare silabă cere sens de dicționar independent. Combină întâi, apoi întreabă sensul întregului cuvânt. Activitatea capătă un scop dincolo de viteză.",
+            "La greșeală identifică schimbarea: consoană, calitatea vocalei, lungime sau sunet adăugat. Numirea problemei concrete este mai utilă decât reluarea tuturor pașilor. Dacă mai multe trăsături sunt dificile, exersează una abordabilă înainte de recombinare."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "silabă de exercițiu; aici nu cuvânt",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "silabă de exercițiu",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "silabă de exercițiu",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "silabă de exercițiu în acest exemplu",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "ușă",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "ouă",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "De ce بَا și بَرْ nu au același tip de silabă?",
+        "answer": "بَا se termină cu vocală lungă; بَرْ cu consoană. Diferența descrie terminațiile, nu numărul punctelor sau volumul."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Combinarea a trei unități: citim cu sens",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Trei litere, dar câte silabe?",
+          "paragraphs": [
+            "بَاب și جَبَل au fiecare trei litere de bază. În citirea aleasă cu pauză, /baːb/ are o silabă, /dʒa.bal/ două. Punctul fonetic arată granița silabelor, nu punctul scris al lui jim. Numărarea literelor singură nu dă numărul silabelor.",
+            "Scrie literele cu semnele, apoi examinează modelul sonor. Pentru جَبَل începe cu جَ și încheie cu بَلْ la pauză. Unește fără a elimina ba ori a insera sunet în plus. Împărțirea cuvântului este ajutor temporar, nu felul de rostire a fiecărei propoziții obișnuite."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Ordinea literelor poartă sens",
+          "paragraphs": [
+            "قَلْب înseamnă inimă; كَلْب câine. Schimbarea qaf cu kaf schimbă sensul. بَحْر este mare, حَبْر cerneală; comparația schimbă ordinea și vocalele, deci nu e pereche minimală cu o singură trăsătură. Privește detaliile scrise, nu ghici din imagine.",
+            "Alege cuvinte cu sens demonstrabil. După citire întreabă dacă cerneala servește la scris sau înot. Sensul poate dezvălui ghicitul, nu înlocuiește privirea literelor. Explică sensul nou în loc să tratezi vocabularul necunoscut drept eșec de citire."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Citire atentă înaintea fluenței",
+          "paragraphs": [
+            "Citește trei cuvinte fără concurs. Marchează unul pentru revenire și încearcă după un exemplu ușor. Fluența include citire potrivită, înțelegere și corectare, nu doar cuvinte pe minut. Nu încuraja copilul să ascundă ezitarea prin ghicit.",
+            "Pentru transfer, după جَبَل dă جَمَل. Ba devine mim într-un model cunoscut. Muntele este teren înălțat; cămila animal. Cere un alt cuvânt real cu litere cunoscute, dar explică faptul că nu orice aranjare formează cuvânt arab."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "munte",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "cămilă",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "inimă",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "câine",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "mare",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "cerneală",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Ce literă se schimbă din جَبَل în جَمَل? بَاب și جَبَل au același număr de silabe?",
+        "answer": "Ba devine mim. بَاب are o silabă în citirea afișată cu pauză; جَبَل două. Numărul literelor nu ajunge."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Combinarea a patru unități: mai lung fără suprasolicitare",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Mai lung nu înseamnă mereu mai greu",
+          "paragraphs": [
+            "كِتَاب are patru litere de bază. Citirea cu pauză /ki.taːb/ cuprinde o primă silabă scurtă, apoi una cu vocală lungă și ba final. Refolosește învățarea din بَاب, nu considera fiecare parte complet nouă. Lungimea scrisă nu măsoară singură dificultatea.",
+            "Waw din ثَوْب nu scrie /uː/ aici: /aw/ este altă secvență. بَيْت conține /aj/, nu /iː/. Reușita vine din examinarea vocalei și structurii, nu regula „fiecare waw este u, fiecare ya i”. Fixează un exemplu înaintea altui contrast."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "Propoziția adaugă relații",
+          "paragraphs": [
+            "هَذَا كِتَابٌ identifică un obiect apropiat: „Aceasta este o carte”. هَذِهِ حَقِيبَةٌ folosește demonstrativul feminin cu geantă. Înlocuirea substantivului poate cere verificarea cuvintelor legate, nu doar o etichetă. Întreabă spre ce se arată și ce forme se potrivesc.",
+            "الكِتَابُ جَدِيدٌ spune „Cartea este nouă”. الكِتَابُ الجَدِيدُ identifică „cartea nouă”; singură, expresia nu transmite aceeași afirmație completă. Articolul nu e prefix decorativ. O situație simplă arată relația gramaticală înainte de terminologie."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Transferul către un text nou",
+          "paragraphs": [
+            "Compară كِتَاب și كَاتِب. Consoanele de bază sunt înrudite, dar locul lui alif și vocalele diferă. Primul este carte, al doilea scriitor. Rădăcinile comune nu dau tuturor cuvintelor același sens. Introducem familii de cuvinte fără pretenția de a preda toată derivarea deodată.",
+            "Citește un rând scurt, ascunde-l puțin și întreabă sensul general. Restabilește-l pentru verificarea unui detaliu. Separi memoria sonoră, înțelegerea și întoarcerea la dovezi scrise. Ajutorul pentru un cuvânt nou face parte din învățare; referința nu trebuie să fie examen nesfârșit."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "carte",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "scriitor",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "geantă",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "Aceasta este o carte."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Cartea este nouă."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "cartea nouă"
+        }
+      ],
+      "exercise": {
+        "question": "الكِتَابُ جَدِيدٌ și الكِتَابُ الجَدِيدُ transmit singure același mesaj?",
+        "answer": "Nu. Prima afirmă că o carte este nouă; a doua identifică acea carte nouă fără aceeași afirmație completă."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Referința literelor: de la formă la folosirea cuvintelor",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "O hartă sigură pentru fiecare literă",
+          "paragraphs": [
+            "Folosește aceleași întrebări la fiecare literă: nume, locul formării sunetului, legare, diferențe față de forme similare, cuvinte clare. Harta consecventă evită o lecție de imagini neexplicate. Nu trebuie răspuns la toate din prima.",
+            "Capitolul include fișe pentru cele 28 de litere. Poziția lui alif în alfabet nu înseamnă că hamza și /aː/ sunt același sunet. Waw și ya au roluri dependente de context. Citește nota înainte să compari simbolul cu ortografia limbii tale."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Familiile de forme nu sunt familii sonore",
+          "paragraphs": [
+            "ب, ت și ث au corpuri înrudite, dar ba se formează la buze, ta cu închidere anterioară, tha cu fricțiune dentală în modelul standard arab ales. Trei puncte nu explică sunetul lui tha; nici cele trei ale lui shin nu îl fac tha. Familiile vizuale identifică, descrierile sonore ghidează pronunția.",
+            "Compară ثَ cu تَ păstrând fatḥa. Compară س și ص prin emfază, nu volum. Unele sunete arabe nu au echivalent exact în limba elevului. Explică articularea și folosește model auditiv, nu inventa echivalent străin exact."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Vocabular, propoziții și transfer",
+          "paragraphs": [
+            "După găsirea literei inițial, medial și final, alcătuiește propoziție cu sens folosind un cuvânt dat. Nu aduna vocabular rar doar pentru mărimea cărții. Variază poziția și sensul, explică fiecare cuvânt nou, adaugă context la polisemie.",
+            "Diferența dialectală nu este defect al vorbitorilor. Referința identifică ținta standard și recunoaște variația jim, qaf și a altor sunete în comunități. Exercițiul auditiv cere înregistrare potrivită modelului din explicații și simboluri."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "ușă",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "munte",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "carte",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "fructe / roade",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "zăpadă",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "vulpe",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "Forma similară ب, ت și ث plasează sunetele în același loc de articulare? Jim se pronunță identic în toate comunitățile?",
+        "answer": "Nu. Forma este informație scrisă; articularea o altă proprietate. Jim variază: identifică ținta și etichetează clar alte modele."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Pronumele: cine sunt eu, cine ești tu?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Un cuvânt care urmează vorbitorul",
+          "paragraphs": [
+            "Când Layla spune „eu”, se referă la Layla; când Omar spune „eu”, la Omar. Pronumele nu este numele fix al cuiva: referința vine din situația vorbirii. „Tu” arată destinatarul; „el” și „ea” persoana despre care vorbim. Schimbați rolurile înainte de memorarea tabelului.",
+            "Araba distinge أَنْتَ pentru destinatar masculin singular și أَنْتِ pentru feminin singular. Românescul „tu”, ca englezescul you, servește ambelor, dar diferența arabă nu este opțională. Turcescul o corespunde lui هُوَ și هِيَ; traducerea în arabă trebuie să verifice referința, nu să înlocuiască mecanic."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Singular, dual și plural",
+          "paragraphs": [
+            "أَنَا este persoana întâi singular. نَحْنُ include grupul cu vorbitorul, două sau mai multe persoane. أَنْتُمَا se adresează la doi, هُمَا se referă la doi; ambele acoperă referință masculină și feminină. أَنْتُمْ / أَنْتُنَّ și هُمْ / هُنَّ disting pluralul. Formele masculine plurale pot include grup mixt în standard, după context.",
+            "Nu toate limbile au pronume dual distinct dintr-un cuvânt. أَنْتُمَا poate fi explicat ca „voi doi”, în engleză you two, în turcă ikiniz. Explică referința, nu garantează folosire identică în toate situațiile. Compară sensul și forma."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Pronumele și ceea ce urmează",
+          "paragraphs": [
+            "أَنَا طَالِبٌ și أَنَا طَالِبَةٌ încep cu același pronume; substantivul următor se schimbă pentru vorbitor. هُوَ طَالِبٌ și هِيَ طَالِبَةٌ schimbă ambele. Un elev masculin într-un exemplu nu face أَنَا exclusiv masculin.",
+            "În أَنَا أَقْرَأُ și نَحْنُ نَقْرَأُ se schimbă verbul. Inițialul أَ aparține aici flexiunii verbale la persoana întâi, nu posesiei. Verbul poate da suficiente informații pentru omiterea pronumelui separat în context clar. Am/is/are din engleză și „sunt/este” din traducere nu cer un echivalent în orice propoziție nominală arabă la prezent."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "eu",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "tu (destinatar masculin singular)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "tu (destinatar feminin singular)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "noi",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "el",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "ea",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "voi doi"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "ei doi / amândoi"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "voi (masculin plural; contextul poate include grup mixt)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "voi (feminin plural)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "ei (masculin plural; contextul poate include grup mixt)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "ele (feminin plural)"
+        }
+      ],
+      "exercise": {
+        "question": "Layla vorbește despre sine, apoi despre Omar. Ce două pronume se potrivesc? نَحْنُ este numai masculin?",
+        "answer": "أَنَا pentru sine; هُوَ pentru Omar aici. نَحْنُ nu distinge genul vorbitorilor; contextul identifică grupul."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Posesia și relațiile: mai mult decât o etichetă",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Un obiect, doi vorbitori",
+          "paragraphs": [
+            "Omar ține o carte și spune كِتَابِي — „cartea mea”. Adresându-te lui, spui كِتَابُكَ — „cartea ta”. Vorbind despre el cu Layla, spui كِتَابُهُ — „cartea lui”. Cartea nu s-a schimbat, relația vorbirii da. Nu sunt trei categorii de cărți.",
+            "Adresează-te Laylei cu كِتَابُكِ; vorbește despre ea cu كِتَابُهَا. Diferența كَ și كِ este mică în scris și sunet, importantă în referință. Engleza folosește de obicei cuvânt separat înaintea substantivului; româna are aici „cartea ta”, iar araba atașează pronumele substantivului."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "Relația nu este mereu proprietate",
+          "paragraphs": [
+            "كِتَابُنَا leagă cartea de grupul nostru. أُمِّي este „mama mea”, nu tratarea persoanei ca proprietate. مَدْرَسَتِي poate însemna școala unde învăț, nu clădirea mea. Substantivul și contextul arată relația exprimată.",
+            "În مَدْرَسَة → مَدْرَسَتِي, taa marbūṭa se scrie ca ta obișnuit la atașarea acestui pronume. Nu generaliza că orice ha final devine ta. وَجْهِي este „fața mea”: ha din وَجْه rămâne ha."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Substantivul, cazul și determinarea",
+          "paragraphs": [
+            "كِتَابُكَ este o formă aleasă în tabel. În رَأَيْتُ كِتَابَكَ — „Am văzut cartea ta” — terminația substantivului se schimbă cu rolul gramatical; كَ rămâne destinatar masculin singular. Nu memora ḍamma precedentă ca parte permanentă a lui „tău”.",
+            "În construcția obișnuită substantiv plus pronume posesiv nu pune tanwīn și nu adăuga articol ca la substantiv separat neposesiv. كِتَابِي identifică relația și este determinat aici. Învață exemplul corect înainte de excepții avansate."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "cartea mea"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "cartea ta (destinatar masculin singular)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "cartea ta (destinatar feminin singular)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "cartea lui"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "cartea ei"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "cartea noastră"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "școala mea"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "fața mea"
+        }
+      ],
+      "exercise": {
+        "question": "Layla spune „cartea mea”. Cum o numești când i te adresezi, apoi când vorbești despre ea cu altcineva?",
+        "answer": "كِتَابُكِ când i te adresezi; كِتَابُهَا când vorbești despre ea. Referința pronumelui urmează relația vorbirii."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Numerele: simbol, cuvânt, cantitate",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Numără fiecare obiect o dată",
+          "paragraphs": [
+            "Pune trei pixuri pe masă. Atinge fiecare o dată la un pas de numărare, apoi numește mărimea grupului. Numărarea aceluiași pix de două ori dă total greșit. Rearanjarea fără adăugare ori eliminare lasă tot trei: forma șirului nu este cantitatea.",
+            "٣ și 3 reprezintă același număr în sistemele de cifre afișate. ثَلَاثَة este cuvânt arab pentru număr, nu forma cifrei. Un număr poate număra cărți, pași ori minute; identifică ce se numără pentru a înțelege folosirea."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Numărătoarea și numeralele cu substantive",
+          "paragraphs": [
+            "Numărarea începe cu unu până la zece, dar expresiile numerale cer grijă. ثَلَاثَةُ كُتُبٍ este trei cărți; ثَلَاثُ سَيَّارَاتٍ trei mașini. În modelul trei–zece, forma numărului contrastează cu genul singularului substantivului numărat, iar acesta este genitiv plural. Nu aplica la unu și doi.",
+            "كِتَابٌ وَاحِدٌ și سَيَّارَةٌ وَاحِدَةٌ arată acordul cu unu. Formele duale nominative كِتَابَانِ și سَيَّارَتَانِ indică deja doi. Nu trebuie inserat cuvântul „doi” în fiecare expresie duală."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Cantitate, ordine și comparație",
+          "paragraphs": [
+            "ثَلَاثَة răspunde „câți?”, الثَّالِث „al câtelea?”. Trei cărți nu sunt a treia carte. Zero pixuri înseamnă lipsa pixurilor în grup, nu inexistența oricărui lucru.",
+            "Compară grupuri reale: două pixuri și patru. Al doilea are mai multe, primul mai puține. Dacă ambele au patru, numărul este egal chiar dacă diferă culoarea ori lungimea. Leagă comparația de proprietatea precizată, apoi încearcă alt exemplu."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "zero"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "unu"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "doi"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "trei"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "patru"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "cinci"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "șase"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "șapte"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "opt"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "nouă"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "zece"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "al treilea"
+        }
+      ],
+      "exercise": {
+        "question": "Rearanjezi trei cercuri fără adăugare. Câte rămân? „Al treilea” numește cantitatea?",
+        "answer": "Rămân trei. „Al treilea” este poziție în ordine, nu cantitate. Numără fiecare element o dată, nu spațiile dintre ele."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Culorile: numire, descriere și acord",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Același obiect, altă descriere",
+          "paragraphs": [
+            "Două pixuri au aceeași funcție, dar unul este roșu, celălalt albastru. „Pix” identifică felul obiectului; culoarea arată care. Culoarea nu spune valoarea unei persoane ori genul care poate folosi obiectul. Ecranele redau culorile diferit: numește mostra, nu te baza numai pe culoare.",
+            "قَلَمٌ أَحْمَرُ este pix roșu; سَيَّارَةٌ حَمْرَاءُ mașină roșie. Adjectivul arab se schimbă cu genul gramatical al substantivului, nu al proprietarului. Engleza și turca nu schimbă astfel culorile aici; româna are acord, dar formele arabe se învață separat."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Nu orice culoare urmează modelul roșului",
+          "paragraphs": [
+            "Învață أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء și أَسْوَد/سَوْدَاء ca grup de model. وَرْدِيّ/وَرْدِيَّة și بُنِّيّ/بُنِّيَّة au alt model. Nu inventa fiecare feminin prin adăugare de اء.",
+            "قَلَمٌ أَحْمَرُ este „un pix roșu”. القَلَمُ الأَحْمَرُ identifică „pixul roșu”. القَلَمُ أَحْمَرُ afirmă „Pixul este roșu”. Locul articolului schimbă relația, nu numai aspectul cuvintelor."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Descriere fără mostră",
+          "paragraphs": [
+            "Scrie numele culorii lângă semn și adaugă formă ori etichetă pentru răspunsuri. Elevul poate avea vedere slabă sau percepție diferită a culorii. Capacitatea lingvistică nu trebuie să depindă de separarea a două nuanțe aproape identice de verde.",
+            "Începe cu substantiv și adjectiv: mașină cu حَمْرَاء, pix cu أَحْمَر. Schimbă obiectul pentru transfer, nu memorarea perechii. Acordul plural are alte reguli; nu generaliza acordul persoanelor singulare la toate pluralurile lucrurilor."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "roșu: masculin — feminin"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "albastru: masculin — feminin"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "verde: masculin — feminin"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "galben: masculin — feminin"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "alb: masculin — feminin"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "negru: masculin — feminin"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "roz: masculin — feminin"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "maro: masculin — feminin"
+        }
+      ],
+      "exercise": {
+        "question": "Completează o mașină cu verde și un pix cu alb. Ce determină forma arabă?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Genul gramatical al substantivului, nu al proprietarului, controlează acordul aici."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Zile și luni: timpul vorbirii și al întâlnirii",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "Astăzi își schimbă referința",
+          "paragraphs": [
+            "Astăzi este ziua vorbirii; ieri o precede, mâine o urmează. „Vino mâine” devine neclar dacă mesajul e citit după zile, fără data trimiterii. O dată fixă ca 8 octombrie 2026 identifică ziua, dar întâlnirea poate cere sistem calendaristic, oră și fus orar.",
+            "Cele șapte nume ale zilelor rămân aceleași chiar dacă un calendar începe luni, altul duminică sau sâmbătă. Ordinea afișării, prima zi și weekendurile diferă. Învață secvența, apoi leag-o de calendarul local al elevului."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Nume diferite pentru aceeași lună",
+          "paragraphs": [
+            "Ianuarie poate fi يناير sau كانون الثاني în regiuni arabe diferite, februarie فبراير sau شباط, martie مارس sau آذار. O listă învățată nu face alternativele greșite. Identifică sistemul calendarului și convenția regională la nume necunoscut.",
+            "Muḥarram, Ṣafar și Ramaḍān aparțin calendarului Hijri, nu sunt traduceri ale lunilor gregoriene. Anii lunari și solari diferă. Înlocuirea lui ianuarie cu Muḥarram nu convertește data. Pentru întâlnire reală folosește calendar fiabil."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Citirea unei întâlniri clare",
+          "paragraphs": [
+            "„Citesc vineri” poate cere care vineri. „Citesc în fiecare vineri” descrie activitate repetată. „Fiecare” schimbă mesajul. Întreabă dacă acțiunea e unică ori se repetă, apoi identifică indiciul scris.",
+            "Data numerică 03/04 poate fi ambiguă când ordinea zi–lună diferă. Ajută numele lunii scris ori formatul convenit. Folosește exemplu clar la învățare; în planificare verifică data, nu ghici după aspect."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "astăzi"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "ieri"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "mâine"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "sâmbătă"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "duminică"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "luni"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "marți"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "miercuri"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "joi"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "vineri"
+        }
+      ],
+      "exercise": {
+        "question": "Dacă astăzi este marți, ce zi este mâine? Ianuarie și Muḥarram sunt aceeași lună?",
+        "answer": "Miercuri. Nu: ianuarie este gregorian, Muḥarram Hijri. Potrivirea datelor reale necesită conversie calendaristică corectă."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Loc și direcție: alege întâi reperul",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Unde, față de ce?",
+          "paragraphs": [
+            "O carte este deasupra mesei; o geantă sub ea. „Deasupra” și „sub” descriu relații. Cartea nu este simplu „sus” în orice descriere: numește reperul, deasupra mesei. „Înăuntru” și „afară” au nevoie de graniță: în geantă ori în afara camerei.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ înseamnă „Pune cartea pe masă”. Citirea legată afișată include kasra pe ضَعِ; nu trata fiecare vocală de legătură ca parte permanentă a verbului izolat. Înțelege întâi instrucțiunea, apoi detaliul gramatical util."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Dreapta cui?",
+          "paragraphs": [
+            "Ridică mâna dreaptă. Cineva în fața ta poate avea dreapta în partea pe care o vezi stânga. „În dreapta ta” este mai clar decât „dreapta” când privitorii au orientări diferite. Nu marca greșit copilul pentru reperul pe care nu l-ai precizat.",
+            "Nord, sud, est și vest sunt direcții geografice, nu sinonime permanente ale susului, josului, dreptei și stângii paginii. Harta cere indiciu de orientare ori convenție clară. Rotirea corpului schimbă unde arată dreapta, nu mută nordul."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "Ordinea pașilor face parte din sens",
+          "paragraphs": [
+            "„Ia cartea, apoi pune-o în geantă”. „Apoi” păstrează ordine. Dă instrucțiuni scurte cu obiecte cunoscute, cere explicația acțiunii înaintea mișcării. Separi înțelegerea cuvintelor de ghicitul norocos al mișcării.",
+            "Cartea este în geantă, geanta sub scaun. Nu înseamnă carte deasupra genții. Separă relația explicită de cea care cere alte informații. Pentru mai multe locuri desenează plan simplu etichetat, nu te baza doar pe memorarea poziției imaginii."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "deasupra / pe, după context"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "sub / mai jos"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "în fața"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "în spatele"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "înăuntru"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "afară"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "dreapta"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "stânga"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "nord"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "sud"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "est"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "vest"
+        }
+      ],
+      "exercise": {
+        "question": "Cartea este în geantă sub scaun. Este deasupra genții? Dreapta ta arată aceeași direcție geografică după rotire?",
+        "answer": "Nu: este în geantă. Nu: dreapta se schimbă cu orientarea ta, spre deosebire de reperul geografic."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Povești: citește textul și urmărește dovezile",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Poveste originală: fereastra și pixul",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Layla a deschis fereastra. A pus un pix albastru pe masă, apoi a mers la școală. La întoarcere nu a găsit pixul. A privit sub scaun și l-a găsit. L-a luat și a scris o scrisoare scurtă. Textul nu spune cine a mutat pixul și nu dovedește că vântul l-a doborât. Povestea este creație originală HORIZONS, nu copie a unui text publicat."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Trei lecturi, trei scopuri",
+          "paragraphs": [
+            "La prima lectură întreabă cine este personajul și ce problemă are. Nu întrerupe fiecare semn. La a doua urmărește succesiunea: unde era pixul și unde l-a găsit? La a treia examinează limba: هُ în وَجَدَتْهُ se referă la pix; formele verbale corespund Laylei în relatare.",
+            "Pixul este albastru; „scurtă” descrie lungimea scrisorii, nu culoarea. Textul nu dă culoarea scrisorii. Nu înlocui lipsa dovezii cu răspuns plauzibil. Poți inventa final, dar numește-l creație proprie, nu eveniment al poveștii originale."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Mic glosar și scriere independentă",
+          "paragraphs": [
+            "Fereastra este deschidere în perete, masa suport pentru obiecte, scrisoarea comunicare scrisă către cineva. Explicația elimină obstacolul lexical fără repovestire. După lectură alege alt titlu și justifică-l din text.",
+            "Înlocuiește pixul cu o carte, apoi Layla cu Omar. Alegerea obiectului feminin poate schimba adjectivele; personajul masculin verbele potrivite. Revizuiește fiecare referință, nu înlocui un singur nume. Scopul este text nou coerent, nu substituție automată."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "fereastră",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "masă",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "scaun",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "scrisoare / mesaj",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "și ea l-a găsit"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "apoi"
+        }
+      ],
+      "exercise": {
+        "question": "Unde a găsit Layla pixul? Cine l-a mutat? La ce se referă هُ din وَجَدَتْهُ?",
+        "answer": "Sub scaun. Textul nu spune cine l-a mutat. هُ se referă la pix. Separă informația declarată de cea neprecizată de autor."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Alif vocalic scrie /aː/ lung în بَاب. Hamza din أَ, إِ și أُ este consoana /ʔ/ pe suport, nu același sunet ca alif vocalic. Primește legătura precedentă, nu leagă litera următoare la stânga.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "ușă"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "carte"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "foc"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Închide buzele, apoi eliberează cu voce pentru /b/. Ba are punct dedesubt și se leagă bilateral când vecinii permit. Ta și tha înrudite ca formă nu au articulare labială. /p/ este alt sunet, nu ortografie alternativă.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "ușă"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "munte"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "carte"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Fă închidere anterioară a limbii la dinți ori imediat în spate, eliberează pentru /t/ fără sonoritate în model. Ta are două puncte sus. Nu e identică cu taa marbūṭa ة finală, citită după legare și pauză.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "curmale"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "fată / fiică"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "casă / cămin"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Lasă aerul prin îngustare blândă la dinți pentru /θ/ surd, fără închiderea totală /t/. Tha are trei puncte sus și legare bilaterală. Englezescul think ajută; th nu reprezintă mereu acest sunet. Româna obișnuită nu are echivalent exact.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "veșmânt"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "mult / mulți"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "vorbire / conversație aici"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Modelul jim aici este /dʒ/. Comunitățile arabe au alte pronunții. Potrivește înregistrarea cu modelul declarat. Punctul inferior distinge vizual ح și خ, nu explică articularea.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "cămilă"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "stea"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "coroană"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "ح este /ħ/ faringal surd, nu /h/ obișnuit și nu خ. „H puternic” nu localizează sunetul. Evită strângerea dureroasă a gâtului. Fără punct: recunoaște vizual ح, ج și خ, apoi compară sunetele.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "frânghie"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "mare"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "sare"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "خ este fricțiune surdă posterioară în tract, aici /x~χ/. Locul exact variază cu vorbitorul și contextul. Punct sus. Comparația străină cere limbă și varietate specifică; kh singur nu predă sunetul.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "pâine"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "palmieri de curmale"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "bucătărie"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "د /d/ are închidere anterioară sonoră și eliberare. Fără punct, fără legare la următoarea din stânga. Compară vizual ذ și sonoritatea cu ت, fără a schimba simultan vocala.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "lecție"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "mână"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "băiat aici"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "ذ /ð/ este fricțiune dentală sonoră în acest model standard. Nu are închiderea totală د, diferă de /θ/ surd. Punct sus, fără legare ulterioară la stânga. Englezescul this poate ajuta, nu este regulă pentru toate th; româna obișnuită nu are echivalent exact.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "aur"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "ureche"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "delicios"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "ر implică atingere scurtă a vârfului limbii ori atingeri repetate, după context și pronunție. /r/ general nu cere număr fix de atingeri. Fără punct, nu continuă legarea la stânga. Presiunea forțată în limbă ori gât nu este scop.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "nisip"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "mare"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "lună"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "ز /z/ este fricțiune anterioară sonoră. Corp ca ر cu punct sus, dar nu ر cu vocală în plus. Nu leagă următoarea din stânga. Compară /z/ și /s/ prin sonoritate cu aceeași vocală.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "ulei"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "banane"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "pâine"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "س /s/ este fricțiune surdă, cu altă îngustare decât ث. Fără puncte; dinții desenați diferă în fonturi. Identifică întâi în font clar, apoi compară stilurile fără a considera variația literă nouă.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "pește"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "soare"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "lecție"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "ش /ʃ/ este fricțiune surdă cu îngustare diferită de س. Trei puncte deasupra corpului înrudit nu o fac ث: formă și articulare sunt separate. Compară سَ și شَ cu vocală neschimbată.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "soare"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "iarbă"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "pene"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "ص /sˤ/ este emfatic în model, nu simplu /s/ mai tare. Articularea posterioară suplimentară afectează calitatea și vocalele vecine. Fără punct. Compară سَ și صَ fără tensiune dureroasă ori exagerare.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "răbdare"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "suc"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "colivie"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "ض /dˤ/ reprezintă țintă standard contemporană frecventă, nu toate pronunțiile istorice și dialectale. Punctul îl distinge de ص. Nu uni cu ظ: modelul are închidere la unul, fricțiune la celălalt.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "lumină"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "ouă"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "pământ / uscat"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "ط /tˤ/ combină închidere anterioară și eliberare cu emfază. Nu e ت decorat sau mai tare. Fără punct. Compară تَ și طَ, observând și calitatea vocalei.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "argilă / noroi"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "tren"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "fir"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "ظ /ðˤ/ este ținta emfatică dentală fricativă declarată; etichetează variația. Punct peste corpul ط. „Alt ض” nu ajunge. Înregistrare clară conform distincției, nu pronunție identică a scrierilor.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "umbră"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "os"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "noroc"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ع /ʕ/ este consoană faringală sonoră, nu vocală lungă ori hamza slăbită. Învață după model blând, nu strânge gâtul. Fără punct, formele legate diferă mult de cea izolată. Recunoașterea vizuală și sunetul cer atenție distinctă.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "ochi aici"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "el s-a jucat"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "adunare / colectare"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "غ este fricțiune posterioară sonoră în intervalul /ɣ~ʁ/. Asemănarea cu ع este vizuală, nu acustică. Compară cu خ prin sonoritate și ع prin loc, fără identitate pretinsă.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "cameră"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "mic"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "spațiu gol / loc vacant"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "ف /f/ lasă aer între buza inferioară și dinții superiori fără sonoritate consonantică. În tradiția estică aici punct sus. Unele tradiții magrebiene diferă și cer etichetare. Tradiția scrierii nu este automat greșeală de elev.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "elefant"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "cheie"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "lână"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "ق /q/ folosește închidere surdă posterioară în standard, mai în spate decât ك. Două puncte sus în tradiția aceasta. Pronunțiile dialectale nu schimbă ascuns ținta auditivă; numește modelul lecției.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "lună"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "bovine"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "piață"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "ك /k/ închide partea posterioară a limbii pe zona posterioară a palatului și eliberează. Nu e identic cu ق doar fiindcă ambele sunt posterioare. Semnul mic din ك izolat este parte a formei, nu hamza separată de pronunțat.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "carte"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "pește"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "înger"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "ل /l/ este lateral sonor: aer pe lângă limbă cu vârful în contact anterior. Începe cu model obișnuit, contextele emfatice speciale separat. Se leagă bilateral; لا poate fi formă comună fără literă nouă.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "noapte"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pix"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "munte"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "م /m/ este nazal sonor cu buze închise. Nu diferă de ب doar prin formă: aerul trece prin nas. Corpul se schimbă la legare, numele și identitatea rămân.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "apă"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "lună"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pix"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "ن /n/ este nazal sonor cu închidere anterioară a limbii. Punct sus. Compară cu م prin locul închiderii. Nun scris diferă de tanwīn: unele terminații au /n/ fără literă separată.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "lumină"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "ochi aici"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "lapte ori produs lactat, după regiune"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "ه /h/ este surd fără îngustarea faringală ح. Formele ه, هـ, ـهـ și ـه diferă vizual; legarea ajută explicația. Nu identifica orice ة final drept ه obișnuit fiindcă pauza poate suna similar.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "semilună"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "râu"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "față"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "و poate fi /w/ în وَلَد sau ajuta scrierea /uː/ lung în نُور. În ثَوْب nu este /uː/: citește modelul vocalic. Primește legătură precedentă, nu leagă următoarea din stânga.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "băiat aici"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lumină"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "veșmânt"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "ي poate fi /j/ în يَد sau ajuta scrierea /iː/ lung în فِيل. بَيْت are /aj/, nu /iː/. Ya punctat diferă de alif maqṣūra ى, care nu se citește automat ya.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "mână"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "elefant"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "casă / cămin"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "Referință extinsă HORIZONS",
+    "warning": "Versiune editorială: traducerea a fost autorevizuită de model; nu s-a efectuat încă verificarea independentă de către un vorbitor nativ.",
+    "examples": "Exemple cu sens",
+    "practice": "Exercițiu",
+    "answer": "Răspuns și explicație",
+    "notes": "Note",
+    "contents": "Cuprins",
+    "view": "Citește",
+    "all": "Întreaga referință",
+    "original": "Originalul arab",
+    "answers": "Răspunsuri",
+    "forms": "Forme scrise",
+    "words": "Cuvinte",
+    "draft": "Versiune editorială",
+    "font": "Font arab",
+    "theme": "Schimbă modul luminos și întunecat"
+  },
+  "notation_note": "ː marchează lungimea vocalei precedente; ˤ emfaza consoanei aici; . limita silabei; ~ separă alternative în intervalul descris, nu două sunete consecutive. / / încadrează reprezentarea sonoră, nu scrierea arabă. Cuvintele izolate folosesc lectura cu pauză; traducerea propozițiilor nu presupune ascuns pronunție identică la legare și pauză.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Comparate toate capitolele, exemplele și literele: păstrate dualul, contextul de gen, pauza și legarea.",
+          "Adaptat locul posesivului în română; păstrată distincția articolului și povestea fără cauză inventată."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Verificate acordul, diacriticele și tonul didactic; corectată formularea neofertată la neprecizată.",
+          "Nu s-a inventat echivalent românesc exact pentru /θ/ ori /ð/; IPA și originalele arabe sunt neschimbate."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

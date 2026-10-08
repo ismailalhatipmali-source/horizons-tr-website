@@ -1,0 +1,1550 @@
+{
+  "language": "da",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Bogstaver og skrift: åbne døren til læsning",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Tre forskellige ting: navn, lyd og form",
+          "paragraphs": [
+            "Forestil dig en kasse med byggeklodser. Navnene hjælper dig med at finde klodserne, men at gentage navnene bygger ikke et hus. Et bogstav har også et navn, en skriftform og en rolle i et talt ord. ب hedder bāʾ. I بَاب begynder man dog med /b/ efterfulgt af den lange vokal /aː/. Læs ikke de tre bogstavnavne i stedet for ordet. Navnene er stadig nyttige, når du spørger, hvordan noget staves.",
+            "Følg det arabiske ord fra højre mod venstre. Se først grundformen, så prikkerne og til sidst læsetegnene. بَ og تَ har beslægtede grundformer, men prikkerne angiver forskellige bogstaver. At erstatte fatḥa med kasra giver بِ; det ændrer ikke bāʾ til tāʾ. Dæk resten af linjen, hvis den virker tæt. At genkende et bogstav er allerede en succes, før du kan læse hele ordet."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Hvorfor ændrer et bogstav form?",
+          "paragraphs": [
+            "Arabiske bogstaver deler en skriftlinje, ligesom mennesker der holder hinanden i hånden. ب, بـ, ـبـ og ـب er forbindelsesformer af ét bogstav, ikke fire nye bogstaver. I بَاب forbinder det første bāʾ sig med alif, men alif fører ikke forbindelsen videre til det sidste bāʾ. Det lille brud skaber ikke et andet ord.",
+            "Bogstaverne ا, د, ذ, ر, ز og و kan modtage en forbindelse fra det foregående bogstav, når det tillades, men forbinder ikke med det næste til venstre. Indsæt ikke et mellemrum, hver gang pennens forbindelse stopper. Mellemrum adskiller ord; forbindelsesregler former bogstaver inde i ord. Se et rigtigt eksempel, før du prøver at huske alle reglerne."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza og betydning",
+          "paragraphs": [
+            "I بَاب skriver alif den lange vokal /aː/. I أَخ begynder ordet med hamza /ʔ/, båret af alif. Hamza er en konsonant, ikke en lang vokal. Stavereglerne tillader formerne ء, أ, إ, ؤ og ئ. Bærerens form gør ikke disse tilfælde til samme lyd som vokalalif.",
+            "Knyt betydning til hvert skridt. En dør kan åbnes; en bog har sider til læsning; en pen bruges til at skrive. Ændr kortenes rækkefølge og vend tilbage efter en kort pause. At genkende et korts plads træner hukommelsen, men selvstændig læsning betyder at genkende den skrevne information, uanset hvor den står."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "dør",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "bog",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "bror",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "hus / hjem",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lys",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Skaber forbindelsesbruddet i بَاب to ord? Er bogstavnavnet bāʾ hele læsningen af بَاب?",
+        "answer": "Nej til begge. بَاب er ét ord: alif forbinder ikke videre. Bāʾ navngiver et bogstav; /baːb/ læser ordets lyde i rækkefølge."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Vokaltegn: små tegn ændrer læsningen",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Et vokaltegn er ikke en prik",
+          "paragraphs": [
+            "Sæt بَ, بُ og بِ ved siden af hinanden. Alle tre bruger bāʾ. Fatḥa angiver kort /a/, ḍamma kort /u/ og kasra kort /i/. Mund, tunge og læber tilpasses forskellige vokaler. At tale højere forvandler ikke én vokal til en anden.",
+            "I بِ ligger bāʾs prik og kasra tæt under bogstavet. Prikken identificerer bogstavet; kasra styrer læsningen. Ændr vokaltegnet, og bāʾ forbliver bāʾ. Farver hjælper med at adskille funktionerne i bogen, men former og etiketter skal også forstås ved sort-hvid udskrivning."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Længde, ikke lydstyrke",
+          "paragraphs": [
+            "Sammenlign بَ med بَا, بُ med بُو og بِ med بِي. Vokalen varer længere i hvert pars andet led; bāʾ bliver ikke en anden konsonant. I /baː/ markerer ː den foregående vokals længde. Det er ikke et ekstra arabisk bogstav eller en fast stopursvarighed for alle talere.",
+            "Alif, wāw og yāʾ fungerer ikke som lange vokaler, hver gang de forekommer. Wāw i وَلَد er /w/ og yāʾ i يَد er /j/. Wāw i نُور hjælper med at skrive /uː/ og yāʾ i فِيل med /iː/. Læs det lokale mønster i stedet for at gætte bogstavets opgave ud fra navnet alene."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda og tanwīn",
+          "paragraphs": [
+            "Sukūn i بِنْت minder om, at man ikke tilføjer en vokal efter nūn i dette mønster. Det sletter ikke /n/. Shadda i أُمّ angiver en dobbelt konsonant, ikke en længere foregående vokal. أَمْ /ʔam/ og أُمّ /ʔumm/ adskiller sig både i vokal og konsonantlængde og er derfor ikke et minimalpar med én variabel. Brug tydeligt mærkede øvelsesstavelser, når du isolerer én egenskab.",
+            "Tanwīn i كِتَابٌ hører til navneordets endelse i en grammatisk sammenhæng. Passende sammenhængende læsning indeholder /un/; almindelig pause ved ordet giver /kitaːb/. Eksemplet er ikke en universel regel for alle endelser. Behold det skrevne tegn, mens du forklarer forskellen mellem sammenhængende læsning og pause."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "pige / datter",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "elefant",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "dreng",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "hånd",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "mor",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lys",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Står wāw her for /w/ i نُور? Fjerner sukūn nūn i بِنْت?",
+        "answer": "Nej. Wāw i نُور skriver den lange vokal /uː/. Nūn i بِنْت udtales uden en ekstra vokal bagefter i dette mønster."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Sammenlæsning af to enheder: byg den første læsning",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Hvad sætter vi sammen?",
+          "paragraphs": [
+            "I arbejdsbogen betegner sammenlæsning af to enheder en øvelsesfase med to skrevne enheder. Antallet af bogstaver er ikke altid lig antallet af lyde eller stavelser. بَا indeholder bāʾ og alif, men repræsenterer en konsonant fulgt af en lang vokal. Det er ikke to konsonanter, og den isolerede øvelsesdel behøver ikke være et meningsfuldt ord.",
+            "Begynd med بَ, derefter بَا og så تَا og ثَا. Første sammenligning ændrer vokallængden; næste ændrer konsonanten med samme lange vokal. Giv tid til at se og derefter læse. Gentagne bogstavnavne i stedet for de krævede lyde gør sammenlæsning sværere at forstå."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Åbne og lukkede stavelser",
+          "paragraphs": [
+            "بَا ender i en vokal og er her en åben stavelse. بَرْ ender i en konsonant og er lukket. ”Lukket” beskriver stavelsens slutning; det betyder ikke at holde munden lukket under hele udtalen. Læs بَرْ uden at tilføje en slutvokal. At læse بَرَ ændrer strukturen.",
+            "Følg din plads med en finger og fjern gradvist støtten. At pege hjælper med at følge linjen, men beviser ikke rigtig udtale. Vis efter en kendt stavelse en ny efter samme mønster. Det undersøger, om eleven kan overføre reglen ud over et husket kort."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "Fra del til ord",
+          "paragraphs": [
+            "بَا er en del af بَاب. بِي er en del af den viste læsning af بِيض. Ikke alle stavelser behøver en selvstændig ordbogsbetydning. Læs sammen først og spørg derefter til hele ordets betydning. Så har aktiviteten et formål ud over hurtig læsning.",
+            "Når noget går galt, find ændringen: konsonant, vokalkvalitet, længde eller tilføjet lyd. At navngive et konkret problem hjælper mere end at bede eleven starte alt forfra. Hvis flere egenskaber er svære, øv én håndterbar egenskab, før du samler dem igen."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "øvelsesstavelse; ikke et ord her",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "øvelsesstavelse",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "øvelsesstavelse",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "øvelsesstavelse i dette eksempel",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "dør",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "æg",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Hvorfor er بَا og بَرْ ikke samme stavelsestype?",
+        "answer": "بَا ender i en lang vokal; بَرْ ender i en konsonant. Forskellen beskriver slutningerne, ikke antallet af prikker eller lydstyrken."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Sammenlæsning af tre enheder: læs meningsfulde dele",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Tre bogstaver, men hvor mange stavelser?",
+          "paragraphs": [
+            "بَاب og جَبَل har hver tre grundbogstaver. I de valgte pauseudtaler har /baːb/ én stavelse og /dʒa.bal/ to. Punktummet i denne lydskrift markerer en stavelsesgrænse; det er ikke jīms skrevne prik. At tælle bogstaver alene afslører ikke stavelsesantallet.",
+            "Skriv bogstaver og tegn, og undersøg lydmønsteret. For جَبَل begynder du med جَ og slutter med بَلْ i pauseudtalen. Sæt dem sammen uden at udelade bāʾ eller indsætte en lyd. At dele et ord er midlertidig støtte, ikke måden at udtale enhver almindelig sætning på."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Bogstavrækkefølgen bærer betydning",
+          "paragraphs": [
+            "قَلْب betyder hjerte; كَلْب betyder hund. At ændre qāf til kāf ændrer betydningen. بَحْر betyder hav og حَبْر blæk; sammenligningen ændrer rækkefølge og vokaler og er derfor ikke et minimalpar med én egenskab. Se på skriftens detaljer i stedet for at gætte fra et kendt billede.",
+            "Vælg ord, hvis betydning kan vises. Spørg efter læsningen, om blæk bruges til at skrive eller svømme. Betydningen kan afsløre et gæt, men erstatter ikke at se på bogstaverne. Forklar nye ord i stedet for at behandle ukendt ordforråd som læsefiasko."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Omhyggelig læsning før flydende læsning",
+          "paragraphs": [
+            "Læs tre ord uden kapløb. Markér ét til genbesøg og prøv det efter et lettere eksempel. Flydende læsning omfatter passende læsning, forståelse og rettelse, ikke kun ord pr. minut. Opfordr ikke et barn til at skjule tøven ved at gætte.",
+            "Lad جَبَل følges af جَمَل for at afprøve overførsel. Bāʾ bliver mīm i et kendt mønster. Et bjerg er hævet land, en kamel et dyr. Bed om et andet rigtigt ord med kendte bogstaver, men forklar at ikke alle kombinationer bliver arabiske ord."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "bjerg",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "kamel",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "hjerte",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "hund",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "hav",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "blæk",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Hvilket bogstav ændres fra جَبَل til جَمَل? Har بَاب og جَبَل samme stavelsesantal?",
+        "answer": "Bāʾ bliver mīm. بَاب har én stavelse i den viste pauseudtale; جَبَل har to. Bogstavantallet alene er ikke nok."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Sammenlæsning af fire enheder: længere læsning uden overbelastning",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Længere er ikke altid sværere",
+          "paragraphs": [
+            "كِتَاب har fire grundbogstaver. Pauseudtalen /ki.taːb/ har først en kort stavelse og så en stavelse med lang vokal og afsluttende bāʾ. Genbrug det lærte i بَاب i stedet for at se hver del som helt ny. Skriftlængde alene måler ikke læsevanskelighed.",
+            "Wāw i ثَوْب skriver ikke /uː/ i denne læsning: /aw/ er en anden følge. بَيْت indeholder /aj/, ikke /iː/. Resultatet kommer af at undersøge vokal og struktur, ikke af reglen at hvert wāw er ”u” og hvert yāʾ ”i”. Gør ét eksempel sikkert, før du tilføjer en ny kontrast."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "En sætning tilføjer relationer",
+          "paragraphs": [
+            "هَذَا كِتَابٌ identificerer en nær genstand: ”Dette er en bog.” هَذِهِ حَقِيبَةٌ bruger den feminine påpegende form med taske. At udskifte et navneord kan kræve kontrol af tilknyttede ord, ikke bare et nyt mærkat. Spørg hvad der peges på og hvilke former der passer.",
+            "الكِتَابُ جَدِيدٌ siger ”Bogen er ny”. الكِتَابُ الجَدِيدُ identificerer ”den nye bog”; udtrykket alene fremsætter ikke samme fuldstændige udsagn. Artiklen er ikke et dekorativt præfiks. En enkel situation kan vise en grammatisk relation før indføring af fagtermer."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Overfør en færdighed til ny tekst",
+          "paragraphs": [
+            "Sammenlign كِتَاب og كَاتِب. Grundkonsonanterne er beslægtede, men alifs plads og vokalerne er forskellige. Det første er en bog, det andet en forfatter. Beslægtede rødder giver ikke alle ord samme betydning. Det introducerer ordfamilier uden at foregive at lære al afledning på én gang.",
+            "Læs en kort linje, skjul den et øjeblik og spørg om hovedbetydningen. Vis den igen for at kontrollere en detalje. Så adskilles lydhukommelse, forståelse og tilbagevenden til skriftligt belæg. At bede om hjælp til et nyt ord er del af læring; referencebogen skal ikke føles som en uendelig prøve."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "bog",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "forfatter",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "taske",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "Dette er en bog."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Bogen er ny."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "den nye bog"
+        }
+      ],
+      "exercise": {
+        "question": "Giver الكِتَابُ جَدِيدٌ og الكِتَابُ الجَدِيدُ samme budskab hver for sig?",
+        "answer": "Nej. Det første siger at bogen er ny; det andet identificerer den nye bog uden samme fuldstændige udsagn."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Bogstavreference: fra form til ordbrug",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Et pålideligt kort for hvert bogstav",
+          "paragraphs": [
+            "Stil samme spørgsmål for hvert bogstav: Hvad hedder det? Hvor dannes lyden? Hvordan forbindes det? Hvad adskiller det fra en lignende form? Hvilke klare ord bruger det? En fast struktur forhindrer en lektion af uforklarede billeder. Alt behøver ikke besvares første gang.",
+            "Kapitlet har kort for alfabetets 28 bogstaver. Alifs alfabetplads betyder ikke at hamza og langt /aː/ er samme lyd. Wāw og yāʾ har sammenhængsafhængige roller. Læs kortets note før sammenligning med stavningen i dit eget sprog."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Formfamilier er ikke lydfamilier",
+          "paragraphs": [
+            "ب, ت og ث har beslægtede kroppe, men bāʾ dannes ved læberne, tāʾ med et forreste lukke og thāʾ med dental friktion i den valgte standardarabiske model. Thāʾs tre prikker forklarer ikke lyden, og shīns tre gør det ikke til thāʾ. Brug visuelle familier til genkendelse og artikulationsbeskrivelser til udtale.",
+            "Sammenlign ثَ med تَ ved samme fatḥa. Sammenlign س og ص ved at forklare emfase, ikke lydstyrke. Nogle arabiske lyde har ingen direkte parallel i elevens sprog. Forklar artikulationen og brug en lyttemodel i stedet for at opfinde en præcis udenlandsk parallel."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Ordforråd, sætninger og overførsel",
+          "paragraphs": [
+            "Find et bogstav først, i midten og sidst og lav en meningsfuld sætning med et af ordene. Ophob ikke sjældne ord kun for at udvide bogen. Varier position og betydning, forklar nye ord og tilføj sammenhæng ved flere betydninger.",
+            "Dialektforskelle er ikke fejl hos talerne. Referencen angiver standardarabisk som mål og anerkender variation i jīm, qāf og andre lyde i arabisktalende grupper. En lytteøvelse skal bruge en optagelse, der passer til målet i forklaringen og symbolerne."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "dør",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "bjerg",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "bog",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "frugt / høstprodukter",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "sne",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "ræv",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "Betyder lignende form hos ب, ت og ث at deres lyde dannes samme sted? Udtales jīm ens i alle grupper?",
+        "answer": "Nej. Form er skriftlig information; artikulation er en anden egenskab. Jīm varierer: angiv det valgte mål og markér andre modeller klart."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Stedord: hvem er jeg, hvem er du?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Et ord der følger taleren",
+          "paragraphs": [
+            "Hvis Layla siger ”jeg”, mener hun Layla; siger Omar ”jeg”, mener han Omar. Et stedord er ikke en fast persons navn: referencen kommer fra talesituationen. ”Du” peger på den tiltalte, ”han” og ”hun” på nogen man taler om. Øv rolleskift før tabellen læres udenad.",
+            "Arabisk skelner أَنْتَ for en mandlig tiltalt i ental fra أَنْتِ for en kvindelig. Engelsk bruger you for begge, og dansk du angiver heller ikke dette køn. Det gør ikke den arabiske forskel valgfri. Tyrkisk o svarer til både هُوَ og هِيَ: oversættelse til arabisk kræver kontrol af referencen, ikke mekanisk ordudskiftning."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Ental, total (dualis) og flertal",
+          "paragraphs": [
+            "أَنَا er første person ental. نَحْنُ angiver en gruppe inklusive taleren med to eller flere personer. أَنْتُمَا tiltaler to, og هُمَا henviser til to; begge virker for maskulin og feminin reference. أَنْتُمْ / أَنْتُنَّ og هُمْ / هُنَّ skelner flertalsformer. Maskulin flertal kan omfatte en blandet gruppe i standardarabisk efter sammenhængen.",
+            "Ikke alle sprog har et særskilt stedord i ét ord for to personer. أَنْتُمَا kan forklares som ”I to” på dansk, you two på engelsk og ikiniz på tyrkisk. Det forklarer referencen, ikke nødvendigvis ens brug i enhver situation. Sammenlign betydninger sammen med former."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Stedordet og det næste",
+          "paragraphs": [
+            "أَنَا طَالِبٌ og أَنَا طَالِبَةٌ begynder med samme stedord; navneordet ændres efter talerens køn. هُوَ طَالِبٌ og هِيَ طَالِبَةٌ ændrer både stedord og navneord. Et eksempel med en mandlig studerende gør ikke أَنَا til et kun maskulint stedord.",
+            "I أَنَا أَقْرَأُ og نَحْنُ نَقْرَأُ ændres udsagnsordets form. Det indledende أَ hører her til første persons verbøjning, ikke ejerskab. Et udsagnsord kan give nok information til at udelade det særskilte stedord i en klar sammenhæng. Dansk ”er” i oversættelsen kræver ikke et tilsvarende ord i hver arabisk nominalsætning i nutid."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "jeg",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "du (maskulin ental)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "du (feminin ental)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "vi",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "han",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "hun",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "I to"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "de to / begge"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "I (maskulin flertal; sammenhængen kan omfatte en blandet gruppe)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "I (feminin flertal)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "de (maskulin flertal; sammenhængen kan omfatte en blandet gruppe)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "de (feminin flertal)"
+        }
+      ],
+      "exercise": {
+        "question": "Layla taler om sig selv og dernæst om Omar. Hvilke to stedord passer? Er نَحْنُ kun maskulint?",
+        "answer": "أَنَا om hende selv; هُوَ om Omar i eksemplet. نَحْنُ skelner ikke talernes køn; sammenhængen identificerer gruppen."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Ejerskab og relationer: mere end et mærkat",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Én ting, to talere",
+          "paragraphs": [
+            "Omar holder en bog og siger كِتَابِي, ”min bog”. Tiltaler du ham, siger du كِتَابُكَ, ”din bog”. Taler du om ham til Layla, siger du كِتَابُهُ, ”hans bog”. Bogen er ikke ændret, talerelationen er. Det er ikke tre kategorier af bøger.",
+            "Tiltal Layla med كِتَابُكِ og tal om hende med كِتَابُهَا. Forskellen mellem كَ og كِ er lille i skrift og lyd, men vigtig for referencen. Dansk bruger normalt et særskilt ord foran navneordet; de arabiske former sætter stedordet fast på navneordet."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "Relationen er ikke altid ejerskab",
+          "paragraphs": [
+            "كِتَابُنَا forbinder en bog med vores gruppe. أُمِّي betyder ”min mor” og gør ikke et menneske til ejendom. مَدْرَسَتِي kan være skolen jeg går på, ikke en bygning jeg ejer. Navneord og sammenhæng viser relationen fra det tilføjede stedord.",
+            "I مَدْرَسَة → مَدْرَسَتِي skrives tāʾ marbūṭa som almindeligt tāʾ, når stedordet sættes til. Udled ikke at hvert afsluttende hāʾ bliver tāʾ. Sammenlign وَجْهِي, ”mit ansigt”: hāʾ i وَجْه forbliver hāʾ."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Navneord, kasus og bestemthed",
+          "paragraphs": [
+            "كِتَابُكَ er én valgt form i tabellen. I رَأَيْتُ كِتَابَكَ, ”Jeg så din bog”, ændres navneordets endelse efter grammatisk rolle; كَ henviser stadig til den mandlige tiltalte i ental. Lær ikke den foregående ḍamma som fast del af ”din”.",
+            "I den normale konstruktion med navneord og ejestedord sætter man ikke tanwīn på navneordet eller tilføjer artiklen som ved et særskilt navneord uden ejerskab. كِتَابِي angiver relationen og er bestemt i dette brug. Lær et korrekt eksempel før avancerede undtagelser samles."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "min bog"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "din bog (mandlig tiltalt i ental)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "din bog (kvindelig tiltalt i ental)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "hans bog"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "hendes bog"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "vores bog"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "min skole"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "mit ansigt"
+        }
+      ],
+      "exercise": {
+        "question": "Layla siger ”min bog”. Hvordan omtaler du den, når du tiltaler hende og derefter taler om hende med en anden?",
+        "answer": "كِتَابُكِ ved tiltale; كِتَابُهَا ved omtale. Stedordets reference følger talerelationen."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Tal: symbol, ord og mængde",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Tæl hver genstand én gang",
+          "paragraphs": [
+            "Læg tre penne på bordet. Rør hver én gang, mens du går ét tælletrin frem, og angiv derefter gruppens størrelse. At tælle samme pen to gange giver forkert total. At flytte pennene uden at tilføje eller fjerne nogen efterlader tre: rækkens form er ikke mængden.",
+            "٣ og 3 repræsenterer samme tal i de to viste cifersystemer. ثَلَاثَة er et arabisk talord, ikke en ciferform. Et skrevet tal kan tælle bøger, skridt eller minutter; identificér det optalte for at forstå brugen."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "At tælle alene og med navneord",
+          "paragraphs": [
+            "Højttælling begynder fra én til ti, men taludtryk kræver mere omhu. ثَلَاثَةُ كُتُبٍ betyder tre bøger og ثَلَاثُ سَيَّارَاتٍ tre biler. I mønstret for tre til ti står talformen i kontrast til det optalte navneords grammatiske køn i ental, og det optalte navneord står i genitiv flertal. Brug ikke mønstret på én og to.",
+            "كِتَابٌ وَاحِدٌ og سَيَّارَةٌ وَاحِدَةٌ viser overensstemmelse med én. De viste nominative totalformer كِتَابَانِ og سَيَّارَتَانِ angiver allerede to. Et ord for to behøver ikke sættes ind i hvert totaludtryk."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Mængde, orden og sammenligning",
+          "paragraphs": [
+            "ثَلَاثَة svarer på ”hvor mange?”, الثَّالِث på ”hvilken plads?”. Tre bøger er ikke den tredje bog. Nul penne betyder ingen penne i den optalte gruppe, ikke at intet overhovedet eksisterer.",
+            "Sammenlign virkelige grupper: to penne og fire penne. Den anden har flere, den første færre. Har begge fire, er antallet ens trods forskellig farve eller længde. Knyt sammenligningen til en angivet egenskab og prøv et nyt eksempel."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "nul"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "én"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "to"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "tre"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "fire"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "fem"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "seks"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "syv"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "otte"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "ni"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "ti"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "tredje"
+        }
+      ],
+      "exercise": {
+        "question": "Du flytter rundt på tre cirkler uden at tilføje nogen. Hvor mange er tilbage? Angiver ”tredje” mængde?",
+        "answer": "Tre er tilbage. ”Tredje” er en plads i rækkefølgen, ikke en mængde. Tæl hver ting én gang, ikke mellemrum mellem tingene."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Farver: navngivning, beskrivelse og bøjning",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Samme genstand, anden beskrivelse",
+          "paragraphs": [
+            "To penne gør samme arbejde, men én er rød og den anden blå. ”Pen” angiver genstandstype; farven hjælper med at angive hvilken. Farve siger intet om en persons værdi eller hvilket køn der må bruge en genstand. Skærme gengiver også farver forskelligt: navngiv altid farveprøven frem for kun at bruge farve.",
+            "قَلَمٌ أَحْمَرُ er en rød pen; سَيَّارَةٌ حَمْرَاءُ en rød bil. Tillægsordet ændres efter det arabiske navneords grammatiske køn, ikke ejerens køn. Engelsk og tyrkisk ændrer ikke farvetillægsord sådan her. Dansk fælleskøn/intetkøn og tillægsordsbøjning svarer ikke automatisk til arabisk maskulin/feminin."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Ikke alle farver følger mønstret for rød",
+          "paragraphs": [
+            "Lær أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء og أَسْوَد/سَوْدَاء som én mønstergruppe. وَرْدِيّ/وَرْدِيَّة og بُنِّيّ/بُنِّيَّة følger et andet mønster. Opfind ikke alle feminine farveformer ved at tilføje اء.",
+            "قَلَمٌ أَحْمَرُ betyder ”en rød pen”. القَلَمُ الأَحْمَرُ identificerer ”den røde pen”. القَلَمُ أَحْمَرُ siger ”Pennen er rød”. Artikelplaceringen ændrer relationen, ikke bare ordenes synlige udtryk."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Beskrivelse uden farveprøve",
+          "paragraphs": [
+            "Skriv farvenavnet ved mærket og tilføj form eller etiket for at skelne svar. En elev kan have svagt syn eller anderledes farvesyn. Sprogfærdighed bør ikke afhænge af at skelne to næsten ens grønne nuancer.",
+            "Begynd med ét navneord og tillægsord: bil med حَمْرَاء og pen med أَحْمَر. Skift så genstand for at teste overførsel, ikke hukommelse for ét par. Flertal har yderligere regler for overensstemmelse; overfør ikke regler for enkelte personer til alle flertal for ting."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "rød: maskulin — feminin"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "blå: maskulin — feminin"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "grøn: maskulin — feminin"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "gul: maskulin — feminin"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "hvid: maskulin — feminin"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "sort: maskulin — feminin"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "lyserød: maskulin — feminin"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "brun: maskulin — feminin"
+        }
+      ],
+      "exercise": {
+        "question": "Udfyld ”en ... bil” med grøn og ”en ... pen” med hvid. Hvad bestemmer den arabiske form?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Det arabiske navneords grammatiske køn, ikke ejerens køn, styrer overensstemmelsen her."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Dage og måneder: taletid og aftaletid",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "I dag ændrer sin reference",
+          "paragraphs": [
+            "I dag er dagen man taler; i går kommer før, i morgen efter. ”Kom i morgen” kan være uklart, hvis beskeden læses flere dage senere uden afsendelsesdato. En fast dato som 8. oktober 2026 angiver en dag, men en aftale kan også kræve kalendersystem, klokkeslæt og tidszone.",
+            "De syv ugedagsnavne er ens, selv om én kalender starter mandag og en anden søndag eller lørdag. Visningsorden, første ugedag og weekendvaner varierer. Lær rækkefølgen og forbind den med elevens lokale kalender."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Forskellige navne for samme måned",
+          "paragraphs": [
+            "Januar kan hedde يناير eller كانون الثاني i forskellige arabisktalende områder; februar فبراير eller شباط og marts مارس eller آذار. At lære én liste gør ikke regionale alternativer forkerte. Identificér kalendersystem og regional navnekonvention ved et ukendt navn.",
+            "Muḥarram, Ṣafar og Ramaḍān hører til hijrakalenderen, ikke til oversættelser af gregorianske månedsnavne. Måneår og solår adskiller sig. At erstatte januar med Muḥarram omregner ikke en dato. Brug en pålidelig kalender til en rigtig aftale."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Læs en klar aftale",
+          "paragraphs": [
+            "”Jeg læser på fredag” kan kræve afklaring af hvilken fredag. ”Jeg læser hver fredag” angiver en gentaget aktivitet. ”Hver” ændrer budskabet. Spørg om handlingen sker én gang eller gentages og find det skrevne tegn.",
+            "En taldato som 03/04 kan være tvetydig, når dag-månedsrækkefølgen varierer. Et skrevet månedsnavn eller et aftalt datoformat hjælper. Brug et klart undervisningseksempel; ved rigtig planlægning skal datoen kontrolleres frem for gættes ud fra udseendet."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "i dag"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "i går"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "i morgen"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "lørdag"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "søndag"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "mandag"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "tirsdag"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "onsdag"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "torsdag"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "fredag"
+        }
+      ],
+      "exercise": {
+        "question": "Hvis i dag er tirsdag, hvilken ugedag er i morgen? Er januar og Muḥarram navne for samme måned?",
+        "answer": "Onsdag. Nej: januar er gregoriansk og Muḥarram hører til hijrakalenderen. Rigtige datoer kræver korrekt omregning mellem kalendrene."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Sted og retning: vælg referencen først",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Hvor, i forhold til hvad?",
+          "paragraphs": [
+            "En bog er over et bord, en taske under det. ”Over” og ”under” beskriver relationer. Bogen er ikke blot ”over” i enhver beskrivelse: angiv referencen, over bordet. ”Inde” og ”ude” kræver også en relevant grænse, som inde i tasken eller uden for rummet.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ betyder ”Læg bogen på bordet”. Den viste sammenhængende læsning har kasra på ضَعِ. Behandl ikke enhver forbindelsesvokal som en fast del af det isolerede udsagnsord. Forstå instruktionen først og tag den grammatiske detalje op, når den er nyttig."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Hvis højre side?",
+          "paragraphs": [
+            "Løft højre hånd. En person over for dig kan have sin højre hånd på den side du ser som venstre. ”På din højre side” er klarere end ”højre”, når observatører vender forskelligt. Bedøm ikke et barn som forkert for en reference, du ikke har angivet.",
+            "Nord, syd, øst og vest er geografiske retninger, ikke faste synonymer for øverst, nederst, højre og venstre på papir. Et kort skal have en orienteringsmarkering eller klar konvention. At dreje kroppen ændrer hvor din højre side peger, ikke hvor nord ligger."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "Rækkefølgen af trin er del af betydningen",
+          "paragraphs": [
+            "”Tag bogen og læg den så i tasken”. ”Så” bevarer en rækkefølge. Giv korte instruktioner med kendte ting og bed eleven forklare handlingen før bevægelsen. Det adskiller ordforståelse fra et heldigt fysisk gæt.",
+            "Bogen er i tasken, og tasken under stolen. Det betyder ikke at bogen er over tasken. Adskil en angivet relation fra en der kræver mere information. Tegn en enkel navngivet plan ved flere steder frem for kun at stole på billedpositionshukommelse."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "over / på, efter sammenhængen"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "under"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "foran"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "bagved"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "inde i"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "udenfor"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "højre"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "venstre"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "nord"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "syd"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "øst"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "vest"
+        }
+      ],
+      "exercise": {
+        "question": "En bog er i en taske under en stol. Er bogen over tasken? Peger din højre side i samme geografiske retning efter en drejning?",
+        "answer": "Nej: den er i tasken. Nej: højre ændrer sig med din orientering, modsat den geografiske reference."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Fortællinger: læs teksten og følg belæggene",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Original fortælling: vinduet og pennen",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Layla åbnede vinduet. Hun lagde en blå pen på bordet og gik derefter i skole. Da hun kom tilbage, fandt hun ikke pennen. Hun så under stolen og fandt den. Hun tog den og skrev et kort brev. Teksten siger ikke hvem der flyttede pennen og beviser ikke at vinden blæste den ned. Fortællingen er en original tekst fra HORIZONS, ikke en kopieret udgivet fortælling."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Tre læsninger, tre formål",
+          "paragraphs": [
+            "Spørg første gang hvem personen er og hvilket problem hun har. Afbryd ikke ved hvert tegn. Følg anden gang rækkefølgen: hvor var pennen og hvor blev den fundet? Undersøg tredje gang sproget: هُ i وَجَدَتْهُ henviser til pennen; udsagnsordsformerne passer til Layla i fortællingen.",
+            "Pennen er blå; ”kort” beskriver brevets længde, ikke dets farve. Teksten giver ikke brevets farve. Erstat ikke manglende belæg med et plausibelt svar. Du må skrive en tænkt slutning, men markér den som din opfindelse og ikke en hændelse i originalteksten."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "En lille ordliste og selvstændig skrivning",
+          "paragraphs": [
+            "Et vindue er en åbning i en væg, et bord giver en overflade til ting, et brev er skriftlig kommunikation til nogen. Forklaring af ordene kan fjerne en ordforrådshindring uden at genfortælle alt. Vælg bagefter en anden titel og begrund den med tekstbelæg.",
+            "Erstat pennen med en bog og Layla med Omar. Et feminint objekt kan ændre tillægsord; en maskulin person ændrer relevante udsagnsord. Kontrollér hver henvisning frem for kun ét navn. Målet er en sammenhængende ny tekst, ikke automatisk ordudskiftning."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "vindue",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "bord",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "stol",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "brev / besked",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "og hun fandt den"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "derefter"
+        }
+      ],
+      "exercise": {
+        "question": "Hvor fandt Layla pennen? Hvem flyttede den? Hvad henviser هُ i وَجَدَتْهُ til?",
+        "answer": "Under stolen. Teksten siger ikke hvem der flyttede den. هُ henviser til pennen. Adskil angivne oplysninger fra dem forfatteren ikke gav."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Vokalalif skriver langt /aː/ i بَاب. Hamza i أَ, إِ og أُ er konsonanten /ʔ/ på en bærer, ikke samme lyd som vokalalif. Alif modtager en foregående forbindelse, men forbinder ikke til næste bogstav til venstre.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "dør"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "bog"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "ild"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Luk læberne og slip med stemme for /b/. Bāʾ har én prik under kroppen og forbinder til begge sider, når naboerne tillader det. De beslægtede skriftformer tāʾ og thāʾ har ikke samme læbeartikulation. /p/ er en anden lyd, ikke alternativ stavning af bāʾ.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "dør"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "bjerg"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "bog"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Lav et forreste tungelukke ved eller lige bag tænderne og slip for /t/, uden stemt konsonant i målmodellen. Tāʾ har to prikker over. Det er ikke det samme som sidste tāʾ marbūṭa ة, hvis læsning afhænger af forbindelse og pause.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "dadler (frugt)"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "pige / datter"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "hus / hjem"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Lad luft passere en let indsnævring ved tænderne for ustemt /θ/. Lav ikke det fulde lukke som ved /t/. Thāʾ har tre prikker over og forbinder på begge sider. Engelsk think giver en nyttig sammenligning, men th står ikke altid for denne lyd. Standarddansk har ingen præcis parallel.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "beklædningsgenstand"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "mange / meget"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "tale / samtale, i dette ordforrådseksempel"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Referencen bruger /dʒ/ som øvelsesmodel for jīm. Andre udtaler findes i arabisktalende grupper. Lytteoptagelsen skal passe til den angivne model. Jīms prik sidder nederst og adskiller det visuelt fra ح og خ; prikken forklarer ikke artikulationen.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "kamel"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "stjerne"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "krone"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "Ḥāʾ er den ustemte faryngale konsonant /ħ/, ikke almindeligt /h/ og ikke khāʾ. ”Stærkt h” angiver ikke lydens sted. Undgå smertefuldt pres i halsen. Kroppen har ingen prik: genkend ح, ج og خ visuelt og sammenlign derefter forskellige lyde.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "reb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "hav"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "salt"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "Khāʾ er ustemt friktion bagtil i talekanalen, her /x~χ/. Det præcise sted varierer med taler og sammenhæng. Prikken er over kroppen. En udenlandsk sammenligning skal angive sprog og variant; kh alene lærer ikke lyden.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "brød"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "daddelpalmer"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "køkken"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "Dāl /d/ bruger stemt forreste lukke og åbning. Det har ingen prik og forbinder ikke med næste bogstav til venstre. Sammenlign visuelt med prikket dhāl og med tāʾ for stemthed uden samtidig at ændre vokalen.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "lektion"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "hånd"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "dreng, i dette ordforrådseksempel"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "Dhāl /ð/ er stemt dental friktion i dette standardarabiske mål. Det bruger ikke dāls fulde lukke og adskiller sig fra ustemt /θ/. Prikken er over og det forbinder ikke til næste bogstav til venstre. Engelsk this er en mulig bro, ikke en regel for alle th-stavninger. Dansk blødt d er ikke automatisk en præcis erstatning for denne lyd.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "guld"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "øre"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "lækker"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "Rāʾ har en kort tungespidskontakt eller flere efter sammenhæng og udtale. Almindeligt /r/ kræver ikke et fast antal slag. Rāʾ har ingen prik og forbinder ikke videre til venstre. Kraftigt tunge- eller halspres er ikke et læringsmål.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "sand"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "hav"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "måne"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "Zāy /z/ er stemt forreste friktion. Kroppen ligner rāʾ med en prik over, men det er ikke rāʾ med en ekstra vokal. Det forbinder ikke til næste bogstav til venstre. Sammenlign /z/ og /s/ ved at lytte efter stemthed med samme følgende vokal. Dansk bogstav z giver ikke i sig selv denne udtale.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "olie"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "bananer"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "brød"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "Sīn /s/ er ustemt friktion med en anden indsnævring end thāʾ. Det har ingen prikker; de tegnede tænder varierer mellem skrifttyper. Fastlæg identiteten i en klar skrift, og sammenlign derefter håndskrift uden at gøre alle stilvarianter til nye bogstaver.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "fisk"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "sol"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "lektion"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "Shīn /ʃ/ er ustemt friktion med anden indsnævring end sīn. Tre prikker ligger over en beslægtet krop. De gør ikke bogstavet til thāʾ: skriftform og artikulation er adskilte egenskaber. Sammenlign سَ og شَ med samme vokal.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "sol"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "græs / urtevegetation"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "fjer"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "Ṣād /sˤ/ er emfatisk i den valgte model. Det er ikke blot et højere /s/: ekstra bagartikulation påvirker klang og nabovokaler. Kroppen har ingen prik. Sammenlign سَ og صَ uden smertefuld spænding eller overdrevent presset lyd.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "tålmodighed"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "juice"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "bur"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "Ḍād /dˤ/ angiver et almindeligt nutidigt standardarabisk mål, ikke alle historiske eller dialektale udtaler. En prik adskiller fra ṣāds krop. Bland ikke med ẓāʾ: i den valgte model bruger det ene lukke og det andet friktion.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "lys"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "æg"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "jord / land"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "Ṭāʾ /tˤ/ kombinerer forreste lukke og åbning med emfase. Det er hverken pyntet tāʾ eller tāʾ sagt højere. Kroppen har ingen prik. Sammenlign تَ og طَ og læg mærke til virkningen på vokalkvalitet såvel som konsonanten.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "ler / mudder"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "tog"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "tråd"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "Ẓāʾ /ðˤ/ er det angivne mål for emfatisk dental friktion; variation skal mærkes. En prik ligger over ṭāʾs krop. ”Et andet ḍād” er utilstrækkelig beskrivelse. Brug en klar optagelse efter den valgte forskel frem for ens lyd for forskellige stavninger.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "skygge"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "knogle"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "held"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ʿAyn /ʕ/ er stemt faryngal konsonant, ikke lang vokal eller svækket hamza. Lær af en skånsom model frem for at klemme halsen. Ingen prik findes, og forbindelsesformer adskiller sig markant fra enkeltformen. Visuel genkendelse og lydøvelse kræver hver sin opmærksomhed.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "øje, i dette ordforrådseksempel"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "han legede / spillede"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "indsamling / samling"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "Ghayn er stemt friktion bagtil, her /ɣ~ʁ/ for det beskrevne område. Med prikken over ligner det ʿayn visuelt, ikke lydligt. Sammenlign med khāʾ for stemthed og med ʿayn for sted uden at påstå identisk artikulation.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "værelse / rum"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "lille"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "tomrum / ledig plads"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "Fāʾ /f/ lader luft passere mellem underlæbe og øvre tænder uden stemt konsonant. I den østlige skrivekonvention her står én prik over. Nogle maghrebinske traditioner afviger og bør mærkes når vist. En skrifttradition er ikke automatisk en elevfejl.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "elefant"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "nøgle"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "uld"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "Qāf /q/ bruger ustemt bageste lukke i standardmodellen, længere bagud end kāf. To prikker ligger over i denne konvention. Kendte dialektudtaler ændrer ikke lyttemålet ubemærket; angiv den model der øves.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "måne"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "kvæg"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "marked"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "Kāf /k/ lukker tungens bagdel mod bageste gane og slipper. Det er ikke identisk med qāf, blot fordi begge er bagkonsonanter. Det lille tegn i enkeltstående ك er del af skriftformen, ikke en særskilt hamza til udtale.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "bog"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "fisk"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "engel"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "Lām /l/ er stemt og lateral: luft passerer langs tungens sider mens spidsen rører forrest. Begynd med normal øvelsesmodel og indfør særlige emfatiske sammenhænge separat. Lām forbinder begge veje og لا kan tegnes som kombination uden at blive et nyt alfabetbogstav.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "nat"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "bjerg"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "Mīm /m/ er stemt nasal konsonant med lukkede læber. Det adskiller sig ikke fra bāʾ kun i form: luft går gennem næsen under mīm. Kroppen ændres ved forbindelse, men navn og bogstavidentitet er uændret.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "vand"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "måne"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "Nūn /n/ er stemt nasal med forreste tungelukke. Én prik er over i denne konvention. Sammenlign nūn og mīm efter lukkested. Skrevet nūn er forskelligt fra tanwīn: nogle endelser har /n/ uden eget nūn-bogstav i stavningen.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "lys"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "øje, i dette ordforrådseksempel"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "mælk eller mælkeprodukt, efter region"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "Hāʾ /h/ er ustemt og bruger ikke ḥāʾs faryngale indsnævring. ه, هـ, ـهـ og ـه ser forskellige ud, så forbindelse hjælper forklaringen. Identificér ikke hvert afsluttende ة som almindeligt hāʾ blot fordi en pauseudtale kan ligne.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "månesegl"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "flod"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "ansigt"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "Wāw kan være konsonanten /w/ i وَلَد eller hjælpe at skrive langt /uː/ i نُور. I ثَوْب er opgaven ikke langt /uː/: læs vokalmønstret. Wāw modtager foregående forbindelse men forbinder ikke næste bogstav til venstre.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "dreng, i dette ordforrådseksempel"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lys"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "beklædningsgenstand"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "Yāʾ kan være konsonanten /j/ i يَد eller hjælpe at skrive langt /iː/ i فِيل. بَيْت har andet mønster, /aj/, ikke langt /iː/. Prikket yāʾ er forskellig fra alif maqṣūra ى, som ikke automatisk må læses som yāʾ.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "hånd"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "elefant"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "hus / hjem"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "Forstå trin for trin og brug det lærte.",
+    "warning": "Udvidet arbejdsudgave: redaktionel og specialiseret menneskelig kontrol er stadig nødvendig.",
+    "examples": "Eksempler og betydninger",
+    "practice": "Prøv selv",
+    "answer": "Forklaret svar",
+    "notes": "Læsehjælp",
+    "contents": "Indhold",
+    "view": "Visning",
+    "all": "Hele bogen",
+    "original": "HORIZONS egen forklaring",
+    "answers": "Svar og forklaringer",
+    "forms": "Skriftformer",
+    "words": "Ord i sammenhæng",
+    "draft": "Arbejdsudgave",
+    "font": "Arabisk skrifttype",
+    "theme": "Skift mellem lyst og mørkt tema"
+  },
+  "notation_note": "ː angiver foregående vokals længde; ˤ markerer konsonantemfase i denne visning; . markerer stavelsesgrænse; ~ adskiller alternativer i det beskrevne område, ikke to på hinanden følgende lyde. / / omslutter lydrepræsentation, ikke arabisk stavning. Enkeltordseksempler bruger pauseudtale; sætningsoversættelser hævder ikke stiltiende én udtale for både forbindelse og pause.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Efter fuld oversættelse blev 13 kapitler, 39 afsnit, 104 betydninger, 13 øvelser og 28 bogstavkort sammenholdt med engelsk og arabisk grundtekst. Arabiske eksempler, IPA, forbindelsesformer og fortællingens originale arabiske afsnit er bevaret og kontrolleret.",
+          "Forskelle mellem bogstav og lyd, vokallængde og gemination, forbindelse og pause, ental/total/flertal, grammatisk køn og ejerens køn samt navneordsgruppe og fuldt udsagn fastholdes. Total er præciseret med dualis, så det ikke forveksles med en samlet mængde.",
+          "Du og I angiver ikke de samme kønsforskelle som arabisk. Dansk fælleskøn og intetkøn erstatter ikke arabisk maskulin/feminin. Blødt d og z fremlægges ikke som automatiske lydlige ækvivalenter.",
+          "Fortællingen tilføjer ikke en årsag til pennens flytning. Regionale betydninger som mælk eller mælkeprodukt markeres som kontekstafhængige."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Anden særskilt gennemlæsning efter betydningskontrol: dansk ordstilling, køn, stedord, bydeformer, stavning og undervisningstone kontrolleret i hele filen.",
+          "Læsning før læseflydende færdighed blev rettet til læsning før flydende læsning; original HORIZONS-skrivning blev gjort naturligere som en original tekst fra HORIZONS.",
+          "Tiltale med du fastholdes. Tekniske begreber forklares med konkrete eksempler frem for generiske fyldafsnit.",
+          "Modellens egen kontrol, ikke menneskelig modersmålsgodkendelse eller garanti for fuldstændig fejlfrihed."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

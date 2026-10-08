@@ -1,0 +1,1544 @@
+{
+  "language": "ms",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Huruf dan tulisan: membuka pintu membaca",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Tiga hal berbeza: nama, bunyi, bentuk",
+          "paragraphs": [
+            "Bayangkan sekotak blok binaan. Menyebut namanya membantu menemukan blok, tetapi mengulang nama tidak membangun rumah. Huruf juga mempunyai nama, bentuk tertulis, dan peran bunyi dalam perkataan. Nama ب ialah baa. Namun بَاب dibaca dengan /b/ diikuti vokal panjang /aː/, bukan dengan menyebut tiga nama huruf. Nama huruf tetap berguna ketika menanyakan ejaan.",
+            "Ikuti perkataan Arab dari kanan ke kiri: perhatikan badan huruf, titik, lalu tanda baca bunyi. Badan بَ dan تَ berkaitan, tetapi titik menunjukkan huruf berbeza. Mengganti fatḥa dengan kasra menghasilkan بِ, bukan mengubah baa menjadi taa. Tutup baki baris bila terasa padat. Mengenali huruf sudah merupakan kemajuan nyata meskipun seluruh perkataan belum terbaca."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Mengapa bentuk huruf berubah?",
+          "paragraphs": [
+            "Huruf Arab berbagi jalur tulisan seperti orang yang bergandengan tangan. ب, بـ, ـبـ, dan ـب adalah bentuk sambungan satu huruf, bukan empat huruf baru. Dalam بَاب, baa pertama tersambung ke alif, tetapi alif tidak meneruskan sambungan ke baa terakhir. Putus kecil ini tidak mewujudkan perkataan kedua.",
+            "ا, د, ذ, ر, ز, dan و boleh menerima sambungan dari huruf sebelumnya jika memungkinkan, tetapi tidak menyambung ke huruf berikutnya di kiri. Jangan menambahkan ruang setiap kali garis terputus. Spasi memisahkan perkataan; aturan sambungan membentuk huruf di dalam perkataan. Amati contoh nyata sebelum menghafal semua aturan."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza, dan makna",
+          "paragraphs": [
+            "Dalam بَاب, alif menuliskan vokal panjang /aː/. أَخ dimulai dengan hamza /ʔ/ yang bertumpu pada alif. Hamza adalah konsonan, bukan vokal panjang. Menurut aturan ejaan, bentuknya boleh berupa ء, أ, إ, ؤ, atau ئ. Bentuk penopang tidak membuat semuanya berbunyi sama dengan alif vokal.",
+            "Hubungkan tiap langkah dengan makna. Pintu boleh dibuka, buku berisi halaman untuk dibaca, pena dipakai menulis. Ubah urutan kad dan kunjungi lagi setelah istirahat pendek. Mengingat posisi kad merupakan latihan ingatan yang berguna, tetapi membaca kendiri bermaksud mengenali informasi tertulisnya di mana pun perkataan muncul."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "pintu",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "buku",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pena",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "saudara lelaki",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "rumah",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "cahaya",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Apakah putusnya sambungan di بَاب membuat dua kata? Apakah nama huruf baa merupakan bacaan lengkap بَاب?",
+        "answer": "Tidak untuk keduanya. بَاب tetap satu kata; alif tidak menyambung ke depan. Baa menamai huruf, sedangkan /baːb/ membaca bunyi kata secara berurutan."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Tanda vokal: tanda kecil mengubah bacaan",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Tanda vokal bukan titik",
+          "paragraphs": [
+            "Letakkan بَ, بُ, dan بِ berdampingan. Ketiganya memakai baa. Fatḥa menunjukkan /a/ pendek, ḍamma /u/ pendek, dan kasra /i/ pendek. Mulut, lidah, dan bibir menyesuaikan diri dengan vokal. Menaikkan volume tidak mengubah satu vokal menjadi vokal lain.",
+            "Dalam بِ, titik baa dan kasra berdekatan di bawah huruf. Titik mengenali identiti huruf; kasra memandu bacaannya. Ganti tanda vokal, baa tetap baa. Warna dalam buku membantu membedakan fungsi ini, tetapi bentuk dan label juga harus jelas pada cetakan hitam-putih."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Panjang, bukan kerasnya suara",
+          "paragraphs": [
+            "Bandingkan بَ dengan بَا, بُ dengan بُو, serta بِ dengan بِي. Pada anggota kedua setiap pasangan, vokalnya berlangsung lebih lama; baa tidak menjadi konsonan lain. Dalam /baː/, ː menandai panjang vokal sebelumnya. Ini bukan huruf Arab tambahan atau durasi jam randik yang tetap untuk setiap penutur.",
+            "Alif, waw, dan yaa tidak selalu berfungsi sebagai vokal panjang. Waw dalam وَلَد ialah /w/, yaa dalam يَد ialah /j/. Waw dalam نُور membantu menulis /uː/ dan yaa dalam فِيل membantu menulis /iː/. Baca pola setempat, jangan meneka fungsi hanya dari nama huruf."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda, dan tanwīn",
+          "paragraphs": [
+            "Sukūn dalam بِنْت mengingatkan agar tidak menambah vokal setelah noon dalam pola ini, bukan menghapus /n/. Shadda dalam أُمّ menunjukkan konsonan rangkap, bukan vokal sebelumnya yang dipanjangkan. أَمْ /ʔam/ dan أُمّ /ʔumm/ berbeza pada vokal dan panjang konsonan, maka bukan pasangan minimal satu ciri. Saat mengisolasi satu ciri, gunakan suku kata yang jelas diberi label latihan.",
+            "Tanwīn dalam كِتَابٌ berkaitan dengan akhir kata nama dalam konteks tatabahasa. Bacaan sambung yang sesuai memuat /un/, sedangkan berhenti biasa pada perkataan ini menghasilkan /kitaːb/. Contoh ini bukan aturan universal untuk semua akhiran. Pertahankan tanda tertulis sambil menjelaskan perbezaan bacaan sambung dan berhenti."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "budak perempuan / budak perempuan",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "gajah",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "anak lelaki",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "tangan",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "ibu",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "cahaya",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Apakah waw di نُور mewakili /w/ di sini? Apakah sukūn menggugurkan noon dalam بِنْت?",
+        "answer": "Tidak. Waw dalam نُور menulis vokal panjang /uː/. Noon dalam بِنْت dibunyikan tanpa vokal tambahan sesudahnya pada pola ini."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Penggabungan dua unit: membangun bacaan pertama",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Apa yang kita gabungkan?",
+          "paragraphs": [
+            "Dalam buku latihan, penggabungan dua unit adalah tahap latihan dengan dua unit tertulis. Jumlah huruf tidak selalu sama dengan jumlah bunyi atau suku kata. بَا berisi baa dan alif, tetapi mewakili konsonan yang diikuti vokal panjang, bukan dua konsonan. Unsur latihan terpisah ini tidak harus merupakan perkataan bermakna.",
+            "Mulai dengan بَ, lalu بَا, kemudian تَا dan ثَا. Perbandingan pertama mengubah panjang vokal; berikutnya mengubah konsonan sambil mempertahankan vokal panjang. Beri waktu melihat sebelum membaca. Mengulang nama huruf alih-alih bunyi yang diperlukan membuat penggabungan lebih sulit dipahami."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Suku kata terbuka dan tertutup",
+          "paragraphs": [
+            "بَا berakhir dengan vokal dan merupakan suku kata terbuka di sini. بَرْ berakhir dengan konsonan dan tertutup. “Tertutup” menjelaskan akhir suku kata, bukan menutup mulut sepanjang ucapan. Baca بَرْ tanpa menambah vokal akhir; membaca بَرَ mengubah struktur.",
+            "Gunakan jari untuk mengikuti posisi, lalu kurangi bantuan itu secara bertahap. Menunjuk membantu penelusuran, bukan membuktikan ketepatan sebutan. Setelah suku kata yang dikenal, berikan yang baru dengan pola sama. Ini menyemak pemindahan kemahiran aturan di luar kad yang dihafal."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "Dari bahagian menuju kata",
+          "paragraphs": [
+            "بَا merupakan bahagian بَاب. بِي merupakan bahagian bacaan بِيض yang dipaparkan. Tidak setiap suku kata memerlukan makna andas tersendiri. Gabungkan dahulu, lalu tanyakan makna seluruh perkataan, maka kegiatan mempunyai tujuan selain membaca cepat.",
+            "Jika ada kesilapan, kenali yang berubah: konsonan, kualitas vokal, panjang, atau bunyi tambahan. Menamai masalah tertentu lebih berguna daripada mengulang semuanya. Jika beberapa ciri sulit, latih satu ciri yang mampu dikuasai sebelum menggabungkannya kembali."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "suku kata latihan; bukan kata di sini",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "suku kata latihan",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "suku kata latihan",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "suku kata latihan dalam contoh ini",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "pintu",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "telur",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Mengapa بَا dan بَرْ bukan jenis suku kata yang sama?",
+        "answer": "بَا berakhir dengan vokal panjang; بَرْ dengan konsonan. Perbedaannya menjelaskan akhir suku kata, bukan jumlah titik atau volume."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Penggabungan tiga unit: membaca unit bermakna",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Tiga huruf, tetapi berapa suku kata?",
+          "paragraphs": [
+            "بَاب dan جَبَل masing-masing mempunyai tiga huruf dasar. Pada bacaan berhenti yang dipilih, /baːb/ satu suku kata dan /dʒa.bal/ dua. Titik dalam paparan fonetis menandai batas suku kata, bukan titik tertulis jeem. Menghitung huruf saja tidak menentukan jumlah suku kata.",
+            "Tuliskan huruf beserta tandanya, lalu semak pola bunyi. Untuk جَبَل, mulai dengan جَ dan akhiri بَلْ pada bacaan berhenti. Satukan tanpa membuang baa atau memasukkan bunyi tambahan. Memecah perkataan hanya bantuan sementara, bukan cara mengucapkan setiap kalimat biasa."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Urutan huruf membawa makna",
+          "paragraphs": [
+            "قَلْب bermaksud jantung; كَلْب bermaksud anjing. Mengubah qaf menjadi kaf mengubah makna. بَحْر adalah laut dan حَبْر tinta; pasangan ini mengubah urutan serta vokal, maka bukan pasangan minimal satu ciri. Lihat butiran tulisan, jangan meneka dari gambar yang dikenal.",
+            "Pilih perkataan yang maknanya boleh ditunjukkan. Setelah membaca, tanyakan apakah tinta digunakan menulis atau berenang. Makna boleh mengungkap tekaan, tetapi tidak menggantikan melihat huruf. Jelaskan perkataan baru, bukan menganggap kosa perkataan asing sebagai kegagalan membaca."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Bacaan teliti sebelum kelancaran",
+          "paragraphs": [
+            "Baca tiga perkataan tanpa perlombaan. Tandai satu yang perlu diulang, lalu coba lagi setelah contoh yang lebih mudah. Kelancaran mencakup bacaan yang sesuai, pemahaman, dan perbaikan, bukan hanya jumlah perkataan per menit. Jangan mendorong anak menyembunyikan keraguan dengan meneka.",
+            "Untuk pemindahan kemahiran, ikuti جَبَل dengan جَمَل. Baa berubah menjadi meem pada pola yang sudah dikenal. Gunung adalah tanah yang menjulang; unta adalah hewan. Minta perkataan nyata lain dengan huruf yang dikenal, sambil menjelaskan bahwa tidak setiap susunan menjadi perkataan Arab."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "gunung",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "unta",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "jantung",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "anjing",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "laut",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "tinta",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Huruf apa yang berubah dari جَبَل menjadi جَمَل? Apakah بَاب dan جَبَل sama jumlah suku katanya?",
+        "answer": "Baa menjadi meem. Dalam bacaan berhenti yang dipaparkan, بَاب satu suku kata dan جَبَل dua. Jumlah huruf saja tidak cukup."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Penggabungan empat unit: membaca lebih panjang tanpa beban berlebih",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Lebih panjang tidak selalu lebih sulit",
+          "paragraphs": [
+            "كِتَاب mempunyai empat huruf dasar. Bacaan berhenti /ki.taːb/ memuat suku kata pertama yang pendek, lalu suku kata dengan vokal panjang dan baa akhir. Gunakan yang telah dipelajari dari بَاب, jangan anggap tiap bahagian sepenuhnya baru. Panjang tulisan saja tidak mengukur kesukaran membaca.",
+            "Waw dalam ثَوْب tidak menulis /uː/ pada bacaan ini; /aw/ adalah rangkaian berbeza. بَيْت memuat /aj/, bukan /iː/. Keberhasilan berasal dari semakan vokal dan struktur, bukan aturan bahwa setiap waw adalah “oo” dan yaa “ee”. Mantapkan satu contoh sebelum menambah kontras lain."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "Kalimat menambahkan hubungan",
+          "paragraphs": [
+            "هَذَا كِتَابٌ mengenali benda dekat: “Ini sebuah buku.” هَذِهِ حَقِيبَةٌ memakai perkataan tunjuk feminin untuk “beg”. Mengganti kata nama mungkin memerlukan semakan perkataan terkait, bukan sekadar mengganti satu label. Tanyakan apa yang ditunjuk dan bentuk mana yang sesuai.",
+            "الكِتَابُ جَدِيدٌ menyatakan “Buku itu baru.” الكِتَابُ الجَدِيدُ mengenali “buku baru itu”; frasa tersebut sendiri tidak menyatakan pesan lengkap yang sama. Artikel bukan awalan hiasan. Situasi sederhana boleh menunjukkan hubungan tatabahasa sebelum istilah teknis diperkenalkan."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Menggunakan keterampilan pada teks baru",
+          "paragraphs": [
+            "Bandingkan كِتَاب dengan كَاتِب. Konsonan dasarnya berkaitan, tetapi posisi alif dan vokalnya berbeza. Yang pertama buku, yang kedua penulis. Akar yang berhubungan tidak membuat semua perkataan bermakna sama. Ini mengenalkan keluarga perkataan tanpa mengaku mengajarkan seluruh penerbitan perkataan sekaligus.",
+            "Baca satu baris pendek, tutup sebentar, lalu tanyakan makna keseluruhannya. Buka lagi untuk menyemak satu butiran. Ini memisahkan ingatan bunyi, pemahaman, dan kembali ke bukti tertulis. Meminta bantuan untuk perkataan baru merupakan bahagian belajar; buku ini jangan terasa seperti ujian tanpa akhir."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "buku",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "penulis",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "beg",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "Ini sebuah buku."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Buku itu baru."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "buku baru itu"
+        }
+      ],
+      "exercise": {
+        "question": "Apakah الكِتَابُ جَدِيدٌ dan الكِتَابُ الجَدِيدُ menyampaikan pesan yang sama jika berdiri sendiri?",
+        "answer": "Tidak. Yang pertama menyatakan buku itu baru; yang kedua mengenali buku baru itu tanpa membuat pernyataan lengkap yang sama."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Rujukan huruf: dari bentuk ke penggunaan kata",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Peta yang boleh diandalkan untuk tiap huruf",
+          "paragraphs": [
+            "Gunakan pertanyaan sama: apa namanya, di mana bunyi terbentuk, bagaimana tersambung, apa pembeda dari bentuk serupa, dan perkataan jelas apa yang memakainya? Peta yang konsisten mencegah pelajaran menjadi gambar tanpa penjelasan. Tidak semua pertanyaan harus dijawab pada kunjungan pertama.",
+            "Bab ini berisi kad 28 huruf abjad. Posisi alif dalam urutan tidak bermaksud hamza dan /aː/ panjang adalah bunyi sama. Waw dan yaa mempunyai fungsi bergantung konteks. Baca catatan kad sebelum membandingkan simbolnya dengan ejaan bahasa sendiri."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Keluarga bentuk bukan keluarga bunyi",
+          "paragraphs": [
+            "ب, ت, dan ث memiliki badan serupa, tetapi baa terbentuk di bibir, taa dengan penutupan depan, dan thaa dengan gesekan gigi pada model Arab baku yang dipilih. Tiga titik thaa tidak menjelaskan bunyinya, dan tiga titik sheen tidak menjadikannya thaa. Gunakan keluarga visual untuk identifikasi, uraian bunyi untuk sebutan.",
+            "Bandingkan ثَ dan تَ dengan fatḥa tetap. Bandingkan س dan ص melalui sifat penekanan, bukan kerasnya suara. Sebagian bunyi Arab tidak mempunyai pasangan langsung dalam bahasa pelajar. Jika demikian, jelaskan artikulasi dan gunakan model dengar, jangan mengarang padanan asing yang persis."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Kosakata, kalimat, dan pemindahan kemahiran",
+          "paragraphs": [
+            "Setelah menemukan huruf di awal, tengah, dan akhir, buat kalimat bermakna dengan salah satu perkataan. Jangan menumpuk kosa perkataan langka sekadar menebalkan buku. Variasikan posisi dan makna, jelaskan perkataan baru, lalu beri konteks ketika perkataan memiliki beberapa arti.",
+            "Perbezaan dialek bukan kekurangan penuturnya. Rujukan ini menentukan sasaran Arab baku sambil mengakui variasi jeem, qaf, dan bunyi lain di berbagai komunitas. Latihan dengar harus memakai rekaman yang sesuai dengan sasaran penjelasan dan simbol."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "pintu",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "gunung",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "buku",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "buah / hasil tanaman",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "salju",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "musang",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "Apakah kemiripan bentuk ب, ت, ث bermaksud tempat artikulasinya sama? Apakah jeem selalu diucapkan sama di semua komunitas?",
+        "answer": "Tidak. Bentuk adalah informasi tulisan; artikulasi sifat berbeza. Jeem bervariasi: tentukan sasaran yang dipilih dan beri label jelas pada model lain."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Pronomina: siapakah aku dan kamu?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Kata yang mengikuti penutur",
+          "paragraphs": [
+            "Ketika Layla mengatakan “saya”, maksudnya Layla; ketika Omar mengatakan “saya”, maksudnya Omar. Pronomina bukan nama orang tetap: acuannya berasal dari situasi bercakap. “Anda” menunjuk orang yang disapa; “dia” menunjuk orang yang dibicarakan. Latih pergantian peran sebelum menghafal tabel.",
+            "Arab membedakan أَنْتَ untuk satu orang yang disapa lelaki dan أَنْتِ untuk perempuan. Inggeris memakai you untuk keduanya; ini tidak membuat perbezaan Arab menjadi pilihan bebas. Bahasa Turki o maupun bahasa Melayu “dia” boleh sesuai dengan هُوَ dan هِيَ. Terjemahan ke Arab memerlukan semakan acuan, bukan penggantian mekanis."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Tunggal, dual, dan jamak",
+          "paragraphs": [
+            "أَنَا adalah orang pertama tunggal. نَحْنُ menunjuk kumpulan yang memuat penutur, dua orang atau lebih. أَنْتُمَا menyapa dua orang dan هُمَا merujuk dua; keduanya untuk acuan maskulin maupun feminin. أَنْتُمْ / أَنْتُنَّ dan هُمْ / هُنَّ membedakan bentuk jamak. Dalam Arab baku, maskulin jamak boleh mencakup kumpulan campuran sesuai konteks.",
+            "Tidak semua bahasa mempunyai satu perkataan kata ganti nama dual. أَنْتُمَا boleh dijelaskan sebagai you two dalam bahasa Inggeris, ikiniz dalam Turki, atau “kalian berdua” dalam bahasa Melayu. Ini menjelaskan acuan, bukan menjamin pemakaian serupa sepenuhnya dalam setiap keadaan. Bandingkan makna dan bentuk."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Pronomina dan unsur yang mengikutinya",
+          "paragraphs": [
+            "أَنَا طَالِبٌ dan أَنَا طَالِبَةٌ mulai dengan kata ganti nama sama; kata nama sesudahnya berubah mengikuti bentuk penutur. هُوَ طَالِبٌ dan هِيَ طَالِبَةٌ mengubah kata ganti nama dan kata nama bersama. Contoh siswa lelaki tidak menjadikan أَنَا khusus lelaki.",
+            "Dalam أَنَا أَقْرَأُ dan نَحْنُ نَقْرَأُ, bentuk kata kerja berubah. أَ awal dalam contoh ini bahagian fleksi orang pertama, bukan kepemilikan. Verba boleh membawa cukup informasi untuk menggugurkan kata ganti nama terpisah dalam konteks jelas. Am/is/are dalam bahasa Inggeris tidak mewajibkan perkataan padanan pada setiap kalimat nominal Arab waktu kini."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "saya / aku",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "kamu (maskulin tunggal)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "kamu (feminin tunggal)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "kami / kita, sesuai siapa yang tercakup",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "dia lelaki",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "dia perempuan",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "kalian berdua"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "mereka berdua"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "kalian (maskulin jamak; boleh mencakup kumpulan campuran)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "kalian (feminin jamak)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "mereka (maskulin jamak; boleh mencakup kumpulan campuran)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "mereka (feminin jamak)"
+        }
+      ],
+      "exercise": {
+        "question": "Layla membicarakan dirinya, lalu Omar. Pronomina mana yang sesuai? Apakah نَحْنُ khusus maskulin?",
+        "answer": "أَنَا untuk dirinya; هُوَ untuk Omar dalam contoh ini. نَحْنُ tidak membedakan jantina penutur; konteks menentukan kumpulan dan pilihan kami atau kita."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Kepemilikan dan hubungan: lebih dari label",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Satu benda, dua penutur",
+          "paragraphs": [
+            "Omar memegang buku dan mengatakan كِتَابِي, “bukuku”. Menyapanya, anda mengatakan كِتَابُكَ, “bukumu”. Membicarakannya kepada Layla, anda mengatakan كِتَابُهُ, “bukunya”. Buku tidak berubah, hubungan bercakap yang berubah. Ini bukan tiga kategori buku.",
+            "Sapalah Layla dengan كِتَابُكِ; ceritakan dirinya dengan كِتَابُهَا. Perbezaan كَ dan كِ kecil dalam tulisan dan bunyi, tetapi penting bagi acuan. Inggeris umumnya memakai perkataan terpisah sebelum kata nama; bentuk Arab ini melekatkan kata ganti nama pada kata nama."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "Hubungan tidak selalu kepemilikan",
+          "paragraphs": [
+            "كِتَابُنَا menghubungkan buku dengan kumpulan kita. أُمِّي bermaksud “ibuku”, bukan memperlakukan orang sebagai barang milik. مَدْرَسَتِي boleh bermaksud sekolah yang kuhadiri, bukan gedung milikku. Nomina dan konteks menunjukkan hubungan yang diungkap kata ganti nama terikat.",
+            "Dalam مَدْرَسَة → مَدْرَسَتِي, taa marbūṭa ditulis sebagai taa biasa ketika kata ganti nama ini dilekatkan. Jangan simpulkan setiap haa akhir berubah menjadi taa. Bandingkan وَجْهِي, “wajahku”: haa milik وَجْه tetap haa."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Nomina, kasus, dan ketentuan",
+          "paragraphs": [
+            "كِتَابُكَ adalah salah satu bentuk yang dipilih dalam tabel. Dalam رَأَيْتُ كِتَابَكَ, “Aku melihat bukumu”, akhiran kata nama berubah menurut fungsi tatabahasa; كَ tetap menunjuk satu orang yang disapa lelaki. Jangan hafalkan ḍamma sebelumnya sebagai bahagian permanen dari “milikmu”.",
+            "Pada konstruksi kata nama dengan kata ganti nama milik yang lazim, jangan beri tanwīn pada kata nama atau tambahkan artikel seolah kata nama terpisah tanpa hubungan posesif. كِتَابِي menentukan hubungan dan bersifat tentu pada penggunaan ini. Pelajari contoh benar sebelum mengumpulkan pengecualian lanjutan."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "bukuku"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "bukumu (orang yang disapa lelaki tunggal)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "bukumu (orang yang disapa perempuan tunggal)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "bukunya (lelaki)"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "bukunya (perempuan)"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "buku kami / kita"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "sekolahku"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "wajahku"
+        }
+      ],
+      "exercise": {
+        "question": "Layla berkata “bukuku”. Bagaimana menyebutnya ketika menyapa Layla, lalu ketika membicarakannya kepada orang lain?",
+        "answer": "كِتَابُكِ ketika menyapanya; كِتَابُهَا ketika membicarakannya. Acuan kata ganti nama mengikuti hubungan bercakap."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Bilangan: lambang, kata, jumlah",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Hitung tiap benda sekali",
+          "paragraphs": [
+            "Letakkan tiga pena di meja. Sentuh masing-masing sekali pada tiap langkah hitungan, lalu sebut jumlah kumpulan. Menghitung pena yang sama dua kali menghasilkan jumlah keliru. Mengubah susunan tanpa menambah atau mengurangkan tetap menyisakan tiga; bentuk barisan bukan jumlah.",
+            "٣ dan 3 mewakili bilangan sama dalam dua sistem digit yang dipaparkan. ثَلَاثَة adalah perkataan bilangan Arab, bukan bentuk digit. Bilangan tertulis boleh menghitung buku, langkah, atau menit; tentukan yang dihitung agar penggunaannya dipahami."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Menghitung sendiri dan menghitung kata nama",
+          "paragraphs": [
+            "Hitungan lisan dimulai satu hingga sepuluh, tetapi frasa bilangan memerlukan ketelitian. ثَلَاثَةُ كُتُبٍ bermaksud tiga buku; ثَلَاثُ سَيَّارَاتٍ tiga kereta. Pada pola tiga sampai sepuluh ini, bentuk bilangan berlawanan dengan jantina tatabahasa kata nama tunggal yang dihitung, dan nominanya genitif jamak. Jangan terapkan pola ini pada satu dan dua.",
+            "كِتَابٌ وَاحِدٌ dan سَيَّارَةٌ وَاحِدَةٌ menunjukkan keserasian dengan satu. Bentuk dual nominatif كِتَابَانِ dan سَيَّارَتَانِ sudah menunjukkan dua. Kata bilangan “dua” tidak perlu dimasukkan dalam setiap frasa dual."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Jumlah, urutan, perbandingan",
+          "paragraphs": [
+            "ثَلَاثَة menjawab “berapa banyak?”, الثَّالِث “urutan ke berapa?”. Tiga buku bukan buku ketiga. Sifar pena bermaksud tidak ada pena dalam kumpulan yang dihitung, bukan tidak ada apa pun di dunia.",
+            "Bandingkan dua kumpulan nyata: dua pena dan empat pena. Kedua lebih banyak, pertama lebih sedikit. Jika keduanya empat, jumlah setara walaupun warna atau panjang berbeza. Ikat perbandingan pada sifat yang dinyatakan, lalu coba contoh baru."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "sifar"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "satu"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "dua"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "tiga"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "empat"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "lima"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "enam"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "tujuh"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "lapan"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "sembilan"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "sepuluh"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "ketiga"
+        }
+      ],
+      "exercise": {
+        "question": "Tiga lingkaran disusun ulang tanpa tambahan. Berapa yang tersisa? Apakah “ketiga” menyatakan jumlah?",
+        "answer": "Tetap tiga. “Ketiga” posisi urutan, bukan jumlah. Hitung tiap benda sekali, bukan celah antar benda."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Warna: menamai, menggambarkan, menyesuaikan",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Benda serupa, deskripsi berbeza",
+          "paragraphs": [
+            "Dua pena berfungsi sama, tetapi satu merah dan yang lain biru. “Pena” mengenali jenis benda; warna membantu menentukan yang dimaksud. Warna tidak menentukan nilai seseorang atau jantina yang boleh memakai benda. Layar juga menampilkan warna berbeza, maka selalu beri nama contoh warna, jangan mengandalkan warna saja.",
+            "قَلَمٌ أَحْمَرُ adalah pena merah; سَيَّارَةٌ حَمْرَاءُ kereta merah. Adjektiva berubah mengikuti jantina tatabahasa kata nama, bukan jantina pemilik. Inggeris dan Turki tidak mengubah kata sifat warna demikian pada contoh ini; bahasa Melayu juga memakai “merah” tanpa perubahan jantina."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Tidak semua warna mengikuti pola merah",
+          "paragraphs": [
+            "Pelajari أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء, dan أَسْوَد/سَوْدَاء sebagai satu kumpulan pola. وَرْدِيّ/وَرْدِيَّة dan بُنِّيّ/بُنِّيَّة berpola lain. Jangan membentuk semua warna feminin dengan menambah اء.",
+            "قَلَمٌ أَحْمَرُ bermaksud “sebuah pena merah”. القَلَمُ الأَحْمَرُ mengenali “pena merah itu”. القَلَمُ أَحْمَرُ menyatakan “Pena itu merah.” Penempatan artikel mengubah hubungan, bukan hanya rupa tulisan."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Deskripsi tanpa contoh warna",
+          "paragraphs": [
+            "Tulis nama warna di samping tanda dan tambahkan bentuk atau label untuk membedakan jawapan. Pelajar mungkin memiliki penglihatan terbatas atau persepsi warna berbeza. Kemampuan bahasa tidak boleh bergantung pada membedakan dua hijau yang hampir sama.",
+            "Mulai dengan kata nama dan kata sifat tunggal: kereta dengan حَمْرَاء, pena dengan أَحْمَر. Kemudian ganti benda untuk menyemak pemindahan kemahiran, bukan hafalan satu pasangan. Persesuaian jamak memiliki aturan lanjut; jangan perluas keserasian orang tunggal ke semua jamak benda."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "merah: maskulin — feminin"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "biru: maskulin — feminin"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "hijau: maskulin — feminin"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "kuning: maskulin — feminin"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "putih: maskulin — feminin"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "hitam: maskulin — feminin"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "merah muda: maskulin — feminin"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "cokelat: maskulin — feminin"
+        }
+      ],
+      "exercise": {
+        "question": "Lengkapi kereta dengan hijau dan pena dengan putih. Apa penentu bentuk Arabnya?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Gender gramatikal kata nama, bukan jantina pemilik, menentukan keserasian di sini."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Hari dan bulan: waktu bercakap dan waktu janji",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "Hari ini berubah acuannya",
+          "paragraphs": [
+            "Hari ini ialah hari bercakap; kemarin mendahuluinya, besok mengikutinya. “Datang besok” boleh kabur jika dibaca beberapa hari kemudian tanpa tarikh pengiriman. Tanggal tetap seperti 8 Oktober 2026 menentukan satu hari, tetapi janji juga mungkin perlu sistem kalender, jam, dan zona waktu.",
+            "Tujuh nama hari tetap sama walaupun kalender dimulai Isnin, Ahad, atau Sabtu. Urutan paparan, awal minggu, dan kebiasaan hujung minggu berbeza. Pelajari urutan, lalu hubungkan dengan kalender setempat pelajar."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Nama berbeza untuk bulan yang sama",
+          "paragraphs": [
+            "Januari boleh disebut يناير atau كانون الثاني di wilayah Arab berbeza; Februari فبراير atau شباط; Mac مارس atau آذار. Belajar satu daftar tidak membuat nama regional lain salah. Tentukan kalender dan kebiasaan nama wilayah ketika menemukan nama asing.",
+            "Muharam, Safar, dan Ramadan merupakan kalender Hijriah, bukan terjemahan nama bulan Gregorian. Tahun lunar dan solar berbeza. Mengganti Januari dengan Muharam tidak menukar tarikh. Untuk janji nyata, gunakan kalender dipercayai."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Membaca janji yang jelas",
+          "paragraphs": [
+            "“Aku membaca pada Jumaat” mungkin perlu menjelaskan Jumaat mana. “Aku membaca setiap Jumaat” menggambarkan kegiatan berulang. “Setiap” mengubah pesan. Tanyakan sekali atau berulang, lalu kenali petunjuk tertulis.",
+            "Tanggal numerik 03/04 boleh ambigu ketika urutan hari-bulan berbeza. Nama bulan tertulis atau format yang disepakati membantu. Gunakan contoh belajar yang jelas; untuk perancangan nyata, sahkan tarikh, jangan meneka dari penampilannya."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "hari ini"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "kemarin"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "besok"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "Sabtu"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "Ahad"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "Isnin"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "Selasa"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "Rabu"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "Khamis"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "Jumaat"
+        }
+      ],
+      "exercise": {
+        "question": "Jika hari ini Selasa, besok hari apa? Apakah Januari dan Muharam nama bulan yang sama?",
+        "answer": "Rabu. Tidak: Januari Gregorian, Muharam Hijriah. Mencocokkan tarikh nyata memerlukan konversi kalender yang benar."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Tempat dan arah: pilih acuan dahulu",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Di mana, relatif terhadap apa?",
+          "paragraphs": [
+            "Buku berada di atas meja; beg di bawahnya. “Atas” dan “bawah” menggambarkan hubungan. Buku tidak sekadar “di atas” pada semua uraian, maka tentukan acuan: di atas meja. “Di dalam” dan “di luar” memerlukan batas terkait, seperti di dalam beg atau di luar bilik.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ bermaksud “Letakkan buku di atas meja.” Bacaan sambung yang dipaparkan memuat kasra pada ضَعِ; jangan anggap setiap vokal penghubung bahagian permanen kata kerja tersendiri. Pahami instruksi dahulu, kemudian perkenalkan butiran tatabahasa bila berguna."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Kanan siapa?",
+          "paragraphs": [
+            "Angkat tangan kanan. Orang yang menghadapmu mungkin tangan kanannya berada di sisi yang terlihat sebagai kirimu. “Di kananmu” lebih jelas daripada “kanan” jika pengamat menghadap arah berbeza. Jangan menyalahkan anak atas acuan yang belum anda tentukan.",
+            "Utara, selatan, timur, barat adalah arah geografis, bukan sinonim tetap atas, bawah, kanan, kiri halaman. Peta memerlukan petunjuk orientasi atau konvensyen jelas. Memutar tubuh mengubah arah kananmu, bukan memindahkan utara."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "Urutan langkah bahagian dari makna",
+          "paragraphs": [
+            "“Ambil buku, lalu masukkan ke beg.” “Lalu” menjaga urutan. Berikan instruksi pendek dengan benda dikenal, dan minta pelajar menjelaskan tindakan sebelum bergerak. Ini membedakan pemahaman perkataan dari tekaan tindakan yang kebetulan benar.",
+            "Buku di dalam beg, beg di bawah kursi. Itu tidak bermaksud buku di atas beg. Pisahkan hubungan yang dinyatakan dari yang memerlukan informasi lain. Untuk beberapa lokasi, gambar denah sederhana berlabel, jangan hanya mengandalkan ingatan posisi gambar."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "di atas, menurut konteks"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "di bawah"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "di depan"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "di belakang"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "di dalam"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "di luar"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "kanan"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "kiri"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "utara"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "selatan"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "timur"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "barat"
+        }
+      ],
+      "exercise": {
+        "question": "Buku berada dalam beg di bawah kursi. Apakah buku di atas beg? Apakah kananmu tetap menunjuk arah geografis sama setelah berpusing?",
+        "answer": "Tidak: buku di dalam beg. Tidak: kanan berubah mengikuti orientasi tubuh, berbeza dari acuan geografis."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Cerita: membaca teks dan mengikuti buktinya",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Cerita asli: jendela dan pena",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Layla membuka jendela. Ia meletakkan pena biru di meja, lalu pergi ke sekolah. Ketika pulang, pena tidak ditemukan. Ia melihat di bawah kursi dan menemukannya, mengambilnya, lalu menulis surat pendek. Teks tidak mengatakan siapa yang memindahkan pena atau membuktikan angin menjatuhkannya. Cerita ini tulisan asli HORIZONS, bukan salinan cerita terbitan."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Tiga bacaan, tiga tujuan",
+          "paragraphs": [
+            "Pada bacaan pertama, tanyakan siapa tokoh dan masalahnya; jangan berhenti pada setiap tanda. Kedua, ikuti urutan: di mana pena semula dan ditemukan? Ketiga, semak bahasa: هُ dalam وَجَدَتْهُ merujuk pena; bentuk kata kerja sesuai Layla dalam narasi ini.",
+            "Pena berwarna biru; “pendek” menggambarkan panjang surat, bukan warna. Teks tidak memberikan warna surat. Jangan mengganti bukti yang hilang dengan jawapan masuk akal. Boleh menulis akhir khayalan, tetapi tandai sebagai ciptaan sendiri, bukan kejadian cerita asli."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Glosarium kecil dan menulis kendiri",
+          "paragraphs": [
+            "Jendela adalah bukaan dinding, meja menyediakan permukaan untuk benda, surat adalah komunikasi tertulis kepada seseorang. Menjelaskan perkataan ini boleh mengurangkan hambatan kosa perkataan tanpa menceritakan ulang semua cerita. Sesudah membaca, pilih judul lain dan dukung dengan bukti teks.",
+            "Ganti pena dengan buku, lalu Layla dengan Omar. Memilih benda feminin boleh mengubah kata sifat; mengganti tokoh menjadi maskulin mengubah kata kerja terkait. Semak semua acuan, bukan mengganti satu nama saja. Tujuannya teks baru yang padu, bukan substitusi otomatis."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "jendela",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "meja",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "kursi",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "surat / pesan",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "lalu ia menemukannya"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "kemudian"
+        }
+      ],
+      "exercise": {
+        "question": "Di mana Layla menemukan pena? Siapa yang memindahkannya? Apa acuan هُ dalam وَجَدَتْهُ?",
+        "answer": "Di bawah kursi. Teks tidak menyebut siapa yang memindahkan. هُ merujuk pena. Pisahkan informasi dinyatakan dari informasi yang tidak diberikan penulis."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Alif vokal menulis /aː/ panjang dalam بَاب. Hamza pada أَ, إِ, أُ adalah konsonan /ʔ/ di atas penopang, bukan bunyi alif vokal. Alif menerima sambungan sebelumnya tetapi tidak menyambung ke huruf berikut di kiri.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "pintu"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "buku"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "api"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Tutup bibir lalu lepaskan dengan getaran suara untuk /b/. Baa bertitik satu di bawah badan dan boleh menyambung dua sisi jika tetangga mengizinkan. Taa dan thaa yang mirip bentuk tidak sama artikulasi bibirnya. /p/ berbeza, bukan ejaan alternatif baa.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "pintu"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "gunung"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "buku"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Buat penutupan lidah depan dekat atau tepat di belakang gigi, lalu lepaskan /t/ tanpa getaran konsonan pada model sasaran. Taa bertitik dua di atas. Ia tidak serupa sepenuhnya dengan taa marbūṭa ة akhir yang bacaannya bergantung sambung dan berhenti.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "kurma (buah)"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "budak perempuan / budak perempuan"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "rumah"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Alirkan udara melalui penyempitan ringan di gigi untuk /θ/ tak bersuara, bukan penutupan penuh /t/. Thaa bertitik tiga di atas dan boleh menyambung dua sisi. Think dalam bahasa Inggeris membantu perbandingan, tetapi th tidak selalu mewakili bunyi ini.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "pakaian"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "banyak"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "ucapan / percakapan, dalam contoh ini"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Rujukan ini memakai /dʒ/ sebagai model latihan jeem. Ada sebutan lain di komunitas Arab. Sesuaikan rekaman dengan model yang dinyatakan. Titik jeem di bahagian bawah membedakan bentuk ح dan خ, bukan menjelaskan artikulasi.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "unta"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "bintang"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "mahkota"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "Ḥaa adalah konsonan farinks tak bersuara /ħ/, bukan /h/ biasa atau khaa. Menyebutnya “h kuat” tidak menentukan lokasi. Hindari penekanan tenggorokan yang menyakitkan. Badannya tanpa titik; bedakan ح, ج, خ secara visual lalu bunyinya.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "tali"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "laut"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "garam"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "Khaa adalah gesekan tak bersuara di belakang saluran suara, ditulis /x~χ/ di sini. Lokasi tepat boleh bervariasi dengan penutur dan konteks. Titik berada di atas. Perbandingan asing perlu bahasa dan varietas tertentu; kh saja tidak mengajarkan bunyi.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "roti"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "pohon kurma"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "dapur"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "Daal /d/ memakai penutupan depan bersuara dan pelepasan. Tanpa titik, tidak menyambung ke huruf berikut di kiri. Bandingkan bentuknya dengan dhaal bertitik dan suara dengan taa tanpa mengubah vokal sekaligus.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "pelajaran"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "tangan"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "anak lelaki, dalam contoh ini"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "Dhaal /ð/ ialah gesekan dental bersuara pada sasaran Arab baku ini. Tidak memakai penutupan penuh daal, berbeza dari /θ/ tak bersuara. Titik di atas, tidak menyambung huruf berikut di kiri. This boleh membantu, bukan aturan semua ejaan th.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "emas"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "telinga"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "sedap"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "Raa melibatkan sentuhan singkat ujung lidah atau beberapa sentuhan sesuai konteks dan sebutan. /r/ umum tidak mewajibkan jumlah ketukan tetap. Raa tanpa titik dan tidak menyambung lanjut ke kiri. Tekanan kuat lidah atau tenggorokan bukan tujuan belajar.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "pasir"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "laut"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "bulan"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "Zaay /z/ ialah gesekan depan bersuara. Badannya mirip raa dengan titik di atas, tetapi bukan raa ditambah vokal. Tidak menyambung ke huruf berikut di kiri. Bandingkan /z/ dan /s/ dengan vokal berikut tetap sambil mendengar getaran suara.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "minyak"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "pisang"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "roti"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "Seen /s/ ialah gesekan tak bersuara dengan lokasi penyempitan berbeza dari thaa. Tanpa titik; gerigi boleh berbeza antara fon. Kenali identitasnya pada fon jelas, lalu bandingkan tulisan tangan tanpa menjadikan tiap variasi gaya huruf baru.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "ikan"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "matahari"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "pelajaran"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "Sheen /ʃ/ ialah gesekan tak bersuara dengan penyempitan berbeza dari seen. Tiga titik di atas badan berkaitan tidak membuatnya thaa. Bentuk dan artikulasi sifat berbeza. Bandingkan سَ dan شَ dengan vokal tetap.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "matahari"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "rumput / tumbuhan herba"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "bulu"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "Ṣaad /sˤ/ adalah konsonan emfatis pada model ini, bukan /s/ yang lebih keras. Artikulasi belakang tambahan memengaruhi kualitas dan vokal tetangga. Badan tanpa titik. Bandingkan سَ dan صَ tanpa tegangan menyakitkan atau bunyi dipaksa berlebihan.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "kesabaran"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "jus"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "sangkar"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "Ḍaad /dˤ/ mewakili sasaran Arab baku kontemporer yang umum, bukan semua sebutan sejarah atau dialek. Titik membedakan badan ṣaad. Jangan gabungkan dengan ẓaa; pada model ini satu memakai penutupan, satu gesekan.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "cahaya"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "telur"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "bumi / tanah"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "Ṭaa /tˤ/ menggabungkan penutupan depan dan pelepasan dengan sifat emfatis. Bukan taa berhias atau taa lebih keras. Badan tanpa titik. Bandingkan تَ dan طَ sambil memperhatikan perubahan kualitas vokal serta konsonan.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "tanah liat / lumpur"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "kereta api"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "benang"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "Ẓaa /ðˤ/ adalah sasaran gesekan dental emfatis di sini; variasi harus berlabel. Titik di atas badan ṭaa. “Ḍaad lain” bukan uraian memadai. Gunakan rekaman jelas sesuai perbezaan yang dipilih, jangan menyamakan bunyi dua ejaan.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "teduh / bayangan"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "tulang"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "nasib baik"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ʿAyn /ʕ/ ialah konsonan farinks bersuara, bukan vokal panjang atau hamza lemah. Belajar dengan model lembut tanpa meremas tenggorokan. Tanpa titik; bentuk sambung sangat berbeza dari bentuk terpisah. Pengenalan visual dan latihan bunyi perlu perhatian berbeza.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "mata, dalam contoh ini"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "ia lelaki telah bermain"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "pengumpulan / pertemuan"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "Ghayn ialah gesekan bersuara di belakang, /ɣ~ʁ/ untuk rentang yang dijelaskan. Titik di atas membuatnya mirip ʿayn secara visual, bukan bunyi. Bandingkan dengan khaa untuk getaran dan ʿayn untuk tempat, tanpa mengaku artikulasi serupa sepenuhnya.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "bilik"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "kecil"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "ruang kosong / kekosongan"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "Faa /f/ mengalirkan udara antara bibir bawah dan gigi atas tanpa getaran konsonan. Konvensi timur di sini bertitik satu di atas. Beberapa konvensyen Maghribi berbeza dan harus diberi label. Tradisi tulisan berbeza tidak otomatis kesilapan pelajar.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "gajah"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "kunci"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "bulu biri-biri"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "Qaaf /q/ memakai penutupan belakang tak bersuara pada model baku ini, lebih belakang dari kaaf. Dua titik di atas pada konvensyen ini. Pengucapan dialek yang akrab tidak diam-diam mengubah sasaran dengar; tentukan model latihan.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "bulan"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "sapi (kolektif)"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "pasar"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "Kaaf /k/ menutup belakang lidah terhadap daerah langit-langit belakang lalu melepaskan. Tidak serupa sepenuhnya dengan qaaf meskipun keduanya konsonan belakang. Tanda kecil dalam ك terpisah bahagian bentuknya, bukan hamza tambahan yang dibunyikan.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "buku"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "ikan"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "malaikat"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "Laam /l/ bersuara dan lateral: udara melewati sisi lidah ketika ujung menyentuh bahagian depan. Mulai dari model biasa, lalu jelaskan konteks emfatis khusus secara terpisah. Laam menyambung dua sisi, dan لا boleh tergambar gabungan tanpa menjadi huruf abjad baru.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "malam"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pena"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "gunung"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "Meem /m/ ialah konsonan nasal bersuara dengan bibir tertutup. Perbezaan dari baa bukan hanya bentuk; udara lewat hidung ketika meem. Badan berubah ketika menyambung, tetapi nama dan identiti huruf tetap.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "air"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "bulan"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pena"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "Noon /n/ ialah nasal bersuara dengan penutupan lidah depan. Satu titik di atas pada konvensyen ini. Bandingkan tempat penutupan noon dan meem. Noon tertulis berbeza dari tanwīn: beberapa akhiran memuat /n/ tanpa huruf noon tersendiri.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "cahaya"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "mata, dalam contoh ini"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "susu atau produk susu, sesuai wilayah"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "Haa /h/ tak bersuara dan tidak memakai penyempitan farinks ḥaa. Bentuk ه, هـ, ـهـ, ـه sangat beragam, maka sambungan membantu menjelaskan. Jangan mengenali tiap ة akhir sebagai haa biasa hanya kerana bacaan berhenti boleh terdengar serupa.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "bulan sabit"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "sungai"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "wajah"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "Waw boleh berupa /w/ dalam وَلَد atau membantu menulis /uː/ panjang dalam نُور. Dalam ثَوْب bukan /uː/ panjang; baca pola vokalnya. Menerima sambungan dari sebelumnya, tetapi tidak menyambung ke huruf berikut di kiri.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "anak lelaki, dalam contoh ini"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "cahaya"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "pakaian"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "Yaa boleh berupa /j/ dalam يَد atau membantu menulis /iː/ panjang dalam فِيل. بَيْت berpola /aj/, bukan /iː/ panjang. Yaa bertitik berbeza dari alif maqṣūra ى yang tidak otomatis dibaca yaa.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "tangan"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "gajah"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "rumah"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "HORIZONS — rujukan asas bahasa Arab yang diperluas",
+    "warning": "Draf semakan editorial: terjemahan dan semakan kendiri model; belum disemak oleh manusia penutur jati.",
+    "examples": "Contoh dan makna",
+    "practice": "Latihan dan renungan",
+    "answer": "Lihat jawapan",
+    "notes": "Panduan lambang bunyi",
+    "contents": "Kandungan",
+    "view": "Baca bab",
+    "all": "Cetak keseluruhan rujukan",
+    "original": "Huraian, contoh dan latihan asli HORIZONS; sumber yang disenaraikan menjadi rujukan latar.",
+    "answers": "Himpunan jawapan",
+    "forms": "Bentuk tulisan",
+    "words": "Contoh perkataan",
+    "draft": "Draf editorial",
+    "font": "Fon Arab",
+    "theme": "Tukar mod cerah dan gelap"
+  },
+  "notation_note": "ː menandakan panjang vokal sebelumnya; ˤ sifat emfatis konsonan dalam paparan ini; . sempadan suku kata; ~ memisahkan pilihan sebutan dalam julat yang diterangkan, bukan dua bunyi berturutan. / / mengapit gambaran bunyi, bukan ejaan Arab. Contoh perkataan tunggal menggunakan bacaan ketika berhenti; terjemahan ayat tidak menganggap secara senyap bahawa bacaan bersambung dan berhenti mempunyai sebutan yang sama.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "After complete Malay adaptation, compared all canonical IDs, Arabic examples, IPA, forms and story text. Dual and masculine/feminine references remain explicit; kami/kita remains context dependent. Full paragraphs preserve source counting, grammatical polarity and unknown story causation."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Second post-authoring pass reviewed native Malay wording and removed substring transformations that could corrupt nominatif or mengatakan. Used word-boundary editorial adaptations, checked weekday sequence and controls; native human register review is pending."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

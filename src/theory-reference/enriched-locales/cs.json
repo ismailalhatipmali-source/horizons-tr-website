@@ -1,0 +1,1546 @@
+{
+  "language": "cs",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Písmena a psaní: otevíráme dveře ke čtení",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Tři různé věci: název, zvuk a tvar",
+          "paragraphs": [
+            "Představ si krabici se stavebními dílky. Jejich názvy pomohou dílky najít, ale opakováním názvů dům nepostavíš. Písmeno má také název, psaný tvar a úlohu ve vysloveném slově. ب se jmenuje bá. V بَاب však začínáme /b/ a následnou dlouhou samohláskou /aː/. Nečti místo slova tři názvy písmen. Názvy jsou užitečné při otázce, jak se něco píše.",
+            "Sleduj arabské slovo zprava doleva. Nejprve si všimni těla, potom teček a značek čtení. بَ a تَ mají příbuzná těla, ale tečky určují různá písmena. Nahrazení fatḥy kasrou vytvoří بِ, nikoli změnu bá na tá. Když je řádek přeplněný, zakryj zbytek. Rozpoznání písmene je úspěch, i když ještě nepřečteš celé slovo."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Proč písmeno mění tvar?",
+          "paragraphs": [
+            "Arabská písmena sdílejí psací linii, podobně jako lidé držící se za ruce. ب, بـ, ـبـ a ـب jsou spojené podoby jednoho písmene, ne čtyři nová písmena. V بَاب se první bá spojuje s alifem, ale alif nepokračuje ve spojení k poslední bá. Malá mezera v linii netvoří druhé slovo.",
+            "ا, د, ذ, ر, ز a و mohou přijmout spojení od předchozího písmene, pokud je dovoleno, ale nespojí následující písmeno vlevo. Nevkládej slovní mezeru při každém přerušení čáry. Mezery oddělují slova; pravidla spojování určují tvary uvnitř slova. Před zapamatováním pravidel se podívej na skutečný příklad."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza a význam",
+          "paragraphs": [
+            "V بَاب alif zapisuje dlouhé /aː/. أَخ začíná hamzou /ʔ/ na nosiči alif. Hamza je souhláska, ne dlouhá samohláska. Podle pravidel zápisu může mít podoby ء, أ, إ, ؤ nebo ئ. Tvar nosiče nedělá ze všech těchto znaků zvuk samohláskového alifu.",
+            "Spojuj každý krok s významem: dveře lze otevřít, kniha má stránky ke čtení, perem píšeme. Změň pořadí karet a vrať se po krátké přestávce. Pamatovat si místo karty procvičuje paměť, ale samostatné čtení znamená rozpoznat zápis, ať se objeví kdekoli."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "dveře",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "kniha",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pero",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "bratr",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "dům / domov",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "světlo",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Vytváří přerušení spojení uvnitř بَاب dvě slova? Je název bá celým čtením بَاب?",
+        "answer": "V obou případech ne. بَاب je jedno slovo: alif nepokračuje ve spojení. Bá pojmenovává písmeno; /baːb/ čte zvuky slova ve správném pořadí."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Samohláskové značky: malé znaky mění čtení",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Samohlásková značka není tečka",
+          "paragraphs": [
+            "Polož vedle sebe بَ, بُ a بِ. Všude je bá. Fatḥa označuje krátké /a/, ḍamma krátké /u/, kasra krátké /i/. Ústa, jazyk a rty se přizpůsobují samohláskám. Zvýšením hlasitosti nepřeměníš jednu samohlásku v jinou.",
+            "V بِ jsou tečka bá a kasra blízko pod písmenem. Tečka určuje písmeno, kasra vede čtení. Změň samohláskovou značku, bá zůstane bá. Barva rozlišuje jejich úlohy, ale tvar a popisky musí být srozumitelné i v černobílém tisku."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Délka, ne hlasitost",
+          "paragraphs": [
+            "Porovnej بَ s بَا, بُ s بُو a بِ s بِي. Druhý člen páru má delší samohlásku; bá se nemění v jinou souhlásku. ː v /baː/ označuje délku předchozí samohlásky. Není další arabské písmeno ani pevný čas podle stopek pro každého mluvčího.",
+            "Alif, wáw a já nepředstavují dlouhé samohlásky pokaždé. Wáw ve وَلَد je /w/, já v يَد je /j/. Wáw v نُور pomáhá psát /uː/, já ve فِيل /iː/. Čti místní vzorec, nehádej funkci pouze podle názvu písmene."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda a tanwīn",
+          "paragraphs": [
+            "Sukūn v بِنْت připomíná nepřidávat samohlásku za nún v tomto vzorci. Neodstraňuje /n/. Shadda v أُمّ znamená zdvojenou souhlásku, ne delší předchozí samohlásku. أَمْ /ʔam/ a أُمّ /ʔumm/ se liší i samohláskou, takže nejde o minimální pár s jedinou proměnnou. Při izolaci jedné vlastnosti používej jasně označené cvičné slabiky.",
+            "Tanwīn v كِتَابٌ patří ke koncovce podstatného jména v gramatickém kontextu. V příslušném spojitém čtení slyšíme /un/, při běžné pauze na tomto slově /kitaːb/. Příklad není univerzálním pravidlem všech koncovek. Zachovej psanou značku a vysvětli rozdíl spojitého čtení a pauzy."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "dívka / dcera",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "slon",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "chlapec",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "ruka",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "matka",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "světlo",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Představuje zde wáw /w/ v نُور? Odstraní sukūn nún v بِنْت?",
+        "answer": "Ne. Wáw v نُور zapisuje dlouhé /uː/. Nún v بِنْت se v tomto vzorci vysloví bez přidané samohlásky za ním."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Spojování dvou jednotek: první čtení",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Co spojujeme?",
+          "paragraphs": [
+            "V pracovním sešitě je spojování dvou jednotek název cvičné etapy se dvěma psanými jednotkami. Počet písmen se nemusí rovnat počtu zvuků ani slabik. بَا obsahuje bá a alif, ale představuje souhlásku a dlouhou samohlásku za ní. Nejde o dvě souhlásky; samostatný cvičný prvek nemusí být smysluplným slovem.",
+            "Začni بَ, potom بَا, dále تَا a ثَا. První porovnání mění délku samohlásky, další souhlásku při zachované dlouhé samohlásce. Dej čas podívat se a potom číst. Opakování názvů písmen místo potřebných zvuků komplikuje spojování."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Otevřené a zavřené slabiky",
+          "paragraphs": [
+            "بَا zde končí samohláskou: je otevřená slabika. بَرْ končí souhláskou: je zavřená. „Zavřená“ popisuje konec slabiky, ne nutnost držet ústa zavřená celou výpověď. Čti بَرْ bez koncové samohlásky. Čtení بَرَ mění strukturu.",
+            "Drž místo prstem a postupně tuto pomoc odeber. Ukazování pomáhá sledovat, není důkazem správné výslovnosti. Po známé slabice přidej novou se stejným vzorcem. Tak ověříš přenos pravidla mimo zapamatovanou kartu."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "Od části ke slovu",
+          "paragraphs": [
+            "بَا je část بَاب. بِي je část ukázaného čtení بِيض. Ne každá slabika má mít vlastní slovníkový význam. Nejprve spoj zvuky, potom se ptej na význam celého slova. Činnost tak má cíl přesahující rychlé čtení.",
+            "Při chybě urči změnu: souhláska, kvalita samohlásky, délka nebo přidaný zvuk. Pojmenování konkrétního problému je užitečnější než požadavek začít vše znovu. Je-li obtížných více vlastností, procvič jednu zvládnutelnou před opětovným spojením."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "cvičná slabika; zde ne slovo",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "cvičná slabika",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "cvičná slabika",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "cvičná slabika v tomto příkladu",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "dveře",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "vejce",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Proč nejsou بَا a بَرْ stejným typem slabiky?",
+        "answer": "بَا končí dlouhou samohláskou; بَرْ souhláskou. Rozdíl popisuje konce, ne počet teček ani hlasitost."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Spojování tří jednotek: čtení s významem",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Tři písmena, ale kolik slabik?",
+          "paragraphs": [
+            "بَاب a جَبَل mají tři základní písmena. Ve zvoleném čtení při pauze má /baːb/ jednu slabiku, /dʒa.bal/ dvě. Tečka v tomto fonetickém zápisu označuje hranici slabik, ne psanou tečku džím. Samotným počítáním písmen počet slabik nezjistíš.",
+            "Napiš písmena se značkami a prozkoumej zvukový vzorec. Pro جَبَل začni جَ a dokonči بَلْ při pauze. Spoj bez vypuštění bá či vložení dalšího zvuku. Dělení slova je dočasná pomoc, ne způsob výslovnosti každé běžné věty."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Pořadí písmen nese význam",
+          "paragraphs": [
+            "قَلْب je srdce, كَلْب pes. Záměna qáf za káf mění význam. بَحْر je moře, حَبْر inkoust; mění se pořadí i samohlásky, takže nejde o minimální pár s jednou vlastností. Sleduj zápis místo hádání podle známého obrázku.",
+            "Vol slova, jejichž význam lze ukázat. Po přečtení se ptej, zda inkoust slouží k psaní či plavání. Význam může odhalit hádání, ale nenahradí pohled na písmena. Vysvětli nové slovo místo považování neznámé slovní zásoby za chybu čtení."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Pozorné čtení před plynulostí",
+          "paragraphs": [
+            "Přečti tři slova bez závodu. Označ jedno k návratu a zkus po lehčím příkladu. Plynulost zahrnuje správné čtení, porozumění a opravu, ne pouze slova za minutu. Nepodporuj skrývání váhání hádáním.",
+            "Pro přenos nabídni po جَبَل slovo جَمَل. Bá se mění na mím ve známém vzorci. Hora je vyvýšená zem, velbloud zvíře. Požádej o další skutečné slovo se známými písmeny, ale vysvětli, že ne každé uspořádání vytváří arabské slovo."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "hora",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "velbloud",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "srdce",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "pes",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "moře",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "inkoust",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Které písmeno se mění z جَبَل na جَمَل? Mají بَاب a جَبَل stejný počet slabik?",
+        "answer": "Bá se mění na mím. بَاب má jednu slabiku v ukázaném čtení při pauze, جَبَل dvě. Počet písmen nestačí."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Spojování čtyř jednotek: delší čtení bez přetížení",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Delší není vždy těžší",
+          "paragraphs": [
+            "كِتَاب má čtyři základní písmena. Čtení při pauze /ki.taːb/ má krátkou první slabiku a potom slabiku s dlouhou samohláskou a koncovým bá. Využij znalosti z بَاب místo považování každé části za zcela novou. Délka zápisu sama neudává obtížnost.",
+            "Wáw v ثَوْب zde nepíše /uː/: /aw/ je jiná posloupnost. بَيْت má /aj/, ne /iː/. Úspěch vychází ze zkoumání samohlásky a struktury, ne pravidla „každé wáw je ú a já í“. Upevni příklad před přidáním dalšího kontrastu."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "Věta přidává vztahy",
+          "paragraphs": [
+            "هَذَا كِتَابٌ určuje blízký předmět: „To je kniha“. هَذِهِ حَقِيبَةٌ užívá ženské ukazovací slovo s taškou. Výměna podstatného jména může vyžadovat kontrolu souvisejících slov, ne jen jednoho popisku. Ptej se, na co se ukazuje a které formy se hodí.",
+            "الكِتَابُ جَدِيدٌ říká „Kniha je nová“. الكِتَابُ الجَدِيدُ označuje „novou knihu“; fráze sama nesděluje stejné úplné tvrzení. Člen není ozdobná předpona. Prostá situace může ukázat gramatický vztah před odbornými termíny."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Přenášíme dovednost na nový text",
+          "paragraphs": [
+            "Porovnej كِتَاب a كَاتِب. Základní souhlásky souvisejí, ale místo alifu a samohlásky se liší. První je kniha, druhé spisovatel. Společný kořen nedává všem slovům stejný význam. Tak představíme slovní rodiny bez předstírání výuky celého odvozování najednou.",
+            "Přečti krátký řádek, na chvíli skryj a ptej se na celkový smysl. Vrať jej pro ověření detailu. Rozlišíš zvukovou paměť, porozumění a návrat k písemnému důkazu. Žádat pomoc s novým slovem patří k učení; příručka nemá být nekonečná zkouška."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "kniha",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "spisovatel",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "taška",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "To je kniha."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Kniha je nová."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "nová kniha"
+        }
+      ],
+      "exercise": {
+        "question": "Sdělují الكِتَابُ جَدِيدٌ a الكِتَابُ الجَدِيدُ samy stejné sdělení?",
+        "answer": "Ne. První tvrdí, že kniha je nová; druhé označuje novou knihu bez stejného úplného tvrzení."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Přehled písmen: od tvaru k použití",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Spolehlivá mapa každého písmene",
+          "paragraphs": [
+            "U každého písmene používej stejné otázky: název, místo tvoření zvuku, spojování, rozdíl od podobného tvaru, jasná slova. Stálá mapa zabrání nevysvětleným obrázkům místo lekce. Nemusíš vše zodpovědět při první návštěvě.",
+            "Kapitola má karty 28 písmen. Místo alifu v abecedě neznamená, že hamza a dlouhé /aː/ jsou tentýž zvuk. Wáw a já mají kontextové role. Před porovnáním s pravopisem vlastního jazyka čti poznámku karty."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Rodiny tvarů nejsou rodiny zvuků",
+          "paragraphs": [
+            "ب, ت a ث mají podobná těla, ale bá se tvoří rty, tá předním závěrem, thá zubním třením ve zvolené standardní arabštině. Tři tečky thá nevysvětlují zvuk, tři tečky šín nedělají thá. Vizuální rodiny pomáhají identifikaci, zvukové popisy výslovnosti.",
+            "Porovnej ثَ s تَ při stejné fatḥe. Porovnej س a ص podle emfatičnosti, ne hlasitosti. Některé zvuky nemají přímý protějšek v jazyce žáka. Vysvětli artikulaci a nabídni poslechový model místo vymyšleného přesného ekvivalentu."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Slovní zásoba, věty a přenos",
+          "paragraphs": [
+            "Po nalezení písmene na začátku, uprostřed a na konci utvoř smysluplnou větu s jedním uvedeným slovem. Nevkládej vzácná slova jen pro objem. Střídej pozice a význam, vysvětluj nová slova a dodávej kontext při více významech.",
+            "Dialektový rozdíl není vadou mluvčích. Příručka stanoví standardní arabský cíl a uznává varianty džím, qáf a dalších zvuků. Poslechové cvičení musí mít nahrávku odpovídající vysvětlení a symbolům."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "dveře",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "hora",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "kniha",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "plody / ovoce",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "sníh",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "liška",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "Znamená podobný tvar ب, ت a ث stejné místo artikulace? Vyslovuje se džím všude stejně?",
+        "answer": "Ne. Tvar je psaná informace, artikulace jiná vlastnost. Džím se liší: stanov zvolený cíl a jasně označ jiné modely."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Zájmena: kdo jsem já, kdo jsi ty?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Slovo sledující mluvčího",
+          "paragraphs": [
+            "Řekne-li Lajla „já“, znamená Lajlu; řekne-li Omar „já“, znamená Omara. Zájmeno není pevné jméno osoby: odkaz vychází ze situace řeči. „Ty“ označuje adresáta, „on“ a „ona“ někoho, o kom mluvíme. Před tabulkou zkus měnit role.",
+            "Arabština rozlišuje أَنْتَ pro jediného mužského adresáta a أَنْتِ pro ženského. České „ty“, jako anglické you, slouží oběma, ale arabský rozdíl není volitelný. Turecké o odpovídá هُوَ i هِيَ; překlad do arabštiny musí ověřit odkaz, ne mechanicky nahrazovat."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Jednotné, dvojné a množné číslo",
+          "paragraphs": [
+            "أَنَا je první osoba jednotná. نَحْنُ zahrnuje skupinu s mluvčím a může mít dva nebo více lidí. أَنْتُمَا oslovuje dva, هُمَا odkazuje na dva; obě slouží mužskému i ženskému odkazu. أَنْتُمْ / أَنْتُنَّ a هُمْ / هُنَّ rozlišují množné formy. Mužské množné může ve standardní arabštině podle kontextu pokrývat smíšenou skupinu.",
+            "Ne každý jazyk má samostatné jednoslovné dvojné zájmeno. أَنْتُمَا lze česky vysvětlit „vy dva“, anglicky you two, turecky ikiniz. Vysvětluje odkaz, ale nezaručuje totožné použití všude. Porovnávej význam i formu."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Zájmeno a následující slova",
+          "paragraphs": [
+            "أَنَا طَالِبٌ a أَنَا طَالِبَةٌ začínají stejným zájmenem; následující jméno se mění podle mluvčího. هُوَ طَالِبٌ a هِيَ طَالِبَةٌ mění obojí. Příklad mužského studenta nečiní أَنَا výhradně mužským.",
+            "V أَنَا أَقْرَأُ a نَحْنُ نَقْرَأُ se mění sloveso. Úvodní أَ zde patří první osobě slovesného časování, ne vlastnictví. Sloveso může mít dost informace pro vynechání samostatného zájmena v jasném kontextu. Anglické am/is/are v překladu nevyžaduje odpovídající slovo v každé arabské jmenné větě přítomného času."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "já",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "ty (jeden mužský adresát)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "ty (jedna ženská adresátka)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "my",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "on",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "ona",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "vy dva"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "oni dva / oba"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "vy (mužské množné; kontext může zahrnovat smíšenou skupinu)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "vy (ženské množné)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "oni (mužské množné; kontext může zahrnovat smíšenou skupinu)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "ony (ženské množné)"
+        }
+      ],
+      "exercise": {
+        "question": "Lajla mluví o sobě, potom o Omarovi. Která dvě zájmena sedí? Je نَحْنُ pouze mužské?",
+        "answer": "أَنَا pro sebe; هُوَ pro Omara zde. نَحْنُ nerozlišuje pohlaví mluvčích; skupinu určuje kontext."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Přivlastnění a vztahy: více než označení",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Jeden předmět, dva mluvčí",
+          "paragraphs": [
+            "Omar drží knihu a říká كِتَابِي — „moje kniha“. Oslovíš ho كِتَابُكَ — „tvoje kniha“. O něm Lajle řekneš كِتَابُهُ — „jeho kniha“. Kniha se nezměnila, vztah řeči ano. Nejsou to tři kategorie knih.",
+            "Oslov Lajlu كِتَابُكِ, mluv o ní كِتَابُهَا. Rozdíl كَ a كِ je malý v písmu a zvuku, ale důležitý pro odkaz. Čeština a zpravidla angličtina mají samostatné slovo před jménem; tyto arabské tvary připojují zájmeno ke jménu."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "Vztah není vždy vlastnictví",
+          "paragraphs": [
+            "كِتَابُنَا vztahuje knihu k naší skupině. أُمِّي je „moje matka“, ne považování člověka za majetek. مَدْرَسَتِي může být škola, kam chodím, ne budova v mém vlastnictví. Jméno a kontext určují vztah.",
+            "V مَدْرَسَة → مَدْرَسَتِي se tá marbúṭa píše jako běžné tá při připojení tohoto zájmena. Nezobecňuj, že každé koncové há se mění na tá. وَجْهِي je „můj obličej“: há z وَجْه zůstává há."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Jméno, pád a určitost",
+          "paragraphs": [
+            "كِتَابُكَ je jedna vybraná forma tabulky. V رَأَيْتُ كِتَابَكَ — „Viděl jsem tvou knihu“ — se koncovka jména mění s gramatickou rolí, كَ stále odkazuje na jediného mužského adresáta. Neuč se předchozí ḍammu jako stálou část „tvůj“.",
+            "V obvyklé konstrukci jména s přivlastňovacím zájmenem nepřidávej tanwīn ani člen jako k samostatnému nepřivlastněnému jménu. كِتَابِي určuje vztah a je v tomto užití určité. Nejdřív správný příklad, potom pokročilé výjimky."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "moje kniha"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "tvoje kniha (jeden mužský adresát)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "tvoje kniha (jedna ženská adresátka)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "jeho kniha"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "její kniha"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "naše kniha"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "moje škola"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "můj obličej"
+        }
+      ],
+      "exercise": {
+        "question": "Lajla říká „moje kniha“. Jak o ní mluvíš při oslovení Lajly, potom při hovoru o ní s někým jiným?",
+        "answer": "كِتَابُكِ při oslovení; كِتَابُهَا při hovoru o ní. Odkaz zájmena vychází ze vztahu v řeči."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Čísla: symbol, slovo a množství",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Počítej každý předmět jednou",
+          "paragraphs": [
+            "Polož tři pera na stůl. Dotkni se každého jednou při jednom kroku počítání, potom pojmenuj velikost skupiny. Dvojí započtení stejného pera dá špatný součet. Přeskládání bez přidání či ubrání ponechá tři: tvar řady není množství.",
+            "٣ a 3 označují stejné číslo ve dvou zobrazených soustavách číslic. ثَلَاثَة je arabské číselné slovo, ne tvar číslice. Psané číslo může počítat knihy, kroky či minuty; urči, co se počítá, pro pochopení užití."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Počítání samo a počítání jmen",
+          "paragraphs": [
+            "Hlasité počítání začíná od jedné do deseti, ale číselné fráze potřebují pozornost. ثَلَاثَةُ كُتُبٍ znamená tři knihy, ثَلَاثُ سَيَّارَاتٍ tři auta. V modelu tři až deset je forma čísla v protikladu k rodu jednotného počítaného jména, které samo je v genitivu množném. Neaplikuj na jedna a dvě.",
+            "كِتَابٌ وَاحِدٌ a سَيَّارَةٌ وَاحِدَةٌ ukazují shodu s jednou. Nominativní dvojné كِتَابَانِ a سَيَّارَتَانِ už označují dvě. Slovo znamenající dva není nutné v každé dvojné frázi."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Množství, pořadí a porovnání",
+          "paragraphs": [
+            "ثَلَاثَة odpovídá „kolik?“, الثَّالِث „které pořadí?“. Tři knihy nejsou třetí kniha. Nula per znamená žádné pero v počítané skupině, ne neexistenci vůbec ničeho.",
+            "Porovnej skutečné skupiny: dvě pera a čtyři. Druhá má více, první méně. Mají-li obě čtyři, počty jsou stejné i při jiné barvě či délce. Važ porovnání na určenou vlastnost a zkus nový příklad."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "nula"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "jedna"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "dvě"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "tři"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "čtyři"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "pět"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "šest"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "sedm"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "osm"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "devět"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "deset"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "třetí"
+        }
+      ],
+      "exercise": {
+        "question": "Přeskládáš tři kruhy bez přidání. Kolik zůstane? Označuje „třetí“ množství?",
+        "answer": "Zůstanou tři. „Třetí“ je místo v pořadí, ne množství. Počítej předměty jednou, ne mezery mezi nimi."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Barvy: pojmenování, popis a shoda",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Stejný předmět, jiný popis",
+          "paragraphs": [
+            "Dvě pera mají stejnou funkci, ale jedno je červené a druhé modré. „Pero“ označuje druh, barva pomáhá určit konkrétní kus. Barva nevypovídá o hodnotě člověka ani pohlaví, které smí předmět užívat. Obrazovky zobrazují barvy jinak, takže vzorek vždy pojmenuj.",
+            "قَلَمٌ أَحْمَرُ je červené pero, سَيَّارَةٌ حَمْرَاءُ červené auto. Arabské přídavné jméno se mění s rodem jména, ne majitele. Angličtina a turečtina zde barvu tak nemění. Čeština má shodu, ale arabský rod předmětu a vlastní formy je třeba poznat zvlášť."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Ne každá barva má vzorec červené",
+          "paragraphs": [
+            "Nauč se أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء a أَسْوَد/سَوْدَاء jako jednu skupinu. وَرْدِيّ/وَرْدِيَّة a بُنِّيّ/بُنِّيَّة mají jiný vzorec. Nevymýšlej ženské barvy pouhým přidáním اء.",
+            "قَلَمٌ أَحْمَرُ znamená „červené pero“ neurčité. القَلَمُ الأَحْمَرُ označuje „to červené pero“. القَلَمُ أَحْمَرُ tvrdí „Pero je červené“. Umístění členu mění vztah, ne jen vzhled. Čeština takový člen nemá, rozdíl vysvětluj kontextem."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Popis bez barevného vzorku",
+          "paragraphs": [
+            "Napiš název barvy vedle značky a přidej tvar nebo popisek pro rozlišení odpovědí. Žák může mít slabý zrak či jiné vnímání barev. Jazyková schopnost nemá záviset na rozlišení dvou téměř stejných zelených odstínů.",
+            "Začni jedním jménem a přídavným jménem: auto s حَمْرَاء, pero s أَحْمَر. Změň předmět a ověř přenos místo naučené dvojice. Množná shoda má další pravidla; nezobecňuj shodu jednotlivých osob na všechna množná jména věcí."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "červená: mužská — ženská forma"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "modrá: mužská — ženská forma"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "zelená: mužská — ženská forma"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "žlutá: mužská — ženská forma"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "bílá: mužská — ženská forma"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "černá: mužská — ženská forma"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "růžová: mužská — ženská forma"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "hnědá: mužská — ženská forma"
+        }
+      ],
+      "exercise": {
+        "question": "Doplň auto zelenou a pero bílou barvou. Co určuje arabskou formu?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Shodu určuje gramatický rod arabského jména, ne pohlaví majitele."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Dny a měsíce: čas řeči a schůzky",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "Dnes mění svůj odkaz",
+          "paragraphs": [
+            "Dnes je den řeči, včera předchází a zítra následuje. „Přijď zítra“ může být nejasné při čtení zprávy po několika dnech bez data odeslání. Pevné datum, třeba 8. října 2026, určuje den; schůzka může vyžadovat kalendářní systém, čas a časové pásmo.",
+            "Sedm názvů dnů zůstává stejných, ať kalendář začíná pondělím, nedělí nebo sobotou. Pořadí, první den týdne a víkendy se liší. Nauč se posloupnost a spoj ji s místním kalendářem žáka."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Různé názvy stejného měsíce",
+          "paragraphs": [
+            "Leden může být يناير nebo كانون الثاني podle arabského regionu; únor فبراير nebo شباط, březen مارس nebo آذار. Jeden seznam nečiní regionální varianty chybnými. Při neznámém názvu zjisti systém kalendáře a regionální pojmenování.",
+            "Muḥarram, Ṣafar a Ramaḍān patří kalendáři hidžry, nejsou překladem gregoriánských měsíců. Lunární a solární roky se liší. Výměna ledna za muḥarram není převod data. Pro skutečnou schůzku použij spolehlivý kalendář."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Čteme jasnou schůzku",
+          "paragraphs": [
+            "„Čtu v pátek“ může vyžadovat který pátek. „Čtu každý pátek“ označuje opakovanou činnost. „Každý“ mění sdělení. Zeptej se, zda se činnost koná jednou nebo opakuje, a najdi psanou nápovědu.",
+            "Číselné datum 03/04 může být nejasné při jiném pořadí dne a měsíce. Pomůže psaný název měsíce nebo dohodnutý formát. Pro učení jasný příklad; při skutečném plánování datum ověř, nehádej podle vzhledu."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "dnes"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "včera"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "zítra"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "sobota"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "neděle"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "pondělí"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "úterý"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "středa"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "čtvrtek"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "pátek"
+        }
+      ],
+      "exercise": {
+        "question": "Je-li dnes úterý, který den je zítra? Jsou leden a muḥarram názvy stejného měsíce?",
+        "answer": "Středa. Ne: leden je gregoriánský a muḥarram patří hidžře. Skutečné datum vyžaduje správný převod kalendáře."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Místo a směr: nejprve zvol orientační bod",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Kde, vzhledem k čemu?",
+          "paragraphs": [
+            "Kniha je nad stolem, taška pod ním. „Nad“ a „pod“ popisují vztahy. Kniha není prostě „nahoře“ v každém popisu: urči bod, nad stolem. „Uvnitř“ a „vně“ potřebují hranici, například v tašce či mimo místnost.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ znamená „Polož knihu na stůl“. Spojité čtení zde má kasru v ضَعِ; neber každou spojovací samohlásku jako trvalou část samostatného slovesa. Nejdříve pochop pokyn, pak potřebný gramatický detail."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Čí pravá strana?",
+          "paragraphs": [
+            "Zvedni pravou ruku. Člověk proti tobě ji může mít na straně, kterou vidíš jako levou. „Po tvé pravici“ je jasnější než „vpravo“, když pozorovatelé hledí různě. Neoznačuj dítě za chybující kvůli bodu, který jsi neurčil.",
+            "Sever, jih, východ a západ jsou geografické směry, ne trvalé názvy horní, dolní, pravé a levé části stránky. Mapa potřebuje orientační značku či jasnou konvenci. Otočení těla mění směr pravé strany, ne sever."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "Pořadí kroků je součástí významu",
+          "paragraphs": [
+            "„Vezmi knihu, potom vlož do tašky“. „Potom“ zachovává pořadí. Dávej krátké pokyny se známými předměty a požádej o vysvětlení záměru před pohybem. Rozlišíš porozumění slovům od šťastného pohybového odhadu.",
+            "Kniha je v tašce, taška pod židlí. Neznamená to, že kniha je nad taškou. Odděluj uvedený vztah od toho, který vyžaduje další informaci. Pro více míst nakresli jednoduchý popsaný plán, místo spoléhání jen na paměť polohy obrázku."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "nad / na, podle kontextu"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "pod / níže"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "před"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "za"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "uvnitř"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "vně"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "pravá strana"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "levá strana"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "sever"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "jih"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "východ"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "západ"
+        }
+      ],
+      "exercise": {
+        "question": "Kniha je v tašce pod židlí. Je nad taškou? Ukazuje tvoje pravá strana po otočení stejný geografický směr?",
+        "answer": "Ne: je uvnitř tašky. Ne: pravá strana se mění s orientací těla, na rozdíl od geografického bodu."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Příběhy: čti text a sleduj jeho důkazy",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Původní příběh: okno a pero",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Lajla otevřela okno. Položila modré pero na stůl a potom šla do školy. Po návratu pero nenašla. Podívala se pod židli a našla je. Vzala je a napsala krátký dopis. Text neříká, kdo pero přemístil, ani nedokazuje, že je shodil vítr. Příběh je původní tvorba HORIZONS, ne kopie vydaného díla."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Tři čtení, tři účely",
+          "paragraphs": [
+            "Při prvním čtení se ptej na postavu a problém. Nepřerušuj každou značku. Při druhém sleduj pořadí: kde bylo pero a kde je našla? Při třetím zkoumej jazyk: هُ v وَجَدَتْهُ odkazuje na pero, slovesné tvary odpovídají Lajle v tomto vyprávění.",
+            "Pero je modré; „krátký“ popisuje délku dopisu, ne barvu. Text barvu dopisu neuvádí. Nenahrazuj chybějící důkaz pravděpodobnou odpovědí. Můžeš napsat vymyšlený konec, ale označ jej vlastním nápadem, ne událostí původního příběhu."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Malý slovník a samostatné psaní",
+          "paragraphs": [
+            "Okno je otvor ve zdi, stůl poskytuje plochu pro předměty, dopis písemně komunikuje s někým. Vysvětlení slov odstraní překážku bez převyprávění celého příběhu. Potom zvol jiný název a zdůvodni jej textem.",
+            "Nahraď pero knihou, potom Lajlu Omarem. Ženský předmět může změnit přídavná jména, mužská postava příslušná slovesa. Kontroluj všechny odkazy, ne pouze jedno jméno. Cílem je souvislý nový text, ne automatická výměna slov."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "okno",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "stůl",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "židle",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "dopis / zpráva",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "a ona jej našla"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "potom"
+        }
+      ],
+      "exercise": {
+        "question": "Kde Lajla našla pero? Kdo je přemístil? Na co odkazuje هُ v وَجَدَتْهُ?",
+        "answer": "Pod židlí. Text neříká, kdo je přemístil. هُ odkazuje na pero. Odděluj uvedené informace od těch, které autor neposkytl."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Samohláskový alif píše dlouhé /aː/ v بَاب. Hamza v أَ, إِ a أُ je souhláska /ʔ/ na nosiči, ne stejný zvuk jako samohláskový alif. Přijímá předchozí spojení, nepojí další vlevo.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "dveře"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "kniha"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "oheň"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Pro /b/ zavři rty a uvolni s hlasem. Bá má jednu tečku dole, spojuje obě strany při svolení sousedů. Příbuzné tá a thá se netvoří rty. /p/ je jiný zvuk, ne jiný zápis bá.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "dveře"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "hora"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "kniha"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Pro /t/ utvoř přední jazykový závěr u zubů či za nimi a uvolni bez hlasu souhlásky v cílové podobě. Tá má dvě tečky nahoře. Není koncová tá marbúṭa ة, jejíž čtení závisí na spojení a pauze.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "datle"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "dívka / dcera"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "dům / domov"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Pro neznělé /θ/ nech vzduch procházet jemným zúžením u zubů, ne plným závěrem /t/. Thá má tři tečky nahoře, spojuje obě strany. Anglické think pomůže porovnat, ale th nemá vždy tento zvuk. Běžná čeština přesný protějšek nemá.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "oděv"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "mnoho"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "řeč / rozhovor v tomto příkladu"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Džím má zde cílový model /dʒ/. V arabských komunitách jsou jiné výslovnosti. Nahrávka musí odpovídat uvedenému modelu. Dolní tečka vizuálně rozlišuje ح a خ, ale nevysvětluje artikulaci.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "velbloud"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "hvězda"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "koruna"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "ح je neznělá faryngální /ħ/, ne běžné /h/ či خ. „Silné h“ neudává místo. Vyhni se bolestivému sevření hrdla. Bez tečky: nejdřív rozeznávej ح, ج a خ vizuálně, potom srovnej zvuky.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "provaz"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "moře"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "sůl"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "خ je neznělé tření v zadní oblasti traktu, zde /x~χ/. Přesné místo se mění podle mluvčího a kontextu. Tečka nad tělem. Cizí porovnání potřebuje konkrétní jazyk a variantu; samo kh zvuk neučí.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "chléb"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "datlové palmy"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "kuchyně"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "د /d/ má znělý přední závěr a uvolnění. Bez tečky, nespojuje následující vlevo. Srovnej vizuálně s ذ a podle znělosti s ت bez současné změny samohlásky.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "lekce"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "ruka"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "chlapec v tomto příkladu"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "ذ /ð/ je znělé zubní tření v tomto standardním modelu. Nemá úplný závěr د, liší se od neznělého /θ/. Tečka nahoře, další vlevo nespojuje. Anglické this je možný most, ne pravidlo každého th; běžná čeština nemá přesný protějšek.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "zlato"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "ucho"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "chutný"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "ر má krátký dotyk špičky jazyka či opakované dotyky podle kontextu a výslovnosti. Obecné /r/ nevyžaduje pevný počet úderů. Bez tečky, dále vlevo nepojí. Silný tlak jazyka či hrdla není cílem.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "písek"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "moře"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "měsíc"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "ز /z/ je znělé přední tření. Tělo jako ر s horní tečkou, ale ne ر s další samohláskou. Nespojuje další vlevo. Porovnej /z/ a /s/ znělostí se stejnou následující samohláskou.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "olej"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "banány"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "chléb"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "س /s/ je neznělé tření s jiným zúžením než ث. Bez teček; zoubky se liší podle fontu. Nejprve čitelný font, potom rukopisy bez považování stylové změny za nové písmeno.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "ryby"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "slunce"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "lekce"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "ش /ʃ/ je neznělé tření s jiným zúžením než س. Nad příbuzným tělem tři tečky. Nedělají ث: tvar a artikulace jsou jiné vlastnosti. Porovnej سَ a شَ se stejnou samohláskou.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "slunce"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "tráva"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "peří"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "ص /sˤ/ je emfatičnost ve zvoleném modelu, ne jen hlasitější /s/. Další zadní artikulace mění kvalitu a okolní samohlásky. Bez tečky. Porovnej سَ a صَ bez bolesti a přehnaného nucení.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "trpělivost"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "šťáva"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "klec"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "ض /dˤ/ představuje běžnou dnešní standardní arabštinu, ne všechny historické a dialektové podoby. Tečka odlišuje ص. Neslučuj s ظ: v modelu má jedna závěr, druhá tření.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "světlo"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "vejce"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "země / pevnina"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "ط /tˤ/ spojuje přední závěr a uvolnění s emfatičností. Není ozdobná ت ani hlasitější /t/. Bez tečky. Srovnej تَ a طَ všímaje si změny samohlásky i souhlásky.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "hlína / bláto"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "vlak"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "nit"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "ظ /ðˤ/ je uvedený emfatický zubní třený cíl; varianty označ. Tečka nad tělem ط. „Další ض“ nestačí. Jasná nahrávka podle odlišení, ne stejné znění obou zápisů.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "stín"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "kost"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "štěstí"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ع /ʕ/ je znělá faryngální souhláska, ne dlouhá samohláska či slabá hamza. Uč se z jemného modelu, ne sevřením hrdla. Bez tečky, spojené tvary velmi odlišné. Zrakové poznání a zvukový nácvik vyžadují zvláštní pozornost.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "oko v tomto příkladu"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "on si hrál"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "sbírání / shromažďování"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "غ je znělé zadní tření v uvedeném rozsahu /ɣ~ʁ/. Příbuznost s ع je vizuální, ne zvuková. Porovnej s خ znělostí, s ع místem bez tvrzení o shodné artikulaci.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "pokoj"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "malý"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "prázdný prostor / volné místo"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "ف /f/ vede vzduch mezi dolním rtem a horními zuby bez souhláskové znělosti. Ve zdejší východní tradici jedna tečka nahoře. Některé maghrebské tradice se liší a musí být označeny. Tradice není automaticky chyba žáka.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "slon"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "klíč"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "vlna"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "ق /q/ má neznělý zadní závěr v tomto standardním modelu, dál vzadu než ك. Dvě tečky nahoře v této tradici. Známé dialekty nemění potichu poslechový cíl; urči model lekce.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "měsíc"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "skot"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "trh"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "ك /k/ přiloží zadní jazyk k zadnímu patru a uvolní. Není shodná s ق, ačkoli obě jsou zadní. Malý znak uvnitř samostatného ك patří psanému tvaru, není samostatná hamza k vyslovení.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "kniha"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "ryby"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "anděl"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "ل /l/ je znělá laterála: vzduch po stranách jazyka při předním kontaktu špičky. Začni obyčejným modelem, zvláštní emfatické kontexty později. Spojuje obě strany; لا může být spojený tvar bez nové abecední litery.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "noc"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pero"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "hora"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "م /m/ je znělá nosová souhláska se zavřenými rty. Od ب se liší nejen tvarem: vzduch jde nosem. Tělo mění spojení, název a totožnost zůstávají.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "voda"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "měsíc"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pero"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "ن /n/ je znělá nosová s předním jazykovým závěrem. Jedna tečka nahoře. Porovnej s م podle místa závěru. Psaná nún se liší od tanwīnu: některé koncovky mají /n/ bez samostatného písmene.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "světlo"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "oko v tomto příkladu"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "mléko či mléčný výrobek podle regionu"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "ه /h/ je neznělá a nemá faryngální zúžení ح. ه, هـ, ـهـ a ـه se liší zrakem, spojení je vysvětluje. Neber každé koncové ة jako běžné ه jen kvůli podobnosti při pauze.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "srpek měsíce"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "řeka"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "obličej"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "و může být /w/ ve وَلَد nebo pomáhat zápisu dlouhého /uː/ v نُور. V ثَوْب nejde o /uː/: čti samohláskový vzorec. Přijímá předchozí spojení, nepojí další vlevo.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "chlapec v tomto příkladu"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "světlo"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "oděv"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "ي může být /j/ v يَد nebo psát dlouhé /iː/ ve فِيل. بَيْت má jiný vzorec /aj/, ne /iː/. Tečkované já se liší od alifu maqṣūra ى, který není automaticky já.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "ruka"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "slon"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "dům / domov"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "Rozšířená příručka HORIZONS",
+    "warning": "Redakční návrh: překlad prošel vlastní kontrolou modelu; nezávislá kontrola rodilým mluvčím dosud neproběhla.",
+    "examples": "Příklady s významem",
+    "practice": "Procvičení",
+    "answer": "Odpověď a vysvětlení",
+    "notes": "Poznámky",
+    "contents": "Obsah",
+    "view": "Číst",
+    "all": "Celá příručka",
+    "original": "Arabský originál",
+    "answers": "Odpovědi",
+    "forms": "Psané podoby",
+    "words": "Slova",
+    "draft": "Redakční návrh",
+    "font": "Arabské písmo",
+    "theme": "Přepnout světlý a tmavý režim"
+  },
+  "notation_note": "ː označuje délku předchozí samohlásky; ˤ emfatičnost souhlásky v tomto zobrazení; . hranici slabik; ~ odděluje varianty popsaného rozsahu, ne dva po sobě jdoucí zvuky. / / uzavírá zvukový zápis, ne arabský pravopis. Samostatná slova používají čtení při pauze; překlady vět netvrdí potichu stejnou výslovnost pro spojení a pauzu.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Srovnány celé kapitoly, příklady a písmena; zachovány dvojné formy, kontext rodu, pauza a spojení i rozdíl zvuku a písmene.",
+          "Absence českého členu a odlišný rod pero/auto vysvětleny; původní příběh bez domyšlené příčiny."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Zkontrolována česká shoda, pády a učební formulace; opraveno chybné označení slovesné skloňování na časování.",
+          "Nevymyšlen přesný český ekvivalent /θ/ ani /ð/; IPA a arabské tvary zachovány."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

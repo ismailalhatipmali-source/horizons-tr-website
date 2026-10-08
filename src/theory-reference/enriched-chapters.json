@@ -1,0 +1,2173 @@
+{
+  "schema": 1,
+  "edition": "Expanded foundation reference — authoring review",
+  "locales": [
+    "ar",
+    "en",
+    "tr"
+  ],
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "titles": {
+        "ar": "الحروف والكتابة: كيف نفتح باب القراءة؟",
+        "en": "Letters and writing: opening the door to reading",
+        "tr": "Harfler ve yazı: okumaya açılan kapı"
+      },
+      "sections": [
+        {
+          "id": "foundations-1",
+          "titles": {
+            "ar": "ثلاثة أشياء مختلفة: الاسم، والصوت، والشكل",
+            "en": "Three different things: name, sound, shape",
+            "tr": "Üç ayrı şey: ad, ses ve biçim"
+          },
+          "prose": {
+            "ar": [
+              "تخيّل صندوقًا فيه قطع بناء. اسم القطعة يخبرك أي قطعة تقصد، لكنك لا تبني بيتًا بمجرد ترديد أسماء القطع. كذلك للحرف اسم، وللقراءة صوت، وللكتابة شكل. اسم ب هو باء، أما في بَاب فنبدأ بصوت /b/ مع حركة طويلة /aː/. لا نقرأ أسماء «باء، ألف، باء» بدل الكلمة. في المقابل، تسمية الحرف مفيدة حين نسأل المعلم عن طريقة كتابته.",
+              "تتبع الكلمة من اليمين إلى اليسار. ابحث عن الجسم، ثم النقاط، ثم علامات القراءة. في بَ وتَ يشبه الجسم أحدهما الآخر، لكن موضع النقاط وعددها يحددان حرفين مختلفين. تغيير الفتحة إلى كسرة يصنع بِ ولا يصنع تاء. إذا ارتبكت، غطِّ بقية السطر وناقش جزءًا واحدًا؛ نجاحك في معرفة الحرف لا يشترط أن تعرف معنى كل الكلمة بعد."
+            ],
+            "en": [
+              "Imagine a box of building pieces. Naming the pieces helps you find them, but repeating their names does not build a house. A letter likewise has a name, a written shape and a role in a spoken word. The name of ب is baa. In بَاب, however, begin with /b/ followed by the long vowel /aː/. Do not read the three letter names in place of the word. Letter names remain useful when asking how to spell something.",
+              "Follow the Arabic word from right to left. First notice the body, then the dots, then the reading marks. بَ and تَ have related bodies, but their dots identify different letters. Replacing the fatḥa with a kasra produces بِ; it does not turn baa into taa. Cover the rest of the line if it feels crowded. Recognising a letter is a real achievement even before you can read the whole word."
+            ],
+            "tr": [
+              "Bir kutu yapı parçası düşün. Parçaların adlarını söylemek, hangi parçayı aradığını anlamana yardım eder; ancak yalnızca adları söyleyerek ev kuramazsın. Harfin de adı, yazıdaki biçimi ve kelimedeki sesi vardır. ب harfinin adı bâdır. بَاب okurken harf adlarını art arda söylemeyiz; /b/ sesini uzun /aː/ ile birleştiririz. Harf adları, bir kelimenin nasıl yazıldığını sormak için yine yararlıdır.",
+              "Arapça kelimeyi sağdan sola izle. Önce gövdeyi, sonra noktaları, ardından okuma işaretlerini fark et. بَ ile تَ benzer gövdelere sahiptir; noktalar farklı harfleri gösterir. Üstün yerine esre koyunca بِ olur; bâ harfi tâya dönüşmez. Satır kalabalıksa geri kalanını kapat. Bütün kelimeyi okuyamasan bile harfi tanımak önemli bir adımdır."
+            ]
+          }
+        },
+        {
+          "id": "foundations-2",
+          "titles": {
+            "ar": "لماذا يتغير شكل الحرف؟",
+            "en": "Why does a letter change shape?",
+            "tr": "Harfin biçimi neden değişir?"
+          },
+          "prose": {
+            "ar": [
+              "الحروف تتشارك مسارًا كتابيًا، كأشخاص يمسكون أيدي بعضهم. للباء صور ب، بـ، ـبـ، ـب؛ هذه صور اتصال للحرف نفسه، وليست أربعة حروف جديدة. انظر إلى بَاب: تظهر الباء الأولى متصلة بالألف، لكن الألف لا تمد اتصالًا إلى الباء الأخيرة. بقيت الكلمة واحدة على الرغم من هذا الانقطاع الصغير.",
+              "الحروف ا، د، ذ، ر، ز، و تقبل الاتصال من الحرف السابق عندما يسمح بذلك، لكنها لا تصل الحرف التالي يسارًا. لذلك لا نضع فراغًا بين أجزاء الكلمة لمجرد انقطاع الخط. المسافة تفصل الكلمات، أما قواعد الاتصال فتحدد شكل الحروف داخل الكلمة. لا يحتاج الطفل إلى حفظ اصطلاحات الحاسوب لفهم هذا الفرق."
+            ],
+            "en": [
+              "Arabic letters share a writing path, rather like people holding hands. The forms ب, بـ, ـبـ and ـب are connected forms of one letter, not four new letters. In بَاب, the first baa joins the alif, but the alif does not carry the connection onward to the final baa. That small break does not make a second word.",
+              "The letters ا, د, ذ, ر, ز and و can receive a connection from the preceding letter when permitted, but do not join the following letter on their left. Do not insert a word space every time the pen connection stops. Spaces separate words; joining rules shape letters within a word. Look at a real example before trying to memorise all the rules."
+            ],
+            "tr": [
+              "Arapça harfler, el ele tutuşan kişiler gibi ortak bir yazı çizgisi paylaşabilir. ب, بـ, ـبـ ve ـب dört ayrı harf değil, aynı harfin bağlantı biçimleridir. بَاب kelimesinde ilk bâ, elife bağlanır; elif son bâya bağlantı uzatmaz. Bu küçük kopukluk ikinci bir kelime oluşturmaz.",
+              "ا، د، ذ، ر، ز، و harfleri uygun durumda önceki harfe bağlanabilir; ancak solundaki sonraki harfe bağlanmaz. Çizgi koptu diye kelimenin içine boşluk koyma. Boşluk kelimeleri ayırır; bağlantı kuralları kelime içindeki biçimleri belirler. Kuralı ezberlemeden önce gerçek bir kelimede gözlemle."
+            ]
+          }
+        },
+        {
+          "id": "foundations-3",
+          "titles": {
+            "ar": "الألف والهمزة والمعنى",
+            "en": "Alif, hamza and meaning",
+            "tr": "Elif, hemze ve anlam"
+          },
+          "prose": {
+            "ar": [
+              "في بَاب تعمل الألف على كتابة المد /aː/. في أَخ تبدأ الكلمة بهمزة /ʔ/ تحملها الألف؛ الهمزة صوت صامت مختلف عن المد. قد تظهر الهمزة على صور ء، أ، إ، ؤ، ئ بحسب قواعد الرسم. لا تجعل شكل الحامل سببًا لقراءة كل هذه الكلمات بالصوت نفسه.",
+              "تعلّم كلمة ذات معنى مع كل خطوة: الباب شيء نفتح منه ونغلقه، والكتاب صفحات نقرأها، والقلم أداة نكتب بها. ثم غيّر ترتيب الكلمات وارجع إليها بعد استراحة قصيرة. إذا كنت تعرف مكان الكلمة في البطاقة فقط، فذلك لم يصبح قراءة مستقلة بعد."
+            ],
+            "en": [
+              "In بَاب, alif writes the long vowel /aː/. In أَخ, the word starts with hamza /ʔ/, carried on an alif. Hamza is a consonant, not a long vowel. It can be written as ء, أ, إ, ؤ or ئ under spelling rules. The carrier shape does not make all of these the same sound as vowel alif.",
+              "Attach meaning to each step. A door can be opened; a book contains pages to read; a pen is used to write. Change the order of the cards and revisit them after a short break. Recognising where a card sat in a row is useful memory work, but independent reading means recognising its written information wherever it appears."
+            ],
+            "tr": [
+              "بَاب içinde elif uzun /aː/ ünlüsünü gösterir. أَخ kelimesi ise elifin taşıdığı /ʔ/ hemze sesiyle başlar. Hemze ünsüzdür; uzun ünlü değildir. Yazım kurallarına göre ء، أ، إ، ؤ، ئ biçimlerinde görülebilir. Taşıyıcının biçimi, sesi otomatik olarak elifin uzun ünlüsüne dönüştürmez.",
+              "Her adımı anlamla birleştir: kapı açılır, kitap okunacak sayfalar içerir, kalem yazmaya yarar. Kartların yerini değiştir ve kısa bir aradan sonra tekrar dön. Yalnızca kartın sırasını hatırlamak yeterli değildir; bağımsız okuma, yazılı kelimeyi farklı yerde de tanımaktır."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meanings": {
+            "ar": "مدخل يُفتح ويُغلق",
+            "en": "door",
+            "tr": "kapı"
+          },
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meanings": {
+            "ar": "صفحات مجتمعة للقراءة",
+            "en": "book",
+            "tr": "kitap"
+          },
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meanings": {
+            "ar": "أداة للكتابة",
+            "en": "pen",
+            "tr": "kalem"
+          },
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meanings": {
+            "ar": "أخ في الأسرة",
+            "en": "brother",
+            "tr": "erkek kardeş"
+          },
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meanings": {
+            "ar": "مكان للسكن",
+            "en": "house / home",
+            "tr": "ev"
+          },
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meanings": {
+            "ar": "ضوء",
+            "en": "light",
+            "tr": "ışık"
+          },
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "هل انقطاع الاتصال داخل بَاب يعني وجود كلمتين؟ وهل اسم الباء هو القراءة الكاملة لبَاب؟",
+          "en": "Does the joining break inside بَاب create two words? Is the letter name baa the full reading of بَاب?",
+          "tr": "بَاب içindeki bağlantı kopukluğu iki kelime mi oluşturur? Bâ harfinin adı, بَاب kelimesinin tamamının okunuşu mudur?"
+        },
+        "answers": {
+          "ar": "لا في الحالتين. بَاب كلمة واحدة؛ الألف لا تصل ما يليها. اسم باء يسمّي حرفًا، أما /baːb/ فيقرأ أصوات الكلمة بالترتيب.",
+          "en": "No to both. بَاب is one word: alif does not join onward. Baa names a letter; /baːb/ reads the ordered sounds of the word.",
+          "tr": "İkisi de hayır. بَاب tek kelimedir; elif sonraki harfe bağlanmaz. Bâ bir harfin adıdır; /baːb/ kelimenin seslerini sırasıyla okur."
+        }
+      },
+      "source_ids": [
+        "unicode",
+        "openlearn",
+        "ipa"
+      ],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "titles": {
+        "ar": "الحركات: العلامة الصغيرة تغيّر القراءة",
+        "en": "Vowel marks: small signs change the reading",
+        "tr": "Harekeler: küçük işaretler okunuşu değiştirir"
+      },
+      "sections": [
+        {
+          "id": "phonics-1",
+          "titles": {
+            "ar": "الحركة ليست نقطة",
+            "en": "A vowel mark is not a dot",
+            "tr": "Hareke, nokta değildir"
+          },
+          "prose": {
+            "ar": [
+              "ضع بَ وبُ وبِ بجانب بعضها. الحرف في الثلاثة باء؛ الفتحة تعطي حركة /a/ قصيرة، والضمة /u/، والكسرة /i/. تختلف طريقة فتح الفم ووضع اللسان والشفتين باختلاف الحركة. لا تطلب من المتعلم رفع صوته ليصنع فتحة أو ضمة؛ علو الصوت ليس نوع الحركة.",
+              "في بِ توجد نقطة الباء والكسرة في منطقة متقاربة تحت الحرف. النقطة جزء من تمييز هوية الباء، والكسرة علامة قراءة. يمكنك تغيير الحركة مع بقاء الباء نفسها. اللون في هذا الكتاب يساعد على فصل الوظيفتين، لكن أسماء العلامات وأشكالها تبقى واضحة في الطباعة دون ألوان."
+            ],
+            "en": [
+              "Put بَ, بُ and بِ side by side. All three use baa. Fatḥa indicates short /a/, ḍamma short /u/, and kasra short /i/. The mouth, tongue and lips adjust for different vowels. Raising the volume is not a way to turn one vowel into another.",
+              "In بِ, the dot of baa and the kasra occupy nearby space below the letter. The dot identifies the letter; the kasra guides its reading. Change the vowel mark and baa remains baa. Colour helps separate these jobs in this book, but shape and labels must remain understandable in black-and-white printing too."
+            ],
+            "tr": [
+              "بَ, بُ ve بِ örneklerini yan yana koy. Üçünde de bâ vardır. Üstün kısa /a/, ötre kısa /u/, esre kısa /i/ ünlüsünü gösterir. Ünlüye göre ağız, dil ve dudakların duruşu değişir. Sesi yükseltmek, bir ünlüyü başka bir ünlüye dönüştürmez.",
+              "بِ içinde bânın noktası ile esre birbirine yakın görünür. Nokta harfin kimliğini, esre okunuşunu belirtir. Hareke değişse de bâ aynı harftir. Renk bu görevleri ayırt etmeye yardım eder; siyah beyaz baskıda da biçim ve açıklamalar anlaşılır olmalıdır."
+            ]
+          }
+        },
+        {
+          "id": "phonics-2",
+          "titles": {
+            "ar": "الطول لا ارتفاع الصوت",
+            "en": "Length, not loudness",
+            "tr": "Uzunluk, ses yüksekliği değildir"
+          },
+          "prose": {
+            "ar": [
+              "قارن بَ مع بَا، وبُ مع بُو، وبِ مع بِي. في كل زوج يطول صوت الحركة، ولا تصبح الباء حرفًا مختلفًا. علامة ː في /baː/ تعني طول الحركة السابقة. ليست نقطتين نكتبهما في الكلمة العربية، ولا وعدًا بمدة زمنية واحدة لكل متحدث أو موقف.",
+              "الألف والواو والياء لا تعمل مدًا في كل ظهور. و في وَلَد صوت /w/، وي في يَد صوت /j/. أما الواو في نُور فهي جزء من المد /uː/، والياء في فِيل من /iː/. اقرأ العلامة وما حولها؛ اسم الحرف وحده لا يحدد وظيفته في الكلمة."
+            ],
+            "en": [
+              "Compare بَ with بَا, بُ with بُو, and بِ with بِي. The vowel lasts longer in the second item of each pair; baa does not change into a different consonant. In /baː/, ː marks the length of the preceding vowel. It is not an extra Arabic letter, nor a fixed stopwatch duration for every speaker.",
+              "Alif, waw and yaa do not act as long vowels every time they appear. Waw in وَلَد is /w/, and yaa in يَد is /j/. Waw in نُور helps write /uː/, and yaa in فِيل helps write /iː/. Read the local pattern rather than guessing a letter’s job from its name alone."
+            ],
+            "tr": [
+              "بَ ile بَا, بُ ile بُو, بِ ile بِي örneklerini karşılaştır. Her çiftin ikincisinde ünlü uzar; bâ başka bir ünsüze dönüşmez. /baː/ içindeki ː, önceki ünlünün uzunluğunu gösterir. Arapça kelimeye eklenen bir harf ya da her konuşmada aynı saniye süresi değildir.",
+              "Elif, vav ve yâ her görüldüğünde uzun ünlü değildir. وَلَد içindeki vav /w/, يَد içindeki yâ /j/ ünsüzüdür. نُور içindeki vav /uː/, فِيل içindeki yâ /iː/ uzun ünlüsünün yazımına katılır. Harfin işlevini yalnızca adına bakarak tahmin etme; çevresindeki yapıyı oku."
+            ]
+          }
+        },
+        {
+          "id": "phonics-3",
+          "titles": {
+            "ar": "السكون والشدة والتنوين",
+            "en": "Sukūn, shadda and tanwīn",
+            "tr": "Cezim, şedde ve tenvin"
+          },
+          "prose": {
+            "ar": [
+              "السكون في بِنْت يذكّرك بألا تضيف حركة بعد النون في هذا البناء. لا يعني حذف صوت النون. الشدة في أُمّ تعني صامتًا مضاعفًا؛ ليست مدًا للحركة قبله. عند التدريب قارن أَمْ بصوت /ʔam/، وأُمّ بصوت /ʔumm/، مع ملاحظة اختلاف الحركة أيضًا؛ ولعزل الشدة وحدها نستخدم مقاطع تدريب معلّمة بأنها ليست كلمات بالضرورة.",
+              "التنوين في كِتَابٌ علامة مرتبطة بنهاية الاسم في سياق نحوي. في قراءة الوصل المناسبة نسمع نهاية /un/، وعند الوقف المعتاد على هذه الكلمة نقرأ /kitaːb/. لا نجعل هذا الاختصار قاعدة لكل النهايات، ولا نحذف التنوين من الرسم. فرّق بين كيف كُتبت الكلمة وكيف نقرأها عند التوقف."
+            ],
+            "en": [
+              "Sukūn in بِنْت reminds you not to add a vowel after noon in this pattern. It does not erase the /n/. Shadda in أُمّ indicates a doubled consonant, not a longer preceding vowel. أَمْ /ʔam/ and أُمّ /ʔumm/ differ in vowel as well as consonant length, so they are not a one-variable minimal pair. Use clearly labelled practice syllables when isolating just one feature.",
+              "Tanwīn in كِتَابٌ belongs to the noun ending in a grammatical context. Appropriate connected reading includes /un/; ordinary pause on this word gives /kitaːb/. That example is not a universal rule for every ending. Keep the written mark while explaining the difference between connected reading and pause."
+            ],
+            "tr": [
+              "بِنْت içindeki cezim, bu yapıda nûndan sonra ünlü eklememeyi hatırlatır; /n/ sesini silmez. أُمّ içindeki şedde, önceki ünlünün uzamasını değil ünsüzün iki katlı oluşunu gösterir. أَمْ /ʔam/ ile أُمّ /ʔumm/ hem ünlü hem ünsüz uzunluğu bakımından farklıdır. Yalnızca tek özelliği karşılaştırmak için kelime olduğu iddia edilmeyen alıştırma heceleri kullan.",
+              "كِتَابٌ içindeki tenvin, ismin dilbilgisel sonuna aittir. Uygun bağlantılı okumada /un/ duyulur; bu kelimede olağan durak okuması /kitaːb/ olur. Bu örnek her son ek için genel kural değildir. Yazıdaki işareti koruyarak bağlantılı okuma ile durak arasındaki farkı açıkla."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meanings": {
+            "ar": "طفلة أو ابنة بحسب السياق",
+            "en": "girl / daughter",
+            "tr": "kız / kız evlat"
+          },
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meanings": {
+            "ar": "حيوان كبير له خرطوم",
+            "en": "elephant",
+            "tr": "fil"
+          },
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meanings": {
+            "ar": "صبي في هذا المثال",
+            "en": "boy",
+            "tr": "erkek çocuk"
+          },
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meanings": {
+            "ar": "جزء الجسم الذي نمسك به الأشياء",
+            "en": "hand",
+            "tr": "el"
+          },
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meanings": {
+            "ar": "الأم في الأسرة",
+            "en": "mother",
+            "tr": "anne"
+          },
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meanings": {
+            "ar": "ضوء",
+            "en": "light",
+            "tr": "ışık"
+          },
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "في نُور، هل الواو صوت /w/ هنا؟ وفي بِنْت، هل السكون يحذف النون؟",
+          "en": "Does waw represent /w/ in نُور here? Does sukūn remove noon in بِنْت?",
+          "tr": "نُور içinde vav burada /w/ midir? بِنْت içindeki cezim nûnu siler mi?"
+        },
+        "answers": {
+          "ar": "لا. الواو في نُور تكتب مد /uː/، والنون في بِنْت تُنطق دون حركة بعدها في هذا البناء.",
+          "en": "No. Waw in نُور writes the long vowel /uː/. Noon in بِنْت is pronounced without an added vowel after it in this pattern.",
+          "tr": "Hayır. نُور içindeki vav uzun /uː/ ünlüsünü yazar. بِنْت içindeki nûn okunur; bu yapıda ardından ünlü eklenmez."
+        }
+      },
+      "source_ids": [
+        "ipa"
+      ],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "titles": {
+        "ar": "الدمج الثنائي: تركيب القراءة الأولى",
+        "en": "Two-unit blending: building the first reading",
+        "tr": "İkili birleştirme: ilk okunuşu kurmak"
+      },
+      "sections": [
+        {
+          "id": "blending2-1",
+          "titles": {
+            "ar": "ماذا ندمج؟",
+            "en": "What are we blending?",
+            "tr": "Neyi birleştiriyoruz?"
+          },
+          "prose": {
+            "ar": [
+              "في تسمية الكراسة، الدمج الثنائي مرحلة تدريب على تركيب وحدتين كتابيتين. عدد الحروف ليس دائمًا عدد الأصوات أو المقاطع: بَا فيه باء وألف، ولكنه صامت مع حركة طويلة. لا نسمّيه «حرفين صامتين» أو كلمة كاملة ذات معنى مستقل. نقرأ البناء ونوضح وظيفة كل جزء.",
+              "ابدأ بَ، ثم بَا، ثم تَا، ثم ثَا. في المقارنة الأولى غيّر طول الحركة، وفي المقارنة الثانية غيّر الصامت مع تثبيت المد. أعط المتعلم وقتًا لينظر ثم يقرأ، ولا تكرر أسماء الحروف مكان الصوت الذي نريد دمجه."
+            ],
+            "en": [
+              "In the workbook, two-unit blending names a practice stage involving two written units. Letter count does not always equal sound count or syllable count. بَا contains baa and alif but represents a consonant followed by a long vowel. It is not two consonants, and the isolated practice item need not be a meaningful word.",
+              "Start with بَ, then بَا, then تَا and ثَا. The first comparison changes vowel length; the next changes the consonant while holding the long vowel constant. Give the learner time to look and then read. Repeating letter names instead of the required sounds makes blending harder to understand."
+            ],
+            "tr": [
+              "Karesede ikili birleştirme, iki yazılı birimi birleştirme alıştırmasının adıdır. Harf sayısı her zaman ses ya da hece sayısıyla aynı değildir. بَا, bâ ve elif içerir; bir ünsüz ile uzun ünlüyü gösterir. İki ünsüz değildir ve tek başına anlamlı kelime olmak zorunda değildir.",
+              "بَ ile başla; sonra بَا, تَا ve ثَا oku. İlk karşılaştırmada ünlü uzunluğu değişir. Sonrakinde uzun ünlü korunurken ünsüz değişir. Öğrenciye bakmak ve okumak için süre tanı. İstenen sesler yerine harf adlarını tekrarlamak birleştirmeyi zorlaştırır."
+            ]
+          }
+        },
+        {
+          "id": "blending2-2",
+          "titles": {
+            "ar": "مقطع مفتوح ومقطع مغلق",
+            "en": "Open and closed syllables",
+            "tr": "Açık ve kapalı heceler"
+          },
+          "prose": {
+            "ar": [
+              "بَا ينتهي بحركة، ولذلك هو مقطع مفتوح في هذا العرض. بَرْ ينتهي بصامت، ولذلك هو مغلق. كلمة «مغلق» لا تعني أن فمك يبقى مقفولًا طوال القراءة؛ إنها وصف لنهاية المقطع. جرّب قراءة بَرْ دون إضافة حركة بعد الراء. إذا قرأت بَرَ فقد غيّرت البناء.",
+              "استعمل الإصبع لتتبع المكتوب، ثم أزل المساعدة بالتدرج. لا تجعل تتبع الإصبع دليلًا على النطق الصحيح؛ هو وسيلة لحفظ المكان فقط. بعد قراءة مقطع مألوف، اعرض مقطعًا جديدًا يطبق القاعدة نفسها. هذه خطوة لنقل التعلم من الحفظ إلى الفهم."
+            ],
+            "en": [
+              "بَا ends in a vowel and is an open syllable here. بَرْ ends in a consonant and is closed. “Closed” describes the syllable ending; it does not mean keeping your mouth shut through the whole utterance. Read بَرْ without adding a final vowel. Reading بَرَ changes the structure.",
+              "Use a finger to keep your place, then gradually remove that help. Pointing is a tracking aid, not proof of accurate pronunciation. After a familiar syllable, introduce a new one governed by the same pattern. That checks whether the learner can transfer the rule beyond a memorised card."
+            ],
+            "tr": [
+              "بَا bir ünlüyle bittiği için burada açık hecedir. بَرْ bir ünsüzle bittiği için kapalıdır. “Kapalı”, okurken ağzın sürekli kapalı kalması anlamına gelmez; hecenin sonunu tanımlar. بَرْ okurken râdan sonra ünlü ekleme. بَرَ okumak yapıyı değiştirir.",
+              "Yerini takip etmek için parmağını kullan; sonra bu yardımı azalt. Parmakla takip, doğru telaffuzun kanıtı değildir. Tanıdık bir heceden sonra aynı kurala uyan yeni bir hece göster. Böylece kartı ezberlemek yerine kuralı başka örneğe taşıyıp taşımadığını görürsün."
+            ]
+          }
+        },
+        {
+          "id": "blending2-3",
+          "titles": {
+            "ar": "من الجزء إلى الكلمة",
+            "en": "From a part to a word",
+            "tr": "Parçadan kelimeye"
+          },
+          "prose": {
+            "ar": [
+              "بَا جزء من بَاب، وبِي جزء من بناء بِيض في القراءة المعروضة. لا نبحث عن معنى مستقل لكل مقطع. نسأل عن معنى الكلمة كاملة بعد جمع أصواتها. بهذا لا يصبح الدمج لعبة سرعة فارغة؛ له غرض هو الوصول إلى نص يفهمه المتعلم.",
+              "إذا أخطأ المتعلم، اسأله أولًا: أين تغيّر البناء؟ هل أبدل الحرف أم الحركة أم الطول أم أضاف صوتًا؟ وصف المشكلة المحددة أدق من قول «أعد كل شيء». وقد تظهر أكثر من مشكلة؛ ابدأ بواحدة قابلة للإصلاح ثم انتقل إلى التالية."
+            ],
+            "en": [
+              "بَا is part of بَاب. بِي is part of the displayed reading of بِيض. Not every syllable needs an independent dictionary meaning. Blend first, then ask what the whole word means. This gives the activity a purpose beyond reading quickly.",
+              "When something goes wrong, identify the change: consonant, vowel quality, length or an added sound. Naming a specific problem is more useful than asking the learner to start everything over. If several features are difficult, practise one manageable feature before combining them again."
+            ],
+            "tr": [
+              "بَا, بَاب kelimesinin bir parçasıdır. بِي, gösterilen بِيض okunuşunun bir parçasıdır. Her hecenin ayrı sözlük anlamı olması gerekmez. Önce sesleri birleştir, sonra bütün kelimenin anlamını sor. Alıştırmanın amacı yalnızca hızlı okumak değildir.",
+              "Yanlış okuma olduğunda değişen şeyi belirle: ünsüz mü, ünlü türü mü, uzunluk mu, eklenen ses mi? Belirli sorunu adlandırmak, her şeyi baştan yaptırmaktan yararlıdır. Birkaç özellik zor geliyorsa önce tek bir özelliği çalış, sonra yeniden birleştir."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meanings": {
+            "ar": "مقطع للتدريب؛ ليس كلمة هنا",
+            "en": "practice syllable; not a word here",
+            "tr": "alıştırma hecesi; burada kelime değildir"
+          },
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meanings": {
+            "ar": "مقطع للتدريب",
+            "en": "practice syllable",
+            "tr": "alıştırma hecesi"
+          },
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meanings": {
+            "ar": "مقطع للتدريب",
+            "en": "practice syllable",
+            "tr": "alıştırma hecesi"
+          },
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meanings": {
+            "ar": "مقطع للتدريب في هذا المثال",
+            "en": "practice syllable in this example",
+            "tr": "bu örnekte alıştırma hecesi"
+          },
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meanings": {
+            "ar": "مدخل",
+            "en": "door",
+            "tr": "kapı"
+          },
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meanings": {
+            "ar": "جمع بيضة في هذا المثال",
+            "en": "eggs",
+            "tr": "yumurtalar"
+          },
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "لماذا لا تكون بَا وبَرْ نوع المقطع نفسه؟",
+          "en": "Why are بَا and بَرْ not the same syllable type?",
+          "tr": "بَا ile بَرْ neden aynı hece türü değildir?"
+        },
+        "answers": {
+          "ar": "بَا ينتهي بحركة طويلة؛ بَرْ ينتهي بصامت. القاعدة تصف نهاية القراءة، لا عدد النقاط أو ارتفاع الصوت.",
+          "en": "بَا ends in a long vowel; بَرْ ends in a consonant. The distinction describes their endings, not dot count or loudness.",
+          "tr": "بَا uzun ünlüyle, بَرْ ünsüzle biter. Ayrım, nokta sayısını ya da ses yüksekliğini değil hece sonunu açıklar."
+        }
+      },
+      "source_ids": [
+        "ipa"
+      ],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "titles": {
+        "ar": "الدمج الثلاثي: من الحروف إلى وحدات مفهومة",
+        "en": "Three-unit blending: reading meaningful units",
+        "tr": "Üçlü birleştirme: anlamlı birimleri okumak"
+      },
+      "sections": [
+        {
+          "id": "blending3-1",
+          "titles": {
+            "ar": "ثلاثة حروف، لكن كم مقطعًا؟",
+            "en": "Three letters, but how many syllables?",
+            "tr": "Üç harf, ama kaç hece?"
+          },
+          "prose": {
+            "ar": [
+              "بَاب وجَبَل فيهما ثلاثة حروف أساسية، لكن قراءة الوقف المختارة لبَاب /baːb/ مقطع واحد، وقراءة جَبَل /dʒa.bal/ مقطعان. النقطة في هذا الرمز تحدد حدًا بين المقاطع ولا تعني نقطة في حرف الجيم. لا يمكن معرفة عدد المقاطع بعدّ الحروف وحده.",
+              "اكتب الحروف، وضع الحركات، ثم اسأل عن البناء الصوتي. في جَبَل نبدأ جَ، ثم بَلْ عند الوقف؛ نجمعهما دون قفزة تحذف الباء أو تضيف صوتًا بين الأجزاء. التقسيم مساعدة مؤقتة، وليس طريقة نقطع بها كل كلامنا المعتاد."
+            ],
+            "en": [
+              "بَاب and جَبَل each contain three basic letters. In the chosen pause readings, /baːb/ has one syllable, while /dʒa.bal/ has two. The dot in this phonetic display marks a syllable boundary; it is not the written dot of jeem. Counting letters alone cannot tell you the syllable count.",
+              "Write the letters and their marks, then examine the sound pattern. For جَبَل, begin with جَ and finish with بَلْ in the pause reading. Bring them together without dropping baa or inserting an extra sound. Breaking a word into parts is temporary help, not the way every ordinary sentence should be spoken."
+            ],
+            "tr": [
+              "بَاب ve جَبَل üçer temel harf içerir. Seçilen durak okunuşunda /baːb/ tek hece, /dʒa.bal/ iki hecedir. Ses gösterimindeki nokta hece sınırını belirtir; cîmin yazıdaki noktası değildir. Yalnızca harfleri sayarak hece sayısını bulamazsın.",
+              "Harfleri harekeleriyle yaz ve ses yapısını incele. جَبَل için جَ ile başla, durak okumasında بَلْ ile bitir. Bâyı atlamadan veya araya başka ses koymadan birleştir. Parçalara ayırmak geçici yardımdır; normal konuşmadaki her kelimeyi böyle kesmeyiz."
+            ]
+          }
+        },
+        {
+          "id": "blending3-2",
+          "titles": {
+            "ar": "ترتيب الحروف يحمل المعنى",
+            "en": "Letter order carries meaning",
+            "tr": "Harf sırası anlam taşır"
+          },
+          "prose": {
+            "ar": [
+              "قَلْب عضو في الجسم، وكَلْب حيوان. هنا يتغير حرف واحد، القاف أو الكاف، فيتغير المعنى. بَحْر مساحة ماء، وحَبْر مادة للكتابة؛ تغير الترتيب والحركة أيضًا في هذا المثال. لا نصفه بأنه مقارنة تغير فيها عامل واحد فقط. نقرأ التفاصيل بدل تخمين الكلمة من صورة مألوفة.",
+              "اختر كلمات يمكن شرحها بصورة أو شيء حقيقي. بعد القراءة اسأل سؤالًا بسيطًا: هل نستعمل الحبر للكتابة أم للسباحة؟ المعنى يساعد على اكتشاف التخمين، لكنه لا يغني عن فحص الحروف. إذا ظهرت كلمة جديدة، نوضح معناها بدل لوم المتعلم لأنه لا يعرفها."
+            ],
+            "en": [
+              "قَلْب means heart; كَلْب means dog. Changing qaf to kaf changes the meaning. بَحْر means sea, and حَبْر means ink; that comparison changes order and vowels, so it is not a single-feature minimal pair. Look at the written details rather than guessing from a familiar picture.",
+              "Choose words whose meaning can be demonstrated. After reading, ask whether ink is used for writing or swimming. Meaning can reveal a guess, but it does not replace looking at the letters. Explain a new word’s meaning instead of treating unfamiliar vocabulary as a reading failure."
+            ],
+            "tr": [
+              "قَلْب kalp, كَلْب köpek demektir. Kâf ile kāf arasındaki değişiklik anlamı değiştirir. بَحْر deniz, حَبْر mürekkeptir; bu örnekte sıra ve ünlüler de değişir. Yalnızca tek özelliği değiştiren bir karşılaştırma değildir. Tanıdık resimden tahmin etmek yerine yazılı ayrıntılara bak.",
+              "Anlamı gösterilebilen kelimeler seç. Okuduktan sonra mürekkebin yazmak için mi yüzmek için mi kullanıldığını sor. Anlam, tahmini fark ettirebilir; ancak harflere bakmanın yerini tutmaz. Yeni kelimeyi bilmemek, tek başına okuma başarısızlığı değildir."
+            ]
+          }
+        },
+        {
+          "id": "blending3-3",
+          "titles": {
+            "ar": "قراءة متأنية ثم طلاقة",
+            "en": "Careful reading before fluency",
+            "tr": "Önce dikkatli okuma, sonra akıcılık"
+          },
+          "prose": {
+            "ar": [
+              "اقرأ ثلاث كلمات دون سباق. ضع علامة عند كلمة تحتاج إلى عودة، ثم جرّبها بعد مثال أسهل. الطلاقة ليست عدد كلمات في الدقيقة وحده؛ تشمل قراءة مناسبة وفهمًا وتصحيحًا عند الحاجة. لا نطلب من الطفل أن يخفي التردد بالتخمين.",
+              "مهمة انتقال: بعد جَبَل اقرأ جَمَل. تغير الباء إلى ميم مع بقاء بناء مألوف. ناقش الفرق في المعنى: الجبل ارتفاع من الأرض، والجمل حيوان. ثم اطلب كلمة جديدة بالحروف التي تعرفها، دون افتراض أن كل ترتيب ينتج كلمة عربية صحيحة."
+            ],
+            "en": [
+              "Read three words without a race. Mark one that needs a return visit and try it after an easier example. Fluency includes appropriate reading, comprehension and repair, not only a count of words per minute. Do not encourage a child to hide hesitation by guessing.",
+              "For transfer, follow جَبَل with جَمَل. Baa changes to meem within a familiar pattern. A mountain is raised land; a camel is an animal. Ask for another real word using known letters, but explain that not every possible arrangement forms an Arabic word."
+            ],
+            "tr": [
+              "Üç kelimeyi yarışmadan oku. Tekrar çalışılması gerekeni işaretle ve daha kolay bir örnekten sonra dön. Akıcılık yalnızca dakikadaki kelime sayısı değildir; uygun okuma, anlama ve gerektiğinde düzeltmeyi de içerir. Tereddüdü tahminle gizlemeyi teşvik etme.",
+              "جَبَل ardından جَمَل oku. Tanıdık yapıda bâ, mîme dönüşür. İlki dağ, ikincisi devedir. Bilinen harflerden başka gerçek bir kelime bulmayı dene; fakat her harf sıralamasının Arapça kelime oluşturmadığını açıkla."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meanings": {
+            "ar": "ارتفاع كبير من الأرض",
+            "en": "mountain",
+            "tr": "dağ"
+          },
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meanings": {
+            "ar": "حيوان ذو سنام",
+            "en": "camel",
+            "tr": "deve"
+          },
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meanings": {
+            "ar": "عضو يضخ الدم",
+            "en": "heart",
+            "tr": "kalp"
+          },
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meanings": {
+            "ar": "حيوان",
+            "en": "dog",
+            "tr": "köpek"
+          },
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meanings": {
+            "ar": "ماء مالح واسع",
+            "en": "sea",
+            "tr": "deniz"
+          },
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meanings": {
+            "ar": "مادة نستعملها للكتابة",
+            "en": "ink",
+            "tr": "mürekkep"
+          },
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "ما الحرف الذي تغيّر من جَبَل إلى جَمَل؟ وهل بَاب وجَبَل لهما عدد المقاطع نفسه؟",
+          "en": "Which letter changes from جَبَل to جَمَل? Do بَاب and جَبَل have the same number of syllables?",
+          "tr": "جَبَل ile جَمَل arasında hangi harf değişir? بَاب ile جَبَل aynı sayıda heceye mi sahiptir?"
+        },
+        "answers": {
+          "ar": "الباء أصبحت ميمًا. بَاب مقطع واحد في قراءة الوقف المعروضة، وجَبَل مقطعان؛ عدد الحروف وحده لا يكفي.",
+          "en": "Baa becomes meem. بَاب is one syllable in the displayed pause reading; جَبَل has two. Letter count alone is insufficient.",
+          "tr": "Bâ, mîme dönüşür. Gösterilen durak okumasında بَاب tek, جَبَل iki hecedir. Yalnızca harf sayısı yeterli değildir."
+        }
+      },
+      "source_ids": [
+        "ipa"
+      ],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "titles": {
+        "ar": "الدمج الرباعي: قراءة أطول دون إرهاق",
+        "en": "Four-unit blending: longer reading without overload",
+        "tr": "Dörtlü birleştirme: zorlanmadan daha uzun okuma"
+      },
+      "sections": [
+        {
+          "id": "blending4-1",
+          "titles": {
+            "ar": "الأطول ليس أصعب دائمًا",
+            "en": "Longer is not always harder",
+            "tr": "Daha uzun her zaman daha zor değildir"
+          },
+          "prose": {
+            "ar": [
+              "كِتَاب كلمة من أربعة حروف أساسية. نقرأها هنا /ki.taːb/ عند الوقف: مقطع قصير ثم مقطع فيه مد وينتهي بباء. أعد استخدام المهارة التي تعلمتها في بَاب بدل التعامل مع كل حرف كأنه جديد. طول الكلمة المكتوبة ليس وحده مقياس صعوبة القراءة.",
+              "ثَوْب فيه واو لكنها ليست مد /uː/ في هذه القراءة؛ التسلسل /aw/ مختلف. وبَيْت فيه /aj/ لا مد /iː/. يعود نجاحك إلى فحص الحركة والبناء، لا إلى قاعدة «كل واو تُقرأ وو وكل ياء تُقرأ يي». خذ مثالًا واحدًا حتى يستقر قبل إضافة مقابلة أخرى."
+            ],
+            "en": [
+              "كِتَاب has four basic letters. The pause reading /ki.taːb/ contains a short first syllable followed by a syllable with a long vowel and final baa. Reuse what you learned in بَاب instead of treating each part as entirely new. Written length alone does not measure reading difficulty.",
+              "Waw in ثَوْب does not write /uː/ in this reading: /aw/ is a different sequence. بَيْت contains /aj/, not /iː/. Success comes from examining vowel and structure, not from a rule that every waw is “oo” and every yaa is “ee”. Stabilise one example before adding another contrast."
+            ],
+            "tr": [
+              "كِتَاب dört temel harften oluşur. Durak okuması /ki.taːb/, kısa ilk hece ve uzun ünlüyle son bâ içeren ikinci heceden oluşur. بَاب içinde öğrendiğin beceriyi yeniden kullan; her parçayı tamamen yeni sayma. Yazılı uzunluk tek başına okuma zorluğunu belirlemez.",
+              "ثَوْب içindeki vav burada /uː/ değildir; /aw/ farklı bir dizidir. بَيْت içinde /iː/ değil /aj/ vardır. Her vavı “u”, her yâyı “i” saymak yerine harekeye ve yapıya bak. Yeni karşılaştırma eklemeden önce tek örneği sağlamlaştır."
+            ]
+          }
+        },
+        {
+          "id": "blending4-2",
+          "titles": {
+            "ar": "الجملة تضيف علاقات",
+            "en": "A sentence adds relationships",
+            "tr": "Cümle ilişkiler ekler"
+          },
+          "prose": {
+            "ar": [
+              "هَذَا كِتَابٌ جملة تعريف بشيء قريب في الموقف. هَذِهِ حَقِيبَةٌ تستعمل صيغة المؤنث مع حقيبة. لا يكفي أن نستبدل الاسم ونترك كل ما حوله من غير فحص. نسأل: إلى ماذا نشير؟ وما الصيغة المناسبة للكلمات المرتبطة به؟",
+              "في الكِتَابُ جَدِيدٌ نتحدث عن الكتاب بأنه جديد. وفي الكِتَابُ الجَدِيدُ نحدد كتابًا بوصفه الجديد؛ هذه العبارة وحدها لا تقدم الخبر نفسه. إضافة «الـ» ليست زينة بصرية؛ قد تغيّر علاقة الكلمات في البناء. لا نحتاج إلى اصطلاحات كثيرة كي نلاحظ الفرق في موقف واضح."
+            ],
+            "en": [
+              "هَذَا كِتَابٌ identifies a nearby object: “This is a book.” هَذِهِ حَقِيبَةٌ uses the feminine demonstrative with “bag”. Replacing a noun may require checking related words, not merely swapping one label. Ask what is being pointed to and which forms fit it.",
+              "الكِتَابُ جَدِيدٌ says “The book is new.” الكِتَابُ الجَدِيدُ identifies “the new book”; that phrase alone does not state the same complete message. The article is not a decorative prefix. A simple situation can demonstrate a grammatical relationship before technical terminology is introduced."
+            ],
+            "tr": [
+              "هَذَا كِتَابٌ, “Bu bir kitaptır” diyerek yakındaki nesneyi tanıtır. هَذِهِ حَقِيبَةٌ, çanta için dişil işaret sözcüğü kullanır. İsmi değiştirdiğinde ilişkili sözcükleri de kontrol et; tek etiketi değiştirmek yeterli olmayabilir.",
+              "الكِتَابُ جَدِيدٌ, “Kitap yenidir” der. الكِتَابُ الجَدِيدُ ise “yeni kitap” ifadesidir; tek başına aynı tamamlanmış yargıyı vermez. Belirlilik takısı süs değildir. Dilbilgisi terimlerinden önce basit bir durumda iki ilişkiyi karşılaştırabiliriz."
+            ]
+          }
+        },
+        {
+          "id": "blending4-3",
+          "titles": {
+            "ar": "نقل المهارة إلى نص جديد",
+            "en": "Transferring a skill to new text",
+            "tr": "Beceriyi yeni metne taşımak"
+          },
+          "prose": {
+            "ar": [
+              "اعرض كِتَاب، ثم كَاتِب. الحروف الأساسية متقاربة ولكن ترتيب الألف والحركات تغيّر؛ الأولى شيء نقرأه والثانية شخص يكتب. لا نجعل كل كلمتين من جذر قريب تحملان المعنى نفسه. هذه بداية ملاحظة عائلات الكلمات، لا جدولًا كاملًا للاشتقاق.",
+              "اقرأ سطرًا قصيرًا، ثم أخفِه واسأل عن المعنى العام. أعد السطر ليتحقق المتعلم من تفصيل واحد. هذا يفرق بين حفظ صوت الجملة وفهمها والقدرة على الرجوع إلى دليل مكتوب. ويقبل المتعلم طلب شرح كلمة جديدة؛ المرجع رفيق للتعلم وليس امتحانًا دائمًا."
+            ],
+            "en": [
+              "Compare كِتَاب and كَاتِب. Their basic consonants are related, but the alif position and vowels differ. The first is a book; the second a writer. Related roots do not make every word carry the same meaning. This introduces word families without pretending to teach all derivation at once.",
+              "Read a short line, hide it briefly and ask for the overall meaning. Restore it to check one detail. That separates sound memory, comprehension and returning to written evidence. Asking for help with a new word is part of learning; this reference should not feel like an endless examination."
+            ],
+            "tr": [
+              "كِتَاب ile كَاتِب karşılaştır. Temel ünsüzler ilişkilidir; elifin yeri ve ünlüler farklıdır. İlki kitap, ikincisi yazardır. Aynı kökle ilişkili olmak aynı anlamı taşımak değildir. Bu, bütün türetme sistemini bir anda öğretmeden kelime ailelerine giriş yapar.",
+              "Kısa bir satır oku, kısa süreliğine gizle ve genel anlamı sor. Sonra bir ayrıntıyı yazıdan kontrol et. Böylece sesleri hatırlamak, anlamak ve yazılı kanıta dönmek ayrılır. Yeni kelime için yardım istemek öğrenmenin parçasıdır; bu kaynak sürekli sınav gibi hissettirmemelidir."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meanings": {
+            "ar": "شيء نقرأ صفحاته",
+            "en": "book",
+            "tr": "kitap"
+          },
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meanings": {
+            "ar": "شخص يكتب",
+            "en": "writer",
+            "tr": "yazar"
+          },
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meanings": {
+            "ar": "وعاء نحمل فيه الأشياء",
+            "en": "bag",
+            "tr": "çanta"
+          },
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meanings": {
+            "ar": "أعرّف شيئًا بأنه كتاب",
+            "en": "This is a book.",
+            "tr": "Bu bir kitaptır."
+          }
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meanings": {
+            "ar": "أخبر أن الكتاب جديد",
+            "en": "The book is new.",
+            "tr": "Kitap yenidir."
+          }
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meanings": {
+            "ar": "أحدد الكتاب بوصف الجديد",
+            "en": "the new book",
+            "tr": "yeni kitap"
+          }
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "هل الكِتَابُ جَدِيدٌ والكِتَابُ الجَدِيدُ يحملان الرسالة نفسها وحدهما؟",
+          "en": "Do الكِتَابُ جَدِيدٌ and الكِتَابُ الجَدِيدُ communicate the same message on their own?",
+          "tr": "الكِتَابُ جَدِيدٌ ile الكِتَابُ الجَدِيدُ tek başlarına aynı mesajı mı verir?"
+        },
+        "answers": {
+          "ar": "لا. الأولى جملة تخبر أن الكتاب جديد؛ الثانية عبارة تحدد الكتاب الجديد ولا تقدم وحدها الخبر نفسه.",
+          "en": "No. The first states that the book is new; the second identifies the new book without making that same complete statement.",
+          "tr": "Hayır. İlki kitabın yeni olduğunu bildirir; ikincisi yeni kitabı belirtir, aynı tamamlanmış yargıyı tek başına vermez."
+        }
+      },
+      "source_ids": [],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "titles": {
+        "ar": "مرجع الحروف: من الشكل إلى استعمال الكلمة",
+        "en": "Letter reference: from shape to word use",
+        "tr": "Harf rehberi: biçimden kelimenin kullanımına"
+      },
+      "sections": [
+        {
+          "id": "profiles-1",
+          "titles": {
+            "ar": "خريطة ثابتة لكل حرف",
+            "en": "A dependable map for each letter",
+            "tr": "Her harf için tutarlı bir yol"
+          },
+          "prose": {
+            "ar": [
+              "استعمل لكل حرف الأسئلة نفسها: ما اسمه؟ أين يوجد موضع النطق؟ ما صور اتصاله؟ ما العلامة التي تميزه من شكل قريب؟ وأي كلمات واضحة تستعمله؟ هذا الترتيب يمنع أن يكون الدرس مجموعة صور بلا تفسير. لا يلزم الإجابة عن كل سؤال في الجولة الأولى.",
+              "ستجد بطاقات الحروف الثمانية والعشرين في هذا الفصل. الألف في الترتيب الهجائي لا تعني أن الهمزة والمد صوت واحد؛ والواو والياء لهما وظائف يحددها السياق. اقرأ ملاحظة البطاقة قبل مقارنة الرمز الصوتي بكتابة لغتك الأم."
+            ],
+            "en": [
+              "Use the same questions for each letter: What is its name? Where is the sound formed? How does it join? What distinguishes it from a similar shape? Which clear words use it? A consistent map prevents a lesson from becoming unexplained pictures. You need not answer every question on the first visit.",
+              "This chapter includes cards for the 28 alphabet letters. Alif’s place in alphabet order does not mean hamza and long /aː/ are the same sound. Waw and yaa have context-dependent roles. Read the card’s note before comparing its symbol with your own language’s spelling."
+            ],
+            "tr": [
+              "Her harf için aynı soruları kullan: adı ne, ses nerede oluşur, nasıl bağlanır, benzer biçimden neyle ayrılır, hangi anlaşılır kelimelerde kullanılır? Tutarlı sıra, dersi açıklamasız resimlere dönüşmekten korur. İlk çalışmada her soruyu bitirmek gerekmez.",
+              "Bu bölümde 28 alfabe harfinin kartları bulunur. Elifin alfabe sırası, hemze ile uzun /aː/ sesini aynı yapmaz. Vav ve yânın görevi bağlama bağlıdır. Sembolü anadilindeki yazımla karşılaştırmadan önce kartın açıklamasını oku."
+            ]
+          }
+        },
+        {
+          "id": "profiles-2",
+          "titles": {
+            "ar": "عائلة الشكل ليست عائلة الصوت",
+            "en": "Shape families are not sound families",
+            "tr": "Biçim ailesi, ses ailesi değildir"
+          },
+          "prose": {
+            "ar": [
+              "ب وت وث متشابهة الجسم، لكن باء صوت شفوي، وتاء صوت إغلاق أمامي، وثاء صوت احتكاكي عند الأسنان في النموذج الفصيح. ثلاث نقاط الثاء لا تفسر صوتها، مثلما لا تفسر ثلاث نقاط الشين أنها ثاء. نستخدم العائلة البصرية للتعرف، والوصف الصوتي للنطق.",
+              "للتفريق بين ث وت، قارن ثَ وتَ مع بقاء الفتحة. وللتفريق بين س وص، نلاحظ التفخيم لا مجرد علو الصوت. بعض الأصوات لا مقابل مباشرًا لها في لغة المتعلم؛ عندئذ نشرح موضع النطق ونستعين بالنموذج السمعي بدل اختراع كلمة أجنبية مطابقة."
+            ],
+            "en": [
+              "ب, ت and ث have related bodies, but baa is formed at the lips, taa with a front closure, and thaa with dental friction in the selected Standard Arabic model. Thaa’s three dots do not explain its sound, nor do sheen’s three dots make it thaa. Use visual families for identification and sound descriptions for pronunciation.",
+              "Compare ثَ with تَ while keeping fatḥa constant. Compare س with ص by discussing emphasis rather than loudness. Some Arabic sounds have no direct match in the learner’s language. In that case explain articulation and use a listening model instead of inventing an exact foreign equivalent."
+            ],
+            "tr": [
+              "ب, ت ve ث benzer gövdelidir; fakat bâ dudaklarda, tâ ön bölgede kapanmayla, sâ ise seçilen fasih modelde dişler yakınında sürtünmeyle oluşur. Üç nokta, sâ sesinin nedenini açıklamaz; şînin üç noktası da onu sâ yapmaz. Görsel aile tanımaya, ses açıklaması telaffuza yardım eder.",
+              "ثَ ile تَ karşılaştırırken üstünü sabit tut. س ile ص arasındaki farkı ses yüksekliğiyle değil kalınlaşmayla açıkla. Bazı Arapça seslerin anadilinde doğrudan karşılığı yoktur. Böyle durumda uydurma tam eşdeğer yerine sesin oluşumunu anlat ve dinleme örneği kullan."
+            ]
+          }
+        },
+        {
+          "id": "profiles-3",
+          "titles": {
+            "ar": "مفردات وجمل وانتقال",
+            "en": "Vocabulary, sentences and transfer",
+            "tr": "Kelime, cümle ve aktarım"
+          },
+          "prose": {
+            "ar": [
+              "بعد تحديد الحرف في أول كلمة ووسطها وآخرها، اطلب جملة مفهومة بكلمة واحدة من القائمة. ليس الهدف حشد كلمات نادرة لتكبير الكتاب. نختار تنوعًا في الموضع والمعنى، ونشرح كل كلمة جديدة. ثم نضع المثال في سياق حتى يميز الطفل بين عضو الجسم ومعنى آخر للكلمة عند وجوده.",
+              "لا يعالج اختلاف اللهجة كأنه عيب في أهلها. يوضح المرجع النموذج الفصيح الذي يتدرب عليه الطالب، وينبه إلى أن الجيم والقاف وبعض الأصوات قد تُسمع بطرق أخرى في البيئات العربية. عند التدريب السمعي يجب أن يتفق الشرح والرمز والتسجيل المستعمل."
+            ],
+            "en": [
+              "After locating a letter initially, medially and finally, make a meaningful sentence with one listed word. Rare vocabulary should not be piled up just to enlarge the book. Vary position and meaning, explain each new word, then add context where a word has more than one sense.",
+              "Dialect difference is not a defect in its speakers. The reference identifies the Standard Arabic target while acknowledging variation in jeem, qaf and other sounds across Arabic-speaking communities. A listening exercise must use a recording consistent with the target stated by the explanation and symbols."
+            ],
+            "tr": [
+              "Harfi başta, ortada ve sonda bulduktan sonra listedeki bir kelimeyle anlamlı cümle kur. Kitabı büyütmek için nadir kelimeleri yığma. Konum ve anlamı çeşitlendir, yeni kelimeyi açıkla; birden çok anlam varsa bağlam ekle.",
+              "Lehçe farkı, konuşanların kusuru değildir. Kaynak, öğrenilen fasih hedefi belirtir; cîm, kāf ve başka seslerin Arapça konuşulan yerlerde farklı duyulabileceğini açıklar. Dinleme alıştırmasındaki kayıt, açıklama ve sembollerin belirttiği hedefle uyuşmalıdır."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meanings": {
+            "ar": "مدخل",
+            "en": "door",
+            "tr": "kapı"
+          },
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meanings": {
+            "ar": "ارتفاع من الأرض",
+            "en": "mountain",
+            "tr": "dağ"
+          },
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meanings": {
+            "ar": "صفحات للقراءة",
+            "en": "book",
+            "tr": "kitap"
+          },
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meanings": {
+            "ar": "ما تثمره النباتات في المعنى العام هنا",
+            "en": "fruit / produce",
+            "tr": "meyve / ürün"
+          },
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meanings": {
+            "ar": "ماء متجمد يسقط أو يتكون في الجو",
+            "en": "snow",
+            "tr": "kar"
+          },
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meanings": {
+            "ar": "حيوان",
+            "en": "fox",
+            "tr": "tilki"
+          },
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "هل تشابه شكل ب وت وث يعني أن أصواتها متشابهة الموضع؟ وهل صوت ج واحد في جميع البيئات؟",
+          "en": "Does the similar shape of ب, ت and ث put their sounds at the same place of articulation? Is jeem pronounced identically in all communities?",
+          "tr": "ب, ت ve ث benzer biçimli diye sesleri aynı yerde mi oluşur? Cîm her toplulukta aynı mı söylenir?"
+        },
+        "answers": {
+          "ar": "لا. الشكل دليل كتابي، وموضع النطق أمر مختلف. والجيم لها تنوعات؛ نثبت النموذج المستهدف ونصف غيره بوضوح.",
+          "en": "No. Shape is written information; articulation is a different property. Jeem varies: identify the chosen target and label other models clearly.",
+          "tr": "Hayır. Biçim yazılı bilgidir; sesin oluşum yeri ayrı özelliktir. Cîmin farklı söylenişleri vardır; hedefi belirt ve diğerlerini açıkça adlandır."
+        }
+      },
+      "source_ids": [
+        "ipa",
+        "unicode"
+      ],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "titles": {
+        "ar": "الضمائر: من أنا ومن أنت؟",
+        "en": "Pronouns: who am I, who are you?",
+        "tr": "Zamirler: ben kimim, sen kimsin?"
+      },
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "titles": {
+            "ar": "الكلمة التي تتحرك مع المتكلم",
+            "en": "A word that follows the speaker",
+            "tr": "Konuşmacıya göre değişen gönderim"
+          },
+          "prose": {
+            "ar": [
+              "إذا قالت ليلى «أنا»، فهي تشير إلى ليلى؛ وإذا قال عمر «أنا»، فهو يشير إلى عمر. الضمير لا يحمل اسم شخص ثابتًا، بل يفهم من موقف الكلام. أنت تشير إلى من تخاطبه، وهو وهي إلى من تتحدث عنه. استعمل لعبة أدوار قبل حفظ الجدول: ليلى تقول أنا، ثم يتكلم عمر ويقول أنا.",
+              "أَنْتَ وأَنْتِ مختلفتان في العربية بحسب صيغة المخاطب المذكر أو المؤنث. بعض اللغات، مثل الإنجليزية والتركية، تستعمل كلمة واحدة للموقفين؛ هذا لا يجعل الفرق العربي زائدًا يمكن حذفه. والتركية تستعمل o للمقابلين هو وهي؛ يجب الرجوع إلى الشخص المقصود عند بناء الجملة العربية."
+            ],
+            "en": [
+              "If Layla says “I”, she means Layla; if Omar says “I”, he means Omar. A pronoun is not a fixed person’s name: its reference comes from the speaking situation. “You” points to the addressee; “he” and “she” point to someone spoken about. Practise changing roles before memorising the table.",
+              "Arabic distinguishes أَنْتَ for a masculine singular addressee and أَنْتِ for a feminine singular addressee. English uses “you” for both. That does not make the Arabic distinction optional. Turkish o corresponds to both هُوَ and هِيَ; translating into Arabic requires checking the intended reference, not replacing words mechanically."
+            ],
+            "tr": [
+              "Leyla “ben” dediğinde Leylayı, Ömer “ben” dediğinde Ömeri kasteder. Zamir sabit bir kişinin adı değildir; gönderimi konuşma durumundan anlaşılır. “Sen” konuşulan kişiyi, “o” hakkında konuşulan kişiyi gösterir. Tabloyu ezberlemeden önce rolleri değiştir.",
+              "Arapçada أَنْتَ eril tekil, أَنْتِ dişil tekil muhatap içindir. Türkçede ikisinin karşılığı sen olur; bu durum Arapçadaki ayrımı isteğe bağlı yapmaz. Türkçe o, hem هُوَ hem هِيَ için kullanılabilir. Arapça cümle kurarken yalnızca kelime değiştirmek yerine kimi kastettiğine bak."
+            ]
+          }
+        },
+        {
+          "id": "pronouns-2",
+          "titles": {
+            "ar": "المفرد والمثنى والجمع",
+            "en": "Singular, dual and plural",
+            "tr": "Tekil, ikil ve çoğul"
+          },
+          "prose": {
+            "ar": [
+              "أَنَا متكلم مفرد، ونَحْنُ جماعة المتكلم وقد تكون اثنين أو أكثر. أَنْتُمَا للمخاطبَين، وهُمَا للغائبَين، وتستعملان للمذكر والمؤنث. أَنْتُمْ وأَنْتُنَّ، وهُمْ وهُنَّ صيغ الجمع التي تختلف بحسب الصيغة النحوية المقصودة. في الفصحى قد تستعمل صيغة جمع المذكر لجماعة مختلطة بحسب السياق.",
+              "لا يوجد مقابل كلمة واحدة مستقل للمثنى في كل لغة. ترجمة أنتما إلى الإنجليزية قد تحتاج you two، وإلى التركية ikiniz، بينما يظل الضمير العربي كلمة واحدة. هذه شروح للمعنى وليست ضمانًا أن الكلمات الأجنبية توزع على السياق بالطريقة نفسها دائمًا."
+            ],
+            "en": [
+              "أَنَا is singular first person. نَحْنُ refers to a group including the speaker and may include two or more people. أَنْتُمَا addresses two, and هُمَا refers to two; both work for masculine and feminine reference. أَنْتُمْ / أَنْتُنَّ and هُمْ / هُنَّ distinguish plural forms. Masculine plural forms can cover a mixed group in Standard Arabic depending on context.",
+              "Not every language has a separate one-word dual pronoun. English may explain أَنْتُمَا as “you two”, and Turkish as ikiniz. These explain the reference; they do not guarantee identical usage in every situation. Compare meanings as well as forms."
+            ],
+            "tr": [
+              "أَنَا tekil konuşmacıdır. نَحْنُ konuşmacıyı içeren, iki veya daha fazla kişiden oluşabilen gruptur. أَنْتُمَا iki muhatap, هُمَا hakkında konuşulan iki kişi içindir; ikisi de eril ve dişil gönderimde kullanılabilir. أَنْتُمْ / أَنْتُنَّ ile هُمْ / هُنَّ çoğul biçimleri ayırır. Fasih Arapçada eril çoğul, bağlama göre karma grubu da kapsayabilir.",
+              "Her dilde ayrı tek sözcüklü ikil zamir yoktur. أَنْتُمَا için Türkçe ikiniz açıklaması kullanılabilir. Bu, gönderimi açıklar; bütün bağlamlarda birebir kullanım eşitliği demek değildir. Biçim kadar anlamı da karşılaştır."
+            ]
+          }
+        },
+        {
+          "id": "pronouns-3",
+          "titles": {
+            "ar": "الضمير وما يتبعه",
+            "en": "The pronoun and what follows it",
+            "tr": "Zamir ve onu izleyen yapı"
+          },
+          "prose": {
+            "ar": [
+              "أَنَا طَالِبٌ وأَنَا طَالِبَةٌ يبدآن بالضمير نفسه؛ يتغير الاسم بحسب الصيغة المناسبة للمتكلم. هُوَ طَالِبٌ وهِيَ طَالِبَةٌ يغيران الضمير والصيغة معًا. لا نستنتج أن أنا صيغة للمذكر فقط لأن المثال الأول طالب.",
+              "في أَنَا أَقْرَأُ ونَحْنُ نَقْرَأُ تتغير صيغة الفعل. أَ هو جزء من تصريف المتكلم في هذا المثال، وليس ضمير ملكية. وقد تحمل صيغة الفعل معلومات تسمح بحذف الضمير المنفصل في سياق واضح. لا نضع كلمة تقابل am في كل جملة عربية اسمية لأن الإنجليزية تحتاجها في ترجمتها."
+            ],
+            "en": [
+              "أَنَا طَالِبٌ and أَنَا طَالِبَةٌ begin with the same pronoun; the following noun changes to fit the speaker’s form. هُوَ طَالِبٌ and هِيَ طَالِبَةٌ change pronoun and noun together. An example with a male student does not make أَنَا a masculine-only pronoun.",
+              "In أَنَا أَقْرَأُ and نَحْنُ نَقْرَأُ the verb form changes. The initial أَ in this example belongs to first-person verb inflection, not possession. A verb can carry enough information to omit the separate pronoun in a clear context. English “am/is/are” in a translation does not require inserting an equivalent word into every Arabic present-tense nominal sentence."
+            ],
+            "tr": [
+              "أَنَا طَالِبٌ ve أَنَا طَالِبَةٌ aynı zamirle başlar; ardından gelen isim konuşmacıya uygun biçimi alır. هُوَ طَالِبٌ ve هِيَ طَالِبَةٌ hem zamiri hem ismi değiştirir. İlk örnekte erkek öğrenci bulunması, أَنَا zamirini yalnızca erile ait yapmaz.",
+              "أَنَا أَقْرَأُ ile نَحْنُ نَقْرَأُ içinde fiil biçimi değişir. Bu örnekte ilk أَ, birinci tekil fiil çekimine aittir; iyelik zamiri değildir. Fiil yeterli bilgi taşıyorsa açık bağlamda ayrı zamir söylenmeyebilir. Çevirideki Türkçe ekler veya İngilizce am/is/are, her Arapça isim cümlesine ayrı kelime eklemeyi gerektirmez."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meanings": {
+            "ar": "المتكلم المفرد",
+            "en": "I",
+            "tr": "ben"
+          },
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meanings": {
+            "ar": "مخاطب مذكر مفرد",
+            "en": "you (masculine singular)",
+            "tr": "sen (eril tekil)"
+          },
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meanings": {
+            "ar": "مخاطبة مؤنثة مفردة",
+            "en": "you (feminine singular)",
+            "tr": "sen (dişil tekil)"
+          },
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meanings": {
+            "ar": "جماعة المتكلم",
+            "en": "we",
+            "tr": "biz"
+          },
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meanings": {
+            "ar": "غائب مذكر مفرد",
+            "en": "he",
+            "tr": "o (eril)"
+          },
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meanings": {
+            "ar": "غائبة مؤنثة مفردة",
+            "en": "she",
+            "tr": "o (dişil)"
+          },
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meanings": {
+            "ar": "المخاطبان",
+            "en": "you two",
+            "tr": "ikiniz"
+          }
+        },
+        {
+          "ar": "هُمَا",
+          "meanings": {
+            "ar": "الغائبان",
+            "en": "they two / both of them",
+            "tr": "ikisi"
+          }
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meanings": {
+            "ar": "جمع مخاطب بصيغة المذكر",
+            "en": "you (masculine plural; context may include a mixed group)",
+            "tr": "siz (eril çoğul; bağlama göre karma grup)"
+          }
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meanings": {
+            "ar": "جمع مخاطبة مؤنث",
+            "en": "you (feminine plural)",
+            "tr": "siz (dişil çoğul)"
+          }
+        },
+        {
+          "ar": "هُمْ",
+          "meanings": {
+            "ar": "جمع غائب بصيغة المذكر",
+            "en": "they (masculine plural; context may include a mixed group)",
+            "tr": "onlar (eril çoğul; bağlama göre karma grup)"
+          }
+        },
+        {
+          "ar": "هُنَّ",
+          "meanings": {
+            "ar": "جمع غائبة مؤنث",
+            "en": "they (feminine plural)",
+            "tr": "onlar (dişil çoğul)"
+          }
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "ليلى تتكلم عن نفسها ثم عن عمر. أي ضميرين تختار؟ وهل «نحن» للمذكر فقط؟",
+          "en": "Layla speaks about herself, then about Omar. Which two pronouns fit? Is نَحْنُ masculine only?",
+          "tr": "Leyla önce kendisi, sonra Ömer hakkında konuşuyor. Hangi iki zamir uygundur? نَحْنُ yalnızca eril midir?"
+        },
+        "answers": {
+          "ar": "أنا لنفسها، وهو لعمر في هذا المثال. نحن لا يميز جنس المتكلمين؛ نفهم المجموعة من السياق.",
+          "en": "أَنَا for herself; هُوَ for Omar in this example. نَحْنُ does not distinguish the speakers’ gender; context identifies the group.",
+          "tr": "Kendisi için أَنَا, bu örnekte Ömer için هُوَ. نَحْنُ konuşmacıların cinsiyetini ayırmaz; grubu bağlam belirler."
+        }
+      },
+      "source_ids": [],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "titles": {
+        "ar": "الملكية والإضافة: علاقة لا ملصق",
+        "en": "Possession and relationships: more than a label",
+        "tr": "İyelik ve ilişkiler: etiketten fazlası"
+      },
+      "sections": [
+        {
+          "id": "possessives-1",
+          "titles": {
+            "ar": "شيء واحد ومتحدثان",
+            "en": "One object, two speakers",
+            "tr": "Bir nesne, iki konuşmacı"
+          },
+          "prose": {
+            "ar": [
+              "يحمل عمر كتابًا ويقول كِتَابِي. أنت تخاطبه فتقول كِتَابُكَ. وإذا تحدثت عنه إلى ليلى تقول كِتَابُهُ. الكتاب نفسه؛ تغيرت جهة الكلام. لا نحفظ ثلاث كلمات باعتبارها ثلاثة أنواع من الكتب، بل نفهم أن النهاية تخبر عن علاقة الاسم بالشخص.",
+              "مع مخاطبة ليلى نقول كِتَابُكِ، ومع الحديث عنها كِتَابُهَا. الفرق بين كَ وكِ صغير في الرسم والصوت، كبير في الإشارة النحوية. في لغات أخرى قد يكتب المقابل كلمة منفصلة قبل الاسم؛ العربية في هذه الأمثلة تلحقه بالاسم."
+            ],
+            "en": [
+              "Omar holds a book and says كِتَابِي, “my book”. Address him and you say كِتَابُكَ, “your book”. Talk about him to Layla and you say كِتَابُهُ, “his book”. The book has not changed; the speaking relationship has. These are not three categories of books.",
+              "Address Layla with كِتَابُكِ; speak about her with كِتَابُهَا. The difference between كَ and كِ is small in writing and sound but important for reference. English normally uses a separate word before the noun; these Arabic forms attach the pronoun to the noun."
+            ],
+            "tr": [
+              "Ömer bir kitap tutup كِتَابِي, yani kitabım der. Ona كِتَابُكَ, yani kitabın diye hitap edersin. Leylaya ondan söz ederken كِتَابُهُ, yani onun kitabı dersin. Kitap değişmedi; konuşma ilişkisi değişti. Bunlar üç kitap türü değildir.",
+              "Leylaya hitap ederken كِتَابُكِ, ondan söz ederken كِتَابُهَا kullanılır. كَ ile كِ yazı ve seste küçük, gönderimde önemli farktır. Türkçe kitabın cinsiyet ayrımı yapmaz; Arapça karşılığı seçerken muhatabı dikkate al."
+            ]
+          }
+        },
+        {
+          "id": "possessives-2",
+          "titles": {
+            "ar": "العلاقة ليست تملك الأشياء وحده",
+            "en": "The relationship is not always ownership",
+            "tr": "İlişki her zaman sahiplik değildir"
+          },
+          "prose": {
+            "ar": [
+              "كِتَابُنَا يدل على كتاب يرتبط بجماعتنا. أُمِّي تعني أمي، ولا تعامل الأم شيئًا مملوكًا. مَدْرَسَتِي مدرسة أدرس فيها أو ترتبط بي في السياق، وليس بالضرورة مبنى أملكه. الإضافة والضمير يعرضان علاقة يحددها الاسم والسياق.",
+              "تكتب التاء المربوطة تاء مفتوحة عند اتصال هذا الضمير في مَدْرَسَة ← مَدْرَسَتِي. تغير الرسم له سبب بنيوي؛ لا تعمم أن كل هاء أخيرة تصبح تاء. قارن مَدْرَسَتِي مع وَجْهِي: في الثانية تبقى هاء كلمة وجه."
+            ],
+            "en": [
+              "كِتَابُنَا relates a book to our group. أُمِّي means “my mother”; it does not treat a person as owned property. مَدْرَسَتِي may mean the school I attend, not a building I own. The noun and context tell you what relationship the attached pronoun expresses.",
+              "In مَدْرَسَة → مَدْرَسَتِي, taa marbūṭa is written as ordinary taa when this pronoun is attached. Do not generalise that every final haa becomes taa. Compare وَجْهِي, “my face”: the haa belonging to وَجْه remains haa."
+            ],
+            "tr": [
+              "كِتَابُنَا kitabı grubumuzla ilişkilendirir. أُمِّي annem demektir; kişiyi sahip olunan eşya yapmaz. مَدْرَسَتِي, sahip olduğum bina değil, gittiğim okul olabilir. İlişkinin türünü isim ve bağlam belirler.",
+              "مَدْرَسَة → مَدْرَسَتِي örneğinde tâ merbûta, zamir bağlanınca açık tâ biçiminde yazılır. Her son hânın tâya dönüştüğünü sanma. وَجْهِي, yüzüm demektir; وَجْه içindeki hâ korunur."
+            ]
+          }
+        },
+        {
+          "id": "possessives-3",
+          "titles": {
+            "ar": "الاسم والإعراب والتعريف",
+            "en": "The noun, case and definiteness",
+            "tr": "İsim, durum eki ve belirlilik"
+          },
+          "prose": {
+            "ar": [
+              "كِتَابُكَ في جدولنا صيغة مختارة؛ في رَأَيْتُ كِتَابَكَ يتغير ضبط الاسم بحسب موقعه. وفي هذا السياق يظل كَ للمخاطب المذكر. لا تجعل الضمة قبل الضمير جزءًا ثابتًا من معنى «لك». نفصل وظيفة الاسم النحوية عن إحالة الضمير.",
+              "في الإضافة المعتادة إلى ضمير لا نستعمل التنوين على الاسم ولا نضع «الـ» قبله بالطريقة نفسها التي في الاسم المستقل. كِتَابِي يحدد العلاقة فيصبح معرفًا في هذا الاستعمال. تعلم المثال الصحيح أولًا، ثم اشرح السبب؛ لا تجمع كل الحالات الشاذة في أول يوم."
+            ],
+            "en": [
+              "كِتَابُكَ is one selected form in our table. In رَأَيْتُ كِتَابَكَ, “I saw your book”, the noun’s ending changes with its grammatical role; كَ still refers to the masculine singular addressee. Do not memorise the preceding ḍamma as a permanent part of “your”.",
+              "In the usual noun-plus-possessive-pronoun construction, do not put tanwīn on the noun or add the article as if it were a separate unpossessed noun. كِتَابِي identifies the relationship and is definite in this use. Learn a correct example before collecting advanced exceptions."
+            ],
+            "tr": [
+              "Tablodaki كِتَابُكَ seçilmiş bir biçimdir. رَأَيْتُ كِتَابَكَ, kitabını gördüm, cümlesinde ismin son harekesi görevine göre değişir; كَ eril tekil muhatabı göstermeye devam eder. Önceki ötreyi “senin” anlamının değişmez parçası olarak ezberleme.",
+              "İsme iyelik zamiri bağlanan olağan yapıda isme tenvin koymayız ve onu bağımsız ismiş gibi belirlilik takısıyla kullanmayız. كِتَابِي bu kullanımda belirli bir ilişki gösterir. İleri istisnalardan önce doğru örneği öğren."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meanings": {
+            "ar": "كتاب لي",
+            "en": "my book",
+            "tr": "kitabım"
+          }
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meanings": {
+            "ar": "كتاب للمخاطب المذكر",
+            "en": "your book (masculine singular addressee)",
+            "tr": "kitabın (eril tekil muhatap)"
+          }
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meanings": {
+            "ar": "كتاب للمخاطبة المؤنثة",
+            "en": "your book (feminine singular addressee)",
+            "tr": "kitabın (dişil tekil muhatap)"
+          }
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meanings": {
+            "ar": "كتاب للغائب المذكر",
+            "en": "his book",
+            "tr": "onun kitabı (eril)"
+          }
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meanings": {
+            "ar": "كتاب للغائبة المؤنثة",
+            "en": "her book",
+            "tr": "onun kitabı (dişil)"
+          }
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meanings": {
+            "ar": "كتاب لجماعتنا",
+            "en": "our book",
+            "tr": "kitabımız"
+          }
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meanings": {
+            "ar": "المدرسة التي أرتبط بها في السياق",
+            "en": "my school",
+            "tr": "okulum"
+          }
+        },
+        {
+          "ar": "وَجْهِي",
+          "meanings": {
+            "ar": "وجهي في الجسم",
+            "en": "my face",
+            "tr": "yüzüm"
+          }
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "ليلى تقول «كتابي». كيف تسألها عن كتابها مباشرة، وكيف تتحدث عن الكتاب لشخص آخر؟",
+          "en": "Layla says “my book”. How do you refer to it when addressing her, then when speaking about her to someone else?",
+          "tr": "Leyla kitabım diyor. Ona doğrudan hitap ederken, sonra başka birine Leyladan söz ederken hangi biçimi kullanırsın?"
+        },
+        "answers": {
+          "ar": "كتابكِ عند مخاطبتها، وكتابها عند الحديث عنها. مرجع الضمير يتغير بتغير جهة الكلام.",
+          "en": "كِتَابُكِ when addressing her; كِتَابُهَا when talking about her. The pronoun reference follows the speaking relationship.",
+          "tr": "Ona hitap ederken كِتَابُكِ, hakkında konuşurken كِتَابُهَا. Zamirin gönderimi konuşma ilişkisine göre değişir."
+        }
+      },
+      "source_ids": [],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "titles": {
+        "ar": "الأعداد: رمز وكلمة وكمية",
+        "en": "Numbers: symbol, word, quantity",
+        "tr": "Sayılar: simge, kelime ve miktar"
+      },
+      "sections": [
+        {
+          "id": "numbers-1",
+          "titles": {
+            "ar": "نلمس كل شيء مرة واحدة",
+            "en": "Count each object once",
+            "tr": "Her nesneyi bir kez say"
+          },
+          "prose": {
+            "ar": [
+              "ضع ثلاثة أقلام. المس كل قلم مرة واحدة مع خطوة واحدة من العد، ثم قل عدد المجموعة. إذا لمست القلم نفسه مرتين فاسم العدد الأخير لا يصف المجموعة بدقة. وعندما تغير ترتيب الأقلام ولا تضيف أو تحذف منها، يبقى العدد ثلاثة؛ شكل الصف ليس الكمية نفسها.",
+              "٣ و3 يمثلان العدد نفسه في نظامي الكتابة المعروضين. كلمة ثَلَاثَة قراءة عربية للعدد، وليست شكل الرقم نفسه. العدد المكتوب يمكن أن يمثل كمّية كتب أو خطوات أو دقائق؛ نحتاج إلى معرفة ما نعده لفهم الاستعمال."
+            ],
+            "en": [
+              "Place three pens on a table. Touch each once while taking one counting step, then name the size of the group. Counting the same pen twice produces a wrong total. Rearranging the pens without adding or removing any still leaves three: the shape of the row is not the quantity.",
+              "٣ and 3 represent the same number in the two displayed digit systems. ثَلَاثَة is an Arabic number word, not the shape of the digit. A written number may count books, steps or minutes; identify what is being counted to understand its use."
+            ],
+            "tr": [
+              "Masaya üç kalem koy. Her kaleme bir kez dokunarak her dokunuşta bir sayı söyle; sonra grubun miktarını belirt. Aynı kalemi iki kez saymak toplamı yanlış verir. Kalem eklemeden veya çıkarmadan dizilişi değiştirmek sayıyı değiştirmez; sıra biçimi miktar değildir.",
+              "٣ ve 3 gösterilen iki rakam sisteminde aynı sayıdır. ثَلَاثَة Arapça sayı sözcüğüdür, rakamın biçimi değildir. Sayı kitapları, adımları veya dakikaları sayabilir; neyin sayıldığını belirle."
+            ]
+          }
+        },
+        {
+          "id": "numbers-2",
+          "titles": {
+            "ar": "العد المجرد والعدد مع اسم",
+            "en": "Counting alone and counting nouns",
+            "tr": "Tek başına sayma ve isimle sayma"
+          },
+          "prose": {
+            "ar": [
+              "في العد المجرد نبدأ: واحد، اثنان، ثلاثة، أربعة، خمسة، ستة، سبعة، ثمانية، تسعة، عشرة. لكن ثَلَاثَةُ كُتُبٍ وثَلَاثُ سَيَّارَاتٍ تعرضان اختلاف صيغة العدد مع جنس المعدود. في هذا النمط من ثلاثة إلى عشرة تكون صيغة العدد مخالفة للجنس النحوي للمعدود المفرد، ويأتي المعدود جمعًا مجرورًا. لا نطبق ذلك على واحد واثنين بالطريقة نفسها.",
+              "كِتَابٌ وَاحِدٌ وسَيَّارَةٌ وَاحِدَةٌ مثالان لتوافق واحد. ولاثنين تظهر صيغ المثنى في الاسم، مثل كِتَابَانِ وسَيَّارَتَانِ في حالة الرفع المعروضة. لا نحشو كل الجمل بالعدد اثنان؛ صيغة المثنى تحمل معلومات العدد أصلًا."
+            ],
+            "en": [
+              "Counting aloud begins with one through ten, but number phrases require more care. ثَلَاثَةُ كُتُبٍ means three books; ثَلَاثُ سَيَّارَاتٍ means three cars. In this three-to-ten pattern, the number form contrasts with the grammatical gender of the singular counted noun, and the counted noun is genitive plural. Do not apply that pattern to one and two.",
+              "كِتَابٌ وَاحِدٌ and سَيَّارَةٌ وَاحِدَةٌ show agreement with one. The displayed nominative dual forms كِتَابَانِ and سَيَّارَتَانِ already indicate two. A number word meaning “two” need not be inserted into every dual phrase."
+            ],
+            "tr": [
+              "Tek başına sayarken birden ona kadar sayı sözcüklerini öğreniriz. Ancak ثَلَاثَةُ كُتُبٍ üç kitap, ثَلَاثُ سَيَّارَاتٍ üç araba demektir. Bu üç-on kalıbında sayı, sayılan ismin tekil dilbilgisel cinsiyetine karşıt biçim alır; sayılan isim çoğul ve mecrur olur. Aynı kuralı bir ve ikiye uygulama.",
+              "كِتَابٌ وَاحِدٌ ile سَيَّارَةٌ وَاحِدَةٌ, bir sayısının uyumunu gösterir. Gösterilen merfu ikil كِتَابَانِ ve سَيَّارَتَانِ zaten iki anlamı taşır. Her ikil yapıya ayrıca iki sözcüğü eklemek gerekmez."
+            ]
+          }
+        },
+        {
+          "id": "numbers-3",
+          "titles": {
+            "ar": "الكمية والترتيب والمقارنة",
+            "en": "Quantity, order and comparison",
+            "tr": "Miktar, sıra ve karşılaştırma"
+          },
+          "prose": {
+            "ar": [
+              "ثَلَاثَة يجيب عن كم؟ أما الثَّالِث فيجيب عن أي موضع في الترتيب؟ ثلاثة كتب ليست بالضرورة الكتاب الثالث. الصفر في عدد الأقلام يعني أنه لا توجد أقلام في المجموعة التي نعدها، ولا يعني أن كل الأشياء غائبة.",
+              "قارن مجموعتين بأشياء ملموسة: قلمان وأربعة أقلام. الثانية أكثر في العدد، والأولى أقل. إذا أصبحت كل مجموعة أربعة فهما متساويتان عددًا ولو اختلف اللون أو الطول. تعلم كلمات أكثر وأقل ومساوٍ في سياق الكمية المحددة، ثم انقل المقارنة إلى مثال جديد."
+            ],
+            "en": [
+              "ثَلَاثَة answers “how many?” الثَّالِث answers “which position?” Three books are not the same thing as the third book. Zero pens means no pens in the group being counted; it does not mean that nothing of any kind exists.",
+              "Compare two actual groups: two pens and four pens. The second has more; the first has fewer. If both have four, their counts are equal even when colour or length differs. Keep the comparison tied to a stated property, then try a new example."
+            ],
+            "tr": [
+              "ثَلَاثَة kaç sorusuna, الثَّالِث hangi sıra sorusuna cevap verir. Üç kitap ile üçüncü kitap aynı değildir. Sıfır kalem, sayılan grupta kalem olmadığını belirtir; dünyada hiçbir şey olmadığını değil.",
+              "İki kalemle dört kalemi karşılaştır. İkinci grup sayıca daha çoktur. İkisinde de dört varsa renk ve uzunluk değişse bile miktarları eşittir. Karşılaştırılan özelliği açıkça belirle, sonra yeni örneğe geç."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meanings": {
+            "ar": "عدم وجود عناصر في الكمية المحددة",
+            "en": "zero",
+            "tr": "sıfır"
+          }
+        },
+        {
+          "ar": "وَاحِد",
+          "meanings": {
+            "ar": "العدد 1",
+            "en": "one",
+            "tr": "bir"
+          }
+        },
+        {
+          "ar": "اِثْنَان",
+          "meanings": {
+            "ar": "العدد 2",
+            "en": "two",
+            "tr": "iki"
+          }
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meanings": {
+            "ar": "العدد 3 في العد المجرد",
+            "en": "three",
+            "tr": "üç"
+          }
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meanings": {
+            "ar": "العدد 4 في العد المجرد",
+            "en": "four",
+            "tr": "dört"
+          }
+        },
+        {
+          "ar": "خَمْسَة",
+          "meanings": {
+            "ar": "العدد 5 في العد المجرد",
+            "en": "five",
+            "tr": "beş"
+          }
+        },
+        {
+          "ar": "سِتَّة",
+          "meanings": {
+            "ar": "العدد 6 في العد المجرد",
+            "en": "six",
+            "tr": "altı"
+          }
+        },
+        {
+          "ar": "سَبْعَة",
+          "meanings": {
+            "ar": "العدد 7 في العد المجرد",
+            "en": "seven",
+            "tr": "yedi"
+          }
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meanings": {
+            "ar": "العدد 8 في العد المجرد",
+            "en": "eight",
+            "tr": "sekiz"
+          }
+        },
+        {
+          "ar": "تِسْعَة",
+          "meanings": {
+            "ar": "العدد 9 في العد المجرد",
+            "en": "nine",
+            "tr": "dokuz"
+          }
+        },
+        {
+          "ar": "عَشَرَة",
+          "meanings": {
+            "ar": "العدد 10 في العد المجرد",
+            "en": "ten",
+            "tr": "on"
+          }
+        },
+        {
+          "ar": "الثَّالِث",
+          "meanings": {
+            "ar": "موضع ترتيبي بعد الثاني",
+            "en": "third",
+            "tr": "üçüncü"
+          }
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "لديك ثلاث دوائر وغيرت ترتيبها دون إضافة. كم أصبحت؟ وهل «الثالث» اسم الكمية؟",
+          "en": "You rearrange three circles without adding any. How many remain? Does “third” name the quantity?",
+          "tr": "Üç dairenin yerini, ekleme yapmadan değiştiriyorsun. Kaç daire kalır? Üçüncü miktarın adı mıdır?"
+        },
+        "answers": {
+          "ar": "تبقى ثلاثًا. الثالث ترتيب لا كمية. لإيجاد العدد نعد كل عنصر مرة واحدة، لا الفراغات بين العناصر.",
+          "en": "Three remain. “Third” is an order position, not a quantity. Count each item once, not the spaces between items.",
+          "tr": "Üç kalır. Üçüncü sıra konumudur, miktar değildir. Nesneleri birer kez say; aralarındaki boşlukları değil."
+        }
+      },
+      "source_ids": [],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "titles": {
+        "ar": "الألوان: الاسم والوصف والتوافق",
+        "en": "Colours: naming, describing and agreement",
+        "tr": "Renkler: adlandırma, niteleme ve uyum"
+      },
+      "sections": [
+        {
+          "id": "colors-1",
+          "titles": {
+            "ar": "نفس الشيء ووصف مختلف",
+            "en": "Same object, different description",
+            "tr": "Aynı nesne, farklı nitelik"
+          },
+          "prose": {
+            "ar": [
+              "قلمان لهما الوظيفة نفسها، لكن أحدهما أحمر والآخر أزرق. اسم قلم يحدد نوع الشيء، ووصف اللون يميز أي قلم تقصد. اللون ليس حكمًا على قيمة الشخص ولا مناسبة النشاط لجنس معين. وقد تتغير العينة على الشاشة؛ لذلك نكتب اسم اللون ولا نجعل السؤال يعتمد على اللون وحده.",
+              "إذا وصفنا قَلَمٌ أَحْمَرُ وسَيَّارَةٌ حَمْرَاءُ تغيرت صيغة الوصف مع جنس الاسم النحوي. ليس لأن شخصًا مختلفًا يملك الشيء. هذا مهم للغات لا تغير الصفة مع جنس الاسم، كالإنجليزية والتركية في هذين المثالين."
+            ],
+            "en": [
+              "Two pens do the same job, but one is red and the other blue. “Pen” identifies the kind of object; its colour helps identify which one you mean. Colour says nothing about a person’s value or which gender may use an object. Screens also render colours differently, so always name a swatch rather than relying on colour alone.",
+              "قَلَمٌ أَحْمَرُ is a red pen; سَيَّارَةٌ حَمْرَاءُ is a red car. The adjective changes with the noun’s grammatical gender, not the owner’s gender. English and Turkish do not change their colour adjective that way in these examples."
+            ],
+            "tr": [
+              "İki kalem aynı işi görür; biri kırmızı, diğeri mavidir. Kalem nesnenin türünü, renk ise hangisini kastettiğini belirtir. Renk, kişinin değerini veya nesneyi hangi cinsiyetin kullanabileceğini belirlemez. Ekranlar da renkleri farklı gösterir; renk örneğinin adını yaz.",
+              "قَلَمٌ أَحْمَرُ kırmızı kalem, سَيَّارَةٌ حَمْرَاءُ kırmızı araba demektir. Sıfat, sahibinin cinsiyetine değil ismin dilbilgisel cinsiyetine göre değişir. Türkçe ve İngilizce bu örneklerde renk sıfatını böyle değiştirmez."
+            ]
+          }
+        },
+        {
+          "id": "colors-2",
+          "titles": {
+            "ar": "أحمر وحمراء ليستا قاعدتين لكل الألوان",
+            "en": "Not every colour follows red’s pattern",
+            "tr": "Her renk kırmızının kalıbını izlemez"
+          },
+          "prose": {
+            "ar": [
+              "نتعلم أَحْمَر/حَمْرَاء، أَزْرَق/زَرْقَاء، أَخْضَر/خَضْرَاء، أَصْفَر/صَفْرَاء، أَبْيَض/بَيْضَاء، أَسْوَد/سَوْدَاء بوصفها مجموعة ذات نمط. لكن وَرْدِيّ/وَرْدِيَّة وبُنِّيّ/بُنِّيَّة يعرضان نمطًا آخر. لا نحذف آخر كل صفة ثم نضيف اء بالتخمين.",
+              "التعريف مهم أيضًا: قَلَمٌ أَحْمَرُ عبارة غير معرفة، والقَلَمُ الأَحْمَرُ يحدد القلم الأحمر. أما القَلَمُ أَحْمَرُ فيخبر أن القلم أحمر. ليست العبارات الثلاث ترتيبًا بصريًا واحدًا مع زخرفة إضافية؛ علاقاتها النحوية ومعانيها مختلفة."
+            ],
+            "en": [
+              "Learn أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء and أَسْوَد/سَوْدَاء as one pattern group. وَرْدِيّ/وَرْدِيَّة and بُنِّيّ/بُنِّيَّة follow another pattern. Do not invent every feminine colour by adding اء.",
+              "قَلَمٌ أَحْمَرُ means “a red pen”. القَلَمُ الأَحْمَرُ identifies “the red pen”. القَلَمُ أَحْمَرُ states “The pen is red.” Article placement changes the relationship, not merely the visual appearance of the words."
+            ],
+            "tr": [
+              "أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء ve أَسْوَد/سَوْدَاء bir kalıp grubudur. وَرْدِيّ/وَرْدِيَّة ile بُنِّيّ/بُنِّيَّة başka kalıptadır. Her renk sıfatına tahminen اء ekleme.",
+              "قَلَمٌ أَحْمَرُ bir kırmızı kalem, القَلَمُ الأَحْمَرُ belirli kırmızı kalem ifadesidir. القَلَمُ أَحْمَرُ, kalem kırmızıdır der. Belirlilik takısının yeri yalnızca görünüşü değil kelimeler arasındaki ilişkiyi değiştirir."
+            ]
+          }
+        },
+        {
+          "id": "colors-3",
+          "titles": {
+            "ar": "وصف يمكن قراءته دون عينة",
+            "en": "Description without a swatch",
+            "tr": "Renk örneği olmadan anlaşılır açıklama"
+          },
+          "prose": {
+            "ar": [
+              "اكتب اسم اللون بجانب العلامة، واستعمل شكلًا أو تسمية عندما نحتاج إلى التمييز بين إجابات. قد يكون المتعلم ضعيف الرؤية أو يرى الألوان بطريقة مختلفة. لا نجعل كفاءة اللغة رهينة قدرته على فصل درجتين متقاربتين من الأخضر.",
+              "ابدأ بمفرد ثم أضف اسمًا ووصفًا. لتدريب حمراء، استعمل سيارة؛ ولأحمر استعمل قلمًا. بعدها غيّر الشيء لتختبر نقل التوافق، لا حفظ زوج واحد. يظل الجمع بابًا يحتاج قواعد أخرى؛ لا نعمم مطابقة مفرد الأشخاص على جميع جموع الأشياء."
+            ],
+            "en": [
+              "Write the colour name beside the mark and add a shape or label when distinguishing answers. A learner may have low vision or different colour perception. Language ability should not depend on separating two nearly identical shades of green.",
+              "Start with a single noun and adjective: car with حَمْرَاء, pen with أَحْمَر. Then change the object to check transfer rather than memorisation of one pair. Plural agreement has further rules; do not generalise singular-person agreement to every plural referring to things."
+            ],
+            "tr": [
+              "Rengin adını işaretin yanına yaz; cevapları ayırmak için gerekirse şekil veya etiket ekle. Öğrencinin görmesi zayıf olabilir veya renkleri farklı algılayabilir. Dil becerisi, birbirine yakın iki yeşil tonunu ayırmaya bağlı olmamalıdır.",
+              "Tekil isim ve sıfatla başla: araba için حَمْرَاء, kalem için أَحْمَر. Sonra nesneyi değiştirerek uyumun başka örneğe aktarılmasını kontrol et. Çoğul uyumun başka kuralları vardır; tekil kişi uyumunu bütün eşya çoğullarına yayma."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meanings": {
+            "ar": "أحمر بصيغتي المذكر والمؤنث",
+            "en": "red: masculine — feminine",
+            "tr": "kırmızı: eril — dişil"
+          }
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meanings": {
+            "ar": "أزرق بصيغتي المذكر والمؤنث",
+            "en": "blue: masculine — feminine",
+            "tr": "mavi: eril — dişil"
+          }
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meanings": {
+            "ar": "أخضر بصيغتي المذكر والمؤنث",
+            "en": "green: masculine — feminine",
+            "tr": "yeşil: eril — dişil"
+          }
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meanings": {
+            "ar": "أصفر بصيغتي المذكر والمؤنث",
+            "en": "yellow: masculine — feminine",
+            "tr": "sarı: eril — dişil"
+          }
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meanings": {
+            "ar": "أبيض بصيغتي المذكر والمؤنث",
+            "en": "white: masculine — feminine",
+            "tr": "beyaz: eril — dişil"
+          }
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meanings": {
+            "ar": "أسود بصيغتي المذكر والمؤنث",
+            "en": "black: masculine — feminine",
+            "tr": "siyah: eril — dişil"
+          }
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meanings": {
+            "ar": "وردي بصيغتي المذكر والمؤنث",
+            "en": "pink: masculine — feminine",
+            "tr": "pembe: eril — dişil"
+          }
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meanings": {
+            "ar": "بني بصيغتي المذكر والمؤنث",
+            "en": "brown: masculine — feminine",
+            "tr": "kahverengi: eril — dişil"
+          }
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "أكمل: سيارة ... بلون أخضر، وقلم ... بلون أبيض. ما الذي يحدد الصيغة؟",
+          "en": "Complete “a ... car” with green and “a ... pen” with white. What determines the Arabic form?",
+          "tr": "Yeşil araba ve beyaz kalem ifadelerinin Arapça sıfatlarını tamamla. Biçimi ne belirler?"
+        },
+        "answers": {
+          "ar": "سيارة خضراء، وقلم أبيض. جنس الاسم النحوي، لا جنس المالك، يحدد التوافق في المثالين.",
+          "en": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. The noun’s grammatical gender, not the owner’s gender, controls agreement here.",
+          "tr": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Bu örneklerde uyumu sahibin cinsiyeti değil ismin dilbilgisel cinsiyeti belirler."
+        }
+      },
+      "source_ids": [],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "titles": {
+        "ar": "الأيام والشهور: زمن الكلام وزمن الموعد",
+        "en": "Days and months: speaking time and appointment time",
+        "tr": "Günler ve aylar: konuşma zamanı ve randevu zamanı"
+      },
+      "sections": [
+        {
+          "id": "calendar-1",
+          "titles": {
+            "ar": "اليوم كلمة يتغير مرجعها",
+            "en": "Today changes its reference",
+            "tr": "Bugünün gönderimi değişir"
+          },
+          "prose": {
+            "ar": [
+              "اليوم هو يوم الكلام، وأمس اليوم السابق، وغدًا التالي. رسالة تقول «تعال غدًا» قد تكون غير واضحة إذا قرأها المتلقي بعد أيام ولا يعرف تاريخ إرسالها. تاريخ ثابت مثل 8 أكتوبر 2026 يحدد اليوم، لكننا نذكر نظام التقويم والوقت والمنطقة الزمنية عند الحاجة.",
+              "أسماء الأسبوع السبعة لا تتغير لأن دولة تبدأ تقويمها الاثنين وأخرى الأحد أو السبت. ترتيب العرض وبداية الأسبوع والعطلة أعراف تختلف. تعلم التسلسل ثم اربطه بتقويم المكان؛ لا تقدم صورة بلد واحد كأنها قاعدة لكل المتعلمين."
+            ],
+            "en": [
+              "Today is the day of speaking; yesterday precedes it; tomorrow follows it. “Come tomorrow” can be unclear if someone reads the message days later without its sending date. A fixed date such as 8 October 2026 identifies a day, but an appointment may also need its calendar system, time and time zone.",
+              "The seven weekday names remain the same even when one calendar starts on Monday and another on Sunday or Saturday. Display order, the first day of the week and weekend customs differ. Learn the sequence, then connect it to the learner’s local calendar."
+            ],
+            "tr": [
+              "Bugün konuşulan gündür; dün önceki, yarın sonraki gündür. Gönderim tarihini bilmeden günler sonra okunan “yarın gel” mesajı belirsiz olabilir. 8 Ekim 2026 gibi sabit tarih günü belirler; randevu için takvim sistemi, saat ve saat dilimi de gerekebilir.",
+              "Takvim pazartesi, pazar veya cumartesiyle başlasa da yedi günün adı değişmez. Gösterim sırası, haftanın başlangıcı ve tatil gelenekleri farklıdır. Sıralamayı öğren, sonra öğrencinin yaşadığı yerdeki takvimle ilişkilendir."
+            ]
+          }
+        },
+        {
+          "id": "calendar-2",
+          "titles": {
+            "ar": "أسماء مختلفة للشهر نفسه",
+            "en": "Different names for the same month",
+            "tr": "Aynı ayın farklı adları"
+          },
+          "prose": {
+            "ar": [
+              "يناير وكانون الثاني اسمان شائعان للشهر الميلادي الأول في مناطق مختلفة، وفبراير وشباط للشهر الثاني، ومارس وآذار للثالث. لا يكفي حفظ قائمة واحدة واعتبار غيرها خطأ. نحدد نظام التقويم والمنطقة عند قراءة اسم غير مألوف.",
+              "محرم وصفر ورمضان أسماء من التقويم الهجري، وليست ترجمات أسماء الأشهر الميلادية. السنة القمرية تختلف عن السنة الشمسية، ولا يوجد تحويل صحيح بمجرد تغيير كلمة يناير إلى محرم. عند موعد حقيقي نستعمل تقويمًا موثوقًا بدل حساب تخميني من أسماء الشهور."
+            ],
+            "en": [
+              "January may be called يناير or كانون الثاني in different Arabic-speaking regions; February فبراير or شباط; March مارس or آذار. Learning one list does not make regional alternatives wrong. Identify the calendar system and regional naming convention when reading an unfamiliar name.",
+              "Muḥarram, Ṣafar and Ramaḍān belong to the Hijri calendar; they are not translations of Gregorian month names. Lunar and solar years differ. Replacing January with Muḥarram does not convert a date. Use a reliable calendar for an actual appointment."
+            ],
+            "tr": [
+              "Miladi yılın ilk ayına bazı bölgelerde يناير, bazılarında كانون الثاني denir. İkinci ay فبراير veya شباط, üçüncü مارس veya آذار olabilir. Tek liste öğrenmek diğer bölgesel adları yanlış yapmaz. Bilinmeyen ad için takvim sistemini ve bölgesel kullanımı belirle.",
+              "Muharrem, safer ve ramazan hicri takvimdendir; miladi ay adlarının çevirisi değildir. Ay yılı ile güneş yılı farklıdır. Ocak adını muharremle değiştirmek tarih dönüşümü yapmaz. Gerçek randevu için güvenilir takvim kullan."
+            ]
+          }
+        },
+        {
+          "id": "calendar-3",
+          "titles": {
+            "ar": "قراءة موعد واضح",
+            "en": "Reading a clear appointment",
+            "tr": "Açık bir randevuyu okumak"
+          },
+          "prose": {
+            "ar": [
+              "«أقرأ يوم الجمعة» يخبر عن يوم باسم الجمعة، لكنه قد يحتاج إلى أي جمعة؟ و«أقرأ كل جمعة» يصف تكرارًا، لا موعدًا واحدًا فقط. كلمة كل تغير المعنى. نسأل الطفل هل النشاط يحدث مرة واحدة أم يتكرر، ثم نبحث عن الكلمة التي أعطت الدليل.",
+              "عندما تُكتب الأرقام مثل 03/04 قد يختلف تفسيرها بحسب ترتيب اليوم والشهر. اسم الشهر المكتوب أو صيغة متفق عليها تمنع اللبس. في التعليم نعطي موقفًا واحدًا واضحًا، وفي التخطيط الفعلي نتحقق من التاريخ بدل الثقة بالتخمين."
+            ],
+            "en": [
+              "“I read on Friday” may need clarification about which Friday. “I read every Friday” describes a recurring activity. The word “every” changes the message. Ask whether the action happens once or repeats, then identify the written clue.",
+              "A numeric date such as 03/04 can be ambiguous when day-month order differs. A written month name or an agreed date format helps. Use a clear learning example; for real planning verify the date rather than guessing from its appearance."
+            ],
+            "tr": [
+              "Cuma günü okurum ifadesinde hangi cuma sorusu gerekebilir. Her cuma okurum tekrarlanan etkinliktir. Her sözcüğü anlamı değiştirir. Etkinliğin bir kez mi tekrarlı mı olduğunu sor; sonra yazılı ipucunu bul.",
+              "03/04 gibi sayısal tarih, gün-ay sırası farklıysa belirsiz olabilir. Ay adını yazmak veya üzerinde anlaşılmış biçim kullanmak yardımcıdır. Eğitim örneğini açık tut; gerçek planlamada görünüşten tahmin etmek yerine tarihi doğrula."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meanings": {
+            "ar": "يوم الكلام",
+            "en": "today",
+            "tr": "bugün"
+          }
+        },
+        {
+          "ar": "أَمْس",
+          "meanings": {
+            "ar": "اليوم السابق ليوم الكلام",
+            "en": "yesterday",
+            "tr": "dün"
+          }
+        },
+        {
+          "ar": "غَدًا",
+          "meanings": {
+            "ar": "اليوم التالي ليوم الكلام",
+            "en": "tomorrow",
+            "tr": "yarın"
+          }
+        },
+        {
+          "ar": "السَّبْت",
+          "meanings": {
+            "ar": "اسم يوم",
+            "en": "Saturday",
+            "tr": "cumartesi"
+          }
+        },
+        {
+          "ar": "الأَحَد",
+          "meanings": {
+            "ar": "اسم يوم",
+            "en": "Sunday",
+            "tr": "pazar"
+          }
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meanings": {
+            "ar": "اسم يوم",
+            "en": "Monday",
+            "tr": "pazartesi"
+          }
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meanings": {
+            "ar": "اسم يوم",
+            "en": "Tuesday",
+            "tr": "salı"
+          }
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meanings": {
+            "ar": "اسم يوم",
+            "en": "Wednesday",
+            "tr": "çarşamba"
+          }
+        },
+        {
+          "ar": "الخَمِيس",
+          "meanings": {
+            "ar": "اسم يوم",
+            "en": "Thursday",
+            "tr": "perşembe"
+          }
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meanings": {
+            "ar": "اسم يوم",
+            "en": "Friday",
+            "tr": "cuma"
+          }
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "إذا كان اليوم الثلاثاء، فما غدًا في ترتيب الأسبوع؟ وهل يناير ومحرم اسمان للشهر نفسه؟",
+          "en": "If today is Tuesday, which weekday is tomorrow? Are January and Muḥarram names for the same month?",
+          "tr": "Bugün salıysa yarın hangi gün? Ocak ile muharrem aynı ayın iki adı mıdır?"
+        },
+        "answers": {
+          "ar": "الأربعاء. لا: يناير ميلادي ومحرم هجري؛ تحديد تطابق تاريخ فعلي يحتاج تحويلًا تقويميًا صحيحًا.",
+          "en": "Wednesday. No: January is Gregorian and Muḥarram Hijri. Matching actual dates requires a proper calendar conversion.",
+          "tr": "Çarşamba. Hayır; ocak miladi, muharrem hicridir. Gerçek tarih eşleştirmesi doğru takvim dönüşümü gerektirir."
+        }
+      },
+      "source_ids": [],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "titles": {
+        "ar": "المكان والاتجاه: حدد مرجعك أولًا",
+        "en": "Place and direction: choose your reference first",
+        "tr": "Yer ve yön: önce referansını belirle"
+      },
+      "sections": [
+        {
+          "id": "directions-1",
+          "titles": {
+            "ar": "أين بالنسبة إلى ماذا؟",
+            "en": "Where, relative to what?",
+            "tr": "Neye göre nerede?"
+          },
+          "prose": {
+            "ar": [
+              "كتاب فوق طاولة، وحقيبة تحتها. فوق وتحت علاقات بين شيئين؛ الكتاب ليس «فوق» في كل وصف ممكن. لهذا نذكر المرجع: فوق الطاولة. داخل وخارج كذلك يحتاجان إلى شيء له حدود مناسبة في الموقف، مثل داخل الحقيبة وخارج الغرفة.",
+              "ضع/ضعْ الكتاب فوق الطاولة مثال تعليمي على أمر؛ في الوصل نقرأ ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ في الضبط المعروض. لا نحول كل حركة وصل إلى حركة دائمة في أصل الفعل. المقصود للمبتدئ الآن فهم التعليمات، ثم نشرح تفاصيل البناء في مرحلة مناسبة."
+            ],
+            "en": [
+              "A book is above a table; a bag is under it. “Above” and “under” describe relationships. The book is not simply “above” in every possible description, so identify the reference: above the table. “Inside” and “outside” also need a relevant boundary, as in inside the bag or outside the room.",
+              "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ means “Put the book on the table.” The displayed connected reading includes the kasra on ضَعِ; do not treat every linking vowel as a permanent part of the isolated verb. First understand the instruction, then introduce the grammatical detail when useful."
+            ],
+            "tr": [
+              "Kitap masanın üzerinde, çanta altındadır. Üstünde ve altında iki şey arasındaki ilişkiyi anlatır. Kitap her açıklamada yalnızca “üstte” değildir; referansı belirt: masanın üstünde. İçinde ve dışında da çanta veya oda gibi uygun bir sınır gerektirir.",
+              "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ, kitabı masanın üstüne koy demektir. Gösterilen bağlantılı okumada ضَعِ üzerinde esre vardır; her bağlantı ünlüsünü fiilin bağımsız biçiminin kalıcı parçası sayma. Önce yönergeyi anla, sonra yararlı olduğunda dilbilgisel ayrıntıya geç."
+            ]
+          }
+        },
+        {
+          "id": "directions-2",
+          "titles": {
+            "ar": "يمين من؟",
+            "en": "Whose right?",
+            "tr": "Kimin sağı?"
+          },
+          "prose": {
+            "ar": [
+              "ارفع يدك اليمنى. شخص يقف أمامك قد تكون يده اليمنى في الجهة التي تراها أنت يسارًا. لذلك «على يمينك» أدق من «يمين» حين يختلف موضع المشاهدين. لا نعاقب الطفل على اختيار صحيح من مرجع مختلف لم نوضحه.",
+              "الشمال والجنوب والشرق والغرب اتجاهات جغرافية، لا مرادفات ثابتة لأعلى الورقة وأسفلها ويمينها ويسارها. تحتاج الخريطة إلى علامة اتجاه أو عرف واضح. عندما تستدير يتغير يمينك في المكان، ولا يتغير الشمال لمجرد دوران جسمك."
+            ],
+            "en": [
+              "Raise your right hand. Someone facing you may have their right hand on what looks like your left side. “On your right” is clearer than “right” when observers face different ways. Do not mark a child wrong for using a reference point you failed to specify.",
+              "North, south, east and west are geographical directions, not permanent synonyms for top, bottom, right and left on a page. A map needs an orientation cue or clear convention. Turning your body changes where your right points; it does not move north."
+            ],
+            "tr": [
+              "Sağ elini kaldır. Karşındaki kişinin sağ eli, senin gördüğün sol tarafta olabilir. Gözlemciler farklı yöne bakıyorsa “senin sağında” daha açıktır. Açıklamadığın başka bir referansı kullanan çocuğu yanlış sayma.",
+              "Kuzey, güney, doğu ve batı coğrafi yönlerdir; sayfanın üstü, altı, sağı ve solunun değişmez eşanlamlıları değildir. Harita yön işareti veya açık gösterim kuralı ister. Vücudunu çevirmek sağının baktığı yönü değiştirir; kuzeyi değiştirmez."
+            ]
+          }
+        },
+        {
+          "id": "directions-3",
+          "titles": {
+            "ar": "ترتيب الخطوات جزء من المعنى",
+            "en": "Step order is part of meaning",
+            "tr": "Adım sırası anlamın parçasıdır"
+          },
+          "prose": {
+            "ar": [
+              "خذ الكتاب، ثم ضعه داخل الحقيبة. كلمة ثم تحفظ ترتيبًا: لا تضع شيئًا في حقيبة قبل تحديده وإمساكه في هذا النشاط. أعط تعليمات قصيرة وشيئًا معروفًا، ثم اطلب من المتعلم شرح ما سيفعله قبل الحركة. هذا يفصل فهم الكلمات عن تنفيذ تخمين.",
+              "الكتاب داخل الحقيبة والحقيبة تحت الكرسي. ليس ذلك دليلًا أن الكتاب فوق الحقيبة. نميز العلاقة المباشرة والوصف الذي يحتاج معلومات أخرى. إذا احتوى النص على مكانين، ارسم مخططًا بسيطًا واكتب أسماء الأشياء؛ لا تجعل حفظ موضع الصورة هو المهارة الوحيدة."
+            ],
+            "en": [
+              "“Take the book, then put it inside the bag.” “Then” preserves an order. Give short instructions involving familiar objects and ask the learner to explain the intended action before moving. That separates word comprehension from a lucky physical guess.",
+              "The book is inside the bag, and the bag is under the chair. That does not mean the book is above the bag. Separate a stated relationship from one requiring more information. For several locations, draw a simple labelled plan instead of relying only on picture-position memory."
+            ],
+            "tr": [
+              "Kitabı al, sonra çantanın içine koy. Sonra sözcüğü sıralamayı korur. Bilinen nesnelerle kısa yönergeler ver; hareketten önce öğrenci ne yapacağını açıklasın. Böylece kelimeyi anlamak ile doğru hareketi tesadüfen tahmin etmek ayrılır.",
+              "Kitap çantanın içinde, çanta sandalyenin altındadır. Bu, kitap çantanın üstündedir demek değildir. Söylenen ilişkiyle ek bilgi gerektiren ilişkiyi ayır. Birkaç yer için yalnızca resim konumunu ezberlemek yerine etiketli basit plan çiz."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meanings": {
+            "ar": "علاقة مكانية أعلى المرجع",
+            "en": "above / on, according to context",
+            "tr": "üstünde / üzerinde, bağlama göre"
+          }
+        },
+        {
+          "ar": "تَحْت",
+          "meanings": {
+            "ar": "علاقة مكانية أسفل المرجع",
+            "en": "under / below",
+            "tr": "altında"
+          }
+        },
+        {
+          "ar": "أَمَام",
+          "meanings": {
+            "ar": "جهة أمام المرجع",
+            "en": "in front of",
+            "tr": "önünde"
+          }
+        },
+        {
+          "ar": "خَلْف",
+          "meanings": {
+            "ar": "جهة خلف المرجع",
+            "en": "behind",
+            "tr": "arkasında"
+          }
+        },
+        {
+          "ar": "دَاخِل",
+          "meanings": {
+            "ar": "ضمن حدود الشيء",
+            "en": "inside",
+            "tr": "içinde"
+          }
+        },
+        {
+          "ar": "خَارِج",
+          "meanings": {
+            "ar": "خارج حدود الشيء",
+            "en": "outside",
+            "tr": "dışında"
+          }
+        },
+        {
+          "ar": "يَمِين",
+          "meanings": {
+            "ar": "جهة تتعلق بمرجع المشاهد",
+            "en": "right",
+            "tr": "sağ"
+          }
+        },
+        {
+          "ar": "يَسَار",
+          "meanings": {
+            "ar": "جهة تتعلق بمرجع المشاهد",
+            "en": "left",
+            "tr": "sol"
+          }
+        },
+        {
+          "ar": "الشَّمَال",
+          "meanings": {
+            "ar": "اتجاه جغرافي",
+            "en": "north",
+            "tr": "kuzey"
+          }
+        },
+        {
+          "ar": "الجَنُوب",
+          "meanings": {
+            "ar": "اتجاه جغرافي",
+            "en": "south",
+            "tr": "güney"
+          }
+        },
+        {
+          "ar": "الشَّرْق",
+          "meanings": {
+            "ar": "اتجاه جغرافي",
+            "en": "east",
+            "tr": "doğu"
+          }
+        },
+        {
+          "ar": "الغَرْب",
+          "meanings": {
+            "ar": "اتجاه جغرافي",
+            "en": "west",
+            "tr": "batı"
+          }
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "كتاب داخل حقيبة تحت كرسي. هل الكتاب فوق الحقيبة؟ وهل يمينك يظل نحو الاتجاه الجغرافي نفسه إذا استدرت؟",
+          "en": "A book is inside a bag under a chair. Is the book above the bag? Does your right point in the same geographical direction after turning?",
+          "tr": "Kitap, sandalyenin altındaki çantanın içinde. Kitap çantanın üstünde mi? Döndüğünde sağın aynı coğrafi yöne mi bakar?"
+        },
+        "answers": {
+          "ar": "لا: الكتاب داخلها. ولا: جهة يمينك تتغير مع وضعك، بخلاف مرجع الاتجاه الجغرافي.",
+          "en": "No: it is inside the bag. No: your right changes with your orientation, unlike the geographical reference.",
+          "tr": "Hayır; çantanın içinde. Hayır; sağın vücut yöneliminle değişir, coğrafi yön referansı böyle değişmez."
+        }
+      },
+      "source_ids": [],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "titles": {
+        "ar": "القصص: نقرأ النص ولا نخترع دليله",
+        "en": "Stories: read the text, keep track of its evidence",
+        "tr": "Öyküler: metni oku, kanıtını izle"
+      },
+      "sections": [
+        {
+          "id": "stories-1",
+          "titles": {
+            "ar": "قصة أصلية: النافذة والقلم",
+            "en": "Original story: the window and the pen",
+            "tr": "Özgün öykü: pencere ve kalem"
+          },
+          "prose": {
+            "ar": [
+              "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+              "الشرح: فتحت ليلى النافذة، وتركت قلمًا على الطاولة، ثم خرجت إلى المدرسة. بعد عودتها وجدته تحت الكرسي واستعملته. النص لا يقول من حرّك القلم، ولا يثبت أن الهواء أسقطه. القصة والأمثلة هنا من تأليف HORIZONS؛ لم ننسخ قصة منشورة."
+            ],
+            "en": [
+              "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+              "Layla opened the window. She put a blue pen on the table, then went to school. When she returned, she could not find the pen. She looked under the chair and found it. She took it and wrote a short letter. The text does not say who moved the pen or prove that wind blew it down. This story is original HORIZONS writing, not a copied published story."
+            ],
+            "tr": [
+              "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+              "Leyla pencereyi açtı. Masanın üstüne mavi bir kalem koydu, sonra okula gitti. Döndüğünde kalemi bulamadı. Sandalyenin altına baktı ve onu buldu. Kalemi alıp kısa bir mektup yazdı. Metin kalemi kimin hareket ettirdiğini söylemez; rüzgârın düşürdüğünü kanıtlamaz. Bu öykü HORIZONS için özgün olarak yazıldı; yayımlanmış öyküden kopyalanmadı."
+            ]
+          }
+        },
+        {
+          "id": "stories-2",
+          "titles": {
+            "ar": "ثلاث قراءات بثلاثة أهداف",
+            "en": "Three readings, three purposes",
+            "tr": "Üç okuma, üç amaç"
+          },
+          "prose": {
+            "ar": [
+              "في الأولى اسأل: من الشخصية؟ وما المشكلة؟ لا توقف القراءة لشرح كل علامة. في الثانية اسأل عن ترتيب الحدث: أين كان القلم وأين وجدته؟ في الثالثة افحص اللغة: هُ في وَجَدَتْهُ تعود إلى القلم، وتاء الفعل تذكّر بالصيغ المرتبطة بليلى في هذا السرد.",
+              "القلم أزرق، لكن وصف رسالتها قصير لا يخبرنا عن لونها. إذا سألنا عن لون الرسالة فالجواب غير موجود في النص. هذه مهارة مهمة: لا نعوض نقص الدليل بإجابة تبدو معقولة. ويمكن كتابة نهاية متخيلة، بشرط تسميتها تأليفًا لا حقيقة وردت في القصة."
+            ],
+            "en": [
+              "On the first reading ask who the character is and what problem she faces. Do not interrupt every mark. On the second, trace the sequence: where was the pen, and where was it found? On the third, examine language: هُ in وَجَدَتْهُ refers to the pen; the verb forms fit Layla in this narration.",
+              "The pen is blue; “short” describes her letter’s length, not its colour. The text does not provide the letter’s colour. Do not replace missing evidence with a plausible answer. You may write an imagined ending, but identify it as your own invention rather than an event in the original story."
+            ],
+            "tr": [
+              "İlk okumada karakteri ve sorununu sor; her işarette durma. İkincide olay sırasını izle: kalem önce neredeydi, nerede bulundu? Üçüncüde dili incele: وَجَدَتْهُ içindeki هُ kaleme gönderir; fiil biçimleri anlatıda Leylaya uygundur.",
+              "Kalem mavidir; mektubun kısa olması uzunluğunu anlatır, rengini değil. Metin mektubun rengini vermez. Eksik kanıt yerine makul görünen cevap koyma. Hayalî son yazabilirsin; ancak özgün metindeki olay değil, kendi yazın olduğunu belirt."
+            ]
+          }
+        },
+        {
+          "id": "stories-3",
+          "titles": {
+            "ar": "معجم صغير وتأليف مستقل",
+            "en": "A small glossary and independent writing",
+            "tr": "Küçük sözlük ve bağımsız yazma"
+          },
+          "prose": {
+            "ar": [
+              "النافذة فتحة في الجدار، والطاولة سطح نضع عليه الأشياء، والرسالة كلام مكتوب لشخص أو جهة. شرح هذه الكلمات قبل القراءة قد يزيل عائقًا صغيرًا دون أن نحكي القصة كلها. بعد القراءة اطلب من الطفل اختيار عنوان آخر وتوضيح سبب الاختيار بجملة من النص.",
+              "بدّل القلم بكتاب، ثم بدّل ليلى بعمر. يتغير لون الوصف إذا اخترت شيئًا مؤنثًا، وتتغير صيغة الأفعال عند تغيير الشخصية إلى مذكر. راجع كل إحالة بدل تبديل كلمة واحدة فقط. الهدف كتابة نص متماسك، لا تشغيل آلة استبدال أسماء."
+            ],
+            "en": [
+              "A window is an opening in a wall; a table provides a surface for objects; a letter is written communication to someone. Explaining these words can remove a vocabulary obstacle without retelling the whole story. Afterwards choose another title and justify it with evidence from the text.",
+              "Replace the pen with a book, then Layla with Omar. Choosing a feminine object may change adjective forms; changing the character to masculine changes relevant verbs. Review every reference rather than replacing a single name. The goal is a coherent new text, not automatic word substitution."
+            ],
+            "tr": [
+              "Pencere duvardaki açıklık, masa nesneler için yüzey, mektup birine yazılı iletişimdir. Bu kelimeleri önceden açıklamak, bütün öyküyü anlatmadan kelime engelini kaldırır. Sonra başka başlık seç ve metinden kanıtla gerekçelendir.",
+              "Kalemi kitapla, Leylayı Ömerle değiştir. Dişil nesne seçmek sıfatları, karakteri erile çevirmek ilgili fiilleri değiştirebilir. Tek adı değiştirmek yerine bütün gönderimleri kontrol et. Amaç otomatik sözcük değiştirme değil, tutarlı yeni metindir."
+            ]
+          }
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meanings": {
+            "ar": "فتحة في الجدار",
+            "en": "window",
+            "tr": "pencere"
+          },
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meanings": {
+            "ar": "سطح نضع عليه الأشياء",
+            "en": "table",
+            "tr": "masa"
+          },
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meanings": {
+            "ar": "أثاث للجلوس",
+            "en": "chair",
+            "tr": "sandalye"
+          },
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meanings": {
+            "ar": "كلام مكتوب يرسل إلى شخص أو جهة",
+            "en": "letter / message",
+            "tr": "mektup / mesaj"
+          },
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meanings": {
+            "ar": "وجدت ليلى القلم",
+            "en": "and she found it",
+            "tr": "ve onu buldu"
+          }
+        },
+        {
+          "ar": "ثُمَّ",
+          "meanings": {
+            "ar": "كلمة لترتيب حدث تالٍ",
+            "en": "then",
+            "tr": "sonra"
+          }
+        }
+      ],
+      "exercise": {
+        "questions": {
+          "ar": "أين وجدت ليلى القلم؟ ومن حرّكه؟ وما مرجع الهاء في وجدته؟",
+          "en": "Where did Layla find the pen? Who moved it? What does هُ in وَجَدَتْهُ refer to?",
+          "tr": "Leyla kalemi nerede buldu? Kim hareket ettirdi? وَجَدَتْهُ içindeki هُ neyi gösterir?"
+        },
+        "answers": {
+          "ar": "تحت الكرسي. لا نعرف من حرّكه من هذا النص. الهاء تعود إلى القلم. نميز معلومة صريحة من معلومة لم يذكرها الكاتب.",
+          "en": "Under the chair. The text does not tell us who moved it. هُ refers to the pen. Separate stated information from information the writer did not supply.",
+          "tr": "Sandalyenin altında. Metin kimin hareket ettirdiğini söylemez. هُ kaleme gönderir. Açık bilgiyi, yazarın vermediği bilgiden ayır."
+        }
+      },
+      "source_ids": [],
+      "authorship": "HORIZONS original explanations, examples and exercises",
+      "review_status": {
+        "ar": "author_draft",
+        "en": "translation_draft",
+        "tr": "translation_draft"
+      }
+    }
+  ]
+}

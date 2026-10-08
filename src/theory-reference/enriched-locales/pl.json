@@ -1,0 +1,1546 @@
+{
+  "language": "pl",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Litery i pismo: otwieramy drzwi do czytania",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Trzy różne rzeczy: nazwa, dźwięk i kształt",
+          "paragraphs": [
+            "Wyobraź sobie pudełko z klockami. Nazwy pomagają je znaleźć, ale powtarzanie nazw nie buduje domu. Litera też ma nazwę, postać pisaną i rolę w wypowiadanym słowie. ب nazywa się ba. Jednak w بَاب zaczynamy od /b/, po którym następuje długa samogłoska /aː/. Nie zastępuj słowa trzema nazwami liter. Nazwy nadal przydają się przy pytaniu o pisownię.",
+            "Śledź arabskie słowo od prawej do lewej. Najpierw zauważ korpus, potem kropki, następnie znaki czytania. بَ i تَ mają podobne korpusy, ale kropki wskazują różne litery. Zamiana fatḥy na kasrę daje بِ, nie zmienia ba w ta. Zasłoń resztę wiersza, jeśli wydaje się zatłoczony. Rozpoznanie litery jest osiągnięciem, nawet zanim przeczytasz całe słowo."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Dlaczego litera zmienia kształt?",
+          "paragraphs": [
+            "Arabskie litery dzielą linię pisma, trochę jak ludzie trzymający się za ręce. ب, بـ, ـبـ i ـب to połączone postacie jednej litery, nie cztery nowe litery. W بَاب pierwsze ba łączy się z alifem, lecz alif nie przedłuża połączenia do ostatniego ba. Ta przerwa nie tworzy drugiego słowa.",
+            "ا, د, ذ, ر, ز i و mogą przyjąć połączenie od poprzedniej litery, gdy jest to dozwolone, ale nie łączą się z następną po lewej. Nie wstawiaj spacji przy każdej przerwie w linii. Spacje oddzielają słowa; reguły łączenia kształtują litery wewnątrz słowa. Zobacz rzeczywisty przykład, zanim zaczniesz zapamiętywać wszystkie reguły."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza i znaczenie",
+          "paragraphs": [
+            "W بَاب alif zapisuje długą samogłoskę /aː/. أَخ rozpoczyna hamza /ʔ/ na nośniku alif. Hamza jest spółgłoską, nie długą samogłoską. Zgodnie z pisownią występuje jako ء, أ, إ, ؤ lub ئ. Kształt nośnika nie sprawia, że wszystkie te znaki brzmią jak samogłoskowy alif.",
+            "Łącz każdy krok ze znaczeniem: drzwi można otworzyć, książka zawiera strony do czytania, długopis służy do pisania. Zmieniaj kolejność kart i wracaj po krótkiej przerwie. Zapamiętanie miejsca karty ćwiczy pamięć, ale samodzielne czytanie oznacza rozpoznawanie zapisu niezależnie od miejsca."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "drzwi",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "książka",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "długopis",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "brat",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "dom",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "światło",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Czy przerwa w łączeniu wewnątrz بَاب tworzy dwa słowa? Czy nazwa ba jest pełnym odczytaniem بَاب?",
+        "answer": "W obu przypadkach nie. بَاب jest jednym słowem: alif nie łączy dalej. Ba nazywa literę; /baːb/ odczytuje dźwięki słowa po kolei."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Znaki samogłoskowe: małe znaki zmieniają czytanie",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Znak samogłoskowy nie jest kropką",
+          "paragraphs": [
+            "Ustaw obok siebie بَ, بُ i بِ. Wszystkie mają ba. Fatḥa oznacza krótkie /a/, ḍamma krótkie /u/, kasra krótkie /i/. Usta, język i wargi dostosowują się do samogłoski. Zwiększenie głośności nie zmienia jednej samogłoski w drugą.",
+            "W بِ kropka ba i kasra są blisko siebie pod literą. Kropka identyfikuje literę, kasra kieruje czytaniem. Zmień znak samogłoski, a ba pozostanie ba. Kolor rozdziela te funkcje w książce, lecz kształty i podpisy muszą być zrozumiałe także na wydruku czarno-białym."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Długość, nie głośność",
+          "paragraphs": [
+            "Porównaj بَ z بَا, بُ z بُو i بِ z بِي. W drugim elemencie każdej pary samogłoska trwa dłużej; ba nie staje się inną spółgłoską. ː w /baː/ oznacza długość poprzedniej samogłoski. Nie jest dodatkową arabską literą ani stałym czasem ze stopera dla każdego mówiącego.",
+            "Alif, waw i ya nie są długimi samogłoskami za każdym razem. Waw w وَلَد to /w/, ya w يَد to /j/. Waw w نُور pomaga zapisać /uː/, ya w فِيل — /iː/. Czytaj lokalny układ, zamiast zgadywać funkcję wyłącznie z nazwy litery."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda i tanwīn",
+          "paragraphs": [
+            "Sukūn w بِنْت przypomina, by nie dodawać samogłoski po nun w tym układzie. Nie usuwa /n/. Shadda w أُمّ oznacza podwojoną spółgłoskę, nie dłuższą poprzednią samogłoskę. أَمْ /ʔam/ i أُمّ /ʔumm/ różnią się też samogłoską, więc nie są parą minimalną z jedną zmienną. Do izolowania cechy używaj wyraźnie oznaczonych sylab ćwiczeniowych.",
+            "Tanwīn w كِتَابٌ należy do końcówki rzeczownika w kontekście gramatycznym. W odpowiednim czytaniu łącznym słychać /un/, przy zwykłej pauzie na tym słowie /kitaːb/. To nie uniwersalna reguła dla każdej końcówki. Zachowaj znak w piśmie, wyjaśniając różnicę między czytaniem łącznym a pauzą."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "dziewczynka / córka",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "słoń",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "chłopiec",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "ręka",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "matka",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "światło",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Czy waw tutaj oznacza /w/ w نُور? Czy sukūn usuwa nun w بِنْت?",
+        "answer": "Nie. Waw w نُور zapisuje długie /uː/. Nun w بِنْت jest wymawiane bez dodanej po nim samogłoski w tym układzie."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Łączenie dwóch jednostek: pierwsze czytanie",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Co łączymy?",
+          "paragraphs": [
+            "W zeszycie łączenie dwóch jednostek nazywa etap ćwiczeń z dwiema jednostkami pisanymi. Liczba liter nie zawsze odpowiada liczbie dźwięków czy sylab. بَا zawiera ba i alif, lecz oznacza spółgłoskę i następującą po niej długą samogłoskę. Nie są to dwie spółgłoski; osobny element ćwiczeniowy nie musi być słowem ze znaczeniem.",
+            "Zacznij od بَ, potem بَا, następnie تَا i ثَا. Pierwsze porównanie zmienia długość samogłoski, następne spółgłoskę przy stałej długiej samogłosce. Daj czas na przyjrzenie się, potem odczytanie. Powtarzanie nazw liter zamiast dźwięków utrudnia zrozumienie łączenia."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Sylaby otwarte i zamknięte",
+          "paragraphs": [
+            "بَا kończy się tu samogłoską: to sylaba otwarta. بَرْ kończy się spółgłoską: jest zamknięta. „Zamknięta” opisuje zakończenie, nie konieczność trzymania zamkniętych ust podczas całej wypowiedzi. Czytaj بَرْ bez końcowej samogłoski. بَرَ zmienia strukturę.",
+            "Śledź miejsce palcem, potem stopniowo rezygnuj z pomocy. Wskazywanie pomaga śledzić, ale nie dowodzi poprawnej wymowy. Po znanej sylabie daj nową o tym samym wzorcu: sprawdza to przenoszenie reguły poza zapamiętaną kartę."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "Od części do słowa",
+          "paragraphs": [
+            "بَا jest częścią بَاب; بِي jest częścią pokazanej wymowy بِيض. Nie każda sylaba potrzebuje własnego znaczenia słownikowego. Najpierw połącz, potem zapytaj o znaczenie całego słowa. To nadaje ćwiczeniu cel szerszy niż szybkość.",
+            "Gdy pojawi się błąd, ustal zmianę: spółgłoska, jakość samogłoski, długość czy dodany dźwięk. Nazwanie konkretnego problemu jest lepsze niż polecenie zaczęcia wszystkiego od nowa. Jeśli trudnych jest kilka cech, ćwicz jedną wykonalną, zanim znów je połączysz."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "sylaba ćwiczeniowa; tutaj nie słowo",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "sylaba ćwiczeniowa",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "sylaba ćwiczeniowa",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "sylaba ćwiczeniowa w tym przykładzie",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "drzwi",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "jajka",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Dlaczego بَا i بَرْ należą do różnych typów sylab?",
+        "answer": "بَا kończy się długą samogłoską; بَرْ spółgłoską. Różnica dotyczy zakończeń, nie liczby kropek ani głośności."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Łączenie trzech jednostek: czytanie ze znaczeniem",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Trzy litery, ale ile sylab?",
+          "paragraphs": [
+            "بَاب i جَبَل mają po trzy podstawowe litery. W wybranej wymowie przy pauzie /baːb/ ma jedną sylabę, /dʒa.bal/ dwie. Kropka w zapisie fonetycznym oznacza granicę sylab, nie pisaną kropkę jim. Samo liczenie liter nie daje liczby sylab.",
+            "Napisz litery ze znakami, potem zbadaj wzorzec dźwięków. W جَبَل zacznij od جَ, zakończ بَلْ przy pauzie. Połącz bez pominięcia ba i bez dodatkowego dźwięku. Dzielenie słowa jest tymczasową pomocą, nie sposobem mówienia każdego zwykłego zdania."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Kolejność liter niesie znaczenie",
+          "paragraphs": [
+            "قَلْب oznacza serce, كَلْب psa. Zamiana qaf na kaf zmienia znaczenie. بَحْر to morze, حَبْر atrament; zmieniają się kolejność i samogłoski, więc nie jest to para minimalna z jedną cechą. Patrz na szczegóły zapisu, zamiast zgadywać z obrazka.",
+            "Wybierz słowa o znaczeniu, które da się pokazać. Po czytaniu zapytaj, czy atrament służy do pisania czy pływania. Znaczenie może ujawnić zgadywanie, ale nie zastępuje patrzenia na litery. Wyjaśnij nowe słowo, zamiast uznawać nieznane słownictwo za porażkę czytania."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Uważność przed płynnością",
+          "paragraphs": [
+            "Przeczytaj trzy słowa bez wyścigu. Zaznacz jedno wymagające powrotu i spróbuj po łatwiejszym przykładzie. Płynność obejmuje odpowiednie czytanie, rozumienie i poprawianie, nie tylko słowa na minutę. Nie zachęcaj dziecka do ukrywania wahania zgadywaniem.",
+            "Dla przeniesienia umiejętności po جَبَل daj جَمَل. Ba zmienia się w mim w znanym wzorcu. Góra to wzniesienie, wielbłąd zwierzę. Poproś o inne prawdziwe słowo ze znanymi literami, lecz wyjaśnij, że nie każdy układ tworzy arabskie słowo."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "góra",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "wielbłąd",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "serce",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "pies",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "morze",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "atrament",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Która litera zmienia się między جَبَل a جَمَل? Czy بَاب i جَبَل mają tyle samo sylab?",
+        "answer": "Ba staje się mim. بَاب ma jedną sylabę w pokazanej wymowie przy pauzie; جَبَل ma dwie. Liczba liter nie wystarcza."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Łączenie czterech jednostek: dłużej bez przeciążenia",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Dłuższe nie zawsze trudniejsze",
+          "paragraphs": [
+            "كِتَاب ma cztery podstawowe litery. Wymowa przy pauzie /ki.taːb/ obejmuje krótką pierwszą sylabę, potem sylabę z długą samogłoską i końcowym ba. Wykorzystaj wiedzę z بَاب, nie traktuj każdej części jako całkiem nowej. Sama długość zapisu nie mierzy trudności.",
+            "Waw w ثَوْب nie zapisuje tu /uː/: /aw/ jest inną sekwencją. بَيْت zawiera /aj/, nie /iː/. Sukces wynika z badania samogłosek i struktury, nie z reguły, że każde waw to „u”, a każde ya „i”. Utrwal przykład przed dodaniem kontrastu."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "Zdanie dodaje zależności",
+          "paragraphs": [
+            "هَذَا كِتَابٌ wskazuje bliski przedmiot: „To jest książka”. هَذِهِ حَقِيبَةٌ używa żeńskiego zaimka wskazującego z torbą. Zmiana rzeczownika może wymagać sprawdzenia związanych słów, nie tylko jednej etykiety. Zapytaj, na co się wskazuje i jakie formy pasują.",
+            "الكِتَابُ جَدِيدٌ mówi „Książka jest nowa”. الكِتَابُ الجَدِيدُ wskazuje „nową książkę”; sama ta fraza nie przekazuje tego samego pełnego komunikatu. Rodzajnik nie jest ozdobnym przedrostkiem. Prosta sytuacja pokazuje zależność gramatyczną przed terminologią."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Przenoszenie umiejętności na nowy tekst",
+          "paragraphs": [
+            "Porównaj كِتَاب i كَاتِب. Podstawowe spółgłoski są powiązane, ale położenie alifu i samogłoski różne. Pierwsze to książka, drugie pisarz. Wspólny rdzeń nie nadaje wszystkim słowom tego samego znaczenia. To wprowadza rodziny słów bez udawania, że uczymy całej derywacji naraz.",
+            "Przeczytaj krótki wiersz, zasłoń go na chwilę, zapytaj o ogólny sens. Odsłoń dla sprawdzenia szczegółu. Oddziela to pamięć dźwiękową, rozumienie i powrót do pisanego dowodu. Proszenie o pomoc przy nowym słowie jest częścią nauki; ten poradnik nie powinien być niekończącym się egzaminem."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "książka",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "pisarz",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "torba",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "To jest książka."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Książka jest nowa."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "nowa książka"
+        }
+      ],
+      "exercise": {
+        "question": "Czy الكِتَابُ جَدِيدٌ i الكِتَابُ الجَدِيدُ same przekazują ten sam komunikat?",
+        "answer": "Nie. Pierwsze stwierdza, że książka jest nowa; drugie wskazuje nową książkę, nie wypowiadając takiego pełnego twierdzenia."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Przewodnik po literach: od kształtu do użycia",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Stała mapa każdej litery",
+          "paragraphs": [
+            "Dla każdej litery zadawaj te same pytania: nazwa, miejsce powstania dźwięku, łączenie, różnica od podobnego kształtu, jasne słowa z tą literą. Stały schemat chroni lekcję przed staniem się niewyjaśnionymi obrazkami. Nie trzeba odpowiadać na wszystko przy pierwszej wizycie.",
+            "Rozdział zawiera karty 28 liter alfabetu. Miejsce alifu w alfabecie nie znaczy, że hamza i długie /aː/ są jednym dźwiękiem. Waw i ya pełnią role zależne od kontekstu. Czytaj uwagę z karty przed porównaniem z pisownią własnego języka."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Rodziny kształtów nie są rodzinami dźwięków",
+          "paragraphs": [
+            "ب, ت i ث mają pokrewne korpusy, ale ba powstaje wargami, ta przez przednie zwarcie, tha przez tarcie zębowe w wybranej standardowej arabskiej wymowie. Trzy kropki tha nie wyjaśniają dźwięku, a trzy kropki shin nie robią z niej tha. Rodziny wizualne służą identyfikacji, opisy artykulacji wymowie.",
+            "Porównaj ثَ i تَ z niezmienną fatḥą. Porównaj س i ص przez emfatyczność, nie głośność. Niektóre arabskie dźwięki nie mają dokładnego odpowiednika w języku ucznia. Wyjaśnij artykulację i daj wzorzec słuchowy, nie wymyślaj dokładnego obcego odpowiednika."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Słownictwo, zdania i przenoszenie",
+          "paragraphs": [
+            "Po znalezieniu litery na początku, w środku i na końcu ułóż sensowne zdanie ze słowem z listy. Nie gromadź rzadkiego słownictwa tylko dla rozmiaru książki. Zmieniaj pozycje i znaczenia, objaśniaj słowa, dodawaj kontekst do wieloznacznych.",
+            "Różnice dialektalne nie są wadą mówiących. Przewodnik wskazuje standardową arabską wymowę, uznając zróżnicowanie jim, qaf i innych dźwięków w społecznościach. Nagranie ćwiczenia musi być zgodne z modelem podanym w wyjaśnieniu i symbolach."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "drzwi",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "góra",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "książka",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "owoce / plony",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "śnieg",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "lis",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "Czy podobny kształt ب, ت i ث oznacza to samo miejsce artykulacji? Czy jim jest identyczna w każdej społeczności?",
+        "answer": "Nie. Kształt to informacja pisana; artykulacja jest odrębną cechą. Jim się różni: określ model docelowy i jasno oznacz inne."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Zaimki: kim jestem ja, kim jesteś ty?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Słowo podążające za mówiącym",
+          "paragraphs": [
+            "Gdy Layla mówi „ja”, oznacza Laylę; gdy Omar mówi „ja”, oznacza Omara. Zaimek nie jest stałym imieniem: odniesienie wynika z sytuacji mówienia. „Ty” wskazuje adresata, „on” i „ona” osobę, o której mowa. Zmieniaj role przed zapamiętywaniem tabeli.",
+            "Arabski odróżnia أَنْتَ dla pojedynczego adresata rodzaju męskiego i أَنْتِ dla żeńskiego. Polskie „ty”, jak angielskie you, obejmuje oba, lecz arabskie rozróżnienie nie jest opcjonalne. Tureckie o odpowiada هُوَ i هِيَ: tłumacząc na arabski, sprawdź odniesienie, nie zastępuj słów mechanicznie."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Liczba pojedyncza, podwójna i mnoga",
+          "paragraphs": [
+            "أَنَا to pierwsza osoba pojedyncza. نَحْنُ obejmuje grupę z mówiącym, dwie lub więcej osób. أَنْتُمَا zwraca się do dwojga, هُمَا odnosi do dwojga; obie formy służą odniesieniu męskiemu i żeńskiemu. أَنْتُمْ / أَنْتُنَّ oraz هُمْ / هُنَّ rozróżniają formy mnogie. Męskie mnogie mogą obejmować grupę mieszaną w standardowym arabskim, zależnie od kontekstu.",
+            "Nie każdy język ma osobny jednowyrazowy zaimek podwójny. أَنْتُمَا można objaśnić jako „wy dwoje”, po angielsku you two, po turecku ikiniz. Objaśniają odniesienie, nie gwarantują identycznego użycia w każdej sytuacji. Porównuj znaczenia i formy."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Zaimek i to, co po nim",
+          "paragraphs": [
+            "أَنَا طَالِبٌ i أَنَا طَالِبَةٌ zaczynają się tym samym zaimkiem; rzeczownik zmienia się zgodnie z formą mówiącego. هُوَ طَالِبٌ i هِيَ طَالِبَةٌ zmieniają oba. Przykład z uczniem płci męskiej nie czyni أَنَا zaimkiem wyłącznie męskim.",
+            "W أَنَا أَقْرَأُ i نَحْنُ نَقْرَأُ zmienia się czasownik. Początkowe أَ należy tu do odmiany pierwszej osoby, nie posiadania. Czasownik może nieść dość informacji do pominięcia osobnego zaimka w jasnym kontekście. Angielskie am/is/are w przekładzie nie wymagają odpowiedniego słowa w każdym arabskim zdaniu nominalnym w czasie teraźniejszym."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "ja",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "ty (pojedynczy adresat rodzaju męskiego)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "ty (pojedynczy adresat rodzaju żeńskiego)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "my",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "on",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "ona",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "wy dwoje"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "oni dwoje / oboje"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "wy (męska liczba mnoga; kontekst może obejmować grupę mieszaną)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "wy (żeńska liczba mnoga)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "oni (męska liczba mnoga; kontekst może obejmować grupę mieszaną)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "one (żeńska liczba mnoga)"
+        }
+      ],
+      "exercise": {
+        "question": "Layla mówi o sobie, potem o Omarze. Jakie dwa zaimki pasują? Czy نَحْنُ jest tylko męskie?",
+        "answer": "أَنَا dla siebie; هُوَ dla Omara w tym przykładzie. نَحْنُ nie odróżnia płci mówiących; kontekst wskazuje grupę."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Posiadanie i relacje: więcej niż etykieta",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Jeden przedmiot, dwoje mówiących",
+          "paragraphs": [
+            "Omar trzyma książkę i mówi كِتَابِي — „moja książka”. Zwracając się do niego, mówisz كِتَابُكَ — „twoja książka”. Mówiąc o nim do Layli, mówisz كِتَابُهُ — „jego książka”. Książka ta sama, zmieniła się relacja rozmowy. To nie trzy kategorie książek.",
+            "Do Layli użyj كِتَابُكِ; mówiąc o niej كِتَابُهَا. Różnica كَ i كِ jest mała w piśmie i dźwięku, lecz ważna dla odniesienia. Polski i zwykle angielski mają osobne słowo przed rzeczownikiem; te arabskie formy dołączają zaimek do rzeczownika."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "Relacja nie zawsze jest własnością",
+          "paragraphs": [
+            "كِتَابُنَا wiąże książkę z naszą grupą. أُمِّي to „moja matka”, nie traktowanie człowieka jako własności. مَدْرَسَتِي może być szkołą, do której chodzę, nie budynkiem, który posiadam. Rzeczownik i kontekst wskazują rodzaj relacji.",
+            "W مَدْرَسَة → مَدْرَسَتِي taa marbūṭa zapisuje się jako zwykłe ta po dołączeniu zaimka. Nie uogólniaj, że każde końcowe ha staje się ta. Porównaj وَجْهِي — „moja twarz”: ha należące do وَجْه pozostaje ha."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Rzeczownik, przypadek i określoność",
+          "paragraphs": [
+            "كِتَابُكَ to jedna wybrana forma w tabeli. W رَأَيْتُ كِتَابَكَ — „Widziałem twoją książkę” — końcówka rzeczownika zmienia się z rolą gramatyczną; كَ wciąż oznacza pojedynczego męskiego adresata. Nie ucz się poprzedzającej ḍammy jako trwałej części „twój”.",
+            "W zwykłej konstrukcji rzeczownika z zaimkiem dzierżawczym nie dawaj tanwīnu ani rodzajnika tak, jakby był niezależnym rzeczownikiem bez relacji posiadania. كِتَابِي wyraża relację i jest tu określone. Najpierw naucz się poprawnego przykładu, potem zaawansowanych wyjątków."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "moja książka"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "twoja książka (pojedynczy męski adresat)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "twoja książka (pojedynczy żeński adresat)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "jego książka"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "jej książka"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "nasza książka"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "moja szkoła"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "moja twarz"
+        }
+      ],
+      "exercise": {
+        "question": "Layla mówi „moja książka”. Jak ją nazwiesz, zwracając się do Layli, a potem mówiąc o niej komuś innemu?",
+        "answer": "كِتَابُكِ przy zwracaniu się do niej; كِتَابُهَا przy mówieniu o niej. Odniesienie zaimka wynika z relacji w rozmowie."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Liczby: symbol, słowo i ilość",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Policz każdy przedmiot raz",
+          "paragraphs": [
+            "Połóż trzy długopisy na stole. Dotknij każdego raz przy jednym kroku liczenia, potem nazwij wielkość grupy. Policzony dwa razy długopis daje złą sumę. Przestawienie bez dodawania i zabierania pozostawia trzy: kształt szeregu nie jest ilością.",
+            "٣ i 3 przedstawiają tę samą liczbę w dwóch pokazanych systemach cyfr. ثَلَاثَة to arabskie słowo liczebnika, nie kształt cyfry. Liczba może liczyć książki, kroki czy minuty; określ, co jest liczone, by zrozumieć użycie."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Liczenie i liczenie rzeczowników",
+          "paragraphs": [
+            "Liczenie na głos zaczyna się od jednego do dziesięciu, ale połączenia liczebników wymagają uwagi. ثَلَاثَةُ كُتُبٍ to trzy książki, ثَلَاثُ سَيَّارَاتٍ trzy samochody. W tym wzorcu od trzech do dziesięciu forma liczby kontrastuje z rodzajem pojedynczego rzeczownika, a liczony rzeczownik ma dopełniacz mnogi. Nie stosuj wzorca do jednego i dwóch.",
+            "كِتَابٌ وَاحِدٌ i سَيَّارَةٌ وَاحِدَةٌ pokazują zgodność z jednym. Pokazane mianownikowe formy podwójne كِتَابَانِ i سَيَّارَتَانِ już wskazują dwa. Nie trzeba dodawać słowa „dwa” do każdej frazy podwójnej."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Ilość, kolejność i porównanie",
+          "paragraphs": [
+            "ثَلَاثَة odpowiada „ile?”, الثَّالِث „które miejsce?”. Trzy książki to nie trzecia książka. Zero długopisów oznacza brak długopisów w liczonej grupie, nie nieistnienie czegokolwiek.",
+            "Porównaj dwie rzeczywiste grupy: dwa długopisy i cztery. Druga ma więcej, pierwsza mniej. Jeśli obie mają cztery, liczby są równe mimo różnego koloru czy długości. Wiąż porównanie ze wskazaną cechą, potem spróbuj nowego przykładu."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "zero"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "jeden"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "dwa"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "trzy"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "cztery"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "pięć"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "sześć"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "siedem"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "osiem"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "dziewięć"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "dziesięć"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "trzeci"
+        }
+      ],
+      "exercise": {
+        "question": "Przestawiasz trzy koła bez dodawania. Ile zostaje? Czy „trzeci” wskazuje ilość?",
+        "answer": "Zostają trzy. „Trzeci” wskazuje pozycję, nie ilość. Policz każdy element raz, nie przerwy pomiędzy."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Kolory: nazwanie, opis i zgodność",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Ten sam przedmiot, inny opis",
+          "paragraphs": [
+            "Dwa długopisy służą do tego samego, lecz jeden jest czerwony, drugi niebieski. „Długopis” wskazuje typ przedmiotu, kolor pomaga wskazać konkretny. Kolor nie mówi o wartości człowieka ani płci, która może używać przedmiotu. Ekrany różnie oddają kolory, więc zawsze podpisuj próbkę.",
+            "قَلَمٌ أَحْمَرُ to czerwony długopis; سَيَّارَةٌ حَمْرَاءُ czerwony samochód. Przymiotnik arabski zmienia się zgodnie z rodzajem rzeczownika, nie płcią właściciela. Angielski i turecki nie zmieniają tu przymiotnika koloru. Polski odmienia, ale rodzaj arabskich rzeczowników i formy trzeba poznać osobno."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Nie każdy kolor ma wzorzec czerwieni",
+          "paragraphs": [
+            "Ucz się أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء i أَسْوَد/سَوْدَاء jako jednej grupy wzorcowej. وَرْدِيّ/وَرْدِيَّة i بُنِّيّ/بُنِّيَّة mają inny wzorzec. Nie twórz każdego żeńskiego koloru przez dodanie اء.",
+            "قَلَمٌ أَحْمَرُ znaczy „czerwony długopis” nieokreślony. القَلَمُ الأَحْمَرُ wskazuje „ten czerwony długopis”. القَلَمُ أَحْمَرُ stwierdza „Długopis jest czerwony”. Umieszczenie rodzajnika zmienia relację, nie tylko wygląd. Polski nie ma takiego rodzajnika, więc różnicę wyjaśnia kontekst."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Opis bez próbki koloru",
+          "paragraphs": [
+            "Napisz nazwę koloru obok znaku, dodaj kształt czy etykietę dla rozróżnienia odpowiedzi. Uczeń może słabo widzieć lub inaczej postrzegać kolory. Umiejętność językowa nie powinna zależeć od rozróżnienia prawie identycznych zieleni.",
+            "Zacznij od jednego rzeczownika i przymiotnika: samochód z حَمْرَاء, długopis z أَحْمَر. Zmień przedmiot, by sprawdzić przeniesienie, nie zapamiętanie pary. Zgodność mnoga ma dalsze reguły; nie uogólniaj zgodności pojedynczych osób na każdą mnogą nazwę rzeczy."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "czerwony: forma męska — żeńska"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "niebieski: forma męska — żeńska"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "zielony: forma męska — żeńska"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "żółty: forma męska — żeńska"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "biały: forma męska — żeńska"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "czarny: forma męska — żeńska"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "różowy: forma męska — żeńska"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "brązowy: forma męska — żeńska"
+        }
+      ],
+      "exercise": {
+        "question": "Uzupełnij samochód kolorem zielonym, długopis białym. Co określa arabską formę?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Rodzaj gramatyczny arabskiego rzeczownika, nie płeć właściciela, określa zgodność."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Dni i miesiące: czas rozmowy i spotkania",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "Dzisiaj zmienia odniesienie",
+          "paragraphs": [
+            "Dzisiaj to dzień mówienia, wczoraj poprzedza go, jutro następuje. „Przyjdź jutro” bywa niejasne, gdy wiadomość czyta się po kilku dniach bez daty wysłania. Stała data, np. 8 października 2026, wskazuje dzień, lecz spotkanie może wymagać systemu kalendarza, godziny i strefy czasowej.",
+            "Siedem nazw dni pozostaje takich samych, nawet jeśli jeden kalendarz zaczyna od poniedziałku, drugi od niedzieli lub soboty. Kolejność wyświetlania, pierwszy dzień i zwyczajowe wolne różnią się. Poznaj kolejność, potem połącz z lokalnym kalendarzem ucznia."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Różne nazwy tego samego miesiąca",
+          "paragraphs": [
+            "Styczeń może nazywać się يناير lub كانون الثاني w różnych regionach arabskich; luty فبراير lub شباط, marzec مارس lub آذار. Jeden poznany spis nie czyni regionalnych alternatyw błędnymi. Przy nieznanej nazwie ustal kalendarz i regionalną konwencję.",
+            "Muḥarram, Ṣafar i Ramaḍān należą do kalendarza hidżry, nie są przekładem gregoriańskich miesięcy. Rok księżycowy i słoneczny różnią się. Zastąpienie stycznia muḥarramem nie przelicza daty. Przy realnym spotkaniu użyj wiarygodnego kalendarza."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Jasny zapis spotkania",
+          "paragraphs": [
+            "„Czytam w piątek” może wymagać pytania, w który piątek. „Czytam w każdy piątek” opisuje powtarzające się działanie. „Każdy” zmienia komunikat. Zapytaj, czy czynność dzieje się raz czy powtarza, i wskaż pisaną wskazówkę.",
+            "Data 03/04 bywa niejednoznaczna przy różnym porządku dnia i miesiąca. Pomaga nazwa miesiąca słownie lub ustalony format. Użyj jasnego przykładu nauki; w realnym planowaniu sprawdź datę zamiast zgadywać z wyglądu."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "dzisiaj"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "wczoraj"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "jutro"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "sobota"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "niedziela"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "poniedziałek"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "wtorek"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "środa"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "czwartek"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "piątek"
+        }
+      ],
+      "exercise": {
+        "question": "Jeśli dzisiaj jest wtorek, jaki dzień jutro? Czy styczeń i muḥarram to ten sam miesiąc?",
+        "answer": "Środa. Nie: styczeń jest gregoriański, muḥarram należy do hidżry. Dopasowanie rzeczywistych dat wymaga poprawnego przeliczenia kalendarzy."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Miejsce i kierunek: najpierw wybierz odniesienie",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Gdzie — względem czego?",
+          "paragraphs": [
+            "Książka jest nad stołem, torba pod nim. „Nad” i „pod” opisują relacje. Książka nie jest po prostu „nad” w każdym opisie; wskaż odniesienie: nad stołem. „Wewnątrz” i „na zewnątrz” też wymagają granicy, np. w torbie czy poza pokojem.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ znaczy „Połóż książkę na stole”. Pokazane czytanie łączne zawiera kasrę na ضَعِ; nie traktuj każdej samogłoski łączącej jako stałej części izolowanego czasownika. Najpierw zrozum polecenie, potem użyteczny szczegół gramatyczny."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Czyja prawa strona?",
+          "paragraphs": [
+            "Podnieś prawą rękę. Osoba naprzeciw może mieć prawą rękę po stronie, którą widzisz jako lewą. „Po twojej prawej” jest jaśniejsze niż „prawo”, gdy obserwatorzy patrzą inaczej. Nie oceniaj dziecka jako błędnego za odniesienie, którego nie określiłeś.",
+            "Północ, południe, wschód i zachód są kierunkami geograficznymi, nie stałymi synonimami góry, dołu, prawej i lewej strony kartki. Mapa potrzebuje wskazania orientacji lub jasnej konwencji. Obrót ciała zmienia kierunek prawej strony, nie przesuwa północy."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "Kolejność kroków jest częścią znaczenia",
+          "paragraphs": [
+            "„Weź książkę, potem włóż do torby”. „Potem” zachowuje kolejność. Dawaj krótkie polecenia ze znanymi przedmiotami i poproś o objaśnienie zamiaru przed ruchem. Oddziela to rozumienie słów od szczęśliwego zgadnięcia ruchu.",
+            "Książka jest w torbie, torba pod krzesłem. To nie znaczy, że książka jest nad torbą. Oddziel relację podaną od wymagającej dalszych informacji. Przy kilku miejscach narysuj prosty podpisany plan zamiast polegać tylko na pamięci pozycji obrazka."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "nad / na, zależnie od kontekstu"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "pod / poniżej"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "przed"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "za"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "wewnątrz"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "na zewnątrz"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "prawa strona"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "lewa strona"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "północ"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "południe"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "wschód"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "zachód"
+        }
+      ],
+      "exercise": {
+        "question": "Książka jest w torbie pod krzesłem. Czy jest nad torbą? Czy prawa strona wskazuje ten sam kierunek geograficzny po obrocie?",
+        "answer": "Nie: jest w torbie. Nie: prawa strona zmienia się z orientacją ciała, inaczej niż odniesienie geograficzne."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Opowiadania: czytaj tekst i pilnuj dowodów",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Oryginalna historia: okno i długopis",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Layla otworzyła okno. Położyła niebieski długopis na stole, potem poszła do szkoły. Po powrocie nie znalazła długopisu. Spojrzała pod krzesło i go znalazła. Wzięła go i napisała krótki list. Tekst nie mówi, kto przesunął długopis, ani nie dowodzi, że zdmuchnął go wiatr. To oryginalna historia HORIZONS, nie kopia opublikowanego utworu."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Trzy czytania, trzy cele",
+          "paragraphs": [
+            "Przy pierwszym czytaniu zapytaj o bohaterkę i problem. Nie zatrzymuj na każdym znaku. Przy drugim śledź kolejność: gdzie był długopis i gdzie go znaleziono? Przy trzecim badaj język: هُ w وَجَدَتْهُ wskazuje długopis, a formy czasowników odpowiadają Layli w narracji.",
+            "Długopis jest niebieski; „krótki” opisuje długość listu, nie kolor. Tekst nie podaje koloru listu. Nie zastępuj brakujących dowodów prawdopodobną odpowiedzią. Możesz dopisać wymyślone zakończenie, ale nazwij je własnym pomysłem, nie wydarzeniem oryginalnej historii."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Mały słownik i samodzielne pisanie",
+          "paragraphs": [
+            "Okno to otwór w ścianie, stół powierzchnia dla przedmiotów, list pisemny komunikat do kogoś. Objaśnienie usuwa przeszkodę słownikową bez opowiedzenia całej historii. Potem wybierz inny tytuł i uzasadnij go tekstem.",
+            "Zastąp długopis książką, potem Laylę Omarem. Wybór przedmiotu rodzaju żeńskiego może zmienić przymiotniki; zmiana bohaterki na bohatera odpowiednie czasowniki. Sprawdź wszystkie odniesienia, nie tylko jedno imię. Celem jest spójny tekst, nie automatyczna podmiana słów."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "okno",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "stół",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "krzesło",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "list / wiadomość",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "i ona go znalazła"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "potem"
+        }
+      ],
+      "exercise": {
+        "question": "Gdzie Layla znalazła długopis? Kto go przesunął? Do czego odnosi się هُ w وَجَدَتْهُ?",
+        "answer": "Pod krzesłem. Tekst nie mówi, kto go przesunął. هُ oznacza długopis. Rozdziel informacje podane od tych, których autor nie dostarczył."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Samogłoskowy alif zapisuje długie /aː/ w بَاب. Hamza w أَ, إِ i أُ jest spółgłoską /ʔ/ na nośniku, nie samogłoskowym alifem. Alif przyjmuje poprzednie połączenie, nie łączy następnej litery po lewej.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "drzwi"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "książka"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "ogień"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Dla /b/ zamknij wargi i otwórz z głosem. Ba ma jedną kropkę pod korpusem, łączy obie strony, gdy sąsiedzi pozwalają. Podobne ta i tha nie mają artykulacji wargowej. /p/ to inny dźwięk, nie inna pisownia ba.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "drzwi"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "góra"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "książka"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Dla /t/ zrób przednie zwarcie języka przy zębach lub za nimi, zwolnij bez głosu spółgłoski w modelu docelowym. Ta ma dwie kropki nad sobą. Nie jest końcową taa marbūṭa ة, której czytanie zależy od połączenia i pauzy.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "daktyle"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "dziewczynka / córka"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "dom"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Przepuść powietrze przez łagodne zwężenie przy zębach dla bezdźwięcznego /θ/, bez pełnego zwarcia /t/. Tha ma trzy kropki i łączy obie strony. Angielskie think daje porównanie, ale th nie zawsze ma ten dźwięk. Zwykły polski nie ma dokładnego odpowiednika.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "ubranie"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "wiele / dużo"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "mowa / rozmowa w tym przykładzie"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Jim ma tu model /dʒ/. Inne wymowy występują w społecznościach arabskich. Dopasuj nagranie do podanego modelu. Dolna kropka odróżnia od ح i خ wizualnie, ale nie wyjaśnia artykulacji.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "wielbłąd"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "gwiazda"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "korona"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "ح to bezdźwięczne gardłowe /ħ/, nie zwykłe /h/ ani خ. „Mocne h” nie wskazuje miejsca. Unikaj bolesnego ściskania gardła. Korpus nie ma kropki: rozróżnij ح, ج i خ wzrokiem, potem porównaj dźwięki.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "lina"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "morze"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "sól"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "خ to bezdźwięczne tarcie w tylnej części traktu, tutaj /x~χ/. Dokładne miejsce różni się z mówiącym i kontekstem. Kropka jest nad korpusem. Porównanie obce potrzebuje języka i odmiany; samo kh nie uczy dźwięku.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "chleb"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "palmy daktylowe"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "kuchnia"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "د /d/ używa dźwięcznego przedniego zwarcia i zwolnienia. Nie ma kropki i nie łączy kolejnej litery po lewej. Porównaj wzrokiem z ذ, pod względem dźwięczności z ت, nie zmieniaj równocześnie samogłoski.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "lekcja"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "ręka"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "chłopiec w tym przykładzie"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "ذ /ð/ jest dźwięcznym tarciem zębowym w tej wymowie standardowej. Nie ma pełnego zwarcia د, różni się od bezdźwięcznego /θ/. Kropka u góry, brak łączenia następnej litery po lewej. Angielskie this jest wskazówką, nie regułą wszystkich th; brak dokładnego zwykłego polskiego odpowiednika.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "złoto"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "ucho"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "smaczny"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "ر obejmuje krótki kontakt czubka języka lub powtarzane kontakty zależnie od kontekstu i wymowy. Ogólne /r/ nie wymaga stałej liczby uderzeń. Bez kropki, nie łączy dalej w lewo. Mocny nacisk języka czy gardła nie jest celem.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "piasek"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "morze"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "księżyc"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "ز /z/ to dźwięczne przednie tarcie. Korpus przypomina ر z kropką u góry, ale nie jest ر z dodatkową samogłoską. Nie łączy następnej po lewej. Porównaj /z/ i /s/ słuchając dźwięczności przy tej samej samogłosce.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "olej"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "banany"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "chleb"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "س /s/ to bezdźwięczne tarcie z innym miejscem zwężenia niż ث. Nie ma kropek; ząbki różnią się w fontach. Ustal tożsamość w czytelnym foncie, potem porównuj pismo, nie uznając stylu za nową literę.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "ryby"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "słońce"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "lekcja"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "ش /ʃ/ to bezdźwięczne tarcie o innym zwężeniu niż س. Nad podobnym korpusem są trzy kropki. Nie robią z niej ث: zapis i artykulacja są osobne. Porównaj سَ i شَ bez zmiany samogłoski.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "słońce"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "trawa"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "pióra"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "ص /sˤ/ jest emfatyczną spółgłoską wybranego modelu, nie po prostu głośniejszym /s/. Dodatkowa tylna artykulacja wpływa na brzmienie i sąsiednie samogłoski. Bez kropki. Porównaj سَ i صَ bez bólu i wymuszonej przesady.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "cierpliwość"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "sok"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "klatka"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "ض /dˤ/ pokazuje częsty współczesny model standardowy, nie wszystkie historyczne i dialektalne wymowy. Kropka odróżnia od ص. Nie łącz z ظ: tutaj jedno używa zwarcia, drugie tarcia.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "światło"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "jajka"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "ziemia / ląd"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "ط /tˤ/ łączy przednie zwarcie i zwolnienie z emfatycznością. Nie jest ozdobną ت ani głośniejszym /t/. Bez kropki. Porównaj تَ i طَ, zauważając też jakość samogłoski.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "glina / błoto"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "pociąg"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "nić"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "ظ /ðˤ/ to podany model emfatycznego tarcia zębowego; warianty wymagają oznaczenia. Kropka nad korpusem ط. „Inne ض” nie wystarcza. Nagranie zgodne z rozróżnieniem zamiast zlewania pisowni w jeden dźwięk.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "cień"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "kość"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "szczęście"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ع /ʕ/ jest dźwięczną gardłową spółgłoską, nie długą samogłoską ani słabą hamzą. Ucz się z łagodnego wzoru, bez ściskania gardła. Bez kropki; formy łączone mocno różnią się od osobnej. Rozpoznawanie wzrokowe i wymowa potrzebują osobnej uwagi.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "oko w tym przykładzie"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "on się bawił"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "zbieranie / gromadzenie"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "غ to dźwięczne tylne tarcie w opisanym zakresie /ɣ~ʁ/. Z ع podobieństwo jest wizualne, nie akustyczne. Porównaj z خ pod względem dźwięczności, z ع miejsca, bez twierdzenia o identycznej artykulacji.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "pokój"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "mały"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "pusta przestrzeń / wakat"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "ف /f/ przepuszcza powietrze między dolną wargą i górnymi zębami bez dźwięczności spółgłoski. W użytej wschodniej tradycji jedna kropka nad. Niektóre tradycje maghrebskie różnią się i wymagają etykiety. Tradycja nie jest automatycznie błędem ucznia.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "słoń"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "klucz"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "wełna"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "ق /q/ ma bezdźwięczne tylne zwarcie w tym modelu standardowym, dalej niż ك. Dwie kropki u góry w tej tradycji. Znane wymowy dialektalne nie zmieniają po cichu celu słuchania; nazwij ćwiczony model.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "księżyc"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "bydło"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "rynek"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "ك /k/ zwiera tył języka z tylną częścią podniebienia i zwalnia. Nie jest to ق tylko dlatego, że oba są tylne. Mały znak wewnątrz osobnego ك jest częścią zapisu, nie osobną hamzą do wymowy.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "książka"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "ryby"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "anioł"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "ل /l/ jest dźwięczne i boczne: powietrze przepływa obok języka przy przednim kontakcie czubka. Zacznij od zwykłego modelu, szczególne emfatyczne konteksty osobno. Łączy obie strony; لا może mieć wspólny kształt, nie stając się nową literą.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "noc"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "długopis"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "góra"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "م /m/ to dźwięczna nosowa spółgłoska przy zamkniętych wargach. Od ب różni się nie tylko kształtem: powietrze płynie nosem. Korpus zmienia się przy łączeniu, nazwa i tożsamość pozostają.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "woda"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "księżyc"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "długopis"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "ن /n/ to dźwięczna nosowa z przednim zwarciem języka. Jedna kropka u góry. Porównaj z م miejsce zwarcia. Pisane nun różni się od tanwīnu: niektóre końcówki mają /n/ bez osobnej litery w zapisie.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "światło"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "oko w tym przykładzie"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "mleko lub produkt mleczny, zależnie od regionu"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "ه /h/ jest bezdźwięczne bez gardłowego zwężenia ح. ه, هـ, ـهـ i ـه są różne wizualnie; łączenie pomaga objaśnić. Nie uznawaj każdej końcowej ة za ه tylko dlatego, że przy pauzie brzmi podobnie.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "sierp księżyca"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "rzeka"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "twarz"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "و może być /w/ w وَلَد lub pomagać zapisać długie /uː/ w نُور. W ثَوْب nie jest długim /uː/: czytaj wzorzec samogłoskowy. Przyjmuje poprzednie połączenie, nie łączy następnej po lewej.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "chłopiec w tym przykładzie"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "światło"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "ubranie"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "ي może być /j/ w يَد lub pomagać zapisać /iː/ w فِيل. بَيْت ma /aj/, nie długie /iː/. Ya z kropkami różni się od alifu maqṣūra ى, którego nie należy automatycznie czytać jako ya.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "ręka"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "słoń"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "dom"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "Rozszerzony przewodnik HORIZONS",
+    "warning": "Projekt redakcyjny: przekład sprawdzony przez model; niezależna weryfikacja przez rodzimego użytkownika języka nie została przeprowadzona.",
+    "examples": "Przykłady ze znaczeniem",
+    "practice": "Ćwiczenie",
+    "answer": "Odpowiedź i wyjaśnienie",
+    "notes": "Uwagi",
+    "contents": "Spis treści",
+    "view": "Czytaj",
+    "all": "Cały przewodnik",
+    "original": "Oryginał arabski",
+    "answers": "Odpowiedzi",
+    "forms": "Formy pisane",
+    "words": "Słowa",
+    "draft": "Projekt redakcyjny",
+    "font": "Krój pisma arabskiego",
+    "theme": "Przełącz jasny i ciemny motyw"
+  },
+  "notation_note": "ː oznacza długość poprzedniej samogłoski; ˤ emfatyczność spółgłoski w tym zapisie; . granicę sylab; ~ rozdziela alternatywy opisanego zakresu, nie dwa kolejne dźwięki. / / obejmuje zapis dźwięków, nie pisownię arabską. Oddzielne słowa mają wymowę przy pauzie; przekłady zdań nie zakładają po cichu jednej wymowy dla połączenia i pauzy.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Porównano wszystkie rozdziały i litery: zachowano różnice liczby liter i sylab, pauzy i połączenia, rodzaju i liczby podwójnej.",
+          "Wyjaśniono brak polskiego rodzajnika i różne rodzaje nazw; oryginalna historia nie otrzymała wymyślonej przyczyny."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Sprawdzono polską odmianę, zgodność i przystępny ton; wymowa /θ/ i /ð/ nie została zrównana z polskim s lub z.",
+          "Znaczenia przykładów rzeczownikowych oddzielono od sylab ćwiczeniowych, wszystkie IPA i arabskie formy zachowano."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

@@ -1,0 +1,1546 @@
+{
+  "language": "hr",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Slova i pisanje: otvaramo vrata čitanju",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Tri različite stvari: naziv, glas i oblik",
+          "paragraphs": [
+            "Zamisli kutiju s dijelovima za gradnju. Nazivi pomažu pronaći dijelove, ali ponavljanje naziva ne gradi kuću. Slovo također ima naziv, pisani oblik i ulogu u izgovorenoj riječi. Naziv ب je ba. U بَاب, međutim, počni glasom /b/, nakon kojeg slijedi dugi samoglasnik /aː/. Nemoj umjesto riječi čitati tri naziva slova. Nazivi su korisni kada pitaš kako se nešto piše.",
+            "Prati arapsku riječ zdesna nalijevo. Najprije primijeti osnovu, zatim točke, pa znakove čitanja. بَ i تَ imaju srodne osnove, ali točke označuju različita slova. Zamjenom fatḥe kasrom nastaje بِ, a ba se ne pretvara u ta. Pokrij ostatak retka ako djeluje prenatrpano. Prepoznavanje slova pravi je uspjeh i prije čitanja cijele riječi."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Zašto slovo mijenja oblik?",
+          "paragraphs": [
+            "Arapska slova dijele pisanu liniju, poput ljudi koji se drže za ruke. ب, بـ, ـبـ i ـب povezani su oblici istog slova, a ne četiri nova slova. U بَاب prvo ba povezuje se s alifom, ali alif ne nastavlja vezu prema završnom ba. Taj mali prekid ne stvara drugu riječ.",
+            "ا, د, ذ, ر, ز i و mogu primiti vezu prethodnog slova kad je to dopušteno, ali ne povezuju sljedeće slovo slijeva. Ne umeći razmak pri svakom prekidu linije. Razmaci odvajaju riječi; pravila povezivanja oblikuju slova unutar riječi. Pogledaj pravi primjer prije pamćenja svih pravila."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza i značenje",
+          "paragraphs": [
+            "U بَاب alif zapisuje dugi /aː/. أَخ počinje hamzom /ʔ/ na nosaču alif. Hamza je suglasnik, ne dugi samoglasnik. Pravopisno se javlja kao ء, أ, إ, ؤ ili ئ. Oblik nosača ne daje svim tim znakovima glas samoglasničkog alifa.",
+            "Poveži svaki korak sa značenjem: vrata otvaramo, knjiga sadrži stranice za čitanje, olovkom pišemo. Promijeni poredak kartica i vrati se nakon kratke stanke. Pamćenje mjesta kartice vježba pamćenje, ali samostalno čitanje znači prepoznavanje pisane informacije gdje god se nalazi."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "vrata",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "knjiga",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "olovka",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "brat",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "kuća / dom",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "svjetlo",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Stvara li prekid povezivanja unutar بَاب dvije riječi? Je li naziv ba cijelo čitanje riječi بَاب?",
+        "answer": "Ne u oba slučaja. بَاب je jedna riječ: alif ne povezuje dalje. Ba je naziv slova; /baːb/ čita glasove riječi redom."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Samoglasnički znakovi: mali znakovi mijenjaju čitanje",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Samoglasnički znak nije točka",
+          "paragraphs": [
+            "Stavi بَ, بُ i بِ jedno uz drugo. Svugdje je ba. Fatḥa označuje kratki /a/, ḍamma kratki /u/, kasra kratki /i/. Usta, jezik i usne prilagođavaju se različitim samoglasnicima. Povećavanje glasnoće ne mijenja jedan samoglasnik u drugi.",
+            "U بِ točka slova ba i kasra blizu su ispod slova. Točka određuje slovo, kasra usmjerava čitanje. Promijeni samoglasnički znak i ba ostaje ba. Boja odvaja te zadaće u knjizi, ali oblik i oznake moraju biti razumljivi i u crno-bijelom ispisu."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Duljina, ne glasnoća",
+          "paragraphs": [
+            "Usporedi بَ s بَا, بُ s بُو i بِ s بِي. U drugom članu svakog para samoglasnik traje dulje; ba ne postaje drugi suglasnik. ː u /baː/ označuje duljinu prethodnog samoglasnika. Nije dodatno arapsko slovo ni isto vrijeme na štoperici za svakog govornika.",
+            "Alif, waw i ya nisu dugi samoglasnici svaki put. Waw u وَلَد je /w/, ya u يَد je /j/. Waw u نُور pomaže zapisati /uː/, ya u فِيل /iː/. Čitaj neposredni obrazac, ne pogađaj ulogu samo po nazivu slova."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda i tanwīn",
+          "paragraphs": [
+            "Sukūn u بِنْت podsjeća da u ovom obrascu ne dodaješ samoglasnik nakon nun. Ne uklanja /n/. Shadda u أُمّ označuje udvojen suglasnik, ne dulji prethodni samoglasnik. أَمْ /ʔam/ i أُمّ /ʔumm/ razlikuju se i u samoglasniku, pa nisu minimalni par s jednom promjenom. Za izdvajanje jedne osobine koristi jasno označene vježbovne slogove.",
+            "Tanwīn u كِتَابٌ pripada imeničkom nastavku u gramatičkom kontekstu. Odgovarajuće povezano čitanje uključuje /un/, a obična stanka na toj riječi daje /kitaːb/. To nije univerzalno pravilo svih nastavaka. Sačuvaj pisani znak i objasni razliku povezanog čitanja i stanke."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "djevojčica / kći",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "slon",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "dječak",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "ruka",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "majka",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "svjetlo",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Predstavlja li waw ovdje /w/ u نُور? Uklanja li sukūn nun u بِنْت?",
+        "answer": "Ne. Waw u نُور zapisuje dugi /uː/. Nun u بِنْت u ovom se obrascu izgovara bez dodanog samoglasnika nakon njega."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Spajanje dviju jedinica: početak čitanja",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Što spajamo?",
+          "paragraphs": [
+            "U radnoj bilježnici spajanje dviju jedinica naziv je vježbovne faze s dvije pisane jedinice. Broj slova nije uvijek jednak broju glasova ili slogova. بَا sadrži ba i alif, ali predstavlja suglasnik i dugi samoglasnik nakon njega. Nisu dva suglasnika; zaseban vježbovni element ne mora biti riječ sa značenjem.",
+            "Počni s بَ, zatim بَا, potom تَا i ثَا. Prva usporedba mijenja duljinu samoglasnika, sljedeća suglasnik uz stalan dugi samoglasnik. Daj učeniku vrijeme da pogleda, zatim pročita. Ponavljanje naziva umjesto potrebnih glasova otežava razumijevanje spajanja."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Otvoreni i zatvoreni slogovi",
+          "paragraphs": [
+            "بَا ovdje završava samoglasnikom i otvoren je slog. بَرْ završava suglasnikom i zatvoren je. „Zatvoren” opisuje kraj sloga, ne držanje zatvorenih usta tijekom cijelog izgovora. Čitaj بَرْ bez završnog samoglasnika. Čitanje بَرَ mijenja strukturu.",
+            "Prstom prati mjesto, zatim postupno ukloni pomoć. Pokazivanje olakšava praćenje, ne dokazuje točnost izgovora. Nakon poznatog sloga uvedi nov prema istom obrascu. Tako provjeravaš prenosi li učenik pravilo izvan zapamćene kartice."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "Od dijela do riječi",
+          "paragraphs": [
+            "بَا dio je بَاب. بِي dio je prikazanog čitanja بِيض. Ne treba svaki slog imati samostalno rječničko značenje. Prvo spoji, potom pitaj značenje cijele riječi. Aktivnost dobiva svrhu širu od brzog čitanja.",
+            "Pri pogrešci odredi promjenu: suglasnik, kvaliteta samoglasnika, duljina ili dodan glas. Konkretan naziv problema korisniji je od ponavljanja svega ispočetka. Ako je više osobina teško, vježbaj jednu izvedivu prije ponovnog kombiniranja."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "vježbovni slog; ovdje nije riječ",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "vježbovni slog",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "vježbovni slog",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "vježbovni slog u ovom primjeru",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "vrata",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "jaja",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Zašto بَا i بَرْ nisu isti tip sloga?",
+        "answer": "بَا završava dugim samoglasnikom, بَرْ suglasnikom. Razlika opisuje završetak, ne broj točaka ili glasnoću."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Spajanje triju jedinica: čitamo smislene cjeline",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Tri slova, ali koliko slogova?",
+          "paragraphs": [
+            "بَاب i جَبَل imaju po tri osnovna slova. U odabranom čitanju sa stankom /baːb/ ima jedan slog, /dʒa.bal/ dva. Točka fonetskog prikaza granica je sloga, ne pisana točka slova jim. Samo brojanje slova ne daje broj slogova.",
+            "Napiši slova sa znakovima, zatim istraži glasovni obrazac. Za جَبَل počni جَ i završi بَلْ pri stanci. Spoji bez ispuštanja ba ili dodatnog glasa. Rastavljanje riječi privremena je pomoć, ne način govora svake obične rečenice."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Poredak slova nosi značenje",
+          "paragraphs": [
+            "قَلْب znači srce, كَلْب pas. Promjena qaf u kaf mijenja značenje. بَحْر je more, حَبْر tinta; mijenjaju se poredak i samoglasnici, pa nije minimalni par jedne osobine. Gledaj pisane detalje umjesto pogađanja po poznatoj slici.",
+            "Odaberi riječi čije se značenje može pokazati. Nakon čitanja pitaj služi li tinta pisanju ili plivanju. Značenje otkriva pogađanje, ali ne zamjenjuje gledanje slova. Objasni novu riječ umjesto da nepoznat rječnik smatraš neuspjehom čitanja."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Pažljivo čitanje prije tečnosti",
+          "paragraphs": [
+            "Pročitaj tri riječi bez utrke. Označi jednu za povratak i pokušaj nakon lakšeg primjera. Tečnost uključuje pravilno čitanje, razumijevanje i popravljanje, ne samo riječi u minuti. Ne potiče se dijete da kolebanje skriva pogađanjem.",
+            "Za prenosivost nakon جَبَل daj جَمَل. Ba postaje mim unutar poznatog obrasca. Planina je uzdignuto tlo, deva životinja. Traži drugu stvarnu riječ s poznatim slovima, objasni da nije svaki mogući raspored arapska riječ."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "planina",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "deva",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "srce",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "pas",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "more",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "tinta",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Koje se slovo mijenja od جَبَل do جَمَل? Imaju li بَاب i جَبَل isti broj slogova?",
+        "answer": "Ba postaje mim. بَاب je jedan slog u prikazanom čitanju sa stankom; جَبَل dva. Broj slova nije dovoljan."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Spajanje četiriju jedinica: dulje čitanje bez preopterećenja",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Dulje nije uvijek teže",
+          "paragraphs": [
+            "كِتَاب ima četiri osnovna slova. /ki.taːb/ pri stanci sadrži kratak prvi slog, potom slog s dugim samoglasnikom i završnim ba. Upotrijebi naučeno u بَاب umjesto da svaki dio smatraš potpuno novim. Pisana duljina sama ne mjeri teškoću čitanja.",
+            "Waw u ثَوْب ovdje ne zapisuje /uː/: /aw/ je drugi slijed. بَيْت sadrži /aj/, ne /iː/. Uspjeh dolazi iz samoglasnika i strukture, ne pravila „svaki waw je u, svaki ya i”. Učvrsti primjer prije novog kontrasta."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "Rečenica dodaje odnose",
+          "paragraphs": [
+            "هَذَا كِتَابٌ prepoznaje blizak predmet: „Ovo je knjiga”. هَذِهِ حَقِيبَةٌ upotrebljava ženski pokazni oblik s torbom. Promjena imenice može tražiti provjeru povezanih riječi, ne samo oznake. Pitaj na što se pokazuje i koji oblici odgovaraju.",
+            "الكِتَابُ جَدِيدٌ kaže „Knjiga je nova”. الكِتَابُ الجَدِيدُ označuje „novu knjigu”; sama fraza ne iznosi istu potpunu poruku. Član nije ukrasni prefiks. Jednostavna situacija pokazuje gramatički odnos prije stručnih naziva."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Prenošenje vještine na nov tekst",
+          "paragraphs": [
+            "Usporedi كِتَاب i كَاتِب. Osnovni suglasnici povezani su, ali položaj alifa i samoglasnici različiti. Prvo knjiga, drugo pisac. Srodan korijen ne čini isto značenje svih riječi. Uvodimo porodice riječi bez pretvaranja da odjednom učimo svu tvorbu.",
+            "Pročitaj kratak redak, nakratko sakrij i pitaj opći smisao. Vrati ga za provjeru detalja. Razdvaja glasovnu memoriju, razumijevanje i povratak pisanom dokazu. Traženje pomoći za novu riječ dio je učenja; priručnik ne treba biti beskrajan ispit."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "knjiga",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "pisac",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "torba",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "Ovo je knjiga."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Knjiga je nova."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "nova knjiga"
+        }
+      ],
+      "exercise": {
+        "question": "Prenose li الكِتَابُ جَدِيدٌ i الكِتَابُ الجَدِيدُ sami istu poruku?",
+        "answer": "Ne. Prvo tvrdi da je knjiga nova; drugo označuje novu knjigu bez iste potpune tvrdnje."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Referenca slova: od oblika do uporabe",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Pouzdana mapa za svako slovo",
+          "paragraphs": [
+            "Za svako slovo pitaj isto: naziv, mjesto glasa, povezivanje, razlika od sličnog oblika, jasne riječi. Dosljedna mapa sprječava da lekcija postane niz neobjašnjenih slika. Nije potrebno sve odgovoriti pri prvom susretu.",
+            "Poglavlje sadrži kartice 28 slova. Mjesto alifa u abecedi ne znači da su hamza i dugi /aː/ isti glas. Waw i ya ovise o kontekstu. Pročitaj napomenu prije usporedbe s pravopisom vlastitog jezika."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Porodice oblika nisu porodice glasova",
+          "paragraphs": [
+            "ب, ت i ث imaju srodne osnove, ali ba nastaje na usnama, ta prednjim zatvaranjem, tha zubnim trenjem u odabranom standardnom arapskom. Tri točke tha ne objašnjavaju glas, tri na shin ne čine je tha. Vizualne porodice služe prepoznavanju, artikulacijski opisi izgovoru.",
+            "Usporedi ثَ s تَ uz istu fatḥu. س i ص preko emfatičnosti, ne glasnoće. Neki arapski glasovi nemaju točan pandan u učenikovu jeziku. Objasni artikulaciju i daj slušni model umjesto izmišljenog točnog stranog ekvivalenta."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Rječnik, rečenice i prijenos",
+          "paragraphs": [
+            "Nakon nalaženja slova početno, srednje i završno, napravi smislenu rečenicu s jednom navedenom riječi. Ne gomilaj rijetku leksiku radi veličine. Mijenjaj položaj i značenje, objasni novo, dodaj kontekst višeznačnih riječi.",
+            "Dijalektna razlika nije nedostatak govornika. Referenca određuje standardnu arapsku metu i priznaje varijacije jim, qaf i drugih glasova. Slušna vježba treba snimku sukladnu objašnjenju i simbolima."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "vrata",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "planina",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "knjiga",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "voće / plodovi",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "snijeg",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "lisica",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "Znači li sličan oblik ب, ت i ث isto mjesto artikulacije? Je li jim ista u svim zajednicama?",
+        "answer": "Ne. Oblik je pisana informacija; artikulacija drugo svojstvo. Jim varira: odredi cilj i označi druge modele."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Zamjenice: tko sam ja, tko si ti?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Riječ koja prati govornika",
+          "paragraphs": [
+            "Kad Lejla kaže „ja”, misli Lejlu; kad Omar „ja”, misli Omara. Zamjenica nije stalno osobno ime: referent dolazi iz govorne situacije. „Ti” upućuje sugovorniku; „on” i „ona” osobi o kojoj govorimo. Prije tablice mijenjaj uloge.",
+            "Arapski razlikuje أَنْتَ za muškog pojedinačnog sugovornika i أَنْتِ za ženskog. Hrvatsko „ti”, poput engleskog you, služi oboma, ali arapska razlika nije izborna. Tursko o odgovara هُوَ i هِيَ; pri prijevodu na arapski provjeri referenta, ne zamjenjuj mehanički."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Jednina, dvojina i množina",
+          "paragraphs": [
+            "أَنَا je prva osoba jednine. نَحْنُ skupina uključujući govornika, dvije ili više osoba. أَنْتُمَا oslovljava dvoje, هُمَا upućuje na dvoje; oba za muški i ženski referent. أَنْتُمْ / أَنْتُنَّ i هُمْ / هُنَّ razdvajaju množinske oblike. Muška množina može u standardu uključivati mješovitu skupinu po kontekstu.",
+            "Nema svaki jezik zasebnu jednorječnu dvojinsku zamjenicu. أَنْتُمَا objašnjavamo „vas dvoje”, engleski you two, turski ikiniz. Objašnjava referenciju, ne jamči istu uporabu u svakoj situaciji. Uspoređuj značenja i oblike."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Zamjenica i riječi koje slijede",
+          "paragraphs": [
+            "أَنَا طَالِبٌ i أَنَا طَالِبَةٌ počinju isto; sljedeća imenica mijenja se prema govorniku. هُوَ طَالِبٌ i هِيَ طَالِبَةٌ mijenjaju oboje. Primjer muškog učenika ne čini أَنَا samo muškom zamjenicom.",
+            "U أَنَا أَقْرَأُ i نَحْنُ نَقْرَأُ mijenja se glagolski oblik. Početno أَ dio je prve osobe glagolske fleksije, ne posjedovanja. Glagol može dati dovoljno za izostavljanje zasebne zamjenice u jasnom kontekstu. Englesko am/is/are i hrvatsko „sam/je” u prijevodu ne traže odgovarajuću riječ u svakoj arapskoj imenskoj rečenici prezenta."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "ja",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "ti (muški pojedinačni sugovornik)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "ti (ženski pojedinačni sugovornik)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "mi",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "on",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "ona",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "vas dvoje"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "njih dvoje / oboje"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "vi (muška množina; kontekst može uključiti mješovitu skupinu)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "vi (ženska množina)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "oni (muška množina; kontekst može uključiti mješovitu skupinu)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "one (ženska množina)"
+        }
+      ],
+      "exercise": {
+        "question": "Lejla govori o sebi, zatim o Omaru. Koje dvije zamjenice? Je li نَحْنُ samo muška?",
+        "answer": "أَنَا za sebe; هُوَ za Omara ovdje. نَحْنُ ne razlikuje spol govornika; kontekst određuje skupinu."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Posjedovanje i odnosi: više od oznake",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Jedan predmet, dvoje govornika",
+          "paragraphs": [
+            "Omar drži knjigu: كِتَابِي — „moja knjiga”. Njemu kažeš كِتَابُكَ — „tvoja knjiga”. O njemu Lejli كِتَابُهُ — „njegova knjiga”. Knjiga ista, govorni odnos drukčiji. To nisu tri kategorije knjiga.",
+            "Lejli كِتَابُكِ, o njoj كِتَابُهَا. كَ i كِ malo se razlikuju u zapisu i zvuku, važno za referenciju. Hrvatski i obično engleski imaju zasebnu riječ prije imenice; arapski oblici pričvršćuju zamjenicu imenici."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "Odnos nije uvijek vlasništvo",
+          "paragraphs": [
+            "كِتَابُنَا veže knjigu našoj skupini. أُمِّي „moja majka” ne znači osobu kao imovinu. مَدْرَسَتِي može škola koju pohađam, ne zgrada u mom vlasništvu. Imenica i kontekst određuju odnos.",
+            "U مَدْرَسَة → مَدْرَسَتِي taa marbūṭa zapisuje se kao obična ta uz ovu zamjenicu. Ne svaka završna ha postaje ta. وَجْهِي „moje lice”: ha iz وَجْه ostaje ha."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Imenica, padež i određenost",
+          "paragraphs": [
+            "كِتَابُكَ jedan je odabran oblik. رَأَيْتُ كِتَابَكَ — „Vidio sam tvoju knjigu” — mijenja imenički nastavak s gramatičkom ulogom, كَ ostaje muški pojedinačni sugovornik. Ne uči prethodnu ḍammu kao trajni dio „tvoj”.",
+            "U uobičajenoj konstrukciji imenice s posvojnom zamjenicom ne dodaj tanwīn ni član kao kod zasebne neposvojne imenice. كِتَابِي određuje odnos i ovdje je određeno. Prvo točan primjer, poslije složene iznimke."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "moja knjiga"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "tvoja knjiga (muški pojedinačni sugovornik)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "tvoja knjiga (ženski pojedinačni sugovornik)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "njegova knjiga"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "njezina knjiga"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "naša knjiga"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "moja škola"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "moje lice"
+        }
+      ],
+      "exercise": {
+        "question": "Lejla kaže „moja knjiga”. Kako je nazoveš pri obraćanju Lejli, zatim govoreći o njoj nekome drugom?",
+        "answer": "كِتَابُكِ pri obraćanju; كِتَابُهَا govoreći o njoj. Zamjenički referent slijedi govorni odnos."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Brojevi: znak, riječ i količina",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Broji svaki predmet jednom",
+          "paragraphs": [
+            "Stavi tri olovke na stol. Dodirni svaku jednom pri koraku brojanja, zatim imenuj veličinu skupine. Dvostruko brojanje iste daje pogrešan zbroj. Preuređivanje bez dodavanja i oduzimanja ostavlja tri: oblik reda nije količina.",
+            "٣ i 3 isti su broj u prikazanim sustavima znamenaka. ثَلَاثَة arapska je brojna riječ, ne oblik znamenke. Broj može brojiti knjige, korake ili minute; utvrdi što se broji da razumiješ uporabu."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Brojenje i brojevi uz imenice",
+          "paragraphs": [
+            "Brojenje naglas počinje jedan do deset, ali brojevne fraze trebaju pozornost. ثَلَاثَةُ كُتُبٍ tri knjige; ثَلَاثُ سَيَّارَاتٍ tri automobila. U obrascu tri–deset oblik broja suprotan je rodu jednine imenice, a brojeno ime genitiv množine. Ne primjenjuj na jedan i dva.",
+            "كِتَابٌ وَاحِدٌ i سَيَّارَةٌ وَاحِدَةٌ pokazuju slaganje s jedan. Nominativne dvojinske كِتَابَانِ i سَيَّارَتَانِ već su dva. Brojevnu riječ dva ne moraš umetati u svaku dvojinsku frazu."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Količina, redoslijed i usporedba",
+          "paragraphs": [
+            "ثَلَاثَة odgovara „koliko?”, الثَّالِث „koji po redu?”. Tri knjige nisu treća knjiga. Nula olovaka znači da nema olovaka u brojanoj skupini, ne da ne postoji ništa.",
+            "Usporedi stvarne skupine: dvije i četiri olovke. Druga više, prva manje. Ako su obje četiri, isti broj i uz različite boje ili duljine. Usporedbu veži određenoj osobini, potom drugi primjer."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "nula"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "jedan"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "dva"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "tri"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "četiri"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "pet"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "šest"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "sedam"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "osam"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "devet"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "deset"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "treći"
+        }
+      ],
+      "exercise": {
+        "question": "Preuređuješ tri kruga bez dodavanja. Koliko ostaje? Je li „treći” količina?",
+        "answer": "Tri ostaju. „Treći” mjesto u redoslijedu, ne količina. Broji svaki predmet jednom, ne razmake."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Boje: naziv, opis i slaganje",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Isti predmet, drukčiji opis",
+          "paragraphs": [
+            "Dvije olovke rade isto, jedna crvena druga plava. „Olovka” vrsta predmeta, boja koji konkretno. Boja ne govori o vrijednosti osobe ili kojem je spolu predmet dopušten. Zasloni različito prikazuju boje: uvijek imenuj uzorak.",
+            "قَلَمٌ أَحْمَرُ crvena olovka; سَيَّارَةٌ حَمْرَاءُ crveni automobil. Arapski se pridjev mijenja s rodom imenice, ne vlasnika. Engleski i turski ne mijenjaju ga tako u primjerima. Hrvatski ima slaganje, ali arapski rod imenice uči se zasebno od roda prijevoda."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Nije svaka boja kao crvena",
+          "paragraphs": [
+            "Uči أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء i أَسْوَد/سَوْدَاء kao jednu skupinu. وَرْدِيّ/وَرْدِيَّة i بُنِّيّ/بُنِّيَّة drugi su obrazac. Ne tvori svaki ženski oblik dodavanjem اء.",
+            "قَلَمٌ أَحْمَرُ „crvena olovka” neodređeno. القَلَمُ الأَحْمَرُ označuje „određenu crvenu olovku”. القَلَمُ أَحْمَرُ tvrdi „Olovka je crvena”. Položaj člana mijenja odnos, ne samo izgled. Hrvatski nema takav član pa razliku objašnjava kontekst."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Opis bez uzorka",
+          "paragraphs": [
+            "Napiši boju uz oznaku i dodaj oblik ili natpis za odgovore. Učenik može slabije vidjeti ili drukčije doživljavati boje. Jezična sposobnost ne smije ovisiti o dvije gotovo iste zelene nijanse.",
+            "Počni imenicom i pridjevom: automobil حَمْرَاء, olovka أَحْمَر. Promijeni predmet za provjeru prijenosa, ne pamćenje para. Množinsko slaganje ima druga pravila; ne prenosi slaganje pojedinačnih osoba na svaku množinu stvari."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "crveno: muški — ženski oblik"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "plavo: muški — ženski oblik"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "zeleno: muški — ženski oblik"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "žuto: muški — ženski oblik"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "bijelo: muški — ženski oblik"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "crno: muški — ženski oblik"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "ružičasto: muški — ženski oblik"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "smeđe: muški — ženski oblik"
+        }
+      ],
+      "exercise": {
+        "question": "Dopuni automobil zelenom, olovku bijelom. Što određuje arapski oblik?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. Gramatički rod arapske imenice, ne vlasnikov spol, upravlja slaganjem."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Dani i mjeseci: vrijeme govora i susreta",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "Danas mijenja referent",
+          "paragraphs": [
+            "Danas je dan govora, jučer prije, sutra poslije. „Dođi sutra” nejasno je ako se poruka čita nakon više dana bez datuma slanja. Fiksni datum, primjerice 8. listopada 2026., određuje dan, ali susret može trebati kalendar, vrijeme i vremensku zonu.",
+            "Sedam naziva dana isti su i kad kalendar počinje ponedjeljkom, nedjeljom ili subotom. Prikazni red, prvi dan i vikendi razlikuju se. Nauči slijed, poveži s učenikovim lokalnim kalendarom."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Razni nazivi istog mjeseca",
+          "paragraphs": [
+            "Siječanj može biti يناير ili كانون الثاني po arapskoj regiji; veljača فبراير ili شباط, ožujak مارس ili آذار. Jedan popis ne čini druge pogrešnima. Kod nepoznatog naziva utvrdi kalendarski sustav i regionalnu tradiciju.",
+            "Muḥarram, Ṣafar i Ramaḍān pripadaju hidžretskom kalendaru, nisu prijevodi gregorijanskih mjeseci. Mjesečeve i Sunčeve godine razlikuju se. Zamjena siječnja muḥarramom nije pretvorba datuma. Za stvaran termin pouzdan kalendar."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Jasno čitanje termina",
+          "paragraphs": [
+            "„Čitam u petak” može tražiti koji petak. „Čitam svaki petak” ponavljajuća aktivnost. „Svaki” mijenja poruku. Pitaj jednom ili ponavljano i pronađi pisani trag.",
+            "03/04 može biti dvosmisleno pri drugom poretku dana i mjeseca. Napisani naziv mjeseca ili dogovoren format pomaže. Jasan primjer učenja; za planiranje provjeri datum umjesto pogađanja po obliku."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "danas"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "jučer"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "sutra"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "subota"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "nedjelja"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "ponedjeljak"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "utorak"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "srijeda"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "četvrtak"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "petak"
+        }
+      ],
+      "exercise": {
+        "question": "Ako je danas utorak, koji dan sutra? Jesu li siječanj i muḥarram isti mjesec?",
+        "answer": "Srijeda. Ne: siječanj gregorijanski, muḥarram hidžretski. Stvarni datumi traže pravilnu pretvorbu kalendara."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Mjesto i smjer: prvo izaberi referent",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Gdje, u odnosu na što?",
+          "paragraphs": [
+            "Knjiga iznad stola, torba ispod. „Iznad” i „ispod” odnosi su. Knjiga nije jednostavno „gore” u svakom opisu: odredi stol kao referent. „Unutra” i „vani” traže granicu poput torbe ili prostorije.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ znači „Stavi knjigu na stol”. Povezano čitanje ima kasru na ضَعِ; ne svaki povezivni samoglasnik kao trajan dio zasebnog glagola. Najprije razumijevanje upute, zatim korisna gramatika."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Čija desna strana?",
+          "paragraphs": [
+            "Podigni desnu ruku. Osoba nasuprot ima svoju desnu na strani koju vidiš kao lijevu. „S tvoje desne strane” jasnije je kad promatrači različito gledaju. Ne kažnjavaj dijete za referent koji nisi objasnio.",
+            "Sjever, jug, istok i zapad geografski su smjerovi, ne stalni sinonimi gornje, donje, desne i lijeve strane stranice. Karta treba orijentir ili jasnu konvenciju. Okret tijela mijenja desno, ne pomiče sjever."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "Redoslijed je dio značenja",
+          "paragraphs": [
+            "„Uzmi knjigu, zatim stavi u torbu”. „Zatim” čuva slijed. Kratke upute s poznatim predmetima, učenik objašnjava namjeru prije pokreta. Razlikuje razumijevanje od sretnog pogađanja pokreta.",
+            "Knjiga u torbi, torba ispod stolca. Ne znači knjiga iznad torbe. Odvoji izravno navedeni odnos od onog koji traži dodatne podatke. Za više mjesta nacrtaj jednostavan plan s natpisima, ne oslanjaj se samo na pamćenje položaja slike."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "iznad / na, po kontekstu"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "ispod"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "ispred"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "iza"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "unutra"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "vani"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "desno"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "lijevo"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "sjever"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "jug"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "istok"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "zapad"
+        }
+      ],
+      "exercise": {
+        "question": "Knjiga u torbi ispod stolca. Je li iznad torbe? Pokazuje li desno isti geografski smjer nakon okreta?",
+        "answer": "Ne: unutar torbe. Ne: desno se mijenja s orijentacijom tijela, za razliku od geografskog referenta."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Priče: čitaj tekst i prati dokaze",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Izvorna priča: prozor i olovka",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Lejla je otvorila prozor. Stavila je plavu olovku na stol, zatim otišla u školu. Kad se vratila, nije našla olovku. Pogledala je ispod stolca i našla je. Uzela je i napisala kratko pismo. Tekst ne kaže tko ju je pomaknuo niti dokazuje vjetar. Izvorno autorstvo HORIZONS, ne kopija objavljene priče."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Tri čitanja, tri cilja",
+          "paragraphs": [
+            "Prvo čitanje: tko je lik i koji problem? Ne prekidaj na svakom znaku. Drugo: gdje je olovka bila, gdje nađena? Treće: هُ u وَجَدَتْهُ upućuje olovci, glagoli odgovaraju Lejli u priči.",
+            "Olovka je plava, „kratko” opisuje duljinu pisma, ne boju. Tekst ne daje boju pisma. Ne zamjenjuj manjak dokaza vjerojatnim odgovorom. Možeš smisliti završetak, označi ga vlastitim izumom, ne izvornim događajem."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Mali rječnik i samostalno pisanje",
+          "paragraphs": [
+            "Prozor otvor je u zidu, stol površina za predmete, pismo pisana komunikacija. Objašnjenje riječi uklanja prepreku bez prepričavanja cijelog teksta. Potom drugi naslov, opravdan pisanom potvrdom.",
+            "Zamijeni olovku knjigom, Lejlu Omarom. Ženski predmet može mijenjati pridjeve, muški lik odgovarajuće glagole. Provjeri sve reference, ne zamijeni samo ime. Cilj je suvisao novi tekst, ne automatska zamjena."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "prozor",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "stol",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "stolac",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "pismo / poruka",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "i ona ga je našla"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "zatim"
+        }
+      ],
+      "exercise": {
+        "question": "Gdje je Lejla našla olovku? Tko ju je pomaknuo? Na što upućuje هُ u وَجَدَتْهُ?",
+        "answer": "Ispod stolca. Tekst ne kaže tko. هُ upućuje olovci. Odvoji napisanu informaciju od nenavedene."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Samoglasnički alif zapisuje dugi /aː/ u بَاب. Hamza u أَ, إِ i أُ suglasnik je /ʔ/ na nosaču, ne samoglasnički alif. Prima prethodnu vezu, ne spaja sljedeće slijeva.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "vrata"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "knjiga"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "vatra"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Zatvori usne pa otpusti uz zvučnost za /b/. Ba jedna točka ispod, bilateralno povezivanje kad susjedi dopuštaju. Srodni ta i tha nisu usneni. /p/ je drugi glas, ne drugi zapis ba.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "vrata"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "planina"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "knjiga"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Prednja jezična pregrada uz zube ili iza njih, otpust /t/ bez zvučnosti u modelu. Ta dvije točke iznad, ne završna taa marbūṭa ة čitana po spoju i stanci.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "datulje"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "djevojčica / kći"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "kuća / dom"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Blago suženje kod zubi pušta zrak za bezvučno /θ/, ne potpuna pregrada /t/. Tha tri točke iznad, oba smjera veze. Englesko think usporedba, th nije uvijek isti glas. Obični hrvatski nema točan pandan.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "odjevni predmet"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "mnogo"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "govor / razgovor u ovom primjeru"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Jim je ovdje /dʒ/. Druge zajednice imaju drugi izgovor. Snimku uskladi s modelom. Donja točka razlikuje ح i خ vizualno, ne objašnjava artikulaciju.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "deva"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "zvijezda"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "kruna"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "ح bezvučni je faringalni /ħ/, ne obični /h/ ili خ. „Snažno h” ne pokazuje mjesto. Izbjegni bolno stiskanje grla. Bez točke: razluči ح, ج i خ vizualno pa glasovno.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "uže"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "more"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "sol"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "خ bezvučno je stražnje trenje /x~χ/. Mjesto varira s govornikom i kontekstom. Točka iznad. Strana usporedba treba jezik i varijetet; kh sam ne uči glas.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "kruh"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "datuljine palme"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "kuhinja"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "د /d/ zvučna prednja pregrada i otpust. Bez točke, sljedeće slijeva ne spaja. Vizualno usporedi ذ, zvučnost s ت bez promjene samoglasnika.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "lekcija"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "ruka"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "dječak u ovom primjeru"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "ذ /ð/ zvučno zubno trenje u standardu. Ne puna pregrada د, različito od bezvučnog /θ/. Točka iznad, ne spaja sljedeće slijeva. Englesko this pomaže, ne pravilo svih th; nema točnog običnog hrvatskog pandana.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "zlato"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "uho"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "ukusno"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "ر kratak dodir vrha jezika ili ponavljanja po kontekstu. /r/ ne traži stalni broj dodira. Bez točke, ne spaja dalje slijeva. Snažan pritisak jezika ili grla nije cilj.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "pijesak"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "more"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "mjesec"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "ز /z/ zvučno prednje trenje. Osnova ر s točkom iznad, ne ر s dodatnim samoglasnikom. Ne spaja sljedeće slijeva. /z/ i /s/ slušaj po zvučnosti s istim samoglasnikom.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "ulje"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "banane"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "kruh"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "س /s/ bezvučno trenje s drugim suženjem nego ث. Bez točaka, zupci različiti po fontu. Prvo jasan font, potom rukopis bez svakog stila kao novog slova.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "riba"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "sunce"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "lekcija"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "ش /ʃ/ bezvučno trenje drukčije od س. Tri točke iznad srodne osnove ne čine ث. Oblik i artikulacija odvojeni, سَ i شَ isti samoglasnik.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "sunce"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "trava"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "perje"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "ص /sˤ/ emfatična meta, ne glasniji /s/. Dodatna stražnja artikulacija djeluje na kvalitetu i okolne samoglasnike. Bez točke; سَ i صَ bez boli i pretjerivanja.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "strpljenje"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "sok"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "kavez"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "ض /dˤ/ čest suvremeni standardni cilj, ne svaki povijesni ili dijalektni. Točka odvaja ص. Ne spoji ظ: ovdje jedna pregrada, druga trenje.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "svjetlo"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "jaja"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "zemlja / kopno"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "ط /tˤ/ prednja pregrada i otpust s emfatičnošću. Ne ukrašeno ت ili glasniji /t/. Bez točke, usporedi تَ i طَ i samoglasničku kvalitetu.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "glina / blato"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "vlak"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "nit"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "ظ /ðˤ/ izrečena emfatična dentalna frikcija; označi varijacije. Točka nad ط. „Druga ض” nije dovoljno, jasna snimka razlike umjesto istog zvuka oba zapisa.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "sjena"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "kost"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "sreća"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ع /ʕ/ zvučni faringalni suglasnik, ne dugi samoglasnik ili slaba hamza. Blagi model bez stiskanja. Bez točke, spojeni oblici znatno drukčiji. Vizualno i glasovno posebno vježbaj.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "oko u ovom primjeru"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "on se igrao"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "skupljanje / okupljanje"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "غ zvučno stražnje trenje /ɣ~ʁ/. Srodno ع vizualno, ne akustički. Usporedi خ zvučnošću, ع mjestom bez tvrdnje identičnosti.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "soba"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "malo"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "prazan prostor / slobodno mjesto"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "ف /f/ zrak donja usna–gornji zubi bez zvučnosti. Istočna tradicija ovdje točka iznad, neke magrepske drukčije, označi. Tradicija nije automatski učenikova greška.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "slon"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "ključ"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "vuna"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "ق /q/ bezvučna stražnja pregrada dalje od ك. Dvije točke iznad u tradiciji. Dijalekt ne mijenja skriveno cilj slušanja; označi model.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "mjesec"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "goveda"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "tržnica"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "ك /k/ stražnji jezik prema stražnjem nepcu, otpust. Nije ق samo jer su oba stražnja. Mali unutarnji znak ك dio je zapisa, ne zasebna hamza.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "knjiga"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "riba"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "anđeo"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "ل /l/ zvučni bočni glas: zrak uz jezik s prednjim dodirom vrha. Uobičajen model prvo, emfatični posebni konteksti odvojeno. Povezuje oba smjera; لا zajednički oblik bez novog slova.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "noć"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "olovka"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "planina"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "م /m/ zvučni nosni glas sa zatvorenim usnama. Od ب ne razlikuje se samo oblikom: zrak nosom. Osnova se mijenja vezom, naziv i slovo ostaju.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "voda"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "mjesec"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "olovka"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "ن /n/ zvučni nosni s prednjom jezičnom pregradom, točka iznad. S م mjesto usporedi. Pisani nun nije tanwīn: nastavci /n/ bez zasebnog slova.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "svjetlo"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "oko u ovom primjeru"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "mlijeko ili mliječni proizvod, prema regiji"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "ه /h/ bezvučno bez faringalnog suženja ح. ه, هـ, ـهـ, ـه vizualno različiti, veza objašnjava. Nije svako završno ة obično ه zbog slične stanke.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "polumjesec"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "rijeka"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "lice"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "و /w/ u وَلَد ili pomoć zapisu dugog /uː/ u نُور. ثَوْب nije /uː/, čitaj samoglasnički obrazac. Prethodna veza da, sljedeće slijeva ne.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "dječak u ovom primjeru"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "svjetlo"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "odjevni predmet"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "ي /j/ u يَد ili pomoć dugom /iː/ u فِيل. بَيْت drukčije /aj/, ne /iː/. Ya s točkama nije alif maqṣūra ى, ne čitaj automatski ya.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "ruka"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "slon"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "kuća / dom"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "Prošireni priručnik HORIZONS",
+    "warning": "Urednički nacrt: prijevod je prošao samoprovjeru modela; neovisna provjera izvornog govornika nije provedena.",
+    "examples": "Primjeri sa značenjem",
+    "practice": "Vježba",
+    "answer": "Odgovor i objašnjenje",
+    "notes": "Napomene",
+    "contents": "Sadržaj",
+    "view": "Čitaj",
+    "all": "Cijeli priručnik",
+    "original": "Arapski izvornik",
+    "answers": "Odgovori",
+    "forms": "Pisani oblici",
+    "words": "Riječi",
+    "draft": "Urednički nacrt",
+    "font": "Arapski font",
+    "theme": "Promijeni svijetlu i tamnu temu"
+  },
+  "notation_note": "ː označuje duljinu prethodnog samoglasnika; ˤ emfatičnost suglasnika u prikazu; . granicu slogova; ~ razdvaja inačice opisanog raspona, ne dva uzastopna glasa. / / zvučni je prikaz, ne arapska pisana riječ. Zasebne riječi čitaju se sa stankom; prijevodi rečenica ne pretpostavljaju potajno isti izgovor pri vezi i stanci.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Uspoređena sva poglavlja i slova: očuvani dvojina, gramatički rod, povezivanje i stanka.",
+          "Hrvatski rod olovka/automobil ne određuje arapski; nedostajuća uzročna tvrdnja u priči nije dopisana."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Provjereni padeži, slaganje i poučavajući ton; razlikovanje člana objašnjeno bez lažnog hrvatskog člana.",
+          "Nije izmišljen točan hrvatski pandan /θ/ ili /ð/; svi arapski oblici i IPA sačuvani."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

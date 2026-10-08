@@ -1,0 +1,1546 @@
+{
+  "language": "hu",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Betűk és írás: ajtót nyitunk az olvasáshoz",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Három külön dolog: név, hang és alak",
+          "paragraphs": [
+            "Képzelj el egy doboz építőelemet. A nevük segít megtalálni őket, de a nevek ismételgetése nem épít házat. A betűnek is van neve, írott alakja és szerepe a kimondott szóban. ب neve bá. بَاب olvasásakor azonban /b/ hanggal kezdünk, majd hosszú /aː/ következik. Ne a három betű nevét olvasd a szó helyett. A betűnevek hasznosak, ha a helyesírásról kérdezel.",
+            "Az arab szót jobbról balra kövesd. Először az alapformát, majd a pontokat és olvasási jeleket figyeld. بَ és تَ alapja rokon, de pontjaik külön betűt azonosítanak. A fatḥa kasrára cserélése بِ alakot ad, nem változtatja a bát tára. Takard le a sor többi részét, ha zsúfolt. A betű felismerése akkor is eredmény, ha az egész szót még nem tudod olvasni."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Miért változik a betű alakja?",
+          "paragraphs": [
+            "Az arab betűk közös írásvonalat alkotnak, mint a kézen fogva álló emberek. ب, بـ, ـبـ és ـب egy betű kapcsolódó alakjai, nem négy új betű. بَاب első bája kapcsolódik az alifhoz, de az alif nem folytatja a kapcsolatot az utolsó bához. A kis megszakítás nem hoz létre második szót.",
+            "ا, د, ذ, ر, ز és و elfogadhatja az előző betű kapcsolatát, ha megengedett, de nem kapcsolja a balra következő betűt. Ne tegyél szóközt minden vonalszakadásnál. A szóköz szavakat választ el; a kapcsolódási szabály betűalakot határoz meg a szón belül. Előbb nézz valódi példát, csak utána memorizáld a szabályokat."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza és jelentés",
+          "paragraphs": [
+            "بَاب alifja hosszú /aː/-t ír. أَخ hamzával /ʔ/ kezdődik, alif hordozón. A hamza mássalhangzó, nem hosszú magánhangzó. Írási szabályok szerint ء, أ, إ, ؤ vagy ئ alakja lehet. A hordozó alakja nem teszi ezeket a magánhangzós alif hangjával azonossá.",
+            "Minden lépést kapcsolj jelentéshez: az ajtó nyitható, a könyv olvasandó lapokat tartalmaz, a tollal írunk. Változtasd a kártyák sorrendjét, rövid szünet után térj vissza. A kártya helyének felidézése memóriafeladat, de az önálló olvasás az írott információ felismerése bárhol."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "ajtó",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "könyv",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "toll",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "fiútestvér",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "ház / otthon",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "fény",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Két szót hoz létre a kapcsolódás megszakítása بَاب belsejében? A bá betűnév a بَاب teljes olvasata?",
+        "answer": "Mindkettőre nem. بَاب egy szó: az alif nem kapcsol tovább. A bá betűt nevez meg; /baːb/ a szó hangjait olvassa sorrendben."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Magánhangzójelek: kis jelek módosítják az olvasást",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "A magánhangzójel nem pont",
+          "paragraphs": [
+            "Tedd egymás mellé بَ, بُ és بِ alakját. Mindhárom bá. A fatḥa rövid /a/, a ḍamma rövid /u/, a kasra rövid /i/. A száj, nyelv és ajkak helyzete alkalmazkodik a magánhangzóhoz. A hangerő növelése nem változtatja egyik magánhangzót másikká.",
+            "بِ alatt a bá pontja és a kasra közel van egymáshoz. A pont azonosítja a betűt, a kasra az olvasást vezeti. Cseréld a magánhangzójelet, a bá bá marad. A szín elkülöníti a szerepeket, de fekete-fehér nyomtatásban is érthető alak és felirat kell."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Hosszúság, nem hangerő",
+          "paragraphs": [
+            "Hasonlítsd بَ és بَا, بُ és بُو, بِ és بِي alakját. A pár második tagjában tovább tart a magánhangzó; a bá nem lesz más mássalhangzó. /baː/ ː jele az előző magánhangzó hosszát mutatja. Nem új arab betű és nem minden beszélőnek azonos stopperidő.",
+            "Az alif, wáw és já nem mindig hosszú magánhangzó. وَلَد wáwja /w/, يَد jája /j/. نُور wáwja /uː/, فِيل jája /iː/ írásában segít. A helyi mintát olvasd, ne csak a betűnévből találgasd a szerepet."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda és tanwīn",
+          "paragraphs": [
+            "بِنْت sukūnja arra figyelmeztet, hogy e mintában ne adj magánhangzót a nún után. Nem törli /n/-t. أُمّ shaddája kettőzött mássalhangzó, nem hosszabb előző magánhangzó. أَمْ /ʔam/ és أُمّ /ʔumm/ magánhangzóban is eltér, tehát nem egyváltozós minimális pár. Egy tulajdonság elkülönítéséhez világosan jelölt gyakorló szótagot használj.",
+            "كِتَابٌ tanwīnje a főnévi végződéshez tartozik nyelvtani környezetben. A megfelelő folyamatos olvasás /un/-t tartalmaz; szokásos szünetnél ezen a szón /kitaːb/ hangzik. Ez nem minden végződés általános szabálya. Őrizd meg az írott jelet, és magyarázd a folyamatos és szünet előtti olvasás különbségét."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "lány / leánygyermek",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "elefánt",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "fiú",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "kéz",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "anya",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "fény",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "نُور wáwja itt /w/? Eltünteti a sukūn a núnt بِنْت alakjában?",
+        "answer": "Nem. نُور wáwja hosszú /uː/-t ír. بِنْت núnja e mintában utána hozzáadott magánhangzó nélkül hangzik."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Két egység összeolvasása: az első olvasás",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Mit olvasunk össze?",
+          "paragraphs": [
+            "A munkafüzetben a két egység összeolvasása két írott egységgel végzett gyakorlási szakasz neve. A betűk száma nem mindig azonos a hangok vagy szótagok számával. بَا bát és alifot tartalmaz, de mássalhangzót és utána hosszú magánhangzót jelöl. Nem két mássalhangzó, és a külön gyakorló elemnek nem kell jelentéses szónak lennie.",
+            "Kezdd بَ-val, majd بَا, تَا és ثَا következzen. Az első összehasonlítás a magánhangzó hosszát, a következő a mássalhangzót változtatja azonos hosszú magánhangzó mellett. Adj időt megfigyelésre és olvasásra. Betűnevek ismétlése a szükséges hangok helyett nehezíti az összeolvasás megértését."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Nyílt és zárt szótagok",
+          "paragraphs": [
+            "بَا itt magánhangzóra végződik, nyílt szótag. بَرْ mássalhangzóra, zárt szótag. A „zárt” a szótag végéről szól, nem az egész kiejtés alatt csukott szájról. بَرْ-t végső magánhangzó nélkül olvasd. بَرَ olvasása megváltoztatja a szerkezetet.",
+            "Ujjal kövesd a helyet, majd fokozatosan hagyd el a segítséget. A mutatás követési támasz, nem a pontos kiejtés bizonyítéka. Ismert szótag után új, azonos mintájút adj. Így ellenőrzöd a szabály alkalmazását a megtanult kártyán túl."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "A résztől a szóig",
+          "paragraphs": [
+            "بَا a بَاب része; بِي a بِيض megjelenített olvasatának része. Nem minden szótagnak kell önálló szótári jelentés. Előbb olvasd össze, majd kérdezd az egész szó jelentését. Ezzel a tevékenység célja több lesz a gyorsaságnál.",
+            "Hibánál nevezd meg a változást: mássalhangzó, magánhangzóminőség, hosszúság vagy hozzáadott hang. A konkrét probléma megnevezése jobb, mint mindent újrakezdeni. Több nehéz tulajdonságnál előbb egy kezelhetőt gyakorolj, aztán kombináld újra."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "gyakorló szótag; itt nem szó",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "gyakorló szótag",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "gyakorló szótag",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "gyakorló szótag ebben a példában",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "ajtó",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "tojások",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Miért nem azonos szótagtípus بَا és بَرْ?",
+        "answer": "بَا hosszú magánhangzóra, بَرْ mássalhangzóra végződik. A különbség a véget írja le, nem a pontszámot vagy hangerőt."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Három egység összeolvasása: jelentéses olvasás",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Három betű, de hány szótag?",
+          "paragraphs": [
+            "بَاب és جَبَل egyaránt három alapbetűt tartalmaz. A választott szünet előtti olvasatban /baːb/ egy, /dʒa.bal/ két szótag. A fonetikai pont szótaghatár, nem a dzsím írott pontja. A betűszám önmagában nem adja a szótagok számát.",
+            "Írd a betűket jeleikkel, majd figyeld a hangmintát. جَبَل esetén جَ-val kezdj, بَلْ-lel zárj szünetnél. Egyesítsd a bá elhagyása és új hang betoldása nélkül. A részekre bontás átmeneti támasz, nem minden hétköznapi mondat kiejtése."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "A betűsorrend jelentést hordoz",
+          "paragraphs": [
+            "قَلْب szív, كَلْب kutya. A qáf káfra cserélése jelentést változtat. بَحْر tenger, حَبْر tinta; sorrend és magánhangzó is változik, így nem egyjellemzős minimális pár. A leírt részleteket nézd, ne ismerős képből találgass.",
+            "Válassz bemutatható jelentésű szavakat. Olvasás után kérdezd, a tinta írásra vagy úszásra való-e. A jelentés leleplezheti a találgatást, de nem helyettesíti a betűk nézését. Magyarázd az új szó jelentését, ne minősítsd az ismeretlen szókincset olvasási hibának."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Figyelmes olvasás a folyékonyság előtt",
+          "paragraphs": [
+            "Olvass három szót verseny nélkül. Jelölj egy visszatérendőt, majd könnyebb példa után próbáld. A folyékonyság megfelelő olvasást, megértést és javítást is jelent, nem csupán percenkénti szószámot. Ne ösztönözz gyermeket a bizonytalanság találgatással takarására.",
+            "Az alkalmazáshoz جَبَل után adj جَمَل-t. A bá mímmé változik ismerős mintában. A hegy magas földfelszín, a teve állat. Kérj más valódi szót ismert betűkkel, de magyarázd, hogy nem minden elrendezés arab szó."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "hegy",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "teve",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "szív",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "kutya",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "tenger",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "tinta",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Melyik betű változik جَبَل és جَمَل között? Azonos szótagú بَاب és جَبَل?",
+        "answer": "Bá helyett mím. بَاب egy szótag a bemutatott szünet előtti olvasatban, جَبَل kettő. A betűszám nem elegendő."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Négy egység összeolvasása: hosszabb túlterhelés nélkül",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "A hosszabb nem mindig nehezebb",
+          "paragraphs": [
+            "كِتَاب négy alapbetű. A szünet előtti /ki.taːb/ rövid első szótagból és hosszú magánhangzós, végső bás másodikból áll. Használd بَاب tanulságait, ne láss minden részben teljes újdonságot. Az írott hossz nem méri önmagában a nehézséget.",
+            "ثَوْب wáwja itt nem /uː/: /aw/ más hangsor. بَيْت /aj/-t tartalmaz, nem /iː/-t. A siker a magánhangzó és szerkezet vizsgálata, nem „minden wáw ú, minden já í”. Rögzíts egy példát újabb kontraszt előtt."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "A mondat kapcsolatokat ad",
+          "paragraphs": [
+            "هَذَا كِتَابٌ közeli tárgyat azonosít: „Ez egy könyv”. هَذِهِ حَقِيبَةٌ nőnemű mutató szót használ a táskával. Főnévcserénél a kapcsolódó szavakat is ellenőrizni kellhet, nem csak címkét cserélni. Kérdezd, mire mutatnak és mely alak illik.",
+            "الكِتَابُ جَدِيدٌ azt állítja: „A könyv új”. الكِتَابُ الجَدِيدُ az „új könyvet” azonosítja, de önmagában nem ugyanaz a teljes közlés. A névelő nem díszítő előtag. Egyszerű helyzet megmutathatja a nyelvtani kapcsolatot a szakkifejezések előtt."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "A készség átvitele új szövegre",
+          "paragraphs": [
+            "Hasonlítsd كِتَاب és كَاتِب alakját. Alapmássalhangzóik rokonok, de az alif helye és a magánhangzók eltérnek. Az első könyv, a második író. A rokon gyökér nem ad minden szónak azonos jelentést. Így szócsaládokat vezetünk be, nem a teljes szóképzést egyszerre.",
+            "Olvass rövid sort, rejtsd el kis időre, kérdezd a fő jelentést. Tedd vissza egy részlet ellenőrzésére. Elkülönül a hangemlékezet, megértés és írott bizonyítékhoz visszatérés. Segítséget kérni új szónál tanulási lépés; a könyv ne legyen végtelen vizsga."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "könyv",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "író",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "táska",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "Ez egy könyv."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "A könyv új."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "az új könyv"
+        }
+      ],
+      "exercise": {
+        "question": "الكِتَابُ جَدِيدٌ és الكِتَابُ الجَدِيدُ önmagában ugyanazt közli?",
+        "answer": "Nem. Az első állítja, hogy a könyv új; a második az új könyvet nevezi meg, ugyanezen teljes állítás nélkül."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Betűreferencia: alaktól a szóhasználatig",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Megbízható térkép minden betűhöz",
+          "paragraphs": [
+            "Minden betűnél ugyanazt kérdezd: név, hangképzés helye, kapcsolódás, eltérés hasonló alaktól, világos szavak. A következetes térkép megelőzi, hogy a lecke magyarázat nélküli képek sora legyen. Nem kell mindent elsőre megválaszolni.",
+            "A fejezet 28 betű kártyáját tartalmazza. Az alif ábécébeli helye nem jelenti hamza és hosszú /aː/ azonosságát. Wáw és já szerepe környezetfüggő. Olvasd a megjegyzést, mielőtt saját nyelved írásával hasonlítod."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Alakcsalád nem hangcsalád",
+          "paragraphs": [
+            "ب, ت és ث alapja hasonló, de bá ajakkal, tá elülső zárral, thá fogi súrlódással képződik a választott standard arabban. Thá három pontja nem magyarázza hangját, sín három pontja sem teszi thá-vá. Vizuális család azonosít, artikulációs leírás kiejtést tanít.",
+            "ثَ és تَ összevetésénél tartsd meg a fatḥát. س és ص esetén az emfatikusságot, ne hangerőt tárgyald. Egyes arab hangoknak nincs pontos megfelelőjük a tanuló nyelvében. Magyarázd a képzést és használj hallható mintát kitalált pontos idegen megfelelő helyett."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Szókincs, mondatok és alkalmazás",
+          "paragraphs": [
+            "Kezdeti, középső és végső betű megtalálása után alkoss értelmes mondatot egy példaszóval. Ne halmozz ritka szókincset a terjedelemért. Változtasd a helyet és jelentést, magyarázz új szót, több jelentésnél adj kontextust.",
+            "A nyelvjárási eltérés nem a beszélő hibája. A referencia standard arab célt nevez meg, és elismeri dzsím, qáf és más hangok változatosságát. Hallási gyakorlatnak a magyarázat és jelölés modelljével egyező felvétel kell."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "ajtó",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "hegy",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "könyv",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "gyümölcs / termés",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "hó",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "róka",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "ب, ت és ث hasonló alakja azonos képzési helyet jelent? Minden közösségben ugyanaz a dzsím?",
+        "answer": "Nem. Az alak írott információ, a képzés más tulajdonság. Dzsím változatos: nevezd meg a célt, jelöld a többi modellt."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Névmások: ki vagyok én, ki vagy te?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "A beszélőt követő szó",
+          "paragraphs": [
+            "Ha Lajla „én”-t mond, Lajlára utal, ha Omar mondja, Omarra. A névmás nem állandó személynév: utalása a beszédhelyzetből jön. „Te” a címzett, „ő” az, akiről beszélünk; az arab utóbbin belül nemet különböztet. Táblázattanulás előtt cseréljetek szerepet.",
+            "Az arab أَنْتَ egy hímnemű címzetthez, أَنْتِ egy nőneműhöz szól. A magyar „te”, mint az angol you, mindkettő, de az arab különbség nem választható. A török o, akárcsak a magyar „ő”, هُوَ és هِيَ megfelelője is; arab fordításban ellenőrizd az utalást mechanikus szócsere helyett."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Egyes, kettős és többes szám",
+          "paragraphs": [
+            "أَنَا első személy egyes szám. نَحْنُ a beszélőt tartalmazó csoport, két vagy több személy. أَنْتُمَا két címzett, هُمَا két említett személy; mindkettő hím- és nőnemű utalással használható. أَنْتُمْ / أَنْتُنَّ és هُمْ / هُنَّ többes alakokat különít el. Hímnemű többes standard arabban kontextustól függően vegyes csoport is lehet.",
+            "Nem minden nyelvnek van külön egyszavas kettős névmása. أَنْتُمَا magyarul „ti ketten”, angolul you two, törökül ikiniz. Ez az utalást magyarázza, nem garantál azonos használatot minden helyzetben. Jelentést és alakot egyaránt hasonlíts."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "A névmás és ami utána áll",
+          "paragraphs": [
+            "أَنَا طَالِبٌ és أَنَا طَالِبَةٌ azonos névmással indul; a következő főnév a beszélőhöz igazodik. هُوَ طَالِبٌ és هِيَ طَالِبَةٌ mindkettőt változtatja. Férfi diák példája nem teszi أَنَا-t csak hímneművé.",
+            "أَنَا أَقْرَأُ és نَحْنُ نَقْرَأُ igealakja eltér. A kezdő أَ itt első személyű igeragozás, nem birtoklás. Világos környezetben az ige elég információt hordozhat az önálló névmás elhagyásához. Fordítás angol am/is/are alakja nem követel megfelelő szót minden jelen idejű arab névszói mondatban."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "én",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "te (egy hímnemű címzett)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "te (egy nőnemű címzett)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "mi",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "ő (hímnemű)",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "ő (nőnemű)",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "ti ketten"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "ők ketten / mindketten"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "ti (hímnemű többes; kontextusban vegyes csoport is lehet)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "ti (nőnemű többes)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "ők (hímnemű többes; kontextusban vegyes csoport is lehet)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "ők (nőnemű többes)"
+        }
+      ],
+      "exercise": {
+        "question": "Lajla magáról, majd Omarról beszél. Mely két névmás illik? نَحْنُ csak hímnemű?",
+        "answer": "Magáról أَنَا, Omarról itt هُوَ. نَحْنُ nem különíti el a beszélők nemét; a csoportot a kontextus adja."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Birtoklás és viszony: több egy címkénél",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Egy tárgy, két beszélő",
+          "paragraphs": [
+            "Omar könyvet tart: كِتَابِي — „a könyvem”. Neki mondod كِتَابُكَ — „a könyved”. Róla Lajlának كِتَابُهُ — „az ő könyve”. A könyv ugyanaz, a beszédviszony más. Nem háromféle könyv.",
+            "Lajlának كِتَابُكِ, róla كِتَابُهَا. كَ és كِ eltérése kicsi írásban és hangban, de fontos utalásban. Az angol többnyire külön szót tesz a főnév elé; az arab csatolja a névmást. A magyar birtokos személyjelet használhat, de annak szabályai nem azonosak az arabéval."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "A viszony nem mindig tulajdon",
+          "paragraphs": [
+            "كِتَابُنَا a könyvet csoportunkhoz kapcsolja. أُمِّي „az anyám”, nem személy tulajdonként kezelése. مَدْرَسَتِي az iskola, ahová járok, nem feltétlenül saját épületem. Főnév és helyzet mutatja a viszonyt.",
+            "مَدْرَسَة → مَدْرَسَتِي esetén a tá marbúṭa közönséges tá lesz e névmás csatolásakor. Nem minden végső há válik tává. وَجْهِي „az arcom”: وَجْه hája há marad."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Főnév, eset és határozottság",
+          "paragraphs": [
+            "كِتَابُكَ egy kiválasztott alak. رَأَيْتُ كِتَابَكَ — „Láttam a könyvedet” — főnévi végződése a nyelvtani szereppel változik; كَ továbbra is egy hímnemű címzett. Ne tanuld az előtte álló ḍammát az „a tiéd” állandó részeként.",
+            "A szokásos főnév és birtokos névmás szerkezetben ne tégy tanwīnt vagy névelőt, mintha külön, birtokviszony nélküli főnév lenne. كِتَابِي meghatározza a viszonyt, itt határozott. Előbb helyes példa, utána bonyolult kivételek."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "a könyvem"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "a könyved (egy hímnemű címzett)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "a könyved (egy nőnemű címzett)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "az ő könyve (hímnemű birtokos)"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "az ő könyve (nőnemű birtokos)"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "a könyvünk"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "az iskolám"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "az arcom"
+        }
+      ],
+      "exercise": {
+        "question": "Lajla „a könyvem”-et mond. Hogyan utalsz rá Lajlának szólva, majd róla beszélve?",
+        "answer": "كِتَابُكِ neki szólva; كِتَابُهَا róla beszélve. A névmási utalás a beszédviszonyt követi."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Számok: jel, szó és mennyiség",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Minden tárgyat egyszer számolj",
+          "paragraphs": [
+            "Tegyél három tollat az asztalra. Egy számlálási lépésnél egyszer érints egyet, aztán nevezd meg a csoport méretét. Ugyanazt kétszer számolva rossz összeg lesz. Átrendezés hozzáadás és elvétel nélkül továbbra is három: a sor alakja nem mennyiség.",
+            "٣ és 3 ugyanaz a szám két ábrázolt számjegyrendszerben. ثَلَاثَة arab számnév, nem a számjegy alakja. Számolhat könyvet, lépést vagy percet; azonosítsd, mit számolsz a használat megértéséhez."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Számlálás és főneves számszerkezet",
+          "paragraphs": [
+            "Hangos számolás egytől tízig indul, de számneves kifejezésnél óvatosság kell. ثَلَاثَةُ كُتُبٍ három könyv; ثَلَاثُ سَيَّارَاتٍ három autó. A három–tíz mintában a számnév formája ellentétes a számolt főnév egyes alakjának nyelvtani nemével, a főnév birtokos esetű többes. Ne alkalmazd egyre és kettőre.",
+            "كِتَابٌ وَاحِدٌ és سَيَّارَةٌ وَاحِدَةٌ egyeztet egy mellett. A bemutatott alanyesetű kettős كِتَابَانِ és سَيَّارَتَانِ már kettőt jelöl. Nem kell minden kettős kifejezéshez külön „kettő”."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Mennyiség, sorrend és összehasonlítás",
+          "paragraphs": [
+            "ثَلَاثَة a „hány?” kérdésre, الثَّالِث a „hányadik?”-ra válaszol. Három könyv nem a harmadik könyv. Nulla toll azt jelenti, nincs toll a számolt csoportban, nem azt, hogy semmi nem létezik.",
+            "Hasonlíts valódi csoportokat: két toll és négy. A második több, az első kevesebb. Ha mindkettő négy, a darabszám egyenlő szín- vagy hosszeltérés mellett is. A megadott tulajdonsághoz kötött összevetés után próbálj újat."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "nulla"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "egy"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "kettő"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "három"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "négy"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "öt"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "hat"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "hét"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "nyolc"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "kilenc"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "tíz"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "harmadik"
+        }
+      ],
+      "exercise": {
+        "question": "Átrendezel három kört hozzáadás nélkül. Hány marad? „Harmadik” mennyiséget nevez?",
+        "answer": "Három marad. „Harmadik” sorrendi hely, nem mennyiség. Egyszer számolj egy tárgyat, ne a köztük lévő hézagokat."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Színek: elnevezés, leírás és egyeztetés",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Azonos tárgy, más leírás",
+          "paragraphs": [
+            "Két toll ugyanarra való, de az egyik piros, a másik kék. „Toll” a fajtát jelzi, színe a konkrétat azonosítja. Szín nem mondja meg az ember értékét vagy hogy mely nem használhatja. Kijelzők máshogy mutatják a színeket: mindig nevezd meg a mintát.",
+            "قَلَمٌ أَحْمَرُ piros toll; سَيَّارَةٌ حَمْرَاءُ piros autó. A melléknév a főnév nyelvtani nemével változik, nem a tulajdonoséval. Az angol és török nem változtatja így e példák színjelzőjét; a magyar sem különböztet nyelvtani nemet, ezért az arab alakokat külön kell tanulni."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Nem minden szín követi a vörös mintáját",
+          "paragraphs": [
+            "Tanuld أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء és أَسْوَد/سَوْدَاء párját egy mintacsoportként. وَرْدِيّ/وَرْدِيَّة és بُنِّيّ/بُنِّيَّة más mintájú. Ne képezd minden szín nőnemét اء hozzáadásával.",
+            "قَلَمٌ أَحْمَرُ „egy piros toll”. القَلَمُ الأَحْمَرُ „a piros toll” azonosítása. القَلَمُ أَحْمَرُ állítás: „A toll piros”. A névelő helye kapcsolatot változtat, nem csak a szavak külsejét."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Leírás színminta nélkül",
+          "paragraphs": [
+            "Írd a szín nevét a jelhez, adj alakot vagy címkét a válaszok megkülönböztetésére. Lehet gyenge látás vagy más színérzékelés. A nyelvi tudás ne függjön két közel azonos zöld árnyalat elkülönítésétől.",
+            "Kezdj főnévvel és melléknévvel: autó حَمْرَاء, toll أَحْمَر. Cseréld a tárgyat alkalmazás ellenőrzésére, ne egy pár memorizálására. A többes egyeztetésnek további szabályai vannak; ne terjeszd ki az egyes személyek egyeztetését minden tárgyi többesre."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "piros: hímnemű — nőnemű alak"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "kék: hímnemű — nőnemű alak"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "zöld: hímnemű — nőnemű alak"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "sárga: hímnemű — nőnemű alak"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "fehér: hímnemű — nőnemű alak"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "fekete: hímnemű — nőnemű alak"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "rózsaszín: hímnemű — nőnemű alak"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "barna: hímnemű — nőnemű alak"
+        }
+      ],
+      "exercise": {
+        "question": "Egészítsd az autót zölddel, a tollat fehérrel. Mi határozza az arab alakot?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. A főnév nyelvtani neme, nem a tulajdonosé vezérli itt az egyeztetést."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Napok és hónapok: beszédidő és találkozóidő",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "A ma utalása változik",
+          "paragraphs": [
+            "Ma a beszéd napja, tegnap előzi, holnap követi. „Gyere holnap” félreérthető, ha napokkal később olvassák küldési dátum nélkül. Rögzített dátum, például 2026. október 8., napot jelöl, de találkozóhoz naptárrendszer, idő és időzóna is kellhet.",
+            "A hét hét napneve ugyanaz, ha az egyik naptár hétfővel, másik vasárnappal vagy szombattal kezd. A sorrend, első nap és hétvége szokása eltérhet. Tanuld a sort, majd kösd a tanuló helyi naptárához."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Ugyanaz a hónap, más nevek",
+          "paragraphs": [
+            "Január lehet يناير vagy كانون الثاني más arab régiókban; február فبراير vagy شباط, március مارس vagy آذار. Egy lista tudása nem teszi hibássá a regionális másikat. Ismeretlen névnél azonosíts naptárrendszert és helyi hagyományt.",
+            "Muḥarram, Ṣafar és Ramaḍān a hidzsra naptár része, nem gregorián hónapnevek fordítása. Hold- és napévek eltérnek. Január Muḥarramra cserélése nem dátumátváltás. Valódi időponthoz megbízható naptárat használj."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Világos találkozóadat olvasása",
+          "paragraphs": [
+            "„Pénteken olvasok” kérheti, melyik péntek. „Minden pénteken olvasok” ismétlődő tevékenység. „Minden” változtatja az üzenetet. Kérdezd, egyszeri vagy ismétlődő az esemény, és keresd az írott jelet.",
+            "A 03/04 számmal írt dátum félreérthető nap–hónap sorrend különbségénél. Kiírt hónapnév vagy egyezményes formátum segít. Tanuláshoz világos példa; tényleges tervezésnél ellenőrzés találgatás helyett."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "ma"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "tegnap"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "holnap"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "szombat"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "vasárnap"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "hétfő"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "kedd"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "szerda"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "csütörtök"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "péntek"
+        }
+      ],
+      "exercise": {
+        "question": "Ha ma kedd, milyen nap holnap? Január és Muḥarram ugyanaz a hónap?",
+        "answer": "Szerda. Nem: január gregorián, Muḥarram hidzsra. Valódi dátumok megfeleltetése helyes naptárátváltást igényel."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Hely és irány: először viszonyítási pont",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Hol, mihez képest?",
+          "paragraphs": [
+            "A könyv asztal fölött, a táska alatta van. „Fölött” és „alatt” viszony. Nem minden leírásban pusztán „fent” a könyv: nevezd az asztalt viszonyításként. „Bent” és „kint” határt igényel, például táskában vagy szobán kívül.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ jelentése „Tedd a könyvet az asztalra”. A bemutatott folyamatos olvasás kasrát tartalmaz ضَعِ alakján; ne tekints minden kapcsoló magánhangzót az önálló ige állandó részének. Előbb az utasítást értsd, aztán hasznos nyelvtani részletet."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Kinek a jobb oldala?",
+          "paragraphs": [
+            "Emeld jobb kezed. A szemben álló ember jobb keze azon az oldalon lehet, amelyet te balnak látsz. „Tőled jobbra” világosabb, mint „jobbra” külön irányú nézőknél. Ne minősítsd hibásnak a gyermeket nem tisztázott viszonyítás miatt.",
+            "Észak, dél, kelet és nyugat földrajzi irány, nem az oldal fent/lent/jobb/bal részének állandó szinonimája. Térképnek irányjelzés vagy világos egyezmény kell. Testfordulás a jobb irányát változtatja, nem északot mozdítja."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "A lépéssorrend a jelentés része",
+          "paragraphs": [
+            "„Vedd a könyvet, majd tedd a táskába”. „Majd” sorrendet őriz. Rövid utasítás ismert tárgyakkal, a tervezett lépés magyarázata mozgás előtt: elkülöníti a szóértést a szerencsés mozgástalálgatástól.",
+            "Könyv a táskában, táska a szék alatt. Ez nem könyv a táska fölött. Válaszd el a kimondott viszonyt a további adatot kívánótól. Több helyhez egyszerű feliratos tervet rajzolj puszta képpozíció-memória helyett."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "fölött / rajta, kontextus szerint"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "alatt / lejjebb"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "előtt"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "mögött"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "belül"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "kívül"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "jobb oldal"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "bal oldal"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "észak"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "dél"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "kelet"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "nyugat"
+        }
+      ],
+      "exercise": {
+        "question": "Könyv a táskában a szék alatt. A könyv a táska fölött? Jobb oldalad fordulás után ugyanarra a földrajzi irányra mutat?",
+        "answer": "Nem: a táskában van. Nem: jobb oldalad a test irányával változik, a földrajzi viszonyítás nem."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Történetek: olvasd a szöveget, kövesd bizonyítékait",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Eredeti történet: az ablak és a toll",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Lajla kinyitotta az ablakot. Kék tollat tett az asztalra, majd iskolába ment. Visszatérve nem találta. A szék alá nézett, és megtalálta. Felvette, majd rövid levelet írt. A szöveg nem mondja, ki mozdította a tollat, és nem bizonyítja, hogy a szél sodorta le. Ez eredeti HORIZONS történet, nem kiadott mű másolata."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Három olvasás, három cél",
+          "paragraphs": [
+            "Első olvasáskor a szereplőt és problémáját kérdezd, ne szakíts meg minden jelet. Másodiknál sorrend: hol volt a toll, hol találták? Harmadiknál nyelv: وَجَدَتْهُ هُ-ja a tollra utal, az igealak Lajlához illik a narrációban.",
+            "A toll kék; „rövid” a levél hosszát, nem színét írja le. A levél színét nem adja a szöveg. Hiányzó bizonyítékot ne helyettesíts hihető válasszal. Képzelt befejezést írhatsz, de nevezd saját alkotásnak, ne eredeti történetbeli eseménynek."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Kis szótár és önálló írás",
+          "paragraphs": [
+            "Ablak falnyílás, asztal tárgyaknak felület, levél írott közlés valakihez. Szómagyarázat eltávolít akadályt a teljes történet elmondása nélkül. Utána válassz más címet, a szöveggel indokold.",
+            "Cseréld a tollat könyvre, Lajlát Omarra. Nőnemű tárgy módosíthat jelzőt, hímnemű szereplő kapcsolódó igét. Minden utalást ellenőrizz, ne csupán nevet cserélj. Összefüggő új szöveg a cél, nem automatikus szócsere."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "ablak",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "asztal",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "szék",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "levél / üzenet",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "és ő megtalálta"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "azután"
+        }
+      ],
+      "exercise": {
+        "question": "Hol találta Lajla a tollat? Ki mozdította? Mire utal هُ وَجَدَتْهُ alakjában?",
+        "answer": "A szék alatt. A szöveg nem mondja, ki mozdította. هُ a tollra utal. Válaszd el a közölt adatot attól, amit az író nem adott."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Magánhangzós alif hosszú /aː/-t ír بَاب-ban. Hamza أَ, إِ és أُ alakjában /ʔ/ mássalhangzó hordozón, nem a magánhangzós alif. Elfogadja az előző kapcsolatot, nem kapcsolja a következőt balra.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "ajtó"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "könyv"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "tűz"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Zárd az ajkakat, majd engedd el zöngével /b/-hez. Bá egy pontja alul van, kétoldalt kapcsol, ha szomszédja engedi. Tá és thá alakrokon, nem ajakképzésű. /p/ más hang, nem alternatív báírás.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "ajtó"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "hegy"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "könyv"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "/t/ elülső nyelvzár a fogaknál vagy mögöttük, majd feloldás zönge nélkül a célmodellben. Tá két pontja felül. Nem végső tá marbúṭa ة, amelyet kapcsolás és szünet szerint olvasunk.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "datolya"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "lány / leánygyermek"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "ház / otthon"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "/θ/ zöngétlen fogi szűkületén finoman engedd a levegőt, nem teljes /t/ zárral. Thá három pontja felül, kétoldalt kapcsolódik. Angol think segít összevetni, de th nem mindig ez. A szokásos magyarnak nincs pontos megfelelője.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "ruhadarab"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "sok"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "beszéd / társalgás ebben a példában"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Dzsím modellje itt /dʒ/. Más arab közösségek másképp ejtik. A felvétel feleljen meg a jelzett modellnek. Alsó pontja ح és خ vizuális különbsége, nem képzési magyarázat.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "teve"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "csillag"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "korona"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "ح zöngétlen garati /ħ/, nem közönséges /h/ vagy خ. „Erős h” nem jelöl helyet. Kerüld a fájdalmas torokszorítást. Pont nélkül: előbb ح, ج és خ látványát, aztán hangját különítsd.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "kötél"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "tenger"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "só"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "خ zöngétlen hátsó súrlódás a hangképző traktusban, itt /x~χ/. Pontos helye beszélővel és kontextussal változhat. Pont felül. Idegen összevetéshez nyelv és változat kell; kh betűsor maga nem tanít hangot.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "kenyér"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "datolyapálmák"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "konyha"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "د /d/ zöngés elülső zár és feloldás. Pont nélkül, következő balra nem kapcsol. Vizuálisan ذ, zönge szerint ت mellé vesd, magánhangzót ne módosíts egyszerre.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "lecke"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "kéz"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "fiú ebben a példában"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "ذ /ð/ zöngés fogi súrlódás e standard modellben. Nincs د teljes zárja, eltér zöngétlen /θ/-tól. Pont felül, következő balra nem kapcsol. Angol this lehetséges támasz, nem minden th szabálya; szokásos magyarban nincs pontos megfelelő.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "arany"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "fül"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "ízletes"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "ر rövid nyelvhegyérintés vagy kontextusfüggő ismétlés. Általános /r/ nem kíván rögzített ütésszámot. Pont nélkül, balra nem kapcsol tovább. Erős nyelv- vagy toroknyomás nem cél.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "homok"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "tenger"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "hold"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "ز /z/ zöngés elülső súrlódás. Alapja ر felső ponttal, de nem ر hozzáadott magánhangzóval. Következő balra nem kapcsol. /z/ és /s/ zöngéjét figyeld azonos következő magánhangzóval.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "olaj"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "banánok"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "kenyér"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "س /s/ zöngétlen súrlódás, más szűkületi hely, mint ث. Pont nélküli fogazat fontonként eltér. Előbb tiszta fontban azonosítsd, aztán kézírások, nem új betűnek véve minden stílust.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "hal"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "nap"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "lecke"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "ش /ʃ/ zöngétlen súrlódás más szűkülettel, mint س. Rokon alap felett három pont. Ettől nem ث: írásalak és képzés külön. سَ és شَ azonos magánhangzóval hasonlítható.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "nap"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "fű"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "tollak"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "ص /sˤ/ emfatikus a választott modellben, nem hangosabb /s/. További hátsó képzés hangszínt és szomszédos magánhangzót módosít. Pont nélkül. سَ és صَ fájdalom és erőltetett túlzás nélkül.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "türelem"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "gyümölcslé"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "ketrec"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "ض /dˤ/ gyakori mai standard célt képvisel, nem minden történeti vagy nyelvjárási kiejtést. Pontja ص-tól különít. Ne mosd ظ-val: e modellben egyik zár, másik súrlódás.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "fény"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "tojások"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "föld / szárazföld"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "ط /tˤ/ elülső zárat és feloldást emfatikussággal egyesít. Nem díszes ت vagy hangosabb /t/. Pont nélkül. تَ és طَ magánhangzóminőségét is figyeld.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "agyag / sár"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "vonat"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "cérna"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "ظ /ðˤ/ itt jelzett emfatikus fogi súrlódási cél; változatot címkézz. Pont ط alapja fölött. „Más ض” nem elég. Világos felvétel a különbséggel, nem azonos hangzású írások.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "árnyék"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "csont"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "szerencse"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ع /ʕ/ zöngés garati mássalhangzó, nem hosszú magánhangzó vagy gyenge hamza. Finom mintával tanulj, ne torokszorítással. Pont nélkül, kapcsolt alakja erősen eltér a különállótól. Látvány és hang külön figyelmet kíván.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "szem ebben a példában"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "ő játszott (hímnemű)"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "gyűjtés / összegyűjtés"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "غ zöngés hátsó súrlódás a leírt /ɣ~ʁ/ tartományban. ع rokonsága vizuális, nem hangzásbeli. خ mellett zönge, ع mellett hely alapján összevetés, nem azonosság.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "szoba"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "kicsi"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "üres tér / üres hely"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "ف /f/ alsó ajak és felső fog között enged levegőt zönge nélkül. A keleti íráshagyományban itt pont felül. Magrebi hagyományok eltérhetnek, jelöld. Hagyomány nem automatikus tanulóhiba.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "elefánt"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "kulcs"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "gyapjú"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "ق /q/ zöngétlen hátsó zár standard modellben, hátrébb ك-nál. E hagyományban két pont felül. Ismert dialektus ne változtassa rejtve a hallási célt; nevezd a modellt.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "hold"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "szarvasmarha"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "piac"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "ك /k/ hátsó nyelvet a hátsó szájpadhoz zárja, feloldja. Nem ق pusztán hátsó voltuk miatt. A különálló ك kis belső jele írásalak, nem külön kiejtendő hamza.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "könyv"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "hal"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "angyal"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "ل /l/ zöngés oldalhang: nyelv mellett levegő, nyelvhegy elöl érint. Előbb szokásos modell, külön emfatikus környezet később. Kétoldalt kapcsol, لا közös alak lehet új betű nélkül.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "éjszaka"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "toll"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "hegy"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "م /m/ zöngés orrhang csukott ajkakkal. ب-tól nem csak alakban eltér: levegő orron át. Kapcsolatban alapváltozás, név és identitás állandó.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "víz"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "hold"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "toll"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "ن /n/ zöngés orrhang elülső nyelvzárral. Pont felül. م mellett a zárhelyet vesd össze. Írott nún és tanwīn más: végződés tartalmazhat /n/-t külön betű nélkül.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "fény"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "szem ebben a példában"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "tej vagy tejtermék, régió szerint"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "ه /h/ zöngétlen, nincs ح garati szűkülete. ه, هـ, ـهـ és ـه vizuálisan eltér, kapcsolat segít magyarázni. Nem minden végső ة hétköznapi ه pusztán hasonló szünetes hang miatt.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "holdsarló"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "folyó"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "arc"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "و lehet /w/ وَلَد-ban, vagy hosszú /uː/ írását segíti نُور-ban. ثَوْب nem /uː/: olvasd a magánhangzómintát. Előző kapcsolatot fogad, következőt balra nem kapcsol.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "fiú ebben a példában"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "fény"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "ruhadarab"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "ي lehet /j/ يَد-ban vagy hosszú /iː/ írása فِيل-ban. بَيْت /aj/, nem /iː/. Pontozott já és alif maqṣūra ى eltér, utóbbit ne olvasd automatikusan jáként.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "kéz"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "elefánt"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "ház / otthon"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "Bővített HORIZONS referencia",
+    "warning": "Szerkesztői tervezet: a fordítást a modell önellenőrizte; független anyanyelvi ellenőrzés még nem történt.",
+    "examples": "Példák jelentéssel",
+    "practice": "Gyakorlás",
+    "answer": "Válasz és magyarázat",
+    "notes": "Megjegyzések",
+    "contents": "Tartalom",
+    "view": "Olvasás",
+    "all": "Teljes referencia",
+    "original": "Arab eredeti",
+    "answers": "Válaszok",
+    "forms": "Írott alakok",
+    "words": "Szavak",
+    "draft": "Szerkesztői tervezet",
+    "font": "Arab betűtípus",
+    "theme": "Világos és sötét mód váltása"
+  },
+  "notation_note": "ː az előző magánhangzó hosszát, ˤ a mássalhangzó emfatikusságát jelöli itt; . szótaghatár; ~ a leírt tartomány alternatíváit választja el, nem két egymás után olvasott hangot. / / hangjelölést foglal közre, nem arab írást. Külön szavak szünet előtti olvasatban; mondatfordítás nem állít rejtve azonos kiejtést kapcsoláskor és szünetnél.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Minden fejezetet, példát és betűt összevettem: kettős szám, arab nem, szünet és kapcsolás megmaradt.",
+          "Magyar ő/te nem nélküli volta és birtokos személyjel külön magyarázatot kapott; a történet oka nem lett kitalálva."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Ellenőriztem a magyar ragokat, magánhangzó-harmóniát és tanulói hangnemet; a számos dátum kifejezést számmal írt dátumra javítottam.",
+          "Nem alkottam pontos magyar megfelelőt /θ/ vagy /ð/ hangra; IPA és arab alakok változatlanok."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

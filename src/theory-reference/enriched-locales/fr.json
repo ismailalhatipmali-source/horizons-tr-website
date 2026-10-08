@@ -1,0 +1,1550 @@
+{
+  "language": "fr",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Lettres et écriture : ouvrir la porte de la lecture",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Trois choses différentes : le nom, le son et la forme",
+          "paragraphs": [
+            "Imagine une boîte de pièces de construction. Nommer les pièces permet de les retrouver, mais répéter leurs noms ne construit pas une maison. Une lettre a, elle aussi, un nom, une forme écrite et un rôle dans un mot prononcé. Le nom de ب est bāʾ. Dans بَاب, on commence pourtant par /b/, suivi de la voyelle longue /aː/. Ne prononce pas les trois noms des lettres à la place du mot. Ces noms restent utiles pour demander comment un mot s’écrit.",
+            "Suis le mot arabe de droite à gauche. Observe d’abord le corps des lettres, puis les points, puis les signes de lecture. بَ et تَ ont des corps apparentés, mais leurs points désignent des lettres différentes. Remplacer la fatḥa par une kasra donne بِ ; cela ne transforme pas bāʾ en tāʾ. Cache le reste de la ligne si elle paraît trop chargée. Reconnaître une lettre constitue déjà une réussite, même avant de savoir lire le mot entier."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Pourquoi une lettre change-t-elle de forme ?",
+          "paragraphs": [
+            "Les lettres arabes partagent un tracé, un peu comme des personnes qui se tiennent la main. Les formes ب, بـ, ـبـ et ـب sont les formes de liaison d’une même lettre, et non quatre nouvelles lettres. Dans بَاب, le premier bāʾ se relie à l’alif, mais l’alif ne prolonge pas la liaison jusqu’au dernier bāʾ. Cette petite interruption ne crée pas un deuxième mot.",
+            "Les lettres ا, د, ذ, ر, ز et و peuvent recevoir une liaison de la lettre précédente lorsque celle-ci le permet, mais ne se relient pas à la suivante, située à leur gauche. N’insère pas d’espace chaque fois que le trait s’interrompt. Les espaces séparent les mots ; les règles de liaison déterminent la forme des lettres à l’intérieur d’un mot. Observe un exemple réel avant de chercher à mémoriser toutes les règles."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza et sens",
+          "paragraphs": [
+            "Dans بَاب, l’alif note la voyelle longue /aː/. Dans أَخ, le mot commence par une hamza /ʔ/, portée par un alif. La hamza est une consonne, et non une voyelle longue. Les règles orthographiques permettent de l’écrire ء, أ, إ, ؤ ou ئ. La forme de son support ne transforme pas ces occurrences en voyelle longue.",
+            "Associe chaque étape à un sens. Une porte s’ouvre ; un livre contient des pages à lire ; un stylo sert à écrire. Change l’ordre des cartes et reviens-y après une courte pause. Se souvenir de la place d’une carte exerce la mémoire, mais lire de façon autonome signifie reconnaître les informations écrites où qu’elles se trouvent."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "porte",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "livre",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "stylo",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "frère",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "maison / foyer",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lumière",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "L’interruption de liaison dans بَاب crée-t-elle deux mots ? Le nom de la lettre bāʾ constitue-t-il la lecture complète de بَاب ?",
+        "answer": "Non dans les deux cas. بَاب est un seul mot : l’alif ne prolonge pas la liaison. Bāʾ nomme une lettre ; /baːb/ lit les sons du mot dans leur ordre."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Les signes vocaliques : de petits signes changent la lecture",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "Un signe vocalique n’est pas un point",
+          "paragraphs": [
+            "Place بَ, بُ et بِ côte à côte. Les trois contiennent bāʾ. La fatḥa indique /a/ bref, la ḍamma /u/ bref et la kasra /i/ bref. La bouche, la langue et les lèvres s’ajustent selon la voyelle. Augmenter le volume de la voix ne transforme pas une voyelle en une autre.",
+            "Dans بِ, le point de bāʾ et la kasra occupent des zones proches sous la lettre. Le point identifie la lettre ; la kasra guide la lecture. Change le signe vocalique : bāʾ reste bāʾ. Les couleurs permettent de distinguer ces fonctions dans ce livre, mais les formes et leurs étiquettes doivent aussi rester compréhensibles en impression noir et blanc."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "La durée, et non le volume",
+          "paragraphs": [
+            "Compare بَ à بَا, بُ à بُو et بِ à بِي. Dans le deuxième élément de chaque paire, la voyelle dure plus longtemps ; bāʾ ne devient pas une autre consonne. Dans /baː/, ː indique la longueur de la voyelle précédente. Ce n’est ni une lettre arabe supplémentaire ni une durée chronométrée identique pour tous les locuteurs.",
+            "Alif, wāw et yāʾ ne servent pas toujours à noter une voyelle longue. Le wāw de وَلَد est /w/, et le yāʾ de يَد est /j/. Dans نُور, wāw contribue à noter /uː/ ; dans فِيل, yāʾ contribue à noter /iː/. Lis la structure locale au lieu de deviner la fonction d’une lettre uniquement d’après son nom."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda et tanwīn",
+          "paragraphs": [
+            "Le sukūn dans بِنْت rappelle qu’il ne faut pas ajouter de voyelle après nūn dans cette structure. Il ne supprime pas /n/. La shadda dans أُمّ indique une consonne géminée, et non l’allongement de la voyelle précédente. أَمْ /ʔam/ et أُمّ /ʔumm/ diffèrent à la fois par la voyelle et par la durée consonantique : ce n’est donc pas une paire minimale à un seul paramètre. Pour isoler une seule propriété, utilise des syllabes d’entraînement clairement présentées comme telles.",
+            "Le tanwīn de كِتَابٌ appartient à la terminaison du nom dans un contexte grammatical. Une lecture liée appropriée comprend /un/ ; à la pause ordinaire sur ce mot, on lit /kitaːb/. Cet exemple n’est pas une règle universelle pour toutes les terminaisons. Conserve le signe écrit tout en expliquant la différence entre lecture liée et lecture à la pause."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "fille",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "éléphant",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "garçon",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "main",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "mère",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lumière",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Dans نُور, wāw représente-t-il ici /w/ ? Le sukūn supprime-t-il nūn dans بِنْت ?",
+        "answer": "Non. Dans نُور, wāw note la voyelle longue /uː/. Le nūn de بِنْت se prononce sans voyelle ajoutée après lui dans cette structure."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Assembler deux unités : construire une première lecture",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "Qu’assemble-t-on ?",
+          "paragraphs": [
+            "Dans la pratique du cahier, l’assemblage de deux unités désigne une étape portant sur deux unités écrites. Le nombre de lettres n’est pas toujours égal au nombre de sons ou de syllabes. بَا contient bāʾ et alif, mais représente une consonne suivie d’une voyelle longue. Il ne s’agit pas de deux consonnes, et un élément d’entraînement isolé n’est pas nécessairement un mot doté d’un sens.",
+            "Commence par بَ, puis بَا, puis تَا et ثَا. La première comparaison modifie la durée de la voyelle ; la suivante modifie la consonne tout en gardant la voyelle longue. Laisse au lecteur le temps de regarder avant de lire. Répéter les noms des lettres plutôt que les sons demandés rend l’assemblage plus difficile à comprendre."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Syllabes ouvertes et fermées",
+          "paragraphs": [
+            "بَا se termine par une voyelle : c’est ici une syllabe ouverte. بَرْ se termine par une consonne : elle est fermée. « Fermée » décrit la fin de la syllabe ; cela ne signifie pas garder la bouche fermée pendant toute la prononciation. Lis بَرْ sans ajouter de voyelle finale. Lire بَرَ change la structure.",
+            "Utilise un doigt pour suivre ta place, puis retire progressivement cette aide. Montrer un élément aide à suivre la ligne, mais ne prouve pas que la prononciation est exacte. Après une syllabe connue, présente une nouvelle syllabe construite sur le même modèle. Tu vérifies ainsi le transfert de la règle au-delà d’une carte mémorisée."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "D’un élément à un mot",
+          "paragraphs": [
+            "بَا constitue une partie de بَاب. بِي constitue une partie de la lecture affichée de بِيض. Chaque syllabe n’a pas besoin d’un sens indépendant dans le dictionnaire. Assemble d’abord, puis demande ce que signifie le mot entier. L’activité a ainsi un objectif qui dépasse la seule vitesse de lecture.",
+            "En cas d’erreur, repère ce qui a changé : consonne, qualité de la voyelle, durée ou son ajouté. Nommer une difficulté précise est plus utile que demander de tout recommencer. Si plusieurs propriétés posent problème, travaille une propriété accessible avant de les combiner à nouveau."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "syllabe d’entraînement ; ce n’est pas un mot ici",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "syllabe d’entraînement",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "syllabe d’entraînement",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "syllabe d’entraînement dans cet exemple",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "porte",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "œufs",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Pourquoi بَا et بَرْ ne sont-ils pas du même type syllabique ?",
+        "answer": "بَا se termine par une voyelle longue ; بَرْ se termine par une consonne. Cette distinction décrit leurs terminaisons, et non le nombre de points ou le volume de la voix."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Assembler trois unités : lire des unités porteuses de sens",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Trois lettres, mais combien de syllabes ?",
+          "paragraphs": [
+            "بَاب et جَبَل contiennent chacun trois lettres de base. Dans les lectures à la pause choisies, /baːb/ compte une syllabe, tandis que /dʒa.bal/ en compte deux. Le point dans cette transcription phonétique marque une frontière syllabique ; ce n’est pas le point écrit de jīm. Compter les lettres ne suffit pas à déterminer le nombre de syllabes.",
+            "Écris les lettres et leurs signes, puis examine la structure sonore. Pour جَبَل, commence par جَ et termine par بَلْ dans la lecture à la pause. Assemble-les sans supprimer bāʾ ni ajouter un son. Découper un mot est une aide temporaire, et non la manière de prononcer toutes les phrases ordinaires."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "L’ordre des lettres porte du sens",
+          "paragraphs": [
+            "قَلْب signifie « cœur » ; كَلْب signifie « chien ». Remplacer qāf par kāf change le sens. بَحْر signifie « mer » et حَبْر « encre » ; cette comparaison modifie l’ordre et les voyelles, donc ce n’est pas une paire minimale à une seule propriété. Observe les détails écrits plutôt que de deviner d’après une image familière.",
+            "Choisis des mots dont tu peux montrer le sens. Après la lecture, demande si l’encre sert à écrire ou à nager. Le sens peut révéler une devinette, mais ne remplace pas l’observation des lettres. Explique le sens d’un mot nouveau au lieu de considérer un vocabulaire inconnu comme un échec de lecture."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Lire avec soin avant de gagner en aisance",
+          "paragraphs": [
+            "Lis trois mots sans faire la course. Marque celui auquel il faudra revenir et réessaie après un exemple plus facile. L’aisance comprend une lecture appropriée, la compréhension et la correction des erreurs ; elle ne se réduit pas aux mots par minute. N’encourage pas un enfant à cacher son hésitation en devinant.",
+            "Pour vérifier le transfert, présente جَمَل après جَبَل. Bāʾ devient mīm à l’intérieur d’une structure connue. Une montagne est un relief élevé ; un chameau est un animal. Demande un autre mot réel avec les lettres connues, tout en expliquant que toutes les combinaisons possibles ne constituent pas des mots arabes."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "montagne",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "chameau",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "cœur",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "chien",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "mer",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "encre",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Quelle lettre change de جَبَل à جَمَل ? بَاب et جَبَل ont-ils le même nombre de syllabes ?",
+        "answer": "Bāʾ devient mīm. بَاب compte une syllabe dans la lecture à la pause affichée ; جَبَل en compte deux. Le nombre de lettres ne suffit pas."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Assembler quatre unités : lire plus long sans surcharge",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Plus long ne signifie pas toujours plus difficile",
+          "paragraphs": [
+            "كِتَاب contient quatre lettres de base. La lecture à la pause /ki.taːb/ comporte une première syllabe brève, puis une syllabe avec une voyelle longue et un bāʾ final. Réutilise ce que tu as appris dans بَاب plutôt que de considérer chaque partie comme entièrement nouvelle. La longueur écrite ne mesure pas à elle seule la difficulté de lecture.",
+            "Le wāw de ثَوْب ne note pas /uː/ dans cette lecture : /aw/ est une autre séquence. بَيْت contient /aj/, et non /iː/. La réussite repose sur l’examen de la voyelle et de la structure, pas sur une règle selon laquelle chaque wāw serait « ou » et chaque yāʾ « i ». Stabilise un exemple avant d’ajouter un nouveau contraste."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "Une phrase ajoute des relations",
+          "paragraphs": [
+            "هَذَا كِتَابٌ désigne un objet proche : « Ceci est un livre. » هَذِهِ حَقِيبَةٌ utilise le démonstratif féminin avec « sac ». Remplacer un nom peut obliger à vérifier les mots qui s’y rapportent, et pas seulement à changer une étiquette. Demande quel objet est montré et quelles formes lui conviennent.",
+            "الكِتَابُ جَدِيدٌ affirme : « Le livre est neuf. » الكِتَابُ الجَدِيدُ désigne « le livre neuf » ; cette expression seule ne communique pas la même affirmation complète. L’article n’est pas un préfixe décoratif. Une situation simple peut montrer une relation grammaticale avant l’introduction des termes techniques."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Transférer une compétence à un texte nouveau",
+          "paragraphs": [
+            "Compare كِتَاب et كَاتِب. Leurs consonnes de base sont apparentées, mais la place de l’alif et les voyelles diffèrent. Le premier est un livre ; le second un auteur. Des racines apparentées ne donnent pas le même sens à tous les mots. Cela introduit les familles de mots sans prétendre enseigner toute la dérivation d’un seul coup.",
+            "Lis une courte ligne, cache-la brièvement et demande son sens général. Réaffiche-la pour vérifier un détail. On distingue ainsi la mémoire sonore, la compréhension et le retour à la preuve écrite. Demander de l’aide pour un mot nouveau fait partie de l’apprentissage ; ce référentiel ne doit pas ressembler à un examen sans fin."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "livre",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "auteur / écrivain",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "sac",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "Ceci est un livre."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "Le livre est neuf."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "le livre neuf"
+        }
+      ],
+      "exercise": {
+        "question": "الكِتَابُ جَدِيدٌ et الكِتَابُ الجَدِيدُ communiquent-ils, à eux seuls, le même message ?",
+        "answer": "Non. Le premier affirme que le livre est neuf ; le second désigne le livre neuf sans formuler cette même affirmation complète."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Répertoire des lettres : de la forme à l’emploi dans les mots",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "Une fiche cohérente pour chaque lettre",
+          "paragraphs": [
+            "Pose les mêmes questions pour chaque lettre : quel est son nom ? Où son son se forme-t-il ? Comment se relie-t-elle ? Qu’est-ce qui la distingue d’une forme semblable ? Quels mots clairs la contiennent ? Une fiche cohérente évite que la leçon ne devienne une suite d’images inexpliquées. Il n’est pas nécessaire de répondre à toutes les questions dès la première visite.",
+            "Ce chapitre comprend des fiches pour les 28 lettres de l’alphabet. La place de l’alif dans l’alphabet ne signifie pas que la hamza et /aː/ long sont le même son. Les fonctions de wāw et de yāʾ dépendent du contexte. Lis la note de la fiche avant de comparer son symbole à l’orthographe de ta propre langue."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Les familles de formes ne sont pas des familles de sons",
+          "paragraphs": [
+            "ب, ت et ث ont des corps apparentés, mais bāʾ se forme aux lèvres, tāʾ par une fermeture à l’avant et thāʾ par une friction dentale dans le modèle d’arabe standard choisi. Les trois points de thāʾ n’expliquent pas son son, pas plus que les trois points de shīn n’en font un thāʾ. Les familles visuelles aident à identifier les lettres ; les descriptions articulatoires aident à les prononcer.",
+            "Compare ثَ et تَ en conservant la fatḥa. Compare س et ص en expliquant l’emphase, et non le volume de la voix. Certains sons arabes n’ont pas d’équivalent direct dans la langue de l’élève. Explique alors l’articulation et utilise un modèle sonore plutôt que d’inventer une équivalence étrangère exacte."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Vocabulaire, phrases et transfert",
+          "paragraphs": [
+            "Après avoir trouvé une lettre au début, au milieu et à la fin, construis une phrase porteuse de sens avec un des mots proposés. N’accumule pas du vocabulaire rare uniquement pour grossir le livre. Varie la position et le sens, explique chaque mot nouveau, puis ajoute un contexte si un mot possède plusieurs sens.",
+            "Les différences dialectales ne sont pas des défauts chez les locuteurs. Ce référentiel identifie la cible en arabe standard tout en reconnaissant les variations de jīm, de qāf et d’autres sons dans les communautés arabophones. Un exercice d’écoute doit employer un enregistrement conforme à la cible annoncée dans l’explication et les symboles."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "porte",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "montagne",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "livre",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "fruits / produits de la récolte",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "neige",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "renard",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "La ressemblance de ب, ت et ث signifie-t-elle que leurs sons ont le même lieu d’articulation ? Jīm se prononce-t-il de manière identique dans toutes les communautés ?",
+        "answer": "Non. La forme relève de l’écrit ; l’articulation est une autre propriété. Jīm varie : précise le modèle choisi et identifie clairement les autres modèles."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Les pronoms : qui suis-je, qui es-tu ?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "Un mot dont la référence suit le locuteur",
+          "paragraphs": [
+            "Si Layla dit « je », elle désigne Layla ; si Omar dit « je », il désigne Omar. Un pronom n’est pas le nom d’une personne fixe : sa référence dépend de la situation de parole. « Tu » désigne l’interlocuteur ; « il » et « elle » désignent quelqu’un dont on parle. Exerce-toi à changer les rôles avant de mémoriser le tableau.",
+            "L’arabe distingue أَنْتَ pour un interlocuteur masculin singulier et أَنْتِ pour une interlocutrice féminine singulière. L’anglais emploie « you » dans les deux cas ; en français, « tu » ne marque pas non plus cette différence de genre. Cela ne rend pas la distinction arabe facultative. Le turc o correspond à هُوَ comme à هِيَ : pour traduire vers l’arabe, il faut vérifier la personne visée, et non remplacer mécaniquement les mots."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Singulier, duel et pluriel",
+          "paragraphs": [
+            "أَنَا est la première personne du singulier. نَحْنُ désigne un groupe comprenant le locuteur, composé de deux personnes ou davantage. أَنْتُمَا s’adresse à deux personnes et هُمَا en désigne deux ; ces deux formes conviennent à des références masculines ou féminines. أَنْتُمْ / أَنْتُنَّ et هُمْ / هُنَّ distinguent les formes du pluriel. En arabe standard, les formes masculines plurielles peuvent, selon le contexte, désigner un groupe mixte.",
+            "Toutes les langues ne possèdent pas un pronom de duel distinct en un seul mot. On peut expliquer أَنْتُمَا par « vous deux » en français, « you two » en anglais ou ikiniz en turc. Ces expressions expliquent la référence ; elles ne garantissent pas un emploi identique dans toutes les situations. Compare les sens aussi bien que les formes."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "Le pronom et ce qui le suit",
+          "paragraphs": [
+            "أَنَا طَالِبٌ et أَنَا طَالِبَةٌ commencent par le même pronom ; le nom qui suit change selon le genre du locuteur. هُوَ طَالِبٌ et هِيَ طَالِبَةٌ changent à la fois le pronom et le nom. Un exemple présentant un étudiant masculin ne fait pas de أَنَا un pronom réservé au masculin.",
+            "Dans أَنَا أَقْرَأُ et نَحْنُ نَقْرَأُ, la forme verbale change. Le أَ initial appartient ici à la conjugaison à la première personne, et non à la possession. Un verbe peut fournir assez d’informations pour omettre le pronom séparé dans un contexte clair. La présence de « suis / est / sommes » dans une traduction française n’impose pas d’insérer un mot équivalent dans chaque phrase nominale arabe au présent."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "je / moi",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "tu (masculin singulier)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "tu (féminin singulier)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "nous",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "il",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "elle",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "vous deux"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "eux deux / elles deux"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "vous (masculin pluriel ; le contexte peut inclure un groupe mixte)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "vous (féminin pluriel)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "ils (masculin pluriel ; le contexte peut inclure un groupe mixte)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "elles (féminin pluriel)"
+        }
+      ],
+      "exercise": {
+        "question": "Layla parle d’elle-même, puis d’Omar. Quels sont les deux pronoms appropriés ? نَحْنُ est-il réservé au masculin ?",
+        "answer": "أَنَا pour elle-même ; هُوَ pour Omar dans cet exemple. نَحْنُ ne distingue pas le genre des locuteurs ; le contexte identifie le groupe."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Possession et relations : plus qu’une étiquette",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "Un objet, deux locuteurs",
+          "paragraphs": [
+            "Omar tient un livre et dit كِتَابِي, « mon livre ». Si tu t’adresses à lui, tu dis كِتَابُكَ, « ton livre ». Si tu parles de lui à Layla, tu dis كِتَابُهُ, « son livre à lui ». Le livre n’a pas changé ; la relation de parole a changé. Ce ne sont pas trois catégories de livres.",
+            "Adresse-toi à Layla avec كِتَابُكِ ; parle d’elle avec كِتَابُهَا. La différence entre كَ et كِ est petite à l’écrit et à l’oral, mais importante pour la référence. Le français emploie normalement un déterminant séparé avant le nom ; ces formes arabes attachent le pronom au nom. Le français « son » ne permet pas à lui seul de distinguer un possesseur masculin d’un possesseur féminin."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "La relation n’est pas toujours la propriété",
+          "paragraphs": [
+            "كِتَابُنَا relie un livre à notre groupe. أُمِّي signifie « ma mère » ; cette expression ne traite pas une personne comme une propriété. مَدْرَسَتِي peut désigner l’école que je fréquente, et non un bâtiment qui m’appartient. Le nom et le contexte précisent la relation exprimée par le pronom attaché.",
+            "Dans مَدْرَسَة → مَدْرَسَتِي, le tāʾ marbūṭa s’écrit comme un tāʾ ordinaire lorsque ce pronom est attaché. N’en déduis pas que tous les hāʾ finaux deviennent tāʾ. Compare وَجْهِي, « mon visage » : le hāʾ appartenant à وَجْه reste hāʾ."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "Le nom, le cas et la détermination",
+          "paragraphs": [
+            "كِتَابُكَ est une forme choisie dans notre tableau. Dans رَأَيْتُ كِتَابَكَ, « j’ai vu ton livre », la terminaison du nom change avec sa fonction grammaticale ; كَ désigne toujours l’interlocuteur masculin singulier. Ne mémorise pas la ḍamma précédente comme une partie permanente du sens « ton ».",
+            "Dans la construction habituelle d’un nom suivi d’un pronom possessif attaché, ne mets pas de tanwīn sur le nom et n’ajoute pas l’article comme s’il s’agissait d’un nom indépendant sans pronom. كِتَابِي identifie la relation et est défini dans cet emploi. Apprends un exemple correct avant d’accumuler les exceptions avancées."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "mon livre"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "ton livre (interlocuteur masculin singulier)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "ton livre (interlocutrice féminine singulière)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "son livre à lui"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "son livre à elle"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "notre livre"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "mon école"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "mon visage"
+        }
+      ],
+      "exercise": {
+        "question": "Layla dit « mon livre ». Comment le désignes-tu en t’adressant à elle, puis en parlant d’elle à quelqu’un d’autre ?",
+        "answer": "كِتَابُكِ quand tu t’adresses à elle ; كِتَابُهَا quand tu parles d’elle. La référence du pronom suit la relation de parole."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Les nombres : symbole, mot et quantité",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Compter chaque objet une seule fois",
+          "paragraphs": [
+            "Place trois stylos sur une table. Touche chacun une seule fois en avançant d’une unité dans le comptage, puis nomme la taille du groupe. Compter deux fois le même stylo donne un total erroné. Déplacer les stylos sans en ajouter ni en retirer en laisse toujours trois : la forme de la rangée n’est pas la quantité.",
+            "٣ et 3 représentent le même nombre dans les deux systèmes de chiffres affichés. ثَلَاثَة est un mot arabe désignant un nombre, et non la forme d’un chiffre. Un nombre écrit peut compter des livres, des pas ou des minutes ; identifie ce qui est compté pour comprendre son emploi."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Réciter les nombres et compter des noms",
+          "paragraphs": [
+            "La récitation commence par les nombres de un à dix, mais les expressions avec un nom demandent plus d’attention. ثَلَاثَةُ كُتُبٍ signifie trois livres ; ثَلَاثُ سَيَّارَاتٍ signifie trois voitures. Dans cette construction de trois à dix, la forme du nombre s’oppose au genre grammatical du nom compté au singulier, et le nom compté est au pluriel génitif. N’applique pas cette structure à un et deux.",
+            "كِتَابٌ وَاحِدٌ et سَيَّارَةٌ وَاحِدَةٌ montrent l’accord avec un. Les formes nominatives du duel affichées, كِتَابَانِ et سَيَّارَتَانِ, indiquent déjà deux. Il n’est pas nécessaire d’insérer un mot signifiant « deux » dans toutes les expressions au duel."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Quantité, ordre et comparaison",
+          "paragraphs": [
+            "ثَلَاثَة répond à « combien ? » ; الثَّالِث répond à « à quelle position ? ». Trois livres ne sont pas la même chose que le troisième livre. Zéro stylo signifie qu’il n’y a aucun stylo dans le groupe compté ; cela ne signifie pas que rien n’existe.",
+            "Compare deux groupes réels : deux stylos et quatre stylos. Le second en a davantage ; le premier en a moins. Si les deux ont quatre stylos, leurs effectifs sont égaux même si les couleurs ou les longueurs diffèrent. Relie la comparaison à une propriété annoncée, puis essaie un nouvel exemple."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "zéro"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "un"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "deux"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "trois"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "quatre"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "cinq"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "six"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "sept"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "huit"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "neuf"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "dix"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "troisième"
+        }
+      ],
+      "exercise": {
+        "question": "Tu réorganises trois cercles sans en ajouter. Combien en reste-t-il ? « Troisième » désigne-t-il la quantité ?",
+        "answer": "Il en reste trois. « Troisième » est une position dans un ordre, et non une quantité. Compte chaque élément une fois, pas les espaces entre les éléments."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Les couleurs : nommer, décrire et accorder",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Le même objet, une autre description",
+          "paragraphs": [
+            "Deux stylos remplissent la même fonction, mais l’un est rouge et l’autre bleu. « Stylo » identifie le type d’objet ; la couleur aide à préciser lequel tu désignes. La couleur ne dit rien sur la valeur d’une personne ni sur le genre des personnes autorisées à utiliser un objet. Les écrans rendent également les couleurs différemment : nomme toujours l’échantillon au lieu de te fier uniquement à sa couleur.",
+            "قَلَمٌ أَحْمَرُ est un stylo rouge ; سَيَّارَةٌ حَمْرَاءُ est une voiture rouge. L’adjectif change selon le genre grammatical du nom, et non selon celui du propriétaire. L’anglais et le turc ne changent pas ainsi leur adjectif de couleur dans ces exemples. Le français possède des accords, mais ses formes et ses règles ne se substituent pas aux formes arabes."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Toutes les couleurs ne suivent pas le modèle de rouge",
+          "paragraphs": [
+            "Apprends أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء et أَسْوَد/سَوْدَاء comme un groupe de formes. وَرْدِيّ/وَرْدِيَّة et بُنِّيّ/بُنِّيَّة suivent un autre modèle. N’invente pas tous les féminins de couleurs en ajoutant اء.",
+            "قَلَمٌ أَحْمَرُ signifie « un stylo rouge ». القَلَمُ الأَحْمَرُ désigne « le stylo rouge ». القَلَمُ أَحْمَرُ affirme « Le stylo est rouge. » La place de l’article change la relation, et pas seulement l’apparence visuelle des mots."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Décrire sans dépendre d’un échantillon coloré",
+          "paragraphs": [
+            "Écris le nom de la couleur à côté du signe et ajoute une forme ou une étiquette pour distinguer les réponses. Un élève peut avoir une basse vision ou percevoir les couleurs différemment. Sa compétence linguistique ne doit pas dépendre de la distinction entre deux verts presque identiques.",
+            "Commence par un nom et un adjectif : voiture avec حَمْرَاء, stylo avec أَحْمَر. Change ensuite l’objet pour vérifier le transfert plutôt que la mémorisation d’une seule paire. L’accord au pluriel comporte d’autres règles ; n’étends pas l’accord des personnes au singulier à tous les pluriels désignant des choses."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "rouge : masculin — féminin"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "bleu : masculin — féminin"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "vert : masculin — féminin"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "jaune : masculin — féminin"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "blanc : masculin — féminin"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "noir : masculin — féminin"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "rose : masculin — féminin"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "brun : masculin — féminin"
+        }
+      ],
+      "exercise": {
+        "question": "Complète « une voiture ... » avec vert et « un stylo ... » avec blanc. Qu’est-ce qui détermine la forme arabe ?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ ; قَلَمٌ أَبْيَضُ. C’est le genre grammatical du nom, et non le genre du propriétaire, qui commande l’accord ici."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Jours et mois : le moment de parole et les rendez-vous",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "La référence d’aujourd’hui change",
+          "paragraphs": [
+            "Aujourd’hui est le jour où l’on parle ; hier le précède et demain le suit. « Viens demain » peut manquer de clarté si quelqu’un lit le message plusieurs jours plus tard sans connaître sa date d’envoi. Une date fixe, comme le 8 octobre 2026, identifie un jour, mais un rendez-vous peut aussi nécessiter le calendrier utilisé, l’heure et le fuseau horaire.",
+            "Les sept noms des jours restent les mêmes, même si un calendrier commence le lundi et un autre le dimanche ou le samedi. L’ordre d’affichage, le premier jour de la semaine et les habitudes de week-end varient. Apprends la suite, puis relie-la au calendrier local de l’élève."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Des noms différents pour le même mois",
+          "paragraphs": [
+            "Janvier peut se dire يناير ou كانون الثاني selon les régions arabophones ; février فبراير ou شباط ; mars مارس ou آذار. Apprendre une liste ne rend pas les variantes régionales incorrectes. Identifie le calendrier et la convention régionale de dénomination lorsque tu rencontres un nom inconnu.",
+            "Muḥarram, Ṣafar et Ramaḍān appartiennent au calendrier hégirien ; ce ne sont pas des traductions des noms des mois grégoriens. Les années lunaires et solaires diffèrent. Remplacer janvier par Muḥarram ne convertit pas une date. Utilise un calendrier fiable pour un véritable rendez-vous."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Lire un rendez-vous clair",
+          "paragraphs": [
+            "« Je lis vendredi » peut nécessiter une précision : quel vendredi ? « Je lis chaque vendredi » décrit une activité récurrente. Le mot « chaque » change le message. Demande si l’action se produit une fois ou se répète, puis repère l’indice écrit.",
+            "Une date numérique comme 03/04 peut être ambiguë lorsque l’ordre du jour et du mois varie. Un nom de mois écrit ou un format de date convenu aide à lever l’ambiguïté. Utilise un exemple pédagogique clair ; pour organiser une activité réelle, vérifie la date plutôt que de la deviner d’après son apparence."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "aujourd’hui"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "hier"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "demain"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "samedi"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "dimanche"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "lundi"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "mardi"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "mercredi"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "jeudi"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "vendredi"
+        }
+      ],
+      "exercise": {
+        "question": "Si aujourd’hui est mardi, quel jour sera demain ? Janvier et Muḥarram sont-ils les noms d’un même mois ?",
+        "answer": "Mercredi. Non : janvier est grégorien et Muḥarram hégirien. Faire correspondre des dates réelles exige une conversion correcte entre calendriers."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Position et direction : choisir d’abord son point de référence",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Où, par rapport à quoi ?",
+          "paragraphs": [
+            "Un livre est au-dessus d’une table ; un sac est dessous. « Au-dessus » et « au-dessous » décrivent des relations. Le livre n’est pas simplement « au-dessus » dans toute description possible : précise donc le point de référence, au-dessus de la table. « À l’intérieur » et « à l’extérieur » nécessitent également une limite pertinente, comme à l’intérieur du sac ou à l’extérieur de la pièce.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ signifie « Mets le livre sur la table. » La lecture liée affichée comprend la kasra de ضَعِ ; ne considère pas chaque voyelle de liaison comme une partie permanente du verbe isolé. Comprends d’abord la consigne, puis introduis le détail grammatical lorsqu’il est utile."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "La droite de qui ?",
+          "paragraphs": [
+            "Lève ta main droite. Une personne face à toi peut avoir sa main droite du côté qui te semble être ta gauche. « À ta droite » est plus clair que « à droite » lorsque les observateurs regardent dans des directions différentes. Ne juge pas faux le choix d’un enfant qui utilise un point de référence que tu n’as pas précisé.",
+            "Le nord, le sud, l’est et l’ouest sont des directions géographiques, et non des synonymes permanents du haut, du bas, de la droite et de la gauche d’une page. Une carte a besoin d’un repère d’orientation ou d’une convention claire. Tourner ton corps change la direction vers laquelle pointe ta droite ; cela ne déplace pas le nord."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "L’ordre des étapes fait partie du sens",
+          "paragraphs": [
+            "« Prends le livre, puis mets-le dans le sac. » « Puis » maintient un ordre. Donne des consignes courtes avec des objets connus et demande à l’élève d’expliquer l’action prévue avant de bouger. Cela distingue la compréhension des mots d’un geste juste par hasard.",
+            "Le livre est dans le sac et le sac est sous la chaise. Cela ne signifie pas que le livre est au-dessus du sac. Distingue une relation énoncée d’une relation qui exige davantage d’informations. Pour plusieurs lieux, dessine un plan simple avec des étiquettes plutôt que de compter uniquement sur la mémoire de la position des images."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "au-dessus de / sur, selon le contexte"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "sous / au-dessous de"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "devant"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "derrière"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "à l’intérieur de"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "à l’extérieur de"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "droite"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "gauche"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "nord"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "sud"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "est"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "ouest"
+        }
+      ],
+      "exercise": {
+        "question": "Un livre est dans un sac sous une chaise. Le livre est-il au-dessus du sac ? Ta droite pointe-t-elle dans la même direction géographique après que tu t’es retourné ?",
+        "answer": "Non : le livre est dans le sac. Non : ta droite change avec ton orientation, contrairement au repère géographique."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Les histoires : lire le texte et suivre ses indices",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Histoire originale : la fenêtre et le stylo",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Layla ouvrit la fenêtre. Elle posa un stylo bleu sur la table, puis alla à l’école. À son retour, elle ne trouva pas le stylo. Elle regarda sous la chaise et le trouva. Elle le prit et écrivit une courte lettre. Le texte ne dit pas qui a déplacé le stylo et ne prouve pas que le vent l’a fait tomber. Cette histoire est une création originale de HORIZONS, et non la copie d’une histoire publiée."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Trois lectures, trois objectifs",
+          "paragraphs": [
+            "À la première lecture, demande qui est le personnage et quel problème il rencontre. N’interromps pas la lecture à chaque signe. À la deuxième, suis la succession des événements : où était le stylo, et où a-t-il été trouvé ? À la troisième, examine la langue : هُ dans وَجَدَتْهُ renvoie au stylo ; les formes verbales conviennent à Layla dans ce récit.",
+            "Le stylo est bleu ; « courte » décrit la longueur de sa lettre, pas sa couleur. Le texte ne donne pas la couleur de la lettre. Ne remplace pas un indice manquant par une réponse plausible. Tu peux écrire une fin imaginée, mais présente-la comme ton invention et non comme un événement du récit original."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "Un petit lexique et une rédaction autonome",
+          "paragraphs": [
+            "Une fenêtre est une ouverture dans un mur ; une table offre une surface pour les objets ; une lettre est une communication écrite destinée à quelqu’un. Expliquer ces mots peut lever un obstacle de vocabulaire sans raconter toute l’histoire à l’avance. Ensuite, choisis un autre titre et justifie-le à l’aide d’un indice du texte.",
+            "Remplace le stylo par un livre, puis Layla par Omar. Choisir un objet féminin peut modifier les formes adjectivales ; remplacer le personnage par un personnage masculin modifie les verbes concernés. Vérifie chaque référence au lieu de remplacer un seul nom. L’objectif est de produire un nouveau texte cohérent, pas de faire un remplacement automatique de mots."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "fenêtre",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "table",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "chaise",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "lettre / message",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "et elle le trouva"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "puis"
+        }
+      ],
+      "exercise": {
+        "question": "Où Layla a-t-elle trouvé le stylo ? Qui l’a déplacé ? À quoi renvoie هُ dans وَجَدَتْهُ ?",
+        "answer": "Sous la chaise. Le texte ne dit pas qui l’a déplacé. هُ renvoie au stylo. Distingue les informations énoncées de celles que l’auteur n’a pas données."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "L’alif vocalique note /aː/ long dans بَاب. La hamza de أَ, إِ et أُ est la consonne /ʔ/, écrite sur un support ; ce n’est pas le même son que l’alif vocalique. Alif peut recevoir une liaison précédente, mais ne se relie pas à la lettre suivante à sa gauche.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "porte"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "livre"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "feu"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Ferme les lèvres, puis relâche-les en faisant vibrer les cordes vocales pour /b/. Bāʾ possède un point sous son corps. Il peut se relier des deux côtés lorsque les lettres voisines le permettent. Les formes apparentées tāʾ et thāʾ ne partagent pas son articulation aux lèvres. /p/ est un autre son, et non une autre orthographe de bāʾ.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "porte"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "montagne"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "livre"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Produis une fermeture à l’avant avec la langue près des dents ou juste derrière, puis relâche pour /t/, sans voisement consonantique dans le modèle choisi. Tāʾ a deux points au-dessus. Il n’est pas identique au tāʾ marbūṭa final ة, dont la lecture dépend de la liaison et de la pause.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "dattes (fruits)"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "fille"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "maison / foyer"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Laisse passer l’air par un léger rétrécissement au niveau des dents pour /θ/ sourd. N’effectue pas la fermeture complète de /t/. Thāʾ a trois points au-dessus et peut se relier des deux côtés. L’anglais think offre une comparaison utile ; l’orthographe th ne représente pas toujours ce son. Le français courant n’en possède pas d’équivalent exact.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "vêtement"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "beaucoup / nombreux"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "parole / conversation, dans cet exemple de vocabulaire"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "Ce référentiel utilise /dʒ/ comme modèle d’entraînement pour jīm. D’autres prononciations existent dans les communautés arabophones. L’enregistrement d’écoute doit correspondre au modèle annoncé. Le point de jīm est dans la partie inférieure et le distingue visuellement de ح et خ ; ce point n’explique pas l’articulation.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "chameau"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "étoile"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "couronne"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "Ḥāʾ est la consonne pharyngale sourde /ħ/, et non /h/ ordinaire ni khāʾ. La décrire comme un « h fort » ne situe pas le son. Évite de serrer la gorge douloureusement. Son corps n’a pas de point : distingue visuellement ح, ج et خ, puis compare leurs sons différents.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "corde"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "mer"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "sel"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "Khāʾ produit une friction sourde dans une région postérieure du conduit vocal, représentée ici par /x~χ/. Le lieu exact peut varier selon le locuteur et le contexte. Son point est au-dessus du corps. Une comparaison étrangère exige de préciser la langue et sa variété ; écrire kh ne suffit pas à enseigner le son.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "pain"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "palmiers-dattiers"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "cuisine"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "Dāl /d/ utilise une fermeture à l’avant suivie d’un relâchement, avec voisement. Il n’a pas de point et ne se relie pas à la lettre suivante à sa gauche. Compare-le visuellement au dhāl pointé et à tāʾ pour le voisement consonantique, sans modifier en même temps la voyelle.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "leçon"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "main"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "garçon, dans cet exemple de vocabulaire"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "Dhāl /ð/ produit une friction dentale voisée dans cette cible d’arabe standard. Il n’utilise pas la fermeture complète de dāl et diffère de /θ/ sourd. Son point est au-dessus ; il ne se relie pas à la lettre suivante à sa gauche. L’anglais this fournit un rapprochement possible, pas une règle pour toutes les graphies th. Le français courant n’a pas d’équivalent exact.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "or"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "oreille"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "délicieux"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "Rāʾ comporte un bref contact de la pointe de la langue ou plusieurs contacts selon le contexte et la prononciation. Le symbole général /r/ n’impose pas un nombre fixe de battements. Rāʾ n’a pas de point et ne prolonge pas la liaison vers la gauche. Exercer une forte pression avec la langue ou la gorge n’est pas un objectif d’apprentissage.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "sable"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "mer"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "lune"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "Zāy /z/ est une friction voisée à l’avant. Son corps ressemble à celui de rāʾ avec un point au-dessus, mais ce n’est pas un rāʾ auquel on ajoute une voyelle. Il ne se relie pas à la lettre suivante à gauche. Compare /z/ et /s/ en écoutant le voisement tout en conservant la même voyelle suivante.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "huile"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "bananes"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "pain"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "Sīn /s/ est une friction sourde, avec un rétrécissement situé ailleurs que celui de thāʾ. Il n’a pas de points ; ses petites dents dessinées varient selon les polices. Identifie-le d’abord dans une police claire, puis compare les styles manuscrits sans considérer chaque variante stylistique comme une nouvelle lettre.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "poisson"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "soleil"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "leçon"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "Shīn /ʃ/ est une friction sourde dont le rétrécissement diffère de celui de sīn. Trois points se trouvent au-dessus d’un corps apparenté. Ces trois points n’en font pas thāʾ : forme écrite et articulation sont des propriétés distinctes. Compare سَ et شَ sans changer la voyelle.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "soleil"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "herbe / végétation herbacée"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "plumes"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "Ṣād /sˤ/ est une consonne emphatique dans le modèle choisi. Ce n’est pas simplement un /s/ plus fort : une articulation postérieure supplémentaire modifie sa qualité et les voyelles voisines. Son corps n’a pas de point. Compare سَ et صَ sans tension douloureuse ni son forcé exagérément.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "patience"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "jus"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "cage"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "Ḍād /dˤ/ représente une cible courante de l’arabe standard contemporain, et non toutes les prononciations historiques ou dialectales. Un point le distingue du corps de ṣād. Ne le confonds pas avec ẓāʾ : dans le modèle choisi, l’un utilise une fermeture, l’autre une friction.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "lumière"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "œufs"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "terre / terrain"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "Ṭāʾ /tˤ/ associe une fermeture à l’avant et son relâchement à l’emphase. Ce n’est ni un tāʾ décoré ni un tāʾ prononcé plus fort. Son corps n’a pas de point. Compare تَ et طَ en observant l’effet sur la qualité de la voyelle autant que sur la consonne.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "argile / boue"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "train"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "fil"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "Ẓāʾ /ðˤ/ est ici la cible annoncée de friction dentale emphatique ; les variantes doivent être identifiées. Un point se trouve au-dessus du corps de ṭāʾ. « Un autre ḍād » n’est pas une description suffisante. Utilise un enregistrement clair, conforme à la distinction choisie, plutôt que de prononcer les deux graphies de manière identique.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "ombre"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "os"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "chance"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ʿAyn /ʕ/ est une consonne pharyngale voisée, et non une voyelle longue ni une hamza affaiblie. Apprends-la à partir d’un modèle produit sans forcer, plutôt qu’en serrant la gorge. Elle n’a pas de point et ses formes liées diffèrent nettement de son contour isolé. La reconnaissance visuelle et l’entraînement sonore nécessitent des attentions distinctes.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "œil, dans cet exemple de vocabulaire"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "il a joué"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "collecte / rassemblement"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "Ghayn est une friction voisée dans une région postérieure, notée /ɣ~ʁ/ pour la gamme décrite ici. Avec son point au-dessus, sa forme ressemble à ʿayn, mais pas son son. Compare-le à khāʾ pour le voisement et à ʿayn pour le lieu d’articulation, sans prétendre que leurs articulations sont identiques.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "pièce"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "petit"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "espace vide / vacance"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "Fāʾ /f/ laisse passer l’air entre la lèvre inférieure et les dents supérieures, sans voisement consonantique. Dans la convention d’écriture orientale employée ici, un point est placé au-dessus. Certaines conventions maghrébines diffèrent et doivent être signalées lorsqu’elles sont montrées. Une tradition d’écriture différente n’est pas automatiquement une erreur d’élève.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "éléphant"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "clé"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "laine"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "Qāf /q/ utilise une fermeture postérieure sourde dans ce modèle d’arabe standard, plus en arrière que kāf. Il possède deux points au-dessus dans cette convention d’écriture. Les prononciations dialectales connues ne doivent pas modifier silencieusement la cible d’écoute ; précise le modèle travaillé par la leçon.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "lune"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "bovins"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "marché"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "Kāf /k/ ferme l’arrière de la langue contre la région postérieure du palais, puis le relâche. Il n’est pas identique à qāf sous prétexte que les deux sont des consonnes postérieures. Le petit signe dans ك isolé appartient à sa forme écrite ; ce n’est pas une hamza séparée à prononcer.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "livre"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "poisson"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "ange"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "Lām /l/ est voisé et latéral : l’air passe le long des côtés de la langue tandis que sa pointe touche la région antérieure. Commence par le modèle ordinaire d’entraînement ; introduis séparément les contextes emphatiques particuliers. Lām se relie des deux côtés et لا peut former un tracé combiné sans devenir une nouvelle lettre de l’alphabet.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "nuit"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "stylo"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "montagne"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "Mīm /m/ est une consonne nasale voisée produite avec les lèvres fermées. Elle diffère de bāʾ autrement que par la forme : l’air passe par le nez pendant mīm. Son corps change avec les liaisons, mais son nom et son identité restent les mêmes.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "eau"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "lune"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "stylo"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "Nūn /n/ est une nasale voisée avec une fermeture antérieure de la langue. Dans cette convention, un point est placé au-dessus. Compare nūn et mīm par le lieu de fermeture. Un nūn écrit diffère du tanwīn : certaines terminaisons contiennent un son /n/ sans lettre nūn séparée dans l’orthographe.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "lumière"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "œil, dans cet exemple de vocabulaire"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "lait ou produit laitier, selon la région"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "Hāʾ /h/ est sourd et n’utilise pas le rétrécissement pharyngal de ḥāʾ. Ses formes ه, هـ, ـهـ et ـه sont visuellement variées ; les liaisons aident donc à les expliquer. Ne considère pas chaque ة final comme un hāʾ ordinaire simplement parce qu’une lecture à la pause peut leur donner des sons proches.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "croissant de lune"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "rivière"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "visage"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "Wāw peut être la consonne /w/ dans وَلَد ou contribuer à noter /uː/ long dans نُور. Dans ثَوْب, sa fonction n’est pas /uː/ long : lis la structure vocalique. Wāw accepte une liaison précédente, mais ne se relie pas à la lettre suivante à sa gauche.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "garçon, dans cet exemple de vocabulaire"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "lumière"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "vêtement"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "Yāʾ peut être la consonne /j/ dans يَد ou contribuer à noter /iː/ long dans فِيل. بَيْت possède une autre structure, /aj/, plutôt que /iː/ long. Le yāʾ pointé diffère de l’alif maqṣūra ى, qu’il ne faut pas automatiquement lire comme yāʾ.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "main"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "éléphant"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "maison / foyer"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "Comprendre pas à pas, puis réutiliser ce que l’on apprend.",
+    "warning": "Édition de travail enrichie : relecture éditoriale et vérification humaine spécialisée encore nécessaires.",
+    "examples": "Exemples et sens",
+    "practice": "À toi d’essayer",
+    "answer": "Réponse expliquée",
+    "notes": "Repères de lecture",
+    "contents": "Sommaire",
+    "view": "Affichage",
+    "all": "Livre complet",
+    "original": "Explication originale HORIZONS",
+    "answers": "Réponses et explications",
+    "forms": "Formes écrites",
+    "words": "Mots en contexte",
+    "draft": "Édition de travail",
+    "font": "Police arabe",
+    "theme": "Basculer entre thème clair et sombre"
+  },
+  "notation_note": "ː indique la longueur de la voyelle précédente ; ˤ indique l’emphase consonantique dans cette présentation ; . marque une frontière syllabique ; ~ sépare des variantes dans la gamme décrite, et non deux sons successifs. / / encadre une représentation sonore, pas une orthographe arabe. Les mots isolés utilisent des lectures à la pause ; les traductions des phrases ne prétendent pas silencieusement imposer une prononciation unique pour la liaison et la pause.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Relecture après rédaction complète : les 13 chapitres, 39 sections, 104 sens, 13 exercices et 28 fiches ont été comparés au corpus anglais et aux exemples arabes.",
+          "Les lettres, formes, transcriptions, voyelles et mots arabes des exemples restent identiques au corpus. La phrase جَمَل après جَبَل garde le même ordre pédagogique malgré l’ordre syntaxique français différent.",
+          "Les distinctions consonne/voyelle, liaison/pause, gémination/longueur, duel/pluriel, genre du destinataire/genre du nom, phrase/groupe nominal et calendrier hégirien/grégorien sont conservées.",
+          "Les équivalents français tu et son ne codent pas toutes les distinctions arabes : les précisions de genre et son livre à lui/à elle évitent une traduction mécanique. Le récit conserve exactement le paragraphe arabe et ne déduit pas qui a déplacé le stylo."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Seconde relecture distincte après la vérification du sens : syntaxe française, accords, pronoms, impératifs pédagogiques, accents et ponctuation française relus sur le fichier complet.",
+          "Tutoiement maintenu pour accompagner le lecteur ; formulation accessible puis terminologie expliquée, sans remplacer les explications par un texte générique.",
+          "Fille traduit naturellement girl/daughter selon le contexte ; les autres ambiguïtés lexicales régionales restent signalées, notamment lait ou produit laitier.",
+          "Relecture effectuée par le modèle, sans validation humaine native ni garantie d’absence totale d’erreurs."
+        ]
+      }
+    ],
+    "native_human_review": false
+  }
+}

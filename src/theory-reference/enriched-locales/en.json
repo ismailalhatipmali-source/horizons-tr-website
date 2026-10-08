@@ -1,0 +1,1554 @@
+{
+  "language": "en",
+  "chapters": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Letters and writing: opening the door to reading",
+      "sections": [
+        {
+          "id": "foundations-1",
+          "title": "Three different things: name, sound, shape",
+          "paragraphs": [
+            "Imagine a box of building pieces. Naming the pieces helps you find them, but repeating their names does not build a house. A letter likewise has a name, a written shape and a role in a spoken word. The name of ب is baa. In بَاب, however, begin with /b/ followed by the long vowel /aː/. Do not read the three letter names in place of the word. Letter names remain useful when asking how to spell something.",
+            "Follow the Arabic word from right to left. First notice the body, then the dots, then the reading marks. بَ and تَ have related bodies, but their dots identify different letters. Replacing the fatḥa with a kasra produces بِ; it does not turn baa into taa. Cover the rest of the line if it feels crowded. Recognising a letter is a real achievement even before you can read the whole word."
+          ]
+        },
+        {
+          "id": "foundations-2",
+          "title": "Why does a letter change shape?",
+          "paragraphs": [
+            "Arabic letters share a writing path, rather like people holding hands. The forms ب, بـ, ـبـ and ـب are connected forms of one letter, not four new letters. In بَاب, the first baa joins the alif, but the alif does not carry the connection onward to the final baa. That small break does not make a second word.",
+            "The letters ا, د, ذ, ر, ز and و can receive a connection from the preceding letter when permitted, but do not join the following letter on their left. Do not insert a word space every time the pen connection stops. Spaces separate words; joining rules shape letters within a word. Look at a real example before trying to memorise all the rules."
+          ]
+        },
+        {
+          "id": "foundations-3",
+          "title": "Alif, hamza and meaning",
+          "paragraphs": [
+            "In بَاب, alif writes the long vowel /aː/. In أَخ, the word starts with hamza /ʔ/, carried on an alif. Hamza is a consonant, not a long vowel. It can be written as ء, أ, إ, ؤ or ئ under spelling rules. The carrier shape does not make all of these the same sound as vowel alif.",
+            "Attach meaning to each step. A door can be opened; a book contains pages to read; a pen is used to write. Change the order of the cards and revisit them after a short break. Recognising where a card sat in a row is useful memory work, but independent reading means recognising its written information wherever it appears."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "door",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "book",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen",
+          "ipa": "qalam"
+        },
+        {
+          "ar": "أَخ",
+          "meaning": "brother",
+          "ipa": "ʔax"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "house / home",
+          "ipa": "bajt"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "light",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Does the joining break inside بَاب create two words? Is the letter name baa the full reading of بَاب?",
+        "answer": "No to both. بَاب is one word: alif does not join onward. Baa names a letter; /baːb/ reads the ordered sounds of the word."
+      }
+    },
+    {
+      "id": "phonics",
+      "number": "02",
+      "title": "Vowel marks: small signs change the reading",
+      "sections": [
+        {
+          "id": "phonics-1",
+          "title": "A vowel mark is not a dot",
+          "paragraphs": [
+            "Put بَ, بُ and بِ side by side. All three use baa. Fatḥa indicates short /a/, ḍamma short /u/, and kasra short /i/. The mouth, tongue and lips adjust for different vowels. Raising the volume is not a way to turn one vowel into another.",
+            "In بِ, the dot of baa and the kasra occupy nearby space below the letter. The dot identifies the letter; the kasra guides its reading. Change the vowel mark and baa remains baa. Colour helps separate these jobs in this book, but shape and labels must remain understandable in black-and-white printing too."
+          ]
+        },
+        {
+          "id": "phonics-2",
+          "title": "Length, not loudness",
+          "paragraphs": [
+            "Compare بَ with بَا, بُ with بُو, and بِ with بِي. The vowel lasts longer in the second item of each pair; baa does not change into a different consonant. In /baː/, ː marks the length of the preceding vowel. It is not an extra Arabic letter, nor a fixed stopwatch duration for every speaker.",
+            "Alif, waw and yaa do not act as long vowels every time they appear. Waw in وَلَد is /w/, and yaa in يَد is /j/. Waw in نُور helps write /uː/, and yaa in فِيل helps write /iː/. Read the local pattern rather than guessing a letter’s job from its name alone."
+          ]
+        },
+        {
+          "id": "phonics-3",
+          "title": "Sukūn, shadda and tanwīn",
+          "paragraphs": [
+            "Sukūn in بِنْت reminds you not to add a vowel after noon in this pattern. It does not erase the /n/. Shadda in أُمّ indicates a doubled consonant, not a longer preceding vowel. أَمْ /ʔam/ and أُمّ /ʔumm/ differ in vowel as well as consonant length, so they are not a one-variable minimal pair. Use clearly labelled practice syllables when isolating just one feature.",
+            "Tanwīn in كِتَابٌ belongs to the noun ending in a grammatical context. Appropriate connected reading includes /un/; ordinary pause on this word gives /kitaːb/. That example is not a universal rule for every ending. Keep the written mark while explaining the difference between connected reading and pause."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بِنْت",
+          "meaning": "girl / daughter",
+          "ipa": "bint"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "elephant",
+          "ipa": "fiːl"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "boy",
+          "ipa": "walad"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "hand",
+          "ipa": "jad"
+        },
+        {
+          "ar": "أُمّ",
+          "meaning": "mother",
+          "ipa": "ʔumm"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "light",
+          "ipa": "nuːr"
+        }
+      ],
+      "exercise": {
+        "question": "Does waw represent /w/ in نُور here? Does sukūn remove noon in بِنْت?",
+        "answer": "No. Waw in نُور writes the long vowel /uː/. Noon in بِنْت is pronounced without an added vowel after it in this pattern."
+      }
+    },
+    {
+      "id": "blending2",
+      "number": "03",
+      "title": "Two-unit blending: building the first reading",
+      "sections": [
+        {
+          "id": "blending2-1",
+          "title": "What are we blending?",
+          "paragraphs": [
+            "In the workbook, two-unit blending names a practice stage involving two written units. Letter count does not always equal sound count or syllable count. بَا contains baa and alif but represents a consonant followed by a long vowel. It is not two consonants, and the isolated practice item need not be a meaningful word.",
+            "Start with بَ, then بَا, then تَا and ثَا. The first comparison changes vowel length; the next changes the consonant while holding the long vowel constant. Give the learner time to look and then read. Repeating letter names instead of the required sounds makes blending harder to understand."
+          ]
+        },
+        {
+          "id": "blending2-2",
+          "title": "Open and closed syllables",
+          "paragraphs": [
+            "بَا ends in a vowel and is an open syllable here. بَرْ ends in a consonant and is closed. “Closed” describes the syllable ending; it does not mean keeping your mouth shut through the whole utterance. Read بَرْ without adding a final vowel. Reading بَرَ changes the structure.",
+            "Use a finger to keep your place, then gradually remove that help. Pointing is a tracking aid, not proof of accurate pronunciation. After a familiar syllable, introduce a new one governed by the same pattern. That checks whether the learner can transfer the rule beyond a memorised card."
+          ]
+        },
+        {
+          "id": "blending2-3",
+          "title": "From a part to a word",
+          "paragraphs": [
+            "بَا is part of بَاب. بِي is part of the displayed reading of بِيض. Not every syllable needs an independent dictionary meaning. Blend first, then ask what the whole word means. This gives the activity a purpose beyond reading quickly.",
+            "When something goes wrong, identify the change: consonant, vowel quality, length or an added sound. Naming a specific problem is more useful than asking the learner to start everything over. If several features are difficult, practise one manageable feature before combining them again."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَا",
+          "meaning": "practice syllable; not a word here",
+          "ipa": "baː"
+        },
+        {
+          "ar": "تَا",
+          "meaning": "practice syllable",
+          "ipa": "taː"
+        },
+        {
+          "ar": "ثَا",
+          "meaning": "practice syllable",
+          "ipa": "θaː"
+        },
+        {
+          "ar": "بَرْ",
+          "meaning": "practice syllable in this example",
+          "ipa": "bar"
+        },
+        {
+          "ar": "بَاب",
+          "meaning": "door",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "بِيض",
+          "meaning": "eggs",
+          "ipa": "biːdˤ"
+        }
+      ],
+      "exercise": {
+        "question": "Why are بَا and بَرْ not the same syllable type?",
+        "answer": "بَا ends in a long vowel; بَرْ ends in a consonant. The distinction describes their endings, not dot count or loudness."
+      }
+    },
+    {
+      "id": "blending3",
+      "number": "04",
+      "title": "Three-unit blending: reading meaningful units",
+      "sections": [
+        {
+          "id": "blending3-1",
+          "title": "Three letters, but how many syllables?",
+          "paragraphs": [
+            "بَاب and جَبَل each contain three basic letters. In the chosen pause readings, /baːb/ has one syllable, while /dʒa.bal/ has two. The dot in this phonetic display marks a syllable boundary; it is not the written dot of jeem. Counting letters alone cannot tell you the syllable count.",
+            "Write the letters and their marks, then examine the sound pattern. For جَبَل, begin with جَ and finish with بَلْ in the pause reading. Bring them together without dropping baa or inserting an extra sound. Breaking a word into parts is temporary help, not the way every ordinary sentence should be spoken."
+          ]
+        },
+        {
+          "id": "blending3-2",
+          "title": "Letter order carries meaning",
+          "paragraphs": [
+            "قَلْب means heart; كَلْب means dog. Changing qaf to kaf changes the meaning. بَحْر means sea, and حَبْر means ink; that comparison changes order and vowels, so it is not a single-feature minimal pair. Look at the written details rather than guessing from a familiar picture.",
+            "Choose words whose meaning can be demonstrated. After reading, ask whether ink is used for writing or swimming. Meaning can reveal a guess, but it does not replace looking at the letters. Explain a new word’s meaning instead of treating unfamiliar vocabulary as a reading failure."
+          ]
+        },
+        {
+          "id": "blending3-3",
+          "title": "Careful reading before fluency",
+          "paragraphs": [
+            "Read three words without a race. Mark one that needs a return visit and try it after an easier example. Fluency includes appropriate reading, comprehension and repair, not only a count of words per minute. Do not encourage a child to hide hesitation by guessing.",
+            "For transfer, follow جَبَل with جَمَل. Baa changes to meem within a familiar pattern. A mountain is raised land; a camel is an animal. Ask for another real word using known letters, but explain that not every possible arrangement forms an Arabic word."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "جَبَل",
+          "meaning": "mountain",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "جَمَل",
+          "meaning": "camel",
+          "ipa": "dʒamal"
+        },
+        {
+          "ar": "قَلْب",
+          "meaning": "heart",
+          "ipa": "qalb"
+        },
+        {
+          "ar": "كَلْب",
+          "meaning": "dog",
+          "ipa": "kalb"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "sea",
+          "ipa": "baħr"
+        },
+        {
+          "ar": "حَبْر",
+          "meaning": "ink",
+          "ipa": "ħabr"
+        }
+      ],
+      "exercise": {
+        "question": "Which letter changes from جَبَل to جَمَل? Do بَاب and جَبَل have the same number of syllables?",
+        "answer": "Baa becomes meem. بَاب is one syllable in the displayed pause reading; جَبَل has two. Letter count alone is insufficient."
+      }
+    },
+    {
+      "id": "blending4",
+      "number": "05",
+      "title": "Four-unit blending: longer reading without overload",
+      "sections": [
+        {
+          "id": "blending4-1",
+          "title": "Longer is not always harder",
+          "paragraphs": [
+            "كِتَاب has four basic letters. The pause reading /ki.taːb/ contains a short first syllable followed by a syllable with a long vowel and final baa. Reuse what you learned in بَاب instead of treating each part as entirely new. Written length alone does not measure reading difficulty.",
+            "Waw in ثَوْب does not write /uː/ in this reading: /aw/ is a different sequence. بَيْت contains /aj/, not /iː/. Success comes from examining vowel and structure, not from a rule that every waw is “oo” and every yaa is “ee”. Stabilise one example before adding another contrast."
+          ]
+        },
+        {
+          "id": "blending4-2",
+          "title": "A sentence adds relationships",
+          "paragraphs": [
+            "هَذَا كِتَابٌ identifies a nearby object: “This is a book.” هَذِهِ حَقِيبَةٌ uses the feminine demonstrative with “bag”. Replacing a noun may require checking related words, not merely swapping one label. Ask what is being pointed to and which forms fit it.",
+            "الكِتَابُ جَدِيدٌ says “The book is new.” الكِتَابُ الجَدِيدُ identifies “the new book”; that phrase alone does not state the same complete message. The article is not a decorative prefix. A simple situation can demonstrate a grammatical relationship before technical terminology is introduced."
+          ]
+        },
+        {
+          "id": "blending4-3",
+          "title": "Transferring a skill to new text",
+          "paragraphs": [
+            "Compare كِتَاب and كَاتِب. Their basic consonants are related, but the alif position and vowels differ. The first is a book; the second a writer. Related roots do not make every word carry the same meaning. This introduces word families without pretending to teach all derivation at once.",
+            "Read a short line, hide it briefly and ask for the overall meaning. Restore it to check one detail. That separates sound memory, comprehension and returning to written evidence. Asking for help with a new word is part of learning; this reference should not feel like an endless examination."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "book",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "كَاتِب",
+          "meaning": "writer",
+          "ipa": "kaːtib"
+        },
+        {
+          "ar": "حَقِيبَة",
+          "meaning": "bag",
+          "ipa": "ħaqiːba"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ",
+          "meaning": "This is a book."
+        },
+        {
+          "ar": "الكِتَابُ جَدِيدٌ",
+          "meaning": "The book is new."
+        },
+        {
+          "ar": "الكِتَابُ الجَدِيدُ",
+          "meaning": "the new book"
+        }
+      ],
+      "exercise": {
+        "question": "Do الكِتَابُ جَدِيدٌ and الكِتَابُ الجَدِيدُ communicate the same message on their own?",
+        "answer": "No. The first states that the book is new; the second identifies the new book without making that same complete statement."
+      }
+    },
+    {
+      "id": "profiles",
+      "number": "06",
+      "title": "Letter reference: from shape to word use",
+      "sections": [
+        {
+          "id": "profiles-1",
+          "title": "A dependable map for each letter",
+          "paragraphs": [
+            "Use the same questions for each letter: What is its name? Where is the sound formed? How does it join? What distinguishes it from a similar shape? Which clear words use it? A consistent map prevents a lesson from becoming unexplained pictures. You need not answer every question on the first visit.",
+            "This chapter includes cards for the 28 alphabet letters. Alif’s place in alphabet order does not mean hamza and long /aː/ are the same sound. Waw and yaa have context-dependent roles. Read the card’s note before comparing its symbol with your own language’s spelling."
+          ]
+        },
+        {
+          "id": "profiles-2",
+          "title": "Shape families are not sound families",
+          "paragraphs": [
+            "ب, ت and ث have related bodies, but baa is formed at the lips, taa with a front closure, and thaa with dental friction in the selected Standard Arabic model. Thaa’s three dots do not explain its sound, nor do sheen’s three dots make it thaa. Use visual families for identification and sound descriptions for pronunciation.",
+            "Compare ثَ with تَ while keeping fatḥa constant. Compare س with ص by discussing emphasis rather than loudness. Some Arabic sounds have no direct match in the learner’s language. In that case explain articulation and use a listening model instead of inventing an exact foreign equivalent."
+          ]
+        },
+        {
+          "id": "profiles-3",
+          "title": "Vocabulary, sentences and transfer",
+          "paragraphs": [
+            "After locating a letter initially, medially and finally, make a meaningful sentence with one listed word. Rare vocabulary should not be piled up just to enlarge the book. Vary position and meaning, explain each new word, then add context where a word has more than one sense.",
+            "Dialect difference is not a defect in its speakers. The reference identifies the Standard Arabic target while acknowledging variation in jeem, qaf and other sounds across Arabic-speaking communities. A listening exercise must use a recording consistent with the target stated by the explanation and symbols."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "door",
+          "ipa": "baːb"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "mountain",
+          "ipa": "dʒabal"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "book",
+          "ipa": "kitaːb"
+        },
+        {
+          "ar": "ثَمَر",
+          "meaning": "fruit / produce",
+          "ipa": "θamar"
+        },
+        {
+          "ar": "ثَلْج",
+          "meaning": "snow",
+          "ipa": "θaldʒ"
+        },
+        {
+          "ar": "ثَعْلَب",
+          "meaning": "fox",
+          "ipa": "θaʕlab"
+        }
+      ],
+      "exercise": {
+        "question": "Does the similar shape of ب, ت and ث put their sounds at the same place of articulation? Is jeem pronounced identically in all communities?",
+        "answer": "No. Shape is written information; articulation is a different property. Jeem varies: identify the chosen target and label other models clearly."
+      }
+    },
+    {
+      "id": "pronouns",
+      "number": "07",
+      "title": "Pronouns: who am I, who are you?",
+      "sections": [
+        {
+          "id": "pronouns-1",
+          "title": "A word that follows the speaker",
+          "paragraphs": [
+            "If Layla says “I”, she means Layla; if Omar says “I”, he means Omar. A pronoun is not a fixed person’s name: its reference comes from the speaking situation. “You” points to the addressee; “he” and “she” point to someone spoken about. Practise changing roles before memorising the table.",
+            "Arabic distinguishes أَنْتَ for a masculine singular addressee and أَنْتِ for a feminine singular addressee. English uses “you” for both. That does not make the Arabic distinction optional. Turkish o corresponds to both هُوَ and هِيَ; translating into Arabic requires checking the intended reference, not replacing words mechanically."
+          ]
+        },
+        {
+          "id": "pronouns-2",
+          "title": "Singular, dual and plural",
+          "paragraphs": [
+            "أَنَا is singular first person. نَحْنُ refers to a group including the speaker and may include two or more people. أَنْتُمَا addresses two, and هُمَا refers to two; both work for masculine and feminine reference. أَنْتُمْ / أَنْتُنَّ and هُمْ / هُنَّ distinguish plural forms. Masculine plural forms can cover a mixed group in Standard Arabic depending on context.",
+            "Not every language has a separate one-word dual pronoun. English may explain أَنْتُمَا as “you two”, and Turkish as ikiniz. These explain the reference; they do not guarantee identical usage in every situation. Compare meanings as well as forms."
+          ]
+        },
+        {
+          "id": "pronouns-3",
+          "title": "The pronoun and what follows it",
+          "paragraphs": [
+            "أَنَا طَالِبٌ and أَنَا طَالِبَةٌ begin with the same pronoun; the following noun changes to fit the speaker’s form. هُوَ طَالِبٌ and هِيَ طَالِبَةٌ change pronoun and noun together. An example with a male student does not make أَنَا a masculine-only pronoun.",
+            "In أَنَا أَقْرَأُ and نَحْنُ نَقْرَأُ the verb form changes. The initial أَ in this example belongs to first-person verb inflection, not possession. A verb can carry enough information to omit the separate pronoun in a clear context. English “am/is/are” in a translation does not require inserting an equivalent word into every Arabic present-tense nominal sentence."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَنَا",
+          "meaning": "I",
+          "ipa": "ʔanaː"
+        },
+        {
+          "ar": "أَنْتَ",
+          "meaning": "you (masculine singular)",
+          "ipa": "ʔanta"
+        },
+        {
+          "ar": "أَنْتِ",
+          "meaning": "you (feminine singular)",
+          "ipa": "ʔanti"
+        },
+        {
+          "ar": "نَحْنُ",
+          "meaning": "we",
+          "ipa": "naħnu"
+        },
+        {
+          "ar": "هُوَ",
+          "meaning": "he",
+          "ipa": "huwa"
+        },
+        {
+          "ar": "هِيَ",
+          "meaning": "she",
+          "ipa": "hija"
+        },
+        {
+          "ar": "أَنْتُمَا",
+          "meaning": "you two"
+        },
+        {
+          "ar": "هُمَا",
+          "meaning": "they two / both of them"
+        },
+        {
+          "ar": "أَنْتُمْ",
+          "meaning": "you (masculine plural; context may include a mixed group)"
+        },
+        {
+          "ar": "أَنْتُنَّ",
+          "meaning": "you (feminine plural)"
+        },
+        {
+          "ar": "هُمْ",
+          "meaning": "they (masculine plural; context may include a mixed group)"
+        },
+        {
+          "ar": "هُنَّ",
+          "meaning": "they (feminine plural)"
+        }
+      ],
+      "exercise": {
+        "question": "Layla speaks about herself, then about Omar. Which two pronouns fit? Is نَحْنُ masculine only?",
+        "answer": "أَنَا for herself; هُوَ for Omar in this example. نَحْنُ does not distinguish the speakers’ gender; context identifies the group."
+      }
+    },
+    {
+      "id": "possessives",
+      "number": "08",
+      "title": "Possession and relationships: more than a label",
+      "sections": [
+        {
+          "id": "possessives-1",
+          "title": "One object, two speakers",
+          "paragraphs": [
+            "Omar holds a book and says كِتَابِي, “my book”. Address him and you say كِتَابُكَ, “your book”. Talk about him to Layla and you say كِتَابُهُ, “his book”. The book has not changed; the speaking relationship has. These are not three categories of books.",
+            "Address Layla with كِتَابُكِ; speak about her with كِتَابُهَا. The difference between كَ and كِ is small in writing and sound but important for reference. English normally uses a separate word before the noun; these Arabic forms attach the pronoun to the noun."
+          ]
+        },
+        {
+          "id": "possessives-2",
+          "title": "The relationship is not always ownership",
+          "paragraphs": [
+            "كِتَابُنَا relates a book to our group. أُمِّي means “my mother”; it does not treat a person as owned property. مَدْرَسَتِي may mean the school I attend, not a building I own. The noun and context tell you what relationship the attached pronoun expresses.",
+            "In مَدْرَسَة → مَدْرَسَتِي, taa marbūṭa is written as ordinary taa when this pronoun is attached. Do not generalise that every final haa becomes taa. Compare وَجْهِي, “my face”: the haa belonging to وَجْه remains haa."
+          ]
+        },
+        {
+          "id": "possessives-3",
+          "title": "The noun, case and definiteness",
+          "paragraphs": [
+            "كِتَابُكَ is one selected form in our table. In رَأَيْتُ كِتَابَكَ, “I saw your book”, the noun’s ending changes with its grammatical role; كَ still refers to the masculine singular addressee. Do not memorise the preceding ḍamma as a permanent part of “your”.",
+            "In the usual noun-plus-possessive-pronoun construction, do not put tanwīn on the noun or add the article as if it were a separate unpossessed noun. كِتَابِي identifies the relationship and is definite in this use. Learn a correct example before collecting advanced exceptions."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "كِتَابِي",
+          "meaning": "my book"
+        },
+        {
+          "ar": "كِتَابُكَ",
+          "meaning": "your book (masculine singular addressee)"
+        },
+        {
+          "ar": "كِتَابُكِ",
+          "meaning": "your book (feminine singular addressee)"
+        },
+        {
+          "ar": "كِتَابُهُ",
+          "meaning": "his book"
+        },
+        {
+          "ar": "كِتَابُهَا",
+          "meaning": "her book"
+        },
+        {
+          "ar": "كِتَابُنَا",
+          "meaning": "our book"
+        },
+        {
+          "ar": "مَدْرَسَتِي",
+          "meaning": "my school"
+        },
+        {
+          "ar": "وَجْهِي",
+          "meaning": "my face"
+        }
+      ],
+      "exercise": {
+        "question": "Layla says “my book”. How do you refer to it when addressing her, then when speaking about her to someone else?",
+        "answer": "كِتَابُكِ when addressing her; كِتَابُهَا when talking about her. The pronoun reference follows the speaking relationship."
+      }
+    },
+    {
+      "id": "numbers",
+      "number": "09",
+      "title": "Numbers: symbol, word, quantity",
+      "sections": [
+        {
+          "id": "numbers-1",
+          "title": "Count each object once",
+          "paragraphs": [
+            "Place three pens on a table. Touch each once while taking one counting step, then name the size of the group. Counting the same pen twice produces a wrong total. Rearranging the pens without adding or removing any still leaves three: the shape of the row is not the quantity.",
+            "٣ and 3 represent the same number in the two displayed digit systems. ثَلَاثَة is an Arabic number word, not the shape of the digit. A written number may count books, steps or minutes; identify what is being counted to understand its use."
+          ]
+        },
+        {
+          "id": "numbers-2",
+          "title": "Counting alone and counting nouns",
+          "paragraphs": [
+            "Counting aloud begins with one through ten, but number phrases require more care. ثَلَاثَةُ كُتُبٍ means three books; ثَلَاثُ سَيَّارَاتٍ means three cars. In this three-to-ten pattern, the number form contrasts with the grammatical gender of the singular counted noun, and the counted noun is genitive plural. Do not apply that pattern to one and two.",
+            "كِتَابٌ وَاحِدٌ and سَيَّارَةٌ وَاحِدَةٌ show agreement with one. The displayed nominative dual forms كِتَابَانِ and سَيَّارَتَانِ already indicate two. A number word meaning “two” need not be inserted into every dual phrase."
+          ]
+        },
+        {
+          "id": "numbers-3",
+          "title": "Quantity, order and comparison",
+          "paragraphs": [
+            "ثَلَاثَة answers “how many?” الثَّالِث answers “which position?” Three books are not the same thing as the third book. Zero pens means no pens in the group being counted; it does not mean that nothing of any kind exists.",
+            "Compare two actual groups: two pens and four pens. The second has more; the first has fewer. If both have four, their counts are equal even when colour or length differs. Keep the comparison tied to a stated property, then try a new example."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "صِفْر",
+          "meaning": "zero"
+        },
+        {
+          "ar": "وَاحِد",
+          "meaning": "one"
+        },
+        {
+          "ar": "اِثْنَان",
+          "meaning": "two"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "meaning": "three"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "meaning": "four"
+        },
+        {
+          "ar": "خَمْسَة",
+          "meaning": "five"
+        },
+        {
+          "ar": "سِتَّة",
+          "meaning": "six"
+        },
+        {
+          "ar": "سَبْعَة",
+          "meaning": "seven"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "meaning": "eight"
+        },
+        {
+          "ar": "تِسْعَة",
+          "meaning": "nine"
+        },
+        {
+          "ar": "عَشَرَة",
+          "meaning": "ten"
+        },
+        {
+          "ar": "الثَّالِث",
+          "meaning": "third"
+        }
+      ],
+      "exercise": {
+        "question": "You rearrange three circles without adding any. How many remain? Does “third” name the quantity?",
+        "answer": "Three remain. “Third” is an order position, not a quantity. Count each item once, not the spaces between items."
+      }
+    },
+    {
+      "id": "colors",
+      "number": "10",
+      "title": "Colours: naming, describing and agreement",
+      "sections": [
+        {
+          "id": "colors-1",
+          "title": "Same object, different description",
+          "paragraphs": [
+            "Two pens do the same job, but one is red and the other blue. “Pen” identifies the kind of object; its colour helps identify which one you mean. Colour says nothing about a person’s value or which gender may use an object. Screens also render colours differently, so always name a swatch rather than relying on colour alone.",
+            "قَلَمٌ أَحْمَرُ is a red pen; سَيَّارَةٌ حَمْرَاءُ is a red car. The adjective changes with the noun’s grammatical gender, not the owner’s gender. English and Turkish do not change their colour adjective that way in these examples."
+          ]
+        },
+        {
+          "id": "colors-2",
+          "title": "Not every colour follows red’s pattern",
+          "paragraphs": [
+            "Learn أَحْمَر/حَمْرَاء, أَزْرَق/زَرْقَاء, أَخْضَر/خَضْرَاء, أَصْفَر/صَفْرَاء, أَبْيَض/بَيْضَاء and أَسْوَد/سَوْدَاء as one pattern group. وَرْدِيّ/وَرْدِيَّة and بُنِّيّ/بُنِّيَّة follow another pattern. Do not invent every feminine colour by adding اء.",
+            "قَلَمٌ أَحْمَرُ means “a red pen”. القَلَمُ الأَحْمَرُ identifies “the red pen”. القَلَمُ أَحْمَرُ states “The pen is red.” Article placement changes the relationship, not merely the visual appearance of the words."
+          ]
+        },
+        {
+          "id": "colors-3",
+          "title": "Description without a swatch",
+          "paragraphs": [
+            "Write the colour name beside the mark and add a shape or label when distinguishing answers. A learner may have low vision or different colour perception. Language ability should not depend on separating two nearly identical shades of green.",
+            "Start with a single noun and adjective: car with حَمْرَاء, pen with أَحْمَر. Then change the object to check transfer rather than memorisation of one pair. Plural agreement has further rules; do not generalise singular-person agreement to every plural referring to things."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "أَحْمَر — حَمْرَاء",
+          "meaning": "red: masculine — feminine"
+        },
+        {
+          "ar": "أَزْرَق — زَرْقَاء",
+          "meaning": "blue: masculine — feminine"
+        },
+        {
+          "ar": "أَخْضَر — خَضْرَاء",
+          "meaning": "green: masculine — feminine"
+        },
+        {
+          "ar": "أَصْفَر — صَفْرَاء",
+          "meaning": "yellow: masculine — feminine"
+        },
+        {
+          "ar": "أَبْيَض — بَيْضَاء",
+          "meaning": "white: masculine — feminine"
+        },
+        {
+          "ar": "أَسْوَد — سَوْدَاء",
+          "meaning": "black: masculine — feminine"
+        },
+        {
+          "ar": "وَرْدِيّ — وَرْدِيَّة",
+          "meaning": "pink: masculine — feminine"
+        },
+        {
+          "ar": "بُنِّيّ — بُنِّيَّة",
+          "meaning": "brown: masculine — feminine"
+        }
+      ],
+      "exercise": {
+        "question": "Complete “a ... car” with green and “a ... pen” with white. What determines the Arabic form?",
+        "answer": "سَيَّارَةٌ خَضْرَاءُ; قَلَمٌ أَبْيَضُ. The noun’s grammatical gender, not the owner’s gender, controls agreement here."
+      }
+    },
+    {
+      "id": "calendar",
+      "number": "11",
+      "title": "Days and months: speaking time and appointment time",
+      "sections": [
+        {
+          "id": "calendar-1",
+          "title": "Today changes its reference",
+          "paragraphs": [
+            "Today is the day of speaking; yesterday precedes it; tomorrow follows it. “Come tomorrow” can be unclear if someone reads the message days later without its sending date. A fixed date such as 8 October 2026 identifies a day, but an appointment may also need its calendar system, time and time zone.",
+            "The seven weekday names remain the same even when one calendar starts on Monday and another on Sunday or Saturday. Display order, the first day of the week and weekend customs differ. Learn the sequence, then connect it to the learner’s local calendar."
+          ]
+        },
+        {
+          "id": "calendar-2",
+          "title": "Different names for the same month",
+          "paragraphs": [
+            "January may be called يناير or كانون الثاني in different Arabic-speaking regions; February فبراير or شباط; March مارس or آذار. Learning one list does not make regional alternatives wrong. Identify the calendar system and regional naming convention when reading an unfamiliar name.",
+            "Muḥarram, Ṣafar and Ramaḍān belong to the Hijri calendar; they are not translations of Gregorian month names. Lunar and solar years differ. Replacing January with Muḥarram does not convert a date. Use a reliable calendar for an actual appointment."
+          ]
+        },
+        {
+          "id": "calendar-3",
+          "title": "Reading a clear appointment",
+          "paragraphs": [
+            "“I read on Friday” may need clarification about which Friday. “I read every Friday” describes a recurring activity. The word “every” changes the message. Ask whether the action happens once or repeats, then identify the written clue.",
+            "A numeric date such as 03/04 can be ambiguous when day-month order differs. A written month name or an agreed date format helps. Use a clear learning example; for real planning verify the date rather than guessing from its appearance."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "اليَوْم",
+          "meaning": "today"
+        },
+        {
+          "ar": "أَمْس",
+          "meaning": "yesterday"
+        },
+        {
+          "ar": "غَدًا",
+          "meaning": "tomorrow"
+        },
+        {
+          "ar": "السَّبْت",
+          "meaning": "Saturday"
+        },
+        {
+          "ar": "الأَحَد",
+          "meaning": "Sunday"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "meaning": "Monday"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "meaning": "Tuesday"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "meaning": "Wednesday"
+        },
+        {
+          "ar": "الخَمِيس",
+          "meaning": "Thursday"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "meaning": "Friday"
+        }
+      ],
+      "exercise": {
+        "question": "If today is Tuesday, which weekday is tomorrow? Are January and Muḥarram names for the same month?",
+        "answer": "Wednesday. No: January is Gregorian and Muḥarram Hijri. Matching actual dates requires a proper calendar conversion."
+      }
+    },
+    {
+      "id": "directions",
+      "number": "12",
+      "title": "Place and direction: choose your reference first",
+      "sections": [
+        {
+          "id": "directions-1",
+          "title": "Where, relative to what?",
+          "paragraphs": [
+            "A book is above a table; a bag is under it. “Above” and “under” describe relationships. The book is not simply “above” in every possible description, so identify the reference: above the table. “Inside” and “outside” also need a relevant boundary, as in inside the bag or outside the room.",
+            "ضَعِ الكِتَابَ فَوْقَ الطَّاوِلَةِ means “Put the book on the table.” The displayed connected reading includes the kasra on ضَعِ; do not treat every linking vowel as a permanent part of the isolated verb. First understand the instruction, then introduce the grammatical detail when useful."
+          ]
+        },
+        {
+          "id": "directions-2",
+          "title": "Whose right?",
+          "paragraphs": [
+            "Raise your right hand. Someone facing you may have their right hand on what looks like your left side. “On your right” is clearer than “right” when observers face different ways. Do not mark a child wrong for using a reference point you failed to specify.",
+            "North, south, east and west are geographical directions, not permanent synonyms for top, bottom, right and left on a page. A map needs an orientation cue or clear convention. Turning your body changes where your right points; it does not move north."
+          ]
+        },
+        {
+          "id": "directions-3",
+          "title": "Step order is part of meaning",
+          "paragraphs": [
+            "“Take the book, then put it inside the bag.” “Then” preserves an order. Give short instructions involving familiar objects and ask the learner to explain the intended action before moving. That separates word comprehension from a lucky physical guess.",
+            "The book is inside the bag, and the bag is under the chair. That does not mean the book is above the bag. Separate a stated relationship from one requiring more information. For several locations, draw a simple labelled plan instead of relying only on picture-position memory."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "فَوْق",
+          "meaning": "above / on, according to context"
+        },
+        {
+          "ar": "تَحْت",
+          "meaning": "under / below"
+        },
+        {
+          "ar": "أَمَام",
+          "meaning": "in front of"
+        },
+        {
+          "ar": "خَلْف",
+          "meaning": "behind"
+        },
+        {
+          "ar": "دَاخِل",
+          "meaning": "inside"
+        },
+        {
+          "ar": "خَارِج",
+          "meaning": "outside"
+        },
+        {
+          "ar": "يَمِين",
+          "meaning": "right"
+        },
+        {
+          "ar": "يَسَار",
+          "meaning": "left"
+        },
+        {
+          "ar": "الشَّمَال",
+          "meaning": "north"
+        },
+        {
+          "ar": "الجَنُوب",
+          "meaning": "south"
+        },
+        {
+          "ar": "الشَّرْق",
+          "meaning": "east"
+        },
+        {
+          "ar": "الغَرْب",
+          "meaning": "west"
+        }
+      ],
+      "exercise": {
+        "question": "A book is inside a bag under a chair. Is the book above the bag? Does your right point in the same geographical direction after turning?",
+        "answer": "No: it is inside the bag. No: your right changes with your orientation, unlike the geographical reference."
+      }
+    },
+    {
+      "id": "stories",
+      "number": "13",
+      "title": "Stories: read the text, keep track of its evidence",
+      "sections": [
+        {
+          "id": "stories-1",
+          "title": "Original story: the window and the pen",
+          "paragraphs": [
+            "فَتَحَتْ لَيْلَى النَّافِذَةَ. وَضَعَتْ قَلَمًا أَزْرَقَ عَلَى الطَّاوِلَةِ، ثُمَّ ذَهَبَتْ إِلَى المَدْرَسَةِ. عِنْدَمَا عَادَتْ، لَمْ تَجِدِ القَلَمَ. نَظَرَتْ تَحْتَ الكُرْسِيِّ فَوَجَدَتْهُ. أَخَذَتْهُ وَكَتَبَتْ رِسَالَةً قَصِيرَةً.",
+            "Layla opened the window. She put a blue pen on the table, then went to school. When she returned, she could not find the pen. She looked under the chair and found it. She took it and wrote a short letter. The text does not say who moved the pen or prove that wind blew it down. This story is original HORIZONS writing, not a copied published story."
+          ]
+        },
+        {
+          "id": "stories-2",
+          "title": "Three readings, three purposes",
+          "paragraphs": [
+            "On the first reading ask who the character is and what problem she faces. Do not interrupt every mark. On the second, trace the sequence: where was the pen, and where was it found? On the third, examine language: هُ in وَجَدَتْهُ refers to the pen; the verb forms fit Layla in this narration.",
+            "The pen is blue; “short” describes her letter’s length, not its colour. The text does not provide the letter’s colour. Do not replace missing evidence with a plausible answer. You may write an imagined ending, but identify it as your own invention rather than an event in the original story."
+          ]
+        },
+        {
+          "id": "stories-3",
+          "title": "A small glossary and independent writing",
+          "paragraphs": [
+            "A window is an opening in a wall; a table provides a surface for objects; a letter is written communication to someone. Explaining these words can remove a vocabulary obstacle without retelling the whole story. Afterwards choose another title and justify it with evidence from the text.",
+            "Replace the pen with a book, then Layla with Omar. Choosing a feminine object may change adjective forms; changing the character to masculine changes relevant verbs. Review every reference rather than replacing a single name. The goal is a coherent new text, not automatic word substitution."
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "ar": "نَافِذَة",
+          "meaning": "window",
+          "ipa": "naːfiða"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "meaning": "table",
+          "ipa": "tˤaːwila"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "meaning": "chair",
+          "ipa": "kursijj"
+        },
+        {
+          "ar": "رِسَالَة",
+          "meaning": "letter / message",
+          "ipa": "risaːla"
+        },
+        {
+          "ar": "فَوَجَدَتْهُ",
+          "meaning": "and she found it"
+        },
+        {
+          "ar": "ثُمَّ",
+          "meaning": "then"
+        }
+      ],
+      "exercise": {
+        "question": "Where did Layla find the pen? Who moved it? What does هُ in وَجَدَتْهُ refer to?",
+        "answer": "Under the chair. The text does not tell us who moved it. هُ refers to the pen. Separate stated information from information the writer did not supply."
+      }
+    }
+  ],
+  "letters": [
+    {
+      "letter": "ا",
+      "ipa": "aː",
+      "forms": "ا — ـا",
+      "note": "Vowel alif writes long /aː/ in بَاب. Hamza in أَ, إِ and أُ is the consonant /ʔ/, written on a carrier; it is not the same sound as vowel alif. Alif can receive a preceding connection but does not join the next letter on its left.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "door"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "book"
+        },
+        {
+          "ar": "نَار",
+          "meaning": "fire"
+        }
+      ]
+    },
+    {
+      "letter": "ب",
+      "ipa": "b",
+      "forms": "ب — بـ — ـبـ — ـب",
+      "note": "Close the lips, then release them with voicing for /b/. Baa has one dot below its body. It can join on both sides when the neighbouring letters allow it. Its shape relatives taa and thaa do not share its lip articulation. /p/ is a different sound, not an alternative spelling of baa.",
+      "examples": [
+        {
+          "ar": "بَاب",
+          "meaning": "door"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "mountain"
+        },
+        {
+          "ar": "كِتَاب",
+          "meaning": "book"
+        }
+      ]
+    },
+    {
+      "letter": "ت",
+      "ipa": "t",
+      "forms": "ت — تـ — ـتـ — ـت",
+      "note": "Make a front tongue closure near the teeth or just behind them, then release for /t/ without consonant voicing in the target model. Taa has two dots above. It is not identical to final taa marbūṭa ة, whose reading depends on connection and pause.",
+      "examples": [
+        {
+          "ar": "تَمْر",
+          "meaning": "dates (fruit)"
+        },
+        {
+          "ar": "بِنْت",
+          "meaning": "girl / daughter"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "house / home"
+        }
+      ]
+    },
+    {
+      "letter": "ث",
+      "ipa": "θ",
+      "forms": "ث — ثـ — ـثـ — ـث",
+      "note": "Allow air through a gentle narrowing at the teeth for voiceless /θ/. Do not make the full closure used for /t/. Thaa has three dots above and can join on both sides. English think provides one useful comparison; the spelling th does not always represent this sound.",
+      "examples": [
+        {
+          "ar": "ثَوْب",
+          "meaning": "garment"
+        },
+        {
+          "ar": "كَثِير",
+          "meaning": "many / much"
+        },
+        {
+          "ar": "حَدِيث",
+          "meaning": "speech / conversation, in this vocabulary example"
+        }
+      ]
+    },
+    {
+      "letter": "ج",
+      "ipa": "dʒ",
+      "forms": "ج — جـ — ـجـ — ـج",
+      "note": "This reference uses /dʒ/ as its training model for jeem. Other pronunciations occur across Arabic-speaking communities. Match a listening recording to the stated model. Jeem’s dot is in the lower part, distinguishing it visually from ح and خ; that dot does not explain the articulation.",
+      "examples": [
+        {
+          "ar": "جَمَل",
+          "meaning": "camel"
+        },
+        {
+          "ar": "نَجْم",
+          "meaning": "star"
+        },
+        {
+          "ar": "تَاج",
+          "meaning": "crown"
+        }
+      ]
+    },
+    {
+      "letter": "ح",
+      "ipa": "ħ",
+      "forms": "ح — حـ — ـحـ — ـح",
+      "note": "Ḥaa is the voiceless pharyngeal consonant /ħ/, not ordinary /h/ and not khaa. Calling it a “strong h” does not locate the sound. Avoid painful throat squeezing. The body has no dot: identify ح, ج and خ visually, then compare their different sounds.",
+      "examples": [
+        {
+          "ar": "حَبْل",
+          "meaning": "rope"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "sea"
+        },
+        {
+          "ar": "مِلْح",
+          "meaning": "salt"
+        }
+      ]
+    },
+    {
+      "letter": "خ",
+      "ipa": "x~χ",
+      "forms": "خ — خـ — ـخـ — ـخ",
+      "note": "Khaa is voiceless friction in a back region of the vocal tract, represented here by /x~χ/. The exact place can vary with speaker and context. Its dot is above the body. A foreign comparison needs a specified language and variety; writing kh alone does not teach the sound.",
+      "examples": [
+        {
+          "ar": "خُبْز",
+          "meaning": "bread"
+        },
+        {
+          "ar": "نَخْل",
+          "meaning": "date palms"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "meaning": "kitchen"
+        }
+      ]
+    },
+    {
+      "letter": "د",
+      "ipa": "d",
+      "forms": "د — ـد",
+      "note": "Daal /d/ uses a voiced front closure and release. It has no dot and does not join the following letter on its left. Compare it with dotted dhaal visually and with taa for consonant voicing, without changing the vowel at the same time.",
+      "examples": [
+        {
+          "ar": "دَرْس",
+          "meaning": "lesson"
+        },
+        {
+          "ar": "يَد",
+          "meaning": "hand"
+        },
+        {
+          "ar": "وَلَد",
+          "meaning": "boy, in this vocabulary example"
+        }
+      ]
+    },
+    {
+      "letter": "ذ",
+      "ipa": "ð",
+      "forms": "ذ — ـذ",
+      "note": "Dhaal /ð/ is voiced dental friction in this Standard Arabic target. It does not use daal’s full closure and differs from voiceless /θ/. Its dot is above, and it does not join the following letter on its left. English this is a possible bridge, not a rule for all th spellings.",
+      "examples": [
+        {
+          "ar": "ذَهَب",
+          "meaning": "gold"
+        },
+        {
+          "ar": "أُذُن",
+          "meaning": "ear"
+        },
+        {
+          "ar": "لَذِيذ",
+          "meaning": "delicious"
+        }
+      ]
+    },
+    {
+      "letter": "ر",
+      "ipa": "r",
+      "forms": "ر — ـر",
+      "note": "Raa involves a brief tongue-tip contact or repeated contacts according to context and pronunciation. General /r/ does not require one fixed number of taps. Raa has no dot and does not join onward to the left. Forceful tongue or throat pressure is not a learning goal.",
+      "examples": [
+        {
+          "ar": "رَمْل",
+          "meaning": "sand"
+        },
+        {
+          "ar": "بَحْر",
+          "meaning": "sea"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "moon"
+        }
+      ]
+    },
+    {
+      "letter": "ز",
+      "ipa": "z",
+      "forms": "ز — ـز",
+      "note": "Zaay /z/ is voiced front friction. Its body resembles raa with a dot above, but it is not raa with an extra vowel. It does not join the next letter on the left. Compare /z/ and /s/ by listening for voicing while keeping the following vowel the same.",
+      "examples": [
+        {
+          "ar": "زَيْت",
+          "meaning": "oil"
+        },
+        {
+          "ar": "مَوْز",
+          "meaning": "bananas"
+        },
+        {
+          "ar": "خُبْز",
+          "meaning": "bread"
+        }
+      ]
+    },
+    {
+      "letter": "س",
+      "ipa": "s",
+      "forms": "س — سـ — ـسـ — ـس",
+      "note": "Seen /s/ is voiceless friction, with a different narrowing location from thaa. It has no dots; the drawn teeth can look different across fonts. First establish its identity in a clear font, then compare handwriting styles without treating every stylistic variation as a new letter.",
+      "examples": [
+        {
+          "ar": "سَمَك",
+          "meaning": "fish"
+        },
+        {
+          "ar": "شَمْس",
+          "meaning": "sun"
+        },
+        {
+          "ar": "دَرْس",
+          "meaning": "lesson"
+        }
+      ]
+    },
+    {
+      "letter": "ش",
+      "ipa": "ʃ",
+      "forms": "ش — شـ — ـشـ — ـش",
+      "note": "Sheen /ʃ/ is voiceless friction with a different narrowing from seen. Three dots sit above a related body. Three dots do not make it thaa: written shape and articulation are separate properties. Compare سَ and شَ while keeping the vowel unchanged.",
+      "examples": [
+        {
+          "ar": "شَمْس",
+          "meaning": "sun"
+        },
+        {
+          "ar": "عُشْب",
+          "meaning": "grass / herbage"
+        },
+        {
+          "ar": "رِيش",
+          "meaning": "feathers"
+        }
+      ]
+    },
+    {
+      "letter": "ص",
+      "ipa": "sˤ",
+      "forms": "ص — صـ — ـصـ — ـص",
+      "note": "Ṣaad /sˤ/ is an emphatic consonant in the chosen model. It is not simply a louder /s/: an additional back articulation affects its quality and neighbouring vowels. The body has no dot. Compare سَ and صَ without painful tension or an exaggerated forced sound.",
+      "examples": [
+        {
+          "ar": "صَبْر",
+          "meaning": "patience"
+        },
+        {
+          "ar": "عَصِير",
+          "meaning": "juice"
+        },
+        {
+          "ar": "قَفَص",
+          "meaning": "cage"
+        }
+      ]
+    },
+    {
+      "letter": "ض",
+      "ipa": "dˤ",
+      "forms": "ض — ضـ — ـضـ — ـض",
+      "note": "Ḍaad /dˤ/ represents a common contemporary Standard Arabic target, not every historical or dialectal pronunciation. A dot distinguishes it from ṣaad’s body. Do not merge it with ẓaa: in the chosen model one uses closure, the other friction.",
+      "examples": [
+        {
+          "ar": "ضَوْء",
+          "meaning": "light"
+        },
+        {
+          "ar": "بَيْض",
+          "meaning": "eggs"
+        },
+        {
+          "ar": "أَرْض",
+          "meaning": "earth / land"
+        }
+      ]
+    },
+    {
+      "letter": "ط",
+      "ipa": "tˤ",
+      "forms": "ط — طـ — ـطـ — ـط",
+      "note": "Ṭaa /tˤ/ combines a front closure and release with emphasis. It is neither decorated taa nor taa said more loudly. Its body has no dot. Compare تَ and طَ while noticing the effect on vowel quality as well as the consonant.",
+      "examples": [
+        {
+          "ar": "طِين",
+          "meaning": "clay / mud"
+        },
+        {
+          "ar": "قِطَار",
+          "meaning": "train"
+        },
+        {
+          "ar": "خَيْط",
+          "meaning": "thread"
+        }
+      ]
+    },
+    {
+      "letter": "ظ",
+      "ipa": "ðˤ",
+      "forms": "ظ — ظـ — ـظـ — ـظ",
+      "note": "Ẓaa /ðˤ/ is the stated emphatic dental-friction target here; variation must be labelled. A dot sits above ṭaa’s body. “Another ḍaad” is not an adequate description. Use a clear recording consistent with the chosen distinction rather than making the spellings sound identical.",
+      "examples": [
+        {
+          "ar": "ظِلّ",
+          "meaning": "shade / shadow"
+        },
+        {
+          "ar": "عَظْم",
+          "meaning": "bone"
+        },
+        {
+          "ar": "حَظّ",
+          "meaning": "luck"
+        }
+      ]
+    },
+    {
+      "letter": "ع",
+      "ipa": "ʕ",
+      "forms": "ع — عـ — ـعـ — ـع",
+      "note": "ʿAyn /ʕ/ is a voiced pharyngeal consonant, not a long vowel or a weakened hamza. Learn from a gentle model rather than squeezing the throat. It has no dot, and its joined forms differ markedly from the independent outline. Visual recognition and sound practice need separate attention.",
+      "examples": [
+        {
+          "ar": "عَيْن",
+          "meaning": "eye, in this vocabulary example"
+        },
+        {
+          "ar": "لَعِبَ",
+          "meaning": "he played"
+        },
+        {
+          "ar": "جَمْع",
+          "meaning": "collecting / gathering"
+        }
+      ]
+    },
+    {
+      "letter": "غ",
+      "ipa": "ɣ~ʁ",
+      "forms": "غ — غـ — ـغـ — ـغ",
+      "note": "Ghayn is voiced friction in a back region, shown as /ɣ~ʁ/ for the range described here. Its dot above resembles ʿayn visually, not acoustically. Compare it with khaa for voicing and with ʿayn for place, without claiming identical articulation.",
+      "examples": [
+        {
+          "ar": "غُرْفَة",
+          "meaning": "room"
+        },
+        {
+          "ar": "صَغِير",
+          "meaning": "small"
+        },
+        {
+          "ar": "فَرَاغ",
+          "meaning": "empty space / vacancy"
+        }
+      ]
+    },
+    {
+      "letter": "ف",
+      "ipa": "f",
+      "forms": "ف — فـ — ـفـ — ـف",
+      "note": "Faa /f/ lets air pass between the lower lip and upper teeth without consonant voicing. In the eastern writing convention used here, one dot is above. Some Maghrebi conventions differ and should be labelled when shown. A writing tradition is not automatically a learner’s mistake.",
+      "examples": [
+        {
+          "ar": "فِيل",
+          "meaning": "elephant"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "meaning": "key"
+        },
+        {
+          "ar": "صُوف",
+          "meaning": "wool"
+        }
+      ]
+    },
+    {
+      "letter": "ق",
+      "ipa": "q",
+      "forms": "ق — قـ — ـقـ — ـق",
+      "note": "Qaaf /q/ uses a voiceless back closure in this Standard Arabic model, farther back than kaaf. It has two dots above in this writing convention. Familiar dialect pronunciations do not silently change the listening target; identify which model a lesson is practising.",
+      "examples": [
+        {
+          "ar": "قَمَر",
+          "meaning": "moon"
+        },
+        {
+          "ar": "بَقَر",
+          "meaning": "cattle"
+        },
+        {
+          "ar": "سُوق",
+          "meaning": "market"
+        }
+      ]
+    },
+    {
+      "letter": "ك",
+      "ipa": "k",
+      "forms": "ك — كـ — ـكـ — ـك",
+      "note": "Kaaf /k/ closes the back of the tongue against the back roof region and releases. It is not identical to qaaf merely because both sounds are back consonants. The small sign inside independent ك is part of its written form, not a separate hamza to pronounce.",
+      "examples": [
+        {
+          "ar": "كِتَاب",
+          "meaning": "book"
+        },
+        {
+          "ar": "سَمَك",
+          "meaning": "fish"
+        },
+        {
+          "ar": "مَلَك",
+          "meaning": "angel"
+        }
+      ]
+    },
+    {
+      "letter": "ل",
+      "ipa": "l",
+      "forms": "ل — لـ — ـلـ — ـل",
+      "note": "Laam /l/ is voiced and lateral: air passes alongside the tongue while its tip contacts the front region. Begin with the ordinary training model; introduce special emphatic contexts separately. Laam joins both ways, and لا may be drawn as a combined shape without becoming a new alphabet letter.",
+      "examples": [
+        {
+          "ar": "لَيْل",
+          "meaning": "night"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen"
+        },
+        {
+          "ar": "جَبَل",
+          "meaning": "mountain"
+        }
+      ]
+    },
+    {
+      "letter": "م",
+      "ipa": "m",
+      "forms": "م — مـ — ـمـ — ـم",
+      "note": "Meem /m/ is a voiced nasal consonant with closed lips. It differs from baa not just by shape: air goes through the nose during meem. Its body changes when joining, but its name and letter identity stay the same.",
+      "examples": [
+        {
+          "ar": "مَاء",
+          "meaning": "water"
+        },
+        {
+          "ar": "قَمَر",
+          "meaning": "moon"
+        },
+        {
+          "ar": "قَلَم",
+          "meaning": "pen"
+        }
+      ]
+    },
+    {
+      "letter": "ن",
+      "ipa": "n",
+      "forms": "ن — نـ — ـنـ — ـن",
+      "note": "Noon /n/ is a voiced nasal with a front tongue closure. One dot is above in this convention. Compare noon and meem by closure location. A written noon differs from tanwīn: certain endings include an /n/ sound without a separate noon letter in the spelling.",
+      "examples": [
+        {
+          "ar": "نُور",
+          "meaning": "light"
+        },
+        {
+          "ar": "عَيْن",
+          "meaning": "eye, in this vocabulary example"
+        },
+        {
+          "ar": "لَبَن",
+          "meaning": "milk or a dairy product, depending on region"
+        }
+      ]
+    },
+    {
+      "letter": "ه",
+      "ipa": "h",
+      "forms": "ه — هـ — ـهـ — ـه",
+      "note": "Haa /h/ is voiceless and does not use ḥaa’s pharyngeal narrowing. Its forms ه, هـ, ـهـ and ـه are visually varied, so joining helps explain them. Do not identify every final ة as ordinary haa just because a pause reading can sound similar.",
+      "examples": [
+        {
+          "ar": "هِلَال",
+          "meaning": "crescent moon"
+        },
+        {
+          "ar": "نَهْر",
+          "meaning": "river"
+        },
+        {
+          "ar": "وَجْه",
+          "meaning": "face"
+        }
+      ]
+    },
+    {
+      "letter": "و",
+      "ipa": "w / uː",
+      "forms": "و — ـو",
+      "note": "Waw can be the consonant /w/ in وَلَد or help write long /uː/ in نُور. In ثَوْب, its role is not long /uː/: read the vowel pattern. Waw accepts a preceding connection but does not join the next letter on its left.",
+      "examples": [
+        {
+          "ar": "وَلَد",
+          "meaning": "boy, in this vocabulary example"
+        },
+        {
+          "ar": "نُور",
+          "meaning": "light"
+        },
+        {
+          "ar": "ثَوْب",
+          "meaning": "garment"
+        }
+      ]
+    },
+    {
+      "letter": "ي",
+      "ipa": "j / iː",
+      "forms": "ي — يـ — ـيـ — ـي",
+      "note": "Yaa can be the consonant /j/ in يَد or help write long /iː/ in فِيل. بَيْت has another pattern, /aj/, rather than long /iː/. Dotted yaa differs from alif maqṣūra ى, which must not automatically be read as yaa.",
+      "examples": [
+        {
+          "ar": "يَد",
+          "meaning": "hand"
+        },
+        {
+          "ar": "فِيل",
+          "meaning": "elephant"
+        },
+        {
+          "ar": "بَيْت",
+          "meaning": "house / home"
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "intro": "HORIZONS companion reference — expanded editorial edition",
+    "warning": "Review edition. Content and translations have not passed independent review.",
+    "examples": "Examples and meanings",
+    "practice": "Try it and explain your choice",
+    "answer": "Answer and reasoning",
+    "notes": "Pronunciation key",
+    "contents": "Contents",
+    "view": "Read the whole chapter",
+    "all": "Print all available chapters",
+    "original": "Original HORIZONS explanations and examples. Linked references support the points identified in the source list.",
+    "answers": "Exercise answers",
+    "forms": "Written forms",
+    "words": "Words and meanings",
+    "draft": "Editorial draft",
+    "font": "Arabic font",
+    "theme": "Switch light and dark mode"
+  },
+  "notation_note": "ː marks preceding vowel length; ˤ marks consonant emphasis in this display; . marks a syllable boundary; ~ separates alternatives in the described range, not two consecutive sounds. / / encloses a sound representation, not Arabic spelling. Isolated word examples use pause readings; sentence translations do not silently claim one pronunciation for both connection and pause.",
+  "review": {
+    "kind": "model_self_review",
+    "passes": [
+      {
+        "name": "semantic",
+        "notes": [
+          "Checked consonant versus letter name, long vowels versus shadda, paused word readings versus connected sentence examples.",
+          "Checked all12pronouns including gender-specific Arabic forms with English/Turkish neutral counterparts; dual glosses explain rather than invent an identical form.",
+          "Corrected ع example to لَعِبَ, the past-tense verb, rather than presenting the unlabelled form as a noun.",
+          "Original story retains identical Arabic and distinguishes stated facts from unsupported explanations."
+        ]
+      },
+      {
+        "name": "linguistic",
+        "notes": [
+          "Read the Arabic, English and Turkish prose for connected meaning and instructional tone; preserved meanings and answer reasoning rather than substituting labels.",
+          "Reviewed number polarity for3–10, one agreement, case-specific dual forms, adjective/article distinction and possessive suffix reference.",
+          "Checked nonjoining letters, hamza versus vowel alif and contextual waw/yaa roles.",
+          "Examples and letter glosses identify context-sensitive meanings such as لبن and عين; Turkish o and sen include gender notes where needed."
+        ]
+      }
+    ],
+    "native_human_review": false,
+    "limitations": [
+      "These are model reviews, not an independent native human or academic review.",
+      "The present volume is a foundation reference; it is not a complete encyclopedia of Arabic linguistics."
+    ]
+  }
+}

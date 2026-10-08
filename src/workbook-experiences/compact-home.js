@@ -52,11 +52,15 @@
     // Explicit local editorial-review routes only. Default production staging
     // remains closed; an unreviewed reference is never enabled implicitly.
     const key=button.dataset.referenceKey||button.dataset.demoSection||button.dataset.course||button.dataset.b4Course||button.dataset.b3Course||button.dataset.b2Course||button.dataset.phonicsCourse;
+    const demo= /^\/try(?:\/|$)/.test(win.location.pathname);
+    const allowed=!demo||['alphabet','catalog'].includes(key);
     const mapping=(win.HZN_REFERENCE_ROUTES||win.HZN_REFERENCE_REVIEW_ROUTES)?.[key];
     const code=doc.documentElement.lang.split('-')[0];
     const route=typeof mapping==='string'?mapping:mapping?.languages?.includes(code)?mapping.href:null;
-    if(route){try{
+    if(!allowed){theory.innerHTML=icon('lock');theory.append(doc.createTextNode(copy.theory));const reason=button.querySelector('.demo-section-status')?.textContent.trim()||copy.soon;theory.title=reason;theory.setAttribute('aria-label',copy.theory+' — '+title+' — '+reason);status.textContent=reason;}
+    if(route&&allowed){try{
       const url=new URL(route,win.location.href);
+      if(demo)url.pathname='/reference/horizons-theory-demo-20261008-r3.html';
       if(url.origin===win.location.origin){
        const draft=copy.theory;
        theory.disabled=false;theory.title=draft;theory.setAttribute('aria-label',copy.theory+' — '+title);status.remove();
