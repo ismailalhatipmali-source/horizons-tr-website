@@ -1,15 +1,9 @@
 {
-  "schema": 1,
-  "path": "reference/horizons-theory-20261008-r2.html",
-  "sha256": "d7147fd987603e886619f52d4f6382b6381f7fd6601ecad8c5a29b6637417816",
-  "bytes": 2495113,
-  "languages_complete": [
-    "ar"
-  ],
-  "status": "first_installment",
-  "pronoun_equivalents_languages": [
-    "ar",
+  "schema": 2,
+  "edition": "expanded-reference-20261008-r3",
+  "languages": [
     "en",
+    "ar",
     "tr",
     "fr",
     "es",
@@ -40,5 +34,28 @@
     "ms",
     "zh",
     "ja"
-  ]
+  ],
+  "review_passes": 2,
+  "sources": {
+    "full": {
+      "path": ".horizons-theory-incoming-20261008-r3/reference.html",
+      "bytes": 6129613,
+      "sha256": "15dde4c3319ed831cfbdd9a0d23c88d895ec82684ce5a0f72d552ea099dca405"
+    },
+    "demo": {
+      "path": "release-assets/theory-reference-20261008-r1/demo-reference.html",
+      "bytes": 3117391,
+      "sha256": "b51c98656292970726feae542e3354a9c68385a5f641ba5f0d546cce976a6ba4"
+    },
+    "loader": {
+      "path": "src/theory-reference/paid-reader-loader.html",
+      "bytes": 2593,
+      "sha256": "6552b4027ac48ecc7dcc22b12b6a6a9795328ada7bcb9b19db31772106d8361e"
+    },
+    "guard": {
+      "path": "scripts/theory-reference-guard.php",
+      "bytes": 6706,
+      "sha256": "353585e0e1a96837f20c3cd3bacf865f239e17fafd2a53df7d92a369eacda8be"
+    }
+  }
 }

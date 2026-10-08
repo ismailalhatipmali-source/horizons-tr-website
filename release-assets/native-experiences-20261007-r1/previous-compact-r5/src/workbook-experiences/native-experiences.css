@@ -113,10 +113,6 @@ body[data-hzn-experiences-ready] #hzn-home .hzn-home-welcome h1,body[data-hzn-ex
 
 /* Activity contrast and compact controls share the same light/dark variables. */
 @media screen {
-body[data-hzn-experiences-ready] #hzn-home #demo-upgrade{background:var(--hx-paper);color:var(--hx-ink);border-color:var(--hx-line);box-shadow:none}
-body[data-hzn-experiences-ready] #hzn-home #demo-upgrade .demo-upgrade-copy p{color:var(--hx-muted)}
-body[data-hzn-experiences-ready] #hzn-home #demo-upgrade .demo-badge{background:var(--hx-soft);color:var(--hx-ink);border:1px solid var(--hx-line)}
-body[data-hzn-experiences-ready] #hzn-home #demo-upgrade .demo-buy-link{background:var(--hx-accent);color:var(--hx-on);border-color:var(--hx-accent)}
 body[data-hzn-experiences-ready]{--hx-card-radius:16px;--hx-story-ink:var(--hx-ink);min-height:100vh;min-height:100dvh}
 body[data-hzn-tone=dark]{--hx-story-ink:#f0f0f0}
 body[data-hzn-experiences-ready]>.topbar{position:sticky;top:0;z-index:40;height:auto;padding-top:max(6px,env(safe-area-inset-top));padding-inline-start:max(10px,env(safe-area-inset-left));padding-inline-end:max(10px,env(safe-area-inset-right))}

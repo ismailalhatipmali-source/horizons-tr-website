@@ -1,0 +1,43 @@
+name: Theory reference validation
+on:
+  pull_request:
+    paths:
+      - 'src/theory-reference/**'
+      - 'scripts/theory-reference-guard.php'
+      - 'tests/test_theory_demo_release.py'
+      - 'tests/test_paid_reference_loader.mjs'
+      - 'tests/test_compact_reference_access.mjs'
+      - 'tests/test_theory_reference_guard.php'
+      - 'release-assets/theory-reference-20261008-r1/**'
+      - '.github/workflows/theory-reference.yml'
+permissions:
+  contents: read
+jobs:
+  theory-fixtures:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scripts
+            src/theory-reference
+            src/workbook-experiences
+            release-assets/theory-reference-20261008-r1
+            tests/package.json
+            tests/package-lock.json
+            tests/test_theory_demo_release.py
+            tests/test_paid_reference_loader.mjs
+            tests/test_compact_reference_access.mjs
+            tests/test_theory_reference_guard.php
+          sparse-checkout-cone-mode: false
+      - name: Content, licensing and immutable publication fixtures
+        run: |
+          set -euo pipefail
+          python3 tests/test_theory_demo_release.py
+          php -l scripts/theory-reference-guard.php
+          php tests/test_theory_reference_guard.php
+          npm ci --prefix tests --ignore-scripts --no-audit --no-fund
+          node tests/test_paid_reference_loader.mjs
+          node tests/test_compact_reference_access.mjs

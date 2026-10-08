@@ -1,5 +1,5 @@
-/* Only injected into verified open B3/B4 readers. Base ink follows the tone;
- * preserve authored vowel colours, glyph paths and assessment feedback classes. */
+/* Only injected into verified open B3/B4 readers. Do not override --ink,
+ * --fatha/--damma/--kasra/--madd, glyph paths or assessment feedback classes. */
 :host([data-hzn-experience]){color:var(--hx-ink);--line:var(--hx-line);--muted:var(--hx-muted)}
 :host([data-hzn-experience]) .reader,:host([data-hzn-experience]) .lessons,:host([data-hzn-experience]) .lesson-panel,:host([data-hzn-experience]) .settings-panel{background:var(--hx-paper);border-color:var(--hx-line);color:var(--hx-ink)}
 :host([data-hzn-experience]) button:not(.correct):not(.wrong),:host([data-hzn-experience]) select{color:var(--hx-ink);background:var(--hx-paper);border:1.5px solid var(--hx-line);min-height:44px}
