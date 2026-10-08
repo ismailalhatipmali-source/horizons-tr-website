@@ -236,7 +236,15 @@
   }
   function schedule(){if(!pending&&!dead){pending=true;win.requestAnimationFrame(sync);}}
   const observer=new win.MutationObserver(schedule);observer.observe(doc.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['lang','data-hzn-tone','data-focus-view']});
-  const api=Object.freeze({refresh:schedule,destroy(){dead=true;observer.disconnect();}});win.hznCompactHome=api;sync();return api;
+  // The workbook shell selects lessons in the course-nav capture phase.
+  // Intercept only theory controls at the document ancestor before that phase.
+  function theoryCapture(event){
+   const target=event.target.closest?.('.hzn-theory-action');
+   if(!target||target.disabled||!target.closest('#course-nav'))return;
+   event.preventDefault();event.stopPropagation();target.onclick?.call(target,event);
+  }
+  doc.addEventListener('click',theoryCapture,true);
+  const api=Object.freeze({refresh:schedule,destroy(){dead=true;observer.disconnect();doc.removeEventListener('click',theoryCapture,true);}});win.hznCompactHome=api;sync();return api;
  }
  scope.HZNInstallCompactHome=install;
 })(typeof globalThis!=='undefined'?globalThis:this);
