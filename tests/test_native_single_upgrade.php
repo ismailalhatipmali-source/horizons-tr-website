@@ -4,6 +4,7 @@ define('HZN_UI_FIXTURE_ONLY', true);
 require __DIR__ . '/test_native_publication.php';
 $CURRENT = hznUiRelease($ROOT);
 $LEGACY = hznUiRelease($ROOT, '061270ae375f730ba2ccc462ce671b079dc371990466f6983ff234108e2c852e');
+$PREVIOUS = hznUiRelease($ROOT, '4c1b2686533ef6a5808c69baba4fdfe17c6ac17cd66dffcdc01a8331d2f8e570');
 function legacyFixture(): array {
     global $RELEASE, $LEGACY, $CURRENT, $ROOT;
     $RELEASE=$LEGACY; $f=fixture(); $p=plan($f); publish($f,$p);
@@ -30,6 +31,14 @@ run('single_upgrade_preserves_original_player_and_receipts',function()use($ROOT,
     check(hznUiRead($f['web'].'/try/workbook.js',0644)===$f['demo'].$CURRENT['addon']);
     check(hznUiDecrypt(hznUiRead($f['web'].'/learn/content/1.4.1/workbook.js.hzn',0644),$f['key'])===$f['plain'].$CURRENT['addon']);
     sentinels($f);
+});
+run('single_reader_patch_accepts_exact_previous_receipt',function()use($ROOT,$CURRENT,$PREVIOUS){
+    global $LEGACY;
+    $original=$LEGACY;$LEGACY=$PREVIOUS;
+    try{$f=legacyFixture();}finally{$LEGACY=$original;}
+    hznUiVerifyPaid($f['web'],$f['installed'],$PREVIOUS,$f['key']);upgrade($f);
+    $s=hznUiState($f['web'],$ROOT);hznUiVerifyPaid($f['web'],$s,$CURRENT,$f['key']);sentinels($f);
+    check(str_contains(hznUiRead($f['web'].'/try/sw.js',0644),'single-20261008-r2'));
 });
 for($i=0;$i<=6;$i++)run('upgrade_failure_'.$i.'_restores_previous_published_ui',function()use($i,$ROOT,$LEGACY){
     $f=legacyFixture();rejects(fn()=>upgrade($f,function($n)use($i){if($n===$i)throw new RuntimeException('TEST_UPGRADE_FAILURE');}),'TEST_UPGRADE_FAILURE');

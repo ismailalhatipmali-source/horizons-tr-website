@@ -30,37 +30,28 @@ const HZN_UI_CODE = ['scripts/native-ui-publication.php', 'scripts/native-ui-sta
     'release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-shadow.css',
     'release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-locales.json',
     'release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-art.json',
-    'release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-visibility.css',
-    'release-assets/native-experiences-20261007-r1/previous-single/manifest.json',
-    'release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-publication.php',
-    'release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-state.php',
-    'release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-plan.php',
-    'release-assets/native-experiences-20261007-r1/previous-single/scripts/deploy-native-ui.php',
-    'release-assets/native-experiences-20261007-r1/previous-single/src/workbook-experiences/native-experiences.css'];
+    'release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-visibility.css'];
 /* Validate checked-in sources every time. Never interpret a receipt as a permission
  * to skip the release hash, fixed path set, historical receipts or private backups. */
 function hznUiRelease(string $repo, ?string $requested = null): array {
     hznUiRoot($repo);
     $base = hznUiPath($repo, 'release-assets/' . HZN_UI_RELEASE);
     $legacy = $requested === '061270ae375f730ba2ccc462ce671b079dc371990466f6983ff234108e2c852e';
-    $previous = $requested === '4c1b2686533ef6a5808c69baba4fdfe17c6ac17cd66dffcdc01a8331d2f8e570';
     $source = $legacy ? hznUiPath($base, 'legacy') : $repo;
-    $raw = hznUiRead($base . ($legacy ? '/legacy' : ($previous ? '/previous-single' : '')) . '/manifest.json', null, 32768);
-    $pin = ($legacy || $previous) ? $requested : trim(hznUiRead($base . '/manifest.sha256', null, 128));
+    $raw = hznUiRead($base . ($legacy ? '/legacy' : '') . '/manifest.json', null, 32768);
+    $pin = $legacy ? $requested : trim(hznUiRead($base . '/manifest.sha256', null, 128));
     if ($requested !== null && $requested !== $pin) hznUiFail('RELEASE_VERSION');
     if (!hznUiSha($pin) || !hash_equals($pin, hznUiHash($raw))) hznUiFail('RELEASE_HASH');
     $r = json_decode($raw, true, 32, JSON_THROW_ON_ERROR);
     if (($r['schema'] ?? null) !== 1 || ($r['release'] ?? '') !== HZN_UI_RELEASE ||
         ($r['paths'] ?? []) !== HZN_UI_PATHS || array_keys($r['sources'] ?? []) !== HZN_UI_SOURCES ||
-        array_keys($r['code'] ?? []) !== ($legacy ? array_slice(HZN_UI_CODE, 0, 14) : ($previous ? array_slice(HZN_UI_CODE, 0, 35) : HZN_UI_CODE)) || !hznUiSha($r['addon_sha256'] ?? null)) hznUiFail('RELEASE');
-    $archived = ['scripts/native-ui-publication.php', 'scripts/native-ui-state.php', 'scripts/native-ui-plan.php', 'scripts/deploy-native-ui.php'];
+        array_keys($r['code'] ?? []) !== ($legacy ? array_slice(HZN_UI_CODE, 0, 14) : HZN_UI_CODE) || !hznUiSha($r['addon_sha256'] ?? null)) hznUiFail('RELEASE');
     foreach ($r['code'] as $p => $sha) {
-        $checked = $previous && in_array($p, $archived, true) ? 'release-assets/native-experiences-20261007-r1/previous-single/' . $p : $p;
-        if (!hznUiSha($sha) || hznUiHash(hznUiRead(hznUiPath($source, $checked), null, 1048576)) !== $sha) hznUiFail('RELEASE_CODE');
+        if (!hznUiSha($sha) || hznUiHash(hznUiRead(hznUiPath($source, $p), null, 1048576)) !== $sha) hznUiFail('RELEASE_CODE');
     }
-    $addon = hznUiAddon($source, $r['sources'], $previous ? ['native-experiences.css' => 'release-assets/native-experiences-20261007-r1/previous-single/src/workbook-experiences/native-experiences.css'] : []);
+    $addon = hznUiAddon($source, $r['sources']);
     if (!hash_equals($r['addon_sha256'], hznUiHash($addon))) hznUiFail('ADDON_HASH');
-    $r['manifest_sha256'] = $pin; $r['addon'] = $addon; $r['legacy'] = $legacy || $previous; $r['worker_legacy'] = $legacy; $r['worker_single'] = $previous ? 'single-20261008-r1' : 'single-20261008-r2'; return $r;
+    $r['manifest_sha256'] = $pin; $r['addon'] = $addon; $r['legacy'] = $legacy; return $r;
 }
 function hznUiMetadata(array $m, array $release): void {
     if (array_keys($m) !== ['manifest_sha256', 'addon_sha256', 'plain_before_sha256', 'plain_after_sha256',
@@ -113,7 +104,7 @@ function hznUiState(string $web, ?string $repo = null): ?array {
         $app = $paid ? 'learn/content/1.4.1/workbook.js.hzn' : 'try/workbook.js';
         $expected = hznUiManifest($old[$mp], $old[$app], $now[$app], $paid, $paid ? $r['metadata']['plain_after_bytes'] : null);
         if ($expected !== $now[$mp]) hznUiFail('CONTENT_PRESERVATION');
-        if (hznUiWorker($old[$edition . '/sw.js'], $paid, $release['worker_legacy'], $release['worker_single']) !== $now[$edition . '/sw.js']) hznUiFail('WORKER_PRESERVATION');
+        if (hznUiWorker($old[$edition . '/sw.js'], $paid, $release['legacy']) !== $now[$edition . '/sw.js']) hznUiFail('WORKER_PRESERVATION');
     }
     $priorPaid = json_decode($old['learn/asset-manifest.json'], true, 64, JSON_THROW_ON_ERROR);
     if (($priorPaid['files']['workbook.js']['decoded_bytes'] ?? -1) !== $r['metadata']['plain_before_bytes']) hznUiFail('DECODED_LENGTH');

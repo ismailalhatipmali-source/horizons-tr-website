@@ -46,5 +46,3 @@ body[data-hzn-tone=dark] .mini-forms>div{background:var(--hx-soft);color:var(--h
 body[data-hzn-experiences-ready] .hzn-future-tile{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-height:88px;padding:14px;border:1px solid var(--hx-line);border-radius:16px;background:var(--hx-soft);color:var(--hx-muted);font:inherit;text-align:start;opacity:1;cursor:not-allowed}
 .hzn-future-tile small{font-size:12px;line-height:1.5}
 }
-
-@media screen {body[data-hzn-tone=dark] #hzn-home-nav #course-nav button small{background:var(--hx-soft);color:var(--hx-muted)}}
