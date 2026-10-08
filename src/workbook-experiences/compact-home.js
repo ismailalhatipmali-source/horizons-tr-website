@@ -57,7 +57,7 @@
     const mapping=(win.HZN_REFERENCE_ROUTES||win.HZN_REFERENCE_REVIEW_ROUTES)?.[key];
     const code=doc.documentElement.lang.split('-')[0];
     const route=typeof mapping==='string'?mapping:mapping?.languages?.includes(code)?mapping.href:null;
-    if(!allowed){theory.innerHTML=icon('lock');theory.append(doc.createTextNode(copy.theory));const reason=button.querySelector('.demo-section-status')?.textContent.trim()||copy.soon;theory.title=reason;theory.setAttribute('aria-label',copy.theory+' — '+title+' — '+reason);status.textContent=reason;}
+    if(!allowed){theory.innerHTML=icon('lock');theory.append(doc.createTextNode(copy.theory));const reason=(button.dataset.referenceKey?nav.querySelector('[data-demo-section="phonics"] .demo-section-status'):button.querySelector('.demo-section-status'))?.textContent.trim()||copy.soon;theory.title=reason;theory.setAttribute('aria-label',copy.theory+' — '+title+' — '+reason);status.textContent=reason;}
     if(route&&allowed){try{
       const url=new URL(route,win.location.href);
       if(demo)url.pathname='/reference/horizons-theory-demo-20261008-r3.html';
@@ -74,7 +74,7 @@
        };
       }
     }catch(_){/* Invalid review route stays disabled. */}}
-    const access=button.querySelector('.demo-section-status');if(access){const note=doc.createElement('small');note.className='hzn-access-status';note.textContent=access.textContent;card.append(note);}
+    const access=button.querySelector('.demo-section-status');if(access){const note=doc.createElement('small');note.className='hzn-access-status';note.textContent=access.textContent;if(status.isConnected&&status.textContent===note.textContent)status.remove();card.append(note);}
    }
   }
   function schedule(){if(!pending&&!dead){pending=true;win.requestAnimationFrame(sync);}}

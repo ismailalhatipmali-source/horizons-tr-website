@@ -9,6 +9,7 @@ for(const demo of [true,false]){
  win.eval(script);win.HZNInstallCompactHome(win,win.document);
  const cards=[...win.document.querySelectorAll('.hzn-lesson-card')];assert.equal(cards.length,13);assert.equal(cards.filter(x=>!x.querySelector('.hzn-theory-action').disabled).length,demo?2:13);
  assert.equal(win.document.querySelectorAll('.hzn-interactive-action[disabled]').length,7);
+ if(demo){assert.equal(cards[6].querySelector('.hzn-theory-action').title,'Full version');assert.equal(cards[1].querySelectorAll('.hzn-theory-status,.hzn-access-status').length,1);}
  const action=cards[0].querySelector('.hzn-theory-action');action.click();assert.equal(entered,0);const frame=win.document.querySelector('dialog iframe');assert.ok(frame.src.includes(demo?'horizons-theory-demo':'horizons-theory-paid'));assert.ok(frame.src.includes('lang=tr'));win.document.querySelector('dialog button').click();assert.equal(win.document.querySelector('dialog'),null);cards[0].querySelector('.hzn-interactive-action').click();assert.equal(entered,1);
  win.hznCompactHome.destroy();dom.window.close();
 }

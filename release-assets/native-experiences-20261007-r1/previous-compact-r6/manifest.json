@@ -11,16 +11,16 @@
     "learn/sw.js"
   ],
   "sources": {
-    "native-experiences.js": "9e1ca9f7b9f56f669145f87fefafef8d667008e2e8669b5f6892bb6264112d0e",
-    "native-experiences.css": "e9d29d43e1f63d890215f376fc175e482aedceb7e59c1c7f7c07d8f68e5d88fe",
+    "native-experiences.js": "de237996f8bce86d0cf0ebc21050772999d404540c7952809edc499bf19fe3c1",
+    "native-experiences.css": "ff8c05ac7db947228622a6007fbdaa7cf663a5caf69326c50be96375dbb94258",
     "native-shadow.css": "a917c7b42f8aa918d1b640f30ff37a80dc95d828619ec0383910b90e5c45bc8c",
     "native-locales.json": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
     "native-art.json": "1118859c33fc3ae0b71ec6813004abe496a560dde86fb714eea1e300afbd860d",
     "native-visibility.css": "ea9659f0910c3033412d4514fbd7641c9b2e1bb46914502b934ef2ea984d0b7b"
   },
   "code": {
-    "scripts/native-ui-publication.php": "8ab15821aa8c29fb23602fbc4cf9066e13c349ac5731c9adac5aed0e79059e0f",
-    "scripts/native-ui-state.php": "2eb6a34d0810d472fd82dc1c4dfe1e37be1ef2f7b5be57cce805e8b0c3a61f23",
+    "scripts/native-ui-publication.php": "e35d469cf5fb2e7bc972d27c6a41a90d16bb7ba2432971b161fef01863353895",
+    "scripts/native-ui-state.php": "fe570281b43dcd25154dad9991f05918a4a82f1858636f9a84bd47cac841e417",
     "scripts/native-ui-plan.php": "5578419aa47656993fc83e5ac0c7fc70c13ea279fefaf36c789e2a6f6ed2b5a2",
     "scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
     "scripts/workbook-focus-preservation.php": "787066850afe6f07091804a1e04b9b08d44b9f98c945ac56789de2b250fba097",
@@ -63,6 +63,6 @@
     "scripts/deploy-theory-reference.php": "9fa323e8808dd2e55e989e92c8b302601e053d4c537bbc575e63b7b7b7b7c6c5",
     "release-assets/theory-reference-20261008-r1/manifest.json": "38e2b6d48c4dba7d353c70f726c70b13cec93ec130aea4b64096d644b1074391"
   },
-  "addon_sha256": "1434e58db5be5585170558958c41a4f24c520808e06fe5f724dd4e239643b8aa",
-  "addon_bytes": 95752
+  "addon_sha256": "5a92ba85f9dbdbacbcba25e2394a2fb81ff3a7403d04323429477a95acc5c922",
+  "addon_bytes": 95282
 }
