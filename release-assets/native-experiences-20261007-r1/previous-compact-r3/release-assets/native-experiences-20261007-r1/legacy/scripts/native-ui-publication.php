@@ -99,12 +99,12 @@ function hznUiWrite(string $path, string $raw, int $mode, ?string $expected = nu
     } finally { fclose($h); if (is_file($tmp) && !is_link($tmp)) unlink($tmp); }
     hznUiMatch($path, hznUiHash($raw), $mode);
 }
-function hznUiAddon(string $repo, array $pins, array $overrides = []): string {
+function hznUiAddon(string $repo, array $pins): string {
     if (array_keys($pins) !== HZN_UI_SOURCES) hznUiFail('SOURCE_SET');
     $blobs = [];
     foreach ($pins as $name => $sha) {
         if (!hznUiSha($sha)) hznUiFail('SOURCE_HASH');
-        $raw = hznUiRead(hznUiPath($repo, $overrides[$name] ?? ('src/workbook-experiences/' . $name)), null, 1048576);
+        $raw = hznUiRead(hznUiPath($repo, 'src/workbook-experiences/' . $name), null, 1048576);
         if (!hash_equals($sha, hznUiHash($raw))) hznUiFail('SOURCE_CHANGED'); $blobs[$name] = $raw;
     }
     $copy = json_decode($blobs['native-locales.json'], true, 32, JSON_THROW_ON_ERROR);
@@ -162,13 +162,12 @@ function hznUiEncrypt(string $plain, string $key): string {
     if (hznUiDecrypt($out, $key) !== $plain) hznUiFail('ENCRYPTION_ROUNDTRIP');
     return $out;
 }
-function hznUiWorker(string $raw, bool $paid, bool $legacy = false, string $single = 'compact-20261008-r4'): string {
+function hznUiWorker(string $raw, bool $paid): string {
     if (str_contains($raw, HZN_UI_RELEASE)) hznUiFail('WORKER_ALREADY_UPDATED');
     $old = $paid ? "const SHELL = 'hzn-web-shell-' + VERSION + '-blending3-20261004-r2-responsive-20261004-r3-demo-experience-20261004-r1-comprehensive-meaning-20261004-r1-blending4-20261004-r1-workbook-focus-20261005-r1-trial-pause-20261005-r1';" :
         "const CACHE='hzn-public-demo-'+VERSION+'-workbook-focus-20261005-r1';";
     if (substr_count($raw, $old) !== 1) hznUiFail('WORKER_BASELINE');
-    $suffix = HZN_UI_RELEASE . ($legacy ? '' : '-' . $single);
-    $new = $paid ? substr($old, 0, -2) . '-' . $suffix . "';" : "const CACHE='hzn-public-demo-'+VERSION+'-" . $suffix . "';";
+    $new = $paid ? substr($old, 0, -2) . '-' . HZN_UI_RELEASE . "';" : "const CACHE='hzn-public-demo-'+VERSION+'-" . HZN_UI_RELEASE . "';";
     $after = str_replace($old, $new, $raw);
     if (!$paid) {
         $pattern = '(?:creator-credit|demo-experience|comprehensive-meaning|workbook-focus)';

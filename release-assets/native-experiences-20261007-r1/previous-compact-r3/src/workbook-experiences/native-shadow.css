@@ -1,0 +1,16 @@
+/* Only injected into verified open B3/B4 readers. Do not override --ink,
+ * --fatha/--damma/--kasra/--madd, glyph paths or assessment feedback classes. */
+:host([data-hzn-experience]){color:var(--hx-ink);--line:var(--hx-line);--muted:var(--hx-muted)}
+:host([data-hzn-experience]) .reader,:host([data-hzn-experience]) .lessons,:host([data-hzn-experience]) .lesson-panel,:host([data-hzn-experience]) .settings-panel{background:var(--hx-paper);border-color:var(--hx-line);color:var(--hx-ink)}
+:host([data-hzn-experience]) button:not(.correct):not(.wrong),:host([data-hzn-experience]) select{color:var(--hx-ink);background:var(--hx-paper);border:1.5px solid var(--hx-line);min-height:44px}
+:host([data-hzn-experience]) button:hover:not(:disabled):not(.correct):not(.wrong){background:var(--hx-soft);color:var(--hx-ink)}
+:host([data-hzn-experience]) button.primary,:host([data-hzn-experience]) button[aria-pressed=true]:not(.correct):not(.wrong),:host([data-hzn-experience]) button[aria-selected=true]{color:var(--hx-on);background:var(--hx-accent);border-color:var(--hx-accent)}
+:host([data-hzn-experience]) button:disabled:not(.correct):not(.wrong){background:var(--hx-disabled);color:var(--hx-muted);opacity:1}
+:host([data-hzn-experience]) button:focus-visible,:host([data-hzn-experience]) summary:focus-visible,:host([data-hzn-experience]) select:focus-visible{outline:3px solid var(--hx-focus);outline-offset:3px}
+:host([data-hzn-experience]) .modes{background:var(--hx-soft);border-color:var(--hx-line)}
+:host([data-hzn-experience]) .semantic{background:var(--hx-soft);color:var(--hx-ink);border-color:var(--hx-line)}
+:host([data-hzn-experience]) .target-visual{background:#f5f0e4;border-radius:16px;margin:9px 0;padding:5px}
+:host([data-hzn-experience]) .segment-button{background:#f5f0e4!important;border-color:var(--hx-line);color:#163047}
+:host([data-hzn-experience]) .target-glyph,:host([data-hzn-experience]) .segment-glyph{overflow:visible}
+@media(max-width:420px){:host([data-hzn-experience]) #reader-inner{padding:12px}:host([data-hzn-experience]) .modes{gap:6px;padding:7px}:host([data-hzn-experience]) .meaning-options{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){:host([data-hzn-experience]) *{animation:none!important;transition:none!important}}

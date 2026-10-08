@@ -11,7 +11,7 @@
     "learn/sw.js"
   ],
   "sources": {
-    "native-experiences.js": "e272219678f7c0d8d1b4dc0d57c50e5530f4a18f3acbd894d83ad6d0238af973",
+    "native-experiences.js": "6b18f61f457b4e30ec6aa5f6cd28b2cb29276a512f8ea5cb71b476a384545f6b",
     "native-experiences.css": "3b3013558e976e4d6e7f64472d77b92521050a9422c25c0e3c07ea5e42b2aa4a",
     "native-shadow.css": "6566766e3a5c182d0dbfbe02d7b96e5ec6f8b07cc009f01fb804ec5f174a6121",
     "native-locales.json": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
@@ -19,8 +19,8 @@
     "native-visibility.css": "ea9659f0910c3033412d4514fbd7641c9b2e1bb46914502b934ef2ea984d0b7b"
   },
   "code": {
-    "scripts/native-ui-publication.php": "0f6d465b6513aea21876190db889ad4df29b6d2cdd2351a5639012da4731b5a6",
-    "scripts/native-ui-state.php": "de4dc2d1eeded9424ed7f2dd88ebaaeb31bec5e9dafc1446b83f928f8a570d2b",
+    "scripts/native-ui-publication.php": "3934e2d2c8f337bea901af8e9eb522ca9b7c3714e64471558a55548e33cbd3f9",
+    "scripts/native-ui-state.php": "c068ce6e69ac419a72ef1554dc30f003647f25f4d3d254567984ff12625a6542",
     "scripts/native-ui-plan.php": "5578419aa47656993fc83e5ac0c7fc70c13ea279fefaf36c789e2a6f6ed2b5a2",
     "scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
     "scripts/workbook-focus-preservation.php": "787066850afe6f07091804a1e04b9b08d44b9f98c945ac56789de2b250fba097",
@@ -63,6 +63,6 @@
     "scripts/deploy-theory-reference.php": "18b9f14d20974f2782b38a61d1f79b061cc3eac31af9ef023f5246612136941a",
     "release-assets/theory-reference-20261008-r1/manifest.json": "7d963a3a3a9efb16f01857776b226182089762d61542710acc048e0560d4c7f8"
   },
-  "addon_sha256": "96e463bc5c01602b1cb83b804fdb66a8e343c11ce756d836f9a8d3abe7c6666a",
-  "addon_bytes": 83196
+  "addon_sha256": "2aecae6bed22481765675fc1eb182e2d5a185bc2d4e07270355554797dc94b3f",
+  "addon_bytes": 82683
 }
