@@ -11,16 +11,16 @@
     "learn/sw.js"
   ],
   "sources": {
-    "native-experiences.js": "9767608a8f0a378781dfb6a276ea49f58eed778a464cfb6b7770b98d9d381462",
-    "native-experiences.css": "2ba30f3267bda25fc28717c9693559a264a6157f93a5e0d9fa5df6dfdaa3ecf9",
+    "native-experiences.js": "4d552c3cffb97e9496256ba9acd78d0b26238607ce32bd8ecd0d428fa7721392",
+    "native-experiences.css": "99f0ba3ba468a732986064662bff890cfc002bb6e970fcde1558ad535c2b9c2f",
     "native-shadow.css": "6566766e3a5c182d0dbfbe02d7b96e5ec6f8b07cc009f01fb804ec5f174a6121",
     "native-locales.json": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
     "native-art.json": "1118859c33fc3ae0b71ec6813004abe496a560dde86fb714eea1e300afbd860d",
     "native-visibility.css": "ea9659f0910c3033412d4514fbd7641c9b2e1bb46914502b934ef2ea984d0b7b"
   },
   "code": {
-    "scripts/native-ui-publication.php": "9f0173ec05288ad0f371554ca4948897db8c4ef079668cb876b36d90b33e0274",
-    "scripts/native-ui-state.php": "9743fe5b70f2bb0d15cfbaac21030265ac28e5e29226e55893a80573389f59d1",
+    "scripts/native-ui-publication.php": "348fafc086a095a86c7e6c2df45113235a555a5befbbb752410649bffc998f0a",
+    "scripts/native-ui-state.php": "a6d71c52bbd779178930f625e477e014a46dff07a73b55445ac6d1a880bc5edf",
     "scripts/native-ui-plan.php": "5578419aa47656993fc83e5ac0c7fc70c13ea279fefaf36c789e2a6f6ed2b5a2",
     "scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
     "scripts/workbook-focus-preservation.php": "787066850afe6f07091804a1e04b9b08d44b9f98c945ac56789de2b250fba097",
@@ -60,9 +60,9 @@
     "release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-plan.php": "1a78c83e2dceb626c15acc5fe9aa3e0f4da81a10da35b2e13715d302541100c0",
     "release-assets/native-experiences-20261007-r1/previous-single/scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
     "release-assets/native-experiences-20261007-r1/previous-single/src/workbook-experiences/native-experiences.css": "1c06c1006ba8f2b5cd5b9a533bc689ba9624abec26e9bc8c00ab24d1533bac7f",
-    "scripts/deploy-theory-reference.php": "55eaa346917fbbba716e895d4aa6ccff374e864620e3c2760ebc0bcd9be95ef0",
-    "release-assets/theory-reference-20261008-r1/manifest.json": "ad2202f284a12b491b4bd54cc0f7f135cd79eb17171b52793bbf36cbf3b7328c"
+    "scripts/deploy-theory-reference.php": "18b9f14d20974f2782b38a61d1f79b061cc3eac31af9ef023f5246612136941a",
+    "release-assets/theory-reference-20261008-r1/manifest.json": "7d963a3a3a9efb16f01857776b226182089762d61542710acc048e0560d4c7f8"
   },
-  "addon_sha256": "aae715ec65ebfcc2732d8185fc5ae6ce72143c4a13754089cd7ead888d0afe65",
-  "addon_bytes": 76331
+  "addon_sha256": "e25d77b4fb1ea909b8beb1fa81a5e9899e3d1aa83c1e9546ca02870487beeb98",
+  "addon_bytes": 82144
 }

@@ -23,3 +23,20 @@ html:lang(he) body{font-family:"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif}ht
 @media(max-width:720px){.word-guide-layout{grid-template-columns:1fr}.symbol-guide dl{grid-template-columns:1fr 1fr 1fr 1fr}.word-guide-layout .example-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.word-guide-layout .example-grid{grid-template-columns:1fr}}@media print{.native-sound-help p{display:block}.word-guide-layout{grid-template-columns:minmax(0,1fr) 55mm}.symbol-guide{background:#fff;break-inside:avoid}.symbol-guide dt{font-size:10pt}.symbol-guide dd .marked-arabic{font-size:16pt}.word-guide-layout .example-card{padding:3mm}.word-guide-layout .marked-arabic{font-size:22pt}.native-sound-help{display:none}}
 
 .word-guide-layout .prose{min-width:0}.symbol-guide dd .marked-arabic{display:inline}
+
+:root{--bg:#f5f7fa;--ink:#162c44;--muted:#566577;--line:#dfe5ec;--green:#087971;--amber:#d9bc79}
+html[data-theme=dark]{--paper:#12253c;--bg:#081528;--ink:#f4f7fb;--muted:#b9c8d8;--line:#344b63;--green:#8ad9ce;--amber:#d9bc79}
+.reader-header{box-shadow:0 5px 22px #10263e0d}.reference-page h1{color:var(--ink)}
+.print-book{display:none}
+@page{size:A4;margin:16mm 17mm 22mm}
+@media print{
+html,html[data-theme=dark]{--paper:#fff;--bg:#fff;--ink:#162c44;--muted:#566577;--green:#075e58;--line:#c5cdd5;color-scheme:light}
+body{font-size:11pt;line-height:1.65}#pages{display:none!important}.print-book{display:block!important}
+.print-book .reference-page,.print-book .reference-page[hidden]{display:block!important;min-height:0!important;height:auto!important;margin:0 0 6mm;padding:0;border:0;break-after:auto!important;page-break-after:auto!important}
+.print-book .signature{display:none}.print-signature{position:fixed;bottom:-16mm;left:0;right:0;text-align:center;font-size:7pt;line-height:1.3;color:#162c44}
+.print-book h1{font-size:17pt;break-after:avoid}.print-book h2{break-after:avoid}.print-book .source-links:empty{display:none}.print-book .source-links{margin-bottom:4mm}
+.print-book .print-chapter-title{break-before:page;font-size:23pt;border-bottom:2pt solid #087971;padding-bottom:4mm}.print-book .print-chapter-title:first-child{break-before:auto}
+.print-book p{orphans:3;widows:3}.print-book .word-guide-layout{display:block}.print-book .symbol-guide{display:none}
+}
+
+.equivalents-table{width:100%;border-collapse:collapse;margin:20px 0}.equivalents-table td{border-bottom:1px solid var(--line);padding:12px;text-align:start}.equivalents-table bdi{font-family:var(--arabic-font);font-size:26px}.equivalents-table tr:nth-child(odd){background:var(--bg)}@media print{.equivalents-table tr{break-inside:avoid}.equivalents-table bdi{font-size:17pt}}

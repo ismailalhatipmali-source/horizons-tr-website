@@ -1,10 +1,44 @@
 {
   "schema": 1,
-  "path": "reference/horizons-theory-20261008-r1.html",
-  "sha256": "010007e5394527b39fc3217b1b133484e167f0fdab62e62dde114350223afc3b",
-  "bytes": 2478371,
+  "path": "reference/horizons-theory-20261008-r2.html",
+  "sha256": "d7147fd987603e886619f52d4f6382b6381f7fd6601ecad8c5a29b6637417816",
+  "bytes": 2495113,
   "languages_complete": [
     "ar"
   ],
-  "status": "first_installment"
+  "status": "first_installment",
+  "pronoun_equivalents_languages": [
+    "ar",
+    "en",
+    "tr",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "uk",
+    "pl",
+    "cs",
+    "ro",
+    "hu",
+    "el",
+    "sv",
+    "da",
+    "no",
+    "fi",
+    "bg",
+    "sr",
+    "hr",
+    "he",
+    "fa",
+    "ur",
+    "hi",
+    "bn",
+    "id",
+    "ms",
+    "zh",
+    "ja"
+  ]
 }

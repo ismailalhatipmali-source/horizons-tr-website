@@ -43,7 +43,7 @@ def build():
     names=dict(zip(languages,['English','العربية','Türkçe','Français','Español','Deutsch','Italiano','Português','Nederlands','Русский','Українська','Polski','Čeština','Română','Magyar','Ελληνικά','Svenska','Dansk','Norsk','Suomi','Български','Српски','Hrvatski','עברית','فارسی','اردو','हिन्दी','বাংলা','Bahasa Indonesia','Bahasa Melayu','中文','日本語']))
     unavailable=load('unavailable-locales.json')
     if set(unavailable)!=set(languages):raise ValueError('Missing translation notices')
-    data={'symbol_notes':load('symbol-guide-locales.json'),'fonts':load('font-manifest.json'),'theme_labels':load('theme-locales.json'),'examples':examples,'languages':languages,'language_names':names,'owner':contract['owner'],'credit':credit,'bridges':bridges,'unavailable':unavailable,'ui':ui,'chapters':chapters,'sources':load('sources.json')}
+    data={'pronoun_equivalents':load('pronoun-equivalents.json'),'symbol_notes':load('symbol-guide-locales.json'),'fonts':load('font-manifest.json'),'theme_labels':load('theme-locales.json'),'examples':examples,'languages':languages,'language_names':names,'owner':contract['owner'],'credit':credit,'bridges':bridges,'unavailable':unavailable,'ui':ui,'chapters':chapters,'sources':load('sources.json')}
     packed=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
     css=(SOURCE/'reader.css').read_text(encoding='utf-8');js=(SOURCE/'reader.js').read_text(encoding='utf-8')
     for f in data['fonts']:
