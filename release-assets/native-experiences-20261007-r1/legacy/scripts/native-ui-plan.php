@@ -40,12 +40,8 @@ function hznUiKey(string $web): string {
 /* Used after predecessor verification. Pure in-memory transformation apart from
  * reads of the fixed six files and two receipts. Tests supply synthetic valid keys.
  * No callback or command-line option skips the real predecessor checks in the CLI. */
-function hznUiPrepare(string $web, array $release, array $focus, array $trial, string $key, ?array $installed = null): array {
-    $before = hznUiSnapshot($web);
-    if ($installed !== null) foreach (HZN_UI_PATHS as $p) {
-        $raw = hznUiMatch(hznUiPath($installed['baseline_root'], $p), $installed['before'][$p], 0600);
-        $before[$p] = ['bytes' => $raw, 'sha256' => hznUiHash($raw), 'mode' => 0644];
-    } $inherited = hznUiInherited(dirname($web));
+function hznUiPrepare(string $web, array $release, array $focus, array $trial, string $key): array {
+    $before = hznUiSnapshot($web); $inherited = hznUiInherited(dirname($web));
     foreach (HZN_UI_PATHS as $p) {
         $hash = $p === 'learn/sw.js' ? ($trial['hashes'][$p] ?? '') : ($focus['hashes'][$p] ?? '');
         if ($before[$p]['sha256'] !== $hash) hznUiFail('INSTALLED_BASELINE');
@@ -62,8 +58,8 @@ function hznUiPrepare(string $web, array $release, array $focus, array $trial, s
         'learn/content/1.4.1/workbook.js.hzn' => $paid,
         'try/demo-asset-manifest.json' => hznUiManifest($before['try/demo-asset-manifest.json']['bytes'], $before['try/workbook.js']['bytes'], $demo, false),
         'learn/asset-manifest.json' => hznUiManifest($before['learn/asset-manifest.json']['bytes'], $before['learn/content/1.4.1/workbook.js.hzn']['bytes'], $paid, true, strlen($newPlain)),
-        'try/sw.js' => hznUiWorker($before['try/sw.js']['bytes'], false, $release['legacy']),
-        'learn/sw.js' => hznUiWorker($before['learn/sw.js']['bytes'], true, $release['legacy']),
+        'try/sw.js' => hznUiWorker($before['try/sw.js']['bytes'], false),
+        'learn/sw.js' => hznUiWorker($before['learn/sw.js']['bytes'], true),
     ];
     $metadata = ['manifest_sha256' => $release['manifest_sha256'], 'addon_sha256' => $release['addon_sha256'],
         'plain_before_sha256' => hznUiHash($oldPlain), 'plain_after_sha256' => hznUiHash($newPlain),
@@ -79,40 +75,4 @@ function hznUiVerifyPaid(string $web, array $state, array $release, string $key)
     if (hznUiHash($old) !== $state['metadata']['plain_before_sha256'] || hznUiHash($new) !== $state['metadata']['plain_after_sha256'] ||
         $new !== hznUiAppend($old, $release['addon'], $state['metadata']['plain_before_sha256'])) hznUiFail('PAID_PRESERVATION');
     unset($key, $old, $new);
-}
-
-/* Upgrade only after both releases and the complete installed chain are checked.
- * Prepare new ciphertext in memory BEFORE restoring the old native baseline.
- * Each six-file transaction has durable recovery. If a normal failure occurs,
- * restore the exact previously installed UI. A crash between transactions leaves
- * the verified original single reader intact; the next publish can safely retry.
- */
-function hznUiUpgrade(string $web, string $repo, array $installed, array $release,
-    array $focus, array $trial, string $key, ?callable $checkpoint = null, ?callable $verifyChain = null): void {
-    if (!$installed || $installed['journal_pending']) hznUiFail('RECOVERY_REQUIRED');
-    if (hznUiState($web, $repo) !== $installed) hznUiFail('CONCURRENT_CHANGE');
-    $oldRelease = hznUiRelease($repo, $installed['metadata']['manifest_sha256']);
-    if (!$oldRelease['legacy'] || $release['legacy']) hznUiFail('UPGRADE_VERSION');
-    hznUiVerifyPaid($web, $installed, $oldRelease, $key);
-    $plan = hznUiPrepare($web, $release, $focus, $trial, $key, $installed);
-    $previous = hznUiSnapshot($web);
-    hznUiRollback($web);
-    try {
-        hznUiPublish($web, $plan['before'], $plan['after'], $plan['inherited'], $plan['metadata'],
-            function () use ($web, $repo, $release, $key, $verifyChain): void {
-                $state = hznUiState($web, $repo); if (!$state) hznUiFail('POST_VERIFY');
-                hznUiVerifyPaid($web, $state, $release, $key);
-                if ($verifyChain) $verifyChain();
-            }, $checkpoint);
-    } catch (Throwable $error) {
-        // Never overwrite concurrent writes or an unfinished recovery journal.
-        if (file_exists(hznUiPath(dirname($web), '.horizons-native-ui/pending.json'))) throw $error;
-        $oldAfter = array_map(fn($row) => $row['bytes'], $previous);
-        hznUiPublish($web, $plan['before'], $oldAfter, $installed['inherited'], $installed['metadata'],
-            function () use ($web, $repo, $oldRelease, $key): void {
-                $state = hznUiState($web, $repo); if (!$state) hznUiFail('POST_VERIFY');
-                hznUiVerifyPaid($web, $state, $oldRelease, $key);
-            });
-        throw $error;
-    }
 }

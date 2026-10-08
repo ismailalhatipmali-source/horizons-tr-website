@@ -32,18 +32,8 @@ try {
         if ($installed && $installed['journal_pending']) hznUiFail('RECOVERY_REQUIRED');
         [$focus, $trial] = hznUiChain($web); $key = hznUiKey($web);
         if ($installed) {
-            $installedRelease = hznUiRelease($repo, $installed['metadata']['manifest_sha256']);
-            hznUiVerifyPaid($web, $installed, $installedRelease, $key);
-            if ($installedRelease['legacy'] && !$release['legacy']) {
-                hznUiPrepare($web, $release, $focus, $trial, $key, $installed);
-                if ($action === '--check') {
-                    echo "READY: single-reader upgrade verified in memory; no writes.\n";
-                } else {
-                    hznUiUpgrade($web, $repo, $installed, $release, $focus, $trial, $key, null, fn() => hznUiChain($web));
-                    hznUiChain($web);
-                    echo "PUBLISHED: original single-reader layout, light/dark toggle and locked upcoming sections; six files verified.\n";
-                }
-            } else echo "CURRENT: encrypted player, six UI files, media projections and predecessor chain verified; no writes.\n";
+            hznUiVerifyPaid($web, $installed, $release, $key);
+            echo "CURRENT: encrypted player, six UI files, media projections and predecessor chain verified; no writes.\n";
         } else {
             $plan = hznUiPrepare($web, $release, $focus, $trial, $key);
             if ($action === '--check') {
