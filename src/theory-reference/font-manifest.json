@@ -1,0 +1,32 @@
+[
+  {
+    "id": "noto-naskh",
+    "name": "Noto Naskh Arabic",
+    "file": "NotoNaskhArabic-Regular.ttf",
+    "sha256": "c9a039ce48a477243c1eb7d561b13de115cfd651d8a83fa42e2f4d63c2e11b00"
+  },
+  {
+    "id": "amiri",
+    "name": "Amiri",
+    "file": "Amiri-Regular.ttf",
+    "sha256": "72b2702e947f423f5e553224d4bb6f5e32bfbda230a42cad2830b052de24245f"
+  },
+  {
+    "id": "scheherazade",
+    "name": "Scheherazade",
+    "file": "Scheherazade-Regular.ttf",
+    "sha256": "034c3ed203ccf91e20a75181350759cc5878e0e369bb0e2e83acee15a829184f"
+  },
+  {
+    "id": "noto-sans",
+    "name": "Noto Sans Arabic",
+    "file": "NotoSansArabic-Regular.ttf",
+    "sha256": "d6efa4c9fac8ecefd2de19676acc3a396ba7aee99ba7a2d513950246841b6725"
+  },
+  {
+    "id": "noto-kufi",
+    "name": "Noto Kufi Arabic",
+    "file": "NotoKufiArabic-Regular.ttf",
+    "sha256": "e07e440b4310bc6081992f9dacedc8f69700b5682281b8062aae4d392798cf35"
+  }
+]

@@ -38,7 +38,15 @@ run('single_reader_patch_accepts_exact_previous_receipt',function()use($ROOT,$CU
     try{$f=legacyFixture();}finally{$LEGACY=$original;}
     hznUiVerifyPaid($f['web'],$f['installed'],$PREVIOUS,$f['key']);upgrade($f);
     $s=hznUiState($f['web'],$ROOT);hznUiVerifyPaid($f['web'],$s,$CURRENT,$f['key']);sentinels($f);
-    check(str_contains(hznUiRead($f['web'].'/try/sw.js',0644),'single-20261008-r2'));
+    check(str_contains(hznUiRead($f['web'].'/try/sw.js',0644),'compact-20261008-r1'));
+});
+$BASE = hznUiRelease($ROOT,'d75e21f21c2080dfc051d02405f630368f918685b9b710a2149796e9d4557f0e');
+run('compact_upgrade_accepts_exact_current_live_receipt',function()use($ROOT,$CURRENT,$BASE){
+ global $LEGACY;$saved=$LEGACY;$LEGACY=$BASE;try{$f=legacyFixture();}finally{$LEGACY=$saved;}
+ hznUiVerifyPaid($f['web'],$f['installed'],$BASE,$f['key']);upgrade($f);
+ $state=hznUiState($f['web'],$ROOT);hznUiVerifyPaid($f['web'],$state,$CURRENT,$f['key']);sentinels($f);
+ check(hznUiRead($f['web'].'/try/workbook.js',0644)===$f['demo'].$CURRENT['addon']);
+ check(str_contains($CURRENT['addon'],'HZN_REFERENCE_ROUTES'));
 });
 for($i=0;$i<=6;$i++)run('upgrade_failure_'.$i.'_restores_previous_published_ui',function()use($i,$ROOT,$LEGACY){
     $f=legacyFixture();rejects(fn()=>upgrade($f,function($n)use($i){if($n===$i)throw new RuntimeException('TEST_UPGRADE_FAILURE');}),'TEST_UPGRADE_FAILURE');

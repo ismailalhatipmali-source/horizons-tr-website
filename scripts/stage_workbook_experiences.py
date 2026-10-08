@@ -18,7 +18,7 @@ from urllib.parse import quote
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'src/workbook-experiences'
 MARKER='/*HZN_NATIVE_EXPERIENCES_BEGIN*/'
-SOURCES=('native-experiences.js','native-experiences.css','native-shadow.css','native-locales.json','native-art.json','native-visibility.css')
+SOURCES=('native-experiences.js','native-experiences.css','native-shadow.css','native-locales.json','native-art.json','native-visibility.css','compact-home.js','compact-home.css')
 LANGS=set('en ar tr fr es de it pt nl ru uk pl cs ro hu el sv da no fi bg sr hr he fa ur hi bn id ms zh ja'.split())
 def digest(raw:bytes)->str: return hashlib.sha256(raw).hexdigest()
 def assets(source:Path=SOURCE)->tuple[dict,dict]:
@@ -39,7 +39,7 @@ def assets(source:Path=SOURCE)->tuple[dict,dict]:
     for svg in art.values():
         if not svg.lstrip().startswith('<svg ') or re.search(r'<(?:script|foreignObject)|\bon\w+\s*=|(?:href|src)\s*=\s*["\'](?!#)|url\(\s*["\']?https?:',svg,re.I):
             raise ValueError('Unsafe artwork')
-    css=blobs['native-experiences.css'].decode('utf-8')+'\n'+blobs['native-visibility.css'].decode('utf-8')
+    css=blobs['native-experiences.css'].decode('utf-8')+'\n'+blobs['native-visibility.css'].decode('utf-8')+'\n'+blobs['compact-home.css'].decode('utf-8')
     variables='body[data-hzn-experiences-ready]{'+''.join('--hzn-approved-'+k+':url("data:image/svg+xml,'+quote(v,safe='')+'");' for k,v in art.items())+'}\n'
     payload={'css':variables+css,'shadow':blobs['native-shadow.css'].decode('utf-8'),'locales':locales}
     hashes={name:digest(blob) for name,blob in blobs.items()}
@@ -57,7 +57,7 @@ def build(original:bytes,expected:str,source:Path=SOURCE)->tuple[bytes,dict]:
     payload,hashes=assets(source)
     encoded=json.dumps(payload,ensure_ascii=True,separators=(',',':')).replace('<','\\u003c')
     script=(source/'native-experiences.js').read_text()
-    addition=('\n;'+MARKER+'\n'+script+'\n;HZNInstallExperiences(window,document,'+encoded+');\n/*HZN_NATIVE_EXPERIENCES_END*/\n').encode()
+    addition=('\n;'+MARKER+'\n'+script+'\n;HZNInstallExperiences(window,document,'+encoded+');\n'+(source/'compact-home.js').read_text(encoding='utf-8')+'\n;HZNInstallCompactHome(window,document);\n/*HZN_NATIVE_EXPERIENCES_END*/\n').encode()
     result=original+addition
     report={'kind':'private-native-staging','version':'0.3.1','input_sha256':expected,'output_sha256':digest(result),
         'original_bytes_preserved':result[:len(original)]==original,'source_sha256':hashes,'languages':sorted(LANGS),

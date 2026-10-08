@@ -44,7 +44,7 @@ CODE = ['scripts/native-ui-publication.php', 'scripts/native-ui-state.php',
         'release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-state.php',
         'release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-plan.php',
         'release-assets/native-experiences-20261007-r1/previous-single/scripts/deploy-native-ui.php',
-        'release-assets/native-experiences-20261007-r1/previous-single/src/workbook-experiences/native-experiences.css']
+        'release-assets/native-experiences-20261007-r1/previous-single/src/workbook-experiences/native-experiences.css', 'scripts/deploy-theory-reference.php', 'release-assets/theory-reference-20261008-r1/manifest.json']
 PATHS = ['try/workbook.js', 'learn/content/1.4.1/workbook.js.hzn',
          'try/demo-asset-manifest.json', 'learn/asset-manifest.json', 'try/sw.js', 'learn/sw.js']
 def digest(raw: bytes) -> str:
@@ -52,7 +52,7 @@ def digest(raw: bytes) -> str:
 def main() -> None:
     sources = {p: digest((ROOT / 'src/workbook-experiences' / p).read_bytes()) for p in SOURCES}
     command = ['php', '-r', 'require $argv[1]; echo hznUiAddon($argv[2], json_decode($argv[3], true, 32, JSON_THROW_ON_ERROR));',
-               str(ROOT / CODE[0]), str(ROOT), json.dumps(sources)]
+               str(ROOT / CODE[0]), (ROOT.as_posix()[2:] if ROOT.drive else str(ROOT)), json.dumps(sources)]
     addon = subprocess.run(command, check=True, capture_output=True, timeout=20).stdout
     # Check the actual compiled JavaScript, not a reconstructed stand-in.
     subprocess.run(['node', '--check', '-'], input=addon, check=True, capture_output=True, timeout=20)
