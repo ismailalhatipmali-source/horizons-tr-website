@@ -90,6 +90,7 @@ function hznUiVerifyPaid(string $web, array $state, array $release, string $key)
 function hznUiUpgrade(string $web, string $repo, array $installed, array $release,
     array $focus, array $trial, string $key, ?callable $checkpoint = null, ?callable $verifyChain = null): void {
     if (!$installed || $installed['journal_pending']) hznUiFail('RECOVERY_REQUIRED');
+    if (hznUiState($web, $repo) !== $installed) hznUiFail('CONCURRENT_CHANGE');
     $oldRelease = hznUiRelease($repo, $installed['metadata']['manifest_sha256']);
     if (!$oldRelease['legacy'] || $release['legacy']) hznUiFail('UPGRADE_VERSION');
     hznUiVerifyPaid($web, $installed, $oldRelease, $key);

@@ -21,7 +21,7 @@
   "code": {
     "scripts/native-ui-publication.php": "8c092e5b79a2d155a69a1471d2acb59f55b80fdf40c86510086ecf505fc3e238",
     "scripts/native-ui-state.php": "8a34641156121aa773f9c470ca187f777e117d6f1c0d5e470818263c2db0fedc",
-    "scripts/native-ui-plan.php": "8f02c276b4d06f5bc4950bc45254a1649739fb70f4221a7f36fbb619821b3120",
+    "scripts/native-ui-plan.php": "1a78c83e2dceb626c15acc5fe9aa3e0f4da81a10da35b2e13715d302541100c0",
     "scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
     "scripts/workbook-focus-preservation.php": "787066850afe6f07091804a1e04b9b08d44b9f98c945ac56789de2b250fba097",
     "scripts/trial-pause-preservation.php": "f1cbf09db0d46fccd2170d1a2647ee478629f40d15bcf7ff3d47b6b3190a93d3",
