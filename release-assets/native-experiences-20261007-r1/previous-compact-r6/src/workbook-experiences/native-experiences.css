@@ -154,6 +154,3 @@ body[data-hzn-experiences-ready] #activity :is(.letter-card,.blending2-choices b
 @media(max-width:760px){body[data-hzn-experiences-ready] .lesson-heading{gap:8px;flex-wrap:wrap}body[data-hzn-experiences-ready] .lesson-heading .progress-box{flex:1 1 100%;width:100%;max-width:none}body[data-hzn-experiences-ready] .lesson-heading .hzn-back-lessons{flex:0 1 auto}body[data-hzn-experiences-ready] #stages{margin-bottom:24px}}
 @media(prefers-reduced-motion:reduce){body[data-hzn-experiences-ready] #activity :is(.letter-card,.blending2-choices button,.word-tab,.vocab-strip button,.form-tabs button){transition:none;transform:none}}
 }
-
-/* Reader uses the available desktop space instead of the shell dialog cap. */
-body[data-hzn-experiences-ready] dialog.hzn-reference-dialog{width:min(1100px,calc(100vw - 24px));max-width:calc(100vw - 24px);height:calc(100dvh - 24px);max-height:calc(100dvh - 24px);box-sizing:border-box}

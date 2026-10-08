@@ -38,7 +38,7 @@ run('single_reader_patch_accepts_exact_previous_receipt',function()use($ROOT,$CU
     try{$f=legacyFixture();}finally{$LEGACY=$original;}
     hznUiVerifyPaid($f['web'],$f['installed'],$PREVIOUS,$f['key']);upgrade($f);
     $s=hznUiState($f['web'],$ROOT);hznUiVerifyPaid($f['web'],$s,$CURRENT,$f['key']);sentinels($f);
-    check(str_contains(hznUiRead($f['web'].'/try/sw.js',0644),'compact-20261008-r6'));
+    check(str_contains(hznUiRead($f['web'].'/try/sw.js',0644),'compact-20261008-r7'));
 });
 $BASE = hznUiRelease($ROOT,'d75e21f21c2080dfc051d02405f630368f918685b9b710a2149796e9d4557f0e');
 run('compact_upgrade_accepts_exact_current_live_receipt',function()use($ROOT,$CURRENT,$BASE){
@@ -48,7 +48,7 @@ run('compact_upgrade_accepts_exact_current_live_receipt',function()use($ROOT,$CU
  check(hznUiRead($f['web'].'/try/workbook.js',0644)===$f['demo'].$CURRENT['addon']);
  check(str_contains($CURRENT['addon'],'HZN_REFERENCE_ROUTES'));
 });
-$COMPACT=hznUiRelease($ROOT,'de3e5d519e999a254ff94d2874127f96ab2df1f67386db77558325787b8af36c');
+$COMPACT=hznUiRelease($ROOT,'95f84e1b89b8d077445254a9812510e2bd830ef75ab2c875bee2d62e6664dc51');
 run('identity_upgrade_accepts_current_compact_receipt',function()use($ROOT,$CURRENT,$COMPACT){
  global $LEGACY;$saved=$LEGACY;$LEGACY=$COMPACT;try{$f=legacyFixture();}finally{$LEGACY=$saved;}
  hznUiVerifyPaid($f['web'],$f['installed'],$COMPACT,$f['key']);upgrade($f);
