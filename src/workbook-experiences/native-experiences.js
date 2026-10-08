@@ -221,7 +221,8 @@
       if(url.origin===win.location.origin){
        const draft=copy.theory;
        theory.disabled=false;theory.title=draft;theory.setAttribute('aria-label',copy.theory+' — '+title);status.remove();
-       theory.onclick=()=>{
+       theory.onclick=(event)=>{
+        event.stopPropagation();
         url.searchParams.set('lang',doc.documentElement.lang);
         const dialog=doc.createElement('dialog');dialog.className='hzn-reference-dialog';dialog.setAttribute('aria-label',copy.theory+' — '+title);
         const close=doc.createElement('button');close.type='button';close.textContent=copy.close;close.onclick=()=>dialog.close();

@@ -54,15 +54,6 @@ function hznUiRelease(string $repo, ?string $requested = null): array {
         if (!hash_equals($r['addon_sha256'],hznUiHash($addon))) hznUiFail('ARCHIVE_ADDON');
         $r['manifest_sha256']=$requested;$r['addon']=$addon;$r['legacy']=true;$r['worker_legacy']=false;$r['worker_single']=$compact?'compact-20261008-r1':'single-20261008-r2';return $r;
     }
-    if ($requested === 'b785b8b572f7081418747c42747384ead3ead95c0e6d6d791ad7b65d09b7a1a1') {
-        $archive=hznUiPath($base,'previous-compact-r2');$raw=hznUiRead($archive.'/manifest.json',null,32768);
-        if(!hash_equals($requested,hznUiHash($raw)))hznUiFail('ARCHIVE_HASH');
-        $r=json_decode($raw,true,32,JSON_THROW_ON_ERROR);
-        if(($r['schema']??null)!==1||($r['release']??'')!==HZN_UI_RELEASE||($r['paths']??[])!==HZN_UI_PATHS||array_keys($r['sources']??[])!==HZN_UI_SOURCES||array_keys($r['code']??[])!==HZN_UI_CODE)hznUiFail('ARCHIVE_RELEASE');
-        foreach($r['code'] as $p=>$sha)if(!hznUiSha($sha)||!hash_equals($sha,hznUiHash(hznUiRead(hznUiPath($archive,$p),null,1048576))))hznUiFail('ARCHIVE_CODE');
-        $addon=hznUiAddon($archive,$r['sources']);if(!hash_equals($r['addon_sha256'],hznUiHash($addon)))hznUiFail('ARCHIVE_ADDON');
-        $r['manifest_sha256']=$requested;$r['addon']=$addon;$r['legacy']=true;$r['worker_legacy']=false;$r['worker_single']='compact-20261008-r2';return $r;
-    }
     $legacy = $requested === '061270ae375f730ba2ccc462ce671b079dc371990466f6983ff234108e2c852e';
     $previous = $requested === '4c1b2686533ef6a5808c69baba4fdfe17c6ac17cd66dffcdc01a8331d2f8e570';
     $source = $legacy ? hznUiPath($base, 'legacy') : $repo;
@@ -83,7 +74,7 @@ function hznUiRelease(string $repo, ?string $requested = null): array {
     if($previous){foreach(HZN_UI_SOURCES as $name)$overrides[$name]='release-assets/native-experiences-20261007-r1/previous-compact-base/src/workbook-experiences/'.$name;$overrides['native-experiences.css']='release-assets/native-experiences-20261007-r1/previous-single/src/workbook-experiences/native-experiences.css';}
     $addon = hznUiAddon($source, $r['sources'], $overrides);
     if (!hash_equals($r['addon_sha256'], hznUiHash($addon))) hznUiFail('ADDON_HASH');
-    $r['manifest_sha256'] = $pin; $r['addon'] = $addon; $r['legacy'] = $legacy || $previous; $r['worker_legacy'] = $legacy; $r['worker_single'] = $previous ? 'single-20261008-r1' : 'compact-20261008-r3'; return $r;
+    $r['manifest_sha256'] = $pin; $r['addon'] = $addon; $r['legacy'] = $legacy || $previous; $r['worker_legacy'] = $legacy; $r['worker_single'] = $previous ? 'single-20261008-r1' : 'compact-20261008-r2'; return $r;
 }
 function hznUiMetadata(array $m, array $release): void {
     if (array_keys($m) !== ['manifest_sha256', 'addon_sha256', 'plain_before_sha256', 'plain_after_sha256',

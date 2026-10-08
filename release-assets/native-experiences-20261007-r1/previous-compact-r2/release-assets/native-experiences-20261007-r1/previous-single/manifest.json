@@ -11,17 +11,17 @@
     "learn/sw.js"
   ],
   "sources": {
-    "native-experiences.js": "6b18f61f457b4e30ec6aa5f6cd28b2cb29276a512f8ea5cb71b476a384545f6b",
-    "native-experiences.css": "3b3013558e976e4d6e7f64472d77b92521050a9422c25c0e3c07ea5e42b2aa4a",
+    "native-experiences.js": "281ca65e4fa8f2b350626ea65c2dac8ebf4b5e73954e718edf7207556118aae3",
+    "native-experiences.css": "1c06c1006ba8f2b5cd5b9a533bc689ba9624abec26e9bc8c00ab24d1533bac7f",
     "native-shadow.css": "6566766e3a5c182d0dbfbe02d7b96e5ec6f8b07cc009f01fb804ec5f174a6121",
     "native-locales.json": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
     "native-art.json": "1118859c33fc3ae0b71ec6813004abe496a560dde86fb714eea1e300afbd860d",
     "native-visibility.css": "ea9659f0910c3033412d4514fbd7641c9b2e1bb46914502b934ef2ea984d0b7b"
   },
   "code": {
-    "scripts/native-ui-publication.php": "3934e2d2c8f337bea901af8e9eb522ca9b7c3714e64471558a55548e33cbd3f9",
-    "scripts/native-ui-state.php": "c068ce6e69ac419a72ef1554dc30f003647f25f4d3d254567984ff12625a6542",
-    "scripts/native-ui-plan.php": "5578419aa47656993fc83e5ac0c7fc70c13ea279fefaf36c789e2a6f6ed2b5a2",
+    "scripts/native-ui-publication.php": "8c092e5b79a2d155a69a1471d2acb59f55b80fdf40c86510086ecf505fc3e238",
+    "scripts/native-ui-state.php": "8a34641156121aa773f9c470ca187f777e117d6f1c0d5e470818263c2db0fedc",
+    "scripts/native-ui-plan.php": "1a78c83e2dceb626c15acc5fe9aa3e0f4da81a10da35b2e13715d302541100c0",
     "scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
     "scripts/workbook-focus-preservation.php": "787066850afe6f07091804a1e04b9b08d44b9f98c945ac56789de2b250fba097",
     "scripts/trial-pause-preservation.php": "f1cbf09db0d46fccd2170d1a2647ee478629f40d15bcf7ff3d47b6b3190a93d3",
@@ -53,16 +53,8 @@
     "release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-shadow.css": "0dac65f850ac32cc410ec31d4d398a29a6491013db25b3828a576ac0847ab57b",
     "release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-locales.json": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
     "release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-art.json": "1118859c33fc3ae0b71ec6813004abe496a560dde86fb714eea1e300afbd860d",
-    "release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-visibility.css": "ea9659f0910c3033412d4514fbd7641c9b2e1bb46914502b934ef2ea984d0b7b",
-    "release-assets/native-experiences-20261007-r1/previous-single/manifest.json": "4c1b2686533ef6a5808c69baba4fdfe17c6ac17cd66dffcdc01a8331d2f8e570",
-    "release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-publication.php": "8c092e5b79a2d155a69a1471d2acb59f55b80fdf40c86510086ecf505fc3e238",
-    "release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-state.php": "8a34641156121aa773f9c470ca187f777e117d6f1c0d5e470818263c2db0fedc",
-    "release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-plan.php": "1a78c83e2dceb626c15acc5fe9aa3e0f4da81a10da35b2e13715d302541100c0",
-    "release-assets/native-experiences-20261007-r1/previous-single/scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
-    "release-assets/native-experiences-20261007-r1/previous-single/src/workbook-experiences/native-experiences.css": "1c06c1006ba8f2b5cd5b9a533bc689ba9624abec26e9bc8c00ab24d1533bac7f",
-    "scripts/deploy-theory-reference.php": "18b9f14d20974f2782b38a61d1f79b061cc3eac31af9ef023f5246612136941a",
-    "release-assets/theory-reference-20261008-r1/manifest.json": "7d963a3a3a9efb16f01857776b226182089762d61542710acc048e0560d4c7f8"
+    "release-assets/native-experiences-20261007-r1/legacy/src/workbook-experiences/native-visibility.css": "ea9659f0910c3033412d4514fbd7641c9b2e1bb46914502b934ef2ea984d0b7b"
   },
-  "addon_sha256": "2aecae6bed22481765675fc1eb182e2d5a185bc2d4e07270355554797dc94b3f",
-  "addon_bytes": 82683
+  "addon_sha256": "18ae66e724887a254886ace0805498378a6d905dd995ac64063f4003e51fea29",
+  "addon_bytes": 61157
 }
