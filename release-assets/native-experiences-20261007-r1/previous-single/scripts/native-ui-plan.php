@@ -62,8 +62,8 @@ function hznUiPrepare(string $web, array $release, array $focus, array $trial, s
         'learn/content/1.4.1/workbook.js.hzn' => $paid,
         'try/demo-asset-manifest.json' => hznUiManifest($before['try/demo-asset-manifest.json']['bytes'], $before['try/workbook.js']['bytes'], $demo, false),
         'learn/asset-manifest.json' => hznUiManifest($before['learn/asset-manifest.json']['bytes'], $before['learn/content/1.4.1/workbook.js.hzn']['bytes'], $paid, true, strlen($newPlain)),
-        'try/sw.js' => hznUiWorker($before['try/sw.js']['bytes'], false, $release['worker_legacy'], $release['worker_single']),
-        'learn/sw.js' => hznUiWorker($before['learn/sw.js']['bytes'], true, $release['worker_legacy'], $release['worker_single']),
+        'try/sw.js' => hznUiWorker($before['try/sw.js']['bytes'], false, $release['legacy']),
+        'learn/sw.js' => hznUiWorker($before['learn/sw.js']['bytes'], true, $release['legacy']),
     ];
     $metadata = ['manifest_sha256' => $release['manifest_sha256'], 'addon_sha256' => $release['addon_sha256'],
         'plain_before_sha256' => hznUiHash($oldPlain), 'plain_after_sha256' => hznUiHash($newPlain),
