@@ -12,7 +12,7 @@
   ],
   "sources": {
     "native-experiences.js": "6b18f61f457b4e30ec6aa5f6cd28b2cb29276a512f8ea5cb71b476a384545f6b",
-    "native-experiences.css": "99f0ba3ba468a732986064662bff890cfc002bb6e970fcde1558ad535c2b9c2f",
+    "native-experiences.css": "3b3013558e976e4d6e7f64472d77b92521050a9422c25c0e3c07ea5e42b2aa4a",
     "native-shadow.css": "6566766e3a5c182d0dbfbe02d7b96e5ec6f8b07cc009f01fb804ec5f174a6121",
     "native-locales.json": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
     "native-art.json": "1118859c33fc3ae0b71ec6813004abe496a560dde86fb714eea1e300afbd860d",
@@ -63,6 +63,6 @@
     "scripts/deploy-theory-reference.php": "18b9f14d20974f2782b38a61d1f79b061cc3eac31af9ef023f5246612136941a",
     "release-assets/theory-reference-20261008-r1/manifest.json": "7d963a3a3a9efb16f01857776b226182089762d61542710acc048e0560d4c7f8"
   },
-  "addon_sha256": "1f7fe835b6cdf08dee85f45c14e1de1b6afa9dc93e4b418f7b72e8f4c628ab29",
-  "addon_bytes": 82182
+  "addon_sha256": "2aecae6bed22481765675fc1eb182e2d5a185bc2d4e07270355554797dc94b3f",
+  "addon_bytes": 82683
 }

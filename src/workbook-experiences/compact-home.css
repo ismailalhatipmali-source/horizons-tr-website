@@ -55,4 +55,7 @@ body[data-hzn-experiences-ready] #hzn-home .hzn-home-welcome h1,body[data-hzn-ex
 body[data-hzn-experiences-ready] #hzn-home-hint{opacity:.9}
 body[data-hzn-experiences-ready] .hzn-card-title{display:flex;gap:10px;align-items:center}
 body[data-hzn-experiences-ready] #hzn-exp-future[hidden]{display:none!important}
+body[data-hzn-experiences-ready] #hzn-home-nav #course-nav :is(.hzn-access-status,.hzn-theory-status){background:transparent!important;color:var(--hx-muted)!important;opacity:1!important;font-size:12px;padding:0;border:0}
+body[data-hzn-experiences-ready] .hzn-home-welcome{background:linear-gradient(120deg,#071c3c,#0b3348);color:#fff;border-inline-start:3px solid #d9bc79}
+body[data-hzn-experiences-ready] #hzn-home .hzn-home-welcome h1,body[data-hzn-experiences-ready] #hzn-home-hint{color:#fff}
 }
