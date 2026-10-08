@@ -11,16 +11,16 @@
     "learn/sw.js"
   ],
   "sources": {
-    "native-experiences.js": "de237996f8bce86d0cf0ebc21050772999d404540c7952809edc499bf19fe3c1",
-    "native-experiences.css": "ff8c05ac7db947228622a6007fbdaa7cf663a5caf69326c50be96375dbb94258",
-    "native-shadow.css": "a917c7b42f8aa918d1b640f30ff37a80dc95d828619ec0383910b90e5c45bc8c",
+    "native-experiences.js": "a7635953b218725a5194fef462881fccfc5bbcd00a1a0ef40e1351551db2eb0e",
+    "native-experiences.css": "d90c5cd17d4c883362cc07e779c0ec01bcd23172429e2c735203d246bef2dd18",
+    "native-shadow.css": "d4013a95d18aa2552cfdcab077b9cd4167682592bab135da38fe323ac6392080",
     "native-locales.json": "9090a52b2dd5357616a0aba928ba9e4d6551d2121e395c3aab006e83bb0d9685",
     "native-art.json": "1118859c33fc3ae0b71ec6813004abe496a560dde86fb714eea1e300afbd860d",
     "native-visibility.css": "ea9659f0910c3033412d4514fbd7641c9b2e1bb46914502b934ef2ea984d0b7b"
   },
   "code": {
-    "scripts/native-ui-publication.php": "e35d469cf5fb2e7bc972d27c6a41a90d16bb7ba2432971b161fef01863353895",
-    "scripts/native-ui-state.php": "fe570281b43dcd25154dad9991f05918a4a82f1858636f9a84bd47cac841e417",
+    "scripts/native-ui-publication.php": "d0d0a8bab5a738dd3c59d05fb67cdf49db0ff6f58f0134366dffc0b90d84e130",
+    "scripts/native-ui-state.php": "10b0d03da291338ee31b37867a9a185fbdd08d8e0e8e2ffae3f63156af181757",
     "scripts/native-ui-plan.php": "5578419aa47656993fc83e5ac0c7fc70c13ea279fefaf36c789e2a6f6ed2b5a2",
     "scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
     "scripts/workbook-focus-preservation.php": "787066850afe6f07091804a1e04b9b08d44b9f98c945ac56789de2b250fba097",
@@ -60,9 +60,9 @@
     "release-assets/native-experiences-20261007-r1/previous-single/scripts/native-ui-plan.php": "1a78c83e2dceb626c15acc5fe9aa3e0f4da81a10da35b2e13715d302541100c0",
     "release-assets/native-experiences-20261007-r1/previous-single/scripts/deploy-native-ui.php": "9224ff61f3278f149d6cb0caeebb82264489bacb8a1fa05522e4797d028fd1cb",
     "release-assets/native-experiences-20261007-r1/previous-single/src/workbook-experiences/native-experiences.css": "1c06c1006ba8f2b5cd5b9a533bc689ba9624abec26e9bc8c00ab24d1533bac7f",
-    "scripts/deploy-theory-reference.php": "9fa323e8808dd2e55e989e92c8b302601e053d4c537bbc575e63b7b7b7b7c6c5",
-    "release-assets/theory-reference-20261008-r1/manifest.json": "38e2b6d48c4dba7d353c70f726c70b13cec93ec130aea4b64096d644b1074391"
+    "scripts/deploy-theory-reference.php": "18b9f14d20974f2782b38a61d1f79b061cc3eac31af9ef023f5246612136941a",
+    "release-assets/theory-reference-20261008-r1/manifest.json": "7d963a3a3a9efb16f01857776b226182089762d61542710acc048e0560d4c7f8"
   },
-  "addon_sha256": "5a92ba85f9dbdbacbcba25e2394a2fb81ff3a7403d04323429477a95acc5c922",
-  "addon_bytes": 95282
+  "addon_sha256": "01000ceceb4854c2cbb51d6db3cbc474108cf63fe41a2c1d18a400c5ee17edbd",
+  "addon_bytes": 92146
 }
