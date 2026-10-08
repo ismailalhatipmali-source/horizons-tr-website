@@ -59,10 +59,14 @@
  }
  function applyFont(){const f=data.fonts.find(f=>f.id===fontId);document.documentElement.style.setProperty('--arabic-font','"HZN '+f.name+'",serif');}
  function applyTheme(){document.documentElement.dataset.theme=dark?'dark':'light';q('#theme').textContent=dark?'☀':'☾';q('#theme').setAttribute('aria-pressed',String(dark));q('#theme').setAttribute('aria-label',data.theme_labels[lang]);q('#theme').title=data.theme_labels[lang];}
+ function pronounPage(){
+  const row=data.pronoun_equivalents[lang];
+  return {title:'أَنَا · '+row.terms[0],paragraphs:[row.note],equivalents:row.terms,source_ids:[]};
+ }
  function available(){
-  if(lang==='ar')return data.chapters;
-  const items=[{id:'thaa',title:data.bridges[lang].title,pages:[{title:data.bridges[lang].title,paragraphs:[data.bridges[lang].text],source_ids:['ipa','basrah','unicode'],demo:'ث — ثـ — ـثـ — ـث\nثَ — ثُ — ثِ\nثَا — ثُو — ثِي'}]}];
-  if(chapter!=='thaa'&&data.chapters.some(c=>c.id===chapter))items.unshift({id:chapter,title:data.unavailable[lang],pages:[{title:data.unavailable[lang],paragraphs:[],source_ids:[]}]});
+  if(lang==='ar')return data.chapters.map(c=>c.id==='pronouns'?{...c,pages:[pronounPage(),...c.pages]}:c);
+  const items=[{id:'pronouns',title:'07 · '+data.pronoun_equivalents[lang].terms.join(' · '),pages:[pronounPage()]},{id:'thaa',title:data.bridges[lang].title,pages:[{title:data.bridges[lang].title,paragraphs:[data.bridges[lang].text],source_ids:['ipa','basrah','unicode'],demo:'ث — ثـ — ـثـ — ـث\nثَ — ثُ — ثِ\nثَا — ثُو — ثِي'}]}];
+  if(chapter!=='thaa'&&chapter!=='pronouns'&&data.chapters.some(c=>c.id===chapter))items.unshift({id:chapter,title:data.unavailable[lang],pages:[{title:data.unavailable[lang],paragraphs:[],source_ids:[]}]});
   return items;
  }
  function quizPage(){
@@ -83,6 +87,9 @@
    const page=create('article',undefined,'reference-page');page.append(create('h1',item.title));
    const prose=create('div',undefined,'prose');
    for(const text of item.paragraphs||[]){const p=create('p');bidiText(p,text);prose.append(p);}
+   if(item.equivalents){const table=create('table',undefined,'equivalents-table');
+    const words=['أَنَا','أَنْتَ','أَنْتِ','نَحْنُ','هُوَ','هِيَ'];const sounds=['ʔanaː','ʔanta','ʔanti','naħnu','huwa','hija'];
+    words.forEach((word,i)=>{const row=create('tr'),a=create('td'),b=create('td'),c=create('td');const arabic=create('bdi',word);arabic.lang='ar';arabic.dir='rtl';a.append(arabic);b.textContent=item.equivalents[i];b.lang=lang;c.textContent='/'+sounds[i]+'/';c.dir='ltr';row.append(a,b,c);table.append(row);});prose.append(table);}
    for(const itemProfile of item.profiles||[]){const part=create('section',undefined,'profile');part.append(create('h2',itemProfile.letter+' /'+itemProfile.ipa+'/'));part.append(create('p',itemProfile.note));const e=create('p',itemProfile.examples.join(' — '));e.lang='ar';e.dir='rtl';part.append(e);prose.append(part);}
    if((item.paragraphs||[]).some(text=>text.includes('/'))){const body=create('div',undefined,'word-guide-layout');body.append(prose,symbolGuide());page.append(body);}else page.append(prose);
    for(const box of item.callouts||[]){const aside=create('aside',undefined,'teaching-note');aside.append(create('strong',box.label),create('p',box.text));page.append(aside);}
@@ -100,6 +107,26 @@
  data.languages.forEach(code=>{const o=create('option',data.language_names[code]);o.value=code;q('#language').append(o);});q('#language').value=lang;
  q('#language').onchange=()=>{lang=q('#language').value;index=0;render();};q('#chapter').onchange=()=>{chapter=q('#chapter').value;index=0;render();};
  q('#previous').onclick=()=>{index=Math.max(0,index-1);show();window.scrollTo(0,0);};q('#next').onclick=()=>{index++;show();window.scrollTo(0,0);};q('#all').onclick=()=>{all=!all;show();};q('#print').onclick=()=>window.print();
+ function preparePrintBook(){
+  q('.print-book')?.remove();
+  const container=create('main',undefined,'print-book');
+  const saved={chapter,index,all};
+  for(const unit of available()){
+   chapter=unit.id;index=0;all=true;render();
+   container.append(create('h1',unit.title,'print-chapter-title'));
+   for(const page of [...q('#pages').children]){
+    const cloned=page.cloneNode(true);cloned.hidden=false;
+    if(cloned.querySelector('.source-item'))continue;
+    container.append(cloned);
+   }
+  }
+  chapter=saved.chapter;index=saved.index;all=saved.all;render();
+  const signature=create('div',undefined,'print-signature');
+  signature.append(create('div',data.credit[lang]),create('div',data.owner.name_ar+' — '+data.owner.name_latin+' · '+data.owner.contact_email));
+  container.append(signature);document.body.append(container);
+ }
+ window.addEventListener('beforeprint',preparePrintBook);
+ window.addEventListener('afterprint',()=>q('.print-book')?.remove());
  data.fonts.forEach(f=>{const o=create('option',f.name);o.value=f.id;q('#arabic-font').append(o);});q('#arabic-font').value=fontId;q('#arabic-font').onchange=()=>{fontId=q('#arabic-font').value;applyFont();};
  q('#theme').onclick=()=>{dark=!dark;applyTheme();};
  render();

@@ -11,7 +11,7 @@ try {
  if(trim(hznUiRead($repo.'/.git/HEAD',null,256))!=='ref: refs/heads/main')hznUiFail('REFERENCE_BRANCH');
  hznUiRelease($repo);
  $m=json_decode(hznUiRead($repo.'/release-assets/theory-reference-20261008-r1/manifest.json',null,4096),true,32,JSON_THROW_ON_ERROR);
- if(($m['schema']??null)!==1 || ($m['path']??null)!=='reference/horizons-theory-20261008-r1.html'||!hznUiSha($m['sha256']??null))hznUiFail('REFERENCE_MANIFEST');
+ if(($m['schema']??null)!==1 || ($m['path']??null)!=='reference/horizons-theory-20261008-r2.html'||!hznUiSha($m['sha256']??null))hznUiFail('REFERENCE_MANIFEST');
  $raw=hznUiRead($repo.'/release-assets/theory-reference-20261008-r1/reference.html',null,16777216);
  if(strlen($raw)!==$m['bytes']||!hash_equals($m['sha256'],hznUiHash($raw)))hznUiFail('REFERENCE_SOURCE');
  $candidate=hznUiPath(dirname($web),'.horizons-production-chain.lock');
