@@ -1,9 +1,5 @@
-/* Four native layouts. CSS changes presentation, never content availability. */
 @media screen {
-body[data-hzn-experiences-ready]{--hx-bg:#eee9dd;--hx-paper:#f7f2e7;--hx-soft:#e4eadf;--hx-ink:#18394b;--hx-muted:#48616b;--hx-line:#718177;--hx-accent:#116b64;--hx-on:#fff9ec;--hx-focus:#915b00;--hx-disabled:#d5d9d2;--hzn-paper:var(--hx-paper);--hzn-navy:var(--hx-ink);--hzn-line:var(--hx-line);--hzn-teal:var(--hx-accent);background:var(--hx-bg);color:var(--hx-ink)}
-body[data-hzn-experience=sprout]{--hx-bg:#edf0df;--hx-paper:#f5f3e6;--hx-soft:#dfe8c8;--hx-accent:#3b6544;--hx-line:#697e55}
-body[data-hzn-experience=adventure]{--hx-bg:#e4ede4;--hx-paper:#f4f1e3;--hx-soft:#d0e4d7;--hx-accent:#126c5b;--hx-line:#5b7f6e}
-body[data-hzn-experience=discovery]{--hx-bg:#e5eaea;--hx-paper:#eff3ed;--hx-soft:#d6e5e5;--hx-accent:#225f72;--hx-line:#607e88}
+body[data-hzn-experiences-ready]{--hx-bg:#f2f5f5;--hx-paper:#ffffff;--hx-soft:#e8efed;--hx-ink:#18394b;--hx-muted:#48616b;--hx-line:#718177;--hx-accent:#116b64;--hx-on:#fff9ec;--hx-focus:#915b00;--hx-disabled:#d5d9d2;--hzn-paper:var(--hx-paper);--hzn-navy:var(--hx-ink);--hzn-line:var(--hx-line);--hzn-teal:var(--hx-accent);background:var(--hx-bg);color:var(--hx-ink)}
 body[data-hzn-tone=dark]{--hx-bg:#14272d;--hx-paper:#20373c;--hx-soft:#30484a;--hx-ink:#edf3e6;--hx-muted:#c1d2ce;--hx-line:#849f96;--hx-accent:#abdcc8;--hx-on:#15352f;--hx-focus:#edc772;--hx-disabled:#3a4e51;color-scheme:dark}
 body[data-hzn-experiences-ready]>.topbar{background:var(--hx-paper);border-color:var(--hx-line)}
 body[data-hzn-experiences-ready] .topbar .brand,body[data-hzn-experiences-ready] #hzn-home-title,body[data-hzn-experiences-ready] #lesson-title{color:var(--hx-ink)}
@@ -19,98 +15,17 @@ body[data-hzn-experiences-ready] #hzn-home-nav #course-nav button{background:var
 body[data-hzn-experiences-ready] #hzn-home-nav #course-nav button:hover:not(:disabled){background:var(--hx-soft);box-shadow:0 4px 0 #16304715}
 body[data-hzn-experiences-ready] #hzn-home-nav #course-nav button[aria-pressed=true]{border-color:var(--hx-accent);outline:2px solid var(--hx-accent);outline-offset:2px}
 body[data-hzn-experiences-ready] #hzn-home-nav #course-nav button small,body[data-hzn-experiences-ready] #hzn-home-nav #course-nav button>span:first-child:not(.demo-section-title){color:var(--hx-muted)}
-body[data-hzn-experiences-ready] .hzn-home-welcome{background:var(--hx-soft);border-color:var(--hx-line);color:var(--hx-ink)}
+body[data-hzn-experiences-ready] .hzn-home-welcome{background-image:none;background:var(--hx-soft);border-color:var(--hx-line);color:var(--hx-ink)}
 body[data-hzn-experiences-ready] .hzn-exp-trigger{white-space:normal;font-size:13px!important}
 body[data-hzn-experiences-ready] #close-settings,body[data-hzn-experiences-ready] .hzn-dialog-close,body[data-hzn-experiences-ready] #hzn-language-dock select,body[data-hzn-experiences-ready] #hzn-account-controls select{background:var(--hx-paper);color:var(--hx-ink);border:1.5px solid var(--hx-line);min-height:44px;min-width:44px}
 body[data-hzn-experiences-ready] .hzn-top-controls button svg,body[data-hzn-experiences-ready] .trace-tools button svg,body[data-hzn-experiences-ready] .lesson-footer button svg{color:inherit;opacity:1}
-/* Chooser: one place for optional preferences, no age/date-of-birth gate. */
-.hzn-exp-dialog{width:820px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);overflow:auto;border:1.5px solid var(--hx-line);border-radius:24px;padding:24px;background:var(--hx-paper);color:var(--hx-ink);box-shadow:0 24px 90px #11283344}
-.hzn-exp-dialog::backdrop{background:#102b39ad;backdrop-filter:blur(3px)}
-.hzn-exp-dialog *{box-sizing:border-box}
-.hzn-exp-dialog-head{display:flex;justify-content:space-between;align-items:center;gap:16px}
-.hzn-exp-dialog h2{font-size:24px;line-height:1.5;margin:0}
-.hzn-exp-help,.hzn-exp-save-note{color:var(--hx-muted);font-size:14px;line-height:1.8;margin:12px 0 20px}
-.hzn-exp-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.hzn-exp-dialog button{font:inherit;line-height:1.6;cursor:pointer;min-height:44px;max-width:100%;color:var(--hx-ink);background:var(--hx-paper);border:1.5px solid var(--hx-line);border-radius:13px;white-space:normal;padding:9px 14px}
-.hzn-exp-choice{display:flex;flex-direction:column;gap:9px;text-align:start;padding:12px!important;min-width:0}
-.hzn-exp-choice strong{font-size:18px}
-.hzn-exp-choice-info{font-size:12px;line-height:1.7;color:var(--hx-muted)}
-.hzn-exp-dialog button:hover{background:var(--hx-soft)}
-.hzn-exp-dialog button[aria-pressed=true]{outline:2px solid var(--hx-accent);outline-offset:2px;background:var(--hx-soft);border-color:var(--hx-accent)}
-.hzn-exp-mini{width:100%;height:98px;background:var(--hx-soft);border-radius:10px;display:grid;gap:5px;padding:12px;align-items:center}
-.hzn-exp-mini i{display:block;min-height:12px;border:1px solid var(--hx-accent);border-radius:3px;opacity:.9}
-.hzn-exp-mini.sprout{grid-template-columns:1fr;justify-items:center}.hzn-exp-mini.sprout i:first-child{width:52px;height:52px;border-radius:15px}.hzn-exp-mini.sprout i:not(:first-child){display:none}
-.hzn-exp-mini.adventure{display:flex;justify-content:space-around;position:relative}.hzn-exp-mini.adventure i{border-radius:50%;width:21px;height:21px;background:var(--hx-paper);z-index:1}.hzn-exp-mini.adventure i:nth-child(2n){transform:translateY(-17px)}.hzn-exp-mini.adventure:before{content:'';position:absolute;inset:34% 13%;border:3px dashed var(--hx-line);border-radius:60%}
-.hzn-exp-mini.discovery{grid-template-columns:1fr 1fr}.hzn-exp-mini.discovery i{height:31px;background:var(--hx-paper)}
-.hzn-exp-mini.focus{grid-template-columns:30% 1fr}.hzn-exp-mini.focus i:first-child{grid-row:span 3;height:70px}.hzn-exp-mini.focus i{background:var(--hx-paper)}
-.hzn-exp-tones{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 0;padding:12px;border:1px solid var(--hx-line);border-radius:13px}.hzn-exp-tones legend{font-size:14px;padding:0 7px}.hzn-exp-save-note{font-size:12px;margin-bottom:0}
-.hzn-exp-future{grid-column:1/-1;border-top:1px solid var(--hx-line);margin-top:22px;padding-top:8px;color:var(--hx-muted)}
-.hzn-exp-future summary,.hzn-exp-stage-menu summary{min-height:44px;line-height:1.6;padding:10px 5px;cursor:pointer;font-size:14px;font-weight:650}
-.hzn-exp-future ul{list-style:none;margin:0;padding:8px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,215px),1fr));gap:8px}
-.hzn-exp-future li{display:flex;flex-wrap:wrap;gap:4px 12px;padding:12px;border:1px solid var(--hx-line);border-radius:12px;background:var(--hx-paper);font-size:14px;color:var(--hx-ink)}
-.hzn-exp-future small{font-size:11px;color:var(--hx-muted)}
-.hzn-exp-stage-menu{margin-bottom:12px;border:1.5px solid var(--hx-line);border-radius:12px;padding:0 12px;background:var(--hx-paper)}
-/* FOCUS: persistent lesson list at desktop; native activity and its events remain. */
-body[data-hzn-experience=focus] #hzn-home{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(240px,.75fr);gap:22px;align-items:start}
-body[data-hzn-experience=focus] .hzn-home-welcome{margin:0;min-height:285px;display:flex;flex-direction:column;justify-content:center}
-body[data-hzn-experience=focus] #hzn-home-nav #course-nav{grid-template-columns:1fr;gap:0;border:1.5px solid var(--hx-line);border-radius:16px;overflow:visible}
-body[data-hzn-experience=focus] #hzn-home-nav #course-nav button{border:0;border-bottom:1px solid var(--hx-line);border-radius:0;box-shadow:none;min-height:66px;padding:12px 18px}
-body[data-hzn-experience=focus] #hzn-home-nav #course-nav button:first-child{border-radius:15px 15px 0 0}body[data-hzn-experience=focus] #hzn-home-nav #course-nav button:last-child{border-bottom:0;border-radius:0 0 15px 15px}
-@media(min-width:960px){
- body[data-hzn-experience=focus][data-focus-view=lesson][data-hzn-has-stages=true]>main{display:grid;grid-template-columns:200px minmax(0,1fr);gap:12px 22px;align-items:start}
- body[data-hzn-experience=focus][data-focus-view=lesson] .lesson-heading{grid-column:1/-1}
- body[data-hzn-experience=focus][data-focus-view=lesson] #activity-navigation{grid-column:1;grid-row:2/5}
- body[data-hzn-experience=focus][data-focus-view=lesson] #stages{flex-direction:column;background:transparent;padding:0;gap:8px}
- body[data-hzn-experience=focus][data-focus-view=lesson] #stages button{flex:none;text-align:start;min-height:58px}
- body[data-hzn-experience=focus][data-focus-view=lesson] #activity,body[data-hzn-experience=focus][data-focus-view=lesson] .lesson-footer{grid-column:2}
- body[data-hzn-experience=focus][data-focus-view=lesson] .author-credit,body[data-hzn-experience=focus][data-focus-view=lesson] #preview-note{grid-column:1/-1}
-}
-/* DISCOVERY: compact card library and a horizontal activity dashboard. */
-body[data-hzn-experience=discovery] #hzn-home-nav #course-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-body[data-hzn-experience=discovery] #hzn-home-nav #course-nav button{min-height:135px;border-radius:20px;padding:20px}
-body[data-hzn-experience=discovery] #hzn-home-nav #course-nav button:before{content:attr(data-hzn-step);border-radius:9px;background:var(--hx-soft);font:700 16px/1.4 system-ui;padding:7px 12px;margin-bottom:8px}
-body[data-hzn-experience=discovery] .hzn-home-welcome{background:var(--hx-accent);color:var(--hx-on);border-radius:24px;max-width:100%}
-body[data-hzn-experience=discovery] .hzn-home-welcome #hzn-home-title,body[data-hzn-experience=discovery] .hzn-home-welcome #hzn-home-hint{color:var(--hx-on)}
-body[data-hzn-experience=discovery] .hzn-home-welcome .hzn-resume{background:var(--hx-paper);color:var(--hx-ink);border-color:var(--hx-line)}
-body[data-hzn-experience=discovery] #stages{padding:0;background:none;gap:10px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,130px),1fr))}
-body[data-hzn-experience=discovery] #stages button{min-height:60px;border-radius:14px}
-/* ADVENTURE: six real, unlocked-or-locked native buttons on a bounded map. */
-body[data-hzn-experience=adventure] #hzn-home{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.4fr);gap:22px;align-items:center}
-body[data-hzn-experience=adventure] .hzn-home-welcome{margin:0;background:transparent;border:0;padding:12px}
-body[data-hzn-experience=adventure] #hzn-home-nav #course-nav{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 14px;align-content:center;min-height:355px;padding:55px 26px 30px;border:1.5px solid var(--hx-line);border-radius:28px;background:#cee0bb;background-image:var(--hzn-approved-map);background-size:cover;background-position:center}
-body[data-hzn-experience=adventure] #hzn-home-nav #course-nav button{display:flex;align-items:center;text-align:center;justify-content:center;min-height:92px;padding:12px 7px;border-radius:22px;background:var(--hx-paper);box-shadow:0 5px 0 #254b3438}
-body[data-hzn-experience=adventure] #hzn-home-nav #course-nav button:nth-child(3n+2){transform:translateY(-22px)}
-body[data-hzn-experience=adventure] #hzn-home-nav #course-nav button:before{content:attr(data-hzn-step);display:grid;place-items:center;min-width:32px;min-height:32px;border-radius:50%;border:2px solid var(--hx-accent);background:var(--hx-soft);color:var(--hx-ink);font-size:15px;font-weight:700;margin-bottom:5px}
-body[data-hzn-experience=adventure] #stages{background:var(--hx-soft);border:1px dashed var(--hx-line);border-radius:22px;gap:8px;padding:10px}
-body[data-hzn-experience=adventure] #stages button{display:flex;align-items:center;gap:8px;border-radius:24px;min-height:52px}
-body[data-hzn-experience=adventure] #stages button:before{content:attr(data-hzn-step);display:grid;place-items:center;min-width:28px;min-height:28px;border:1px solid currentColor;border-radius:50%;font-size:14px}
-body[data-hzn-experience=adventure] #activity{border-radius:26px;border-bottom:5px solid var(--hx-line)}
-/* SPROUT: one large activity, optional activity drawer, short home selection. */
-body[data-hzn-experience=sprout]>main{max-width:990px}
-body[data-hzn-experience=sprout] #hzn-home{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(230px,.75fr);gap:22px;align-items:center}
-body[data-hzn-experience=sprout] .hzn-home-welcome{position:relative;min-height:330px;border-radius:32px;margin:0;padding:30px;background:var(--hx-soft)}
-body[data-hzn-experience=sprout] .hzn-home-welcome:before{content:'';display:block;width:78px;height:88px;background-image:var(--hzn-approved-companion);background-size:contain;background-repeat:no-repeat;margin-bottom:10px}
-body[data-hzn-experience=sprout] #hzn-home-nav #course-nav{grid-template-columns:1fr;gap:8px}
-body[data-hzn-experience=sprout] #hzn-home-nav #course-nav button{min-height:65px;border-radius:17px;font-size:18px}
-body[data-hzn-experience=sprout] #activity{max-width:820px;margin-inline:auto;border-radius:28px;padding:20px}
-body[data-hzn-experience=sprout] .word-scene-layout{grid-template-columns:1fr}
-body[data-hzn-experience=sprout] .vocab-panel{grid-template-columns:1fr;gap:12px}
-body[data-hzn-experience=sprout] .sentence-block{border-inline-start:0;border-top:1px solid var(--hx-line);padding:14px 0 0}
-body[data-hzn-experience=sprout] .lesson-footer button,body[data-hzn-experience=sprout] .sound{min-height:52px;font-size:18px;padding:10px 22px}
-/* Dark appearance does not recolor the educational Arabic/diacritic palette. */
 body[data-hzn-tone=dark] #hzn-home-nav #course-nav{background-color:var(--hx-soft)}
-body[data-hzn-tone=dark][data-hzn-experience=adventure] #hzn-home-nav #course-nav{background-image:none;border-style:dashed}
 body[data-hzn-tone=dark] .mini-forms>div{background:var(--hx-soft);color:var(--hx-ink)}
 @media(max-width:800px){
  body[data-hzn-experience] #hzn-home{display:block}
  body[data-hzn-experience] .hzn-home-welcome{min-height:0;margin-bottom:18px;padding:22px}
- body[data-hzn-experience=discovery] #hzn-home-nav #course-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
- body[data-hzn-experience=sprout] #hzn-home-nav #course-nav{grid-template-columns:1fr 1fr}
- body[data-hzn-experience=sprout] .hzn-home-welcome:before{float:inline-end;margin-inline-start:12px;width:67px;height:78px}
- .hzn-exp-choices{grid-template-columns:1fr 1fr}
  body[data-hzn-experiences-ready] .hzn-top-controls{gap:6px}
  body[data-hzn-experiences-ready] .hzn-top-controls button{font-size:12px;min-height:44px;padding:7px 10px}
- body[data-hzn-experience=adventure] #hzn-home-nav #course-nav{padding:36px 14px 20px;min-height:310px;gap:23px 10px}
 }
 @media(max-width:450px){
  body[data-hzn-experiences-ready]>.topbar{padding:8px 10px}
@@ -118,16 +33,16 @@ body[data-hzn-tone=dark] .mini-forms>div{background:var(--hx-soft);color:var(--h
  body[data-hzn-experiences-ready]>.topbar .brand{font-size:15px}
  body[data-hzn-experiences-ready] .hzn-top-controls{justify-content:flex-start;width:100%}
  body[data-hzn-experiences-ready] .hzn-top-controls button{flex:1 1 auto}
- body[data-hzn-experience=adventure] #hzn-home-nav #course-nav button{font-size:13px;min-height:86px;padding:8px 5px;border-radius:16px}
- body[data-hzn-experience=adventure] #hzn-home-nav #course-nav .demo-section-title{font-size:13px}
- body[data-hzn-experience=adventure] #hzn-home-nav #course-nav button small{font-size:10px}
- body[data-hzn-experience=discovery] #hzn-home-nav #course-nav button{padding:14px;min-height:125px}
- .hzn-exp-dialog{padding:16px;max-width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}
- .hzn-exp-dialog h2{font-size:20px}.hzn-exp-choices{gap:9px}.hzn-exp-choice{padding:9px!important}.hzn-exp-mini{height:80px}.hzn-exp-choice strong{font-size:17px}.hzn-exp-choice-info{font-size:12px}
- .hzn-exp-future ul{grid-template-columns:1fr}.hzn-exp-future li{justify-content:space-between}
- body[data-hzn-experience=sprout] #activity{padding:14px}
 }
 @media(prefers-reduced-motion:reduce){body[data-hzn-experiences-ready] *,body[data-hzn-experiences-ready] *:before{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-@media(forced-colors:active){body[data-hzn-experiences-ready] button{border:2px solid ButtonText}.hzn-exp-mini{forced-color-adjust:auto}.hzn-exp-mini i{border:2px solid ButtonText}}
 }
 @media print{#hzn-experience-button,#hzn-experience-dialog,#hzn-exp-future,#hzn-exp-stage-menu>summary{display:none!important}}
+@media print{#hzn-experience-button{display:none!important}}
+
+@media screen {
+.hzn-exp-future{margin-top:24px;padding-top:18px;border-top:1px solid var(--hx-line)}
+.hzn-exp-future h2{margin:0 0 12px;font:600 20px/1.5 system-ui;color:var(--hx-ink)}
+.hzn-future-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
+body[data-hzn-experiences-ready] .hzn-future-tile{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-height:88px;padding:14px;border:1px solid var(--hx-line);border-radius:16px;background:var(--hx-soft);color:var(--hx-muted);font:inherit;text-align:start;opacity:1;cursor:not-allowed}
+.hzn-future-tile small{font-size:12px;line-height:1.5}
+}

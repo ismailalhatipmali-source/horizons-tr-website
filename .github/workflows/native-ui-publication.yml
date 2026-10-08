@@ -20,6 +20,7 @@ on:
       - 'tests/test_native_historical_pins.php'
       - 'src/workbook-experiences/**'
       - 'release-assets/native-experiences-20261007-r1/**'
+      - 'tests/test_native_single_upgrade.php'
       - 'tests/test_native_publication.php'
       - 'tests/test_native_chain_bridge.php'
       - 'tests/test_native_pipeline.py'
@@ -42,6 +43,7 @@ jobs:
             src/workbook-focus
             release-assets/workbook-focus-20261005-r1
             release-assets/native-experiences-20261007-r1
+            tests/test_native_single_upgrade.php
             tests/test_native_publication.php
             tests/test_native_chain_bridge.php
             tests/test_native_pipeline.py
@@ -60,6 +62,8 @@ jobs:
           for p in scripts/blending3-preservation.php scripts/blending4-preservation.php scripts/meaning-preservation.php scripts/blending2-preservation.php; do php -l "$p"; done
           python3 scripts/build_native_ui_manifest.py
           git diff --exit-code -- release-assets/native-experiences-20261007-r1
+          php tests/test_native_single_upgrade.php
+          node -e "const a=require('./src/workbook-experiences/native-experiences.js');require('node:assert/strict').deepEqual(a.MODES,['focus']);require('node:assert/strict').equal(a.normalizeRecord({experience:'sprout',tone:'dark'}).tone,'dark');"
           php tests/test_native_publication.php
           php tests/test_native_chain_bridge.php
           python3 tests/test_native_pipeline.py

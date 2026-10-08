@@ -162,13 +162,12 @@ function hznUiEncrypt(string $plain, string $key): string {
     if (hznUiDecrypt($out, $key) !== $plain) hznUiFail('ENCRYPTION_ROUNDTRIP');
     return $out;
 }
-function hznUiWorker(string $raw, bool $paid, bool $legacy = false): string {
+function hznUiWorker(string $raw, bool $paid): string {
     if (str_contains($raw, HZN_UI_RELEASE)) hznUiFail('WORKER_ALREADY_UPDATED');
     $old = $paid ? "const SHELL = 'hzn-web-shell-' + VERSION + '-blending3-20261004-r2-responsive-20261004-r3-demo-experience-20261004-r1-comprehensive-meaning-20261004-r1-blending4-20261004-r1-workbook-focus-20261005-r1-trial-pause-20261005-r1';" :
         "const CACHE='hzn-public-demo-'+VERSION+'-workbook-focus-20261005-r1';";
     if (substr_count($raw, $old) !== 1) hznUiFail('WORKER_BASELINE');
-    $suffix = HZN_UI_RELEASE . ($legacy ? '' : '-single-20261008-r1');
-    $new = $paid ? substr($old, 0, -2) . '-' . $suffix . "';" : "const CACHE='hzn-public-demo-'+VERSION+'-" . $suffix . "';";
+    $new = $paid ? substr($old, 0, -2) . '-' . HZN_UI_RELEASE . "';" : "const CACHE='hzn-public-demo-'+VERSION+'-" . HZN_UI_RELEASE . "';";
     $after = str_replace($old, $new, $raw);
     if (!$paid) {
         $pattern = '(?:creator-credit|demo-experience|comprehensive-meaning|workbook-focus)';
